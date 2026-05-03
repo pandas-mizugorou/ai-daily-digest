@@ -1,9 +1,13 @@
 {
   "date": "2026-05-03",
   "generated_at": "2026-05-03T05:00:00+09:00",
-  "headline": "（サンプルデータ）最初の自動実行までのプレースホルダ",
-  "summary_ja": "これは表示確認用のサンプルです。最初の routine 実行（毎朝 5 時 JST）が走ると、実際に収集された AI / 生成 AI のニュースに自動で置き換わります。レイアウト・配色・スコア表示の確認用としてお使いください。",
-  "stats": { "total_collected": 5, "after_dedup": 5, "selected": 5 },
+  "headline": "オープンウェイト 1T パラメータ Kimi K2.6 がコーディング競技で GPT-5.5・Claude を超え、オープンソース AI のフロンティア到達を証明",
+  "summary_ja": "2026年5月3日、Moonshot AI のオープンウェイトモデル Kimi K2.6（1兆パラメータ MoE）が GPT-5.5・Claude Opus 4.7・Gemini Pro 3.1 を凌ぐコーディング成績を記録し、SWE-Bench Pro でもフロンティアモデルを上回るスコアを達成した。NVIDIA は Nemotron 3 Nano Omni（30B MoE）を公開し、テキスト・音声・映像を単一モデルで統合処理しつつ同クラス比 9 倍のスループットを実現。開発者向けには Mistral Medium 3.5 リモートエージェントや Anthropic の MCP クリエイティブコネクタ群など実用ツールの充実が続く。",
+  "stats": {
+    "total_collected": 43,
+    "after_dedup": 37,
+    "selected": 7
+  },
   "categories": [
     {
       "id": "new_models",
@@ -12,20 +16,52 @@
       "items": [
         {
           "id": "2026-05-03-001",
-          "title": "Sample: Frontier lab releases new flagship reasoning model",
-          "title_ja": "サンプル: フロンティアラボが新フラッグシップ推論モデルを発表",
-          "url": "https://example.com/sample-1",
-          "source": "anthropic",
-          "source_label": "Anthropic Blog",
-          "published_at": "2026-05-03",
-          "summary_ja": "新世代モデルが発表されたという仮定のサンプル記事。コンテキスト長の拡張、推論精度の向上、ツール呼び出しレイテンシの削減を含む。",
+          "title": "Kimi K2.6 just beat Claude, GPT-5.5, and Gemini in a coding challenge",
+          "title_ja": "Moonshot AI の Kimi K2.6 が GPT-5.5・Claude Opus 4.7・Gemini をコーディング競技で上回る",
+          "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/",
+          "source": "moonshot_ai",
+          "source_label": "Moonshot AI / ThinkPol (via HN 251pt)",
+          "published_at": "2026-04-30",
+          "summary_ja": "Moonshot AI（中国）のオープンウェイトモデル Kimi K2.6 が、Word Gem Puzzle を題材にした実時間コーディング競技で GPT-5.5（16pt）・Claude Opus 4.7（12pt）・Gemini Pro 3.1（9pt）を全て上回り 22pt で首位を獲得した。1兆パラメータの MoE アーキテクチャ（アクティブ 32B）を採用し、SWE-Bench Pro スコアは 58.6 で GPT-5.4（57.7）や Claude Opus 4.6（53.4）も上回る。Hugging Face でオープンウェイト公開済みであり誰でもダウンロード・自己ホスト可能。Agent Swarm では最大 300 並行サブエージェント・4,000 調整ステップに対応し、長期タスクの自律処理能力が大幅に向上している。",
           "key_points_ja": [
-            "コンテキスト長が大幅に拡張",
-            "ツール呼び出しレイテンシが削減",
-            "API 価格は据え置き"
+            "コーディング競技で 22pt 首位（GPT-5.5: 16pt、Claude Opus 4.7: 12pt、Gemini Pro 3.1: 9pt）",
+            "SWE-Bench Pro スコア 58.6（GPT-5.4 xhigh: 57.7、Claude Opus 4.6: 53.4 を上回る）",
+            "1T パラメータ MoE、アクティブ 32B / トークン、384 エキスパート（8 選択 + 1 共有）",
+            "Hugging Face でオープンウェイト公開済み（moonshotai/Kimi-K2.6）"
           ],
-          "scores": { "importance": 5, "depth": 5, "practicality": 5, "freshness": 5, "total": 20 },
-          "tags": ["sample", "model-release"],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 4,
+            "freshness": 3,
+            "total": 17
+          },
+          "tags": ["kimi", "open-weights", "coding", "moe", "moonshot-ai", "benchmark", "swe-bench"],
+          "lang": "en"
+        },
+        {
+          "id": "2026-05-03-002",
+          "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
+          "title_ja": "NVIDIA Nemotron 3 Nano Omni：音声・映像・文書を統合処理する 30B MoE、同クラス比最大 9 倍のスループット",
+          "url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+          "source": "nvidia",
+          "source_label": "NVIDIA Blog",
+          "published_at": "2026-04-28",
+          "summary_ja": "NVIDIA が Nemotron 3 Nano Omni を発表した。30B-A3B ハイブリッド MoE アーキテクチャを採用し、テキスト・画像・音声・映像・文書・チャート・GUI インターフェースをすべて単一モデルで処理する。他のオープンオムニモデルと比較して最大 9 倍の推論スループットを実現し、ドキュメントインテリジェンスおよびオーディオビジュアル理解の 6 つのリーダーボードでトップを獲得した。HuggingFace・OpenRouter・build.nvidia.com（NVIDIA NIM マイクロサービス）・25 以上のパートナープラットフォームで即日利用可能であり、NVIDIA NeMo によるドメイン特化チューニングもサポートする。",
+          "key_points_ja": [
+            "30B-A3B ハイブリッド MoE、Conv3D・EVS 搭載、コンテキスト長 256K",
+            "他のオープンオムニモデル比最大 9 倍の推論スループット",
+            "ドキュメント・オーディオビジュアル理解の 6 リーダーボードでトップ獲得",
+            "HuggingFace / OpenRouter / NVIDIA NIM で即日試用可能（25+ パートナープラットフォーム対応）"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 5,
+            "practicality": 5,
+            "freshness": 2,
+            "total": 16
+          },
+          "tags": ["nvidia", "nemotron", "multimodal", "omni", "moe", "open-source"],
           "lang": "en"
         }
       ]
@@ -36,21 +72,53 @@
       "label_en": "Tools & SDKs",
       "items": [
         {
-          "id": "2026-05-03-002",
-          "title": "Sample: Open-source agent framework hits 1.0",
-          "title_ja": "サンプル: オープンソースのエージェントフレームワークが1.0到達",
-          "url": "https://example.com/sample-2",
-          "source": "github",
-          "source_label": "GitHub Trending",
-          "published_at": "2026-05-03",
-          "summary_ja": "OSS のエージェント基盤が 1.0 リリースを迎えたサンプル。ツール呼び出し・ステート管理・観測可能性が標準搭載されたという想定。",
+          "id": "2026-05-03-003",
+          "title": "Remote agents in Vibe. Powered by Mistral Medium 3.5",
+          "title_ja": "Mistral Medium 3.5 + Vibe リモートエージェント：128B モデルでコーディング自動化を強化",
+          "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+          "source": "mistral",
+          "source_label": "Mistral AI Blog",
+          "published_at": "2026-04-29",
+          "summary_ja": "Mistral AI が 128B パラメータの新モデル Mistral Medium 3.5 を発表するとともに、コーディング IDE「Vibe」にリモートエージェント機能を統合した。エージェントはバックグラウンドで複雑なコーディングタスクを非同期処理し、開発者が IDE から離れることなく結果を受け取れる。Le Chat には「Work モード」が追加され、複雑な複数ステップのタスクを自律的に処理できるようになった。HuggingFace では mistralai/Mistral-Medium-3.5-128B として公開されており、公開後 1 日以内に 9,490 ダウンロードを記録している。",
           "key_points_ja": [
-            "MCP プロトコルをネイティブサポート",
-            "OpenTelemetry によるトレース統合",
-            "Python / TypeScript SDK 同梱"
+            "Mistral Medium 3.5（128B）を HuggingFace でオープン公開（mistralai/Mistral-Medium-3.5-128B）",
+            "Vibe IDE からリモートコーディングエージェントを起動・非同期実行",
+            "Le Chat に Work モード追加：複雑な複数ステップタスクを自律処理",
+            "HF 公開後 1 日以内に 9,490 ダウンロードを記録"
           ],
-          "scores": { "importance": 4, "depth": 4, "practicality": 5, "freshness": 5, "total": 18 },
-          "tags": ["sample", "oss", "agent"],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 3,
+            "total": 15
+          },
+          "tags": ["mistral", "mistral-medium", "agent", "coding", "vibe", "128b"],
+          "lang": "en"
+        },
+        {
+          "id": "2026-05-03-004",
+          "title": "Claude for Creative Work",
+          "title_ja": "Claude がクリエイティブ用途に対応：Adobe・Blender・Autodesk 等 9 つの MCP コネクタを追加",
+          "url": "https://www.anthropic.com/news/claude-for-creative-work",
+          "source": "anthropic",
+          "source_label": "Anthropic Blog",
+          "published_at": "2026-04-28",
+          "summary_ja": "Anthropic が Claude のクリエイティブ用途向け拡張を発表した。MCP（Model Context Protocol）を基盤とした 9 種類のコネクタにより、Adobe Creative Cloud（Photoshop・Premiere など 50 以上のツール）、Blender、Autodesk Fusion、SketchUp、Splice、Ableton、Resolume などを Claude から自然言語で直接制御できる。Claude Code がこれらのアプリ向けスクリプト・プラグイン・ジェネレーティブシステムを生成でき、クロスアプリのアセット同期やバッチ処理自動化にも対応する。コネクタは MCP 準拠のため Claude 以外の LLM からも利用可能。",
+          "key_points_ja": [
+            "Adobe Creative Cloud（50+ ツール）・Blender・Autodesk Fusion・SketchUp 等 9 コネクタを MCP で提供",
+            "Claude Code がクリエイティブアプリ向けスクリプト・プラグインを直接生成",
+            "Anthropic Labs の Claude Design が Canva へのビジュアルエクスポートに対応",
+            "コネクタは MCP 準拠で他の LLM からも利用可能"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 2,
+            "total": 14
+          },
+          "tags": ["anthropic", "claude", "mcp", "creative", "adobe", "blender", "connectors"],
           "lang": "en"
         }
       ]
@@ -61,46 +129,53 @@
       "label_en": "Research & Papers",
       "items": [
         {
-          "id": "2026-05-03-003",
-          "title": "Sample: Long-context retrieval improves grounding by 30%",
-          "title_ja": "サンプル: 長文コンテキスト検索でグラウンディング精度30%向上",
-          "url": "https://example.com/sample-3",
-          "source": "arxiv",
-          "source_label": "arXiv (cs.CL)",
-          "published_at": "2026-05-03",
-          "summary_ja": "長文 RAG の評価ベンチマーク提案論文のサンプル。実装コードと再現実験スクリプトが GitHub に公開されている想定。",
+          "id": "2026-05-03-005",
+          "title": "The IBM Granite 4.1 family of models",
+          "title_ja": "IBM Granite 4.1 の構築手法を公開：アーキテクチャと訓練方法論の詳細",
+          "url": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
+          "source": "ibm",
+          "source_label": "IBM Research Blog",
+          "published_at": "2026-04-30",
+          "summary_ja": "IBM Research が Granite 4.1 LLM ファミリーのアーキテクチャと訓練方法論を詳細公開した。エンタープライズタスク向けに最適化されたモデルであり、HuggingFace のブログ記事では再現可能な構築手順（データ品質管理・アーキテクチャ選択・RLHF パイプライン）が解説されている。Hacker News では 74 ポイントを獲得しており、オープンウェイトの企業向け LLM として注目度が高い。Granite シリーズは IBM Cloud・watsonx で広く活用されており、今回の技術公開が後続研究・実装の参照元となる。",
           "key_points_ja": [
-            "新ベンチマーク LongRAG-Bench を提案",
-            "公開実装あり、再現可能",
-            "既存手法との比較を多数収録"
+            "IBM Research 公式ブログでアーキテクチャ・訓練方法論（データ品質管理・RLHF）を詳細公開",
+            "エンタープライズタスク向けに最適化、IBM Cloud / watsonx で広く利用",
+            "HuggingFace ブログで再現可能な構築手順を解説（ibm-granite/granite-4-1）",
+            "Hacker News で 74 ポイント獲得（2026-04-30）"
           ],
-          "scores": { "importance": 4, "depth": 5, "practicality": 4, "freshness": 5, "total": 18 },
-          "tags": ["sample", "rag", "benchmark"],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 3,
+            "total": 14
+          },
+          "tags": ["ibm", "granite", "enterprise", "llm", "open-source", "architecture"],
           "lang": "en"
-        }
-      ]
-    },
-    {
-      "id": "industry",
-      "label_ja": "業界動向",
-      "label_en": "Industry & Policy",
-      "items": [
+        },
         {
-          "id": "2026-05-03-004",
-          "title": "Sample: Major cloud providers announce shared inference standard",
-          "title_ja": "サンプル: 大手クラウド3社が共通推論APIの規格を発表",
-          "url": "https://example.com/sample-4",
-          "source": "techcrunch",
-          "source_label": "Industry News",
-          "published_at": "2026-05-03",
-          "summary_ja": "クラウド3社が共通の推論API規格を策定したというサンプル。ベンダーロックイン回避とポータビリティ向上が見込まれる。",
+          "id": "2026-05-03-006",
+          "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Workflows",
+          "title_ja": "Claw-Eval-Live：進化するワークフロー向けライブエージェントベンチマーク — 最高性能モデルでも 66.7% 止まり",
+          "url": "https://arxiv.org/abs/2604.28139",
+          "source": "arxiv",
+          "source_label": "arXiv (cs.AI)",
+          "published_at": "2026-04-30",
+          "summary_ja": "arXiv に掲載された Claw-Eval-Live は、ビジネスサービスと現場修理にまたがる 105 のワークフロータスクで構成される新しいエージェント評価ベンチマークである。現在の最高性能モデルでさえ通過率は 66.7% にとどまり、いかなるモデルも 70% を超えていない。タスクが継続的に進化する「ライブ」設計を採用しており、静的なテストセットで起きやすい過学習・データ汚染問題を回避できる。実際のマルチステップ業務フローを忠実にエミュレートしており、エージェントの実用的な評価基準として活用できる。",
           "key_points_ja": [
-            "OpenAI 互換 + 拡張機能の共通仕様",
-            "監視・課金APIも標準化",
-            "今四半期から段階導入"
+            "105 のライブワークフロータスク（ビジネスサービス・現場修理を網羅）",
+            "最高性能モデルでも通過率 66.7%、70% 超えは現時点でゼロ",
+            "継続的に進化するタスク設計で過学習・テスト汚染を防止",
+            "実際の多段業務フローを忠実にエミュレートした実用的ベンチマーク"
           ],
-          "scores": { "importance": 4, "depth": 3, "practicality": 4, "freshness": 5, "total": 16 },
-          "tags": ["sample", "industry", "api"],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 3,
+            "total": 14
+          },
+          "tags": ["benchmark", "agent", "evaluation", "arxiv", "workflow"],
           "lang": "en"
         }
       ]
@@ -111,25 +186,62 @@
       "label_en": "Japanese Sources",
       "items": [
         {
-          "id": "2026-05-03-005",
-          "title": "サンプル: Claude Code を業務に組み込んだ運用知見まとめ",
-          "title_ja": "サンプル: Claude Code を業務に組み込んだ運用知見まとめ",
-          "url": "https://example.com/sample-5",
+          "id": "2026-05-03-007",
+          "title": "SpringのMCPサーバのツールの説明文を外部ファイルで上書きする",
+          "title_ja": "Spring MCP サーバのツール説明文を外部ファイルで上書きする手法",
+          "url": "https://qiita.com/kanata564/items/9ee0540d36efb591a4fc",
           "source": "qiita",
           "source_label": "Qiita",
           "published_at": "2026-05-03",
-          "summary_ja": "国内エンジニアが Claude Code を業務フローに組み込んだ知見記事のサンプル。スキル設計・hooks・MCP 連携が中心。",
+          "summary_ja": "Spring Boot で構築した MCP（Model Context Protocol）サーバのツール説明文を、コードを変更せずに外部設定ファイルで上書きする手法を解説した実装記事。MCP ツールの description はモデルの挙動に直接影響するため、チューニング時に再コンパイルなしで差し替えられる仕組みは開発・運用効率の向上に直結する。Spring AI と MCP の統合が進む中、設定の外部化はエンタープライズ用途での管理性向上に役立つ。2026年5月3日公開の当日コンテンツ。",
           "key_points_ja": [
-            "スキルを段階的に導入する手順",
-            "hooks による定型作業の自動化",
-            "MCP で社内ツールを接続"
+            "ツール説明文をコードにハードコードせず外部ファイルで管理する設計",
+            "再コンパイルなしで MCP ツールの description をチューニング可能",
+            "Spring Boot + Spring AI の実装例付きで即日試せる"
           ],
-          "scores": { "importance": 3, "depth": 4, "practicality": 5, "freshness": 5, "total": 17 },
-          "tags": ["sample", "japan", "claude-code"],
+          "scores": {
+            "importance": 2,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 16
+          },
+          "tags": ["spring", "mcp", "java", "spring-ai", "japan", "configuration"],
           "lang": "ja"
         }
       ]
     }
   ],
-  "skipped_sources": []
+  "skipped_sources": [
+    {
+      "source": "openai_blog",
+      "reason": "HTTP 403（既知の問題）",
+      "fallback_used": "WebSearch site:openai.com/blog 2026"
+    },
+    {
+      "source": "cohere_blog",
+      "reason": "ページがナビゲーション要素のみを返却、記事一覧を抽出不可",
+      "fallback_used": "none"
+    },
+    {
+      "source": "reddit_machinelearning",
+      "reason": "未取得（レート制限保護のため省略）",
+      "fallback_used": "none"
+    },
+    {
+      "source": "reddit_localllama",
+      "reason": "未取得（レート制限保護のため省略）",
+      "fallback_used": "none"
+    },
+    {
+      "source": "zenn_ai",
+      "reason": "動的コンテンツのため記事一覧を抽出不可",
+      "fallback_used": "none"
+    },
+    {
+      "source": "xai_news",
+      "reason": "WebFetch でコンテンツ取得不可",
+      "fallback_used": "WebSearch site:x.ai 2026"
+    }
+  ]
 }
