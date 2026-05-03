@@ -905,3 +905,522 @@ button { font: inherit; cursor: pointer; }
   word-break: break-word;
   font-weight: 500;
 }
+
+/* ===========================================================
+   Shared figure footer blocks (narrative / impact)
+   used by comparison, metric-bars, timeline
+   =========================================================== */
+.fig-narrative,
+.fig-impact {
+  padding: 10px 14px 12px;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+}
+.fig-impact {
+  background: color-mix(in srgb, var(--accent) 7%, var(--bg-elevated));
+}
+.fig-narrative-text,
+.fig-impact-text {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--fg-muted);
+  word-break: break-word;
+}
+.fig-impact-text {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+/* ===========================================================
+   COMPARISON figure
+   =========================================================== */
+.fig-cmp {
+  display: flex;
+  flex-direction: column;
+}
+
+.fig-cmp-headline {
+  padding: 12px 14px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.5;
+  background: color-mix(in srgb, var(--accent) 10%, var(--bg-elevated));
+  border-bottom: 1px solid var(--border);
+  word-break: break-word;
+}
+
+.fig-cmp-legend {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+}
+.fig-cmp-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.fig-cmp-side-after { text-align: right; }
+.fig-cmp-side-tag {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+}
+.fig-cmp-side-before .fig-cmp-side-tag { color: var(--fg-subtle); }
+.fig-cmp-side-after  .fig-cmp-side-tag { color: var(--accent); }
+.fig-cmp-side-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--fg);
+  word-break: break-word;
+}
+.fig-cmp-side-sub {
+  font-size: 0.74rem;
+  color: var(--fg-subtle);
+}
+.fig-cmp-arrow {
+  font-size: 1.1rem;
+  color: var(--fg-subtle);
+  text-align: center;
+}
+
+.fig-cmp-metrics {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-elevated);
+}
+
+.fig-cmp-metric {
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  border-inline-start: 3px solid var(--fig-tone-default);
+}
+.fig-cmp-metric.fig-tone-success { border-inline-start-color: var(--fig-tone-success); }
+.fig-cmp-metric.fig-tone-warning { border-inline-start-color: var(--fig-tone-warning); }
+.fig-cmp-metric.fig-tone-danger  { border-inline-start-color: var(--fig-tone-danger); }
+.fig-cmp-metric.fig-tone-info    { border-inline-start-color: var(--fig-tone-info); }
+.fig-cmp-metric.fig-tone-primary { border-inline-start-color: var(--fig-tone-primary); }
+
+.fig-cmp-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.fig-cmp-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+.fig-cmp-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--fg);
+  flex: 1 1 auto;
+  min-width: 0;
+  word-break: break-word;
+}
+.fig-cmp-delta {
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--fg-subtle) 12%, transparent);
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+.fig-cmp-metric.fig-tone-success .fig-cmp-delta {
+  background: color-mix(in srgb, var(--fig-tone-success) 14%, transparent);
+  color: var(--fig-tone-success);
+}
+.fig-cmp-metric.fig-tone-danger .fig-cmp-delta {
+  background: color-mix(in srgb, var(--fig-tone-danger) 14%, transparent);
+  color: var(--fig-tone-danger);
+}
+.fig-cmp-metric.fig-tone-warning .fig-cmp-delta {
+  background: color-mix(in srgb, var(--fig-tone-warning) 14%, transparent);
+  color: var(--fig-tone-warning);
+}
+.fig-cmp-metric.fig-tone-info .fig-cmp-delta {
+  background: color-mix(in srgb, var(--fig-tone-info) 14%, transparent);
+  color: var(--fig-tone-info);
+}
+.fig-cmp-metric.fig-tone-primary .fig-cmp-delta {
+  background: color-mix(in srgb, var(--fig-tone-primary) 14%, transparent);
+  color: var(--fig-tone-primary);
+}
+
+.fig-cmp-bar-row {
+  display: grid;
+  grid-template-columns: minmax(72px, max-content) 1fr minmax(48px, max-content);
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-variant-numeric: tabular-nums;
+}
+.fig-cmp-bar-name {
+  font-size: 0.74rem;
+  color: var(--fg-subtle);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fig-cmp-bar {
+  height: 14px;
+  background: color-mix(in srgb, var(--fg-subtle) 10%, transparent);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+.fig-cmp-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.4s ease;
+}
+.fig-cmp-bar-fill-before {
+  background: color-mix(in srgb, var(--fg-subtle) 38%, transparent);
+}
+.fig-cmp-bar-fill-after {
+  background: var(--accent);
+}
+.fig-cmp-metric.fig-tone-success .fig-cmp-bar-fill-after { background: var(--fig-tone-success); }
+.fig-cmp-metric.fig-tone-warning .fig-cmp-bar-fill-after { background: var(--fig-tone-warning); }
+.fig-cmp-metric.fig-tone-danger  .fig-cmp-bar-fill-after { background: var(--fig-tone-danger); }
+.fig-cmp-metric.fig-tone-info    .fig-cmp-bar-fill-after { background: var(--fig-tone-info); }
+.fig-cmp-metric.fig-tone-primary .fig-cmp-bar-fill-after { background: var(--fig-tone-primary); }
+
+.fig-cmp-bar-value {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--fg);
+  text-align: right;
+  white-space: nowrap;
+}
+.fig-cmp-bar-row-before .fig-cmp-bar-value { color: var(--fg-muted); font-weight: 600; }
+
+.fig-cmp-note {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  line-height: 1.5;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  word-break: break-word;
+}
+
+/* ===========================================================
+   METRIC-BARS figure
+   =========================================================== */
+.fig-mb {
+  display: flex;
+  flex-direction: column;
+}
+
+.fig-mb-headline {
+  padding: 12px 14px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.5;
+  background: color-mix(in srgb, var(--accent) 10%, var(--bg-elevated));
+  border-bottom: 1px solid var(--border);
+  word-break: break-word;
+}
+
+.fig-mb-scale {
+  padding: 6px 14px;
+  font-size: 0.74rem;
+  color: var(--fg-subtle);
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+}
+
+.fig-mb-bars {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--bg-elevated);
+}
+
+.fig-mb-bar {
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  border-inline-start: 3px solid var(--fig-tone-primary);
+}
+.fig-mb-bar.fig-tone-default { border-inline-start-color: var(--fig-tone-default); }
+.fig-mb-bar.fig-tone-success { border-inline-start-color: var(--fig-tone-success); }
+.fig-mb-bar.fig-tone-warning { border-inline-start-color: var(--fig-tone-warning); }
+.fig-mb-bar.fig-tone-danger  { border-inline-start-color: var(--fig-tone-danger); }
+.fig-mb-bar.fig-tone-info    { border-inline-start-color: var(--fig-tone-info); }
+
+.fig-mb-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.fig-mb-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+.fig-mb-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--fg);
+  flex: 1 1 auto;
+  min-width: 0;
+  word-break: break-word;
+}
+.fig-mb-value {
+  flex: 0 0 auto;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg);
+}
+.fig-mb-bar.fig-tone-primary .fig-mb-value { color: var(--fig-tone-primary); }
+.fig-mb-bar.fig-tone-success .fig-mb-value { color: var(--fig-tone-success); }
+.fig-mb-bar.fig-tone-warning .fig-mb-value { color: var(--fig-tone-warning); }
+.fig-mb-bar.fig-tone-danger  .fig-mb-value { color: var(--fig-tone-danger); }
+.fig-mb-bar.fig-tone-info    .fig-mb-value { color: var(--fig-tone-info); }
+
+.fig-mb-track {
+  position: relative;
+  height: 18px;
+  background: color-mix(in srgb, var(--fg-subtle) 10%, transparent);
+  border-radius: 999px;
+  overflow: visible;
+}
+.fig-mb-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: var(--fig-tone-primary);
+  transition: width 0.4s ease;
+}
+.fig-mb-bar.fig-tone-default .fig-mb-fill { background: color-mix(in srgb, var(--fg-subtle) 60%, transparent); }
+.fig-mb-bar.fig-tone-success .fig-mb-fill { background: var(--fig-tone-success); }
+.fig-mb-bar.fig-tone-warning .fig-mb-fill { background: var(--fig-tone-warning); }
+.fig-mb-bar.fig-tone-danger  .fig-mb-fill { background: var(--fig-tone-danger); }
+.fig-mb-bar.fig-tone-info    .fig-mb-fill { background: var(--fig-tone-info); }
+
+.fig-mb-baseline {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  background: var(--fg-muted);
+  transform: translateX(-1px);
+  pointer-events: none;
+  border-radius: 1px;
+}
+.fig-mb-baseline-tag {
+  position: absolute;
+  bottom: -22px;
+  font-size: 0.68rem;
+  color: var(--fg-muted);
+  background: var(--bg-elevated);
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fig-mb-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  padding-top: 26px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--fg-muted);
+}
+.fig-mb-bar:not(:has(.fig-mb-baseline)) .fig-mb-meta { padding-top: 0; }
+
+.fig-mb-delta {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--fig-tone-primary) 14%, transparent);
+  color: var(--fig-tone-primary);
+}
+.fig-mb-bar.fig-tone-success .fig-mb-delta {
+  background: color-mix(in srgb, var(--fig-tone-success) 14%, transparent);
+  color: var(--fig-tone-success);
+}
+.fig-mb-bar.fig-tone-default .fig-mb-delta {
+  background: color-mix(in srgb, var(--fg-subtle) 14%, transparent);
+  color: var(--fg-muted);
+}
+.fig-mb-note {
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+/* ===========================================================
+   TIMELINE figure
+   =========================================================== */
+.fig-tl {
+  display: flex;
+  flex-direction: column;
+}
+
+.fig-tl-headline {
+  padding: 12px 14px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.5;
+  background: color-mix(in srgb, var(--accent) 10%, var(--bg-elevated));
+  border-bottom: 1px solid var(--border);
+  word-break: break-word;
+}
+
+.fig-tl-events {
+  list-style: none;
+  margin: 0;
+  padding: 14px 14px 14px 8px;
+  background: var(--bg-elevated);
+  position: relative;
+}
+
+.fig-tl-event {
+  position: relative;
+  padding: 0 0 14px 26px;
+  display: block;
+}
+.fig-tl-event:last-child { padding-bottom: 2px; }
+
+/* vertical line connecting markers */
+.fig-tl-event::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 16px;
+  bottom: -2px;
+  width: 2px;
+  background: var(--border);
+}
+.fig-tl-event:last-child::before { display: none; }
+
+/* marker */
+.fig-tl-marker {
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 2px solid var(--fg-subtle);
+  z-index: 1;
+}
+/* past: filled circle */
+.fig-tl-status-past .fig-tl-marker {
+  background: var(--fg-subtle);
+  border-color: var(--fg-subtle);
+}
+/* now: double-ring filled, animated pulse */
+.fig-tl-status-now .fig-tl-marker {
+  background: var(--accent);
+  border: 3px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  width: 18px;
+  height: 18px;
+  left: 1px;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 50%, transparent);
+  animation: tl-pulse 2s ease-out infinite;
+}
+.fig-tl-status-now.fig-tone-success .fig-tl-marker { background: var(--fig-tone-success); border-color: color-mix(in srgb, var(--fig-tone-success) 40%, transparent); }
+.fig-tl-status-now.fig-tone-warning .fig-tl-marker { background: var(--fig-tone-warning); border-color: color-mix(in srgb, var(--fig-tone-warning) 40%, transparent); }
+.fig-tl-status-now.fig-tone-danger  .fig-tl-marker { background: var(--fig-tone-danger);  border-color: color-mix(in srgb, var(--fig-tone-danger)  40%, transparent); }
+.fig-tl-status-now.fig-tone-info    .fig-tl-marker { background: var(--fig-tone-info);    border-color: color-mix(in srgb, var(--fig-tone-info)    40%, transparent); }
+@keyframes tl-pulse {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 50%, transparent); }
+  70%  { box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+/* upcoming: hollow circle */
+.fig-tl-status-upcoming .fig-tl-marker {
+  background: var(--bg-elevated);
+  border: 2px dashed var(--fg-subtle);
+}
+
+.fig-tl-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+.fig-tl-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-variant-numeric: tabular-nums;
+}
+.fig-tl-when {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--fg-subtle);
+  text-transform: uppercase;
+}
+.fig-tl-status-now .fig-tl-when { color: var(--accent); }
+.fig-tl-status-now.fig-tone-success .fig-tl-when { color: var(--fig-tone-success); }
+.fig-tl-status-upcoming .fig-tl-when {
+  color: var(--fg-subtle);
+  font-style: italic;
+}
+.fig-tl-now-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--accent);
+}
+
+.fig-tl-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.4;
+  word-break: break-word;
+}
+.fig-tl-status-upcoming .fig-tl-label {
+  color: var(--fg-muted);
+  font-weight: 600;
+}
+
+.fig-tl-desc {
+  margin: 4px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--fg-muted);
+  word-break: break-word;
+}

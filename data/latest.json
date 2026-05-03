@@ -37,7 +37,60 @@
             "total": 17
           },
           "tags": ["kimi", "open-weights", "coding", "moe", "moonshot-ai", "benchmark", "swe-bench"],
-          "lang": "en"
+          "lang": "en",
+          "figure": {
+            "type": "metric-bars",
+            "caption": "Kimi K2.6 主要ベンチマーク",
+            "alt": "Kimi K2.6 が複数のベンチマークでフロンティアモデルを上回る。実時間コーディング競技で 22pt 首位 (GPT-5.5: 16pt、Claude Opus 4.7: 12pt、Gemini Pro 3.1: 9pt)、SWE-Bench Pro 58.6 (GPT-5.4 xhigh: 57.7、Claude Opus 4.6: 53.4 を上回る)、総パラメータ 1T (アクティブ 32B)、Agent Swarm では最大 300 並行サブエージェント対応。",
+            "data": {
+              "headline": "Kimi K2.6: 主要ベンチマークでフロンティア 3 モデルを上回り SoTA を獲得",
+              "scale": { "max_label": "各ベンチ最高値=100%", "unit": "" },
+              "bars": [
+                {
+                  "icon": "🏆",
+                  "label": "コーディング競技 (Word Gem Puzzle)",
+                  "value": "22 pt",
+                  "pct": 100,
+                  "baseline_pct": 72.7,
+                  "baseline_label": "GPT-5.5",
+                  "delta": "+6pt vs GPT-5.5",
+                  "tone": "primary",
+                  "note": "Claude Opus 4.7: 12pt、Gemini Pro 3.1: 9pt も上回る"
+                },
+                {
+                  "icon": "🐛",
+                  "label": "SWE-Bench Pro",
+                  "value": "58.6",
+                  "pct": 58.6,
+                  "baseline_pct": 57.7,
+                  "baseline_label": "GPT-5.4",
+                  "delta": "+0.9 vs GPT-5.4",
+                  "tone": "success",
+                  "note": "Claude Opus 4.6: 53.4 も上回る"
+                },
+                {
+                  "icon": "📦",
+                  "label": "総パラメータ",
+                  "value": "1T",
+                  "pct": 100,
+                  "delta": "MoE 384 expert",
+                  "tone": "default",
+                  "note": "アクティブ 32B / トークン (8 選択 + 1 共有)"
+                },
+                {
+                  "icon": "👥",
+                  "label": "Agent Swarm 並行数",
+                  "value": "300",
+                  "pct": 100,
+                  "delta": "4,000 調整ステップ",
+                  "tone": "info",
+                  "note": "長期タスクの自律処理能力が大幅向上"
+                }
+              ],
+              "narrative": "中国 Moonshot AI のオープンウェイトモデルがフロンティアモデルを実時間コーディング競技で初めて上回った。Hugging Face で公開済みのため誰でも自己ホスト可能で、オープンソース AI のフロンティア到達を象徴する成果。",
+              "impact": "オープンウェイトでフロンティア性能が手に入る時代に到達。自己ホストでコーディングエージェントを構築する選択肢が現実的になり、API ロックインを回避した内製化が一気に視野に入る。"
+            }
+          }
         },
         {
           "id": "2026-05-03-002",
@@ -62,7 +115,76 @@
             "total": 16
           },
           "tags": ["nvidia", "nemotron", "multimodal", "omni", "moe", "open-source"],
-          "lang": "en"
+          "lang": "en",
+          "figure": {
+            "type": "comparison",
+            "caption": "他 Omni vs Nemotron 3 Nano Omni",
+            "alt": "他のオープン Omni モデル平均と NVIDIA Nemotron 3 Nano Omni の比較。推論スループットは最大 9 倍、対応モダリティは 7 種統合 (テキスト・画像・音声・映像・文書・チャート・GUI)、6 リーダーボードでトップ獲得、コンテキスト長 256K、配布チャネルは HF + NVIDIA NIM + 25+ パートナー対応で即日利用可能。",
+            "data": {
+              "headline": "Nemotron 3 Nano Omni: 同クラス比 9x スループット、6 リーダーボードでトップ",
+              "before": { "label": "他オープン Omni モデル", "sublabel": "従来の平均的水準" },
+              "after":  { "label": "Nemotron 3 Nano Omni", "sublabel": "30B-A3B ハイブリッド MoE" },
+              "metrics": [
+                {
+                  "icon": "⚡",
+                  "label": "推論スループット",
+                  "before": "1x (基準)",
+                  "after": "最大 9x",
+                  "before_pct": 11,
+                  "after_pct": 100,
+                  "delta": "9 倍",
+                  "delta_tone": "success",
+                  "note": "Conv3D・EVS による効率化"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "対応モダリティ",
+                  "before": "テキスト+画像中心",
+                  "after": "テキスト+画像+音声+映像+文書+チャート+GUI",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "統合 7 モダリティ",
+                  "delta_tone": "success",
+                  "note": "単一モデルで全処理"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "リーダーボード上位",
+                  "before": "個別タスクで強み",
+                  "after": "6 ボードでトップ",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "6 ボード制覇",
+                  "delta_tone": "success",
+                  "note": "ドキュメント+オーディオビジュアル理解"
+                },
+                {
+                  "icon": "📜",
+                  "label": "コンテキスト長",
+                  "before": "32K-128K",
+                  "after": "256K",
+                  "before_pct": 50,
+                  "after_pct": 100,
+                  "delta": "+128K",
+                  "delta_tone": "success",
+                  "note": "長文・長動画の処理が可能"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "配布チャネル",
+                  "before": "HF のみが多い",
+                  "after": "HF + NIM + 25+ パートナー",
+                  "before_pct": 25,
+                  "after_pct": 100,
+                  "delta": "即日 25+",
+                  "delta_tone": "info",
+                  "note": "OpenRouter / build.nvidia.com 等"
+                }
+              ],
+              "narrative": "オープン Omni モデルは個別タスクで強みを持つものが増えていたが、推論コスト・モダリティ統合・配布チャネルの 3 軸で課題が残っていた。NVIDIA は自社ハードウェア最適化と MoE アーキテクチャでこれを同時解決した。",
+              "impact": "1 モデルで音声・映像・文書を統合処理できる効率性により、マルチモーダル AI エージェントの本番投入コストが大幅に下がる。25+ パートナー対応で導入経路の選択肢も一気に広がる。"
+            }
+          }
         }
       ]
     },
@@ -94,7 +216,51 @@
             "total": 15
           },
           "tags": ["mistral", "mistral-medium", "agent", "coding", "vibe", "128b"],
-          "lang": "en"
+          "lang": "en",
+          "figure": {
+            "type": "summary-card",
+            "caption": "Mistral Medium 3.5 + Vibe",
+            "alt": "Mistral AI が 128B パラメータの Medium 3.5 を発表し、コーディング IDE Vibe にリモートエージェント機能を統合、Le Chat に Work モードを追加。HF 公開後 1 日以内に 9,490 ダウンロード。モデル単体ではなくプロダクト統合まで一括投入する戦略で、エージェント連携可能な OSS スタックの選択肢が広がる。",
+            "data": {
+              "headline": "Mistral Medium 3.5 (128B): IDE 連携リモートエージェント + Work モードを同時投入",
+              "tldr": "Mistral AI が 128B モデル Medium 3.5 を HuggingFace で公開し、コーディング IDE「Vibe」にリモートエージェント機能、Le Chat に Work モードを統合。モデル単体ではなくプロダクト統合まで一括で出した点が新しい。",
+              "points": [
+                {
+                  "icon": "🐍",
+                  "label": "モデル",
+                  "value": "128B パラメータ",
+                  "note": "mistralai/Mistral-Medium-3.5-128B",
+                  "description": "HuggingFace で重み公開。フロンティア領域に位置するクラスのモデルがオープンウェイトで提供される。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🛠️",
+                  "label": "IDE 統合",
+                  "value": "Vibe + Remote Agent",
+                  "note": "非同期バックグラウンド処理",
+                  "description": "IDE から離れずに複雑なコーディングタスクをエージェントに委任、結果を IDE 上で受け取る設計。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "Le Chat Work モード",
+                  "value": "複数ステップ自律処理",
+                  "description": "ChatGPT-like UI でも複雑な複数ステップタスクを自律的に処理可能になり、API なしでもエージェント体験が完結する。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📈",
+                  "label": "初動 DL",
+                  "value": "9,490",
+                  "note": "HF 公開後 1 日以内",
+                  "description": "公開直後から急速にダウンロードされ、コミュニティの注目度の高さを示す。",
+                  "tone": "default"
+                }
+              ],
+              "context": "Mistral は欧州拠点のオープンモデル提供者として位置付けが強まる中、モデル + IDE + チャットを統合提供する戦略でエコシステム化を加速。",
+              "impact": "OSS スタックでエージェント連携可能なコーディング基盤を組みたい開発者に新たな選択肢が生まれる。Vibe IDE をプロト基盤に採用すれば API ロックインを回避できる。"
+            }
+          }
         },
         {
           "id": "2026-05-03-004",
@@ -119,7 +285,51 @@
             "total": 14
           },
           "tags": ["anthropic", "claude", "mcp", "creative", "adobe", "blender", "connectors"],
-          "lang": "en"
+          "lang": "en",
+          "figure": {
+            "type": "summary-card",
+            "caption": "Claude Creative MCP 連携",
+            "alt": "Anthropic が Claude にクリエイティブ用途向け 9 つの MCP コネクタを追加。Adobe Creative Cloud の 50+ ツール、Blender、Autodesk Fusion、SketchUp、Splice、Ableton、Resolume を自然言語で直接制御可能。Claude Code がアプリ向けスクリプトを生成、Claude Design は Canva 連携。MCP 準拠のため他 LLM からも利用できる。",
+            "data": {
+              "headline": "Claude Creative: Adobe・Blender 等 9 MCP コネクタで本業ツールを直接制御",
+              "tldr": "Anthropic が MCP ベースの 9 コネクタを公開し、Adobe Creative Cloud (50+ ツール)・Blender・Autodesk Fusion・SketchUp・Splice・Ableton・Resolume を Claude から自然言語で操作できるようにした。Claude Code はアプリ向けスクリプトも自動生成。",
+              "points": [
+                {
+                  "icon": "🎨",
+                  "label": "コネクタ数",
+                  "value": "9 種類",
+                  "note": "Adobe / Blender / Fusion / SketchUp / Splice / Ableton / Resolume 等",
+                  "description": "クリエイティブ作業で使われる主要アプリを横断カバー。Adobe だけで 50+ ツールに対応する。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "Claude Code 連携",
+                  "value": "スクリプト生成",
+                  "description": "クリエイティブアプリ向けプラグイン・ジェネレーティブシステム・バッチ処理スクリプトを自動生成。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "Claude Design",
+                  "value": "Canva エクスポート",
+                  "note": "Anthropic Labs から提供",
+                  "description": "Claude が生成したビジュアルを Canva に直接エクスポートできる連携。仕上げ工程が短縮される。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "互換性",
+                  "value": "MCP 準拠",
+                  "note": "他 LLM からも利用可能",
+                  "description": "Anthropic 独自仕様ではなく MCP 標準なので、Claude 以外の MCP クライアントからも同じコネクタを呼び出せる。",
+                  "tone": "default"
+                }
+              ],
+              "context": "MCP は 2025 年から Anthropic が標準化を進めるツール連携プロトコル。今回はクリエイティブ業界の主要アプリ群を一気にカバーすることで MCP の生態系を本業ツール領域に拡大する戦略。",
+              "impact": "Photoshop・Blender などの本業ツールを AI で操作する経路が標準化される。デザイナー / クリエイター個人レベルで AI 連携ワークフローを構築する敷居が大幅に下がる。"
+            }
+          }
         }
       ]
     },
