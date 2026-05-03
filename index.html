@@ -61,6 +61,17 @@
       <p id="summary-text" class="summary-text"></p>
     </section>
 
+    <section id="toc" class="toc hidden" aria-label="本日の目次">
+      <button id="toc-toggle" class="toc-toggle" aria-expanded="true" aria-controls="toc-body" type="button">
+        <span class="toc-title-wrap">
+          <span class="toc-title-label">目次</span>
+          <span id="toc-count" class="toc-count"></span>
+        </span>
+        <span class="toc-chevron" aria-hidden="true">▾</span>
+      </button>
+      <nav id="toc-body" class="toc-body"></nav>
+    </section>
+
     <section id="categories" class="categories" aria-label="カテゴリ別ニュース"></section>
 
     <div id="update-banner" class="update-banner hidden" role="status">
@@ -75,24 +86,35 @@
   </footer>
 
   <template id="card-template">
-    <article class="card" data-item-id="">
-      <header class="card-header">
-        <h3 class="card-title"></h3>
-        <p class="card-title-ja"></p>
-      </header>
-      <div class="card-meta">
-        <span class="card-source"></span>
-        <span class="card-date"></span>
-        <span class="card-score" title="スコア (重要度/深度/実用性/鮮度)"></span>
-      </div>
-      <p class="card-summary"></p>
-      <ul class="card-key-points"></ul>
-      <div class="card-tags"></div>
-      <div class="card-actions">
-        <a class="card-link" target="_blank" rel="noopener">元記事を開く →</a>
-        <button class="card-share icon-button" type="button" aria-label="共有">
-          <span aria-hidden="true">↗</span>
-        </button>
+    <article class="card" data-item-id="" data-expanded="false">
+      <button class="card-toggle" type="button" aria-expanded="false">
+        <div class="card-toggle-main">
+          <header class="card-header">
+            <h3 class="card-title"></h3>
+            <p class="card-title-ja"></p>
+          </header>
+          <div class="card-meta">
+            <span class="card-source"></span>
+            <span class="card-date"></span>
+            <span class="card-score" title="スコア (重要度/深度/実用性/鮮度)"></span>
+          </div>
+        </div>
+        <span class="card-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="card-body">
+        <p class="card-summary"></p>
+        <figure class="card-figure" hidden>
+          <div class="figure-body" aria-hidden="true"></div>
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <ul class="card-key-points"></ul>
+        <div class="card-tags"></div>
+        <div class="card-actions">
+          <a class="card-link" target="_blank" rel="noopener">元記事を開く →</a>
+          <button class="card-share icon-button" type="button" aria-label="共有">
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
       </div>
     </article>
   </template>

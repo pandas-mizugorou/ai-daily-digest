@@ -1,5 +1,5 @@
 // AI Daily Digest — service worker
-const VERSION = "v1";
+const VERSION = "v2";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

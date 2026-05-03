@@ -20,7 +20,7 @@
     },
     "summary_ja": {
       "type": "string",
-      "description": "その日の総括 (2-3 行)"
+      "description": "その日の総括 (3-4 行)"
     },
     "stats": {
       "type": "object",
@@ -77,11 +77,17 @@
           "type": "string",
           "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
         },
-        "summary_ja": { "type": "string" },
+        "summary_ja": {
+          "type": "string",
+          "minLength": 250,
+          "description": "350-500 字 / 4-6 文の日本語要約。元記事を読まなくても内容が完結するレベル: (1) 主役と何が起きたか (2) 具体的な数字と条件 (3) 背景・位置付け (4) 読者への影響"
+        },
         "key_points_ja": {
           "type": "array",
-          "items": { "type": "string" },
-          "maxItems": 5
+          "items": { "type": "string", "minLength": 30 },
+          "minItems": 3,
+          "maxItems": 6,
+          "description": "各項目は 50-120 字、具体的な数字 + 固有名詞 + 結論を含む完結文。単なる事実列挙ではなく、何が新しいか / どう使えるかまで触れる"
         },
         "scores": {
           "type": "object",
@@ -101,6 +107,111 @@
         "lang": {
           "type": "string",
           "enum": ["en", "ja", "other"]
+        },
+        "figure": {
+          "$ref": "#/$defs/figure",
+          "description": "オプション。図だけで記事の核心が分かる情報リッチな1枚絵 (summary-card)。記事に具体的な事実が乏しい場合は省略"
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "required": ["type", "alt", "data"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["summary-card"],
+          "description": "P0: summary-card のみ。headline + tldr + 3-6 points + context + impact の 5 セクション構造で、図だけで記事の内容が完結して理解できる"
+        },
+        "caption": {
+          "type": "string",
+          "maxLength": 30,
+          "description": "図解の主題 (図の見出し)。任意"
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 60,
+          "maxLength": 280,
+          "description": "図解の内容を文章化したスクリーンリーダー用テキスト (60-280字)。headline / tldr / 全 points / context / impact が文章として読める形で"
+        },
+        "data": {
+          "$ref": "#/$defs/figureDataSummaryCard"
+        }
+      }
+    },
+    "figureDataSummaryCard": {
+      "type": "object",
+      "required": ["headline", "tldr", "points"],
+      "additionalProperties": false,
+      "properties": {
+        "headline": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 80,
+          "description": "記事の核心を 1 行に圧縮した見出し (20-80字)。主役 + 何が起きたか + 主要数字。例: 'Claude Opus 5: 推論性能 1.4倍 + 長文 1M tokens、価格据え置き'"
+        },
+        "tldr": {
+          "type": "string",
+          "minLength": 60,
+          "maxLength": 180,
+          "description": "3 行で内容を把握できる要約 (60-180字 / 2-3 文)。headline で書ききれなかった主要事実を補完。記事を 10 秒で理解させるための短文"
+        },
+        "points": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["label", "value"],
+            "additionalProperties": false,
+            "properties": {
+              "icon": {
+                "type": "string",
+                "maxLength": 4,
+                "description": "アイコン絵文字 1-2 字 (例: 📈 ⚡ 💰 📜 🔧 🎯 🌐 ✅ ⚠️ 📊). label の意味に合わせて選ぶ。任意"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 12,
+                "description": "観点ラベル (短く。例: '性能' '価格' 'コンテキスト')"
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 36,
+                "description": "中心となる値 / 結論 (数字や短い結論)。例: 'MMLU 94.4' '据え置き' '1M tokens'"
+              },
+              "note": {
+                "type": "string",
+                "maxLength": 50,
+                "description": "value の補足・差分・条件 (例: '前世代 +12pt' '$15/1M output' '200K → 1M (5倍)')"
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 160,
+                "description": "ポイントの詳細説明 (40-160字)。なぜそうなったか / 何ができるようになるか / 具体例。1-2 文。元記事を読まなくても理解できる粒度"
+              },
+              "tone": {
+                "type": "string",
+                "enum": ["default", "primary", "success", "warning", "danger", "info"],
+                "default": "default",
+                "description": "意味カラー: 増加/GA = success、警告 = warning、撤退/廃止 = danger、情報 = info、強調 = primary"
+              }
+            }
+          }
+        },
+        "context": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "背景・業界文脈・位置付け (60-200字)。なぜ今このニュースが重要か / どんな流れの中の発表か / 競合との関係。任意 (推奨)"
+        },
+        "impact": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 160,
+          "description": "読者にとっての意味 / 何が変わるか / どう使えるか (30-160字)。「で、結局どう活かせるの？」に答える 1-2 文。任意 (強く推奨)"
         }
       }
     }

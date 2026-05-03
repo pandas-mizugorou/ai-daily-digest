@@ -10,6 +10,10 @@ const els = {
   summaryStats: document.getElementById("summary-stats"),
   summaryHeadline: document.getElementById("summary-headline"),
   summaryText: document.getElementById("summary-text"),
+  toc: document.getElementById("toc"),
+  tocToggle: document.getElementById("toc-toggle"),
+  tocBody: document.getElementById("toc-body"),
+  tocCount: document.getElementById("toc-count"),
   categories: document.getElementById("categories"),
   dateSelect: document.getElementById("date-select"),
   prevDate: document.getElementById("prev-date"),
@@ -20,6 +24,14 @@ const els = {
   reloadButton: document.getElementById("reload-button"),
   cardTpl: document.getElementById("card-template"),
   categoryTpl: document.getElementById("category-template"),
+};
+
+const CATEGORY_ICONS = {
+  new_models: "🆕",
+  tools: "🔧",
+  research: "📚",
+  industry: "🌐",
+  japan: "🇯🇵",
 };
 
 let availableDates = [];
@@ -132,9 +144,144 @@ function scoreClass(total) {
   return "low";
 }
 
+// === Figure rendering ===
+const FIGURE_TONES = ["default", "primary", "success", "warning", "danger", "info"];
+
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
+
+function safeTone(t) {
+  return FIGURE_TONES.includes(t) ? t : "default";
+}
+
+function renderSummaryCard(d) {
+  const wrap = document.createElement("div");
+  wrap.className = "fig-summary";
+
+  const headline = (d.headline ?? "").trim();
+  if (headline) {
+    const h = document.createElement("div");
+    h.className = "fig-summary-headline";
+    h.textContent = headline;
+    wrap.appendChild(h);
+  }
+
+  const tldr = (d.tldr ?? "").trim();
+  if (tldr) {
+    const t = document.createElement("div");
+    t.className = "fig-summary-tldr";
+    t.innerHTML = `<span class="fig-section-label">TL;DR</span><p class="fig-tldr-text">${escapeHtml(tldr)}</p>`;
+    wrap.appendChild(t);
+  }
+
+  const points = Array.isArray(d.points) ? d.points.slice(0, 6) : [];
+  if (points.length) {
+    const detailsWrap = document.createElement("div");
+    detailsWrap.className = "fig-summary-details";
+    const lbl = document.createElement("span");
+    lbl.className = "fig-section-label";
+    lbl.textContent = "詳細";
+    detailsWrap.appendChild(lbl);
+
+    const list = document.createElement("ul");
+    list.className = "fig-summary-points";
+    for (const p of points) {
+      const li = document.createElement("li");
+      li.className = `fig-summary-point fig-tone-${safeTone(p.tone)}`;
+      const icon = p.icon
+        ? `<span class="fig-point-icon" aria-hidden="true">${escapeHtml(p.icon)}</span>`
+        : `<span class="fig-point-icon fig-point-icon-empty" aria-hidden="true"></span>`;
+      const note = p.note ? `<span class="fig-point-note">${escapeHtml(p.note)}</span>` : "";
+      const description = p.description ? `<p class="fig-point-description">${escapeHtml(p.description)}</p>` : "";
+      li.innerHTML = `
+        ${icon}
+        <div class="fig-point-body">
+          <div class="fig-point-headline">
+            <span class="fig-point-label">${escapeHtml(p.label ?? "")}</span>
+            <span class="fig-point-value">${escapeHtml(p.value ?? "")}</span>
+          </div>
+          ${note}
+          ${description}
+        </div>`;
+      list.appendChild(li);
+    }
+    detailsWrap.appendChild(list);
+    wrap.appendChild(detailsWrap);
+  }
+
+  const context = (d.context ?? "").trim();
+  if (context) {
+    const c = document.createElement("div");
+    c.className = "fig-summary-context";
+    c.innerHTML = `<span class="fig-section-label">背景</span><p class="fig-context-text">${escapeHtml(context)}</p>`;
+    wrap.appendChild(c);
+  }
+
+  const impact = (d.impact ?? "").trim();
+  if (impact) {
+    const im = document.createElement("div");
+    im.className = "fig-summary-impact";
+    im.innerHTML = `<span class="fig-section-label fig-section-label-impact">影響</span><p class="fig-impact-text">${escapeHtml(impact)}</p>`;
+    wrap.appendChild(im);
+  }
+
+  return wrap;
+}
+
+const FIGURE_RENDERERS = {
+  "summary-card": renderSummaryCard,
+};
+
+function renderFigure(figure, mountEl) {
+  if (!figure || !figure.type) return false;
+  const renderer = FIGURE_RENDERERS[figure.type];
+  if (!renderer) return false;
+  const body = mountEl.querySelector(".figure-body");
+  const caption = mountEl.querySelector(".figure-caption");
+  if (!body || !caption) return false;
+  try {
+    body.replaceChildren(renderer(figure.data || {}));
+    caption.textContent = figure.caption || "";
+    if (!figure.caption) caption.classList.add("hidden");
+    else caption.classList.remove("hidden");
+    mountEl.setAttribute("aria-label", figure.alt || figure.caption || "図解");
+    mountEl.dataset.figureType = figure.type;
+    mountEl.removeAttribute("hidden");
+    return true;
+  } catch (err) {
+    console.warn("figure render failed", figure.type, err);
+    return false;
+  }
+}
+
+function articleAnchorId(itemId) {
+  return `article-${(itemId || "").replace(/[^\w\-]/g, "")}`;
+}
+
+function expandCard(card) {
+  if (!card || card.dataset.expanded === "true") return;
+  card.dataset.expanded = "true";
+  const toggle = card.querySelector(".card-toggle");
+  if (toggle) toggle.setAttribute("aria-expanded", "true");
+}
+
+function collapseCard(card) {
+  if (!card || card.dataset.expanded === "false") return;
+  card.dataset.expanded = "false";
+  const toggle = card.querySelector(".card-toggle");
+  if (toggle) toggle.setAttribute("aria-expanded", "false");
+}
+
 function renderCard(item) {
   const node = els.cardTpl.content.firstElementChild.cloneNode(true);
   node.dataset.itemId = item.id || "";
+  node.dataset.expanded = "false";
+  if (item.id) node.id = articleAnchorId(item.id);
+  const toggle = node.querySelector(".card-toggle");
+  if (toggle) toggle.setAttribute("aria-expanded", "false");
   node.querySelector(".card-title").textContent = item.title || "(無題)";
   const titleJa = node.querySelector(".card-title-ja");
   if (item.title_ja && item.title_ja !== item.title) {
@@ -152,6 +299,9 @@ function renderCard(item) {
     : "";
 
   node.querySelector(".card-summary").textContent = item.summary_ja || "";
+
+  const figEl = node.querySelector(".card-figure");
+  if (item.figure && figEl) renderFigure(item.figure, figEl);
 
   const ul = node.querySelector(".card-key-points");
   if (Array.isArray(item.key_points_ja)) {
@@ -193,6 +343,69 @@ function renderCard(item) {
   return node;
 }
 
+function renderTOC(categories) {
+  if (!els.toc || !els.tocBody) return;
+  els.tocBody.replaceChildren();
+
+  const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
+  if (!populated.length) {
+    els.toc.classList.add("hidden");
+    return;
+  }
+
+  let total = 0;
+  for (const cat of populated) {
+    const group = document.createElement("div");
+    group.className = "toc-group";
+    const icon = CATEGORY_ICONS[cat.id] || "•";
+    const label = cat.label_ja || cat.id;
+    group.innerHTML = `
+      <div class="toc-group-header">
+        <span class="toc-group-icon" aria-hidden="true">${escapeHtml(icon)}</span>
+        <span class="toc-group-label">${escapeHtml(label)}</span>
+        <span class="toc-group-count">${cat.items.length}件</span>
+      </div>`;
+
+    const list = document.createElement("ol");
+    list.className = "toc-list";
+    for (const item of cat.items) {
+      total += 1;
+      const li = document.createElement("li");
+      li.className = "toc-item";
+      const anchor = articleAnchorId(item.id);
+      const title = item.title_ja || item.title || "(無題)";
+      const source = item.source_label || item.source || "";
+      const score = item.scores?.total != null ? `★${item.scores.total}` : "";
+      li.innerHTML = `
+        <a class="toc-link" href="#${escapeHtml(anchor)}" data-anchor="${escapeHtml(anchor)}">
+          <span class="toc-link-title">${escapeHtml(title)}</span>
+          <span class="toc-link-meta">
+            ${source ? `<span class="toc-link-source">${escapeHtml(source)}</span>` : ""}
+            ${score ? `<span class="toc-link-score">${escapeHtml(score)}</span>` : ""}
+          </span>
+        </a>`;
+      list.appendChild(li);
+    }
+    group.appendChild(list);
+    els.tocBody.appendChild(group);
+  }
+
+  els.tocCount.textContent = total ? `${total} 件` : "";
+  els.toc.classList.remove("hidden");
+}
+
+function scrollToAnchor(anchor) {
+  if (!anchor) return;
+  const target = document.getElementById(anchor);
+  if (!target) return;
+  if (target.classList.contains("card")) expandCard(target);
+  requestAnimationFrame(() => {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    target.classList.add("toc-highlight");
+    setTimeout(() => target.classList.remove("toc-highlight"), 1500);
+  });
+}
+
 function renderCategory(category) {
   const node = els.categoryTpl.content.firstElementChild.cloneNode(true);
   node.querySelector(".category-title").textContent =
@@ -222,8 +435,10 @@ function renderDay(data) {
   const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
   if (populated.length === 0) {
     showStatus("この日のニュースはまだありません");
+    if (els.toc) els.toc.classList.add("hidden");
     return;
   }
+  renderTOC(populated);
   for (const category of populated) {
     els.categories.appendChild(renderCategory(category));
   }
@@ -274,6 +489,38 @@ async function route() {
 }
 
 window.addEventListener("hashchange", route);
+
+// === TOC interactions ===
+if (els.tocBody) {
+  els.tocBody.addEventListener("click", (e) => {
+    const link = e.target.closest("a.toc-link");
+    if (!link) return;
+    const anchor = link.dataset.anchor;
+    if (!anchor) return;
+    e.preventDefault();
+    scrollToAnchor(anchor);
+  });
+}
+if (els.tocToggle) {
+  els.tocToggle.addEventListener("click", () => {
+    const expanded = els.tocToggle.getAttribute("aria-expanded") === "true";
+    els.tocToggle.setAttribute("aria-expanded", String(!expanded));
+    els.toc.classList.toggle("toc-collapsed", expanded);
+  });
+}
+
+// === Card open/close (event delegation on categories container) ===
+if (els.categories) {
+  els.categories.addEventListener("click", (e) => {
+    const toggle = e.target.closest(".card-toggle");
+    if (!toggle) return;
+    const card = toggle.closest(".card");
+    if (!card) return;
+    const expanded = card.dataset.expanded === "true";
+    if (expanded) collapseCard(card);
+    else expandCard(card);
+  });
+}
 
 els.dateSelect.addEventListener("change", (e) => {
   if (e.target.value) location.hash = `#${e.target.value}`;
