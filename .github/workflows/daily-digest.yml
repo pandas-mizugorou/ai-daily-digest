@@ -1,0 +1,99 @@
+name: AI Daily Digest
+
+on:
+  schedule:
+    # JST 5:00 = UTC 20:00 (前日)
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: "ターゲット日付 (YYYY-MM-DD, 省略時は今日 JST)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    name: Generate and publish daily digest
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Compute target date (JST)
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            DATE="${{ github.event.inputs.target_date }}"
+          else
+            DATE=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          fi
+          echo "value=$DATE" >> "$GITHUB_OUTPUT"
+          echo "Target date: $DATE"
+
+      - name: Run /ai-daily-digest skill via Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            あなたは「ai-daily-digest」スキルとして動作します。
+            リポジトリ内の `.claude/skills/ai-daily-digest/SKILL.md` と `references/`、`assets/` を読み込み、
+            その指示に従って **${{ steps.date.outputs.value }}** 分のニュースダイジェストを生成してください。
+
+            ## タスク
+            1. SKILL.md の Step 1〜9 を実行（Step 10 の git commit/push は後続ジョブで行うので**スキップ**）
+            2. WebFetch / WebSearch でニュース収集（並列バッチ。`references/sources.md` 参照）
+            3. 4 軸スコアリング（重要度 / 技術深度 / 実用性 / 鮮度、各 5 点）。基準は `references/scoring.md`
+            4. カテゴリ分け（new_models / tools / research / industry / japan）し、合計 5-7 件選定。配分の上限を守ること
+            5. 上位選定分のみ日本語要約 (`title_ja`, `summary_ja`, `key_points_ja`) を生成
+            6. 出力ファイル:
+               - `data/${{ steps.date.outputs.value }}.json` を新規作成 / 上書き
+               - `data/latest.json` を当日と同内容で上書き
+               - `data/index.json` の `entries` 先頭を当日エントリで更新（既存なら置換、無ければ追加）。直近 90 件まで保持
+            7. 一部 WebFetch / WebSearch が失敗しても 3 件以上選定できれば書き込みを続行（失敗ソースは `skipped_sources` に記録）
+            8. 0 件しか取れなかった場合は `data/_errors/${{ steps.date.outputs.value }}.json` にエラーレポートを出力して終了
+
+            ## 注意
+            - **git コマンドは一切実行しない**。ファイル書き込みのみ
+            - 既存の `data/2026-05-03.json` (サンプル) が当日と一致した場合は上書き OK
+            - ファイルパスは必ずリポジトリルート相対 (`data/...`) を使う
+            - 出力 JSON は `assets/digest-schema.json` を満たすこと
+          claude_args: |
+            --max-turns 60
+            --model claude-sonnet-4-6
+
+      - name: Commit and push changes
+        run: |
+          set -e
+          git config user.name "ai-daily-digest-bot"
+          git config user.email "ai-daily-digest-bot@users.noreply.github.com"
+
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "No data changes detected; nothing to commit."
+            exit 0
+          fi
+
+          # Count selected items if today's file exists
+          DATE="${{ steps.date.outputs.value }}"
+          COUNT="?"
+          if [ -f "data/${DATE}.json" ]; then
+            COUNT=$(jq '[.categories[].items // [] | length] | add' "data/${DATE}.json" 2>/dev/null || echo "?")
+          fi
+
+          git add data/
+          git commit -m "daily digest: ${DATE} (${COUNT} items)"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "::notice title=Public URL::https://pandas-mizugorou.github.io/ai-daily-digest/#${{ steps.date.outputs.value }}"
