@@ -46,7 +46,9 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            あなたは「ai-daily-digest」スキルとして動作します。
+            あなたは「ai-daily-digest」スキルとして動作し、**実際にファイルを書き込む**必要があります。
+            計画・要約・シミュレーションだけで終わらず、Write / Edit ツールでリポジトリにファイルを生成してください。
+
             リポジトリ内の `.claude/skills/ai-daily-digest/SKILL.md` と `references/`、`assets/` を読み込み、
             その指示に従って **${{ steps.date.outputs.value }}** 分のニュースダイジェストを生成してください。
 
@@ -69,8 +71,10 @@ jobs:
             - ファイルパスは必ずリポジトリルート相対 (`data/...`) を使う
             - 出力 JSON は `assets/digest-schema.json` を満たすこと
           claude_args: |
-            --max-turns 60
+            --max-turns 80
             --model claude-sonnet-4-6
+            --permission-mode bypassPermissions
+            --allowed-tools Read,Write,Edit,Glob,Grep,Bash,WebFetch,WebSearch
 
       - name: Commit and push changes
         run: |
