@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-03T05:00:00+09:00",
+  "updated_at": "2026-05-04T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-04",
+      "headline": "DeepSeek V4 Pro がオープンウェイトで GPT-5.4 超コーディング性能を 7 倍安価に提供、Harvard ER 試験では OpenAI o1 が医師診断を上回る",
+      "item_count": 6
+    },
     {
       "date": "2026-05-03",
       "headline": "オープンウェイト 1T パラメータ Kimi K2.6 がコーディング競技で GPT-5.5・Claude を超え、オープンソース AI のフロンティア到達を証明",
