@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+node_modules/
+
+# Local-only working files
+data/_seen.json
+data/_drafts/

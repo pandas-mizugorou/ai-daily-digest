@@ -1,0 +1,105 @@
+# AI Daily Digest
+
+押さえるべき AI / 生成 AI ニュースを毎朝 5:00 JST に自動収集して GitHub Pages へ配信するダイジェストサイト。
+
+- 静的サイト（HTML + CSS + JS のみ。ビルド不要）
+- スマホファースト + レスポンシブ + PWA（ホーム画面追加・オフライン閲覧対応）
+- データ更新は Anthropic ホストの routine（[`/schedule`](https://docs.claude.com/en/docs/claude-code/scheduled-tasks)）から `git push` で自動反映
+- スキル本体は [`~/.claude/skills/ai-daily-digest/`](file://~/.claude/skills/ai-daily-digest/) に配置
+
+## 公開 URL
+
+GitHub Pages を有効化すると以下で公開される（`<USER>` は GitHub ユーザー名）。
+
+```
+https://<USER>.github.io/ai-daily-digest/
+```
+
+## ディレクトリ構成
+
+```
+ai-daily-digest/
+├── index.html              # 骨格（PWA メタタグ・テンプレート）
+├── manifest.webmanifest    # PWA マニフェスト
+├── service-worker.js       # オフラインキャッシュ
+├── offline.html            # オフライン時のフォールバック
+├── assets/
+│   ├── app.js              # JSON fetch + カード描画
+│   ├── styles.css          # スマホファースト + ダークモード
+│   ├── favicon.svg
+│   └── icons/              # 192 / 512 / maskable / apple-touch
+└── data/
+    ├── index.json          # 過去日付一覧
+    ├── latest.json         # 最新日（CDN キャッシュ回避用）
+    ├── 2026-05-03.json     # 日次データ本体
+    └── archive/            # 90 日超のロールオーバー先
+```
+
+## ローカル動作確認
+
+ファイルを `file://` で直接開くと CORS で fetch が失敗する。簡易 HTTP サーバーを使う:
+
+```powershell
+# Python が入っていれば
+cd C:\dev\personal\ai-daily-digest
+python -m http.server 8000
+
+# または Node.js が入っていれば
+npx serve .
+```
+
+ブラウザで `http://localhost:8000/` を開く。
+
+## 初回セットアップ
+
+```powershell
+cd C:\dev\personal\ai-daily-digest
+git init
+git branch -M main
+git add .
+git commit -m "init: AI Daily Digest static site"
+
+# GitHub にパブリックリポジトリ ai-daily-digest を作ったあと:
+git remote add origin https://github.com/<USER>/ai-daily-digest.git
+git push -u origin main
+```
+
+GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main` / Folder: `/ (root)` を有効化。1〜2 分で公開される。
+
+## スマホからのアクセス
+
+公開 URL を以下のいずれかでスマホで開く。
+
+### iPhone（Chrome 利用者）
+
+ホーム画面に追加するときは **一度だけ Safari** で開く必要があります（iOS Chrome 単体では「ホーム画面に追加」が出ない仕様のため）。
+
+1. iPhone の **Safari** で公開 URL を開く
+2. 共有ボタン → 「ホーム画面に追加」
+3. 以後は Chrome / ホーム画面アイコンどちらから開いても OK
+
+### Android
+
+1. Chrome で公開 URL を開く
+2. インストールプロンプトが出たら追加 / または右上メニューから「アプリをインストール」
+
+### URL を渡す導線
+
+- Slack / Discord / メモアプリにブックマーク
+- PC で開いた URL を `Ctrl+L` → スマホへ AirDrop / 共有
+
+## 自動更新の仕組み
+
+`/schedule` で routine を登録すると、Anthropic ホスト側で毎朝 5:00 JST にスキルが起動し、本リポジトリへ `git push` する。Pages が自動でデプロイ。
+
+routine 登録手順は [`~/.claude/skills/ai-daily-digest/SKILL.md`](file://~/.claude/skills/ai-daily-digest/SKILL.md) を参照。
+
+## データスキーマ
+
+各日のデータは `data/<YYYY-MM-DD>.json`。
+
+- `categories[].id`: `new_models` / `tools` / `research` / `industry` / `japan`
+- `items[].scores`: `{ importance, depth, practicality, freshness, total }`（各 5 点・計 20 点）
+- `headline` / `summary_ja`: その日全体のヘッドラインと総括
+
+詳しくは [`~/.claude/skills/ai-daily-digest/assets/digest-schema.json`](file://~/.claude/skills/ai-daily-digest/assets/digest-schema.json)。

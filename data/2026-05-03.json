@@ -1,0 +1,135 @@
+{
+  "date": "2026-05-03",
+  "generated_at": "2026-05-03T05:00:00+09:00",
+  "headline": "（サンプルデータ）最初の自動実行までのプレースホルダ",
+  "summary_ja": "これは表示確認用のサンプルです。最初の routine 実行（毎朝 5 時 JST）が走ると、実際に収集された AI / 生成 AI のニュースに自動で置き換わります。レイアウト・配色・スコア表示の確認用としてお使いください。",
+  "stats": { "total_collected": 5, "after_dedup": 5, "selected": 5 },
+  "categories": [
+    {
+      "id": "new_models",
+      "label_ja": "新モデル・新発表",
+      "label_en": "New Models & Releases",
+      "items": [
+        {
+          "id": "2026-05-03-001",
+          "title": "Sample: Frontier lab releases new flagship reasoning model",
+          "title_ja": "サンプル: フロンティアラボが新フラッグシップ推論モデルを発表",
+          "url": "https://example.com/sample-1",
+          "source": "anthropic",
+          "source_label": "Anthropic Blog",
+          "published_at": "2026-05-03",
+          "summary_ja": "新世代モデルが発表されたという仮定のサンプル記事。コンテキスト長の拡張、推論精度の向上、ツール呼び出しレイテンシの削減を含む。",
+          "key_points_ja": [
+            "コンテキスト長が大幅に拡張",
+            "ツール呼び出しレイテンシが削減",
+            "API 価格は据え置き"
+          ],
+          "scores": { "importance": 5, "depth": 5, "practicality": 5, "freshness": 5, "total": 20 },
+          "tags": ["sample", "model-release"],
+          "lang": "en"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label_ja": "ツール・SDK",
+      "label_en": "Tools & SDKs",
+      "items": [
+        {
+          "id": "2026-05-03-002",
+          "title": "Sample: Open-source agent framework hits 1.0",
+          "title_ja": "サンプル: オープンソースのエージェントフレームワークが1.0到達",
+          "url": "https://example.com/sample-2",
+          "source": "github",
+          "source_label": "GitHub Trending",
+          "published_at": "2026-05-03",
+          "summary_ja": "OSS のエージェント基盤が 1.0 リリースを迎えたサンプル。ツール呼び出し・ステート管理・観測可能性が標準搭載されたという想定。",
+          "key_points_ja": [
+            "MCP プロトコルをネイティブサポート",
+            "OpenTelemetry によるトレース統合",
+            "Python / TypeScript SDK 同梱"
+          ],
+          "scores": { "importance": 4, "depth": 4, "practicality": 5, "freshness": 5, "total": 18 },
+          "tags": ["sample", "oss", "agent"],
+          "lang": "en"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "label_ja": "研究・論文",
+      "label_en": "Research & Papers",
+      "items": [
+        {
+          "id": "2026-05-03-003",
+          "title": "Sample: Long-context retrieval improves grounding by 30%",
+          "title_ja": "サンプル: 長文コンテキスト検索でグラウンディング精度30%向上",
+          "url": "https://example.com/sample-3",
+          "source": "arxiv",
+          "source_label": "arXiv (cs.CL)",
+          "published_at": "2026-05-03",
+          "summary_ja": "長文 RAG の評価ベンチマーク提案論文のサンプル。実装コードと再現実験スクリプトが GitHub に公開されている想定。",
+          "key_points_ja": [
+            "新ベンチマーク LongRAG-Bench を提案",
+            "公開実装あり、再現可能",
+            "既存手法との比較を多数収録"
+          ],
+          "scores": { "importance": 4, "depth": 5, "practicality": 4, "freshness": 5, "total": 18 },
+          "tags": ["sample", "rag", "benchmark"],
+          "lang": "en"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "label_ja": "業界動向",
+      "label_en": "Industry & Policy",
+      "items": [
+        {
+          "id": "2026-05-03-004",
+          "title": "Sample: Major cloud providers announce shared inference standard",
+          "title_ja": "サンプル: 大手クラウド3社が共通推論APIの規格を発表",
+          "url": "https://example.com/sample-4",
+          "source": "techcrunch",
+          "source_label": "Industry News",
+          "published_at": "2026-05-03",
+          "summary_ja": "クラウド3社が共通の推論API規格を策定したというサンプル。ベンダーロックイン回避とポータビリティ向上が見込まれる。",
+          "key_points_ja": [
+            "OpenAI 互換 + 拡張機能の共通仕様",
+            "監視・課金APIも標準化",
+            "今四半期から段階導入"
+          ],
+          "scores": { "importance": 4, "depth": 3, "practicality": 4, "freshness": 5, "total": 16 },
+          "tags": ["sample", "industry", "api"],
+          "lang": "en"
+        }
+      ]
+    },
+    {
+      "id": "japan",
+      "label_ja": "日本語ソース",
+      "label_en": "Japanese Sources",
+      "items": [
+        {
+          "id": "2026-05-03-005",
+          "title": "サンプル: Claude Code を業務に組み込んだ運用知見まとめ",
+          "title_ja": "サンプル: Claude Code を業務に組み込んだ運用知見まとめ",
+          "url": "https://example.com/sample-5",
+          "source": "qiita",
+          "source_label": "Qiita",
+          "published_at": "2026-05-03",
+          "summary_ja": "国内エンジニアが Claude Code を業務フローに組み込んだ知見記事のサンプル。スキル設計・hooks・MCP 連携が中心。",
+          "key_points_ja": [
+            "スキルを段階的に導入する手順",
+            "hooks による定型作業の自動化",
+            "MCP で社内ツールを接続"
+          ],
+          "scores": { "importance": 3, "depth": 4, "practicality": 5, "freshness": 5, "total": 17 },
+          "tags": ["sample", "japan", "claude-code"],
+          "lang": "ja"
+        }
+      ]
+    }
+  ],
+  "skipped_sources": []
+}
