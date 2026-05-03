@@ -77,10 +77,15 @@ jobs:
             --allowed-tools Read,Write,Edit,Glob,Grep,Bash,WebFetch,WebSearch
 
       - name: Commit and push changes
+        env:
+          GH_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
           git config user.name "ai-daily-digest-bot"
           git config user.email "ai-daily-digest-bot@users.noreply.github.com"
+
+          # Restore origin URL with workflow's GITHUB_TOKEN (claude-code-action may have overwritten with its own token)
+          git remote set-url origin "https://x-access-token:${GH_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           if [ -z "$(git status --porcelain data/)" ]; then
             echo "No data changes detected; nothing to commit."
@@ -96,7 +101,7 @@ jobs:
 
           git add data/
           git commit -m "daily digest: ${DATE} (${COUNT} items)"
-          git push
+          git push origin HEAD:main
 
       - name: Summary
         if: always()
