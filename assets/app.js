@@ -10,10 +10,6 @@ const els = {
   summaryStats: document.getElementById("summary-stats"),
   summaryHeadline: document.getElementById("summary-headline"),
   summaryText: document.getElementById("summary-text"),
-  toc: document.getElementById("toc"),
-  tocToggle: document.getElementById("toc-toggle"),
-  tocBody: document.getElementById("toc-body"),
-  tocCount: document.getElementById("toc-count"),
   categories: document.getElementById("categories"),
   dateSelect: document.getElementById("date-select"),
   prevDate: document.getElementById("prev-date"),
@@ -24,14 +20,6 @@ const els = {
   reloadButton: document.getElementById("reload-button"),
   cardTpl: document.getElementById("card-template"),
   categoryTpl: document.getElementById("category-template"),
-};
-
-const CATEGORY_ICONS = {
-  new_models: "🆕",
-  tools: "🔧",
-  research: "📚",
-  industry: "🌐",
-  japan: "🇯🇵",
 };
 
 let availableDates = [];
@@ -561,69 +549,6 @@ function renderCard(item) {
   return node;
 }
 
-function renderTOC(categories) {
-  if (!els.toc || !els.tocBody) return;
-  els.tocBody.replaceChildren();
-
-  const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
-  if (!populated.length) {
-    els.toc.classList.add("hidden");
-    return;
-  }
-
-  let total = 0;
-  for (const cat of populated) {
-    const group = document.createElement("div");
-    group.className = "toc-group";
-    const icon = CATEGORY_ICONS[cat.id] || "•";
-    const label = cat.label_ja || cat.id;
-    group.innerHTML = `
-      <div class="toc-group-header">
-        <span class="toc-group-icon" aria-hidden="true">${escapeHtml(icon)}</span>
-        <span class="toc-group-label">${escapeHtml(label)}</span>
-        <span class="toc-group-count">${cat.items.length}件</span>
-      </div>`;
-
-    const list = document.createElement("ol");
-    list.className = "toc-list";
-    for (const item of cat.items) {
-      total += 1;
-      const li = document.createElement("li");
-      li.className = "toc-item";
-      const anchor = articleAnchorId(item.id);
-      const title = item.title_ja || item.title || "(無題)";
-      const source = item.source_label || item.source || "";
-      const score = item.scores?.total != null ? `★${item.scores.total}` : "";
-      li.innerHTML = `
-        <a class="toc-link" href="#${escapeHtml(anchor)}" data-anchor="${escapeHtml(anchor)}">
-          <span class="toc-link-title">${escapeHtml(title)}</span>
-          <span class="toc-link-meta">
-            ${source ? `<span class="toc-link-source">${escapeHtml(source)}</span>` : ""}
-            ${score ? `<span class="toc-link-score">${escapeHtml(score)}</span>` : ""}
-          </span>
-        </a>`;
-      list.appendChild(li);
-    }
-    group.appendChild(list);
-    els.tocBody.appendChild(group);
-  }
-
-  els.tocCount.textContent = total ? `${total} 件` : "";
-  els.toc.classList.remove("hidden");
-}
-
-function scrollToAnchor(anchor) {
-  if (!anchor) return;
-  const target = document.getElementById(anchor);
-  if (!target) return;
-  if (target.classList.contains("card")) expandCard(target);
-  requestAnimationFrame(() => {
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-    target.classList.add("toc-highlight");
-    setTimeout(() => target.classList.remove("toc-highlight"), 1500);
-  });
-}
-
 function renderCategory(category) {
   const node = els.categoryTpl.content.firstElementChild.cloneNode(true);
   node.querySelector(".category-title").textContent =
@@ -653,10 +578,8 @@ function renderDay(data) {
   const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
   if (populated.length === 0) {
     showStatus("この日のニュースはまだありません");
-    if (els.toc) els.toc.classList.add("hidden");
     return;
   }
-  renderTOC(populated);
   for (const category of populated) {
     els.categories.appendChild(renderCategory(category));
   }
@@ -707,25 +630,6 @@ async function route() {
 }
 
 window.addEventListener("hashchange", route);
-
-// === TOC interactions ===
-if (els.tocBody) {
-  els.tocBody.addEventListener("click", (e) => {
-    const link = e.target.closest("a.toc-link");
-    if (!link) return;
-    const anchor = link.dataset.anchor;
-    if (!anchor) return;
-    e.preventDefault();
-    scrollToAnchor(anchor);
-  });
-}
-if (els.tocToggle) {
-  els.tocToggle.addEventListener("click", () => {
-    const expanded = els.tocToggle.getAttribute("aria-expanded") === "true";
-    els.tocToggle.setAttribute("aria-expanded", String(!expanded));
-    els.toc.classList.toggle("toc-collapsed", expanded);
-  });
-}
 
 // === Card open/close (event delegation on categories container) ===
 if (els.categories) {
