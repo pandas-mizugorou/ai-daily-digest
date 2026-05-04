@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-04T05:00:00+09:00",
+  "updated_at": "2026-05-05T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-05",
+      "headline": "NVIDIA の 9 倍高速マルチモーダル Nemotron 3 Nano Omni 公開と Microsoft Agent 365 GA で企業エージェント基盤が整備、Sakana AI×SMBC が国内初の本番マルチエージェント金融 AI を実用化",
+      "item_count": 7
+    },
     {
       "date": "2026-05-04",
       "headline": "DeepSeek V4 Pro がオープンウェイトで GPT-5.4 超コーディング性能を 7 倍安価に提供、Harvard ER 試験では OpenAI o1 が医師診断を上回る",
