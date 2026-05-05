@@ -235,5 +235,34 @@ figure は全記事で必須。ただし以下は**絶対禁止**:
 - summary_en だけで raw_excerpt が取れていない場合: summary_en + WebSearch 補強で 350 字以上を確保
 - 元記事が日本語ソース（Qiita / Zenn）の場合: title_ja = title、summary_ja は元記事から再構成 (350 字以上)
 - summary_ja が 250 字未満になった場合: 当該記事を選定から除外（密度不足）
-- figure 生成だけ失敗した場合: 要約を再生成して必ず figure を含める（figure 必須化により省略フォールバックは廃止）。それでも生成できない記事は選定対象から外す
+- figure 生成だけ失敗した場合: **機械フォールバック figure を必ず生成する**。既存の `title_ja` / `summary_ja` / `key_points_ja` から下記ルールで機械的に summary-card を組み立てる。**選定除外は絶対にしない**（重要記事を figure 失敗で落とすのは本末転倒）
 - 4 型のどれも適合しないが事実が豊富な場合: summary-card にフォールバック
+
+### 機械フォールバック figure の組み立て規則
+
+LLM が記事から構造化情報を抽出できなかった場合に限り、以下のテンプレで summary-card を必ず埋める。新しい事実は一切追加せず、既存フィールドの転記のみで完結させる:
+
+```jsonc
+{
+  "type": "summary-card",
+  "alt": "<title_ja を含めて 60 字以上の説明文。例: 『<title_ja> の概要を <source_label> から伝える要約カード。記事の主要ポイント N 個を整理した。』>",
+  "data": {
+    "headline": "<title_ja をそのまま (20-80 字に収まらない場合は末尾を省略記号で詰める)>",
+    "tldr": "<summary_ja の冒頭 2 文。60-180 字を超える場合は文単位でトリム>",
+    "points": [
+      // key_points_ja の各要素を 1 件ずつ変換、3-6 個
+      {
+        "label": "ポイント1",
+        "value": "<key_points_ja[i] の先頭 36 字以内 (記号除去)>",
+        "description": "<key_points_ja[i] の全文 160 字以内>",
+        "tone": "default"
+      }
+      // ... 同様に「ポイント2」「ポイント3」...
+    ],
+    "context": "<source_label + ' / ' + published_at>",
+    "impact": "<key_points_ja の末尾要素を 30-160 字でトリム、または省略>"
+  }
+}
+```
+
+このフォールバックは「視覚化は弱いが情報は保つ」設計。**通常時は専用 figure (comparison / metric-bars / timeline) を優先**し、フォールバックは最後の保険として位置付ける。
