@@ -65,7 +65,7 @@
   "$defs": {
     "item": {
       "type": "object",
-      "required": ["id", "title", "url", "source", "published_at", "summary_ja", "scores"],
+      "required": ["id", "title", "url", "source", "published_at", "summary_ja", "scores", "figure"],
       "properties": {
         "id": { "type": "string" },
         "title": { "type": "string" },
@@ -110,7 +110,7 @@
         },
         "figure": {
           "$ref": "#/$defs/figure",
-          "description": "オプション。図だけで記事の核心が直感的に分かる視覚図解。記事の性質に応じて 4 種から選ぶ: comparison (旧 vs 新比較) / metric-bars (横棒グラフ) / timeline (段階展開) / summary-card (汎用構造化)。記事に具体的な事実が乏しい場合は省略"
+          "description": "**必須**。図だけで記事の核心が直感的に分かる視覚図解。記事の性質に応じて 4 種から選ぶ: comparison (旧 vs 新比較) / metric-bars (横棒グラフ) / timeline (段階展開) / summary-card (汎用構造化)。具体的な数字が乏しい記事は summary-card にフォールバックして必ず生成 (記事内の事実のみ使用、創作禁止)"
         }
       }
     },
