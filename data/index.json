@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-05T05:00:00+09:00",
+  "updated_at": "2026-05-06T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-06",
+      "headline": "OpenAI が GPT-5.5 Instant を ChatGPT デフォルトへ昇格（AIME 81.2 点）、Anthropic が 10 種の金融エージェントと Microsoft 365 連携を公開、Chrome の Gemini Nano 無断インストールが HN 1,171pt の炎上に",
+      "item_count": 7
+    },
     {
       "date": "2026-05-05",
       "headline": "NVIDIA の 9 倍高速マルチモーダル Nemotron 3 Nano Omni 公開と Microsoft Agent 365 GA で企業エージェント基盤が整備、Sakana AI×SMBC が国内初の本番マルチエージェント金融 AI を実用化",
