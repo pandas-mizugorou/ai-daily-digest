@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-06T05:00:00+09:00",
+  "updated_at": "2026-05-07T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-07",
+      "headline": "Anthropic が SpaceX と 300MW・22 万 GPU 計算資源契約を締結し Claude Code 制限を即日 2 倍化、vLLM V1 が RL 前正確性保証の設計哲学を公開、日本ではエージェント認証・MCP ローカル活用・Boris Cherny 創作秘話がはてブ上位を席巻",
+      "item_count": 7
+    },
     {
       "date": "2026-05-06",
       "headline": "OpenAI が GPT-5.5 Instant を ChatGPT デフォルトへ昇格（AIME 81.2 点）、Anthropic が 10 種の金融エージェントと Microsoft 365 連携を公開、Chrome の Gemini Nano 無断インストールが HN 1,171pt の炎上に",
