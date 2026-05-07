@@ -634,6 +634,15 @@ window.addEventListener("hashchange", route);
 // === Card open/close (event delegation on categories container) ===
 if (els.categories) {
   els.categories.addEventListener("click", (e) => {
+    const collapseBtn = e.target.closest(".card-collapse-bottom");
+    if (collapseBtn) {
+      const card = collapseBtn.closest(".card");
+      if (!card) return;
+      collapseCard(card);
+      const cardTop = card.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: Math.max(cardTop, 0), behavior: "smooth" });
+      return;
+    }
     const toggle = e.target.closest(".card-toggle");
     if (!toggle) return;
     const card = toggle.closest(".card");

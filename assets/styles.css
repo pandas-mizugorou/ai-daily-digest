@@ -446,6 +446,38 @@ button { font: inherit; cursor: pointer; }
 }
 .card-share { margin-left: auto; }
 
+.card-collapse-bottom {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  min-height: var(--tap);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.card-collapse-bottom:hover {
+  background: var(--bg-soft);
+  color: var(--fg);
+  border-color: var(--fg-muted);
+}
+.card-collapse-bottom:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.card-collapse-bottom-icon {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
 /* === Footer === */
 .site-footer {
   max-width: var(--maxw);
