@@ -2,8 +2,11 @@ name: AI Daily Digest
 
 on:
   schedule:
-    # JST 5:00 = UTC 20:00 (前日)
-    - cron: "0 20 * * *"
+    # JST 02:13 = UTC 17:13 (前日)
+    # 「毎時 :00」は GitHub Actions のキューが大混雑するため :13 を採用。
+    # 02:13 JST 発火なら平常時は 02:20 前後、混雑時でも 03-04 時着で
+    # 朝起きたら更新済みを安定確保できる
+    - cron: "13 17 * * *"
   workflow_dispatch:
     inputs:
       target_date:
