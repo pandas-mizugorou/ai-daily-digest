@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-07T05:00:00+09:00",
+  "updated_at": "2026-05-08T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-08",
+      "headline": "Anthropic が Claude Managed Agents に「Dreams」でエージェント記憶自己改善を追加・Natural Language Autoencoders で内部推論を可視化、AWS MCP Server GA で AI エージェントの AWS 統制が本番化、日本では認知負債論考がはてブ 546 件",
+      "item_count": 7
+    },
     {
       "date": "2026-05-07",
       "headline": "Anthropic が SpaceX と 300MW・22 万 GPU 計算資源契約を締結し Claude Code 制限を即日 2 倍化、vLLM V1 が RL 前正確性保証の設計哲学を公開、日本ではエージェント認証・MCP ローカル活用・Boris Cherny 創作秘話がはてブ上位を席巻",
