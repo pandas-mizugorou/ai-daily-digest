@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-08T05:00:00+09:00",
+  "updated_at": "2026-05-09T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-09",
+      "headline": "Anthropic が Project Glasswing で Claude Mythos（CyberGym 83.1%）を AWS・Apple・Google ら 12 社連合に開放し基幹 OSS 防御へ、AlphaEvolve が量子回路エラー 10 倍削減など多分野の実測インパクトを公開、OpenAI は GPT-5.5-Cyber をサイバー防衛チームへ限定展開、日本では GW の Claude Code 学習ガイドがはてブ 1,003 件",
+      "item_count": 7
+    },
     {
       "date": "2026-05-08",
       "headline": "Anthropic が Claude Managed Agents に「Dreams」でエージェント記憶自己改善を追加・Natural Language Autoencoders で内部推論を可視化、AWS MCP Server GA で AI エージェントの AWS 統制が本番化、日本では認知負債論考がはてブ 546 件",
