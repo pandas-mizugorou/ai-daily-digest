@@ -1,6 +1,11 @@
 {
-  "updated_at": "2026-05-09T05:00:00+09:00",
+  "updated_at": "2026-05-10T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-10",
+      "headline": "Google I/O 2026 で Gemini 4・Veo 4・Deep Research Max が登場、Meta LlamaCon で Llama 4（405B マルチモーダル）と累計 10 億ダウンロード達成・安全ツール 3 種を公開、AI 支援型攻撃の実例が急増し「AI 攻防軍拡競争」が可視化、日本では AI が東大理Ⅲ入試で「首席合格」水準に到達",
+      "item_count": 7
+    },
     {
       "date": "2026-05-09",
       "headline": "Anthropic が Project Glasswing で Claude Mythos（CyberGym 83.1%）を AWS・Apple・Google ら 12 社連合に開放し基幹 OSS 防御へ、AlphaEvolve が量子回路エラー 10 倍削減など多分野の実測インパクトを公開、OpenAI は GPT-5.5-Cyber をサイバー防衛チームへ限定展開、日本では GW の Claude Code 学習ガイドがはてブ 1,003 件",
