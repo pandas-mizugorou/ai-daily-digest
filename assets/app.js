@@ -488,11 +488,27 @@ function renderCard(item) {
   if (item.id) node.id = articleAnchorId(item.id);
   const toggle = node.querySelector(".card-toggle");
   if (toggle) toggle.setAttribute("aria-expanded", "false");
-  node.querySelector(".card-title").textContent = item.title || "(無題)";
-  const titleJa = node.querySelector(".card-title-ja");
-  if (item.title_ja && item.title_ja !== item.title) {
-    titleJa.textContent = item.title_ja;
+  const titleEl = node.querySelector(".card-title");
+  const titleJaEl = node.querySelector(".card-title-ja");
+  const lang = (item.lang || "").toLowerCase();
+  const hasTitleJa = typeof item.title_ja === "string" && item.title_ja.trim().length > 0;
+  const titleEn = item.title || "";
+  const titleJa = hasTitleJa ? item.title_ja.trim() : "";
+
+  let primary = titleEn || "(無題)";
+  let secondary = "";
+
+  if (lang === "en") {
+    primary = hasTitleJa ? titleJa : (titleEn || "(無題)");
+  } else {
+    primary = titleEn || "(無題)";
+    if (hasTitleJa && titleJa !== titleEn) {
+      secondary = titleJa;
+    }
   }
+
+  titleEl.textContent = primary;
+  titleJaEl.textContent = secondary;
   const sourceLabel = item.source_label || item.source || "";
   node.querySelector(".card-source").textContent = sourceLabel;
   node.querySelector(".card-date").textContent = item.published_at || "";
