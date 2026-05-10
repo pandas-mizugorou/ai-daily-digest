@@ -13,6 +13,7 @@ const els = {
   topPicks: document.getElementById("top-picks"),
   categoryTabs: document.getElementById("category-tabs"),
   categories: document.getElementById("categories"),
+  weeklyLink: document.getElementById("weekly-link"),
   dateSelect: document.getElementById("date-select"),
   prevDate: document.getElementById("prev-date"),
   nextDate: document.getElementById("next-date"),
@@ -169,6 +170,41 @@ function buildItemIndex(categories) {
     }
   }
   return idx;
+}
+
+// === ISO 8601 week number from YYYY-MM-DD ===
+function isoWeekFromDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const date = new Date(Date.UTC(y, m - 1, d));
+  const dayNum = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  const weekNum = Math.ceil(((date - yearStart) / 86400000 + 1) / 7);
+  return `${date.getUTCFullYear()}-W${String(weekNum).padStart(2, "0")}`;
+}
+
+// === Weekly link visibility ===
+async function updateWeeklyLink(currentDate) {
+  if (!els.weeklyLink) return;
+  if (!currentDate) {
+    els.weeklyLink.classList.add("hidden");
+    return;
+  }
+  const week = isoWeekFromDate(currentDate);
+  els.weeklyLink.href = `./weekly/#${week}`;
+  // weekly-index.json を確認して該当週があれば表示
+  try {
+    const idx = await fetchJSON(`${DATA_DIR}/weekly-index.json`, { cache: "no-store" });
+    const has = (idx.entries || []).some((e) => e.week === week);
+    if (has) {
+      els.weeklyLink.classList.remove("hidden");
+    } else {
+      els.weeklyLink.classList.add("hidden");
+    }
+  } catch {
+    // weekly-index.json がまだ無いケース (Phase D 実行前) → 非表示
+    els.weeklyLink.classList.add("hidden");
+  }
 }
 
 function scoreClass(total) {
@@ -754,6 +790,7 @@ async function loadDay(date) {
     currentDate = data.date || date;
     renderDay(data);
     updateDateNav();
+    updateWeeklyLink(currentDate);
     document.title = `${formatDateJa(currentDate)} ・ AI Daily Digest`;
   } catch (err) {
     if (isLatest) {
@@ -762,6 +799,7 @@ async function loadDay(date) {
         currentDate = data.date || date;
         renderDay(data);
         updateDateNav();
+        updateWeeklyLink(currentDate);
         return;
       } catch (err2) {
         console.error(err2);

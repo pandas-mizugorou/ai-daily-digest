@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v6: Phase A — Top Picks + 10 categories + category tabs + lang=zh + new CSS
-const VERSION = "v6";
+// v7: Phase E — Weekly PWA page + weekly cache + weekly-link
+const VERSION = "v7";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -16,6 +16,10 @@ const STATIC_ASSETS = [
   "./assets/icons/icon-512.png",
   "./assets/icons/icon-maskable.png",
   "./assets/icons/apple-touch-icon.png",
+  // Weekly page (Phase E)
+  "./weekly/",
+  "./weekly/index.html",
+  "./weekly/app-weekly.js",
 ];
 
 self.addEventListener("install", (event) => {
@@ -48,8 +52,14 @@ function isLatestOrIndex(url) {
 function isDayJson(url) {
   return /\/data\/\d{4}-\d{2}-\d{2}\.json(\?|$)/.test(url);
 }
+function isWeeklyLatestOrIndex(url) {
+  return /\/data\/weekly-(latest|index)\.json(\?|$)/.test(url);
+}
+function isWeeklyJson(url) {
+  return /\/data\/weekly-\d{4}-W\d{2}\.json(\?|$)/.test(url);
+}
 function isStaticAsset(url) {
-  return /\/(index\.html|offline\.html|manifest\.webmanifest|assets\/.+)$/.test(url) || url.endsWith("/");
+  return /\/(index\.html|offline\.html|manifest\.webmanifest|assets\/.+|weekly\/(index\.html|app-weekly\.js))$/.test(url) || url.endsWith("/") || url.endsWith("/weekly/");
 }
 
 self.addEventListener("fetch", (event) => {
@@ -58,8 +68,8 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  // network-first for latest.json / index.json
-  if (isLatestOrIndex(url.pathname)) {
+  // network-first for latest.json / index.json / weekly-latest.json / weekly-index.json
+  if (isLatestOrIndex(url.pathname) || isWeeklyLatestOrIndex(url.pathname)) {
     event.respondWith(
       fetch(req)
         .then((res) => {
@@ -72,8 +82,8 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // cache-first for past day JSON
-  if (isDayJson(url.pathname)) {
+  // cache-first for past day JSON / past weekly JSON
+  if (isDayJson(url.pathname) || isWeeklyJson(url.pathname)) {
     event.respondWith(
       caches.match(req).then(
         (cached) =>
