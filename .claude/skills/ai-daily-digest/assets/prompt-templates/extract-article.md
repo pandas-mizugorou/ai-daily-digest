@@ -168,7 +168,61 @@ WebSearch クエリ: site:x.com OR site:twitter.com "Claude" OR "GPT" OR "Llama"
 
 ### バッチ 7: 中華圏
 
-詳細は Phase C のセクションを参照（バッチ 7 の中文要約は `summarize-ja.md` で zh→ja 変換指示を追加）。標準テンプレートで title / url / published_at / summary_en (中文または英語) を抽出する。中文記事は `lang: "zh"` を必ず付与。
+**36Kr AI / 量子位 (中文)**: WebFetch (HTML) で抽出。プロンプト:
+
+```
+このページは中国の AI / 大模型関連メディアの記事一覧 (中文 HTML)。直近 5 件以下の記事を抽出してください。
+
+各記事について JSON で:
+- title (string): 記事原題 (中文のまま)
+- url (string): 絶対 URL
+- published_at (string, "YYYY-MM-DD"): 発布日 (中文の "X天前" は当日基準で換算: 1天前 = 昨日 / 2天前 = 一昨日)
+- summary_en (string): 記事冒頭の中文要約 2-3 文 (中文のまま、翻訳不要)
+- author (string): 作者名 (中文)
+- lang: "zh"
+
+判定ルール:
+- 大模型 / LLM / 生成式 AI / Agent / 多模态 を主題とする記事のみ
+- ECサイトのプレスリリース転載・広告色の強い記事は除外
+- 中国 AI 企業 (DeepSeek / Alibaba Qwen / Zhipu / Moonshot Kimi / Baichuan / 01.AI / 智谱 / 月之暗面) の発表は優先
+
+出力 JSON 配列のみ
+```
+
+**機器之心 Synced (英語版 RSS)**: 標準テンプレートと同じ。`lang: "en"` で取得。記事内容が中華系 AI（Qwen / DeepSeek / Tsinghua / Peking 等）の言及があれば `tags` に "china" を追加。
+
+**ChinAI Newsletter (Substack RSS)**: バッチ 5 の Substack 用テンプレートと同じ。`lang: "en"`。
+
+**HF daily-papers (中華系著者抽出)**: WebFetch でトップページから論文リストを取得。著者所属 (affiliation) を確認:
+
+```
+GET https://huggingface.co/papers
+
+各論文について以下を抽出し、affiliation に "Tsinghua" / "Peking" / "Shanghai AI Lab" / "DeepSeek" / "Alibaba" / "Baidu" / "Tencent" / "ByteDance" / "Zhipu" / "Moonshot" / "Qwen" / "01.AI" のいずれかが含まれる論文のみフィルタ:
+
+- title: 論文タイトル (英語)
+- url: HF papers ページ URL
+- published_at: 発表日
+- summary_en: アブストラクト先頭 2-3 文
+- authors: 著者一覧 (上位 3 名)
+- affiliations: 所属機関一覧
+- lang: "en"
+- tags: ["china", ...] を必ず含める
+```
+
+**Zhihu**: WebSearch 経由で:
+
+```
+WebSearch クエリ: site:zhihu.com 大模型 OR LLM 2026
+
+検索結果上位 5 件から:
+- title: スレッドタイトル (中文)
+- url: Zhihu URL
+- summary_en: 検索スニペット (中文または英語)
+- lang: "zh"
+
+本文取得は試みない (log-in 必須のため)。タイトル + URL + スニペットでカードリンク化。
+```
 
 ## 失敗時の WebSearch フォールバック
 
