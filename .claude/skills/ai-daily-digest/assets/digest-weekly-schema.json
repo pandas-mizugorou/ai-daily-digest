@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Daily Digest weekly summary file",
+  "description": "週次サマリの JSON スキーマ。金曜の routine 実行時に追加生成される。Phase D 以降",
+  "type": "object",
+  "required": ["week", "from", "to", "generated_at", "top_10", "week_items_index"],
+  "properties": {
+    "week": {
+      "type": "string",
+      "pattern": "^\\d{4}-W\\d{2}$",
+      "description": "ISO 8601 週番号 (例: 2026-W19)"
+    },
+    "from": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "週開始日 (土曜)"
+    },
+    "to": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "週終了日 (金曜)"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "生成時刻 (金曜朝)"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "headline": {
+      "type": "string",
+      "description": "今週のヘッドライン (1 文)"
+    },
+    "summary_ja": {
+      "type": "string",
+      "minLength": 250,
+      "description": "今週の総括 (300-500 字)"
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "total_collected_week": { "type": "integer", "minimum": 0 },
+        "after_dedup": { "type": "integer", "minimum": 0 },
+        "selected_items": { "type": "integer", "minimum": 0, "description": "過去 7 日間の picks + 全カテゴリ合計" },
+        "top_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "top_10": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 12,
+      "description": "今週のトップニュース 5-12 件 (categories と独立にスコア降順で選定、必読性重視)",
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "papers_5": {
+      "type": "array",
+      "maxItems": 7,
+      "description": "今週の論文 (research_papers から最大 7 本)",
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "models_3": {
+      "type": "array",
+      "maxItems": 5,
+      "description": "今週の注目モデル (new_models から importance 順で最大 5 つ)",
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "community_buzz_3": {
+      "type": "array",
+      "maxItems": 5,
+      "description": "今週のコミュニティ反響 (community_buzz / reaction_signal が大きい 3-5 件)",
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "japan_3": {
+      "type": "array",
+      "maxItems": 5,
+      "description": "今週の日本ソース 3-5 件",
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "china_3": {
+      "type": "array",
+      "maxItems": 5,
+      "description": "今週の中華圏ソース 3-5 件 (あれば)",
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "keyword_cloud": {
+      "type": "array",
+      "description": "今週の頻出タグ + 前週比 delta",
+      "items": {
+        "type": "object",
+        "required": ["keyword", "count"],
+        "properties": {
+          "keyword": { "type": "string" },
+          "count": { "type": "integer", "minimum": 1 },
+          "delta_vs_prev_week": { "type": "integer", "description": "前週比 (新規キーワードは count と同値)" }
+        }
+      }
+    },
+    "watchlist_next_week": {
+      "type": "array",
+      "maxItems": 8,
+      "description": "来週の watch list (item.summary_ja 内の予定 / upcoming / next week キーワードから抽出)",
+      "items": {
+        "type": "object",
+        "required": ["topic", "reason"],
+        "properties": {
+          "topic": { "type": "string", "description": "watch 対象のトピック" },
+          "reason": { "type": "string", "description": "watch する理由 (どの記事から来ているか含む)" },
+          "watch_until": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "source_item_id": { "type": "string", "description": "抽出元 item.id (任意)" }
+        }
+      }
+    },
+    "week_items_index": {
+      "type": "array",
+      "description": "過去 7 日の全 item を id 参照で持つ (本文は data/<date>.json から fetch)",
+      "items": {
+        "type": "object",
+        "required": ["id", "date"],
+        "properties": {
+          "id": { "type": "string" },
+          "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "category": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "itemRef": {
+      "type": "object",
+      "required": ["id", "date"],
+      "properties": {
+        "id": { "type": "string", "description": "data/<date>.json 内の item.id" },
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "rank": { "type": "integer", "minimum": 1 },
+        "reason": { "type": "string", "description": "選定理由 (デバッグ用)" },
+        "category": { "type": "string", "description": "元カテゴリ ID (任意、フロント表示の補助)" }
+      }
+    }
+  }
+}

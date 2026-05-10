@@ -165,6 +165,69 @@ Content-Type: application/json
 - 段階化ペナルティ（last_seen_count=1 で -1、=2 で -2、=3+ で -3）が反映されているか scoring ステップでログ出力
 - リポジトリ管理に切り替わっているか（`.gitignore` から `data/_seen.json` を削除済か）確認
 
+## 週次サマリ（金曜のみ）の書き込みルール
+
+`/ai-daily-digest` Phase D 以降。詳細は `references/weekly.md` 参照。
+
+### 書き込み対象ファイル
+
+```
+data/weekly-YYYY-WW.json     # 当週の本体 (例: weekly-2026-W19.json)
+data/weekly-latest.json      # 最新週の複製
+data/weekly-index.json       # 過去週一覧
+```
+
+`weekly-YYYY-WW` の `WW` は ISO 8601 週番号（2 桁、ゼロ埋め）。
+
+### weekly-index.json のスキーマ
+
+```jsonc
+{
+  "updated_at": "<ISO8601>",
+  "entries": [
+    { "week": "2026-W19", "from": "2026-05-04", "to": "2026-05-10", "headline": "...", "top_count": 10, "selected_items": 50 },
+    { "week": "2026-W18", "from": "2026-04-27", "to": "2026-05-03", "headline": "...", "top_count": 10, "selected_items": 48 }
+  ]
+}
+```
+
+- 当週エントリがあれば更新、なければ先頭に追加
+- 過去 52 週まで保持（1 年）
+
+### 週次の commit & push
+
+日次の commit & push 完了後、別 commit として:
+
+```powershell
+git add data/weekly-*.json data/weekly-latest.json data/weekly-index.json
+git commit -m "weekly digest: 2026-W19 (top 10)"
+git push origin main
+```
+
+デイリーと週次を別 commit にする理由:
+- デプロイのトリガーが分離される（Pages の build 履歴がきれい）
+- 週次失敗時にデイリーが影響を受けない
+- 週次の re-run を `git revert` 1 発でできる
+
+### 失敗時のエラーレポート
+
+週次生成失敗時は:
+
+```jsonc
+// data/_errors/weekly-2026-W19.json
+{
+  "week": "2026-W19",
+  "from": "2026-05-04",
+  "to": "2026-05-10",
+  "generated_at": "...",
+  "error_type": "insufficient_data | aggregation_failed | prompt_error",
+  "details": "...",
+  "available_dates": ["2026-05-08", "2026-05-09", "2026-05-10"]  // 3 日未満なら insufficient_data
+}
+```
+
+このエラーレポートも別 commit で push し、GitHub 上で可視化する。
+
 ## 失敗時のエラーレポート
 
 選定 0 件の場合や push 失敗の場合、`data/_errors/<YYYY-MM-DD>.json` を生成して push し、GitHub 上でエラーが見られるようにする:

@@ -206,20 +206,30 @@ git push origin main
 - スコア分布: Top Picks の平均スコア / 全選定の平均スコア
 - 失敗ソース: `skipped_sources` の中身
 
-### Step 11: 週次サマリ生成（金曜のみ、Phase D）
+### Step 11: 週次サマリ生成（金曜のみ）
 
-`today.weekday() == 4` (Friday in JST、`TZ=Asia/Tokyo` で計算) のときのみ、日次の push 完了後に追加実行:
+`today.weekday() == 4` (Friday in JST、`TZ=Asia/Tokyo` で計算) のときのみ、日次の push 完了後に追加実行する。詳細仕様は `references/weekly.md` および `assets/prompt-templates/weekly-summary.md` 参照。
 
-1. `data/<YYYY-MM-DD>.json` の直近 7 日分を読む（金曜から遡って 7 日 = 過去の土〜金）
-2. 全 `categories[].items[]` をマージ・URL 重複排除
-3. `top_10` / `papers_5` / `models_3` / `community_buzz_3` / `japan_3` / `china_3` を選定
-4. `keyword_cloud`（`tags` 出現頻度 + 前週比 `delta_vs_prev_week`）を集計
-5. `watchlist_next_week` を抽出（item.summary_ja 内の「予定 / upcoming / next week」キーワードから 3-5 件）
-6. `headline` / `summary_ja` を生成（過去 7 日の総括）
-7. `data/weekly-YYYY-WW.json` / `data/weekly-latest.json` / `data/weekly-index.json` を書き込み（ISO 週番号、例: `weekly-2026-W19.json`）
-8. 通知に「週次サマリ URL: `https://<USER>.github.io/ai-daily-digest/weekly/#YYYY-WW`」を追加
+**`--no-weekly` 引数で金曜でもスキップ可能。`--weekly-only` で週次のみ再生成可能（その場合 Step 1-10 を skip）。**
 
-詳細は `references/weekly.md` および `assets/digest-weekly-schema.json` を参照（Phase D で追加）。週次失敗時もデイリー push は完了させる **独立処理** として実装する。
+1. **入力読み込み**: `data/<YYYY-MM-DD>.json` の直近 7 日分（金曜から遡って 7 日 = 過去の土〜金）を読む。ISO 週番号 `YYYY-WW` を計算
+2. **前週データ読み込み**: `data/weekly-latest.json` を読み（前週比 delta 計算用、無ければ null）
+3. **統合 + 重複排除**: 全 `categories[].items[]` をマージ、URL 完全一致 / タイトル類似度 0.8 以上で同一視
+4. **top_10 選定**: 全日の `top_picks[]` を最大 7 件まで取り込み + スコア順補充（同一 source 2 件まで、カテゴリ多様性保証）。5-12 件で確定
+5. **カテゴリ別選定**: `papers_5` (research_papers / academic、最大 7) / `models_3` (new_models、最大 5) / `community_buzz_3` / `japan_3` / `china_3` を選定（各最大 5）
+6. **keyword_cloud 集計**: 全 items の `tags[]` を集計、上位 20 個、`prev_week_data` と比較して `delta_vs_prev_week` を算出
+7. **watchlist_next_week 抽出**: `summary_ja` / `key_points_ja` から「予定 / 今後 / 近日 / Q2-Q4 2026 / upcoming / next week / expected / rumored / 公開予定」キーワードを正規表現抽出。固有名詞（モデル名・企業名）を `topic` に、3-8 件
+8. **headline / summary_ja 生成**: 週全体の総括を 300-500 字で（リード + 詳細 + 業界文脈 + 来週への含意）
+9. **書き込み**: `data/weekly-YYYY-WW.json` / `data/weekly-latest.json` / `data/weekly-index.json` を更新
+10. **commit & push**: `git add data/weekly-*.json data/weekly-latest.json data/weekly-index.json && git commit -m "weekly digest: YYYY-WW (top N)" && git push origin main`
+11. **通知**: 「週次サマリ URL: `https://<USER>.github.io/ai-daily-digest/weekly/#YYYY-WW`」を追加
+
+**失敗時の振る舞い**:
+- 週次生成失敗 → デイリー push は完了済み、`data/_errors/weekly-YYYY-WW.json` を別 commit で push
+- 過去 7 日のうち 3 日未満しかデータが無い → 週次生成をスキップ
+- top_10 が 5 件未満 → 5 件未満で出力（無理に埋めない）
+
+週次は **独立処理** として実装し、Step 1-10 のデイリー処理が完了してから別の git commit で push する（デイリーと週次のデプロイを分離）。
 
 ## 引数
 
