@@ -19,11 +19,21 @@
 読者は原則として元記事を開かない。summary_ja + key_points_ja + figure の 3 点だけで、記事の内容を**正確かつ完全に**理解できる必要がある。**情報量を確保**しつつ**視覚化で直感性を担保**する。
 
 【入力】
-- title: <記事タイトル>
+- title: <記事タイトル (英語 / 日本語 / 中文)>
 - source: <ソース名>
-- summary_en: <英語要約>
-- raw_excerpt: <記事本文の冒頭 2500 字>
+- source_type: <official | media | academic | community | china | japan_corp | japan_community | aggregator>
+- lang: <en | ja | zh | other>
+- summary_en: <英語要約 (記事言語が中文の場合は中文要約)>
+- raw_excerpt: <記事本文の冒頭 2500 字 (中文記事はそのまま中文)>
 - url: <URL>
+- figure_type_hint: <事前ヒューリスティック判定の推奨型 (summary-card / comparison / metric-bars / timeline)。参考扱い、最終判断は記事内容で>
+- reaction_signal: <任意。コミュニティ反響シグナル>
+
+【lang 別の取り扱い】
+- lang == "en": 既存ロジック (summary_en + raw_excerpt をベースに日本語化)
+- lang == "ja": title はそのまま (title_ja は意訳が必要なら付ける、不要なら原題と同じ)、summary_ja は元記事から再構成
+- lang == "zh": **中文記事を日本語に意訳**。title_ja は中文タイトルから「一目で内容が分かる日本語見出し」を生成 (直訳厳禁)。summary_ja は中文の raw_excerpt を日本語要約。**固有名詞・モデル名は英語表記を保持** (Qwen / DeepSeek / Kimi / Baichuan / Zhipu / 01.AI 等は中文表記でなく英語表記)。中文の人名・機関名は中文のまま (例: 阿里巴巴 / 北京大学)
+- lang == "other": title_ja を必ず生成、summary_ja で原文の主要事実を日本語化
 
 【出力 JSON】
 {
@@ -88,7 +98,15 @@
 | timeline | ロードマップ・段階展開 | 縦タイムライン |
 | summary-card | 上記 3 型に当てはまらない場合 | 5 セクション構造化 |
 
-# 型選択フロー
+# 型選択フロー (figure_type_hint があれば最優先で参考にする)
+
+入力に `figure_type_hint` がある場合、それを第一候補として扱い、記事内容との整合を確認してから採用または変更する。
+
+  figure_type_hint がある？
+    YES → ヒントの型が記事内容に合うか確認
+            合う → ヒント採用
+            合わない → 下記フロー実行
+    NO  → 下記フロー実行
 
   「旧 vs 新」「A 社 vs B 社」のような対比構造はあるか？
     YES → comparison
@@ -99,6 +117,8 @@
                     NO  → summary-card
 
 判断基準: **同じ記事を summary-card でも書ける場合、視覚化が強い 3 型 (comparison / metric-bars / timeline) を優先する**。直感性を優先するため。
+
+`figure_type_hint` の生成ルールは `references/scoring.md` の「figure 型の事前ヒューリスティック判定」を参照（タイトルにベンチマーク数値が複数 → metric-bars / vs・前後 → comparison / ロードマップ → timeline / その他 → summary-card）。
 
 **数字が乏しい記事 (分析・主張・解説系) の取り扱い**:
 - 必ず summary-card を使い、figure を生成する
@@ -252,6 +272,7 @@ figure は全記事で必須。ただし以下は**絶対禁止**:
 
 - summary_en だけで raw_excerpt が取れていない場合: summary_en + WebSearch 補強で 350 字以上を確保
 - 元記事が日本語ソース（Qiita / Zenn）の場合: title_ja = title、summary_ja は元記事から再構成 (350 字以上)
+- 元記事が中文ソース (lang == "zh") の場合: 中文の raw_excerpt をベースに日本語化、固有名詞 (Qwen / DeepSeek 等) は英語表記で保持
 - summary_ja が 250 字未満になった場合: 当該記事を選定から除外（密度不足）
 - figure 生成だけ失敗した場合: **機械フォールバック figure を必ず生成する**。既存の `title_ja` / `summary_ja` / `key_points_ja` から下記ルールで機械的に summary-card を組み立てる。**選定除外は絶対にしない**（重要記事を figure 失敗で落とすのは本末転倒）
 - 4 型のどれも適合しないが事実が豊富な場合: summary-card にフォールバック

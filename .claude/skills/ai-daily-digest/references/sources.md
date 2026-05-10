@@ -1,8 +1,19 @@
 # 巡回ソース一覧
 
-並列実行は最大 10 並列（1 メッセージ内の WebFetch tool call の上限）。
+並列実行は最大 10 並列（1 メッセージ内の WebFetch tool call の上限）。バッチ単位で独立メッセージで投げ、間に 1-2 秒の待機を入れてレート制限を回避する。
 
-## バッチ 1: 公式ブログ（英語・10 並列 WebFetch）
+## ソース別動的時間窓（time_window_hours）
+
+各ソースには `time_window_hours` が付与されている。Step 5 のフィルタで時間窓外を `_excluded: outside_time_window` で除外する。詳細は `references/scoring.md` の「freshness（鮮度）」章を参照。
+
+| ソースタイプ | 時間窓 |
+|---|---|
+| 公式・速報・GitHub Trending・TechCrunch 系 | 24h |
+| HN / Wired / VentureBeat 拡張 / MIT Tech Review / 日本コミュニティ / Reddit / X | 48h |
+| arXiv / HF Models / 日本企業ブログ / Stratechery / 学術プラットフォーム / 中華圏 | 168h (7d) |
+| OpenReview / Sebastian Raschka | 336h (14d) |
+
+## バッチ 1: 公式ブログ（英語・10 並列 WebFetch、source_type: official、time_window_hours: 24）
 
 | ベンダー | URL | プロンプト | フォールバック |
 |---|---|---|---|
@@ -19,9 +30,9 @@
 
 **プロンプトテンプレート**は `assets/prompt-templates/extract-article.md`。
 
-## バッチ 2: アグリゲータ・論文・リポジトリ
+## バッチ 2: アグリゲータ・論文・リポジトリ（source_type: aggregator/academic）
 
-### Hacker News（Algolia API、5 クエリ並列）
+### Hacker News（Algolia API、5 クエリ並列、source_type: aggregator、time_window_hours: 48）
 
 `https://hn.algolia.com/api/v1/search?tags=front_page&numericFilters=created_at_i>{24h前のepoch},points>=50&query={QUERY}`
 
@@ -34,7 +45,7 @@
 
 レスポンス JSON から `hits[].title / url / created_at / points / objectID` を抽出。
 
-### arXiv API
+### arXiv API（source_type: academic、time_window_hours: 168）
 
 ```
 http://export.arxiv.org/api/query?search_query=cat:cs.CL+OR+cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=20
@@ -42,7 +53,7 @@ http://export.arxiv.org/api/query?search_query=cat:cs.CL+OR+cat:cs.AI+OR+cat:cs.
 
 WebFetch でレスポンス（Atom XML）を取得し、Entry の title / summary / link を抽出。論文は通常 100 件以上ヒットするため、`scoring.md` の論文判定基準（ベンチマーク・新手法・公開実装あり）でフィルタ。
 
-### Hugging Face Trending
+### Hugging Face Trending（source_type: aggregator、time_window_hours: 168）
 
 | URL | 用途 |
 |---|---|
@@ -50,7 +61,7 @@ WebFetch でレスポンス（Atom XML）を取得し、Entry の title / summar
 | `https://huggingface.co/datasets?sort=trending` | 直近トレンドのデータセット |
 | `https://huggingface.co/spaces?sort=trending` | デモ Space |
 
-### GitHub Trending
+### GitHub Trending（source_type: aggregator、time_window_hours: 24）
 
 ```
 https://github.com/trending?since=daily
@@ -58,7 +69,7 @@ https://github.com/trending?since=daily
 
 WebFetch で取得し、リポジトリ名・説明・スター数を抽出。`topic:llm topic:ai` キーワードでフィルタ。
 
-## バッチ 3-A: 日本企業テックブログ（並列 8 WebFetch）
+## バッチ 3-A: 日本企業テックブログ（並列 8 WebFetch、source_type: japan_corp、time_window_hours: 168）
 
 日本のAI実装最前線。投稿頻度は週〜月ペースだが、技術深度が高く実装ノウハウが詰まっている。
 
@@ -75,7 +86,7 @@ WebFetch で取得し、リポジトリ名・説明・スター数を抽出。`t
 
 **選定基準**: タイトルや抽出文に「LLM」「生成AI」「Agent」「RAG」「Claude」「GPT」「Anthropic」「OpenAI」「fine-tuning」「ベクトル検索」「マルチモーダル」のキーワードがあるものを優先。
 
-## バッチ 3-B: 日本語コミュニティ・反響軸（並列 6-8）
+## バッチ 3-B: 日本語コミュニティ・反響軸（並列 6-8、source_type: japan_community、time_window_hours: 48）
 
 ### はてなブックマーク（**反響軸の主役**）
 
@@ -133,26 +144,106 @@ https://www.itmedia.co.jp/aiplus/
 
 トップページから新着記事を抽出（メディア記事として残置）。
 
+## バッチ 4: 海外解説メディア（並列 8 WebFetch、source_type: media、time_window_hours: ソース別）
+
+公式ブログだけでは拾えない業界文脈・規制・買収・戦略解説を補完する。RSS を第一手段、HTML パースをフォールバック。同一トピックで公式ブログと重複したら公式優先。
+
+| ソース | URL | フェッチ方式 | 時間窓 | カテゴリ寄り | 優先度 |
+|---|---|---|---|---|---|
+| TechCrunch AI | `https://techcrunch.com/category/artificial-intelligence/feed/` (RSS) → HTML `https://techcrunch.com/category/artificial-intelligence/` | RSS / WebFetch | 24h | industry_business / new_models | 高 |
+| The Verge AI | `https://www.theverge.com/rss/ai-artificial-intelligence/index.xml` (RSS) → HTML `https://www.theverge.com/ai-artificial-intelligence` | RSS / WebFetch | 24h | industry_business / regulation_policy | 高 |
+| VentureBeat AI | `https://venturebeat.com/category/ai/feed/` (RSS) → HTML `https://venturebeat.com/category/ai/` | RSS / WebFetch | 24h | industry_business / new_models | 高 |
+| Wired AI | `https://www.wired.com/feed/tag/ai/latest/rss` (RSS) → HTML `https://www.wired.com/tag/artificial-intelligence/` | RSS / WebFetch | 48h | industry_business / regulation_policy | 中 |
+| The Information (公開記事のみ) | WebSearch `site:theinformation.com AI 2026` | WebSearch | 48h | industry_business | 中（有料記事のため本文は取らずタイトル + URL のみカード化）|
+| Stratechery (Free posts) | `https://stratechery.com/feed/` (RSS) → HTML `https://stratechery.com/category/articles/` | RSS / WebFetch | 168h | industry_business | 低（週 1-2 本ペースの長文論考。`<content:encoded>` 全文取得可） |
+| MIT Technology Review AI | `https://www.technologyreview.com/topic/artificial-intelligence/feed` (RSS) → HTML `https://www.technologyreview.com/topic/artificial-intelligence/` | RSS / WebFetch | 48h | research_papers / industry_business | 中 |
+| Ars Technica AI | `https://feeds.arstechnica.com/arstechnica/ai` (RSS) → HTML `https://arstechnica.com/ai/` | RSS / WebFetch | 24h | industry_business / community_buzz | 中 |
+
+**設計判断**:
+- The Information は有料記事中心。WebSearch でタイトル + 1 行スニペットのみ拾い、本文は取らずカードリンクのみ提示する
+- Stratechery は週 1-2 本の長文論考。RSS から `<content:encoded>` 全文を取得できるため WebFetch 1 発で深い要約が作れる
+- Wired と The Verge は内容が重なりやすい → タイトル類似度 0.5 で同一視して重複排除を強化
+- TechCrunch / VentureBeat は速報性重視で 24h 窓、Wired / MIT Tech Review は深掘り解説重視で 48h 窓
+
+## バッチ 5: 学術プラットフォーム（並列 8、source_type: academic、time_window_hours: 168）
+
+論文の元情報 (arXiv) は既存バッチ 2 で取れているが、それを「他者がどう評価したか」「実装解説が公開されているか」を捕捉するレイヤーを追加する。
+
+| ソース | URL | フェッチ方式 | 時間窓 | カテゴリ寄り | 優先度 |
+|---|---|---|---|---|---|
+| Papers with Code Trending | `https://paperswithcode.com/` | WebFetch (HTML) | 168h | research_papers | 高 |
+| Papers with Code SoTA Updates | `https://paperswithcode.com/sota` | WebFetch (HTML) | 168h | research_papers | 中 |
+| Semantic Scholar Search API | `https://api.semanticscholar.org/graph/v1/paper/search?query={QUERY}&fields=title,abstract,authors,year,url,citationCount&limit=20&year=2026` | API (JSON) | 168h | research_papers | 高 |
+| OpenReview Forum | `https://openreview.net/group?id=NeurIPS.cc/2026` (年次更新) | WebFetch (HTML) | 336h | research_papers | 中 |
+| Latent Space (Substack) | `https://www.latent.space/feed` (RSS) → HTML `https://www.latent.space/` | RSS | 168h | research_papers / agents | 高（Swyx 解説の質が高い）|
+| Import AI (Jack Clark) | `https://importai.substack.com/feed` (RSS) | RSS | 168h | research_papers / regulation_policy | 高 |
+| The Batch (Andrew Ng / DeepLearning.AI) | `https://www.deeplearning.ai/the-batch/feed/` (RSS) → HTML `https://www.deeplearning.ai/the-batch/` | RSS / WebFetch | 168h | research_papers / industry_business | 中 |
+| Sebastian Raschka Magazine | `https://magazine.sebastianraschka.com/feed` (RSS) | RSS | 336h | research_papers | 中 |
+
+**Semantic Scholar API クエリ（4 並列）**:
+1. `query=large+language+model`
+2. `query=AI+agent`
+3. `query=retrieval+augmented+generation`
+4. `query=multimodal+model`
+
+レスポンスから `paperId / title / abstract / authors / year / url / citationCount / venue` を抽出。`citationCount` を `reaction_signal` として活用（kind: "semantic_scholar", citation_count: N）。**100 req/5min** の rate limit があるため並列度は 4、5 分以上空けて再実行。
+
+**設計判断**:
+- OpenReview は API があるが公開エンドポイントが頻繁に変わるため、フォーラム HTML を WebFetch して Title 抽出が安定。査読中論文 (`status=under_review`) は除外
+- Latent Space / Import AI / The Batch は Substack RSS が安定。`<content:encoded>` 全文取得可能なため、週次サマリの「論文 5 本」採用元として最適
+- Sebastian Raschka は毎月 1-2 本だが論文解説の品質が高く、`research_papers` の保険ソースとして残置
+
+## バッチ 6: コミュニティ議論層（並列 8、source_type: community、time_window_hours: 48）
+
+論文や速報の前後で、エンジニアコミュニティで実際に議論されているトピック・実装報告を拾う。Reddit Top RSS は **無認証で 401 にならない**（`top.rss?t=day`）。
+
+| ソース | URL | フェッチ方式 | 時間窓 | カテゴリ寄り | 優先度 |
+|---|---|---|---|---|---|
+| Reddit r/LocalLLaMA Top | `https://www.reddit.com/r/LocalLLaMA/top.rss?t=day` | RSS | 48h | community_buzz / new_models | 高 |
+| Reddit r/MachineLearning Top | `https://www.reddit.com/r/MachineLearning/top.rss?t=day` | RSS | 48h | community_buzz / research_papers | 高 |
+| Reddit r/singularity Top | `https://www.reddit.com/r/singularity/top.rss?t=day` | RSS | 48h | community_buzz | 中 |
+| Reddit r/ClaudeAI Top | `https://www.reddit.com/r/ClaudeAI/top.rss?t=day` | RSS | 48h | community_buzz / tools_apps | 中 |
+| Reddit r/OpenAI Top | `https://www.reddit.com/r/OpenAI/top.rss?t=day` | RSS | 48h | community_buzz / new_models | 中 |
+| HN 拡張 (200pt 以上の議論記事) | `https://hn.algolia.com/api/v1/search?tags=story&numericFilters=created_at_i>{48h前のepoch},points>=200` | API | 48h | community_buzz | 高（既存 HN ロジック流用）|
+| X 公開トレンド | WebSearch `site:x.com OR site:twitter.com "Claude" OR "GPT" OR "Llama" min_replies:50` | WebSearch | 48h | community_buzz | 中 |
+| LessWrong AI tag | `https://www.lesswrong.com/feed.xml?view=top-posts&postsLimit=10` (RSS) → HTML `https://www.lesswrong.com/tag/ai` | RSS / WebFetch | 168h | research_papers / regulation_policy | 低 |
+
+**Reddit RSS の正規化**:
+Reddit RSS の `<title>` は `<author> on <subreddit>` 形式ではなく、ほぼ「投稿タイトル」がそのまま入る（`top.rss?t=day` の場合）。`<link>` から記事元 URL を抽出（投稿が記事リンクなら外部 URL、テキスト投稿なら Reddit スレッド URL）。`<description>` から投稿本文プレビューを取得。
+
+**設計判断**:
+- Reddit RSS は upvote 数を直接含まないため、「Top RSS にいる時点で閾値クリア済み」と見なし `kind: "reddit_top", min_score: 100` として扱う
+- HN 拡張は既存バッチ 2 の HN Algolia と棲み分け: バッチ 2 は AI/LLM/Claude/GPT/agent 5 クエリで広く拾い、バッチ 6 は **points>=200 のみ**で議論深い投稿を厳選
+- X 公開トレンドは API 廃止以後、WebSearch で `site:x.com` を叩くのが現実解。Tweet そのものは記事化せず「言及のあった URL を拾う」用途に限定
+- LessWrong は AI safety 論考が多く、`community_buzz` ではなく `research_papers / regulation_policy` 寄りに拾うことが多い。スコアリングで自動判定
+
 ## 並列実行ルール
 
 - **1 メッセージ内で最大 10 並列 WebFetch**
-- 推奨実行順: バッチ 1（公式 10）→ バッチ 2（HN/arXiv/HF/GH 8-10）→ バッチ 3-A（日本企業 8）→ バッチ 3-B（コミュニティ 6-8）
+- 推奨実行順: バッチ 1（公式 10）→ バッチ 2（HN/arXiv/HF/GH 8-10）→ バッチ 3-A（日本企業 8）→ バッチ 3-B（日本コミュニティ 6-8）→ **バッチ 4（海外解説 8）→ バッチ 5（学術 8）→ バッチ 6（コミュニティ 8）→ バッチ 7（中華圏 5-6）**
 - 各バッチ間でレート制限を踏まないため、必要なら 1-2 秒の待機
 - WebSearch は WebFetch より低速だが並列可
+- **routine 環境では `timeout-minutes: 45-60` 推奨**（バッチ 1-7 の合計実行時間 12-20 分を見込む）
 
-## レート制限の目安（拡充後）
+## レート制限の目安（Phase B-C 完了後）
 
-- WebFetch: 1 routine 実行で 35-45 回程度（公式 10 + HN 5 + HF 3 + GitHub 1 + arXiv 1 + 日本企業 8 + はてブ 4 + Qiita 8 + Zenn 6 + ITmedia 1）
-- WebSearch: 1 routine 実行で 5-8 回程度（フォールバック用）
-- Algolia / Qiita / arXiv API は外部 API なので WebFetch でも軽い
+- WebFetch: 1 routine 実行で **60-80 回程度**（公式 10 + HN 5 + HF 3 + GitHub 1 + arXiv 1 + 日本企業 8 + はてブ 4 + Qiita 8 + Zenn 6 + ITmedia 1 + 海外解説 8 + 学術 8 + Reddit/HN/X 8 + LessWrong 1 + 中華圏 5-6）
+- WebSearch: 1 routine 実行で **8-12 回程度**（フォールバック + The Information / X 公開トレンド / 中華圏フォールバック）
+- API: HN Algolia / Qiita / arXiv / Semantic Scholar は外部 API なので WebFetch でも軽い
+- Semantic Scholar API: **100 req/5min** rate limit、4 並列クエリに留める
 
 ## 既知の問題
 
 | ソース | 症状 | 対策 |
 |---|---|---|
 | OpenAI | WebFetch 403 | WebSearch `site:openai.com` で代替（`/x-topic-radar` で実証済み） |
-| Reddit | anonymous で API 403 | バッチ 3 から削除（不安定なため）。必要時のみ `old.reddit.com/r/<sub>/top/?t=day` HTML を WebFetch |
+| Reddit (旧) | anonymous で API 403 | **`top.rss?t=day` 形式の RSS は無認証で動作**（バッチ 6 で正式採用） |
 | Hugging Face Spaces | JS で動的描画 | RSS や API がない場合は最初の HTML スナップショットから抽出 |
 | arXiv | 量が多すぎる | `scoring.md` の論文除外基準を厳格に |
 | 企業テックブログ | 投稿頻度が低い (週〜月) | 7 日以内の記事を許容（freshness 1 でも採用候補） |
 | はてブ検索 | 動的読み込み | RSS フィード `?mode=rss` を優先、HTML はフォールバック |
+| The Information | 有料記事中心 | WebSearch でタイトル + 1 行のみ拾い本文取得は省略 |
+| Stratechery | Free 記事は限定的 | 週次サマリ素材として時間窓 168h で運用 |
+| Semantic Scholar | rate limit 100req/5min | クエリ並列度を 4 に絞り 5 分以上空ける |
+| Reddit RSS | upvote 数取得不可 | 「Top RSS にいる時点で閾値クリア」と見なし min_score: 100 を仮定 |
+| X 公開トレンド | API 廃止 | WebSearch `site:x.com` でタイトル + 元 URL を拾う |
