@@ -28,8 +28,8 @@ jobs:
     name: Generate and publish daily digest
     runs-on: ubuntu-latest
     # Phase B-E 拡張で 60-80 ソース取得 + 金曜は週次サマリも生成するため
-    # 30 → 60 分に拡張。週次が伸びても 60 分で十分余裕がある
-    timeout-minutes: 60
+    # 60 → 90 分に拡張。2026-05-11 の初回実行で 56 分使った実績から余裕を持たせる
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,6 +49,12 @@ jobs:
 
       - name: Run /ai-daily-digest skill via Claude Code
         uses: anthropics/claude-code-action@v1
+        env:
+          # Sonnet 4.6 の出力上限まで引き上げ。
+          # 18-25 件 × (summary_ja 350-500 字 + key_points_ja + figure) を
+          # 1 ターンで書こうとすると 32K では足りないため 64K に拡張。
+          # 2026-05-11 の初回実行が 32K 超過で失敗した実績への対応。
+          CLAUDE_CODE_MAX_OUTPUT_TOKENS: "64000"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
@@ -107,6 +113,30 @@ jobs:
             - 旧 ID (tools/research/industry) ではなく **新 ID (tools_apps/research_papers/industry_business)** を使う (ただし schema enum には旧 ID も残置されている)
             - lang は en/ja/zh/other のいずれか。中文記事は必ず lang="zh" を付与
             - figure は全記事必須 (4 型: comparison/metric-bars/timeline/summary-card)
+
+            ## 出力 token 節約のための書き込み戦略 (重要)
+            **1 ターンの Write/Edit は 32K token 以内に収める**。Sonnet の output 上限は 64K だが、
+            余裕を持って分割すること。18-25 件を 1 度に書こうとすると output 超過で失敗する。
+
+            **推奨手順 (data/<DATE>.json の構築)**:
+            1. **Step A: スケルトン Write** — まず `data/<DATE>.json` に以下のスケルトンだけを Write:
+               - date / generated_at / schema_version / headline / summary_ja / stats / top_picks (id+rank+reason のみ)
+               - categories[] (各 cat の id / label_ja / label_en / items[] は空配列)
+            2. **Step B: カテゴリ単位で Edit** — 各カテゴリの items[] を Edit で 1 カテゴリずつ追加:
+               - new_models 3 件を 1 回の Edit で追加
+               - tools_apps 3 件を次の Edit で追加
+               - ... 以下同様、10 カテゴリ分
+               - 各 Edit は items[] 配列だけを置換すれば OK (空 `[]` を埋める形)
+            3. **Step C: latest.json コピー** — `data/<DATE>.json` をそのまま `data/latest.json` に書き込み
+            4. **Step D: index.json 更新** — `data/index.json` の entries 先頭を当日エントリで Edit (top_picks_count 含む)
+            5. **Step E: _seen.json 更新** — `data/_seen.json` を Edit (新規 URL の追加 / last_seen_count のインクリメント)
+
+            この方式で 1 Edit あたり 1500-3000 字 (≈3000-6000 token) に抑えられ、安全。
+            **1 ターンで全件まとめて Write しないこと**。32K 超過で停止する。
+
+            **前提**: `data/<DATE>.json` は同じ JSON ファイルを段階的に Edit するため、
+            最初のスケルトンが文法エラーでないこと、`items: []` を `items: [{...}, {...}, ...]` に
+            置換する Edit が成功するように整形しておくこと。
           claude_args: |
             --max-turns 150
             --model claude-sonnet-4-6
