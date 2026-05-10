@@ -2,11 +2,12 @@ name: AI Daily Digest
 
 on:
   schedule:
-    # JST 02:13 = UTC 17:13 (前日)
-    # 「毎時 :00」は GitHub Actions のキューが大混雑するため :13 を採用。
-    # 02:13 JST 発火なら平常時は 02:20 前後、混雑時でも 03-04 時着で
-    # 朝起きたら更新済みを安定確保できる
-    - cron: "13 17 * * *"
+    # JST 01:30 = UTC 16:30 (前日)
+    # 「毎時 :00」は GitHub Actions のキューが大混雑するため :30 を採用。
+    # Phase B-E 拡張後は 60-80 ソース取得 + 20-27 件要約 + 週次 (金曜のみ) で
+    # 実行所要 12-25 分。01:30 JST 発火なら平常時は 02:00 前後、混雑時でも
+    # 03-04 時着で、朝 5:00 には確実に届く設計
+    - cron: "30 16 * * *"
   workflow_dispatch:
     inputs:
       target_date:
@@ -26,7 +27,9 @@ jobs:
   digest:
     name: Generate and publish daily digest
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Phase B-E 拡張で 60-80 ソース取得 + 金曜は週次サマリも生成するため
+    # 30 → 60 分に拡張。週次が伸びても 60 分で十分余裕がある
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,32 +52,63 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            あなたは「ai-daily-digest」スキルとして動作し、**実際にファイルを書き込む**必要があります。
+            あなたは「ai-daily-digest」スキル (Phase A-E 完了版) として動作し、**実際にファイルを書き込む**必要があります。
             計画・要約・シミュレーションだけで終わらず、Write / Edit ツールでリポジトリにファイルを生成してください。
 
-            リポジトリ内の `.claude/skills/ai-daily-digest/SKILL.md` と `references/`、`assets/` を読み込み、
+            リポジトリ内の `.claude/skills/ai-daily-digest/SKILL.md` と `references/` (categories.md / scoring.md / persona.md / sources.md / publish.md / weekly.md)、`assets/` (digest-schema.json / digest-weekly-schema.json / prompt-templates/) を読み込み、
             その指示に従って **${{ steps.date.outputs.value }}** 分のニュースダイジェストを生成してください。
 
-            ## タスク
-            1. SKILL.md の Step 1〜9 を実行（Step 10 の git commit/push は後続ジョブで行うので**スキップ**）
-            2. WebFetch / WebSearch でニュース収集（並列バッチ。`references/sources.md` 参照）
-            3. 4 軸スコアリング（重要度 / 技術深度 / 実用性 / 鮮度、各 5 点）。基準は `references/scoring.md`
-            4. カテゴリ分け（new_models / tools / research / industry / japan）し、合計 5-7 件選定。配分の上限を守ること
-            5. 上位選定分のみ日本語要約 (`title_ja`, `summary_ja`, `key_points_ja`) を生成
-            6. 出力ファイル:
-               - `data/${{ steps.date.outputs.value }}.json` を新規作成 / 上書き
-               - `data/latest.json` を当日と同内容で上書き
-               - `data/index.json` の `entries` 先頭を当日エントリで更新（既存なら置換、無ければ追加）。直近 90 件まで保持
-            7. 一部 WebFetch / WebSearch が失敗しても 3 件以上選定できれば書き込みを続行（失敗ソースは `skipped_sources` に記録）
-            8. 0 件しか取れなかった場合は `data/_errors/${{ steps.date.outputs.value }}.json` にエラーレポートを出力して終了
+            ## タスク (日次)
+            1. SKILL.md の Step 1〜9 を実行 (Step 10 の git commit/push は後続ジョブで行うので**スキップ**)
+            2. WebFetch / WebSearch で **バッチ 1-7 (合計 60-80 ソース) を並列取得**。`references/sources.md` 参照
+               - バッチ 1: 公式ブログ 10 (Anthropic / OpenAI / DeepMind / Meta / Microsoft / Mistral / xAI / Nvidia / HF Blog / Cohere)
+               - バッチ 2: アグリゲータ (HN Algolia 5 / arXiv / HF Trending / GitHub Trending)
+               - バッチ 3-A: 日本企業テックブログ 8
+               - バッチ 3-B: 日本コミュニティ (はてブ / Qiita / Zenn / ITmedia)
+               - バッチ 4: 海外解説メディア 8 (TechCrunch / The Verge / VentureBeat / Wired / The Information / Stratechery / MIT Tech Review / Ars Technica)
+               - バッチ 5: 学術プラットフォーム 8 (Papers with Code / Semantic Scholar API / OpenReview / Latent Space / Import AI / The Batch / Sebastian Raschka)
+               - バッチ 6: コミュニティ議論層 8 (Reddit r/LocalLLaMA・r/MachineLearning・r/singularity・r/ClaudeAI・r/OpenAI top.rss / HN拡張 200pt+ / X公開トレンド / LessWrong)
+               - バッチ 7: 中華圏 5-6 (36Kr AI / 量子位 / 機器之心 Synced / ChinAI Newsletter / HF daily-papers / Zhihu)
+            3. 各記事に source_type (official/media/academic/community/china/japan_corp/japan_community/aggregator) と time_window_hours を中間スキーマに付与
+            4. **時間窓フィルタ** (Step 5-A): time_window_hours 外の記事は `_excluded: outside_time_window` で除外
+            5. **既出ペナルティ段階化** (Step 5-B): `data/_seen.json` の last_seen_count に応じて freshness を -1/-2/-3
+            6. 4 軸スコアリング + source_type bias (importance に加減算)
+               - official+0 / media-1 / academic+1 / community-1 / china+0 / japan_corp+0 / japan_community+0 / aggregator+0
+            7. 反響ブースト (はてブ・Qiita・Zenn・HN・Reddit・Semantic Scholar) を importance に加算
+            8. **カテゴリ分け** (Step 7、10 カテゴリ): new_models 3 / tools_apps 3 / agents 2 / multimodal 2 / research_papers 3 / industry_business 2 / regulation_policy 1 / community_buzz 2 / japan 5 / china 2。**合計 18-25 件選定**
+            9. **Top Picks 選定** (Step 7.5): `assets/prompt-templates/select-top-picks.md` に従い 5-7 件を id 参照で選定。必読フラグ + 多様性 + japan 最低 1 件 + china 条件付き保証
+            10. **日本語要約** (Step 8): 選定された 18-25 件に title_ja / summary_ja / key_points_ja / figure を生成。中文記事 (lang: "zh") は日本語化 (固有名詞は英語表記保持)
+            11. 出力ファイル (新スキーマ schema_version: "2.0"):
+                - `data/${{ steps.date.outputs.value }}.json` を新規作成 / 上書き (top_picks[] / categories[] / stats.by_category / stats.top_picks_count を含む)
+                - `data/latest.json` を当日と同内容で上書き
+                - `data/index.json` の `entries` 先頭を当日エントリで更新 (top_picks_count も格納、既存なら置換、無ければ追加)。直近 90 件まで保持
+                - `data/_seen.json` を更新 (URL ハッシュ + first_seen_at + last_seen_at + last_seen_count、90 日保持)
+            12. 一部 WebFetch / WebSearch が失敗しても 3 件以上選定できれば書き込みを続行 (失敗ソースは `skipped_sources` に記録)
+            13. 0 件しか取れなかった場合は `data/_errors/${{ steps.date.outputs.value }}.json` にエラーレポートを出力して終了
+
+            ## タスク (週次サマリ、金曜のみ)
+            14. **TZ=Asia/Tokyo で曜日を判定**。金曜 (`date +%u` == 5) のときのみ追加実行。詳細は `references/weekly.md` および `assets/prompt-templates/weekly-summary.md` 参照
+            15. `data/<YYYY-MM-DD>.json` の直近 7 日分 (金曜から遡って 7 日) を読み込み、全 categories[].items[] をマージ・重複排除
+            16. 前週データ `data/weekly-latest.json` を読み込み (前週比 delta 計算用、無ければ null)
+            17. top_10 (5-12) / papers_5 (≤7) / models_3 (≤5) / community_buzz_3 (≤5) / japan_3 (≤5) / china_3 (≤5) を選定 (id 参照)
+            18. keyword_cloud 集計 (頻出タグ 上位 20、前週比 delta_vs_prev_week)
+            19. watchlist_next_week 抽出 (3-8 件、「予定 / upcoming / next week / expected / 公開予定」キーワードから固有名詞)
+            20. 週次 headline / summary_ja (300-500 字) を生成
+            21. 出力ファイル:
+                - `data/weekly-YYYY-WW.json` を新規作成 / 上書き (ISO 週番号、例: weekly-2026-W19.json)
+                - `data/weekly-latest.json` を同内容で上書き
+                - `data/weekly-index.json` の entries 先頭を当週エントリで更新 (week / from / to / headline / top_count / selected_items)。直近 52 週まで保持
 
             ## 注意
             - **git コマンドは一切実行しない**。ファイル書き込みのみ
-            - 既存の `data/2026-05-03.json` (サンプル) が当日と一致した場合は上書き OK
             - ファイルパスは必ずリポジトリルート相対 (`data/...`) を使う
-            - 出力 JSON は `assets/digest-schema.json` を満たすこと
+            - 日次出力 JSON は `assets/digest-schema.json` を満たすこと
+            - 週次出力 JSON は `assets/digest-weekly-schema.json` を満たすこと
+            - 旧 ID (tools/research/industry) ではなく **新 ID (tools_apps/research_papers/industry_business)** を使う (ただし schema enum には旧 ID も残置されている)
+            - lang は en/ja/zh/other のいずれか。中文記事は必ず lang="zh" を付与
+            - figure は全記事必須 (4 型: comparison/metric-bars/timeline/summary-card)
           claude_args: |
-            --max-turns 80
+            --max-turns 150
             --model claude-sonnet-4-6
             --permission-mode bypassPermissions
             --allowed-tools Read,Write,Edit,Glob,Grep,Bash,WebFetch,WebSearch
