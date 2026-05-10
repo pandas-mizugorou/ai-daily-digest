@@ -1,5 +1,6 @@
 // AI Daily Digest — service worker
-const VERSION = "v5";
+// v6: Phase A — Top Picks + 10 categories + category tabs + lang=zh + new CSS
+const VERSION = "v6";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

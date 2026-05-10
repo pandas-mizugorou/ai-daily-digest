@@ -6,5 +6,5 @@ Thumbs.db
 node_modules/
 
 # Local-only working files
-data/_seen.json
+# data/_seen.json — Phase A 以降はリポジトリ管理に移行（既出ペナルティの routine 永続化のため）
 data/_drafts/

@@ -1263,3 +1263,140 @@ button { font: inherit; cursor: pointer; }
   color: var(--fg-muted);
   word-break: break-word;
 }
+
+/* ============================================================ */
+/* === Phase A additions: Top Picks / Category Tabs / lang=zh / China === */
+/* ============================================================ */
+
+/* === Top Picks section === */
+.top-picks {
+  max-width: var(--maxw);
+  margin: 0 auto 24px;
+  padding: 16px 16px 18px;
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--accent) 12%, var(--bg-elevated)),
+    var(--bg-elevated));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.top-picks.hidden { display: none; }
+
+.top-picks-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 12px;
+  padding: 0;
+}
+.top-picks-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.top-picks-mark {
+  font-size: 1.1em;
+  line-height: 1;
+}
+.top-picks-count {
+  font-size: 0.78rem;
+  color: var(--fg-subtle);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.top-picks-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Top Pick card highlight (extends .card) */
+.top-pick-card {
+  position: relative;
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--border));
+}
+.top-pick-card::before {
+  content: attr(data-rank);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-radius: 50%;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.top-pick-card .card-toggle { padding-left: 44px; }
+
+/* === Category Tabs === */
+.category-tabs {
+  max-width: var(--maxw);
+  margin: 0 auto 16px;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 0 4px 12px;
+  scrollbar-width: thin;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.category-tabs.hidden { display: none; }
+
+.cat-tab {
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  min-height: 36px;
+  background: var(--bg-elevated);
+  color: var(--fg-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  scroll-snap-align: start;
+  white-space: nowrap;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+.cat-tab:hover {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+}
+.cat-tab.is-active {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+/* tab-hidden: filtered out by category tab */
+.category.tab-hidden { display: none; }
+
+/* === China category styling (subtle accent) === */
+.category[data-cat-id="china"] .category-title::before {
+  content: "🇨🇳 ";
+  font-size: 0.9em;
+}
+.category[data-cat-id="japan"] .category-title::before {
+  content: "🇯🇵 ";
+  font-size: 0.9em;
+}
+
+/* === lang=zh card hint === */
+.card[data-lang="zh"] .card-title-ja {
+  font-size: 0.82rem;
+  color: var(--fg-subtle);
+  font-style: normal;
+}

@@ -14,6 +14,10 @@
       "format": "date-time",
       "description": "ISO8601 (JST タイムゾーン推奨)"
     },
+    "schema_version": {
+      "type": "string",
+      "description": "スキーマバージョン。1.x = 旧 5 カテゴリ / 2.x = Phase A 以降の Top Picks + 拡張カテゴリ。未定義のときは 1.x として扱う"
+    },
     "headline": {
       "type": "string",
       "description": "その日のヘッドライン (1 文)"
@@ -27,7 +31,28 @@
       "properties": {
         "total_collected": { "type": "integer", "minimum": 0 },
         "after_dedup": { "type": "integer", "minimum": 0 },
-        "selected": { "type": "integer", "minimum": 0 }
+        "selected": { "type": "integer", "minimum": 0 },
+        "top_picks_count": { "type": "integer", "minimum": 0, "maximum": 7, "description": "Top Picks に選ばれた件数 (5-7、Phase A 以降)" },
+        "by_category": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 },
+          "description": "カテゴリ ID → 件数のマップ (Phase A 以降)"
+        }
+      }
+    },
+    "top_picks": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 7,
+      "description": "その日の必読 5-7 件 (categories[].items[].id を参照)。フロントは先頭固定でハイライト表示する。Phase A 以降の新フィールド (optional)",
+      "items": {
+        "type": "object",
+        "required": ["id", "rank"],
+        "properties": {
+          "id": { "type": "string", "description": "item.id への参照" },
+          "rank": { "type": "integer", "minimum": 1, "maximum": 7 },
+          "reason": { "type": "string", "description": "選定理由 (デバッグ用 / フロント非表示)" }
+        }
       }
     },
     "categories": {
@@ -38,7 +63,13 @@
         "properties": {
           "id": {
             "type": "string",
-            "enum": ["new_models", "tools", "research", "industry", "japan"]
+            "enum": [
+              "new_models", "tools_apps", "agents", "multimodal",
+              "research_papers", "industry_business", "regulation_policy",
+              "community_buzz", "japan", "china",
+              "tools", "research", "industry"
+            ],
+            "description": "Phase A 以降は新 ID (10 種) を使う。tools/research/industry は旧 ID として保持 (後方互換)"
           },
           "label_ja": { "type": "string" },
           "label_en": { "type": "string" },
@@ -73,6 +104,15 @@
         "url": { "type": "string", "format": "uri" },
         "source": { "type": "string", "description": "ベンダー識別子 (anthropic / openai 等)" },
         "source_label": { "type": "string", "description": "表示用ラベル" },
+        "source_type": {
+          "type": "string",
+          "enum": ["official", "media", "academic", "community", "china", "japan_corp", "japan_community", "aggregator"],
+          "description": "ソースのタイプ。スコアリング bias と UI 表示の仕分けに使う (Phase A 以降、optional)"
+        },
+        "category": {
+          "type": "string",
+          "description": "本記事の所属カテゴリ ID (冗長だが 1 item で完結させるため保持、Phase A 以降)"
+        },
         "published_at": {
           "type": "string",
           "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
@@ -97,7 +137,36 @@
             "depth": { "type": "integer", "minimum": 1, "maximum": 5 },
             "practicality": { "type": "integer", "minimum": 1, "maximum": 5 },
             "freshness": { "type": "integer", "minimum": 0, "maximum": 5 },
-            "total": { "type": "integer", "minimum": 0, "maximum": 20 }
+            "total": { "type": "integer", "minimum": 0, "maximum": 20 },
+            "source_type_bias": {
+              "type": "integer",
+              "minimum": -2,
+              "maximum": 2,
+              "description": "ソースタイプ別の importance 補正 (公式 0 / 解説 -1 / 学術 +1 / コミュニティ -1 / 中華圏 0)。Phase A 以降、optional"
+            },
+            "seen_penalty": {
+              "type": "integer",
+              "minimum": -3,
+              "maximum": 0,
+              "description": "既出ペナルティの freshness 減点量 (last_seen_count に応じて -1〜-3、optional)"
+            }
+          }
+        },
+        "reaction_signal": {
+          "type": "object",
+          "description": "コミュニティ反響シグナル (日本語ソース + Reddit + HN 拡張で使用)",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": ["hatena", "qiita", "zenn", "hn", "reddit_top", "semantic_scholar", "x_trend"]
+            },
+            "users": { "type": "integer" },
+            "likes": { "type": "integer" },
+            "stocks": { "type": "integer" },
+            "liked": { "type": "integer" },
+            "points": { "type": "integer" },
+            "min_score": { "type": "integer" },
+            "citation_count": { "type": "integer" }
           }
         },
         "tags": {
@@ -106,7 +175,7 @@
         },
         "lang": {
           "type": "string",
-          "enum": ["en", "ja", "other"]
+          "enum": ["en", "ja", "zh", "other"]
         },
         "figure": {
           "$ref": "#/$defs/figure",

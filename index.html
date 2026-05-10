@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
-  <meta name="description" content="AI / 生成 AI の押さえるべきニュースを毎朝5時に自動更新するダイジェストサイト" />
+  <meta name="description" content="AI / 生成 AI の押さえるべきニュースを毎朝5時に自動更新するダイジェストサイト。今日の必読 Top 5-7 + カテゴリ別 15-20 件を 10 カテゴリで配信" />
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -61,6 +61,19 @@
       <p id="summary-text" class="summary-text"></p>
     </section>
 
+    <section id="top-picks" class="top-picks hidden" aria-label="今日の必読">
+      <header class="top-picks-header">
+        <h2 class="top-picks-title">
+          <span class="top-picks-mark" aria-hidden="true">★</span>
+          今日の必読
+        </h2>
+        <span class="top-picks-count"></span>
+      </header>
+      <div class="top-picks-items"></div>
+    </section>
+
+    <nav id="category-tabs" class="category-tabs hidden" aria-label="カテゴリタブ"></nav>
+
     <section id="categories" class="categories" aria-label="カテゴリ別ニュース"></section>
 
     <div id="update-banner" class="update-banner hidden" role="status">
@@ -71,7 +84,7 @@
 
   <footer class="site-footer" role="contentinfo">
     <p>毎朝 5:00 JST に自動更新 ・ <a href="https://github.com" id="repo-link" target="_blank" rel="noopener">GitHub</a></p>
-    <p class="footer-note">押さえるべき AI / 生成 AI ニュースを 5-7 件にカテゴリ分けして配信</p>
+    <p class="footer-note">今日の必読 Top 5-7 + カテゴリ別 15-20 件 を 10 カテゴリで配信（金曜は週次サマリも追加）</p>
   </footer>
 
   <template id="card-template">

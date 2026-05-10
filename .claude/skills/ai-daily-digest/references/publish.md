@@ -11,14 +11,45 @@
 各実行で更新するファイル:
 
 ```
-data/<YYYY-MM-DD>.json   # 当日のニュース本体（既存なら上書き）
-data/latest.json         # 当日の内容を複製
-data/index.json          # 直近 90 日のエントリ一覧を更新
-data/archive/<year>.json # 90 日超のロールオーバー先（必要時のみ）
-data/_seen.json          # 直近 30 日に push した URL ハッシュ集合
+data/<YYYY-MM-DD>.json     # 当日のニュース本体（既存なら上書き、schema_version: "2.0"）
+data/latest.json           # 当日の内容を複製
+data/index.json            # 直近 90 日のエントリ一覧を更新（top_picks_count も格納）
+data/archive/<year>.json   # 90 日超のロールオーバー先（必要時のみ）
+data/_seen.json            # 直近 90 日に push した URL ハッシュ + last_seen_count（リポジトリ管理）
+data/weekly-YYYY-WW.json   # 週次サマリ（金曜のみ生成、Phase D）
+data/weekly-latest.json    # 週次最新（Phase D）
+data/weekly-index.json     # 週次過去一覧（Phase D）
 ```
 
-**注意**: `data/_seen.json` は `.gitignore` 対象だが、routine が再現性のために保持したい場合は `.gitignore` から外す運用も可（プライバシー的問題なし）。初期はリポジトリ管理を推奨。
+**`data/_seen.json` はリポジトリ管理に移行**（Phase A 以降）。`.gitignore` から `data/_seen.json` を削除して push する運用に統一。理由:
+- routine 環境は毎回 `git clone` するため、ローカル FS だけでは永続化できない
+- URL の SHA1 ハッシュ + プレフィックス 50 字のみで個人情報リスクなし
+- リポジトリで一元管理することで、手動実行と routine の既出ペナルティが一貫する
+
+### `data/_seen.json` のスキーマ（Phase A 以降）
+
+```jsonc
+{
+  "version": "2.0",
+  "updated_at": "2026-05-10T05:00:00+09:00",
+  "retention_days": 90,
+  "entries": {
+    "<sha1_url>": {
+      "url_prefix": "https://www.anthropic.com/news/",  // デバッグ用に最初の 50 字だけ
+      "first_seen_at": "2026-05-09",
+      "last_seen_at": "2026-05-10",
+      "last_seen_count": 2
+    }
+  }
+}
+```
+
+更新ルール:
+- 新規 URL: `entries[sha1] = { url_prefix, first_seen_at: today, last_seen_at: today, last_seen_count: 1 }`
+- 既存 URL: `last_seen_at = today; last_seen_count += 1`
+- `last_seen_at` が `today - 90d` より古いエントリは削除
+- 想定サイズ: 200-400KB（gzip 後 50-100KB、Pages 配信に支障なし）
+- 500KB を超えたら `last_seen_count == 1` で `last_seen_at` 60 日以上前のエントリを優先削除
 
 ## index.json の更新ロジック
 
@@ -26,15 +57,16 @@ data/_seen.json          # 直近 30 日に push した URL ハッシュ集合
 {
   "updated_at": "<ISO8601>",
   "entries": [
-    { "date": "2026-05-03", "headline": "...", "item_count": 6 },
-    { "date": "2026-05-02", "headline": "...", "item_count": 7 }
+    { "date": "2026-05-10", "headline": "...", "item_count": 22, "top_picks_count": 6 },
+    { "date": "2026-05-09", "headline": "...", "item_count": 18, "top_picks_count": 5 }
     // 直近 90 日まで
   ]
 }
 ```
 
-- 当日エントリがあれば `headline` / `item_count` を更新、なければ先頭に追加
+- 当日エントリがあれば `headline` / `item_count` / `top_picks_count` を更新、なければ先頭に追加
 - 91 件目以降は `entries` から削除し、`data/archive/<year>.json` の `entries` に追記
+- `top_picks_count` は schema_version=2.0 以降のみ。1.x データは未定義（フロントは optional 扱い）
 
 ## git push 手順
 
@@ -129,8 +161,9 @@ Content-Type: application/json
 
 ### 同記事が連日出続ける
 
-- `data/_seen.json` の URL ハッシュが正しく蓄積されているか確認
-- `freshness -2` ペナルティが反映されているか scoring ステップでログ出力
+- `data/_seen.json` の URL ハッシュ + `last_seen_count` が正しく蓄積されているか確認
+- 段階化ペナルティ（last_seen_count=1 で -1、=2 で -2、=3+ で -3）が反映されているか scoring ステップでログ出力
+- リポジトリ管理に切り替わっているか（`.gitignore` から `data/_seen.json` を削除済か）確認
 
 ## 失敗時のエラーレポート
 

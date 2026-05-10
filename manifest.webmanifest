@@ -1,7 +1,7 @@
 {
   "name": "AI Daily Digest",
   "short_name": "AI Digest",
-  "description": "押さえるべき AI / 生成 AI ニュースを毎朝5時に自動配信するダイジェストサイト",
+  "description": "今日の必読 Top 5-7 + カテゴリ別 15-20 件を 10 カテゴリ（新モデル / ツール / エージェント / マルチモーダル / 研究 / 業界 / 規制 / コミュニティ / 日本 / 中華圏）で毎朝5時に自動配信するダイジェストサイト",
   "lang": "ja",
   "dir": "ltr",
   "start_url": "./?source=pwa",

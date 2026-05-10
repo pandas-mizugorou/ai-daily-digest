@@ -69,7 +69,41 @@
 
 ## ベンダー偏り回避
 
-特定ベンダー（特に Anthropic）に偏らないよう、選定時に同一 source は最大 2 件まで。3 件目以降は除外または `importance -1` で再評価。
+特定ベンダー（特に Anthropic）に偏らないよう、選定時に同一 source は最大 2 件まで。3 件目以降は除外または `importance -1` で再評価。詳細は `scoring.md` の「ベンダー偏り対策（10 カテゴリ・25 件運用版）」を参照。
+
+## 新カテゴリ別の追加判定（Phase A 以降）
+
+### `agents`（エージェント・自律実行）
+- 「自律的に複数ステップを実行する」記述があれば `agents`（`tools_apps` ではなく）
+- ツール呼び出し / Computer Use / マルチエージェント協調 / MCP 関連
+- 例: Claude Managed Agents / OpenAI Workspace Agents / Devin / AutoGPT 系
+- 単に「LLM をツールから呼び出す」だけは `tools_apps` 寄り
+
+### `multimodal`（マルチモーダル・生成）
+- 画像 / 動画 / 音声 / 3D 生成が主題
+- 統合モデル（テキスト + 画像 + 動画 + 音声）
+- 新モデル発表でも生成能力中心なら `new_models` ではなく `multimodal` 優先
+- 例: Veo 4 / Sora / Stable Diffusion / TTS モデル
+
+### `regulation_policy`（規制・政策・安全）
+- EU AI Act / 米国 AI 規制 / 中国 AI 規制
+- 安全性研究（red teaming / jailbreak / adversarial attack）
+- アライメント論考（LessWrong / Anthropic Safety blog）
+- AI セキュリティ製品（Llama Guard / LlamaFirewall / Prompt Guard）
+
+### `community_buzz`（コミュニティ反響）
+- Reddit `top.rss?t=day` のトップ投稿（r/LocalLLaMA / r/MachineLearning / r/ClaudeAI / r/OpenAI / r/singularity）
+- HN 1000pt 越えで議論が長い投稿
+- X 公開トレンドで大きく言及された事例
+- LessWrong AI tag のトップ論考
+- **新モデル / 論文 / ツール記事は元カテゴリを優先**、ここには「議論・賛否・実体験投稿」のみ
+
+### `china`（中華圏）
+- 36Kr AI / 量子位 (QbitAI) / 機器之心 (Synced) / ChinAI Newsletter
+- 中国 AI 企業（DeepSeek / Alibaba Qwen / Zhipu / Moonshot Kimi / Baichuan / 01.AI）の発表
+- 中国系著者の AI 関連論文（中国本土所属）
+- HF daily-papers の中華系研究者論文
+- 中文記事は `lang: "zh"` を付与し、Step 8 で日本語要約と `title_ja` を生成
 
 ## ジャンルの方向性
 
@@ -79,7 +113,8 @@
 
 ## 文体・要約の方針
 
-- **タイトル**: 原題（英語）を保持しつつ `title_ja` で日本語訳を併記
+- **タイトル**: 英語ソース (`lang === "en"`) は `title_ja` を表示主体とする (フロントカード上段に **title_ja のみ**を出す)。日本語ソースは原題をそのまま使い、必要に応じて `title_ja` で意訳併記
+- **title_ja の品質基準**: 直訳ではなく「一目で内容が分かる意訳」。40-70 字、主役 + アクション + 主要数字、固有名詞は英語表記を保持
 - **summary_ja**: 「である調」で 3-5 行。技術的事実を中心に、感想・推測は入れない
 - **key_points_ja**: 2-4 個の箇条書き。具体的な数字・名前を含む（"〜が改善" ではなく "〜が 1.4 倍に向上"）
 - **headline**（日全体）: その日のトップニュースを 1 文で要約。ユーザーが見出しだけ読んでも価値がわかること

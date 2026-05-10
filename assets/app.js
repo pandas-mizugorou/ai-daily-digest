@@ -10,6 +10,8 @@ const els = {
   summaryStats: document.getElementById("summary-stats"),
   summaryHeadline: document.getElementById("summary-headline"),
   summaryText: document.getElementById("summary-text"),
+  topPicks: document.getElementById("top-picks"),
+  categoryTabs: document.getElementById("category-tabs"),
   categories: document.getElementById("categories"),
   dateSelect: document.getElementById("date-select"),
   prevDate: document.getElementById("prev-date"),
@@ -55,6 +57,8 @@ function showStatus(message, isError = false) {
   els.status.classList.toggle("error", isError);
   els.statusMessage.textContent = message;
   els.summary.classList.add("hidden");
+  if (els.topPicks) els.topPicks.classList.add("hidden");
+  if (els.categoryTabs) els.categoryTabs.classList.add("hidden");
   els.categories.innerHTML = "";
 }
 function hideStatus() { els.status.classList.add("hidden"); }
@@ -119,11 +123,52 @@ function updateDateNav() {
 function categoryFallbackLabel(id) {
   return {
     new_models: "新モデル・新発表",
+    // 旧 ID（schema_version 1.x）
     tools: "ツール・SDK",
     research: "研究・論文",
     industry: "業界動向",
+    // 新 ID（schema_version 2.x）
+    tools_apps: "ツール・アプリ・SDK",
+    agents: "エージェント・自律実行",
+    multimodal: "マルチモーダル・生成",
+    research_papers: "研究・論文",
+    industry_business: "業界動向・ビジネス",
+    regulation_policy: "規制・政策・安全",
+    community_buzz: "コミュニティ反響",
     japan: "日本語ソース",
+    china: "中華圏",
   }[id] || id;
+}
+
+const CATEGORY_ORDER = [
+  "new_models",
+  "tools_apps", "tools",
+  "agents",
+  "multimodal",
+  "research_papers", "research",
+  "industry_business", "industry",
+  "regulation_policy",
+  "community_buzz",
+  "japan",
+  "china",
+];
+
+function sortCategoriesForDisplay(categories) {
+  return [...categories].sort((a, b) => {
+    const ai = CATEGORY_ORDER.indexOf(a.id);
+    const bi = CATEGORY_ORDER.indexOf(b.id);
+    return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
+  });
+}
+
+function buildItemIndex(categories) {
+  const idx = new Map();
+  for (const cat of categories || []) {
+    for (const item of (cat.items || [])) {
+      idx.set(item.id, { ...item, _category: cat.id });
+    }
+  }
+  return idx;
 }
 
 function scoreClass(total) {
@@ -491,6 +536,7 @@ function renderCard(item) {
   const titleEl = node.querySelector(".card-title");
   const titleJaEl = node.querySelector(".card-title-ja");
   const lang = (item.lang || "").toLowerCase();
+  node.dataset.lang = lang || "en";
   const hasTitleJa = typeof item.title_ja === "string" && item.title_ja.trim().length > 0;
   const titleEn = item.title || "";
   const titleJa = hasTitleJa ? item.title_ja.trim() : "";
@@ -500,6 +546,12 @@ function renderCard(item) {
 
   if (lang === "en") {
     primary = hasTitleJa ? titleJa : (titleEn || "(無題)");
+  } else if (lang === "zh") {
+    // 中文記事は title_ja を主、原題 (中文) を副
+    primary = hasTitleJa ? titleJa : (titleEn || "(無題)");
+    if (titleEn && titleEn !== titleJa) {
+      secondary = titleEn;
+    }
   } else {
     primary = titleEn || "(無題)";
     if (hasTitleJa && titleJa !== titleEn) {
@@ -567,6 +619,7 @@ function renderCard(item) {
 
 function renderCategory(category) {
   const node = els.categoryTpl.content.firstElementChild.cloneNode(true);
+  node.dataset.catId = category.id || "";
   node.querySelector(".category-title").textContent =
     category.label_ja || categoryFallbackLabel(category.id);
   const items = Array.isArray(category.items) ? category.items : [];
@@ -576,13 +629,92 @@ function renderCategory(category) {
   return node;
 }
 
+// === Top Picks rendering ===
+function renderTopPicks(topPicks, itemIndex) {
+  const section = els.topPicks;
+  if (!section) return;
+  const itemsEl = section.querySelector(".top-picks-items");
+  const countEl = section.querySelector(".top-picks-count");
+  if (!itemsEl || !countEl) return;
+  itemsEl.innerHTML = "";
+
+  if (!Array.isArray(topPicks) || topPicks.length === 0) {
+    section.classList.add("hidden");
+    return;
+  }
+
+  const sorted = [...topPicks].sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  countEl.textContent = `${sorted.length}件`;
+
+  let appended = 0;
+  for (const pick of sorted) {
+    const item = itemIndex.get(pick.id);
+    if (!item) continue;
+    const card = renderCard(item);
+    card.classList.add("top-pick-card");
+    card.dataset.rank = String(pick.rank || "");
+    itemsEl.appendChild(card);
+    appended += 1;
+  }
+
+  if (appended === 0) {
+    section.classList.add("hidden");
+  } else {
+    section.classList.remove("hidden");
+  }
+}
+
+// === Category tabs ===
+function renderCategoryTabs(populated) {
+  const nav = els.categoryTabs;
+  if (!nav) return;
+  nav.innerHTML = "";
+  if (!Array.isArray(populated) || populated.length <= 1) {
+    nav.classList.add("hidden");
+    return;
+  }
+  // "All" タブ
+  const allBtn = document.createElement("button");
+  allBtn.type = "button";
+  allBtn.className = "cat-tab is-active";
+  allBtn.dataset.catId = "all";
+  const totalCount = populated.reduce((s, c) => s + (c.items?.length || 0), 0);
+  allBtn.textContent = `All (${totalCount})`;
+  allBtn.setAttribute("aria-pressed", "true");
+  nav.appendChild(allBtn);
+  for (const cat of populated) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "cat-tab";
+    btn.dataset.catId = cat.id;
+    const lbl = cat.label_ja || categoryFallbackLabel(cat.id);
+    btn.textContent = `${lbl} (${cat.items.length})`;
+    btn.setAttribute("aria-pressed", "false");
+    nav.appendChild(btn);
+  }
+  nav.classList.remove("hidden");
+}
+
+function filterCategoriesByTab(catId) {
+  const sections = document.querySelectorAll("#categories .category");
+  sections.forEach((sec) => {
+    if (catId === "all") {
+      sec.classList.remove("tab-hidden");
+    } else {
+      sec.classList.toggle("tab-hidden", sec.dataset.catId !== catId);
+    }
+  });
+}
+
 function renderDay(data) {
   hideStatus();
   els.summary.classList.remove("hidden");
   els.summaryDate.textContent = formatDateJa(data.date);
   els.summaryDate.dateTime = data.date;
   if (data.stats) {
-    els.summaryStats.textContent = `収集 ${data.stats.total_collected ?? "-"} / 選定 ${data.stats.selected ?? "-"}`;
+    const topCount = data.stats.top_picks_count;
+    const topSeg = topCount ? ` / Top ${topCount}` : "";
+    els.summaryStats.textContent = `収集 ${data.stats.total_collected ?? "-"} / 選定 ${data.stats.selected ?? "-"}${topSeg}`;
   } else {
     els.summaryStats.textContent = "";
   }
@@ -590,12 +722,23 @@ function renderDay(data) {
   els.summaryText.textContent = data.summary_ja || "";
 
   els.categories.innerHTML = "";
-  const categories = Array.isArray(data.categories) ? data.categories : [];
+  const rawCategories = Array.isArray(data.categories) ? data.categories : [];
+  const categories = sortCategoriesForDisplay(rawCategories);
   const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
+
+  // Top Picks (新スキーマのみ。旧スキーマは data.top_picks 未定義で section が hidden 維持)
+  const itemIndex = buildItemIndex(categories);
+  renderTopPicks(data.top_picks, itemIndex);
+
   if (populated.length === 0) {
+    if (els.categoryTabs) els.categoryTabs.classList.add("hidden");
     showStatus("この日のニュースはまだありません");
     return;
   }
+
+  // Category Tabs (populated <= 1 のとき hidden)
+  renderCategoryTabs(populated);
+
   for (const category of populated) {
     els.categories.appendChild(renderCategory(category));
   }
@@ -647,9 +790,10 @@ async function route() {
 
 window.addEventListener("hashchange", route);
 
-// === Card open/close (event delegation on categories container) ===
-if (els.categories) {
-  els.categories.addEventListener("click", (e) => {
+// === Card open/close (event delegation on categories + top-picks containers) ===
+function attachCardEvents(rootEl) {
+  if (!rootEl) return;
+  rootEl.addEventListener("click", (e) => {
     const collapseBtn = e.target.closest(".card-collapse-bottom");
     if (collapseBtn) {
       const card = collapseBtn.closest(".card");
@@ -666,6 +810,23 @@ if (els.categories) {
     const expanded = card.dataset.expanded === "true";
     if (expanded) collapseCard(card);
     else expandCard(card);
+  });
+}
+attachCardEvents(els.categories);
+attachCardEvents(els.topPicks);
+
+// === Category tab click handler ===
+if (els.categoryTabs) {
+  els.categoryTabs.addEventListener("click", (e) => {
+    const btn = e.target.closest(".cat-tab");
+    if (!btn) return;
+    els.categoryTabs.querySelectorAll(".cat-tab").forEach((b) => {
+      b.classList.remove("is-active");
+      b.setAttribute("aria-pressed", "false");
+    });
+    btn.classList.add("is-active");
+    btn.setAttribute("aria-pressed", "true");
+    filterCategoriesByTab(btn.dataset.catId);
   });
 }
 
