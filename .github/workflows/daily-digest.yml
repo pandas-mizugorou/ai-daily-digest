@@ -32,7 +32,9 @@ jobs:
     timeout-minutes: 90
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        # v4 は Node.js 20 で動作し 2026-06-02 以降 deprecation 警告対象。
+        # v5 は Node.js 24 ベースで警告なし。
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
 
