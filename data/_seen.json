@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-05-11T05:00:00+09:00",
+  "retention_days": 90,
+  "entries": {
+    "3576210c16f0ee95": {
+      "url_prefix": "https://openai.com/index/advancing-voice-intellige",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "99b1170ac1453321": {
+      "url_prefix": "https://deepmind.google/blog/alphaevolve-impact/",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "f62c915d7fdadf94": {
+      "url_prefix": "https://huggingface.co/papers/2604.18394",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "63628f506c0fce6f": {
+      "url_prefix": "https://huggingface.co/papers/2504.19413",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "b785e287b399d6c3": {
+      "url_prefix": "https://huggingface.co/papers/2602.06036",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "542064578bd19e5b": {
+      "url_prefix": "https://arxiv.org/abs/2605.06651",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "85a89dbf856e59be": {
+      "url_prefix": "https://huggingface.co/papers/2412.20138",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "459c70c519f25a00": {
+      "url_prefix": "https://huggingface.co/papers/2508.19205",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "a835d02ab8e28451": {
+      "url_prefix": "https://arxiv.org/abs/2605.06667",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "43110149d37c0386": {
+      "url_prefix": "https://huggingface.co/papers/2604.02176",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "d6abc34f09cefcf9": {
+      "url_prefix": "https://arxiv.org/abs/2605.06656",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "4d99f0c7360c4047": {
+      "url_prefix": "https://arxiv.org/abs/2605.06665",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "1548e559386f98ff": {
+      "url_prefix": "https://www.latent.space/p/ainews-anthropic-growin",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "f7a9757bfbf57fe3": {
+      "url_prefix": "https://techcrunch.com/2026/05/09/nvidia-has-alrea",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "3d2b2c788665eb71": {
+      "url_prefix": "https://techcrunch.com/2026/05/10/anthropic-says-e",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "b18d930fb246b1c5": {
+      "url_prefix": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "664a75795eb25702": {
+      "url_prefix": "https://www.tomshardware.com/tech-industry/artific",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "da9837e64ac3875d": {
+      "url_prefix": "https://www.gizmodo.jp/2026/05/2026_local_llm_mato",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "3789b3c71ac5b273": {
+      "url_prefix": "https://zenn.dev/channnnsm/articles/c3a6de22e71f86",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "854e7b2410ac96e9": {
+      "url_prefix": "https://zenn.dev/uehaj/articles/claude-code-fancy-",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "25dcfbad9fb531c6": {
+      "url_prefix": "https://type.jp/et/feature/30921/",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "510a80c7fac7f210": {
+      "url_prefix": "https://sakana.ai/twell/",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "faa1b797d0bb2de2": {
+      "url_prefix": "https://www.opensourceforu.com/2026/05/deepseek-r1",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "65ef3c539880dd14": {
+      "url_prefix": "https://www.bloomberg.com/news/articles/2026-04-27",
+      "first_seen_at": "2026-05-11",
+      "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    }
+  }
+}

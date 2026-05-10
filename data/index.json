@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-05-10T05:00:00+09:00",
+  "updated_at": "2026-05-11T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-11",
+      "headline": "OpenAI が GPT-5 クラス音声推論モデル 3 本を API 公開、DeepMind AlphaEvolve が多分野で実測インパクト確認、Anthropic 評価額 1 兆ドル超で年率 10 倍成長、Sakana AI が Sparser Transformer「Twell」発表",
+      "item_count": 24,
+      "top_picks_count": 7
+    },
     {
       "date": "2026-05-10",
       "headline": "Google I/O 2026 で Gemini 4・Veo 4・Deep Research Max が登場、Meta LlamaCon で Llama 4（405B マルチモーダル）と累計 10 億ダウンロード達成・安全ツール 3 種を公開、AI 支援型攻撃の実例が急増し「AI 攻防軍拡競争」が可視化、日本では AI が東大理Ⅲ入試で「首席合格」水準に到達",
