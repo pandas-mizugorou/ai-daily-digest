@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-11T05:00:00+09:00",
+  "updated_at": "2026-05-12T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "3576210c16f0ee95": {
@@ -96,8 +96,8 @@
     "b18d930fb246b1c5": {
       "url_prefix": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
       "first_seen_at": "2026-05-11",
-      "last_seen_at": "2026-05-11",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 2
     },
     "664a75795eb25702": {
       "url_prefix": "https://www.tomshardware.com/tech-industry/artific",
@@ -145,6 +145,114 @@
       "url_prefix": "https://www.bloomberg.com/news/articles/2026-04-27",
       "first_seen_at": "2026-05-11",
       "last_seen_at": "2026-05-11",
+      "last_seen_count": 1
+    },
+    "cc03dfb68dd8e3f9": {
+      "url_prefix": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-mo",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "a8795430f0209270": {
+      "url_prefix": "https://huggingface.co/papers/2605.03042",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "1b99490e2685735b": {
+      "url_prefix": "https://huggingface.co/papers/2605.07177",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "1389ee4ff2641bdc": {
+      "url_prefix": "https://huggingface.co/papers/2605.06169",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "6d82017b6e132e98": {
+      "url_prefix": "https://huggingface.co/papers/2605.08063",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "b0a04f72d3e6620f": {
+      "url_prefix": "https://interfaze.ai/blog/interfaze-a-new-model-ar",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "74d1c28c48c37d9a": {
+      "url_prefix": "https://www.qbitai.com/2026/05/414496.html",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "5d1a9c1fbdda2c8a": {
+      "url_prefix": "https://huggingface.co/papers/2605.06221",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "fe6b3c8715c330fa": {
+      "url_prefix": "https://huggingface.co/papers/2605.08083",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "2eaaedaf0247c01d": {
+      "url_prefix": "https://huggingface.co/blog/allenai/emo",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "2be64766009b7ab1": {
+      "url_prefix": "https://huggingface.co/papers/2605.06747",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "751a892e2ef7a354": {
+      "url_prefix": "https://openai.com/index/openai-launches-the-deplo",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "087e7eb63da01027": {
+      "url_prefix": "https://www.cocoawithlove.com/blog/matrix-multipli",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "cbbe275b7941d02e": {
+      "url_prefix": "https://blog.takuros.net/entry/2026/05/11/080037",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "2e73f63ea94180d2": {
+      "url_prefix": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e2",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "0a04147567be0151": {
+      "url_prefix": "https://sakana.ai/defense-swe-interview-2026/",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "6ce0042f7f6ad59b": {
+      "url_prefix": "https://project.nikkeibp.co.jp/onestep/keyperson/0",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "78697fd529a64c45": {
+      "url_prefix": "https://note.com/mmiya/n/n2eec10d531b2",
+      "first_seen_at": "2026-05-12",
+      "last_seen_at": "2026-05-12",
       "last_seen_count": 1
     }
   }
