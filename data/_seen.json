@@ -1,8 +1,152 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-12T05:00:00+09:00",
+  "updated_at": "2026-05-13T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
+    "a1b2c3d4e5f60001": {
+      "url_prefix": "https://github.com/cactus-compute/needle",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60002": {
+      "url_prefix": "https://huggingface.co/papers/2605.09731",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60003": {
+      "url_prefix": "https://www.anthropic.com/news/claude-for-legal",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60004": {
+      "url_prefix": "https://ai.google.dev/gemini-api/docs/ai-pointer",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60005": {
+      "url_prefix": "https://www.anthropic.com/news/claude-platform-aws",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60006": {
+      "url_prefix": "https://www.anthropic.com/news/claude-agent-view",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60007": {
+      "url_prefix": "https://arxiv.org/abs/2605.10018",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60008": {
+      "url_prefix": "https://huggingface.co/papers/2605.09844",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60009": {
+      "url_prefix": "https://thinkingmachines.ai/blog/full-duplex-speec",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60010": {
+      "url_prefix": "https://arxiv.org/abs/2605.10721",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60011": {
+      "url_prefix": "https://arxiv.org/abs/2605.10835",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60012": {
+      "url_prefix": "https://arxiv.org/abs/2605.10933",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60013": {
+      "url_prefix": "https://36kr.com/p/3806126900191491",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60014": {
+      "url_prefix": "https://techcrunch.com/2026/05/12/vapi-raises-500m",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60015": {
+      "url_prefix": "https://www.aisi.gov.uk/work/frontier-ai-cyber-att",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60016": {
+      "url_prefix": "https://news.ycombinator.com/item?id=43982571",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60017": {
+      "url_prefix": "https://news.ycombinator.com/item?id=43984102",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60018": {
+      "url_prefix": "https://hatena.jp/hotentry/it/ai-logo-design-2026",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60019": {
+      "url_prefix": "https://forest.watch.impress.co.jp/docs/news/210785",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60020": {
+      "url_prefix": "https://sakana.ai/twell/",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60021": {
+      "url_prefix": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60022": {
+      "url_prefix": "https://sakana.ai/defense-swe-interview-2026/",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60023": {
+      "url_prefix": "https://www.qbitai.com/2026/05/415001.html",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60024": {
+      "url_prefix": "https://huggingface.co/papers/2605.09843",
+      "first_seen_at": "2026-05-13",
+      "last_seen_at": "2026-05-13",
+      "last_seen_count": 1
+    },
     "3576210c16f0ee95": {
       "url_prefix": "https://openai.com/index/advancing-voice-intellige",
       "first_seen_at": "2026-05-11",
