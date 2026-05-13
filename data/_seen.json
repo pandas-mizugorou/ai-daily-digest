@@ -1,8 +1,140 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-13T05:00:00+09:00",
+  "updated_at": "2026-05-14T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
+    "b5e1f2a3d4c50001": {
+      "url_prefix": "https://www.itmedia.co.jp/news/articles/2605/13/news097.htm",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50002": {
+      "url_prefix": "https://blog.google/products-and-platforms/platforms/android/gemini",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50003": {
+      "url_prefix": "https://arxiv.org/abs/2605.12481",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50004": {
+      "url_prefix": "https://huggingface.co/papers/2605.12500",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50005": {
+      "url_prefix": "https://huggingface.co/papers/2605.08063",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50006": {
+      "url_prefix": "https://github.com/cactus-compute/needle",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50007": {
+      "url_prefix": "https://www.anthropic.com/news/claude-for-small-business",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50008": {
+      "url_prefix": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-h",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50009": {
+      "url_prefix": "https://github.com/rohitg00/agentmemory",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50010": {
+      "url_prefix": "https://arxiv.org/abs/2605.12484",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50011": {
+      "url_prefix": "https://arxiv.org/abs/2605.12493",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50012": {
+      "url_prefix": "https://arxiv.org/abs/2605.12471",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50013": {
+      "url_prefix": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50014": {
+      "url_prefix": "https://techcrunch.com/2026/05/12/report-google-and-spacex-in-talks-to-put-da",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50015": {
+      "url_prefix": "https://avkcode.github.io/blog/us-winning-ai-race.html",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50016": {
+      "url_prefix": "https://techcrunch.com/2026/05/13/musks-xai-is-running-nearly-50-gas-turbines",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50017": {
+      "url_prefix": "https://dev.classmethod.jp/articles/claude-code-multi-agent-design-patterns/",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50018": {
+      "url_prefix": "https://note.com/simplearchitect/n/nd201f69134aa",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50019": {
+      "url_prefix": "https://zenn.dev/todesking/articles/fba4cc93baf0a9",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50020": {
+      "url_prefix": "https://acro-engineer.hatenablog.com/entry/2026/05/12/120000",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50021": {
+      "url_prefix": "https://bufferings.hatenablog.com/entry/2026/05/12/015150",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
+    "b5e1f2a3d4c50022": {
+      "url_prefix": "https://tokenmix.ai/blog/best-chinese-ai-models-2026-comparison-guide",
+      "first_seen_at": "2026-05-14",
+      "last_seen_at": "2026-05-14",
+      "last_seen_count": 1
+    },
     "a1b2c3d4e5f60001": {
       "url_prefix": "https://github.com/cactus-compute/needle",
       "first_seen_at": "2026-05-13",
