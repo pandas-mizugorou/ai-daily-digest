@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-14T05:00:00+09:00",
+  "updated_at": "2026-05-15T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "b5e1f2a3d4c50001": {
@@ -529,6 +529,144 @@
       "url_prefix": "https://note.com/mmiya/n/n2eec10d531b2",
       "first_seen_at": "2026-05-12",
       "last_seen_at": "2026-05-12",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60001": {
+      "url_prefix": "https://arxiv.org/abs/2605.13839",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60002": {
+      "url_prefix": "https://arxiv.org/abs/2605.14277",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60003": {
+      "url_prefix": "https://huggingface.co/papers/2605.13820",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60004": {
+      "url_prefix": "https://arxiv.org/abs/2605.14918",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60005": {
+      "url_prefix": "https://x.ai/blog/grok-4-3",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60006": {
+      "url_prefix": "https://huggingface.co/ibm-granite/granite-embedding-r2",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60007": {
+      "url_prefix": "https://openai.com/blog/codex-mobile",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60008": {
+      "url_prefix": "https://huggingface.co/blog/async-text-generation",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60009": {
+      "url_prefix": "https://docs.anthropic.com/en/docs/build-with-claude/agent-sdk-budget",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60010": {
+      "url_prefix": "https://arxiv.org/abs/2605.13521",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60011": {
+      "url_prefix": "https://arxiv.org/abs/2605.14592",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60012": {
+      "url_prefix": "https://deepmind.google/research/publications/ai-pointer-2026",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60013": {
+      "url_prefix": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60014": {
+      "url_prefix": "https://techcrunch.com/2026/05/14/cerebras-ai-ipo",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60015": {
+      "url_prefix": "https://news.ycombinator.com/item?id=44012748",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60016": {
+      "url_prefix": "https://news.ycombinator.com/item?id=44015923",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60017": {
+      "url_prefix": "https://zenn.dev/derushio/articles/claude-code-context-fork",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60018": {
+      "url_prefix": "https://qiita.com/tmori/items/ai-ddd-specification-driven",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60019": {
+      "url_prefix": "https://note.com/hakoi_yasutaka/n/novelist-ai-collaboration",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60020": {
+      "url_prefix": "https://zenn.dev/security_ai/articles/claude-mythos-risks",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60021": {
+      "url_prefix": "https://www.nikkei.com/article/DGXZQOUF14B1R0U6A510C2000000",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60022": {
+      "url_prefix": "https://github.com/Tencent/TencentDB-Agent-Memory",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60023": {
+      "url_prefix": "https://www.qbitai.com/2026/05/417748.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     }
   }
