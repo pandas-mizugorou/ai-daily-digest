@@ -83,6 +83,14 @@ function formatWeekRange(from, to) {
   return `${from} 〜 ${to}`;
 }
 
+// "2026-05-09" → "5/9" のように M/D へ短縮 (年は週番号側で表示する前提)
+function formatWeekRangeShort(from, to) {
+  const f = String(from || "").match(/^\d{4}-(\d{2})-(\d{2})$/);
+  const t = String(to || "").match(/^\d{4}-(\d{2})-(\d{2})$/);
+  if (!f || !t) return `${from}〜${to}`;
+  return `${parseInt(f[1], 10)}/${parseInt(f[2], 10)} 〜 ${parseInt(t[1], 10)}/${parseInt(t[2], 10)}`;
+}
+
 // === Index loading ===
 async function loadIndex() {
   try {
@@ -109,9 +117,9 @@ function populateWeekSelect(entries) {
   for (const entry of entries) {
     const opt = document.createElement("option");
     opt.value = entry.week;
-    const range = entry.from && entry.to ? `${entry.from}〜${entry.to}` : "";
-    const items = entry.top_count ? ` ・ Top ${entry.top_count}` : "";
-    opt.textContent = `${entry.week}${range ? ` (${range})` : ""}${items}`;
+    // 例: "2026-W20 (5/9〜5/15)" - 年は週番号に含まれるので日付からは省略、Top N は本文側に出るのでドロップダウンでは省く
+    const range = entry.from && entry.to ? ` (${formatWeekRangeShort(entry.from, entry.to)})` : "";
+    opt.textContent = `${entry.week}${range}`;
     els.weekSelect.appendChild(opt);
   }
 }

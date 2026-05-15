@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v8: 週次ページにセクション選択タブ (atomic-popping-moth) — styles.css / weekly/index.html / weekly/app-weekly.js 更新
-const VERSION = "v8";
+// v9: 週セレクトのドロップダウン表記を簡潔化 ("2026-W20 (5/9〜5/15)" 形式) — weekly/app-weekly.js 更新
+const VERSION = "v9";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
