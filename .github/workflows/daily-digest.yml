@@ -80,6 +80,9 @@ jobs:
           CLAUDE_CODE_MAX_OUTPUT_TOKENS: "64000"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # show_full_output: 週次サマリが生成されなかった事象 (Run 25896429089) のデバッグ用。
+          # 原因特定後は false に戻すか、削除する。
+          show_full_output: true
           prompt: |
             あなたは「ai-daily-digest」スキル (Phase A-E 完了版) として動作し、**実際にファイルを書き込む**必要があります。
             計画・要約・シミュレーションだけで終わらず、Write / Edit ツールでリポジトリにファイルを生成してください。
