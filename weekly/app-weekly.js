@@ -10,6 +10,7 @@ const els = {
   weekStats: document.getElementById("week-stats"),
   weeklyHeadline: document.getElementById("weekly-headline"),
   weeklyText: document.getElementById("weekly-text"),
+  sectionTabs: document.getElementById("weekly-section-tabs"),
   weeklySections: document.getElementById("weekly-sections"),
   keywordCloud: document.getElementById("keyword-cloud"),
   watchlist: document.getElementById("watchlist"),
@@ -20,6 +21,15 @@ const els = {
   sectionTpl: document.getElementById("weekly-section-template"),
   itemTpl: document.getElementById("weekly-item-template"),
 };
+
+const WEEKLY_SECTIONS = [
+  { id: "top_10",           label: "今週のトップ" },
+  { id: "models_3",         label: "注目モデル" },
+  { id: "papers_5",         label: "今週の論文" },
+  { id: "community_buzz_3", label: "コミュニティ反響" },
+  { id: "japan_3",          label: "日本ソース" },
+  { id: "china_3",          label: "中華圏" },
+];
 
 let availableWeeks = [];
 let currentWeek = null;
@@ -177,9 +187,10 @@ function renderWeeklyItem(item) {
   return node;
 }
 
-async function renderSection(titleJa, refs) {
+async function renderSection(titleJa, refs, sectionId) {
   if (!Array.isArray(refs) || refs.length === 0) return null;
   const node = els.sectionTpl.content.firstElementChild.cloneNode(true);
+  if (sectionId) node.dataset.sectionId = sectionId;
   node.querySelector(".weekly-section-title").textContent = titleJa;
   node.querySelector(".weekly-section-count").textContent = `${refs.length}件`;
   const ul = node.querySelector(".weekly-section-items");
@@ -188,6 +199,49 @@ async function renderSection(titleJa, refs) {
     ul.appendChild(renderWeeklyItem(item));
   }
   return node;
+}
+
+// === Section tabs (週次カテゴリ切替 UI、日次 renderCategoryTabs 相当) ===
+function renderWeeklyTabs(populated) {
+  // populated: [{ id, label, count }, ...] (count > 0 のみ)
+  const nav = els.sectionTabs;
+  if (!nav) return;
+  nav.innerHTML = "";
+  if (!Array.isArray(populated) || populated.length <= 1) {
+    nav.classList.add("hidden");
+    return;
+  }
+  // "All" タブ
+  const allBtn = document.createElement("button");
+  allBtn.type = "button";
+  allBtn.className = "cat-tab is-active";
+  allBtn.dataset.sectionId = "all";
+  const totalCount = populated.reduce((s, c) => s + c.count, 0);
+  allBtn.textContent = `すべて (${totalCount})`;
+  allBtn.setAttribute("aria-pressed", "true");
+  nav.appendChild(allBtn);
+  // 各セクションタブ
+  for (const sec of populated) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "cat-tab";
+    btn.dataset.sectionId = sec.id;
+    btn.textContent = `${sec.label} (${sec.count})`;
+    btn.setAttribute("aria-pressed", "false");
+    nav.appendChild(btn);
+  }
+  nav.classList.remove("hidden");
+}
+
+function filterWeeklyBySection(sectionId) {
+  const sections = els.weeklySections.querySelectorAll(".weekly-section");
+  sections.forEach((sec) => {
+    if (sectionId === "all") {
+      sec.classList.remove("tab-hidden");
+    } else {
+      sec.classList.toggle("tab-hidden", sec.dataset.sectionId !== sectionId);
+    }
+  });
 }
 
 function renderKeywordCloud(cloud) {
@@ -260,21 +314,18 @@ async function renderWeek(data) {
 
   els.weeklySections.innerHTML = "";
 
-  // セクション順序: top_10 → models_3 → papers_5 → community_buzz_3 → japan_3 → china_3
-  const sections = [
-    ["今週のトップ", data.top_10],
-    ["注目モデル", data.models_3],
-    ["今週の論文", data.papers_5],
-    ["コミュニティ反響", data.community_buzz_3],
-    ["日本ソース", data.japan_3],
-    ["中華圏", data.china_3],
-  ];
-
-  for (const [title, refs] of sections) {
-    const node = await renderSection(title, refs);
-    if (node) els.weeklySections.appendChild(node);
+  // セクション順序: WEEKLY_SECTIONS の定義順 (top_10 → models_3 → papers_5 → ...)
+  const populatedForTabs = [];
+  for (const sec of WEEKLY_SECTIONS) {
+    const refs = data[sec.id];
+    const node = await renderSection(sec.label, refs, sec.id);
+    if (node) {
+      els.weeklySections.appendChild(node);
+      populatedForTabs.push({ id: sec.id, label: sec.label, count: refs.length });
+    }
   }
 
+  renderWeeklyTabs(populatedForTabs);
   renderKeywordCloud(data.keyword_cloud);
   renderWatchlist(data.watchlist_next_week);
 }
@@ -324,6 +375,21 @@ async function route() {
 }
 
 window.addEventListener("hashchange", route);
+
+// === Section tab click handler (日次 app.js の category tab handler と同パターン) ===
+if (els.sectionTabs) {
+  els.sectionTabs.addEventListener("click", (e) => {
+    const btn = e.target.closest(".cat-tab");
+    if (!btn) return;
+    els.sectionTabs.querySelectorAll(".cat-tab").forEach((b) => {
+      b.classList.remove("is-active");
+      b.setAttribute("aria-pressed", "false");
+    });
+    btn.classList.add("is-active");
+    btn.setAttribute("aria-pressed", "true");
+    filterWeeklyBySection(btn.dataset.sectionId);
+  });
+}
 
 els.weekSelect.addEventListener("change", (e) => {
   if (e.target.value) location.hash = `#${e.target.value}`;

@@ -1383,6 +1383,7 @@ button { font: inherit; cursor: pointer; }
 
 /* tab-hidden: filtered out by category tab */
 .category.tab-hidden { display: none; }
+.weekly-section.tab-hidden { display: none; }
 
 /* === China category styling (subtle accent) === */
 .category[data-cat-id="china"] .category-title::before {

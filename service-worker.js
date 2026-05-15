@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v7: Phase E — Weekly PWA page + weekly cache + weekly-link
-const VERSION = "v7";
+// v8: 週次ページにセクション選択タブ (atomic-popping-moth) — styles.css / weekly/index.html / weekly/app-weekly.js 更新
+const VERSION = "v8";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
