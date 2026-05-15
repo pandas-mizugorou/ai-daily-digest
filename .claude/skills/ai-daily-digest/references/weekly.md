@@ -1,15 +1,19 @@
-# 週次サマリ（金曜のみ生成）
+# 週次サマリ（日曜のみ生成、ISO 8601 月〜日）
 
-`/ai-daily-digest` Phase D 以降。日次の push 完了後、**金曜のみ**追加で週次サマリを生成する。
+`/ai-daily-digest` Phase D 以降。日次の push 完了後、**日曜のみ**追加で週次サマリを生成する。
 
 ## 発火タイミング
 
-- **金曜の routine 実行時**: `today.weekday() == 4` (Friday in JST、`TZ=Asia/Tokyo` で計算)
+- **日曜の routine 実行時**: `today.weekday() == 6` (Sunday in JST、`TZ=Asia/Tokyo` で計算)。GitHub Actions の場合は yml outputs の `is_weekly_day` を参照
 - 通常の日次 JSON を生成・push した直後に追加で実行
-- 週の範囲: 直近 7 日（金曜から遡って 7 日 = 過去の土〜金）
-- ISO 8601 週番号 `YYYY-WW` で命名（例: `2026-W19`）
+- 週の範囲: 直近 7 日（日曜から遡って 7 日 = 過去の月〜日 = ISO 8601 週）
+- ISO 8601 週番号 `YYYY-WW` で命名（例: `2026-W20` = 月 5/11 〜 日 5/17）
 
-`--no-weekly` 引数で金曜でもスキップ可能。`--weekly-only` で週次のみ再生成可能。
+`--no-weekly` 引数で日曜でもスキップ可能。`--weekly-only` で週次のみ再生成可能。
+
+## 経緯メモ
+
+2026-05-15 以前は「金曜朝に発火、土〜金の 7 日でまとめる」運用だったが、ISO 8601 標準と命名 (W20) の解釈がズレており、日次のリンク表示と矛盾していたため日曜発火 + ISO 整合に変更した。
 
 ## 入力
 

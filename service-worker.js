@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v10: 「今週のサマリを見る」をヘッダー右上アイコンボタンに移動 — index.html 更新
-const VERSION = "v10";
+// v11: 週次サマリの発火を金曜 → 日曜に変更、ISO 8601 月〜日と整合 — daily-digest.yml + docs 更新
+const VERSION = "v11";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

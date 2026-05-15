@@ -5,7 +5,7 @@
 ## 入力
 
 - `week`: ISO 週番号（例: "2026-W19"）
-- `from` / `to`: 週開始・終了日（土〜金）
+- `from` / `to`: 週開始・終了日（月〜日 = ISO 8601 週）
 - `daily_files`: 直近 7 日分の `data/<date>.json` の配列
 - `prev_week_data`: 前週の `data/weekly-latest.json`（前週比 delta 計算用、無ければ null）
 

@@ -4,7 +4,7 @@ on:
   schedule:
     # JST 01:30 = UTC 16:30 (前日)
     # 「毎時 :00」は GitHub Actions のキューが大混雑するため :30 を採用。
-    # Phase B-E 拡張後は 60-80 ソース取得 + 20-27 件要約 + 週次 (金曜のみ) で
+    # Phase B-E 拡張後は 60-80 ソース取得 + 20-27 件要約 + 週次 (日曜のみ) で
     # 実行所要 12-25 分。01:30 JST 発火なら平常時は 02:00 前後、混雑時でも
     # 03-04 時着で、朝 5:00 には確実に届く設計
     - cron: "30 16 * * *"
@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 60
     outputs:
       target_date: ${{ steps.date.outputs.value }}
-      is_friday: ${{ steps.date.outputs.is_friday }}
+      is_weekly_day: ${{ steps.date.outputs.is_weekly_day }}
       iso_week: ${{ steps.date.outputs.iso_week }}
       week_from: ${{ steps.date.outputs.week_from }}
       week_to: ${{ steps.date.outputs.week_to }}
@@ -53,28 +53,30 @@ jobs:
             DATE=$(TZ=Asia/Tokyo date +%Y-%m-%d)
           fi
           # 曜日と ISO 週は必ず TZ=Asia/Tokyo で計算する (runner は UTC のため
-          # naive な date +%u では JST 金曜が UTC 木曜と判定される事故を防ぐ)。
+          # naive な date +%u では JST 日曜が UTC 土曜と判定される事故を防ぐ)。
           # Claude の prompt 内判定に任せると W19/W20 の計算ミスや TZ 忘れが起き
           # うるため、yml レイヤーで確定値を生成して outputs に流し込む。
           DOW=$(TZ=Asia/Tokyo date -d "$DATE" +%u)
-          if [ "$DOW" = "5" ]; then
-            IS_FRIDAY="true"
+          # 週次サマリは ISO 8601 週 (月〜日) で運用。発火日は日曜 (DOW=7)。
+          # 日曜朝に発火すると WEEK_FROM = 6 日前 = 月曜となり、月〜日の ISO 週と完全一致する。
+          if [ "$DOW" = "7" ]; then
+            IS_WEEKLY_DAY="true"
           else
-            IS_FRIDAY="false"
+            IS_WEEKLY_DAY="false"
           fi
           ISO_WEEK=$(TZ=Asia/Tokyo date -d "$DATE" +%G-W%V)
-          # 週次サマリの from/to (JST 土〜金 = ISO 週の 6 日前から当日)
+          # 週次サマリの from/to (JST 月〜日 = ISO 週、発火日 (日曜) を起点に -6 日 = 月曜)
           WEEK_FROM=$(TZ=Asia/Tokyo date -d "$DATE - 6 days" +%Y-%m-%d)
           WEEK_TO="$DATE"
           {
             echo "value=$DATE"
             echo "dow=$DOW"
-            echo "is_friday=$IS_FRIDAY"
+            echo "is_weekly_day=$IS_WEEKLY_DAY"
             echo "iso_week=$ISO_WEEK"
             echo "week_from=$WEEK_FROM"
             echo "week_to=$WEEK_TO"
           } >> "$GITHUB_OUTPUT"
-          echo "Target date: $DATE (dow=$DOW, is_friday=$IS_FRIDAY, iso_week=$ISO_WEEK, week=$WEEK_FROM..$WEEK_TO)"
+          echo "Target date: $DATE (dow=$DOW, is_weekly_day=$IS_WEEKLY_DAY, iso_week=$ISO_WEEK, week=$WEEK_FROM..$WEEK_TO)"
 
       - name: Run /ai-daily-digest skill via Claude Code
         uses: anthropics/claude-code-action@v1
@@ -122,7 +124,7 @@ jobs:
             13. 0 件しか取れなかった場合は `data/_errors/${{ steps.date.outputs.value }}.json` にエラーレポートを出力して終了
 
             ## 注意
-            - **週次サマリ (Step 14 以降) はこのジョブでは扱わない**。金曜の週次は別ジョブ (weekly) で別途実行されるため、本ジョブでは Step 1-13 (日次) のみを完了させること
+            - **週次サマリ (Step 14 以降) はこのジョブでは扱わない**。日曜の週次は別ジョブ (weekly) で別途実行されるため、本ジョブでは Step 1-13 (日次) のみを完了させること
             - **git コマンドは一切実行しない**。ファイル書き込みのみ
             - ファイルパスは必ずリポジトリルート相対 (`data/...`) を使う
             - 日次出力 JSON は `assets/digest-schema.json` を満たすこと
@@ -192,14 +194,15 @@ jobs:
           echo "::notice title=Public URL::https://pandas-mizugorou.github.io/ai-daily-digest/#${{ steps.date.outputs.value }}"
 
   weekly:
-    name: Generate and publish weekly summary (Fridays only)
+    name: Generate and publish weekly summary (Sundays only)
     needs: digest
-    if: needs.digest.outputs.is_friday == 'true'
+    if: needs.digest.outputs.is_weekly_day == 'true'
     runs-on: ubuntu-latest
     # 週次のみ。直近 7 日の data/*.json を読んでマージ・選定するだけなので
     # WebFetch / WebSearch 不要、ターン数も少なく済む想定。
     # 別ジョブ化の動機: 日次の turn 配分次第で週次まで到達しない事象を恒久回避
     # するため (Phase F、2026-05-15 の Run 25896429089 で発生)。
+    # 発火日: 日曜 (ISO 8601 週の終わり) → WEEK_FROM = 6 日前 = 月曜で月〜日の ISO 週と一致。
     timeout-minutes: 45
     steps:
       - name: Checkout (after digest job pushed daily JSON)
@@ -218,11 +221,11 @@ jobs:
             あなたは「ai-daily-digest」スキル (Phase F 別ジョブ版) の **週次サマリ専用** モードとして動作し、**実際にファイルを書き込む**必要があります。
             計画・要約・シミュレーションだけで終わらず、Write / Edit ツールでリポジトリにファイルを生成してください。
 
-            このジョブは金曜のみ起動し、デイリージョブで push 済みの直近 7 日の `data/<YYYY-MM-DD>.json` を読み込んで週次サマリを生成します。日次の収集・スコアリング・カテゴリ分け等は一切しません。
+            このジョブは日曜のみ起動し、デイリージョブで push 済みの直近 7 日 (ISO 8601 週 = 月〜日) の `data/<YYYY-MM-DD>.json` を読み込んで週次サマリを生成します。日次の収集・スコアリング・カテゴリ分け等は一切しません。
 
             ## yml outputs から渡された確定値 (再計算しないこと)
-            - 当週終了日 (金曜、JST): **${{ needs.digest.outputs.week_to }}**
-            - 当週開始日 (土曜、JST): **${{ needs.digest.outputs.week_from }}**
+            - 当週終了日 (日曜、JST): **${{ needs.digest.outputs.week_to }}**
+            - 当週開始日 (月曜、JST): **${{ needs.digest.outputs.week_from }}**
             - ISO 週番号: **${{ needs.digest.outputs.iso_week }}**
               → 出力ファイル名は `data/weekly-${{ needs.digest.outputs.iso_week }}.json` で確定
 
