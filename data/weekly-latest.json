@@ -2,10 +2,10 @@
   "week": "2026-W20",
   "from": "2026-05-09",
   "to": "2026-05-15",
-  "generated_at": "2026-05-15T11:00:00+09:00",
+  "generated_at": "2026-05-15T14:30:00+09:00",
   "schema_version": "1.0",
-  "headline": "Google I/O・LlamaCon・GPT-Realtime とフロンティアモデル発表が連続、Anthropic は Glasswing と Claude for Legal で評価額 1 兆ドル超え企業採用 1 位",
-  "summary_ja": "フロンティアモデルの一斉発表と Anthropic の急拡大が同時進行した週。Google は I/O 2026 で Gemini 4・Veo 4・Workspace Intelligence、続く Android Show で Gemini Intelligence を公開し、Meta は LlamaCon で Llama 4 (405B) と累計 10 億 DL、OpenAI は GPT-Realtime 3 音声、xAI は Grok 4.3 を GA。Anthropic は Glasswing・Claude for Legal・Small Business・AWS 統合・ゲイツ財団 $200M を矢継ぎ早に発表し評価額 $1 兆超、Ramp 調査で初の企業採用 1 位 (34.4% vs OpenAI 32.3%)。研究では重み更新で対話する TFlow がトークン 83% 削減、単一ニューロンで安全アライメントを突破する論文も登場。日本では Chrome DevTools MCP (はてブ 467) と GW Claude Code 学習ガイド (1,003) が爆発反響。来週は Mythos の段階開放と Galaxy S26 への Gemini Intelligence 展開に注目。",
+  "headline": "Google I/O・LlamaCon・GPT-Realtime とフロンティアモデル発表が連続、Anthropic は Glasswing と Claude for Legal で評価額 1 兆ドル超え企業採用 1 位、週末は Claude Code「/goals」・PwC大型展開・arXiv幻覚引用禁止令で急展開",
+  "summary_ja": "フロンティアモデルの一斉発表と Anthropic の急拡大が同時進行した週。Google は I/O 2026 で Gemini 4・Veo 4・Workspace Intelligence、続く Android Show で Gemini Intelligence を公開し、Meta は LlamaCon で Llama 4 (405B) と累計 10 億 DL、OpenAI は GPT-Realtime 3 音声、xAI は Grok 4.3 を GA。Anthropic は Glasswing・Claude for Legal・Small Business・AWS 統合・ゲイツ財団 $200M を矢継ぎ早に発表し評価額 $1 兆超、Ramp 調査で初の企業採用 1 位 (34.4% vs OpenAI 32.3%)。研究では重み更新で対話する TFlow がトークン 83% 削減、単一ニューロンで安全アライメントを突破する論文も登場。日本では Chrome DevTools MCP (はてブ 467) と GW Claude Code 学習ガイド (1,003) が爆発反響。週末の 5/15 はさらに動きが加速し、Claude Code に「/goals」機能（評価者と実行者の分離で早期終了バグを解消）が追加、Anthropic×PwC の大型企業展開パートナーシップを公式発表、arXiv が AI 幻覚引用使用研究者に 1 年間の投稿禁止ポリシーを導入（HN 311pt）。Conductor 型エージェント設計が主流化、Kaiming He が初の拡散型 LM（105M）を発表、中国の Embodied AI が 4 カ月で 550 億元の資金を集めた。来週は Mythos の段階開放と Galaxy S26 への Gemini Intelligence 展開に注目。",
   "stats": {
     "total_collected_week": 540,
     "after_dedup": 118,
@@ -70,11 +70,11 @@
       "reason": "AI Co-Mathematician が FrontierMath Tier-4 で 48% を達成、研究自動化の現時点到達点 (score 17)"
     },
     {
-      "id": "agents-20260515-001",
+      "id": "ag-latent-conductor",
       "date": "2026-05-15",
       "rank": 9,
       "category": "agents",
-      "reason": "TFlow が LLM エージェント間を「重み更新」で対話させトークン 83% 削減・4.6× 高速化を実証 (score 17)"
+      "reason": "Latent Space 分析：Conductor（指揮者）型エージェント設計が GitHub Copilot・VS Code で実証され 2026 年の業界標準パターンに (score 17, academic+1)"
     },
     {
       "id": "research_autotts",
@@ -94,7 +94,7 @@
       "date": "2026-05-11"
     },
     {
-      "id": "agents-20260515-001",
+      "id": "rp-arxiv-sycophancy-pluralistic",
       "date": "2026-05-15"
     },
     {
@@ -138,7 +138,7 @@
       "date": "2026-05-13"
     },
     {
-      "id": "community_buzz-20260515-001",
+      "id": "cb-reddit-claude-opus47-sweb",
       "date": "2026-05-15"
     },
     {
@@ -174,7 +174,7 @@
   ],
   "china_3": [
     {
-      "id": "china-20260515-001",
+      "id": "cn-qbitai-tian-yuandong",
       "date": "2026-05-15"
     },
     {
@@ -190,7 +190,7 @@
       "date": "2026-05-11"
     },
     {
-      "id": "china-20260515-002",
+      "id": "cn-36kr-embodied-ai-boom",
       "date": "2026-05-15"
     }
   ],
@@ -402,10 +402,10 @@
       "source": "arxiv"
     },
     {
-      "id": "agents-20260515-001",
+      "id": "ag-latent-conductor",
       "date": "2026-05-15",
       "category": "agents",
-      "source": "arxiv"
+      "source": "latent_space"
     },
     {
       "id": "2026-05-09-004",
@@ -450,10 +450,10 @@
       "source": "huggingface"
     },
     {
-      "id": "china-20260515-001",
+      "id": "cn-qbitai-tian-yuandong",
       "date": "2026-05-15",
       "category": "china",
-      "source": "github.com/Tencent"
+      "source": "qbitai"
     },
     {
       "id": "2026-05-13-024",
@@ -912,10 +912,10 @@
       "source": "anthropic"
     },
     {
-      "id": "china-20260515-002",
+      "id": "cn-36kr-embodied-ai-boom",
       "date": "2026-05-15",
       "category": "china",
-      "source": "qbitai.com"
+      "source": "36kr_ai"
     },
     {
       "id": "japan-20260514-004",
@@ -996,10 +996,10 @@
       "source": "hacker_news"
     },
     {
-      "id": "community_buzz-20260515-001",
+      "id": "cb-reddit-claude-opus47-sweb",
       "date": "2026-05-15",
       "category": "community_buzz",
-      "source": "hacker_news"
+      "source": "reddit_claudeai"
     },
     {
       "id": "buzz-20260514-001",

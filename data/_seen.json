@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-15T05:00:00+09:00",
+  "updated_at": "2026-05-15T14:30:00+09:00",
   "retention_days": 90,
   "entries": {
     "b5e1f2a3d4c50001": {
@@ -535,7 +535,7 @@
       "url_prefix": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_count": 2
     },
     "ec90464f06eb7f57": {
       "url_prefix": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
@@ -547,7 +547,7 @@
       "url_prefix": "https://openai.com/news/product-releases/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_count": 2
     },
     "5cc6e708b1031685": {
       "url_prefix": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
@@ -571,7 +571,7 @@
       "url_prefix": "https://www.latent.space/p/ainews-everything-is-conductor",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_count": 2
     },
     "e62501d1ecf515fb": {
       "url_prefix": "https://x.ai/news",
@@ -583,7 +583,7 @@
       "url_prefix": "https://huggingface.co/SulphurAI/Sulphur-2-base",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_count": 2
     },
     "f3f12cfaa7235f6e": {
       "url_prefix": "https://huggingface.co/k2-fsa/OmniVoice",
@@ -649,13 +649,13 @@
       "url_prefix": "https://sakana.ai/twell/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_count": 2
     },
     "086264df0fbd138a": {
       "url_prefix": "https://zenn.dev/localllm_lab/articles/local-llm-hardware-2026",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_count": 2
     },
     "4729b15d5c67af1c": {
       "url_prefix": "https://pc.watch.impress.co.jp/docs/column/ai/2026/local-llm-spring.html",
@@ -677,6 +677,120 @@
     },
     "83ed0b4ca0aea084": {
       "url_prefix": "https://www.qbitai.com/2026/05/china-ai-dual-policy-package.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "d6ee8e68fab1b9c2": {
+      "url_prefix": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "fa34f98af72c9c27": {
+      "url_prefix": "https://venturebeat.com/orchestration/claude-codes-goals-separates-the-agent-tha",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "14125c21aca30972": {
+      "url_prefix": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "41a396950cfeedd9": {
+      "url_prefix": "https://www.qbitai.com/2026/05/417753.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "3d72eba228a759cd": {
+      "url_prefix": "https://venturebeat.com/security/enterprises-verify-agents-identity-cannot-contr",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "8d90eedebc94cd3f": {
+      "url_prefix": "https://36kr.com/p/3809801647595272",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "a03a170ba198b13c": {
+      "url_prefix": "https://arxiv.org/abs/2605.14000",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "9adf4cabff5a33da": {
+      "url_prefix": "https://arxiv.org/abs/2605.14912",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "c2e346c511a52db7": {
+      "url_prefix": "https://www.qbitai.com/2026/05/416628.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "73e7f5e113964d7b": {
+      "url_prefix": "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-sea",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "75f20d5788df8307": {
+      "url_prefix": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "b26aedf8179514ac": {
+      "url_prefix": "https://twitter.com/tdietterich/status/2055000956144935055",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "194c3db34a228cec": {
+      "url_prefix": "https://www.reddit.com/r/ClaudeAI/",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "7845c4d3fffff112": {
+      "url_prefix": "https://venturebeat.com/technology/ai-iq-is-here-a-new-site-scores-frontier-ai-m",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "8152349af62e38f5": {
+      "url_prefix": "https://www.itmedia.co.jp/news/articles/2605/13/news097.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "41774e95006ae27e": {
+      "url_prefix": "https://qiita.com/syunichisato51/items/502c8b96af3708b64815",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "dd8ebc1ee6cafce9": {
+      "url_prefix": "https://zenn.dev/_flux/articles/a57738201a5003",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "ce7103d91f77604d": {
+      "url_prefix": "https://www.qbitai.com/2026/05/417468.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "7cf9ec392dc25ae6": {
+      "url_prefix": "https://36kr.com/p/3809911566704388",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
