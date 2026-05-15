@@ -1,8 +1,158 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-15T23:45:00+09:00",
+  "updated_at": "2026-05-16T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
+    "c6f2a3b4e5d60001": {
+      "url_prefix": "https://subquadratic.ai/blog/subq-1m-preview",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60002": {
+      "url_prefix": "https://azure.microsoft.com/en-us/blog/phi-4-reasoning-vision-15b",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60003": {
+      "url_prefix": "https://huggingface.co/Zyphra/ZAYA1-8B",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60004": {
+      "url_prefix": "https://openai.com/index/personal-finance-chatgpt/",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60005": {
+      "url_prefix": "https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60006": {
+      "url_prefix": "https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60007": {
+      "url_prefix": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60008": {
+      "url_prefix": "https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60009": {
+      "url_prefix": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60010": {
+      "url_prefix": "https://huggingface.co/papers/2605.15141",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60011": {
+      "url_prefix": "https://huggingface.co/papers/2605.13301",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60012": {
+      "url_prefix": "https://huggingface.co/papers/2605.15155",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60013": {
+      "url_prefix": "https://huggingface.co/papers/2605.10912",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60014": {
+      "url_prefix": "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60015": {
+      "url_prefix": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60016": {
+      "url_prefix": "https://seekingalpha.com/news/4592634-openai-backs-us-led-global-ai-governance",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60017": {
+      "url_prefix": "https://techcrunch.com/2026/05/14/openai-is-reportedly-preparing-legal-action-against-apple",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60018": {
+      "url_prefix": "https://www.androidauthority.com/what-to-expect-from-google-io-2026",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60019": {
+      "url_prefix": "https://www.gizmodo.jp/2026/05/2026_local_llm_matome.html",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60020": {
+      "url_prefix": "https://dev.classmethod.jp/articles/local-llm-guide-2026/",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60021": {
+      "url_prefix": "https://zenn.dev/yokoe24/articles/147ceccdd72319",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60022": {
+      "url_prefix": "https://www.businessinsider.jp/article/2604-nec-ai-strategy-focus-on-practical-value",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60023": {
+      "url_prefix": "https://renue.co.jp/posts/ai-industry-state-2026-world-2-5t-japan-94b-llm-3-giants-5-trends",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60024": {
+      "url_prefix": "https://www.qbitai.com/2026/05/414496.html",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
+    "c6f2a3b4e5d60025": {
+      "url_prefix": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "first_seen_at": "2026-05-16",
+      "last_seen_at": "2026-05-16",
+      "last_seen_count": 1
+    },
     "b5e1f2a3d4c50001": {
       "url_prefix": "https://www.itmedia.co.jp/news/articles/2605/13/news097.htm",
       "first_seen_at": "2026-05-14",
