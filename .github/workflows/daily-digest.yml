@@ -46,8 +46,29 @@ jobs:
           else
             DATE=$(TZ=Asia/Tokyo date +%Y-%m-%d)
           fi
-          echo "value=$DATE" >> "$GITHUB_OUTPUT"
-          echo "Target date: $DATE"
+          # 曜日と ISO 週は必ず TZ=Asia/Tokyo で計算する (runner は UTC のため
+          # naive な date +%u では JST 金曜が UTC 木曜と判定される事故を防ぐ)。
+          # Claude の prompt 内判定に任せると W19/W20 の計算ミスや TZ 忘れが起き
+          # うるため、yml レイヤーで確定値を生成して outputs に流し込む。
+          DOW=$(TZ=Asia/Tokyo date -d "$DATE" +%u)
+          if [ "$DOW" = "5" ]; then
+            IS_FRIDAY="true"
+          else
+            IS_FRIDAY="false"
+          fi
+          ISO_WEEK=$(TZ=Asia/Tokyo date -d "$DATE" +%G-W%V)
+          # 週次サマリの from/to (JST 土〜金 = ISO 週の 6 日前から当日)
+          WEEK_FROM=$(TZ=Asia/Tokyo date -d "$DATE - 6 days" +%Y-%m-%d)
+          WEEK_TO="$DATE"
+          {
+            echo "value=$DATE"
+            echo "dow=$DOW"
+            echo "is_friday=$IS_FRIDAY"
+            echo "iso_week=$ISO_WEEK"
+            echo "week_from=$WEEK_FROM"
+            echo "week_to=$WEEK_TO"
+          } >> "$GITHUB_OUTPUT"
+          echo "Target date: $DATE (dow=$DOW, is_friday=$IS_FRIDAY, iso_week=$ISO_WEEK, week=$WEEK_FROM..$WEEK_TO)"
 
       - name: Run /ai-daily-digest skill via Claude Code
         uses: anthropics/claude-code-action@v1
@@ -95,15 +116,24 @@ jobs:
             13. 0 件しか取れなかった場合は `data/_errors/${{ steps.date.outputs.value }}.json` にエラーレポートを出力して終了
 
             ## タスク (週次サマリ、金曜のみ)
-            14. **TZ=Asia/Tokyo で曜日を判定**。金曜 (`date +%u` == 5) のときのみ追加実行。詳細は `references/weekly.md` および `assets/prompt-templates/weekly-summary.md` 参照
-            15. `data/<YYYY-MM-DD>.json` の直近 7 日分 (金曜から遡って 7 日) を読み込み、全 categories[].items[] をマージ・重複排除
-            16. 前週データ `data/weekly-latest.json` を読み込み (前週比 delta 計算用、無ければ null)
-            17. top_10 (5-12) / papers_5 (≤7) / models_3 (≤5) / community_buzz_3 (≤5) / japan_3 (≤5) / china_3 (≤5) を選定 (id 参照)
-            18. keyword_cloud 集計 (頻出タグ 上位 20、前週比 delta_vs_prev_week)
-            19. watchlist_next_week 抽出 (3-8 件、「予定 / upcoming / next week / expected / 公開予定」キーワードから固有名詞)
-            20. 週次 headline / summary_ja (300-500 字) を生成
-            21. 出力ファイル:
-                - `data/weekly-YYYY-WW.json` を新規作成 / 上書き (ISO 週番号、例: weekly-2026-W19.json)
+
+            **金曜判定は yml 側で確定済み**: `is_friday=${{ steps.date.outputs.is_friday }}` が `true` のときのみ Step 14〜21 を実行する。`false` のときは Step 14〜21 を完全にスキップし、デイリーの書き込みが終わった時点でこのフェーズを終了すること。**自前で `date +%u` を実行して曜日を再判定しないこと** (TZ ずれや ISO 週番号の計算ミスを防ぐため)。
+
+            **金曜のときに必ず使う変数 (yml outputs から渡された確定値)**:
+            - ISO 週番号: `${{ steps.date.outputs.iso_week }}` (例: `2026-W20`)。ファイル名 `data/weekly-<iso_week>.json` をこの値から組み立てる
+            - 週の開始日 (土): `${{ steps.date.outputs.week_from }}`
+            - 週の終了日 (金): `${{ steps.date.outputs.week_to }}` (= `${{ steps.date.outputs.value }}`)
+
+            詳細仕様は `references/weekly.md` および `assets/prompt-templates/weekly-summary.md` 参照。
+
+            14. (金曜のみ) `data/<YYYY-MM-DD>.json` の直近 7 日分 (`week_from` から `week_to` までの 7 日) を読み込み、全 categories[].items[] をマージ・重複排除
+            15. 前週データ `data/weekly-latest.json` を読み込み (前週比 delta 計算用、無ければ null)
+            16. top_10 (5-12) / papers_5 (≤7) / models_3 (≤5) / community_buzz_3 (≤5) / japan_3 (≤5) / china_3 (≤5) を選定 (id 参照)
+            17. keyword_cloud 集計 (頻出タグ 上位 20、前週比 delta_vs_prev_week)
+            18. watchlist_next_week 抽出 (3-8 件、「予定 / upcoming / next week / expected / 公開予定」キーワードから固有名詞)
+            19. 週次 headline / summary_ja (300-500 字) を生成
+            20. 出力ファイル:
+                - `data/weekly-${{ steps.date.outputs.iso_week }}.json` を新規作成 / 上書き
                 - `data/weekly-latest.json` を同内容で上書き
                 - `data/weekly-index.json` の entries 先頭を当週エントリで更新 (week / from / to / headline / top_count / selected_items)。直近 52 週まで保持
 
