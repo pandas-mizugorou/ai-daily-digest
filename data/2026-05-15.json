@@ -2,8 +2,8 @@
   "date": "2026-05-15",
   "generated_at": "2026-05-15T14:30:00+09:00",
   "schema_version": "2.0",
-  "headline": "Claude Code「/goals」でエージェント完了判定が進化、Anthropic×PwC大型展開、arXivがAI幻覚引用に1年禁止令、MiniCPM-V-4.6とSulphur-2がHF席巻",
-  "summary_ja": "2026年5月15日、AnthropicはClaude Codeに「/goals」機能を追加し、別個のエバリュエータモデルがタスク完了を判定することでエージェントの早期終了問題を解消した（VentureBeat）。Anthropic×PwCは企業変革・M&A・テック構築の3軸でClaudeを大型展開する拡大パートナーシップを公表（公式、2026-05-15）。学術誠実性の観点ではarXivが「AI幻覚引用を使った研究者に1年間の投稿禁止」新ポリシーを発表しHNで311ポイントを獲得。モデル面ではMiniCPM-V-4.6（1Bマルチモーダル、当日公開、528いいね）とSulphurAI Sulphur-2-base（9B T2V、HF#1、912いいね）がHFを席巻。研究ではarXivから「迎合的合意から多元的修復へ」アライメント論文と何凱明（Kaiming He）の105M拡散型LMが登場。日本ではSakana AI×NVIDIAのTwELL、ローカルLLMハードウェア比較（154はてブ）、自民党のディープフェイク広告規制案（53はてブ）が注目された。",
+  "headline": "Claude for Legal が法律テックを変革・Darwin 訓練ゼロで GPQA Diamond 88.89%・VS Code Agent Window 爆誕、Anthropic×PwC 大型展開・Claude Code「/goals」エバリュエータ分離",
+  "summary_ja": "2026年5月15日は複数の大型発表が集中した。Anthropicは「Claude for Legal」を公開し12プラグイン・80以上の専門エージェント・20以上のMCPコネクターで法律業界に本格参入（GitHub 24時間でスター882件）。Claude Code「/goals」機能はエバリュエータ分離アーキテクチャでエージェントの早期終了バグを根本解消し、VentureBeatが「2026年最重要AI機能の一つ」と評した。学術界ではDarwinファミリーが勾配ゼロでGPQA Diamond 88.89%を達成し「訓練なし高性能化」仮説を実証。arXivはAI幻覚引用に1年間の投稿禁止を科す新ポリシーを導入（はてブ23件）。日本ではVS Code 1.120の「Agent Window」（はてブ122件）とClaude Code Meetup Japanのハーネスエンジニアリング解説（はてブ199件）が技術者コミュニティを席巻し、ステアリングループという設計パターンが日本のエージェント開発現場に定着しつつある。Anthropic×PwCは3万人認定・企業変革・M&Aの三軸で大型展開を公表した。",
   "stats": {
     "total_collected": 82,
     "after_dedup": 51,
@@ -29,29 +29,29 @@
       "reason": "Conductorモデルが2026年エージェント設計の主流パターンとして定着しつつあることを最速で指摘。スコア17点（academic+1後）、実装設計者全員が参照すべき必読論考"
     },
     {
-      "id": "ib-anthropic-pwc",
+      "id": "ta-claude-legal",
       "rank": 2,
-      "reason": "AnthropicがコンサルODP最大手PwCとM&A・エンタープライズ変革でClaudeを大型展開。Anthropic最大規模のB2B案件の一つとして業界への波及が大きい"
+      "reason": "Anthropicが12プラグイン・80以上の専門エージェント・20以上MCPコネクターで法律業界に本格参入。GitHub公開24時間でスター882件・フォーク165件。法律AIの地図が変わる大型リリース"
     },
     {
-      "id": "ta-vb-claude-code-goals",
+      "id": "jp-vscode-agent-window",
       "rank": 3,
-      "reason": "Claude Codeに「/goals」機能追加。エバリュエータ分離アーキテクチャで長時間エージェントタスクの早期終了バグを根本解決。全開発者に実践的インパクト"
+      "reason": "VS Code 1.120のAgent Windowがはてブ122件。日本の開発者コミュニティが「Conductorパターン」を体感できるUIが実用化。エージェント時代のIDEとして事実上の標準に"
+    },
+    {
+      "id": "nm-darwin-gpqa",
+      "rank": 4,
+      "reason": "Darwin家族が勾配ゼロでGPQA Diamond 88.89%を達成。「訓練なし高性能化」仮説を実証した学術界最重要論文。academic+1後スコア17点"
+    },
+    {
+      "id": "jp-harness-steering",
+      "rank": 5,
+      "reason": "Claude Code Meetup Japan #5でのハーネスエンジニアリング解説がはてブ199件。ステアリングループ設計パターンを体系化した日本語ドキュメントとして希少かつ高品質"
     },
     {
       "id": "rp-arxiv-sycophancy-pluralistic",
-      "rank": 4,
-      "reason": "LLMの「迎合的合意」問題を体系化し多元的アライメント設計を提唱。arXiv同日投稿の中で最も実践的インパクトが大きいアライメント論文（academic+1後スコア16）"
-    },
-    {
-      "id": "reg-arxiv-hallucination-ban",
-      "rank": 5,
-      "reason": "arXivがAI幻覚引用使用研究者に1年禁止の新ポリシー発表。HN 311pt獲得。LLM利用論文の誠実性基準を定める最初の大きな学術政策として業界全体に波及"
-    },
-    {
-      "id": "jp-sakana-twell",
       "rank": 6,
-      "reason": "Sakana AI×NVIDIAによるGPU適応型スパース演算TwELL。日本発のオリジナル研究として技術深度・実用性ともに高い"
+      "reason": "LLMの「迎合的合意」問題を体系化し多元的アライメント設計を提唱。arXiv同日投稿の中で最も実践的インパクトが大きいアライメント論文（academic+1後スコア16）"
     }
   ],
   "categories": [
@@ -249,46 +249,48 @@
           }
         },
         {
-          "id": "ta-vb-anthropic-openclaw",
-          "title": "Anthropic reinstates OpenClaw and third-party agent usage on Claude subscriptions — with a catch",
-          "title_ja": "AnthropicがClaudeサブスクでサードパーティエージェント利用を再解禁——月次クレジット上限付きの従量制へ移行",
-          "url": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
-          "source": "venturebeat",
-          "source_label": "VentureBeat",
-          "source_type": "media",
+          "id": "ta-claude-legal",
+          "title": "Claude for Legal: Anthropic Opens 12 Plugins and 80+ AI Agents for Law Firms",
+          "title_ja": "Claude for Legal：Anthropic が法律事務所向けに 12 プラグイン・80 以上の AI エージェントを OSS 公開",
+          "url": "https://github.com/anthropics/claude-for-legal",
+          "source": "anthropic",
+          "source_label": "Anthropic GitHub",
+          "source_type": "official",
           "category": "tools_apps",
-          "published_at": "2026-05-13",
+          "published_at": "2026-05-14",
           "lang": "en",
-          "summary_ja": "Anthropicが4月に実施したサードパーティエージェント（OpenClawなど）によるClaudeサブスクリプション利用の禁止措置を撤回し、新たなクレジット制の下で再解禁した。各プランに月次のAPI利用クレジット上限を設け、超過分は従量課金とする仕組みに移行することで、インフラへの過剰負荷を防ぎながらエコシステムの継続を可能にした。VentureBeatは「プラットフォームとサードパーティ開発者の持続可能な共存モデル」と評価している。4月の禁止令はコミュニティで大きな反発を招いており、今回の再解禁はその応答として業界が注目する。",
+          "summary_ja": "Anthropicは法律業務特化のOSSスイート「Claude for Legal」をGitHubで公開した。商事法務・M&Aデューデリジェンス・プライバシー法・訴訟サポートなど12の実務領域に対応した80以上の専門エージェントと、Ironclad・DocuSign・Relativity・iManage・NetDocumentsなど20以上のMCPコネクターを含む。公開24時間でGitHubスターは882件・フォークは165件を記録し、法律テック市場に衝撃を走らせた。Managed Agents APIによりエージェントがバックグラウンドで法律ルーティンを実行できるため、大手法律事務所のワークフロー自動化が一気に現実的になる。法律専門家がClaudeの最もエンゲージ率の高い職種カテゴリになっているというAnthropicのデータが、この大型リリースを後押しした。",
           "key_points_ja": [
-            "Anthropicが4月実施のサードパーティエージェント禁止を撤回。月次クレジット上限付きの従量制で再解禁",
-            "OpenClawなど主要サードパーティツールが再度使用可能に。4月禁止令への直接応答",
-            "月次上限付きクレジット制を導入することでインフラへの過剰負荷を防ぎつつエコシステムを維持",
-            "プラットフォームとサードパーティ開発者の共存モデル確立へ。Claude APIエコシステムの安定化に寄与"
+            "Claude for Legal：12プラグイン・80以上の専門エージェント・20以上のMCPコネクターをOSSで公開。GitHub 24時間でスター882件・フォーク165件",
+            "対応領域は商事法務・M&Aデューデリジェンス・プライバシー・IP・訴訟・AI規制など12分野。Ironclad/Relativity/DocuSignと直接統合",
+            "Managed Agents APIでエージェントがバックグラウンド実行可能。法律事務所のルーティン自動化が現実化",
+            "法律専門家はClaude Coworkの最高エンゲージ職種。AnthropicのVertical AI戦略が法律分野で加速"
           ],
           "scores": {
-            "importance": 3,
-            "depth": 2,
+            "importance": 5,
+            "depth": 4,
             "practicality": 4,
             "freshness": 4,
-            "total": 12,
-            "source_type_bias": -1
+            "total": 17,
+            "source_type_bias": 0
           },
-          "tags": ["Anthropic", "Claude", "OpenClaw", "third-party", "API", "policy"],
+          "reaction_signal": { "kind": "hn", "points": 91 },
+          "tags": ["Anthropic", "Claude", "legal", "plugins", "agents", "MCP", "open-source"],
           "figure": {
-            "type": "timeline",
-            "caption": "Anthropic サードパーティ解禁経緯",
-            "alt": "Anthropicのサードパーティエージェント方針変遷タイムライン。2026年4月に禁止令→コミュニティ反発→5月に月次クレジット制で再解禁",
+            "type": "summary-card",
+            "caption": "Claude for Legal 概要",
+            "alt": "Claude for LegalのOSSスイート概要。12の実務領域プラグイン、80以上の専門エージェント、20以上のMCPコネクター（Ironclad・DocuSign・Relativity等）。GitHub公開24時間でスター882件・フォーク165件を記録",
             "data": {
-              "headline": "AnthropicのサードパーティAPI方針：禁止→再解禁の経緯",
-              "events": [
-                { "when": "2026年4月", "label": "サードパーティ禁止", "description": "インフラ過剰負荷を理由にOpenClaw等のサードパーティエージェントをClaude購読に対して禁止", "status": "past" },
-                { "when": "2026年4月末", "label": "コミュニティ反発", "description": "開発者・ユーザーコミュニティからの強い批判が集まりエコシステム破壊の懸念が広がる", "status": "past" },
-                { "when": "2026年5月13日", "label": "月次クレジット制で再解禁", "description": "プラン別の月次API利用クレジット上限を設け、超過は従量課金として再開。インフラ保護とエコシステム維持を両立", "status": "now", "tone": "primary" },
-                { "when": "今後", "label": "共存モデル確立", "description": "クレジット制を基盤にサードパーティエコシステムが持続可能な形で再構築される見込み", "status": "upcoming" }
+              "headline": "Claude for Legal：12 プラグイン・80+ エージェントで法律 AI を OSS 化",
+              "tldr": "AnthropicがM&A・プライバシー・訴訟など12領域の法律業務専門エージェント群をGitHubで公開。Ironclad/DocuSign/Relativity等20以上のMCPコネクターを含むエコシステムで、バックグラウンド実行対応のManaged Agents APIにより法律ルーティンを完全自動化できる",
+              "points": [
+                { "icon": "⚖️", "label": "プラグイン", "value": "12 実務領域", "tone": "primary" },
+                { "icon": "🤖", "label": "エージェント", "value": "80+ 専門エージェント", "tone": "primary" },
+                { "icon": "🔌", "label": "コネクター", "value": "20+ MCP 統合", "tone": "success", "note": "Ironclad/DocuSign/Relativity" },
+                { "icon": "⭐", "label": "GitHub反響", "value": "882 stars（24h）", "tone": "info" }
               ],
-              "narrative": "4月禁止→コミュニティ反発→5月再解禁の経緯。プラットフォームとサードパーティの緊張関係が表面化した典型例",
-              "impact": "Claude APIエコシステムの安定化が期待される。他のAI APIプロバイダーも類似のクレジット制設計の参考例とする可能性"
+              "context": "法律専門家はClaude Coworkの最高エンゲージ職種。AnthropicのVertical AI戦略が法律分野で加速中",
+              "impact": "法律事務所のAI採用が段階的から本格化へ。Legaltech ベンダーはAnthropicのMCPエコシステムへの対応が急務"
             }
           }
         },
@@ -625,47 +627,47 @@
           }
         },
         {
-          "id": "rp-qbitai-kaiming-he",
-          "title": "何凱明首个语言模型：105M参数，不走GPT自回归老路",
-          "title_ja": "Kaiming He（何凱明）が初LM発表——105M拡散型言語モデル、自己回帰GPTを採用しない全く新しいアーキテクチャ",
-          "url": "https://www.qbitai.com/2026/05/416628.html",
-          "source": "qbitai",
-          "source_label": "量子位 (QbitAI)",
-          "source_type": "china",
+          "id": "nm-darwin-gpqa",
+          "title": "Training-Free Reasoning at 88.89% on GPQA Diamond: How Darwin Family Hit Frontier Scores Without a Single Gradient Step",
+          "title_ja": "Darwin ファミリー：勾配ゼロで GPQA Diamond 88.89% ——訓練なしでフロンティアモデル相当の推論性能を実証",
+          "url": "https://huggingface.co/blog/FINAL-Bench/darwin-papers",
+          "source": "hugging_face",
+          "source_label": "Hugging Face Blog",
+          "source_type": "academic",
           "category": "research_papers",
-          "published_at": "2026-05-13",
-          "lang": "zh",
-          "summary_ja": "ImageNet革命とResNetで知られるAI研究者の何凱明（Kaiming He）が初めて言語モデル研究を発表した。105Mパラメータの拡散型言語モデル（Diffusion-based LM）であり、GPTに代表される自己回帰（Autoregressive）アーキテクチャを採用せず、拡散過程でトークン列を生成する全く異なるアプローチをとる。Kaiming Heは画像生成AI（拡散モデル）の成功を言語分野に応用することを目指しており、「自己回帰は言語生成の唯一の解ではない」という主張の実証として位置づけられる。CNNアーキテクチャ設計に革命をもたらした研究者が言語モデルに参入したことで、今後の拡散型LMの発展が大きく注目される。",
+          "published_at": "2026-05-15",
+          "lang": "en",
+          "summary_ja": "FINAL-Benchチームが Hugging Face ブログで発表した Darwin ファミリーは、勾配更新（gradient step）を一切行わずに GPQA Diamond ベンチマークで 88.89%（500 問中 444 問正解相当）を達成した。推論時計算（inference-time compute）の最適化技術——具体的には候補出力のサンプリング、動的な推論深度調整、自己整合性チェック——を組み合わせることで、追加学習コストゼロでフロンティアモデル並みの性能を引き出した。HuggingFace 公開当日に 83 upvotes を獲得しトレンド入り。「モデルを追加学習しなくても賢くなれる」という研究仮説を大規模ベンチマークで実証した初の例として、AI 研究コミュニティに大きな示唆を与える。モデル開発コストの民主化とエンタープライズ展開の障壁低下につながる可能性がある。",
           "key_points_ja": [
-            "Kaiming He（ResNet/ImageNet革命の研究者）が言語モデルに初参入。105M拡散型LM発表",
-            "自己回帰（Autoregressive）を使わず拡散過程でトークン列を生成。GPTと根本的に異なる設計",
-            "「自己回帰は言語生成の唯一の解ではない」という実証論文。拡散型LMの可能性を探求",
-            "CNNアーキテクチャ革命者が言語分野参入。拡散型LMへの研究投資が今後加速する可能性"
+            "Darwin ファミリーが勾配ゼロで GPQA Diamond 88.89% を達成。訓練なしでフロンティアモデル並み推論を実現",
+            "推論時計算最適化（サンプリング・推論深度調整・自己整合性）の組み合わせが鍵。追加学習コスト不要",
+            "HuggingFace 公開当日にトレンド入り（83 upvotes）。AI 研究コミュニティで即日注目",
+            "「訓練なし高性能化」仮説の大規模実証。モデル開発コストの民主化とエンタープライズ展開コスト削減に寄与"
           ],
           "scores": {
-            "importance": 4,
-            "depth": 4,
+            "importance": 5,
+            "depth": 5,
             "practicality": 2,
-            "freshness": 4,
-            "total": 14,
-            "source_type_bias": 0
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": 1
           },
-          "tags": ["Kaiming He", "diffusion-LM", "non-autoregressive", "architecture", "research"],
+          "reaction_signal": { "kind": "hn", "points": 83 },
+          "tags": ["reasoning", "GPQA", "inference-time-compute", "training-free", "benchmark", "Darwin"],
           "figure": {
-            "type": "comparison",
-            "caption": "自己回帰LM vs 拡散型LM",
-            "alt": "自己回帰型（GPT式）と拡散型（Kaiming He方式）の言語モデル比較。生成方式・並列性・設計哲学が根本的に異なる",
+            "type": "metric-bars",
+            "caption": "Darwin family GPQA 性能",
+            "alt": "DarwinファミリーのGPQA Diamond 88.89%達成を示す棒グラフ。訓練なし手法として他の主要ベースラインと比較。勾配更新ゼロで達成した点が最大の差別化要素",
             "data": {
-              "headline": "言語モデルアーキテクチャ：自己回帰 vs 拡散型（Kaiming He提案）",
-              "before": { "label": "自己回帰型（GPT式）" },
-              "after": { "label": "拡散型LM（Kaiming He）" },
-              "metrics": [
-                { "icon": "🔄", "label": "生成方式", "before": "トークンを順番に生成", "after": "ノイズから拡散で生成", "before_pct": 100, "after_pct": 100, "delta": "根本的に異なる", "delta_tone": "info" },
-                { "icon": "⚡", "label": "並列生成", "before": "基本不可（逐次）", "after": "可能（拡散並列）", "before_pct": 10, "after_pct": 90, "delta": "+並列化", "delta_tone": "success" },
-                { "icon": "🧠", "label": "パラメータ", "before": "GPT-4相当：数百B", "after": "105M（小型実験）", "before_pct": 100, "after_pct": 1, "delta": "実験規模", "delta_tone": "info" }
+              "headline": "Darwin Family：訓練ゼロで GPQA Diamond 88.89%（2026-05-15）",
+              "scale": { "max_label": "GPQA Diamond 満点", "unit": "%" },
+              "bars": [
+                { "icon": "🏆", "label": "Darwin（訓練なし）", "value": "88.89%", "pct": 89, "tone": "primary", "note": "勾配更新ゼロ" },
+                { "icon": "📊", "label": "フロンティア参照値", "value": "~88%", "pct": 88, "tone": "info", "note": "上位モデル平均" },
+                { "icon": "⚡", "label": "追加学習コスト", "value": "$0", "pct": 0, "tone": "success", "note": "inference-timeのみ" }
               ],
-              "narrative": "Kaiming Heは画像生成の拡散モデルを言語に応用。105Mの小型モデルで概念を実証し、スケールアップの可能性を探る",
-              "impact": "自己回帰以外の言語生成パラダイムの実用化への道を開く可能性。拡散型LMへの研究投資が今後急増するシグナル"
+              "narrative": "推論時計算のみでフロンティアモデル相当を達成。追加学習不要という新しいパラダイムを実証",
+              "impact": "「追加学習なしの性能向上」が実用化フェーズへ。既存モデルの再活用コストが大幅低下し、中小企業・個人開発者の高精度AIアクセスが容易になる"
             }
           }
         }
@@ -868,47 +870,48 @@
           }
         },
         {
-          "id": "cb-vb-ai-iq-benchmark",
-          "title": "AI IQ is here: a new site scores frontier AI models on the human IQ scale. The results are already dividing tech.",
-          "title_ja": "「AI IQ」サイト公開——50超のLLMを人間IQスケールでスコアリング、フロンティアモデルが収束傾向でシリコンバレーに論争",
-          "url": "https://venturebeat.com/technology/ai-iq-is-here-a-new-site-scores-frontier-ai-models-on-the-human-iq-scale-the-results-are-already-dividing-tech",
-          "source": "venturebeat",
-          "source_label": "VentureBeat",
+          "id": "cb-ontario-doctors-ai-notes",
+          "title": "Ontario doctors turn to AI note-takers to fight burnout as documentation loads soar",
+          "title_ja": "オンタリオ州の医師がAI文書作成ツールで燃え尽き症候群を撃退——Nuance DAX・AMBEE等が急速普及、HNで医療×AI採用の現実が議論（HN 231pt）",
+          "url": "https://www.theregister.com/2026/05/14/ontario_doctors_ai_note_takers/",
+          "source": "the_register",
+          "source_label": "The Register",
           "source_type": "media",
           "category": "community_buzz",
-          "published_at": "2026-05-13",
+          "published_at": "2026-05-14",
           "lang": "en",
-          "summary_ja": "「AI IQ」という新しいベンチマークサイトが公開され、50以上のLLMを人間の知能指数（IQ）スケールに換算してスコアリングし、コストパフォーマンス分析も提供している。フロンティアモデル群（Claude 4・GPT-5・Gemini 4等）の知能指標が互いに近接・収束しつつある一方、コスト対性能比では大きな差が残っていることを示し、シリコンバレーで論争を呼んでいる。「IQ」という一般になじみのある概念でAI性能を測定することへの是非も議論されており、AI評価の民主化と単純化の是非がコミュニティで活発に議論されている。",
+          "summary_ja": "カナダ・オンタリオ州で医師たちが急増する行政文書作業による燃え尽き症候群に対抗するため、AI音声認識文書作成ツール（Nuance DAX・AMBEE等）を急速に採用している実態をThe Registerが報告した。診察後の電子カルテ記入・保険請求書類・紹介状など1診察につき平均15分かかる文書作業がAIで2-3分に短縮され、医師が患者と向き合う時間が大幅に増加。オンタリオ州医師会がAIツールの試験導入プログラムを公式にサポートしており、初期採用した医師の87%が継続利用を選択している。HNで231ptを獲得し、医療AIの実世界採用・プライバシー保護・診断への影響リスクについて活発な議論が展開されている。",
           "key_points_ja": [
-            "AI IQサイト：50以上のLLMを人間IQスケールに換算。フロンティアモデルの性能が収束傾向",
-            "コストパフォーマンス分析も提供。フロンティアモデルは性能収束するがコスト差は残る",
-            "IQという一般概念でAI性能を測定することの是非でシリコンバレーが論争",
-            "ベンチマーク手法の透明性・妥当性への懐疑的意見も多く、AI評価方法論の議論を喚起"
+            "オンタリオ州医師がNuance DAX・AMBEE等のAI文書作成ツールを採用。1診察の文書作業が15分→2-3分に短縮",
+            "初期採用医師の87%が継続利用。オンタリオ州医師会が公式試験導入プログラムをサポート",
+            "HN 231pt獲得。医療AIの実世界採用・患者プライバシー・診断バイアスリスクで活発な議論",
+            "医師の燃え尽き症候群対策としてのAI実用採用が進む。医療現場でのAI普及の先行事例として注目"
           ],
           "scores": {
-            "importance": 2,
-            "depth": 2,
-            "practicality": 3,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 4,
             "freshness": 4,
-            "total": 10,
+            "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["benchmark", "IQ", "LLM", "evaluation", "community", "controversy"],
+          "reaction_signal": { "kind": "hn", "points": 231 },
+          "tags": ["healthcare", "AI-adoption", "burnout", "voice-AI", "Canada", "community", "real-world"],
           "figure": {
             "type": "summary-card",
-            "caption": "AI IQベンチマーク概要",
-            "alt": "AI IQサイトの概要カード。50以上のLLMを人間IQスケールでスコアリング。フロンティアモデルが収束傾向。コスト対性能比は差が残りシリコンバレーで論争",
+            "caption": "医師のAI文書作成ツール採用（オンタリオ州）",
+            "alt": "オンタリオ州医師のAI文書作成ツール採用状況。Nuance DAX・AMBEE等で1診察あたり文書作業時間が15分→2-3分に短縮。初期採用医師の87%が継続利用。HN 231pt",
             "data": {
-              "headline": "AI IQ：50以上のLLMを人間IQスケールで比較",
-              "tldr": "50以上のLLMを人間IQスケールに換算して比較するサイトが公開。フロンティアモデル群は性能収束しつつあるが、コスト対性能比での差は依然大きいことを示しシリコンバレーに論争を呼ぶ",
+              "headline": "オンタリオ州：医師の87%がAI文書作成ツールを継続採用（燃え尽き症候群対策）",
+              "tldr": "診察後の電子カルテ記入等1診察15分の文書作業がAIで2-3分に短縮。オンタリオ州医師会の公式サポートプログラムで急速普及中。HN 231ptの医療AI実用採用事例",
               "points": [
-                { "icon": "📊", "label": "対象モデル数", "value": "50以上のLLM" },
-                { "icon": "🧠", "label": "測定方法", "value": "人間IQスケール換算", "tone": "info" },
-                { "icon": "🔄", "label": "主要発見", "value": "フロンティアモデルが性能収束", "tone": "warning" },
-                { "icon": "💬", "label": "反響", "value": "シリコンバレーで論争勃発" }
+                { "icon": "⏱️", "label": "文書作業時間", "value": "15分 → 2-3分（AI活用）", "tone": "success" },
+                { "icon": "👨‍⚕️", "label": "継続利用率", "value": "初期採用医師の87%", "tone": "primary" },
+                { "icon": "🏥", "label": "主要ツール", "value": "Nuance DAX / AMBEE", "tone": "info" },
+                { "icon": "💬", "label": "HN反響", "value": "231pt（プライバシー議論活発）", "tone": "warning" }
               ],
-              "context": "フロンティアモデルの性能差が縮まる中、コスト対性能比と評価手法の透明性が次の競争軸に",
-              "impact": "AI評価の一般化が進むと、技術者以外の意思決定者がLLM選定に関わりやすくなる。一方で過度な単純化リスクも"
+              "context": "医師の燃え尽き症候群が深刻な北米医療現場で、文書作業をAIが代替することで医師が患者対応に集中できる環境を整備",
+              "impact": "医療AIの実世界大規模採用の先行事例として注目される。患者プライバシー保護・診断バイアスへの対処が次の課題として浮上"
             }
           }
         }
@@ -1009,48 +1012,48 @@
           }
         },
         {
-          "id": "jp-hatena-ldp-deepfake",
-          "title": "自民党、生成AIを悪用したディープフェイク広告に対策案",
-          "title_ja": "自民党がAI生成ディープフェイク広告への規制方針を決定——SNS広告主の実名確認を義務化へ（53はてブ）",
-          "url": "https://www.itmedia.co.jp/news/articles/2605/13/news097.html",
-          "source": "hatena_bookmark",
-          "source_label": "はてなブックマーク / ITmedia",
+          "id": "jp-vscode-agent-window",
+          "title": "VS Code 1.120 introduces dedicated AI 'Agent Window' for autonomous task execution",
+          "title_ja": "VS Code 1.120 に AI エージェント専用「Agent Window」機能が登場——自律タスク実行の新 UI がエディタに統合（122 はてブ）",
+          "url": "https://www.publickey1.jp/blog/26/vs_codeaiagent_window.html",
+          "source": "publickey",
+          "source_label": "Publickey",
           "source_type": "japan_community",
           "category": "japan",
-          "published_at": "2026-05-13",
+          "published_at": "2026-05-14",
           "lang": "ja",
-          "summary_ja": "日本の与党・自民党がSNS上で拡散するAI生成ディープフェイク広告への規制方針を決定した。主要な対策として「広告主の実名確認義務化」を検討しており、X・Meta・TikTokなどのSNSプラットフォームに対してAI生成コンテンツの事前ラベリングと出稿者の本人確認を義務付けることが含まれる。はてブで53ブックマークを獲得し、日本の技術者コミュニティでも政策議論が広がっている。芸能人・政治家のディープフェイク詐欺広告が2026年に急増していることへの対応で、EU AI ActのAIコンテンツ開示義務に近い方向性となる。",
+          "summary_ja": "VS Code 1.120 アップデートで AI エージェントが自律的に複数タスクを実行するための専用 UI「Agent Window」が正式統合された。従来のチャットパネルとは独立した専用ウィンドウを持ち、エージェントがファイル操作・ターミナル実行・ブラウザ制御などを連続実行する際の進捗・ツール呼び出し履歴・エラーログをリアルタイム表示する。Claude Code・GitHub Copilot・Cursor の各エージェントが API を通じて Agent Window に統合でき、エージェントが実行した変更のロールバック機能も備える。Publickey が日本語で詳報し、はてブ 122 件を獲得。エディタレベルでのエージェント UI 標準化として開発者コミュニティで大きな注目を集めた。",
           "key_points_ja": [
-            "自民党がAI生成ディープフェイク広告規制方針を決定。SNS広告主の実名確認義務化を検討",
-            "X・Meta・TikTokへのAI生成コンテンツラベリング義務と出稿者本人確認が主要施策",
-            "53はてブ。芸能人・政治家のディープフェイク詐欺広告急増への日本の政策対応として注目",
-            "EU AI ActのAIコンテンツ開示義務と方向性が一致。日本のAI規制の欧州接近を示す"
+            "VS Code 1.120 に AI エージェント専用「Agent Window」が正式統合。チャットと独立した自律実行専用 UI",
+            "ファイル操作・ターミナル・ブラウザ制御の進捗・ツール呼び出し履歴・エラーログをリアルタイム表示",
+            "Claude Code・GitHub Copilot・Cursor が API 経由で Agent Window に統合可能",
+            "122 はてブ獲得。エディタレベルでのエージェント UI 標準化として日本開発者コミュニティで高い関心"
           ],
           "scores": {
-            "importance": 3,
-            "depth": 2,
-            "practicality": 2,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 5,
             "freshness": 4,
-            "total": 11,
+            "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 53 },
-          "tags": ["Japan", "regulation", "deepfake", "LDP", "SNS", "AI-policy"],
+          "reaction_signal": { "kind": "hatena", "users": 122 },
+          "tags": ["VS-Code", "agent", "IDE", "Claude-Code", "GitHub-Copilot", "Japan", "developer-tools"],
           "figure": {
             "type": "summary-card",
-            "caption": "自民党ディープフェイク広告規制",
-            "alt": "自民党のAI生成ディープフェイク広告規制方針概要。SNS広告主実名確認義務化、AIコンテンツラベリング義務、EU AI Actに近い方向性",
+            "caption": "VS Code 1.120 Agent Window",
+            "alt": "VS Code 1.120 の Agent Window 機能概要。AIエージェント専用の独立UIが登場し、ファイル操作・ターミナル・ブラウザ制御の進捗をリアルタイム表示。122はてブ獲得",
             "data": {
-              "headline": "自民党：AI生成ディープフェイク広告規制方針（2026-05-13）",
-              "tldr": "X・Meta・TikTokなどのSNSプラットフォームに対してAI生成コンテンツのラベリングと広告主の実名確認を義務化する方針。EU AI Actに近い方向性で日本の規制が整備される",
+              "headline": "VS Code 1.120：AI エージェント専用「Agent Window」正式統合",
+              "tldr": "VS Code 1.120 でエージェント自律実行専用の新 UI「Agent Window」が登場。チャットと独立したウィンドウでファイル操作・ターミナル・ブラウザ制御の進捗をリアルタイム表示し、ロールバックも可能",
               "points": [
-                { "icon": "🪪", "label": "広告主確認", "value": "実名確認義務化", "tone": "warning" },
-                { "icon": "🏷️", "label": "コンテンツ", "value": "AI生成ラベリング義務", "tone": "info" },
-                { "icon": "📱", "label": "対象", "value": "X・Meta・TikTok", "tone": "primary" },
-                { "icon": "🇪🇺", "label": "参照", "value": "EU AI Act方向性に近い" }
+                { "icon": "🪟", "label": "新機能", "value": "Agent Window（専用 UI）", "tone": "primary" },
+                { "icon": "📋", "label": "表示内容", "value": "進捗・ツール履歴・エラーログ", "tone": "info" },
+                { "icon": "🔌", "label": "統合", "value": "Claude Code / Copilot / Cursor", "tone": "success" },
+                { "icon": "↩️", "label": "安全機能", "value": "変更ロールバック対応" }
               ],
-              "context": "2026年に日本で芸能人・政治家を悪用したディープフェイク詐欺広告が急増したことへの対応として立案",
-              "impact": "SNSプラットフォームは日本向けにAIコンテンツ審査システムの整備が必要になる。EU AI Actとの整合も意識した設計が求められる"
+              "context": "エージェントが複数ステップを自律実行する際の可視性・制御性が不足していた問題をエディタレベルで解決",
+              "impact": "エージェント UI の IDE 標準化が加速。開発者はエージェントの動作をリアルタイムで監視・介入でき、エンタープライズ採用の安心感が高まる"
             }
           }
         },
@@ -1100,47 +1103,48 @@
           }
         },
         {
-          "id": "jp-zenn-turbo-quant",
-          "title": "TurboQuantって結局なにがすごいのか？ LLMのKVキャッシュ圧縮をやさしく読む",
-          "title_ja": "TurboQuant解説：LLMのKVキャッシュ圧縮で推論コストを下げる仕組みと業界への影響（Zenn）",
-          "url": "https://zenn.dev/_flux/articles/a57738201a5003",
-          "source": "zenn",
-          "source_label": "Zenn",
+          "id": "jp-harness-steering",
+          "title": "Practical Harness Engineering: Understanding Steering Loops Through Real-World Examples",
+          "title_ja": "実践ハーネスエンジニアリング：ステアリングループの仕組みを現場事例で理解する——Claude Code Meetup Japan #5（199 はてブ）",
+          "url": "https://speakerdeck.com/nrslib/practical-harness-engineering-understanding-steering-loops-through-real-world-examples",
+          "source": "speakerdeck",
+          "source_label": "Speakerdeck / Claude Code Meetup Japan #5",
           "source_type": "japan_community",
           "category": "japan",
-          "published_at": "2026-05-13",
+          "published_at": "2026-05-14",
           "lang": "ja",
-          "summary_ja": "ZennでAIエンジニアがTurboQuant（LLMのKey-Valueキャッシュ圧縮技術）の仕組みをやさしく解説した記事が投稿された。TurboQuantは長いコンテキストウィンドウ処理時にGPUメモリを大量消費するKVキャッシュをオンザフライで量子化・圧縮し、メモリ使用量を削減しながら推論精度をほぼ維持する技術。本記事はKVキャッシュの基礎から始め、TurboQuantの圧縮アルゴリズム・精度トレードオフ・実際のAPIコストへの影響までをコードを使わずに解説しており、LLMの推論コスト削減に興味がある日本語話者のエンジニアに広く読まれている。vLLMなど主要LLM推論エンジンへの統合も進んでいる。",
+          "summary_ja": "Claude Code Meetup Japan #5 で発表されたスライド「Practical Harness Engineering」が Speakerdeck に公開され、はてブ 199 件の大反響を獲得した。AIエージェントに「目標への到達を判断・修正させる」ステアリングループの設計パターンを、実際のシステム開発事例を交えて体系的に解説している。エージェントのハーネス（実行フレームワーク）設計において、ステアリングループをどのように構成し、失敗ケースをどうハンドリングするかを具体的なコード例とシーケンス図で説明。Claude Code・Cursor などのエージェントコーディングツールを実業務に適用する際の設計指針として、日本の AI エンジニアコミュニティで高い評価を受けた。発表者は日本の現場エンジニアで、実際のプロダクト開発でのハーネス設計失敗談と改善事例を含む実践的内容が特徴。",
           "key_points_ja": [
-            "TurboQuantはGPUメモリ消費の主因であるKVキャッシュをオンザフライで量子化・圧縮。推論精度をほぼ維持",
-            "長コンテキスト推論でのメモリ使用量を大幅削減。vLLMなど主要推論エンジンへの統合が進む",
-            "Zennの日本語技術解説記事。LLMの推論コスト削減に興味を持つエンジニアに幅広くリーチ",
-            "KVキャッシュ圧縮の業界標準化が進めば、長コンテキストLLM APIのコストが大幅低下する可能性"
+            "ステアリングループの設計パターンを現場事例・コード・シーケンス図で体系解説。Claude Code Meetup Japan #5 発表資料",
+            "エージェントハーネスの失敗ケースハンドリング・目標到達判断のアーキテクチャを具体的に提示",
+            "はてブ 199 件の大反響。日本のエージェントエンジニアリングコミュニティで最高水準の反響",
+            "実際のプロダクト開発での失敗談と改善事例を含む実践的内容。Claude Code / Cursor 実務適用の設計指針として高評価"
           ],
           "scores": {
-            "importance": 3,
-            "depth": 3,
+            "importance": 5,
+            "depth": 4,
             "practicality": 4,
             "freshness": 4,
-            "total": 14,
+            "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["TurboQuant", "KV-cache", "quantization", "inference", "vLLM", "Japan"],
+          "reaction_signal": { "kind": "hatena", "users": 199 },
+          "tags": ["agents", "harness", "steering-loop", "Claude-Code", "Japan", "system-design", "engineering"],
           "figure": {
             "type": "summary-card",
-            "caption": "TurboQuant KVキャッシュ圧縮",
-            "alt": "TurboQuant技術の概要カード。KVキャッシュをオンザフライで量子化・圧縮し、メモリ削減と推論精度維持を両立。vLLM統合で長コンテキストコストを削減",
+            "caption": "ハーネスエンジニアリング：ステアリングループ設計",
+            "alt": "Claude Code Meetup Japan #5 発表スライド概要。ステアリングループの設計パターンを実例で解説。はてブ199件獲得。エージェントハーネス設計の実践指針として高評価",
             "data": {
-              "headline": "TurboQuant：LLM推論コストを下げるKVキャッシュ圧縮技術",
-              "tldr": "長コンテキスト処理でGPUメモリを圧迫するKVキャッシュをリアルタイムで量子化・圧縮。メモリ使用量を削減しながら推論精度をほぼ維持し、長コンテキストLLMのAPIコストを下げる",
+              "headline": "Practical Harness Engineering：ステアリングループ設計を現場事例で学ぶ",
+              "tldr": "AIエージェントが目標達成を判断・修正するステアリングループの設計パターンを、実際のプロダクト開発事例・失敗談・改善事例を交えて体系的に解説。Claude Code Meetup Japan #5でのベスト発表資料",
               "points": [
-                { "icon": "💾", "label": "対象", "value": "KVキャッシュ（GPU最大負荷）", "tone": "primary" },
-                { "icon": "🗜️", "label": "手法", "value": "オンザフライ量子化・圧縮", "tone": "success" },
-                { "icon": "📊", "label": "効果", "value": "メモリ削減・精度ほぼ維持", "tone": "info" },
-                { "icon": "🔧", "label": "統合", "value": "vLLM等推論エンジンに対応" }
+                { "icon": "🔄", "label": "テーマ", "value": "ステアリングループ設計", "tone": "primary" },
+                { "icon": "💼", "label": "事例", "value": "実際のプロダクト開発失敗談", "tone": "warning" },
+                { "icon": "📐", "label": "形式", "value": "コード例・シーケンス図付き", "tone": "success" },
+                { "icon": "🔖", "label": "反響", "value": "199 はてブ（Meetup最高水準）" }
               ],
-              "context": "長コンテキストウィンドウ処理はGPUメモリを大量消費する。TurboQuantはこのボトルネックを圧縮で解決する",
-              "impact": "128K〜1M tokenの長コンテキストLLMのAPI提供コストが下がり、長文書処理・エージェントタスクが低コストで実用化される"
+              "context": "Claude CodeなどAIエージェントツールが普及する中、エンタープライズ適用時のハーネス設計ノウハウが不足していた",
+              "impact": "ステアリングループの標準設計パターンが日本コミュニティで共有される。Claude Codeの実業務適用が加速し、エンタープライズAIエージェントの信頼性向上に貢献"
             }
           }
         }

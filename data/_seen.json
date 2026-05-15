@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-15T14:30:00+09:00",
+  "updated_at": "2026-05-15T23:45:00+09:00",
   "retention_days": 90,
   "entries": {
     "b5e1f2a3d4c50001": {
@@ -791,6 +791,36 @@
     },
     "7cf9ec392dc25ae6": {
       "url_prefix": "https://36kr.com/p/3809911566704388",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "97db363fb1a03cd1": {
+      "url_prefix": "https://github.com/anthropics/claude-for-legal",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "691d7b5c3998b0e3": {
+      "url_prefix": "https://huggingface.co/blog/FINAL-Bench/darwin-papers",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "712bf69930d1c6f4": {
+      "url_prefix": "https://www.publickey1.jp/blog/26/vs_codeaiagent_window.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "b390b9f3167cda82": {
+      "url_prefix": "https://speakerdeck.com/nrslib/practical-harness-engineering",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "076659b6472022c0": {
+      "url_prefix": "https://www.theregister.com/2026/05/14/ontario_doctors_ai_note_takers",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
