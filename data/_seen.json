@@ -136,141 +136,141 @@
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60001": {
-      "url_prefix": "https://github.com/cactus-compute/needle",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://arxiv.org/abs/2605.13839",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60002": {
-      "url_prefix": "https://huggingface.co/papers/2605.09731",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://arxiv.org/abs/2605.14277",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60003": {
-      "url_prefix": "https://www.anthropic.com/news/claude-for-legal",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://huggingface.co/papers/2605.13820",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60004": {
-      "url_prefix": "https://ai.google.dev/gemini-api/docs/ai-pointer",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://arxiv.org/abs/2605.14918",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60005": {
-      "url_prefix": "https://www.anthropic.com/news/claude-platform-aws",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://x.ai/blog/grok-4-3",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60006": {
-      "url_prefix": "https://www.anthropic.com/news/claude-agent-view",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://huggingface.co/ibm-granite/granite-embedding-r2",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60007": {
-      "url_prefix": "https://arxiv.org/abs/2605.10018",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://openai.com/blog/codex-mobile",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60008": {
-      "url_prefix": "https://huggingface.co/papers/2605.09844",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://huggingface.co/blog/async-text-generation",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60009": {
-      "url_prefix": "https://thinkingmachines.ai/blog/full-duplex-speec",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://docs.anthropic.com/en/docs/build-with-claude/agent-sdk-budget",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60010": {
-      "url_prefix": "https://arxiv.org/abs/2605.10721",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://arxiv.org/abs/2605.13521",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60011": {
-      "url_prefix": "https://arxiv.org/abs/2605.10835",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://arxiv.org/abs/2605.14592",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60012": {
-      "url_prefix": "https://arxiv.org/abs/2605.10933",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://deepmind.google/research/publications/ai-pointer-2026",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60013": {
-      "url_prefix": "https://36kr.com/p/3806126900191491",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60014": {
-      "url_prefix": "https://techcrunch.com/2026/05/12/vapi-raises-500m",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://techcrunch.com/2026/05/14/cerebras-ai-ipo",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60015": {
-      "url_prefix": "https://www.aisi.gov.uk/work/frontier-ai-cyber-att",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://news.ycombinator.com/item?id=44012748",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60016": {
-      "url_prefix": "https://news.ycombinator.com/item?id=43982571",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://news.ycombinator.com/item?id=44015923",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60017": {
-      "url_prefix": "https://news.ycombinator.com/item?id=43984102",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://zenn.dev/derushio/articles/claude-code-context-fork",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60018": {
-      "url_prefix": "https://hatena.jp/hotentry/it/ai-logo-design-2026",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://qiita.com/tmori/items/ai-ddd-specification-driven",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60019": {
-      "url_prefix": "https://forest.watch.impress.co.jp/docs/news/210785",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://note.com/hakoi_yasutaka/n/novelist-ai-collaboration",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60020": {
-      "url_prefix": "https://sakana.ai/twell/",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://zenn.dev/security_ai/articles/claude-mythos-risks",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60021": {
-      "url_prefix": "https://zenn.dev/phpmyadmin/articles/0dba6fef411e21",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://www.nikkei.com/article/DGXZQOUF14B1R0U6A510C2000000",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60022": {
-      "url_prefix": "https://sakana.ai/defense-swe-interview-2026/",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://github.com/Tencent/TencentDB-Agent-Memory",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60023": {
-      "url_prefix": "https://www.qbitai.com/2026/05/415001.html",
-      "first_seen_at": "2026-05-13",
-      "last_seen_at": "2026-05-13",
+      "url_prefix": "https://www.qbitai.com/2026/05/417748.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
     "a1b2c3d4e5f60024": {
@@ -531,140 +531,152 @@
       "last_seen_at": "2026-05-12",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60001": {
-      "url_prefix": "https://arxiv.org/abs/2605.13839",
+    "dcc82d6d0a9e3516": {
+      "url_prefix": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60002": {
-      "url_prefix": "https://arxiv.org/abs/2605.14277",
+    "ec90464f06eb7f57": {
+      "url_prefix": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60003": {
-      "url_prefix": "https://huggingface.co/papers/2605.13820",
+    "f17de6c68d9f38e5": {
+      "url_prefix": "https://openai.com/news/product-releases/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60004": {
-      "url_prefix": "https://arxiv.org/abs/2605.14918",
+    "5cc6e708b1031685": {
+      "url_prefix": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60005": {
-      "url_prefix": "https://x.ai/blog/grok-4-3",
+    "0fec391f05502895": {
+      "url_prefix": "https://www.reddit.com/r/MachineLearning/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60006": {
-      "url_prefix": "https://huggingface.co/ibm-granite/granite-embedding-r2",
+    "36757c2715657e66": {
+      "url_prefix": "https://huggingface.co/openai/privacy-filter",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60007": {
-      "url_prefix": "https://openai.com/blog/codex-mobile",
+    "706aac0a148a5845": {
+      "url_prefix": "https://www.latent.space/p/ainews-everything-is-conductor",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60008": {
-      "url_prefix": "https://huggingface.co/blog/async-text-generation",
+    "e62501d1ecf515fb": {
+      "url_prefix": "https://x.ai/news",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60009": {
-      "url_prefix": "https://docs.anthropic.com/en/docs/build-with-claude/agent-sdk-budget",
+    "f0501ee274d3530a": {
+      "url_prefix": "https://huggingface.co/SulphurAI/Sulphur-2-base",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60010": {
-      "url_prefix": "https://arxiv.org/abs/2605.13521",
+    "f3f12cfaa7235f6e": {
+      "url_prefix": "https://huggingface.co/k2-fsa/OmniVoice",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60011": {
-      "url_prefix": "https://arxiv.org/abs/2605.14592",
+    "cadcbc6fe60aa4c9": {
+      "url_prefix": "https://arxiv.org/abs/2605.15034",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60012": {
-      "url_prefix": "https://deepmind.google/research/publications/ai-pointer-2026",
+    "c8f6b9dd60ab196f": {
+      "url_prefix": "https://arxiv.org/abs/2605.15053",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60013": {
-      "url_prefix": "https://www.anthropic.com/news/gates-foundation-partnership",
+    "9fbbed56465abe49": {
+      "url_prefix": "https://theaiinsider.tech/2026/05/14/beyond-threats-ai-researchers-call-for-syst",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60014": {
-      "url_prefix": "https://techcrunch.com/2026/05/14/cerebras-ai-ipo",
+    "09932d4b3e21f8a6": {
+      "url_prefix": "https://techcrunch.com/2026/05/14/cerebras-ipo-ai-chip/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60015": {
-      "url_prefix": "https://news.ycombinator.com/item?id=44012748",
+    "a974cb349b30b0a0": {
+      "url_prefix": "https://www.anthropic.com/news/anthropic-pwc-partnership",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60016": {
-      "url_prefix": "https://news.ycombinator.com/item?id=44015923",
+    "e94773dcdf4d7d4b": {
+      "url_prefix": "https://news.ycombinator.com/item?id=43982100",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60017": {
-      "url_prefix": "https://zenn.dev/derushio/articles/claude-code-context-fork",
+    "4e473422ca43744a": {
+      "url_prefix": "https://www.reddit.com/r/ClaudeAI/comments/1kmxyz/claude_opus_47_swebench_pro_64",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60018": {
-      "url_prefix": "https://qiita.com/tmori/items/ai-ddd-specification-driven",
+    "e832a76c5bf3982e": {
+      "url_prefix": "https://www.reddit.com/r/ClaudeAI/comments/1kmxab/claude_code_extortion_attempt/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60019": {
-      "url_prefix": "https://note.com/hakoi_yasutaka/n/novelist-ai-collaboration",
+    "c4f87619c683d7e3": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260514-cvpr2026-motion-generation",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60020": {
-      "url_prefix": "https://zenn.dev/security_ai/articles/claude-mythos-risks",
+    "8eb98fc8a7969a35": {
+      "url_prefix": "https://sakana.ai/twell/",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60021": {
-      "url_prefix": "https://www.nikkei.com/article/DGXZQOUF14B1R0U6A510C2000000",
+    "086264df0fbd138a": {
+      "url_prefix": "https://zenn.dev/localllm_lab/articles/local-llm-hardware-2026",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60022": {
-      "url_prefix": "https://github.com/Tencent/TencentDB-Agent-Memory",
+    "4729b15d5c67af1c": {
+      "url_prefix": "https://pc.watch.impress.co.jp/docs/column/ai/2026/local-llm-spring.html",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
     },
-    "a1b2c3d4e5f60023": {
-      "url_prefix": "https://www.qbitai.com/2026/05/417748.html",
+    "125121448a0ae1a8": {
+      "url_prefix": "https://zenn.dev/dev_confession/articles/ai-code-75percent",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "4ce06fc908c5b1e9": {
+      "url_prefix": "https://www.qbitai.com/2026/05/ernie-51-wenxin.html",
+      "first_seen_at": "2026-05-15",
+      "last_seen_at": "2026-05-15",
+      "last_seen_count": 1
+    },
+    "83ed0b4ca0aea084": {
+      "url_prefix": "https://www.qbitai.com/2026/05/china-ai-dual-policy-package.html",
       "first_seen_at": "2026-05-15",
       "last_seen_at": "2026-05-15",
       "last_seen_count": 1
