@@ -1,0 +1,1047 @@
+{
+  "week": "2026-W20",
+  "from": "2026-05-09",
+  "to": "2026-05-15",
+  "generated_at": "2026-05-15T11:00:00+09:00",
+  "schema_version": "1.0",
+  "headline": "Google I/O・LlamaCon・GPT-Realtime とフロンティアモデル発表が連続、Anthropic は Glasswing と Claude for Legal で評価額 1 兆ドル超え企業採用 1 位",
+  "summary_ja": "フロンティアモデルの一斉発表と Anthropic の急拡大が同時進行した週。Google は I/O 2026 で Gemini 4・Veo 4・Workspace Intelligence、続く Android Show で Gemini Intelligence を公開し、Meta は LlamaCon で Llama 4 (405B) と累計 10 億 DL、OpenAI は GPT-Realtime 3 音声、xAI は Grok 4.3 を GA。Anthropic は Glasswing・Claude for Legal・Small Business・AWS 統合・ゲイツ財団 $200M を矢継ぎ早に発表し評価額 $1 兆超、Ramp 調査で初の企業採用 1 位 (34.4% vs OpenAI 32.3%)。研究では重み更新で対話する TFlow がトークン 83% 削減、単一ニューロンで安全アライメントを突破する論文も登場。日本では Chrome DevTools MCP (はてブ 467) と GW Claude Code 学習ガイド (1,003) が爆発反響。来週は Mythos の段階開放と Galaxy S26 への Gemini Intelligence 展開に注目。",
+  "stats": {
+    "total_collected_week": 540,
+    "after_dedup": 118,
+    "selected_items": 126,
+    "top_count": 10
+  },
+  "top_10": [
+    {
+      "id": "agents-20260514-001",
+      "date": "2026-05-14",
+      "rank": 1,
+      "category": "agents",
+      "reason": "Google が Android を能動的エージェント基盤に変革する週最大級の発表 (importance 5, score 18)"
+    },
+    {
+      "id": "2026-05-09-001",
+      "date": "2026-05-09",
+      "rank": 2,
+      "category": "industry_business",
+      "reason": "Anthropic Project Glasswing で Claude Mythos (CyberGym 83.1%) を 12 社連合に開放、AI セキュリティの新パラダイム始動 (score 18)"
+    },
+    {
+      "id": "2026-05-10-001",
+      "date": "2026-05-10",
+      "rank": 3,
+      "category": "new_models",
+      "reason": "Google I/O 2026 で Gemini 4 / Veo 4 / Deep Research Max / Workspace Intelligence を一挙発表 (score 18)"
+    },
+    {
+      "id": "2026-05-13-003",
+      "date": "2026-05-13",
+      "rank": 4,
+      "category": "tools_apps",
+      "reason": "Anthropic「Claude for Legal」を Thomson Reuters・LexisNexis 連携で正式ローンチ (score 18)"
+    },
+    {
+      "id": "jp_chrome_devtools_mcp",
+      "date": "2026-05-12",
+      "rank": 5,
+      "category": "japan",
+      "reason": "Chrome DevTools MCP の徹底解説がはてブ 467 で週最大の日本反響 (score 18)"
+    },
+    {
+      "id": "2026-05-10-002",
+      "date": "2026-05-10",
+      "rank": 6,
+      "category": "new_models",
+      "reason": "LlamaCon で Llama 4 (405B マルチモーダル) と累計 10 億 DL を発表、オープン AI の標準化が加速 (score 17)"
+    },
+    {
+      "id": "nm-001",
+      "date": "2026-05-11",
+      "rank": 7,
+      "category": "new_models",
+      "reason": "OpenAI GPT-Realtime-2 / Translate / Whisper の 3 音声モデルが API 公開 (score 17, HN 320pt)"
+    },
+    {
+      "id": "ag-001",
+      "date": "2026-05-11",
+      "rank": 8,
+      "category": "agents",
+      "reason": "AI Co-Mathematician が FrontierMath Tier-4 で 48% を達成、研究自動化の現時点到達点 (score 17)"
+    },
+    {
+      "id": "agents-20260515-001",
+      "date": "2026-05-15",
+      "rank": 9,
+      "category": "agents",
+      "reason": "TFlow が LLM エージェント間を「重み更新」で対話させトークン 83% 削減・4.6× 高速化を実証 (score 17)"
+    },
+    {
+      "id": "research_autotts",
+      "date": "2026-05-12",
+      "rank": 10,
+      "category": "research_papers",
+      "reason": "Google AutoTTS が LLM 自身に推論最適化戦略を自動発見させる新パラダイム (score 17)"
+    }
+  ],
+  "papers_5": [
+    {
+      "id": "research_autotts",
+      "date": "2026-05-12"
+    },
+    {
+      "id": "ag-001",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "agents-20260515-001",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "nm-002",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "2026-05-13-010",
+      "date": "2026-05-13"
+    }
+  ],
+  "models_3": [
+    {
+      "id": "2026-05-10-001",
+      "date": "2026-05-10"
+    },
+    {
+      "id": "2026-05-10-002",
+      "date": "2026-05-10"
+    },
+    {
+      "id": "nm-20260514-001",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "2026-05-13-002",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "nm-001",
+      "date": "2026-05-11"
+    }
+  ],
+  "community_buzz_3": [
+    {
+      "id": "buzz_local_ai_norm",
+      "date": "2026-05-12"
+    },
+    {
+      "id": "2026-05-13-016",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "community_buzz-20260515-001",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "2026-05-13-017",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "buzz_llm_swift",
+      "date": "2026-05-12"
+    }
+  ],
+  "japan_3": [
+    {
+      "id": "2026-05-09-004",
+      "date": "2026-05-09"
+    },
+    {
+      "id": "jp_boss_ai_era",
+      "date": "2026-05-12"
+    },
+    {
+      "id": "jp_chrome_devtools_mcp",
+      "date": "2026-05-12"
+    },
+    {
+      "id": "2026-05-13-018",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "2026-05-13-019",
+      "date": "2026-05-13"
+    }
+  ],
+  "china_3": [
+    {
+      "id": "china-20260515-001",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "2026-05-13-024",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "2026-05-13-023",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "cn-001",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "china-20260515-002",
+      "date": "2026-05-15"
+    }
+  ],
+  "keyword_cloud": [
+    {
+      "keyword": "japan",
+      "count": 21,
+      "delta_vs_prev_week": 21
+    },
+    {
+      "keyword": "llm",
+      "count": 12,
+      "delta_vs_prev_week": 12
+    },
+    {
+      "keyword": "anthropic",
+      "count": 11,
+      "delta_vs_prev_week": 11
+    },
+    {
+      "keyword": "multimodal",
+      "count": 10,
+      "delta_vs_prev_week": 10
+    },
+    {
+      "keyword": "agents",
+      "count": 9,
+      "delta_vs_prev_week": 9
+    },
+    {
+      "keyword": "open-source",
+      "count": 9,
+      "delta_vs_prev_week": 9
+    },
+    {
+      "keyword": "benchmark",
+      "count": 9,
+      "delta_vs_prev_week": 9
+    },
+    {
+      "keyword": "openai",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "claude-code",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "multi-agent",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "enterprise",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "china",
+      "count": 7,
+      "delta_vs_prev_week": 7
+    },
+    {
+      "keyword": "qwen",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "deepseek",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "community",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "arxiv",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "claude",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "research",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "Google",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "cybersecurity",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    }
+  ],
+  "watchlist_next_week": [
+    {
+      "topic": "Gemini Intelligence の段階展開",
+      "reason": "Samsung Galaxy S26・Google Pixel 10 を皮切りに Gemini Intelligence を順次展開。2026年6月後半に Chrome for Android に「自動ブラウジング」追加予定、その後 Wear OS / Android Auto / Chromebook へ拡大",
+      "watch_until": "2026-06-30",
+      "source_item_id": "agents-20260514-001"
+    },
+    {
+      "topic": "Veo 4 と Workspace Intelligence の全ユーザー展開",
+      "reason": "Veo 4 は YouTube Shorts や企業映像制作への統合が段階展開予定。Workspace Intelligence は Gmail・Chat・Calendar・Drive 横断 AI として Workspace 全ユーザーへ展開開始",
+      "watch_until": "2026-06-15",
+      "source_item_id": "2026-05-10-001"
+    },
+    {
+      "topic": "xAI Grok 4.3 の本格展開と価格競争",
+      "reason": "エージェント評価ランク 1 位を獲得した Grok 4.3 が入力 $1.25/M の攻撃的価格で一般公開。1M コンテキストとあわせて Claude / Gemini への価格・性能インパクトが今後数週で表面化",
+      "watch_until": "2026-06-15",
+      "source_item_id": "new_models-20260515-001"
+    },
+    {
+      "topic": "Alibaba Qwen-Image-VAE 2.0 のオープン公開",
+      "reason": "高解像度視覚トークン符号化精度を大幅向上した Qwen-Image-VAE-2.0 が Apache 2.0 相当のオープンウェイトで公開予定。Qwen-VL シリーズ全体の視覚理解品質に波及",
+      "watch_until": "2026-06-15",
+      "source_item_id": "multimodal-20260515-001"
+    },
+    {
+      "topic": "Anthropic Mythos の段階開放と防御側先行プログラム",
+      "reason": "Project Glasswing 参加 12 社で Mythos が運用開始。OSS 開発者への提供拡大、EU・グローバルへの段階展開が今後数週で具体化。攻撃側 AI の出現と並走する展開速度に注目",
+      "watch_until": "2026-06-30",
+      "source_item_id": "2026-05-09-001"
+    },
+    {
+      "topic": "DeepMind AI ポインタ × Gemini Intelligence の OS 統合",
+      "reason": "AI 自律操作を前提とした新インターフェースの研究方向を DeepMind が発表。Gemini Intelligence (Android) との統合でスマートフォン OS レベルの自律操作が現実化する見込み",
+      "watch_until": "2026-07-15",
+      "source_item_id": "research_papers-20260515-003"
+    }
+  ],
+  "week_items_index": [
+    {
+      "id": "agents-20260514-001",
+      "date": "2026-05-14",
+      "category": "agents",
+      "source": "google_deepmind"
+    },
+    {
+      "id": "jp_chrome_devtools_mcp",
+      "date": "2026-05-12",
+      "category": "japan",
+      "source": "blog_takuros"
+    },
+    {
+      "id": "2026-05-13-003",
+      "date": "2026-05-13",
+      "category": "tools_apps",
+      "source": "anthropic"
+    },
+    {
+      "id": "2026-05-09-001",
+      "date": "2026-05-09",
+      "category": "industry_business",
+      "source": "anthropic"
+    },
+    {
+      "id": "2026-05-10-001",
+      "date": "2026-05-10",
+      "category": "new_models",
+      "source": "google_deepmind"
+    },
+    {
+      "id": "tools_uniprefill",
+      "date": "2026-05-12",
+      "category": "tools_apps",
+      "source": "huggingface"
+    },
+    {
+      "id": "jp-003",
+      "date": "2026-05-11",
+      "category": "japan",
+      "source": "zenn"
+    },
+    {
+      "id": "2026-05-13-019",
+      "date": "2026-05-13",
+      "category": "japan",
+      "source": "hatena_it"
+    },
+    {
+      "id": "nm-001",
+      "date": "2026-05-11",
+      "category": "new_models",
+      "source": "openai"
+    },
+    {
+      "id": "nm-20260514-001",
+      "date": "2026-05-14",
+      "category": "new_models",
+      "source": "hacker_news"
+    },
+    {
+      "id": "ag-001",
+      "date": "2026-05-11",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "agents-20260515-001",
+      "date": "2026-05-15",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "2026-05-09-004",
+      "date": "2026-05-09",
+      "category": "japan",
+      "source": "note_ja"
+    },
+    {
+      "id": "research_autotts",
+      "date": "2026-05-12",
+      "category": "research_papers",
+      "source": "huggingface"
+    },
+    {
+      "id": "2026-05-10-002",
+      "date": "2026-05-10",
+      "category": "new_models",
+      "source": "meta_ai"
+    },
+    {
+      "id": "2026-05-10-003",
+      "date": "2026-05-10",
+      "category": "tools_apps",
+      "source": "huggingface_blog"
+    },
+    {
+      "id": "tools-20260514-001",
+      "date": "2026-05-14",
+      "category": "tools_apps",
+      "source": "anthropic"
+    },
+    {
+      "id": "2026-05-13-002",
+      "date": "2026-05-13",
+      "category": "new_models",
+      "source": "hf_trending"
+    },
+    {
+      "id": "new_models-20260515-002",
+      "date": "2026-05-15",
+      "category": "new_models",
+      "source": "huggingface"
+    },
+    {
+      "id": "china-20260515-001",
+      "date": "2026-05-15",
+      "category": "china",
+      "source": "github.com/Tencent"
+    },
+    {
+      "id": "2026-05-13-024",
+      "date": "2026-05-13",
+      "category": "china",
+      "source": "hf_daily_papers"
+    },
+    {
+      "id": "industry_openai_deploy",
+      "date": "2026-05-12",
+      "category": "industry_business",
+      "source": "openai"
+    },
+    {
+      "id": "nm-002",
+      "date": "2026-05-11",
+      "category": "new_models",
+      "source": "google_deepmind"
+    },
+    {
+      "id": "2026-05-13-010",
+      "date": "2026-05-13",
+      "category": "research_papers",
+      "source": "hf_daily_papers"
+    },
+    {
+      "id": "2026-05-13-021",
+      "date": "2026-05-13",
+      "category": "japan",
+      "source": "hatena_it"
+    },
+    {
+      "id": "mm-20260514-001",
+      "date": "2026-05-14",
+      "category": "multimodal",
+      "source": "huggingface"
+    },
+    {
+      "id": "research-20260514-003",
+      "date": "2026-05-14",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "research_papers-20260515-001",
+      "date": "2026-05-15",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "multimodal-20260515-002",
+      "date": "2026-05-15",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "2026-05-10-005",
+      "date": "2026-05-10",
+      "category": "industry_business",
+      "source": "thehackernews"
+    },
+    {
+      "id": "research_papers-20260515-002",
+      "date": "2026-05-15",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "multimodal-20260515-001",
+      "date": "2026-05-15",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "jp-001",
+      "date": "2026-05-11",
+      "category": "japan",
+      "source": "gizmodo_jp"
+    },
+    {
+      "id": "2026-05-13-005",
+      "date": "2026-05-13",
+      "category": "tools_apps",
+      "source": "anthropic"
+    },
+    {
+      "id": "jp-002",
+      "date": "2026-05-11",
+      "category": "japan",
+      "source": "zenn"
+    },
+    {
+      "id": "mm_meanmode_1000layer",
+      "date": "2026-05-12",
+      "category": "multimodal",
+      "source": "huggingface"
+    },
+    {
+      "id": "new_models-20260515-001",
+      "date": "2026-05-15",
+      "category": "new_models",
+      "source": "xai"
+    },
+    {
+      "id": "research-20260514-001",
+      "date": "2026-05-14",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "agents-20260515-002",
+      "date": "2026-05-15",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "2026-05-10-004",
+      "date": "2026-05-10",
+      "category": "tools_apps",
+      "source": "openai"
+    },
+    {
+      "id": "agents-20260514-002",
+      "date": "2026-05-14",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "ta-002",
+      "date": "2026-05-11",
+      "category": "tools_apps",
+      "source": "huggingface_papers"
+    },
+    {
+      "id": "2026-05-09-003",
+      "date": "2026-05-09",
+      "category": "tools_apps",
+      "source": "openai"
+    },
+    {
+      "id": "agents_aris_2605",
+      "date": "2026-05-12",
+      "category": "agents",
+      "source": "huggingface"
+    },
+    {
+      "id": "japan-20260515-001",
+      "date": "2026-05-15",
+      "category": "japan",
+      "source": "classmethod"
+    },
+    {
+      "id": "models_interfaze",
+      "date": "2026-05-12",
+      "category": "new_models",
+      "source": "interfaze"
+    },
+    {
+      "id": "japan-20260514-001",
+      "date": "2026-05-14",
+      "category": "japan",
+      "source": "classmethod"
+    },
+    {
+      "id": "tools-20260514-003",
+      "date": "2026-05-14",
+      "category": "tools_apps",
+      "source": "github_trending"
+    },
+    {
+      "id": "tools_apps-20260515-002",
+      "date": "2026-05-15",
+      "category": "tools_apps",
+      "source": "huggingface"
+    },
+    {
+      "id": "2026-05-10-007",
+      "date": "2026-05-10",
+      "category": "japan",
+      "source": "zenn_ja"
+    },
+    {
+      "id": "ib-001",
+      "date": "2026-05-11",
+      "category": "industry_business",
+      "source": "latent_space"
+    },
+    {
+      "id": "agents_hypereyes",
+      "date": "2026-05-12",
+      "category": "agents",
+      "source": "huggingface"
+    },
+    {
+      "id": "research-20260514-002",
+      "date": "2026-05-14",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "2026-05-10-006",
+      "date": "2026-05-10",
+      "category": "japan",
+      "source": "nikkei_ja"
+    },
+    {
+      "id": "mm-001",
+      "date": "2026-05-11",
+      "category": "multimodal",
+      "source": "huggingface_papers"
+    },
+    {
+      "id": "research_emo_moe",
+      "date": "2026-05-12",
+      "category": "research_papers",
+      "source": "allenai"
+    },
+    {
+      "id": "2026-05-13-012",
+      "date": "2026-05-13",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "jp-004",
+      "date": "2026-05-11",
+      "category": "japan",
+      "source": "type_jp"
+    },
+    {
+      "id": "research_humannet",
+      "date": "2026-05-12",
+      "category": "research_papers",
+      "source": "huggingface"
+    },
+    {
+      "id": "2026-05-09-007",
+      "date": "2026-05-09",
+      "category": "japan",
+      "source": "ascii_jp"
+    },
+    {
+      "id": "rp-002",
+      "date": "2026-05-11",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "japan-20260514-002",
+      "date": "2026-05-14",
+      "category": "japan",
+      "source": "note"
+    },
+    {
+      "id": "rp-001",
+      "date": "2026-05-11",
+      "category": "research_papers",
+      "source": "huggingface_papers"
+    },
+    {
+      "id": "research_papers-20260515-003",
+      "date": "2026-05-15",
+      "category": "research_papers",
+      "source": "google_deepmind"
+    },
+    {
+      "id": "ta-003",
+      "date": "2026-05-11",
+      "category": "tools_apps",
+      "source": "huggingface_papers"
+    },
+    {
+      "id": "2026-05-13-008",
+      "date": "2026-05-13",
+      "category": "multimodal",
+      "source": "hf_trending"
+    },
+    {
+      "id": "rp-003",
+      "date": "2026-05-11",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "buzz_llm_swift",
+      "date": "2026-05-12",
+      "category": "community_buzz",
+      "source": "cocoawithlove"
+    },
+    {
+      "id": "2026-05-13-018",
+      "date": "2026-05-13",
+      "category": "japan",
+      "source": "hatena_genai"
+    },
+    {
+      "id": "jp_solopreneur_ai",
+      "date": "2026-05-12",
+      "category": "japan",
+      "source": "nikkeibp"
+    },
+    {
+      "id": "2026-05-13-011",
+      "date": "2026-05-13",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "2026-05-13-013",
+      "date": "2026-05-13",
+      "category": "industry_business",
+      "source": "36kr_ai"
+    },
+    {
+      "id": "2026-05-09-006",
+      "date": "2026-05-09",
+      "category": "japan",
+      "source": "note_ja"
+    },
+    {
+      "id": "industry_business-20260515-001",
+      "date": "2026-05-15",
+      "category": "industry_business",
+      "source": "anthropic"
+    },
+    {
+      "id": "models_wenxin51",
+      "date": "2026-05-12",
+      "category": "new_models",
+      "source": "qbitai"
+    },
+    {
+      "id": "2026-05-13-007",
+      "date": "2026-05-13",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "rg-001",
+      "date": "2026-05-11",
+      "category": "regulation_policy",
+      "source": "techcrunch"
+    },
+    {
+      "id": "ta-001",
+      "date": "2026-05-11",
+      "category": "tools_apps",
+      "source": "huggingface_papers"
+    },
+    {
+      "id": "ag-002",
+      "date": "2026-05-11",
+      "category": "agents",
+      "source": "huggingface_papers"
+    },
+    {
+      "id": "mm-002",
+      "date": "2026-05-11",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "tools_apps-20260515-001",
+      "date": "2026-05-15",
+      "category": "tools_apps",
+      "source": "openai"
+    },
+    {
+      "id": "2026-05-09-005",
+      "date": "2026-05-09",
+      "category": "japan",
+      "source": "note_ja"
+    },
+    {
+      "id": "2026-05-13-006",
+      "date": "2026-05-13",
+      "category": "agents",
+      "source": "anthropic"
+    },
+    {
+      "id": "japan-20260515-002",
+      "date": "2026-05-15",
+      "category": "japan",
+      "source": "findy"
+    },
+    {
+      "id": "tools-20260514-002",
+      "date": "2026-05-14",
+      "category": "tools_apps",
+      "source": "techcrunch"
+    },
+    {
+      "id": "japan-20260515-003",
+      "date": "2026-05-15",
+      "category": "japan",
+      "source": "yomiuri"
+    },
+    {
+      "id": "2026-05-13-023",
+      "date": "2026-05-13",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "jp_boss_ai_era",
+      "date": "2026-05-12",
+      "category": "japan",
+      "source": "note_mmiya"
+    },
+    {
+      "id": "cn-001",
+      "date": "2026-05-11",
+      "category": "china",
+      "source": "opensourceforu"
+    },
+    {
+      "id": "2026-05-13-015",
+      "date": "2026-05-13",
+      "category": "regulation_policy",
+      "source": "air_street_press"
+    },
+    {
+      "id": "cn-002",
+      "date": "2026-05-11",
+      "category": "china",
+      "source": "bloomberg"
+    },
+    {
+      "id": "ib-002",
+      "date": "2026-05-11",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "industry-20260514-001",
+      "date": "2026-05-14",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "2026-05-13-020",
+      "date": "2026-05-13",
+      "category": "japan",
+      "source": "sakana_ai"
+    },
+    {
+      "id": "reg_openai_eu_cyber",
+      "date": "2026-05-12",
+      "category": "regulation_policy",
+      "source": "cnbc"
+    },
+    {
+      "id": "tools_apps-20260515-003",
+      "date": "2026-05-15",
+      "category": "tools_apps",
+      "source": "anthropic"
+    },
+    {
+      "id": "china-20260515-002",
+      "date": "2026-05-15",
+      "category": "china",
+      "source": "qbitai.com"
+    },
+    {
+      "id": "japan-20260514-004",
+      "date": "2026-05-14",
+      "category": "japan",
+      "source": "hatenablog"
+    },
+    {
+      "id": "mm-20260514-002",
+      "date": "2026-05-14",
+      "category": "multimodal",
+      "source": "huggingface"
+    },
+    {
+      "id": "industry_business-20260515-002",
+      "date": "2026-05-15",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "2026-05-13-022",
+      "date": "2026-05-13",
+      "category": "japan",
+      "source": "sakana_ai"
+    },
+    {
+      "id": "2026-05-13-014",
+      "date": "2026-05-13",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "reg-20260514-001",
+      "date": "2026-05-14",
+      "category": "regulation_policy",
+      "source": "itmedia"
+    },
+    {
+      "id": "cb-002",
+      "date": "2026-05-11",
+      "category": "community_buzz",
+      "source": "tomshardware"
+    },
+    {
+      "id": "buzz_local_ai_norm",
+      "date": "2026-05-12",
+      "category": "community_buzz",
+      "source": "unix_foo"
+    },
+    {
+      "id": "japan-20260515-005",
+      "date": "2026-05-15",
+      "category": "japan",
+      "source": "itmedia"
+    },
+    {
+      "id": "japan-20260514-003",
+      "date": "2026-05-14",
+      "category": "japan",
+      "source": "zenn"
+    },
+    {
+      "id": "japan-20260515-004",
+      "date": "2026-05-15",
+      "category": "japan",
+      "source": "itmedia"
+    },
+    {
+      "id": "china-20260514-001",
+      "date": "2026-05-14",
+      "category": "china",
+      "source": "tokenmix"
+    },
+    {
+      "id": "2026-05-13-017",
+      "date": "2026-05-13",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    },
+    {
+      "id": "community_buzz-20260515-001",
+      "date": "2026-05-15",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    },
+    {
+      "id": "buzz-20260514-001",
+      "date": "2026-05-14",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    },
+    {
+      "id": "japan-20260514-005",
+      "date": "2026-05-14",
+      "category": "japan",
+      "source": "hatenablog"
+    },
+    {
+      "id": "industry-20260514-002",
+      "date": "2026-05-14",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "buzz-20260514-002",
+      "date": "2026-05-14",
+      "category": "community_buzz",
+      "source": "techcrunch"
+    },
+    {
+      "id": "community_buzz-20260515-002",
+      "date": "2026-05-15",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    },
+    {
+      "id": "2026-05-13-009",
+      "date": "2026-05-13",
+      "category": "multimodal",
+      "source": "techcrunch"
+    },
+    {
+      "id": "2026-05-13-016",
+      "date": "2026-05-13",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    }
+  ]
+}
