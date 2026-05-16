@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-05-16T05:00:00+09:00",
+  "updated_at": "2026-05-17T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-17",
+      "headline": "Grep がベクトル検索を超えると実証・Darwin が訓練ゼロで GPQA Diamond 88.89% 達成・arXiv が AI 全執筆論文著者を1年間投稿禁止",
+      "item_count": 23,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-05-16",
       "headline": "ChatGPTが Plaid 経由で銀行口座連携の個人財務機能を公開・オリンピック数学金メダル水準の推論スケーリング論文・初の商用準線形 LLM SubQ が 12M コンテキスト実証、OpenAI が中国包摂のグローバル AI ガバナンスを支持・Notion がエージェント基地化、Zenn の無料 Claude Code 代替手法が国内技術者コミュニティに拡散",
