@@ -88,6 +88,30 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 - Slack / Discord / メモアプリにブックマーク
 - PC で開いた URL を `Ctrl+L` → スマホへ AirDrop / 共有
 
+## 通知（Web Push, Phase F-1）
+
+日次ダイジェストの更新が完了した直後（平常 JST 02:00 前後）に、その日の headline をスマホへ Push 通知できる。
+
+### 初回セットアップ（運用者が 1 回だけ）
+
+1. **VAPID 鍵生成**: `node scripts/gen-vapid.mjs` を実行
+   - 出力された `VAPID_PUBLIC_KEY` を `assets/app.js` と `scripts/send-push.mjs` の定数に反映（既に埋め込み済みなら不要）
+   - 出力された `VAPID_PRIVATE_KEY` を GitHub リポジトリ **Settings → Secrets and variables → Actions** に `VAPID_PRIVATE_KEY` という名前で登録（絶対に公開しない）
+2. 秘密鍵を登録するまで `Send push notification` ステップは「未設定」ログを出して正常スキップする（digest は落ちない）
+
+### 端末ごとの購読登録
+
+1. スマホ / PC でサイトを開き、ヘッダーの 🔔 をタップ
+2. 通知を許可 → 表示された購読 JSON を「コピー」
+3. その JSON を Claude Code に「これを subscriptions.json に登録して」と渡す（`data/subscriptions.json` に追記 commit/push される）
+4. 以降、日次更新完了時にこの端末へ通知が届く。端末を増やすときは 1–3 を繰り返す
+
+### 注意
+
+- **iOS は Safari でホーム画面に追加した PWA でのみ Web Push が動作**（iOS Safari の仕様）。A2HS 後にアプリから開いて 🔔 を許可すること
+- 通知タイミングは固定時刻ではなく「更新完了の直後」（深夜帯のことが多い）。鳴らしたくない時間帯は端末側のサイレント設定で調整
+- 失効した購読（端末側で通知を切る等）は Actions ログに警告が出る。`data/subscriptions.json` から手動削除する
+
 ## 自動更新の仕組み
 
 `/schedule` で routine を登録すると、Anthropic ホスト側で毎朝 5:00 JST にスキルが起動し、本リポジトリへ `git push` する。Pages が自動でデプロイ。

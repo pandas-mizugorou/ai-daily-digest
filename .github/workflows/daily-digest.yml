@@ -188,6 +188,21 @@ jobs:
           git commit -m "daily digest: ${DATE} (${COUNT} items)"
           git push origin HEAD:main
 
+      # === Phase F-1: 日次更新完了の直後に Web Push 通知 ===
+      - name: Setup Node (for web-push)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Send push notification
+        # 通知が失敗しても日次の commit/push は保護する
+        continue-on-error: true
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+        run: |
+          npm install --no-save web-push@^3
+          node scripts/send-push.mjs
+
       - name: Summary
         if: always()
         run: |
