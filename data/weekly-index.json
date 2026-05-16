@@ -2,11 +2,11 @@
   "entries": [
     {
       "week": "2026-W20",
-      "from": "2026-05-09",
-      "to": "2026-05-15",
-      "headline": "Google I/O Gemini 4・Meta Llama 10億DL・Anthropic Glasswing+法律AI参入で企業採用首位、Conductorパターンがエージェント設計標準へ",
+      "from": "2026-05-11",
+      "to": "2026-05-17",
+      "headline": "Grep がベクトル検索を凌駕・Darwin が訓練ゼロで GPQA Diamond 88.89% 達成・Google が Android をエージェント基盤化—AI スタック全層で従来常識の書き換えが連続した週",
       "top_count": 10,
-      "selected_items": 126
+      "selected_items": 147
     }
   ]
 }
