@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+  <meta name="description" content="AI Daily Digest の過去記事を全文検索・タグで絞り込み" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI Digest 検索" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+
+  <title>記事を検索 ・ AI Daily Digest</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <h1 class="site-title">
+        <span class="site-title-mark" aria-hidden="true">🔍</span>
+        記事を検索
+      </h1>
+      <div class="header-actions">
+        <a class="icon-button" href="../" aria-label="日次ページに戻る">
+          <span aria-hidden="true">←</span>
+        </a>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="テーマ切替">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+      </div>
+    </div>
+    <div class="search-bar">
+      <input
+        id="search-input"
+        class="search-input"
+        type="search"
+        inputmode="search"
+        autocomplete="off"
+        placeholder="キーワード（例: Claude, agent, llama）"
+        aria-label="キーワード検索"
+      />
+    </div>
+    <nav id="tag-chips" class="category-tabs" aria-label="タグで絞り込み"></nav>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <section id="status" class="status" aria-live="polite">
+      <p class="status-message">読み込み中…</p>
+    </section>
+
+    <p id="search-meta" class="search-meta" aria-live="polite"></p>
+
+    <section id="search-results" class="search-results" aria-label="検索結果"></section>
+
+    <a class="weekly-link weekly-back-link" href="../">
+      <span class="weekly-link-icon" aria-hidden="true">←</span>
+      <span class="weekly-link-text">日次ページに戻る</span>
+    </a>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>過去のダイジェスト全期間を全文検索 ・ <a href="../" id="back-link">日次ページ</a></p>
+    <p class="footer-note">キーワード（スペース区切りで AND）×タグ（複数で OR）で絞り込み。カードをタップで要約展開</p>
+  </footer>
+
+  <template id="result-template">
+    <details class="search-card">
+      <summary class="search-card-summary">
+        <div class="search-card-head">
+          <h2 class="search-card-title"></h2>
+          <div class="search-card-meta">
+            <span class="search-card-source"></span>
+            <span class="search-card-date"></span>
+            <span class="search-card-score"></span>
+          </div>
+        </div>
+        <span class="search-card-chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="search-card-body">
+        <p class="search-card-text"></p>
+        <ul class="search-card-points"></ul>
+        <div class="search-card-tags"></div>
+        <a class="search-card-link" target="_blank" rel="noopener">元記事を開く →</a>
+      </div>
+    </details>
+  </template>
+
+  <template id="tag-chip-template">
+    <button type="button" class="cat-tab" aria-pressed="false"></button>
+  </template>
+
+  <script src="./app-search.js" type="module"></script>
+</body>
+</html>

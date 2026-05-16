@@ -112,6 +112,17 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 - 通知タイミングは固定時刻ではなく「更新完了の直後」（深夜帯のことが多い）。鳴らしたくない時間帯は端末側のサイレント設定で調整
 - 失効した購読（端末側で通知を切る等）は Actions ログに警告が出る。`data/subscriptions.json` から手動削除する
 
+## 検索（Phase F-3）
+
+ヘッダーの 🔍 から専用検索ページ `/search/` を開く。過去全期間の記事をクライアントサイドで横断検索できる。
+
+- **フリーワード**: タイトル / 日本語タイトル / 要約 / タグ / ソースを対象に部分一致。スペース区切りは AND
+- **タグチップ**: 出現回数上位 40 タグ。複数選択は OR。フリーワードとは AND
+- **既定表示**: 語もタグも未指定なら最新 30 件（探索の入口）
+- 結果カードはタップでその場展開（要約 + キーポイント + タグ + 元記事リンク）
+
+検索インデックス `data/search-index.json` は digest ジョブが `scripts/build-search-index.mjs` で毎日再生成（figure 等を除いた軽量版）。Service Worker は latest.json と同じ network-first で扱う。
+
 ## 自動更新の仕組み
 
 `/schedule` で routine を登録すると、Anthropic ホスト側で毎朝 5:00 JST にスキルが起動し、本リポジトリへ `git push` する。Pages が自動でデプロイ。

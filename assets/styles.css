@@ -1750,3 +1750,114 @@ button { font: inherit; cursor: pointer; }
   color: var(--fg-muted);
   border-color: var(--border);
 }
+
+/* === Search page (Phase F-3) === */
+.search-bar {
+  max-width: var(--maxw);
+  margin: 8px auto 4px;
+  padding: 0 4px;
+}
+.search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  min-height: var(--tap);
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--fg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.search-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.search-meta {
+  max-width: var(--maxw);
+  margin: 4px auto 12px;
+  padding: 0 4px;
+  font-size: 0.8rem;
+  color: var(--fg-muted);
+}
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+.search-card-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+.search-card-summary::-webkit-details-marker {
+  display: none;
+}
+.search-card-head {
+  flex: 1;
+  min-width: 0;
+}
+.search-card-title {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.search-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.72rem;
+  color: var(--fg-subtle);
+  font-variant-numeric: tabular-nums;
+}
+.search-card-chevron {
+  flex: 0 0 auto;
+  color: var(--fg-subtle);
+  transition: transform 0.15s ease;
+}
+.search-card[open] .search-card-chevron {
+  transform: rotate(180deg);
+}
+.search-card-body {
+  padding: 0 14px 14px;
+  border-top: 1px solid var(--border);
+}
+.search-card-text {
+  margin: 12px 0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--fg);
+}
+.search-card-points {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--fg-muted);
+}
+.search-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.search-card-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.search-card-link:hover {
+  text-decoration: underline;
+}
