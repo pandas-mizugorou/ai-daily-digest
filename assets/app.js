@@ -21,6 +21,12 @@ const els = {
   installButton: document.getElementById("install-button"),
   updateBanner: document.getElementById("update-banner"),
   reloadButton: document.getElementById("reload-button"),
+  notifyButton: document.getElementById("notify-button"),
+  pushDialog: document.getElementById("push-dialog"),
+  pushSubJson: document.getElementById("push-sub-json"),
+  pushCopyBtn: document.getElementById("push-copy-btn"),
+  pushCloseBtn: document.getElementById("push-close-btn"),
+  pushDialogMsg: document.getElementById("push-dialog-msg"),
   cardTpl: document.getElementById("card-template"),
   categoryTpl: document.getElementById("category-template"),
 };
@@ -931,9 +937,94 @@ if ("serviceWorker" in navigator) {
         });
       })
       .catch((err) => console.warn("SW registration failed", err));
+    navigator.serviceWorker.ready.then((reg) => initPush(reg)).catch(() => {});
   });
 }
 els.reloadButton.addEventListener("click", () => location.reload());
+
+// === Web Push (Phase F-1) ===
+// 公開鍵は公開前提。!!! scripts/send-push.mjs の VAPID_PUBLIC_KEY と必ず一致させること !!!
+const VAPID_PUBLIC_KEY =
+  "BJI7StzSqU0D1Sz_ZVNhFObbHF1ojf8rqv220YZxov0kQ-6C07vtGE1liXN2pnAZXcmRsMYHuKutrKVATUoGRAc";
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+  const raw = atob(base64);
+  const arr = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+  return arr;
+}
+
+function showPushDialog(json, msg) {
+  if (!els.pushDialog) return;
+  els.pushSubJson.value = json || "";
+  els.pushDialogMsg.textContent = msg || "";
+  if (typeof els.pushDialog.showModal === "function") els.pushDialog.showModal();
+  else els.pushDialog.setAttribute("open", "");
+}
+
+async function initPush(reg) {
+  if (!els.notifyButton) return;
+  if (!("PushManager" in window) || !("Notification" in window) || !reg) return;
+  // Push 対応環境でのみボタンを出す (iOS は A2HS した PWA のみ動作)
+  els.notifyButton.classList.remove("hidden");
+
+  async function refreshState() {
+    let sub = null;
+    try { sub = await reg.pushManager.getSubscription(); } catch {}
+    if (Notification.permission === "denied") {
+      els.notifyButton.setAttribute("aria-label", "通知はブロックされています");
+    } else if (sub) {
+      els.notifyButton.setAttribute("aria-label", "通知は登録済み（タップで購読情報を再表示）");
+    } else {
+      els.notifyButton.setAttribute("aria-label", "通知を有効化");
+    }
+  }
+  await refreshState();
+
+  els.notifyButton.addEventListener("click", async () => {
+    if (Notification.permission === "denied") {
+      showPushDialog("", "通知がブロックされています。ブラウザのサイト設定で許可してから再度お試しください。");
+      return;
+    }
+    let sub = null;
+    try { sub = await reg.pushManager.getSubscription(); } catch {}
+    if (!sub) {
+      const perm = await Notification.requestPermission();
+      if (perm !== "granted") {
+        showPushDialog("", "通知が許可されませんでした。");
+        return;
+      }
+      try {
+        sub = await reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+        });
+      } catch (err) {
+        showPushDialog("", "購読に失敗しました: " + (err?.message || err));
+        return;
+      }
+    }
+    await refreshState();
+    showPushDialog(JSON.stringify(sub.toJSON(), null, 2), "");
+  });
+
+  els.pushCopyBtn?.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(els.pushSubJson.value);
+      els.pushDialogMsg.textContent = "コピーしました。Claude Code に渡して subscriptions.json に登録してください。";
+    } catch {
+      els.pushSubJson.focus();
+      els.pushSubJson.select();
+      els.pushDialogMsg.textContent = "自動コピーできませんでした。手動で全選択してコピーしてください。";
+    }
+  });
+  els.pushCloseBtn?.addEventListener("click", () => {
+    if (typeof els.pushDialog.close === "function") els.pushDialog.close();
+    else els.pushDialog.removeAttribute("open");
+  });
+}
 
 // === Boot ===
 (async function boot() {

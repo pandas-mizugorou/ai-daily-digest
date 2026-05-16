@@ -30,6 +30,9 @@
         AI Daily Digest
       </h1>
       <div class="header-actions">
+        <button id="notify-button" class="icon-button hidden" type="button" aria-label="通知を有効化">
+          <span aria-hidden="true">🔔</span>
+        </button>
         <a id="weekly-link" class="icon-button hidden" href="./weekly/" aria-label="今週のサマリを見る">
           <span aria-hidden="true">📅</span>
         </a>
@@ -84,6 +87,22 @@
       <button id="reload-button" class="reload-button" type="button">再読込</button>
     </div>
   </main>
+
+  <dialog id="push-dialog" class="push-dialog">
+    <div class="push-dialog-inner">
+      <h2 class="push-dialog-title">通知を登録</h2>
+      <p class="push-dialog-desc">
+        下の JSON をコピーして Claude Code に「これを subscriptions.json に登録して」と渡してください。
+        登録後、日次ダイジェストの更新完了時にこの端末へ通知が届きます。
+      </p>
+      <textarea id="push-sub-json" class="push-sub-json" readonly rows="6" aria-label="購読 JSON"></textarea>
+      <p id="push-dialog-msg" class="push-dialog-msg" role="status"></p>
+      <div class="push-dialog-actions">
+        <button type="button" id="push-copy-btn" class="push-btn">コピー</button>
+        <button type="button" id="push-close-btn" class="push-btn push-btn-secondary">閉じる</button>
+      </div>
+    </div>
+  </dialog>
 
   <footer class="site-footer" role="contentinfo">
     <p>毎朝 5:00 JST に自動更新 ・ <a href="https://github.com" id="repo-link" target="_blank" rel="noopener">GitHub</a></p>

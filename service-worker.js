@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v11: 週次サマリの発火を金曜 → 日曜に変更、ISO 8601 月〜日と整合 — daily-digest.yml + docs 更新
-const VERSION = "v11";
+// v12: Phase F-1 — Web Push 通知 (push / notificationclick ハンドラ追加)
+const VERSION = "v12";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -114,4 +114,42 @@ self.addEventListener("fetch", (event) => {
     );
     return;
   }
+});
+
+// === Web Push (Phase F-1) ===
+// 送信側 (scripts/send-push.mjs) が { title, body, url, tag } を送る。
+self.addEventListener("push", (event) => {
+  let d = {};
+  try {
+    d = event.data ? event.data.json() : {};
+  } catch {
+    d = { body: event.data ? event.data.text() : "" };
+  }
+  event.waitUntil(
+    self.registration.showNotification(d.title || "AI Daily Digest", {
+      body: d.body || "今日の AI ニュースが更新されました",
+      icon: "./assets/icons/icon-192.png",
+      badge: "./assets/icons/icon-192.png",
+      tag: d.tag || "aidd-daily",
+      renotify: true,
+      data: { url: d.url || "./" },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const target = event.notification.data?.url || "./";
+  event.waitUntil(
+    clients.matchAll({ type: "window", includeUncontrolled: true }).then((wins) => {
+      // 既に開いているタブがあればフォーカス、無ければ新規に開く
+      for (const w of wins) {
+        if ("focus" in w) {
+          w.navigate?.(target);
+          return w.focus();
+        }
+      }
+      return clients.openWindow(target);
+    })
+  );
 });
