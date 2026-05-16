@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v12: Phase F-1 — Web Push 通知 (push / notificationclick ハンドラ追加)
-const VERSION = "v12";
+// v13: Phase F-3 — 検索ページ (/search/) + search-index.json
+const VERSION = "v13";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -20,6 +20,10 @@ const STATIC_ASSETS = [
   "./weekly/",
   "./weekly/index.html",
   "./weekly/app-weekly.js",
+  // Search page (Phase F-3)
+  "./search/",
+  "./search/index.html",
+  "./search/app-search.js",
 ];
 
 self.addEventListener("install", (event) => {
@@ -47,7 +51,8 @@ self.addEventListener("activate", (event) => {
 });
 
 function isLatestOrIndex(url) {
-  return /\/data\/(latest|index)\.json(\?|$)/.test(url);
+  // search-index.json は毎日更新されるので latest/index と同じ network-first
+  return /\/data\/(latest|index|search-index)\.json(\?|$)/.test(url);
 }
 function isDayJson(url) {
   return /\/data\/\d{4}-\d{2}-\d{2}\.json(\?|$)/.test(url);
@@ -59,7 +64,7 @@ function isWeeklyJson(url) {
   return /\/data\/weekly-\d{4}-W\d{2}\.json(\?|$)/.test(url);
 }
 function isStaticAsset(url) {
-  return /\/(index\.html|offline\.html|manifest\.webmanifest|assets\/.+|weekly\/(index\.html|app-weekly\.js))$/.test(url) || url.endsWith("/") || url.endsWith("/weekly/");
+  return /\/(index\.html|offline\.html|manifest\.webmanifest|assets\/.+|weekly\/(index\.html|app-weekly\.js)|search\/(index\.html|app-search\.js))$/.test(url) || url.endsWith("/") || url.endsWith("/weekly/") || url.endsWith("/search/");
 }
 
 self.addEventListener("fetch", (event) => {

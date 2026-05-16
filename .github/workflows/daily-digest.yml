@@ -161,6 +161,11 @@ jobs:
             --permission-mode bypassPermissions
             --allowed-tools Read,Write,Edit,Glob,Grep,Bash,WebFetch,WebSearch
 
+      # === Phase F-3: 検索インデックス生成 (Claude 出力後・commit 前。ランナー標準 node、依存ゼロ) ===
+      - name: Build search index
+        continue-on-error: true
+        run: node scripts/build-search-index.mjs
+
       - name: Commit and push changes
         env:
           GH_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
