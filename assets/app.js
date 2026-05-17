@@ -516,14 +516,17 @@ function attachCardEvents(rootEl) {
       const card = collapseBtn.closest(".card");
       if (!card) return;
       collapseCard(card);
-      // 折りたたみ後にレイアウト確定 → sticky ヘッダー実高を測り、その下に
-      // カード先頭(タイトル全体)が完全に見える位置へスクロール
-      requestAnimationFrame(() => {
-        const header = document.querySelector(".site-header");
-        const headerH = header ? header.getBoundingClientRect().height : 0;
-        const y = card.getBoundingClientRect().top + window.scrollY - headerH - 16;
-        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
-      });
+      // 折りたたみ reflow が完全に確定するまで 2 フレーム待ち、sticky ヘッダー
+      // 実高の分だけ下げた位置へ *即時* スクロール (smooth はレイアウト変化と
+      // 競合し位置がずれるため使わない。anchoring も CSS で無効化済み)
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          const header = document.querySelector(".site-header");
+          const headerH = header ? header.getBoundingClientRect().height : 0;
+          const y = card.getBoundingClientRect().top + window.scrollY - headerH - 16;
+          window.scrollTo(0, Math.max(0, y));
+        })
+      );
       return;
     }
     const toggle = e.target.closest(".card-toggle");

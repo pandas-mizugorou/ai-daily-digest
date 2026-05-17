@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v18: 「閉じる」でヘッダー実高を動的計測してオフセット (タイトルが隠れない)
-const VERSION = "v18";
+// v19: 「閉じる」scroll を overflow-anchor:none + rAF×2 + 即時 scrollTo で根治
+const VERSION = "v19";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
