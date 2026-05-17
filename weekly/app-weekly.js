@@ -212,6 +212,13 @@ function renderWeeklyItem(item) {
   }
 
   node.querySelector(".search-card-link").href = item.url || "#";
+
+  // 下部「閉じる」ボタン (日次 collapseCard と同じ挙動)
+  node.querySelector(".card-collapse-bottom").addEventListener("click", () => {
+    node.open = false;
+    const top = node.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  });
   return node;
 }
 

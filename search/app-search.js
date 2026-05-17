@@ -196,6 +196,13 @@ function renderResultCard(item) {
       loadFigureInto(item, figEl);
     }
   });
+
+  // 下部「閉じる」ボタン (日次 collapseCard と同じ挙動)
+  node.querySelector(".card-collapse-bottom").addEventListener("click", () => {
+    node.open = false;
+    const top = node.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  });
   return node;
 }
 
