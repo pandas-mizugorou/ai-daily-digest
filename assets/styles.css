@@ -1812,6 +1812,20 @@ button { font: inherit; cursor: pointer; }
   font-weight: 600;
   line-height: 1.45;
 }
+/* 週次カードの順位バッジ (search-card-title 内、タイトルの前) */
+.weekly-rank-badge {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  vertical-align: middle;
+}
+.weekly-rank-badge.hidden { display: none; }
 .search-card-meta {
   display: flex;
   flex-wrap: wrap;

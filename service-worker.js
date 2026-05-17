@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v13: Phase F-3 — 検索ページ (/search/) + search-index.json
-const VERSION = "v13";
+// v14: 日次/週次/検索カードを統一 (figure.js 共通化、週次・検索に図解展開)
+const VERSION = "v14";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -10,6 +10,7 @@ const STATIC_ASSETS = [
   "./offline.html",
   "./manifest.webmanifest",
   "./assets/app.js",
+  "./assets/figure.js",
   "./assets/styles.css",
   "./assets/favicon.svg",
   "./assets/icons/icon-192.png",

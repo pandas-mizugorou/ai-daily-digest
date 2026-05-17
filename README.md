@@ -123,6 +123,8 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 
 検索インデックス `data/search-index.json` は digest ジョブが `scripts/build-search-index.mjs` で毎日再生成（figure 等を除いた軽量版）。Service Worker は latest.json と同じ network-first で扱う。
 
+日次・週次・検索の 3 ページは**同一の展開カード**（要約 + キーポイント + タグ + 図解 + 元記事リンク）を共有する。図解描画は `assets/figure.js` に共通化。検索カードの図解のみ、索引肥大回避のため展開時に該当日 JSON を lazy fetch する。
+
 ## 自動更新の仕組み
 
 `/schedule` で routine を登録すると、Anthropic ホスト側で毎朝 5:00 JST にスキルが起動し、本リポジトリへ `git push` する。Pages が自動でデプロイ。

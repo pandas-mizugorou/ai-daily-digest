@@ -1,6 +1,9 @@
 // AI Daily Digest — 検索ページ (Phase F-3)
+import { renderFigure } from "../assets/figure.js";
+
 const THEME_KEY = "aidd:theme";
 const INDEX_URL = "../data/search-index.json";
+const DAY_DIR = "../data";
 const MAX_RESULTS = 100; // 絞り込み時の DOM 描画上限
 const DEFAULT_RESULTS = 30; // 語/タグ未指定時の既定表示
 const TOP_TAGS = 40; // タグチップに出す上位件数
@@ -130,6 +133,38 @@ function renderResults(items, total, noQuery) {
   els.results.appendChild(frag);
 }
 
+// 図解(figure)は索引に入れていない(肥大回避)ため、カード展開時に
+// 該当日の日次 JSON を lazy fetch して取得する。同一日は Map でキャッシュ。
+const dayCache = new Map(); // date -> day json | null
+
+async function loadDayCached(date) {
+  if (dayCache.has(date)) return dayCache.get(date);
+  try {
+    const res = await fetch(`${DAY_DIR}/${date}.json`);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const j = await res.json();
+    dayCache.set(date, j);
+    return j;
+  } catch {
+    dayCache.set(date, null);
+    return null;
+  }
+}
+
+async function loadFigureInto(item, figEl) {
+  if (!figEl) return;
+  const day = await loadDayCached(item.date);
+  if (!day) return;
+  for (const cat of day.categories || []) {
+    for (const it of cat.items || []) {
+      if (it.id === item.id) {
+        if (it.figure) renderFigure(it.figure, figEl);
+        return;
+      }
+    }
+  }
+}
+
 function renderResultCard(item) {
   const node = els.resultTpl.content.firstElementChild.cloneNode(true);
   node.querySelector(".search-card-title").textContent = pickTitle(item);
@@ -151,6 +186,16 @@ function renderResultCard(item) {
     tagWrap.appendChild(s);
   }
   node.querySelector(".search-card-link").href = item.url || "#";
+
+  // 初回展開時のみ figure を lazy fetch
+  const figEl = node.querySelector(".card-figure");
+  let figLoaded = false;
+  node.addEventListener("toggle", () => {
+    if (node.open && !figLoaded) {
+      figLoaded = true;
+      loadFigureInto(item, figEl);
+    }
+  });
   return node;
 }
 
