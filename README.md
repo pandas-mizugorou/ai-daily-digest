@@ -125,6 +125,12 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 
 日次・週次・検索の 3 ページは**同一の展開カード**（要約 + キーポイント + タグ + 図解 + 元記事リンク）を共有する。図解描画は `assets/figure.js` に共通化。検索カードの図解のみ、索引肥大回避のため展開時に該当日 JSON を lazy fetch する。
 
+## X 投稿ネタ連携（Phase F-2）
+
+日次・週次・検索の各カード展開部に「𝕏 用にコピー」ボタンがある。押すと記事情報（タイトル / 要約 / キーポイント / URL / ソース / タグ）が `/x-post-drafter` の食いやすい整形テキストでクリップボードにコピーされ、トーストで通知。
+
+使い方: ボタンを押す → Claude Code のセッションで `/x-post-drafter` を起動 → Step 2A「直接指定」にペースト → 投稿案生成。静的サイトからローカル Claude Code スキルは直接起動できないため、F-1 の購読登録と同じ「コピー → Claude に貼る」橋渡し方式。整形ロジックは `assets/xdraft.js` に共通化（3 ページ共有）。
+
 ## 自動更新の仕組み
 
 `/schedule` で routine を登録すると、Anthropic ホスト側で毎朝 5:00 JST にスキルが起動し、本リポジトリへ `git push` する。Pages が自動でデプロイ。

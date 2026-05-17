@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v19: 「閉じる」scroll を overflow-anchor:none + rAF×2 + 即時 scrollTo で根治
-const VERSION = "v19";
+// v20: Phase F-2 — カードに「𝕏 用にコピー」(x-post-drafter 連携) 追加
+const VERSION = "v20";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -11,6 +11,7 @@ const STATIC_ASSETS = [
   "./manifest.webmanifest",
   "./assets/app.js",
   "./assets/figure.js",
+  "./assets/xdraft.js",
   "./assets/styles.css",
   "./assets/favicon.svg",
   "./assets/icons/icon-192.png",
