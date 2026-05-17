@@ -14,7 +14,9 @@ import process from "node:process";
 // !!! assets/app.js の VAPID_PUBLIC_KEY と必ず同じ値にすること !!!
 const VAPID_PUBLIC_KEY =
   "BJI7StzSqU0D1Sz_ZVNhFObbHF1ojf8rqv220YZxov0kQ-6C07vtGE1liXN2pnAZXcmRsMYHuKutrKVATUoGRAc";
-const VAPID_SUBJECT = "https://pandas-mizugorou.github.io/ai-daily-digest/";
+// Apple の Web Push (web.push.apple.com) は VAPID subject が mailto: でないと
+// 201 を返しても実配信しない (FCM は https でも可)。iOS 配信のため mailto: 必須。
+const VAPID_SUBJECT = "mailto:ai-daily-digest-bot@users.noreply.github.com";
 
 const SUBS_PATH = "data/subscriptions.json";
 const LATEST_PATH = "data/latest.json";
