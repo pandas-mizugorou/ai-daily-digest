@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v15: 週次・検索カードに下部「閉じる」ボタン追加 (日次と同挙動)
-const VERSION = "v15";
+// v16: 「閉じる」を scrollIntoView(block:nearest) に統一 (閉じたカードを見失わない)
+const VERSION = "v16";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

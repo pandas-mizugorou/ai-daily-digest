@@ -516,8 +516,8 @@ function attachCardEvents(rootEl) {
       const card = collapseBtn.closest(".card");
       if (!card) return;
       collapseCard(card);
-      const cardTop = card.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top: Math.max(cardTop, 0), behavior: "smooth" });
+      // 閉じたカードが見える最小限の移動 (既に画面内なら動かさない)
+      card.scrollIntoView({ block: "nearest", behavior: "smooth" });
       return;
     }
     const toggle = e.target.closest(".card-toggle");

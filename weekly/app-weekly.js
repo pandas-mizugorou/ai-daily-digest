@@ -216,8 +216,8 @@ function renderWeeklyItem(item) {
   // 下部「閉じる」ボタン (日次 collapseCard と同じ挙動)
   node.querySelector(".card-collapse-bottom").addEventListener("click", () => {
     node.open = false;
-    const top = node.getBoundingClientRect().top + window.scrollY - 80;
-    window.scrollTo({ top, behavior: "smooth" });
+    // 閉じたカードが見える最小限の移動 (既に画面内なら動かさない)
+    node.scrollIntoView({ block: "nearest", behavior: "smooth" });
   });
   return node;
 }
