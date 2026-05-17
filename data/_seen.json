@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-17T10:30:00+09:00",
+  "updated_at": "2026-05-18T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -36,8 +36,8 @@
     "d7e3f4a5b6c70006": {
       "url_prefix": "https://arxiv.org/abs/2605.15184",
       "first_seen_at": "2026-05-17",
-      "last_seen_at": "2026-05-17",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 2
     },
     "d7e3f4a5b6c70007": {
       "url_prefix": "https://huggingface.co/papers/2605.15155",
@@ -66,8 +66,8 @@
     "d7e3f4a5b6c70011": {
       "url_prefix": "https://arxiv.org/abs/2605.15177",
       "first_seen_at": "2026-05-17",
-      "last_seen_at": "2026-05-17",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 2
     },
     "d7e3f4a5b6c70012": {
       "url_prefix": "https://huggingface.co/papers/2605.14892",
@@ -318,8 +318,8 @@
     "b5e1f2a3d4c50004": {
       "url_prefix": "https://huggingface.co/papers/2605.12500",
       "first_seen_at": "2026-05-14",
-      "last_seen_at": "2026-05-14",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 2
     },
     "b5e1f2a3d4c50005": {
       "url_prefix": "https://huggingface.co/papers/2605.08063",
@@ -468,8 +468,8 @@
     "a1b2c3d4e5f60007": {
       "url_prefix": "https://openai.com/blog/codex-mobile",
       "first_seen_at": "2026-05-15",
-      "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 2
     },
     "a1b2c3d4e5f60008": {
       "url_prefix": "https://huggingface.co/blog/async-text-generation",
@@ -810,8 +810,8 @@
     "0a04147567be0151": {
       "url_prefix": "https://sakana.ai/defense-swe-interview-2026/",
       "first_seen_at": "2026-05-12",
-      "last_seen_at": "2026-05-12",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 2
     },
     "6ce0042f7f6ad59b": {
       "url_prefix": "https://project.nikkeibp.co.jp/onestep/keyperson/0",
@@ -1255,6 +1255,120 @@
       "url_prefix": "https://www.qbitai.com/2026/05/418491.html",
       "first_seen_at": "2026-05-17",
       "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30001": {
+      "url_prefix": "https://36kr.com/p/3312345678",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30002": {
+      "url_prefix": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30003": {
+      "url_prefix": "https://github.com/nicehorse06/openhuman",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30004": {
+      "url_prefix": "https://github.com/agentstowards/agents-towards-production",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30005": {
+      "url_prefix": "https://huggingface.co/papers/2605.12090",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30006": {
+      "url_prefix": "https://github.com/HKUDS/CLI-Anything",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30007": {
+      "url_prefix": "https://huggingface.co/papers/2605.13724",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30008": {
+      "url_prefix": "https://arxiv.org/abs/2605.15188",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30009": {
+      "url_prefix": "https://36kr.com/p/3312456789",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30010": {
+      "url_prefix": "https://qbitai.com/2026/05/altman-chip-ipo",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30011": {
+      "url_prefix": "https://arxiv.org/abs/2605.15172",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30012": {
+      "url_prefix": "https://techcrunch.com/2026/05/17/musk-openai-trial-nonprofit-conversion",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30013": {
+      "url_prefix": "https://qbitai.com/2026/05/web-to-cli-viral",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30014": {
+      "url_prefix": "https://qiita.com/ennagara128/items/aeaee3e64e75076503fe",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30015": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/note.com/ai_books_2026",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30016": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/cvpr2026-papers",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30017": {
+      "url_prefix": "https://gigazine.net/news/20260517-browser-use-ai-browser/",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30018": {
+      "url_prefix": "https://qbitai.com/2026/05/robot-dog-domestic-chip",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "e8f518a1b2c30019": {
+      "url_prefix": "https://qbitai.com/2026/05/sft-before-rl-llm-training",
+      "first_seen_at": "2026-05-18",
+      "last_seen_at": "2026-05-18",
       "last_seen_count": 1
     }
   }
