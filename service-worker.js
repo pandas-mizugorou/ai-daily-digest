@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v20: Phase F-2 — カードに「𝕏 用にコピー」(x-post-drafter 連携) 追加
-const VERSION = "v20";
+// v21: Phase F-2 改訂 — Top Picks に x_post を事前生成し「𝕏 投稿文をコピー」へ
+const VERSION = "v21";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

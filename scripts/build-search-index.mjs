@@ -62,6 +62,10 @@ async function main() {
           category: cat.id ?? it.category ?? "",
           lang: it.lang ?? "en",
           score: it.scores?.total ?? 0,
+          // Top Picks のみ持つ X 投稿文 (無い item は付けない)
+          ...(typeof it.x_post === "string" && it.x_post.trim()
+            ? { x_post: it.x_post }
+            : {}),
         });
       }
     }

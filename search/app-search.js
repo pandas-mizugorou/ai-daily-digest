@@ -1,6 +1,6 @@
 // AI Daily Digest — 検索ページ (Phase F-3)
 import { renderFigure } from "../assets/figure.js";
-import { copyXDraft } from "../assets/xdraft.js";
+import { copyXDraft, hasXPost } from "../assets/xdraft.js";
 
 const THEME_KEY = "aidd:theme";
 const INDEX_URL = "../data/search-index.json";
@@ -189,7 +189,10 @@ function renderResultCard(item) {
   node.querySelector(".search-card-link").href = item.url || "#";
 
   const xdraftBtn = node.querySelector(".card-xdraft");
-  if (xdraftBtn) xdraftBtn.addEventListener("click", () => copyXDraft(item));
+  if (xdraftBtn && hasXPost(item)) {
+    xdraftBtn.classList.remove("hidden");
+    xdraftBtn.addEventListener("click", () => copyXDraft(item));
+  }
 
   // 初回展開時のみ figure を lazy fetch
   const figEl = node.querySelector(".card-figure");
