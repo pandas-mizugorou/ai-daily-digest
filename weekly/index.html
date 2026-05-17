@@ -96,22 +96,37 @@
         <h2 class="weekly-section-title"></h2>
         <span class="weekly-section-count"></span>
       </header>
-      <ul class="weekly-section-items"></ul>
+      <div class="weekly-section-items"></div>
     </section>
   </template>
 
   <template id="weekly-item-template">
-    <li class="weekly-item">
-      <a class="weekly-item-link" target="_blank" rel="noopener">
-        <span class="weekly-item-rank"></span>
-        <div class="weekly-item-body">
-          <span class="weekly-item-date"></span>
-          <h3 class="weekly-item-title"></h3>
-          <p class="weekly-item-summary"></p>
-          <span class="weekly-item-source"></span>
+    <details class="search-card">
+      <summary class="search-card-summary">
+        <div class="search-card-head">
+          <h3 class="search-card-title">
+            <span class="weekly-rank-badge"></span>
+            <span class="weekly-title-text"></span>
+          </h3>
+          <div class="search-card-meta">
+            <span class="search-card-source"></span>
+            <span class="search-card-date"></span>
+            <span class="search-card-score"></span>
+          </div>
         </div>
-      </a>
-    </li>
+        <span class="search-card-chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="search-card-body">
+        <p class="search-card-text"></p>
+        <figure class="card-figure" hidden>
+          <div class="figure-body" aria-hidden="true"></div>
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <ul class="search-card-points"></ul>
+        <div class="search-card-tags"></div>
+        <a class="search-card-link" target="_blank" rel="noopener">元記事を開く →</a>
+      </div>
+    </details>
   </template>
 
   <script src="./app-weekly.js" type="module"></script>

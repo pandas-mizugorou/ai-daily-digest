@@ -1,4 +1,6 @@
 // AI Daily Digest — weekly summary frontend
+import { renderFigure } from "../assets/figure.js";
+
 const DATA_DIR = "../data";
 const THEME_KEY = "aidd:theme";
 
@@ -167,31 +169,49 @@ async function resolveItemRefs(refs) {
 }
 
 // === Render weekly sections ===
+// 日次/検索と同じ details 展開カード (要約 + キーポイント + タグ + 図解 + 元記事リンク)
 function renderWeeklyItem(item) {
   const node = els.itemTpl.content.firstElementChild.cloneNode(true);
-  const link = node.querySelector(".weekly-item-link");
-  link.href = item.url || "#";
-  const rank = node.querySelector(".weekly-item-rank");
+
+  const rankBadge = node.querySelector(".weekly-rank-badge");
   if (item._rank) {
-    rank.textContent = item._rank;
+    rankBadge.textContent = `#${item._rank}`;
   } else {
-    rank.classList.add("hidden");
+    rankBadge.classList.add("hidden");
   }
-  node.querySelector(".weekly-item-date").textContent = item._date || item.published_at || "";
-  const titleEl = node.querySelector(".weekly-item-title");
+
   const lang = (item.lang || "").toLowerCase();
   const titleJa = (item.title_ja || "").trim();
   const title = (item.title || "").trim();
-  if (lang === "en" || lang === "zh") {
-    titleEl.textContent = titleJa || title || "(無題)";
-  } else {
-    titleEl.textContent = title || titleJa || "(無題)";
+  const titleText =
+    lang === "en" || lang === "zh" ? titleJa || title || "(無題)" : title || titleJa || "(無題)";
+  node.querySelector(".weekly-title-text").textContent = titleText;
+
+  node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
+  node.querySelector(".search-card-date").textContent = item._date || item.published_at || "";
+  node.querySelector(".search-card-score").textContent = `★ ${item.scores?.total ?? 0}`;
+
+  node.querySelector(".search-card-text").textContent = item.summary_ja || "";
+
+  const figEl = node.querySelector(".card-figure");
+  if (item.figure && figEl) renderFigure(item.figure, figEl);
+
+  const ul = node.querySelector(".search-card-points");
+  for (const p of item.key_points_ja || []) {
+    const li = document.createElement("li");
+    li.textContent = p;
+    ul.appendChild(li);
   }
-  // summary 抜粋 (180 字)
-  const summary = (item.summary_ja || "").trim();
-  node.querySelector(".weekly-item-summary").textContent =
-    summary.length > 180 ? summary.slice(0, 178) + "…" : summary;
-  node.querySelector(".weekly-item-source").textContent = item.source_label || item.source || "";
+
+  const tagWrap = node.querySelector(".search-card-tags");
+  for (const t of item.tags || []) {
+    const s = document.createElement("span");
+    s.className = "tag";
+    s.textContent = `#${t}`;
+    tagWrap.appendChild(s);
+  }
+
+  node.querySelector(".search-card-link").href = item.url || "#";
   return node;
 }
 
