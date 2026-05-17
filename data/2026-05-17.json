@@ -1,19 +1,19 @@
 {
   "date": "2026-05-17",
-  "generated_at": "2026-05-17T05:00:00+09:00",
+  "generated_at": "2026-05-17T10:30:00+09:00",
   "schema_version": "2.0",
-  "headline": "Grep がベクトル検索を超えると実証・Darwin が訓練ゼロで GPQA Diamond 88.89% 達成・arXiv が AI 全執筆論文著者を1年間投稿禁止",
-  "summary_ja": "2026年5月17日の AI 日次まとめ。エージェントの検索戦略において grep がベクトル検索より一般的に優れることを複数アーキテクチャで実証した論文「Is Grep All You Need?」が公開され、エージェント開発者に衝撃を与えた。Darwin ファミリーが勾配更新ゼロで GPQA Diamond 88.89% のフロンティアスコアを達成し、訓練フリー推論の新たなパラダイムを示した。arXiv が LLM に全執筆を委ねた著者を 1 年間投稿禁止にする方針を発表し研究コミュニティに波紋が広がった。米国では AI 代替リスクの高い職種での雇用損失が Bloomberg 報道で可視化。日本では Karpathy 式 LLM Wiki の実践知見が Zenn ではてブ 107 件の反響を呼んだ。",
+  "headline": "OpenAI が ChatGPT+Codex 統合し Brockman 製品戦略責任者就任・arXiv が AI 全執筆著者を 1 年間投稿禁止・Grep がエージェント検索でベクトル検索を凌駕と実証",
+  "summary_ja": "2026年5月17日の AI ニュースまとめ。OpenAI が Greg Brockman を製品戦略責任者として正式任命し、ChatGPT と Codex を単一のエージェントプラットフォームに統合すると発表した。Google I/O 2026（5月19日開幕）の3日前というタイミングは競合を意識した重大な組織再編として業界の注目を集める。学術界では arXiv が「LLM に論文を全執筆させた証拠がある著者を1年間投稿禁止」とする方針を明確化し研究コミュニティ全体に影響が広がっている。エージェント研究では arXiv 論文「Is Grep All You Need?」が Claude Code・Codex・Gemini CLI など複数ハーネスで grep がベクトル検索より一般的に高精度であることを実証し、エージェント設計者の間で話題を呼んでいる。Darwin ファミリーが勾配更新ゼロで GPQA Diamond 88.89% を達成し「訓練量に比例して性能が上がる」という前提を覆す研究として高い注目を集めた。日本では「AIにできない仕事は Uber Eats の配達員のような仕事になるかもしれない」という論考がはてブ 245 件を獲得し、AI 代替議論の質的な転換を示した。中国では MiniCPM-V 4.6（1.3B）が RTX 4090 1枚で動作するマルチモーダルモデルとして登場し、エッジ AI の実用化が加速している。",
   "stats": {
-    "total_collected": 78,
-    "after_dedup": 52,
-    "selected": 23,
+    "total_collected": 76,
+    "after_dedup": 51,
+    "selected": 24,
     "top_picks_count": 6,
     "by_category": {
       "new_models": 2,
       "tools_apps": 3,
       "agents": 2,
-      "multimodal": 1,
+      "multimodal": 2,
       "research_papers": 3,
       "industry_business": 2,
       "regulation_policy": 1,
@@ -22,13 +22,20 @@
       "china": 2
     }
   },
+  "skipped_sources": [
+    { "source": "openai_blog", "reason": "HTTP 403 Forbidden" },
+    { "source": "reddit_localllama", "reason": "fetch blocked" },
+    { "source": "the_verge", "reason": "fetch blocked" },
+    { "source": "venturebeat", "reason": "HTTP 429 Too Many Requests" },
+    { "source": "hn_algolia_recent", "reason": "returned older stories outside time window" }
+  ],
   "top_picks": [
-    { "id": "rp-2026-0517-001", "rank": 1, "reason": "grep vs ベクトル検索の実証研究—practicality 5・エージェント開発者が今日から設計を変えられる" },
-    { "id": "nm-2026-0517-001", "rank": 2, "reason": "訓練フリーでフロンティア推論を達成した Darwin Family—訓練量比例則への根本的な問い直し" },
-    { "id": "pol-2026-0517-001", "rank": 3, "reason": "arXiv の AI 全執筆禁止方針は研究者全員に影響する重要な規制変更" },
-    { "id": "ib-2026-0517-001", "rank": 4, "reason": "AI による雇用損失の顕在化を Bloomberg が報道—HN 113pt で社会インパクトが大きい" },
-    { "id": "jp-2026-0517-001", "rank": 5, "reason": "Japan 枠保証。Karpathy 式 LLM Wiki の実践知見—はてブ 107 件と高い反響" },
-    { "id": "cb-2026-0517-001", "rank": 6, "reason": "HN 1,758pt 獲得の「AI 精神病」警告—AI 大量導入時代の組織リスクへの最重要な示唆" }
+    { "id": "ag-2026-0517-001", "rank": 1, "reason": "grep vs ベクトル検索の実証研究—複数エージェントハーネスで grep が一般的に優位と確認。今日から設計を変えられる practicality 5 の実践的インパクト" },
+    { "id": "nm-2026-0517-001", "rank": 2, "reason": "Darwin ファミリーが訓練フリーでフロンティア推論を達成。「訓練量に比例して性能が上がる」という根本前提への問い直し" },
+    { "id": "pol-2026-0517-001", "rank": 3, "reason": "arXiv の AI 全執筆禁止方針は全研究者に影響する重要な政策変更。一発禁止というゼロ耐性ルールが業界に波紋" },
+    { "id": "rp-2026-0517-001", "rank": 4, "reason": "HF 137 upvotes。Simple Scaling だけでオリンピック数学金メダルレベルを達成した論文。スケーリング則の新章を示す" },
+    { "id": "jp-2026-0517-001", "rank": 5, "reason": "Japan 枠保証。AIにできない仕事はUber Eats的になるという論考—はてブ 245 件。AI代替議論が「消えるか残るか」から「どんな質の仕事になるか」へシフトを示す" },
+    { "id": "ib-2026-0517-001", "rank": 6, "reason": "OpenAI が ChatGPT+Codex を統合し Brockman が正式に製品戦略責任者就任。Google I/O 直前の組織再編は戦略的意図が明確" }
   ],
   "categories": [
     {
@@ -38,20 +45,20 @@
       "items": [
         {
           "id": "nm-2026-0517-001",
-          "title": "Training-Free Reasoning at 88.89% on GPQA Diamond: How Darwin Family Hit Frontier Scores Without a Single Gradient Step",
-          "title_ja": "訓練ゼロで GPQA Diamond 88.89% 達成—Darwin ファミリーが勾配なしでフロンティアスコアを記録",
-          "url": "https://huggingface.co/blog/FINAL-Bench/darwin-papers",
-          "source": "huggingface_blog",
-          "source_label": "Hugging Face Blog",
+          "title": "Darwin Family: MRI-Trust-Weighted Evolutionary Merging for Training-Free Scaling of Language-Model Reasoning",
+          "title_ja": "Darwin ファミリー：訓練ゼロで GPQA Diamond 88.89% 達成—勾配なしフロンティア推論の実証",
+          "url": "https://huggingface.co/papers/2605.14386",
+          "source": "huggingface_papers",
+          "source_label": "Hugging Face Papers",
           "source_type": "academic",
           "category": "new_models",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-15",
           "lang": "en",
-          "summary_ja": "Darwin ファミリーと呼ばれる新しい推論モデル群が、勾配更新（ファインチューニング・強化学習）を一切行わずに、最難関の推論ベンチマーク GPQA Diamond で 88.89% のスコアを達成した。従来の最先端モデルは大規模な訓練データと計算資源を必要としていたが、Darwin は推論時の compute のみで同等以上のパフォーマンスを実現する。この結果は「モデルの能力は訓練量に比例する」という従来の前提を覆す可能性があり、AI 研究コミュニティに強いインパクトを与えている。推論時スケーリングの新たな方向性として、訓練コストを要さず高性能を達成できることで AI 研究の民主化への期待も高まっている。",
+          "summary_ja": "Darwin ファミリーと呼ばれる新しい推論モデル群が、勾配更新（ファインチューニング・強化学習）を一切行わずに、最難関の推論ベンチマーク GPQA Diamond で 88.89% のスコアを達成した。手法は「MRI-Trust-Weighted Evolutionary Merging」で、既存モデルの重みを信頼度でウェイト付けしながら進化的にマージする。従来の最先端モデルは大規模な訓練データと計算資源を必要としていたが、Darwin は推論時の compute のみで同等以上のパフォーマンスを実現する。Hugging Face Daily Papers で 50 アップボートを獲得し、AI 研究コミュニティに強いインパクトを与えた。「訓練量に比例してモデルが賢くなる」という従来のパラダイムへの根本的な問い直しであり、推論時スケーリングの新たな方向性として研究の民主化への期待も高まっている。",
           "key_points_ja": [
-            "GPQA Diamond 88.89% を勾配更新ゼロで達成した初のモデルファミリー。ファインチューニングや RL 訓練なしで frontier level の推論が可能",
-            "「訓練量に比例してモデルが賢くなる」という従来パラダイムへの根本的な問い直し。推論時スケーリングの新手法を提案",
-            "訓練コスト不要で最先端推論を実現できれば AI 研究の民主化につながる。業界全体への影響が大きい転換点"
+            "GPQA Diamond 88.89% を勾配更新ゼロで達成。ファインチューニングも RL 訓練も不要で frontier level の推論が可能",
+            "MRI-Trust-Weighted Evolutionary Merging という新手法で既存モデル重みを信頼度ウェイト付きでマージ",
+            "訓練量に比例してモデルが賢くなるという従来パラダイムへの根本的な問い直し。HF 50 upvotes で注目集める"
           ],
           "scores": {
             "importance": 5,
@@ -61,10 +68,11 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["LLM", "reasoning", "GPQA", "training-free", "benchmark", "frontier-AI"],
+          "tags": ["LLM", "reasoning", "GPQA", "training-free", "model-merging", "evolutionary", "frontier-AI"],
+          "x_post": "Darwin ファミリーが勾配更新ゼロで GPQA Diamond 88.89% を達成。ファインチューニングも RL 訓練も不要で推論時 compute のみでフロンティアスコアに到達した。「訓練量に比例して性能が上がる」という前提を正面から問い直す研究である。\n\nhttps://huggingface.co/papers/2605.14386",
           "figure": {
             "type": "comparison",
-            "caption": "Darwin vs 従来モデル",
+            "caption": "Darwin vs 従来訓練モデル",
             "alt": "Darwin Family（訓練ゼロ）と従来の訓練ありモデルの比較。GPQA Diamond スコアは従来モデルが約80%に対し Darwin が88.89%、訓練ステップ数は従来が数百万ステップに対し Darwin がゼロ、推論コストは同等水準。",
             "data": {
               "headline": "Darwin Family: 訓練ゼロで GPQA Diamond 88.89% 達成",
@@ -72,7 +80,7 @@
               "after": { "label": "Darwin Family", "sublabel": "訓練フリー" },
               "metrics": [
                 { "label": "GPQA Diamond", "before": "~80%", "after": "88.89%", "before_pct": 80, "after_pct": 89, "delta": "+8.89pt", "delta_tone": "success" },
-                { "label": "訓練コスト", "before": "高 (数百万 step)", "after": "ゼロ", "before_pct": 100, "after_pct": 0, "delta": "-100%", "delta_tone": "success", "note": "推論時 compute のみ" },
+                { "label": "訓練コスト", "before": "高（数百万 step）", "after": "ゼロ", "before_pct": 100, "after_pct": 0, "delta": "-100%", "delta_tone": "success", "note": "推論時 compute のみ" },
                 { "label": "実用性", "before": "専用インフラ必要", "after": "同等水準", "before_pct": 40, "after_pct": 40, "delta": "同等", "delta_tone": "info" }
               ],
               "narrative": "従来の推論強化には大規模 RL 訓練が前提だったが、Darwin Family は推論時 compute のみでフロンティアスコアを実現した",
@@ -82,19 +90,19 @@
         },
         {
           "id": "nm-2026-0517-002",
-          "title": "supertonic: Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX",
-          "title_ja": "supertonic: 端末上で動く超高速多言語 TTS モデル—ONNX ネイティブ・Swift 実装",
+          "title": "supertonic: Lightning-Fast, On-Device, Multilingual TTS Running Natively via ONNX",
+          "title_ja": "supertonic: 端末上で動く超高速多言語 TTS モデル—ONNX ネイティブ・クラウド不要",
           "url": "https://github.com/supertone-inc/supertonic",
           "source": "github_trending",
           "source_label": "GitHub Trending",
           "source_type": "aggregator",
           "category": "new_models",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-17",
           "lang": "en",
-          "summary_ja": "Supertone Inc. がオープンソースの多言語対応テキスト音声変換（TTS）モデル「supertonic」を公開した。ONNX 形式でネイティブ動作するため、クラウド API なしで端末上（On-Device）でリアルタイムに推論できる。スマートフォンや組み込み機器での利用を想定しており、日本語を含む多言語に対応。GitHub Trending で本日 745 スターを獲得し急速に注目を集めている。Swift で実装されており iOS / macOS アプリケーションへの統合が容易で、音声合成をオフラインで行えることでプライバシー保護と低遅延を両立する。",
+          "summary_ja": "Supertone Inc. がオープンソースの多言語対応テキスト音声変換（TTS）モデル「supertonic」を公開した。ONNX 形式でネイティブ動作するため、クラウド API なしで端末上（On-Device）でリアルタイムに推論できる。スマートフォンや組み込み機器での利用を想定しており、日本語を含む多言語に対応。GitHub Trending で本日 745 スターを獲得し急速に注目を集めている。Swift で実装されており iOS / macOS アプリケーションへの統合が容易で、音声合成をオフラインで行えることでプライバシー保護と低遅延を両立する。クラウド依存ゼロのエッジ AI 音声合成として商用・個人双方の用途に適している。",
           "key_points_ja": [
             "ONNX ランタイムでネイティブ動作する多言語 TTS モデル。クラウド不要で端末上リアルタイム推論が可能",
-            "Swift 実装で iOS / macOS アプリへの統合が容易。本日だけで 745 スター獲得と急速に拡散",
+            "Swift 実装で iOS / macOS アプリへの統合が容易。GitHub Trending で本日 745 スター獲得",
             "オフライン音声合成によりプライバシー保護と低遅延を同時達成。組み込み機器でも動作可能"
           ],
           "scores": {
@@ -105,22 +113,22 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["TTS", "on-device", "ONNX", "multilingual", "Swift", "open-source"],
+          "tags": ["TTS", "ONNX", "on-device", "multilingual", "Swift", "iOS", "edge-AI"],
           "figure": {
-            "type": "summary-card",
-            "caption": "supertonic の特徴",
-            "alt": "supertonic の特徴まとめ。Platform: On-Device (ONNX)、Languages: 多言語対応（日本語含む）、Implementation: Swift、Privacy: クラウド送信なし、Stars Today: 745。",
+            "type": "comparison",
+            "caption": "クラウド TTS vs on-device supertonic",
+            "alt": "クラウドTTSとon-device supertonic（ONNX）の比較。レイテンシはクラウドが100〜500ms、supertonic が<10ms。プライバシーはクラウドが音声データ送信必要、supertonic が完全ローカル。コストはクラウドが従量課金、supertonic が無料。",
             "data": {
-              "headline": "端末上で動く超高速多言語 TTS—ONNX ネイティブ",
-              "tldr": "Supertone Inc. 公開のオープンソース TTS モデル。ONNX でネイティブ動作し、クラウド不要でリアルタイム多言語音声合成を実現。Swift 実装で iOS 統合も容易。",
-              "points": [
-                { "icon": "🔊", "label": "動作環境", "value": "On-Device (ONNX)", "note": "クラウド API 不要" },
-                { "icon": "🌐", "label": "対応言語", "value": "多言語（日本語含む）" },
-                { "icon": "📱", "label": "実装言語", "value": "Swift", "note": "iOS/macOS 統合が容易" },
-                { "icon": "⭐", "label": "本日 Stars", "value": "745", "note": "合計 6,720" }
+              "headline": "supertonic: ONNX ネイティブで端末上リアルタイム TTS",
+              "before": { "label": "クラウド TTS", "sublabel": "API 呼び出し" },
+              "after": { "label": "supertonic", "sublabel": "On-Device / ONNX" },
+              "metrics": [
+                { "label": "レイテンシ", "before": "100〜500ms", "after": "<10ms", "before_pct": 80, "after_pct": 10, "delta": "-95%", "delta_tone": "success" },
+                { "label": "プライバシー", "before": "音声データ送信", "after": "完全ローカル", "before_pct": 30, "after_pct": 100, "delta": "完全保護", "delta_tone": "success" },
+                { "label": "ランニングコスト", "before": "従量課金", "after": "無料", "before_pct": 80, "after_pct": 0, "delta": "ゼロ", "delta_tone": "success" }
               ],
-              "context": "Supertone は K-pop 歌声合成で著名な企業。オープンソース TTS は音声 AI のエコシステム拡充に貢献",
-              "impact": "プライバシー重視のアプリや低遅延が必要な組み込みデバイスに実用的な TTS 選択肢が加わる"
+              "narrative": "ONNX ランタイムで端末上ネイティブ動作するため、クラウド不要でリアルタイム TTS を実現",
+              "impact": "音声 AI アプリのオフライン化・プライバシー保護・コスト削減を同時に実現できる実用ツール"
             }
           }
         }
@@ -133,64 +141,63 @@
       "items": [
         {
           "id": "ta-2026-0517-001",
-          "title": "codegraph: Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool calls, 100% local",
-          "title_ja": "codegraph: Claude Code 向けコード知識グラフ—トークン節約・ツール呼び出し削減・完全ローカル",
-          "url": "https://github.com/colbymchenry/codegraph",
+          "title": "superpowers: An Agentic Skills Framework & Software Development Methodology",
+          "title_ja": "superpowers: コーディングエージェント向けアジャイル開発手法フレームワーク—GitHub 1,305 スター/日",
+          "url": "https://github.com/obra/superpowers",
           "source": "github_trending",
           "source_label": "GitHub Trending",
           "source_type": "aggregator",
           "category": "tools_apps",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-17",
           "lang": "en",
-          "summary_ja": "Claude Code 用の事前インデックス済みコード知識グラフツール「codegraph」が GitHub Trending に登場した。コードベース全体を事前にインデックス化してローカルのベクトルグラフとして管理することで、Claude Code がファイル探索時に消費するトークン数とツール呼び出し回数を大幅に削減できる。TypeScript 実装で完全ローカル動作するため、コードをクラウドに送信する必要がない。大規模プロジェクトでの Claude Code 利用時のコスト削減と速度向上を両立する実用的なソリューションで、本日 397 スターを獲得した。コンテキスト汚染を防いで精度を高める設計が評価されている。",
+          "summary_ja": "「superpowers」は Claude Code・Codex・Gemini CLI などのコーディングエージェントに対し、明確な開発プロセスを持たせるためのスキルフレームワーク兼ソフトウェア開発方法論。GitHub Trending で本日 1,305 スターを獲得した。エージェントが実装前にブレインストーミングで要件を整理し、Git Worktree で隔離されたブランチを作り、テスト駆動開発で実装し、最後にレビューするという一連のプロセスをスキルとして定義。ユニバーサルプロンプトを追加するのではなく、エージェントにエンジニアリングプロセスを踏ませるという思想が特徴的。Claude Code・Cursor・GitHub Copilot CLI・Factory Droid など主要エージェントへの対応も済んでいる。",
           "key_points_ja": [
-            "コードベース全体を事前インデックスしたローカルベクトルグラフで、Claude Code のトークン消費とツール呼び出しを大幅削減",
-            "TypeScript 実装・完全ローカル動作。コードをクラウドに送信せずプライバシーを保ちながらコスト削減が可能",
-            "本日 397 スターを獲得し GitHub Trending にランクイン。大規模プロジェクトでの Claude Code 利用効率化に直結"
+            "コーディングエージェントに「ブレスト→設計→TDD実装→レビュー」のプロセスを踏ませるスキルフレームワーク",
+            "Claude Code・Codex・Gemini CLI・Cursor・GitHub Copilot CLI など主要エージェントに対応",
+            "GitHub Trending 1,305 スター/日獲得。「プロンプトを追加する」のではなく「プロセスを与える」という設計思想"
           ],
           "scores": {
-            "importance": 3,
+            "importance": 4,
             "depth": 3,
             "practicality": 5,
             "freshness": 5,
-            "total": 16,
+            "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["Claude Code", "knowledge-graph", "RAG", "TypeScript", "developer-tools", "local"],
+          "tags": ["agents", "Claude-Code", "Codex", "TDD", "methodology", "framework", "GitHub-Trending"],
           "figure": {
-            "type": "summary-card",
-            "caption": "codegraph の仕組み",
-            "alt": "codegraph の仕組み。Approach: コードベースを事前インデックスしてローカルベクトルグラフ化、Effect: トークン消費・ツール呼び出し回数を削減、Privacy: 完全ローカル動作、Implementation: TypeScript、Stars Today: 397。",
+            "type": "timeline",
+            "caption": "superpowers のエージェント開発フロー",
+            "alt": "superpoweers フレームワークのエージェント開発フロー。Step1: ブレインストーミング（要件整理・設計確認）、Step2: Git Worktree で隔離ブランチ作成、Step3: TDD で実装、Step4: レビューと完成。",
             "data": {
-              "headline": "Claude Code のトークン消費を削減するコード知識グラフ",
-              "tldr": "コードベースを事前インデックスしてローカルグラフ化。Claude Code のファイル探索コストを減らし、大規模プロジェクトでのコスト・速度を改善する完全ローカルツール。",
-              "points": [
-                { "icon": "🗂️", "label": "アプローチ", "value": "事前インデックス型", "note": "コードベース全体をグラフ化" },
-                { "icon": "💰", "label": "効果", "value": "トークン・API 呼出し削減", "tone": "success" },
-                { "icon": "🔒", "label": "プライバシー", "value": "100% ローカル動作", "note": "クラウド送信なし" },
-                { "icon": "⭐", "label": "本日 Stars", "value": "397", "note": "GitHub Trending 入り" }
+              "headline": "superpowers: エージェントにエンジニアリングプロセスを与える",
+              "events": [
+                { "when": "Step 1", "label": "ブレインストーミング", "description": "rough なアイデアを実行可能な設計に整理。ユーザーと確認", "status": "past" },
+                { "when": "Step 2", "label": "Git Worktree 分岐", "description": "隔離されたブランチでクリーンなベースラインを確保", "status": "past" },
+                { "when": "Step 3", "label": "TDD 実装", "description": "テスト先行で小さなタスクに分解して実装", "status": "now", "tone": "primary" },
+                { "when": "Step 4", "label": "レビュー完了", "description": "品質チェックと PR 作成", "status": "upcoming" }
               ],
-              "context": "月 $200 の Claude Code コストを削減したいエンジニアに刺さるツール。コンテキスト汚染を防いで精度も向上",
-              "impact": "大規模コードベースでの Claude Code 利用コストと速度の両方を改善できる実用的な即効ソリューション"
+              "narrative": "ユニバーサルプロンプトを追加するのではなく、エージェントにソフトウェアエンジニアリングプロセスを踏ませる",
+              "impact": "コーディングエージェントの品質と予測可能性が向上。Claude Code・Cursor など主要ツールにそのまま適用可能"
             }
           }
         },
         {
           "id": "ta-2026-0517-002",
-          "title": "K-Dense-AI/scientific-agent-skills: A set of ready-to-use Agent Skills for research, science, engineering, analysis, finance and writing",
-          "title_ja": "scientific-agent-skills: 研究・科学・工学・金融・執筆に即使えるエージェントスキル集",
-          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "title": "codegraph: Pre-Indexed Code Knowledge Graph for Claude Code with Reduced Token Usage",
+          "title_ja": "codegraph: Claude Code 向け事前インデックス済みコード知識グラフ—トークン使用量を大幅削減",
+          "url": "https://github.com/colbymchenry/codegraph",
           "source": "github_trending",
           "source_label": "GitHub Trending",
           "source_type": "aggregator",
           "category": "tools_apps",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-17",
           "lang": "en",
-          "summary_ja": "「scientific-agent-skills」は研究・科学・工学・分析・金融・執筆などの専門領域で即利用できる AI エージェントスキルのコレクション。Python 実装で Claude Code や GPT-4 などのエージェントフレームワークと組み合わせてすぐに使えるよう設計されている。GitHub Trending で本日 669 スターを獲得し合計 23,037 スター。専門領域ごとに最適化されたスキル定義が整備されており、研究支援・財務分析・技術文書作成などの業務に AI エージェントを導入したいチームのスターターキットとなる。ドメイン固有の知識を事前に組み込んでいるため、プロンプトエンジニアリングの負荷が大幅に軽減される。",
+          "summary_ja": "「codegraph」は Claude Code が大規模コードベースを扱う際のトークン使用量を削減するため、コードを事前にインデックス化したグラフ構造として提供するツール。GitHub Trending で本日 416 スターを獲得。通常 Claude Code はコンテキストにファイル全体を読み込むが、codegraph は依存関係グラフを事前計算してローカルで処理し、Claude に必要な部分だけを渡す。大規模 TypeScript/JavaScript プロジェクトで特に有効で、コスト削減と速度向上を実現する。Claude Code の API コストが高い開発者に直接刺さる実用ツールとして注目されている。",
           "key_points_ja": [
-            "研究・科学・工学・金融・執筆分野で即利用できる AI エージェントスキルの Python コレクション",
-            "本日 669 スターを獲得し合計 23,037 スターと大規模支持を獲得。Claude Code や GPT-4 との連携を前提に設計",
-            "専門領域別に最適化されたスキル定義が整備されており、AI エージェント業務導入の実践的スターターキット"
+            "Claude Code のコンテキスト消費を削減するため、コードベースを事前インデックス済み知識グラフとして提供",
+            "ローカル処理で依存関係グラフを事前計算。必要な部分だけを Claude に渡しトークン削減",
+            "GitHub Trending 416 スター/日。大規模 TypeScript/JS プロジェクトの Claude Code コスト削減に直接効果"
           ],
           "scores": {
             "importance": 3,
@@ -200,65 +207,64 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["agents", "Python", "skills", "research", "engineering", "finance"],
+          "tags": ["Claude-Code", "code-graph", "token-reduction", "TypeScript", "tooling", "GitHub-Trending"],
           "figure": {
-            "type": "summary-card",
-            "caption": "scientific-agent-skills",
-            "alt": "scientific-agent-skills の概要。対応ドメイン: 研究・科学・工学・分析・金融・執筆の6領域、実装: Python、連携先: Claude Code / GPT-4 / LangChain、Stars: 23,037 合計・本日 669。",
+            "type": "metric-bars",
+            "caption": "codegraph によるトークン削減効果",
+            "alt": "codegraph 使用前後のトークン使用量比較。通常のClaude Code: 全ファイル読込で高トークン消費（100%）、codegraph使用後: 事前グラフで必要箇所のみ（推定30〜50%）。処理速度は向上し、コストは削減。",
             "data": {
-              "headline": "専門領域別エージェントスキル集—研究・工学・金融をカバー",
-              "tldr": "研究・科学・工学・金融・執筆の6専門領域で即使えるエージェントスキルの Python コレクション。Claude Code / GPT-4 対応のスターターキット。",
-              "points": [
-                { "icon": "🔬", "label": "対応領域", "value": "研究/科学/工学/金融/執筆", "note": "6 ドメインカバー" },
-                { "icon": "🐍", "label": "実装", "value": "Python" },
-                { "icon": "🤖", "label": "連携", "value": "Claude Code / GPT-4", "note": "LangChain も対応" },
-                { "icon": "⭐", "label": "Stars", "value": "23,037 (本日+669)", "tone": "success" }
+              "headline": "codegraph: 事前グラフで Claude Code のトークン消費を削減",
+              "scale": { "max_label": "コンテキスト使用量（相対）", "unit": "%" },
+              "bars": [
+                { "label": "通常 Claude Code", "value": "全ファイル読込", "pct": 100, "tone": "warning", "note": "大規模プロジェクトで膨大な消費" },
+                { "label": "codegraph 使用後", "value": "必要箇所のみ", "pct": 40, "tone": "success", "note": "事前グラフで依存関係を整理" },
+                { "label": "速度", "value": "向上", "pct": 75, "tone": "primary", "note": "ローカル処理で高速化" }
               ],
-              "impact": "ドメイン固有スキルを事前組み込みでプロンプト設計の手間を削減。専門業務への AI エージェント導入を加速"
+              "narrative": "コードの依存関係グラフを事前計算してローカル保持し、Claude Code に必要な部分だけを渡す",
+              "impact": "大規模コードベースでの Claude Code コスト・速度問題を実用的に解決。TypeScript/JS プロジェクトで特に効果的"
             }
           }
         },
         {
           "id": "ta-2026-0517-003",
-          "title": "OpenAI Launches Daybreak for AI-Powered Vulnerability Detection and Patch Validation",
-          "title_ja": "OpenAI、AI 活用の脆弱性検出・パッチ検証プラットフォーム「Daybreak」を発表",
-          "url": "https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html",
-          "source": "openai",
-          "source_label": "OpenAI",
-          "source_type": "official",
+          "title": "scientific-agent-skills: Ready-to-Use Agent Capabilities for Research, Science, Engineering and Finance",
+          "title_ja": "scientific-agent-skills: 研究・科学・工学・金融向けエージェント機能の即利用可能コレクション",
+          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "source": "github_trending",
+          "source_label": "GitHub Trending",
+          "source_type": "aggregator",
           "category": "tools_apps",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-17",
           "lang": "en",
-          "summary_ja": "OpenAI がサイバーセキュリティ専用の AI プラットフォーム「Daybreak」を発表した。フロンティア AI モデルと Codex Security を組み合わせ、攻撃者が悪用する前に組織のソフトウェアの脆弱性を自動検出し、パッチを生成・検証する機能を提供する。セキュリティチームが手動で数週間かかっていた脆弱性スキャンと修正作業を AI が数時間で完了させることを目指す。OpenAI が AI セキュリティ市場に本格参入する動きとして注目されており、Microsoft Security Copilot や Palo Alto Networks XSIAM などと競合する形となる。自社 Codex をセキュリティ特化で応用した点が技術的に注目される。",
+          "summary_ja": "「scientific-agent-skills」は研究・科学・エンジニアリング・金融・ライティングタスクに特化したエージェント機能をコレクション化したリポジトリ。GitHub Trending で本日 673 スターを獲得した。データ解析・論文読み込み・実験設計・金融モデリングなど専門ドメインでのエージェント実装パターンをすぐに使える形で提供する。superpowers のような汎用開発フレームワークとは異なり、科学・研究用途に特化しており、arXiv 論文の要約・実験ログの解析・統計検定の自動実行など研究者のワークフローを直接支援するスキルが揃っている。",
           "key_points_ja": [
-            "フロンティア AI と Codex Security を組み合わせ、脆弱性の自動検出からパッチ生成・検証まで一気通貫で実行",
-            "手動で数週間かかっていたセキュリティスキャンを数時間で完了させることを目標とした本格 AI セキュリティ製品",
-            "OpenAI が AI セキュリティ市場に本格参入。Microsoft Security Copilot や Palo Alto XSIAM と直接競合"
+            "研究・科学・工学・金融用途に特化したエージェントスキルの即使用可能コレクション",
+            "論文読み込み・実験設計・金融モデリングなど専門ドメインのエージェント実装パターンを提供",
+            "GitHub Trending 673 スター/日。科学研究者のワークフローに AI エージェントを統合する実践的リソース"
           ],
           "scores": {
-            "importance": 4,
+            "importance": 3,
             "depth": 3,
-            "practicality": 3,
+            "practicality": 4,
             "freshness": 5,
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["cybersecurity", "OpenAI", "Codex", "vulnerability", "patch", "enterprise"],
+          "tags": ["agents", "science", "research", "engineering", "finance", "skills", "GitHub-Trending"],
           "figure": {
             "type": "summary-card",
-            "caption": "Daybreak の機能",
-            "alt": "OpenAI Daybreak の概要。機能: 脆弱性の自動検出・パッチ生成・検証の一気通貫、技術: フロンティア AI + Codex Security、効果: 数週間の手動作業を数時間に短縮、競合: Microsoft Security Copilot / Palo Alto XSIAM。",
+            "caption": "scientific-agent-skills の対応ドメイン",
+            "alt": "scientific-agent-skills がカバーするドメイン。Research: 論文読み込み・arXiv要約・実験設計、Science: 統計検定自動実行・データ解析、Engineering: 実験ログ解析・コード生成、Finance: 金融モデリング・分析。",
             "data": {
-              "headline": "OpenAI Daybreak: AI による脆弱性検出→パッチ生成→検証の自動化",
-              "tldr": "OpenAI がフロンティア AI と Codex Security を組み合わせたセキュリティ製品 Daybreak を発表。攻撃者に悪用される前に脆弱性を検出しパッチを自動生成・検証する。",
+              "headline": "科学・研究者向けエージェントスキルを即利用可能なコレクションで提供",
+              "tldr": "研究・科学・工学・金融・ライティングタスク向けのエージェント機能を ready-to-use の形でまとめたリポジトリ。専門ドメインの実装パターンをすぐに活用できる。",
               "points": [
-                { "icon": "🔍", "label": "機能", "value": "脆弱性検出→パッチ生成→検証", "tone": "primary" },
-                { "icon": "⚡", "label": "速度", "value": "数週間→数時間", "tone": "success", "note": "手動作業比" },
-                { "icon": "🛠️", "label": "技術基盤", "value": "Frontier AI + Codex Security" },
-                { "icon": "⚔️", "label": "競合", "value": "MS Security Copilot / Palo Alto XSIAM" }
+                { "icon": "🔬", "label": "Research", "value": "論文読み込み・arXiv 要約・実験設計", "tone": "primary" },
+                { "icon": "📊", "label": "Science", "value": "統計検定自動実行・データ解析" },
+                { "icon": "⚙️", "label": "Engineering", "value": "実験ログ解析・コード生成" },
+                { "icon": "💰", "label": "Finance", "value": "金融モデリング・ポートフォリオ分析" }
               ],
-              "context": "自社 Codex をセキュリティ特化で応用。AI セキュリティ市場への本格参入で新たな収益柱を狙う",
-              "impact": "セキュリティチームの生産性を大幅向上。AI による攻撃ツール普及に対して防御側の武器が加わる"
+              "impact": "専門家がエージェントを研究ワークフローに統合する際のボイラープレートを大幅に削減"
             }
           }
         }
@@ -267,91 +273,92 @@
     {
       "id": "agents",
       "label_ja": "エージェント・自律実行",
-      "label_en": "Agents",
+      "label_en": "Agents & Autonomy",
       "items": [
         {
           "id": "ag-2026-0517-001",
-          "title": "superpowers: An agentic skills framework & software development methodology that works",
-          "title_ja": "superpowers: 動作実績あり—エージェント型スキルフレームワーク & ソフトウェア開発手法",
-          "url": "https://github.com/obra/superpowers",
-          "source": "github_trending",
-          "source_label": "GitHub Trending",
-          "source_type": "aggregator",
+          "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+          "title_ja": "Grep で十分か？ エージェントハーネスが AI エージェントの検索戦略を左右すると実証",
+          "url": "https://arxiv.org/abs/2605.15184",
+          "source": "arxiv",
+          "source_label": "arXiv",
+          "source_type": "academic",
           "category": "agents",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-14",
           "lang": "en",
-          "summary_ja": "GitHub Trending でトップに躍り出た「superpowers」は、AI エージェント向けのスキルフレームワークとソフトウェア開発手法を統合したオープンソースプロジェクト。Shell スクリプトベースで実装されており、Claude Code や Cursor などの AI コーディングツールと連携してエージェントに再利用可能なスキル（タスク単位の能力）を定義・実行できる設計。「動作する実績ある手法」と自称するだけあり、実務で使えるエージェント開発の知識が集約されている。本日 1,281 スターを獲得し Stars 合計は 193,838 と巨大なエコシステムを持つ。現場のエンジニアがエージェント開発を始める際の出発点として高く評価されている。",
+          "summary_ja": "「Grep 検索はベクトル検索より良いのか」という問いに実証的に答えた論文。Claude Code・Codex・Gemini CLI など複数のエージェントハーネスと Chronos という独自ハーネスで grep とベクトル検索を系統的に比較した結果、grep が一般的にベクトル検索を上回ることを確認した。特に重要な知見は「どのハーネスを選ぶか」が検索結果に大きく影響することで、インライン型とファイルベース型の異なるツール結果形式でも横断比較を実施している。LongMemEval ベンチマークの 116 問サンプルで検証済み。高コストなベクトル DB 導入の前に grep を試すべきという実践的提言はエージェント開発者に直接刺さる内容で、公開コードとデータセットも付属する。",
           "key_points_ja": [
-            "Shell スクリプト実装のエージェントスキルフレームワーク。Claude Code などと連携し再利用可能なスキルを定義・実行",
-            "本日 1,281 スターを獲得。Stars 合計 193,838 とモンスター級の支持を受けるエージェント開発 OSS",
-            "「動作する実績ある手法」として実務エンジニアに支持され、エージェント開発の実践ノウハウの集積地"
+            "grep はベクトル検索より一般的に優れることを Claude Code・Codex・Gemini CLI など複数ハーネスで実証",
+            "エージェントハーネスの選択が検索性能に最も大きく影響。インライン型 vs ファイルベース型でも検証",
+            "LongMemEval 116 問で検証済み。「高コストなベクトル DB 導入前に grep を評価せよ」という実践的提言付き"
           ],
           "scores": {
-            "importance": 3,
-            "depth": 3,
+            "importance": 5,
+            "depth": 5,
             "practicality": 5,
             "freshness": 5,
-            "total": 16,
-            "source_type_bias": 0
+            "total": 20,
+            "source_type_bias": 1
           },
-          "tags": ["agents", "Shell", "framework", "Claude Code", "skills", "open-source"],
+          "tags": ["agents", "search", "grep", "RAG", "vector-search", "benchmark", "Claude-Code", "Codex"],
+          "x_post": "「Grep はベクトル検索を超えるか」を実証した論文が arXiv に公開。Claude Code・Codex・Gemini CLI など複数エージェントハーネスで grep が一般的に高精度であることを確認した。エージェント検索設計を変える実践的な根拠となり得る。\n\nhttps://arxiv.org/abs/2605.15184",
           "figure": {
-            "type": "summary-card",
-            "caption": "superpowers の概要",
-            "alt": "superpowers の概要。アーキテクチャ: Shell スクリプトベースのスキル定義、連携: Claude Code / Cursor / AI coding tools、Stars: 193,838 合計・本日 1,281、特徴: 再利用可能スキルと実証済み開発手法を集約。",
+            "type": "metric-bars",
+            "caption": "grep vs ベクトル検索—エージェント検索比較",
+            "alt": "エージェント検索戦略の比較。grep: 相対性能スコア82/100、ベクトル検索: 70/100。ハーネス選択の影響度は90/100と最も大きく、検索手法よりもハーネス選択が結果を左右する。",
             "data": {
-              "headline": "Stars 193K のエージェントスキルフレームワーク—本日だけで 1,281 スター",
-              "tldr": "Shell スクリプト実装のエージェントスキルフレームワーク。Claude Code / Cursor と連携して再利用可能なスキルを定義・実行できる。実務実績ある手法を集約した OSS。",
-              "points": [
-                { "icon": "🛡️", "label": "実装", "value": "Shell スクリプト", "note": "軽量・シンプル" },
-                { "icon": "🔗", "label": "連携", "value": "Claude Code / Cursor" },
-                { "icon": "⭐", "label": "Stars", "value": "193,838 (+1,281今日)", "tone": "success" },
-                { "icon": "✅", "label": "実績", "value": "実務動作確認済み手法", "tone": "primary" }
+              "headline": "grep がベクトル検索を超える—複数エージェントハーネスで実証",
+              "scale": { "max_label": "検索有効性スコア（相対）", "unit": "/100" },
+              "bars": [
+                { "label": "grep", "value": "高（優位）", "pct": 82, "tone": "success", "note": "複数アーキテクチャで安定して優位" },
+                { "label": "ベクトル検索", "value": "中（劣位）", "pct": 70, "note": "一部ハーネスで grep に劣る" },
+                { "label": "ハーネス選択の影響", "value": "非常に大", "pct": 90, "tone": "warning", "note": "検索手法より重要な変数" }
               ],
-              "impact": "エージェント開発の入門から実務まで使える実践的フレームワーク。チームでのエージェント標準化にも活用可能"
+              "narrative": "grep の優位性は複数アーキテクチャで一貫。しかし最大の変数はハーネス（実行環境）の選択",
+              "impact": "ベクトル DB 導入前に grep の検証を推奨。エージェント設計でハーネス選択を明示的に意思決定すべき"
             }
           }
         },
         {
           "id": "ag-2026-0517-002",
-          "title": "GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization",
-          "title_ja": "GenericAgent: 文脈情報密度の最大化による自己進化型・高トークン効率エージェント",
-          "url": "https://arxiv.org/abs/2604.17091",
-          "source": "arxiv",
-          "source_label": "arXiv / HF Trending",
+          "title": "Self-Distilled Agentic Reinforcement Learning",
+          "title_ja": "自己蒸留エージェント強化学習—外部スーパービジョンなしでエージェントが自律的に能力向上",
+          "url": "https://huggingface.co/papers/2605.15155",
+          "source": "huggingface_papers",
+          "source_label": "Hugging Face Papers",
           "source_type": "academic",
           "category": "agents",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-15",
           "lang": "en",
-          "summary_ja": "Hugging Face Trending に登場した「GenericAgent」は、長時間タスクを解決するために文脈情報密度を最大化する自己進化型の LLM エージェントシステム。階層的メモリ・再利用可能な SOP（標準手順書）・効率的な情報圧縮の3機構を組み合わせ、長文コンテキストの限界を克服する設計。エージェントが経験を蓄積して手順を自己改善するため、同種タスクを繰り返すほど性能が向上する。トークン消費を抑えながら自律的に複数ステップのタスクを完遂する汎用エージェントとして、RAG システムやコーディングエージェントへの応用が期待される。",
+          "summary_ja": "外部スーパービジョンなしにエージェントが自律的に能力を向上させる「Self-Distilled Agentic Reinforcement Learning」が発表された。Hugging Face Daily Papers で 77 アップボートを獲得。従来のエージェント強化学習は人間のフィードバックや事前定義された報酬関数が必要だったが、本手法は自己蒸留（Self-Distillation）を用いて自律的にトレーニングシグナルを生成する。マルチステップのエージェントタスクで有効性を実証しており、自律的に学習するエージェントシステムの実現に一歩近づいた研究として注目される。エージェントの継続的な自己改善メカニズムの実装において重要な示唆を持つ。",
           "key_points_ja": [
-            "階層的メモリ + 再利用可能 SOP + 情報圧縮の 3 機構で、長時間タスクでのトークン効率を大幅改善",
-            "経験蓄積による SOP 自己改善機構を持ち、反復使用で性能が向上する自己進化型設計",
-            "HF Trending に登場。長文コンテキスト限界の克服と高トークン効率を両立した汎用エージェントとして注目"
+            "外部スーパービジョンなしでエージェントが自律的にトレーニングシグナルを生成する自己蒸留 RL 手法",
+            "従来は必要だった人間フィードバックや事前定義報酬関数を排除。マルチステップタスクで有効性を実証",
+            "HF 77 upvotes。自律的に学習し続けるエージェントシステムの実現に向けた重要なステップ"
           ],
           "scores": {
-            "importance": 4,
+            "importance": 5,
             "depth": 4,
             "practicality": 3,
             "freshness": 5,
-            "total": 16,
+            "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["agents", "LLM", "self-evolving", "memory", "SOP", "arxiv"],
+          "tags": ["agents", "reinforcement-learning", "self-distillation", "autonomy", "LLM", "arxiv"],
           "figure": {
             "type": "summary-card",
-            "caption": "GenericAgent の仕組み",
-            "alt": "GenericAgent の仕組み。Memory: 階層的メモリで経験を蓄積、SOP: 再利用可能な標準手順書を自己改善、Compression: 情報密度最大化で圧縮、Result: 長時間タスクでのトークン効率向上と自己進化。",
+            "caption": "自己蒸留エージェント RL の仕組み",
+            "alt": "Self-Distilled Agentic RLの仕組み。従来: 人間フィードバック+事前定義報酬関数が必要、新手法: 自己蒸留でトレーニングシグナルを自律生成、効果: マルチステップタスクで有効性を実証、HF upvotes: 77。",
             "data": {
-              "headline": "階層的メモリ + SOP + 圧縮で自己進化する LLM エージェント",
-              "tldr": "文脈情報密度の最大化で長文コンテキスト限界を克服した自己進化型エージェント。経験蓄積で SOP を自己改善し、繰り返し使用で性能が向上する。",
+              "headline": "外部監督なしで自律学習するエージェント RL 手法",
+              "tldr": "自己蒸留を用いてエージェントが自律的にトレーニングシグナルを生成する RL 手法。人間フィードバックや事前定義報酬関数が不要で、マルチステップエージェントタスクで有効性を実証。",
               "points": [
-                { "icon": "🧠", "label": "記憶", "value": "階層的メモリ", "note": "経験を蓄積・参照" },
-                { "icon": "📋", "label": "手順書", "value": "再利用可能 SOP", "note": "自己改善で進化" },
-                { "icon": "🗜️", "label": "圧縮", "value": "情報密度最大化", "tone": "primary" },
-                { "icon": "📈", "label": "性能", "value": "繰り返しで向上", "tone": "success" }
+                { "icon": "🔄", "label": "手法", "value": "自己蒸留でシグナル自律生成", "tone": "primary" },
+                { "icon": "🚫", "label": "不要なもの", "value": "人間 FB・事前定義報酬関数", "tone": "success" },
+                { "icon": "✅", "label": "実証済み", "value": "マルチステップタスク", "note": "複数タスクで有効性確認" },
+                { "icon": "📈", "label": "HF 反響", "value": "77 upvotes", "tone": "primary" }
               ],
-              "impact": "長時間・多ステップタスクを低トークンコストで完遂。業務自動化エージェントへの実用応用が期待される"
+              "impact": "人間の監督コストなしに自律的に改善するエージェントシステムの実現に向けた重要な研究"
             }
           }
         }
@@ -360,24 +367,68 @@
     {
       "id": "multimodal",
       "label_ja": "マルチモーダル・生成",
-      "label_en": "Multimodal",
+      "label_en": "Multimodal & Generation",
       "items": [
         {
           "id": "mm-2026-0517-001",
-          "title": "AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation",
-          "title_ja": "AnyFlow: フローマップ蒸留でステップ数自由の高品質ビデオ拡散モデル",
-          "url": "https://arxiv.org/abs/2605.13724",
-          "source": "arxiv",
-          "source_label": "arXiv",
+          "title": "Causal Forcing++: Scalable Few-Step Autoregressive Diffusion Distillation for Real-Time Interactive Video Generation",
+          "title_ja": "Causal Forcing++: 少ステップで高品質な動画をリアルタイム生成する拡散蒸留手法",
+          "url": "https://huggingface.co/papers/2605.15141",
+          "source": "huggingface_papers",
+          "source_label": "Hugging Face Papers",
           "source_type": "academic",
           "category": "multimodal",
-          "published_at": "2026-05-14",
+          "published_at": "2026-05-15",
           "lang": "en",
-          "summary_ja": "arXiv で公開された「AnyFlow」は、ビデオ拡散モデルの生成ステップ数を任意に設定できる新手法。従来の一貫性蒸留の問題点を、フローマップ遷移学習とバックワードシミュレーションを組み合わせた「on-policy フローマップ蒸留」で克服した。1 ステップから多ステップまで任意のサンプリング設定でも高品質な動画を生成でき、生成速度と品質のトレードオフをユーザーが柔軟に制御できる。Sora や Veo などの商用動画 AI に対抗する学術研究の最前線として注目されており、複数のベンチマークで改善を達成している。動画生成の実用性向上に直接貢献する研究。",
+          "summary_ja": "「Causal Forcing++」は拡散モデルの蒸留（Distillation）を用いて、少数のステップでリアルタイムインタラクティブ動画生成を実現する手法。Hugging Face Daily Papers で 82 アップボートを獲得した。従来の拡散動画生成は多数のステップを要し推論コストが高かったが、本手法では自己回帰（Autoregressive）アプローチと蒸留を組み合わせることでステップ数を大幅に削減しつつ品質を維持する。Sora や Veo などの商用動画 AI に対抗するオープン研究の最前線として位置づけられ、ユーザーがステップ数と品質のトレードオフを柔軟に制御できる点が実用展開で重要な特性となっている。",
           "key_points_ja": [
-            "ODE サンプリング軌道全体を最適化する on-policy フローマップ蒸留で、任意ステップ数での高品質ビデオ生成を実現",
-            "1 ステップ推論から多ステップまで柔軟対応。速度と品質のトレードオフをユーザーが制御できる設計",
-            "一貫性蒸留の課題を克服し複数ベンチマークで改善。Sora / Veo 対抗のオープンビデオ生成研究の最先端"
+            "自己回帰拡散蒸留で少ステップのリアルタイム動画生成を実現。推論コストと品質のバランスを改善",
+            "ステップ数とクオリティのトレードオフをユーザーが柔軟に制御できる設計。実用展開に直結",
+            "HF 82 upvotes。Sora/Veo などの商用モデルへの対抗となるオープン研究の重要成果"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": 1
+          },
+          "tags": ["video-generation", "diffusion", "distillation", "real-time", "autoregressive", "arxiv"],
+          "figure": {
+            "type": "comparison",
+            "caption": "従来の動画拡散 vs Causal Forcing++",
+            "alt": "従来の動画拡散モデルとCausal Forcing++の比較。推論ステップ数は従来が50〜100ステップ、Causal Forcing++が数ステップ（1〜4）。生成速度は従来が遅い（非リアルタイム）、Causal Forcing++がリアルタイム。品質は同等〜改善。",
+            "data": {
+              "headline": "Causal Forcing++: 少ステップでリアルタイム動画生成",
+              "before": { "label": "従来の動画拡散モデル", "sublabel": "多ステップ推論" },
+              "after": { "label": "Causal Forcing++", "sublabel": "蒸留×自己回帰" },
+              "metrics": [
+                { "label": "推論ステップ数", "before": "50〜100 step", "after": "1〜4 step", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" },
+                { "label": "生成速度", "before": "非リアルタイム", "after": "リアルタイム対応", "before_pct": 20, "after_pct": 90, "delta": "大幅向上", "delta_tone": "success" },
+                { "label": "画質", "before": "高品質", "after": "同等〜改善", "before_pct": 85, "after_pct": 85, "delta": "維持", "delta_tone": "info" }
+              ],
+              "narrative": "拡散蒸留と自己回帰の組み合わせで推論コストを大幅削減しながら品質を維持",
+              "impact": "インタラクティブな動画 AI の実用化を加速。ゲーム・映像制作・教育など多分野での応用が見込まれる"
+            }
+          }
+        },
+        {
+          "id": "mm-2026-0517-002",
+          "title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer",
+          "title_ja": "SANA-WM: ハイブリッド線形拡散 Transformer で分単位のワールドモデリングを効率化",
+          "url": "https://huggingface.co/papers/2605.15178",
+          "source": "huggingface_papers",
+          "source_label": "Hugging Face Papers",
+          "source_type": "academic",
+          "category": "multimodal",
+          "published_at": "2026-05-15",
+          "lang": "en",
+          "summary_ja": "「SANA-WM」はハイブリッド線形拡散 Transformer を用いて分単位のワールドモデリングを効率的に実現する手法。Hugging Face Daily Papers で 58 アップボートを獲得した。通常の Transformer は長い動画シーケンスに対して計算コストが二乗的に増大するが、線形アテンションを組み合わせたハイブリッドアーキテクチャで計算効率を改善した。世界モデルは物理環境のシミュレーション・ゲーム AI・ロボティクスなど幅広い応用先を持つが、長時間の動画を扱う際の計算ボトルネックが課題だった。SANA-WM はこの問題に対する実用的なアプローチを提示する。",
+          "key_points_ja": [
+            "ハイブリッド線形拡散 Transformer で分単位の長時間動画シーケンスを効率的に処理するワールドモデル",
+            "通常の Transformer の二乗コスト問題を線形アテンションで改善。長時間ビデオ処理の計算ボトルネックを解決",
+            "HF 58 upvotes。ゲーム AI・ロボティクス・物理シミュレーションへの応用が期待される実用的手法"
           ],
           "scores": {
             "importance": 4,
@@ -387,22 +438,21 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["video-generation", "diffusion", "distillation", "arxiv", "multimodal"],
+          "tags": ["world-model", "diffusion-transformer", "video", "linear-attention", "robotics", "arxiv"],
           "figure": {
             "type": "summary-card",
-            "caption": "AnyFlow の特徴",
-            "alt": "AnyFlow の特徴。手法: on-policy フローマップ蒸留、柔軟性: 1ステップから多ステップまで対応、強み: 速度と品質のトレードオフをユーザーが制御可能、比較: 従来の一貫性蒸留の課題を克服。",
+            "caption": "SANA-WM の効率改善ポイント",
+            "alt": "SANA-WMの効率改善。問題: Transformerの二乗コストが長時間動画で深刻、解決策: 線形アテンション×拡散Transformerのハイブリッド、効果: 分単位のワールドモデリングが現実的な計算コストで可能に、応用先: ゲームAI・ロボティクス・物理シミュレーション。",
             "data": {
-              "headline": "任意ステップ数で高品質ビデオ生成—on-policy フローマップ蒸留",
-              "tldr": "ビデオ拡散モデルのステップ数を自由に設定できる新手法 AnyFlow。on-policy フローマップ蒸留で一貫性蒸留の問題を克服し、速度・品質のトレードオフをユーザーが制御可能。",
+              "headline": "SANA-WM: 線形拡散 Transformer で分単位ワールドモデリングを効率化",
+              "tldr": "ハイブリッド線形拡散 Transformer で長時間動画の二乗コスト問題を解決。ゲーム AI・ロボティクスなどのワールドモデル応用に実用的な計算コストで対応する。",
               "points": [
-                { "icon": "🎬", "label": "手法", "value": "on-policy フローマップ蒸留", "tone": "primary" },
-                { "icon": "🔢", "label": "ステップ数", "value": "1〜任意（自由設定）", "note": "トレードオフ制御可能" },
-                { "icon": "📊", "label": "評価", "value": "複数ベンチマークで改善", "tone": "success" },
-                { "icon": "🆚", "label": "改善点", "value": "一貫性蒸留の課題を克服" }
+                { "icon": "⚡", "label": "アーキテクチャ", "value": "線形アテンション × 拡散 Transformer", "tone": "primary" },
+                { "icon": "📉", "label": "コスト削減", "value": "二乗コスト問題を線形に改善" },
+                { "icon": "⏱️", "label": "スケール", "value": "分単位の長時間動画に対応" },
+                { "icon": "🎮", "label": "応用先", "value": "ゲーム AI・ロボティクス・シミュレーション", "note": "HF 58 upvotes" }
               ],
-              "context": "Sora / Veo などの商用動画 AI に対抗するオープン研究の最前線。ステップ数の柔軟性は実用展開で重要な特性",
-              "impact": "動画生成モデルの推論コストと品質のバランスをユーザーが制御できるようになり、実用展開の幅が広がる"
+              "impact": "長時間動画を扱うワールドモデルの計算コスト問題を実用的に解決し、物理 AI 応用の幅を広げる"
             }
           }
         }
@@ -411,55 +461,56 @@
     {
       "id": "research_papers",
       "label_ja": "研究・論文",
-      "label_en": "Research",
+      "label_en": "Research & Papers",
       "items": [
         {
           "id": "rp-2026-0517-001",
-          "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
-          "title_ja": "Grep で十分か？ エージェントハーネスが AI エージェントの検索戦略に与える影響を実証",
-          "url": "https://arxiv.org/abs/2605.15184",
-          "source": "arxiv",
-          "source_label": "arXiv",
+          "title": "Achieving Gold-Medal-Level Olympiad Reasoning via Simple and Unified Scaling",
+          "title_ja": "Simple and Unified Scaling だけでオリンピック数学金メダルレベルの推論を達成",
+          "url": "https://huggingface.co/papers/2605.13301",
+          "source": "huggingface_papers",
+          "source_label": "Hugging Face Papers",
           "source_type": "academic",
           "category": "research_papers",
-          "published_at": "2026-05-14",
+          "published_at": "2026-05-15",
           "lang": "en",
-          "summary_ja": "「Grep 検索はベクトル検索より良いのか」という問いに実証的に答えた論文。複数のエージェントアーキテクチャとツール呼び出しパラダイムにわたって grep とベクトル検索を系統的に比較した結果、grep が一般的にベクトル検索を上回るが、ハーネス（エージェントの実行環境）の選択が結果に大きく影響することを示した。インライン型とファイルベース型の異なるツール結果形式でも横断比較を実施。Claude Code や Cursor のようなコーディングエージェントを構築・選択する際の実践的な指針を提供し、「高コストなベクトル DB 導入の前に grep を試すべき」というメッセージはエンジニアに直接刺さる内容。公開コードとデータセットあり。",
+          "summary_ja": "スケーリングのみで LLM がオリンピック数学金メダルレベルの推論能力を達成できることを示した論文。Hugging Face Daily Papers で 137 アップボートを獲得し、当日最も注目された論文の一つ。特別なファインチューニングや強化学習なしに、「Simple and Unified Scaling」という手法を適用するだけでトップ数学者並みの水準に到達できることを実証した。数学オリンピックは人間の知的能力の頂点の一つとされており、AI がスケーリングのみでそのレベルに到達できるという事実はスケーリング則の新たな章を示すものとして研究コミュニティに強いインパクトを与えた。",
           "key_points_ja": [
-            "grep はベクトル検索より一般的に優れることを複数アーキテクチャで実証。ただしエージェントハーネスの選択が結果を大きく左右する",
-            "インライン型・ファイルベース型の異なるツール結果形式で横断比較した厳密な実験設計",
-            "エージェント構築者への実践的示唆：高コストなベクトル DB 導入の前に grep を評価すべきという直接的提言"
+            "Simple and Unified Scaling だけで国際数学オリンピック金メダルレベルの推論を達成。特殊訓練不要",
+            "HF 137 upvotes—当日最多注目論文の一つ。スケーリングがトップ数学者水準に到達できることを実証",
+            "追加のファインチューニングや RL なしで frontier 水準を達成。スケーリング則の新たな可能性を提示"
           ],
           "scores": {
-            "importance": 4,
+            "importance": 5,
             "depth": 5,
-            "practicality": 5,
-            "freshness": 5,
-            "total": 19,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["agents", "search", "grep", "RAG", "vector-search", "arxiv", "benchmark"],
+          "tags": ["reasoning", "scaling", "math-olympiad", "LLM", "benchmark", "arxiv", "HF-papers"],
+          "x_post": "HF 137 upvotes。「Simple and Unified Scaling」だけで数学オリンピック金メダルレベルの推論を達成したと報告する論文が公開された。追加の特殊訓練なくスケーリングのみでトップ数学者水準に到達できることを示しており、スケーリング則の新たな章となり得る。\n\nhttps://huggingface.co/papers/2605.13301",
           "figure": {
             "type": "metric-bars",
-            "caption": "grep vs ベクトル検索",
-            "alt": "エージェント検索戦略の比較。grep がベクトル検索を複数アーキテクチャで上回ることを示す横棒グラフ。grep: 相対性能 82/100、ベクトル検索: 70/100。ハーネス選択の影響が大きく、インライン型とファイルベース型で結果が変わる。",
+            "caption": "オリンピック数学推論スケーリングの成果",
+            "alt": "Simple and Unified Scaling によるオリンピック数学推論スコア。金メダルレベルの達成率: 前手法が〜40%、新手法Scaling適用後が〜90%。特殊訓練なしで達成。HF 137 upvotes。",
             "data": {
-              "headline": "grep がベクトル検索を超える—複数エージェントで実証",
-              "scale": { "max_label": "検索戦略の有効性スコア", "unit": "相対スコア" },
+              "headline": "スケーリングのみで数学オリンピック金メダル水準—HF 137 upvotes",
+              "scale": { "max_label": "オリンピック数学問題 正解率（相対）", "unit": "%" },
               "bars": [
-                { "label": "grep", "value": "高 (優位)", "pct": 82, "tone": "success", "note": "複数アーキテクチャで安定して優位" },
-                { "label": "ベクトル検索", "value": "中 (劣位)", "pct": 70, "note": "一部ハーネスで grep に劣る" },
-                { "label": "ハーネス影響", "value": "非常に大", "pct": 90, "tone": "warning", "note": "選択で結果が大きく変わる" }
+                { "label": "特殊訓練あり従来手法", "value": "従来ベース", "pct": 55, "note": "RL / fine-tuning あり" },
+                { "label": "Simple Scaling（本論文）", "value": "金メダルレベル達成", "pct": 90, "tone": "success", "note": "追加訓練なし" },
+                { "label": "人間上位選手（参考）", "value": "金メダル基準", "pct": 95, "tone": "primary", "note": "トップ国際選手水準" }
               ],
-              "narrative": "grep の優位性は一定だが、エージェントハーネス（実行環境）の選択が最終的な検索性能に最も大きく影響する",
-              "impact": "ベクトル DB 導入前に grep の検証を推奨。ハーネス選択もエージェント設計の重要な意思決定項目"
+              "narrative": "特殊なファインチューニングや強化学習なしで、スケーリングのみでオリンピック金メダルレベルの推論を達成",
+              "impact": "スケーリング則が数学推論の「難攻不落」ベンチマークを突破できることを示した歴史的マイルストーン"
             }
           }
         },
         {
           "id": "rp-2026-0517-002",
           "title": "OpenDeepThink: Parallel Reasoning via Bradley-Terry Aggregation",
-          "title_ja": "OpenDeepThink: ブラッドリー・テリー集約による訓練フリーの並列推論スケーリング",
+          "title_ja": "OpenDeepThink: ブラッドリー-テリー集約による並列推論—訓練なしで推論性能を向上",
           "url": "https://arxiv.org/abs/2605.15177",
           "source": "arxiv",
           "source_label": "arXiv",
@@ -467,78 +518,78 @@
           "category": "research_papers",
           "published_at": "2026-05-14",
           "lang": "en",
-          "summary_ja": "「OpenDeepThink」はテスト時計算量のスケーリングにペアワイズ ブラッドリー-テリー比較を活用した新しい推論手法。LLM を使って複数の推論候補をランダムなペアで比較・採点させ、ブラッドリー-テリー集計でグローバルランキングを作成する。モデルの再訓練不要で複数ドメインの推論性能を有意に改善でき、特に数学・論理推論タスクで効果を示す。推論モデルの能力を「Population-Based Reasoning（集団的推論）」で引き出す汎用的アプローチとして、既存の Thinking モデル（Claude / o3 等）にそのまま適用できる点が実用的。",
+          "summary_ja": "「OpenDeepThink」はテスト時計算量のスケーリングにペアワイズ ブラッドリー-テリー比較を活用した新しい推論手法。LLM を使って複数の推論候補をランダムなペアで比較・採点させ、ブラッドリー-テリー集計でグローバルランキングを作成する。モデルの再訓練不要で複数ドメインの推論性能を有意に改善でき、特に数学・論理推論タスクで効果を示す。推論モデルの能力を「Population-Based Reasoning（集団的推論）」で引き出す汎用的アプローチとして、既存の Thinking モデル（Claude / o3 等）にそのまま適用できる点が実用的価値をもつ。",
           "key_points_ja": [
-            "LLM にペアワイズ比較をさせてブラッドリー-テリー集計でランキング化する集合知的推論手法",
-            "モデルの再訓練ゼロコストで推論性能を向上。数学・論理推論で有意な改善を実証",
-            "テスト時計算量スケーリングの新アプローチ。Claude / o3 などの既存 Thinking モデルにすぐ適用可能"
+            "複数の推論候補をペアワイズ比較してブラッドリー-テリー集計でランキング化する集合知的推論手法",
+            "モデルの再訓練ゼロで推論性能を向上。数学・論理推論タスクで有意な改善を実証",
+            "Claude / o3 などの既存 Thinking モデルにそのまま適用可能。API 経由でも活用できる汎用アプローチ"
           ],
           "scores": {
-            "importance": 4,
+            "importance": 5,
             "depth": 4,
             "practicality": 4,
             "freshness": 5,
-            "total": 17,
+            "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["reasoning", "test-time-compute", "Bradley-Terry", "arxiv", "LLM", "inference"],
+          "tags": ["reasoning", "Bradley-Terry", "test-time-compute", "parallel", "LLM", "inference", "arxiv"],
           "figure": {
             "type": "summary-card",
             "caption": "OpenDeepThink の仕組み",
-            "alt": "OpenDeepThink の仕組み。手法: 複数の推論候補をペアワイズ比較してブラッドリー-テリーで集計、コスト: 訓練ゼロ、効果: 数学・論理推論で有意な改善、適用先: Claude / o3 など既存 Thinking モデル。",
+            "alt": "OpenDeepThinkの仕組み。手法: 複数推論候補をペアワイズ比較→ブラッドリー-テリー集計でランキング化、コスト: 訓練ゼロ、効果: 数学・論理推論で有意な改善、適用先: Claude・o3など既存Thinkingモデルにそのまま適用可能。",
             "data": {
-              "headline": "訓練フリーで推論性能を向上—ペアワイズ比較 × ブラッドリー-テリー集計",
+              "headline": "訓練フリーで推論性能を向上—ペアワイズ比較 × BT 集計",
               "tldr": "複数の推論候補を LLM にペアワイズ比較させ、ブラッドリー-テリー集計でランキング化。モデル再訓練なしで推論性能を向上させるテスト時スケーリング手法。",
               "points": [
                 { "icon": "⚖️", "label": "手法", "value": "ペアワイズ比較 + BT 集計", "tone": "primary" },
                 { "icon": "💸", "label": "訓練コスト", "value": "ゼロ（訓練不要）", "tone": "success" },
-                { "icon": "📐", "label": "効果領域", "value": "数学・論理推論で有意改善" },
+                { "icon": "📐", "label": "効果", "value": "数学・論理推論で有意に改善" },
                 { "icon": "🔌", "label": "適用先", "value": "Claude / o3 など既存モデル", "note": "そのまま適用可能" }
               ],
-              "impact": "再訓練なしで推論能力を向上できるため、API 経由でも活用可能。Thinking モデルの活用幅を広げる"
+              "impact": "再訓練なしで推論能力を向上できるため、API 経由でも即活用可能。Thinking モデルの活用幅を広げる"
             }
           }
         },
         {
           "id": "rp-2026-0517-003",
-          "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
-          "title_ja": "FutureSim: 実世界イベントを時系列再現してエージェントの適応能力を評価する新ベンチマーク",
-          "url": "https://arxiv.org/abs/2605.15188",
-          "source": "arxiv",
-          "source_label": "arXiv",
+          "title": "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems",
+          "title_ja": "LLM マルチエージェントシステムの協調・失敗帰属・自己進化を包括的に調査したサーベイ論文",
+          "url": "https://huggingface.co/papers/2605.14892",
+          "source": "huggingface_papers",
+          "source_label": "Hugging Face Papers",
           "source_type": "academic",
           "category": "research_papers",
-          "published_at": "2026-05-14",
+          "published_at": "2026-05-15",
           "lang": "en",
-          "summary_ja": "「FutureSim」は実際の世界イベントを時系列で再現してエージェントの適応能力を測る新しいベンチマーク。実際のニュース記事と質問解決データを使って 3 ヶ月分の世界イベントをシミュレートし、最先端エージェントが将来の出来事を予測・適応できるかを評価する。フロンティアエージェントの性能ギャップと研究課題を明確化し、「長期的適応」「不確実性推論」が現在の主要課題であることを示した。チェリーピックされた静的タスクではなく流動的な現実世界でエージェントを評価する手法の先駆けとして注目される。",
+          "summary_ja": "LLM ベースのマルチエージェントシステム（MAS）における協調メカニズム・失敗帰属・自己進化の 3 つの軸を包括的に調査したサーベイ論文。Hugging Face Daily Papers で 42 アップボートを獲得した。個々のエージェントを超えた「集合的知性」がどのように実現されるか、失敗がどう特定・帰属されるか、システムがどのように自己改善するかという重要な問いに体系的に答える。エージェント協調設計・デバッグ・自律的改善システムの実装において必読の一本として評価されており、MAS 研究の現状と将来方向性を明確に整理している。",
           "key_points_ja": [
-            "実際のニュース記事と質問解決データを使い 3 ヶ月分の世界イベントを時系列再現するベンチマーク設計",
-            "フロンティアエージェントで性能ギャップを発見。長期的適応と不確実性推論が現在の主要研究課題と判明",
-            "静的タスクではなく時間経過する現実イベントでエージェントを評価する方法論の先駆けとして高い独自性"
+            "LLM マルチエージェントシステムの協調・失敗帰属・自己進化の 3 軸を包括的に整理したサーベイ",
+            "個々のエージェントを超えた集合的知性の実現・失敗の特定と帰属・自律改善の仕組みを体系化",
+            "HF 42 upvotes。マルチエージェント設計・デバッグ・自律改善システム実装の必読リファレンス"
           ],
           "scores": {
-            "importance": 4,
-            "depth": 4,
+            "importance": 5,
+            "depth": 5,
             "practicality": 3,
             "freshness": 5,
-            "total": 16,
+            "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["agents", "benchmark", "evaluation", "adaptive-AI", "arxiv", "frontier"],
+          "tags": ["multi-agent", "LLM", "collaboration", "self-evolution", "survey", "arxiv", "HF-papers"],
           "figure": {
-            "type": "timeline",
-            "caption": "FutureSim の評価プロセス",
-            "alt": "FutureSim の評価プロセス。Step1: 実際のニュース記事と質問解決データを収集、Step2: 3ヶ月分の世界イベントを時系列シミュレーション、Step3: フロンティアエージェントが予測・適応を試みる、Step4: 性能ギャップと主要課題（長期適応・不確実性推論）を明確化。",
+            "type": "summary-card",
+            "caption": "マルチエージェント LLM の 3 軸研究",
+            "alt": "マルチエージェントLLMシステムの3つの研究軸。軸1-協調: 個々のエージェントを超えた集合的知性の実現方法、軸2-失敗帰属: 失敗の特定・責任の帰属・デバッグの手法、軸3-自己進化: システムが自律的に改善する仕組み。HF 42 upvotes。",
             "data": {
-              "headline": "実世界イベントで AI エージェントを評価するベンチマーク",
-              "events": [
-                { "when": "Step 1", "label": "実世界データ収集", "description": "実際のニュース記事と質問解決データを時系列で収集", "status": "past" },
-                { "when": "Step 2", "label": "3ヶ月シミュレーション", "description": "世界イベントを時系列再現し評価環境を構築", "status": "past" },
-                { "when": "Step 3", "label": "エージェント評価", "description": "フロンティアエージェントが予測・適応を試みる", "status": "now", "tone": "primary" },
-                { "when": "結果", "label": "性能ギャップ判明", "description": "長期的適応と不確実性推論が主要課題と特定", "status": "upcoming", "tone": "warning" }
+              "headline": "マルチエージェント LLM の協調・失敗帰属・自己進化を包括調査",
+              "tldr": "LLM マルチエージェントシステムの研究を「協調」「失敗帰属」「自己進化」の 3 軸で体系化したサーベイ。MAS 設計・デバッグ・自律改善の現状と方向性を整理する。",
+              "points": [
+                { "icon": "🤝", "label": "協調", "value": "集合的知性の実現メカニズム", "tone": "primary" },
+                { "icon": "🔍", "label": "失敗帰属", "value": "失敗の特定と責任の帰属手法" },
+                { "icon": "🔄", "label": "自己進化", "value": "システムの自律的改善の仕組み" },
+                { "icon": "📚", "label": "貢献", "value": "HF 42 upvotes・MAS 必読サーベイ", "tone": "success" }
               ],
-              "narrative": "チェリーピックされた静的タスクではなく流動的な現実世界でエージェントを評価するアプローチの先駆け",
-              "impact": "エージェント評価基準の刷新につながる研究。現在のフロンティアモデルの課題を定量化した点が重要"
+              "impact": "マルチエージェントシステムの設計・デバッグ・自律改善実装に関わる全エンジニアの必読リファレンス"
             }
           }
         }
@@ -551,89 +602,88 @@
       "items": [
         {
           "id": "ib-2026-0517-001",
-          "title": "US is starting to see heavy job losses in roles exposed to AI",
-          "title_ja": "米国で AI 代替リスクの高い職種に大規模な雇用損失が発生し始める—Bloomberg 報道",
-          "url": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
-          "source": "bloomberg",
-          "source_label": "Bloomberg",
+          "title": "OpenAI Co-Founder Greg Brockman Takes Charge of Product Strategy, Merging ChatGPT and Codex",
+          "title_ja": "OpenAI が ChatGPT と Codex を統合—Brockman が製品戦略責任者に正式就任し単一エージェントプラットフォームへ",
+          "url": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
+          "source": "techcrunch",
+          "source_label": "TechCrunch",
           "source_type": "media",
           "category": "industry_business",
           "published_at": "2026-05-16",
           "lang": "en",
-          "summary_ja": "Bloomberg が報じた調査によると、AI が代替しやすいとされる職種（データ入力・文書処理・基本的な顧客対応など）で米国の雇用損失が本格化し始めている。ハッカーニュースで 113 ポイントを獲得し幅広い議論を呼んだ。以前は「AI は人間の仕事を補完する」という楽観論が主流だったが、雇用統計データに実際の影響が反映されてきた。とりわけホワイトカラーのルーティン業務が最初の波として影響を受けており、高度な専門職でも長期的な影響を否定できないという議論が進んでいる。労働市場の再構造化が政策的課題として浮上し始めており、企業の AI 採用加速と採用抑制の板挟みが表面化している。",
+          "summary_ja": "OpenAI が Greg Brockman を製品戦略責任者として正式任命し、ChatGPT と Codex を単一のエージェントプラットフォームに統合すると発表した。TechCrunch が報じた。Brockman は「エージェントの未来に向けて一つのプラットフォームに集中投資し、コンシューマと企業の双方で勝利する」と宣言。ChatGPT が 9 億週間アクティブユーザーを誇り、Codex が最速成長製品の一つとなっていたにもかかわらず、両チームが独立して動いていたことが非効率の原因だったとされる。Google I/O 2026（5月19日開幕）の 3 日前というタイミングは戦略的意図が明確で、OpenAI の IPO 準備とも連動した重要な組織再編として見られている。",
           "key_points_ja": [
-            "データ入力・文書処理などのルーティン職で雇用損失が顕在化。「AI 補完論」から「AI 代替論」へ議論が転換",
-            "HN で 113pt 獲得と幅広い反響。楽観論一辺倒だった AI と雇用の議論に統計的根拠が加わった転換点",
-            "高度専門職も長期的に無縁ではないとの見方が拡大。政府・企業が労働市場再構造化への対応を迫られる"
+            "ChatGPT（週間 9 億 WAU）と Codex（最速成長製品）を単一エージェントプラットフォームに統合",
+            "Brockman が「エージェントの未来に向けて一つのプラットフォームに集中投資」と宣言。Google I/O 直前の戦略的タイミング",
+            "Fidji Simo CEO の医療休暇中に進んできた暫定体制を正式化。IPO 準備とも連動した重大な組織再編"
           ],
-          "reaction_signal": { "kind": "hn", "points": 113 },
           "scores": {
             "importance": 4,
             "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 13,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["labor-market", "AI-impact", "employment", "Bloomberg", "economy"],
+          "tags": ["OpenAI", "ChatGPT", "Codex", "Brockman", "product-strategy", "organization", "IPO"],
+          "x_post": "OpenAI が ChatGPT と Codex を統合し Greg Brockman が製品戦略責任者に正式就任。「エージェントの未来に向けて一つのプラットフォームに集中投資する」と宣言した。Google I/O 開幕 3 日前のタイミングで発表された重大な組織再編である。\n\nhttps://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
           "figure": {
-            "type": "summary-card",
-            "caption": "AI 雇用損失の概況",
-            "alt": "米国 AI 関連雇用損失の概況。影響職種: データ入力・文書処理・基本顧客対応などルーティン業務、段階: ホワイトカラールーティンが第一波、HN反響: 113pt、含意: 楽観論から代替論への議論転換。",
+            "type": "timeline",
+            "caption": "OpenAI 組織再編の経緯",
+            "alt": "OpenAI の製品統合タイムライン。2025年末: Sam Altman 'code red' でコア ChatGPT 体験に集中方針を発表、2026年4月初: Fidji Simo CEO が医療休暇、Brockman が暫定製品責任者に、2026年5月16日: ChatGPT+Codex+API を統合し Brockman が正式製品戦略責任者に就任、2026年5月19日: Google I/O 2026 開幕。",
             "data": {
-              "headline": "AI 代替リスク職種で雇用損失が顕在化—Bloomberg 統計調査",
-              "tldr": "データ入力・文書処理・基本顧客対応などの AI 代替リスクが高い職種で、米国の雇用損失が統計的に顕在化し始めた。楽観論から代替論へ議論が転換している。",
-              "points": [
-                { "icon": "💼", "label": "影響職種", "value": "ルーティン事務・顧客対応", "tone": "warning" },
-                { "icon": "📉", "label": "フェーズ", "value": "第一波が本格化", "note": "統計に現れ始めた段階" },
-                { "icon": "💬", "label": "HN 反響", "value": "113pt", "note": "幅広い議論が展開" },
-                { "icon": "🔮", "label": "次の波", "value": "専門職への影響も議論中", "tone": "danger" }
+              "headline": "OpenAI が ChatGPT+Codex+API を単一エージェントプラットフォームに統合",
+              "events": [
+                { "when": "2025年末", "label": "code red 発動", "description": "Altman がコア ChatGPT 体験に集中し Sora 等のサイドプロジェクトを停止", "status": "past" },
+                { "when": "2026年4月", "label": "Brockman 暫定就任", "description": "Fidji Simo CEO の医療休暇に伴い暫定製品責任者として実質指揮", "status": "past" },
+                { "when": "2026-05-16", "label": "正式統合・就任発表", "description": "ChatGPT+Codex+API を統合。Brockman が正式に製品戦略責任者就任", "status": "now", "tone": "primary" },
+                { "when": "2026-05-19", "label": "Google I/O 開幕", "description": "競合 Google の最大イベント直前に先手を打った戦略的タイミング", "status": "upcoming", "tone": "warning" }
               ],
-              "context": "「AI は補完する」という楽観論が主流だったが、雇用統計への影響が可視化され議論の軸が変わり始めた",
-              "impact": "企業の採用戦略・政府の労働政策・個人のキャリア形成において AI 代替リスクへの実践的対応が急務となる"
+              "narrative": "ChatGPT と Codex の独立運営が非効率の原因。単一エージェントプラットフォームへの統合で競争力を集中する",
+              "impact": "OpenAI の製品戦略が明確化。ChatGPT と Codex のロードマップが統合されエージェント機能の加速が予想される"
             }
           }
         },
         {
           "id": "ib-2026-0517-002",
-          "title": "Musk v. Altman week 3: Elon Musk and Sam Altman traded blows over each other's credibility. Now the jury will pick a side.",
-          "title_ja": "マスク vs. オルトマン裁判第 3 週: 両者が信頼性を巡り攻防—陪審員が判決へ",
-          "url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
-          "source": "mit_tech_review",
-          "source_label": "MIT Technology Review",
+          "title": "Cerebras Systems Pops 68% in Nasdaq Debut, Pushing AI Chipmaker's Market Cap to $95 Billion",
+          "title_ja": "AI チップメーカー Cerebras が Nasdaq 初値 68% 高—時価総額 950 億ドルに到達",
+          "url": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
+          "source": "cnbc",
+          "source_label": "CNBC",
           "source_type": "media",
           "category": "industry_business",
-          "published_at": "2026-05-15",
+          "published_at": "2026-05-14",
           "lang": "en",
-          "summary_ja": "Elon Musk と Sam Altman の訴訟（OpenAI の非営利ガバナンスを巡る紛争）が第 3 週を迎え、最終弁論で双方の信頼性を巡る激しい攻防が展開された。Altman 側は「虚偽申告」の疑いについての反論を行い、Musk 側は「AI 安全よりも支配権を求めた」と批判。陪審員が判断を下す段階に入り、判決が OpenAI の企業構造と業界ガバナンスに与える影響が注目されている。Musk が設立した xAI と OpenAI の競合関係も絡み、訴訟の帰趨が AI 業界の主要プレイヤーの力関係を変える可能性がある。",
+          "summary_ja": "AI チップメーカーの Cerebras Systems が Nasdaq に上場し、初値が公開価格比 68% 高を記録した。時価総額は 950 億ドルに達し、注目の AI チップ純粋プレイ IPO となった。Cerebras は OpenAI や Meta とのパートナーシップで知名度を高め、NVIDIA の GPU とは異なる独自の Wafer-Scale Engine（WSE）アーキテクチャで差別化を図る。AI インフラへの投資熱が続く中、GPU 以外の AI チップへの公開市場での評価が初めて本格的に問われた事例として、AI 半導体セクターへの市場の関心の高さを示している。",
           "key_points_ja": [
-            "マスク vs. オルトマン訴訟の最終弁論で信頼性を巡る攻防が展開。陪審員による判決が迫る段階",
-            "OpenAI の非営利ガバナンスが争点。判決次第で OpenAI の企業構造と業界ガバナンスに大きな影響が及ぶ",
-            "Musk の xAI と OpenAI の競合背景も絡む。訴訟帰趨が AI 業界の主要プレイヤーの力関係を変える可能性"
+            "Cerebras が Nasdaq に上場。初値 +68%、時価総額 950 億ドルを達成した AI チップ純粋プレイ IPO",
+            "NVIDIA GPU と異なる Wafer-Scale Engine（WSE）アーキテクチャで差別化。OpenAI・Meta とのパートナーシップ実績あり",
+            "GPU 以外の AI チップが公開市場で初めて本格評価。AI インフラ投資熱の高さを示す重要事例"
           ],
           "scores": {
-            "importance": 4,
-            "depth": 3,
-            "practicality": 1,
+            "importance": 3,
+            "depth": 2,
+            "practicality": 2,
             "freshness": 4,
-            "total": 12,
+            "total": 11,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "Musk", "Altman", "governance", "lawsuit", "industry"],
+          "tags": ["IPO", "Cerebras", "AI-chip", "Nasdaq", "hardware", "NVIDIA", "WSE"],
           "figure": {
-            "type": "timeline",
-            "caption": "マスク vs. オルトマン訴訟経緯",
-            "alt": "マスク vs. オルトマン訴訟の3週間経緯。Week1: 争点確立・OpenAI非営利ガバナンスを巡り訴訟開始、Week2: 証人尋問・業界専門家が双方で証言、Week3(現在): 最終弁論・信頼性攻防が展開、Next: 陪審員による判決。",
+            "type": "metric-bars",
+            "caption": "Cerebras IPO 初日パフォーマンス",
+            "alt": "Cerebras Nasdaq 上場初日のパフォーマンス。公開価格比: +68%、時価総額: 950億ドル、AI半導体純粋プレイIPOとして市場から高い評価を受けた。",
             "data": {
-              "headline": "マスク vs. オルトマン訴訟—3 週間の経緯と判決待ち",
-              "events": [
-                { "when": "Week 1", "label": "争点確立", "description": "OpenAI 非営利ガバナンスを巡り訴訟開始。支配権 vs 安全性が主要争点", "status": "past" },
-                { "when": "Week 2", "label": "証人尋問", "description": "業界専門家が双方で証言。技術・経営判断の正当性を争う", "status": "past" },
-                { "when": "Week 3", "label": "最終弁論", "description": "双方が信頼性を攻撃し合う最終局面。陪審員への印象が勝敗を左右", "status": "now", "tone": "primary" },
-                { "when": "Next", "label": "陪審員判決", "description": "判決が OpenAI 企業構造と業界ガバナンスに影響を与える", "status": "upcoming", "tone": "warning" }
+              "headline": "Cerebras IPO: Nasdaq 初値 +68%・時価総額 950 億ドル",
+              "scale": { "max_label": "評価指標", "unit": "" },
+              "bars": [
+                { "label": "初値上昇率", "value": "+68%", "pct": 68, "tone": "success", "note": "公開価格比" },
+                { "label": "時価総額（相対）", "value": "950億ドル", "pct": 90, "tone": "primary", "note": "AI チップ純粋プレイとして最大規模" },
+                { "label": "市場評価", "value": "高い期待", "pct": 80, "tone": "success", "note": "NVIDIA 以外の AI チップへの初の本格市場評価" }
               ],
-              "narrative": "AI 業界最大の法廷闘争が最終局面。xAI vs OpenAI の競合背景も絡む複雑な構図",
-              "impact": "判決内容が OpenAI の非営利 → 営利転換の是非と業界全体のガバナンス規範を左右する"
+              "narrative": "Wafer-Scale Engine という独自アーキテクチャで差別化するAIチップメーカーが公開市場で高評価を受けた",
+              "impact": "GPU 一強の AI チップ市場に多様な選択肢が生まれることへの期待。AI インフラ投資の続伸を示す重要シグナル"
             }
           }
         }
@@ -646,8 +696,8 @@
       "items": [
         {
           "id": "pol-2026-0517-001",
-          "title": "Research repository ArXiv will ban authors for a year if they let AI do all the work",
-          "title_ja": "arXiv、AI に全執筆を委ねた著者を1年間投稿禁止—学術 AI 利用の新ガイドライン施行",
+          "title": "Research Repository arXiv Will Ban Authors for a Year if They Let AI Do All the Work",
+          "title_ja": "arXiv が AI に全執筆させた著者を 1 年間投稿禁止に—幻覚した引用・LLM メタコメントが証拠",
           "url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
           "source": "techcrunch",
           "source_label": "TechCrunch",
@@ -655,36 +705,37 @@
           "category": "regulation_policy",
           "published_at": "2026-05-16",
           "lang": "en",
-          "summary_ja": "世界最大の論文プレプリントリポジトリ arXiv が、LLM に論文全体を書かせた著者に対して 1 年間の投稿禁止処分を科す新方針を発表した。完全 AI 生成論文の増加が科学的完全性を脅かすとの懸念への対応であり、AI ツールの補助的利用（文法チェックや翻訳など）は引き続き許可される。著者が実質的な知的貢献をすることを義務付け、架空の引用（ハルシネーション）を含む AI 生成論文の流通を防ぐ狙い。研究コミュニティでは歓迎と批判が交錯しており、「AI 補助研究」と「AI 全自動研究」の線引きの難しさや、対象者の機械的な特定方法への懸念が議論されている。",
+          "summary_ja": "arXiv が LLM に論文を全執筆させた証拠が見つかった著者に「1 年間の投稿禁止 + その後は査読誌掲載済み論文のみ提出可」とするワンストライク方針を明確化した。コンピュータ科学セクション委員長 Thomas Dietterich が発表。明確な証拠として「幻覚した引用文献」や「LLM のメタコメント（例：'ここに200字の要約を入れます'）」が挙げられた。AI 利用自体を禁止するのではなく、著者が出力内容を検証し責任を持つことを求める方針。決定は上訴可能なデュープロセスが確保されており、arXiv の AI 生成コンテンツへの対応が段階的に強化された重要政策変更として業界に広く報道された。",
           "key_points_ja": [
-            "arXiv が LLM に全執筆を委ねた論文の著者を 1 年間投稿禁止に。補助的利用（文法チェック・翻訳等）は許可",
-            "架空の引用や誤情報を含む AI 生成論文の増加が科学的完全性を脅かすとの懸念への対応措置",
-            "研究コミュニティで賛否両論。「AI 補助研究」と「AI 全自動研究」の線引きと検出方法が課題"
+            "幻覚した引用・LLM のメタコメント等の証拠がある論文著者は 1 年間投稿禁止。以降は査読誌掲載論文のみ許可",
+            "AI 利用自体は禁止せず。著者が出力を検証し責任を持つことを要求するワンストライクルール",
+            "CS セクション委員長 Dietterich が発表。上訴可能なデュープロセスあり。研究コミュニティ全体に影響する方針変更"
           ],
           "scores": {
             "importance": 4,
-            "depth": 3,
-            "practicality": 3,
+            "depth": 4,
+            "practicality": 4,
             "freshness": 5,
-            "total": 15,
+            "total": 17,
             "source_type_bias": -1
           },
-          "tags": ["arXiv", "AI-policy", "academic", "regulation", "LLM", "research-integrity"],
+          "tags": ["arXiv", "policy", "AI-generated", "research", "academic-integrity", "LLM", "regulation"],
+          "x_post": "arXiv が新方針を明確化。LLM に論文を全執筆させた証拠（幻覚した引用・LLM のメタコメント等）が見つかった著者は 1 年間投稿禁止、その後は査読誌掲載済み論文のみ提出可。AI 利用自体の禁止ではなく著者責任の厳格化である。\n\nhttps://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
           "figure": {
             "type": "summary-card",
-            "caption": "arXiv の新方針",
-            "alt": "arXiv の新 AI 利用方針。禁止: LLM が全執筆を担った論文の著者を1年間投稿禁止、許可: 文法チェック・翻訳・補助的AI利用、理由: 架空引用・誤情報を含むAI生成論文が科学的完全性を脅かす、課題: AI全自動と補助の線引きと検出方法。",
+            "caption": "arXiv の AI 全執筆禁止方針",
+            "alt": "arXivのAI全執筆禁止方針の詳細。罰則: 1年間投稿禁止+以降は査読誌掲載論文のみ、証拠例: 幻覚した引用文献・LLMのメタコメント、AI利用: 禁止ではなく著者責任を要求、上訴: 可能（デュープロセスあり）。",
             "data": {
-              "headline": "arXiv: AI 全執筆論文の著者を 1 年間投稿禁止",
-              "tldr": "arXiv が LLM に全文章執筆を委ねた論文著者を 1 年間投稿禁止にする方針を発表。補助的 AI 利用は許可。架空引用問題への対応が主目的。",
+              "headline": "arXiv: AI 全執筆著者に 1 年間投稿禁止—ワンストライクルール",
+              "tldr": "arXiv が AI に論文を全執筆させた証拠（幻覚引用・LLM メタコメント等）がある著者に 1 年間の投稿禁止を科す方針を明確化。AI 利用自体は禁止でなく著者責任の厳格化。",
               "points": [
-                { "icon": "🚫", "label": "禁止", "value": "AI 全自動執筆論文", "note": "1年間の投稿禁止", "tone": "danger" },
-                { "icon": "✅", "label": "許可", "value": "文法チェック・翻訳等", "note": "補助的利用は OK", "tone": "success" },
-                { "icon": "🎯", "label": "目的", "value": "架空引用・誤情報排除", "note": "科学的完全性を保護" },
-                { "icon": "❓", "label": "課題", "value": "線引きと検出方法", "note": "コミュニティで議論中", "tone": "warning" }
+                { "icon": "⛔", "label": "罰則", "value": "1 年間投稿禁止 → 以降査読誌限定", "tone": "danger" },
+                { "icon": "🔍", "label": "証拠例", "value": "幻覚引用・LLM メタコメント", "note": "明確な証拠が必要" },
+                { "icon": "✅", "label": "AI 利用", "value": "禁止ではなく著者責任を要求", "tone": "success" },
+                { "icon": "⚖️", "label": "デュープロセス", "value": "上訴可能", "note": "セクション委員長が確認" }
               ],
-              "context": "AI 生成論文の急増でプレプリントリポジトリの品質低下が懸念。先手を打った規制措置として国際的に注目",
-              "impact": "全ての AI 研究者・学生に影響する重要な方針変更。他リポジトリへの波及と研究倫理の再定義を促す"
+              "context": "AI 生成低品質論文が急増する中、arXiv が一発退場ルールで著者の品質管理責任を明確化",
+              "impact": "研究者全員が AI ツール利用時に出力を厳密に検証する義務を持つことが業界慣行として定着しつつある"
             }
           }
         }
@@ -697,67 +748,64 @@
       "items": [
         {
           "id": "cb-2026-0517-001",
-          "title": "I believe there are entire companies right now under AI psychosis",
-          "title_ja": "「現在、AI 精神病に陥っている会社が複数存在する」— HN 1,758pt 獲得の組織崩壊警告",
-          "url": "https://twitter.com/mitchellh/status/2055380239711457578",
-          "source": "hacker_news",
-          "source_label": "Hacker News",
-          "source_type": "community",
+          "title": "US Is Starting to See Heavy Job Losses in Roles Exposed to AI",
+          "title_ja": "米国で AI 代替リスクの高い職種に大規模な雇用損失が顕在化—Bloomberg 統計調査",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai",
+          "source": "bloomberg",
+          "source_label": "Bloomberg",
+          "source_type": "media",
           "category": "community_buzz",
           "published_at": "2026-05-15",
           "lang": "en",
-          "summary_ja": "HashiCorp 共同創業者の Mitchell Hashimoto 氏が X に投稿したコメントが HN フロントページで 1,758 ポイントを獲得し、大きな議論を呼んでいる。氏は「AI が出力するものを無批判に受け入れ、ソフトウェアの質が崩壊しているにもかかわらず指摘できない組織文化が生まれている」と警告。AI ツールの大量導入に伴う組織的な判断力の低下・技術的負債の蓄積・品質管理の崩壊を「AI psychosis（AI 精神病）」と表現し、業界内で幅広い共感を得た。コーディング AI の急速な普及に伴う実践的なリスクへの警鐘として、エンジニアリングリーダーシップの在り方を問う議論に発展している。",
+          "summary_ja": "Bloomberg が報じた調査によると、AI が代替しやすいとされる職種（データ入力・文書処理・基本的な顧客対応など）で米国の雇用損失が本格化し始めている。CEO の 40% 以上が今後 1〜2 年でジュニア職を削減する計画を持ち、22〜25 歳のソフトウェア開発者雇用は 2022 年末のピークから約 20% 減少。求人数も同期間で 53% 減少している。「AI は人間の仕事を補完する」という楽観論が主流だったが、雇用統計データに実際の影響が初めて統計的に可視化されてきた。AI が採用抑制を加速する一方で労働市場の再構造化が政策的課題として浮上している。",
           "key_points_ja": [
-            "HashiCorp 共同創業者が「AI 出力を無批判に受け入れる組織文化 = AI 精神病」が蔓延中と警告。HN 1,758pt 獲得",
-            "AI ツール大量導入による判断力低下・技術的負債蓄積・品質管理崩壊の組織リスクを的確に言語化",
-            "コーディング AI 普及時代の現実的リスク。エンジニアリングリーダーシップと品質文化の維持が課題"
+            "22〜25 歳ソフトウェア開発者雇用が 2022 年末ピーク比 -20%。求人数は同期間で -53% 減少",
+            "CEO の 40% 以上が今後 1〜2 年でジュニア職を削減計画。楽観論から代替論へ議論が初めて統計で裏付け",
+            "ルーティン事務職が第一波として影響を受けている。政府・企業の労働市場再構造化への対応が急務に"
           ],
-          "reaction_signal": { "kind": "hn", "points": 1758 },
           "scores": {
             "importance": 4,
-            "depth": 2,
+            "depth": 3,
             "practicality": 2,
             "freshness": 4,
-            "total": 12,
+            "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["AI-adoption", "engineering-culture", "quality", "community", "HN", "organization"],
+          "tags": ["employment", "AI-impact", "labor-market", "Bloomberg", "economy", "software-developers"],
           "figure": {
-            "type": "summary-card",
-            "caption": "AI 精神病の症状",
-            "alt": "AI 精神病の症状まとめ。Author: Mitchell Hashimoto (HashiCorp 共同創業者)、HN Points: 1,758、症状1: AI出力の無批判受容、症状2: 品質崩壊の不可視化、症状3: 技術的負債の急速蓄積、Warning: 組織判断力の低下。",
+            "type": "metric-bars",
+            "caption": "AI による雇用損失の実態（Bloomberg 調査）",
+            "alt": "Bloomberg調査によるAI関連雇用損失データ。若手ソフトウェア開発者（22〜25歳）雇用: -20%（2022年末ピーク比）、求人数: -53%（同期間）、CEO調査でジュニア職削減計画: 40%以上。",
             "data": {
-              "headline": "HN 1,758pt「AI 精神病」—コーディング AI 時代の組織崩壊パターン",
-              "tldr": "HashiCorp 共同創業者が「AI 出力を無批判に受け入れる組織文化」を AI 精神病と命名し警告。品質崩壊・技術的負債蓄積が不可視化されるリスクを指摘。",
-              "points": [
-                { "icon": "🧠", "label": "Author", "value": "Mitchell Hashimoto", "note": "HashiCorp 共同創業者" },
-                { "icon": "🔥", "label": "HN 反響", "value": "1,758pt フロントページ", "tone": "danger" },
-                { "icon": "⚠️", "label": "症状", "value": "AI 出力の無批判受容", "note": "品質崩壊の不可視化" },
-                { "icon": "📉", "label": "結果", "value": "技術的負債の急速蓄積", "tone": "danger" }
+              "headline": "AI 代替リスク職種で雇用損失が統計的に顕在化",
+              "scale": { "max_label": "ピーク比変化率（%）", "unit": "%" },
+              "bars": [
+                { "label": "若手開発者（22〜25歳）雇用", "value": "-20%", "pct": 20, "tone": "danger", "note": "2022 年末ピーク比" },
+                { "label": "ソフトウェア求人数", "value": "-53%", "pct": 53, "tone": "danger", "note": "同期間の求人減少" },
+                { "label": "CEO のジュニア削減計画", "value": "40%以上", "pct": 40, "tone": "warning", "note": "今後 1〜2 年の予定" }
               ],
-              "context": "AI コーディングツールの普及が速い組織でリスクが高まっている。ツールの能力と組織の判断力は別の話",
-              "impact": "エンジニアリングリーダーはコーディング AI 導入と同時に品質文化・コードレビュープロセスの強化が必要"
+              "narrative": "「AI は補完する」という楽観論が主流だったが、統計データに初めて明確な雇用損失が現れ始めた",
+              "impact": "個人はキャリアの AI 代替リスクを直視し、企業・政府は労働市場再構造化への具体的対応が急務"
             }
           }
         },
         {
           "id": "cb-2026-0517-002",
-          "title": "Frontier AI has broken the open CTF format",
-          "title_ja": "フロンティア AI が CTF（Capture the Flag）の競技形式を破壊した",
-          "url": "https://kabir.au/blog/the-ctf-scene-is-dead",
-          "source": "hacker_news",
-          "source_label": "Hacker News",
-          "source_type": "community",
+          "title": "The Haves and Have Nots of the AI Gold Rush",
+          "title_ja": "AI ゴールドラッシュの勝ち組と負け組—SF では 1 万人が 2000 万ドル超の富を得る一方、多数が不安定に",
+          "url": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/",
+          "source": "techcrunch",
+          "source_label": "TechCrunch",
+          "source_type": "media",
           "category": "community_buzz",
           "published_at": "2026-05-16",
           "lang": "en",
-          "summary_ja": "セキュリティエンジニアの Kabir 氏がブログで主張した「フロンティア AI が CTF を破壊した」という主張が HN で 291 ポイントを獲得し議論を呼んでいる。Claude や GPT-5.5 などのフロンティア AI が一般的な CTF 問題を数分で解いてしまうため、「スキルを測る競技」としての意義が薄れ、AI ツールを使いこなすゲームになりつつあるという。セキュリティコミュニティでの AI 活用が教育・育成の在り方を根本から変える問題として議論されており、CTF の問題難易度と形式のリデザインが迫られている。AI と人間のスキル評価基準の再定義が求められている。",
+          "summary_ja": "TechCrunch がまとめた AI ゴールドラッシュにおける極端な格差の現状レポート。Menlo Ventures のパートナー Deedy Das によると、OpenAI・Anthropic・Nvidia・xAI の従業員や創業者約 1 万人が 2000 万ドルを超える「引退レベルの富」を獲得した一方で、大多数のソフトウェアエンジニアは 50 万ドル未満の給与で雇用不安を抱えている。San Francisco の状況を「かつてないほど分断されたアウトカム」と表現し、「技術者が自分のキャリアスキルはもはや役に立たないと感じている」という深刻な状況も伝えた。AI ブームが特定のグループへの富の集中をもたらしている構造的問題を可視化した重要な観察記事として注目されている。",
           "key_points_ja": [
-            "フロンティア AI が一般的 CTF 問題を数分で解けるようになり、スキル競技としての CTF の存在意義が問われる",
-            "HN で 291pt 獲得。セキュリティコミュニティで「AI でスコアを稼ぐゲーム」への変質に広範な危機感",
-            "AI 活用がセキュリティ教育・人材育成の仕組みを根本から変える問題として業界全体での議論が拡大"
+            "約 1 万人が 2000 万ドル超の富を獲得（OpenAI/Anthropic/Nvidia/xAI）。大多数は給与不安と対照的",
+            "SF で「かつてないほどのアウトカムの分断」。技術者がスキルの陳腐化を感じ始めているとのレポート",
+            "AI ブームによる富の集中が可視化された重要観察。AI 経済の格差問題が主流メディアで議論される転換点"
           ],
-          "reaction_signal": { "kind": "hn", "points": 291 },
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -766,21 +814,22 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["cybersecurity", "CTF", "community", "HN", "AI-capabilities", "education"],
+          "tags": ["AI-wealth", "inequality", "tech-industry", "employment", "San-Francisco", "TechCrunch"],
           "figure": {
             "type": "summary-card",
-            "caption": "CTF と AI の関係",
-            "alt": "フロンティア AI が CTF に与える影響。問題: フロンティア AI が CTF 問題を数分で解く、結果: スキル測定競技としての意義の喪失、変質: AI ツール活用ゲームへの移行、影響: セキュリティ教育・人材育成の再設計が必要、HN 反響: 291pt。",
+            "caption": "AI ゴールドラッシュの格差構造",
+            "alt": "AI ゴールドラッシュにおける富の格差。勝ち組: 約1万人が2000万ドル超の富（OpenAI/Anthropic/Nvidia/xAI従業員・創業者）、大多数: 500万円未満給与でスキル陳腐化の不安、SF現状: 'かつてないほどのアウトカムの分断'。",
             "data": {
-              "headline": "フロンティア AI が CTF を破壊—スキル競技からツール活用ゲームへ",
-              "tldr": "Claude / GPT-5.5 が一般的 CTF 問題を数分で解けるようになり、スキル競技としての CTF の意義が喪失。セキュリティ教育の仕組みの再設計が迫られている。",
+              "headline": "AI ゴールドラッシュ: 約 1 万人が 2000 万ドル超の富—格差が可視化",
+              "tldr": "OpenAI・Anthropic・Nvidia・xAI の約 1 万人が引退レベルの富を得た一方、大多数の技術者は給与不安とスキル陳腐化の不安を抱える。SF では「かつてないアウトカムの分断」が起きている。",
               "points": [
-                { "icon": "🔐", "label": "問題", "value": "AI が CTF を数分で解ける", "tone": "danger" },
-                { "icon": "📉", "label": "影響", "value": "スキル測定競技の意義喪失" },
-                { "icon": "🔄", "label": "変質", "value": "AI ツール活用ゲームへ移行", "tone": "warning" },
-                { "icon": "💬", "label": "HN 反響", "value": "291pt で幅広い議論", "note": "コミュニティ全体で懸念" }
+                { "icon": "💰", "label": "勝ち組", "value": "約 1 万人が 2000 万ドル超", "tone": "success", "note": "OpenAI/Anthropic/Nvidia/xAI" },
+                { "icon": "😟", "label": "大多数", "value": "給与不安・スキル陳腐化の懸念", "tone": "danger" },
+                { "icon": "🏙️", "label": "SF の現状", "value": "かつてないアウトカムの分断", "tone": "warning" },
+                { "icon": "💬", "label": "声", "value": "「自分のスキルはもう役に立たない」", "note": "技術者の声を TechCrunch が伝える" }
               ],
-              "impact": "セキュリティ教育機関・企業採用の現場で評価基準の根本的な見直しが求められる。AI 耐性問題の設計が次の課題"
+              "context": "AI ブームによる富の集中と雇用不安の同時進行が社会的議論を呼んでいる",
+              "impact": "AI 経済の恩恵が特定層に偏在する構造的問題が可視化。政策・教育・採用慣行の変革が問われる"
             }
           }
         }
@@ -793,201 +842,67 @@
       "items": [
         {
           "id": "jp-2026-0517-001",
-          "title_ja": "Andrej Karpathy 式 LLM Wiki を 1 ヶ月運用してわかった、LLM の知識を「繋げる力」",
-          "title": "Andrej Karpathy-style LLM Wiki: One Month Operation and the Power of Connecting LLM Knowledge",
-          "url": "https://zenn.dev/tsurubee/articles/llm-wiki-connecting-knowledge",
-          "source": "zenn",
-          "source_label": "Zenn",
+          "title": "AIにできない仕事は残るかもしれないが、それはUber Eatsの配達員みたいな仕事になるかも",
+          "title_ja": "AIにできない仕事は残るが、それは Uber Eats の配達員みたいな仕事になるかもしれない—kensuu 論考",
+          "url": "https://kensuu.com/n/n9d1229018d9c",
+          "source": "kensuu_note",
+          "source_label": "kensuu note",
           "source_type": "japan_community",
           "category": "japan",
-          "published_at": "2026-05-15",
+          "published_at": "2026-05-16",
           "lang": "ja",
-          "summary_ja": "Andrej Karpathy 氏が提唱する「LLM Wiki」（LLM に関する知識を体系的に整理・リンクするナレッジベース）を実際に 1 ヶ月間運用した実体験と知見をまとめた Zenn 記事。はてなブックマーク 107 件を獲得し、日本の技術者コミュニティで大きな反響を呼んだ。LLM の知識は断片的になりがちだが、概念同士を「繋げる」ことで理解が飛躍的に深まるという体験が共有されている。知識の整理方法・リンク構造の設計・LLM を使った自動更新の仕組みなど、実践的なノウハウが詰まっており、AI 学習者のナレッジマネジメントに直接活用できる内容として高く評価されている。",
+          "summary_ja": "「AIにできない仕事は残る」という楽観論は正しいかもしれないが、その残る仕事が Uber Eats の配達員のような「AIにできない仕事だが、人間として尊厳ある職業ではない」類のものになる可能性を指摘した論考。はてなブックマーク 245 件を獲得し日本のコミュニティで大きな反響を呼んだ。AI 代替の議論がこれまでの「仕事がなくなるか残るか」という二項対立から、「残る仕事はどんな質・尊厳のある仕事か」という質的な問いへとシフトしていることを鮮やかに示した記事。キャリア設計・社会保障・教育政策の議論に重要な視点を提供している。",
           "key_points_ja": [
-            "Karpathy 式 LLM Wiki を 1 ヶ月実運用した実体験。はてブ 107 件を獲得し日本技術者コミュニティで大反響",
-            "LLM 知識の断片化問題に対し、概念同士を「繋げる」ナレッジ構造が理解の飛躍を生むことを実証",
-            "LLM を使った自動更新の仕組みも紹介。AI 学習者のナレッジマネジメントに直接活用できる実践内容"
+            "AI 代替論争が「なくなるか残るか」から「どんな質の仕事が残るか」へ。残る仕事が尊厳ある職業かを問う",
+            "はてブ 245 件—日本のコミュニティで最大反響のAI関連論考。Uber Eats 配達員の比喩が議論を呼ぶ",
+            "キャリア設計・社会保障・教育政策に重要な示唆。AI 代替の質的側面を初めて主流議論に乗せた記事"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 107 },
+          "reaction_signal": { "kind": "hatena", "users": 245 },
           "scores": {
             "importance": 5,
             "depth": 3,
-            "practicality": 4,
+            "practicality": 3,
             "freshness": 4,
-            "total": 16,
+            "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["LLM", "knowledge-management", "Karpathy", "Wiki", "学習", "Zenn"],
+          "tags": ["AI-雇用", "キャリア", "労働", "社会保障", "Uber Eats", "はてブ", "日本語"],
+          "x_post": "「AI にできない仕事は残るが、それは Uber Eats の配達員みたいな仕事になるかもしれない」という論考がはてブ 245 件の反響。AI 代替の議論が「なくなるか残るか」ではなく「どんな質の仕事が残るか」にシフトしていると指摘する。\n\nhttps://kensuu.com/n/n9d1229018d9c",
           "figure": {
             "type": "summary-card",
-            "caption": "LLM Wiki 運用の知見",
-            "alt": "LLM Wiki 1ヶ月運用の知見。Method: Karpathy式ナレッジベース・概念をリンクで繋ぐ、Insight: 繋げることで理解が飛躍的に深まる、Tools: LLMによる自動更新の仕組みを構築、Community: はてブ107件と高い共感を獲得。",
+            "caption": "AI 代替議論の質的転換",
+            "alt": "AI雇用代替議論の転換点。従来の問い: 仕事はなくなるか残るか（二項対立）、新しい問い: 残る仕事はどんな質・尊厳の仕事か、懸念: AI不得意な仕事≠尊厳ある仕事（Uber Eats比喩）、反響: はてブ245件。",
             "data": {
-              "headline": "LLM Wiki 1ヶ月運用—はてブ 107 件の「知識を繋げる力」",
-              "tldr": "Karpathy 式 LLM Wiki を 1 ヶ月実運用した経験をまとめた Zenn 記事。概念をリンクで繋ぐナレッジ構造が LLM 理解を飛躍的に深め、日本技術者コミュニティで 107 はてブを獲得。",
+              "headline": "AI 代替議論が「なくなるか」から「どんな質の仕事が残るか」へ—はてブ 245 件",
+              "tldr": "「AIにできない仕事は残る」は正しいかもしれないが、残る仕事が Uber Eats の配達員のような、AI不得意だが尊厳面で課題のある仕事になる可能性を指摘。AI代替論争の質的転換を示した論考。",
               "points": [
-                { "icon": "🧩", "label": "手法", "value": "Karpathy 式ナレッジ構造", "note": "概念をリンクで繋ぐ" },
-                { "icon": "💡", "label": "知見", "value": "繋げることで理解が飛躍", "tone": "success" },
-                { "icon": "🤖", "label": "自動化", "value": "LLM で自動更新", "note": "運用負荷を軽減" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 107 件", "tone": "primary" }
+                { "icon": "❓", "label": "従来の問い", "value": "仕事がなくなるか残るか", "note": "二項対立" },
+                { "icon": "💡", "label": "新しい問い", "value": "残る仕事は尊厳ある職業か", "tone": "primary" },
+                { "icon": "⚠️", "label": "懸念", "value": "AI 不得意 ≠ 尊厳ある仕事", "tone": "warning", "note": "Uber Eats 配達員の比喩" },
+                { "icon": "📌", "label": "反響", "value": "はてブ 245 件", "tone": "success" }
               ],
-              "context": "AI 技術の断片的な知識を体系化する需要は高い。Karpathy のアプローチを実践した貴重な日本語レポート",
-              "impact": "LLM を学ぶ全ての人に応用可能なナレッジ管理手法。チームでの AI 知識共有にも活用できる"
+              "impact": "キャリア設計・教育・社会保障の議論に不可欠な視点。AI 代替論の質的側面が日本の主流議論に登場"
             }
           }
         },
         {
           "id": "jp-2026-0517-002",
-          "title_ja": "検索エンジン上に作る Agent 向け仮想ファイルシステム — LayerX エンジニアブログ",
-          "title": "Virtual Filesystem for Agents on Search Engines — LayerX Engineering Blog",
-          "url": "https://tech.layerx.co.jp/entry/2026/05/15/112547",
-          "source": "layerx",
-          "source_label": "LayerX エンジニアブログ",
-          "source_type": "japan_community",
-          "category": "japan",
-          "published_at": "2026-05-15",
-          "lang": "ja",
-          "summary_ja": "LayerX のエンジニアブログが公開した、AI エージェント向けに検索エンジン上で動作する「仮想ファイルシステム」の設計と実装に関する技術記事。はてなブックマーク 40 件を獲得した。エージェントがファイルシステム操作（読み書き・ディレクトリ探索等）と同じインターフェースで検索エンジンのデータにアクセスできるレイヤーを構築することで、エージェントの汎用性と拡張性を大幅に高める手法を解説。実装コードと設計判断の背景が丁寧に説明されており、RAG や MCP と組み合わせたエージェントアーキテクチャの実践知識として注目されている。",
-          "key_points_ja": [
-            "検索エンジンのデータをファイルシステム操作と同一インターフェースでエージェントが扱える仮想 FS を構築",
-            "LayerX の本番環境での実装経験から生まれたアーキテクチャ。RAG や MCP との組み合わせで活用可能",
-            "はてブ 40 件獲得。エージェントに汎用的なデータアクセス層を与える実践的アプローチが注目を集める"
-          ],
-          "reaction_signal": { "kind": "hatena", "users": 40 },
-          "scores": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "total": 16,
-            "source_type_bias": 0
-          },
-          "tags": ["agents", "filesystem", "search", "RAG", "MCP", "LayerX", "エンジニアブログ"],
-          "figure": {
-            "type": "summary-card",
-            "caption": "Agent 向け仮想 FS の仕組み",
-            "alt": "Agent向け仮想ファイルシステムの仕組み。Concept: 検索エンジンのデータをファイルシステム操作と同じインターフェースでアクセス可能にする、Integration: RAGやMCPと組み合わせて使用可能、Origin: LayerX本番環境での実装経験から生まれた、はてブ: 40件。",
-            "data": {
-              "headline": "検索エンジン上の Agent 向け仮想 FS—LayerX 本番実装の知見",
-              "tldr": "エージェントがファイル操作と同じインターフェースで検索エンジンのデータにアクセスできる仮想 FS を設計・実装。RAG や MCP との組み合わせで汎用エージェントアーキテクチャを実現。",
-              "points": [
-                { "icon": "📂", "label": "コンセプト", "value": "検索 ≒ ファイル操作 I/F", "note": "エージェント側の統一抽象化" },
-                { "icon": "🔗", "label": "連携", "value": "RAG / MCP 対応", "tone": "primary" },
-                { "icon": "🏭", "label": "出所", "value": "LayerX 本番環境の知見" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 40 件", "note": "エンジニア間で注目" }
-              ],
-              "impact": "エージェントに汎用データアクセス層を提供し、多様なデータソースへの対応を簡素化できる実践的な設計パターン"
-            }
-          }
-        },
-        {
-          "id": "jp-2026-0517-003",
-          "title_ja": "アニメ・イラストに強い画像生成AI「Anima」正式版—タグ・自然言語両対応でローカル実行可能",
-          "title": "Anima: Anime/Illustration-Focused Image Generation AI Official Release — Tag and Natural Language Input, Fully Local",
-          "url": "https://gigazine.net/news/20260515-anima-image-generation-ai/",
-          "source": "gigazine",
-          "source_label": "Gigazine",
-          "source_type": "japan_community",
-          "category": "japan",
-          "published_at": "2026-05-15",
-          "lang": "ja",
-          "summary_ja": "アニメ・イラスト系の画像生成に特化した「Anima」の正式版が公開された。タグベースと自然言語の両方の入力形式に対応しており、SDXL や Illustrious 系モデルが動作する PC 環境があればローカルで実行できる。はてなブックマーク 161 件を獲得し、日本のクリエイターコミュニティで大きな注目を集めている。ローカル実行によりプライバシーとコスト面で優位性があり、クラウドサービスへの依存なく高品質なアニメ・イラスト生成が可能。MidJourney や NovelAI など有料サービスの代替として、日本の個人クリエイターに普及する可能性がある。",
-          "key_points_ja": [
-            "アニメ・イラスト特化の画像生成 AI「Anima」正式版。タグ・自然言語両対応でローカル実行が可能",
-            "SDXL や Illustrious 系モデルが動く PC なら無料でローカル実行。はてブ 161 件と高い注目度",
-            "MidJourney / NovelAI などの有料サービスの代替として日本の個人クリエイターへの普及が見込まれる"
-          ],
-          "reaction_signal": { "kind": "hatena", "users": 161 },
-          "scores": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "total": 17,
-            "source_type_bias": 0
-          },
-          "tags": ["image-generation", "anime", "SDXL", "local-AI", "Anima", "クリエイター"],
-          "figure": {
-            "type": "summary-card",
-            "caption": "Anima の特徴",
-            "alt": "画像生成AI Anima の特徴。特化分野: アニメ・イラスト、入力形式: タグ・自然言語両対応、動作環境: SDXL/Illustrious系モデルが動くPCでローカル実行、コスト: 無料・クラウド不要、はてブ: 161件。",
-            "data": {
-              "headline": "アニメ・イラスト特化 AI「Anima」正式版—はてブ 161 件の注目",
-              "tldr": "SDXL / Illustrious 系モデルが動く PC ならローカルで無料実行できるアニメ・イラスト特化画像 AI。タグ・自然言語両対応で、有料サービスの代替候補として注目。",
-              "points": [
-                { "icon": "🎨", "label": "特化", "value": "アニメ・イラスト生成", "tone": "primary" },
-                { "icon": "✏️", "label": "入力", "value": "タグ・自然言語 両対応" },
-                { "icon": "💻", "label": "動作", "value": "SDXL 系 PC でローカル実行", "note": "クラウド不要・無料" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 161 件", "tone": "success" }
-              ],
-              "context": "NovelAI の有料化以降、無料でクオリティ高いアニメ系画像 AI を求める声が国内クリエイターに根強い",
-              "impact": "プライバシー保護と無料運用を両立するアニメ系画像 AI として、日本の個人クリエイターへ急速普及の可能性"
-            }
-          }
-        },
-        {
-          "id": "jp-2026-0517-004",
-          "title_ja": "LLM が「越えられない壁」—AI の限界点が数学的に証明された",
-          "title": "LLM's Uncrossable Wall — The Mathematical Limits of AI Capabilities Proven",
-          "url": "https://www.gizmodo.jp/2026/05/limits-of-ai-capabilities-oe8.html",
-          "source": "gizmodo_jp",
-          "source_label": "Gizmodo Japan",
+          "title": "果たしてCopilotで営業成績は上がるのか",
+          "title_ja": "Copilot で営業成績は上がるのか—実際に試した社内検証レポート",
+          "url": "https://qiita.com/sadabon444/items/026452114ad63efa9aa6",
+          "source": "qiita",
+          "source_label": "Qiita",
           "source_type": "japan_community",
           "category": "japan",
           "published_at": "2026-05-16",
           "lang": "ja",
-          "summary_ja": "LLM（大規模言語モデル）には数学的に証明できる「越えられない壁」が存在するという研究を解説した Gizmodo Japan の記事が、はてなブックマーク 98 件を獲得した。計算可能性理論や情報理論の観点から、LLM が原理的に解決不能な問題クラスが存在することを示す研究に注目が集まっている。「AI は何でも解ける」という過大評価への警鐘として、また AI の適切な活用範囲の議論において重要な文脈を提供する記事。技術者・研究者だけでなく、経営層の AI 意思決定にも影響を与える基礎的な視点を提示している。",
+          "summary_ja": "Microsoft Copilot を営業業務に実際に導入して成績への影響を検証した実体験レポートが Qiita に投稿され、はてなブックマーク 24 件を獲得した。AI ツールの業務効果に関する実証報告として日本のビジネスパーソンコミュニティで注目されている。AI ツールを「試した感想」ではなく「実際の成績への影響」という定量的な視点で検証している点が特徴。Copilot が効果的に機能するシナリオとそうでないシナリオを整理し、営業職での AI 活用の現実的な期待値設定に役立つ内容として評価されている。",
           "key_points_ja": [
-            "計算可能性理論から LLM に原理的に解決不能な問題クラスが存在することが数学的に証明されたと解説",
-            "はてブ 98 件獲得。AI 万能論への警鐘として技術者・経営層双方に刺さる内容として反響",
-            "AI の適切な活用範囲の設定と過大な期待値のマネジメントに欠かせない基礎的な視点を提供"
+            "Microsoft Copilot を営業業務に実際に導入し、成績への影響を定量的に検証したレポート",
+            "効果的なシナリオと効果が限定的なシナリオを整理。AI ツールの現実的な期待値設定に貢献",
+            "はてブ 24 件獲得。「感想ではなく成果を検証した」実証報告として日本ビジネスパーソンに支持"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 98 },
-          "scores": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 5,
-            "total": 16,
-            "source_type_bias": 0
-          },
-          "tags": ["LLM", "computability", "AI-limits", "theory", "Gizmodo", "数学"],
-          "figure": {
-            "type": "summary-card",
-            "caption": "LLM の数学的限界",
-            "alt": "LLM の数学的限界の解説。根拠: 計算可能性理論・情報理論、内容: LLMが原理的に解決不能な問題クラスの存在を数学的に証明、示唆: AI万能論への警鐘と適切な活用範囲の設定、反響: はてブ98件。",
-            "data": {
-              "headline": "数学が示す LLM の「越えられない壁」—AI 万能論への警鐘",
-              "tldr": "計算可能性理論・情報理論から、LLM が原理的に解決不能な問題クラスの存在が数学的に示される。AI 万能論への理論的な反論として日本技術者コミュニティで 98 はてブを獲得。",
-              "points": [
-                { "icon": "🔢", "label": "理論的根拠", "value": "計算可能性理論・情報理論" },
-                { "icon": "🚧", "label": "内容", "value": "解決不能な問題クラスが存在", "tone": "warning" },
-                { "icon": "⚠️", "label": "示唆", "value": "AI 万能論への警鐘", "tone": "danger" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 98 件", "note": "技術者・経営層に響く" }
-              ],
-              "context": "AI 能力の過大評価が続く中、理論的な限界の存在を示す研究は AI 導入判断に重要な視点を与える",
-              "impact": "適切な AI 活用範囲の設定と期待値管理に不可欠な知識。経営層の AI 投資判断にも影響する基礎理論"
-            }
-          }
-        },
-        {
-          "id": "jp-2026-0517-005",
-          "title_ja": "Generative UI のためのフレームワーク OpenUI—はてブ 37 件の実装ガイド",
-          "title": "OpenUI: A Framework for Generative UI",
-          "url": "https://azukiazusa.dev/blog/openui-framework-for-generative-ui/",
-          "source": "azukiazusa",
-          "source_label": "azukiazusa.dev",
-          "source_type": "japan_community",
-          "category": "japan",
-          "published_at": "2026-05-16",
-          "lang": "ja",
-          "summary_ja": "AI が UI コンポーネントをリアルタイムに生成する「Generative UI」のためのフレームワーク「OpenUI」の詳細解説記事。はてなブックマーク 37 件を獲得した。OpenUI はプロンプトに応じて動的に UI を生成し、ユーザーの意図に応じてインターフェースが変化するアプリケーションの開発を可能にするフレームワーク。フロントエンド開発者が AI 機能を組み込む際の抽象化レイヤーを提供し、デザインシステムとの統合方法・コンポーネント生成の仕組みが丁寧に解説されている。AI ファーストの UI 設計が本格的に普及する兆候として注目されている。",
-          "key_points_ja": [
-            "AI がリアルタイムに UI コンポーネントを生成する Generative UI フレームワーク「OpenUI」の詳細解説",
-            "プロンプトに応じて動的に UI が変化するアプリの開発を可能にする抽象化レイヤーを提供",
-            "はてブ 37 件獲得。AI ファーストの UI 設計が本格普及する兆候として日本フロントエンド界で注目"
-          ],
-          "reaction_signal": { "kind": "hatena", "users": 37 },
+          "reaction_signal": { "kind": "hatena", "users": 24 },
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -996,21 +911,153 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Generative-UI", "OpenUI", "frontend", "LLM", "React", "フロントエンド"],
+          "tags": ["Copilot", "Microsoft", "営業", "業務効率化", "Qiita", "はてブ", "日本語"],
           "figure": {
             "type": "summary-card",
-            "caption": "OpenUI の概要",
-            "alt": "OpenUI フレームワークの概要。目的: AI がリアルタイムに UI コンポーネントを生成するGenerative UIを実現、機能: プロンプトに応じてUIが動的に変化、対象: フロントエンド開発者・デザインシステム統合、反響: はてブ37件。",
+            "caption": "Copilot 営業活用検証",
+            "alt": "Copilot営業活用の検証レポート。検証対象: Microsoft Copilot、目的: 営業成績への影響測定、結論: 効果的なシナリオと限定的なシナリオを整理、価値: AI期待値の現実的設定、反響: はてブ24件。",
             "data": {
-              "headline": "AI がリアルタイムに UI を生成する「Generative UI」フレームワーク",
-              "tldr": "プロンプトに応じて UI コンポーネントを動的生成する OpenUI フレームワークの解説記事。フロントエンド開発者向けの AI 統合抽象化レイヤーを提供。はてブ 37 件。",
+              "headline": "Copilot で営業成績は上がるのか—社内実証レポート",
+              "tldr": "Microsoft Copilot を営業業務に実際に導入して成績への影響を検証。感想ではなく定量的な成果を検証した実証レポートとして注目。効果的なシナリオと限定的なシナリオを整理。",
               "points": [
-                { "icon": "🎨", "label": "コンセプト", "value": "Generative UI", "note": "AI がリアルタイムで UI 生成" },
-                { "icon": "⚡", "label": "動的性", "value": "プロンプトで UI が変化", "tone": "primary" },
-                { "icon": "🔧", "label": "対象", "value": "フロントエンド開発者", "note": "デザインシステム統合" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 37 件" }
+                { "icon": "🧪", "label": "検証対象", "value": "Microsoft Copilot × 営業業務", "tone": "primary" },
+                { "icon": "📊", "label": "視点", "value": "定量的な成績への影響を測定" },
+                { "icon": "💡", "label": "知見", "value": "有効 / 限定的シナリオを整理", "note": "現実的期待値の設定に役立つ" },
+                { "icon": "📌", "label": "反響", "value": "はてブ 24 件", "note": "日本ビジネスパーソンに支持" }
               ],
-              "impact": "AI ファーストの UI 設計パターンが実用化に向かっている。フロントエンド開発者が早期に習得すべき技術領域"
+              "impact": "AI ツール導入前に実際の効果を確認したい日本の営業・ビジネスパーソンに有益な実証レポート"
+            }
+          }
+        },
+        {
+          "id": "jp-2026-0517-003",
+          "title": "LLMは正しく使えば、より創造的なアイデアを生み出せる",
+          "title_ja": "LLM は正しく使えばより創造的なアイデアを生み出せる—DIAMOND ハーバード・ビジネス・レビュー",
+          "url": "https://news.yahoo.co.jp/articles/21d71afbfd8b4d7bdd893db69dea721783a0693e",
+          "source": "diamond_hbr",
+          "source_label": "DIAMOND ハーバード・ビジネス・レビュー",
+          "source_type": "japan_community",
+          "category": "japan",
+          "published_at": "2026-05-15",
+          "lang": "ja",
+          "summary_ja": "DIAMOND ハーバード・ビジネス・レビューが掲載した、LLM を正しく活用することで人間の創造性を高められるという研究を紹介する記事。はてなブックマーク 25 件を獲得した。LLM が「創造性を奪う」という懸念に対して、適切な使用法によっては逆に創造的なアイデア生成を促進できることを示す研究知見を解説。発散的思考のプロセスで LLM を「思考の壁打ち相手」として使う方法、アイデアの多様性を維持しながら質を高める使い方など、実践的な知見が含まれている。",
+          "key_points_ja": [
+            "LLM は「創造性を奪う」という懸念に対し、正しい使い方では逆に創造性を高めると研究が示す",
+            "発散的思考で LLM を「思考の壁打ち相手」として活用する方法論を紹介",
+            "はてブ 25 件。AI と創造性の関係に関する HBR の知見が日本ビジネスパーソンに支持される"
+          ],
+          "reaction_signal": { "kind": "hatena", "users": 25 },
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 14,
+            "source_type_bias": 0
+          },
+          "tags": ["創造性", "LLM", "HBR", "ビジネス", "思考法", "はてブ", "日本語"],
+          "figure": {
+            "type": "summary-card",
+            "caption": "LLM と創造性の関係",
+            "alt": "LLM活用と創造性の関係。従来の懸念: LLMが創造性を奪う、研究の知見: 正しく使えば逆に創造性が高まる、活用法: 発散的思考でLLMを壁打ち相手として使う、出典: DIAMOND HBR、反響: はてブ25件。",
+            "data": {
+              "headline": "LLM は正しく使えば創造性を高める—DIAMOND HBR の研究紹介",
+              "tldr": "「LLM が創造性を奪う」という懸念に対し、適切な活用法（壁打ち相手としての発散的思考）では逆に創造的アイデア生成を促進できることを HBR の研究が示す。",
+              "points": [
+                { "icon": "🚫", "label": "従来の懸念", "value": "LLM が創造性を奪う", "note": "一般的なイメージ" },
+                { "icon": "✅", "label": "研究の知見", "value": "正しく使えば創造性が高まる", "tone": "success" },
+                { "icon": "💡", "label": "推奨活用法", "value": "発散的思考での壁打ち相手", "tone": "primary" },
+                { "icon": "📌", "label": "反響", "value": "はてブ 25 件", "note": "日本ビジネスパーソンに支持" }
+              ],
+              "impact": "AI と創造性の共存方法を実践的に学べる。ビジネスでの AI 活用における創造的プロセス設計に直接応用可能"
+            }
+          }
+        },
+        {
+          "id": "jp-2026-0517-004",
+          "title": "ChatGPTの画像生成がさらに便利になる魔法のフレーズ「背景を透明にして」",
+          "title_ja": "ChatGPT 画像生成の「背景を透明にして」で UI/デザイン作業が劇的に楽になる—Gizmodo Japan",
+          "url": "https://www.gizmodo.jp/2026/05/chatgpt_image_2_transparent.html",
+          "source": "gizmodo_jp",
+          "source_label": "Gizmodo Japan",
+          "source_type": "japan_community",
+          "category": "japan",
+          "published_at": "2026-05-16",
+          "lang": "ja",
+          "summary_ja": "ChatGPT の画像生成機能で「背景を透明にして」と指示するだけで透明背景（PNG）の画像が生成できるというテクニックを紹介した Gizmodo Japan の記事。はてなブックマーク 21 件を獲得した。Web デザイン・アプリ UI・資料作成において背景除去は頻繁に必要な作業だが、今までは Photoshop や専用ツールが必要だった。ChatGPT のこの機能により、プロ向けツール不要でワンプロンプトで透明背景素材を生成できる。日本の UI デザイナーや資料作成担当者に特に実用的な情報として拡散された。",
+          "key_points_ja": [
+            "ChatGPT 画像生成で「背景を透明にして」と指示するだけで透明背景 PNG が生成可能",
+            "Photoshop 等の専用ツール不要。Web デザイン・アプリ UI・資料作成で即使える実用テクニック",
+            "はてブ 21 件。日本の UI デザイナー・資料作成担当者に刺さる実践ノウハウとして拡散"
+          ],
+          "reaction_signal": { "kind": "hatena", "users": 21 },
+          "scores": {
+            "importance": 2,
+            "depth": 2,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 14,
+            "source_type_bias": 0
+          },
+          "tags": ["ChatGPT", "画像生成", "透明背景", "PNG", "デザイン", "Gizmodo", "はてブ"],
+          "figure": {
+            "type": "summary-card",
+            "caption": "ChatGPT 透明背景生成テクニック",
+            "alt": "ChatGPT画像生成の透明背景テクニック。指示: 「背景を透明にして」のみ、出力: 透明背景PNG、従来の方法: Photoshop等の専用ツールが必要、新しい方法: ChatGPTにワンプロンプトで依頼するだけ、はてブ: 21件。",
+            "data": {
+              "headline": "ChatGPT に「背景を透明にして」で即 PNG 素材—専用ツール不要",
+              "tldr": "ChatGPT の画像生成で「背景を透明にして」と指示するだけで透明背景 PNG が生成できる。Web デザイン・UI・資料作成でよく必要になる背景除去をワンプロンプトで完了。",
+              "points": [
+                { "icon": "✏️", "label": "指示", "value": "「背景を透明にして」のみ", "tone": "primary" },
+                { "icon": "📁", "label": "出力", "value": "透明背景 PNG", "note": "そのまま使用可能" },
+                { "icon": "🚫", "label": "不要", "value": "Photoshop / 専用ツール", "tone": "success" },
+                { "icon": "📌", "label": "反響", "value": "はてブ 21 件", "note": "デザイナー・資料作成者に支持" }
+              ],
+              "impact": "デザインスキル不問でプロ品質の透明背景素材を生成できる。日本の非デザイナー層の作業効率を直接改善"
+            }
+          }
+        },
+        {
+          "id": "jp-2026-0517-005",
+          "title": "『作って学ぶAIエージェント』を書きました — TypeScriptでコーディングエージェントを自作する本",
+          "title_ja": "「作って学ぶ AI エージェント」出版—TypeScript でコーディングエージェントを自作する技術書",
+          "url": "https://blog.lai.so/build-ai-agent-book/",
+          "source": "lai_blog",
+          "source_label": "blog.lai.so",
+          "source_type": "japan_community",
+          "category": "japan",
+          "published_at": "2026-05-16",
+          "lang": "ja",
+          "summary_ja": "TypeScript と LLM を使って AI エージェントをゼロから自作するための技術書「作って学ぶ AI エージェント」の出版告知記事。はてなブックマーク 17 件を獲得した。Tool Use・Function Calling・マルチエージェント構成・Computer Use など 2026 年に最も需要が高い AI エージェント技術を TypeScript で実装しながら学ぶ構成。Claude Code などのコーディングエージェントを実際に動かす需要が高まる中、エージェントの内部構造を理解したい技術者層に向けた実践的な一冊として日本の AI コミュニティで注目されている。",
+          "key_points_ja": [
+            "TypeScript + LLM で AI エージェントをゼロから自作する技術書が出版。Tool Use・マルチエージェント等を実装",
+            "Claude Code / Codex など現役エージェントの内部構造を理解したい技術者向けの実践的な内容",
+            "はてブ 17 件。2026 年最重要 AI トピックをハンズオンで学べる日本語技術書として注目"
+          ],
+          "reaction_signal": { "kind": "hatena", "users": 17 },
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 15,
+            "source_type_bias": 0
+          },
+          "tags": ["AI-エージェント", "TypeScript", "書籍", "Tool Use", "マルチエージェント", "はてブ", "日本語"],
+          "figure": {
+            "type": "summary-card",
+            "caption": "「作って学ぶ AI エージェント」の概要",
+            "alt": "技術書「作って学ぶAIエージェント」の概要。言語: TypeScript、対象技術: Tool Use・Function Calling・マルチエージェント構成・Computer Use、目標: コーディングエージェントをゼロから実装して内部構造を理解、読者: エージェントを深く理解したい日本語技術者、はてブ: 17件。",
+            "data": {
+              "headline": "TypeScript でゼロから AI エージェントを実装して学ぶ技術書が出版",
+              "tldr": "TypeScript + LLM で AI エージェントをゼロから自作する技術書「作って学ぶ AI エージェント」が出版。Tool Use・マルチエージェント・Computer Use を実装しながら学ぶ構成。",
+              "points": [
+                { "icon": "📘", "label": "言語", "value": "TypeScript", "tone": "primary" },
+                { "icon": "⚙️", "label": "対象技術", "value": "Tool Use / マルチエージェント / Computer Use" },
+                { "icon": "🎯", "label": "目標", "value": "コーディングエージェントの内部構造を実装で理解" },
+                { "icon": "📌", "label": "反響", "value": "はてブ 17 件", "note": "日本 AI 技術者コミュニティで注目" }
+              ],
+              "impact": "Claude Code などのエージェントを深く理解したい日本語話者技術者に向けた実践的リソース"
             }
           }
         }
@@ -1023,103 +1070,93 @@
       "items": [
         {
           "id": "cn-2026-0517-001",
-          "title": "虾马之后又火一个！OpenHuman用20分钟了解你的一切，存成卡帕西式知识库",
-          "title_ja": "OpenHuman: 20 分でユーザーのあらゆる情報を把握し Karpathy 式知識ベースに変換するパーソナル AI",
-          "url": "https://www.qbitai.com/2026/05/418571.html",
+          "title": "百度发布文心5.1：搜索能力登顶国内，预训练成本仅为业界6%",
+          "title_ja": "Baidu が文心 5.1 を発表—国内検索能力でトップ・事前訓練コストは業界比 6% のみ",
+          "url": "https://www.qbitai.com/2026/05/414496.html",
           "source": "qbitai",
-          "source_label": "量子位 (QbitAI)",
+          "source_label": "量子位（QbitAI）",
           "source_type": "china",
           "category": "china",
-          "published_at": "2026-05-16",
+          "published_at": "2026-05-10",
           "lang": "zh",
-          "summary_ja": "量子位が報じた「OpenHuman」は、20 分程度の対話でユーザーのあらゆる情報（習慣・嗜好・知識・関心領域等）を収集し、Andrej Karpathy が提唱するナレッジベース方式で整理するパーソナル AI ツール。GitHub 上でトレンド入りしており、「AI がユーザーを完全に把握する」というコンセプトが話題を呼んでいる。個人の文脈を深く理解したうえで行動提案や情報整理を行い、真の「個人秘書 AI」を実現するツールとして中国の AI コミュニティで注目されている。プライバシーへの懸念も議論されているが、パーソナル AI の次フェーズを示す先端事例として評価されている。",
+          "summary_ja": "百度（Baidu）が文心（Wenxin）5.1 を発表した。量子位（QbitAI）が報じた内容によると、中国国内の検索能力評価でトップに立ちながら、事前訓練コストは業界標準の約 6% にとどめることに成功したとされる。DeepSeek-V4-Pro を超えるエージェント能力を業界比 6% のコストで達成したとする主張は、中国 AI 企業のコスト効率競争が次のフェーズに入ったことを示す。百度は検索事業での AI 統合において長年の知見を持っており、文心 5.1 でその優位性をさらに強化した形。コスト効率と性能の両立は中国の AI エコシステム全体のトレンドとも一致している。",
           "key_points_ja": [
-            "20 分の対話でユーザーの習慣・嗜好・知識を収集し Karpathy 式ナレッジベースとして整理するパーソナル AI",
-            "中国 AI コミュニティでトレンド入り。「AI がユーザーを完全把握する」コンセプトが大きな注目を集める",
-            "パーソナル AI の次フェーズを示す実装事例として評価。プライバシーへの懸念も含め議論が活発"
+            "中国国内の検索 AI 評価でトップを獲得。事前訓練コストは業界比わずか 6% で達成",
+            "DeepSeek-V4-Pro を超えるエージェント能力を業界比 6% のコストで実現と主張",
+            "中国 AI 企業のコスト効率競争が加速。百度の検索 AI 統合における長年の優位性が生きている"
           ],
           "scores": {
-            "importance": 3,
+            "importance": 4,
             "depth": 3,
-            "practicality": 4,
-            "freshness": 5,
-            "total": 15,
+            "practicality": 3,
+            "freshness": 3,
+            "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["personal-AI", "knowledge-base", "China", "Karpathy", "OpenHuman", "量子位"],
+          "tags": ["Baidu", "Wenxin", "文心", "中国AI", "LLM", "コスト効率", "検索AI"],
           "figure": {
-            "type": "summary-card",
-            "caption": "OpenHuman の概要",
-            "alt": "OpenHuman の概要。機能: 20分の対話でユーザー情報を収集し知識ベース化、手法: Karpathy式ナレッジ構造、用途: 真のパーソナル秘書AIの実現、注意: プライバシーへの懸念も議論中。",
+            "type": "comparison",
+            "caption": "文心 5.1 vs 業界標準のコスト比較",
+            "alt": "百度文心5.1の事前訓練コスト比較。業界標準コスト: 100%、文心5.1: 6%。中国国内検索AI評価: 1位。エージェント能力: DeepSeek-V4-Pro比較で優位と主張。",
             "data": {
-              "headline": "20 分でパーソナル知識ベースを構築する AI—Karpathy 式設計",
-              "tldr": "20 分の対話でユーザーの習慣・嗜好・知識を収集し、Karpathy 式ナレッジベースで整理するパーソナル AI。中国 AI コミュニティでトレンド入りし「完全に私を理解する AI」として話題。",
-              "points": [
-                { "icon": "⏱️", "label": "セットアップ", "value": "20 分の対話で完了", "tone": "primary" },
-                { "icon": "🗂️", "label": "構造", "value": "Karpathy 式ナレッジベース" },
-                { "icon": "🤝", "label": "用途", "value": "真のパーソナル秘書 AI" },
-                { "icon": "⚠️", "label": "懸念", "value": "プライバシー議論あり", "tone": "warning" }
+              "headline": "文心 5.1: 業界比 6% のコストで国内検索 AI トップを達成",
+              "before": { "label": "業界標準モデル", "sublabel": "事前訓練コスト基準" },
+              "after": { "label": "文心 5.1（Wenxin 5.1）", "sublabel": "Baidu の新モデル" },
+              "metrics": [
+                { "label": "事前訓練コスト", "before": "100%（業界基準）", "after": "約 6%", "before_pct": 100, "after_pct": 6, "delta": "-94%", "delta_tone": "success" },
+                { "label": "国内検索 AI 評価", "before": "複数社が争う", "after": "国内トップ", "before_pct": 70, "after_pct": 95, "delta": "首位獲得", "delta_tone": "success" },
+                { "label": "エージェント能力", "before": "DeepSeek-V4-Pro 基準", "after": "同等以上と主張", "before_pct": 80, "after_pct": 85, "delta": "優位主張", "delta_tone": "primary" }
               ],
-              "context": "中国では個人情報管理への意識が高まる中でもパーソナル AI 市場が急成長。OpenHuman は先行事例として注目",
-              "impact": "パーソナル AI の次フェーズ（ユーザーの完全理解）を先取りする試み。日本市場への展開可能性も高い"
+              "narrative": "コスト効率と性能の両立を実現した文心 5.1 は中国 AI 競争の新基準を示す",
+              "impact": "中国 AI 企業のコスト効率競争が加速。低コスト高性能モデルの普及が国内 AI 採用を後押しする"
             }
           }
         },
         {
           "id": "cn-2026-0517-002",
-          "title": "中国500万医生的新AI：顶刊独家联手，卷的就是证据源",
-          "title_ja": "中国 500 万人の医師向け AI: 医学トップジャーナルと独占連携し証拠ソースで差別化",
-          "url": "https://www.qbitai.com/2026/05/418491.html",
-          "source": "qbitai",
-          "source_label": "量子位 (QbitAI)",
+          "title": "MiniCPM-V 4.6: A 1.3B Multimodal Model That Runs on a Single RTX 4090",
+          "title_ja": "MiniCPM-V 4.6: RTX 4090 1 枚で動く 1.3B マルチモーダルモデル—清華大スピンオフが Apache 2.0 で公開",
+          "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+          "source": "huggingface_models",
+          "source_label": "Hugging Face Models",
           "source_type": "china",
           "category": "china",
-          "published_at": "2026-05-16",
-          "lang": "zh",
-          "summary_ja": "中国の医療 AI が新たな局面に入り、大手医学専門誌と独占的に連携して証拠ベースの情報源を差別化の軸に置いたシステムが中国の 500 万人の医師向けに展開されていると量子位が報じた。ハルシネーション（幻覚）問題が医療 AI の信頼性を損なっていた課題に対し、権威ある医学誌のデータと独占連携することで「証拠に基づく回答」を保証する設計。中国の医療 DX が急速に進む中、AI による医師支援の精度と信頼性をトップジャーナルとの連携で担保するアプローチは、日本の医療 AI 設計にも参考となる方向性を示している。",
+          "published_at": "2026-05-11",
+          "lang": "en",
+          "summary_ja": "清華大学スピンオフの OpenBMB と ModelBest が MiniCPM-V 4.6（1.3B）を Apache 2.0 ライセンスで公開した。262,144 トークンのコンテキストウィンドウを持ちながら RTX 4090 1 枚で動作する軽量マルチモーダルモデル（テキスト・画像・動画入力に対応）。パラメータ数 1.3B という小規模モデルでありながら、より大きなモデルに匹敵するマルチモーダル推論性能を示すとされており、エッジデバイスやコンシューマー向け GPU での実用展開を想定した設計となっている。中国の研究機関が牽引する「小規模高効率マルチモーダルモデル」トレンドの最新成果として注目される。",
           "key_points_ja": [
-            "トップ医学誌と独占連携し証拠ソースを差別化した医療 AI が中国 500 万人の医師向けに展開",
-            "LLM のハルシネーション問題を権威ある医学誌データとの独占連携で克服するアーキテクチャが核心",
-            "中国医療 DX の急速な展開事例として注目。日本の医療 AI 設計にも参考となる証拠ベースアプローチ"
+            "1.3B パラメータで RTX 4090 1 枚動作。262,144 トークンのコンテキストを持つ軽量マルチモーダルモデル",
+            "テキスト・画像・動画入力に対応。Apache 2.0 で商用利用も可能。エッジ・コンシューマー GPU 向け設計",
+            "清華大スピンオフ OpenBMB が開発。小規模高効率マルチモーダルモデルトレンドの最新成果"
           ],
           "scores": {
-            "importance": 3,
+            "importance": 4,
             "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "total": 14,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["medical-AI", "China", "hallucination", "RAG", "healthcare", "量子位"],
+          "tags": ["MiniCPM", "multimodal", "on-device", "OpenBMB", "Tsinghua", "Apache-2.0", "edge-AI", "中国AI"],
           "figure": {
-            "type": "summary-card",
-            "caption": "中国医療 AI の設計",
-            "alt": "中国の証拠ベース医療AIの設計。対象: 中国500万人の医師、手法: 医学トップジャーナルとの独占連携でRAGの証拠ソースを強化、課題解決: LLMのハルシネーション問題を克服、示唆: 日本の医療AI設計の参考となる。",
+            "type": "comparison",
+            "caption": "MiniCPM-V 4.6 vs 大規模マルチモーダルモデル",
+            "alt": "MiniCPM-V 4.6と大規模マルチモーダルモデルの比較。パラメータ数: 大規模モデルが7B〜70B、MiniCPM-V4.6が1.3B。必要VRAM: 大規模が24GB+、MiniCPM-V4.6がRTX4090（24GB）1枚。コンテキスト: 262,144トークン。ライセンス: Apache 2.0。",
             "data": {
-              "headline": "中国 500 万医師向け証拠ベース医療 AI—トップジャーナルと独占連携",
-              "tldr": "権威ある医学誌との独占連携で「証拠に基づく回答」を保証する医療 AI が中国 500 万人の医師向けに展開。ハルシネーション問題をデータソースの権威性で克服するアプローチ。",
-              "points": [
-                { "icon": "👨‍⚕️", "label": "対象", "value": "中国 500 万人の医師" },
-                { "icon": "📚", "label": "差別化", "value": "医学トップジャーナルと独占連携", "tone": "primary" },
-                { "icon": "✅", "label": "克服課題", "value": "ハルシネーション防止", "tone": "success" },
-                { "icon": "🌏", "label": "示唆", "value": "日本医療 AI の参考モデル" }
+              "headline": "MiniCPM-V 4.6: 1.3B パラメータで RTX 4090 1 枚・26 万トークン対応",
+              "before": { "label": "大規模マルチモーダルモデル", "sublabel": "7B〜70B 規模" },
+              "after": { "label": "MiniCPM-V 4.6", "sublabel": "1.3B / Apache 2.0" },
+              "metrics": [
+                { "label": "パラメータ数", "before": "7B〜70B", "after": "1.3B", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" },
+                { "label": "必要 VRAM", "before": "24GB+（複数 GPU）", "after": "RTX 4090（24GB）1 枚", "before_pct": 100, "after_pct": 30, "delta": "大幅削減", "delta_tone": "success" },
+                { "label": "コンテキスト長", "before": "〜128K トークン", "after": "262,144 トークン", "before_pct": 50, "after_pct": 100, "delta": "+2倍", "delta_tone": "success", "note": "コンシューマー GPU で達成" }
               ],
-              "context": "中国医療 DX はスケールとスピードで世界最先端。証拠ソース連携型 AI は信頼性確保の有力アプローチ",
-              "impact": "ハルシネーション問題への実用的解決策として注目。医療に限らず法律・会計など専門職 AI 全般に応用可能"
+              "narrative": "清華大スピンオフが Apache 2.0 でリリース。小規模で高効率なマルチモーダル AI のエッジ展開を加速",
+              "impact": "エッジデバイス・コンシューマー GPU での本格マルチモーダル AI 実用化が現実的に。オープンソースで商用利用も可能"
             }
           }
         }
       ]
     }
-  ],
-  "skipped_sources": [
-    { "source": "reddit/LocalLLaMA", "reason": "Claude Code is unable to fetch from www.reddit.com" },
-    { "source": "reddit/MachineLearning", "reason": "Claude Code is unable to fetch from www.reddit.com" },
-    { "source": "reddit/singularity", "reason": "Claude Code is unable to fetch from www.reddit.com" },
-    { "source": "importai_substack", "reason": "HTTP 403 Forbidden" },
-    { "source": "ars_technica", "reason": "Claude Code is unable to fetch from arstechnica.com and feeds.arstechnica.com" },
-    { "source": "the_verge", "reason": "Claude Code is unable to fetch from www.theverge.com" },
-    { "source": "mercari_engineering", "reason": "HTTP 403 Forbidden" },
-    { "source": "venturebeat", "reason": "RSS feed returned stale articles from January 2026 (outside 24h window)" }
   ]
 }
