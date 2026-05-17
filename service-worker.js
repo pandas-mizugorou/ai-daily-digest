@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v16: 「閉じる」を scrollIntoView(block:nearest) に統一 (閉じたカードを見失わない)
-const VERSION = "v16";
+// v17: 「閉じる」を rAF + scrollIntoView(block:start) + scroll-margin-top に (確実にカードが見える)
+const VERSION = "v17";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

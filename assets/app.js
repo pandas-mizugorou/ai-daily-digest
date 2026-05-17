@@ -516,8 +516,11 @@ function attachCardEvents(rootEl) {
       const card = collapseBtn.closest(".card");
       if (!card) return;
       collapseCard(card);
-      // 閉じたカードが見える最小限の移動 (既に画面内なら動かさない)
-      card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      // 折りたたみ後にレイアウトが確定してから、カード先頭をヘッダー直下へ
+      // (scroll-margin-top でヘッダー分オフセット。確実にそのカードが見える)
+      requestAnimationFrame(() => {
+        card.scrollIntoView({ block: "start", behavior: "smooth" });
+      });
       return;
     }
     const toggle = e.target.closest(".card-toggle");
