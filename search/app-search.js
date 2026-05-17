@@ -200,8 +200,10 @@ function renderResultCard(item) {
   // 下部「閉じる」ボタン (日次 collapseCard と同じ挙動)
   node.querySelector(".card-collapse-bottom").addEventListener("click", () => {
     node.open = false;
-    // 閉じたカードが見える最小限の移動 (既に画面内なら動かさない)
-    node.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    // 折りたたみ後にレイアウト確定してからカード先頭をヘッダー直下へ
+    requestAnimationFrame(() => {
+      node.scrollIntoView({ block: "start", behavior: "smooth" });
+    });
   });
   return node;
 }

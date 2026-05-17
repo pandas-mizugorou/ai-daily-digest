@@ -1875,3 +1875,9 @@ button { font: inherit; cursor: pointer; }
 .search-card-link:hover {
   text-decoration: underline;
 }
+
+/* 「閉じる」で scrollIntoView した時、sticky ヘッダーにカード先頭が隠れないオフセット */
+.card,
+.search-card {
+  scroll-margin-top: 80px;
+}
