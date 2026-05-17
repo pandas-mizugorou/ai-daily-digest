@@ -516,10 +516,13 @@ function attachCardEvents(rootEl) {
       const card = collapseBtn.closest(".card");
       if (!card) return;
       collapseCard(card);
-      // 折りたたみ後にレイアウトが確定してから、カード先頭をヘッダー直下へ
-      // (scroll-margin-top でヘッダー分オフセット。確実にそのカードが見える)
+      // 折りたたみ後にレイアウト確定 → sticky ヘッダー実高を測り、その下に
+      // カード先頭(タイトル全体)が完全に見える位置へスクロール
       requestAnimationFrame(() => {
-        card.scrollIntoView({ block: "start", behavior: "smooth" });
+        const header = document.querySelector(".site-header");
+        const headerH = header ? header.getBoundingClientRect().height : 0;
+        const y = card.getBoundingClientRect().top + window.scrollY - headerH - 16;
+        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
       });
       return;
     }

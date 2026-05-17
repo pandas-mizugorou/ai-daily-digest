@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v17: 「閉じる」を rAF + scrollIntoView(block:start) + scroll-margin-top に (確実にカードが見える)
-const VERSION = "v17";
+// v18: 「閉じる」でヘッダー実高を動的計測してオフセット (タイトルが隠れない)
+const VERSION = "v18";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
