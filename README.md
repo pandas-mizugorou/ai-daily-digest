@@ -125,11 +125,15 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 
 日次・週次・検索の 3 ページは**同一の展開カード**（要約 + キーポイント + タグ + 図解 + 元記事リンク）を共有する。図解描画は `assets/figure.js` に共通化。検索カードの図解のみ、索引肥大回避のため展開時に該当日 JSON を lazy fetch する。
 
-## X 投稿ネタ連携（Phase F-2）
+## X 投稿文の直接コピー（Phase F-2）
 
-日次・週次・検索の各カード展開部に「𝕏 用にコピー」ボタンがある。押すと記事情報（タイトル / 要約 / キーポイント / URL / ソース / タグ）が `/x-post-drafter` の食いやすい整形テキストでクリップボードにコピーされ、トーストで通知。
+**Top Picks（必読 5-7 件）の記事**に、そのまま X に投稿できる完成文 `x_post` を digest 生成時に Claude が事前生成する（ペルソナ準拠＝「である」調 / 絵文字≤1 / ハッシュタグ0 / 本文 ~120 字 + 元記事 URL、X 無料アカウントでも投稿可）。
 
-使い方: ボタンを押す → Claude Code のセッションで `/x-post-drafter` を起動 → Step 2A「直接指定」にペースト → 投稿案生成。静的サイトからローカル Claude Code スキルは直接起動できないため、F-1 の購読登録と同じ「コピー → Claude に貼る」橋渡し方式。整形ロジックは `assets/xdraft.js` に共通化（3 ページ共有）。
+日次・週次・検索の各カード展開部に、x_post を持つ記事だけ「**𝕏 投稿文をコピー**」ボタンが出る。押すと投稿文がそのままクリップボードにコピーされ、スマホでも X に貼って即投稿できる（x-post-drafter を経由しない）。
+
+- 生成ルール: `references/x-persona.md`（Vault の persona.yaml の複製・手動同期）+ `assets/prompt-templates/x-post.md`。**記事内の事実のみ**（figure と同等の事実厳格さ）
+- 対象は Top Picks のみ。それ以外・実装前の過去記事にはボタンを出さない
+- フロントのコピー処理は `assets/xdraft.js` に共通化（3 ページ共有）。検索は `search-index.json` に x_post を含めて対応
 
 ## 自動更新の仕組み
 
