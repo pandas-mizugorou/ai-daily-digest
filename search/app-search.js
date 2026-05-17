@@ -200,14 +200,15 @@ function renderResultCard(item) {
   // 下部「閉じる」ボタン (日次 collapseCard と同じ挙動)
   node.querySelector(".card-collapse-bottom").addEventListener("click", () => {
     node.open = false;
-    // 折りたたみ後にレイアウト確定 → sticky ヘッダー実高を測り、その下に
-    // カード先頭(タイトル全体)が完全に見える位置へスクロール
-    requestAnimationFrame(() => {
-      const header = document.querySelector(".site-header");
-      const headerH = header ? header.getBoundingClientRect().height : 0;
-      const y = node.getBoundingClientRect().top + window.scrollY - headerH - 16;
-      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
-    });
+    // 折りたたみ reflow 確定まで 2 フレーム待ち、ヘッダー実高分下げて *即時* スクロール
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        const header = document.querySelector(".site-header");
+        const headerH = header ? header.getBoundingClientRect().height : 0;
+        const y = node.getBoundingClientRect().top + window.scrollY - headerH - 16;
+        window.scrollTo(0, Math.max(0, y));
+      })
+    );
   });
   return node;
 }

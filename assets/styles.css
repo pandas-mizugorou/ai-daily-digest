@@ -71,7 +71,9 @@
 
 /* === Reset / base === */
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+/* overflow-anchor: none — details 折りたたみ等のレイアウト変化時にブラウザが
+   勝手にスクロール位置を補正するのを止める (「閉じる」スクロール計算と競合するため) */
+html { -webkit-text-size-adjust: 100%; overflow-anchor: none; }
 body {
   margin: 0;
   background: var(--bg);
