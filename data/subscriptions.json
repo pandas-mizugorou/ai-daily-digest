@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-16",
+  "updated_at": "2026-05-17",
   "subscriptions": [
     {
       "endpoint": "https://fcm.googleapis.com/fcm/send/f9CvK4VGKHM:APA91bHzs2Xr_x6TfUMIxHlHst0bLxDtPT86S_Llh9SAXhE9iM0PrI2oX_AdCgxgHT-5jq5QAH4alZ5fJqrnbEw5KnPJbod8ZHuszfLNu6qQeu0VSrDPnyjuzKxow_yJCLMziK4oGwus",
@@ -13,14 +13,14 @@
       "created_at": "2026-05-16"
     },
     {
-      "endpoint": "https://web.push.apple.com/QJh1clVMMWazVWr4ODGtNEJ_0X207yGT1tNGlS5suaWAt7xLpHDSKGHhlooW5us8q6Dw80b_IuKUgEr9htJW2RUfAO9lh3_1KqJqV3ktfTg1PEzeCso2cNkKeTnzmEkGYhrlM5Mz0yUXjamr2nIQJmerCq6Uy6C6H5rk60Lvdxw",
+      "endpoint": "https://web.push.apple.com/QFzqIU7muclQG2tykuGAaqwOUsthfTv0DR-ICYRLYmb9Cqxa-19eNOpQM1S-A6tn19vcbYqw1-IHzBGyMguTfxvnua8eV0EJi2tKH7EiBULTBthFHi4P8Urje3VJJHQJDe_DQBZIjZ1RX7YbXpZBteQLB3GaHjWBzK87m9p6oNg",
       "expirationTime": null,
       "keys": {
-        "p256dh": "BIdn3VEQ2sEl0qmFHON0z6tVS4sL7x5hRtoei-v8rK32yLpEe4b69uuDXo6ecCBUTRGLLOiSxwtlE54jOQwtsHY",
-        "auth": "6gy4jMpjvoO7ie6S1CRHNw"
+        "p256dh": "BKA2omPcfz3Ipbd8oprdQUFFhjUuABi7Ccs3MoKmAu7TfO6_TdXBa28yFeZsSfsOiZm8v74qA7yyU93fhhd250Y",
+        "auth": "HQIsAc6fV82DFuWlPygYJQ"
       },
       "label": "iPhone (PWA)",
-      "created_at": "2026-05-16"
+      "created_at": "2026-05-17"
     }
   ]
 }
