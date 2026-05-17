@@ -1877,3 +1877,52 @@ button { font: inherit; cursor: pointer; }
 .search-card-link:hover {
   text-decoration: underline;
 }
+
+/* === X ネタにする ボタン (Phase F-2) + トースト === */
+.search-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+.card-xdraft {
+  padding: 6px 12px;
+  min-height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--fg-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+.card-xdraft:hover {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(20px + var(--safe-bottom, 0px));
+  transform: translateX(-50%) translateY(20px);
+  max-width: min(92vw, 480px);
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+.toast.toast-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

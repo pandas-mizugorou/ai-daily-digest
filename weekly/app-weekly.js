@@ -1,5 +1,6 @@
 // AI Daily Digest — weekly summary frontend
 import { renderFigure } from "../assets/figure.js";
+import { copyXDraft } from "../assets/xdraft.js";
 
 const DATA_DIR = "../data";
 const THEME_KEY = "aidd:theme";
@@ -212,6 +213,9 @@ function renderWeeklyItem(item) {
   }
 
   node.querySelector(".search-card-link").href = item.url || "#";
+
+  const xdraftBtn = node.querySelector(".card-xdraft");
+  if (xdraftBtn) xdraftBtn.addEventListener("click", () => copyXDraft(item));
 
   // 下部「閉じる」ボタン (日次 collapseCard と同じ挙動)
   node.querySelector(".card-collapse-bottom").addEventListener("click", () => {

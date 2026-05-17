@@ -222,6 +222,7 @@ function scoreClass(total) {
 // === Figure rendering ===
 // 描画ロジックは assets/figure.js に分離 (日次/週次/検索で共有)。
 import { renderFigure } from "./figure.js";
+import { copyXDraft } from "./xdraft.js";
 
 function articleAnchorId(itemId) {
   return `article-${(itemId || "").replace(/[^\w\-]/g, "")}`;
@@ -313,6 +314,9 @@ function renderCard(item) {
 
   const link = node.querySelector(".card-link");
   link.href = item.url || "#";
+
+  const xdraftBtn = node.querySelector(".card-xdraft");
+  if (xdraftBtn) xdraftBtn.addEventListener("click", () => copyXDraft(item));
 
   const shareBtn = node.querySelector(".card-share");
   if (navigator.share) {
