@@ -1,0 +1,32 @@
+name: Test Push Notification
+
+# Web Push の疎通を単独で素早く確認するための手動 workflow。
+# data/latest.json の headline + data/subscriptions.json の全購読へ
+# 1 回送信するだけ (digest 生成はしない、1-2 分で完了)。
+# 用途: VAPID_PRIVATE_KEY Secret の登録確認 / 購読失効の点検。
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-push:
+    name: Send a test push to all subscriptions
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Send push
+        env:
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+        run: |
+          npm install --no-save web-push@^3
+          node scripts/send-push.mjs
