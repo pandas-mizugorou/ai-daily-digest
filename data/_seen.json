@@ -1,8 +1,152 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-17T05:00:00+09:00",
+  "updated_at": "2026-05-17T10:30:00+09:00",
   "retention_days": 90,
   "entries": {
+    "d7e3f4a5b6c70001": {
+      "url_prefix": "https://huggingface.co/papers/2605.14386",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70002": {
+      "url_prefix": "https://github.com/supertone-inc/supertonic",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70003": {
+      "url_prefix": "https://github.com/obra/superpowers",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70004": {
+      "url_prefix": "https://github.com/colbymchenry/codegraph",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70005": {
+      "url_prefix": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70006": {
+      "url_prefix": "https://arxiv.org/abs/2605.15184",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70007": {
+      "url_prefix": "https://huggingface.co/papers/2605.15155",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70008": {
+      "url_prefix": "https://huggingface.co/papers/2605.15141",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70009": {
+      "url_prefix": "https://huggingface.co/papers/2605.15178",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70010": {
+      "url_prefix": "https://huggingface.co/papers/2605.13301",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70011": {
+      "url_prefix": "https://arxiv.org/abs/2605.15177",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70012": {
+      "url_prefix": "https://huggingface.co/papers/2605.14892",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70013": {
+      "url_prefix": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70014": {
+      "url_prefix": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70015": {
+      "url_prefix": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70016": {
+      "url_prefix": "https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70017": {
+      "url_prefix": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70018": {
+      "url_prefix": "https://kensuu.com/n/n9d1229018d9c",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70019": {
+      "url_prefix": "https://qiita.com/sadabon444/items/026452114ad63efa9aa6",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70020": {
+      "url_prefix": "https://news.yahoo.co.jp/articles/21d71afbfd8b4d7bdd893db69dea721783a0693e",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70021": {
+      "url_prefix": "https://www.gizmodo.jp/2026/05/chatgpt_image_2_transparent.html",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70022": {
+      "url_prefix": "https://blog.lai.so/build-ai-agent-book/",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70023": {
+      "url_prefix": "https://www.qbitai.com/2026/05/414496.html",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
+    "d7e3f4a5b6c70024": {
+      "url_prefix": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "first_seen_at": "2026-05-17",
+      "last_seen_at": "2026-05-17",
+      "last_seen_count": 1
+    },
     "c6f2a3b4e5d60001": {
       "url_prefix": "https://subquadratic.ai/blog/subq-1m-preview",
       "first_seen_at": "2026-05-16",
