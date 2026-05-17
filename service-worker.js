@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v14: 日次/週次/検索カードを統一 (figure.js 共通化、週次・検索に図解展開)
-const VERSION = "v14";
+// v15: 週次・検索カードに下部「閉じる」ボタン追加 (日次と同挙動)
+const VERSION = "v15";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
