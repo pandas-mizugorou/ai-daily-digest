@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-18T05:00:00+09:00",
+  "updated_at": "2026-05-19T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -1369,6 +1369,156 @@
       "url_prefix": "https://qbitai.com/2026/05/sft-before-rl-llm-training",
       "first_seen_at": "2026-05-18",
       "last_seen_at": "2026-05-18",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40001": {
+      "url_prefix": "https://huggingface.co/deepseek-ai/DeepSeek-V4-P",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40002": {
+      "url_prefix": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40003": {
+      "url_prefix": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40004": {
+      "url_prefix": "https://venturebeat.com/orchestration/langsmith-e",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40005": {
+      "url_prefix": "https://github.com/Light-Heart-Labs/DreamServer",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40006": {
+      "url_prefix": "https://github.com/yichuan-w/LEANN",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40007": {
+      "url_prefix": "https://github.com/HKUDS/CLI-Anything",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40008": {
+      "url_prefix": "https://arxiv.org/abs/2605.03042",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40009": {
+      "url_prefix": "https://arxiv.org/abs/2605.12500",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40010": {
+      "url_prefix": "https://huggingface.co/papers/2605.15980",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40011": {
+      "url_prefix": "https://huggingface.co/blog/FINAL-Bench/darwin-pa",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40012": {
+      "url_prefix": "https://arxiv.org/abs/2512.16676",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40013": {
+      "url_prefix": "https://magazine.sebastianraschka.com/p/recent-dev",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40014": {
+      "url_prefix": "https://www.anthropic.com/news/anthropic-acquires-",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40015": {
+      "url_prefix": "https://techcrunch.com/2026/05/18/elon-musk-has-lo",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40016": {
+      "url_prefix": "https://venturebeat.com/security/supply-chain-inci",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40017": {
+      "url_prefix": "https://news.ycombinator.com/item?id=48146369",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40018": {
+      "url_prefix": "https://jack-clark.net/2026/05/18/import-ai-457-ai",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40019": {
+      "url_prefix": "https://zenn.dev/marvelousu/articles/claude-code-r",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40020": {
+      "url_prefix": "https://zenn.dev/takna/articles/secret-leak-preven",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40021": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/benchmark-base-m",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40022": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260518b",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40023": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260514b",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40024": {
+      "url_prefix": "https://www.qbitai.com/2026/05/418027.html",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "f9a619b2c3d40025": {
+      "url_prefix": "https://www.qbitai.com/2026/05/416762.html",
+      "first_seen_at": "2026-05-19",
+      "last_seen_at": "2026-05-19",
       "last_seen_count": 1
     }
   }
