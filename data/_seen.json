@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-19T05:00:00+09:00",
+  "updated_at": "2026-05-20T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -726,8 +726,8 @@
     "a8795430f0209270": {
       "url_prefix": "https://huggingface.co/papers/2605.03042",
       "first_seen_at": "2026-05-12",
-      "last_seen_at": "2026-05-12",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 2
     },
     "1b99490e2685735b": {
       "url_prefix": "https://huggingface.co/papers/2605.07177",
@@ -978,8 +978,8 @@
     "d6ee8e68fab1b9c2": {
       "url_prefix": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
       "first_seen_at": "2026-05-15",
-      "last_seen_at": "2026-05-15",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 2
     },
     "fa34f98af72c9c27": {
       "url_prefix": "https://venturebeat.com/orchestration/claude-codes-goals-separates-the-agent-tha",
@@ -1519,6 +1519,138 @@
       "url_prefix": "https://www.qbitai.com/2026/05/416762.html",
       "first_seen_at": "2026-05-19",
       "last_seen_at": "2026-05-19",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30001": {
+      "url_prefix": "https://blog.google/innovation-and-ai/models-and-r",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30002": {
+      "url_prefix": "https://antigravity.google/blog/introducing-google",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30003": {
+      "url_prefix": "https://techcrunch.com/2026/05/19/google-takes-a-p",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30004": {
+      "url_prefix": "https://github.com/rtk-ai/rtk",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30005": {
+      "url_prefix": "https://www.cnbc.com/2026/05/19/google-ai-ultra-ge",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30006": {
+      "url_prefix": "https://deepmind.google/blog/co-scientist-a-multi-",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30007": {
+      "url_prefix": "https://deepmind.google/models/gemini-omni/",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30008": {
+      "url_prefix": "https://huggingface.co/papers/2605.18678",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30009": {
+      "url_prefix": "https://blog.google/innovation-and-ai/models-and-r",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30010": {
+      "url_prefix": "https://arxiv.org/abs/2605.18703v1",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30011": {
+      "url_prefix": "https://techcrunch.com/2026/05/19/openai-co-founde",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30012": {
+      "url_prefix": "https://www.anthropic.com/news/anthropic-kpmg",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30013": {
+      "url_prefix": "https://arxiv.org/abs/2605.18738v1",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30014": {
+      "url_prefix": "https://techcrunch.com/2026/05/19/elon-musk-said-s",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30015": {
+      "url_prefix": "https://venturebeat.com/technology/google-just-red",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30016": {
+      "url_prefix": "https://www.watch.impress.co.jp/docs/news/2109501.",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30017": {
+      "url_prefix": "https://blog.asial.co.jp/6786/",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30018": {
+      "url_prefix": "https://dev.classmethod.jp/articles/security-on-so",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30019": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/20/2",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30020": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/19/2",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30021": {
+      "url_prefix": "https://36kr.com/p/3799097625926917",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "e8f2a4c6b9d30022": {
+      "url_prefix": "https://36kr.com/p/3806082901122568",
+      "first_seen_at": "2026-05-20",
+      "last_seen_at": "2026-05-20",
       "last_seen_count": 1
     }
   }
