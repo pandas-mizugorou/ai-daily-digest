@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-20T05:00:00+09:00",
+  "updated_at": "2026-05-21T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -1651,6 +1651,144 @@
       "url_prefix": "https://36kr.com/p/3806082901122568",
       "first_seen_at": "2026-05-20",
       "last_seen_at": "2026-05-20",
+      "last_seen_count": 1
+    },
+    "388f97def8c6038a0c2715c1f4a2c60d": {
+      "url_prefix": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "f02c2e1ca30bd7ef619c2c91adc2f135": {
+      "url_prefix": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-o",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "616a2487096d6f112c9d473561bbc649": {
+      "url_prefix": "https://stability.ai/news/stability-audio-3-0",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "8ed713f2da7b868243730a9fcbdbcfb8": {
+      "url_prefix": "https://github.com/antoinezambelli/forge",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "9ba1226ccd02aa8da9a223ddb0d20fd2": {
+      "url_prefix": "https://cloud.google.com/blog/products/application-development/antigravity-2-0-o",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "5c509ff8b23abe3c44f6dc4921e55de6": {
+      "url_prefix": "https://techcrunch.com/2026/05/20/figma-adds-an-ai-assistant-to-its-design-tool/",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "def0a063eb96672450bb7ed9679c0025": {
+      "url_prefix": "https://arxiv.org/abs/2605.19769",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "0ae2841ab47a50d7d16ea89d3db2cc11": {
+      "url_prefix": "https://huggingface.co/papers/2605.20025",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "5e513af90e20f1c75ab5ea91673dec3c": {
+      "url_prefix": "https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-pr",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "04286e3fb33ff9f5e610512ea4ac776f": {
+      "url_prefix": "https://arxiv.org/abs/2605.19577",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "84270b57d9c51ae8efe15fe3d30201f2": {
+      "url_prefix": "https://arxiv.org/abs/2605.20177",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "8ad8deb316081a848527e6a09ec0d5e2": {
+      "url_prefix": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "abe42eb594e9d4a171312f9ba3f164f2": {
+      "url_prefix": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-as-microsoft-deal-re",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "24ab23a4dfbbd20ebd9552a3e31bf93e": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/articles/2605/20/news000.html",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "ae91773f2b55f0eb26c360826fc16aa4": {
+      "url_prefix": "https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "a059f833c3173d3b95a3bba2192dd5b0": {
+      "url_prefix": "https://gigazine.net/news/20260518-ai-run-radio-stations/",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "1ef8cfece753e1c1024b97dff8e31b9a": {
+      "url_prefix": "https://www.publickey1.jp/blog/26/googleantigravity_20osdoom.html",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "be4ce8133bff84a96b0b2a021ef92f85": {
+      "url_prefix": "https://qiita.com/Takashi_Masumori/items/2ace83e1d37c13f01190",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "b9742266e14795b18c8184a477cfe443": {
+      "url_prefix": "https://techno-edge.net/article/2026/05/20/5080.html",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "b139988c5358a47ee2125825b3f6b082": {
+      "url_prefix": "https://baigie.me/officialblog/2026/05/20/llmo/",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "04b3e2de51fdbd0f282ac466d438176e": {
+      "url_prefix": "https://www.digital.go.jp/en/news/2d69c287-f3b1-4de1-9c47-b1e2d4e5f6a8",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "edb69e91e713d0a890d5e750b04b1283": {
+      "url_prefix": "https://arxiv.org/abs/2605.18678",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "8d09485e4b4fda320a9586660c521fa2": {
+      "url_prefix": "https://arxiv.org/abs/2605.11609",
+      "first_seen_at": "2026-05-21",
+      "last_seen_at": "2026-05-21",
       "last_seen_count": 1
     }
   }
