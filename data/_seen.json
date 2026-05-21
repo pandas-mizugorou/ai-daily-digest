@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-21T05:00:00+09:00",
+  "updated_at": "2026-05-22T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -1789,6 +1789,144 @@
       "url_prefix": "https://arxiv.org/abs/2605.11609",
       "first_seen_at": "2026-05-21",
       "last_seen_at": "2026-05-21",
+      "last_seen_count": 1
+    },
+    "90bacf183f61": {
+      "url_prefix": "https://techcrunch.com/2026/05/21/trump-delays-ai-",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "950dba5fdefd": {
+      "url_prefix": "https://www.latent.space/p/daytona",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "c4933f0e2181": {
+      "url_prefix": "https://github.com/multica-ai/multica",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "a26faeebcc87": {
+      "url_prefix": "https://huggingface.co/bytedance-research/Lance",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "f21a3779af87": {
+      "url_prefix": "https://huggingface.co/Supertone/supertonic-3",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "c9619fbeff73": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/21/2",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "724fce5b27c1": {
+      "url_prefix": "https://huggingface.co/circlestone-labs/Anima",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "f0501ee274d3": {
+      "url_prefix": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "f2ef8f8410a8": {
+      "url_prefix": "https://github.com/anthropics/claude-plugins-offic",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "94ec5d23f75f": {
+      "url_prefix": "https://github.com/colbymchenry/codegraph",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "e7785d8c77e3": {
+      "url_prefix": "https://venturebeat.com/technology/google-just-red",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "691d7b5c3998": {
+      "url_prefix": "https://huggingface.co/blog/FINAL-Bench/darwin-pap",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "2937b4fe63a1": {
+      "url_prefix": "https://huggingface.co/blog/huggingface/agent-trac",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "65ea913ba782": {
+      "url_prefix": "https://techcrunch.com/2026/05/21/hark-raises-700m",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "f51443169935": {
+      "url_prefix": "https://openai.com/index/new-ways-to-buy-chatgpt-a",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "1f17c8125a20": {
+      "url_prefix": "https://noslopgrenade.com/",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "00d321dd1852": {
+      "url_prefix": "https://techcrunch.com/2026/05/21/spotify-and-univ",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "6a2fb6775fa7": {
+      "url_prefix": "https://www.itmedia.co.jp/business/articles/2605/2",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "57a135484287": {
+      "url_prefix": "https://cloud.google.com/blog/ja/products/ai-machi",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "4586e1433b7d": {
+      "url_prefix": "https://levtech.jp/media/detail_863/",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "21d794a86629": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260521b",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "4215c3c1b4be": {
+      "url_prefix": "https://developers.freee.co.jp/entry/freee-claude-",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "f9c2ab9ce0a9": {
+      "url_prefix": "https://arxiv.org/abs/2605.12500",
+      "first_seen_at": "2026-05-22",
+      "last_seen_at": "2026-05-22",
       "last_seen_count": 1
     }
   }
