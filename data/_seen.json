@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-22T05:00:00+09:00",
+  "updated_at": "2026-05-23T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -1134,8 +1134,8 @@
     "5ae8aede20b52732": {
       "url_prefix": "https://github.com/colbymchenry/codegraph",
       "first_seen_at": "2026-05-17",
-      "last_seen_at": "2026-05-17",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 2
     },
     "c8f3d928a400ca53": {
       "url_prefix": "https://github.com/K-Dense-AI/scientific-agent-skills",
@@ -1927,6 +1927,138 @@
       "url_prefix": "https://arxiv.org/abs/2605.12500",
       "first_seen_at": "2026-05-22",
       "last_seen_at": "2026-05-22",
+      "last_seen_count": 1
+    },
+    "9d44573c198f670a": {
+      "url_prefix": "https://www.anthropic.com/research/glasswing-initial-update",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "390923d33593bf0e": {
+      "url_prefix": "https://arxiv.org/abs/2605.22794",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "476695a4bb39f625": {
+      "url_prefix": "https://github.com/superset-sh/superset",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "5b33888465df60d4": {
+      "url_prefix": "https://arxiv.org/abs/2605.18678",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "a0a93e0d2600663c": {
+      "url_prefix": "https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "7410e6fc30298c61": {
+      "url_prefix": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "5481a7ed230b0fee": {
+      "url_prefix": "https://bfl.ai/blog",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "f6aa679babd7a46a": {
+      "url_prefix": "https://www.anthropic.com/news",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "22f302b4960578ce": {
+      "url_prefix": "https://arxiv.org/abs/2605.22781",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "1d4ccde51829bfc0": {
+      "url_prefix": "https://arxiv.org/abs/2605.22763",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "d64fb055e7ebddc6": {
+      "url_prefix": "https://arxiv.org/abs/2605.22817",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "94e2733bab9bdea3": {
+      "url_prefix": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "5745b9b8bd6e9623": {
+      "url_prefix": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "df38744af8f71d7c": {
+      "url_prefix": "https://annas-archive.gl/blog/llms-txt.html",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "8fb873f9016a7340": {
+      "url_prefix": "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "64283b13b4dc6e5c": {
+      "url_prefix": "https://www.keisuke69.net/entry/2026/05/22/073948",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "2cbaab4a6ad42552": {
+      "url_prefix": "https://atmarkit.itmedia.co.jp/ait/articles/2605/22/news012.html",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "94b8b054d1df0832": {
+      "url_prefix": "https://goodpatch.com/blog/2026-05-prototype",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "a170fb2d835af218": {
+      "url_prefix": "https://zenn.dev/kenimo49/articles/code-review-6-stages-ai-human-boundary",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "9b64f0b83e7b3615": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/22/2000000017/",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "8eb12065b9344787": {
+      "url_prefix": "https://api-docs.deepseek.com/quick_start/pricing",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "6f7e679f8408175b": {
+      "url_prefix": "https://huggingface.co/tencent/Hy-MT2-1.8B",
+      "first_seen_at": "2026-05-23",
+      "last_seen_at": "2026-05-23",
       "last_seen_count": 1
     }
   }
