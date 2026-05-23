@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-23T05:00:00+09:00",
+  "updated_at": "2026-05-24T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -2059,6 +2059,138 @@
       "url_prefix": "https://huggingface.co/tencent/Hy-MT2-1.8B",
       "first_seen_at": "2026-05-23",
       "last_seen_at": "2026-05-23",
+      "last_seen_count": 1
+    },
+    "f6520002322b02d3": {
+      "url_prefix": "https://cohere.com/blog/command-a-plus",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "60d9564ab432d217": {
+      "url_prefix": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "754596d2e7de1efe": {
+      "url_prefix": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "3de13b42e404c830": {
+      "url_prefix": "https://github.com/anthropics/claude-plugins-official",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "c7303c79f2d70d57": {
+      "url_prefix": "https://github.com/Understand-Anything/understand-anything",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "5d786ce9c09f232b": {
+      "url_prefix": "https://arxiv.org/abs/2605.22794",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "805c6fa92aba3432": {
+      "url_prefix": "https://arxiv.org/abs/2605.22781",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "cfd3c89bdd6acd65": {
+      "url_prefix": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "deef734adb7a1ba0": {
+      "url_prefix": "https://arxiv.org/abs/2605.22763",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "f435d4784550a265": {
+      "url_prefix": "https://arxiv.org/abs/2605.22791",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "186e6f2dc23eeb5d": {
+      "url_prefix": "https://arxiv.org/abs/2605.03042",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "05045fbcb55dd4a3": {
+      "url_prefix": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "fe200fe72e51cc11": {
+      "url_prefix": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "8b32ced2a09fa6cc": {
+      "url_prefix": "https://www.nikkei.com/article/DGXZQOGN230660T20C26A5000000/",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "f27e1e5b7a64ef75": {
+      "url_prefix": "https://github.com/forrestchang/andrej-karpathy-skills",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "1c05b1e324a2254e": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260521b",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "b27f696c5cd5a92d": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260518b",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "ed5a40fc4f4db1ba": {
+      "url_prefix": "https://keisuke69.hatenablog.com/entry/2026/05/22/ai-tool-democratization-skepticism",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "f4a1691b905b1378": {
+      "url_prefix": "https://zenn.dev/remitaid/articles/4f9dc787b6c191",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "85fcc75b36e5efaf": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/22/2000000017.html",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "bea6d6b2c936fddf": {
+      "url_prefix": "https://eu.36kr.com/en/p/3784369980660996",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
+      "last_seen_count": 1
+    },
+    "665d8410f3f9a118": {
+      "url_prefix": "https://qwen.ai/blog?id=qwen3.7",
+      "first_seen_at": "2026-05-24",
+      "last_seen_at": "2026-05-24",
       "last_seen_count": 1
     }
   }
