@@ -1,12 +1,15 @@
 // 日次ダイジェスト更新完了後に Web Push 通知を送る。
 // daily-digest.yml の digest ジョブで「Commit and push」の直後に実行される。
 //
-//   VAPID_PRIVATE_KEY=<secret> node scripts/send-push.mjs
+//   VAPID_PRIVATE_KEY=<secret> SUBSCRIPTIONS_JSON='{...}' node scripts/send-push.mjs
 //
 // 設計方針:
 // - 購読 0 件 / VAPID_PRIVATE_KEY 未設定 / 送信失敗 でも exit 0 (digest を落とさない)
 // - 410/404 を返したエンドポイントは「失効」としてログに出すだけ (自動削除はしない)
 // - 公開鍵は公開情報なので定数で持つ。assets/app.js の VAPID_PUBLIC_KEY と一致させること
+// - 購読情報 (endpoint) は端末識別情報のため public リポジトリには含めない。
+//   本番(GitHub Actions)は Secret 由来の SUBSCRIPTIONS_JSON を優先し、
+//   ローカル開発のみ data/subscriptions.json (gitignore 済) にフォールバックする。
 
 import { readFile } from "node:fs/promises";
 import process from "node:process";
@@ -30,6 +33,22 @@ async function readJson(path) {
   }
 }
 
+// 購読の読込元: 本番では Secret 由来の SUBSCRIPTIONS_JSON 環境変数を優先。
+// 未設定/パース不能ならローカルの data/subscriptions.json にフォールバックする。
+async function loadSubscriptions() {
+  const raw = process.env.SUBSCRIPTIONS_JSON;
+  if (raw && raw.trim()) {
+    try {
+      return JSON.parse(raw);
+    } catch (err) {
+      console.warn(
+        `[send-push] SUBSCRIPTIONS_JSON env のパースに失敗 (${err.message})。${SUBS_PATH} にフォールバックします。`,
+      );
+    }
+  }
+  return readJson(SUBS_PATH);
+}
+
 function fmtTitle(dateStr) {
   // "2026-05-16" → "AI Daily Digest 5/16"
   const m = String(dateStr || "").match(/^\d{4}-(\d{2})-(\d{2})$/);
@@ -46,7 +65,7 @@ async function main() {
     return;
   }
 
-  const subsFile = await readJson(SUBS_PATH);
+  const subsFile = await loadSubscriptions();
   const subscriptions = subsFile?.subscriptions ?? [];
   if (subscriptions.length === 0) {
     console.log("[send-push] 購読が 0 件のためスキップします。");
@@ -100,7 +119,7 @@ async function main() {
   );
   if (expired.length > 0) {
     console.log(
-      "[send-push] 失効エンドポイントは data/subscriptions.json から手動削除を検討してください:",
+      "[send-push] 失効エンドポイントは SUBSCRIPTIONS_JSON Secret (ローカルは data/subscriptions.json) から手動削除を検討してください:",
     );
     for (const e of expired) console.log("  - " + e);
   }
