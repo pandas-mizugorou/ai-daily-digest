@@ -94,6 +94,14 @@ function formatWeekRangeShort(from, to) {
   return `${parseInt(f[1], 10)}/${parseInt(f[2], 10)} 〜 ${parseInt(t[1], 10)}/${parseInt(t[2], 10)}`;
 }
 
+// カードの参照日付/published_at を M/D へ正規化（生ISO・日付混在を吸収）
+function formatShortDate(value) {
+  if (!value) return "";
+  const m = String(value).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return String(value);
+  return `${Number(m[2])}/${Number(m[3])}`;
+}
+
 // === Index loading ===
 async function loadIndex() {
   try {
@@ -103,7 +111,7 @@ async function loadIndex() {
     return data;
   } catch (err) {
     console.warn("loadIndex failed (weekly-index.json may not exist yet)", err);
-    showStatus("週次サマリはまだ生成されていません。最初の週次は金曜朝に自動配信されます。");
+    showStatus("週次サマリはまだ生成されていません。最初の週次は日曜朝に自動配信されます。");
     return null;
   }
 }
@@ -189,7 +197,7 @@ function renderWeeklyItem(item) {
   node.querySelector(".weekly-title-text").textContent = titleText;
 
   node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
-  node.querySelector(".search-card-date").textContent = item._date || item.published_at || "";
+  node.querySelector(".search-card-date").textContent = formatShortDate(item._date || item.published_at);
   node.querySelector(".search-card-score").textContent = `★ ${item.scores?.total ?? 0}`;
 
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
@@ -417,7 +425,7 @@ async function route() {
   const hashWeek = weekFromHash();
   const week = hashWeek && availableWeeks.includes(hashWeek) ? hashWeek : availableWeeks[0];
   if (!week) {
-    showStatus("週次サマリはまだ生成されていません。最初の週次は金曜朝に自動配信されます。");
+    showStatus("週次サマリはまだ生成されていません。最初の週次は日曜朝に自動配信されます。");
     return;
   }
   if (week !== currentWeek) await loadWeek(week);

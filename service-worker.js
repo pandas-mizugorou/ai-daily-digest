@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v22: UI — 日次ファーストビュー刷新 (必読を上/要約を畳む) + ヘッダー単色SVGアイコン + 日付表記正規化
-const VERSION = "v22";
+// v23: UI — 週次/検索ページのヘッダーを単色SVGアイコン化 + 日付 M/D 正規化 (日次と統一) + 週次の金曜→日曜 文言修正
+const VERSION = "v23";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
