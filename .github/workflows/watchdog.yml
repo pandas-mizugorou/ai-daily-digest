@@ -1,0 +1,111 @@
+name: Digest watchdog
+
+# ダイジェストの「異常を能動検知」する安全網 (fail-safe alert)。
+#
+# 毎日 JST 12:15 に独立実行し、main 上の当日の日次ダイジェストが
+#   (a) 生成されているか  (b) 件数が劣化していないか
+# を検査する。さらに日曜は当週の週次サマリの有無も検査する。
+# 問題があればリポジトリオーナー宛に GitHub Issue を 1 本立てて必ず気づけるようにする。
+#
+# なぜ独立ジョブ・別実行か:
+#   本体 (daily-digest.yml) や 自動リトライ (retry-failed.yml) の中に通知を置いても、
+#   ランナーがプリエンプション (exit 143) で丸ごと死ぬと検知ごと消える。後から走る
+#   本 watchdog なら、それらが全滅していても動く。"success 表示で失敗に気づけない" を解消する。
+#
+# 通知に Push でなく GitHub Issue を使う理由:
+#   Web Push の購読は失効し得る。Issue + assignee なら GitHub 通知 (メール含む) で確実に届く。
+#
+# 発火: 毎日 03:15 UTC = 12:15 JST。本体 (公称 JST 01:30、混雑時は数時間遅延) + リトライが
+#       終わるのに十分な余裕を取る。
+
+on:
+  schedule:
+    - cron: "15 3 * * *"   # 毎日 03:15 UTC = 12:15 JST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    name: Alert if today's digest is missing or degraded
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (latest)
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+          ref: main
+
+      - name: Inspect today's daily (and Sunday weekly), open an issue on problems
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          set -uo pipefail
+          # 日付・曜日・ISO週は必ず JST で確定する (runner は UTC)
+          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+          DOW=$(TZ=Asia/Tokyo date +%u)          # 1=Mon .. 7=Sun
+          ISO_WEEK=$(TZ=Asia/Tokyo date +%G-W%V)
+          DAILY="data/${TODAY}.json"
+          echo "Checking ${TODAY} (DOW=${DOW}, ISO_WEEK=${ISO_WEEK})"
+
+          PROBLEMS=()
+
+          # ---- 日次チェック ----
+          if [ ! -f "${DAILY}" ]; then
+            PROBLEMS+=("🔴 日次未生成: ${DAILY} が main にありません（本体＋自動リトライが両方失敗した可能性）")
+          else
+            SELECTED=$(node -e "process.stdout.write(String((JSON.parse(require('fs').readFileSync('${DAILY}','utf8')).stats||{}).selected ?? -1))")
+            PICKS=$(node -e "process.stdout.write(String((JSON.parse(require('fs').readFileSync('${DAILY}','utf8')).stats||{}).top_picks_count ?? -1))")
+            SKIPPED=$(node -e "const j=JSON.parse(require('fs').readFileSync('${DAILY}','utf8'));process.stdout.write(String(Array.isArray(j.skipped_sources)?j.skipped_sources.length:0))")
+            echo "daily stats: selected=${SELECTED} top_picks=${PICKS} skipped_sources=${SKIPPED}"
+            if [ "${SELECTED}" -ge 0 ] && [ "${SELECTED}" -lt 10 ]; then
+              PROBLEMS+=("🟡 選定件数が少ない: ${SELECTED} 件（平常 22-25）。ソース取得が大きく失敗した可能性")
+            fi
+            if [ "${PICKS}" -ge 0 ] && [ "${PICKS}" -lt 3 ]; then
+              PROBLEMS+=("🟡 Top Picks が少ない: ${PICKS} 件（平常 5-7）。必読キュレーションが劣化")
+            fi
+            if [ "${SKIPPED}" -gt 30 ]; then
+              PROBLEMS+=("🟡 skipped_sources が異常に多い: ${SKIPPED} 件（平常 約12）。広域のソース障害の可能性")
+            fi
+          fi
+
+          # ---- 週次チェック（日曜のみ）----
+          if [ "${DOW}" = "7" ]; then
+            WEEKLY="data/weekly-${ISO_WEEK}.json"
+            if [ ! -f "${WEEKLY}" ]; then
+              PROBLEMS+=("🔴 週次未生成: ${WEEKLY} が main にありません（${ISO_WEEK}）")
+            fi
+          fi
+
+          # ---- 判定 ----
+          if [ "${#PROBLEMS[@]}" -eq 0 ]; then
+            echo "OK: ${TODAY} は異常なし。Issue は作りません。"
+            exit 0
+          fi
+          echo "検知した問題:"; printf '  - %s\n' "${PROBLEMS[@]}"
+
+          # 同日の open issue があれば二重作成しない
+          EXISTING=$(gh issue list --state open --search "${TODAY} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
+          if [ "${EXISTING}" != "0" ]; then
+            echo "同日 (${TODAY}) の open issue が既にあるためスキップ。"
+            exit 0
+          fi
+
+          {
+            echo "watchdog が ${TODAY} (JST) のダイジェストに以下の問題を検知しました。"
+            echo ""
+            for p in "${PROBLEMS[@]}"; do echo "- ${p}"; done
+            echo ""
+            echo "## 手動復旧の目安"
+            echo "- 日次が未生成/劣化 → Actions タブ → 「AI Daily Digest」の該当 run → 「Re-run failed jobs」、またはローカルで /ai-daily-digest"
+            echo "- 週次が未生成 → 該当する日曜の run を「Re-run failed jobs」、またはローカルで /ai-daily-digest --weekly-only"
+            echo ""
+            echo "この Issue は watchdog (.github/workflows/watchdog.yml) が自動作成しました。誤報ならクローズして問題ありません。"
+          } > issue_body.md
+
+          TITLE="⚠️ AI Digest watchdog: ${TODAY} に問題検知"
+          gh issue create --title "${TITLE}" --body-file issue_body.md --assignee "${OWNER}"
+          echo "Issue を作成しました: ${TITLE}"
