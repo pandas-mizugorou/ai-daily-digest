@@ -1971,3 +1971,54 @@ button { font: inherit; cursor: pointer; }
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* ============================================================ */
+/* === UI polish (静かな上質): フェード / スケルトン / sticky タブ === */
+/* ============================================================ */
+
+/* 1. カード開閉の微フェード (展開時のみ。reduced-motion は全体ブロックで無効化済) */
+@keyframes card-body-in {
+  from { opacity: 0; transform: translateY(3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card[data-expanded="true"] .card-body { animation: card-body-in 0.16s ease; }
+.search-card[open] .search-card-body { animation: card-body-in 0.16s ease; }
+
+/* 2. スケルトン読込 (体感速度向上) */
+.skeleton-block, .skeleton-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+  overflow: hidden;
+}
+.skel-summary { height: 116px; margin-bottom: 24px; }
+.skeleton-card { height: 84px; margin-bottom: 12px; }
+.skeleton-block::after, .skeleton-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent,
+    color-mix(in srgb, var(--fg-subtle) 14%, transparent), transparent);
+  transform: translateX(-100%);
+  animation: skel-shimmer 1.3s ease-in-out infinite;
+}
+@keyframes skel-shimmer { to { transform: translateX(100%); } }
+
+/* 4. カテゴリ/週次セクションタブの sticky 化 (検索のタグは header 内なので対象外) */
+#category-tabs, #weekly-section-tabs {
+  position: sticky;
+  top: var(--header-h, 0px);
+  z-index: 5;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+}
+
+/* 5. 週次/検索カードの本文も 2 行リードに畳む (日次カードと統一) */
+.search-card-text.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
