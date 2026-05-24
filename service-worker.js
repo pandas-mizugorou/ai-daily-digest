@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v21: Phase F-2 改訂 — Top Picks に x_post を事前生成し「𝕏 投稿文をコピー」へ
-const VERSION = "v21";
+// v22: UI — 日次ファーストビュー刷新 (必読を上/要約を畳む) + ヘッダー単色SVGアイコン + 日付表記正規化
+const VERSION = "v22";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

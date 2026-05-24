@@ -10,6 +10,7 @@ const els = {
   summaryStats: document.getElementById("summary-stats"),
   summaryHeadline: document.getElementById("summary-headline"),
   summaryText: document.getElementById("summary-text"),
+  summaryToggle: document.getElementById("summary-toggle"),
   topPicks: document.getElementById("top-picks"),
   categoryTabs: document.getElementById("category-tabs"),
   categories: document.getElementById("categories"),
@@ -84,6 +85,16 @@ function formatDateJa(iso) {
   const date = new Date(y, m - 1, d);
   const w = ["日", "月", "火", "水", "木", "金", "土"][date.getDay()];
   return `${y}年${m}月${d}日 (${w})`;
+}
+
+// カード等の published_at を M/D に正規化する。
+// "2026-05-23" も "2026-05-23T00:00:00Z" も "5/23" に揃える。
+// 解析できない値はそのまま返す（壊さない）。
+function formatShortDate(value) {
+  if (!value) return "";
+  const m = String(value).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return String(value);
+  return `${Number(m[2])}/${Number(m[3])}`;
 }
 
 // === Index loading ===
@@ -279,7 +290,7 @@ function renderCard(item) {
   titleJaEl.textContent = secondary;
   const sourceLabel = item.source_label || item.source || "";
   node.querySelector(".card-source").textContent = sourceLabel;
-  node.querySelector(".card-date").textContent = item.published_at || "";
+  node.querySelector(".card-date").textContent = formatShortDate(item.published_at);
   const scoreEl = node.querySelector(".card-score");
   const total = item.scores?.total ?? 0;
   scoreEl.textContent = `★ ${total}`;
@@ -442,6 +453,18 @@ function renderDay(data) {
   }
   els.summaryHeadline.textContent = data.headline || "";
   els.summaryText.textContent = data.summary_ja || "";
+  // 総括は既定で 3 行に畳む。実際に溢れる場合のみ「続きを読む」を出す
+  els.summaryText.classList.add("clamped");
+  if (els.summaryToggle) {
+    els.summaryToggle.classList.add("hidden");
+    els.summaryToggle.textContent = "続きを読む";
+    els.summaryToggle.setAttribute("aria-expanded", "false");
+    requestAnimationFrame(() => {
+      if (els.summaryText.scrollHeight - els.summaryText.clientHeight > 4) {
+        els.summaryToggle.classList.remove("hidden");
+      }
+    });
+  }
 
   els.categories.innerHTML = "";
   const rawCategories = Array.isArray(data.categories) ? data.categories : [];
@@ -562,6 +585,13 @@ if (els.categoryTabs) {
     filterCategoriesByTab(btn.dataset.catId);
   });
 }
+
+// 総括の「続きを読む / 閉じる」トグル
+els.summaryToggle?.addEventListener("click", () => {
+  const clamped = els.summaryText.classList.toggle("clamped");
+  els.summaryToggle.textContent = clamped ? "続きを読む" : "閉じる";
+  els.summaryToggle.setAttribute("aria-expanded", String(!clamped));
+});
 
 els.dateSelect.addEventListener("change", (e) => {
   if (e.target.value) location.hash = `#${e.target.value}`;
