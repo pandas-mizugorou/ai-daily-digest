@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v23: UI — 週次/検索ページのヘッダーを単色SVGアイコン化 + 日付 M/D 正規化 (日次と統一) + 週次の金曜→日曜 文言修正
-const VERSION = "v23";
+// v24: UI — 展開カードの本文要約を既定2行クランプ+「続きを読む」(figure と重複する長文を軽量化)
+const VERSION = "v24";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
