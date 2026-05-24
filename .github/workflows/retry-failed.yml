@@ -1,0 +1,42 @@
+name: Retry failed AI Daily Digest
+
+# AI Daily Digest 本体 (daily-digest.yml) が cancelled / failure で終わったとき、
+# 失敗したジョブだけを自動で「1 回だけ」再実行する自己修復ワークフロー。
+#
+# 動機:
+#   GitHub ホストランナーの一時的なプリエンプション
+#   ("The runner has received a shutdown signal" / exit 143) で週次ジョブが落ちると、
+#   週次は週 1 回 (日曜) しか走らないため、丸 1 週間ニュースが欠落してしまう。
+#   2026-05-24 (W21) の週次がまさにこれで欠落した。その恒久対策。
+#
+# 仕組み:
+#   - 本体 workflow の完了イベント (workflow_run) を購読
+#   - conclusion が failure / cancelled のときだけ発火
+#   - `gh run rerun --failed` は成功済みジョブ (例: 30 分かかる日次) をスキップし、
+#     失敗 / キャンセルされたジョブ (例: 週次) だけを再実行するため安全かつ低コスト
+#   - run_attempt < 2 ガードで「自動リトライは 1 回まで」を保証し、再実行も落ちた
+#     場合に無限ループしないようにする (手動で再実行すればよい)
+#
+# 注意: workflow_run トリガーはデフォルトブランチ (main) 上の本ファイルでのみ有効。
+
+on:
+  workflow_run:
+    workflows: ["AI Daily Digest"]
+    types: [completed]
+
+permissions:
+  actions: write   # gh run rerun に必要
+
+jobs:
+  rerun:
+    name: Re-run failed jobs once
+    runs-on: ubuntu-latest
+    if: ${{ (github.event.workflow_run.conclusion == 'failure' || github.event.workflow_run.conclusion == 'cancelled') && github.event.workflow_run.run_attempt < 2 }}
+    steps:
+      - name: Re-run failed jobs of the original run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Run ${{ github.event.workflow_run.id }} concluded '${{ github.event.workflow_run.conclusion }}' (attempt ${{ github.event.workflow_run.run_attempt }})."
+          echo "Re-running only the failed/cancelled jobs (already-succeeded jobs such as the daily digest are skipped)..."
+          gh run rerun ${{ github.event.workflow_run.id }} --failed -R ${{ github.repository }}
