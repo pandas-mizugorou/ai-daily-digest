@@ -179,8 +179,18 @@ function renderResultCard(item) {
   node.querySelector(".search-card-title").textContent = pickTitle(item);
   node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
   node.querySelector(".search-card-date").textContent = formatShortDate(item.date);
-  node.querySelector(".search-card-score").textContent = `★ ${item.score ?? 0}`;
+  node.querySelector(".search-card-score").textContent = `★ ${item.score ?? 0}/20`;
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
+  // 本文 clamp + 「続きを読む」(figure と重複する長文を 2 行に、日次と統一)
+  const sText = node.querySelector(".search-card-text");
+  const sToggle = node.querySelector(".card-summary-toggle");
+  if (sText && sToggle) {
+    sToggle.addEventListener("click", () => {
+      const clamped = sText.classList.toggle("clamped");
+      sToggle.textContent = clamped ? "続きを読む" : "閉じる";
+      sToggle.setAttribute("aria-expanded", String(!clamped));
+    });
+  }
   const ul = node.querySelector(".search-card-points");
   for (const p of item.key_points_ja || []) {
     const li = document.createElement("li");
@@ -209,6 +219,12 @@ function renderResultCard(item) {
     if (node.open && !figLoaded) {
       figLoaded = true;
       loadFigureInto(item, figEl);
+    }
+    // 本文が 2 行を超える時だけ「続きを読む」を表示
+    if (node.open && sText && sToggle && sText.classList.contains("clamped")) {
+      requestAnimationFrame(() => {
+        if (sText.scrollHeight - sText.clientHeight > 4) sToggle.classList.remove("hidden");
+      });
     }
   });
 

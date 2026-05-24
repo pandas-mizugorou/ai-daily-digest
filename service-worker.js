@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v24: UI — 展開カードの本文要約を既定2行クランプ+「続きを読む」(figure と重複する長文を軽量化)
-const VERSION = "v24";
+// v25: UI polish — カード開閉フェード + スケルトン読込 + スコア★/20 + カテゴリタブ sticky + 週次/検索カードの本文クランプ
+const VERSION = "v25";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

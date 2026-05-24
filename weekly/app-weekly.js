@@ -73,6 +73,13 @@ function showStatus(message, isError = false) {
 }
 function hideStatus() { els.status.classList.add("hidden"); }
 
+// sticky セクションタブの位置決め用に sticky ヘッダーの実高を CSS 変数へ
+function updateHeaderHeightVar() {
+  const h = document.querySelector(".site-header")?.getBoundingClientRect().height;
+  if (h) document.documentElement.style.setProperty("--header-h", `${Math.round(h)}px`);
+}
+window.addEventListener("resize", updateHeaderHeightVar);
+
 // === Fetch ===
 async function fetchJSON(url, { cache = "default" } = {}) {
   const bust = cache === "no-store" ? `?t=${Date.now()}` : "";
@@ -198,9 +205,27 @@ function renderWeeklyItem(item) {
 
   node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
   node.querySelector(".search-card-date").textContent = formatShortDate(item._date || item.published_at);
-  node.querySelector(".search-card-score").textContent = `★ ${item.scores?.total ?? 0}`;
+  node.querySelector(".search-card-score").textContent = `★ ${item.scores?.total ?? 0}/20`;
 
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
+
+  // 本文は既定 2 行に畳み「続きを読む」で全文 (figure と重複する長文を軽量化、日次と統一)
+  const sText = node.querySelector(".search-card-text");
+  const sToggle = node.querySelector(".card-summary-toggle");
+  if (sText && sToggle) {
+    sToggle.addEventListener("click", () => {
+      const clamped = sText.classList.toggle("clamped");
+      sToggle.textContent = clamped ? "続きを読む" : "閉じる";
+      sToggle.setAttribute("aria-expanded", String(!clamped));
+    });
+    node.addEventListener("toggle", () => {
+      if (node.open && sText.classList.contains("clamped")) {
+        requestAnimationFrame(() => {
+          if (sText.scrollHeight - sText.clientHeight > 4) sToggle.classList.remove("hidden");
+        });
+      }
+    });
+  }
 
   const figEl = node.querySelector(".card-figure");
   if (item.figure && figEl) renderFigure(item.figure, figEl);
@@ -475,4 +500,6 @@ if ("serviceWorker" in navigator) {
 (async function boot() {
   await loadIndex();
   await route();
+  updateHeaderHeightVar();
+  requestAnimationFrame(updateHeaderHeightVar);
 })();
