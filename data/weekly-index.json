@@ -1,6 +1,14 @@
 {
   "entries": [
     {
+      "week": "2026-W21",
+      "from": "2026-05-18",
+      "to": "2026-05-24",
+      "headline": "Google I/Oでエージェント時代を宣言、AnthropicのGlasswingが脆弱性1万件超を検出、MOSS論文でソースコード自己書き換えが現実に",
+      "top_count": 11,
+      "selected_items": 28
+    },
+    {
       "week": "2026-W20",
       "from": "2026-05-11",
       "to": "2026-05-17",
