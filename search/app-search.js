@@ -93,6 +93,14 @@ function pickTitle(item) {
   return en || ja || "(無題)";
 }
 
+// 日付を M/D へ正規化（生ISO・日付混在を吸収）
+function formatShortDate(value) {
+  if (!value) return "";
+  const m = String(value).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return String(value);
+  return `${Number(m[2])}/${Number(m[3])}`;
+}
+
 function applyFilter() {
   const raw = els.searchInput.value.trim().toLowerCase();
   const terms = raw ? raw.split(/\s+/) : [];
@@ -170,7 +178,7 @@ function renderResultCard(item) {
   const node = els.resultTpl.content.firstElementChild.cloneNode(true);
   node.querySelector(".search-card-title").textContent = pickTitle(item);
   node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
-  node.querySelector(".search-card-date").textContent = item.date || "";
+  node.querySelector(".search-card-date").textContent = formatShortDate(item.date);
   node.querySelector(".search-card-score").textContent = `★ ${item.score ?? 0}`;
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
   const ul = node.querySelector(".search-card-points");
