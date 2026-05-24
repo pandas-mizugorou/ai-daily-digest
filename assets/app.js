@@ -71,6 +71,24 @@ function showStatus(message, isError = false) {
 }
 function hideStatus() { els.status.classList.add("hidden"); }
 
+// 読み込み中のスケルトン (体感速度向上)
+function showSkeleton() {
+  hideStatus();
+  els.summary.classList.add("hidden");
+  if (els.topPicks) els.topPicks.classList.add("hidden");
+  if (els.categoryTabs) els.categoryTabs.classList.add("hidden");
+  els.categories.innerHTML =
+    '<div class="skeleton-block skel-summary"></div>' +
+    '<div class="skeleton-card"></div>'.repeat(4);
+}
+
+// sticky タブの位置決め用に、sticky ヘッダーの実高を CSS 変数へ反映
+function updateHeaderHeightVar() {
+  const h = document.querySelector(".site-header")?.getBoundingClientRect().height;
+  if (h) document.documentElement.style.setProperty("--header-h", `${Math.round(h)}px`);
+}
+window.addEventListener("resize", updateHeaderHeightVar);
+
 // === Fetch ===
 async function fetchJSON(url, { cache = "default" } = {}) {
   const bust = cache === "no-store" ? `?t=${Date.now()}` : "";
@@ -303,7 +321,7 @@ function renderCard(item) {
   node.querySelector(".card-date").textContent = formatShortDate(item.published_at);
   const scoreEl = node.querySelector(".card-score");
   const total = item.scores?.total ?? 0;
-  scoreEl.textContent = `★ ${total}`;
+  scoreEl.textContent = `★ ${total}/20`;
   scoreEl.classList.add(scoreClass(total));
   scoreEl.title = item.scores
     ? `重要度${item.scores.importance ?? "?"} / 深度${item.scores.depth ?? "?"} / 実用性${item.scores.practicality ?? "?"} / 鮮度${item.scores.freshness ?? "?"}`
@@ -500,7 +518,7 @@ function renderDay(data) {
 }
 
 async function loadDay(date) {
-  showStatus(`${formatDateJa(date)} を読み込み中…`);
+  showSkeleton();
   const isLatest = availableDates[0] === date;
   const url = `${DATA_DIR}/${isLatest ? "latest" : date}.json`;
   const cacheMode = isLatest ? "no-store" : "default";
@@ -770,4 +788,6 @@ async function initPush(reg) {
 (async function boot() {
   await loadIndex();
   await route();
+  updateHeaderHeightVar();
+  requestAnimationFrame(updateHeaderHeightVar);
 })();
