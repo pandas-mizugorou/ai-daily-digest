@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-24T05:00:00+09:00",
+  "updated_at": "2026-05-25T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -2192,6 +2192,157 @@
       "first_seen_at": "2026-05-24",
       "last_seen_at": "2026-05-24",
       "last_seen_count": 1
+    },
+    "72ccf9988a7111b5ef468d9077f43df90c30ee1a": {
+      "url_prefix": "https://36kr.com/p/3820298133819778",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "1b53814736834cdc46b06f9420b8f601a473f974": {
+      "url_prefix": "https://huggingface.co/NemoStation/Marlin-2B",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "842b12334bb23e3bd50d255e5fc09d444df52897": {
+      "url_prefix": "https://arxiv.org/abs/2605.22791v1",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "15b0d2e8aa56dbbb9272fc220ba1968d24c9b083": {
+      "url_prefix": "https://github.com/Lum1104/Understand-Anything",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "618e8fb74c6c24a0fd55bce49b1a1f055fb8155b": {
+      "url_prefix": "https://github.com/anthropics/knowledge-work-plugi",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "1261f03c93da61bd086ee4b7b84dcd2c9515e05f": {
+      "url_prefix": "https://github.com/rohitg00/ai-engineering-from-sc",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "707c2ec236dc0bf0e47fc5409facea87ada736b3": {
+      "url_prefix": "https://arxiv.org/abs/2605.22781v1",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "20b57e99a2b09efd3b1ba914ae560d51779078cd": {
+      "url_prefix": "https://arxiv.org/abs/2605.22794v1",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "980e1a592e4d5aa9c96410c4e1d692b294606dbb": {
+      "url_prefix": "https://huggingface.co/bytedance-research/Lance",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "24c0aa117bb925ec7102f05d50d90496c4a7cff5": {
+      "url_prefix": "https://huggingface.co/Supertone/supertonic-3",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "b36b43c9b6f12d41d7cfc4aefc144f646920995a": {
+      "url_prefix": "https://arxiv.org/abs/2605.06445",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "449a79582237d5c887c49488df7f49c3dd23fa82": {
+      "url_prefix": "https://arxiv.org/abs/2605.22817",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "3a9e4c4c28076510d1377e7b1903c0432d475414": {
+      "url_prefix": "https://arxiv.org/abs/2605.18071",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "10750d19670727fd59421a782766f630d986e89d": {
+      "url_prefix": "https://www.digitaljournal.com/business/ai-compani",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "e13a77e0ea98a865cfcc51309a49c037e9bd2fda": {
+      "url_prefix": "https://kpmg.com/us/en/media/news/ai-in-finance-20",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "4985ecf3a09708dd581a99f54f218375c0681867": {
+      "url_prefix": "https://arxiv.org/abs/2605.22786",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "7872736641fde7e5f8e8b6f1f4f82cba737c153b": {
+      "url_prefix": "https://news.ycombinator.com/item?id=48257980",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "64e59532e9728b1b883b0d9ecab1c775b09bfc87": {
+      "url_prefix": "https://news.ycombinator.com/item?id=48259784",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "e2242c1e3327fd30c799101ef67bc58036a38551": {
+      "url_prefix": "https://www.techno-edge.net/article/2026/05/24/509",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "c0f6cf7114253294a47a7d121564f329171aa97a": {
+      "url_prefix": "https://gihyo.jp/book/2026/978-4-297-15702-9",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "ad2498ef992325ce2fd280d643f5b9d28db5b274": {
+      "url_prefix": "https://ascii.jp/elem/000/004/403/4403454/",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "a53b2b843de587588d76ecea2002cbc66f6f55cb": {
+      "url_prefix": "https://www.keisuke69.net/entry/2026/05/22/073948",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "a33a4c6e35aea03e656de6019f5376e8cd1c03aa": {
+      "url_prefix": "https://takoratta.hatenablog.com/entry/2026/05/22/",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "7a17cc2c29e8c7440facfbe9fdfd42661f5ef882": {
+      "url_prefix": "https://www.bloomberg.com/news/articles/2026-05-23",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
+    },
+    "4adb5dfcb60dd07e18f90e84133913c3fb8e3b0f": {
+      "url_prefix": "https://www.fastcompany.com/91531519/google-ceo-sa",
+      "first_seen_at": "2026-05-25",
+      "last_seen_at": "2026-05-25",
+      "last_seen_count": 1
     }
-  }
+  },
+  "version": "2.0"
 }
