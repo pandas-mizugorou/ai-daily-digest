@@ -283,8 +283,18 @@ button { font: inherit; cursor: pointer; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.summary-toggle {
-  margin-top: 8px;
+/* 展開カードの本文も既定 2 行のリードに畳む。
+   figure が構造化要点 (TL;DR/details) を持つため、長い本文との重複を軽くして
+   「2 行リード + 図解」でスッと読める状態にする。「続きを読む」で全文展開。 */
+.card-summary.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.summary-toggle,
+.card-summary-toggle {
   padding: 4px 0;
   background: none;
   border: none;
@@ -294,8 +304,12 @@ button { font: inherit; cursor: pointer; }
   font-weight: 600;
   cursor: pointer;
 }
-.summary-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
-.summary-toggle.hidden { display: none; }
+.summary-toggle { margin-top: 8px; }
+.card-summary-toggle { margin: 0 0 10px; font-size: 0.82rem; }
+.summary-toggle:focus-visible,
+.card-summary-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.summary-toggle.hidden,
+.card-summary-toggle.hidden { display: none; }
 
 /* === Categories === */
 .categories { display: flex; flex-direction: column; gap: 24px; }

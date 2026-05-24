@@ -253,6 +253,16 @@ function collapseCard(card) {
   if (toggle) toggle.setAttribute("aria-expanded", "false");
 }
 
+// 本文は既定 2 行にクランプ。実際に溢れる時だけ「続きを読む」を出す（展開時に判定）。
+function revealSummaryToggle(card) {
+  const sEl = card?.querySelector(".card-summary");
+  const tEl = card?.querySelector(".card-summary-toggle");
+  if (!sEl || !tEl || !sEl.classList.contains("clamped")) return;
+  requestAnimationFrame(() => {
+    if (sEl.scrollHeight - sEl.clientHeight > 4) tEl.classList.remove("hidden");
+  });
+}
+
 function renderCard(item) {
   const node = els.cardTpl.content.firstElementChild.cloneNode(true);
   node.dataset.itemId = item.id || "";
@@ -541,6 +551,17 @@ window.addEventListener("hashchange", route);
 function attachCardEvents(rootEl) {
   if (!rootEl) return;
   rootEl.addEventListener("click", (e) => {
+    // 本文「続きを読む / 閉じる」トグル（カード全体の開閉とは独立）
+    const sumToggle = e.target.closest(".card-summary-toggle");
+    if (sumToggle) {
+      const sEl = sumToggle.previousElementSibling;
+      if (sEl && sEl.classList.contains("card-summary")) {
+        const clamped = sEl.classList.toggle("clamped");
+        sumToggle.textContent = clamped ? "続きを読む" : "閉じる";
+        sumToggle.setAttribute("aria-expanded", String(!clamped));
+      }
+      return;
+    }
     const collapseBtn = e.target.closest(".card-collapse-bottom");
     if (collapseBtn) {
       const card = collapseBtn.closest(".card");
@@ -565,7 +586,7 @@ function attachCardEvents(rootEl) {
     if (!card) return;
     const expanded = card.dataset.expanded === "true";
     if (expanded) collapseCard(card);
-    else expandCard(card);
+    else { expandCard(card); revealSummaryToggle(card); }
   });
 }
 attachCardEvents(els.categories);
