@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v25: UI polish — カード開閉フェード + スケルトン読込 + スコア★/20 + カテゴリタブ sticky + 週次/検索カードの本文クランプ
-const VERSION = "v25";
+// v26: fix — 日次フッターの「金曜→日曜」修正 + GitHub リンクを実リポジトリへ + 週次スキーマ説明の曜日修正
+const VERSION = "v26";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
