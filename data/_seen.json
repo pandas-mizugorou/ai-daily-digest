@@ -1932,8 +1932,8 @@
     "9d44573c198f670a": {
       "url_prefix": "https://www.anthropic.com/research/glasswing-initial-update",
       "first_seen_at": "2026-05-23",
-      "last_seen_at": "2026-05-23",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 2
     },
     "390923d33593bf0e": {
       "url_prefix": "https://arxiv.org/abs/2605.22794",
@@ -2130,8 +2130,8 @@
     "05045fbcb55dd4a3": {
       "url_prefix": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
       "first_seen_at": "2026-05-24",
-      "last_seen_at": "2026-05-24",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 2
     },
     "fe200fe72e51cc11": {
       "url_prefix": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa",
@@ -2342,7 +2342,146 @@
       "first_seen_at": "2026-05-25",
       "last_seen_at": "2026-05-25",
       "last_seen_count": 1
+    },
+    "cd4de9e9e756f73b37a3d0163334b654e873a76d": {
+      "url_prefix": "https://openai.com/news/",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "e4e059ae9ebc65abc0eb9ec5c29d02878ce5c616": {
+      "url_prefix": "https://blog.google/innovation-and-ai/mo",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "e15da1140e759b0c96053571fb7195fd0607a0d5": {
+      "url_prefix": "https://huggingface.co/tencent/Hy-MT2-1.",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "34ed4bfd633da67d25a103aefa04ac011b42917c": {
+      "url_prefix": "https://huggingface.co/blog/nielsr/paper",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "15b0d2e8aa56dbbb9272fc220ba1968d24c9b083": {
+      "url_prefix": "https://github.com/Lum1104/Understand-An",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "618e8fb74c6c24a0fd55bce49b1a1f055fb8155b": {
+      "url_prefix": "https://github.com/anthropics/knowledge-",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "28fd7a886b8b60cc1a6bd5a9d574747bed541a0c": {
+      "url_prefix": "https://deepmind.google/blog/co-scientis",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "1692f635215f1414de442036ea727af987e1592a": {
+      "url_prefix": "https://huggingface.co/blog/huggingface/",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "7ab491441d07264ae8f8989e14cc31aa4bb30d10": {
+      "url_prefix": "https://deepmind.google/models/gemini-om",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "80716ed8071882bfe4f1a7e87fb8f0eb47739d05": {
+      "url_prefix": "https://huggingface.co/blog/AlexWortega/",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "d815f4b0354c0f61dd66310ca20b783d8011cf60": {
+      "url_prefix": "https://arxiv.org/abs/2605.23904",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "e1ed9775610ba65456e323696a306c1e637839a6": {
+      "url_prefix": "https://arxiv.org/abs/2605.20025",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "fe200fe72e51cc11988f3ce48369e056fb49147f": {
+      "url_prefix": "https://www.latent.space/p/ainews-new-ai",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "3a07a00116f5149618e3a73ad87667036fe369f6": {
+      "url_prefix": "https://techcrunch.com/2026/05/25/what-c",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "1767978ddb8ce11cc93ca3d0b10e1df056250dd8": {
+      "url_prefix": "https://gigazine.net/news/20260525-norob",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "846beef31b8a353413212c9e3024b716e0111fe6": {
+      "url_prefix": "https://techcrunch.com/2026/05/21/spotif",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "ea7ae1f694ba91d418ea876de7e82d3fd1167655": {
+      "url_prefix": "https://zenn.dev/sonicgarden/articles/cl",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "4690300fe305b63b27322435c5f3cb0ab92865c5": {
+      "url_prefix": "https://www.technologyreview.jp/s/383499",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "94d7c9bb1a6b7e36a1664ed05717175c830e06fb": {
+      "url_prefix": "https://zenn.dev/kenimo49/articles/code-",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "0ade580b2f9f896a7db23083c1301e67df370be7": {
+      "url_prefix": "https://izanami.dev/post/e63c7bfd-cc85-4",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "af905fd0d169c827596864e65db530b1f297a516": {
+      "url_prefix": "https://www.hitachi.com/en/press/article",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "d11cf3f48fd33c253cf67de16186d5e18c6515c8": {
+      "url_prefix": "https://www.qbitai.com/2026/05/422511.ht",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
+    },
+    "623852fa834fd2685220cdab51684101f6e024e3": {
+      "url_prefix": "https://www.qbitai.com/2026/05/422738.ht",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
+      "last_seen_count": 1
     }
   },
+  "updated_at": "2026-05-26T05:00:00+09:00",
   "version": "2.0"
 }
