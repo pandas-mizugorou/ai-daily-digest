@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-05-26T05:00:00+09:00",
+  "updated_at": "2026-05-27T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-27",
+      "headline": "LLMに「睡眠」統合機構・Borealis音声AI完全公開・全AIラボがエージェントラボ転換——国内AIセキュリティ実践解説とMercariガバナンス知見が最高スコアを記録",
+      "item_count": 22,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-05-26",
       "headline": "OpenAI GPT-5.4 Pro がネイティブPC操作と1Mコンテキストで登場・Gemini OmniがAI動画生成の新基準確立・Claude Code自己改善ループ設計が日本最大反響",

@@ -2480,8 +2480,140 @@
       "first_seen_at": "2026-05-26",
       "last_seen_at": "2026-05-26",
       "last_seen_count": 1
+    },
+    "1e3f22e43a6bfd33eec84a08737f6ffd7f898c55": {
+      "url_prefix": "https://huggingface.co/blog/VirgileBatto",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "34ed4bfd633da67d25a103aefa04ac011b42917c": {
+      "url_prefix": "https://huggingface.co/blog/nielsr/paper",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "2044c52fdb4486b7007abf8d17d4d04c73bafb35": {
+      "url_prefix": "https://www.minicor.com/",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "05045fbcb55dd4a300cd5e0414bddcd8e343e51d": {
+      "url_prefix": "https://www.latent.space/p/ainews-all-mo",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "1692f635215f1414de442036ea727af987e1592a": {
+      "url_prefix": "https://huggingface.co/blog/huggingface/",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "80716ed8071882bfe4f1a7e87fb8f0eb47739d05": {
+      "url_prefix": "https://huggingface.co/blog/AlexWortega/",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "37d002ab11b515ebcec3f33cf2f176174eee34b9": {
+      "url_prefix": "https://ascii.jp/elem/000/004/404/440459",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "d5c3a27d3e1726a8f55746500da4de6bf7b8b938": {
+      "url_prefix": "https://arxiv.org/abs/2605.26099",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "f3e46cb694689e32593937a1c8add6a17248b634": {
+      "url_prefix": "https://arxiv.org/abs/2605.26112",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "73f2e35e88b9bea179de2fae0abce7154190f287": {
+      "url_prefix": "https://arxiv.org/abs/2605.26079",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "416c0678d8f061689226662e601ca21366c6efd7": {
+      "url_prefix": "https://techcrunch.com/2026/05/26/openro",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "fe200fe72e51cc11988f3ce48369e056fb49147f": {
+      "url_prefix": "https://www.latent.space/p/ainews-new-ai",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "aaee48ad131bf7f1daa81cdd95ef4ad3ec7ec273": {
+      "url_prefix": "https://www.anthropic.com/news/chris-ola",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "115ce2df2715c23aa34b437b50a079e3b6132614": {
+      "url_prefix": "https://www.signalbloom.ai/posts/outsour",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "3b8044f1bf61c381e9ea493e80309052b5439d80": {
+      "url_prefix": "https://sherwood.news/tech/stack-overflo",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "3b5e6dbfe1502c3e15559b20be1105d437647bc7": {
+      "url_prefix": "https://qiita.com/emi_ndk/items/a36051a9",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "7a6ef3645fca8df8becf1b2421f0e441bdca9eda": {
+      "url_prefix": "https://speakerdeck.com/naoichihara/agen",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "ad1bdb33e2b32d3badf48072585234530594e7cb": {
+      "url_prefix": "https://www.technologyreview.jp/s/383499",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "c0f6cf7114253294a47a7d121564f329171aa97a": {
+      "url_prefix": "https://gihyo.jp/book/2026/978-4-297-157",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "a53b2b843de587588d76ecea2002cbc66f6f55cb": {
+      "url_prefix": "https://www.keisuke69.net/entry/2026/05/",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "f20ca3a19c89b5baeb397f964c8e192b58f2ad7c": {
+      "url_prefix": "https://www.qbitai.com/2026/05/qwen37-ma",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
+    },
+    "6b2718bf9213d81ee3ab4dcf4eb2152081060742": {
+      "url_prefix": "https://www.qbitai.com/2026/05/ai-china-",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
+      "last_seen_count": 1
     }
   },
-  "updated_at": "2026-05-26T05:00:00+09:00",
+  "updated_at": "2026-05-27T05:00:00+09:00",
   "version": "2.0"
 }
