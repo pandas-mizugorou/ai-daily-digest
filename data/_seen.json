@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-25T05:00:00+09:00",
+  "updated_at": "2026-05-28T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -2212,16 +2212,16 @@
       "last_seen_count": 1
     },
     "15b0d2e8aa56dbbb9272fc220ba1968d24c9b083": {
-      "url_prefix": "https://github.com/Lum1104/Understand-Anything",
-      "first_seen_at": "2026-05-25",
-      "last_seen_at": "2026-05-25",
+      "url_prefix": "https://github.com/Lum1104/Understand-An",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-26",
       "last_seen_count": 1
     },
     "618e8fb74c6c24a0fd55bce49b1a1f055fb8155b": {
-      "url_prefix": "https://github.com/anthropics/knowledge-work-plugi",
-      "first_seen_at": "2026-05-25",
-      "last_seen_at": "2026-05-25",
-      "last_seen_count": 1
+      "url_prefix": "https://github.com/anthropics/knowledge-",
+      "first_seen_at": "2026-05-26",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 2
     },
     "1261f03c93da61bd086ee4b7b84dcd2c9515e05f": {
       "url_prefix": "https://github.com/rohitg00/ai-engineering-from-sc",
@@ -2244,8 +2244,8 @@
     "980e1a592e4d5aa9c96410c4e1d692b294606dbb": {
       "url_prefix": "https://huggingface.co/bytedance-research/Lance",
       "first_seen_at": "2026-05-25",
-      "last_seen_at": "2026-05-25",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 2
     },
     "24c0aa117bb925ec7102f05d50d90496c4a7cff5": {
       "url_prefix": "https://huggingface.co/Supertone/supertonic-3",
@@ -2308,9 +2308,9 @@
       "last_seen_count": 1
     },
     "c0f6cf7114253294a47a7d121564f329171aa97a": {
-      "url_prefix": "https://gihyo.jp/book/2026/978-4-297-15702-9",
-      "first_seen_at": "2026-05-25",
-      "last_seen_at": "2026-05-25",
+      "url_prefix": "https://gihyo.jp/book/2026/978-4-297-157",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
     "ad2498ef992325ce2fd280d643f5b9d28db5b274": {
@@ -2320,9 +2320,9 @@
       "last_seen_count": 1
     },
     "a53b2b843de587588d76ecea2002cbc66f6f55cb": {
-      "url_prefix": "https://www.keisuke69.net/entry/2026/05/22/073948",
-      "first_seen_at": "2026-05-25",
-      "last_seen_at": "2026-05-25",
+      "url_prefix": "https://www.keisuke69.net/entry/2026/05/",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
     "a33a4c6e35aea03e656de6019f5376e8cd1c03aa": {
@@ -2363,20 +2363,8 @@
     },
     "34ed4bfd633da67d25a103aefa04ac011b42917c": {
       "url_prefix": "https://huggingface.co/blog/nielsr/paper",
-      "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
-      "last_seen_count": 1
-    },
-    "15b0d2e8aa56dbbb9272fc220ba1968d24c9b083": {
-      "url_prefix": "https://github.com/Lum1104/Understand-An",
-      "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
-      "last_seen_count": 1
-    },
-    "618e8fb74c6c24a0fd55bce49b1a1f055fb8155b": {
-      "url_prefix": "https://github.com/anthropics/knowledge-",
-      "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
     "28fd7a886b8b60cc1a6bd5a9d574747bed541a0c": {
@@ -2387,8 +2375,8 @@
     },
     "1692f635215f1414de442036ea727af987e1592a": {
       "url_prefix": "https://huggingface.co/blog/huggingface/",
-      "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
     "7ab491441d07264ae8f8989e14cc31aa4bb30d10": {
@@ -2399,26 +2387,26 @@
     },
     "80716ed8071882bfe4f1a7e87fb8f0eb47739d05": {
       "url_prefix": "https://huggingface.co/blog/AlexWortega/",
-      "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
     "d815f4b0354c0f61dd66310ca20b783d8011cf60": {
       "url_prefix": "https://arxiv.org/abs/2605.23904",
       "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 2
     },
     "e1ed9775610ba65456e323696a306c1e637839a6": {
       "url_prefix": "https://arxiv.org/abs/2605.20025",
       "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 2
     },
     "fe200fe72e51cc11988f3ce48369e056fb49147f": {
       "url_prefix": "https://www.latent.space/p/ainews-new-ai",
-      "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-26",
+      "first_seen_at": "2026-05-27",
+      "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
     "3a07a00116f5149618e3a73ad87667036fe369f6": {
@@ -2487,12 +2475,6 @@
       "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
-    "34ed4bfd633da67d25a103aefa04ac011b42917c": {
-      "url_prefix": "https://huggingface.co/blog/nielsr/paper",
-      "first_seen_at": "2026-05-27",
-      "last_seen_at": "2026-05-27",
-      "last_seen_count": 1
-    },
     "2044c52fdb4486b7007abf8d17d4d04c73bafb35": {
       "url_prefix": "https://www.minicor.com/",
       "first_seen_at": "2026-05-27",
@@ -2501,18 +2483,6 @@
     },
     "05045fbcb55dd4a300cd5e0414bddcd8e343e51d": {
       "url_prefix": "https://www.latent.space/p/ainews-all-mo",
-      "first_seen_at": "2026-05-27",
-      "last_seen_at": "2026-05-27",
-      "last_seen_count": 1
-    },
-    "1692f635215f1414de442036ea727af987e1592a": {
-      "url_prefix": "https://huggingface.co/blog/huggingface/",
-      "first_seen_at": "2026-05-27",
-      "last_seen_at": "2026-05-27",
-      "last_seen_count": 1
-    },
-    "80716ed8071882bfe4f1a7e87fb8f0eb47739d05": {
-      "url_prefix": "https://huggingface.co/blog/AlexWortega/",
       "first_seen_at": "2026-05-27",
       "last_seen_at": "2026-05-27",
       "last_seen_count": 1
@@ -2543,12 +2513,6 @@
     },
     "416c0678d8f061689226662e601ca21366c6efd7": {
       "url_prefix": "https://techcrunch.com/2026/05/26/openro",
-      "first_seen_at": "2026-05-27",
-      "last_seen_at": "2026-05-27",
-      "last_seen_count": 1
-    },
-    "fe200fe72e51cc11988f3ce48369e056fb49147f": {
-      "url_prefix": "https://www.latent.space/p/ainews-new-ai",
       "first_seen_at": "2026-05-27",
       "last_seen_at": "2026-05-27",
       "last_seen_count": 1
@@ -2589,18 +2553,6 @@
       "last_seen_at": "2026-05-27",
       "last_seen_count": 1
     },
-    "c0f6cf7114253294a47a7d121564f329171aa97a": {
-      "url_prefix": "https://gihyo.jp/book/2026/978-4-297-157",
-      "first_seen_at": "2026-05-27",
-      "last_seen_at": "2026-05-27",
-      "last_seen_count": 1
-    },
-    "a53b2b843de587588d76ecea2002cbc66f6f55cb": {
-      "url_prefix": "https://www.keisuke69.net/entry/2026/05/",
-      "first_seen_at": "2026-05-27",
-      "last_seen_at": "2026-05-27",
-      "last_seen_count": 1
-    },
     "f20ca3a19c89b5baeb397f964c8e192b58f2ad7c": {
       "url_prefix": "https://www.qbitai.com/2026/05/qwen37-ma",
       "first_seen_at": "2026-05-27",
@@ -2612,8 +2564,133 @@
       "first_seen_at": "2026-05-27",
       "last_seen_at": "2026-05-27",
       "last_seen_count": 1
+    },
+    "482b03adeecdcca95b3450066afeed25ee8871cd": {
+      "url_prefix": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "44892a2790e72dca1a20f32c5410258a48513b25": {
+      "url_prefix": "https://arxiv.org/abs/2605.27358",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "08afa96c90f539465980b77fa40ec1c8fd58e5cf": {
+      "url_prefix": "https://www.qbitai.com/2026/05/425600.html",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "a536483fe7423f4a1f3fddcfda1e75119e27837d": {
+      "url_prefix": "https://arps18.github.io/posts/claude-code-mastery",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "0936ed82926ae5ee1b1317a118615e0276395ada": {
+      "url_prefix": "https://arxiv.org/abs/2605.27366",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "8ff63c21f8923ead1029075a04bfd5ebe8e7c1f3": {
+      "url_prefix": "https://techcrunch.com/2026/05/27/elevenlabss-new-",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "885b9f75e7143a8bf187f410819a5ebc61eeaafa": {
+      "url_prefix": "https://huggingface.co/blog/ibm-research/itbench-a",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "a53565c1423276b219c24862dcb3458f5508d08b": {
+      "url_prefix": "https://www.latent.space/p/esmfold2",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "318c062e07a6dadd7a66e643e6556a5b7d9dcf73": {
+      "url_prefix": "https://www.qbitai.com/2026/05/425455.html",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "f6790e617869429c531c43b4a1c50bac2bf563db": {
+      "url_prefix": "https://global.fujitsu/en-global/pr/news/2026/05/2",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "2eed09f142a3bb96066ab84b7201bdaa62a8e680": {
+      "url_prefix": "https://techcrunch.com/2026/05/27/ai-coding-startu",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "cc556bf9566b31362d80b214ba04e286a0d54a1e": {
+      "url_prefix": "https://arxiv.org/abs/2605.27355",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "35477004f71dbe1830196a4278955c09dc511dc0": {
+      "url_prefix": "https://www.pcgamer.com/hardware/duckduckgos-ai-fr",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "d5e7d15d49789ca64de75dc9e5ccb42a92d1925a": {
+      "url_prefix": "https://blog.youtube/news-and-events/improving-ai-",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "7fe0a474c2b6f68c98edd1c5c0fc02fb73f72eb9": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/27/2",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "337011a2112f26525fb59ced9cd970912e1931bf": {
+      "url_prefix": "https://www.itmedia.co.jp/news/articles/2605/27/ne",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "0758397868ccb5e65c989bfb66d54e395d61a3a5": {
+      "url_prefix": "https://tech.findy.co.jp/entry/2026/05/27/070000",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "eea15a4f0b324a05f2b78ae2ad4d70c8be2fc4d0": {
+      "url_prefix": "https://acro-engineer.hatenablog.com/entry/2026/05",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "07b1571e030ff9953842733b8aeeee34af321d46": {
+      "url_prefix": "https://kai-you.net/article/95512",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "080d2ca2fa7fd58cc932fc4d9d726be0373fd4b4": {
+      "url_prefix": "https://www.qbitai.com/2026/05/425881.html",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "29082851b369d724a12053f2673041d1cfa04e9a": {
+      "url_prefix": "https://www.qbitai.com/2026/05/425870.html",
+      "first_seen_at": "2026-05-28",
+      "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
     }
   },
-  "updated_at": "2026-05-27T05:00:00+09:00",
   "version": "2.0"
 }
