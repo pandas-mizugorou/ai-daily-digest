@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-28T05:00:00+09:00",
+  "updated_at": "2026-05-29T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -2394,14 +2394,14 @@
     "d815f4b0354c0f61dd66310ca20b783d8011cf60": {
       "url_prefix": "https://arxiv.org/abs/2605.23904",
       "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-28",
-      "last_seen_count": 2
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 3
     },
     "e1ed9775610ba65456e323696a306c1e637839a6": {
       "url_prefix": "https://arxiv.org/abs/2605.20025",
       "first_seen_at": "2026-05-26",
-      "last_seen_at": "2026-05-28",
-      "last_seen_count": 2
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 3
     },
     "fe200fe72e51cc11988f3ce48369e056fb49147f": {
       "url_prefix": "https://www.latent.space/p/ainews-new-ai",
@@ -2580,8 +2580,8 @@
     "08afa96c90f539465980b77fa40ec1c8fd58e5cf": {
       "url_prefix": "https://www.qbitai.com/2026/05/425600.html",
       "first_seen_at": "2026-05-28",
-      "last_seen_at": "2026-05-28",
-      "last_seen_count": 1
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 2
     },
     "a536483fe7423f4a1f3fddcfda1e75119e27837d": {
       "url_prefix": "https://arps18.github.io/posts/claude-code-mastery",
@@ -2689,6 +2689,102 @@
       "url_prefix": "https://www.qbitai.com/2026/05/425870.html",
       "first_seen_at": "2026-05-28",
       "last_seen_at": "2026-05-28",
+      "last_seen_count": 1
+    },
+    "918121c45d596b702d7db6a79b3cf3f534385372": {
+      "url_prefix": "https://www.anthropic.com/news/claude-opus-4-8",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "821fec7c617e28f57ee0fe48695e64469ada1934": {
+      "url_prefix": "https://huggingface.co/nvidia/LocateAnything-3B",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "b2c19079135c7200c70cf8cc91adc19967ae6a71": {
+      "url_prefix": "https://developers.openai.com/api/docs/guides/secure-mcp-tun",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "392e2ba0621cc49cd9d2e0b48635a55d6ac57990": {
+      "url_prefix": "https://mistral.ai/news/search-toolkit",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "6b398ac7c77d15ba00e6fcd3edd56e7314140179": {
+      "url_prefix": "https://mistral.ai/news/vibe-agent",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "eaca97c97455c3889e456220f54f57798d2af482": {
+      "url_prefix": "https://www.itmedia.co.jp/news/articles/2605/28/news090.html",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "98dccfb5a1bf76503e49bcdf756bf463b45e59e2": {
+      "url_prefix": "https://arxiv.org/abs/2605.18739",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "1ffdc1ecb114c1551bc22c9d8f7954aa857e0b6d": {
+      "url_prefix": "https://arxiv.org/abs/2605.19833",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "a3d8c6fadccfee2ba25606729272939bca4b82d2": {
+      "url_prefix": "https://www.anthropic.com/news/series-h",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "fb999f0220ea2a81e04025cb7a158e779b143f85": {
+      "url_prefix": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amaz",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "af818633c56eb10f1d40a44848bb4da329685d26": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2605/28/2000000033/",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "659dde3aa5c55ff459793a9b08ae8537d8308f2e": {
+      "url_prefix": "https://newspicks.com/news/16754918/body/",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "e9392acd2483a92c15d2e60b48983c42e3d34187": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260527b",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "206a2c871ee60a8d48341ca814ac0e9227b80220": {
+      "url_prefix": "https://pc.watch.impress.co.jp/docs/news/2112189.html",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "67039888abecd8fe76c723a2732fc0c0bc509356": {
+      "url_prefix": "https://speakerdeck.com/minorun365/claude-codedesubetenori-c",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
+      "last_seen_count": 1
+    },
+    "e4f99b837c95c320b96fdbd2bfacdd9ca03e480e": {
+      "url_prefix": "https://www.qbitai.com/2026/05/426069.html",
+      "first_seen_at": "2026-05-29",
+      "last_seen_at": "2026-05-29",
       "last_seen_count": 1
     }
   },
