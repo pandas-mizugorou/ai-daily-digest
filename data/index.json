@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-05-29T05:00:00+09:00",
+  "updated_at": "2026-05-30T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-30",
+      "headline": "Anthropic、Claude Opus 4.8と$650億調達を同日発表——Dynamic Workflowで数百サブエージェント並列実行、SkillOpt全52構成で首位",
+      "item_count": 24,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-05-29",
       "headline": "Anthropic が Claude Opus 4.8 と $65B Series H を同日発表・SkillOpt がエージェントスキル全 52 評価セルで最高記録・OpenAI Secure MCP Tunnel で企業プライベートサーバ解放",
