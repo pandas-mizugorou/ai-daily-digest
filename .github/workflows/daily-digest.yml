@@ -2,12 +2,17 @@ name: AI Daily Digest
 
 on:
   schedule:
-    # JST 01:30 = UTC 16:30 (前日)
-    # 「毎時 :00」は GitHub Actions のキューが大混雑するため :30 を採用。
-    # Phase B-E 拡張後は 60-80 ソース取得 + 20-27 件要約 + 週次 (日曜のみ) で
-    # 実行所要 12-25 分。01:30 JST 発火なら平常時は 02:00 前後、混雑時でも
-    # 03-04 時着で、朝 5:00 には確実に届く設計
-    - cron: "30 16 * * *"
+    # 朝 5:00 JST (= 20:00 UTC) までに確実に届けるための多重スケジュール。
+    # GitHub Actions の schedule は混雑時に実発火が 3-6h 遅延する
+    # (実測: 16:30 UTC 指定が 22:23 UTC に発火 = 朝 7 時着が連日続いた)。対策:
+    #   1) 有効窓の先頭に寄せる: JST 日付を today に保つには UTC 15:00 (=00:00 JST)
+    #      以降に発火する必要がある。15:00 台なら 5:00 JST 締切まで最大 5h バッファ。
+    #   2) 「毎時 :00 / :30」は混雑するため不人気な分 (:07/:27/:47) を採用。
+    #   3) 3 本の多重発火 + 冪等ガード (steps.guard): 最初に発火した 1 本だけが生成し、
+    #      後続は data/<date>.json が既に在れば skip (重複通知・重複コミットを防止)。
+    - cron: "7 15 * * *"   # 00:07 JST
+    - cron: "27 15 * * *"  # 00:27 JST
+    - cron: "47 15 * * *"  # 00:47 JST
   workflow_dispatch:
     inputs:
       target_date:
@@ -78,7 +83,26 @@ jobs:
           } >> "$GITHUB_OUTPUT"
           echo "Target date: $DATE (dow=$DOW, is_weekly_day=$IS_WEEKLY_DAY, iso_week=$ISO_WEEK, week=$WEEK_FROM..$WEEK_TO)"
 
+      - name: Skip if today's digest already exists (idempotency for multi-cron)
+        id: guard
+        run: |
+          # 多重 cron / retry で同日に複数回起動しても、最初の 1 回だけが生成する。
+          # 後続の発火は data/<date>.json が既に在れば skip。
+          # workflow_dispatch (手動) は常に再生成を許可する。
+          DONE="false"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            DATE="${{ steps.date.outputs.value }}"
+            if [ -f "data/${DATE}.json" ]; then
+              CNT=$(jq '[.categories[].items // [] | length] | add' "data/${DATE}.json" 2>/dev/null || echo 0)
+              case "$CNT" in ''|*[!0-9]*) CNT=0;; esac
+              if [ "$CNT" -ge 3 ]; then DONE="true"; fi
+            fi
+          fi
+          echo "done=$DONE" >> "$GITHUB_OUTPUT"
+          echo "guard: already_done=$DONE (event=${{ github.event_name }}, date=${{ steps.date.outputs.value }})"
+
       - name: Run /ai-daily-digest skill via Claude Code
+        if: steps.guard.outputs.done != 'true'
         uses: anthropics/claude-code-action@v1
         env:
           # Sonnet 4.6 の出力上限まで引き上げ。
@@ -165,10 +189,12 @@ jobs:
 
       # === Phase F-3: 検索インデックス生成 (Claude 出力後・commit 前。ランナー標準 node、依存ゼロ) ===
       - name: Build search index
+        if: steps.guard.outputs.done != 'true'
         continue-on-error: true
         run: node scripts/build-search-index.mjs
 
       - name: Commit and push changes
+        if: steps.guard.outputs.done != 'true'
         env:
           GH_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -197,11 +223,13 @@ jobs:
 
       # === Phase F-1: 日次更新完了の直後に Web Push 通知 ===
       - name: Setup Node (for web-push)
+        if: steps.guard.outputs.done != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: Send push notification
+        if: steps.guard.outputs.done != 'true'
         # 通知が失敗しても日次の commit/push は保護する
         continue-on-error: true
         env:
@@ -235,7 +263,20 @@ jobs:
           fetch-depth: 1
           ref: main
 
+      - name: Skip if this week's summary already exists
+        id: wguard
+        run: |
+          # 日曜に多重 cron / retry で複数回起動しても、週次は 1 回だけ生成する。
+          DONE="false"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            ISO_WEEK="${{ needs.digest.outputs.iso_week }}"
+            if [ -f "data/weekly-${ISO_WEEK}.json" ]; then DONE="true"; fi
+          fi
+          echo "done=$DONE" >> "$GITHUB_OUTPUT"
+          echo "weekly guard: already_done=$DONE (event=${{ github.event_name }})"
+
       - name: Run /ai-daily-digest skill via Claude Code (weekly only)
+        if: steps.wguard.outputs.done != 'true'
         uses: anthropics/claude-code-action@v1
         env:
           CLAUDE_CODE_MAX_OUTPUT_TOKENS: "32000"
@@ -302,6 +343,7 @@ jobs:
             --allowed-tools Read,Write,Edit,Glob,Grep,Bash
 
       - name: Commit and push weekly changes
+        if: steps.wguard.outputs.done != 'true'
         env:
           GH_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
