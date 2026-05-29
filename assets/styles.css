@@ -188,6 +188,18 @@ button { font: inherit; cursor: pointer; }
 .icon-button:hover { background: var(--bg-soft); color: var(--fg); }
 .icon-button:active { background: var(--border); }
 .icon-button svg { width: 22px; height: 22px; display: block; }
+/* 通知が切れている可能性があるときの注意ドット (Phase F: 通知の自己修復) */
+.icon-button.attention { color: var(--accent); position: relative; }
+.icon-button.attention::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+}
 
 .date-nav {
   max-width: var(--maxw);

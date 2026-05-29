@@ -29,6 +29,8 @@ jobs:
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           # 購読情報は public リポジトリに置かず Secret から注入する
           SUBSCRIPTIONS_JSON: ${{ secrets.SUBSCRIPTIONS_JSON }}
+          # 本番と同一経路で失効購読の自動削除も疎通確認する (未設定なら prune のみ無効)
+          SECRETS_PAT: ${{ secrets.SECRETS_PAT }}
         run: |
-          npm install --no-save web-push@^3
+          npm install --no-save web-push@^3 libsodium-wrappers@^0.7
           node scripts/send-push.mjs

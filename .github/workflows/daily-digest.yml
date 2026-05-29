@@ -23,6 +23,7 @@ on:
 permissions:
   contents: write
   id-token: write
+  issues: write
 
 concurrency:
   group: daily-digest
@@ -236,9 +237,64 @@ jobs:
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           # 購読情報は public リポジトリに置かず Secret から注入する
           SUBSCRIPTIONS_JSON: ${{ secrets.SUBSCRIPTIONS_JSON }}
+          # 失効購読 (410/404) を SUBSCRIPTIONS_JSON Secret から自動削除するための PAT
+          # (fine-grained: 当該リポの Secrets read+write)。未設定でも送信は動く (prune のみ無効)。
+          SECRETS_PAT: ${{ secrets.SECRETS_PAT }}
         run: |
-          npm install --no-save web-push@^3
+          npm install --no-save web-push@^3 libsodium-wrappers@^0.7
           node scripts/send-push.mjs
+
+      # === Phase F: 通知ゼロ / 失効未削除を検知して GitHub Issue を起票 ===
+      # send-push.mjs が残す data/_push-status.json を読んで判定する。
+      # 自己修復済み (expired===pruned かつ ok>0) はアラートしない (アンチスパム)。
+      - name: Alert on push anomaly
+        if: steps.guard.outputs.done != 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+          DATE: ${{ steps.date.outputs.value }}
+        run: |
+          if [ ! -f data/_push-status.json ]; then
+            echo "no push status; skip alert."
+            exit 0
+          fi
+          # ステータスを評価。問題があれば push_alert_title.txt / push_issue_body.md を生成。
+          node -e '
+            const fs = require("fs");
+            let s; try { s = JSON.parse(fs.readFileSync("data/_push-status.json","utf8")); } catch { process.exit(0); }
+            const out = [];
+            if (s.ran === true) {
+              const ok = s.ok|0, total = s.total|0, expired = s.expired|0, pruned = s.pruned|0;
+              if (total > 0 && ok === 0) {
+                out.push("🔴 配信ゼロ: 購読 " + total + " 件すべてに届きませんでした (失効 " + expired + " 件)。");
+              }
+              if (expired > 0 && pruned < expired) {
+                out.push("🟡 失効 " + expired + " 件のうち " + pruned + " 件しか自動削除できませんでした (理由: " + (s.prune_skipped || "不明") + ")。");
+              }
+            }
+            if (out.length === 0) process.exit(0);
+            fs.writeFileSync("push_issue_body.md",
+              "## 通知配信の異常 (" + process.env.DATE + ")\n\n" +
+              out.map(x => "- " + x).join("\n") +
+              "\n\n### 状況\n```json\n" + JSON.stringify(s, null, 2) + "\n```\n\n" +
+              "### 復旧の目安\n" +
+              "- 配信ゼロ → VAPID 公開鍵が app.js と send-push.mjs で一致しているか確認 → `test-push.yml` を dispatch して実機確認。\n" +
+              "- 失効未削除 → Secret `SECRETS_PAT` (fine-grained, Secrets read+write) が登録されているか確認。端末側は PWA で「通知を再登録」。\n");
+            fs.writeFileSync("push_alert_title.txt", "⚠️ AI Digest push: " + process.env.DATE + " 配信異常");
+          '
+          if [ ! -f push_alert_title.txt ]; then
+            echo "push delivery OK; no alert."
+            exit 0
+          fi
+          TITLE=$(cat push_alert_title.txt)
+          # 同日重複起票を防ぐ ("push" キーで watchdog の content issue と区別)
+          EXISTING=$(gh issue list --state open --search "push ${DATE} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
+          if [ "${EXISTING:-0}" -gt 0 ]; then
+            echo "push alert issue already exists for ${DATE}; skip."
+            exit 0
+          fi
+          gh issue create --title "$TITLE" --body-file push_issue_body.md --assignee "$OWNER" || true
 
       - name: Summary
         if: always()
