@@ -12,3 +12,6 @@ data/_drafts/
 # Push 購読情報は端末識別情報のため public リポジトリに含めない。
 # 本番は GitHub Secret SUBSCRIPTIONS_JSON で管理し、ローカルのみ下記ファイルを使う。
 data/subscriptions.json
+
+# send-push.mjs が毎回残す実行結果サマリ (workflow のアラート判定専用、コミット不要)
+data/_push-status.json

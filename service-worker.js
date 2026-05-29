@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v26: fix — 日次フッターの「金曜→日曜」修正 + GitHub リンクを実リポジトリへ + 週次スキーマ説明の曜日修正
-const VERSION = "v26";
+// v27: 通知の自己修復 (Track 1) — 🔔 ダイアログに「再登録/解除」追加 + 失効検知の注意ドット
+const VERSION = "v27";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

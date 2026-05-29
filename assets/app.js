@@ -26,6 +26,8 @@ const els = {
   pushDialog: document.getElementById("push-dialog"),
   pushSubJson: document.getElementById("push-sub-json"),
   pushCopyBtn: document.getElementById("push-copy-btn"),
+  pushResubBtn: document.getElementById("push-resub-btn"),
+  pushUnsubBtn: document.getElementById("push-unsub-btn"),
   pushCloseBtn: document.getElementById("push-close-btn"),
   pushDialogMsg: document.getElementById("push-dialog-msg"),
   cardTpl: document.getElementById("card-template"),
@@ -722,21 +724,93 @@ function showPushDialog(json, msg) {
   else els.pushDialog.setAttribute("open", "");
 }
 
+// 端末の購読 endpoint を控えておき、「許可済みなのに購読が無い / endpoint が変わった」
+// = iOS ソフト失効の可能性 を検知する材料にする。
+const PUSH_SUB_KEY = "aidd:push:lastSub";
+function rememberSub(sub) {
+  try {
+    localStorage.setItem(
+      PUSH_SUB_KEY,
+      JSON.stringify({ endpoint: sub?.endpoint || "", at: new Date().toISOString() }),
+    );
+  } catch {}
+}
+function recallSubEndpoint() {
+  try { return (JSON.parse(localStorage.getItem(PUSH_SUB_KEY) || "{}")).endpoint || ""; }
+  catch { return ""; }
+}
+
 async function initPush(reg) {
   if (!els.notifyButton) return;
   if (!("PushManager" in window) || !("Notification" in window) || !reg) return;
   // Push 対応環境でのみボタンを出す (iOS は A2HS した PWA のみ動作)
   els.notifyButton.classList.remove("hidden");
 
+  async function getSub() {
+    try { return await reg.pushManager.getSubscription(); } catch { return null; }
+  }
+  async function doSubscribe() {
+    const perm = await Notification.requestPermission();
+    if (perm !== "granted") { showPushDialog("", "通知が許可されませんでした。"); return null; }
+    const sub = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+    });
+    rememberSub(sub);
+    return sub;
+  }
+  // 既存購読を作り直す (iOS ソフト失効の復旧)。🔔 タップで既存を再表示するだけでは
+  // 死んだ購読が直らないため、明示的に unsubscribe → subscribe で新規 endpoint を取る。
+  async function forceResubscribe() {
+    try {
+      const old = await getSub();
+      if (old) { try { await old.unsubscribe(); } catch {} }
+      const sub = await doSubscribe();
+      if (sub) {
+        await refreshState();
+        showPushDialog(
+          JSON.stringify(sub.toJSON(), null, 2),
+          "新しい購読を作成しました。コピーして Claude Code に渡してください。",
+        );
+      }
+    } catch (err) {
+      showPushDialog("", "再登録に失敗しました: " + (err?.message || err));
+    }
+  }
+  async function doUnsubscribe() {
+    try {
+      const sub = await getSub();
+      if (sub) await sub.unsubscribe();
+      try { localStorage.removeItem(PUSH_SUB_KEY); } catch {}
+      els.pushSubJson.value = "";
+      els.pushDialogMsg.textContent =
+        "通知を解除しました。サーバー側の失効購読は次回配信時に自動削除されます。";
+      await refreshState();
+    } catch (err) {
+      els.pushDialogMsg.textContent = "解除に失敗しました: " + (err?.message || err);
+    }
+  }
+
   async function refreshState() {
-    let sub = null;
-    try { sub = await reg.pushManager.getSubscription(); } catch {}
+    const sub = await getSub();
+    const stored = recallSubEndpoint();
+    // 「許可済みなのに購読が無い」or「控えと現購読の endpoint が食い違う」= 失効の可能性
+    const stale =
+      Notification.permission === "granted" &&
+      (!sub || (stored && sub && stored !== sub.endpoint));
     if (Notification.permission === "denied") {
       els.notifyButton.setAttribute("aria-label", "通知はブロックされています");
+      els.notifyButton.classList.remove("attention");
+    } else if (stale) {
+      els.notifyButton.setAttribute("aria-label", "通知を再登録（登録が切れている可能性）");
+      els.notifyButton.classList.add("attention");
     } else if (sub) {
-      els.notifyButton.setAttribute("aria-label", "通知は登録済み（タップで購読情報を再表示）");
+      els.notifyButton.setAttribute("aria-label", "通知は登録済み（タップで購読情報・再登録）");
+      els.notifyButton.classList.remove("attention");
+      rememberSub(sub);
     } else {
       els.notifyButton.setAttribute("aria-label", "通知を有効化");
+      els.notifyButton.classList.remove("attention");
     }
   }
   await refreshState();
@@ -746,26 +820,17 @@ async function initPush(reg) {
       showPushDialog("", "通知がブロックされています。ブラウザのサイト設定で許可してから再度お試しください。");
       return;
     }
-    let sub = null;
-    try { sub = await reg.pushManager.getSubscription(); } catch {}
+    let sub = await getSub();
     if (!sub) {
-      const perm = await Notification.requestPermission();
-      if (perm !== "granted") {
-        showPushDialog("", "通知が許可されませんでした。");
-        return;
-      }
-      try {
-        sub = await reg.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
-        });
-      } catch (err) {
-        showPushDialog("", "購読に失敗しました: " + (err?.message || err));
-        return;
-      }
+      try { sub = await doSubscribe(); }
+      catch (err) { showPushDialog("", "購読に失敗しました: " + (err?.message || err)); return; }
+      if (!sub) return;
     }
     await refreshState();
-    showPushDialog(JSON.stringify(sub.toJSON(), null, 2), "");
+    showPushDialog(
+      JSON.stringify(sub.toJSON(), null, 2),
+      "コピーして Claude Code に渡して登録してください。切れている場合は「再登録」。",
+    );
   });
 
   els.pushCopyBtn?.addEventListener("click", async () => {
@@ -778,6 +843,8 @@ async function initPush(reg) {
       els.pushDialogMsg.textContent = "自動コピーできませんでした。手動で全選択してコピーしてください。";
     }
   });
+  els.pushResubBtn?.addEventListener("click", () => forceResubscribe());
+  els.pushUnsubBtn?.addEventListener("click", () => doUnsubscribe());
   els.pushCloseBtn?.addEventListener("click", () => {
     if (typeof els.pushDialog.close === "function") els.pushDialog.close();
     else els.pushDialog.removeAttribute("open");
