@@ -32,5 +32,5 @@ jobs:
           # 本番と同一経路で失効購読の自動削除も疎通確認する (未設定なら prune のみ無効)
           SECRETS_PAT: ${{ secrets.SECRETS_PAT }}
         run: |
-          npm install --no-save web-push@^3 libsodium-wrappers@^0.7
+          npm install --no-save web-push@^3 libsodium-wrappers@^0.7 libsodium@^0.7
           node scripts/send-push.mjs
