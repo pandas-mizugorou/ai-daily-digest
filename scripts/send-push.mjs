@@ -17,6 +17,12 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 import process from "node:process";
+import { createRequire } from "node:module";
+
+// libsodium-wrappers は ESM 直 import がランナーの Node で解決に失敗する
+// (Cannot find module .../libsodium.mjs)。GitHub 公式の Secret 更新例と同じく
+// CommonJS の require で読み込むことで安定させる。
+const require = createRequire(import.meta.url);
 
 // !!! assets/app.js の VAPID_PUBLIC_KEY と必ず同じ値にすること !!!
 const VAPID_PUBLIC_KEY =
@@ -105,7 +111,7 @@ async function pushSecretWriteback(payloadObj, token) {
   if (!pkRes.ok) throw new Error(`public-key fetch failed: ${pkRes.status}`);
   const { key, key_id } = await pkRes.json();
 
-  const sodium = (await import("libsodium-wrappers")).default;
+  const sodium = require("libsodium-wrappers");
   await sodium.ready;
   const enc = sodium.crypto_box_seal(
     sodium.from_string(value),

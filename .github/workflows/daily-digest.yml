@@ -243,7 +243,7 @@ jobs:
           # (fine-grained: 当該リポの Secrets read+write)。未設定でも送信は動く (prune のみ無効)。
           SECRETS_PAT: ${{ secrets.SECRETS_PAT }}
         run: |
-          npm install --no-save web-push@^3 libsodium-wrappers@^0.7
+          npm install --no-save web-push@^3 libsodium-wrappers@^0.7 libsodium@^0.7
           node scripts/send-push.mjs
 
       # === Phase F: 通知ゼロ / 失効未削除を検知して GitHub Issue を起票 ===
