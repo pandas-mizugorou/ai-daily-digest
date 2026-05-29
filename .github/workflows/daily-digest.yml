@@ -141,8 +141,9 @@ jobs:
             9. **Top Picks 選定** (Step 7.5): `assets/prompt-templates/select-top-picks.md` に従い 5-7 件を id 参照で選定。必読フラグ + 多様性 + japan 最低 1 件 + china 条件付き保証
             10. **日本語要約** (Step 8): 選定された 18-25 件に title_ja / summary_ja / key_points_ja / figure を生成。中文記事 (lang: "zh") は日本語化 (固有名詞は英語表記保持)
             10.5 **X 投稿文生成**: **Top Picks に選ばれた 5-7 件のみ**、その item に `x_post` (string) を 1 つ生成。`assets/prompt-templates/x-post.md` と `references/x-persona.md` に厳密に従う。「である」調 / 絵文字≤1 / ハッシュタグ 0 / 本文 120 字目安 + 空行 + 元記事 URL。**記事内の事実のみ (誇張・推測・記事に無い数字は禁止。figure と同じ厳格さ。X に直接投稿されるため事実誤りは致命的)**。Top Picks 以外の item には `x_post` を付けない
+            10.6 **グラウンディング検証 (Step 8.6、必須)**: `assets/prompt-templates/verify-grounding.md` に従い、各 item の summary_ja / key_points_ja / figure.data / x_post の **全数値・割合・日付・ベンチ名・モデル名・企業名・断定** を、その記事の raw_excerpt / summary_en と照合する。**Edit で書き込む前にチェック**し、裏付けの無い主張は「書き直す / 落とす / figure を summary-card に降格」(再出力はしない)。**Top Picks と x_post は最厳・ゼロトレランス**、安全化できない x_post は付けない (空=正常)。修正/削除した item に `grounding {verified:false, flags, notes}` を付け、総数を `stats.grounding_flags` に記録
             11. 出力ファイル (新スキーマ schema_version: "2.0"):
-                - `data/${{ steps.date.outputs.value }}.json` を新規作成 / 上書き (top_picks[] / categories[] / stats.by_category / stats.top_picks_count を含む)
+                - `data/${{ steps.date.outputs.value }}.json` を新規作成 / 上書き (top_picks[] / categories[] / stats.by_category / stats.top_picks_count / stats.grounding_flags を含む)
                 - `data/latest.json` を当日と同内容で上書き
                 - `data/index.json` の `entries` 先頭を当日エントリで更新 (top_picks_count も格納、既存なら置換、無ければ追加)。直近 90 件まで保持
                 - `data/_seen.json` を更新 (URL ハッシュ + first_seen_at + last_seen_at + last_seen_count、90 日保持)
@@ -172,6 +173,7 @@ jobs:
                - ... 以下同様、10 カテゴリ分
                - 各 Edit は items[] 配列だけを置換すれば OK (空 `[]` を埋める形)
             2.5 **Step B2: Top Picks の x_post を Edit** — Top Picks に選ばれた 5-7 件の item にだけ `x_post` を 1 回の Edit でまとめて追加 (各 ~140 字 × 5-7 件 ≈ 1K 字なので 1 Edit で安全)。`assets/prompt-templates/x-post.md` 準拠。Top Picks 以外の item は触らない
+            2.6 **Step B3: グラウンディング検証 (Step 8.6)** — 各カテゴリ items[] / x_post を Edit する**前**に `verify-grounding.md` に従い数値・固有名詞を raw_excerpt と照合して書き込む値を確定する (再出力はしない)。修正があった item に `grounding` を付与し総数を `stats.grounding_flags` へ。x_post は検証通過分のみ Edit する
             3. **Step C: latest.json コピー** — `data/<DATE>.json` をそのまま `data/latest.json` に書き込み
             4. **Step D: index.json 更新** — `data/index.json` の entries 先頭を当日エントリで Edit (top_picks_count 含む)
             5. **Step E: _seen.json 更新** — `data/_seen.json` を Edit (新規 URL の追加 / last_seen_count のインクリメント)

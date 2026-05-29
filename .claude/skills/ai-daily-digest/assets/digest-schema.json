@@ -37,6 +37,11 @@
           "type": "object",
           "additionalProperties": { "type": "integer", "minimum": 0 },
           "description": "カテゴリ ID → 件数のマップ (Phase A 以降)"
+        },
+        "grounding_flags": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Step 8.6 グラウンディング検証で修正/削除した主張の総数 (Phase F、optional)。多い日は要約の事実精度が低下した可能性。watchdog が >8 で警告"
         }
       }
     },
@@ -180,6 +185,16 @@
         "figure": {
           "$ref": "#/$defs/figure",
           "description": "**必須**。図だけで記事の核心が直感的に分かる視覚図解。記事の性質に応じて 4 種から選ぶ: comparison (旧 vs 新比較) / metric-bars (横棒グラフ) / timeline (段階展開) / summary-card (汎用構造化)。具体的な数字が乏しい記事は summary-card にフォールバックして必ず生成 (記事内の事実のみ使用、創作禁止)"
+        },
+        "grounding": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Step 8.6 グラウンディング検証の結果 (Phase F、optional)。verified=false の item のみ注記する (clean な item には付けない)。フロントは verified===false で ⚠️ を表示する",
+          "properties": {
+            "verified": { "type": "boolean", "description": "全主張が記事内の事実に基づくと確認できたら true。修正/削除が残ったら false" },
+            "flags": { "type": "integer", "minimum": 0, "description": "未グラウンドとして修正/削除した主張の数" },
+            "notes": { "type": "array", "items": { "type": "string" }, "description": "修正/削除した主張の簡潔なメモ (任意)" }
+          }
         }
       }
     },
