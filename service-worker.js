@@ -1,6 +1,6 @@
 // AI Daily Digest — service worker
-// v27: 通知の自己修復 (Track 1) — 🔔 ダイアログに「再登録/解除」追加 + 失効検知の注意ドット
-const VERSION = "v27";
+// v28: コンテンツ品質ガード (Track 2) — 未検証主張に ⚠ マーカー (app.js renderCard)
+const VERSION = "v28";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 

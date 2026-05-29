@@ -70,6 +70,10 @@ jobs:
             if [ "${SKIPPED}" -gt 30 ]; then
               PROBLEMS+=("🟡 skipped_sources が異常に多い: ${SKIPPED} 件（平常 約12）。広域のソース障害の可能性")
             fi
+            GFLAGS=$(node -e "process.stdout.write(String((JSON.parse(require('fs').readFileSync('${DAILY}','utf8')).stats||{}).grounding_flags ?? 0))")
+            if [ "${GFLAGS}" -gt 8 ]; then
+              PROBLEMS+=("🟡 グラウンディング修正が多い: ${GFLAGS} 件（要約/図/x_post の事実精度が低下した可能性）")
+            fi
           fi
 
           # ---- 週次チェック（日曜のみ）----

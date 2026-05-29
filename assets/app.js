@@ -328,6 +328,14 @@ function renderCard(item) {
   scoreEl.title = item.scores
     ? `重要度${item.scores.importance ?? "?"} / 深度${item.scores.depth ?? "?"} / 実用性${item.scores.practicality ?? "?"} / 鮮度${item.scores.freshness ?? "?"}`
     : "";
+  // グラウンディング検証 (Step 8.6) で未検証主張が残った記事に ⚠ を出す
+  if (item.grounding && item.grounding.verified === false) {
+    const warn = document.createElement("span");
+    warn.className = "card-grounding-warn";
+    warn.textContent = "⚠";
+    warn.title = "一部の主張が記事で確認できず修正/削除されています（要確認）";
+    node.querySelector(".card-meta")?.appendChild(warn);
+  }
 
   node.querySelector(".card-summary").textContent = item.summary_ja || "";
 

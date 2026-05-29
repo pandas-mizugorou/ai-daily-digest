@@ -200,6 +200,12 @@ button { font: inherit; cursor: pointer; }
   border-radius: 50%;
   background: #ef4444;
 }
+/* 未検証主張マーカー (Phase F: グラウンディング検証 Step 8.6) */
+.card-grounding-warn {
+  color: #f59e0b;
+  font-size: 0.95em;
+  cursor: help;
+}
 
 .date-nav {
   max-width: var(--maxw);
