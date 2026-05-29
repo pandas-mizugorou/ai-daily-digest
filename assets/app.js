@@ -424,6 +424,8 @@ function renderTopPicks(topPicks, itemIndex) {
     const card = renderCard(item);
     card.classList.add("top-pick-card");
     card.dataset.rank = String(pick.rank || "");
+    // #1-3 は lead、#4-6 は rest。色でなくサイズ/余白で必読内の優先順を示す
+    card.dataset.tier = pick.rank && pick.rank <= 3 ? "lead" : "rest";
     itemsEl.appendChild(card);
     appended += 1;
   }
@@ -483,9 +485,13 @@ function renderDay(data) {
   els.summaryDate.textContent = formatDateJa(data.date);
   els.summaryDate.dateTime = data.date;
   if (data.stats) {
-    const topCount = data.stats.top_picks_count;
-    const topSeg = topCount ? ` / Top ${topCount}` : "";
-    els.summaryStats.textContent = `収集 ${data.stats.total_collected ?? "-"} / 選定 ${data.stats.selected ?? "-"}${topSeg}`;
+    const s = data.stats;
+    // 収集/選定/Top を tabular-nums の stat-chip 群に（数値=値はすべて JSON 由来の数のみ＝XSS なし）
+    const chips = [["収集", s.total_collected], ["選定", s.selected], ["Top", s.top_picks_count]]
+      .filter(([, v]) => v != null && v !== "")
+      .map(([label, v]) => `<span class="stat-chip"><b>${v}</b>${label}</span>`)
+      .join("");
+    els.summaryStats.innerHTML = chips;
   } else {
     els.summaryStats.textContent = "";
   }

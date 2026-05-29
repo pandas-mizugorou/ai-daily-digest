@@ -333,20 +333,26 @@ function renderKeywordCloud(cloud) {
   }
   const container = els.keywordCloud.querySelector(".kw-items");
   container.innerHTML = "";
-  // count の最大値を基準にフォントサイズを決める (0.85rem - 1.6rem)
+  // 頻度(count)を 4 段(.kw-s/.kw-m/.kw-l/.kw-xl)に量子化して大小で示す。
+  // 連続マップだと隣接語の差が 1-2px で潰れて均一に見えるため段階化する。
+  const SIZE = ["kw-s", "kw-m", "kw-l", "kw-xl"];
   const maxCount = Math.max(...cloud.map((c) => c.count));
   for (const c of cloud.slice(0, 30)) {
     const span = document.createElement("span");
-    const ratio = c.count / maxCount;
-    const fontSize = (0.85 + ratio * 0.75).toFixed(2);
-    span.className = "kw-item";
-    span.style.fontSize = `${fontSize}rem`;
-    if (c.delta_vs_prev_week > 0) span.classList.add("kw-up");
-    if (c.delta_vs_prev_week < 0) span.classList.add("kw-down");
-    const deltaTxt = c.delta_vs_prev_week
-      ? ` (${c.delta_vs_prev_week > 0 ? "+" : ""}${c.delta_vs_prev_week})`
-      : "";
-    span.textContent = `${c.keyword}${deltaTxt}`;
+    const ratio = maxCount ? c.count / maxCount : 0;
+    const bucket = ratio > 0.75 ? 3 : ratio > 0.5 ? 2 : ratio > 0.25 ? 1 : 0;
+    span.className = `kw-item ${SIZE[bucket]}`;
+    const dv = c.delta_vs_prev_week;
+    span.textContent = `${c.keyword} `;
+    // 上昇/下降は面色でなく小さな▲▼+数値の点色だけで示す（静けさのため面塗りは廃止）
+    if (dv) {
+      const trend = document.createElement("span");
+      trend.className = `kw-trend ${dv > 0 ? "kw-up" : "kw-down"}`;
+      trend.setAttribute("aria-hidden", "true");
+      trend.textContent = `${dv > 0 ? "▲" : "▼"}${Math.abs(dv)}`;
+      span.appendChild(trend);
+    }
+    const deltaTxt = dv ? ` (${dv > 0 ? "+" : ""}${dv})` : "";
     span.title = `${c.count} 件${deltaTxt ? " 前週比" + deltaTxt : ""}`;
     container.appendChild(span);
   }

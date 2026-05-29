@@ -16,6 +16,8 @@
   --radius: 14px;
   --radius-sm: 8px;
   --maxw: 720px;
+  --measure: 38rem; /* 本文ブロックの最適可読幅 (約66字) */
+  --space: 0.5rem;  /* 余白リズムの基準単位 */
   --tap: 44px;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -1450,14 +1452,17 @@ button { font: inherit; cursor: pointer; }
 .category.tab-hidden { display: none; }
 .weekly-section.tab-hidden { display: none; }
 
-/* === China category styling (subtle accent) === */
+/* === Japan/China: 国旗で識別（汎用カラードットの代わりに国旗を出す。
+   下部 Batch1 ブロックの .category-title::before ドット指定を打ち消す） === */
 .category[data-cat-id="china"] .category-title::before {
-  content: "🇨🇳 ";
-  font-size: 0.9em;
+  content: "🇨🇳";
+  background: none; width: auto; height: auto; border-radius: 0;
+  font-size: 0.95em;
 }
 .category[data-cat-id="japan"] .category-title::before {
-  content: "🇯🇵 ";
-  font-size: 0.9em;
+  content: "🇯🇵";
+  background: none; width: auto; height: auto; border-radius: 0;
+  font-size: 0.95em;
 }
 
 /* === lang=zh card hint === */
@@ -1685,14 +1690,17 @@ button { font: inherit; cursor: pointer; }
   white-space: nowrap;
   transition: color 0.12s ease, background-color 0.12s ease;
 }
-.kw-item.kw-up {
-  color: var(--fig-tone-success);
-  background: color-mix(in srgb, var(--fig-tone-success) 10%, var(--bg-soft));
+/* 上昇/下降は面色でなく小さな▲▼グリフ(.kw-trend)の点色だけで示す
+   （ページ唯一の派手な面塗りを廃止し、頻度はサイズ4段で表現する） */
+.kw-trend {
+  font-size: 0.66em;
+  margin-inline-start: 4px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  vertical-align: 1px;
 }
-.kw-item.kw-down {
-  color: var(--fig-tone-danger);
-  background: color-mix(in srgb, var(--fig-tone-danger) 10%, var(--bg-soft));
-}
+.kw-trend.kw-up { color: var(--fig-tone-success); }
+.kw-trend.kw-down { color: var(--fig-tone-danger); }
 
 /* === Watchlist === */
 .watchlist {
@@ -2040,3 +2048,112 @@ button { font: inherit; cursor: pointer; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* ============================================================ */
+/* === Batch 1: 静かな上質の上質化                              === */
+/* 設計原則: 色は「点」で・階層はサイズ/ウェイトで・余白は削らない */
+/* ============================================================ */
+
+/* --- 本文の可読幅(measure): 長文ブロックだけ ~66字で折る。
+   メタ/バー/チップ/figureバーはフル幅のまま維持する --- */
+.card-summary,
+.search-card-text,
+.fig-tldr-text,
+.fig-context-text,
+.fig-narrative-text,
+.fig-impact-text,
+.fig-point-description {
+  max-width: var(--measure);
+}
+
+/* --- ヒーロー: 統計を stat-chip 化（収集/選定/Top を tabular-nums のピルに） --- */
+.summary-stats { display: flex; flex-wrap: wrap; gap: 6px; }
+.stat-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--fg) 5%, transparent);
+  font-size: 0.7rem;
+  color: var(--fg-subtle);
+  white-space: nowrap;
+}
+.stat-chip b {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--fg-muted);
+  font-variant-numeric: tabular-nums;
+}
+/* 見出しを主役に（サイズは据置、行間を締めて字間を僅かに詰める）。本文は可読幅を絞る */
+.summary-headline { line-height: 1.4; letter-spacing: -0.005em; }
+.summary-text { max-width: 34rem; }
+
+/* --- Top Picks: #1-3(lead) と #4-6(rest) に静かな段差（色でなくサイズ/余白で） --- */
+.top-pick-card[data-tier="lead"] {
+  border-inline-start: 2px solid color-mix(in oklab, var(--accent) 50%, var(--border));
+}
+.top-pick-card[data-tier="rest"] .card-title { font-size: 0.95rem; }
+.top-pick-card[data-tier="rest"] .card-toggle { padding-top: 11px; padding-bottom: 11px; }
+.top-pick-card[data-tier="rest"]::before {
+  width: 20px; height: 20px;
+  font-size: 0.72rem;
+  top: 11px; left: 12px;
+}
+
+/* --- 10カテゴリの低彩度OKLCH色を「点」で（左2px keyline + 見出しドット）。
+   L/C はテーマ固定・H だけカテゴリで回す＝自動調和。背景は塗らない --- */
+:root { --cat-l: 0.58; --cat-c: 0.10; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --cat-l: 0.72; --cat-c: 0.085; }
+}
+[data-theme="dark"] { --cat-l: 0.72; --cat-c: 0.085; }
+[data-theme="light"] { --cat-l: 0.58; --cat-c: 0.10; }
+
+.category[data-cat-id] { --cat-h: 250; --cat: oklch(var(--cat-l) var(--cat-c) var(--cat-h)); }
+.category[data-cat-id="new_models"] { --cat-h: 264; }
+.category[data-cat-id="tools_apps"], .category[data-cat-id="tools"] { --cat-h: 205; }
+.category[data-cat-id="agents"] { --cat-h: 155; }
+.category[data-cat-id="multimodal"] { --cat-h: 320; }
+.category[data-cat-id="research_papers"], .category[data-cat-id="research"] { --cat-h: 285; }
+.category[data-cat-id="industry_business"], .category[data-cat-id="industry"] { --cat-h: 75; }
+.category[data-cat-id="regulation_policy"] { --cat-h: 30; }
+.category[data-cat-id="community_buzz"] { --cat-h: 50; }
+.category[data-cat-id="japan"] { --cat-h: 12; }
+.category[data-cat-id="china"] { --cat-h: 25; }
+
+.category-title::before {
+  content: "";
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--cat, var(--fg-subtle));
+  margin-inline-end: 7px;
+  vertical-align: middle;
+}
+.category[data-cat-id] .card {
+  border-inline-start: 2px solid var(--cat, var(--border));
+}
+
+/* --- 図解: バーフィルの「成長」入場。カード展開/details開で scaleX(0→1)。
+   transition と違い表示のたびに再生する。reduced-motion は全体ブロックで停止 --- */
+@keyframes fig-bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.fig-cmp-bar-fill, .fig-mb-fill { transform-origin: left center; }
+.card[data-expanded="true"] .fig-cmp-bar-fill,
+.card[data-expanded="true"] .fig-mb-fill,
+.search-card[open] .fig-cmp-bar-fill,
+.search-card[open] .fig-mb-fill {
+  animation: fig-bar-grow 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* --- 図解: delta の符号を矢印グリフでも示す（色だけに頼らない＝色覚多様性に強い） --- */
+.fig-delta-arrow { font-weight: 700; margin-inline-end: 2px; font-variant-numeric: normal; }
+
+/* --- 図解: 結論側(after)の値を一段強く（数値を主役に） --- */
+.fig-cmp-bar-row-after .fig-cmp-bar-value { font-size: 0.95rem; }
+
+/* --- 週次キーワードクラウド: 頻度をサイズ4段に量子化（連続マップの段差潰れを解消） --- */
+.kw-s  { font-size: 0.82rem; font-weight: 500; }
+.kw-m  { font-size: 0.98rem; font-weight: 600; }
+.kw-l  { font-size: 1.2rem;  font-weight: 700; }
+.kw-xl { font-size: 1.5rem;  font-weight: 700; }
