@@ -14,6 +14,12 @@ function safeTone(t) {
   return FIGURE_TONES.includes(t) ? t : "default";
 }
 
+// delta の符号方向を矢印グリフでも示す（色だけに頼らない＝色覚多様性に強い）。
+// success=改善↑ / danger=悪化↓ / warning=横ばい→ / それ以外は無し
+function deltaGlyph(tone) {
+  return tone === "success" ? "↑" : tone === "danger" ? "↓" : tone === "warning" ? "→" : "";
+}
+
 function renderSummaryCard(d) {
   const wrap = document.createElement("div");
   wrap.className = "fig-summary";
@@ -156,8 +162,9 @@ function renderComparison(d) {
       const beforeBar = beforePct == null ? 50 : beforePct;
       const afterBar = afterPct == null ? 50 : afterPct;
       const icon = m.icon ? `<span class="fig-cmp-icon" aria-hidden="true">${escapeHtml(m.icon)}</span>` : "";
+      const cmpGlyph = deltaGlyph(tone);
       const delta = m.delta
-        ? `<span class="fig-cmp-delta">${escapeHtml(m.delta)}</span>`
+        ? `<span class="fig-cmp-delta">${cmpGlyph ? `<span class="fig-delta-arrow" aria-hidden="true">${cmpGlyph}</span>` : ""}${escapeHtml(m.delta)}</span>`
         : "";
       const note = m.note
         ? `<div class="fig-cmp-note">${escapeHtml(m.note)}</div>`
@@ -230,7 +237,8 @@ function renderMetricBars(d) {
         ? `<span class="fig-mb-baseline" style="left:${basePct}%" aria-hidden="true"></span>
            <span class="fig-mb-baseline-tag" style="left:${basePct}%" title="${escapeHtml(b.baseline_label || "比較基準")}: ${basePct}">${escapeHtml(b.baseline_label || "基準")}</span>`
         : "";
-      const delta = b.delta ? `<span class="fig-mb-delta">${escapeHtml(b.delta)}</span>` : "";
+      const mbGlyph = deltaGlyph(tone);
+      const delta = b.delta ? `<span class="fig-mb-delta">${mbGlyph ? `<span class="fig-delta-arrow" aria-hidden="true">${mbGlyph}</span>` : ""}${escapeHtml(b.delta)}</span>` : "";
       const note = b.note ? `<span class="fig-mb-note">${escapeHtml(b.note)}</span>` : "";
       li.innerHTML = `
         <div class="fig-mb-head">

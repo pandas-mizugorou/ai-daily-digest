@@ -1,6 +1,7 @@
 // AI Daily Digest — service worker
 // v28: コンテンツ品質ガード (Track 2) — 未検証主張に ⚠ マーカー (app.js renderCard)
-const VERSION = "v28";
+// v29: ビジュアル上質化 Batch1 — stat-chip / カテゴリ点色 / 図解バー成長fade+delta矢印 / kwクラウド4段量子化 / 可読幅measure
+const VERSION = "v29";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
