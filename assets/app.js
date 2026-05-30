@@ -191,6 +191,21 @@ const CATEGORY_ORDER = [
   "china",
 ];
 
+// カテゴリ色相。styles.css の .category[data-cat-id] { --cat-h } と一致させること。
+// ヒーローの「今日の構成」ミニ棒で同じ色を使うため JS 側にも持つ。
+const CATEGORY_HUE = {
+  new_models: 264,
+  tools_apps: 205, tools: 205,
+  agents: 155,
+  multimodal: 320,
+  research_papers: 285, research: 285,
+  industry_business: 75, industry: 75,
+  regulation_policy: 30,
+  community_buzz: 50,
+  japan: 12,
+  china: 25,
+};
+
 function sortCategoriesForDisplay(categories) {
   return [...categories].sort((a, b) => {
     const ai = CATEGORY_ORDER.indexOf(a.id);
@@ -254,6 +269,7 @@ function scoreClass(total) {
 // 描画ロジックは assets/figure.js に分離 (日次/週次/検索で共有)。
 import { renderFigure } from "./figure.js";
 import { copyXDraft, hasXPost } from "./xdraft.js";
+import { faviconFor, sourceTypeChip } from "./provenance.js";
 
 function articleAnchorId(itemId) {
   return `article-${(itemId || "").replace(/[^\w\-]/g, "")}`;
@@ -319,7 +335,14 @@ function renderCard(item) {
   titleEl.textContent = primary;
   titleJaEl.textContent = secondary;
   const sourceLabel = item.source_label || item.source || "";
-  node.querySelector(".card-source").textContent = sourceLabel;
+  const metaEl = node.querySelector(".card-meta");
+  const sourceEl = node.querySelector(".card-source");
+  sourceEl.textContent = sourceLabel;
+  // 発行元 favicon を先頭に（出所が一目で分かる）。失敗時は色ドットに自動退避
+  if (item.url) metaEl.insertBefore(faviconFor(item.url), metaEl.firstChild);
+  // source_type の性格ラベル（公式/論文/まとめ…）を出典名の直後に
+  const srcChip = sourceTypeChip(item.source_type);
+  if (srcChip) sourceEl.insertAdjacentElement("afterend", srcChip);
   node.querySelector(".card-date").textContent = formatShortDate(item.published_at);
   const scoreEl = node.querySelector(".card-score");
   const total = item.scores?.total ?? 0;
@@ -398,6 +421,61 @@ function renderCategory(category) {
   const container = node.querySelector(".category-items");
   for (const item of items) container.appendChild(renderCard(item));
   return node;
+}
+
+// === 今日の構成ミニ棒 (by_category 比率バー) ===
+function composeLabel(id, categories) {
+  const cat = (categories || []).find((c) => c.id === id);
+  return (cat && cat.label_ja) || categoryFallbackLabel(id);
+}
+
+// stats.by_category を 1 本の比率バー + 上位凡例で可視化する。
+// 「今日は日本語ソースが厚い」等の構成が一目で掴める。色は既存のカテゴリ色を流用。
+function renderComposeBar(byCategory, categories) {
+  // 日付切替で残らないよう既存を除去
+  els.summary.querySelector(".summary-compose")?.remove();
+  if (!byCategory || typeof byCategory !== "object") return;
+  const entries = Object.entries(byCategory)
+    .filter(([, n]) => Number(n) > 0)
+    .sort((a, b) => Number(b[1]) - Number(a[1]));
+  if (entries.length < 2) return; // 1 カテゴリのみは比較情報にならないので出さない
+
+  const wrap = document.createElement("div");
+  wrap.className = "summary-compose";
+
+  const bar = document.createElement("div");
+  bar.className = "compose-bar";
+  bar.setAttribute("role", "img");
+  bar.setAttribute(
+    "aria-label",
+    "今日の構成: " + entries.map(([id, n]) => `${composeLabel(id, categories)} ${n}件`).join("、"),
+  );
+  for (const [id, n] of entries) {
+    const seg = document.createElement("span");
+    seg.className = "compose-seg";
+    if (CATEGORY_HUE[id] != null) seg.style.setProperty("--cat-h", CATEGORY_HUE[id]);
+    seg.style.flexGrow = String(n);
+    seg.title = `${composeLabel(id, categories)}: ${n}件`;
+    bar.appendChild(seg);
+  }
+  wrap.appendChild(bar);
+
+  const legend = document.createElement("div");
+  legend.className = "compose-legend";
+  for (const [id, n] of entries.slice(0, 5)) {
+    const item = document.createElement("span");
+    item.className = "compose-legend-item";
+    if (CATEGORY_HUE[id] != null) item.style.setProperty("--cat-h", CATEGORY_HUE[id]);
+    const dot = document.createElement("span");
+    dot.className = "compose-legend-dot";
+    dot.setAttribute("aria-hidden", "true");
+    const b = document.createElement("b");
+    b.textContent = String(n);
+    item.append(dot, document.createTextNode(composeLabel(id, categories) + " "), b);
+    legend.appendChild(item);
+  }
+  wrap.appendChild(legend);
+  els.summary.insertBefore(wrap, els.summaryHeadline);
 }
 
 // === Top Picks rendering ===
@@ -479,6 +557,44 @@ function filterCategoriesByTab(catId) {
   });
 }
 
+// === 入場スタッガー fade ===
+// カテゴリ内カードがスクロールで視界に入った時だけ .is-visible を付けて fade-in。
+// .reveal の初期非表示は CSS で prefers-reduced-motion: no-preference に限定して
+// いるため、reduced-motion 環境では自動的に無効（内容は最初から見える）。
+let revealObserver = null;
+function getRevealObserver() {
+  if (revealObserver) return revealObserver;
+  if (!("IntersectionObserver" in window)) return null;
+  revealObserver = new IntersectionObserver(
+    (entries, obs) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.classList.add("is-visible");
+          obs.unobserve(e.target);
+        }
+      }
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.04 },
+  );
+  return revealObserver;
+}
+
+function applyRevealStagger() {
+  const obs = getRevealObserver();
+  const cards = els.categories.querySelectorAll(".category .card");
+  let lastCat = null;
+  let i = 0;
+  cards.forEach((card) => {
+    const cat = card.closest(".category");
+    if (cat !== lastCat) { lastCat = cat; i = 0; }
+    card.classList.add("reveal");
+    card.style.setProperty("--reveal-i", String(Math.min(i, 5))); // 段差は 5 段で頭打ち
+    i += 1;
+    if (obs) obs.observe(card);
+    else card.classList.add("is-visible"); // IO 非対応はそのまま表示
+  });
+}
+
 function renderDay(data) {
   hideStatus();
   els.summary.classList.remove("hidden");
@@ -515,6 +631,9 @@ function renderDay(data) {
   const categories = sortCategoriesForDisplay(rawCategories);
   const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
 
+  // 今日の構成ミニ棒 (stats.by_category)。データが無ければ何も出さない
+  renderComposeBar(data.stats?.by_category, categories);
+
   // Top Picks (新スキーマのみ。旧スキーマは data.top_picks 未定義で section が hidden 維持)
   const itemIndex = buildItemIndex(categories);
   renderTopPicks(data.top_picks, itemIndex);
@@ -531,6 +650,9 @@ function renderDay(data) {
   for (const category of populated) {
     els.categories.appendChild(renderCategory(category));
   }
+
+  // 入場スタッガー fade: カテゴリ内カードが視界に入ったら静かに現れる
+  applyRevealStagger();
 }
 
 async function loadDay(date) {

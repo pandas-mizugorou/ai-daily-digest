@@ -2157,3 +2157,129 @@ button { font: inherit; cursor: pointer; }
 .kw-m  { font-size: 0.98rem; font-weight: 600; }
 .kw-l  { font-size: 1.2rem;  font-weight: 700; }
 .kw-xl { font-size: 1.5rem;  font-weight: 700; }
+
+/* ============================================================ */
+/* === Batch 2: 出典の充実 / 今日の構成 / 入場 / 面の磨き込み === */
+/* 設計原則は Batch1 と同じ: 色は「点」で・階層はサイズ/ウェイトで・余白は削らない */
+/* ============================================================ */
+
+/* --- 発行元 favicon（サイト唯一の外部リクエスト = DuckDuckGo）。
+   取得失敗 / オフライン時は .favicon-fallback の色ドットへ退避。16px 枠は常に確保 --- */
+.favicon {
+  display: inline-flex;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.favicon-img {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+/* dark では透過グリフの favicon が背景に埋もれるため薄い白地を敷く */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .favicon-img { background: #fff; }
+}
+[data-theme="dark"] .favicon-img { background: #fff; }
+.favicon-fallback::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  /* カテゴリ内なら --cat、それ以外（Top Picks 等）は中立色 */
+  background: var(--cat, var(--fg-subtle));
+}
+
+/* --- source_type チップ（公式/論文/まとめ…）。色は足さず中立の極小ピルで「点」に --- */
+.src-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--fg-subtle);
+  background: color-mix(in oklab, var(--fg) 6%, transparent);
+  white-space: nowrap;
+}
+
+/* --- ヒーロー「今日の構成」: カテゴリ別件数の比率バー 1 本 + 上位凡例。
+   セグメント色は日次カテゴリと同じ OKLCH（--cat-l/--cat-c はテーマ固定・H で回す） --- */
+.summary-compose { margin: 2px 0 12px; }
+.compose-bar {
+  display: flex;
+  height: 7px;
+  gap: 1px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+.compose-seg {
+  min-width: 4px; /* flex-grow は JS で件数比に設定。空要素なので grow が比率を決める */
+  background: oklch(var(--cat-l) var(--cat-c) var(--cat-h, 250));
+}
+.compose-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 7px;
+  font-size: 0.72rem;
+  color: var(--fg-subtle);
+}
+.compose-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.compose-legend-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: oklch(var(--cat-l) var(--cat-c) var(--cat-h, 250));
+}
+.compose-legend-item b {
+  color: var(--fg-muted);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- 入場スタッガー fade: カテゴリカードがスクロールで視界に入ったら静かに現れる。
+   初期非表示は no-preference 限定 = reduced-motion では最初から表示される --- */
+@media (prefers-reduced-motion: no-preference) {
+  .card.reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: calc(var(--reveal-i, 0) * 45ms);
+    will-change: opacity, transform;
+  }
+  .card.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --- dark の面エレベーション: ネスト面の段差を明度差 + 極薄ハイライト線で出す。
+   light ではハイライトなし（既存の影で十分） --- */
+:root { --elev-hi: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --elev-hi: inset 0 1px 0 rgba(255, 255, 255, 0.045); }
+}
+[data-theme="dark"] { --elev-hi: inset 0 1px 0 rgba(255, 255, 255, 0.045); }
+[data-theme="light"] { --elev-hi: none; }
+.card { box-shadow: var(--shadow), var(--elev-hi); }
+.summary { box-shadow: var(--shadow), var(--elev-hi); }
+
+/* --- Top Picks「箱→線」: グラデ塗り + accent 枠の圧を抜き、上辺の accent keyline で
+   グルーピングだけ残す。必読の存在感はランク丸（色の点）と見出しで担保 --- */
+.top-picks {
+  background: var(--bg-elevated);
+  border-color: var(--border);
+  border-top: 2px solid color-mix(in oklab, var(--accent) 55%, var(--border));
+  box-shadow: var(--shadow), var(--elev-hi);
+}

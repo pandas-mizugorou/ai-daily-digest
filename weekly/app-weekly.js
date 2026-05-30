@@ -1,6 +1,7 @@
 // AI Daily Digest — weekly summary frontend
 import { renderFigure } from "../assets/figure.js";
 import { copyXDraft, hasXPost } from "../assets/xdraft.js";
+import { faviconFor, sourceTypeChip } from "../assets/provenance.js";
 
 const DATA_DIR = "../data";
 const THEME_KEY = "aidd:theme";
@@ -203,7 +204,12 @@ function renderWeeklyItem(item) {
     lang === "en" || lang === "zh" ? titleJa || title || "(無題)" : title || titleJa || "(無題)";
   node.querySelector(".weekly-title-text").textContent = titleText;
 
-  node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
+  const metaEl = node.querySelector(".search-card-meta");
+  const sourceEl = node.querySelector(".search-card-source");
+  sourceEl.textContent = item.source_label || item.source || "";
+  if (item.url) metaEl.insertBefore(faviconFor(item.url), metaEl.firstChild);
+  const srcChip = sourceTypeChip(item.source_type);
+  if (srcChip) sourceEl.insertAdjacentElement("afterend", srcChip);
   node.querySelector(".search-card-date").textContent = formatShortDate(item._date || item.published_at);
   node.querySelector(".search-card-score").textContent = `★ ${item.scores?.total ?? 0}/20`;
 
