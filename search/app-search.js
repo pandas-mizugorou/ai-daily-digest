@@ -1,6 +1,7 @@
 // AI Daily Digest — 検索ページ (Phase F-3)
 import { renderFigure } from "../assets/figure.js";
 import { copyXDraft, hasXPost } from "../assets/xdraft.js";
+import { faviconFor, sourceTypeChip } from "../assets/provenance.js";
 
 const THEME_KEY = "aidd:theme";
 const INDEX_URL = "../data/search-index.json";
@@ -177,7 +178,13 @@ async function loadFigureInto(item, figEl) {
 function renderResultCard(item) {
   const node = els.resultTpl.content.firstElementChild.cloneNode(true);
   node.querySelector(".search-card-title").textContent = pickTitle(item);
-  node.querySelector(".search-card-source").textContent = item.source_label || item.source || "";
+  const metaEl = node.querySelector(".search-card-meta");
+  const sourceEl = node.querySelector(".search-card-source");
+  sourceEl.textContent = item.source_label || item.source || "";
+  if (item.url) metaEl.insertBefore(faviconFor(item.url), metaEl.firstChild);
+  // source_type は検索インデックスには無い場合が多い → あれば出す（無ければ自動スキップ）
+  const srcChip = sourceTypeChip(item.source_type);
+  if (srcChip) sourceEl.insertAdjacentElement("afterend", srcChip);
   node.querySelector(".search-card-date").textContent = formatShortDate(item.date);
   node.querySelector(".search-card-score").textContent = `★ ${item.score ?? 0}/20`;
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
