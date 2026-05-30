@@ -1,0 +1,11 @@
+{
+  "name": "ai-daily-digest",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI Daily Digest — static site + zero-dependency build/validation scripts. type:module so Node can import the shared ESM module assets/figure-normalize.js used by both the browser renderer and the CI scripts.",
+  "scripts": {
+    "validate": "node scripts/validate-digest.mjs --all",
+    "normalize": "node scripts/normalize-digest.mjs"
+  }
+}

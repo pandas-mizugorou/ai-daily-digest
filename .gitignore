@@ -15,3 +15,6 @@ data/subscriptions.json
 
 # send-push.mjs が毎回残す実行結果サマリ (workflow のアラート判定専用、コミット不要)
 data/_push-status.json
+
+# validate-digest.mjs の図解検証レポート (実行ごとのテレメトリ。CI のステップサマリで可視化、コミット不要)
+data/_validation/
