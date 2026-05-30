@@ -24,12 +24,36 @@
     "grounding_flags": 0
   },
   "top_picks": [
-    { "id": "2026-05-31-010", "rank": 1, "reason": "must_read:academic+importance5+depth5+safety_significance" },
-    { "id": "2026-05-31-006", "rank": 2, "reason": "must_read:academic+importance5+depth5+practicality3" },
-    { "id": "2026-05-31-018", "rank": 3, "reason": "must_read:hatena432_reaction+japan_guaranteed" },
-    { "id": "2026-05-31-003", "rank": 4, "reason": "must_read:official+importance4+practicality5" },
-    { "id": "2026-05-31-005", "rank": 5, "reason": "must_read:official+importance5+google_deepmind" },
-    { "id": "2026-05-31-001", "rank": 6, "reason": "must_read:official+openai+biodefense_significance" }
+    {
+      "id": "2026-05-31-010",
+      "rank": 1,
+      "reason": "must_read:academic+importance5+depth5+safety_significance"
+    },
+    {
+      "id": "2026-05-31-006",
+      "rank": 2,
+      "reason": "must_read:academic+importance5+depth5+practicality3"
+    },
+    {
+      "id": "2026-05-31-018",
+      "rank": 3,
+      "reason": "must_read:hatena432_reaction+japan_guaranteed"
+    },
+    {
+      "id": "2026-05-31-003",
+      "rank": 4,
+      "reason": "must_read:official+importance4+practicality5"
+    },
+    {
+      "id": "2026-05-31-005",
+      "rank": 5,
+      "reason": "must_read:official+importance5+google_deepmind"
+    },
+    {
+      "id": "2026-05-31-001",
+      "rank": 6,
+      "reason": "must_read:official+openai+biodefense_significance"
+    }
   ],
   "categories": [
     {
@@ -48,7 +72,13 @@
           "category": "new_models",
           "published_at": "2026-05-29",
           "lang": "en",
-          "tags": ["openai", "biodefense", "life-sciences", "gpt-rosalind", "pandemic"],
+          "tags": [
+            "openai",
+            "biodefense",
+            "life-sciences",
+            "gpt-rosalind",
+            "pandemic"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -67,19 +97,43 @@
           "x_post": "OpenAIが生命科学専用推論モデルGPT-Rosalindを政府・研究機関向けに無償開放するRosalind Biodefenseプログラムを開始した。化学・生化学・実験設計の内部ベンチマークでGPT-5を上回り、Lawrence Livermore・CEPI・Johns Hopkins APLが早期パートナーとして参加。CEPIはバンジョウエボラ対策の100日間ミッションに活用中だ。\n\nhttps://openai.com/index/introducing-gpt-rosalind/",
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI Rosalind Biodefenseプログラムの概要。GPT-Rosalindは化学・生化学・実験設計でGPT-5を上回る。開発者トラックと連邦政府トラックの2経路で無償提供。早期パートナーはLawrence Livermore、Johns Hopkins APL、CEPIの3機関。CEPIはバンジョウエボラ対策ワクチン開発に活用中。SecureDNAやFourth Eonも参加。",
             "data": {
               "headline": "GPT-Rosalind、生命科学AI基盤としてバイオディフェンスへ無償開放",
               "tldr": "OpenAIが生命科学推論モデルGPT-Rosalindを政府・研究機関に無償開放。分子・タンパク質・遺伝子推論でGPT-5を上回り、バイオセキュリティ領域での実用化が始まった。",
               "points": [
-                { "icon": "🧬", "label": "モデル特化", "value": "生命科学推論", "tone": "primary", "description": "化学・生化学・実験設計の内部ベンチマークでGPT-5およびGPT-5.4を上回ると主張" },
-                { "icon": "🏛️", "label": "提供形態", "value": "2トラック無償", "tone": "success", "description": "開発者トラックと連邦政府トラックで申請審査後に無償アクセス" },
-                { "icon": "🤝", "label": "早期パートナー", "value": "3機関参加済み", "tone": "info", "description": "Lawrence Livermore・CEPI・Johns Hopkins APLが既に採用" },
-                { "icon": "🦠", "label": "実活用例", "value": "エボラワクチン開発", "tone": "warning", "description": "CEPIがバンジョウエボラ対策の100日間ミッションに活用中" }
+                {
+                  "icon": "🧬",
+                  "label": "モデル特化",
+                  "value": "生命科学推論",
+                  "tone": "primary",
+                  "description": "化学・生化学・実験設計の内部ベンチマークでGPT-5およびGPT-5.4を上回ると主張"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "提供形態",
+                  "value": "2トラック無償",
+                  "tone": "success",
+                  "description": "開発者トラックと連邦政府トラックで申請審査後に無償アクセス"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "早期パートナー",
+                  "value": "3機関参加済み",
+                  "tone": "info",
+                  "description": "Lawrence Livermore・CEPI・Johns Hopkins APLが既に採用"
+                },
+                {
+                  "icon": "🦠",
+                  "label": "実活用例",
+                  "value": "エボラワクチン開発",
+                  "tone": "warning",
+                  "description": "CEPIがバンジョウエボラ対策の100日間ミッションに活用中"
+                }
               ],
               "context": "GPT-Rosalindは2026年4月に生命科学向け推論モデルとして初めて紹介された。今回のRosalind Biodefenseは、そのアクセスを拡大する公衆衛生上の枠組みだ。",
               "impact": "AIが感染症対策・バイオセキュリティの実戦ツールに転換し始めたことを示す先例。国内の医療・製薬研究機関にとっても利活用の検討余地がある。"
-            }
+            },
+            "alt": "OpenAI Rosalind Biodefenseプログラムの概要。GPT-Rosalindは化学・生化学・実験設計でGPT-5を上回る。開発者トラックと連邦政府トラックの2経路で無償提供。早期パートナーはLawrence Livermore、Johns Hopkins APL、CEPIの3機関。CEPIはバンジョウエボラ対策ワクチン開発に活用中。SecureDNAやFourth Eonも参加。"
           }
         },
         {
@@ -93,7 +147,13 @@
           "category": "new_models",
           "published_at": "2026-05-27",
           "lang": "en",
-          "tags": ["mistral", "physics-ai", "engineering", "simulation", "specialized-models"],
+          "tags": [
+            "mistral",
+            "physics-ai",
+            "engineering",
+            "simulation",
+            "specialized-models"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -111,19 +171,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Mistral Physics AIの概要。物理システムの挙動予測モデル群。Codestral・Voxtral・Document AIに続く第4の専門特化モデル。ASMLとの共同実証で設計サイクル短縮を確認。軽量×専門性で汎用大モデルに対抗。オンプレミス対応でデータ主権要件に適合。",
             "data": {
               "headline": "Mistral Physics AI：工学シミュレーション専用モデル群が本格始動",
               "tldr": "Mistralが物理システム挙動予測に特化したPhysics AIを発表。ASMLとの実証で成果を示し、専門特化×軽量モデル戦略の第4弾として工業分野への展開を開始した。",
               "points": [
-                { "label": "対象領域", "value": "工学シミュレーション", "tone": "primary", "description": "流体力学・固体力学・電磁気学など物理システムの挙動予測に特化" },
-                { "label": "実証パートナー", "value": "ASML", "tone": "success", "description": "半導体露光装置大手との共同実証で設計サイクル短縮を確認" },
-                { "label": "モデル系列位置", "value": "専門特化モデル第4弾", "tone": "info", "description": "Codestral・Voxtral・Document AIに続く軽量×専門性戦略の延長線" },
-                { "label": "展開方式", "value": "オンプレ対応", "tone": "default", "description": "欧州データ主権ニーズに対応、製造業のプライバシー要件を満たす" }
+                {
+                  "label": "対象領域",
+                  "value": "工学シミュレーション",
+                  "tone": "primary",
+                  "description": "流体力学・固体力学・電磁気学など物理システムの挙動予測に特化"
+                },
+                {
+                  "label": "実証パートナー",
+                  "value": "ASML",
+                  "tone": "success",
+                  "description": "半導体露光装置大手との共同実証で設計サイクル短縮を確認"
+                },
+                {
+                  "label": "モデル系列位置",
+                  "value": "専門特化モデル第4弾",
+                  "tone": "info",
+                  "description": "Codestral・Voxtral・Document AIに続く軽量×専門性戦略の延長線"
+                },
+                {
+                  "label": "展開方式",
+                  "value": "オンプレ対応",
+                  "tone": "default",
+                  "description": "欧州データ主権ニーズに対応、製造業のプライバシー要件を満たす"
+                }
               ],
               "context": "Mistralはフルスタック提供戦略として自社データセンター（パリ40MW）の構築も並行し、モデル・プラットフォーム・コンサルティングの一体化を推進中。",
               "impact": "産業界でのAI活用が自然言語処理を超え、シミュレーション・設計最適化へ拡張する流れを加速。国内製造業・素材メーカーへの波及が注目される。"
-            }
+            },
+            "alt": "Mistral Physics AIの概要。物理システムの挙動予測モデル群。Codestral・Voxtral・Document AIに続く第4の専門特化モデル。ASMLとの共同実証で設計サイクル短縮を確認。軽量×専門性で汎用大モデルに対抗。オンプレミス対応でデータ主権要件に適合。"
           }
         }
       ]
@@ -144,7 +224,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-30",
           "lang": "en",
-          "tags": ["github", "copilot", "billing", "developer-tools", "pricing"],
+          "tags": [
+            "github",
+            "copilot",
+            "billing",
+            "developer-tools",
+            "pricing"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -162,19 +248,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "GitHub Copilotトークン課金制変更の概要。シート制から従量課金に移行。開発者コミュニティが強く反発。コスト上限設定機能を追加するもX・HNで批判継続。全世界1500万人超の利用者に影響。",
             "data": {
               "headline": "Copilotがトークン従量課金に移行——開発者コスト管理に赤信号",
               "tldr": "GitHub Copilotが月額固定からトークン消費量ベース課金に変更。大規模コードベースやリファクタリング多用ケースでコスト増加の懸念が広がり、開発者コミュニティで強い反発が起きている。",
               "points": [
-                { "label": "変更内容", "value": "シート制→従量課金", "tone": "warning", "description": "月額固定シート制からトークン消費量ベースに移行" },
-                { "label": "利用者規模", "value": "1500万人超", "tone": "info", "description": "全世界の開発者への影響が大きい" },
-                { "label": "緩和策", "value": "コスト上限設定", "tone": "default", "description": "Microsoftはコスト上限機能を追加導入すると説明" },
-                { "label": "コミュニティ反応", "value": "強い反発", "tone": "danger", "description": "X・HNで批判的議論が拡大、透明性・煩雑さへの指摘" }
+                {
+                  "label": "変更内容",
+                  "value": "シート制→従量課金",
+                  "tone": "warning",
+                  "description": "月額固定シート制からトークン消費量ベースに移行"
+                },
+                {
+                  "label": "利用者規模",
+                  "value": "1500万人超",
+                  "tone": "info",
+                  "description": "全世界の開発者への影響が大きい"
+                },
+                {
+                  "label": "緩和策",
+                  "value": "コスト上限設定",
+                  "tone": "default",
+                  "description": "Microsoftはコスト上限機能を追加導入すると説明"
+                },
+                {
+                  "label": "コミュニティ反応",
+                  "value": "強い反発",
+                  "tone": "danger",
+                  "description": "X・HNで批判的議論が拡大、透明性・煩雑さへの指摘"
+                }
               ],
               "context": "AIコーディングツール市場ではClaude Code・Cursor・Gooseなどと激しい競争が続いており、Copilotの価格変更は競合乗り換えの契機になりうる。",
               "impact": "エンタープライズ開発チームはCopilotのコスト試算を見直す必要が生じた。代替ツールへの移行検討が加速する可能性がある。"
-            }
+            },
+            "alt": "GitHub Copilotトークン課金制変更の概要。シート制から従量課金に移行。開発者コミュニティが強く反発。コスト上限設定機能を追加するもX・HNで批判継続。全世界1500万人超の利用者に影響。"
           }
         },
         {
@@ -188,7 +294,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["mistral", "search", "rag", "pipeline", "production"],
+          "tags": [
+            "mistral",
+            "search",
+            "rag",
+            "pipeline",
+            "production"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -206,19 +318,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Mistral Search Toolkitの概要。本番対応検索パイプライン構築ツール。クラウド・オンプレミス対応。RAGパイプラインの構築コスト削減。BNP ParibaSやAbancaなど金融業界で採用実績あり。Mistralのフルスタック化戦略の一環。",
             "data": {
               "headline": "Search Toolkit：企業向けRAG検索インフラ構築を標準化",
               "tldr": "MistralがSearch Toolkitを発表。本番対応の検索パイプラインを任意インフラ環境に展開できるツールキットで、金融・規制業界向けの採用実績を背景に企業向けAI検索を強化する。",
               "points": [
-                { "label": "対象環境", "value": "クラウド・オンプレ双方", "tone": "primary", "description": "任意インフラへの展開が可能な設計" },
-                { "label": "ユースケース", "value": "企業向けRAG", "tone": "info", "description": "本番対応の検索パイプラインを短期間で構築" },
-                { "label": "実績", "value": "金融機関採用済み", "tone": "success", "description": "BNP Paribas・Abancaなどデータ主権重視の企業が活用" },
-                { "label": "戦略位置", "value": "フルスタック化の第3の柱", "tone": "default", "description": "Vibe（エージェント）・Physics AI（工学）に並ぶ新軸" }
+                {
+                  "label": "対象環境",
+                  "value": "クラウド・オンプレ双方",
+                  "tone": "primary",
+                  "description": "任意インフラへの展開が可能な設計"
+                },
+                {
+                  "label": "ユースケース",
+                  "value": "企業向けRAG",
+                  "tone": "info",
+                  "description": "本番対応の検索パイプラインを短期間で構築"
+                },
+                {
+                  "label": "実績",
+                  "value": "金融機関採用済み",
+                  "tone": "success",
+                  "description": "BNP Paribas・Abancaなどデータ主権重視の企業が活用"
+                },
+                {
+                  "label": "戦略位置",
+                  "value": "フルスタック化の第3の柱",
+                  "tone": "default",
+                  "description": "Vibe（エージェント）・Physics AI（工学）に並ぶ新軸"
+                }
               ],
               "context": "Mistralは2026年にAI Now Summitを開催し、BNP Paribas・ASML・Amazon Alexa+など大手企業との提携を多数発表した。",
               "impact": "検索インフラの構築難度が下がることで、中規模企業でも高品質なRAG検索システムを導入しやすくなる。"
-            }
+            },
+            "alt": "Mistral Search Toolkitの概要。本番対応検索パイプライン構築ツール。クラウド・オンプレミス対応。RAGパイプラインの構築コスト削減。BNP ParibaSやAbancaなど金融業界で採用実績あり。Mistralのフルスタック化戦略の一環。"
           }
         },
         {
@@ -232,8 +364,18 @@
           "category": "tools_apps",
           "published_at": "2026-05-28",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 33 },
-          "tags": ["runway", "mcp", "video-generation", "chatgpt", "claude", "integration"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 33
+          },
+          "tags": [
+            "runway",
+            "mcp",
+            "video-generation",
+            "chatgpt",
+            "claude",
+            "integration"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -251,19 +393,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Runway MCP統合の概要。ChatGPTとClaude内から直接動画生成が可能に。専用アプリ不要でテキストプロンプトからRunway動画エンジンを呼び出し。MCPが動画生成ツールの標準統合プロトコルとして普及しつつあることを示す。",
             "data": {
               "headline": "RunwayがMCPでChatGPT・Claude統合——動画生成がチャットから直接可能に",
               "tldr": "RunwayがMCPを介してChatGPT・Claude内から直接動画生成できるようになった。専用アプリ不要で主要AIチャットに統合され、MCPが生成AIツール統合の標準プロトコルとして定着しつつある。",
               "points": [
-                { "label": "統合先", "value": "ChatGPT・Claude", "tone": "primary", "description": "MCP経由で主要AIチャットインターフェースに統合" },
-                { "label": "操作性", "value": "ノーコード・テキストのみ", "tone": "success", "description": "専用アプリ不要でチャット内プロンプトから動画生成" },
-                { "label": "技術基盤", "value": "MCP標準", "tone": "info", "description": "MCPが動画生成ツールの統合プロトコルとして採用される先例" },
-                { "label": "国内反響", "value": "はてブ33件", "tone": "default", "description": "国内エンジニアコミュニティでも注目" }
+                {
+                  "label": "統合先",
+                  "value": "ChatGPT・Claude",
+                  "tone": "primary",
+                  "description": "MCP経由で主要AIチャットインターフェースに統合"
+                },
+                {
+                  "label": "操作性",
+                  "value": "ノーコード・テキストのみ",
+                  "tone": "success",
+                  "description": "専用アプリ不要でチャット内プロンプトから動画生成"
+                },
+                {
+                  "label": "技術基盤",
+                  "value": "MCP標準",
+                  "tone": "info",
+                  "description": "MCPが動画生成ツールの統合プロトコルとして採用される先例"
+                },
+                {
+                  "label": "国内反響",
+                  "value": "はてブ33件",
+                  "tone": "default",
+                  "description": "国内エンジニアコミュニティでも注目"
+                }
               ],
               "context": "MCPはAnthropic主導で開発されたAIツール統合プロトコル。ChatGPTも2026年にMCPサポートを追加し、AI間ツール連携の事実標準となりつつある。",
               "impact": "動画生成AIのアクセス障壁が下がり、AIチャットを主要なクリエイティブ制作インターフェースとして活用する動きが加速する。"
-            }
+            },
+            "alt": "Runway MCP統合の概要。ChatGPTとClaude内から直接動画生成が可能に。専用アプリ不要でテキストプロンプトからRunway動画エンジンを呼び出し。MCPが動画生成ツールの標準統合プロトコルとして普及しつつあることを示す。"
           }
         }
       ]
@@ -284,7 +446,15 @@
           "category": "agents",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["mistral", "vibe", "le-chat", "agent", "work-mode", "code-mode", "vs-code"],
+          "tags": [
+            "mistral",
+            "vibe",
+            "le-chat",
+            "agent",
+            "work-mode",
+            "code-mode",
+            "vs-code"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -303,20 +473,58 @@
           "x_post": "MistralがLe ChatをVibeにリブランドし、Work mode（Google Workspace・Slack・GitHub横断の業務自律実行）とCode mode（リモート並列セッションでPR作成まで自動化）を持つ統合AIエージェントとして再デビューさせた。VS Code拡張機能も同日リリースし、欧州データ主権を強みにOpenAI・Anthropicとの直接競合へ踏み出した。\n\nhttps://mistral.ai/news/vibe-agent",
           "figure": {
             "type": "comparison",
-            "alt": "Le Chat（旧）とVibe（新）の比較。Le Chatは汎用AIアシスタントでチャット機能中心。Vibeは統合AIエージェントでWork modeとCode modeの2モード展開。Work modeはGoogle Workspace・Slack・GitHub横断実行、Code modeはリモート並列セッション対応。VS Code拡張機能も追加。",
             "data": {
               "headline": "Le Chat → Vibe：汎用チャットAIから統合エージェントへ刷新",
-              "before": { "label": "Le Chat（旧）", "sublabel": "汎用AIアシスタント" },
-              "after": { "label": "Vibe（新）", "sublabel": "統合AIエージェント" },
+              "before": {
+                "label": "Le Chat（旧）",
+                "sublabel": "汎用AIアシスタント"
+              },
+              "after": {
+                "label": "Vibe（新）",
+                "sublabel": "統合AIエージェント"
+              },
               "metrics": [
-                { "label": "タスク実行", "before": "チャット応答のみ", "after": "自律マルチステップ実行", "before_pct": 30, "after_pct": 90, "delta": "大幅拡張", "delta_tone": "success" },
-                { "label": "業務連携", "before": "なし", "after": "Google WS・Slack・GitHub等", "before_pct": 0, "after_pct": 80, "delta": "新機能", "delta_tone": "success" },
-                { "label": "コーディング", "before": "テキスト補助のみ", "after": "並列エージェント＋PR作成", "before_pct": 20, "after_pct": 85, "delta": "大幅拡張", "delta_tone": "success" },
-                { "label": "IDE統合", "before": "なし", "after": "VS Code拡張機能", "before_pct": 0, "after_pct": 70, "delta": "新機能", "delta_tone": "success" }
+                {
+                  "label": "タスク実行",
+                  "before": "チャット応答のみ",
+                  "after": "自律マルチステップ実行",
+                  "before_pct": 30,
+                  "after_pct": 90,
+                  "delta": "大幅拡張",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "業務連携",
+                  "before": "なし",
+                  "after": "Google WS・Slack・GitHub等",
+                  "before_pct": 0,
+                  "after_pct": 80,
+                  "delta": "新機能",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コーディング",
+                  "before": "テキスト補助のみ",
+                  "after": "並列エージェント＋PR作成",
+                  "before_pct": 20,
+                  "after_pct": 85,
+                  "delta": "大幅拡張",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "IDE統合",
+                  "before": "なし",
+                  "after": "VS Code拡張機能",
+                  "before_pct": 0,
+                  "after_pct": 70,
+                  "delta": "新機能",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Mistralは欧州発のモデルプロバイダーとして、OpenAIやAnthropicのエージェント製品と直接競合する製品体験へ大きく舵を切った。データ主権を重視する欧州企業向けにオンプレ展開も引き続き対応する。",
               "impact": "Vibe は Code mode の VS Code 拡張機能で今日から即利用可能。Work mode の業務自動化は ChatGPT・Claude の競合製品に対して欧州のデータ主権要件を強みとして訴求できる。"
-            }
+            },
+            "alt": "Le Chat（旧）とVibe（新）の比較。Le Chatは汎用AIアシスタントでチャット機能中心。Vibeは統合AIエージェントでWork modeとCode modeの2モード展開。Work modeはGoogle Workspace・Slack・GitHub横断実行、Code modeはリモート並列セッション対応。VS Code拡張機能も追加。"
           }
         },
         {
@@ -330,7 +538,13 @@
           "category": "agents",
           "published_at": "2026-05-30",
           "lang": "en",
-          "tags": ["google", "gemini-spark", "agent", "personal-ai", "automation"],
+          "tags": [
+            "google",
+            "gemini-spark",
+            "agent",
+            "personal-ai",
+            "automation"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -348,19 +562,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Google Gemini Sparkの概要。24時間365日バックグラウンドで稼働するパーソナルAIエージェント。Gemini 3.5 Flashベース。カレンダー・メール整理・定型業務の自動化でTechCrunchが実用性を確認。ユーザー起動なしに自律的タスク検知・実行が特徴。",
             "data": {
               "headline": "Gemini Spark：ユーザー起動なしで自律実行する24/7エージェント",
               "tldr": "Google Gemini Sparkは24時間バックグラウンドで稼働するパーソナルAIエージェント。TechCrunchの検証で日常タスク自動化の実用性が確認されたが、他製品との差別化については議論が続く。",
               "points": [
-                { "label": "稼働形態", "value": "24/7バックグラウンド", "tone": "primary", "description": "ユーザー起動なしに自律的にタスクを検知・実行" },
-                { "label": "基盤モデル", "value": "Gemini 3.5 Flash", "tone": "info", "description": "高速・低コストのフロンティアモデルを採用" },
-                { "label": "実用評価", "value": "「実際に役立つ」", "tone": "success", "description": "TechCrunchレビューで日常業務自動化の効果を確認" },
-                { "label": "課題", "value": "差別化の不鮮明さ", "tone": "warning", "description": "Copilot・Siri等との独自性について疑問が呈された" }
+                {
+                  "label": "稼働形態",
+                  "value": "24/7バックグラウンド",
+                  "tone": "primary",
+                  "description": "ユーザー起動なしに自律的にタスクを検知・実行"
+                },
+                {
+                  "label": "基盤モデル",
+                  "value": "Gemini 3.5 Flash",
+                  "tone": "info",
+                  "description": "高速・低コストのフロンティアモデルを採用"
+                },
+                {
+                  "label": "実用評価",
+                  "value": "「実際に役立つ」",
+                  "tone": "success",
+                  "description": "TechCrunchレビューで日常業務自動化の効果を確認"
+                },
+                {
+                  "label": "課題",
+                  "value": "差別化の不鮮明さ",
+                  "tone": "warning",
+                  "description": "Copilot・Siri等との独自性について疑問が呈された"
+                }
               ],
               "context": "Google I/O 2026でGemini 3.5 Flashとともに発表されたGemini Sparkは、個人向けパーソナルAIエージェント市場におけるGoogleの戦略的製品。",
               "impact": "常時接続エージェントが主要AIプラットフォームの標準機能になることで、ユーザーの「AIをいつでも呼び出す」体験が「AIが常に動いている」体験へ転換し始めた。"
-            }
+            },
+            "alt": "Google Gemini Sparkの概要。24時間365日バックグラウンドで稼働するパーソナルAIエージェント。Gemini 3.5 Flashベース。カレンダー・メール整理・定型業務の自動化でTechCrunchが実用性を確認。ユーザー起動なしに自律的タスク検知・実行が特徴。"
           }
         }
       ]
@@ -381,7 +615,14 @@
           "category": "multimodal",
           "published_at": "2026-05-26",
           "lang": "en",
-          "tags": ["google", "gemini-omni", "multimodal", "video-generation", "world-model", "synthid"],
+          "tags": [
+            "google",
+            "gemini-omni",
+            "multimodal",
+            "video-generation",
+            "world-model",
+            "synthid"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -401,20 +642,58 @@
           "x_post": "GoogleがGemini Omni Flashのロールアウトを開始した。テキスト・画像・音声・動画を単一モデルで相互変換する「任意→任意」アーキテクチャを採用し、重力・流体力学を内在した世界モデルとして動画生成の設計思想を刷新する。全出力にSynthIDウォーターマークを自動付与し、Gemini Plus/Pro/Ultraに順次展開中だ。\n\nhttps://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
           "figure": {
             "type": "comparison",
-            "alt": "従来の動画生成AIとGemini Omniの比較。従来モデルは各モダリティが独立パイプラインで処理、物理的文脈なし、ウォーターマークなし。Gemini Omniは統合内部表現空間、重力・流体力学を内在した世界モデル、SynthID自動付与。最大10秒の動画を生成可能。",
             "data": {
               "headline": "Gemini Omni vs 従来世代：世界モデルへのアーキテクチャ転換",
-              "before": { "label": "従来の動画生成AI", "sublabel": "パイプライン型" },
-              "after": { "label": "Gemini Omni Flash", "sublabel": "世界モデル型" },
+              "before": {
+                "label": "従来の動画生成AI",
+                "sublabel": "パイプライン型"
+              },
+              "after": {
+                "label": "Gemini Omni Flash",
+                "sublabel": "世界モデル型"
+              },
               "metrics": [
-                { "label": "入出力統合", "before": "モダリティ別独立処理", "after": "単一モデルで相互変換", "before_pct": 25, "after_pct": 95, "delta": "統合化", "delta_tone": "success" },
-                { "label": "物理的文脈", "before": "物理法則なし", "after": "重力・流体力学内在", "before_pct": 10, "after_pct": 80, "delta": "大幅向上", "delta_tone": "success" },
-                { "label": "AI出所証明", "before": "なし/任意", "after": "SynthID自動付与", "before_pct": 0, "after_pct": 100, "delta": "標準化", "delta_tone": "success" },
-                { "label": "会話型編集", "before": "静的生成のみ", "after": "指示ごとに一貫した文脈", "before_pct": 20, "after_pct": 85, "delta": "革新", "delta_tone": "success" }
+                {
+                  "label": "入出力統合",
+                  "before": "モダリティ別独立処理",
+                  "after": "単一モデルで相互変換",
+                  "before_pct": 25,
+                  "after_pct": 95,
+                  "delta": "統合化",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "物理的文脈",
+                  "before": "物理法則なし",
+                  "after": "重力・流体力学内在",
+                  "before_pct": 10,
+                  "after_pct": 80,
+                  "delta": "大幅向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "AI出所証明",
+                  "before": "なし/任意",
+                  "after": "SynthID自動付与",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "標準化",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "会話型編集",
+                  "before": "静的生成のみ",
+                  "after": "指示ごとに一貫した文脈",
+                  "before_pct": 20,
+                  "after_pct": 85,
+                  "delta": "革新",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Gemini Omniは「現実を理解する世界モデル」という設計思想で、従来の生成AIが苦手としていた物理的整合性（物体の運動・流体の挙動）を内部表現として持つ。",
               "impact": "動画生成AIが「確率的テクスチャ生成器」から「物理的推論エンジン」へ転換し始めたことを示す。企業向けAPIが提供開始されれば動画コンテンツ制作ワークフローへの影響は大きい。"
-            }
+            },
+            "alt": "従来の動画生成AIとGemini Omniの比較。従来モデルは各モダリティが独立パイプラインで処理、物理的文脈なし、ウォーターマークなし。Gemini Omniは統合内部表現空間、重力・流体力学を内在した世界モデル、SynthID自動付与。最大10秒の動画を生成可能。"
           }
         },
         {
@@ -428,7 +707,14 @@
           "category": "multimodal",
           "published_at": "2026-05-29",
           "lang": "en",
-          "tags": ["qwen", "vla", "robotics", "embodied-ai", "vision-language-action", "multimodal"],
+          "tags": [
+            "qwen",
+            "vla",
+            "robotics",
+            "embodied-ai",
+            "vision-language-action",
+            "multimodal"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -447,20 +733,51 @@
           "x_post": "Qwen-VLAが操作・ナビゲーション・軌道予測を単一のVLAアーキテクチャで統合し、LIBERO 97.9%・RoboTwin Easy 86.1%・ALOHA OOD 76.9%を記録した。異なるロボット機体と複数タスクを単一モデルで汎用処理できる能力を実証し、Alibaba QwenチームによるVLAロボティクス研究の成果を示す。\n\nhttps://huggingface.co/papers/2605.30280",
           "figure": {
             "type": "metric-bars",
-            "alt": "Qwen-VLAのベンチマーク成績。LIBERO操作: 97.9%、RoboTwin-Easy: 86.1%、RoboTwin-Hard: 87.2%、実機ALOHA OOD: 76.9%、R2R Navigation (OSR): 69.0%。全て現世代最高水準。",
             "data": {
               "headline": "Qwen-VLA：主要ロボティクスベンチマーク全5指標で高性能",
-              "scale": { "max_label": "100点満点", "unit": "%" },
+              "scale": {
+                "max_label": "100点満点",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "LIBERO操作", "value": "97.9%", "pct": 97.9, "tone": "success", "note": "ロボット操作標準ベンチマーク" },
-                { "label": "RoboTwin Easy", "value": "86.1%", "pct": 86.1, "tone": "primary" },
-                { "label": "RoboTwin Hard", "value": "87.2%", "pct": 87.2, "tone": "primary" },
-                { "label": "ALOHA OOD実機", "value": "76.9%", "pct": 76.9, "tone": "success", "note": "学習外シナリオでの実機テスト" },
-                { "label": "R2R (OSR)", "value": "69.0%", "pct": 69.0, "tone": "default", "note": "ナビゲーションタスク" }
+                {
+                  "label": "LIBERO操作",
+                  "value": "97.9%",
+                  "pct": 97.9,
+                  "tone": "success",
+                  "note": "ロボット操作標準ベンチマーク"
+                },
+                {
+                  "label": "RoboTwin Easy",
+                  "value": "86.1%",
+                  "pct": 86.1,
+                  "tone": "primary"
+                },
+                {
+                  "label": "RoboTwin Hard",
+                  "value": "87.2%",
+                  "pct": 87.2,
+                  "tone": "primary"
+                },
+                {
+                  "label": "ALOHA OOD実機",
+                  "value": "76.9%",
+                  "pct": 76.9,
+                  "tone": "success",
+                  "note": "学習外シナリオでの実機テスト"
+                },
+                {
+                  "label": "R2R (OSR)",
+                  "value": "69.0%",
+                  "pct": 69,
+                  "tone": "default",
+                  "note": "ナビゲーションタスク"
+                }
               ],
               "narrative": "従来は操作・ナビゲーション・軌道予測それぞれに専用モデルが必要だったが、Qwen-VLAは単一モデルで全タスクを達成。LLMがNLPを統合したように、VLAがロボティクスを統合する転換点を示す。",
               "impact": "ロボット開発者にとってタスクごとのモデル設計コストが大幅に下がる可能性。汎用ロボット基盤モデルの実用化が現実味を帯びてきた。"
-            }
+            },
+            "alt": "Qwen-VLAのベンチマーク成績。LIBERO操作: 97.9%、RoboTwin-Easy: 86.1%、RoboTwin-Hard: 87.2%、実機ALOHA OOD: 76.9%、R2R Navigation (OSR): 69.0%。全て現世代最高水準。"
           }
         }
       ]
@@ -481,7 +798,14 @@
           "category": "research_papers",
           "published_at": "2026-05-29",
           "lang": "en",
-          "tags": ["agent-safety", "alignment", "guardrail", "shanghai-ai-lab", "lightweight", "agentdog"],
+          "tags": [
+            "agent-safety",
+            "alignment",
+            "guardrail",
+            "shanghai-ai-lab",
+            "lightweight",
+            "agentdog"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -500,20 +824,51 @@
           "x_post": "AgentDoG 1.5が0.8B〜8BのオープンウェイトモデルでR-Judge 92.2%を達成し、GPT-5.4クラスのエージェント安全性を単体モデルに注入できることを示した。デプロイオーバーヘッドをDocker比100分の1に削減した軽量設計で、上海AI Labがモデル・データ・コードをオープン公開している。\n\nhttps://huggingface.co/papers/2605.29801",
           "figure": {
             "type": "metric-bars",
-            "alt": "AgentDoG 1.5-4Bのベンチマーク成績。R-Judge精度: 92.2%、ATBench精度: 72.4%、リスク発生源同定: 75.2%、実害分類: 62.9%。GPT-5.4のR-Judge相当と比較してサイズは100分の1以下。",
             "data": {
               "headline": "AgentDoG 1.5-4B：GPT-5.4匹敵の安全精度をサイズ100分の1以下で実現",
-              "scale": { "max_label": "100%", "unit": "%" },
+              "scale": {
+                "max_label": "100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "R-Judge精度", "value": "92.2%", "pct": 92.2, "tone": "success", "note": "GPT-5.4・Gemini 3.1 Proと同水準" },
-                { "label": "ATBench精度", "value": "72.4%", "pct": 72.4, "tone": "primary", "note": "エージェントタスク安全評価" },
-                { "label": "リスク発生源同定", "value": "75.2%", "pct": 75.2, "tone": "primary" },
-                { "label": "実害分類", "value": "62.9%", "pct": 62.9, "tone": "default" },
-                { "label": "軽量0.8Bモデル", "value": "75.7%", "pct": 75.7, "tone": "info", "note": "R-Judge、最小構成でも実用水準" }
+                {
+                  "label": "R-Judge精度",
+                  "value": "92.2%",
+                  "pct": 92.2,
+                  "tone": "success",
+                  "note": "GPT-5.4・Gemini 3.1 Proと同水準"
+                },
+                {
+                  "label": "ATBench精度",
+                  "value": "72.4%",
+                  "pct": 72.4,
+                  "tone": "primary",
+                  "note": "エージェントタスク安全評価"
+                },
+                {
+                  "label": "リスク発生源同定",
+                  "value": "75.2%",
+                  "pct": 75.2,
+                  "tone": "primary"
+                },
+                {
+                  "label": "実害分類",
+                  "value": "62.9%",
+                  "pct": 62.9,
+                  "tone": "default"
+                },
+                {
+                  "label": "軽量0.8Bモデル",
+                  "value": "75.7%",
+                  "pct": 75.7,
+                  "tone": "info",
+                  "note": "R-Judge、最小構成でも実用水準"
+                }
               ],
               "narrative": "AgentDoGは安全ガードレールモデルを「大規模クローズドモデルに依存しない」設計にした初の実用フレームワーク。OpenClaw・Codexなど新世代エージェント環境の行動空間拡大に対応したタクソノミを新設。",
               "impact": "AIエージェントの本番運用における安全ガードレールの導入コストが大幅に下がる。オープンリリースにより、中小スタートアップも高品質な安全フィルタを組み込める。"
-            }
+            },
+            "alt": "AgentDoG 1.5-4Bのベンチマーク成績。R-Judge精度: 92.2%、ATBench精度: 72.4%、リスク発生源同定: 75.2%、実害分類: 62.9%。GPT-5.4のR-Judge相当と比較してサイズは100分の1以下。"
           }
         },
         {
@@ -527,7 +882,14 @@
           "category": "research_papers",
           "published_at": "2026-05-29",
           "lang": "en",
-          "tags": ["retrieval", "rag", "knowledge-graph", "heterogeneous", "kaist", "omniretrieval"],
+          "tags": [
+            "retrieval",
+            "rag",
+            "knowledge-graph",
+            "heterogeneous",
+            "kaist",
+            "omniretrieval"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -545,19 +907,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OmniRetrievalの概要。自然言語クエリで非構造化テキスト・RDBテーブル・知識グラフを横断検索。各ソースのネイティブクエリエンジンに自動変換。13データセット・309ナレッジベースのベンチマークで単一ソースベースラインを超える。GitHubでコードを公開。",
             "data": {
               "headline": "OmniRetrieval：異種ナレッジソースを1クエリで横断検索する汎用RAG基盤",
               "tldr": "KAIST AIが発表したOmniRetrievalは、テキスト・テーブル・グラフという異質な知識ソースを自然言語クエリで統一的に検索。13データセット309ナレッジベースで単一ソース特化モデルを上回った。",
               "points": [
-                { "label": "統合ソース", "value": "4種類の異種知識", "tone": "primary", "description": "テキスト・RDBテーブル・知識グラフ・プロパティグラフを単一フレームワークで処理" },
-                { "label": "ベンチマーク", "value": "13データセット×309KB", "tone": "success", "description": "大規模評価で単一ソース特化のベースラインを上回ることを実証" },
-                { "label": "設計思想", "value": "構造特性を保持", "tone": "info", "description": "各ソースのスキーマ・オントロジーを保持したままネイティブクエリに変換" },
-                { "label": "公開状況", "value": "コードGitHub公開", "tone": "default", "description": "即時実装可能なオープンソースで提供" }
+                {
+                  "label": "統合ソース",
+                  "value": "4種類の異種知識",
+                  "tone": "primary",
+                  "description": "テキスト・RDBテーブル・知識グラフ・プロパティグラフを単一フレームワークで処理"
+                },
+                {
+                  "label": "ベンチマーク",
+                  "value": "13データセット×309KB",
+                  "tone": "success",
+                  "description": "大規模評価で単一ソース特化のベースラインを上回ることを実証"
+                },
+                {
+                  "label": "設計思想",
+                  "value": "構造特性を保持",
+                  "tone": "info",
+                  "description": "各ソースのスキーマ・オントロジーを保持したままネイティブクエリに変換"
+                },
+                {
+                  "label": "公開状況",
+                  "value": "コードGitHub公開",
+                  "tone": "default",
+                  "description": "即時実装可能なオープンソースで提供"
+                }
               ],
               "context": "企業RAGシステムでは「テキストは検索できるが、データベースやナレッジグラフは別システムが必要」という分断が長年の課題。OmniRetrievalはそのギャップを単一APIで解消する。",
               "impact": "エンタープライズRAGでの多データソース統合コストが下がり、テキスト・DB・KGを横断した高精度な情報検索システムの設計が現実的になる。"
-            }
+            },
+            "alt": "OmniRetrievalの概要。自然言語クエリで非構造化テキスト・RDBテーブル・知識グラフを横断検索。各ソースのネイティブクエリエンジンに自動変換。13データセット・309ナレッジベースのベンチマークで単一ソースベースラインを超える。GitHubでコードを公開。"
           }
         },
         {
@@ -571,7 +953,14 @@
           "category": "research_papers",
           "published_at": "2026-05-30",
           "lang": "en",
-          "tags": ["video-world-model", "autoregressive", "distillation", "open-source", "real-time", "minwm"],
+          "tags": [
+            "video-world-model",
+            "autoregressive",
+            "distillation",
+            "open-source",
+            "real-time",
+            "minwm"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -589,20 +978,52 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "minWMによるフレームレイテンシ削減結果。HY1.5: 多段階双方向771秒→多段階AR 81秒→数ステップAR 3.4秒（223.75倍削減）。Wan2.1: 269秒→28.7秒→1.1秒（236.64倍削減）。いずれも1枚のA800 GPU上での測定。",
             "data": {
               "headline": "minWMによる先頭フレームレイテンシ削減（単位：秒、A800 GPU）",
-              "scale": { "max_label": "高速 ←→ 低速", "unit": "s（対数スケール近似）" },
+              "scale": {
+                "max_label": "高速 ←→ 低速",
+                "unit": "s（対数スケール近似）"
+              },
               "bars": [
-                { "label": "HY1.5 数ステップAR", "value": "3.4秒", "pct": 1, "tone": "success", "note": "多段階双方向比で223.75倍削減" },
-                { "label": "HY1.5 多段階AR", "value": "81秒", "pct": 11, "tone": "primary" },
-                { "label": "HY1.5 双方向（基準）", "value": "771秒", "pct": 100, "tone": "warning", "note": "変換前の基準モデル" },
-                { "label": "Wan2.1 数ステップAR", "value": "1.1秒", "pct": 0.4, "tone": "success", "note": "多段階双方向比で236.64倍削減" },
-                { "label": "Wan2.1 双方向（基準）", "value": "269秒", "pct": 35, "tone": "warning", "note": "変換前の基準モデル" }
+                {
+                  "label": "HY1.5 数ステップAR",
+                  "value": "3.4秒",
+                  "pct": 1,
+                  "tone": "success",
+                  "note": "多段階双方向比で223.75倍削減"
+                },
+                {
+                  "label": "HY1.5 多段階AR",
+                  "value": "81秒",
+                  "pct": 11,
+                  "tone": "primary"
+                },
+                {
+                  "label": "HY1.5 双方向（基準）",
+                  "value": "771秒",
+                  "pct": 100,
+                  "tone": "warning",
+                  "note": "変換前の基準モデル"
+                },
+                {
+                  "label": "Wan2.1 数ステップAR",
+                  "value": "1.1秒",
+                  "pct": 0.4,
+                  "tone": "success",
+                  "note": "多段階双方向比で236.64倍削減"
+                },
+                {
+                  "label": "Wan2.1 双方向（基準）",
+                  "value": "269秒",
+                  "pct": 35,
+                  "tone": "warning",
+                  "note": "変換前の基準モデル"
+                }
               ],
               "narrative": "双方向拡散モデルは品質が高いが全フレームを同時生成するため先頭フレームの待ち時間が膨大。minWMはCausal Forcing蒸留で少ステップARモデルに変換することで、インタラクティブ応用に不可欠な低レイテンシを実現する。",
               "impact": "ゲーム・自律走行・ロボティクスなどリアルタイム性が要求される応用領域で、高品質な世界モデルを実用的な速度で動かすための標準パイプラインとなる可能性がある。"
-            }
+            },
+            "alt": "minWMによるフレームレイテンシ削減結果。HY1.5: 多段階双方向771秒→多段階AR 81秒→数ステップAR 3.4秒（223.75倍削減）。Wan2.1: 269秒→28.7秒→1.1秒（236.64倍削減）。いずれも1枚のA800 GPU上での測定。"
           }
         }
       ]
@@ -623,8 +1044,18 @@
           "category": "industry_business",
           "published_at": "2026-05-26",
           "lang": "en",
-          "reaction_signal": { "kind": "hn", "points": 192 },
-          "tags": ["openrouter", "funding", "series-b", "ai-infrastructure", "capitalg", "llm-routing"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 192
+          },
+          "tags": [
+            "openrouter",
+            "funding",
+            "series-b",
+            "ai-infrastructure",
+            "capitalg",
+            "llm-routing"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -642,19 +1073,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenRouterシリーズB調達の概要。調達額1億1300万ドル。リード投資家CapitalG（Alphabet）。評価額13億ドル（1年で2倍超）。400以上のモデル対応。週次処理トークン5兆→25兆（5倍増）。開発者800万人超。",
             "data": {
               "headline": "OpenRouter $1.13億調達：AI推論ルーティング基盤が評価額$13億に到達",
               "tldr": "AlphabetのCapitalG主導で$1.13億のシリーズBを調達。400以上のモデルを横断する推論ルーティング基盤として週次25兆トークン処理、800万人超の開発者に利用される重要インフラに成長した。",
               "points": [
-                { "icon": "💰", "label": "調達額", "value": "$113M（約168億円）", "tone": "primary" },
-                { "icon": "📈", "label": "評価額", "value": "$1.3B（前回比2倍超）", "tone": "success" },
-                { "icon": "🔗", "label": "対応モデル数", "value": "400以上", "tone": "info" },
-                { "icon": "⚡", "label": "週次処理", "value": "25兆トークン（6ヶ月で5倍）", "tone": "primary" }
+                {
+                  "icon": "💰",
+                  "label": "調達額",
+                  "value": "$113M（約168億円）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📈",
+                  "label": "評価額",
+                  "value": "$1.3B（前回比2倍超）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔗",
+                  "label": "対応モデル数",
+                  "value": "400以上",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "週次処理",
+                  "value": "25兆トークン（6ヶ月で5倍）",
+                  "tone": "primary"
+                }
               ],
               "context": "1年前のシリーズAはa16z・Sequoiaが主導し評価額5.47億ドル。今回はAlphabetが競合他社のインフラに投資する形となり、業界の注目を集めた。",
               "impact": "マルチモデル本番運用が標準化されつつある中、ルーティング基盤がAIスタックの必須インフラ層として認知された。エンタープライズのAI移行コスト削減に直結する。"
-            }
+            },
+            "alt": "OpenRouterシリーズB調達の概要。調達額1億1300万ドル。リード投資家CapitalG（Alphabet）。評価額13億ドル（1年で2倍超）。400以上のモデル対応。週次処理トークン5兆→25兆（5倍増）。開発者800万人超。"
           }
         },
         {
@@ -668,7 +1119,13 @@
           "category": "industry_business",
           "published_at": "2026-05-30",
           "lang": "en",
-          "tags": ["meta", "hardware", "wearable", "ai-pendant", "device"],
+          "tags": [
+            "meta",
+            "hardware",
+            "wearable",
+            "ai-pendant",
+            "device"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -686,19 +1143,35 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Meta AIペンダント開発報道の概要。TechCrunchの5月30日報道。Ray-Banスマートグラスに続くAIハードウェア展開。常時装着型AIアシスタント機能を想定。Humane AI Pinが失敗した市場への再挑戦。詳細スペック未公開。",
             "data": {
               "headline": "MetaがAIペンダント型ウェアラブルを開発中——スマートグラスに続くAIハードウェア展開",
               "tldr": "MetaがAIペンダント型デバイスを内部開発中とTechCrunchが報道。スマートグラスに続く常時装着型AIデバイス市場への参入拡大の動きで、詳細仕様は未公開。",
               "points": [
-                { "label": "デバイス種別", "value": "AIペンダント型", "tone": "primary" },
-                { "label": "情報源", "value": "TechCrunch報道（未確認）", "tone": "warning" },
-                { "label": "位置付け", "value": "Ray-Banグラスの次", "tone": "info" },
-                { "label": "詳細", "value": "スペック・発売日未公開", "tone": "default" }
+                {
+                  "label": "デバイス種別",
+                  "value": "AIペンダント型",
+                  "tone": "primary"
+                },
+                {
+                  "label": "情報源",
+                  "value": "TechCrunch報道（未確認）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "位置付け",
+                  "value": "Ray-Banグラスの次",
+                  "tone": "info"
+                },
+                {
+                  "label": "詳細",
+                  "value": "スペック・発売日未公開",
+                  "tone": "default"
+                }
               ],
               "context": "HumaneのAI Pinは2025年に市場撤退。常時装着型AIデバイスは失敗事例が多いが、MetaはRay-Banグラスで数百万台の実績を持つ。",
               "impact": "MetaのAIハードウェア拡張戦略が確認されれば、Google・Apple・Anthropicも含む大手のウェアラブルAI競争が本格化する可能性がある。"
-            }
+            },
+            "alt": "Meta AIペンダント開発報道の概要。TechCrunchの5月30日報道。Ray-Banスマートグラスに続くAIハードウェア展開。常時装着型AIアシスタント機能を想定。Humane AI Pinが失敗した市場への再挑戦。詳細スペック未公開。"
           }
         }
       ]
@@ -719,7 +1192,14 @@
           "category": "regulation_policy",
           "published_at": "2026-05-29",
           "lang": "en",
-          "tags": ["openai", "governance", "ai-safety", "regulation", "eu-ai-act", "cbrn"],
+          "tags": [
+            "openai",
+            "governance",
+            "ai-safety",
+            "regulation",
+            "eu-ai-act",
+            "cbrn"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -737,19 +1217,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI Frontier Governance Frameworkの概要。Preparedness Frameworkを基盤とした規制対応ガバナンス文書。カリフォルニア州法とEU AI Act行動規範に準拠。主要リスク4領域: サイバー攻撃・CBRN・有害操作・制御喪失。システムリスクを50人超死亡または$10億損害と定量定義。6ヶ月ごとに安全レポートを更新。",
             "data": {
               "headline": "OpenAIがシステムリスク基準を初公式定義——AI Act対応フレームワーク公開",
               "tldr": "OpenAIがFrontier Governance Frameworkを公開。CBRN・サイバー等4リスク領域を定義し、単一インシデントで50人超死亡/$10億損害以上を「システムリスク」と初めて定量化。EUへの6ヶ月レポートも約束。",
               "points": [
-                { "label": "対応規制", "value": "CA法＋EU AI Act", "tone": "primary", "description": "カリフォルニア州透明性法とEU AI Act行動規範への準拠を公式宣言" },
-                { "label": "リスク定義", "value": "4領域を明文化", "tone": "warning", "description": "CBRN・サイバー攻撃・有害操作・制御喪失を主要リスクカテゴリに定義" },
-                { "label": "定量基準", "value": "50人超OR $10億超", "tone": "danger", "description": "単一インシデントで50人超死亡または10億ドル超損害がシステムリスクの公式定義" },
-                { "label": "報告義務", "value": "6ヶ月ごとに更新", "tone": "info", "description": "最高能力モデルの安全レポートをEU要求に応じて定期公開" }
+                {
+                  "label": "対応規制",
+                  "value": "CA法＋EU AI Act",
+                  "tone": "primary",
+                  "description": "カリフォルニア州透明性法とEU AI Act行動規範への準拠を公式宣言"
+                },
+                {
+                  "label": "リスク定義",
+                  "value": "4領域を明文化",
+                  "tone": "warning",
+                  "description": "CBRN・サイバー攻撃・有害操作・制御喪失を主要リスクカテゴリに定義"
+                },
+                {
+                  "label": "定量基準",
+                  "value": "50人超OR $10億超",
+                  "tone": "danger",
+                  "description": "単一インシデントで50人超死亡または10億ドル超損害がシステムリスクの公式定義"
+                },
+                {
+                  "label": "報告義務",
+                  "value": "6ヶ月ごとに更新",
+                  "tone": "info",
+                  "description": "最高能力モデルの安全レポートをEU要求に応じて定期公開"
+                }
               ],
               "context": "EU AI Actの高リスクAIシステム義務は2026年8月に迫りつつあったが、5月の改正で2027年12月まで延長された。今回のフレームワーク公開はその対応の一環。",
               "impact": "AI企業が規制対応ガバナンス文書を公式化する先例となり、他ラボにも同様の透明性要求が高まる可能性がある。規制準拠のコスト・標準化議論が加速する。"
-            }
+            },
+            "alt": "OpenAI Frontier Governance Frameworkの概要。Preparedness Frameworkを基盤とした規制対応ガバナンス文書。カリフォルニア州法とEU AI Act行動規範に準拠。主要リスク4領域: サイバー攻撃・CBRN・有害操作・制御喪失。システムリスクを50人超死亡または$10億損害と定量定義。6ヶ月ごとに安全レポートを更新。"
           }
         }
       ]
@@ -770,8 +1270,17 @@
           "category": "community_buzz",
           "published_at": "2026-05-29",
           "lang": "en",
-          "reaction_signal": { "kind": "hn", "points": 444 },
-          "tags": ["mistral", "ai-summit", "agent-architecture", "hacker-news", "harness"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 444
+          },
+          "tags": [
+            "mistral",
+            "ai-summit",
+            "agent-architecture",
+            "hacker-news",
+            "harness"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -789,19 +1298,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Mistral AI Now Summit参加レポートの反響。HN 444pts・195コメントの高エンゲージメント。「ハーネスがすべてだ」というキーメッセージ。Mistralのフルスタック化転換。BNP Paribas・ASML等の実装パートナーシップ。エジプトパピルス解読のユースケース。欧州データ主権の競合優位。",
             "data": {
               "headline": "「ハーネスがすべてだ」——Mistral AI Now Summit報告がHNで444pt獲得",
               "tldr": "Mistral AI Now Summit 2026の参加報告がHN 444ptを獲得。エージェント設計の核心は「モデルではなくハーネス（文脈・持続性・学習）」というメッセージと、古代パピルス解読プロジェクトがコミュニティで強い反響を呼んだ。",
               "points": [
-                { "label": "HN反響", "value": "444pt・195コメント", "tone": "primary" },
-                { "label": "キーメッセージ", "value": "「ハーネスがすべて」", "tone": "info", "description": "エージェントにおけるコンテキスト・持続性・学習の仕組みがモデル本体より重要" },
-                { "label": "印象的事例", "value": "パピルス18万文書解読", "tone": "success", "description": "Codestralで解読、手作業2000年超の作業をAI化" },
-                { "label": "Mistral戦略", "value": "フルスタック転換", "tone": "default", "description": "モデル販売からインフラ・コンサルを含む全スタックへ拡張" }
+                {
+                  "label": "HN反響",
+                  "value": "444pt・195コメント",
+                  "tone": "primary"
+                },
+                {
+                  "label": "キーメッセージ",
+                  "value": "「ハーネスがすべて」",
+                  "tone": "info",
+                  "description": "エージェントにおけるコンテキスト・持続性・学習の仕組みがモデル本体より重要"
+                },
+                {
+                  "label": "印象的事例",
+                  "value": "パピルス18万文書解読",
+                  "tone": "success",
+                  "description": "Codestralで解読、手作業2000年超の作業をAI化"
+                },
+                {
+                  "label": "Mistral戦略",
+                  "value": "フルスタック転換",
+                  "tone": "default",
+                  "description": "モデル販売からインフラ・コンサルを含む全スタックへ拡張"
+                }
               ],
               "context": "Mistralは2026年にパリで40MWデータセンター建設、BNP Paribas・Amazon Alexa+・Abancaなどとの深い実装提携を次々発表。欧州AI主権の旗手として存在感を強めている。",
               "impact": "「ハーネス設計がモデル選択より重要」という視点は、AIシステム構築者の実務的な優先順位を根本的に問い直す。エージェント基盤の設計議論を加速させる可能性がある。"
-            }
+            },
+            "alt": "Mistral AI Now Summit参加レポートの反響。HN 444pts・195コメントの高エンゲージメント。「ハーネスがすべてだ」というキーメッセージ。Mistralのフルスタック化転換。BNP Paribas・ASML等の実装パートナーシップ。エジプトパピルス解読のユースケース。欧州データ主権の競合優位。"
           }
         },
         {
@@ -815,8 +1343,17 @@
           "category": "community_buzz",
           "published_at": "2026-05-28",
           "lang": "en",
-          "reaction_signal": { "kind": "hatena", "users": 131 },
-          "tags": ["ai-employment", "entry-level-jobs", "future-of-work", "coding", "mit-tech-review"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 131
+          },
+          "tags": [
+            "ai-employment",
+            "entry-level-jobs",
+            "future-of-work",
+            "coding",
+            "mit-tech-review"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -834,19 +1371,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "MIT Tech Review「エントリーレベル雇用危機」記事の概要。AIがコーディングを習得しエントリーレベル開発職が急速に消滅。「コーディングを学べ」アドバイスが無効化。ジュニア→シニアのキャリアラダー機能不全。日本語版でもはてブ131件の反響。",
             "data": {
               "headline": "AIがエントリーレベル雇用を奪い始めた——「コーディングを学べ」が通用しない時代",
               "tldr": "MIT Tech Reviewがエントリーレベル雇用危機を警告。AIがコーディングを習得した今、従来の「スキル転換で対処」という解決策が崩壊しつつあり、若者のキャリア形成への構造的影響が深刻化している。",
               "points": [
-                { "label": "危機の本質", "value": "キャリアラダー崩壊", "tone": "danger", "description": "エントリーレベル職がAIで置き換わり、ジュニア→シニアへの成長経路が消えつつある" },
-                { "label": "従来策の限界", "value": "「コーディング学習」無効化", "tone": "warning", "description": "AIがコーディング自体を習得したことで、スキル転換戦略が機能しなくなった" },
-                { "label": "影響範囲", "value": "開発・分析・CS職", "tone": "info", "description": "若者が経験を積む典型的な職種が急速に自動化されている" },
-                { "label": "国内反響", "value": "はてブ131件", "tone": "default", "description": "日本版でも大きな関心を呼び、国内の雇用不安議論に火をつけた" }
+                {
+                  "label": "危機の本質",
+                  "value": "キャリアラダー崩壊",
+                  "tone": "danger",
+                  "description": "エントリーレベル職がAIで置き換わり、ジュニア→シニアへの成長経路が消えつつある"
+                },
+                {
+                  "label": "従来策の限界",
+                  "value": "「コーディング学習」無効化",
+                  "tone": "warning",
+                  "description": "AIがコーディング自体を習得したことで、スキル転換戦略が機能しなくなった"
+                },
+                {
+                  "label": "影響範囲",
+                  "value": "開発・分析・CS職",
+                  "tone": "info",
+                  "description": "若者が経験を積む典型的な職種が急速に自動化されている"
+                },
+                {
+                  "label": "国内反響",
+                  "value": "はてブ131件",
+                  "tone": "default",
+                  "description": "日本版でも大きな関心を呼び、国内の雇用不安議論に火をつけた"
+                }
               ],
               "context": "2025年末から大手テック企業が新卒採用を縮小する動きが続いており、AIによるジュニア職の代替は数字としても現れ始めている。",
               "impact": "「AIと共に働く人材」育成よりも根本的な雇用・教育政策の見直しが必要だというコンセンサスが学術・政策領域で形成されつつある。"
-            }
+            },
+            "alt": "MIT Tech Review「エントリーレベル雇用危機」記事の概要。AIがコーディングを習得しエントリーレベル開発職が急速に消滅。「コーディングを学べ」アドバイスが無効化。ジュニア→シニアのキャリアラダー機能不全。日本語版でもはてブ131件の反響。"
           }
         }
       ]
@@ -867,7 +1424,13 @@
           "category": "japan",
           "published_at": "2026-05-29",
           "lang": "ja",
-          "tags": ["japan", "ai-society", "design-knowledge", "essay", "shimizu-ryo"],
+          "tags": [
+            "japan",
+            "ai-society",
+            "design-knowledge",
+            "essay",
+            "shimizu-ryo"
+          ],
           "reaction_signal": {
             "type": "hatena",
             "users": 432,
@@ -891,20 +1454,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "清水亮「生成AIが本当に変えるのは設計知だ」の要旨カード。AIが変えるのは検索ではなく設計知（デザインナレッジ）。設計知とは人類が問題解決の中で体系化した暗黙知の集積。AIによる設計知の民主化で専門家のみが持てた知識が誰でも使えるようになる。はてブ432件を集め国内最大反響の論考となった。",
             "data": {
               "headline": "生成AIが本当に変えるのは「設計知」——AIと暗黙知の民主化",
               "tldr": "清水亮氏は、生成AIが変えるのは情報検索でなく人類が蓄積してきた「設計知（デザインナレッジ）」だと論じる。AIが設計知へのアクセスを民主化することで、かつては職人・専門家のみが持てた問題解決の知識が誰でも使えるようになる。",
               "points": [
-                { "label": "主張", "value": "AIは検索より設計知を変える", "description": "情報探索の高速化より、問題解決知識体系（設計知）へのアクセス解放が本質的変革" },
-                { "label": "設計知とは", "value": "暗黙知の体系化", "description": "建築・製造・ソフトウェア等の領域で長年蓄積された問題解決パターンの集積" },
-                { "label": "変化の方向", "value": "知識の民主化", "description": "師弟関係・長年の経験でのみ伝承されてきた設計知をAIが媒介し普及させる" },
-                { "label": "含意", "value": "教育・産業構造の再編", "description": "専門家の独占が崩れ、職業の境界と人材育成のあり方が根本的に変わる可能性" },
-                { "label": "反響", "value": "はてブ432件", "description": "国内AI論考として5月最大規模の反響を記録" }
+                {
+                  "label": "主張",
+                  "value": "AIは検索より設計知を変える",
+                  "description": "情報探索の高速化より、問題解決知識体系（設計知）へのアクセス解放が本質的変革"
+                },
+                {
+                  "label": "設計知とは",
+                  "value": "暗黙知の体系化",
+                  "description": "建築・製造・ソフトウェア等の領域で長年蓄積された問題解決パターンの集積"
+                },
+                {
+                  "label": "変化の方向",
+                  "value": "知識の民主化",
+                  "description": "師弟関係・長年の経験でのみ伝承されてきた設計知をAIが媒介し普及させる"
+                },
+                {
+                  "label": "含意",
+                  "value": "教育・産業構造の再編",
+                  "description": "専門家の独占が崩れ、職業の境界と人材育成のあり方が根本的に変わる可能性"
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ432件",
+                  "description": "国内AI論考として5月最大規模の反響を記録"
+                }
               ],
               "context": "著者の清水亮氏はUEI（ユーザーエクスペリエンスイノベーション研究所）代表であり、AI研究者・起業家として国内AIコミュニティで継続的に発信している。",
               "impact": "AIの社会的価値を「検索高度化」から「知識アクセスの構造変革」として再定義するフレームは、AI活用戦略の立案や教育政策の検討において重要な判断軸となる。"
-            }
+            },
+            "alt": "清水亮「生成AIが本当に変えるのは設計知だ」の要旨カード。AIが変えるのは検索ではなく設計知（デザインナレッジ）。設計知とは人類が問題解決の中で体系化した暗黙知の集積。AIによる設計知の民主化で専門家のみが持てた知識が誰でも使えるようになる。はてブ432件を集め国内最大反響の論考となった。"
           },
           "x_post": "清水亮氏の論考「生成AIが本当に変えるのは設計知だ」がはてブ432件を集めた。AIが変えるのは情報検索ではなく、人類が師弟関係や経験を通じて積み上げてきた設計知（デザインナレッジ）へのアクセス方法だという主張だ。設計知の民主化は職業の境界と教育の構造を根本から変える可能性を持つ。\n\nhttps://wirelesswire.jp/2026/05/93805/"
         },
@@ -919,7 +1502,15 @@
           "category": "japan",
           "published_at": "2026-05-29",
           "lang": "ja",
-          "tags": ["japan", "ollama", "qwen3-vl", "playwright", "web-agent", "local-llm", "tutorial"],
+          "tags": [
+            "japan",
+            "ollama",
+            "qwen3-vl",
+            "playwright",
+            "web-agent",
+            "local-llm",
+            "tutorial"
+          ],
           "reaction_signal": {
             "type": "hatena",
             "users": 157,
@@ -943,20 +1534,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Ollama+Qwen3-VL+Playwrightによる無料ローカルWebリサーチエージェントの構成。OllamaでQwen3-VLをローカル実行、PlaywrightがPythonでブラウザを制御、Qwen3-VLがスクリーンショットを解析してUI要素を理解し次のアクションを決定する。完全無料でAPIキー不要。はてブ157件。",
             "data": {
               "headline": "Qwen3-VL＋Playwright：APIキー不要・完全無料のローカルWebリサーチエージェント",
               "tldr": "OllamaでQwen3-VLをローカル動作させ、Playwrightのブラウザ自動操作と組み合わせることで、外部コスト0円の自律Webリサーチエージェントを構築できる。スクリーンショット連続分析で自律的にWebページを操作する。",
               "points": [
-                { "label": "コスト", "value": "完全無料", "description": "Ollama+Qwen3-VLのローカル動作でAPIキー不要、外部費用0円で運用可能" },
-                { "label": "VLMモデル", "value": "Qwen3-VL（Ollama経由）", "description": "画面スクリーンショットを解析してUI要素を理解し次のアクションを決定" },
-                { "label": "ブラウザ操作", "value": "Playwright（Python）", "description": "クリック・入力・スクロールをPythonで自動制御、実ブラウザを使用" },
-                { "label": "エージェントループ", "value": "観察→判断→操作を繰り返し", "description": "スクリーンショット取得→VLM分析→DOM操作のサイクルで自律的にWebを調査" },
-                { "label": "反響", "value": "はてブ157件", "description": "無料ローカルWebエージェントの実装として国内開発者コミュニティで拡散" }
+                {
+                  "label": "コスト",
+                  "value": "完全無料",
+                  "description": "Ollama+Qwen3-VLのローカル動作でAPIキー不要、外部費用0円で運用可能"
+                },
+                {
+                  "label": "VLMモデル",
+                  "value": "Qwen3-VL（Ollama経由）",
+                  "description": "画面スクリーンショットを解析してUI要素を理解し次のアクションを決定"
+                },
+                {
+                  "label": "ブラウザ操作",
+                  "value": "Playwright（Python）",
+                  "description": "クリック・入力・スクロールをPythonで自動制御、実ブラウザを使用"
+                },
+                {
+                  "label": "エージェントループ",
+                  "value": "観察→判断→操作を繰り返し",
+                  "description": "スクリーンショット取得→VLM分析→DOM操作のサイクルで自律的にWebを調査"
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ157件",
+                  "description": "無料ローカルWebエージェントの実装として国内開発者コミュニティで拡散"
+                }
               ],
               "context": "Qwen3-VLはAlibaba製ビジョン言語モデルで、OllamaによりM1/M2 Macやローカルマシンでも動作可能。Playwrightはブラウザ自動化ライブラリのデファクトスタンダード。",
               "impact": "従来は有料APIが必要だったWebエージェントを完全無料で構築できる手法の確立は、AIエージェント開発の裾野を個人・小規模チームへ大幅に広げる。"
-            }
+            },
+            "alt": "Ollama+Qwen3-VL+Playwrightによる無料ローカルWebリサーチエージェントの構成。OllamaでQwen3-VLをローカル実行、PlaywrightがPythonでブラウザを制御、Qwen3-VLがスクリーンショットを解析してUI要素を理解し次のアクションを決定する。完全無料でAPIキー不要。はてブ157件。"
           }
         },
         {
@@ -970,7 +1581,14 @@
           "category": "japan",
           "published_at": "2026-05-29",
           "lang": "ja",
-          "tags": ["japan", "ai-governance", "technical-debt", "review", "essay", "fladdict"],
+          "tags": [
+            "japan",
+            "ai-governance",
+            "technical-debt",
+            "review",
+            "essay",
+            "fladdict"
+          ],
           "reaction_signal": {
             "type": "hatena",
             "users": 150,
@@ -994,20 +1612,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "fladdict「AIの成果物を人類がレビューしない時代」の要旨。AIの生産速度と複雑度が人間のレビュー能力を上回り、技術的負債が不可視化される問題を指摘。誰も理解しないシステムへの意思決定責任が宙に浮く責任の空洞化も課題。可観測性の設計を対策として提案。はてブ150件。",
             "data": {
               "headline": "AIの成果物が「人間のレビュー能力」を超える臨界点",
               "tldr": "深津貴之氏は、AIが生成するコード・設計・文書が人間の認知能力を超える複雑さを持つようになり、実質的なレビューが困難になりつつあると論じる。AIは人間が理解できないものを生産できるが、人間はそれを正しく評価できない。",
               "points": [
-                { "label": "問題の核心", "value": "認知の非対称性", "description": "AIの生産速度・複雑度が人間のレビュー能力を上回り始めている構造的な問題" },
-                { "label": "具体的危険", "value": "技術的負債の不可視化", "description": "人間がレビューできないAI生成コードが蓄積すると問題が見えなくなる" },
-                { "label": "組織への影響", "value": "責任の空洞化", "description": "誰も理解していないシステムに関する意思決定責任が宙に浮く" },
-                { "label": "対策の方向", "value": "可観測性の設計", "description": "AIの成果物に検証可能性・解釈可能性を設計段階から組み込む必要性" },
-                { "label": "反響", "value": "はてブ150件", "description": "AI活用の実態を突く問題提起として国内開発者・マネージャーに広く読まれた" }
+                {
+                  "label": "問題の核心",
+                  "value": "認知の非対称性",
+                  "description": "AIの生産速度・複雑度が人間のレビュー能力を上回り始めている構造的な問題"
+                },
+                {
+                  "label": "具体的危険",
+                  "value": "技術的負債の不可視化",
+                  "description": "人間がレビューできないAI生成コードが蓄積すると問題が見えなくなる"
+                },
+                {
+                  "label": "組織への影響",
+                  "value": "責任の空洞化",
+                  "description": "誰も理解していないシステムに関する意思決定責任が宙に浮く"
+                },
+                {
+                  "label": "対策の方向",
+                  "value": "可観測性の設計",
+                  "description": "AIの成果物に検証可能性・解釈可能性を設計段階から組み込む必要性"
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ150件",
+                  "description": "AI活用の実態を突く問題提起として国内開発者・マネージャーに広く読まれた"
+                }
               ],
               "context": "著者の深津貴之氏はnote.comのCXO兼クリエイティブディレクターで、日本のAI実装の最前線から継続的に発信している。",
               "impact": "AIが生成した成果物のガバナンス問題は技術組織にとって現実の課題になりつつあり、CTO・エンジニアリング組織の設計判断に直接影響する論点。"
-            }
+            },
+            "alt": "fladdict「AIの成果物を人類がレビューしない時代」の要旨。AIの生産速度と複雑度が人間のレビュー能力を上回り、技術的負債が不可視化される問題を指摘。誰も理解しないシステムへの意思決定責任が宙に浮く責任の空洞化も課題。可観測性の設計を対策として提案。はてブ150件。"
           }
         },
         {
@@ -1021,7 +1659,14 @@
           "category": "japan",
           "published_at": "2026-05-27",
           "lang": "ja",
-          "tags": ["japan", "continuous-delivery", "ai-adoption", "engineering-org", "dx", "four-keys"],
+          "tags": [
+            "japan",
+            "continuous-delivery",
+            "ai-adoption",
+            "engineering-org",
+            "dx",
+            "four-keys"
+          ],
           "reaction_signal": {
             "type": "hatena",
             "users": 154,
@@ -1045,20 +1690,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "継続的デリバリーがない組織でのAI導入の問題を示す図。CDなしでAIを入れると生成速度だけ上がり、未テストコード蓄積、デプロイ滞留、技術的負債増加が増幅される。AIは増幅器なので組織の弱点も拡大。CD基盤整備がAI導入の前提条件。はてブ154件。",
             "data": {
               "headline": "CD不在の組織でAIは増幅器として空回りする",
               "tldr": "CD基盤がない組織でAIコーディングツールを導入しても、生成速度だけが上がり品質保証・デプロイ・フィードバックループの欠如が増幅される。AIは組織能力の「増幅器」であり、弱点も拡大する。",
               "points": [
-                { "label": "前提", "value": "CDがないとAIは危険", "description": "継続的デリバリー基盤がなければAIによる開発加速は未テストコードの蓄積を招く" },
-                { "label": "増幅のメカニズム", "value": "良い点も悪い点も拡大", "description": "AIは組織の既存の強みと弱みを同時に増幅するため、脆弱性が顕在化する" },
-                { "label": "処方箋", "value": "基盤整備が先", "description": "自動テスト・CI/CDパイプライン・デプロイ頻度の確立がAI導入の前提条件" },
-                { "label": "測定指標", "value": "Four Keys", "description": "デプロイ頻度・変更リードタイム・変更失敗率・復旧時間でCD成熟度を可視化" },
-                { "label": "反響", "value": "はてブ154件", "description": "AI導入で失敗する組織の共通パターンとして国内開発者に広く支持" }
+                {
+                  "label": "前提",
+                  "value": "CDがないとAIは危険",
+                  "description": "継続的デリバリー基盤がなければAIによる開発加速は未テストコードの蓄積を招く"
+                },
+                {
+                  "label": "増幅のメカニズム",
+                  "value": "良い点も悪い点も拡大",
+                  "description": "AIは組織の既存の強みと弱みを同時に増幅するため、脆弱性が顕在化する"
+                },
+                {
+                  "label": "処方箋",
+                  "value": "基盤整備が先",
+                  "description": "自動テスト・CI/CDパイプライン・デプロイ頻度の確立がAI導入の前提条件"
+                },
+                {
+                  "label": "測定指標",
+                  "value": "Four Keys",
+                  "description": "デプロイ頻度・変更リードタイム・変更失敗率・復旧時間でCD成熟度を可視化"
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ154件",
+                  "description": "AI導入で失敗する組織の共通パターンとして国内開発者に広く支持"
+                }
               ],
               "context": "Findyはエンジニア採用プラットフォームを運営し、国内エンジニア組織の開発生産性指標（Four Keys等）に関する調査・知見を定期発信している。",
               "impact": "AIツール導入の効果を最大化するにはエンジニアリングプロセスの成熟度が前提条件であることを示し、CTO・技術マネージャーの投資優先順位の判断に直結。"
-            }
+            },
+            "alt": "継続的デリバリーがない組織でのAI導入の問題を示す図。CDなしでAIを入れると生成速度だけ上がり、未テストコード蓄積、デプロイ滞留、技術的負債増加が増幅される。AIは増幅器なので組織の弱点も拡大。CD基盤整備がAI導入の前提条件。はてブ154件。"
           }
         },
         {
@@ -1072,7 +1737,14 @@
           "category": "japan",
           "published_at": "2026-05-29",
           "lang": "ja",
-          "tags": ["japan", "digital-agency", "government-ai", "gennai", "llm-procurement", "regulatory"],
+          "tags": [
+            "japan",
+            "digital-agency",
+            "government-ai",
+            "gennai",
+            "llm-procurement",
+            "regulatory"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1090,20 +1762,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "デジタル庁の源内向け国産LLM再公募の概要。評価問題数が前回の50問から300問（6倍）に強化。2027年度から有償調達に移行。対象は国産LLM限定。セキュリティ・日本語精度・政策専門知識の審査を厳格化。",
             "data": {
               "headline": "デジタル庁、源内向け国産LLM再公募——評価強化で国産AI実力審査が本番化",
               "tldr": "デジタル庁が行政AIアシスタント「源内」向け国産LLM調達を再公募し、評価問題数を50問から300問に拡充。2027年度からの有償調達に向け、国産LLMの実用性と安全性の本格審査が始まる。",
               "points": [
-                { "label": "対象システム", "value": "行政AIアシスタント「源内」", "description": "政府内業務支援AIとして展開中の行政専用チャットAIシステム" },
-                { "label": "評価強化", "value": "50問→300問（6倍）", "description": "セキュリティ・日本語精度・政策専門知識の審査を大幅に厳格化" },
-                { "label": "調達移行", "value": "2027年度から有償化", "description": "現在の無償実証から2027年度（FY2027）に本番有償調達へ移行予定" },
-                { "label": "対象モデル", "value": "国産LLM限定", "description": "海外大手モデルを除く国内開発LLMを対象とした調達競争が本格化" },
-                { "label": "背景", "value": "前回公募の見直し", "description": "評価基準の不十分さを認め、より実務に即した審査体制に刷新" }
+                {
+                  "label": "対象システム",
+                  "value": "行政AIアシスタント「源内」",
+                  "description": "政府内業務支援AIとして展開中の行政専用チャットAIシステム"
+                },
+                {
+                  "label": "評価強化",
+                  "value": "50問→300問（6倍）",
+                  "description": "セキュリティ・日本語精度・政策専門知識の審査を大幅に厳格化"
+                },
+                {
+                  "label": "調達移行",
+                  "value": "2027年度から有償化",
+                  "description": "現在の無償実証から2027年度（FY2027）に本番有償調達へ移行予定"
+                },
+                {
+                  "label": "対象モデル",
+                  "value": "国産LLM限定",
+                  "description": "海外大手モデルを除く国内開発LLMを対象とした調達競争が本格化"
+                },
+                {
+                  "label": "背景",
+                  "value": "前回公募の見直し",
+                  "description": "評価基準の不十分さを認め、より実務に即した審査体制に刷新"
+                }
               ],
               "context": "デジタル庁はNEC・Fujitsuなど国内メーカーと国産LLMの評価実証を進めており、政府ITシステムにおけるAI活用のデータ主権確保を重視している。",
               "impact": "国産LLMの実力審査が300問規模に拡大し、政府調達参入競争が本格化。パブリックセクター向けAI市場の形成を加速し、国内AI企業の競争環境を変える。"
-            }
+            },
+            "alt": "デジタル庁の源内向け国産LLM再公募の概要。評価問題数が前回の50問から300問（6倍）に強化。2027年度から有償調達に移行。対象は国産LLM限定。セキュリティ・日本語精度・政策専門知識の審査を厳格化。"
           }
         }
       ]
@@ -1124,7 +1816,13 @@
           "category": "china",
           "published_at": "2026-05-31",
           "lang": "en",
-          "tags": ["china", "deepseek", "pricing", "api-cost", "llm-market"],
+          "tags": [
+            "china",
+            "deepseek",
+            "pricing",
+            "api-cost",
+            "llm-market"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1143,11 +1841,14 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "DeepSeek V4-Pro価格改定の比較。入力価格が$1.74/Mから$0.435/Mへ75%削減（改定前100%対改定後25%）、出力価格が$3.48/Mから$0.87/Mへ75%削減。2026年5月31日正式発効。",
             "data": {
               "headline": "DeepSeek V4-Pro、入出力価格を75%永久削減——$0.435/$0.87 per M tokens 正式発効",
-              "before": { "label": "改定前" },
-              "after": { "label": "改定後（2026-05-31発効）" },
+              "before": {
+                "label": "改定前"
+              },
+              "after": {
+                "label": "改定後（2026-05-31発効）"
+              },
               "metrics": [
                 {
                   "label": "入力価格（$/M tokens）",
@@ -1166,7 +1867,8 @@
               ],
               "narrative": "DeepSeekが5月25日に発表した旗艦モデルV4-Proの永久75%値下げが5月31日に正式発効した。GPT-5.4比で入出力とも4分の1以下の価格を実現し、オープンソース/中国系モデルによるAPI価格競争が新段階に入った。",
               "impact": "トップクラスのコーディング性能を持つDeepSeek V4-Proの大幅値下げにより、企業がAI APIコストを削減できる選択肢が拡大。国内企業のコストモデル見直しにも影響する。"
-            }
+            },
+            "alt": "DeepSeek V4-Pro価格改定の比較。入力価格が$1.74/Mから$0.435/Mへ75%削減（改定前100%対改定後25%）、出力価格が$3.48/Mから$0.87/Mへ75%削減。2026年5月31日正式発効。"
           }
         },
         {
@@ -1180,7 +1882,14 @@
           "category": "china",
           "published_at": "2026-05-20",
           "lang": "en",
-          "tags": ["china", "alibaba", "qwen", "frontier-model", "1m-context", "coding"],
+          "tags": [
+            "china",
+            "alibaba",
+            "qwen",
+            "frontier-model",
+            "1m-context",
+            "coding"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -1198,27 +1907,59 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "Qwen 3.7 Maxのベンチマーク性能。Chatbot Arena Intelligence Index 56.6でグローバル5位、SWE-Bench Pro 60.6%のコーディング性能を達成。コンテキスト長1Mトークン。Alibaba製中国勢最高水準のフラッグシップモデル。",
             "data": {
               "headline": "Qwen 3.7 Max ベンチマーク性能——中国勢フロンティアモデルの実力",
               "bars": [
-                { "label": "Chatbot Arena Intelligence Index（/100）", "value": "56.6（グローバル5位）", "pct": 57 },
-                { "label": "SWE-Bench Pro コーディング（%）", "value": "60.6%", "pct": 61 },
-                { "label": "コンテキスト長（Mトークン換算）", "value": "1M tokens", "pct": 75 }
+                {
+                  "label": "Chatbot Arena Intelligence Index（/100）",
+                  "value": "56.6（グローバル5位）",
+                  "pct": 57
+                },
+                {
+                  "label": "SWE-Bench Pro コーディング（%）",
+                  "value": "60.6%",
+                  "pct": 61
+                },
+                {
+                  "label": "コンテキスト長（Mトークン換算）",
+                  "value": "1M tokens",
+                  "pct": 75
+                }
               ],
               "narrative": "AlibabaのQwen 3.7 Maxは1Mトークンコンテキストを持つフラッグシップモデルで、Chatbot Arena Intelligence Indexでグローバル5位（56.6）、SWE-Bench Proで60.6%を記録した。中国発モデルとして最高水準のベンチマーク性能を示す。",
               "impact": "中国発のオープンウェイトモデルが複数のベンチマークでフロンティアレベルに到達したことは、AI能力競争のグローバル化を示す。企業のオープンウェイト採用検討において実用選択肢が拡大した。"
-            }
+            },
+            "alt": "Qwen 3.7 Maxのベンチマーク性能。Chatbot Arena Intelligence Index 56.6でグローバル5位、SWE-Bench Pro 60.6%のコーディング性能を達成。コンテキスト長1Mトークン。Alibaba製中国勢最高水準のフラッグシップモデル。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "openai_blog_direct", "reason": "HTTP 403", "fallback_used": "WebSearch site:openai.com" },
-    { "source": "theverge_rss", "reason": "fetch blocked", "fallback_used": "none" },
-    { "source": "reddit_rss", "reason": "fetch blocked", "fallback_used": "none" },
-    { "source": "synced_review", "reason": "no recent articles in feed", "fallback_used": "none" },
-    { "source": "deeplearning_ai_batch", "reason": "HTTP 404 RSS", "fallback_used": "none" }
+    {
+      "source": "openai_blog_direct",
+      "reason": "HTTP 403",
+      "fallback_used": "WebSearch site:openai.com"
+    },
+    {
+      "source": "theverge_rss",
+      "reason": "fetch blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "reddit_rss",
+      "reason": "fetch blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "synced_review",
+      "reason": "no recent articles in feed",
+      "fallback_used": "none"
+    },
+    {
+      "source": "deeplearning_ai_batch",
+      "reason": "HTTP 404 RSS",
+      "fallback_used": "none"
+    }
   ]
 }

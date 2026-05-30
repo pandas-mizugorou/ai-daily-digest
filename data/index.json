@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-05-30T05:00:00+09:00",
+  "updated_at": "2026-05-31T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-05-31",
+      "headline": "Google Gemini Omni が「任意→任意」世界モデルとして展開、OpenAI が GPT-Rosalind をバイオディフェンスに無償開放——Mistral は Vibe にリブランドし国内「設計知」論考がはてブ 432 件",
+      "item_count": 24,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-05-30",
       "headline": "Anthropic、Claude Opus 4.8と$650億調達を同日発表——Dynamic Workflowで数百サブエージェント並列実行、SkillOpt全52構成で首位",
