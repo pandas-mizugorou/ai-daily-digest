@@ -158,6 +158,12 @@ jobs:
             - 旧 ID (tools/research/industry) ではなく **新 ID (tools_apps/research_papers/industry_business)** を使う (ただし schema enum には旧 ID も残置されている)
             - lang は en/ja/zh/other のいずれか。中文記事は必ず lang="zh" を付与
             - figure は全記事必須 (4 型: comparison/metric-bars/timeline/summary-card)
+            - **figure スキーマ厳守 (重要・過去に重大な不一致あり)**: figure は必ず `{ "type": ..., "alt": ..., "data": { ... } }` の形で出力する。
+              * **`data` ラッパー必須**。`left_label` / `right_label` / metric の `name`・`left`・`right` / `date` のような**フラット形式は禁止**。正しくは `data.before.label` / `data.after.label` / `data.metrics[].label`・`before`・`after` / `data.events[].when` を使う
+              * **バー幅 `before_pct`・`after_pct`・`pct` を 0-100 で必ず付与**（数値を正規化。図のバー長はこの値で決まる）
+              * **`alt` (60-280字) 必須**。図に表れる全情報を文章化（スクリーンリーダー用）
+              * comparison/metric-bars/timeline は **`narrative`・`impact` を必ず埋める**。色分け用の `delta_tone`/`tone`/`status` も付与
+              * 詳細は `assets/prompt-templates/figure-design.md` と `summarize-ja.md` のスキーマ例に厳密に従う。生成後 CI の `validate-digest.mjs` が `data` 欠落・`_pct` 欠落・`alt` 欠落を検査する
 
             ## 出力 token 節約のための書き込み戦略 (重要)
             **1 ターンの Write/Edit は 32K token 以内に収める**。Sonnet の output 上限は 64K だが、
@@ -189,6 +195,18 @@ jobs:
             --model claude-sonnet-4-6
             --permission-mode bypassPermissions
             --allowed-tools Read,Write,Edit,Glob,Grep,Bash,WebFetch,WebSearch
+
+      # === 図解スキーマ正規化＋検証 (Claude 出力後・search-index/commit 前。依存ゼロ) ===
+      # 生成側がフラット旧スキーマで figure を出しても、ここで正準スキーマ ({type, data:{...}}) に
+      # 決定論的に揃える (バー幅 _pct / before・after / timeline status を補完)。
+      # その後 validate で残る内容ギャップ (alt / narrative / impact 欠落など、創作になるため
+      # normalize では補えない項目) を検証しステップサマリに可視化する。公開は止めない。
+      - name: Normalize & validate figure schema
+        if: steps.guard.outputs.done != 'true'
+        continue-on-error: true
+        run: |
+          node scripts/normalize-digest.mjs "data/${{ steps.date.outputs.value }}.json"
+          node scripts/validate-digest.mjs "data/${{ steps.date.outputs.value }}.json"
 
       # === Phase F-3: 検索インデックス生成 (Claude 出力後・commit 前。ランナー標準 node、依存ゼロ) ===
       - name: Build search index

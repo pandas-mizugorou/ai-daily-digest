@@ -85,6 +85,13 @@
 
 【figure のルール — 詳細は figure-design.md を参照】
 
+⚠️ **スキーマ厳守（過去に重大な不一致でほぼ全図が空表示になった）**:
+- figure は必ず `{ "type": ..., "alt": ..., "data": { ... } }` の構造。**`data` ラッパー必須**。
+- **フラット形式は禁止**: `left_label` / `right_label` / metric の `name`・`left`・`right` / `date` などのトップレベル直書きは不可。正しくは `data.before.label` / `data.after.label` / `data.metrics[].label`・`before`・`after` / `data.events[].when`。
+- **バー幅 `before_pct`・`after_pct`・`pct` を 0-100 で必ず付与**（図のバー長はこの値で決まる。欠落するとバーが描画されない）。
+- **`alt`（60-280字）必須**。**`narrative`・`impact`** は comparison/metric-bars/timeline で必須級。色分け用 `delta_tone`/`tone`、timeline の `status` も付与。
+- 生成後に CI の `scripts/validate-digest.mjs` が `data`欠落 / `_pct`欠落 / `alt`欠落 を検査する。下記スキーマ例の形に厳密に合わせること。
+
 目標: **視覚で直感的に**記事の核心が分かること。図を見ただけで「何が・どう変わった・どう活かせるか」が伝わる。**バー/タイムラインなど視覚要素のある型 (comparison / metric-bars / timeline) で量・差・順序が一目で掴めることを最優先**し、テキスト主体の summary-card は安易に選ばない。
 
 **figure は全記事で必須**。例外なく生成する。**創作・推測・元記事にない数字の追加は厳禁**。
