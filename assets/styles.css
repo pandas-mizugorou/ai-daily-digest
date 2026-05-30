@@ -987,8 +987,8 @@ button { font: inherit; cursor: pointer; }
   text-overflow: ellipsis;
 }
 .fig-cmp-bar {
-  height: 14px;
-  background: color-mix(in srgb, var(--fg-subtle) 10%, transparent);
+  height: 17px;
+  background: color-mix(in srgb, var(--fg-subtle) 16%, transparent);
   border-radius: 999px;
   overflow: hidden;
   position: relative;
@@ -999,8 +999,10 @@ button { font: inherit; cursor: pointer; }
   border-radius: inherit;
   transition: width 0.4s ease;
 }
+/* before は「明確に見える中間グレー」。after の色付きバーと並べたとき差が一目で分かるよう、
+   旧 38% の淡色から medium グレーへ引き上げる（一目で比較できることを優先）。 */
 .fig-cmp-bar-fill-before {
-  background: color-mix(in srgb, var(--fg-subtle) 38%, transparent);
+  background: color-mix(in srgb, var(--fg-muted) 48%, transparent);
 }
 .fig-cmp-bar-fill-after {
   background: var(--accent);
