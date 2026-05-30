@@ -1902,6 +1902,7 @@ button { font: inherit; cursor: pointer; }
 .search-card-meta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center; /* favicon(16px) をテキストと垂直中央で揃える（日次 .card-meta と統一） */
   gap: 8px;
   font-size: 0.72rem;
   color: var(--fg-subtle);
@@ -2202,7 +2203,7 @@ button { font: inherit; cursor: pointer; }
   font-size: 0.68rem;
   font-weight: 600;
   line-height: 1.5;
-  color: var(--fg-subtle);
+  color: var(--fg-muted); /* WCAG AA(4.5:1) 確保のため subtle より一段濃く */
   background: color-mix(in oklab, var(--fg) 6%, transparent);
   white-space: nowrap;
 }
@@ -2256,7 +2257,6 @@ button { font: inherit; cursor: pointer; }
     transform: translateY(10px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     transition-delay: calc(var(--reveal-i, 0) * 45ms);
-    will-change: opacity, transform;
   }
   .card.reveal.is-visible {
     opacity: 1;

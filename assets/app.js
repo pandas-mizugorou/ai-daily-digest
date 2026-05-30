@@ -431,9 +431,11 @@ function composeLabel(id, categories) {
 
 // stats.by_category を 1 本の比率バー + 上位凡例で可視化する。
 // 「今日は日本語ソースが厚い」等の構成が一目で掴める。色は既存のカテゴリ色を流用。
-function renderComposeBar(byCategory, categories) {
+// hasItems=false（カテゴリ記事 0 件の日）では、不整合データでも棒を出さない。
+function renderComposeBar(byCategory, categories, hasItems) {
   // 日付切替で残らないよう既存を除去
   els.summary.querySelector(".summary-compose")?.remove();
+  if (!hasItems) return;
   if (!byCategory || typeof byCategory !== "object") return;
   const entries = Object.entries(byCategory)
     .filter(([, n]) => Number(n) > 0)
@@ -453,7 +455,7 @@ function renderComposeBar(byCategory, categories) {
   for (const [id, n] of entries) {
     const seg = document.createElement("span");
     seg.className = "compose-seg";
-    if (CATEGORY_HUE[id] != null) seg.style.setProperty("--cat-h", CATEGORY_HUE[id]);
+    if (CATEGORY_HUE[id] != null) seg.style.setProperty("--cat-h", String(CATEGORY_HUE[id]));
     seg.style.flexGrow = String(n);
     seg.title = `${composeLabel(id, categories)}: ${n}件`;
     bar.appendChild(seg);
@@ -465,7 +467,7 @@ function renderComposeBar(byCategory, categories) {
   for (const [id, n] of entries.slice(0, 5)) {
     const item = document.createElement("span");
     item.className = "compose-legend-item";
-    if (CATEGORY_HUE[id] != null) item.style.setProperty("--cat-h", CATEGORY_HUE[id]);
+    if (CATEGORY_HUE[id] != null) item.style.setProperty("--cat-h", String(CATEGORY_HUE[id]));
     const dot = document.createElement("span");
     dot.className = "compose-legend-dot";
     dot.setAttribute("aria-hidden", "true");
@@ -554,6 +556,11 @@ function filterCategoriesByTab(catId) {
     } else {
       sec.classList.toggle("tab-hidden", sec.dataset.catId !== catId);
     }
+    // 表示に戻したカテゴリの未リビールカードは即可視化する。
+    // display:none を跨いだ後の IntersectionObserver 再交差に依存しないための保険。
+    if (!sec.classList.contains("tab-hidden")) {
+      sec.querySelectorAll(".card.reveal:not(.is-visible)").forEach((c) => c.classList.add("is-visible"));
+    }
   });
 }
 
@@ -581,6 +588,8 @@ function getRevealObserver() {
 
 function applyRevealStagger() {
   const obs = getRevealObserver();
+  // 日付切替で innerHTML を差し替えた前日カードの observe を解放（参照リーク防止）
+  if (obs) obs.disconnect();
   const cards = els.categories.querySelectorAll(".category .card");
   let lastCat = null;
   let i = 0;
@@ -631,8 +640,8 @@ function renderDay(data) {
   const categories = sortCategoriesForDisplay(rawCategories);
   const populated = categories.filter((c) => Array.isArray(c.items) && c.items.length);
 
-  // 今日の構成ミニ棒 (stats.by_category)。データが無ければ何も出さない
-  renderComposeBar(data.stats?.by_category, categories);
+  // 今日の構成ミニ棒 (stats.by_category)。記事 0 件 / データ無しでは出さない
+  renderComposeBar(data.stats?.by_category, categories, populated.length > 0);
 
   // Top Picks (新スキーマのみ。旧スキーマは data.top_picks 未定義で section が hidden 維持)
   const itemIndex = buildItemIndex(categories);

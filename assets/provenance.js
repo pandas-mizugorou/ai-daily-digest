@@ -67,6 +67,9 @@ function sourceTypeChip(sourceType) {
   span.className = `src-chip src-chip-${sourceType}`;
   span.textContent = label;
   span.title = "出典の種類";
+  // 出典名 + favicon で出所は伝わる補助バッジ。SR のアクセシブルネームに
+  // 「公式」「コミュ」等が文脈なく連結読みされるのを避け、純視覚バッジ扱いにする
+  span.setAttribute("aria-hidden", "true");
   return span;
 }
 
