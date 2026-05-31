@@ -72,8 +72,17 @@
           "category": "new_models",
           "published_at": "2026-06-01",
           "lang": "en",
-          "reaction_signal": { "kind": "hatena", "users": 0 },
-          "tags": ["LiquidAI", "LFM", "text-generation", "8B", "MoE"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 0
+          },
+          "tags": [
+            "LiquidAI",
+            "LFM",
+            "text-generation",
+            "8B",
+            "MoE"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -91,20 +100,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LiquidAI LFM2.5-8B-A1B の概要カード。本日リリース。モデルサイズ 8B、タスク テキスト生成、HF いいね数 27.7K。LiquidAI 独自の Liquid Foundation Model アーキテクチャを採用。",
             "data": {
               "headline": "LiquidAI LFM2.5-8B-A1B — 本日公開、27.7K HF いいね",
               "tldr": "LiquidAI の最新 8B テキスト生成モデルが本日 Hugging Face に登場。独自アーキテクチャで計算効率を訴求し、公開直後からコミュニティの高い関心を集めている。",
               "points": [
-                { "icon": "🤖", "label": "モデル規模", "value": "8B パラメータ", "tone": "primary" },
-                { "icon": "🏷", "label": "タスク", "value": "テキスト生成", "tone": "default" },
-                { "icon": "❤️", "label": "HF いいね", "value": "27.7K（公開当日）", "tone": "success" },
-                { "icon": "🏢", "label": "開発元", "value": "LiquidAI", "tone": "default" },
-                { "icon": "📅", "label": "公開日", "value": "2026-06-01（本日）", "tone": "info" }
+                {
+                  "icon": "🤖",
+                  "label": "モデル規模",
+                  "value": "8B パラメータ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏷",
+                  "label": "タスク",
+                  "value": "テキスト生成",
+                  "tone": "default"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "HF いいね",
+                  "value": "27.7K（公開当日）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "開発元",
+                  "value": "LiquidAI",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📅",
+                  "label": "公開日",
+                  "value": "2026-06-01（本日）",
+                  "tone": "info"
+                }
               ],
               "context": "LiquidAI はトランスフォーマーに依存しない独自の LFM アーキテクチャを開発しており、LFM シリーズは長文脈・計算効率を強みとする。",
               "impact": "API キーなしで HF から即試せる 8B モデルの登場は、個人開発者・研究者の実験コストを下げる。"
-            }
+            },
+            "alt": "LiquidAI LFM2.5-8B-A1B の概要カード。本日リリース。モデルサイズ 8B、タスク テキスト生成、HF いいね数 27.7K。LiquidAI 独自の Liquid Foundation Model アーキテクチャを採用。"
           }
         },
         {
@@ -118,7 +152,13 @@
           "category": "new_models",
           "published_at": "2026-05-26",
           "lang": "en",
-          "tags": ["MiniCPM", "OpenBMB", "1B", "text-generation", "edge-AI"],
+          "tags": [
+            "MiniCPM",
+            "OpenBMB",
+            "1B",
+            "text-generation",
+            "edge-AI"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -136,20 +176,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "MiniCPM5-1B の概要カード。開発元 OpenBMB。パラメータ数 1B、HF いいね 36.7K で Trending 首位。エッジデバイス・組み込み向け設計。",
             "data": {
               "headline": "MiniCPM5-1B — 36.7K HF いいね、エッジ LLM の最新世代",
               "tldr": "OpenBMB の MiniCPM シリーズ第 5 世代。1B パラメータでスマホ・組み込みデバイス向けに最適化され、HF Trending 首位を記録している。",
               "points": [
-                { "icon": "📦", "label": "モデル規模", "value": "1B パラメータ", "tone": "primary" },
-                { "icon": "❤️", "label": "HF いいね", "value": "36.7K（Trending 1位）", "tone": "success" },
-                { "icon": "📱", "label": "想定用途", "value": "エッジ・組み込み推論", "tone": "info" },
-                { "icon": "🏢", "label": "開発元", "value": "OpenBMB（清華大系）", "tone": "default" },
-                { "icon": "🔢", "label": "世代", "value": "MiniCPM 第 5 世代", "tone": "default" }
+                {
+                  "icon": "📦",
+                  "label": "モデル規模",
+                  "value": "1B パラメータ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "HF いいね",
+                  "value": "36.7K（Trending 1位）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📱",
+                  "label": "想定用途",
+                  "value": "エッジ・組み込み推論",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "開発元",
+                  "value": "OpenBMB（清華大系）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔢",
+                  "label": "世代",
+                  "value": "MiniCPM 第 5 世代",
+                  "tone": "default"
+                }
               ],
               "context": "MiniCPM シリーズはスマートフォン上で動作する高品質 LLM を目標とし、低リソース環境での推論効率を重視した設計が特徴。",
               "impact": "ローカル LLM を試したい開発者がまず評価すべきモデルの一つ。API コストなしで組み込み推論PoC を始められる。"
-            }
+            },
+            "alt": "MiniCPM5-1B の概要カード。開発元 OpenBMB。パラメータ数 1B、HF いいね 36.7K で Trending 首位。エッジデバイス・組み込み向け設計。"
           }
         }
       ]
@@ -170,7 +235,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-26",
           "lang": "en",
-          "tags": ["Microsoft", "text-to-image", "MAI-Image", "Arena", "image-generation"],
+          "tags": [
+            "Microsoft",
+            "text-to-image",
+            "MAI-Image",
+            "Arena",
+            "image-generation"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -188,11 +259,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "MAI-Image-2 と MAI-Image-2.5 の比較。Arena 順位は不明から 3 位へ向上。文字レンダリング・商業画像・空間推論の 3 指標すべてで改善。Foundry 展開が 2 週間以内に予定。",
             "data": {
               "headline": "MAI-Image-2.5：前世代比で 3 指標を改善し Arena 3 位を達成",
-              "before": { "label": "MAI-Image-2", "sublabel": "旧バージョン" },
-              "after": { "label": "MAI-Image-2.5", "sublabel": "2026-05-26 リリース" },
+              "before": {
+                "label": "MAI-Image-2",
+                "sublabel": "旧バージョン"
+              },
+              "after": {
+                "label": "MAI-Image-2.5",
+                "sublabel": "2026-05-26 リリース"
+              },
               "metrics": [
                 {
                   "label": "Arena 順位",
@@ -224,7 +300,8 @@
               ],
               "narrative": "Microsoft の画像生成モデルが Arena で初めて TOP 3 に入り、OpenAI・Stable Diffusion 系モデルと肩を並べる存在感を示した。",
               "impact": "商業クリエイティブ（パッケージデザイン・製品写真）向けに Arena.ai/image から即日利用可能。Foundry 展開後はエンタープライズ統合も加速する。"
-            }
+            },
+            "alt": "MAI-Image-2 と MAI-Image-2.5 の比較。Arena 順位は不明から 3 位へ向上。文字レンダリング・商業画像・空間推論の 3 指標すべてで改善。Foundry 展開が 2 週間以内に予定。"
           },
           "x_post": "MicrosoftのMAI-Image-2.5がリリースされ、Arenaテキスト→画像リーダーボードで3位を記録した。文字の鮮明さ・レイアウト整合性・商業画像の品質が前世代から改善され、Arena.ai/imageで即日利用可能だ。Foundry展開は2週間以内に予定されている。\n\nhttps://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/"
         },
@@ -239,7 +316,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["Asana", "StackAI", "no-code", "agent-builder", "acquisition"],
+          "tags": [
+            "Asana",
+            "StackAI",
+            "no-code",
+            "agent-builder",
+            "acquisition"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -257,19 +340,35 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Asana による StackAI 買収の概要カード。買収目的：ノーコードエージェントビルダーの統合。StackAI の特徴：GUI でエージェント作成可能。影響：Asana ユーザーが直接エージェントを構築可能に。",
             "data": {
               "headline": "Asana が StackAI を買収——ノーコードエージェント構築を本体に統合",
               "tldr": "Asana がドラッグ＆ドロップで LLM エージェントを作れる StackAI を買収。企業の業務自動化において非エンジニアがエージェントを構築できる環境を整備する。",
               "points": [
-                { "label": "買収先", "value": "StackAI", "tone": "primary" },
-                { "label": "StackAI 特徴", "value": "GUI でエージェント作成", "tone": "info" },
-                { "label": "Asana の目的", "value": "AI ワークフロー強化", "tone": "default" },
-                { "label": "競合動向", "value": "MS・ServiceNow も同方向", "tone": "warning" }
+                {
+                  "label": "買収先",
+                  "value": "StackAI",
+                  "tone": "primary"
+                },
+                {
+                  "label": "StackAI 特徴",
+                  "value": "GUI でエージェント作成",
+                  "tone": "info"
+                },
+                {
+                  "label": "Asana の目的",
+                  "value": "AI ワークフロー強化",
+                  "tone": "default"
+                },
+                {
+                  "label": "競合動向",
+                  "value": "MS・ServiceNow も同方向",
+                  "tone": "warning"
+                }
               ],
               "context": "企業向け SaaS がエージェント構築機能を内製化するトレンドが加速。ノーコードで作れる点が非技術部門への展開鍵。",
               "impact": "Asana ユーザー（PM・マーケ・営業部門）が自部門専用エージェントを作れるようになり、業務自動化の民主化が進む。"
-            }
+            },
+            "alt": "Asana による StackAI 買収の概要カード。買収目的：ノーコードエージェントビルダーの統合。StackAI の特徴：GUI でエージェント作成可能。影響：Asana ユーザーが直接エージェントを構築可能に。"
           }
         },
         {
@@ -283,8 +382,17 @@
           "category": "tools_apps",
           "published_at": "2026-05-28",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 33 },
-          "tags": ["Runway", "MCP", "ChatGPT", "Claude", "video-generation"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 33
+          },
+          "tags": [
+            "Runway",
+            "MCP",
+            "ChatGPT",
+            "Claude",
+            "video-generation"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -302,7 +410,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Runway×MCP 統合のタイムライン。Step1: ユーザーが ChatGPT/Claude のチャットで動画生成を指示。Step2: MCP サーバー経由で Runway API に接続。Step3: Runway が動画を生成してチャット内に返却。Step4: ユーザーは画面を切り替えずに動画を確認・修正できる。",
             "data": {
               "headline": "Runway×MCP：チャット→動画生成の 4 ステップ統合フロー",
               "events": [
@@ -337,7 +444,8 @@
               ],
               "narrative": "MCP の普及により主要 AI チャットと外部ツールのシームレス統合が進んでいる。Runway はその先行事例。",
               "impact": "チャット主体のワークフローが動画制作まで完結できるようになり、クリエイターの制作効率が向上する。"
-            }
+            },
+            "alt": "Runway×MCP 統合のタイムライン。Step1: ユーザーが ChatGPT/Claude のチャットで動画生成を指示。Step2: MCP サーバー経由で Runway API に接続。Step3: Runway が動画を生成してチャット内に返却。Step4: ユーザーは画面を切り替えずに動画を確認・修正できる。"
           }
         }
       ]
@@ -358,7 +466,14 @@
           "category": "agents",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["Microsoft", "MagenticLite", "MagenticBrain", "agents", "small-models", "FARA"],
+          "tags": [
+            "Microsoft",
+            "MagenticLite",
+            "MagenticBrain",
+            "agents",
+            "small-models",
+            "FARA"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -376,19 +491,42 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Microsoft MagenticLite/Brain/FARA1.5 の概要カード。3 コンポーネント構成で小型 LLM 向けエージェント基盤を提供。MagenticLite が軽量オーケストレーター、MagenticBrain が計画・メモリ管理、FARA1.5 が評価フレームワーク。",
             "data": {
               "headline": "Microsoft MagenticLite/Brain：小型 LLM で動くエージェント基盤の全体像",
               "tldr": "Microsoft Research が大型 LLM 不要のエージェントフレームワーク群を発表。MagenticLite（オーケストレーション）・MagenticBrain（計画・メモリ）・FARA1.5（評価）の 3 層構成でエッジエージェントを支援する。",
               "points": [
-                { "icon": "⚡", "label": "MagenticLite", "value": "軽量オーケストレーター", "tone": "primary", "description": "リソース制約環境でも動く小型 LLM 向けエージェント実行基盤" },
-                { "icon": "🧠", "label": "MagenticBrain", "value": "計画・メモリ管理", "tone": "info", "description": "マルチステップタスクの高度な計画とメモリ管理を担うコンポーネント" },
-                { "icon": "📊", "label": "FARA1.5", "value": "エージェント評価 FW", "tone": "default", "description": "Function-calling と Reasoning を統合したエージェント評価基準" },
-                { "icon": "🎯", "label": "設計目標", "value": "大型 LLM 不要", "tone": "success" }
+                {
+                  "icon": "⚡",
+                  "label": "MagenticLite",
+                  "value": "軽量オーケストレーター",
+                  "tone": "primary",
+                  "description": "リソース制約環境でも動く小型 LLM 向けエージェント実行基盤"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "MagenticBrain",
+                  "value": "計画・メモリ管理",
+                  "tone": "info",
+                  "description": "マルチステップタスクの高度な計画とメモリ管理を担うコンポーネント"
+                },
+                {
+                  "icon": "📊",
+                  "label": "FARA1.5",
+                  "value": "エージェント評価 FW",
+                  "tone": "default",
+                  "description": "Function-calling と Reasoning を統合したエージェント評価基準"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "設計目標",
+                  "value": "大型 LLM 不要",
+                  "tone": "success"
+                }
               ],
               "context": "GPT-4 クラスの大型モデルを使わずにエージェントタスクを実現したい開発者向けに、Microsoft が実用的なフレームワークセットを提供する。",
               "impact": "エッジ・オンプレミス環境でのエージェントAI 展開が現実的になり、クラウド依存を減らせる開発者は多い。"
-            }
+            },
+            "alt": "Microsoft MagenticLite/Brain/FARA1.5 の概要カード。3 コンポーネント構成で小型 LLM 向けエージェント基盤を提供。MagenticLite が軽量オーケストレーター、MagenticBrain が計画・メモリ管理、FARA1.5 が評価フレームワーク。"
           },
           "x_post": "MicrosoftがMagenticLiteとMagenticBrainという小型LLM向けエージェントフレームワークを発表した。大規模モデルなしで複数ステップのタスクを自律実行できる設計で、エッジ・オンプレ環境でのエージェントAI展開を後押しする。エージェント基盤の選択肢が広がる重要な発表だ。\n\nhttps://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/"
         },
@@ -403,7 +541,13 @@
           "category": "agents",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["Devin", "Cognition", "async-agents", "background-agents", "coding-agent"],
+          "tags": [
+            "Devin",
+            "Cognition",
+            "async-agents",
+            "background-agents",
+            "coding-agent"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -421,11 +565,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "インタラクティブエージェントと非同期エージェントの比較。介入頻度は人間主導から自律主導へ変化。Devin の場合、コミット担当割合が 80% に達している。タスク完了時間・人間の拘束時間ともに大幅改善。",
             "data": {
               "headline": "インタラクティブ型 vs 非同期型：Devin が示すエージェント進化の実態",
-              "before": { "label": "インタラクティブ型", "sublabel": "従来の AI コーディング支援" },
-              "after": { "label": "非同期エージェント型", "sublabel": "Devin（Cognition）の現在" },
+              "before": {
+                "label": "インタラクティブ型",
+                "sublabel": "従来の AI コーディング支援"
+              },
+              "after": {
+                "label": "非同期エージェント型",
+                "sublabel": "Devin（Cognition）の現在"
+              },
               "metrics": [
                 {
                   "label": "コミット担当割合",
@@ -458,7 +607,8 @@
               ],
               "narrative": "Cognition Devin は社内コードベースでのコミット 80% 担当という具体的な数字でエージェント自律化の現在地を示した。",
               "impact": "自律エージェントを組織内で活用するための設計知（メモリアーキテクチャ・タスク委任基準）が得られる実践的事例。"
-            }
+            },
+            "alt": "インタラクティブエージェントと非同期エージェントの比較。介入頻度は人間主導から自律主導へ変化。Devin の場合、コミット担当割合が 80% に達している。タスク完了時間・人間の拘束時間ともに大幅改善。"
           }
         }
       ]
@@ -479,7 +629,13 @@
           "category": "multimodal",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["video-generation", "KV-cache", "MLA", "attention", "diffusion"],
+          "tags": [
+            "video-generation",
+            "KV-cache",
+            "MLA",
+            "attention",
+            "diffusion"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -497,10 +653,12 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "VideoMLA の KV キャッシュ削減効果を示すバーグラフ。KV メモリ削減率 92.7%。ベースライン（従来手法）を 100 として VideoMLA は 7.3 まで削減。分足スケール動画拡散を実現。",
             "data": {
               "headline": "VideoMLA：KV メモリを 92.7% 削減し分足動画生成を実現",
-              "scale": { "max_label": "ベースライン比（高いほど多くのメモリが必要）", "unit": "%" },
+              "scale": {
+                "max_label": "ベースライン比（高いほど多くのメモリが必要）",
+                "unit": "%"
+              },
               "bars": [
                 {
                   "label": "KV メモリ使用量",
@@ -535,7 +693,8 @@
               ],
               "narrative": "KV キャッシュは長尺動画生成の最大の障壁だった。VideoMLA は MLA を活用してこれを 92.7% 圧縮し、商用システムでの動画 AI コスト構造を変える可能性を示した。",
               "impact": "Sora・Veo のような商用動画 AI システムへの実装で推論インフラコストを大幅削減できる可能性がある。"
-            }
+            },
+            "alt": "VideoMLA の KV キャッシュ削減効果を示すバーグラフ。KV メモリ削減率 92.7%。ベースライン（従来手法）を 100 として VideoMLA は 7.3 まで削減。分足スケール動画拡散を実現。"
           },
           "x_post": "動画生成モデルのKVキャッシュメモリを92.7%削減するVideoMLAがarXivに公開された。マルチヘッド潜在アテンションを動画生成に適用し、分足スケールの自己回帰動画拡散を現実的なメモリ量で実現する。動画AI推論コストを変える可能性を持つ手法だ。\n\nhttps://arxiv.org/abs/2605.30351v1"
         },
@@ -550,8 +709,17 @@
           "category": "multimodal",
           "published_at": "2026-05-28",
           "lang": "en",
-          "reaction_signal": { "kind": "hatena", "users": 0 },
-          "tags": ["NVIDIA", "LocateAnything", "spatial-understanding", "image-text-to-text", "3B"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 0
+          },
+          "tags": [
+            "NVIDIA",
+            "LocateAnything",
+            "spatial-understanding",
+            "image-text-to-text",
+            "3B"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -569,20 +737,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "NVIDIA LocateAnything-3B の概要カード。パラメータ数 3B、タスク 画像テキスト→テキスト（空間定位）、HF いいね 24.6K。ロボティクス・自動運転・映像監視への応用が想定される。",
             "data": {
               "headline": "NVIDIA LocateAnything-3B — 空間オブジェクト定位を言語クエリで実現",
               "tldr": "NVIDIA の 3B マルチモーダルモデルが画像内オブジェクトの空間定位を言語で扱えるようにした。HF Trending 上位で 24.6K いいね。ロボティクス・自動運転への応用が期待される。",
               "points": [
-                { "icon": "📦", "label": "規模", "value": "3B パラメータ", "tone": "primary" },
-                { "icon": "❤️", "label": "HF いいね", "value": "24.6K", "tone": "success" },
-                { "icon": "🔍", "label": "タスク", "value": "空間オブジェクト定位", "tone": "info" },
-                { "icon": "🏢", "label": "開発元", "value": "NVIDIA（公式）", "tone": "default" },
-                { "icon": "🎯", "label": "応用先", "value": "ロボ・自動運転・監視", "tone": "warning" }
+                {
+                  "icon": "📦",
+                  "label": "規模",
+                  "value": "3B パラメータ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "HF いいね",
+                  "value": "24.6K",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "タスク",
+                  "value": "空間オブジェクト定位",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "開発元",
+                  "value": "NVIDIA（公式）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "応用先",
+                  "value": "ロボ・自動運転・監視",
+                  "tone": "warning"
+                }
               ],
               "context": "画像内のオブジェクトを言語クエリで定位できる技術は、産業用ロボットやエッジビジョンシステムに直結する実用的能力。",
               "impact": "NVIDIA 公式モデルとして HF から直接利用でき、産業 AI 開発者の空間理解タスクの実装が容易になる。"
-            }
+            },
+            "alt": "NVIDIA LocateAnything-3B の概要カード。パラメータ数 3B、タスク 画像テキスト→テキスト（空間定位）、HF いいね 24.6K。ロボティクス・自動運転・映像監視への応用が想定される。"
           }
         }
       ]
@@ -603,7 +796,13 @@
           "category": "research_papers",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["working-memory", "latent-reasoning", "memory-blocks", "LLM-architecture", "inference-efficiency"],
+          "tags": [
+            "working-memory",
+            "latent-reasoning",
+            "memory-blocks",
+            "LLM-architecture",
+            "inference-efficiency"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -621,11 +820,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "従来の自己回帰推論と新しいメモリブロック推論の比較。自己回帰型は推論ステップをトークンとして出力し続けるため出力長が増大する。メモリブロック型は固定長の特殊トークンで潜在推論を完結させ、単一前向きパスで終了する。",
             "data": {
               "headline": "自己回帰推論 vs メモリブロック推論：LLM ワーキングメモリの革新",
-              "before": { "label": "自己回帰型推論", "sublabel": "Chain-of-Thought" },
-              "after": { "label": "メモリブロック型", "sublabel": "本論文の提案手法" },
+              "before": {
+                "label": "自己回帰型推論",
+                "sublabel": "Chain-of-Thought"
+              },
+              "after": {
+                "label": "メモリブロック型",
+                "sublabel": "本論文の提案手法"
+              },
               "metrics": [
                 {
                   "label": "推論出力長",
@@ -658,7 +862,8 @@
               ],
               "narrative": "LLM の「考える」プロセスを外部出力に頼らず内部潜在表現で完結させることで、推論コストを構造的に削減する新手法。",
               "impact": "推論コストが高い o1/o3 系モデルの代替アーキテクチャとして、効率的な推論 LLM 開発に影響を与える可能性がある。"
-            }
+            },
+            "alt": "従来の自己回帰推論と新しいメモリブロック推論の比較。自己回帰型は推論ステップをトークンとして出力し続けるため出力長が増大する。メモリブロック型は固定長の特殊トークンで潜在推論を完結させ、単一前向きパスで終了する。"
           },
           "x_post": "LLMに「ワーキングメモリ」を実装する新手法がarXivに公開された。固定長の特殊トークン列（メモリブロック）で自己回帰的な推論生成を廃し、単一の前向きパスで潜在空間内の推論を完結させる設計だ。推論コスト削減の新しいアーキテクチャアプローチとして注目される。\n\nhttps://arxiv.org/abs/2605.30343v1"
         },
@@ -673,7 +878,13 @@
           "category": "research_papers",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["LLM-auditing", "pretraining-data", "data-mixture", "interpretability", "inverse-problem"],
+          "tags": [
+            "LLM-auditing",
+            "pretraining-data",
+            "data-mixture",
+            "interpretability",
+            "inverse-problem"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -691,20 +902,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LLMSurgeon の概要カード。入力: 訓練済み LLM の出力。処理: キャリブレーション済み逆問題を解く。出力: 訓練データ構成比の推定（訓練データへのアクセス不要）。応用: モデル監査・透明性・コンプライアンス。",
             "data": {
               "headline": "LLMSurgeon — モデル出力から訓練データ構成を逆算する監査ツール",
               "tldr": "訓練済み LLM の出力を解析し、事前学習データの構成比を訓練データへのアクセスなしで推定する。AI 透明性・規制対応の技術的基盤となる研究。",
               "points": [
-                { "icon": "🔬", "label": "入力", "value": "LLM の出力のみ", "tone": "default" },
-                { "icon": "⚙", "label": "手法", "value": "逆問題（キャリブ済み）", "tone": "primary" },
-                { "icon": "📊", "label": "出力", "value": "訓練データ構成比の推定", "tone": "success" },
-                { "icon": "🔒", "label": "前提条件", "value": "訓練データへのアクセス不要", "tone": "info" },
-                { "icon": "⚖️", "label": "応用", "value": "モデル監査・コンプライアンス", "tone": "warning" }
+                {
+                  "icon": "🔬",
+                  "label": "入力",
+                  "value": "LLM の出力のみ",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚙",
+                  "label": "手法",
+                  "value": "逆問題（キャリブ済み）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "出力",
+                  "value": "訓練データ構成比の推定",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "前提条件",
+                  "value": "訓練データへのアクセス不要",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "応用",
+                  "value": "モデル監査・コンプライアンス",
+                  "tone": "warning"
+                }
               ],
               "context": "EU AI Act など AI 規制が訓練データの透明性を求める中、モデル出力だけから訓練データ構成を推定できる技術の実用的価値は高い。",
               "impact": "AI ベンダーや規制当局が LLM の訓練データ構成を検証・監査できるようになり、コンプライアンス体制構築に活用できる。"
-            }
+            },
+            "alt": "LLMSurgeon の概要カード。入力: 訓練済み LLM の出力。処理: キャリブレーション済み逆問題を解く。出力: 訓練データ構成比の推定（訓練データへのアクセス不要）。応用: モデル監査・透明性・コンプライアンス。"
           }
         },
         {
@@ -718,7 +954,13 @@
           "category": "research_papers",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["robotics", "multimodal-pretraining", "3D-flow", "out-of-distribution", "manipulation"],
+          "tags": [
+            "robotics",
+            "multimodal-pretraining",
+            "3D-flow",
+            "out-of-distribution",
+            "manipulation"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -736,10 +978,12 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "DynaFLIP の OOD ロボット学習性能改善を示すバーグラフ。ベースライン（画像・言語の二様）と比較して DynaFLIP（三様：画像・言語・3D フロー）は OOD 操作精度で 22.5% 向上。",
             "data": {
               "headline": "DynaFLIP：3D フロー追加で OOD ロボット操作を 22.5% 改善",
-              "scale": { "max_label": "OOD 操作性能（高いほど良い）", "unit": "%" },
+              "scale": {
+                "max_label": "OOD 操作性能（高いほど良い）",
+                "unit": "%"
+              },
               "bars": [
                 {
                   "label": "DynaFLIP（3 様）",
@@ -771,7 +1015,8 @@
               ],
               "narrative": "ダイナミクス（3D 運動ベクトル）を第三モダリティとして明示的に学習することで、OOD シナリオに対するロボットの汎化性能が大きく向上した。",
               "impact": "実世界ロボット展開での OOD 対応が改善され、工場・物流など多様な環境でのロボット実用化に貢献する手法。"
-            }
+            },
+            "alt": "DynaFLIP の OOD ロボット学習性能改善を示すバーグラフ。ベースライン（画像・言語の二様）と比較して DynaFLIP（三様：画像・言語・3D フロー）は OOD 操作精度で 22.5% 向上。"
           }
         }
       ]
@@ -792,7 +1037,13 @@
           "category": "industry_business",
           "published_at": "2026-05-30",
           "lang": "en",
-          "tags": ["SoftBank", "data-center", "France", "AI-infrastructure", "investment"],
+          "tags": [
+            "SoftBank",
+            "data-center",
+            "France",
+            "AI-infrastructure",
+            "investment"
+          ],
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -810,19 +1061,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SoftBank 仏データセンター投資の概要カード。投資額 最大 €750 億（約 12.5 兆円）。設置容量 5GW。場所 フランス。背景 SoftBank の世界 AI インフラ展開戦略。",
             "data": {
               "headline": "SoftBank 仏に €750 億投資——5GW AI コンピュート基盤の構築へ",
               "tldr": "SoftBank がフランスに最大 €750 億を投じ 5GW のデータセンターを構築する。欧州の AI インフラ独立性を高める「主権 AI」の文脈でも注目の大型投資。",
               "points": [
-                { "icon": "💰", "label": "投資額", "value": "最大 €750 億（約 12.5 兆円）", "tone": "primary" },
-                { "icon": "⚡", "label": "設置容量", "value": "5 GW", "tone": "warning" },
-                { "icon": "🇫🇷", "label": "投資先", "value": "フランス", "tone": "info" },
-                { "icon": "🏢", "label": "投資主体", "value": "SoftBank（中東 SWF と協調）", "tone": "default" }
+                {
+                  "icon": "💰",
+                  "label": "投資額",
+                  "value": "最大 €750 億（約 12.5 兆円）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "設置容量",
+                  "value": "5 GW",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🇫🇷",
+                  "label": "投資先",
+                  "value": "フランス",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "投資主体",
+                  "value": "SoftBank（中東 SWF と協調）",
+                  "tone": "default"
+                }
               ],
               "context": "SoftBank はサウジ PIF 等と協調して世界規模の AI インフラを構築中。欧州の主権 AI インフラ整備の需要とも合致。",
               "impact": "欧州 AI 推論・学習コンピュートへのアクセスが拡大し、欧州企業の AI 展開コストと可用性に影響する。"
-            }
+            },
+            "alt": "SoftBank 仏データセンター投資の概要カード。投資額 最大 €750 億（約 12.5 兆円）。設置容量 5GW。場所 フランス。背景 SoftBank の世界 AI インフラ展開戦略。"
           }
         },
         {
@@ -836,7 +1107,13 @@
           "category": "industry_business",
           "published_at": "2026-05-29",
           "lang": "en",
-          "tags": ["Groq", "NVIDIA", "AI-chips", "inference", "funding"],
+          "tags": [
+            "Groq",
+            "NVIDIA",
+            "AI-chips",
+            "inference",
+            "funding"
+          ],
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -854,7 +1131,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Groq の戦略転換タイムライン。過去: LPU チップ開発・販売。現在: NVIDIA $200 億ディール。現在進行: $6.5 億追加調達を追求。今後: AI 推論最適化事業への軸足移動。",
             "data": {
               "headline": "Groq の事業転換：LPU チップから AI 推論最適化への軸足移動",
               "events": [
@@ -889,7 +1165,8 @@
               ],
               "narrative": "Groq は LPU チップ開発から AI 推論最適化ソフト・サービスへの事業転換を図り、NVIDIA ディールとの整合性を取ろうとしている。",
               "impact": "AI 推論速度競争が激化する中、Groq の推論特化戦略が NVIDIA/AMD エコシステムに対してどの差別化を打てるかが注目点。"
-            }
+            },
+            "alt": "Groq の戦略転換タイムライン。過去: LPU チップ開発・販売。現在: NVIDIA $200 億ディール。現在進行: $6.5 億追加調達を追求。今後: AI 推論最適化事業への軸足移動。"
           }
         }
       ]
@@ -910,8 +1187,17 @@
           "category": "regulation_policy",
           "published_at": "2026-05-31",
           "lang": "en",
-          "reaction_signal": { "kind": "hatena", "users": 311 },
-          "tags": ["zero-trust", "AI-agents", "security", "safety", "Anthropic"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 311
+          },
+          "tags": [
+            "zero-trust",
+            "AI-agents",
+            "security",
+            "safety",
+            "Anthropic"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -929,20 +1215,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic Zero Trust for AI Agents の概要カード。核心問題：フロンティアモデルが脆弱性タイムラインを圧縮。ゼロトラスト原則3点：検証・最小権限・人間確認フォールバック。日本コミュニティ反響：はてブ 311 件。",
             "data": {
               "headline": "Anthropic Zero Trust for AI Agents — 脆弱性時代のエージェント設計原則",
               "tldr": "AIエージェントがネットワーク上で自律行動する時代にゼロトラスト原則が必要な理由をAnthropicが解説。フロンティアモデルが攻撃・防御両面で速度を上げるという対称性への対処法を示す。",
               "points": [
-                { "icon": "⚠️", "label": "核心リスク", "value": "脆弱性タイムライン圧縮", "tone": "danger", "description": "フロンティアモデルが攻撃側・防御側の両方の速度を上げる" },
-                { "icon": "🔐", "label": "原則①", "value": "すべて検証（信頼ゼロ）", "tone": "primary" },
-                { "icon": "🔑", "label": "原則②", "value": "最小権限付与", "tone": "warning" },
-                { "icon": "👤", "label": "原則③", "value": "不審時は人間確認へ", "tone": "success" },
-                { "icon": "📌", "label": "日本反響", "value": "はてブ 311 件", "tone": "info" }
+                {
+                  "icon": "⚠️",
+                  "label": "核心リスク",
+                  "value": "脆弱性タイムライン圧縮",
+                  "tone": "danger",
+                  "description": "フロンティアモデルが攻撃側・防御側の両方の速度を上げる"
+                },
+                {
+                  "icon": "🔐",
+                  "label": "原則①",
+                  "value": "すべて検証（信頼ゼロ）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔑",
+                  "label": "原則②",
+                  "value": "最小権限付与",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "👤",
+                  "label": "原則③",
+                  "value": "不審時は人間確認へ",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📌",
+                  "label": "日本反響",
+                  "value": "はてブ 311 件",
+                  "tone": "info"
+                }
               ],
               "context": "エージェントが API・データベース・外部サービスを自律的に呼び出す本番環境では、ゼロトラスト設計が基本要件になりつつある。",
               "impact": "エージェントの権限設計・監査ポリシー策定に即活用できる実践ガイド。セキュリティ担当者・エージェント開発者必読。"
-            }
+            },
+            "alt": "Anthropic Zero Trust for AI Agents の概要カード。核心問題：フロンティアモデルが脆弱性タイムラインを圧縮。ゼロトラスト原則3点：検証・最小権限・人間確認フォールバック。日本コミュニティ反響：はてブ 311 件。"
           },
           "x_post": "AnthropicがAIエージェント向けのゼロトラスト設計原則をclaude.com/blogに公開した。フロンティアモデルが脆弱性発見タイムラインを圧縮し、防御者も攻撃者もAIで速度が上がるという非対称性を指摘している。エージェントの権限設計を考えるすべての開発者に読んでほしい一本だ。\n\nhttps://claude.com/blog/zero-trust-for-ai-agents"
         }
@@ -964,7 +1276,13 @@
           "category": "community_buzz",
           "published_at": "2026-05-28",
           "lang": "en",
-          "tags": ["AI-infrastructure", "agents", "AWS", "Cloudflare", "internet-architecture"],
+          "tags": [
+            "AI-infrastructure",
+            "agents",
+            "AWS",
+            "Cloudflare",
+            "internet-architecture"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -982,11 +1300,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "インターネット設計の Before/After 比較。Before: 人間向け（ブラウジング前提）。After: 機械向け（エージェント前提）。API 設計・認証・キャッシング・レート制限すべてが変化。",
             "data": {
               "headline": "インターネットの再設計：人間向け → 機械（エージェント）向けへ",
-              "before": { "label": "人間向けインターネット", "sublabel": "〜2025年 設計思想" },
-              "after": { "label": "機械向けインターネット", "sublabel": "2026年〜 進行中" },
+              "before": {
+                "label": "人間向けインターネット",
+                "sublabel": "〜2025年 設計思想"
+              },
+              "after": {
+                "label": "機械向けインターネット",
+                "sublabel": "2026年〜 進行中"
+              },
               "metrics": [
                 {
                   "label": "主要トラフィック",
@@ -1018,7 +1341,8 @@
               ],
               "narrative": "クラウド大手が AI エージェントの大量参入を前提にインフラを再設計し始めており、インターネットの根本設計が変わろうとしている。",
               "impact": "API 設計・セキュリティ・キャッシング戦略をエージェント対応に見直す必要があり、エンジニアは今から設計思想を転換すべき転換点。"
-            }
+            },
+            "alt": "インターネット設計の Before/After 比較。Before: 人間向け（ブラウジング前提）。After: 機械向け（エージェント前提）。API 設計・認証・キャッシング・レート制限すべてが変化。"
           }
         }
       ]
@@ -1039,8 +1363,18 @@
           "category": "japan",
           "published_at": "2026-05-30",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 168 },
-          "tags": ["Ollama", "Playwright", "local-LLM", "web-agent", "VLM", "zero-cost"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 168
+          },
+          "tags": [
+            "Ollama",
+            "Playwright",
+            "local-LLM",
+            "web-agent",
+            "VLM",
+            "zero-cost"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -1058,20 +1392,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Ollama×Playwright Web エージェントの概要カード。コスト：API 費用ゼロ（完全無料）。構成：Ollama（ローカル VLM）+ Playwright（ブラウザ制御）。機能：自律的な Web 調査・要約。コミュニティ反響：はてブ 168 件。",
             "data": {
               "headline": "Ollama×Playwright — API コストゼロの自律 Web 調査エージェント（はてブ 168 件）",
               "tldr": "ローカル VLM（Ollama）とブラウザ自動化（Playwright）を組み合わせ、クラウド API 費用ゼロで Web 調査エージェントを構築する実装記事。日本コミュニティで 168 はてブを獲得した。",
               "points": [
-                { "icon": "💰", "label": "API コスト", "value": "ゼロ（完全無料）", "tone": "success" },
-                { "icon": "🤖", "label": "LLM", "value": "Ollama（ローカル VLM）", "tone": "primary" },
-                { "icon": "🌐", "label": "ブラウザ制御", "value": "Playwright", "tone": "info" },
-                { "icon": "📌", "label": "はてブ反響", "value": "168 件（本日最高）", "tone": "warning" },
-                { "icon": "🎯", "label": "用途", "value": "自律 Web 調査・要約", "tone": "default" }
+                {
+                  "icon": "💰",
+                  "label": "API コスト",
+                  "value": "ゼロ（完全無料）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "LLM",
+                  "value": "Ollama（ローカル VLM）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "ブラウザ制御",
+                  "value": "Playwright",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📌",
+                  "label": "はてブ反響",
+                  "value": "168 件（本日最高）",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "用途",
+                  "value": "自律 Web 調査・要約",
+                  "tone": "default"
+                }
               ],
               "context": "LLM エージェントへの関心が高まる一方、API コストが普及の障壁になっている。ローカル VLM 活用でこれを突破した実践記事。",
               "impact": "個人開発者がクラウド API なしでエージェントを試せる環境が整い、ローカル LLM エージェント開発の裾野が広がる。"
-            }
+            },
+            "alt": "Ollama×Playwright Web エージェントの概要カード。コスト：API 費用ゼロ（完全無料）。構成：Ollama（ローカル VLM）+ Playwright（ブラウザ制御）。機能：自律的な Web 調査・要約。コミュニティ反響：はてブ 168 件。"
           },
           "x_post": "OllamaとPlaywrightを組み合わせてAPIコストゼロで動くWebリサーチエージェントを実装するZenn記事が、はてブ168件を集めた。ローカルVLMだけで自律的なブラウザ操作・情報収集・要約まで完結できる構成で、私も試したい実装例だ。\n\nhttps://zenn.dev/lluminai_tech/articles/358bee9674ed4e"
         },
@@ -1086,8 +1445,16 @@
           "category": "japan",
           "published_at": "2026-05-27",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 156 },
-          "tags": ["AI-productivity", "continuous-delivery", "engineering-culture", "DevOps"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 156
+          },
+          "tags": [
+            "AI-productivity",
+            "continuous-delivery",
+            "engineering-culture",
+            "DevOps"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1105,11 +1472,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "AI ツール × 組織成熟度の掛け合わせ比較。CD 成熟組織 + AI ツール = 生産性倍増。CD 未成熟組織 + AI ツール = 混乱の増幅（空回り）。",
             "data": {
               "headline": "AI ツールの効果は組織の CD 成熟度で決まる",
-              "before": { "label": "CD 未成熟組織 + AI", "sublabel": "よくある失敗パターン" },
-              "after": { "label": "CD 成熟組織 + AI", "sublabel": "理想的な活用状態" },
+              "before": {
+                "label": "CD 未成熟組織 + AI",
+                "sublabel": "よくある失敗パターン"
+              },
+              "after": {
+                "label": "CD 成熟組織 + AI",
+                "sublabel": "理想的な活用状態"
+              },
               "metrics": [
                 {
                   "label": "開発速度",
@@ -1141,7 +1513,8 @@
               ],
               "narrative": "AI ツールは「増幅器」に過ぎず、組織プロセスが機能していなければ良くも悪くも現状を増幅するだけという鋭い指摘。",
               "impact": "AI ツール導入に先立って CI/CD・テスト・デプロイパイプラインを整備することが、投資対効果を最大化する前提条件。"
-            }
+            },
+            "alt": "AI ツール × 組織成熟度の掛け合わせ比較。CD 成熟組織 + AI ツール = 生産性倍増。CD 未成熟組織 + AI ツール = 混乱の増幅（空回り）。"
           }
         },
         {
@@ -1155,8 +1528,16 @@
           "category": "japan",
           "published_at": "2026-05-31",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 152 },
-          "tags": ["AI-review", "human-oversight", "future-of-work", "AI-governance"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 152
+          },
+          "tags": [
+            "AI-review",
+            "human-oversight",
+            "future-of-work",
+            "AI-governance"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1174,20 +1555,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "fladdict 氏の論考概要カード。テーマ：AI 成果物の人間レビュー限界。問題：AI 出力量が人間処理能力を超えつつある。提示：多層レビュー構造（AI によるレビューの AI レビュー）の必要性。はてブ 152 件。",
             "data": {
               "headline": "AI 成果物レビューの限界——人間の認知処理能力が追いつかない時代へ",
               "tldr": "AI の出力量が人間のレビュー処理能力を超え始めており、AI ガバナンスの根本に関わる「人間がレビューできなくなる時代」の到来を論じた深津貴之氏の考察。はてブ 152 件。",
               "points": [
-                { "icon": "🤔", "label": "核心の問い", "value": "AI 出力 > 人間処理能力？", "tone": "warning" },
-                { "icon": "📈", "label": "トレンド", "value": "AI 生成量が急増中", "tone": "danger" },
-                { "icon": "🔄", "label": "提案", "value": "多層 AI レビュー構造", "tone": "primary" },
-                { "icon": "⚖️", "label": "課題領域", "value": "AI ガバナンス設計", "tone": "info" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 152 件", "tone": "default" }
+                {
+                  "icon": "🤔",
+                  "label": "核心の問い",
+                  "value": "AI 出力 > 人間処理能力？",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📈",
+                  "label": "トレンド",
+                  "value": "AI 生成量が急増中",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "提案",
+                  "value": "多層 AI レビュー構造",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "課題領域",
+                  "value": "AI ガバナンス設計",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 152 件",
+                  "tone": "default"
+                }
               ],
               "context": "AI が大量の成果物を生成する中、人間がすべてを確認する体制の維持可能性に疑問が生じ始めている重要な議論。",
               "impact": "AI ガバナンス設計において「人間の認知限界」を前提とした多層レビュー・自動監視の仕組み構築が急務になる。"
-            }
+            },
+            "alt": "fladdict 氏の論考概要カード。テーマ：AI 成果物の人間レビュー限界。問題：AI 出力量が人間処理能力を超えつつある。提示：多層レビュー構造（AI によるレビューの AI レビュー）の必要性。はてブ 152 件。"
           }
         },
         {
@@ -1201,8 +1607,18 @@
           "category": "japan",
           "published_at": "2026-05-27",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 110 },
-          "tags": ["SQLite", "RAG", "hybrid-search", "vector-search", "keyword-search", "lightweight"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 110
+          },
+          "tags": [
+            "SQLite",
+            "RAG",
+            "hybrid-search",
+            "vector-search",
+            "keyword-search",
+            "lightweight"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -1220,20 +1636,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SQLite ハイブリッド RAG の概要カード。構成：SQLite（FTS5 全文検索 + vector 拡張）。外部依存：不要。検索方式：キーワード + ベクトルのハイブリッド。はてブ：110 件。",
             "data": {
               "headline": "SQLite ハイブリッド RAG — 外部 DB 不要でキーワード＋ベクトル検索を両立",
               "tldr": "SQLite の FTS5 と vector 拡張で Elasticsearch や Pinecone なしのハイブリッド RAG が実現できる。はてブ 110 件獲得の実践記事。",
               "points": [
-                { "icon": "🗄", "label": "DB", "value": "SQLite（単体）", "tone": "primary" },
-                { "icon": "🔍", "label": "検索①", "value": "FTS5 全文検索", "tone": "info" },
-                { "icon": "🧮", "label": "検索②", "value": "vector 拡張（ベクトル）", "tone": "info" },
-                { "icon": "💰", "label": "外部 DB コスト", "value": "ゼロ", "tone": "success" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 110 件", "tone": "default" }
+                {
+                  "icon": "🗄",
+                  "label": "DB",
+                  "value": "SQLite（単体）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "検索①",
+                  "value": "FTS5 全文検索",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🧮",
+                  "label": "検索②",
+                  "value": "vector 拡張（ベクトル）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💰",
+                  "label": "外部 DB コスト",
+                  "value": "ゼロ",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 110 件",
+                  "tone": "default"
+                }
               ],
               "context": "RAG 実装に専用ベクトル DB を使うのが標準だが、SQLite で代替することでインフラコストと複雑性を大幅に削減できる。",
               "impact": "個人開発・小規模チームの RAG PoC から始める人の実装コストを大幅に下げる実践的な知識。即試せる構成。"
-            }
+            },
+            "alt": "SQLite ハイブリッド RAG の概要カード。構成：SQLite（FTS5 全文検索 + vector 拡張）。外部依存：不要。検索方式：キーワード + ベクトルのハイブリッド。はてブ：110 件。"
           }
         },
         {
@@ -1247,7 +1688,13 @@
           "category": "japan",
           "published_at": "2026-06-01",
           "lang": "ja",
-          "tags": ["Sakana-AI", "finance", "AI-agents", "SWE-interview", "Japan"],
+          "tags": [
+            "Sakana-AI",
+            "finance",
+            "AI-agents",
+            "SWE-interview",
+            "Japan"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1265,20 +1712,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Sakana AI 金融エージェント SWE インタビューの概要カード。対象領域：金融業務（銀行ワークフロー・意思決定）。取り組み：AI エージェントの実務実装。公開日：2026-06-01（本日）。Sakana AI（東京拠点）。",
             "data": {
               "headline": "Sakana AI SWE が語る金融 AI エージェント実装の現場",
               "tldr": "Sakana AI のエンジニアが金融業務への AI エージェント実装経験を語るインタビュー記事。規制領域での社会実装を進める国内 AI スタートアップの最前線。",
               "points": [
-                { "icon": "🏦", "label": "対象領域", "value": "金融業務（銀行）", "tone": "primary" },
-                { "icon": "🤖", "label": "適用技術", "value": "AI エージェント", "tone": "info" },
-                { "icon": "🏢", "label": "組織", "value": "Sakana AI（日本）", "tone": "default" },
-                { "icon": "📅", "label": "公開", "value": "2026-06-01（本日）", "tone": "success" },
-                { "icon": "🌏", "label": "意義", "value": "国内金融 AI 社会実装の先行例", "tone": "warning" }
+                {
+                  "icon": "🏦",
+                  "label": "対象領域",
+                  "value": "金融業務（銀行）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "適用技術",
+                  "value": "AI エージェント",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "組織",
+                  "value": "Sakana AI（日本）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📅",
+                  "label": "公開",
+                  "value": "2026-06-01（本日）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🌏",
+                  "label": "意義",
+                  "value": "国内金融 AI 社会実装の先行例",
+                  "tone": "warning"
+                }
               ],
               "context": "金融は規制・リスク管理の厳しさからエージェント AI の実装ハードルが高い。Sakana AI の事例は国内での規制領域対応の知見を提供する。",
               "impact": "金融 AI エージェントの実装事例として、銀行・証券・保険系のエンジニアや AI 担当者の参考になる実践的な知見。"
-            }
+            },
+            "alt": "Sakana AI 金融エージェント SWE インタビューの概要カード。対象領域：金融業務（銀行ワークフロー・意思決定）。取り組み：AI エージェントの実務実装。公開日：2026-06-01（本日）。Sakana AI（東京拠点）。"
           }
         }
       ]
@@ -1299,7 +1771,13 @@
           "category": "china",
           "published_at": "2026-05-29",
           "lang": "zh",
-          "tags": ["world-model", "embodied-AI", "open-source", "robotics", "China"],
+          "tags": [
+            "world-model",
+            "embodied-AI",
+            "open-source",
+            "robotics",
+            "China"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -1317,20 +1795,45 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "τ0-WM の概要カード。分類：具体化 AI（Embodied AI）世界モデル。規模：オープンソース最大規模。能力：物理環境の視覚推論・行動予測。公開：オープンソース。産地：中国。",
             "data": {
               "headline": "τ0-WM — オープンソース最大規模の具体化 AI 世界モデル公開",
               "tldr": "ロボットが物理世界を理解・予測するための世界モデルとして最大規模のオープンソース版 τ0-WM が中国から公開。ロボティクス研究の基盤モデルとして活用可能。",
               "points": [
-                { "icon": "🤖", "label": "モデル種別", "value": "具体化 AI 世界モデル", "tone": "primary" },
-                { "icon": "📦", "label": "規模", "value": "OSS 最大規模", "tone": "success" },
-                { "icon": "👁", "label": "能力", "value": "視覚推論 + 行動予測", "tone": "info" },
-                { "icon": "🌍", "label": "ライセンス", "value": "オープンソース", "tone": "success" },
-                { "icon": "🏭", "label": "用途", "value": "ロボット操作・環境理解", "tone": "default" }
+                {
+                  "icon": "🤖",
+                  "label": "モデル種別",
+                  "value": "具体化 AI 世界モデル",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📦",
+                  "label": "規模",
+                  "value": "OSS 最大規模",
+                  "tone": "success"
+                },
+                {
+                  "icon": "👁",
+                  "label": "能力",
+                  "value": "視覚推論 + 行動予測",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌍",
+                  "label": "ライセンス",
+                  "value": "オープンソース",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏭",
+                  "label": "用途",
+                  "value": "ロボット操作・環境理解",
+                  "tone": "default"
+                }
               ],
               "context": "具体化 AI（Embodied AI）は物理世界でロボットが自律行動するための知覚・予測・計画能力の統合を目指す研究領域。世界モデルはその中核。",
               "impact": "ロボティクス研究者が最大規模の OSS 世界モデルをベースに実験・改良できる環境が整い、Embodied AI 研究が加速する。"
-            }
+            },
+            "alt": "τ0-WM の概要カード。分類：具体化 AI（Embodied AI）世界モデル。規模：オープンソース最大規模。能力：物理環境の視覚推論・行動予測。公開：オープンソース。産地：中国。"
           }
         },
         {
@@ -1344,7 +1847,14 @@
           "category": "china",
           "published_at": "2026-05-29",
           "lang": "zh",
-          "tags": ["BYD", "AI-chip", "4nm", "autonomous-driving", "China", "semiconductor"],
+          "tags": [
+            "BYD",
+            "AI-chip",
+            "4nm",
+            "autonomous-driving",
+            "China",
+            "semiconductor"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1362,11 +1872,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "BYD 4nm AI チップと Tesla・NVIDIA の比較。量子位の報道によると BYD チップは Tesla のコンピューティングパワーを大幅超過し NVIDIA 水準に匹敵する性能を主張。",
             "data": {
               "headline": "BYD 4nm AI チップ：Tesla を超え NVIDIA 水準に匹敵（自社申告）",
-              "before": { "label": "Tesla 自動運転チップ", "sublabel": "比較基準" },
-              "after": { "label": "BYD 自社 4nm チップ", "sublabel": "2026年発表" },
+              "before": {
+                "label": "Tesla 自動運転チップ",
+                "sublabel": "比較基準"
+              },
+              "after": {
+                "label": "BYD 自社 4nm チップ",
+                "sublabel": "2026年発表"
+              },
               "metrics": [
                 {
                   "label": "計算能力",
@@ -1400,22 +1915,53 @@
               ],
               "narrative": "BYD が自動車メーカーとして AI チップ自社開発に踏み込んだことは中国の産業統合の深化を示す。性能値の独立検証は今後の課題。",
               "impact": "自動運転チップの内製化が成功すれば、NVIDIA GPU の対中輸出規制の影響を自社で回避できる戦略的優位を得る。"
-            }
+            },
+            "alt": "BYD 4nm AI チップと Tesla・NVIDIA の比較。量子位の報道によると BYD チップは Tesla のコンピューティングパワーを大幅超過し NVIDIA 水準に匹敵する性能を主張。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "xAI", "reason": "HTTP 403 Forbidden" },
-    { "source": "The Verge", "reason": "fetch blocked" },
-    { "source": "Cohere Blog", "reason": "no article content accessible" },
-    { "source": "Import AI (Substack)", "reason": "HTTP 403 Forbidden" },
-    { "source": "The Batch (DeepLearning.AI)", "reason": "HTTP 404 Not Found" },
-    { "source": "Synced Review RSS", "reason": "feed stale (last build Aug 2025)" },
-    { "source": "Reddit r/LocalLLaMA", "reason": "fetch blocked" },
-    { "source": "Reddit r/MachineLearning", "reason": "fetch blocked" },
-    { "source": "Reddit r/singularity", "reason": "fetch blocked" },
-    { "source": "OpenAI Blog (direct)", "reason": "403 known; used WebSearch fallback" }
+    {
+      "source": "xAI",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "The Verge",
+      "reason": "fetch blocked"
+    },
+    {
+      "source": "Cohere Blog",
+      "reason": "no article content accessible"
+    },
+    {
+      "source": "Import AI (Substack)",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "The Batch (DeepLearning.AI)",
+      "reason": "HTTP 404 Not Found"
+    },
+    {
+      "source": "Synced Review RSS",
+      "reason": "feed stale (last build Aug 2025)"
+    },
+    {
+      "source": "Reddit r/LocalLLaMA",
+      "reason": "fetch blocked"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "reason": "fetch blocked"
+    },
+    {
+      "source": "Reddit r/singularity",
+      "reason": "fetch blocked"
+    },
+    {
+      "source": "OpenAI Blog (direct)",
+      "reason": "403 known; used WebSearch fallback"
+    }
   ]
 }

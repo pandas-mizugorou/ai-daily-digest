@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-05-31T05:00:00+09:00",
+  "updated_at": "2026-06-01T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-06-01",
+      "headline": "Anthropic が Zero Trust for AI Agents 設計原則を公開（はてブ 311 件）・LiquidAI LFM2.5-8B-A1B が本日リリース・SoftBank が仏に最大 €750 億データセンター投資——Microsoft MagenticLite で小型モデル向けエージェント基盤が実用化、日本では無料 Web エージェント実装記事が 168 はてブ",
+      "item_count": 23,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-05-31",
       "headline": "Google Gemini Omni が「任意→任意」世界モデルとして展開、OpenAI が GPT-Rosalind をバイオディフェンスに無償開放——Mistral は Vibe にリブランドし国内「設計知」論考がはてブ 432 件",

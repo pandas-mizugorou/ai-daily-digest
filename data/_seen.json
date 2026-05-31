@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-05-31T05:00:00+09:00",
+  "updated_at": "2026-06-01T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -2568,8 +2568,8 @@
     "482b03adeecdcca95b3450066afeed25ee8871cd": {
       "url_prefix": "https://huggingface.co/openbmb/MiniCPM5-1B",
       "first_seen_at": "2026-05-28",
-      "last_seen_at": "2026-05-28",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "44892a2790e72dca1a20f32c5410258a48513b25": {
       "url_prefix": "https://arxiv.org/abs/2605.27358",
@@ -2664,8 +2664,8 @@
     "0758397868ccb5e65c989bfb66d54e395d61a3a5": {
       "url_prefix": "https://tech.findy.co.jp/entry/2026/05/27/070000",
       "first_seen_at": "2026-05-28",
-      "last_seen_at": "2026-05-28",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "eea15a4f0b324a05f2b78ae2ad4d70c8be2fc4d0": {
       "url_prefix": "https://acro-engineer.hatenablog.com/entry/2026/05",
@@ -2700,8 +2700,8 @@
     "821fec7c617e28f57ee0fe48695e64469ada1934": {
       "url_prefix": "https://huggingface.co/nvidia/LocateAnything-3B",
       "first_seen_at": "2026-05-29",
-      "last_seen_at": "2026-05-29",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "b2c19079135c7200c70cf8cc91adc19967ae6a71": {
       "url_prefix": "https://developers.openai.com/api/docs/guides/secure-mcp-tun",
@@ -2946,8 +2946,8 @@
     "0ccd2e57224a6591": {
       "url_prefix": "https://gigazine.net/news/20260528-runway-mcp-chatgpt-claude/",
       "first_seen_at": "2026-05-31",
-      "last_seen_at": "2026-05-31",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "1252d697ae70b4d4": {
       "url_prefix": "https://mistral.ai/news/vibe-agent",
@@ -3030,20 +3030,20 @@
     "281df36e4fa23438": {
       "url_prefix": "https://zenn.dev/lluminai_tech/articles/358bee9674ed4e",
       "first_seen_at": "2026-05-31",
-      "last_seen_at": "2026-05-31",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "6bd3a7a5c503857c": {
       "url_prefix": "https://note.com/fladdict/n/n700730fc0efb",
       "first_seen_at": "2026-05-31",
-      "last_seen_at": "2026-05-31",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "acc3c9f5df1f8c36": {
       "url_prefix": "https://tech.findy.co.jp/entry/2026/05/27/070000",
       "first_seen_at": "2026-05-31",
-      "last_seen_at": "2026-05-31",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 2
     },
     "0717c76a45ab9a44": {
       "url_prefix": "https://www.itmedia.co.jp/aiplus/articles/2605/29/news000.html",
@@ -3061,6 +3061,108 @@
       "url_prefix": "https://qwenlm.github.io/blog/qwen3-7-max/",
       "first_seen_at": "2026-05-31",
       "last_seen_at": "2026-05-31",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60101": {
+      "url_prefix": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60102": {
+      "url_prefix": "https://microsoft.ai/news/mai-image-2-5-launches-at-no",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60103": {
+      "url_prefix": "https://techcrunch.com/2026/05/28/asana-acquires-no-cod",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60104": {
+      "url_prefix": "https://www.microsoft.com/en-us/research/blog/magneticli",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60105": {
+      "url_prefix": "https://www.latent.space/p/cognition",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60106": {
+      "url_prefix": "https://arxiv.org/abs/2605.30351v1",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60107": {
+      "url_prefix": "https://arxiv.org/abs/2605.30343v1",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60108": {
+      "url_prefix": "https://arxiv.org/abs/2605.30348v1",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60109": {
+      "url_prefix": "https://arxiv.org/abs/2605.30350v1",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f6010a": {
+      "url_prefix": "https://techcrunch.com/2026/05/30/softbank-says-it-will",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f6010b": {
+      "url_prefix": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f6010c": {
+      "url_prefix": "https://claude.com/blog/zero-trust-for-ai-agents",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f6010d": {
+      "url_prefix": "https://techcrunch.com/2026/05/28/the-internet-is-being",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f6010e": {
+      "url_prefix": "https://sakana.ai/finance-swe-interview-2026/",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f6010f": {
+      "url_prefix": "https://www.qbitai.com/2026/05/426832.html",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60110": {
+      "url_prefix": "https://www.qbitai.com/2026/05/426557.html",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f60111": {
+      "url_prefix": "https://acro-engineer.hatenablog.com/entry/2026/05/27",
+      "first_seen_at": "2026-06-01",
+      "last_seen_at": "2026-06-01",
       "last_seen_count": 1
     }
   },
