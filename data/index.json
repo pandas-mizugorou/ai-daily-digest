@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-06-01T05:00:00+09:00",
+  "updated_at": "2026-06-02T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-06-02",
+      "headline": "Anthropic が IPO 向け S-1 を SEC に機密提出（評価額 $965B）・NVIDIA Cosmos 3 が物理 AI 向け初のオープンオムニモデルを公開——GitHub Copilot が AI Credits 従量課金制へ移行、国内はてブ上位は Claude Code チャンピオンキット（394 件）",
+      "item_count": 22,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-06-01",
       "headline": "Anthropic が Zero Trust for AI Agents 設計原則を公開（はてブ 311 件）・LiquidAI LFM2.5-8B-A1B が本日リリース・SoftBank が仏に最大 €750 億データセンター投資——Microsoft MagenticLite で小型モデル向けエージェント基盤が実用化、日本では無料 Web エージェント実装記事が 168 はてブ",

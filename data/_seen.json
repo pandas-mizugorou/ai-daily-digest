@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-01T05:00:00+09:00",
+  "updated_at": "2026-06-02T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "d7e3f4a5b6c70001": {
@@ -2718,8 +2718,8 @@
     "6b398ac7c77d15ba00e6fcd3edd56e7314140179": {
       "url_prefix": "https://mistral.ai/news/vibe-agent",
       "first_seen_at": "2026-05-29",
-      "last_seen_at": "2026-05-29",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 2
     },
     "eaca97c97455c3889e456220f54f57798d2af482": {
       "url_prefix": "https://www.itmedia.co.jp/news/articles/2605/28/news090.html",
@@ -3163,6 +3163,132 @@
       "url_prefix": "https://acro-engineer.hatenablog.com/entry/2026/05/27",
       "first_seen_at": "2026-06-01",
       "last_seen_at": "2026-06-01",
+      "last_seen_count": 1
+    },
+    "7c8c63c46b4bc3d6cbb0d55e70829582c559c3a2": {
+      "url_prefix": "https://huggingface.co/blog/nvidia/cosmos-3-for-ph",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "2995ca1c3636d92f482be20355930ccccbca56a0": {
+      "url_prefix": "https://huggingface.co/blog/JetBrains/mellum2-laun",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "cf9076c75b218a11139b86550aa44d9a877906eb": {
+      "url_prefix": "https://github.blog/news-insights/company-news/git",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "dc61fcee9612031ee5c46ea3b9cbe31ef7b13067": {
+      "url_prefix": "https://github.com/supermemoryai/supermemory",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "65ae950e23b00581c384b0268c8ad6058e788654": {
+      "url_prefix": "https://huggingface.co/blog/ibm-research/agent-log",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "95ef99bc0dbb2f38ec69a800bbdc9525f8acf8d9": {
+      "url_prefix": "https://github.com/EveryInc/compound-engineering-p",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "2326bdaf4a62badc0e25b74e727be225351b7184": {
+      "url_prefix": "https://huggingface.co/papers/2605.30993",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "48170c848eef6f79ed49d4da048ffc21b8de583b": {
+      "url_prefix": "https://huggingface.co/papers/2605.31604",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "fc735aadca78100e16ac3a06f43603d2b194ed05": {
+      "url_prefix": "https://huggingface.co/papers/2605.29307",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "1ed3bfe49ebe8c086c504ad71e6dc1cd4bdd005b": {
+      "url_prefix": "https://huggingface.co/papers/2605.31264",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "a3e2d1ce68eef48c536f04ef9177f90381e195ff": {
+      "url_prefix": "https://huggingface.co/papers/2605.31159",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "ea58427a703f714ff1a0b1f2ef528c677465776a": {
+      "url_prefix": "https://www.anthropic.com/news/confidential-draft-",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "049ea755e155bca531bb3e4c12ba95c7f1f5035d": {
+      "url_prefix": "https://techcrunch.com/2026/06/01/nvidia-chases-20",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "8dc8d8751a475a4d6d313c3f77d2a4471662f752": {
+      "url_prefix": "https://techcrunch.com/2026/06/01/florida-sues-ope",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "2877f2cf20c8ab8e0fbd72bd862427814cdb0a81": {
+      "url_prefix": "https://github.com/stanford-cs336/assignment1-basi",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "f489a2c79c1389b0b1cf8a985d70722b9c1a7312": {
+      "url_prefix": "https://support.claude.com/ja/articles/14555399-cl",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "0758ccf5997128a62f0143cb84f9fb92f8f3095a": {
+      "url_prefix": "https://ascii.jp/elem/000/004/406/4406627/",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "15fbe145e273acf25767feef02def137d2a9ea95": {
+      "url_prefix": "https://blog.cloudnative.co.jp/articles/anthropic-",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "f0726c7e5f15790986b32a8f88576eec09a27185": {
+      "url_prefix": "https://atmarkit.itmedia.co.jp/ait/articles/2606/0",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "81b64f4b0b2b5ae7945a441bf20c38d3fe25f414": {
+      "url_prefix": "https://techblog.zozo.com/entry/cs-inquiry-ai-auto",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "5988b33dd6af6a7802a4ddf1e27365190e5eb74c": {
+      "url_prefix": "https://huggingface.co/papers/2605.31584",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-02",
       "last_seen_count": 1
     }
   },

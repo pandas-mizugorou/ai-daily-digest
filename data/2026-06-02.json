@@ -86,21 +86,47 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["nvidia", "cosmos", "physical-ai", "robotics", "open-source", "omni-model"],
+          "tags": [
+            "nvidia",
+            "cosmos",
+            "physical-ai",
+            "robotics",
+            "open-source",
+            "omni-model"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "NVIDIA Cosmos 3の概要カード。物理AI推論・行動向け初のオープンオムニモデルとしてHugging Face経由で公開。ロボティクスと自律走行を対象に視覚・言語・行動を統合処理する。ライセンスはオープン、物理世界の理解と行動生成が主要機能。物理AI開発の民主化を促進する基盤モデルとして注目される。",
             "data": {
               "headline": "NVIDIA Cosmos 3：物理AI推論・行動のオープン統合基盤",
               "tldr": "NVIDIAがロボティクス向け初のオープンオムニモデル「Cosmos 3」をHugging Face経由で公開。視覚・言語・行動を統合処理し、物理AIアプリケーション開発の民主化を促進する。",
               "points": [
-                { "icon": "🤖", "label": "対象領域", "value": "物理AI全般", "note": "ロボティクス・自律走行" },
-                { "icon": "🔓", "label": "ライセンス", "value": "オープン", "note": "Hugging Face 経由で公開" },
-                { "icon": "🧠", "label": "処理統合", "value": "視覚＋言語＋行動", "note": "単一アーキテクチャ" },
-                { "label": "初公開", "value": "2026年6月1日", "tone": "primary" }
+                {
+                  "icon": "🤖",
+                  "label": "対象領域",
+                  "value": "物理AI全般",
+                  "note": "ロボティクス・自律走行"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "ライセンス",
+                  "value": "オープン",
+                  "note": "Hugging Face 経由で公開"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "処理統合",
+                  "value": "視覚＋言語＋行動",
+                  "note": "単一アーキテクチャ"
+                },
+                {
+                  "label": "初公開",
+                  "value": "2026年6月1日",
+                  "tone": "primary"
+                }
               ],
               "impact": "物理世界で動くAIシステムの開発基盤がオープン化し、研究者・スタートアップのロボティクスAI参入障壁が大幅に低下する。"
-            }
+            },
+            "alt": "NVIDIA Cosmos 3の概要カード。物理AI推論・行動向け初のオープンオムニモデルとしてHugging Face経由で公開。ロボティクスと自律走行を対象に視覚・言語・行動を統合処理する。ライセンスはオープン、物理世界の理解と行動生成が主要機能。物理AI開発の民主化を促進する基盤モデルとして注目される。"
           },
           "x_post": "NVIDIA が物理AI推論・行動向け初のオープンオムニモデル「Cosmos 3」を公開した。ロボティクスや自律走行での視覚・言語・行動を統合処理する基盤モデルで、Hugging Face からオープンに利用可能である。Physical AI のオープン基盤として注目される。\n\nhttps://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
         },
@@ -129,21 +155,45 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["jetbrains", "mellum", "moe", "code-model", "12b", "mixture-of-experts"],
+          "tags": [
+            "jetbrains",
+            "mellum",
+            "moe",
+            "code-model",
+            "12b",
+            "mixture-of-experts"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "JetBrains Mellum2の概要カード。12B MoEアーキテクチャのコード特化モデル。Hugging Face経由でオープン公開、技術報告書も同時提供。IntelliJ IDEA等JetBrains製IDEとの統合を前提に設計されたコード補完向けモデル。",
             "data": {
               "headline": "JetBrains Mellum2：12B MoE コード特化モデル",
               "tldr": "JetBrainsが12B MoEアーキテクチャのコード特化モデル「Mellum2」をオープン公開。推論効率を保ちながら、JetBrains製IDE統合でのコード補完品質向上を目指す。",
               "points": [
-                { "label": "規模", "value": "12B MoE", "note": "Mixture-of-Experts", "tone": "primary" },
-                { "label": "特化", "value": "コード生成", "note": "IntelliJ IDEA等と統合" },
-                { "label": "公開場所", "value": "Hugging Face", "note": "Technical Reportも同時公開" },
-                { "label": "開発元", "value": "JetBrains", "note": "IDE開発の世界的企業" }
+                {
+                  "label": "規模",
+                  "value": "12B MoE",
+                  "note": "Mixture-of-Experts",
+                  "tone": "primary"
+                },
+                {
+                  "label": "特化",
+                  "value": "コード生成",
+                  "note": "IntelliJ IDEA等と統合"
+                },
+                {
+                  "label": "公開場所",
+                  "value": "Hugging Face",
+                  "note": "Technical Reportも同時公開"
+                },
+                {
+                  "label": "開発元",
+                  "value": "JetBrains",
+                  "note": "IDE開発の世界的企業"
+                }
               ],
               "impact": "MoEコード特化モデルのオープン化がエンタープライズIDE統合の効率化を促し、開発者の生産性向上につながる。"
-            }
+            },
+            "alt": "JetBrains Mellum2の概要カード。12B MoEアーキテクチャのコード特化モデル。Hugging Face経由でオープン公開、技術報告書も同時提供。IntelliJ IDEA等JetBrains製IDEとの統合を前提に設計されたコード補完向けモデル。"
           }
         }
       ]
@@ -178,14 +228,25 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["github", "copilot", "ai-credits", "pricing", "usage-based"],
+          "tags": [
+            "github",
+            "copilot",
+            "ai-credits",
+            "pricing",
+            "usage-based"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "GitHub Copilot課金モデル転換の比較図。旧モデル（定額制）と新モデル（AI Credits従量制）を4指標で比較。コード補完は旧モデルで制限ありから新モデルで全有料プラン無制限に改善。Pro+月額は$39固定から$39クレジット込みに変動化。Business は$19/ユーザー込みに。予算管理機能が旧なしから多階層設定可能に強化された。",
             "data": {
               "headline": "GitHub Copilot 課金転換：定額制 → AI Credits 従量制（6月1日）",
-              "before": { "label": "旧モデル（定額制）", "sublabel": "シート単位の月額固定" },
-              "after": { "label": "新モデル（AI Credits）", "sublabel": "使用量ベース従量課金" },
+              "before": {
+                "label": "旧モデル（定額制）",
+                "sublabel": "シート単位の月額固定"
+              },
+              "after": {
+                "label": "新モデル（AI Credits）",
+                "sublabel": "使用量ベース従量課金"
+              },
               "metrics": [
                 {
                   "label": "コード補完",
@@ -230,7 +291,8 @@
               ],
               "narrative": "定額から従量への移行により、ライトユーザーはコスト削減の余地が生まれる一方、ヘビーユーザーはクレジット超過後の追加コストに注意が必要。コード補完は無制限維持で開発体験の低下を防いでいる。",
               "impact": "AIコーディングツール初の大規模従量課金転換として、企業のAI開発コスト管理手法に変革を迫り、他ツールの課金モデルにも影響を与える可能性がある。"
-            }
+            },
+            "alt": "GitHub Copilot課金モデル転換の比較図。旧モデル（定額制）と新モデル（AI Credits従量制）を4指標で比較。コード補完は旧モデルで制限ありから新モデルで全有料プラン無制限に改善。Pro+月額は$39固定から$39クレジット込みに変動化。Business は$19/ユーザー込みに。予算管理機能が旧なしから多階層設定可能に強化された。"
           },
           "x_post": "GitHub Copilot が 6 月 1 日より AI Credits 従量課金制に移行した。Copilot Pro+ は月$39のクレジット込み、Business は$19/ユーザー込みとなり、コード補完は引き続き無制限。ヘビーユーザーはクレジット超過後の追加コスト管理が重要になる。\n\nhttps://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
         },
@@ -259,21 +321,43 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["mistral", "vibe", "vs-code", "agent", "search-toolkit"],
+          "tags": [
+            "mistral",
+            "vibe",
+            "vs-code",
+            "agent",
+            "search-toolkit"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Mistral Vibeの概要カード。WorkモードとCodeモードを統合したAIエージェント。VS Code拡張を同時公開。同日にSearch Toolkit（本番検索パイプライン）とPhysics AI（物理系AIモデル）も発表。2026年5月28日公開。",
             "data": {
               "headline": "Mistral Vibe：Work＋Code 統合 AI エージェント",
               "tldr": "MistralがWork（生産性）とCode（コーディング）を統合した新エージェント「Vibe」とVS Code拡張を同時発表。Search Toolkit・Physics AIも加わりMistralの製品が3分野に拡充した。",
               "points": [
-                { "label": "Work モード", "value": "生産性・文書作業", "note": "業務タスク全般" },
-                { "label": "Code モード", "value": "コーディング支援", "note": "デバッグ・生成" },
-                { "label": "IDE 統合", "value": "VS Code 拡張", "note": "2026年5月28日公開" },
-                { "label": "同日発表", "value": "Search Toolkit + Physics AI", "note": "3製品同時展開" }
+                {
+                  "label": "Work モード",
+                  "value": "生産性・文書作業",
+                  "note": "業務タスク全般"
+                },
+                {
+                  "label": "Code モード",
+                  "value": "コーディング支援",
+                  "note": "デバッグ・生成"
+                },
+                {
+                  "label": "IDE 統合",
+                  "value": "VS Code 拡張",
+                  "note": "2026年5月28日公開"
+                },
+                {
+                  "label": "同日発表",
+                  "value": "Search Toolkit + Physics AI",
+                  "note": "3製品同時展開"
+                }
               ],
               "impact": "Work/Code統合と3製品同時展開により、Mistralがエンタープライズ開発ツール市場での存在感を拡大する。"
-            }
+            },
+            "alt": "Mistral Vibeの概要カード。WorkモードとCodeモードを統合したAIエージェント。VS Code拡張を同時公開。同日にSearch Toolkit（本番検索パイプライン）とPhysics AI（物理系AIモデル）も発表。2026年5月28日公開。"
           }
         },
         {
@@ -301,21 +385,42 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["memory", "api", "agents", "open-source", "typescript"],
+          "tags": [
+            "memory",
+            "api",
+            "agents",
+            "open-source",
+            "typescript"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Supermemoryの概要カード。GitHubで23,926スターを獲得したオープンソースのMemory API。AIエージェントが過去の会話・知識を保持・検索できる記憶インフラを提供。TypeScript実装でWebアプリとAPIの両形式で利用可能。GitHub日次トレンド入り。",
             "data": {
               "headline": "Supermemory：AIエージェント向けオープンソース Memory API",
               "tldr": "GitHubで23,926スターを獲得したオープンソースのメモリエンジン。AIエージェントが過去の会話・知識を保持・検索できる「記憶」インフラを提供し、APIとWebアプリの両形式で利用可能。",
               "points": [
-                { "label": "GitHub Stars", "value": "23,926", "tone": "primary" },
-                { "label": "言語", "value": "TypeScript" },
-                { "label": "機能", "value": "Memory API", "note": "長期コンテキスト保持" },
-                { "label": "UI", "value": "Web + API", "note": "両形式で提供" }
+                {
+                  "label": "GitHub Stars",
+                  "value": "23,926",
+                  "tone": "primary"
+                },
+                {
+                  "label": "言語",
+                  "value": "TypeScript"
+                },
+                {
+                  "label": "機能",
+                  "value": "Memory API",
+                  "note": "長期コンテキスト保持"
+                },
+                {
+                  "label": "UI",
+                  "value": "Web + API",
+                  "note": "両形式で提供"
+                }
               ],
               "impact": "エージェントの記憶問題を解決するオープンインフラとして、マルチエージェントシステムの設計に変革をもたらす可能性がある。"
-            }
+            },
+            "alt": "Supermemoryの概要カード。GitHubで23,926スターを獲得したオープンソースのMemory API。AIエージェントが過去の会話・知識を保持・検索できる記憶インフラを提供。TypeScript実装でWebアプリとAPIの両形式で利用可能。GitHub日次トレンド入り。"
           }
         }
       ]
@@ -350,21 +455,44 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["ibm", "enterprise", "agent-logic", "scalable-ai", "llm-limits"],
+          "tags": [
+            "ibm",
+            "enterprise",
+            "agent-logic",
+            "scalable-ai",
+            "llm-limits"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "IBM Research論考の概要カード。エンタープライズAIのスケール課題を分析し、LLM単体の限界を指摘。エージェントロジック（意思決定・ワークフロー統合・ツール呼び出し）との組み合わせがスケーラブルな企業AI採用の鍵と主張。2026年6月1日公開。",
             "data": {
               "headline": "IBM Research：エンタープライズAI採用にはエージェントロジックが不可欠",
               "tldr": "IBM Researchが企業AI採用のスケール課題を分析。LLM単体の限界を指摘し、エージェントロジック＋推論能力の組み合わせが大規模展開の鍵だと主張。",
               "points": [
-                { "label": "課題", "value": "LLM単体の限界", "note": "スケール時に壁", "tone": "warning" },
-                { "label": "解決策", "value": "エージェントロジック", "note": "推論＋ワークフロー統合" },
-                { "label": "要素", "value": "意思決定・ツール呼び出し", "note": "複数ステップ自動化" },
-                { "label": "出所", "value": "IBM Research", "note": "2026年6月1日" }
+                {
+                  "label": "課題",
+                  "value": "LLM単体の限界",
+                  "note": "スケール時に壁",
+                  "tone": "warning"
+                },
+                {
+                  "label": "解決策",
+                  "value": "エージェントロジック",
+                  "note": "推論＋ワークフロー統合"
+                },
+                {
+                  "label": "要素",
+                  "value": "意思決定・ツール呼び出し",
+                  "note": "複数ステップ自動化"
+                },
+                {
+                  "label": "出所",
+                  "value": "IBM Research",
+                  "note": "2026年6月1日"
+                }
               ],
               "impact": "LLMからエージェントアーキテクチャへの移行を促す論考として、企業AIロードマップ策定の指針となる。"
-            }
+            },
+            "alt": "IBM Research論考の概要カード。エンタープライズAIのスケール課題を分析し、LLM単体の限界を指摘。エージェントロジック（意思決定・ワークフロー統合・ツール呼び出し）との組み合わせがスケーラブルな企業AI採用の鍵と主張。2026年6月1日公開。"
           },
           "x_post": "IBM Research がエンタープライズ AI の課題を分析した。LLM 単体では不十分で、エージェントロジックと推論の組み合わせこそがスケーラブルな企業 AI 採用を可能にすると主張している。大企業での AI 展開を設計する上で示唆に富む内容である。\n\nhttps://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption"
         },
@@ -393,21 +521,41 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["claude-code", "cursor", "codex", "multi-agent", "compound-engineering"],
+          "tags": [
+            "claude-code",
+            "cursor",
+            "codex",
+            "multi-agent",
+            "compound-engineering"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Compound Engineering Pluginの概要カード。Claude Code・Codex・Cursorに対応したマルチエージェントオーケストレーションプラグイン。GitHub 19,079スター獲得。TypeScript実装。既存AIコーディングツールへのドロップイン統合でCompound Engineering（複数エージェント協調）を実現する。",
             "data": {
               "headline": "Compound Engineering Plugin：Claude Code/Codex/Cursor対応マルチエージェント基盤",
               "tldr": "EveryIncがClaude Code・Codex・Cursor対応のCompound Engineeringプラグインを公開。19,079GitHubスター獲得。既存のAIコーディングツールに統合するだけで複数エージェント協調が実現する。",
               "points": [
-                { "label": "対応ツール", "value": "Claude Code, Codex, Cursor", "tone": "primary" },
-                { "label": "GitHub Stars", "value": "19,079" },
-                { "label": "言語", "value": "TypeScript" },
-                { "label": "機能", "value": "マルチエージェント協調", "note": "Compound Engineering" }
+                {
+                  "label": "対応ツール",
+                  "value": "Claude Code, Codex, Cursor",
+                  "tone": "primary"
+                },
+                {
+                  "label": "GitHub Stars",
+                  "value": "19,079"
+                },
+                {
+                  "label": "言語",
+                  "value": "TypeScript"
+                },
+                {
+                  "label": "機能",
+                  "value": "マルチエージェント協調",
+                  "note": "Compound Engineering"
+                }
               ],
               "impact": "既存AI開発環境へのドロップイン統合でマルチエージェント協調が実現し、単一モデルを超えた大規模タスク自動化が身近になる。"
-            }
+            },
+            "alt": "Compound Engineering Pluginの概要カード。Claude Code・Codex・Cursorに対応したマルチエージェントオーケストレーションプラグイン。GitHub 19,079スター獲得。TypeScript実装。既存AIコーディングツールへのドロップイン統合でCompound Engineering（複数エージェント協調）を実現する。"
           }
         }
       ]
@@ -442,21 +590,42 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "tags": ["tts", "speech-synthesis", "zero-shot", "bytedance", "dialogue"],
+          "tags": [
+            "tts",
+            "speech-synthesis",
+            "zero-shot",
+            "bytedance",
+            "dialogue"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "SwanVoiceの概要カード。ByteDance開発のゼロショット長文音声合成システム。事前録音なしで話者の声質・感情・トーンを再現可能。モノローグと対話の両形式に対応し、長文テキストからも自然な音声を生成する。Hugging Face Papersで公開。",
             "data": {
               "headline": "SwanVoice：対話・モノローグ対応の長文ゼロショット音声合成",
               "tldr": "ByteDanceが開発した表現豊かなゼロショット音声合成システム。話者録音なしで声質・感情を再現し、モノローグから対話まで長文にわたって自然な音声を生成できる。",
               "points": [
-                { "label": "手法", "value": "ゼロショットTTS", "note": "事前録音不要", "tone": "primary" },
-                { "label": "対応形式", "value": "モノローグ＋対話", "note": "長文テキスト対応" },
-                { "label": "開発元", "value": "ByteDance" },
-                { "label": "公開先", "value": "Hugging Face Papers" }
+                {
+                  "label": "手法",
+                  "value": "ゼロショットTTS",
+                  "note": "事前録音不要",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対応形式",
+                  "value": "モノローグ＋対話",
+                  "note": "長文テキスト対応"
+                },
+                {
+                  "label": "開発元",
+                  "value": "ByteDance"
+                },
+                {
+                  "label": "公開先",
+                  "value": "Hugging Face Papers"
+                }
               ],
               "impact": "ゼロショット長文音声合成の進化により、コンテンツ制作・会話AIの音声品質が大幅に改善される可能性がある。"
-            }
+            },
+            "alt": "SwanVoiceの概要カード。ByteDance開発のゼロショット長文音声合成システム。事前録音なしで話者の声質・感情・トーンを再現可能。モノローグと対話の両形式に対応し、長文テキストからも自然な音声を生成する。Hugging Face Papersで公開。"
           }
         },
         {
@@ -484,21 +653,40 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["multimodal", "representation-forcing", "bytedance", "bottleneck-free"],
+          "tags": [
+            "multimodal",
+            "representation-forcing",
+            "bytedance",
+            "bottleneck-free"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Representation Forcingの概要カード。ByteDance Seedが提案するマルチモーダルモデルのボトルネック排除手法。テキスト・画像等の異なるモダリティ統合時のボトルネックを排除し、処理効率と生成品質を両立。Hugging Face Papersで公開。",
             "data": {
               "headline": "Representation Forcing：ボトルネックなし統合マルチモーダルモデル",
               "tldr": "ByteDance Seedが提案する「Representation Forcing」で、マルチモーダルモデルの統合ボトルネックを排除。処理効率と生成品質を同時に向上させる新アーキテクチャ手法。",
               "points": [
-                { "label": "手法", "value": "Representation Forcing", "tone": "primary" },
-                { "label": "課題解決", "value": "ボトルネック排除", "note": "モダリティ統合の壁を突破" },
-                { "label": "開発元", "value": "ByteDance Seed" },
-                { "label": "公開先", "value": "Hugging Face Papers" }
+                {
+                  "label": "手法",
+                  "value": "Representation Forcing",
+                  "tone": "primary"
+                },
+                {
+                  "label": "課題解決",
+                  "value": "ボトルネック排除",
+                  "note": "モダリティ統合の壁を突破"
+                },
+                {
+                  "label": "開発元",
+                  "value": "ByteDance Seed"
+                },
+                {
+                  "label": "公開先",
+                  "value": "Hugging Face Papers"
+                }
               ],
               "impact": "マルチモーダル統合の効率化により、テキスト・画像・音声を統合処理するモデルのパフォーマンスが向上する。"
-            }
+            },
+            "alt": "Representation Forcingの概要カード。ByteDance Seedが提案するマルチモーダルモデルのボトルネック排除手法。テキスト・画像等の異なるモダリティ統合時のボトルネックを排除し、処理効率と生成品質を両立。Hugging Face Papersで公開。"
           }
         }
       ]
@@ -533,22 +721,47 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
-          "tags": ["search-agent", "rag", "grepseek", "information-retrieval", "corpus"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
+          "tags": [
+            "search-agent",
+            "rag",
+            "grepseek",
+            "information-retrieval",
+            "corpus"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "GrepSeekの概要カード。UMass Amherstが開発した検索エージェント訓練フレームワーク。エージェントがコーパスと直接対話しながら検索戦略をインタラクティブに調整できる。従来のRAGのクエリ最適化課題に対処。HF Papersで83いいね・22コメント獲得。",
             "data": {
               "headline": "GrepSeek：コーパス直接対話による動的検索エージェント訓練",
               "tldr": "UMassアマーストが開発した検索エージェント訓練フレームワーク。エージェントがコーパスと直接対話しながら検索戦略を動的に調整することで、従来のRAGの限界を超える情報検索を実現する。HF Papersで83いいね。",
               "points": [
-                { "label": "手法", "value": "直接コーパス対話", "note": "インタラクティブ検索", "tone": "primary" },
-                { "label": "課題解決", "value": "RAG改善", "note": "クエリ最適化問題" },
-                { "label": "HF Likes", "value": "83", "note": "22コメント" },
-                { "label": "所属", "value": "UMass Amherst" }
+                {
+                  "label": "手法",
+                  "value": "直接コーパス対話",
+                  "note": "インタラクティブ検索",
+                  "tone": "primary"
+                },
+                {
+                  "label": "課題解決",
+                  "value": "RAG改善",
+                  "note": "クエリ最適化問題"
+                },
+                {
+                  "label": "HF Likes",
+                  "value": "83",
+                  "note": "22コメント"
+                },
+                {
+                  "label": "所属",
+                  "value": "UMass Amherst"
+                }
               ],
               "impact": "動的な検索エージェントの訓練手法として、RAGを超えた情報検索の精度向上がAIシステム全体に波及する。"
-            }
+            },
+            "alt": "GrepSeekの概要カード。UMass Amherstが開発した検索エージェント訓練フレームワーク。エージェントがコーパスと直接対話しながら検索戦略をインタラクティブに調整できる。従来のRAGのクエリ最適化課題に対処。HF Papersで83いいね・22コメント獲得。"
           }
         },
         {
@@ -576,22 +789,46 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
-          "tags": ["skill-distillation", "agentic-skills", "shanghai-ai-lab", "knowledge-transfer"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
+          "tags": [
+            "skill-distillation",
+            "agentic-skills",
+            "shanghai-ai-lab",
+            "knowledge-transfer"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "COLLEAGUE.SKILLの概要カード。Shanghai AI Labが発表した専門家知識蒸留によるAIスキル自動生成フレームワーク。教師モデルまたは人間専門家の知識をエージェントに蒸留しドメイン特化スキルを自動習得させる。HF Papersで70いいね・18,800ビューを記録。",
             "data": {
               "headline": "COLLEAGUE.SKILL：専門家知識蒸留による自動AIスキル生成",
               "tldr": "Shanghai AI Labが「COLLEAGUE.SKILL」を発表。専門家の知識をエージェントに自動蒸留し、ドメイン特化スキルを習得させるフレームワーク。HF Papersで70いいね・18,800ビューを記録した。",
               "points": [
-                { "label": "手法", "value": "専門家知識蒸留", "note": "自動スキル生成", "tone": "primary" },
-                { "label": "HF Likes", "value": "70", "note": "18,800ビュー" },
-                { "label": "所属", "value": "Shanghai AI Lab" },
-                { "label": "効果", "value": "ドメイン特化スキル", "note": "エージェント自動習得" }
+                {
+                  "label": "手法",
+                  "value": "専門家知識蒸留",
+                  "note": "自動スキル生成",
+                  "tone": "primary"
+                },
+                {
+                  "label": "HF Likes",
+                  "value": "70",
+                  "note": "18,800ビュー"
+                },
+                {
+                  "label": "所属",
+                  "value": "Shanghai AI Lab"
+                },
+                {
+                  "label": "効果",
+                  "value": "ドメイン特化スキル",
+                  "note": "エージェント自動習得"
+                }
               ],
               "impact": "エージェントへのドメイン知識移転の自動化により、専門分野AIエージェントの開発コストと期間が大幅に短縮される。"
-            }
+            },
+            "alt": "COLLEAGUE.SKILLの概要カード。Shanghai AI Labが発表した専門家知識蒸留によるAIスキル自動生成フレームワーク。教師モデルまたは人間専門家の知識をエージェントに蒸留しドメイン特化スキルを自動習得させる。HF Papersで70いいね・18,800ビューを記録。"
           }
         },
         {
@@ -619,21 +856,40 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["distillation", "reinforcement-learning", "trust-region", "behavior-blending"],
+          "tags": [
+            "distillation",
+            "reinforcement-learning",
+            "trust-region",
+            "behavior-blending"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Trust-Region Behavior Blendingの概要カード。T-TechがオンポリシーモデルL蒸留向けに提案した手法。信頼領域更新と行動ブレンドを組み合わせ、蒸留時の品質劣化を抑える。強化学習・ロボティクス・エージェント訓練に適用可能。HF Papersで公開。",
             "data": {
               "headline": "Trust-Region Behavior Blending：On-Policy蒸留の品質・効率両立手法",
               "tldr": "T-TechがTrust-Region Behavior Blendingを提案。信頼領域による安定更新と行動ブレンドを組み合わせ、オンポリシー蒸留の品質劣化を抑えた効率的な知識移転を実現する。",
               "points": [
-                { "label": "手法", "value": "行動ブレンド蒸留", "tone": "primary" },
-                { "label": "特徴", "value": "信頼領域更新", "note": "品質劣化を抑制" },
-                { "label": "適用先", "value": "強化学習・ロボティクス" },
-                { "label": "所属", "value": "T-Tech" }
+                {
+                  "label": "手法",
+                  "value": "行動ブレンド蒸留",
+                  "tone": "primary"
+                },
+                {
+                  "label": "特徴",
+                  "value": "信頼領域更新",
+                  "note": "品質劣化を抑制"
+                },
+                {
+                  "label": "適用先",
+                  "value": "強化学習・ロボティクス"
+                },
+                {
+                  "label": "所属",
+                  "value": "T-Tech"
+                }
               ],
               "impact": "オンポリシー蒸留の品質と効率の両立により、強化学習ベースのエージェント・ロボット制御の開発速度が向上する。"
-            }
+            },
+            "alt": "Trust-Region Behavior Blendingの概要カード。T-TechがオンポリシーモデルL蒸留向けに提案した手法。信頼領域更新と行動ブレンドを組み合わせ、蒸留時の品質劣化を抑える。強化学習・ロボティクス・エージェント訓練に適用可能。HF Papersで公開。"
           }
         }
       ]
@@ -668,10 +924,16 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["anthropic", "ipo", "sec", "s1", "series-h", "valuation"],
+          "tags": [
+            "anthropic",
+            "ipo",
+            "sec",
+            "s1",
+            "series-h",
+            "valuation"
+          ],
           "figure": {
             "type": "timeline",
-            "alt": "AnthropicのIPO準備タイムライン。2026年5月28日にSeries H完了（Altimeter・Dragoneer・Greenoaks・Sequoia主導、$65B調達、評価額$965B到達）。2026年6月1日にSECへのS-1草稿機密提出（現在）、株式数・価格は未設定で市場条件次第。その後SEC審査を経て正式IPO公開の予定。",
             "data": {
               "headline": "Anthropic IPO 準備タイムライン",
               "events": [
@@ -699,7 +961,8 @@
               ],
               "narrative": "2026年5月に$965B評価で$65Bを調達したAnthropicが、S-1機密提出でIPO準備を公式に開始した。",
               "impact": "Anthropicの IPO が実現すれば、生成AI業界の企業評価・投資動向に広範な影響を与える歴史的な上場案件となる。"
-            }
+            },
+            "alt": "AnthropicのIPO準備タイムライン。2026年5月28日にSeries H完了（Altimeter・Dragoneer・Greenoaks・Sequoia主導、$65B調達、評価額$965B到達）。2026年6月1日にSECへのS-1草稿機密提出（現在）、株式数・価格は未設定で市場条件次第。その後SEC審査を経て正式IPO公開の予定。"
           },
           "x_post": "Anthropic が SEC に S-1 草稿を機密提出した。直近の Series H で $65B を調達し評価額 $965B となった同社が、IPO 準備の公式ステップを踏んだ形である。株式数・価格は未設定で、市場条件次第とのことである。\n\nhttps://www.anthropic.com/news/confidential-draft-s1-sec"
         },
@@ -728,21 +991,44 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["nvidia", "pc", "ai-agent", "microsoft", "dell", "hp", "edge-ai"],
+          "tags": [
+            "nvidia",
+            "pc",
+            "ai-agent",
+            "microsoft",
+            "dell",
+            "hp",
+            "edge-ai"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Nvidia AI Agent PCの概要カード。Microsoft・Dell・HPと連携して$200B規模のCPU市場参入を狙う。AIエージェント機能をPCに統合してローカルAI処理を一般化し、クラウド依存を低減するのが目標。TechCrunch 2026年6月1日報道。",
             "data": {
               "headline": "Nvidia、AI エージェント PC で $200B CPU 市場に参入",
               "tldr": "NvidiaがMicrosoft・Dell・HP と連携し、AIエージェント機能搭載のPCを投入して$200B規模のCPU市場参入を狙う。ローカルAI処理の一般化とエッジAI実行環境の普及が目標。",
               "points": [
-                { "label": "市場規模", "value": "$200B CPU 市場", "tone": "primary" },
-                { "label": "パートナー", "value": "Microsoft・Dell・HP" },
-                { "label": "機能", "value": "AIエージェントPC", "note": "ローカルAI処理" },
-                { "label": "出所", "value": "TechCrunch", "note": "2026年6月1日" }
+                {
+                  "label": "市場規模",
+                  "value": "$200B CPU 市場",
+                  "tone": "primary"
+                },
+                {
+                  "label": "パートナー",
+                  "value": "Microsoft・Dell・HP"
+                },
+                {
+                  "label": "機能",
+                  "value": "AIエージェントPC",
+                  "note": "ローカルAI処理"
+                },
+                {
+                  "label": "出所",
+                  "value": "TechCrunch",
+                  "note": "2026年6月1日"
+                }
               ],
               "impact": "AIエージェント機能のPC統合が進めば、クラウド依存を減らしたローカルAI実行が一般化し、プライバシー面の懸念も緩和される。"
-            }
+            },
+            "alt": "Nvidia AI Agent PCの概要カード。Microsoft・Dell・HPと連携して$200B規模のCPU市場参入を狙う。AIエージェント機能をPCに統合してローカルAI処理を一般化し、クラウド依存を低減するのが目標。TechCrunch 2026年6月1日報道。"
           }
         }
       ]
@@ -777,21 +1063,45 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["florida", "openai", "lawsuit", "regulation", "ai-safety", "legal"],
+          "tags": [
+            "florida",
+            "openai",
+            "lawsuit",
+            "regulation",
+            "ai-safety",
+            "legal"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "フロリダ州によるOpenAI・Sam Altman提訴の概要カード。米国初の州レベルAI暴力事件訴訟。フロリダ州立大学銃乱射事件を契機に、AIシステムの法的責任・安全義務が争点。判例化すれば他州への波及とAI業界全体の法的義務拡大につながる可能性がある。",
             "data": {
               "headline": "フロリダ州、OpenAIを提訴：AI企業への初の州レベル暴力事件訴訟",
               "tldr": "フロリダ州がOpenAI・Sam Altmanを提訴。米国初の州政府によるAI企業への暴力事件関連訴訟として、AIシステムの安全義務・法的責任をめぐる判例形成が注目される。",
               "points": [
-                { "label": "原告", "value": "フロリダ州", "note": "米国初の州政府提訴", "tone": "primary" },
-                { "label": "被告", "value": "OpenAI・Sam Altman", "note": "企業と代表者の両名" },
-                { "label": "争点", "value": "暴力事件関連の安全義務", "note": "FSU銃乱射事件が契機" },
-                { "label": "影響範囲", "value": "AI業界全体", "note": "他州への波及も懸念" }
+                {
+                  "label": "原告",
+                  "value": "フロリダ州",
+                  "note": "米国初の州政府提訴",
+                  "tone": "primary"
+                },
+                {
+                  "label": "被告",
+                  "value": "OpenAI・Sam Altman",
+                  "note": "企業と代表者の両名"
+                },
+                {
+                  "label": "争点",
+                  "value": "暴力事件関連の安全義務",
+                  "note": "FSU銃乱射事件が契機"
+                },
+                {
+                  "label": "影響範囲",
+                  "value": "AI業界全体",
+                  "note": "他州への波及も懸念"
+                }
               ],
               "impact": "AI企業の法的責任範囲が司法の場で初めて本格的に問われる。判決次第ではコンテンツポリシーや安全設計に対する法的義務が業界標準となる可能性がある。"
-            }
+            },
+            "alt": "フロリダ州によるOpenAI・Sam Altman提訴の概要カード。米国初の州レベルAI暴力事件訴訟。フロリダ州立大学銃乱射事件を契機に、AIシステムの法的責任・安全義務が争点。判例化すれば他州への波及とAI業界全体の法的義務拡大につながる可能性がある。"
           }
         }
       ]
@@ -826,22 +1136,49 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 268 },
-          "tags": ["stanford", "cs336", "claude-md", "education", "ai-agents", "hacker-news"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 268
+          },
+          "tags": [
+            "stanford",
+            "cs336",
+            "claude-md",
+            "education",
+            "ai-agents",
+            "hacker-news"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "スタンフォードCS336がCLAUDE.mdをLLM講義課題リポジトリに採用した事例のカード。HN 268ポイントを獲得。CLAUDE.mdはClaude Codeへのエージェント指示ファイルで、大学の正規授業がAIエージェントを公式に組み込んだ初期事例として注目される。",
             "data": {
               "headline": "スタンフォードCS336：大学LLM講義がCLAUDE.mdでエージェントAIを制度化",
               "tldr": "スタンフォードCS336の課題リポジトリにCLAUDE.mdが追加され、HN 268ptで話題に。大学の正規講義がAIエージェントを公式採用した象徴的な事例として注目される。",
               "points": [
-                { "label": "HN反響", "value": "268pt", "note": "コミュニティ議論を喚起", "tone": "primary" },
-                { "label": "採用先", "value": "Stanford CS336", "note": "LLM from Scratch 講義" },
-                { "label": "ファイル", "value": "CLAUDE.md", "note": "Claude Codeエージェント指示" },
-                { "label": "意義", "value": "教育×AIエージェント制度化", "note": "大学正規授業での初期事例" }
+                {
+                  "label": "HN反響",
+                  "value": "268pt",
+                  "note": "コミュニティ議論を喚起",
+                  "tone": "primary"
+                },
+                {
+                  "label": "採用先",
+                  "value": "Stanford CS336",
+                  "note": "LLM from Scratch 講義"
+                },
+                {
+                  "label": "ファイル",
+                  "value": "CLAUDE.md",
+                  "note": "Claude Codeエージェント指示"
+                },
+                {
+                  "label": "意義",
+                  "value": "教育×AIエージェント制度化",
+                  "note": "大学正規授業での初期事例"
+                }
               ],
               "impact": "大学の正規講義がAIエージェントを公式カリキュラムに組み込む動きが始まり、次世代エンジニアのAI活用リテラシー標準が塗り替えられる兆し。"
-            }
+            },
+            "alt": "スタンフォードCS336がCLAUDE.mdをLLM講義課題リポジトリに採用した事例のカード。HN 268ポイントを獲得。CLAUDE.mdはClaude Codeへのエージェント指示ファイルで、大学の正規授業がAIエージェントを公式に組み込んだ初期事例として注目される。"
           }
         }
       ]
@@ -876,22 +1213,49 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 394 },
-          "tags": ["claude-code", "anthropic", "onboarding", "team", "champion-kit", "japanese"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 394
+          },
+          "tags": [
+            "claude-code",
+            "anthropic",
+            "onboarding",
+            "team",
+            "champion-kit",
+            "japanese"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic公式「Claude Codeチャンピオンキット」の概要カード。はてブ394件で本日国内最大反響。チーム内チャンピオンが先行習熟し段階的に展開するアプローチを推奨。日本語でオンボーディング資料・ワークショップ素材・FAQを提供するチーム向け導入支援リソース。",
             "data": {
               "headline": "Claude Code チャンピオンキット：チーム段階的導入を支援する公式日本語ガイド",
               "tldr": "Anthropicが「チャンピオンキット」を日本語で公開。チーム内推進役が先行習熟→段階的拡大するアプローチで、組織的なClaude Code採用の移行を支援する。はてブ394件で本日国内最大反響。",
               "points": [
-                { "label": "はてブ", "value": "394件", "note": "本日国内最大反響", "tone": "primary" },
-                { "label": "対象", "value": "チーム導入推進者", "note": "チャンピオン（推進役）が先行" },
-                { "label": "コンテンツ", "value": "資料・ワーク・FAQ", "note": "すべて日本語で提供" },
-                { "label": "発行元", "value": "Anthropic公式", "note": "Supportページで公開" }
+                {
+                  "label": "はてブ",
+                  "value": "394件",
+                  "note": "本日国内最大反響",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象",
+                  "value": "チーム導入推進者",
+                  "note": "チャンピオン（推進役）が先行"
+                },
+                {
+                  "label": "コンテンツ",
+                  "value": "資料・ワーク・FAQ",
+                  "note": "すべて日本語で提供"
+                },
+                {
+                  "label": "発行元",
+                  "value": "Anthropic公式",
+                  "note": "Supportページで公開"
+                }
               ],
               "impact": "組織的なClaude Code採用の最大障壁だった「全員が習熟する必要がある」という心理的ハードルを取り除き、推進役起点の段階的展開モデルが確立される。"
-            }
+            },
+            "alt": "Anthropic公式「Claude Codeチャンピオンキット」の概要カード。はてブ394件で本日国内最大反響。チーム内チャンピオンが先行習熟し段階的に展開するアプローチを推奨。日本語でオンボーディング資料・ワークショップ素材・FAQを提供するチーム向け導入支援リソース。"
           },
           "x_post": "Anthropic が Claude Code の段階的チーム導入を支援する「チャンピオンキット」を公開した。個人による完全習熟を前提とせず、チームとして段階的に展開することを重視した設計である。日本語版も用意されており、エンジニアリングチームの移行支援として実用的なリソースになっている。\n\nhttps://support.claude.com/ja/articles/14555399-claude-code-%E3%83%81%E3%83%A3%E3%83%B3%E3%83%94%E3%82%AA%E3%83%B3-%E3%82%AD%E3%83%83%E3%83%88"
         },
@@ -920,22 +1284,49 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hatena", "users": 299 },
-          "tags": ["ai-literacy", "productivity", "power-users", "image-generation", "workflow", "japanese"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 299
+          },
+          "tags": [
+            "ai-literacy",
+            "productivity",
+            "power-users",
+            "image-generation",
+            "workflow",
+            "japanese"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AIパワーユーザーと一般ユーザーの生産性格差を解説した記事の概要カード。はてブ299件。画像生成ワークフローを具体例に、プロンプト設計・ツール連携・反復サイクルの差が成果物の品質と作業時間に大きな影響を与えることを示す。",
             "data": {
               "headline": "AI活用格差の実態：パワーユーザーと一般ユーザーの生産性差",
               "tldr": "AIツールの「使いこなし格差」が職場で拡大。プロンプト設計・ツール連携・反復改善の理解度が成果物の品質と速度を左右するとASCII.jpが解説。はてブ299件。",
               "points": [
-                { "label": "はてブ", "value": "299件", "note": "国内エンジニアに共感", "tone": "primary" },
-                { "label": "格差要因", "value": "プロンプト設計力", "note": "ツール連携・反復サイクルも" },
-                { "label": "事例", "value": "画像生成ワークフロー", "note": "具体的な差を可視化" },
-                { "label": "示唆", "value": "AIリテラシー二極化", "note": "職場での格差が顕在化" }
+                {
+                  "label": "はてブ",
+                  "value": "299件",
+                  "note": "国内エンジニアに共感",
+                  "tone": "primary"
+                },
+                {
+                  "label": "格差要因",
+                  "value": "プロンプト設計力",
+                  "note": "ツール連携・反復サイクルも"
+                },
+                {
+                  "label": "事例",
+                  "value": "画像生成ワークフロー",
+                  "note": "具体的な差を可視化"
+                },
+                {
+                  "label": "示唆",
+                  "value": "AIリテラシー二極化",
+                  "note": "職場での格差が顕在化"
+                }
               ],
               "impact": "AIツールの普及が進むにつれ、「使える」ではなく「使いこなせる」かどうかが個人の生産性と職場での評価に直結する時代が到来していることを示す。"
-            }
+            },
+            "alt": "AIパワーユーザーと一般ユーザーの生産性格差を解説した記事の概要カード。はてブ299件。画像生成ワークフローを具体例に、プロンプト設計・ツール連携・反復サイクルの差が成果物の品質と作業時間に大きな影響を与えることを示す。"
           }
         },
         {
@@ -963,22 +1354,49 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 189 },
-          "tags": ["zero-trust", "ai-agents", "anthropic", "security", "enterprise", "japanese"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 189
+          },
+          "tags": [
+            "zero-trust",
+            "ai-agents",
+            "anthropic",
+            "security",
+            "enterprise",
+            "japanese"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AnthropicのZero Trust for AI Agents設計原則を解説した記事の概要カード。はてブ189件。どのエージェントがどの権限でどのツールにアクセスしたかを全レイヤーで追跡・制御・回復する設計を推奨。最小権限・完全ログ・障害復元の3要素がAIエージェントセキュリティの核心。",
             "data": {
               "headline": "Zero Trust for AI Agents：AnthropicのAIエージェントセキュリティ設計原則",
               "tldr": "Anthropicのゼロトラスト設計原則をAIエージェントに適用。「誰が・何の権限で・どこにアクセスしたか」を全レイヤーで追跡・制御・回復できる基盤の設計指針。はてブ189件。",
               "points": [
-                { "label": "はてブ", "value": "189件", "note": "エンジニアに高い評価", "tone": "primary" },
-                { "label": "核心原則", "value": "最小権限・完全ログ", "note": "＋障害復元設計" },
-                { "label": "適用対象", "value": "AIエージェント基盤", "note": "本番導入時のセキュリティ" },
-                { "label": "出典", "value": "Anthropic公式原則", "note": "日本語解説記事" }
+                {
+                  "label": "はてブ",
+                  "value": "189件",
+                  "note": "エンジニアに高い評価",
+                  "tone": "primary"
+                },
+                {
+                  "label": "核心原則",
+                  "value": "最小権限・完全ログ",
+                  "note": "＋障害復元設計"
+                },
+                {
+                  "label": "適用対象",
+                  "value": "AIエージェント基盤",
+                  "note": "本番導入時のセキュリティ"
+                },
+                {
+                  "label": "出典",
+                  "value": "Anthropic公式原則",
+                  "note": "日本語解説記事"
+                }
               ],
               "impact": "AIエージェントを本番環境に安全に導入するためのゼロトラスト設計が実践知として広がり、エンタープライズでのAIエージェント採用加速につながる。"
-            }
+            },
+            "alt": "AnthropicのZero Trust for AI Agents設計原則を解説した記事の概要カード。はてブ189件。どのエージェントがどの権限でどのツールにアクセスしたかを全レイヤーで追跡・制御・回復する設計を推奨。最小権限・完全ログ・障害復元の3要素がAIエージェントセキュリティの核心。"
           },
           "x_post": "Anthropic のゼロトラスト AI エージェント設計原則が話題である。「どのエージェントが・どの権限で・どのツールにアクセスしたか」を全レイヤーで追跡・制御・回復できる設計を推奨している。AI エージェント業務導入のセキュリティ基盤として実践的な内容だ。\n\nhttps://blog.cloudnative.co.jp/articles/anthropic-zero-trust-for-ai-agents/"
         },
@@ -1007,22 +1425,49 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 50 },
-          "tags": ["hugging-face", "ai-agents", "terminology", "context-engineering", "scaffold", "japanese"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 50
+          },
+          "tags": [
+            "hugging-face",
+            "ai-agents",
+            "terminology",
+            "context-engineering",
+            "scaffold",
+            "japanese"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "HuggingFaceによるAIエージェント用語整理の概要カード。はてブ50件。ハーネス（実行環境制御層）・スキャフォールド（タスク分解・計画管理）・コンテキストエンジニアリング（コンテキスト最適設計技術）の3用語を定義し、業界用語の標準化を促進する。",
             "data": {
               "headline": "Hugging FaceによるAIエージェント用語定義：ハーネス・スキャフォールド・コンテキストエンジニアリング",
               "tldr": "Hugging FaceがAIエージェント開発の核心用語3つを公式定義。乱立していた専門用語が整理され、開発者間コミュニケーションと設計精度の向上が期待される。はてブ50件。",
               "points": [
-                { "label": "ハーネス", "value": "実行環境制御層", "note": "エージェントの動作制御", "tone": "primary" },
-                { "label": "スキャフォールド", "value": "タスク分解・計画管理", "note": "実行構造の設計" },
-                { "label": "コンテキストEng.", "value": "コンテキスト最適設計", "note": "プロンプトEngとは別概念" },
-                { "label": "発行元", "value": "Hugging Face", "note": "業界用語標準化を主導" }
+                {
+                  "label": "ハーネス",
+                  "value": "実行環境制御層",
+                  "note": "エージェントの動作制御",
+                  "tone": "primary"
+                },
+                {
+                  "label": "スキャフォールド",
+                  "value": "タスク分解・計画管理",
+                  "note": "実行構造の設計"
+                },
+                {
+                  "label": "コンテキストEng.",
+                  "value": "コンテキスト最適設計",
+                  "note": "プロンプトEngとは別概念"
+                },
+                {
+                  "label": "発行元",
+                  "value": "Hugging Face",
+                  "note": "業界用語標準化を主導"
+                }
               ],
               "impact": "AIエージェント開発の用語が標準化されることで、設計ドキュメント・チーム間コミュニケーション・採用・教育の質が一律に向上する。"
-            }
+            },
+            "alt": "HuggingFaceによるAIエージェント用語整理の概要カード。はてブ50件。ハーネス（実行環境制御層）・スキャフォールド（タスク分解・計画管理）・コンテキストエンジニアリング（コンテキスト最適設計技術）の3用語を定義し、業界用語の標準化を促進する。"
           }
         },
         {
@@ -1050,22 +1495,49 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 24 },
-          "tags": ["zozo", "claude-code", "skills", "customer-support", "automation", "japanese"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 24
+          },
+          "tags": [
+            "zozo",
+            "claude-code",
+            "skills",
+            "customer-support",
+            "automation",
+            "japanese"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "ZOZOのClaude Code Skillsを活用したCS問い合わせ自動化事例の概要カード。Claude Code Skillsを実行可能マニュアルとして運用し、技術問い合わせの初期調査を自動化。初動対応時間を70%削減した成果を公開。エンジニアが直接Skill設計として業務知識を実装する新アプローチ。",
             "data": {
               "headline": "ZOZO：Claude Code Skillsで CS 初動対応時間を 70% 削減",
               "tldr": "ZOZOがClaude Code Skillsを「実行可能マニュアル」として活用し、CSの技術的問い合わせ初期調査を自動化。初動対応時間を70%削減した実装詳細をテックブログで公開。",
               "points": [
-                { "label": "効果", "value": "初動対応 70% 削減", "note": "技術的問い合わせ初期調査", "tone": "primary" },
-                { "label": "手法", "value": "実行可能マニュアル", "note": "Claude Code Skillsで業務手順を定義" },
-                { "label": "対象", "value": "CSエンジニア対応", "note": "技術的調査プロセスを自動化" },
-                { "label": "公開", "value": "ZOZO Tech Blog", "note": "実装詳細を含む" }
+                {
+                  "label": "効果",
+                  "value": "初動対応 70% 削減",
+                  "note": "技術的問い合わせ初期調査",
+                  "tone": "primary"
+                },
+                {
+                  "label": "手法",
+                  "value": "実行可能マニュアル",
+                  "note": "Claude Code Skillsで業務手順を定義"
+                },
+                {
+                  "label": "対象",
+                  "value": "CSエンジニア対応",
+                  "note": "技術的調査プロセスを自動化"
+                },
+                {
+                  "label": "公開",
+                  "value": "ZOZO Tech Blog",
+                  "note": "実装詳細を含む"
+                }
               ],
               "impact": "Claude Code Skillsを業務プロセスの「実行可能な手順書」として再定義する実装パターンが示され、CS・業務自動化への応用が加速する。"
-            }
+            },
+            "alt": "ZOZOのClaude Code Skillsを活用したCS問い合わせ自動化事例の概要カード。Claude Code Skillsを実行可能マニュアルとして運用し、技術問い合わせの初期調査を自動化。初動対応時間を70%削減した成果を公開。エンジニアが直接Skill設計として業務知識を実装する新アプローチ。"
           }
         }
       ]
@@ -1100,36 +1572,91 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "hf_papers", "likes": 31, "comments": 16 },
-          "tags": ["tsinghua", "long-context", "rl", "search-agent", "reasoning", "rubric-reward"],
+          "reaction_signal": {
+            "kind": "hf_papers",
+            "likes": 31,
+            "comments": 16
+          },
+          "tags": [
+            "tsinghua",
+            "long-context",
+            "rl",
+            "search-agent",
+            "reasoning",
+            "rubric-reward"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "清華大学LongTraceRLの概要カード。検索エージェントの行動軌跡をルーブリック報酬で強化学習し、長文脈推論をスケーラブルに訓練する手法。数学・科学・コーディングのベンチマークで改善を報告。HF Papers 31いいね・16コメント獲得の注目論文。",
             "data": {
               "headline": "LongTraceRL（清華大）：検索エージェント軌跡×ルーブリック報酬で長文脈推論を強化",
               "tldr": "清華大学が検索エージェントの行動軌跡を自動教師信号として活用するLongTraceRLを提案。人手アノテーション不要で長文脈推論を強化でき、数学・科学・コーディングで改善を報告。",
               "points": [
-                { "label": "手法", "value": "軌跡ベースRL", "note": "検索エージェント行動を教師信号に", "tone": "primary" },
-                { "label": "報酬設計", "value": "ルーブリック報酬", "note": "採点基準を報酬として自動化" },
-                { "label": "対象タスク", "value": "長文脈推論", "note": "数学・科学・コーディング" },
-                { "label": "発表元", "value": "清華大学", "note": "知識エンジニアリンググループ" }
+                {
+                  "label": "手法",
+                  "value": "軌跡ベースRL",
+                  "note": "検索エージェント行動を教師信号に",
+                  "tone": "primary"
+                },
+                {
+                  "label": "報酬設計",
+                  "value": "ルーブリック報酬",
+                  "note": "採点基準を報酬として自動化"
+                },
+                {
+                  "label": "対象タスク",
+                  "value": "長文脈推論",
+                  "note": "数学・科学・コーディング"
+                },
+                {
+                  "label": "発表元",
+                  "value": "清華大学",
+                  "note": "知識エンジニアリンググループ"
+                }
               ],
               "impact": "検索エージェントとRL訓練の融合が長文脈推論の新たな訓練パラダイムを提示し、大規模人手アノテーションへの依存を低減しながら推論モデルの能力上限を引き上げる。"
-            }
+            },
+            "alt": "清華大学LongTraceRLの概要カード。検索エージェントの行動軌跡をルーブリック報酬で強化学習し、長文脈推論をスケーラブルに訓練する手法。数学・科学・コーディングのベンチマークで改善を報告。HF Papers 31いいね・16コメント獲得の注目論文。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "Reddit r/LocalLLaMA", "reason": "WebFetch unavailable for reddit.com" },
-    { "source": "Reddit r/MachineLearning", "reason": "WebFetch unavailable for reddit.com" },
-    { "source": "The Verge AI RSS", "reason": "WebFetch unavailable for theverge.com" },
-    { "source": "36Kr AI", "reason": "Chinese paywall / rate limit on fetch" },
-    { "source": "量子位 (QbitAI)", "reason": "RSS 404 and HTML parse failed" },
-    { "source": "機器之心 Synced", "reason": "RSS feed returned August 2025 content only" },
-    { "source": "ChinAI Newsletter", "reason": "Substack RSS returned 403" },
-    { "source": "Import AI", "reason": "Substack RSS returned 403" },
-    { "source": "LINEヤフー Tech Blog", "reason": "Most recent AI articles older than 168h (Agents Meetup: 2026-05-27 within window but marginal quality)" }
+    {
+      "source": "Reddit r/LocalLLaMA",
+      "reason": "WebFetch unavailable for reddit.com"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "reason": "WebFetch unavailable for reddit.com"
+    },
+    {
+      "source": "The Verge AI RSS",
+      "reason": "WebFetch unavailable for theverge.com"
+    },
+    {
+      "source": "36Kr AI",
+      "reason": "Chinese paywall / rate limit on fetch"
+    },
+    {
+      "source": "量子位 (QbitAI)",
+      "reason": "RSS 404 and HTML parse failed"
+    },
+    {
+      "source": "機器之心 Synced",
+      "reason": "RSS feed returned August 2025 content only"
+    },
+    {
+      "source": "ChinAI Newsletter",
+      "reason": "Substack RSS returned 403"
+    },
+    {
+      "source": "Import AI",
+      "reason": "Substack RSS returned 403"
+    },
+    {
+      "source": "LINEヤフー Tech Blog",
+      "reason": "Most recent AI articles older than 168h (Agents Meetup: 2026-05-27 within window but marginal quality)"
+    }
   ]
 }
