@@ -44,12 +44,28 @@ jobs:
           OWNER: ${{ github.repository_owner }}
         run: |
           set -uo pipefail
-          # 日付・曜日・ISO週は必ず JST で確定する (runner は UTC)
-          TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
-          DOW=$(TZ=Asia/Tokyo date +%u)          # 1=Mon .. 7=Sun
-          ISO_WEEK=$(TZ=Asia/Tokyo date +%G-W%V)
+          # 日付・曜日・ISO週は必ず JST で確定する (runner は UTC)。
+          #
+          # ただし watchdog 自身も schedule 遅延で発火が大きくずれ得る (実測 +7〜17h、
+          # 12:15 JST 予定が翌 03:12 JST に発火した事例あり)。naive に「今日 (JST)」を
+          # 見ると、まだ生成期限 (5:00 JST) 前の当日分を「未生成」と誤検知してしまう
+          # (Issue #19 の誤報がこれ)。
+          #
+          # 対策: 「5:00 JST の締切を既に過ぎている最新の日付」を検査対象にする。
+          #   JST が 5 時より前なら前日、5 時以降なら当日。
+          # これで watchdog が深夜〜早朝に遅延発火しても、期限を過ぎた日だけを評価する。
+          HOUR=$(TZ=Asia/Tokyo date +%H)
+          if [ "$((10#$HOUR))" -lt 5 ]; then
+            TODAY=$(TZ=Asia/Tokyo date -d "yesterday" +%Y-%m-%d)
+            DOW=$(TZ=Asia/Tokyo date -d "yesterday" +%u)        # 1=Mon .. 7=Sun
+            ISO_WEEK=$(TZ=Asia/Tokyo date -d "yesterday" +%G-W%V)
+          else
+            TODAY=$(TZ=Asia/Tokyo date +%Y-%m-%d)
+            DOW=$(TZ=Asia/Tokyo date +%u)          # 1=Mon .. 7=Sun
+            ISO_WEEK=$(TZ=Asia/Tokyo date +%G-W%V)
+          fi
           DAILY="data/${TODAY}.json"
-          echo "Checking ${TODAY} (DOW=${DOW}, ISO_WEEK=${ISO_WEEK})"
+          echo "Checking ${TODAY} (DOW=${DOW}, ISO_WEEK=${ISO_WEEK}, jst_hour=${HOUR})"
 
           PROBLEMS=()
 
