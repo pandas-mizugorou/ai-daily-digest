@@ -1,0 +1,14 @@
+{
+  "name": "ai-digest-trigger-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Cron Worker that fires GitHub workflow_dispatch for ai-daily-digest (works around GitHub schedule delay).",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --test-scheduled",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

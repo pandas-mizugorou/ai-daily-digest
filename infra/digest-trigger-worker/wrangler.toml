@@ -1,0 +1,21 @@
+# AI Daily Digest を定時に起動する外部トリガー Worker。
+#
+# なぜ必要か:
+#   GitHub Actions の schedule(cron) は、このリポジトリで実発火が +3〜15h 遅延し
+#   (実測: 15:07 UTC 指定が 22:38 UTC 発火 = 07:38 JST 着)、5:00 JST 配信の締切を
+#   守れない。workflow_dispatch は遅延なく即時発火するため、信頼できる Cloudflare
+#   Cron からこの Worker 経由で dispatch を叩いて配信時刻を確定させる。
+#   GitHub 側の schedule cron は保険(フォールバック)として残してある。
+
+name = "ai-digest-trigger"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# 18:30 UTC = 03:30 JST に発火。digest 生成は実測 20〜30 分なので 5:00 JST まで
+# 十分な余裕がある。配信時刻を変えたい場合はこの UTC cron を編集して再デプロイ。
+[triggers]
+crons = ["30 18 * * *"]
+
+# 観測性: 起動ログを Workers Logs(無料枠あり) で見られるようにする。
+[observability]
+enabled = true
