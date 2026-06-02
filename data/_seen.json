@@ -1,8 +1,158 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-02T05:00:00+09:00",
+  "updated_at": "2026-06-03T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
+    "e3f1a2b4c5d60301": {
+      "url_prefix": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60302": {
+      "url_prefix": "https://x.ai/news/composer-2-5",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60303": {
+      "url_prefix": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60304": {
+      "url_prefix": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60305": {
+      "url_prefix": "https://venturebeat.com/infrastructure/microsoft-debuts-surface-rtx-spark-dev-box",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60306": {
+      "url_prefix": "https://github.com/chopratejas/headroom",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60307": {
+      "url_prefix": "https://huggingface.co/blog/Hcompany/holo31",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60308": {
+      "url_prefix": "https://venturebeat.com/technology/microsoft-takes-agent-365-out-of-preview",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60309": {
+      "url_prefix": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 2
+    },
+    "e3f1a2b4c5d60310": {
+      "url_prefix": "https://huggingface.co/papers/2605.30561",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60311": {
+      "url_prefix": "https://www.latent.space/p/github",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60312": {
+      "url_prefix": "https://huggingface.co/papers/2605.23904",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60313": {
+      "url_prefix": "https://huggingface.co/papers/2605.31264",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60314": {
+      "url_prefix": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 2
+    },
+    "e3f1a2b4c5d60315": {
+      "url_prefix": "https://stratechery.com/2026/the-google-capital-company/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60316": {
+      "url_prefix": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60317": {
+      "url_prefix": "https://fly.io/blog/youre-all-nuts/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60318": {
+      "url_prefix": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing",
+      "first_seen_at": "2026-06-02",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 2
+    },
+    "e3f1a2b4c5d60319": {
+      "url_prefix": "https://techblog.zozo.com/entry/cs-inquiry-ai-automation",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60320": {
+      "url_prefix": "https://blog.cloudnative.co.jp/articles/anthropic-zero-trust-for-ai-agents/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60321": {
+      "url_prefix": "https://ascii.jp/elem/000/004/406/4406627/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60322": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2606/02/2000000047/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60323": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2606/02/2000000045/",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60324": {
+      "url_prefix": "https://www.qbitai.com/2026/06/427729.html",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60325": {
+      "url_prefix": "https://www.qbitai.com/2026/06/427810.html",
+      "first_seen_at": "2026-06-03",
+      "last_seen_at": "2026-06-03",
+      "last_seen_count": 1
+    },
     "d7e3f4a5b6c70001": {
       "url_prefix": "https://huggingface.co/papers/2605.14386",
       "first_seen_at": "2026-05-17",

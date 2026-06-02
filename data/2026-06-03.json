@@ -24,12 +24,36 @@
     "grounding_flags": 1
   },
   "top_picks": [
-    { "id": "rp_latent_space_github", "rank": 1, "reason": "GitHub COO が語るエージェント時代のインフラ実態（コミット14倍増）、Latent Space最高品質の実務解説、importance:5/depth:5/practicality:5/freshness:5=20点" },
-    { "id": "jp_zozo_claude_code", "rank": 2, "reason": "国内企業Claude Code実業務適用の先進事例、平均70%削減という具体的成果、はてブ231件・japan枠保証" },
-    { "id": "ag_holo31", "rank": 3, "reason": "モバイル自動化79.3%・コンシューマGPUローカル対応・4サイズ展開、コンピュータ操作エージェントの実用化を示す高品質リリース" },
-    { "id": "rp_colleague_skill", "rank": 4, "reason": "215スキル・165コントリビューター・累計10万スターのエージェントスキルエコシステム誕生、academic+1で高スコア" },
-    { "id": "cn_tsinghua_unilab", "rank": 5, "reason": "ロボット訓練3分・10倍高速化・Mac対応のOSS、china枠importance:4条件クリア、物理AIの民主化を象徴" },
-    { "id": "ta_codex_roles", "rank": 6, "reason": "OpenAI Codexが開発者ツールから全職種プラットフォームへ進化、6職種プラグイン+Sites、importance:4/practicality:5" }
+    {
+      "id": "rp_latent_space_github",
+      "rank": 1,
+      "reason": "GitHub COO が語るエージェント時代のインフラ実態（コミット14倍増）、Latent Space最高品質の実務解説、importance:5/depth:5/practicality:5/freshness:5=20点"
+    },
+    {
+      "id": "jp_zozo_claude_code",
+      "rank": 2,
+      "reason": "国内企業Claude Code実業務適用の先進事例、平均70%削減という具体的成果、はてブ231件・japan枠保証"
+    },
+    {
+      "id": "ag_holo31",
+      "rank": 3,
+      "reason": "モバイル自動化79.3%・コンシューマGPUローカル対応・4サイズ展開、コンピュータ操作エージェントの実用化を示す高品質リリース"
+    },
+    {
+      "id": "rp_colleague_skill",
+      "rank": 4,
+      "reason": "215スキル・165コントリビューター・累計10万スターのエージェントスキルエコシステム誕生、academic+1で高スコア"
+    },
+    {
+      "id": "cn_tsinghua_unilab",
+      "rank": 5,
+      "reason": "ロボット訓練3分・10倍高速化・Mac対応のOSS、china枠importance:4条件クリア、物理AIの民主化を象徴"
+    },
+    {
+      "id": "ta_codex_roles",
+      "rank": 6,
+      "reason": "OpenAI Codexが開発者ツールから全職種プラットフォームへ進化、6職種プラグイン+Sites、importance:4/practicality:5"
+    }
   ],
   "categories": [
     {
@@ -55,23 +79,55 @@
             "開発者ツール用途に特化した設計で、JetBrains のIDE エコシステムへの統合が想定されている",
             "オープンウェイトとして公開されており、ローカル推論や企業内デプロイに活用可能"
           ],
-          "scores": { "importance": 3, "depth": 4, "practicality": 4, "freshness": 5, "total": 16, "source_type_bias": 0 },
-          "tags": ["MoE", "JetBrains", "code-model", "open-weights"],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 16,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "MoE",
+            "JetBrains",
+            "code-model",
+            "open-weights"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "JetBrains Mellum2 の概要カード。モデルサイズ12B・MoEアーキテクチャ・開発者ツール特化・HuggingFace公開という4つの特徴と、MoEによる推論コスト削減の意義を示す。",
             "data": {
               "headline": "JetBrains Mellum2：12B MoE の開発者特化モデル公開",
               "tldr": "JetBrains が 12B パラメータの MoE モデル Mellum2 を HF に公開。密モデルより低コストで競争力ある性能を実現し、IDE 統合を想定した開発者向け設計。",
               "points": [
-                { "icon": "🧩", "label": "モデルサイズ", "value": "12B パラメータ", "tone": "primary" },
-                { "icon": "⚡", "label": "アーキテクチャ", "value": "Mixture-of-Experts", "tone": "success" },
-                { "icon": "🎯", "label": "用途", "value": "開発者ツール特化", "tone": "default" },
-                { "icon": "🔓", "label": "公開形態", "value": "Hugging Face (オープン)", "tone": "info" }
+                {
+                  "icon": "🧩",
+                  "label": "モデルサイズ",
+                  "value": "12B パラメータ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "アーキテクチャ",
+                  "value": "Mixture-of-Experts",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "用途",
+                  "value": "開発者ツール特化",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開形態",
+                  "value": "Hugging Face (オープン)",
+                  "tone": "info"
+                }
               ],
               "context": "JetBrains は IntelliJ IDEA など主要 IDE を開発する企業。Mellum2 は同社の AI コーディング支援サービスへの組み込みが見込まれる。",
               "impact": "コーディング特化の 12B MoE モデルがオープン公開されたことで、ローカル推論による開発者支援ツール構築の選択肢が拡大する。"
-            }
+            },
+            "alt": "JetBrains Mellum2 の概要カード。モデルサイズ12B・MoEアーキテクチャ・開発者ツール特化・HuggingFace公開という4つの特徴と、MoEによる推論コスト削減の意義を示す。"
           }
         },
         {
@@ -91,23 +147,51 @@
             "長時間タスクと複雑な指示への追従を主な強みとし、xAI のエージェントモデルとして位置づけられる",
             "Grok Build プラットフォームで動作し、マルチステップの自律的なワークフロー実行を想定した設計"
           ],
-          "scores": { "importance": 3, "depth": 3, "practicality": 3, "freshness": 5, "total": 14, "source_type_bias": 0 },
-          "tags": ["xAI", "Grok", "agentic-model", "Composer"],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 14,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "xAI",
+            "Grok",
+            "agentic-model",
+            "Composer"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "xAI Composer 2.5 の概要カード。提供プラットフォームはGrok Build、対象ユーザーはSuperGrok/X Premium+、強みは長時間タスクと複雑指示追従、xAIのエージェントモデルとして位置づけ。",
             "data": {
               "headline": "xAI Composer 2.5：Grok Build の主力エージェントモデル",
               "tldr": "xAI が Grok Build に Composer 2.5 をリリース。長時間タスクと複雑な指示追従を強みとし、SuperGrok / X Premium+ ユーザーが /models から即利用可能。",
               "points": [
-                { "label": "プラットフォーム", "value": "Grok Build", "tone": "primary" },
-                { "label": "対象ユーザー", "value": "SuperGrok / X Premium+", "tone": "info" },
-                { "label": "強み", "value": "長時間・複雑タスク", "tone": "success" },
-                { "label": "アクセス", "value": "/models メニューから", "tone": "default" }
+                {
+                  "label": "プラットフォーム",
+                  "value": "Grok Build",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象ユーザー",
+                  "value": "SuperGrok / X Premium+",
+                  "tone": "info"
+                },
+                {
+                  "label": "強み",
+                  "value": "長時間・複雑タスク",
+                  "tone": "success"
+                },
+                {
+                  "label": "アクセス",
+                  "value": "/models メニューから",
+                  "tone": "default"
+                }
               ],
               "context": "xAI が Grok の開発者向けビルド環境 Grok Build にエージェント機能を拡充する取り組みの一環。",
               "impact": "Grok エコシステムでエージェント型ワークフローを構築・利用するユーザーにとって、主力モデルとして活用できる新選択肢が加わった。"
-            }
+            },
+            "alt": "xAI Composer 2.5 の概要カード。提供プラットフォームはGrok Build、対象ユーザーはSuperGrok/X Premium+、強みは長時間タスクと複雑指示追従、xAIのエージェントモデルとして位置づけ。"
           }
         },
         {
@@ -127,22 +211,59 @@
             "早期警戒・感染症対応計画・医療対抗措置開発など生物脅威ライフサイクル全体を対象としたワークフローを支援",
             "承認済み公衆衛生・生物防衛ミッションを持つ組織のみを対象とした、セキュアなトラステッドアクセス方式を採用"
           ],
-          "scores": { "importance": 4, "depth": 3, "practicality": 2, "freshness": 5, "total": 14, "source_type_bias": 0 },
-          "tags": ["OpenAI", "biodefense", "GPT-Rosalind", "public-health", "security"],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 14,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "OpenAI",
+            "biodefense",
+            "GPT-Rosalind",
+            "public-health",
+            "security"
+          ],
           "figure": {
             "type": "timeline",
-            "alt": "Rosalind Biodefense プログラムのタイムライン。生物脅威のライフサイクルに沿って、早期警戒システム→感染症対応計画→医療対抗措置開発という3ステージをGPT-Rosalindが支援する構造を示す。",
             "data": {
               "headline": "GPT-Rosalind：生物脅威ライフサイクル全体を支援",
               "events": [
-                { "when": "Stage 1", "label": "早期警戒システム", "description": "感染症の早期シグナルを検知し、アウトブレーク前の警戒情報を生成", "status": "now", "tone": "warning" },
-                { "when": "Stage 2", "label": "感染症対応計画", "description": "アウトブレーク発生時の対応プロトコル作成と意思決定支援", "status": "now", "tone": "primary" },
-                { "when": "Stage 3", "label": "医療対抗措置開発", "description": "ワクチン・治療薬・診断ツールの開発加速を支援", "status": "now", "tone": "success" },
-                { "when": "対象", "label": "信頼されたパートナー限定", "description": "米政府・同盟国の承認済みパブリックヘルス・バイオディフェンス組織のみ", "status": "now", "tone": "info" }
+                {
+                  "when": "Stage 1",
+                  "label": "早期警戒システム",
+                  "description": "感染症の早期シグナルを検知し、アウトブレーク前の警戒情報を生成",
+                  "status": "now",
+                  "tone": "warning"
+                },
+                {
+                  "when": "Stage 2",
+                  "label": "感染症対応計画",
+                  "description": "アウトブレーク発生時の対応プロトコル作成と意思決定支援",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Stage 3",
+                  "label": "医療対抗措置開発",
+                  "description": "ワクチン・治療薬・診断ツールの開発加速を支援",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "対象",
+                  "label": "信頼されたパートナー限定",
+                  "description": "米政府・同盟国の承認済みパブリックヘルス・バイオディフェンス組織のみ",
+                  "status": "now",
+                  "tone": "info"
+                }
               ],
               "narrative": "OpenAI は高度な AI 能力を社会的安全保障に活用する取り組みとして Rosalind Biodefense を発表。生物脅威の全ライフサイクルをカバーする設計が特徴。",
               "impact": "AIが生物防衛・パンデミック備えの専門ツールとして政府レベルで採用される動きが加速しており、安全保障と AI の融合が一段と深まる。"
-            }
+            },
+            "alt": "Rosalind Biodefense プログラムのタイムライン。生物脅威のライフサイクルに沿って、早期警戒システム→感染症対応計画→医療対抗措置開発という3ステージをGPT-Rosalindが支援する構造を示す。"
           }
         }
       ]
@@ -170,25 +291,62 @@
             "Codex がコーディング専用ツールから全職種対応の生産性プラットフォームへと大幅に拡張",
             "企業向け AI ツール市場での Claude Code・Microsoft Copilot との直接競合が一段と鮮明になった"
           ],
-          "scores": { "importance": 4, "depth": 3, "practicality": 5, "freshness": 5, "total": 17, "source_type_bias": 0 },
-          "tags": ["OpenAI", "Codex", "enterprise", "plugins", "productivity"],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "OpenAI",
+            "Codex",
+            "enterprise",
+            "plugins",
+            "productivity"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI Codex の6職種向けプラグインと新機能Sitesの概要カード。対象職種はデータ分析・クリエイティブ制作・営業・デザイン・エクイティ投資・投資銀行の6つ。Sitesは社内URL共有型Webアプリ作成機能。",
             "data": {
               "headline": "Codex が 6 職種プラグイン + Sites で全職種プラットフォームへ",
               "tldr": "OpenAI が Codex に 6 職種向けプラグインと Sites（Web サイト作成・URL 共有）を追加。コーディングツールから企業全職種の生産性基盤への拡張を加速。",
               "points": [
-                { "label": "データ分析", "value": "Analytics プラグイン", "tone": "primary" },
-                { "label": "クリエイティブ", "value": "制作ワークフロー統合", "tone": "primary" },
-                { "label": "営業・設計", "value": "Sales / Design プラグイン", "tone": "primary" },
-                { "label": "金融", "value": "エクイティ投資・投資銀行", "tone": "primary" },
-                { "label": "新機能", "value": "Sites（Web アプリ作成）", "tone": "success" },
-                { "label": "共有方法", "value": "URL でワークスペース共有", "tone": "info" }
+                {
+                  "label": "データ分析",
+                  "value": "Analytics プラグイン",
+                  "tone": "primary"
+                },
+                {
+                  "label": "クリエイティブ",
+                  "value": "制作ワークフロー統合",
+                  "tone": "primary"
+                },
+                {
+                  "label": "営業・設計",
+                  "value": "Sales / Design プラグイン",
+                  "tone": "primary"
+                },
+                {
+                  "label": "金融",
+                  "value": "エクイティ投資・投資銀行",
+                  "tone": "primary"
+                },
+                {
+                  "label": "新機能",
+                  "value": "Sites（Web アプリ作成）",
+                  "tone": "success"
+                },
+                {
+                  "label": "共有方法",
+                  "value": "URL でワークスペース共有",
+                  "tone": "info"
+                }
               ],
               "context": "Codex はこれまでソフトウェア開発者向けの AI コーディング支援ツールとして展開されてきたが、今回の拡張で対象を非エンジニア職種にも広げた。",
               "impact": "OpenAI が企業の全職種を Codex エコシステムに取り込む戦略を明確化。Claude Code や Microsoft Copilot との競争が企業 AI ツール市場全体に拡大する。"
-            }
+            },
+            "alt": "OpenAI Codex の6職種向けプラグインと新機能Sitesの概要カード。対象職種はデータ分析・クリエイティブ制作・営業・デザイン・エクイティ投資・投資銀行の6つ。Sitesは社内URL共有型Webアプリ作成機能。"
           },
           "x_post": "OpenAI が Codex にデータ分析・クリエイティブ制作・営業・デザイン・エクイティ投資・投資銀行の 6 職種向けプラグインを追加した。チームがワークスペース内で Web サイトを作成・URL 共有できる「Sites」プレビューも公開された。Codex がコーディングツールを超えた全職種プラットフォームへと進化しつつある。\n\nhttps://openai.com/index/codex-for-every-role-tool-workflow/"
         },
@@ -209,24 +367,73 @@
             "クラウド API 依存なしに大規模 LLM を開発・テストできる初の量産製品として Build 2026 で発表",
             "Microsoft Foundry Local の GA（Windows・macOS・Linux 対応）と連動し、オンデバイス推論エコシステムを整備"
           ],
-          "scores": { "importance": 3, "depth": 4, "practicality": 5, "freshness": 5, "total": 17, "source_type_bias": -1 },
-          "tags": ["Microsoft", "NVIDIA", "local-inference", "hardware", "developer-tools"],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": -1
+          },
+          "tags": [
+            "Microsoft",
+            "NVIDIA",
+            "local-inference",
+            "hardware",
+            "developer-tools"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "クラウドLLM実行（従来）とSurface RTX Spark Dev Box（ローカル実行）の比較。メモリは従来クラウドGPU帯域依存に対し128GB統合メモリ、モデルサイズ上限は従来API制限に対し120B+パラメータ、コスト構造は従来従量課金に対してデバイス所有固定費、レイテンシは従来ネットワーク依存に対してオンデバイス低遅延。",
             "data": {
               "headline": "RTX Spark Dev Box：クラウド依存を断ち切るローカル LLM 開発環境",
-              "before": { "label": "クラウド LLM API" },
-              "after": { "label": "RTX Spark Dev Box" },
+              "before": {
+                "label": "クラウド LLM API"
+              },
+              "after": {
+                "label": "RTX Spark Dev Box"
+              },
               "metrics": [
-                { "label": "メモリ", "before": "クラウド帯域依存", "after": "128GB 統合メモリ", "before_pct": 40, "after_pct": 100, "delta": "+大幅増", "delta_tone": "success" },
-                { "label": "最大モデル規模", "before": "API 制限あり", "after": "120B+ パラメータ", "before_pct": 50, "after_pct": 90, "delta": "制限解放", "delta_tone": "success" },
-                { "label": "コスト構造", "before": "従量課金", "after": "デバイス固定費", "before_pct": 70, "after_pct": 100, "delta": "固定化", "delta_tone": "info" },
-                { "label": "データプライバシー", "before": "クラウド送信", "after": "完全ローカル", "before_pct": 30, "after_pct": 100, "delta": "+高", "delta_tone": "success" }
+                {
+                  "label": "メモリ",
+                  "before": "クラウド帯域依存",
+                  "after": "128GB 統合メモリ",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "delta": "+大幅増",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "最大モデル規模",
+                  "before": "API 制限あり",
+                  "after": "120B+ パラメータ",
+                  "before_pct": 50,
+                  "after_pct": 90,
+                  "delta": "制限解放",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コスト構造",
+                  "before": "従量課金",
+                  "after": "デバイス固定費",
+                  "before_pct": 70,
+                  "after_pct": 100,
+                  "delta": "固定化",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "データプライバシー",
+                  "before": "クラウド送信",
+                  "after": "完全ローカル",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "+高",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "エンタープライズ AI 開発において、推論コストとデータプライバシーへの懸念からローカル LLM 実行への需要が高まっていた。RTX Spark Dev Box はそれに対応する最初の大規模量産製品。",
               "impact": "120B 超のモデルをオンデバイス実行できる環境が開発者に広まることで、プライバシー重視の AI 開発フローとオフライン推論のユースケースが拡大する。"
-            }
+            },
+            "alt": "クラウドLLM実行（従来）とSurface RTX Spark Dev Box（ローカル実行）の比較。メモリは従来クラウドGPU帯域依存に対し128GB統合メモリ、モデルサイズ上限は従来API制限に対し120B+パラメータ、コスト構造は従来従量課金に対してデバイス所有固定費、レイテンシは従来ネットワーク依存に対してオンデバイス低遅延。"
           }
         },
         {
@@ -240,31 +447,74 @@
           "category": "tools_apps",
           "published_at": "2026-06-02",
           "lang": "en",
-          "reaction_signal": { "kind": "github_stars", "stars_today": 1266, "total_stars": 6209 },
+          "reaction_signal": {
+            "kind": "github_stars",
+            "stars_today": 1266,
+            "total_stars": 6209
+          },
           "summary_ja": "GitHub Trending で急上昇した「headroom」は、ツール出力・ログファイル・RAG チャンクをトークン数で 60-95% 圧縮してから LLM に渡すライブラリである。回答品質を維持しながらコンテキストウィンドウの無駄遣いを削減し、推論コストを大幅に下げることを目標としている。1 日で 1266 スターを獲得し、累計 6200 スターを超えた。エージェントシステムや RAG パイプラインにおけるトークン爆発問題への実践的な解法として注目されている。",
           "key_points_ja": [
             "ツール出力・ログ・ファイル・RAG チャンクをトークン数 60-95% 圧縮して LLM に渡す OSS ライブラリ",
             "1 日で 1266 スター・累計 6209 スターを獲得し GitHub Trending 上位に急浮上",
             "回答品質を維持しながらコンテキスト利用を最適化し、エージェント・RAG パイプラインの推論コスト削減に直結"
           ],
-          "scores": { "importance": 3, "depth": 4, "practicality": 5, "freshness": 5, "total": 17, "source_type_bias": 0 },
-          "reaction_signal": { "kind": "github_stars", "stars_today": 1266, "total_stars": 6209 },
-          "tags": ["RAG", "context-compression", "token-optimization", "agent", "OSS"],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "RAG",
+            "context-compression",
+            "token-optimization",
+            "agent",
+            "OSS"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "headroomによるコンテキスト圧縮効果の横棒グラフ。ツール出力の圧縮率が最大95%、ログファイルが最大90%、RAGチャンクが最大60%、全体の推論コスト削減効果を示す。GitHubスター数は1日で1266増加し累計6209。",
             "data": {
               "headline": "headroom：コンテキスト圧縮で推論コストを最大 95% 削減",
-              "scale": { "max_label": "圧縮率 100%", "unit": "%" },
+              "scale": {
+                "max_label": "圧縮率 100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "ツール出力", "value": "最大 95%", "pct": 95, "tone": "success", "note": "構造化データ中心" },
-                { "label": "ログファイル", "value": "最大 90%", "pct": 90, "tone": "success", "note": "重複・冗長行削除" },
-                { "label": "RAG チャンク", "value": "最大 60%", "pct": 60, "tone": "primary", "note": "意味保持圧縮" },
-                { "label": "GitHub Stars/日", "value": "1266", "pct": 80, "tone": "info", "note": "累計 6209 stars" }
+                {
+                  "label": "ツール出力",
+                  "value": "最大 95%",
+                  "pct": 95,
+                  "tone": "success",
+                  "note": "構造化データ中心"
+                },
+                {
+                  "label": "ログファイル",
+                  "value": "最大 90%",
+                  "pct": 90,
+                  "tone": "success",
+                  "note": "重複・冗長行削除"
+                },
+                {
+                  "label": "RAG チャンク",
+                  "value": "最大 60%",
+                  "pct": 60,
+                  "tone": "primary",
+                  "note": "意味保持圧縮"
+                },
+                {
+                  "label": "GitHub Stars/日",
+                  "value": "1266",
+                  "pct": 80,
+                  "tone": "info",
+                  "note": "累計 6209 stars"
+                }
               ],
               "narrative": "エージェントシステムでの大量ツール呼び出しや RAG パイプラインでコンテキストが膨張する問題を、品質を保ちながら圧縮で解決するアプローチ。",
               "impact": "推論コスト削減と高速化が同時に実現するため、エージェント・RAG 開発者にとって即戦力の実装ツールとなる。"
-            }
+            },
+            "alt": "headroomによるコンテキスト圧縮効果の横棒グラフ。ツール出力の圧縮率が最大95%、ログファイルが最大90%、RAGチャンクが最大60%、全体の推論コスト削減効果を示す。GitHubスター数は1日で1266増加し累計6209。"
           }
         }
       ]
@@ -292,23 +542,63 @@
             "デスクトップ・モバイル・Web の 3 環境に対応した統合コンピュータ操作モデルファミリー",
             "複数エージェントフレームワークに対応し、既存の開発スタックへの組み込みが容易"
           ],
-          "scores": { "importance": 4, "depth": 5, "practicality": 4, "freshness": 5, "total": 18, "source_type_bias": 0 },
-          "tags": ["computer-use", "agent", "local-inference", "multiplatform", "Holo"],
+          "scores": {
+            "importance": 4,
+            "depth": 5,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 18,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "computer-use",
+            "agent",
+            "local-inference",
+            "multiplatform",
+            "Holo"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "Holo3.1の性能指標横棒グラフ。モバイル自動化精度79.3%、クロスフレームワーク互換性向上25%以上、提供モデルサイズは0.8B・4B・9B・35B-A3Bの4種、量子化形式はFP8・Q4 GGUF・NVFP4の3種に対応。",
             "data": {
               "headline": "Holo3.1：モバイル 79.3%・4 サイズ展開のコンピュータ操作モデル",
-              "scale": { "max_label": "100%", "unit": "%" },
+              "scale": {
+                "max_label": "100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "モバイル自動化精度", "value": "79.3%", "pct": 79, "tone": "success", "note": "モバイル自動化ベンチマーク" },
-                { "label": "クロスフレームワーク改善", "value": "+25%以上", "pct": 25, "tone": "primary", "note": "前世代比" },
-                { "label": "最小モデルサイズ", "value": "0.8B", "pct": 8, "tone": "info", "note": "コンシューマ向け" },
-                { "label": "旗艦モデルサイズ", "value": "35B-A3B", "pct": 70, "tone": "default", "note": "MoE 旗艦" }
+                {
+                  "label": "モバイル自動化精度",
+                  "value": "79.3%",
+                  "pct": 79,
+                  "tone": "success",
+                  "note": "モバイル自動化ベンチマーク"
+                },
+                {
+                  "label": "クロスフレームワーク改善",
+                  "value": "+25%以上",
+                  "pct": 25,
+                  "tone": "primary",
+                  "note": "前世代比"
+                },
+                {
+                  "label": "最小モデルサイズ",
+                  "value": "0.8B",
+                  "pct": 8,
+                  "tone": "info",
+                  "note": "コンシューマ向け"
+                },
+                {
+                  "label": "旗艦モデルサイズ",
+                  "value": "35B-A3B",
+                  "pct": 70,
+                  "tone": "default",
+                  "note": "MoE 旗艦"
+                }
               ],
               "narrative": "H Company の Holo3.1 は Computer Use エージェントのコモディティ化を加速。小型モデルでもローカル動作し、実用精度 79.3% を達成したことで個人開発者の手が届くレベルに。",
               "impact": "モバイル・デスクトップ・Web を統合して自動化するエージェントがローカルで動く時代が到来。RPA の代替候補として実業務への適用が一気に現実的になる。"
-            }
+            },
+            "alt": "Holo3.1の性能指標横棒グラフ。モバイル自動化精度79.3%、クロスフレームワーク互換性向上25%以上、提供モデルサイズは0.8B・4B・9B・35B-A3Bの4種、量子化形式はFP8・Q4 GGUF・NVFP4の3種に対応。"
           },
           "x_post": "H Company が Holo3.1 を公開した。デスクトップ・モバイル・Web 対応のコンピュータ操作モデルで、0.8B から 35B-A3B まで 4 サイズを展開。モバイル自動化タスクで 79.3% の精度を達成し、クロスフレームワーク互換性は前世代比 25% 以上向上。FP8・Q4 GGUF でコンシューマ GPU ローカル実行も可能である。\n\nhttps://huggingface.co/blog/Hcompany/holo31"
         },
@@ -329,22 +619,59 @@
             "従業員が非公式 AI ツールを利用する「シャドー AI」問題への対処として、公式エージェント基盤を全社展開",
             "IT 管理者がエージェントのアクションを監査・制限できるガバナンスコントロールを同時提供"
           ],
-          "scores": { "importance": 3, "depth": 3, "practicality": 4, "freshness": 5, "total": 15, "source_type_bias": -1 },
-          "tags": ["Microsoft", "Agent365", "enterprise", "governance", "shadow-AI"],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 15,
+            "source_type_bias": -1
+          },
+          "tags": [
+            "Microsoft",
+            "Agent365",
+            "enterprise",
+            "governance",
+            "shadow-AI"
+          ],
           "figure": {
             "type": "timeline",
-            "alt": "Microsoft Agent 365のリリースタイムライン。Previewフェーズ→Build 2026でGA→Word・Excel・PPTにエージェントモード既定適用→IT管理者向けガバナンスコントロール提供という段階的展開を示す。シャドーAI対策という背景コンテキストも含む。",
             "data": {
               "headline": "Agent 365：Preview から GA へ、全社エージェント基盤が本番稼働",
               "events": [
-                { "when": "Before Build", "label": "Preview 段階", "description": "限定ユーザー向けの先行アクセス", "status": "past", "tone": "default" },
-                { "when": "Build 2026", "label": "GA 発表", "description": "Agent 365 が一般提供開始。全 Microsoft 365 ユーザーに展開", "status": "now", "tone": "success" },
-                { "when": "適用後", "label": "エージェントモード既定化", "description": "Word・Excel・PowerPoint でエージェントモードがデフォルト動作", "status": "now", "tone": "primary" },
-                { "when": "同時提供", "label": "ガバナンスコントロール", "description": "IT 管理者がエージェントのアクションを監査・制限可能", "status": "now", "tone": "info" }
+                {
+                  "when": "Before Build",
+                  "label": "Preview 段階",
+                  "description": "限定ユーザー向けの先行アクセス",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Build 2026",
+                  "label": "GA 発表",
+                  "description": "Agent 365 が一般提供開始。全 Microsoft 365 ユーザーに展開",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "適用後",
+                  "label": "エージェントモード既定化",
+                  "description": "Word・Excel・PowerPoint でエージェントモードがデフォルト動作",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "同時提供",
+                  "label": "ガバナンスコントロール",
+                  "description": "IT 管理者がエージェントのアクションを監査・制限可能",
+                  "status": "now",
+                  "tone": "info"
+                }
               ],
               "narrative": "社員が非公式 AI ツール（シャドー AI）を使う問題に対し、Microsoft は公式エージェント基盤を全社に普及させることで対応。",
               "impact": "Microsoft 365 ユーザーが日常業務でエージェントを使う環境が整い、企業のAI自動化が一段と加速する。ガバナンス機能はコンプライアンス担当者の懸念を緩和する。"
-            }
+            },
+            "alt": "Microsoft Agent 365のリリースタイムライン。Previewフェーズ→Build 2026でGA→Word・Excel・PPTにエージェントモード既定適用→IT管理者向けガバナンスコントロール提供という段階的展開を示す。シャドーAI対策という背景コンテキストも含む。"
           }
         }
       ]
@@ -371,23 +698,68 @@
             "Cosmos 3 Nano（16B）と Cosmos 3 Super（64B）の 2 サイズを提供、HF Diffusers 統合・後学習スクリプト・合成データセットも公開",
             "ロボティクス・自動運転向けに物理的に妥当な映像生成・物理的性質推論・未来シーケンス予測をサポート"
           ],
-          "scores": { "importance": 4, "depth": 5, "practicality": 3, "freshness": 4, "total": 16, "source_type_bias": 0, "seen_penalty": -1 },
-          "tags": ["NVIDIA", "Cosmos", "physical-AI", "omni-model", "robotics", "MoT"],
+          "scores": {
+            "importance": 4,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 16,
+            "source_type_bias": 0,
+            "seen_penalty": -1
+          },
+          "tags": [
+            "NVIDIA",
+            "Cosmos",
+            "physical-AI",
+            "omni-model",
+            "robotics",
+            "MoT"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "Cosmos 3 Nano（16B）とSuper（64B）の比較。旗艦SuperはNano比で大規模合成データ生成に特化し、Nanoは効率推論向け。両サイズとも世界生成・物理推論・行動生成の3機能を統合したMoTアーキテクチャを採用し、HF Diffusers・後学習スクリプト・合成データセットが同梱。",
             "data": {
               "headline": "Cosmos 3：Nano 16B vs Super 64B の物理 AI オムニモデル",
-              "before": { "label": "Cosmos 3 Nano", "sublabel": "16B・効率推論向け" },
-              "after": { "label": "Cosmos 3 Super", "sublabel": "64B・大規模合成データ生成向け" },
+              "before": {
+                "label": "Cosmos 3 Nano",
+                "sublabel": "16B・効率推論向け"
+              },
+              "after": {
+                "label": "Cosmos 3 Super",
+                "sublabel": "64B・大規模合成データ生成向け"
+              },
               "metrics": [
-                { "label": "パラメータ数", "before": "16B", "after": "64B", "before_pct": 25, "after_pct": 100, "delta": "4x", "delta_tone": "info" },
-                { "label": "推論効率", "before": "高効率", "after": "標準", "before_pct": 90, "after_pct": 60, "delta": "Nano優位", "delta_tone": "default" },
-                { "label": "合成データ生成", "before": "基本", "after": "大規模", "before_pct": 40, "after_pct": 100, "delta": "Super優位", "delta_tone": "success" }
+                {
+                  "label": "パラメータ数",
+                  "before": "16B",
+                  "after": "64B",
+                  "before_pct": 25,
+                  "after_pct": 100,
+                  "delta": "4x",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "推論効率",
+                  "before": "高効率",
+                  "after": "標準",
+                  "before_pct": 90,
+                  "after_pct": 60,
+                  "delta": "Nano優位",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "合成データ生成",
+                  "before": "基本",
+                  "after": "大規模",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "delta": "Super優位",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "NVIDIA が世界生成・物理推論・行動生成を統合した物理 AI 向け初のオープンオムニモデルを公開。MoT アーキテクチャで 3 機能を単一モデルに統合。",
               "impact": "ロボティクス・自動運転 AI の研究開発コストが大幅低下。合成データ生成から後学習まで一貫したオープンエコシステムが整い、物理 AI 分野の民主化が加速する。"
-            }
+            },
+            "alt": "Cosmos 3 Nano（16B）とSuper（64B）の比較。旗艦SuperはNano比で大規模合成データ生成に特化し、Nanoは効率推論向け。両サイズとも世界生成・物理推論・行動生成の3機能を統合したMoTアーキテクチャを採用し、HF Diffusers・後学習スクリプト・合成データセットが同梱。"
           }
         },
         {
@@ -401,30 +773,77 @@
           "category": "multimodal",
           "published_at": "2026-05-28",
           "lang": "en",
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 17 },
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 17
+          },
           "summary_ja": "Meta の研究チームは、標準的な VLM が 3 つの変更だけで多様な 3D タスクに対応できることを示した論文「VLM3」を公開した。焦点距離の統一・テキストベースのピクセル参照・データ混合とスケーリングの 3 点のみを変え、アーキテクチャの変更や複雑な損失関数を用いずに深度推定・ピクセル対応・カメラ姿勢推定・物体の 3D 理解を実現した。VLM の深度推定精度を 0.84 から 0.9 に向上させつつ、専門視覚モデルと同等のパフォーマンスを達成した。3D 理解には専門アーキテクチャが必要という従来の通説を覆す成果だ。",
           "key_points_ja": [
             "焦点距離統一・テキストベースピクセル参照・データ混合/スケーリングの 3 変更のみで VLM が 3D タスクを習得",
             "深度推定精度を 0.84 から 0.9 に改善し、専門視覚モデルと同等パフォーマンスを達成",
             "アーキテクチャ変更・複雑な損失関数なしで深度推定・ピクセル対応・カメラ姿勢推定・物体 3D 理解を実現"
           ],
-          "scores": { "importance": 5, "depth": 5, "practicality": 3, "freshness": 2, "total": 15, "source_type_bias": 1 },
-          "tags": ["Meta", "VLM", "3D-vision", "depth-estimation", "camera-pose", "research"],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 2,
+            "total": 15,
+            "source_type_bias": 1
+          },
+          "tags": [
+            "Meta",
+            "VLM",
+            "3D-vision",
+            "depth-estimation",
+            "camera-pose",
+            "research"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "標準VLMとVLM3の深度推定精度比較。標準VLMが精度0.84に対しVLM3は0.9を達成。変更点は焦点距離統一・テキストベースピクセル参照・データ混合スケーリングの3点のみで、アーキテクチャ変更なし。深度推定・ピクセル対応・カメラ姿勢推定・物体3D理解を網羅。",
             "data": {
               "headline": "VLM3：3 変更だけで深度推定精度を 0.84 → 0.9 に改善",
-              "before": { "label": "標準 VLM", "sublabel": "既存アーキテクチャ" },
-              "after": { "label": "VLM3", "sublabel": "3 変更のみ追加" },
+              "before": {
+                "label": "標準 VLM",
+                "sublabel": "既存アーキテクチャ"
+              },
+              "after": {
+                "label": "VLM3",
+                "sublabel": "3 変更のみ追加"
+              },
               "metrics": [
-                { "label": "深度推定精度", "before": "0.84", "after": "0.90", "before_pct": 84, "after_pct": 90, "delta": "+0.06", "delta_tone": "success" },
-                { "label": "3D タスク対応数", "before": "0", "after": "4", "before_pct": 0, "after_pct": 80, "delta": "+4 タスク", "delta_tone": "success" },
-                { "label": "アーキテクチャ変更", "before": "なし（不可）", "after": "なし（不要）", "before_pct": 0, "after_pct": 100, "delta": "変更ゼロ", "delta_tone": "info" }
+                {
+                  "label": "深度推定精度",
+                  "before": "0.84",
+                  "after": "0.90",
+                  "before_pct": 84,
+                  "after_pct": 90,
+                  "delta": "+0.06",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "3D タスク対応数",
+                  "before": "0",
+                  "after": "4",
+                  "before_pct": 0,
+                  "after_pct": 80,
+                  "delta": "+4 タスク",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "アーキテクチャ変更",
+                  "before": "なし（不可）",
+                  "after": "なし（不要）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "変更ゼロ",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "3D 理解には専用アーキテクチャが必要という定説を覆し、わずか 3 点の工夫で標準 VLM が 3D タスクをネイティブに学習できることを Meta が実証。",
               "impact": "既存 VLM に少ない変更で 3D 対応が可能になることで、マルチモーダルモデルの 3D 活用コストが劇的に低下し、ロボティクス・AR・空間 AI への応用が加速する。"
-            }
+            },
+            "alt": "標準VLMとVLM3の深度推定精度比較。標準VLMが精度0.84に対しVLM3は0.9を達成。変更点は焦点距離統一・テキストベースピクセル参照・データ混合スケーリングの3点のみで、アーキテクチャ変更なし。深度推定・ピクセル対応・カメラ姿勢推定・物体3D理解を網羅。"
           }
         }
       ]
@@ -452,23 +871,67 @@
             "エージェントがオープンソースの自律コントリビューターになることで、セキュリティ・コンプライアンスの新たな緊張関係が生じている",
             "エージェントスケールでのインフラ運用における実務的知見と課題を GitHub COO が直接語った貴重な一次情報"
           ],
-          "scores": { "importance": 5, "depth": 5, "practicality": 5, "freshness": 5, "total": 20, "source_type_bias": 1 },
-          "tags": ["GitHub", "agents", "Copilot", "infrastructure", "Latent-Space", "WorkIQ"],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 20,
+            "source_type_bias": 1
+          },
+          "tags": [
+            "GitHub",
+            "agents",
+            "Copilot",
+            "infrastructure",
+            "Latent-Space",
+            "WorkIQ"
+          ],
           "figure": {
             "type": "timeline",
-            "alt": "GitHubにおけるAIコーディング進化のタイムライン。コード補完時代からCopilot登場→フルエージェントワークフロー移行→コミット量14倍増→WorkIQ/FoundryIQによる企業規模オーケストレーション→エージェントが自律OSS貢献者になる未来という段階的発展を示す。",
             "data": {
               "headline": "GitHub のエージェント時代：コミット 14 倍増までの進化",
               "events": [
-                { "when": "〜2024", "label": "コード補完時代", "description": "GitHub Copilot がインラインサジェストを提供。開発者が主体", "status": "past", "tone": "default" },
-                { "when": "2025", "label": "エージェントワークフロー移行", "description": "Copilot がタスク全体を担うエージェントワークフローへと進化開始", "status": "past", "tone": "primary" },
-                { "when": "2026", "label": "コミット量 14 倍増", "description": "AI エージェントが生成するコミットが前年比 14 倍に急増", "status": "now", "tone": "success" },
-                { "when": "現在", "label": "WorkIQ / FoundryIQ 展開", "description": "Microsoft のコンテキストエンジンが企業規模のエージェントオーケストレーションを実現", "status": "now", "tone": "success" },
-                { "when": "近未来", "label": "自律 OSS コントリビューター", "description": "エージェントが Pull Request を送り、OSS プロジェクトに自律的に貢献する段階へ", "status": "upcoming", "tone": "warning" }
+                {
+                  "when": "〜2024",
+                  "label": "コード補完時代",
+                  "description": "GitHub Copilot がインラインサジェストを提供。開発者が主体",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "2025",
+                  "label": "エージェントワークフロー移行",
+                  "description": "Copilot がタスク全体を担うエージェントワークフローへと進化開始",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026",
+                  "label": "コミット量 14 倍増",
+                  "description": "AI エージェントが生成するコミットが前年比 14 倍に急増",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "現在",
+                  "label": "WorkIQ / FoundryIQ 展開",
+                  "description": "Microsoft のコンテキストエンジンが企業規模のエージェントオーケストレーションを実現",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "近未来",
+                  "label": "自律 OSS コントリビューター",
+                  "description": "エージェントが Pull Request を送り、OSS プロジェクトに自律的に貢献する段階へ",
+                  "status": "upcoming",
+                  "tone": "warning"
+                }
               ],
               "narrative": "GitHub COO が Latent Space Podcast で語った、エージェント時代のインフラ実態。コミット急増が示すように、エージェントは既にソフトウェア開発の主役になりつつある。",
               "impact": "エージェントが開発インフラを占有し始めた現実を把握することで、自社の CI/CD・コードレビュー・セキュリティ体制のエージェント対応が急務だと分かる。"
-            }
+            },
+            "alt": "GitHubにおけるAIコーディング進化のタイムライン。コード補完時代からCopilot登場→フルエージェントワークフロー移行→コミット量14倍増→WorkIQ/FoundryIQによる企業規模オーケストレーション→エージェントが自律OSS貢献者になる未来という段階的発展を示す。"
           },
           "x_post": "GitHub COO の Kyle Daigle が Latent Space Podcast に登場し、AI エージェントによる年次コミット量が 14 倍に増加したと明かした。Copilot はコード補完からフルエージェントワークフローへと進化し、WorkIQ・FoundryIQ が企業規模のオーケストレーションを担う。エージェントが自律的な OSS コントリビューターになる未来は、想像より近いと私は考える。\n\nhttps://www.latent.space/p/github"
         },
@@ -483,31 +946,73 @@
           "category": "research_papers",
           "published_at": "2026-05-25",
           "lang": "en",
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 214 },
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 214
+          },
           "summary_ja": "SkillOpt は、LLM のウェイトを固定したまま外部のスキル文書（テキストファイル）を最適化するテキスト空間オプティマイザを提案した論文である。ロールアウトバッチ・ミニバッチリフレクション・制限付き編集の 3 つの仕組みでスキル文書を反復改善し、6 ベンチマーク・7 モデルの全 52 構成で最良または同等の結果を達成した。GPT-5.5 での平均 +23.5pt の向上が最大で、スキルは 300〜2000 トークンとコンパクトであり、モデルファミリーや実行ハーネスをまたいで移植可能だ。",
           "key_points_ja": [
             "LLM のウェイト固定で外部スキル文書を進化させるテキスト空間最適化器を提案——6 ベンチマーク・7 モデルの全 52 構成で最良または同等を達成",
             "GPT-5.5 では平均 +23.5pt のスコア向上を確認、スキル文書は 300〜2000 トークンとコンパクト",
             "習得したスキルはモデルファミリーや実行ハーネスをまたいで移植可能、Claude Code・Codex 等で再利用できる"
           ],
-          "scores": { "importance": 5, "depth": 5, "practicality": 4, "freshness": 1, "total": 15, "source_type_bias": 1 },
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 214 },
-          "tags": ["agent-skills", "skill-optimization", "LLM", "benchmark", "SkillOpt"],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 4,
+            "freshness": 1,
+            "total": 15,
+            "source_type_bias": 1
+          },
+          "tags": [
+            "agent-skills",
+            "skill-optimization",
+            "LLM",
+            "benchmark",
+            "SkillOpt"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "SkillOptの性能向上横棒グラフ。GPT-5.5での平均スコア向上が+23.5ポイント、評価対象は6ベンチマーク・7モデルの全52構成。スキル文書サイズは300〜2000トークン。HuggingFace upvotes 214件。",
             "data": {
               "headline": "SkillOpt：全 52 構成で最良達成、GPT-5.5 で平均 +23.5pt",
-              "scale": { "max_label": "スコア向上 / 規模", "unit": "pt / tokens" },
+              "scale": {
+                "max_label": "スコア向上 / 規模",
+                "unit": "pt / tokens"
+              },
               "bars": [
-                { "label": "GPT-5.5 での平均向上", "value": "+23.5pt", "pct": 94, "tone": "success", "note": "6 ベンチマーク平均" },
-                { "label": "評価構成数", "value": "52 構成", "pct": 100, "tone": "primary", "note": "6 ベンチ × 7 モデル, 全最良" },
-                { "label": "スキル文書サイズ", "value": "300〜2000 tok", "pct": 20, "tone": "info", "note": "コンパクト・移植可能" },
-                { "label": "HF 注目度", "value": "214 upvotes", "pct": 85, "tone": "success", "note": "直近最高クラスの注目" }
+                {
+                  "label": "GPT-5.5 での平均向上",
+                  "value": "+23.5pt",
+                  "pct": 94,
+                  "tone": "success",
+                  "note": "6 ベンチマーク平均"
+                },
+                {
+                  "label": "評価構成数",
+                  "value": "52 構成",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "6 ベンチ × 7 モデル, 全最良"
+                },
+                {
+                  "label": "スキル文書サイズ",
+                  "value": "300〜2000 tok",
+                  "pct": 20,
+                  "tone": "info",
+                  "note": "コンパクト・移植可能"
+                },
+                {
+                  "label": "HF 注目度",
+                  "value": "214 upvotes",
+                  "pct": 85,
+                  "tone": "success",
+                  "note": "直近最高クラスの注目"
+                }
               ],
               "narrative": "モデルのウェイトをいじらずにテキストファイルだけを進化させるアプローチが、全 52 構成で有効性を実証。Claude Code のスキル設計に直接応用可能。",
               "impact": "スキル文書の自動改善が実用化されると、手動でのプロンプト・スキルチューニングが不要になり、AI エージェントの継続的な能力向上が自動化できる。"
-            }
+            },
+            "alt": "SkillOptの性能向上横棒グラフ。GPT-5.5での平均スコア向上が+23.5ポイント、評価対象は6ベンチマーク・7モデルの全52構成。スキル文書サイズは300〜2000トークン。HuggingFace upvotes 214件。"
           }
         },
         {
@@ -521,33 +1026,73 @@
           "category": "research_papers",
           "published_at": "2026-05-28",
           "lang": "en",
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 92 },
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 92
+          },
           "summary_ja": "COLLEAGUE.SKILL は、人間の作業履歴（チャットログ・文書・メール・コードレビュー）を検査可能なエージェントスキルパッケージに自動変換するシステムである。能力トラックと行動トラックの 2 軸でスキルを管理し、バージョン管理・自然言語による修正・ロールバック・Claude Code・Codex・Hermes へのマルチホストインストールをサポートする。公開ギャラリーには 165 コントリビューターから 215 スキルが登録され、累計スター数が 10 万を超えており、エージェントスキルのコミュニティエコシステムが実際に立ち上がっていることを示す。",
           "key_points_ja": [
             "チャットログ・文書・メール・コードレビューなどの作業履歴をエージェントスキルに自動蒸留するシステム",
             "Claude Code・Codex・Hermes へのマルチホストインストールに対応、バージョン管理・自然言語修正・ロールバックをサポート",
             "公開ギャラリーに 165 コントリビューターが 215 スキルを登録、累計スター数が 10 万超に到達しエコシステムが本格始動"
           ],
-          "scores": { "importance": 5, "depth": 5, "practicality": 4, "freshness": 2, "total": 16, "source_type_bias": 1 },
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 92 },
-          "tags": ["agent-skills", "knowledge-distillation", "Claude-Code", "Codex", "Hermes", "skill-gallery"],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 4,
+            "freshness": 2,
+            "total": 16,
+            "source_type_bias": 1
+          },
+          "tags": [
+            "agent-skills",
+            "knowledge-distillation",
+            "Claude-Code",
+            "Codex",
+            "Hermes",
+            "skill-gallery"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "COLLEAGUE.SKILLの概要カード。公開ギャラリーには165コントリビューターから215スキルが登録され累計10万スター超。対応プラットフォームはClaude Code・Codex・Hermes。入力ソースはチャットログ・文書・メール・コードレビュー。能力トラックと行動トラックの2軸管理。",
             "data": {
               "headline": "COLLEAGUE.SKILL：人間の履歴からスキルを自動生成、エコシステム始動",
               "tldr": "チャットログ・文書・コードレビューを自動でエージェントスキルに変換するシステム。Claude Code / Codex / Hermes に対応し、公開ギャラリーが 215 スキル・累計 10 万スターに到達。",
               "points": [
-                { "label": "入力ソース", "value": "チャット・文書・メール・CR", "tone": "default" },
-                { "label": "対応プラットフォーム", "value": "Claude Code / Codex / Hermes", "tone": "primary" },
-                { "label": "登録スキル数", "value": "215 スキル", "tone": "success" },
-                { "label": "コントリビューター", "value": "165 名", "tone": "info" },
-                { "label": "累計スター", "value": "10 万+", "tone": "success" },
-                { "label": "スキル管理", "value": "バージョン管理・ロールバック対応", "tone": "default" }
+                {
+                  "label": "入力ソース",
+                  "value": "チャット・文書・メール・CR",
+                  "tone": "default"
+                },
+                {
+                  "label": "対応プラットフォーム",
+                  "value": "Claude Code / Codex / Hermes",
+                  "tone": "primary"
+                },
+                {
+                  "label": "登録スキル数",
+                  "value": "215 スキル",
+                  "tone": "success"
+                },
+                {
+                  "label": "コントリビューター",
+                  "value": "165 名",
+                  "tone": "info"
+                },
+                {
+                  "label": "累計スター",
+                  "value": "10 万+",
+                  "tone": "success"
+                },
+                {
+                  "label": "スキル管理",
+                  "value": "バージョン管理・ロールバック対応",
+                  "tone": "default"
+                }
               ],
               "context": "SkillOpt（ウェイト固定スキル最適化）と合わせて、エージェントスキルの自動生成・改善エコシステムが急速に整備されつつある。",
               "impact": "作業履歴からスキルを自動生成できるようになれば、個人・チームの知見がエージェントに蓄積・移植される形で組織の AI 化が加速する。"
-            }
+            },
+            "alt": "COLLEAGUE.SKILLの概要カード。公開ギャラリーには165コントリビューターから215スキルが登録され累計10万スター超。対応プラットフォームはClaude Code・Codex・Hermes。入力ソースはチャットログ・文書・メール・コードレビュー。能力トラックと行動トラックの2軸管理。"
           },
           "x_post": "COLLEAGUE.SKILL が公開された。チャットログ・文書・メール・コードレビューをポータブルなエージェントスキルに自動変換するシステムで、Claude Code・Codex・Hermes へのマルチホストインストールに対応。公開ギャラリーには 165 コントリビューターから 215 スキルが登録され、累計スター数が 10 万を超えた。\n\nhttps://huggingface.co/papers/2605.31264"
         }
@@ -575,23 +1120,54 @@
             "TechCrunch 報道によれば評価額 $9,650 億で OpenAI を上回り非上場 AI 企業最大規模に",
             "AI 純粋プレイ企業として初の大型 IPO となる可能性があり、業界・市場への影響は大きい"
           ],
-          "scores": { "importance": 5, "depth": 3, "practicality": 2, "freshness": 4, "total": 14, "source_type_bias": 0, "seen_penalty": -1 },
-          "tags": ["Anthropic", "IPO", "S-1", "SEC", "valuation"],
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 14,
+            "source_type_bias": 0,
+            "seen_penalty": -1
+          },
+          "tags": [
+            "Anthropic",
+            "IPO",
+            "S-1",
+            "SEC",
+            "valuation"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic IPO S-1提出の概要カード。評価額$9,650億でOpenAIの評価額を超える非上場AI企業最大。SEC機密提出済みで株式数・価格は未定。AI純粋プレイ企業初の大型IPO候補。",
             "data": {
               "headline": "Anthropic、SEC に S-1 機密提出——評価額 $9,650 億で非上場 AI 最大規模",
               "tldr": "Anthropic が IPO に向け SEC に機密 S-1 を提出。TechCrunch 報道によれば評価額 $9,650 億で OpenAI を超え最大規模の非上場 AI 企業に。株式数・価格は未設定、市場環境待ち。",
               "points": [
-                { "label": "提出種別", "value": "機密ドラフト S-1", "tone": "primary" },
-                { "label": "提出先", "value": "米 SEC", "tone": "default" },
-                { "label": "評価額（報道）", "value": "$9,650 億", "tone": "success", "note": "TechCrunch報道による" },
-                { "label": "株式数・価格", "value": "未定（市場条件待ち）", "tone": "warning" }
+                {
+                  "label": "提出種別",
+                  "value": "機密ドラフト S-1",
+                  "tone": "primary"
+                },
+                {
+                  "label": "提出先",
+                  "value": "米 SEC",
+                  "tone": "default"
+                },
+                {
+                  "label": "評価額（報道）",
+                  "value": "$9,650 億",
+                  "tone": "success",
+                  "note": "TechCrunch報道による"
+                },
+                {
+                  "label": "株式数・価格",
+                  "value": "未定（市場条件待ち）",
+                  "tone": "warning"
+                }
               ],
               "context": "$650 億の資金調達完了後に証券登録手続きに移行。AI 企業として初の純粋プレイ大型 IPO となる可能性がある。",
               "impact": "Anthropic の上場は AI スタートアップの資本市場参入を加速させるシグナルとなり、業界全体の評価基準と資金調達環境に大きな影響を与える。"
-            }
+            },
+            "alt": "Anthropic IPO S-1提出の概要カード。評価額$9,650億でOpenAIの評価額を超える非上場AI企業最大。SEC機密提出済みで株式数・価格は未定。AI純粋プレイ企業初の大型IPO候補。"
           }
         },
         {
@@ -611,23 +1187,67 @@
             "Ben Thompson が Google Cloud の投資構造を BNSF 鉄道への Berkshire 投資と類比、AI インフラを長期安定資産として分析",
             "Google の広告ビジネスの収益が AI インフラ投資を支える構造で、Alphabet がテクノロジー企業と資本配分ビークルの二重性を持つと論じる"
           ],
-          "scores": { "importance": 3, "depth": 5, "practicality": 2, "freshness": 5, "total": 15, "source_type_bias": -1 },
-          "tags": ["Google", "Alphabet", "capital", "Stratechery", "Berkshire", "AI-infrastructure"],
+          "scores": {
+            "importance": 3,
+            "depth": 5,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 15,
+            "source_type_bias": -1
+          },
+          "tags": [
+            "Google",
+            "Alphabet",
+            "capital",
+            "Stratechery",
+            "Berkshire",
+            "AI-infrastructure"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "GoogleのAIインフラ投資構造とBNSF鉄道モデルの比較。収益源はGoogleがSearch/YouTube広告・BNSFが輸送料。資本集約度は両者とも高い。競争障壁はGoogleがネットワーク効果・BNSFが物理的インフラ。バークシャーはBNSFへの投資と同様にAlphabetへ$100億投資。",
             "data": {
               "headline": "Alphabet の AI インフラ投資：BNSF 鉄道モデルで読み解く",
-              "before": { "label": "BNSF 鉄道（Berkshire）", "sublabel": "物理インフラの安定収益モデル" },
-              "after": { "label": "Google Cloud（Alphabet）", "sublabel": "AI インフラの安定収益モデル" },
+              "before": {
+                "label": "BNSF 鉄道（Berkshire）",
+                "sublabel": "物理インフラの安定収益モデル"
+              },
+              "after": {
+                "label": "Google Cloud（Alphabet）",
+                "sublabel": "AI インフラの安定収益モデル"
+              },
               "metrics": [
-                { "label": "収益源", "before": "輸送料（安定的）", "after": "広告＋クラウド", "before_pct": 70, "after_pct": 85, "delta": "AI加算", "delta_tone": "success" },
-                { "label": "Berkshire 投資額", "before": "〜数百億ドル", "after": "$100 億", "before_pct": 100, "after_pct": 50, "delta": "新規投資", "delta_tone": "info" },
-                { "label": "調達規模", "before": "参考：鉄道整備費", "after": "$800 億 (今回)", "before_pct": 30, "after_pct": 100, "delta": "大型調達", "delta_tone": "success" }
+                {
+                  "label": "収益源",
+                  "before": "輸送料（安定的）",
+                  "after": "広告＋クラウド",
+                  "before_pct": 70,
+                  "after_pct": 85,
+                  "delta": "AI加算",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "Berkshire 投資額",
+                  "before": "〜数百億ドル",
+                  "after": "$100 億",
+                  "before_pct": 100,
+                  "after_pct": 50,
+                  "delta": "新規投資",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "調達規模",
+                  "before": "参考：鉄道整備費",
+                  "after": "$800 億 (今回)",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "大型調達",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Ben Thompson は Alphabet の AI インフラ投資を、Berkshire が BNSF 鉄道に投資したのと同じ構造——Google Services の高収益が資本集約型インフラを支える——と分析した。",
               "impact": "Alphabet が資本配分ビークルとしての性格を強める動きは、AI インフラ投資が超長期の安定資産として機能するという市場の見方を反映しており、他の AI 大手の資本戦略にも影響する。"
-            }
+            },
+            "alt": "GoogleのAIインフラ投資構造とBNSF鉄道モデルの比較。収益源はGoogleがSearch/YouTube広告・BNSFが輸送料。資本集約度は両者とも高い。競争障壁はGoogleがネットワーク効果・BNSFが物理的インフラ。バークシャーはBNSFへの投資と同様にAlphabetへ$100億投資。"
           }
         }
       ]
@@ -654,23 +1274,66 @@
             "義務的な事前政府レビューから任意の国家安全保障審査へと要件を引き下げた",
             "Anthropic Mythos の超人的サイバーセキュリティ能力への懸念が規制議論のトリガーとなったという背景"
           ],
-          "scores": { "importance": 3, "depth": 3, "practicality": 2, "freshness": 5, "total": 13, "source_type_bias": -1 },
-          "tags": ["regulation", "US-AI-policy", "Trump", "executive-order", "safety"],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 13,
+            "source_type_bias": -1
+          },
+          "tags": [
+            "regulation",
+            "US-AI-policy",
+            "Trump",
+            "executive-order",
+            "safety"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "トランプ政権AI監督令の当初提案と最終署名内容の比較。審査義務は当初の必須から任意に後退。審査期間は当初提案の未定から最終版は30日前通知。対象モデルは先進AIモデル、トリガーはAnthropicのMythos能力への懸念。産業界ロビー活動で規制が後退した構図を示す。",
             "data": {
               "headline": "AI 監督令：義務審査→任意審査に後退するまでの経緯",
-              "before": { "label": "当初の提案", "sublabel": "より厳しい義務的規制" },
-              "after": { "label": "最終署名版", "sublabel": "任意の国家安全保障審査" },
+              "before": {
+                "label": "当初の提案",
+                "sublabel": "より厳しい義務的規制"
+              },
+              "after": {
+                "label": "最終署名版",
+                "sublabel": "任意の国家安全保障審査"
+              },
               "metrics": [
-                { "label": "審査の義務性", "before": "義務的（必須）", "after": "任意", "before_pct": 100, "after_pct": 20, "delta": "大幅後退", "delta_tone": "danger" },
-                { "label": "審査タイミング", "before": "未定（より早期）", "after": "公開 30 日前通知", "before_pct": 100, "after_pct": 60, "delta": "緩和", "delta_tone": "warning" },
-                { "label": "産業界への影響", "before": "強い制約", "after": "軽微な制約", "before_pct": 90, "after_pct": 20, "delta": "ロビー成功", "delta_tone": "info" }
+                {
+                  "label": "審査の義務性",
+                  "before": "義務的（必須）",
+                  "after": "任意",
+                  "before_pct": 100,
+                  "after_pct": 20,
+                  "delta": "大幅後退",
+                  "delta_tone": "danger"
+                },
+                {
+                  "label": "審査タイミング",
+                  "before": "未定（より早期）",
+                  "after": "公開 30 日前通知",
+                  "before_pct": 100,
+                  "after_pct": 60,
+                  "delta": "緩和",
+                  "delta_tone": "warning"
+                },
+                {
+                  "label": "産業界への影響",
+                  "before": "強い制約",
+                  "after": "軽微な制約",
+                  "before_pct": 90,
+                  "after_pct": 20,
+                  "delta": "ロビー成功",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "産業界の強い反対ロビーで義務的規制から任意審査へと大幅後退。AI 安全規制の実効性をめぐる議論は継続しており、EU AI Act との方向性の乖離が鮮明になっている。",
               "impact": "米国での AI 規制が緩い方向に動いたことで、AI 企業の開発速度への制約は限定的となる一方、安全性確保の責任はより企業側に委ねられる形になる。"
-            }
+            },
+            "alt": "トランプ政権AI監督令の当初提案と最終署名内容の比較。審査義務は当初の必須から任意に後退。審査期間は当初提案の未定から最終版は30日前通知。対象モデルは先進AIモデル、トリガーはAnthropicのMythos能力への懸念。産業界ロビー活動で規制が後退した構図を示す。"
           }
         }
       ]
@@ -691,31 +1354,62 @@
           "category": "community_buzz",
           "published_at": "2026-06-02",
           "lang": "en",
-          "reaction_signal": { "kind": "hn", "points": 2356 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 2356
+          },
           "summary_ja": "fly.io の開発者が「AI に懐疑的な友人たちは皆おかしい」というタイトルの記事を公開し、Hacker News で 2356 ポイントを獲得する大議論を巻き起こした。現在の LLM の能力向上を過小評価している AI 懐疑論者を批判し、ソフトウェア開発ワークフローへの実際の影響は既にドラマチックに変わっていると主張する内容だ。AI の実用的なインパクトについての賛否両論が巻き起こり、エンジニアコミュニティの分断と熱量を示す象徴的な議論となった。",
           "key_points_ja": [
             "fly.io エンジニアが「AI 懐疑論者は能力向上を過小評価している」と論じた記事が HN で 2356 ポイントを獲得",
             "現在の LLM による開発ワークフローへの影響を「既にドラマチック」と主張し、懐疑論と真っ向から対立",
             "AI の実用インパクト評価をめぐってエンジニアコミュニティが二分され、2026 年中盤のムードを示す象徴的議論"
           ],
-          "scores": { "importance": 2, "depth": 3, "practicality": 2, "freshness": 5, "total": 12, "source_type_bias": -1 },
-          "reaction_signal": { "kind": "hn", "points": 2356 },
-          "tags": ["community", "HN", "AI-skepticism", "developer-opinion", "LLM-impact"],
+          "scores": {
+            "importance": 2,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 12,
+            "source_type_bias": -1
+          },
+          "tags": [
+            "community",
+            "HN",
+            "AI-skepticism",
+            "developer-opinion",
+            "LLM-impact"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "「My AI skeptic friends are all nuts」HN議論の概要カード。ポイント数2356、主張はLLM能力向上を懐疑派が過小評価、ソフトウェア開発ワークフローへの影響は既にドラマチックと主張。エンジニアコミュニティ内の意見分断を示す。",
             "data": {
               "headline": "AI 懐疑論 vs 実用派：HN 2356pt の大議論",
               "tldr": "fly.io エンジニアが AI 懐疑論者を批判する記事を公開。LLM の開発ワークフローへの影響は既にドラマチックと主張し HN で 2356pt を獲得、賛否両論が白熱。",
               "points": [
-                { "label": "HN ポイント", "value": "2356 pt", "tone": "success" },
-                { "label": "発信元", "value": "fly.io エンジニアのブログ", "tone": "default" },
-                { "label": "主張", "value": "AI 懐疑論者は過小評価", "tone": "warning" },
-                { "label": "反応", "value": "賛否両論・大議論に発展", "tone": "info" }
+                {
+                  "label": "HN ポイント",
+                  "value": "2356 pt",
+                  "tone": "success"
+                },
+                {
+                  "label": "発信元",
+                  "value": "fly.io エンジニアのブログ",
+                  "tone": "default"
+                },
+                {
+                  "label": "主張",
+                  "value": "AI 懐疑論者は過小評価",
+                  "tone": "warning"
+                },
+                {
+                  "label": "反応",
+                  "value": "賛否両論・大議論に発展",
+                  "tone": "info"
+                }
               ],
               "context": "2026 年中盤、AI の実用インパクト評価についてエンジニアコミュニティが大きく分断されていることを示す象徴的な議論。",
               "impact": "LLM の実際の価値について開発者間の意見が大きく異なることが可視化された。AI ツール採用方針を議論する際の参考事例として有用。"
-            }
+            },
+            "alt": "「My AI skeptic friends are all nuts」HN議論の概要カード。ポイント数2356、主張はLLM能力向上を懐疑派が過小評価、ソフトウェア開発ワークフローへの影響は既にドラマチックと主張。エンジニアコミュニティ内の意見分断を示す。"
           }
         },
         {
@@ -729,31 +1423,78 @@
           "category": "community_buzz",
           "published_at": "2026-06-01",
           "lang": "en",
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
           "summary_ja": "GitHub Copilot が定額プレミアムリクエスト方式から AI Credits を消費するトークンベースの従量課金制に移行し、開発者コミュニティで大きな反発が起きている。ヘビーユーザーは月額 $29 の固定費から最大 $750 超の請求に直面する可能性があり、「What a joke」という怒りの声が Reddit や X で拡散した。同じタイミングで Uber も年間 AI 予算を 4 か月で使い切ったとして利用制限を設けており、AI ツールのコスト管理が企業・個人の双方で喫緊の課題となっている。",
           "key_points_ja": [
             "GitHub Copilot が定額課金から AI Credits トークン従量課金に移行、ヘビーユーザーは月額 $29→$750 超の可能性",
             "価格急騰への怒りが Reddit・X で拡散、「What a joke」がコミュニティのムードを代表",
             "Uber も年間 AI 予算を 4 か月で消費し利用制限を設けており、AI コスト管理問題が業界共通の課題に浮上"
           ],
-          "scores": { "importance": 3, "depth": 3, "practicality": 4, "freshness": 4, "total": 14, "source_type_bias": -1, "seen_penalty": -1 },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["GitHub", "Copilot", "pricing", "developer-tools", "community", "AI-cost"],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 14,
+            "source_type_bias": -1,
+            "seen_penalty": -1
+          },
+          "tags": [
+            "GitHub",
+            "Copilot",
+            "pricing",
+            "developer-tools",
+            "community",
+            "AI-cost"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "GitHub Copilot旧課金モデルと新AI Credits課金の比較。ヘビーユーザーのコストは$29/月から最大$750+/月に急増。課金方式は定額から従量制へ変更。軽量ユーザーはほぼ変化なし。Uberが同期間に年間AI予算を4か月で使い切り制限発動という関連事象も示す。",
             "data": {
               "headline": "Copilot 課金変更：$29 → 最大 $750+ でコミュニティが反発",
-              "before": { "label": "旧モデル（定額）", "sublabel": "定額プレミアムリクエスト" },
-              "after": { "label": "新モデル（AI Credits）", "sublabel": "トークン従量課金" },
+              "before": {
+                "label": "旧モデル（定額）",
+                "sublabel": "定額プレミアムリクエスト"
+              },
+              "after": {
+                "label": "新モデル（AI Credits）",
+                "sublabel": "トークン従量課金"
+              },
               "metrics": [
-                { "label": "ヘビーユーザー月額", "before": "$29（固定）", "after": "$750 超（最大）", "before_pct": 4, "after_pct": 100, "delta": "+25x 以上", "delta_tone": "danger" },
-                { "label": "軽量ユーザー月額", "before": "$29（固定）", "after": "ほぼ変化なし", "before_pct": 50, "after_pct": 50, "delta": "変化なし", "delta_tone": "default" },
-                { "label": "コスト予測可能性", "before": "高い（固定）", "after": "低い（使用量依存）", "before_pct": 100, "after_pct": 20, "delta": "大幅低下", "delta_tone": "danger" }
+                {
+                  "label": "ヘビーユーザー月額",
+                  "before": "$29（固定）",
+                  "after": "$750 超（最大）",
+                  "before_pct": 4,
+                  "after_pct": 100,
+                  "delta": "+25x 以上",
+                  "delta_tone": "danger"
+                },
+                {
+                  "label": "軽量ユーザー月額",
+                  "before": "$29（固定）",
+                  "after": "ほぼ変化なし",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "変化なし",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "コスト予測可能性",
+                  "before": "高い（固定）",
+                  "after": "低い（使用量依存）",
+                  "before_pct": 100,
+                  "after_pct": 20,
+                  "delta": "大幅低下",
+                  "delta_tone": "danger"
+                }
               ],
               "narrative": "Microsoft は GitHub Copilot を従量課金に移行することで収益拡大を図るが、ヘビーユーザーの急激なコスト増が開発者の反発を招いた。Uber が AI 予算を 4 か月で使い切った事例と合わせ、AI コスト管理が業界横断的な課題に。",
               "impact": "AI コーディングツールの従量課金化が進む中、利用量を正確に予測・管理できないと月額費用が青天井になるリスクが顕在化。コスト最適化戦略の見直しが急務。"
-            }
+            },
+            "alt": "GitHub Copilot旧課金モデルと新AI Credits課金の比較。ヘビーユーザーのコストは$29/月から最大$750+/月に急増。課金方式は定額から従量制へ変更。軽量ユーザーはほぼ変化なし。Uberが同期間に年間AI予算を4か月で使い切り制限発動という関連事象も示す。"
           }
         }
       ]
@@ -774,30 +1515,77 @@
           "category": "japan",
           "published_at": "2026-06-01",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 231 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 231
+          },
           "summary_ja": "ZOZOTOWN を運営する ZOZO は、Claude Code Skill を「動くマニュアル」として活用することでカスタマーサポートの問い合わせ調査リードタイムを平均 70% 削減することに成功した。従来の静的なドキュメント形式のマニュアルを Claude Code Skill 形式に変換し、エージェントが手順を理解しながら動的に実行できる環境を構築した。この取り組みにより、対応スピードの大幅向上と業務品質の改善を同時に達成しており、国内企業による Claude Code の実業務適用事例として高い参考価値がある。はてなブックマーク 231 件を集めた注目事例だ。",
           "key_points_ja": [
             "Claude Code Skill を「動くマニュアル」として活用し、問い合わせ調査リードタイムを平均 70% 削減",
             "静的なドキュメントをエージェントが動的実行できる Claude Code Skill 形式に変換するアプローチを採用",
             "カスタマーサポート業務の効率化と品質向上を同時達成、はてブ 231 件の国内注目事例"
           ],
-          "scores": { "importance": 5, "depth": 4, "practicality": 5, "freshness": 5, "total": 19, "source_type_bias": 0 },
-          "tags": ["ZOZO", "Claude-Code", "CS-automation", "japan", "case-study"],
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "total": 19,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "ZOZO",
+            "Claude-Code",
+            "CS-automation",
+            "japan",
+            "case-study"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "ZOZO TechBlog事例のBefore/After比較。Before：静的マニュアルを人が参照して調査、リードタイム=基準値。After：Claude Code Skill（動くマニュアル）がエージェントとして手順を動的実行、リードタイム70%削減（基準値の30%に短縮）。バー幅はBefore=100、After=30で比較。",
             "data": {
               "headline": "ZOZO の Claude Code Skill 活用：リードタイム 70% 削減",
-              "before": { "label": "静的マニュアル参照", "sublabel": "従来の問い合わせ調査フロー" },
-              "after": { "label": "Claude Code Skill", "sublabel": "「動くマニュアル」による自動化" },
+              "before": {
+                "label": "静的マニュアル参照",
+                "sublabel": "従来の問い合わせ調査フロー"
+              },
+              "after": {
+                "label": "Claude Code Skill",
+                "sublabel": "「動くマニュアル」による自動化"
+              },
               "metrics": [
-                { "label": "問い合わせ調査リードタイム", "before": "基準値（100%）", "after": "30%（70% 削減）", "before_pct": 100, "after_pct": 30, "delta": "-70%", "delta_tone": "success", "note": "平均値" },
-                { "label": "マニュアル形態", "before": "静的ドキュメント", "after": "動的 Skill 実行", "before_pct": 40, "after_pct": 100, "delta": "質的変換", "delta_tone": "success" },
-                { "label": "エージェント対応", "before": "なし", "after": "あり（手順理解・実行）", "before_pct": 0, "after_pct": 100, "delta": "完全移行", "delta_tone": "success" }
+                {
+                  "label": "問い合わせ調査リードタイム",
+                  "before": "基準値（100%）",
+                  "after": "30%（70% 削減）",
+                  "before_pct": 100,
+                  "after_pct": 30,
+                  "delta": "-70%",
+                  "delta_tone": "success",
+                  "note": "平均値"
+                },
+                {
+                  "label": "マニュアル形態",
+                  "before": "静的ドキュメント",
+                  "after": "動的 Skill 実行",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "delta": "質的変換",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "エージェント対応",
+                  "before": "なし",
+                  "after": "あり（手順理解・実行）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "完全移行",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "ZOZO は静的マニュアルを Claude Code Skill に変換し、CS 担当者の手動調査をエージェント自動実行に置き換えることでリードタイムを劇的に短縮した。",
               "impact": "Claude Code Skill の「動くマニュアル」化は、業種を問わず反復的な調査・確認業務を自動化できる汎用的なアプローチとして他社への横展開が期待できる。"
-            }
+            },
+            "alt": "ZOZO TechBlog事例のBefore/After比較。Before：静的マニュアルを人が参照して調査、リードタイム=基準値。After：Claude Code Skill（動くマニュアル）がエージェントとして手順を動的実行、リードタイム70%削減（基準値の30%に短縮）。バー幅はBefore=100、After=30で比較。"
           },
           "x_post": "ZOZOTOWN が Claude Code Skill を「動くマニュアル」として活用し、問い合わせ調査のリードタイムを平均 70% 削減した事例を公開した。静的ドキュメントをエージェントが動的実行できる形式に変換するアプローチは業務効率化の有効な手法であり、私は自社業務への応用を検討している。\n\nhttps://techblog.zozo.com/entry/cs-inquiry-ai-automation"
         },
@@ -812,31 +1600,69 @@
           "category": "japan",
           "published_at": "2026-06-01",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 289 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 289
+          },
           "summary_ja": "blog.cloudnative.co.jp が Anthropic の「Zero Trust for AI Agents」設計原則を日本語で解説した記事が、はてなブックマーク 289 件を集めた。AIエージェントが組織内のシステムや外部サービスと連携する場面が増える中、セキュリティ設計への関心が高まっており、実装レベルの知見を持つエンジニアの注目を集めている。Anthropic が提唱するゼロトラスト設計は、エージェントへの最小権限付与と動的なアクセス制御を核とした安全設計アプローチとして業界標準への影響が期待される。",
           "key_points_ja": [
             "Anthropic の「Zero Trust for AI Agents」日本語解説記事がはてブ 289 件を獲得、国内エンジニアの高い関心を示す",
             "AI エージェントの本番導入が加速する中、セキュリティ設計フレームワークへの需要が急増している",
             "ゼロトラスト設計原則の AI エージェント適用は、企業のエージェント導入における安全性確保の指針として注目"
           ],
-          "scores": { "importance": 5, "depth": 4, "practicality": 4, "freshness": 5, "total": 18, "source_type_bias": 0 },
-          "tags": ["Anthropic", "zero-trust", "AI-agents", "security", "japan"],
-          "grounding": { "verified": false, "flags": 1, "notes": ["記事のraw_excerptが不十分なため、Anthropicゼロトラスト設計の詳細な技術主張は省略し概括的な記述に留めた"] },
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 18,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "Anthropic",
+            "zero-trust",
+            "AI-agents",
+            "security",
+            "japan"
+          ],
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "記事のraw_excerptが不十分なため、Anthropicゼロトラスト設計の詳細な技術主張は省略し概括的な記述に留めた"
+            ]
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic Zero Trust for AI Agents日本語解説記事の概要カード。はてブ289件獲得、発行元blog.cloudnative.co.jp、公開日2026-06-01、テーマはAIエージェントのゼロトラストセキュリティ設計、国内エンジニアの高い関心を示す反響。",
             "data": {
               "headline": "Zero Trust for AI Agents：はてブ 289 件の国内注目セキュリティ解説",
               "tldr": "Anthropic の AI エージェント向けゼロトラスト設計原則を日本語で解説した記事がはてブ 289 件を獲得。エージェント本番導入が増える中、セキュリティ設計への関心が急上昇。",
               "points": [
-                { "label": "はてブ数", "value": "289 件", "tone": "success" },
-                { "label": "発行元", "value": "blog.cloudnative.co.jp", "tone": "default" },
-                { "label": "テーマ", "value": "AI エージェントのゼロトラスト設計", "tone": "primary" },
-                { "label": "ソース原典", "value": "Anthropic 公式設計原則", "tone": "info" }
+                {
+                  "label": "はてブ数",
+                  "value": "289 件",
+                  "tone": "success"
+                },
+                {
+                  "label": "発行元",
+                  "value": "blog.cloudnative.co.jp",
+                  "tone": "default"
+                },
+                {
+                  "label": "テーマ",
+                  "value": "AI エージェントのゼロトラスト設計",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ソース原典",
+                  "value": "Anthropic 公式設計原則",
+                  "tone": "info"
+                }
               ],
               "context": "Anthropic が発表した Zero Trust for AI Agents は 2026-06-01 に公開され、国内コミュニティで即座に広まった。",
               "impact": "AI エージェントを本番環境に導入する企業・エンジニアにとって、ゼロトラスト設計原則は必読の安全設計ガイドラインとなっている。"
-            }
+            },
+            "alt": "Anthropic Zero Trust for AI Agents日本語解説記事の概要カード。はてブ289件獲得、発行元blog.cloudnative.co.jp、公開日2026-06-01、テーマはAIエージェントのゼロトラストセキュリティ設計、国内エンジニアの高い関心を示す反響。"
           }
         },
         {
@@ -850,30 +1676,62 @@
           "category": "japan",
           "published_at": "2026-06-01",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 310 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 310
+          },
           "summary_ja": "ascii.jp に掲載された「AI を使える人と使えない人で、とんでもない差が出ると実感した理由」という記事が、はてなブックマーク 310 件を獲得した。AI ツールの活用スキルの有無によって、業務の生産性や成果物のクオリティに実際に大きな差が生じているという実体験に基づく考察が多くの共感を呼んだ。2026 年中盤、日本の働き手の間でも AI 活用格差が現実の課題として認識されつつあることを示す反響だ。",
           "key_points_ja": [
             "AI 活用スキルの有無による生産性格差を論じた記事が ascii.jp でははてブ 310 件を獲得",
             "実体験に基づく「AI が使える人とそうでない人の差」の具体的な描写が多くの共感と議論を呼んだ",
             "日本の業務現場でも AI 活用格差が実感レベルで可視化されつつある 2026 年中盤のムードを反映"
           ],
-          "scores": { "importance": 5, "depth": 3, "practicality": 3, "freshness": 5, "total": 16, "source_type_bias": 0 },
-          "tags": ["AI-literacy", "productivity", "japan", "community", "skill-gap"],
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 16,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "AI-literacy",
+            "productivity",
+            "japan",
+            "community",
+            "skill-gap"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AI活用格差に関する記事の概要カード。はてブ310件獲得、発行元ascii.jp、公開2026-06-01。AI使える人と使えない人で生産性・成果物品質に大きな差が生じているという実感を論じ、日本コミュニティで310件のブックマークを集めた。",
             "data": {
               "headline": "AI 活用格差の実感：はてブ 310 件の反響",
               "tldr": "「AI を使える人と使えない人でとんでもない差が出る」記事が ascii.jp でははてブ 310 件を獲得。日本の職場でも AI 活用格差が現実の課題として浮上している。",
               "points": [
-                { "label": "はてブ数", "value": "310 件", "tone": "success" },
-                { "label": "発行元", "value": "ascii.jp", "tone": "default" },
-                { "label": "論点", "value": "AI活用スキル格差と生産性差", "tone": "primary" },
-                { "label": "反響の背景", "value": "実体験からの共感が連鎖", "tone": "info" }
+                {
+                  "label": "はてブ数",
+                  "value": "310 件",
+                  "tone": "success"
+                },
+                {
+                  "label": "発行元",
+                  "value": "ascii.jp",
+                  "tone": "default"
+                },
+                {
+                  "label": "論点",
+                  "value": "AI活用スキル格差と生産性差",
+                  "tone": "primary"
+                },
+                {
+                  "label": "反響の背景",
+                  "value": "実体験からの共感が連鎖",
+                  "tone": "info"
+                }
               ],
               "context": "2026年中盤、日本の職場でもAI活用スキルの差が実際の業務成果に影響し始めており、格差の認識が広まりつつある。",
               "impact": "AI スキルアップへの需要がさらに高まる。企業の研修・教育投資の優先度が上がり、AI 学習コンテンツ市場が拡大する見通し。"
-            }
+            },
+            "alt": "AI活用格差に関する記事の概要カード。はてブ310件獲得、発行元ascii.jp、公開2026-06-01。AI使える人と使えない人で生産性・成果物品質に大きな差が生じているという実感を論じ、日本コミュニティで310件のブックマークを集めた。"
           }
         },
         {
@@ -893,24 +1751,58 @@
             "年度内に資本業務提携を締結予定——防衛・インフラ領域での国産 AI 自律性確保が目的",
             "PFN の先端 AI 研究と三菱重工の産業・防衛基盤を組み合わせ、海外依存低減型の国産エコシステム構築を目指す"
           ],
-          "scores": { "importance": 4, "depth": 3, "practicality": 2, "freshness": 5, "total": 14, "source_type_bias": 0 },
-          "tags": ["PFN", "三菱重工", "national-AI", "defense", "japan", "partnership"],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 14,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "PFN",
+            "三菱重工",
+            "national-AI",
+            "defense",
+            "japan",
+            "partnership"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "三菱重工×PFN国産AI共同開発の概要カード。提携種別は資本業務提携（年度内締結予定）、応用領域は安全保障・防衛・インフラ、目的は国産AI技術の自律性確保と海外依存低減、PFNの研究力と三菱重工の産業基盤を組み合わせる。",
             "data": {
               "headline": "三菱重工 × PFN：国産 AI 技術で安全保障分野に参入",
               "tldr": "三菱重工業と Preferred Networks が国産 AI 共同開発を発表。安全保障・防衛分野への応用を目的に年度内の資本業務提携締結を予定。",
               "points": [
-                { "label": "提携形態", "value": "資本業務提携（年度内）", "tone": "primary" },
-                { "label": "活用領域", "value": "安全保障・防衛・インフラ", "tone": "warning" },
-                { "label": "目的", "value": "国産 AI 技術の自律性確保", "tone": "success" },
-                { "label": "PFN の役割", "value": "先端 AI 研究力", "tone": "info" },
-                { "label": "三菱重工の役割", "value": "産業・防衛事業基盤", "tone": "info" }
+                {
+                  "label": "提携形態",
+                  "value": "資本業務提携（年度内）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "活用領域",
+                  "value": "安全保障・防衛・インフラ",
+                  "tone": "warning"
+                },
+                {
+                  "label": "目的",
+                  "value": "国産 AI 技術の自律性確保",
+                  "tone": "success"
+                },
+                {
+                  "label": "PFN の役割",
+                  "value": "先端 AI 研究力",
+                  "tone": "info"
+                },
+                {
+                  "label": "三菱重工の役割",
+                  "value": "産業・防衛事業基盤",
+                  "tone": "info"
+                }
               ],
               "context": "防衛・インフラ分野での AI 活用における海外企業依存を減らすことが日本の戦略課題となっており、国産 AI エコシステムの構築が加速している。",
               "impact": "日本の主要製造業と AI 研究機関が安全保障用途の国産 AI で連携するモデルは、他の大手企業による同様の提携を促す先駆事例となりうる。"
-            }
+            },
+            "alt": "三菱重工×PFN国産AI共同開発の概要カード。提携種別は資本業務提携（年度内締結予定）、応用領域は安全保障・防衛・インフラ、目的は国産AI技術の自律性確保と海外依存低減、PFNの研究力と三菱重工の産業基盤を組み合わせる。"
           }
         },
         {
@@ -930,24 +1822,58 @@
             "セキュリティツール「Claude Security」の共同検証も実施予定——金融機関向け安全性の確認が伴う",
             "国内金融グループ全社規模での Claude 採用は市場への大きなシグナルとなり、他金融機関の採用を促進する可能性"
           ],
-          "scores": { "importance": 4, "depth": 3, "practicality": 3, "freshness": 5, "total": 15, "source_type_bias": 0 },
-          "tags": ["SBI", "Anthropic", "Claude", "enterprise", "finance", "japan"],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 15,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "SBI",
+            "Anthropic",
+            "Claude",
+            "enterprise",
+            "finance",
+            "japan"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "SBIグループ×Anthropic提携の概要カード。提携内容は全役職員へのClaude展開とClaude Securityセキュリティツールの共同検証。展開規模は金融グループ全社、業種は金融・証券、目的はAI活用の全社展開と安全性確保。",
             "data": {
               "headline": "SBI × Anthropic：金融グループ全社員に Claude 展開",
               "tldr": "SBI グループが Anthropic と提携し、グループ全役職員に Claude を展開。Claude Security セキュリティツールの共同検証も実施予定で、国内金融機関最大規模の Claude 導入事例に。",
               "points": [
-                { "label": "提携相手", "value": "Anthropic（米）", "tone": "primary" },
-                { "label": "展開対象", "value": "全役職員（グループ全体）", "tone": "success" },
-                { "label": "AI ツール", "value": "Claude", "tone": "primary" },
-                { "label": "追加施策", "value": "Claude Security 共同検証", "tone": "warning" },
-                { "label": "業種", "value": "金融・証券グループ", "tone": "info" }
+                {
+                  "label": "提携相手",
+                  "value": "Anthropic（米）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "展開対象",
+                  "value": "全役職員（グループ全体）",
+                  "tone": "success"
+                },
+                {
+                  "label": "AI ツール",
+                  "value": "Claude",
+                  "tone": "primary"
+                },
+                {
+                  "label": "追加施策",
+                  "value": "Claude Security 共同検証",
+                  "tone": "warning"
+                },
+                {
+                  "label": "業種",
+                  "value": "金融・証券グループ",
+                  "tone": "info"
+                }
               ],
               "context": "国内金融機関での生成 AI 活用は急拡大中。SBI グループの全社展開は、規制業種での Claude 採用に対する市場の信頼性を高める重要な先例となる。",
               "impact": "SBI グループの大型導入が実証されれば、同規模の金融機関による Claude 採用が加速し、日本の金融 AI 市場における Anthropic のプレゼンスが一段と高まる。"
-            }
+            },
+            "alt": "SBIグループ×Anthropic提携の概要カード。提携内容は全役職員へのClaude展開とClaude Securityセキュリティツールの共同検証。展開規模は金融グループ全社、業種は金融・証券、目的はAI活用の全社展開と安全性確保。"
           }
         }
       ]
@@ -974,23 +1900,68 @@
             "人型ロボットの歩行・操作の RL 訓練が 3 分で完了——Mac でも動作しアクセシビリティが大幅向上",
             "高コストな GPU クラスタ不要でロボット訓練実験が可能になり、物理 AI 研究の参入障壁が下がる"
           ],
-          "scores": { "importance": 4, "depth": 5, "practicality": 3, "freshness": 5, "total": 17, "source_type_bias": 0 },
-          "tags": ["Tsinghua", "robotics", "RL", "UniLab", "open-source", "physical-AI", "china"],
+          "scores": {
+            "importance": 4,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "Tsinghua",
+            "robotics",
+            "RL",
+            "UniLab",
+            "open-source",
+            "physical-AI",
+            "china"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "従来のロボットRL訓練とUniLabの比較。訓練時間は従来の数時間〜数日からUniLabで3分（10倍以上高速化）。必要ハードウェアは従来のGPUクラスタからMac対応に変化。アクセシビリティは従来の研究機関限定からUniLabで個人研究者・学生にも開放。清华大学AIR作成のOSSフレームワーク。",
             "data": {
               "headline": "UniLab：ロボット RL 訓練が 3 分・10 倍高速・Mac 対応に",
-              "before": { "label": "従来のロボット RL 訓練", "sublabel": "GPUクラスタ必須" },
-              "after": { "label": "UniLab（清华大学 AIR）", "sublabel": "Mac対応・3分完了" },
+              "before": {
+                "label": "従来のロボット RL 訓練",
+                "sublabel": "GPUクラスタ必須"
+              },
+              "after": {
+                "label": "UniLab（清华大学 AIR）",
+                "sublabel": "Mac対応・3分完了"
+              },
               "metrics": [
-                { "label": "訓練完了時間", "before": "数時間〜数日", "after": "3 分", "before_pct": 100, "after_pct": 3, "delta": "10倍以上高速", "delta_tone": "success" },
-                { "label": "必要ハードウェア", "before": "GPU クラスタ", "after": "Mac でも動作", "before_pct": 100, "after_pct": 20, "delta": "大幅削減", "delta_tone": "success" },
-                { "label": "利用可能者", "before": "研究機関限定", "after": "個人・学生にも", "before_pct": 20, "after_pct": 100, "delta": "民主化", "delta_tone": "success" }
+                {
+                  "label": "訓練完了時間",
+                  "before": "数時間〜数日",
+                  "after": "3 分",
+                  "before_pct": 100,
+                  "after_pct": 3,
+                  "delta": "10倍以上高速",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "必要ハードウェア",
+                  "before": "GPU クラスタ",
+                  "after": "Mac でも動作",
+                  "before_pct": 100,
+                  "after_pct": 20,
+                  "delta": "大幅削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "利用可能者",
+                  "before": "研究機関限定",
+                  "after": "個人・学生にも",
+                  "before_pct": 20,
+                  "after_pct": 100,
+                  "delta": "民主化",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "清华大学 AIR がロボット RL 訓練の民主化を目指して UniLab を OSS 公開。3 分・10 倍高速・Mac 動作という3点が物理 AI 研究の参入障壁を一気に下げる。",
               "impact": "ロボット強化学習の訓練コストが劇的に低下することで、世界中の研究者・スタートアップが物理 AI 開発に参入できるようになり、ロボティクスの発展が加速する。"
-            }
+            },
+            "alt": "従来のロボットRL訓練とUniLabの比較。訓練時間は従来の数時間〜数日からUniLabで3分（10倍以上高速化）。必要ハードウェアは従来のGPUクラスタからMac対応に変化。アクセシビリティは従来の研究機関限定からUniLabで個人研究者・学生にも開放。清华大学AIR作成のOSSフレームワーク。"
           },
           "x_post": "清华大学 AIR がロボット強化学習フレームワーク UniLab をオープンソース公開した。人型ロボットの訓練を 3 分で完了し、従来比 10 倍の高速化を実現。Mac 上でも動作するため、GPU クラスタなしにロボット研究が始められる。ロボット RL のアクセシビリティが大きく向上したと私は考える。\n\nhttps://www.qbitai.com/2026/06/427729.html"
         },
@@ -1011,39 +1982,104 @@
             "「先理解・後実行」設計：大規模モデルが映像内容を意味理解してから動画編集操作を実行",
             "単純な映像変換を超えた意味理解ベースの AI 動画編集を実現する新アーキテクチャアプローチ"
           ],
-          "scores": { "importance": 4, "depth": 4, "practicality": 3, "freshness": 5, "total": 16, "source_type_bias": 0 },
-          "tags": ["ByteDance", "video-editing", "DiT", "Bernini", "open-source", "china", "multimodal"],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 16,
+            "source_type_bias": 0
+          },
+          "tags": [
+            "ByteDance",
+            "video-editing",
+            "DiT",
+            "Bernini",
+            "open-source",
+            "china",
+            "multimodal"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "ByteDance Berniniフレームワークの概要カード。アーキテクチャはDiTと大規模モデル（参謀）の組み合わせ。設計思想は先理解・後実行。公開形態はオープンソース。従来の単純映像変換との違いは意味理解ベースの動画編集を実現する点。",
             "data": {
               "headline": "Bernini：「大規模モデルを参謀に」の AI 動画編集フレームワーク",
               "tldr": "ByteDance が DiT と大規模モデル（参謀）を組み合わせた動画編集フレームワーク Bernini を OSS 公開。映像の意味を理解してから編集する「先理解・後実行」設計が特徴。",
               "points": [
-                { "label": "作成元", "value": "ByteDance Research", "tone": "primary" },
-                { "label": "アーキテクチャ", "value": "DiT + 大規模モデル参謀", "tone": "success" },
-                { "label": "設計思想", "value": "先理解・後実行", "tone": "info" },
-                { "label": "公開形態", "value": "オープンソース", "tone": "success" },
-                { "label": "差別化点", "value": "意味理解ベースの動画編集", "tone": "primary" }
+                {
+                  "label": "作成元",
+                  "value": "ByteDance Research",
+                  "tone": "primary"
+                },
+                {
+                  "label": "アーキテクチャ",
+                  "value": "DiT + 大規模モデル参謀",
+                  "tone": "success"
+                },
+                {
+                  "label": "設計思想",
+                  "value": "先理解・後実行",
+                  "tone": "info"
+                },
+                {
+                  "label": "公開形態",
+                  "value": "オープンソース",
+                  "tone": "success"
+                },
+                {
+                  "label": "差別化点",
+                  "value": "意味理解ベースの動画編集",
+                  "tone": "primary"
+                }
               ],
               "context": "AI 動画編集市場では Runway・Pika・Kling などが競合するが、Bernini は意味理解を重視したアーキテクチャで差別化する。",
               "impact": "意味を理解した上で動画編集を行うアーキテクチャの OSS 公開は、クリエイターツールや映像 AI アプリケーションの開発加速につながる。"
-            }
+            },
+            "alt": "ByteDance Berniniフレームワークの概要カード。アーキテクチャはDiTと大規模モデル（参謀）の組み合わせ。設計思想は先理解・後実行。公開形態はオープンソース。従来の単純映像変換との違いは意味理解ベースの動画編集を実現する点。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "The Verge", "reason": "domain inaccessible to crawler" },
-    { "source": "Wired", "reason": "domain inaccessible to crawler" },
-    { "source": "Ars Technica", "reason": "domain inaccessible to crawler" },
-    { "source": "Import AI (importai.substack.com)", "reason": "HTTP 403 Forbidden" },
-    { "source": "Semantic Scholar API", "reason": "HTTP 429 rate limited" },
-    { "source": "ChinAI Newsletter", "reason": "HTTP 403 Forbidden" },
-    { "source": "Synced Review (syncedreview.com)", "reason": "RSS feed stale, only 2025 content" },
-    { "source": "Reddit RSS feeds", "reason": "blocked by crawler restrictions" },
-    { "source": "Mercari Engineering", "reason": "HTTP 403 Forbidden" },
-    { "source": "ELYZA (note.com)", "reason": "article list not extractable from page structure" }
+    {
+      "source": "The Verge",
+      "reason": "domain inaccessible to crawler"
+    },
+    {
+      "source": "Wired",
+      "reason": "domain inaccessible to crawler"
+    },
+    {
+      "source": "Ars Technica",
+      "reason": "domain inaccessible to crawler"
+    },
+    {
+      "source": "Import AI (importai.substack.com)",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "Semantic Scholar API",
+      "reason": "HTTP 429 rate limited"
+    },
+    {
+      "source": "ChinAI Newsletter",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "Synced Review (syncedreview.com)",
+      "reason": "RSS feed stale, only 2025 content"
+    },
+    {
+      "source": "Reddit RSS feeds",
+      "reason": "blocked by crawler restrictions"
+    },
+    {
+      "source": "Mercari Engineering",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "ELYZA (note.com)",
+      "reason": "article list not extractable from page structure"
+    }
   ]
 }
