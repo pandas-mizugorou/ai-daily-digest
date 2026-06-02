@@ -19,6 +19,11 @@ on:
         description: "ターゲット日付 (YYYY-MM-DD, 省略時は今日 JST)"
         required: false
         default: ""
+      force:
+        description: "既に当日分が在っても強制再生成する (手動再生成用)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -84,23 +89,39 @@ jobs:
           } >> "$GITHUB_OUTPUT"
           echo "Target date: $DATE (dow=$DOW, is_weekly_day=$IS_WEEKLY_DAY, iso_week=$ISO_WEEK, week=$WEEK_FROM..$WEEK_TO)"
 
-      - name: Skip if today's digest already exists (idempotency for multi-cron)
+      - name: Skip if today's digest already exists (idempotency for multi-trigger)
         id: guard
         run: |
-          # 多重 cron / retry で同日に複数回起動しても、最初の 1 回だけが生成する。
-          # 後続の発火は data/<date>.json が既に在れば skip。
-          # workflow_dispatch (手動) は常に再生成を許可する。
+          # 多重 cron / 外部 workflow_dispatch (Cloudflare Cron) / retry で同日に
+          # 複数回起動しても、最初の 1 回だけが生成する。後続は当日 data/<date>.json が
+          # 既に在れば skip (重複通知・重複コミット・push 衝突を防止)。
+          #
+          # 重要 (stale checkout 対策): actions/checkout は run 作成時の SHA を取得する
+          # ため、先行 run が「後から」push した当日ファイルをローカルが持たないことが
+          # ある。その状態で生成→push すると non-fast-forward で弾かれる (実測 run #48)。
+          # そこでローカルの file 存在に加えて origin/main 上の有無も確認する。
+          #
+          # force=true もしくは target_date 明示時 (手動バックフィル) は常に再生成する。
           DONE="false"
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          FORCE="${{ github.event.inputs.force }}"
+          TARGET_INPUT="${{ github.event.inputs.target_date }}"
+          if [ "$FORCE" != "true" ] && [ -z "$TARGET_INPUT" ]; then
             DATE="${{ steps.date.outputs.value }}"
+            git fetch --depth=1 origin main 2>/dev/null || true
+            CNT_LOCAL=0; CNT_REMOTE=0
             if [ -f "data/${DATE}.json" ]; then
-              CNT=$(jq '[.categories[].items // [] | length] | add' "data/${DATE}.json" 2>/dev/null || echo 0)
-              case "$CNT" in ''|*[!0-9]*) CNT=0;; esac
-              if [ "$CNT" -ge 3 ]; then DONE="true"; fi
+              CNT_LOCAL=$(jq '[.categories[].items // [] | length] | add' "data/${DATE}.json" 2>/dev/null || echo 0)
             fi
+            if git cat-file -e "origin/main:data/${DATE}.json" 2>/dev/null; then
+              CNT_REMOTE=$(git show "origin/main:data/${DATE}.json" 2>/dev/null | jq '[.categories[].items // [] | length] | add' 2>/dev/null || echo 0)
+            fi
+            case "$CNT_LOCAL" in ''|*[!0-9]*) CNT_LOCAL=0;; esac
+            case "$CNT_REMOTE" in ''|*[!0-9]*) CNT_REMOTE=0;; esac
+            if [ "$CNT_LOCAL" -ge 3 ] || [ "$CNT_REMOTE" -ge 3 ]; then DONE="true"; fi
+            echo "guard counts: local=$CNT_LOCAL remote=$CNT_REMOTE"
           fi
           echo "done=$DONE" >> "$GITHUB_OUTPUT"
-          echo "guard: already_done=$DONE (event=${{ github.event_name }}, date=${{ steps.date.outputs.value }})"
+          echo "guard: already_done=$DONE (event=${{ github.event_name }}, force=$FORCE, target_input='$TARGET_INPUT', date=${{ steps.date.outputs.value }})"
 
       - name: Run /ai-daily-digest skill via Claude Code
         if: steps.guard.outputs.done != 'true'
@@ -240,7 +261,24 @@ jobs:
 
           git add data/
           git commit -m "daily digest: ${DATE} (${COUNT} items)"
-          git push origin HEAD:main
+
+          # main がこの run の (stale な) checkout 以降に進んでいることがある
+          # (多重 cron の先行 run / 並行 push)。その場合 push は non-fast-forward で
+          # 弾かれる (実測 run #48)。origin/main へ rebase してから push する。
+          # 当日ファイルが既に上流に在って競合する場合は「別 run が先に公開済み」と
+          # みなし、安全に skip する (冪等)。
+          git fetch origin main
+          if git rebase origin/main; then
+            git push origin HEAD:main
+          else
+            git rebase --abort || true
+            if git cat-file -e "origin/main:data/${DATE}.json" 2>/dev/null; then
+              echo "Another run already published data/${DATE}.json upstream; skipping push (idempotent)."
+              exit 0
+            fi
+            echo "Rebase onto origin/main failed and no upstream data/${DATE}.json found; failing for retry."
+            exit 1
+          fi
 
       # === Phase F-1: 日次更新完了の直後に Web Push 通知 ===
       - name: Setup Node (for web-push)
@@ -446,7 +484,17 @@ jobs:
           # weekly 関連のみを stage (誤って data/ の他ファイルを巻き込まないため)
           git add data/weekly-*.json data/weekly-latest.json data/weekly-index.json 2>/dev/null || true
           git commit -m "weekly digest: ${ISO_WEEK} (top ${TOP_COUNT})"
-          git push origin HEAD:main
+
+          # 日次 push と同じく non-fast-forward を rebase で吸収する。
+          # 競合 (= 別 run が同じ週次を公開済み) なら冪等に skip。
+          git fetch origin main
+          if git rebase origin/main; then
+            git push origin HEAD:main
+          else
+            git rebase --abort || true
+            echo "Rebase onto origin/main failed (weekly); another run may have already published. Skipping push (idempotent)."
+            exit 0
+          fi
 
       - name: Weekly summary
         if: always()
