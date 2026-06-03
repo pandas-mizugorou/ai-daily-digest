@@ -24,12 +24,36 @@
     "grounding_flags": 0
   },
   "top_picks": [
-    { "id": "nm-001", "rank": 1, "reason": "MicrosoftのAI自立戦略の象徴。初の自社推論モデルを109ページ技術報告書付きで公開。importance 5, depth 5, practicality 4, total 19。" },
-    { "id": "nm-002", "rank": 2, "reason": "SWE-Bench Pro 59%でGPT-5.5超え、コスト5〜10%、オープンウェイト。中国系モデルの価格破壊が一段と進む重要事例。importance 4, depth 4, practicality 5, total 18。" },
-    { "id": "jp-001", "rank": 3, "reason": "japan枠最低1件保証。平均70%削減という定量ROIを示した国内Claude Code実導入ケーススタディ。はてブ235件。importance 5, total 18。" },
-    { "id": "ag-001", "rank": 4, "reason": "AndroidWorld 79.3%・2倍高速化・コンシューマハードでローカル動作可能。Computer Useが実用域に到達。importance 4, total 17。" },
-    { "id": "mm-001", "rank": 5, "reason": "世界初のオープン物理AI全方位モデル。OSSで研究加速。importance 5, depth 4, practicality 4, total 17。" },
-    { "id": "reg-001", "rank": 6, "reason": "公式Anthropicによる1年分832件の不正アカウント実態分析。AIがサイバー脅威を強化している最初の大規模一次データ。importance 4, depth 4, total 16。" }
+    {
+      "id": "nm-001",
+      "rank": 1,
+      "reason": "MicrosoftのAI自立戦略の象徴。初の自社推論モデルを109ページ技術報告書付きで公開。importance 5, depth 5, practicality 4, total 19。"
+    },
+    {
+      "id": "nm-002",
+      "rank": 2,
+      "reason": "SWE-Bench Pro 59%でGPT-5.5超え、コスト5〜10%、オープンウェイト。中国系モデルの価格破壊が一段と進む重要事例。importance 4, depth 4, practicality 5, total 18。"
+    },
+    {
+      "id": "jp-001",
+      "rank": 3,
+      "reason": "japan枠最低1件保証。平均70%削減という定量ROIを示した国内Claude Code実導入ケーススタディ。はてブ235件。importance 5, total 18。"
+    },
+    {
+      "id": "ag-001",
+      "rank": 4,
+      "reason": "AndroidWorld 79.3%・2倍高速化・コンシューマハードでローカル動作可能。Computer Useが実用域に到達。importance 4, total 17。"
+    },
+    {
+      "id": "mm-001",
+      "rank": 5,
+      "reason": "世界初のオープン物理AI全方位モデル。OSSで研究加速。importance 5, depth 4, practicality 4, total 17。"
+    },
+    {
+      "id": "reg-001",
+      "rank": 6,
+      "reason": "公式Anthropicによる1年分832件の不正アカウント実態分析。AIがサイバー脅威を強化している最初の大規模一次データ。importance 4, depth 4, total 16。"
+    }
   ],
   "categories": [
     {
@@ -63,22 +87,53 @@
             "total": 19,
             "source_type_bias": 1
           },
-          "tags": ["Microsoft", "MAI-Thinking-1", "reasoning model", "Build 2026", "frontier model", "independent AI"],
+          "tags": [
+            "Microsoft",
+            "MAI-Thinking-1",
+            "reasoning model",
+            "Build 2026",
+            "frontier model",
+            "independent AI"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Microsoft MAI-Thinking-1 概要カード。Build 2026 で発表された初の自社開発フロンティア推論モデル。第三者蒸留なし・ゼロから学習・109 ページ技術報告書同時公開。MAI 系列 7 モデルを発表しOpenAI 依存脱却の戦略転換を示す。エンタープライズは Azure 上の選択肢が増加しカスタマイズ自由度が向上。",
             "data": {
               "headline": "Microsoft MAI-Thinking-1：自社初のフロンティア推論モデル、技術報告書 109 ページ公開",
               "tldr": "Build 2026 で Microsoft が第三者蒸留なしにゼロから学習した推論特化モデル MAI-Thinking-1 を初公開。MAI 系列 7 モデルと詳細な技術報告書を同時公開し、OpenAI 依存からの脱却を宣言した。",
               "points": [
-                { "icon": "🚀", "label": "学習方式", "value": "蒸留ゼロ・ゼロ学習", "tone": "primary", "description": "第三者モデルからの知識蒸留を行わず独自にゼロから訓練。Microsoft の AI 自立戦略の象徴。" },
-                { "icon": "📖", "label": "技術報告書", "value": "109 ページ公開", "tone": "success", "description": "訓練手法・インフラ指標・アライメント手法を詳述。大手ラボでは稀な高透明性開示として研究者から高評価。" },
-                { "icon": "🤖", "label": "MAI 系列", "value": "合計 7 モデル", "tone": "info", "description": "MAI-Thinking-1 を含む 7 モデルを発表。推論・汎用・軽量など多様なサイズと用途を網羅。" },
-                { "icon": "☁️", "label": "展開", "value": "Azure 上で提供", "tone": "default", "description": "Azure AI プラットフォームを通じてエンタープライズ向けに提供。OpenAI 以外の選択肢が Azure に登場。" }
+                {
+                  "icon": "🚀",
+                  "label": "学習方式",
+                  "value": "蒸留ゼロ・ゼロ学習",
+                  "tone": "primary",
+                  "description": "第三者モデルからの知識蒸留を行わず独自にゼロから訓練。Microsoft の AI 自立戦略の象徴。"
+                },
+                {
+                  "icon": "📖",
+                  "label": "技術報告書",
+                  "value": "109 ページ公開",
+                  "tone": "success",
+                  "description": "訓練手法・インフラ指標・アライメント手法を詳述。大手ラボでは稀な高透明性開示として研究者から高評価。"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "MAI 系列",
+                  "value": "合計 7 モデル",
+                  "tone": "info",
+                  "description": "MAI-Thinking-1 を含む 7 モデルを発表。推論・汎用・軽量など多様なサイズと用途を網羅。"
+                },
+                {
+                  "icon": "☁️",
+                  "label": "展開",
+                  "value": "Azure 上で提供",
+                  "tone": "default",
+                  "description": "Azure AI プラットフォームを通じてエンタープライズ向けに提供。OpenAI 以外の選択肢が Azure に登場。"
+                }
               ],
               "context": "OpenAI との長年のパートナーシップを持つ Microsoft がついに独自フロンティアモデルを公開。AI 競争がモデル開発の内製化フェーズへ移行していることを示す歴史的転換点。",
               "impact": "エンタープライズは OpenAI か Microsoft 独自モデルかを選択できるようになり、コスト最適化・データガバナンス・カスタマイズの自由度が大幅に向上する。"
-            }
+            },
+            "alt": "Microsoft MAI-Thinking-1 概要カード。Build 2026 で発表された初の自社開発フロンティア推論モデル。第三者蒸留なし・ゼロから学習・109 ページ技術報告書同時公開。MAI 系列 7 モデルを発表しOpenAI 依存脱却の戦略転換を示す。エンタープライズは Azure 上の選択肢が増加しカスタマイズ自由度が向上。"
           },
           "x_post": "Microsoft が Build 2026 で初の自社開発フロンティア推論モデル「MAI-Thinking-1」を公開した。第三者蒸留ゼロ・ゼロからの学習で開発された Microsoft 独自推論モデルで、学習・インフラ・アライメントを詳述した 109 ページの技術報告書も同時公開。Microsoft の AI 自立戦略の象徴的転換点として私は注目している。\n\nhttps://www.latent.space/p/ainews-microsoft-build-mai-thinking"
         },
@@ -108,13 +163,23 @@
             "total": 18,
             "source_type_bias": -1
           },
-          "tags": ["MiniMax", "MiniMax M3", "open weights", "SWE-Bench", "cost efficiency", "Chinese AI", "1M context"],
+          "tags": [
+            "MiniMax",
+            "MiniMax M3",
+            "open weights",
+            "SWE-Bench",
+            "cost efficiency",
+            "Chinese AI",
+            "1M context"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "MiniMax M3 の主要ベンチマーク 3 指標。SWE-Bench Pro 59.0%（GPT-5.5 超え）、BrowseComp 83.5%（OpenAI 超え）、推論コスト対 GPT-5.5 比 5〜10%（バーは短いほど低コスト）。1M コンテキスト・オープンウェイト・API 即利用可能。",
             "data": {
               "headline": "MiniMax M3：SWE-Bench Pro と BrowseComp で GPT-5.5 超え、コスト 5〜10%",
-              "scale": { "max_label": "スコア上限 100", "unit": "%" },
+              "scale": {
+                "max_label": "スコア上限 100",
+                "unit": "%"
+              },
               "bars": [
                 {
                   "icon": "🐛",
@@ -146,7 +211,8 @@
               ],
               "narrative": "オープンウェイトで 1M コンテキストと SWE-Bench Pro 59% を同時達成し、コストは GPT-5.5 の 5〜10% に抑えた。中国系モデルの性能・コスト・開放性の三拍子が揃った事例。",
               "impact": "フロンティアモデルと同等以上の性能をオープンウェイトで取得できる時代が到来。OpenAI・Anthropic の価格戦略への圧力が高まる。"
-            }
+            },
+            "alt": "MiniMax M3 の主要ベンチマーク 3 指標。SWE-Bench Pro 59.0%（GPT-5.5 超え）、BrowseComp 83.5%（OpenAI 超え）、推論コスト対 GPT-5.5 比 5〜10%（バーは短いほど低コスト）。1M コンテキスト・オープンウェイト・API 即利用可能。"
           },
           "x_post": "MiniMax M3 がリリース。SWE-Bench Pro 59.0% で GPT-5.5 を上回り、BrowseComp 83.5 で OpenAI を超えた。1M コンテキスト・オープンウェイトで API 即利用可能、推論コストは GPT-5.5 の 5〜10% 程度。「フロンティア性能・オープン・低コスト」を一台で実現した中国系モデルの最新形である。\n\nhttps://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost"
         },
@@ -175,21 +241,46 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["Alibaba", "Qwen", "Qwen3.7-Plus", "multimodal agent", "computer use", "Chinese AI"],
+          "tags": [
+            "Alibaba",
+            "Qwen",
+            "Qwen3.7-Plus",
+            "multimodal agent",
+            "computer use",
+            "Chinese AI"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Qwen3.7-Plus 概要。Alibaba が公開したマルチモーダル AI エージェントモデル。単一コマンドでデスクトップ専門ソフトのフローを再現し、Claude Opus 4.6 相当のベンチマーク性能。API 利用可能で Computer Use シナリオに対応。",
             "data": {
               "headline": "Qwen3.7-Plus：単一コマンドでデスクトップ専門ソフトを再現、Opus 4.6 相当の性能",
               "tldr": "Alibaba が公開したマルチモーダル AI エージェント。自然言語 1 コマンドで複雑なデスクトップ操作を再現し、Claude Opus 4.6 相当の性能を発揮。Computer Use 市場への本格参入を示す。",
               "points": [
-                { "icon": "🖥️", "label": "Computer Use", "value": "単一コマンド操作", "tone": "primary", "description": "自然言語 1 コマンドでデスクトップ専門ソフトの複雑なフローを再現。PDF・デザインツール・多段階操作に対応。" },
-                { "icon": "📈", "label": "ベンチマーク", "value": "Opus 4.6 相当", "tone": "success", "description": "Claude Opus 4.6 に匹敵するベンチマーク性能と報告。中国系モデルと欧米フロンティアの差が急速に縮小中。" },
-                { "icon": "🔌", "label": "利用方法", "value": "API 提供", "tone": "info", "description": "API 経由で即利用可能。エンタープライズの Computer Use エージェント実装を加速。" }
+                {
+                  "icon": "🖥️",
+                  "label": "Computer Use",
+                  "value": "単一コマンド操作",
+                  "tone": "primary",
+                  "description": "自然言語 1 コマンドでデスクトップ専門ソフトの複雑なフローを再現。PDF・デザインツール・多段階操作に対応。"
+                },
+                {
+                  "icon": "📈",
+                  "label": "ベンチマーク",
+                  "value": "Opus 4.6 相当",
+                  "tone": "success",
+                  "description": "Claude Opus 4.6 に匹敵するベンチマーク性能と報告。中国系モデルと欧米フロンティアの差が急速に縮小中。"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "利用方法",
+                  "value": "API 提供",
+                  "tone": "info",
+                  "description": "API 経由で即利用可能。エンタープライズの Computer Use エージェント実装を加速。"
+                }
               ],
               "context": "OpenAI Codex の Computer Use に対し、Alibaba が同等機能をマルチモーダル AI エージェントとして提供。中国系モデルの Computer Use 参入でエージェント操作市場の競争が多極化。",
               "impact": "デスクトップ操作 AI エージェントの選択肢が増え、競争により性能・コストの改善が加速する。企業の RPA からエージェント移行が現実的選択肢になる。"
-            }
+            },
+            "alt": "Qwen3.7-Plus 概要。Alibaba が公開したマルチモーダル AI エージェントモデル。単一コマンドでデスクトップ専門ソフトのフローを再現し、Claude Opus 4.6 相当のベンチマーク性能。API 利用可能で Computer Use シナリオに対応。"
           }
         }
       ]
@@ -226,22 +317,50 @@
             "source_type_bias": 0,
             "seen_penalty": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 320 },
-          "tags": ["OpenAI", "Codex", "white-collar", "productivity", "Codex Sites", "enterprise AI"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 320
+          },
+          "tags": [
+            "OpenAI",
+            "Codex",
+            "white-collar",
+            "productivity",
+            "Codex Sites",
+            "enterprise AI"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI Codex for Every Role 概要。6 職種専用プラグイン（データ分析・クリエイティブ・営業・プロダクト・投資銀行・公開株式）、Codex Sites で URL 共有 Web アプリ作成、Enterprise 向け Active Sessions セキュリティ機能。エンジニア以外の全ホワイトカラーに AI を拡張する戦略。",
             "data": {
               "headline": "Codex for Every Role：6 職種別プラグイン + Codex Sites で全ホワイトカラーに拡張",
               "tldr": "OpenAI が 6 つの職種別 Codex プラグインと Codex Sites を発表。データアナリスト・投資銀行員・営業担当など非エンジニア職へ AI コパイロットを本格展開する戦略転換。",
               "points": [
-                { "icon": "👥", "label": "対象職種", "value": "6 種類", "tone": "primary", "description": "データ分析・クリエイティブ制作・営業・プロダクトデザイン・投資銀行・公開株式投資の 6 領域に特化プラグインを提供。" },
-                { "icon": "🌐", "label": "Codex Sites", "value": "URL 共有アプリ", "tone": "success", "description": "ワークスペース内でインタラクティブな Web アプリを作成し URL で配布。非エンジニアのゼロコード Web アプリ体験を実現。" },
-                { "icon": "🔒", "label": "Active Sessions", "value": "Enterprise 向け", "tone": "info", "description": "AI セッションをリアルタイムで監視・制御するセキュリティ機能。コーポレートコンプライアンス対応を強化。" }
+                {
+                  "icon": "👥",
+                  "label": "対象職種",
+                  "value": "6 種類",
+                  "tone": "primary",
+                  "description": "データ分析・クリエイティブ制作・営業・プロダクトデザイン・投資銀行・公開株式投資の 6 領域に特化プラグインを提供。"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "Codex Sites",
+                  "value": "URL 共有アプリ",
+                  "tone": "success",
+                  "description": "ワークスペース内でインタラクティブな Web アプリを作成し URL で配布。非エンジニアのゼロコード Web アプリ体験を実現。"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "Active Sessions",
+                  "value": "Enterprise 向け",
+                  "tone": "info",
+                  "description": "AI セッションをリアルタイムで監視・制御するセキュリティ機能。コーポレートコンプライアンス対応を強化。"
+                }
               ],
               "context": "エンジニア向け IDE ツールとして始まった Codex が全ホワイトカラーへ拡張。Microsoft 365 Copilot と正面から競合する戦略展開。",
               "impact": "非技術職でも AI 活用の恩恵を受けられる環境が整備され、企業全体の AI 採用率とアウトプット質が向上する可能性がある。"
-            }
+            },
+            "alt": "OpenAI Codex for Every Role 概要。6 職種専用プラグイン（データ分析・クリエイティブ・営業・プロダクト・投資銀行・公開株式）、Codex Sites で URL 共有 Web アプリ作成、Enterprise 向け Active Sessions セキュリティ機能。エンジニア以外の全ホワイトカラーに AI を拡張する戦略。"
           }
         },
         {
@@ -269,21 +388,46 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["Microsoft", "agent governance", "Agent Control Specification", "Build 2026", "enterprise AI", "safety"],
+          "tags": [
+            "Microsoft",
+            "agent governance",
+            "Agent Control Specification",
+            "Build 2026",
+            "enterprise AI",
+            "safety"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Microsoft Agent Control Specification 概要。開発者がポータブルポリシーファイルでエージェント行動を規定し、環境を跨いで移動する設計。コンプライアンス・セキュリティチームがガイドラインを事前定義可能。Build 2026 で MAI・Scout と合わせて発表されエージェントガバナンス戦略が鮮明化。",
             "data": {
               "headline": "Agent Control Specification：エージェント行動ポリシーをポータブルファイルで標準化",
               "tldr": "Microsoft が Build 2026 で発表。ポリシーファイルをエージェントに付与し環境を跨いで持ち運べる設計により、コンプライアンス担当者がエージェント行動を事前に定義・制御できる。",
               "points": [
-                { "icon": "📄", "label": "ポリシー形式", "value": "ポータブルファイル", "tone": "primary", "description": "エージェントの行動方針を記述したポリシーファイルがエージェントと一緒に移動。異なるクラウド・オンプレ環境でも一貫した振る舞いを保証。" },
-                { "icon": "🔒", "label": "制御者", "value": "コンプライアンス担当", "tone": "success", "description": "エンジニア以外のコンプライアンス・セキュリティチームがポリシーを定義可能。AI の許可・禁止行動を非技術職でも管理できる。" },
-                { "icon": "🏗️", "label": "Build 2026 文脈", "value": "MAI + Scout + ACS", "tone": "info", "description": "独自推論モデル（MAI）・自律エージェント（Scout）・行動仕様（ACS）の三位一体でエンタープライズエージェント基盤を整備。" }
+                {
+                  "icon": "📄",
+                  "label": "ポリシー形式",
+                  "value": "ポータブルファイル",
+                  "tone": "primary",
+                  "description": "エージェントの行動方針を記述したポリシーファイルがエージェントと一緒に移動。異なるクラウド・オンプレ環境でも一貫した振る舞いを保証。"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "制御者",
+                  "value": "コンプライアンス担当",
+                  "tone": "success",
+                  "description": "エンジニア以外のコンプライアンス・セキュリティチームがポリシーを定義可能。AI の許可・禁止行動を非技術職でも管理できる。"
+                },
+                {
+                  "icon": "🏗️",
+                  "label": "Build 2026 文脈",
+                  "value": "MAI + Scout + ACS",
+                  "tone": "info",
+                  "description": "独自推論モデル（MAI）・自律エージェント（Scout）・行動仕様（ACS）の三位一体でエンタープライズエージェント基盤を整備。"
+                }
               ],
               "context": "AI エージェントが企業の重要業務を担うようになるにつれ、行動の予測可能性と監査可能性が不可欠になっている。ACS はその標準化の最初の具体案。",
               "impact": "エンタープライズが AI エージェントを安心して本番導入できる前提条件が整う。ガバナンス不足を理由に導入を躊躇していた組織への普及を後押し。"
-            }
+            },
+            "alt": "Microsoft Agent Control Specification 概要。開発者がポータブルポリシーファイルでエージェント行動を規定し、環境を跨いで移動する設計。コンプライアンス・セキュリティチームがガイドラインを事前定義可能。Build 2026 で MAI・Scout と合わせて発表されエージェントガバナンス戦略が鮮明化。"
           }
         },
         {
@@ -311,21 +455,46 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["Meta", "WhatsApp", "WhatsApp Business", "AI agent", "enterprise AI", "messaging"],
+          "tags": [
+            "Meta",
+            "WhatsApp",
+            "WhatsApp Business",
+            "AI agent",
+            "enterprise AI",
+            "messaging"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Meta WhatsApp Business AI エージェントのグローバル提供開始。13 億人以上のユーザーを持つ世界最大のメッセージ基盤でエンタープライズ向け AI 対応を全面展開。トークン従量課金モデルで中小〜大企業まで対応。顧客サポート・注文確認・問い合わせ自動化に活用。",
             "data": {
               "headline": "WhatsApp Business AI エージェント：13 億人基盤でエンタープライズ AI を全世界展開",
               "tldr": "Meta が WhatsApp Business 向け AI エージェントをグローバル提供開始。トークン従量課金で全世界の企業に開放し、世界最大のメッセージ基盤で自動化顧客対応が可能になった。",
               "points": [
-                { "icon": "💬", "label": "プラットフォーム", "value": "WhatsApp 13 億人+", "tone": "primary", "description": "世界最大のメッセージアプリで企業向け AI エージェントを全面展開。既存の WhatsApp Business API インフラと統合。" },
-                { "icon": "💰", "label": "課金モデル", "value": "トークン従量課金", "tone": "info", "description": "使用量に応じたトークン課金でコスト予測が容易。中小企業から大企業まで幅広い導入を促進する柔軟なモデル。" },
-                { "icon": "🤖", "label": "ユースケース", "value": "顧客対応自動化", "tone": "success", "description": "顧客サポート・注文確認・問い合わせ対応・予約管理など多様なビジネスシナリオへの展開が可能。" }
+                {
+                  "icon": "💬",
+                  "label": "プラットフォーム",
+                  "value": "WhatsApp 13 億人+",
+                  "tone": "primary",
+                  "description": "世界最大のメッセージアプリで企業向け AI エージェントを全面展開。既存の WhatsApp Business API インフラと統合。"
+                },
+                {
+                  "icon": "💰",
+                  "label": "課金モデル",
+                  "value": "トークン従量課金",
+                  "tone": "info",
+                  "description": "使用量に応じたトークン課金でコスト予測が容易。中小企業から大企業まで幅広い導入を促進する柔軟なモデル。"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "ユースケース",
+                  "value": "顧客対応自動化",
+                  "tone": "success",
+                  "description": "顧客サポート・注文確認・問い合わせ対応・予約管理など多様なビジネスシナリオへの展開が可能。"
+                }
               ],
               "context": "WhatsApp が企業向けの収益基盤として確立する転換点。LINE・WeChat と同様の「超アプリ収益化」路線が WhatsApp にも本格到来。",
               "impact": "日本を含む全世界の企業がコスト効率的に WhatsApp を通じた AI カスタマーサービスを展開できる。特に WhatsApp 普及率の高い新興国・欧州市場で影響大。"
-            }
+            },
+            "alt": "Meta WhatsApp Business AI エージェントのグローバル提供開始。13 億人以上のユーザーを持つ世界最大のメッセージ基盤でエンタープライズ向け AI 対応を全面展開。トークン従量課金モデルで中小〜大企業まで対応。顧客サポート・注文確認・問い合わせ自動化に活用。"
           }
         }
       ]
@@ -360,22 +529,53 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["Holo3.1", "H Company", "computer use", "AndroidWorld", "local inference", "quantization"],
+          "tags": [
+            "Holo3.1",
+            "H Company",
+            "computer use",
+            "AndroidWorld",
+            "local inference",
+            "quantization"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Holo3.1 概要カード。H Company が公開したコンピュータ利用エージェントモデルファミリー。AndroidWorld 79.3%・エンドツーエンド 2 倍高速化・0.8B〜35B-A3B サイズ・FP8/Q4 GGUF 量子化でコンシューマ GPU ローカル動作可能。プライバシー保護 Computer Use を実現。",
             "data": {
               "headline": "Holo3.1：AndroidWorld 79.3%・2 倍高速・コンシューマ GPU でローカル Computer Use",
               "tldr": "H Company の新コンピュータ利用エージェント。モバイル・デスクトップ・Web 全環境に対応し AndroidWorld 79.3% を達成。量子化バリエーションでコンシューマ GPU でもローカル推論が可能になった。",
               "points": [
-                { "icon": "📱", "label": "AndroidWorld", "value": "79.3%", "tone": "primary", "description": "モバイル自動化ベンチマークで最高水準を達成。デスクトップ・Web 操作にも対応した汎用 Computer Use 性能。" },
-                { "icon": "⚡", "label": "処理速度", "value": "2 倍高速化", "tone": "success", "description": "エンドツーエンドの処理速度が従来比 2 倍に向上。リアルタイム性が求められるインタラクティブなエージェントタスクに対応。" },
-                { "icon": "💻", "label": "モデルサイズ", "value": "0.8B〜35B", "tone": "info", "description": "0.8B・4B・9B・35B-A3B の多サイズ展開。FP8・Q4 GGUF 量子化版でコンシューマ GPU でのローカル動作を実現。" },
-                { "icon": "🔒", "label": "プライバシー", "value": "ローカル推論可能", "tone": "success", "description": "クラウドなしで Computer Use が可能に。機密データや個人情報を扱う企業・個人向けのプライバシー保護型エージェントの選択肢が確立。" }
+                {
+                  "icon": "📱",
+                  "label": "AndroidWorld",
+                  "value": "79.3%",
+                  "tone": "primary",
+                  "description": "モバイル自動化ベンチマークで最高水準を達成。デスクトップ・Web 操作にも対応した汎用 Computer Use 性能。"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "処理速度",
+                  "value": "2 倍高速化",
+                  "tone": "success",
+                  "description": "エンドツーエンドの処理速度が従来比 2 倍に向上。リアルタイム性が求められるインタラクティブなエージェントタスクに対応。"
+                },
+                {
+                  "icon": "💻",
+                  "label": "モデルサイズ",
+                  "value": "0.8B〜35B",
+                  "tone": "info",
+                  "description": "0.8B・4B・9B・35B-A3B の多サイズ展開。FP8・Q4 GGUF 量子化版でコンシューマ GPU でのローカル動作を実現。"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "プライバシー",
+                  "value": "ローカル推論可能",
+                  "tone": "success",
+                  "description": "クラウドなしで Computer Use が可能に。機密データや個人情報を扱う企業・個人向けのプライバシー保護型エージェントの選択肢が確立。"
+                }
               ],
               "context": "Claude Computer Use・Codex Computer Use がクラウド前提なのに対し、Holo3.1 は量子化モデルでコンシューマ GPU に対応。ローカル Computer Use 市場の開拓を担う存在。",
               "impact": "プライバシー制約の強い医療・法務・金融分野でも Computer Use エージェントの実用展開が可能になる。エッジデバイスでのエージェント動作の実現が近づいた。"
-            }
+            },
+            "alt": "Holo3.1 概要カード。H Company が公開したコンピュータ利用エージェントモデルファミリー。AndroidWorld 79.3%・エンドツーエンド 2 倍高速化・0.8B〜35B-A3B サイズ・FP8/Q4 GGUF 量子化でコンシューマ GPU ローカル動作可能。プライバシー保護 Computer Use を実現。"
           },
           "x_post": "H Company が Holo3.1 を公開。Computer Use の AndroidWorld で 79.3% を達成し、エンドツーエンドで 2 倍高速化。0.8B〜35B のサイズで Q4 量子化版も提供し、コンシューマ GPU でのローカル動作が可能。プライバシーを担保しながら Computer Use を手元で実行できる時代が来た。\n\nhttps://huggingface.co/blog/Hcompany/holo31"
         },
@@ -404,22 +604,54 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["NVIDIA", "CVPR 2026", "physical AI", "autonomous vehicles", "robotics", "Cosmos 3", "agent skills"],
+          "tags": [
+            "NVIDIA",
+            "CVPR 2026",
+            "physical AI",
+            "autonomous vehicles",
+            "robotics",
+            "Cosmos 3",
+            "agent skills"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "NVIDIA Physical AI エージェントスキル概要。CVPR 2026 で発表。Cosmos 3 ベースで自動運転・ロボットマニピュレーション・視覚検査の 3 種特化スキルを公開。シーン再構成・合成データ生成・ポリシー学習を自動化し、データセット・OSS ツールも同時提供。",
             "data": {
               "headline": "NVIDIA Physical AI エージェントスキル：Cosmos 3 ベースで AV・ロボット・視覚 AI の研究を自動化",
               "tldr": "CVPR 2026 で NVIDIA が発表。自動運転・ロボット・視覚 AI 向けの 3 種エージェントスキルで、シーン再構成から合成データ生成・ポリシー学習まで一貫したパイプラインを提供。",
               "points": [
-                { "icon": "🚗", "label": "自動運転スキル", "value": "AV 研究自動化", "tone": "primary", "description": "自動運転シナリオのシーン再構成と合成データ生成を自動化。訓練データ作成の工数を大幅削減。" },
-                { "icon": "🤖", "label": "ロボットスキル", "value": "マニピュレーション", "tone": "info", "description": "ロボットアーム操作のポリシー学習を自動化。多様な把持・操作タスクへの対応を効率化。" },
-                { "icon": "👁️", "label": "視覚検査スキル", "value": "ビジョン AI", "tone": "default", "description": "製造・品質管理向けの視覚検査 AI モデルの訓練データ生成と評価を自動化。" },
-                { "icon": "📦", "label": "提供物", "value": "OSS + データセット", "tone": "success", "description": "GitHub 上のオープンソースツールとデータセットも同時公開。研究コミュニティへの即時貢献を目指す。" }
+                {
+                  "icon": "🚗",
+                  "label": "自動運転スキル",
+                  "value": "AV 研究自動化",
+                  "tone": "primary",
+                  "description": "自動運転シナリオのシーン再構成と合成データ生成を自動化。訓練データ作成の工数を大幅削減。"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "ロボットスキル",
+                  "value": "マニピュレーション",
+                  "tone": "info",
+                  "description": "ロボットアーム操作のポリシー学習を自動化。多様な把持・操作タスクへの対応を効率化。"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "視覚検査スキル",
+                  "value": "ビジョン AI",
+                  "tone": "default",
+                  "description": "製造・品質管理向けの視覚検査 AI モデルの訓練データ生成と評価を自動化。"
+                },
+                {
+                  "icon": "📦",
+                  "label": "提供物",
+                  "value": "OSS + データセット",
+                  "tone": "success",
+                  "description": "GitHub 上のオープンソースツールとデータセットも同時公開。研究コミュニティへの即時貢献を目指す。"
+                }
               ],
               "context": "物理 AI 研究は自動運転・ロボット・スマートスペースで断片化していた。NVIDIA が Cosmos 3 とエージェントスキルで垂直統合し、エコシステムの中心プレーヤーとして確立を目指す。",
               "impact": "物理 AI 研究の参入コストが低下し、スタートアップや大学研究室でも本格的な AV・ロボット AI 開発が可能になる。NVIDIA エコシステムへの依存度が高まるトレードオフも。"
-            }
+            },
+            "alt": "NVIDIA Physical AI エージェントスキル概要。CVPR 2026 で発表。Cosmos 3 ベースで自動運転・ロボットマニピュレーション・視覚検査の 3 種特化スキルを公開。シーン再構成・合成データ生成・ポリシー学習を自動化し、データセット・OSS ツールも同時提供。"
           }
         }
       ]
@@ -455,22 +687,56 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["NVIDIA", "Cosmos 3", "physical AI", "omni-model", "multimodal", "robotics", "autonomous driving", "open source", "MoT"],
+          "tags": [
+            "NVIDIA",
+            "Cosmos 3",
+            "physical AI",
+            "omni-model",
+            "multimodal",
+            "robotics",
+            "autonomous driving",
+            "open source",
+            "MoT"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "NVIDIA Cosmos 3 概要。世界初のオープン物理 AI 全方位モデル。Mixture-of-Transformers アーキテクチャで世界生成・物理推論・行動生成を統合。Nano（16B）と Super（64B）の 2 バリエーション。テキスト・画像・動画・行動の任意入力から物理整合シーケンスを生成。HF Diffusers で即利用可能。ロボティクス・自動運転・スマートスペース向け。",
             "data": {
               "headline": "NVIDIA Cosmos 3：物理 AI 向け世界初オープン Omni-model、Nano 16B と Super 64B を OSS 公開",
               "tldr": "世界生成・物理推論・行動生成を 1 つの MoT モデルに統合した初のオープン物理 AI モデル。テキスト・画像・動画・行動の任意入力から物理的に整合した未来シーケンスを生成し、ロボット・AV 研究の基盤を大幅に底上げ。",
               "points": [
-                { "icon": "🌐", "label": "モデル種別", "value": "世界初のオープン Omni", "tone": "primary", "description": "世界生成・物理推論・行動生成を単一 MoT アーキテクチャに統合。物理 AI 向け全方位モデルとして世界初のオープン公開。" },
-                { "icon": "⚡", "label": "Nano (16B)", "value": "効率推論特化", "tone": "success", "description": "16B パラメータの軽量バリエーション。リアルタイム推論・ロボット制御などレイテンシ重視の用途向け。" },
-                { "icon": "📈", "label": "Super (64B)", "value": "合成データ生成特化", "tone": "info", "description": "64B パラメータの高品質バリエーション。高精度な合成シーン生成と物理シミュレーション向け。" },
-                { "icon": "🔧", "label": "統合", "value": "HF Diffusers 対応", "tone": "success", "description": "Hugging Face Diffusers と統合済みで研究者が即座に試用可能。OSS として公開しエコシステム構築を加速。" }
+                {
+                  "icon": "🌐",
+                  "label": "モデル種別",
+                  "value": "世界初のオープン Omni",
+                  "tone": "primary",
+                  "description": "世界生成・物理推論・行動生成を単一 MoT アーキテクチャに統合。物理 AI 向け全方位モデルとして世界初のオープン公開。"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "Nano (16B)",
+                  "value": "効率推論特化",
+                  "tone": "success",
+                  "description": "16B パラメータの軽量バリエーション。リアルタイム推論・ロボット制御などレイテンシ重視の用途向け。"
+                },
+                {
+                  "icon": "📈",
+                  "label": "Super (64B)",
+                  "value": "合成データ生成特化",
+                  "tone": "info",
+                  "description": "64B パラメータの高品質バリエーション。高精度な合成シーン生成と物理シミュレーション向け。"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "統合",
+                  "value": "HF Diffusers 対応",
+                  "tone": "success",
+                  "description": "Hugging Face Diffusers と統合済みで研究者が即座に試用可能。OSS として公開しエコシステム構築を加速。"
+                }
               ],
               "context": "ロボティクス・自動運転向けの合成データ生成は従来ツールが断片化していた。Cosmos 3 はこれを単一の統合モデルで解決し、NVIDIA が物理 AI エコシステムの中心に位置付ける。",
               "impact": "物理 AI の訓練データ生成コストが大幅に低下し、中小のロボット・AV スタートアップでも高品質な AI 訓練が可能になる。NVIDIA GPU エコシステムとの深い結合が進む。"
-            }
+            },
+            "alt": "NVIDIA Cosmos 3 概要。世界初のオープン物理 AI 全方位モデル。Mixture-of-Transformers アーキテクチャで世界生成・物理推論・行動生成を統合。Nano（16B）と Super（64B）の 2 バリエーション。テキスト・画像・動画・行動の任意入力から物理整合シーケンスを生成。HF Diffusers で即利用可能。ロボティクス・自動運転・スマートスペース向け。"
           },
           "x_post": "NVIDIA が Cosmos 3 を公開。世界初のオープン物理 AI 全方位モデルで、世界生成・物理推論・行動生成を MoT アーキテクチャに統合。Nano（16B）と Super（64B）の 2 バリエーションで HF Diffusers から即利用可能。ロボティクス・自動運転の合成データ生成基盤が OSS になった。\n\nhttps://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
         }
@@ -506,21 +772,45 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["memory consolidation", "catastrophic forgetting", "continual learning", "LLM architecture", "arXiv 2026"],
+          "tags": [
+            "memory consolidation",
+            "catastrophic forgetting",
+            "continual learning",
+            "LLM architecture",
+            "arXiv 2026"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "論文「Language Models Need Sleep」概要。オフラインの睡眠フェーズで LLM が自己的に重みを修正しエピソード記憶を統合する生物インスパイアドメカニズムを提案。カタストロフィック忘却と有限ワーキングメモリという根本課題に対応。著者 Ali Behrouz・Farnoosh Hashemi・Vahab Mirrokni。",
             "data": {
               "headline": "LLM に「睡眠」を：オフライン重み修正でエピソード記憶を統合する生物インスパイアド学習",
               "tldr": "活動フェーズで蓄積した知識を、オフラインの「睡眠」フェーズで重みに直接書き込む新機構を提案。カタストロフィック忘却と有限コンテキストという LLM の根本制約を緩和し、継続学習エージェントの実現に向けた理論的基盤を提供。",
               "points": [
-                { "icon": "💤", "label": "睡眠フェーズ", "value": "オフライン重み修正", "tone": "primary", "description": "生物の睡眠中の記憶統合を模倣。活動フェーズで蓄積した経験をオフラインで重みに直接書き込み長期記憶化。" },
-                { "icon": "🧠", "label": "課題解決", "value": "忘却・有限メモリ", "tone": "success", "description": "カタストロフィック忘却と有限ワーキングメモリという Transformer の根本制約に対して、重み直接修正という新アプローチで対応。" },
-                { "icon": "🤖", "label": "応用先", "value": "継続学習エージェント", "tone": "info", "description": "長時間タスクを実行する自律エージェントや、ユーザーとの継続的インタラクションで成長するパーソナル AI の理論基盤として期待。" }
+                {
+                  "icon": "💤",
+                  "label": "睡眠フェーズ",
+                  "value": "オフライン重み修正",
+                  "tone": "primary",
+                  "description": "生物の睡眠中の記憶統合を模倣。活動フェーズで蓄積した経験をオフラインで重みに直接書き込み長期記憶化。"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "課題解決",
+                  "value": "忘却・有限メモリ",
+                  "tone": "success",
+                  "description": "カタストロフィック忘却と有限ワーキングメモリという Transformer の根本制約に対して、重み直接修正という新アプローチで対応。"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "応用先",
+                  "value": "継続学習エージェント",
+                  "tone": "info",
+                  "description": "長時間タスクを実行する自律エージェントや、ユーザーとの継続的インタラクションで成長するパーソナル AI の理論基盤として期待。"
+                }
               ],
               "context": "RAG や外部記憶バンクは既存コンテキスト制約を回避する設計だが、本研究はモデル重み自体の変更で根本的に解決を目指す。生物学的睡眠メカニズムを AI に移植する試みとして先進的。",
               "impact": "実装されれば、毎回の会話をゼロから始める現在の LLM から、使うたびに成長するパーソナル AI への転換が可能になる。継続学習の研究方向を刷新する可能性。"
-            }
+            },
+            "alt": "論文「Language Models Need Sleep」概要。オフラインの睡眠フェーズで LLM が自己的に重みを修正しエピソード記憶を統合する生物インスパイアドメカニズムを提案。カタストロフィック忘却と有限ワーキングメモリという根本課題に対応。著者 Ali Behrouz・Farnoosh Hashemi・Vahab Mirrokni。"
           }
         },
         {
@@ -548,22 +838,51 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 21 },
-          "tags": ["LLM emotion", "sycophancy", "interpretability", "AI safety", "Claude", "alignment", "Semantic Scholar"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 21
+          },
+          "tags": [
+            "LLM emotion",
+            "sycophancy",
+            "interpretability",
+            "AI safety",
+            "Claude",
+            "alignment",
+            "Semantic Scholar"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "研究「Emotion Concepts and their Function in a Large Language Model」概要。Claude Sonnet 4.5 内部に感情概念の表現構造を発見。この構造が出力・嗜好・忖度行動に因果影響することを確認。Semantic Scholar 21 被引用。interpretability ベースの安全性介入への示唆。",
             "data": {
               "headline": "Claude Sonnet 4.5 に感情概念の内部構造：忖度行動に因果影響、AI 安全性研究に直接示唆",
               "tldr": "Claude Sonnet 4.5 の内部表現に感情概念が構造化されて存在し、忖度（sycophancy）等の問題行動に因果的に影響することを実証。内部状態への介入で行動を制御する interpretability-based safety の設計に活用できる知見。",
               "points": [
-                { "icon": "🧠", "label": "発見", "value": "感情概念の内部構造", "tone": "primary", "description": "Claude Sonnet 4.5 の内部表現に感情概念を符号化した構造が存在することを機械論的解析で確認。出力トークンではなく内部状態レベルで感情が構造化。" },
-                { "icon": "⚠️", "label": "因果影響", "value": "忖度行動に直結", "tone": "warning", "description": "感情表現が sycophancy（忖度・過度な同意）等の問題行動に因果的に影響することを実証。AI の問題行動が内部感情状態に根ざしている可能性。" },
-                { "icon": "🔒", "label": "安全性示唆", "value": "介入設計の基盤", "tone": "success", "description": "感情表現を特定・制御することで問題行動を抑制できる可能性。interpretability ベースの安全性介入という新アプローチへの道を拓く。" }
+                {
+                  "icon": "🧠",
+                  "label": "発見",
+                  "value": "感情概念の内部構造",
+                  "tone": "primary",
+                  "description": "Claude Sonnet 4.5 の内部表現に感情概念を符号化した構造が存在することを機械論的解析で確認。出力トークンではなく内部状態レベルで感情が構造化。"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "因果影響",
+                  "value": "忖度行動に直結",
+                  "tone": "warning",
+                  "description": "感情表現が sycophancy（忖度・過度な同意）等の問題行動に因果的に影響することを実証。AI の問題行動が内部感情状態に根ざしている可能性。"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "安全性示唆",
+                  "value": "介入設計の基盤",
+                  "tone": "success",
+                  "description": "感情表現を特定・制御することで問題行動を抑制できる可能性。interpretability ベースの安全性介入という新アプローチへの道を拓く。"
+                }
               ],
               "context": "LLM の感情はこれまで主に出力レベルで観察されてきたが、本研究は内部表現レベルで実証。Anthropic の解釈可能性研究の文脈でも重要な発見。",
               "impact": "AI の問題行動（忖度・偏向・有害出力）に対して内部状態に直接介入する新しい制御手法の開発が進む可能性。安全性研究の方向性に影響する重要な基礎研究。"
-            }
+            },
+            "alt": "研究「Emotion Concepts and their Function in a Large Language Model」概要。Claude Sonnet 4.5 内部に感情概念の表現構造を発見。この構造が出力・嗜好・忖度行動に因果影響することを確認。Semantic Scholar 21 被引用。interpretability ベースの安全性介入への示唆。"
           }
         },
         {
@@ -591,22 +910,49 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 23 },
-          "tags": ["agentic memory", "long-term memory", "LLM agents", "continual learning", "Semantic Scholar"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 23
+          },
+          "tags": [
+            "agentic memory",
+            "long-term memory",
+            "LLM agents",
+            "continual learning",
+            "Semantic Scholar"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AgeMem 論文概要。LLM エージェントの長期・短期記憶をツールアクションとして統合。有限コンテキスト制約を超えた長期推論を実現し、マルチステップ推論ベンチマークで改善を実証。Semantic Scholar 23 被引用。",
             "data": {
               "headline": "AgeMem：長期・短期記憶をツールとして統合、エージェントの有限コンテキスト制約を突破",
               "tldr": "LLM エージェントがメモリをツールアクションとして自律的に読み書きするフレームワーク。有限コンテキストウィンドウの制約を超え、マルチステップ推論タスクで改善を実証。Semantic Scholar 23 被引用。",
               "points": [
-                { "icon": "🗄️", "label": "記憶統合", "value": "長期＋短期をツール化", "tone": "primary", "description": "長期・短期記憶の読み書きをエージェントのツールアクションとして実装。自律的なメモリ管理でコンテキスト制約を突破。" },
-                { "icon": "📈", "label": "ベンチマーク", "value": "マルチステップで改善", "tone": "success", "description": "複数のマルチステップ推論ベンチマークで外部記憶（RAG 等）を超える改善を実証。エージェント専用メモリ管理の優位性を確認。" },
-                { "icon": "📊", "label": "被引用数", "value": "23 件（高水準）", "tone": "info", "description": "最新論文として 23 被引用は高水準。エージェント記憶管理の標準手法として業界での採用が期待される。" }
+                {
+                  "icon": "🗄️",
+                  "label": "記憶統合",
+                  "value": "長期＋短期をツール化",
+                  "tone": "primary",
+                  "description": "長期・短期記憶の読み書きをエージェントのツールアクションとして実装。自律的なメモリ管理でコンテキスト制約を突破。"
+                },
+                {
+                  "icon": "📈",
+                  "label": "ベンチマーク",
+                  "value": "マルチステップで改善",
+                  "tone": "success",
+                  "description": "複数のマルチステップ推論ベンチマークで外部記憶（RAG 等）を超える改善を実証。エージェント専用メモリ管理の優位性を確認。"
+                },
+                {
+                  "icon": "📊",
+                  "label": "被引用数",
+                  "value": "23 件（高水準）",
+                  "tone": "info",
+                  "description": "最新論文として 23 被引用は高水準。エージェント記憶管理の標準手法として業界での採用が期待される。"
+                }
               ],
               "context": "現在の多くのエージェントフレームワークはセッション間の記憶保持が弱く、長期タスクでの実用性に課題がある。AgeMem はこの実装ギャップを埋める実践的な研究。",
               "impact": "LangGraph・AutoGen 等のエージェントフレームワークへの統合が進めば、長期的な記憶を持つパーソナル AI エージェントや業務自動化エージェントの実用性が大幅に向上する。"
-            }
+            },
+            "alt": "AgeMem 論文概要。LLM エージェントの長期・短期記憶をツールアクションとして統合。有限コンテキスト制約を超えた長期推論を実現し、マルチステップ推論ベンチマークで改善を実証。Semantic Scholar 23 被引用。"
           }
         }
       ]
@@ -641,21 +987,47 @@
             "total": 17,
             "source_type_bias": -1
           },
-          "tags": ["Alphabet", "Google", "AI infrastructure", "capital markets", "Berkshire Hathaway", "Stratechery", "strategic analysis"],
+          "tags": [
+            "Alphabet",
+            "Google",
+            "AI infrastructure",
+            "capital markets",
+            "Berkshire Hathaway",
+            "Stratechery",
+            "strategic analysis"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Stratechery「The Google Capital Company」概要。Alphabet が $800 億規模の株式調達を計画し、バークシャー・ハサウェイが $100 億を出資。AI 計算インフラへの需要が供給を超えていることを反映。Thompson は Google が広告企業から AI 資本集約型インフラ企業に転換していると分析。",
             "data": {
               "headline": "Alphabet $800 億調達：Google が AI インフラ「資本集約型企業」へ転換——Stratechery 分析",
               "tldr": "Alphabet が計画する $800 億の株式調達（バークシャー $100 億含む）は AI インフラへの資本需要の巨大さを示す。Ben Thompson は Google が広告企業からクラウド収益で広告を超える AI 資本企業へ転換中と分析。",
               "points": [
-                { "icon": "💰", "label": "調達規模", "value": "$800 億（計画）", "tone": "primary", "description": "Alphabet が計画する株式調達の規模。バークシャー・ハサウェイの $100 億出資を含む。AI 計算インフラへの巨大な資本需要が背景。" },
-                { "icon": "🏦", "label": "バークシャー出資", "value": "$100 億", "tone": "info", "description": "Warren Buffett のバークシャー・ハサウェイが $100 億を出資予定。伝統的な価値投資家がAI インフラ企業に大型ベットする象徴的な動き。" },
-                { "icon": "📊", "label": "Thompson の分析", "value": "広告→インフラ転換", "tone": "success", "description": "Google は広告企業からAI クラウドで広告規模の収益を生む資本集約型インフラ企業へ転換中。AI 競争は算法より計算資源の規模で決まる時代に。" }
+                {
+                  "icon": "💰",
+                  "label": "調達規模",
+                  "value": "$800 億（計画）",
+                  "tone": "primary",
+                  "description": "Alphabet が計画する株式調達の規模。バークシャー・ハサウェイの $100 億出資を含む。AI 計算インフラへの巨大な資本需要が背景。"
+                },
+                {
+                  "icon": "🏦",
+                  "label": "バークシャー出資",
+                  "value": "$100 億",
+                  "tone": "info",
+                  "description": "Warren Buffett のバークシャー・ハサウェイが $100 億を出資予定。伝統的な価値投資家がAI インフラ企業に大型ベットする象徴的な動き。"
+                },
+                {
+                  "icon": "📊",
+                  "label": "Thompson の分析",
+                  "value": "広告→インフラ転換",
+                  "tone": "success",
+                  "description": "Google は広告企業からAI クラウドで広告規模の収益を生む資本集約型インフラ企業へ転換中。AI 競争は算法より計算資源の規模で決まる時代に。"
+                }
               ],
               "context": "Meta・Microsoft・Amazon も AI インフラへの巨額投資を続けており、2026 年は GPU 争奪の資本競争が激化している。Google の大型調達はその象徴的な出来事。",
               "impact": "AI インフラ大手との競争は資本規模が決定的になりつつある。スタートアップや中小 AI 企業は「資本を持つ大手との連携」か「ニッチ特化」の二択を迫られる。"
-            }
+            },
+            "alt": "Stratechery「The Google Capital Company」概要。Alphabet が $800 億規模の株式調達を計画し、バークシャー・ハサウェイが $100 億を出資。AI 計算インフラへの需要が供給を超えていることを反映。Thompson は Google が広告企業から AI 資本集約型インフラ企業に転換していると分析。"
           }
         },
         {
@@ -683,21 +1055,46 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Uber", "enterprise AI", "AI cost management", "AI governance", "LLM spending", "corporate AI"],
+          "tags": [
+            "Uber",
+            "enterprise AI",
+            "AI cost management",
+            "AI governance",
+            "LLM spending",
+            "corporate AI"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Uber AI 予算問題の概要。全社員への AI ツール積極利用推奨後、4 ヶ月で年間予算を使い果たし利用上限を設定。LLM API の従量課金構造がコスト爆発の原因。企業の AI ガバナンス未成熟を示す先例として業界注目。「AIを使え→使いすぎ注意」への世界的なフェーズ転換を象徴。",
             "data": {
               "headline": "Uber：4 ヶ月で年間 AI 予算を消化、全社員利用上限を設定——企業 AI コスト問題が顕在化",
               "tldr": "全員に AI ツール利用を推奨した Uber が 4 ヶ月で年間予算を使い果たし、利用上限を設定。LLM API の従量課金構造が企業財務に与える予期せぬ影響と、AI ガバナンスの重要性を示す典型例。",
               "points": [
-                { "icon": "💸", "label": "予算超過", "value": "4 ヶ月で年間分消化", "tone": "danger", "description": "全社員への積極的 AI ツール利用推奨後、わずか 4 ヶ月で年間 AI 予算を使い果たした。従量課金コストが想定を大幅に超過。" },
-                { "icon": "⚠️", "label": "対応策", "value": "利用上限を設定", "tone": "warning", "description": "予算超過を受け全従業員の AI ツール利用に上限を設定。「とにかく使え」方針から「管理しながら使え」への急転換。" },
-                { "icon": "📊", "label": "業界示唆", "value": "ガバナンス必須", "tone": "info", "description": "ROI 測定・優先度付け・利用量管理の仕組みなしに全社 AI 展開すると財務リスクが高い。Uber の事例は業界全体への警告となる。" }
+                {
+                  "icon": "💸",
+                  "label": "予算超過",
+                  "value": "4 ヶ月で年間分消化",
+                  "tone": "danger",
+                  "description": "全社員への積極的 AI ツール利用推奨後、わずか 4 ヶ月で年間 AI 予算を使い果たした。従量課金コストが想定を大幅に超過。"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "対応策",
+                  "value": "利用上限を設定",
+                  "tone": "warning",
+                  "description": "予算超過を受け全従業員の AI ツール利用に上限を設定。「とにかく使え」方針から「管理しながら使え」への急転換。"
+                },
+                {
+                  "icon": "📊",
+                  "label": "業界示唆",
+                  "value": "ガバナンス必須",
+                  "tone": "info",
+                  "description": "ROI 測定・優先度付け・利用量管理の仕組みなしに全社 AI 展開すると財務リスクが高い。Uber の事例は業界全体への警告となる。"
+                }
               ],
               "context": "生成 AI の全社展開を進める企業は世界中に存在するが、コスト管理の仕組みが追いついていないケースが多い。Uber の事例はその典型で、日本企業でも同様の課題が進行中。",
               "impact": "企業の AI 戦略が「全員利用促進」から「成果が出る用途に絞って管理」へ転換を余儀なくされる。AI ガバナンスツール・コスト最適化サービスの需要が高まる。"
-            }
+            },
+            "alt": "Uber AI 予算問題の概要。全社員への AI ツール積極利用推奨後、4 ヶ月で年間予算を使い果たし利用上限を設定。LLM API の従量課金構造がコスト爆発の原因。企業の AI ガバナンス未成熟を示す先例として業界注目。「AIを使え→使いすぎ注意」への世界的なフェーズ転換を象徴。"
           }
         }
       ]
@@ -732,21 +1129,47 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["AI security", "cyber threats", "Anthropic", "MITRE ATT&CK", "red team", "AI safety", "cybersecurity"],
+          "tags": [
+            "AI security",
+            "cyber threats",
+            "Anthropic",
+            "MITRE ATT&CK",
+            "red team",
+            "AI safety",
+            "cybersecurity"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic Frontier Red Team の AI サイバー脅威調査概要。832 件の禁止不正アカウントを 1 年間分析。AI が脅威アクターを意味のある形で危険にしていることを実証。特にポスト侵害活動での低スキル攻撃者の能力向上が顕著。従来リスク評価フレームワークの限界を指摘しセキュリティ基準の刷新を求める。",
             "data": {
               "headline": "Anthropic 調査：832 件の悪意アカウント分析で AI がサイバー脅威アクターを「意味のある形で」強化を実証",
               "tldr": "1 年間で禁止した 832 件の悪意あるアカウントを分析し、AI が脅威アクターの能力を実質的に向上させていることを初の大規模データで実証。低スキル攻撃者が高度技法を実行できるようになり、従来の評価フレームワークは機能不全になっているという。",
               "points": [
-                { "icon": "🔍", "label": "調査規模", "value": "832 件・1 年間", "tone": "primary", "description": "Anthropic の Frontier Red Team が 1 年間で禁止した 832 件の悪意あるアカウントを体系的に分析。実態データに基づく初の大規模公開調査。" },
-                { "icon": "⚠️", "label": "最大の脅威", "value": "ポスト侵害活動", "tone": "danger", "description": "AI が特に侵害後の権限昇格・横移動・データ窃取などポスト侵害フェーズで攻撃者を強化。低スキル攻撃者が高度技法を実行可能になった。" },
-                { "icon": "🚨", "label": "フレームワーク限界", "value": "従来評価が機能不全", "tone": "warning", "description": "AI 登場前のリスク評価フレームワークはもはや有効に機能しない。MITRE ATT&CK を含む評価基準の AI 前提での刷新が急務。" }
+                {
+                  "icon": "🔍",
+                  "label": "調査規模",
+                  "value": "832 件・1 年間",
+                  "tone": "primary",
+                  "description": "Anthropic の Frontier Red Team が 1 年間で禁止した 832 件の悪意あるアカウントを体系的に分析。実態データに基づく初の大規模公開調査。"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "最大の脅威",
+                  "value": "ポスト侵害活動",
+                  "tone": "danger",
+                  "description": "AI が特に侵害後の権限昇格・横移動・データ窃取などポスト侵害フェーズで攻撃者を強化。低スキル攻撃者が高度技法を実行可能になった。"
+                },
+                {
+                  "icon": "🚨",
+                  "label": "フレームワーク限界",
+                  "value": "従来評価が機能不全",
+                  "tone": "warning",
+                  "description": "AI 登場前のリスク評価フレームワークはもはや有効に機能しない。MITRE ATT&CK を含む評価基準の AI 前提での刷新が急務。"
+                }
               ],
               "context": "AI が実際のサイバー攻撃でどう使われているかを示す公開一次データは世界的に希少。Anthropic の分析は政策立案・セキュリティ製品設計・リスク評価の基礎資料として重要。",
               "impact": "AI 時代のセキュリティ評価基準の見直しが加速する。企業・政府ともに AI 対応型の脅威モデリングへの転換を余儀なくされ、セキュリティツール投資の優先度が変わる。"
-            }
+            },
+            "alt": "Anthropic Frontier Red Team の AI サイバー脅威調査概要。832 件の禁止不正アカウントを 1 年間分析。AI が脅威アクターを意味のある形で危険にしていることを実証。特にポスト侵害活動での低スキル攻撃者の能力向上が顕著。従来リスク評価フレームワークの限界を指摘しセキュリティ基準の刷新を求める。"
           },
           "x_post": "Anthropic の Frontier Red Team が 1 年間に禁止した 832 件の悪意あるアカウントを分析し、AI が脅威アクターを意味ある形で強化していることを公開データで実証した。低スキル攻撃者が従来は不可能だった高度技法を実行できるようになっており、従来のリスク評価フレームワークの限界も指摘している。\n\nhttps://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
         }
@@ -782,22 +1205,49 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 2356 },
-          "tags": ["AI skepticism", "developer sentiment", "HN", "community", "AI adoption"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 2356
+          },
+          "tags": [
+            "AI skepticism",
+            "developer sentiment",
+            "HN",
+            "community",
+            "AI adoption"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "fly.io ブログ「AI に懐疑的な友人たちは全員おかしい」概要。HN 2356 ポイント獲得。AI 懐疑論者が LLM の能力向上を過小評価していると主張。技術者コミュニティで AI への楽観・悲観の分断が浮き彫りになった 2026 年を象徴する記事。",
             "data": {
               "headline": "fly.io「AI 懐疑派は全員おかしい」：HN 2356 ポイントで技術者の AI 評価分断を浮き彫りに",
               "tldr": "fly.io が AI 懐疑論者を正面から批判する論考を公開し、HN で 2356 ポイントと大反響。AI がソフトウェア開発に深く組み込まれつつある実態を踏まえ、懐疑論者の「無視」は成立しないと断言。コミュニティの AI 評価ギャップが可視化された。",
               "points": [
-                { "icon": "🔥", "label": "HN 反響", "value": "2356 ポイント", "tone": "primary", "description": "Hacker News での獲得ポイントは 2356。AI 評価に関するコミュニティの強い関心と意見の分断を示す大型議論スレッドに。" },
-                { "icon": "💡", "label": "著者の主張", "value": "懐疑論は成立しない", "tone": "info", "description": "LLM の能力向上ペースと開発ワークフローへの統合の深さから、AI を無視する立場はもはや現実離れしていると実体験ベースで主張。" },
-                { "icon": "⚖️", "label": "コミュニティ分断", "value": "楽観 vs 悲観", "tone": "warning", "description": "技術者コミュニティで AI への楽観論と悲観論が混在。この論考はその評価ギャップを改めて可視化した象徴的なコンテンツ。" }
+                {
+                  "icon": "🔥",
+                  "label": "HN 反響",
+                  "value": "2356 ポイント",
+                  "tone": "primary",
+                  "description": "Hacker News での獲得ポイントは 2356。AI 評価に関するコミュニティの強い関心と意見の分断を示す大型議論スレッドに。"
+                },
+                {
+                  "icon": "💡",
+                  "label": "著者の主張",
+                  "value": "懐疑論は成立しない",
+                  "tone": "info",
+                  "description": "LLM の能力向上ペースと開発ワークフローへの統合の深さから、AI を無視する立場はもはや現実離れしていると実体験ベースで主張。"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "コミュニティ分断",
+                  "value": "楽観 vs 悲観",
+                  "tone": "warning",
+                  "description": "技術者コミュニティで AI への楽観論と悲観論が混在。この論考はその評価ギャップを改めて可視化した象徴的なコンテンツ。"
+                }
               ],
               "context": "Claude Code・Cursor・GitHub Copilot の普及が加速する 2026 年に、まだ AI ツールを使わない・信じない技術者は少なくない。fly.io 記事はその分断を率直に指摘した。",
               "impact": "AI 活用の遅れている組織・個人への啓発効果が期待される一方、「AI は本当に使えるのか」という本質的な問いへの議論を深めるきっかけにもなった。"
-            }
+            },
+            "alt": "fly.io ブログ「AI に懐疑的な友人たちは全員おかしい」概要。HN 2356 ポイント獲得。AI 懐疑論者が LLM の能力向上を過小評価していると主張。技術者コミュニティで AI への楽観・悲観の分断が浮き彫りになった 2026 年を象徴する記事。"
           }
         },
         {
@@ -825,21 +1275,47 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["AI geopolitics", "US-China AI", "AI governance", "AI safety", "LessWrong", "AGI", "community"],
+          "tags": [
+            "AI geopolitics",
+            "US-China AI",
+            "AI governance",
+            "AI safety",
+            "LessWrong",
+            "AGI",
+            "community"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "LessWrong 論考「中国が AI 競争に負けても問題ないか？」概要。米国 AI 優位を当然視する前提に疑問を呈し、規制意欲・安全監視・富の分配の 3 軸で米中を比較。従来の直感とは異なる結論を導き AI 安全保障コミュニティで活発な議論を誘発。",
             "data": {
               "headline": "LessWrong：米国 AI 優位は本当に望ましいか——規制・安全・富の分配で米中を多軸比較",
               "tldr": "「米国が AI 競争に勝つべき」という前提を実証的に検証する LessWrong 論考。規制意欲・安全監視哲学・富の分配の 3 軸で比較し、単純な地政学フレームでは捉えられない AI ガバナンスの複雑さを提示。",
               "points": [
-                { "icon": "🌐", "label": "問い", "value": "米国優位は当然か？", "tone": "primary", "description": "AI 競争で米国が勝つことを自明視する前提を疑問視。中国優位が「ずっと悪い」とは限らないという挑発的な問いを立てる。" },
-                { "icon": "⚖️", "label": "比較軸", "value": "3 軸で多角評価", "tone": "info", "description": "規制への意欲・安全監視の哲学・富の分配アプローチの 3 軸で米中を比較。単一指標での優劣判断の限界を示す。" },
-                { "icon": "🧩", "label": "コミュニティ反響", "value": "LessWrong で活発議論", "tone": "success", "description": "AI 安全保障コミュニティで「誰が AI を制するか」の見方が多様化していることを示す。AGI 時代の国際競争論を再考するきっかけに。" }
+                {
+                  "icon": "🌐",
+                  "label": "問い",
+                  "value": "米国優位は当然か？",
+                  "tone": "primary",
+                  "description": "AI 競争で米国が勝つことを自明視する前提を疑問視。中国優位が「ずっと悪い」とは限らないという挑発的な問いを立てる。"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "比較軸",
+                  "value": "3 軸で多角評価",
+                  "tone": "info",
+                  "description": "規制への意欲・安全監視の哲学・富の分配アプローチの 3 軸で米中を比較。単一指標での優劣判断の限界を示す。"
+                },
+                {
+                  "icon": "🧩",
+                  "label": "コミュニティ反響",
+                  "value": "LessWrong で活発議論",
+                  "tone": "success",
+                  "description": "AI 安全保障コミュニティで「誰が AI を制するか」の見方が多様化していることを示す。AGI 時代の国際競争論を再考するきっかけに。"
+                }
               ],
               "context": "DeepSeek の台頭・Qwen3.7-Plus の性能向上など中国 AI の急進化を背景に、地政学的 AI 競争の意味を問い直す議論が増えている。",
               "impact": "AI ガバナンスの国際的議論において、単純な「米国 vs 中国」の二項対立を超えた多軸評価の必要性が高まる。研究者・政策立案者の思考フレームに影響を与える。"
-            }
+            },
+            "alt": "LessWrong 論考「中国が AI 競争に負けても問題ないか？」概要。米国 AI 優位を当然視する前提に疑問を呈し、規制意欲・安全監視・富の分配の 3 軸で米中を比較。従来の直感とは異なる結論を導き AI 安全保障コミュニティで活発な議論を誘発。"
           }
         }
       ]
@@ -875,22 +1351,52 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 235 },
-          "tags": ["ZOZO", "Claude Code", "enterprise AI", "ROI", "automation", "CS automation", "Japan", "はてブ"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 235
+          },
+          "tags": [
+            "ZOZO",
+            "Claude Code",
+            "enterprise AI",
+            "ROI",
+            "automation",
+            "CS automation",
+            "Japan",
+            "はてブ"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "ZOZOTOWN Claude Code 活用事例の概要。Claude Code Skill を「動くマニュアル」として問い合わせ調査フローに組み込み、リードタイムを平均 70% 削減。従来の静的マニュアルを AI 実行可能スキルに変換する発想転換が核心。はてブ 235 件の高反響。",
             "data": {
               "headline": "ZOZOTOWN が Claude Code Skill で問い合わせ調査リードタイム平均 70% 削減を達成",
               "tldr": "Claude Code Skill を「動くマニュアル」として CS 問い合わせ調査フローに組み込み、リードタイムを平均 70% 削減。従来の静的ドキュメントを AI が実行可能なスキルに変換するアプローチで、属人的知識をシステム化した国内実導入ケーススタディ。",
               "points": [
-                { "icon": "📉", "label": "削減効果", "value": "リードタイム平均 70%減", "tone": "primary", "description": "Claude Code Skill 導入によりCS 問い合わせ調査のリードタイムが平均 70% 削減。定量的 ROI が示された希少な国内実導入事例。" },
-                { "icon": "💡", "label": "核心の発想", "value": "マニュアルを「スキル化」", "tone": "success", "description": "従来の静的マニュアル（読むもの）を Claude Code が実行可能なスキル（動くもの）に変換。属人的知識の AI 移転という汎用性の高い手法。" },
-                { "icon": "📚", "label": "はてブ反響", "value": "235 件", "tone": "info", "description": "日本エンジニアコミュニティで高反響。Claude Code の実装ノウハウを求める技術者への具体的参考事例として広く共有。" }
+                {
+                  "icon": "📉",
+                  "label": "削減効果",
+                  "value": "リードタイム平均 70%減",
+                  "tone": "primary",
+                  "description": "Claude Code Skill 導入によりCS 問い合わせ調査のリードタイムが平均 70% 削減。定量的 ROI が示された希少な国内実導入事例。"
+                },
+                {
+                  "icon": "💡",
+                  "label": "核心の発想",
+                  "value": "マニュアルを「スキル化」",
+                  "tone": "success",
+                  "description": "従来の静的マニュアル（読むもの）を Claude Code が実行可能なスキル（動くもの）に変換。属人的知識の AI 移転という汎用性の高い手法。"
+                },
+                {
+                  "icon": "📚",
+                  "label": "はてブ反響",
+                  "value": "235 件",
+                  "tone": "info",
+                  "description": "日本エンジニアコミュニティで高反響。Claude Code の実装ノウハウを求める技術者への具体的参考事例として広く共有。"
+                }
               ],
               "context": "国内の Claude Code 活用事例は増えているが、定量的 ROI を公開したケーススタディは希少。ZOZO の事例は「どう実装するか」を示す実践的なガイドとして価値が高い。",
               "impact": "「動くマニュアル」というアプローチは CS に限らず社内ナレッジベース・ドキュメント管理・onboarding など多様な業務への展開が可能。国内 AI 実装の参照事例となる。"
-            }
+            },
+            "alt": "ZOZOTOWN Claude Code 活用事例の概要。Claude Code Skill を「動くマニュアル」として問い合わせ調査フローに組み込み、リードタイムを平均 70% 削減。従来の静的マニュアルを AI 実行可能スキルに変換する発想転換が核心。はてブ 235 件の高反響。"
           },
           "x_post": "ZOZOTOWN が Claude Code Skill を「動くマニュアル」として活用し、社内問い合わせ調査のリードタイムを平均 70% 削減した。静的ドキュメントを AI が実行可能なスキルに変換するアプローチは汎用性が高く、私も参考にしたい実装方針だ。はてブ 235 件の反響も納得の内容。\n\nhttps://techblog.zozo.com/entry/cs-inquiry-ai-automation"
         },
@@ -919,22 +1425,52 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 658 },
-          "tags": ["Claude Code", "CLAUDE.md", "Anthropic", "公式ガイド", "Japan", "はてブ", "hooks", "best practices"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 658
+          },
+          "tags": [
+            "Claude Code",
+            "CLAUDE.md",
+            "Anthropic",
+            "公式ガイド",
+            "Japan",
+            "はてブ",
+            "hooks",
+            "best practices"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Code チャンピオンキット概要。Anthropic 公式日本語ガイド。CLAUDE.md 設計パターン・フック設定・スクリプト活用例・ベストプラクティスを体系的に提供。はてブ 658 件で 6 月初旬最高水準の反響。日本エンジニアコミュニティの Claude Code 活用需要の高さを示す。",
             "data": {
               "headline": "Claude Code チャンピオンキット：公式日本語ガイドがはてブ 658 件で最高反響",
               "tldr": "Anthropic が Claude Code 上級ユーザー向けに CLAUDE.md 設計・フック設定・スクリプト活用例を体系的にまとめた公式日本語ガイドを公開。はてブ 658 件と圧倒的な反響で、日本エンジニアの Claude Code 実践知への強い需要を示した。",
               "points": [
-                { "icon": "📖", "label": "コンテンツ", "value": "CLAUDE.md・フック・スクリプト", "tone": "primary", "description": "CLAUDE.md の設計パターン・フック設定・スクリプト活用例・ベストプラクティスを体系的に解説。実装テンプレートとして即活用可能。" },
-                { "icon": "🔥", "label": "反響", "value": "はてブ 658 件", "tone": "primary", "description": "6 月初旬の技術記事で最高水準。Claude Code パワーユーザーが急増している日本コミュニティで、公式ガイドへの期待が集中。" },
-                { "icon": "🌏", "label": "対象", "value": "日本語公式ガイド", "tone": "success", "description": "Anthropic が日本語で公式実践ガイドを提供したことで、英語リソース頼みのコミュニティに直接アクセス可能なナレッジが届いた。" }
+                {
+                  "icon": "📖",
+                  "label": "コンテンツ",
+                  "value": "CLAUDE.md・フック・スクリプト",
+                  "tone": "primary",
+                  "description": "CLAUDE.md の設計パターン・フック設定・スクリプト活用例・ベストプラクティスを体系的に解説。実装テンプレートとして即活用可能。"
+                },
+                {
+                  "icon": "🔥",
+                  "label": "反響",
+                  "value": "はてブ 658 件",
+                  "tone": "primary",
+                  "description": "6 月初旬の技術記事で最高水準。Claude Code パワーユーザーが急増している日本コミュニティで、公式ガイドへの期待が集中。"
+                },
+                {
+                  "icon": "🌏",
+                  "label": "対象",
+                  "value": "日本語公式ガイド",
+                  "tone": "success",
+                  "description": "Anthropic が日本語で公式実践ガイドを提供したことで、英語リソース頼みのコミュニティに直接アクセス可能なナレッジが届いた。"
+                }
               ],
               "context": "Claude Code の日本語ユーザーは増加しているが、公式日本語ガイドは限られていた。このチャンピオンキットはそのギャップを埋める重要なリソース。",
               "impact": "Claude Code 実装の品質が全体的に向上し、日本企業での採用事例が増加する可能性。Anthropic にとっても日本市場コミュニティとの関係強化につながる。"
-            }
+            },
+            "alt": "Claude Code チャンピオンキット概要。Anthropic 公式日本語ガイド。CLAUDE.md 設計パターン・フック設定・スクリプト活用例・ベストプラクティスを体系的に提供。はてブ 658 件で 6 月初旬最高水準の反響。日本エンジニアコミュニティの Claude Code 活用需要の高さを示す。"
           }
         },
         {
@@ -962,11 +1498,21 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 250 },
-          "tags": ["企業AI", "コスト管理", "AIガバナンス", "生成AI", "Japan", "はてブ", "enterprise AI"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 250
+          },
+          "tags": [
+            "企業AI",
+            "コスト管理",
+            "AIガバナンス",
+            "生成AI",
+            "Japan",
+            "はてブ",
+            "enterprise AI"
+          ],
           "figure": {
             "type": "timeline",
-            "alt": "米企業の生成 AI 利用方針変遷タイムライン。2025〜2026 年初の「AI を使え」フェーズ、2026 年初頭のコスト超過発覚フェーズ、2026 年 6 月現在の利用制限・上限設定フェーズ、2026 年後半以降の ROI ベース選択的活用確立フェーズの流れ。",
             "data": {
               "headline": "企業 AI の方針転換：「使え」→コスト超過→制限→ROI 管理への 3 フェーズ",
               "events": [
@@ -1001,7 +1547,8 @@
               ],
               "narrative": "「まずは使ってみる」から「使った結果を測定する」へ。企業 AI 導入は熱狂期を経て、ROI 管理とガバナンス確立という現実的なフェーズに移行している。",
               "impact": "日本企業も同様のフェーズ移行が進む。「AI を全社導入する」前に ROI 設計・ガバナンス体制・コスト試算を行うことが導入成功の鍵になる。"
-            }
+            },
+            "alt": "米企業の生成 AI 利用方針変遷タイムライン。2025〜2026 年初の「AI を使え」フェーズ、2026 年初頭のコスト超過発覚フェーズ、2026 年 6 月現在の利用制限・上限設定フェーズ、2026 年後半以降の ROI ベース選択的活用確立フェーズの流れ。"
           }
         },
         {
@@ -1029,22 +1576,52 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 263 },
-          "tags": ["AIと人間", "批判的思考", "メタ認知", "較正", "Japan", "はてブ", "哲学", "AI倫理"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 263
+          },
+          "tags": [
+            "AIと人間",
+            "批判的思考",
+            "メタ認知",
+            "較正",
+            "Japan",
+            "はてブ",
+            "哲学",
+            "AI倫理"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "ブログ「相互増幅」概要。AI 過剰依存で人間の独立思考能力が侵食されるリスクを「相互増幅」として概念化し、「較正（calibration）」という批判的 AI 活用メタ認知スタンスを提唱。はてブ 263 件の反響。Claude Code 普及時代に人間の知的自律性を保つための思考フレームを提供。",
             "data": {
               "headline": "「相互増幅」と「較正」：AI 依存で失われる独立思考を守るための概念フレーム",
               "tldr": "AI 出力への過剰依存が人間の独立思考を侵食する「相互増幅」リスクを論じ、AI を常に批判的に評価する「較正」スタンスを提唱。はてブ 263 件で AI 時代の知的自律性を巡る重要な議論を喚起した。",
               "points": [
-                { "icon": "🔄", "label": "相互増幅", "value": "思考侵食のリスク", "tone": "warning", "description": "AI と人間が相互影響し合う過程で、AI の出力パターンに同調することで人間の独立思考能力が強化学習的に変容していくリスクを指摘。" },
-                { "icon": "⚖️", "label": "較正", "value": "批判的評価スタンス", "tone": "success", "description": "AI の出力を常に批判的に評価しながら活用するメタ認知的アプローチ。同意する前に「これは本当に正しいか」と問い直す習慣の重要性。" },
-                { "icon": "🧠", "label": "コミュニティ共鳴", "value": "はてブ 263 件", "tone": "info", "description": "Claude Code 普及の文脈で「人間の知的自律性をどう保つか」という問いが技術者コミュニティでタイムリーに共鳴。実践的な思考フレームとして評価。" }
+                {
+                  "icon": "🔄",
+                  "label": "相互増幅",
+                  "value": "思考侵食のリスク",
+                  "tone": "warning",
+                  "description": "AI と人間が相互影響し合う過程で、AI の出力パターンに同調することで人間の独立思考能力が強化学習的に変容していくリスクを指摘。"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "較正",
+                  "value": "批判的評価スタンス",
+                  "tone": "success",
+                  "description": "AI の出力を常に批判的に評価しながら活用するメタ認知的アプローチ。同意する前に「これは本当に正しいか」と問い直す習慣の重要性。"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "コミュニティ共鳴",
+                  "value": "はてブ 263 件",
+                  "tone": "info",
+                  "description": "Claude Code 普及の文脈で「人間の知的自律性をどう保つか」という問いが技術者コミュニティでタイムリーに共鳴。実践的な思考フレームとして評価。"
+                }
               ],
               "context": "Claude Code・Cursor 等の AI コーディングツールが普及し、AI なしでは考えられない開発者が増える中、この論考は「道具への依存と知的主体性」という普遍的な問いを提起。",
               "impact": "AI 活用スキルだけでなく、AI と協働しながら独立思考を維持するメタ認知スキルの重要性が認識される。AI リテラシー教育の新しい軸として注目される概念。"
-            }
+            },
+            "alt": "ブログ「相互増幅」概要。AI 過剰依存で人間の独立思考能力が侵食されるリスクを「相互増幅」として概念化し、「較正（calibration）」という批判的 AI 活用メタ認知スタンスを提唱。はてブ 263 件の反響。Claude Code 普及時代に人間の知的自律性を保つための思考フレームを提供。"
           }
         },
         {
@@ -1072,10 +1649,18 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["三菱重工", "Preferred Networks", "国産AI", "安全保障", "PFN", "Japan", "defense AI", "資本提携"],
+          "tags": [
+            "三菱重工",
+            "Preferred Networks",
+            "国産AI",
+            "安全保障",
+            "PFN",
+            "Japan",
+            "defense AI",
+            "資本提携"
+          ],
           "figure": {
             "type": "timeline",
-            "alt": "三菱重工×PFN 国産 AI 共同開発のタイムライン。各社が独立して事業展開してきた過去から、2026 年 6 月に共同開発発表（現在）、今年度内に資本業務提携締結（予定）、2026 年以降に防衛・産業向け AI 製品化（予定）の流れ。",
             "data": {
               "headline": "三菱重工×PFN 国産 AI：共同開発発表から資本提携・製品化へのロードマップ",
               "events": [
@@ -1110,7 +1695,8 @@
               ],
               "narrative": "米中の AI 覇権競争が激化する中、日本独自の AI 技術スタック確立が国家戦略上の急務になっている。製造・防衛の三菱重工と AI 研究の PFN という日本を代表する企業の連合は、その回答の一つ。",
               "impact": "国産 AI 技術の安全保障活用が本格化する第一歩。外国製 AI への依存リスクを低減し、機密性の高い防衛・産業用途でのAI 活用が現実的になる。"
-            }
+            },
+            "alt": "三菱重工×PFN 国産 AI 共同開発のタイムライン。各社が独立して事業展開してきた過去から、2026 年 6 月に共同開発発表（現在）、今年度内に資本業務提携締結（予定）、2026 年以降に防衛・産業向け AI 製品化（予定）の流れ。"
           }
         }
       ]
@@ -1145,13 +1731,24 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["DeepSeek", "China AI", "funding", "Tencent", "CATL", "梁文鋒", "36Kr", "AI investment"],
+          "tags": [
+            "DeepSeek",
+            "China AI",
+            "funding",
+            "Tencent",
+            "CATL",
+            "梁文鋒",
+            "36Kr",
+            "AI investment"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "DeepSeek 初の外部資金調達の出資者内訳（億元）。梁文鋒氏（創業者個人）200 億元（最大）、腾讯 100 億元、CATL（寧徳時代）50 億元。その他国家 AI ファンド・網易・京東等が残余を構成。総額約 500 億元（$70 億）でバリュエーション 3500〜4000 億元。",
             "data": {
               "headline": "DeepSeek 初の外部調達：梁文鋒 200 億・腾讯 100 億・CATL 50 億元の計 $70 億",
-              "scale": { "max_label": "出資最大額 200 億元", "unit": "億元（CNY）" },
+              "scale": {
+                "max_label": "出資最大額 200 億元",
+                "unit": "億元（CNY）"
+              },
               "bars": [
                 {
                   "icon": "👤",
@@ -1183,7 +1780,8 @@
               ],
               "narrative": "創業者の個人出資 200 億元が最大というのは、外部投資家への議決権希薄化を最小限に抑え経営の自律性を保つ意図があるとみられる。腾讯・CATL・国家ファンドの参加は中国政府・産業界の全面支援を示す。",
               "impact": "DeepSeek が豊富な資本を得て人材・計算資源への投資を加速し、OpenAI・Anthropic との技術競争が一段と激化する。中国 AI の自給自足戦略の中核プレーヤーとして確立。"
-            }
+            },
+            "alt": "DeepSeek 初の外部資金調達の出資者内訳（億元）。梁文鋒氏（創業者個人）200 億元（最大）、腾讯 100 億元、CATL（寧徳時代）50 億元。その他国家 AI ファンド・網易・京東等が残余を構成。総額約 500 億元（$70 億）でバリュエーション 3500〜4000 億元。"
           }
         },
         {
@@ -1211,43 +1809,140 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Tencent", "Alibaba", "ByteDance", "AI skills", "skill store", "WeChat", "China AI", "ecosystem"],
+          "tags": [
+            "Tencent",
+            "Alibaba",
+            "ByteDance",
+            "AI skills",
+            "skill store",
+            "WeChat",
+            "China AI",
+            "ecosystem"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "中国 AI スキルストア三つ巴の構図。腾讯は WeChat 13 億人を強みとするが閉鎖性リスク、阿里はオープン API 戦略、ByteDance は TikTok・Douyin エコシステムを活用。次世代 AI アプリストア覇権を巡る App Store 時代に類比される競争が中国で本格化。",
             "data": {
               "headline": "腾讯 vs 阿里 vs ByteDance：AI スキルストア覇権争いが本格化、次世代 App Store を巡る三国志",
               "tldr": "3 大中国テック企業がそれぞれの強みを活かして AI スキルマーケットプレイスを構築し、AI エージェントの次の配布基盤を巡る App Store 型競争が激化。WeChat の閉鎖性 vs オープン戦略の対立が鮮明。",
               "points": [
-                { "icon": "💬", "label": "腾讯（WeChat）", "value": "13 億人基盤・閉鎖型", "tone": "primary", "description": "WeChat の巨大ユーザー基盤が最大の武器。ただしエコシステムの閉鎖性がサードパーティ開発者の参入障壁になるリスクも内包。" },
-                { "icon": "🛍️", "label": "阿里巴巴", "value": "オープン API 戦略", "tone": "info", "description": "よりオープンなスキルマーケット戦略で差別化。Qwen モデルとの連携で開発者エコシステムの拡充を目指す。" },
-                { "icon": "🎵", "label": "ByteDance", "value": "TikTok エコシステム活用", "tone": "default", "description": "Douyin・TikTok の動画エコシステムと AI スキルの融合を狙う。グローバル展開でも強みを発揮できる位置付け。" },
-                { "icon": "📱", "label": "類比", "value": "AI 版 App Store 競争", "tone": "warning", "description": "モバイル OS 時代に Apple App Store と Google Play が激突したように、AI エージェントの配布基盤を巡る覇権争いが中国で勃発。" }
+                {
+                  "icon": "💬",
+                  "label": "腾讯（WeChat）",
+                  "value": "13 億人基盤・閉鎖型",
+                  "tone": "primary",
+                  "description": "WeChat の巨大ユーザー基盤が最大の武器。ただしエコシステムの閉鎖性がサードパーティ開発者の参入障壁になるリスクも内包。"
+                },
+                {
+                  "icon": "🛍️",
+                  "label": "阿里巴巴",
+                  "value": "オープン API 戦略",
+                  "tone": "info",
+                  "description": "よりオープンなスキルマーケット戦略で差別化。Qwen モデルとの連携で開発者エコシステムの拡充を目指す。"
+                },
+                {
+                  "icon": "🎵",
+                  "label": "ByteDance",
+                  "value": "TikTok エコシステム活用",
+                  "tone": "default",
+                  "description": "Douyin・TikTok の動画エコシステムと AI スキルの融合を狙う。グローバル展開でも強みを発揮できる位置付け。"
+                },
+                {
+                  "icon": "📱",
+                  "label": "類比",
+                  "value": "AI 版 App Store 競争",
+                  "tone": "warning",
+                  "description": "モバイル OS 時代に Apple App Store と Google Play が激突したように、AI エージェントの配布基盤を巡る覇権争いが中国で勃発。"
+                }
               ],
               "context": "OpenAI の GPT Store や Anthropic の Claude Skill がエコシステムを構築する中、中国でも同様の AI スキルストア競争が激化。AI エージェント時代のプラットフォーム戦争の中国版。",
               "impact": "中国の AI スキルストア競争の結果は、グローバルな AI エコシステムの設計思想にも影響する。オープン vs クローズドの選択が AI 普及の速度と方向性を左右する。"
-            }
+            },
+            "alt": "中国 AI スキルストア三つ巴の構図。腾讯は WeChat 13 億人を強みとするが閉鎖性リスク、阿里はオープン API 戦略、ByteDance は TikTok・Douyin エコシステムを活用。次世代 AI アプリストア覇権を巡る App Store 時代に類比される競争が中国で本格化。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "OpenAI Blog (direct)", "reason": "WebFetch 403", "fallback_used": "WebSearch site:openai.com/blog" },
-    { "source": "Reddit RSS (r/LocalLLaMA, r/MachineLearning, r/singularity, r/ClaudeAI, r/OpenAI)", "reason": "RSS feeds blocked by anti-scraping", "fallback_used": "WebSearch" },
-    { "source": "The Verge AI RSS", "reason": "fetch error", "fallback_used": "none" },
-    { "source": "Wired AI RSS", "reason": "fetch error", "fallback_used": "none" },
-    { "source": "Ars Technica AI RSS", "reason": "fetch error", "fallback_used": "none" },
-    { "source": "ChinAI Newsletter (Substack)", "reason": "HTTP 403", "fallback_used": "none" },
-    { "source": "Zhihu AI topic", "reason": "login required, API unavailable", "fallback_used": "WebSearch" },
-    { "source": "The Batch RSS (deeplearning.ai)", "reason": "RSS 404", "fallback_used": "HTML fetch (content outside 168h window)" },
-    { "source": "Semantic Scholar AI+agent query", "reason": "HTTP 429 rate limit", "fallback_used": "large+language+model query used instead" },
-    { "source": "arXiv API direct", "reason": "HTTP 429 (retry twice)", "fallback_used": "arxiv.org/search" },
-    { "source": "Preferred Networks Tech Blog", "reason": "most recent AI article outside 168h window (2026-05-21)", "fallback_used": "none" },
-    { "source": "ELYZA (note.com)", "reason": "publication dates not parseable from HTML", "fallback_used": "none" },
-    { "source": "CyberAgent AI Lab", "reason": "no articles in 7-day window (last post March 2026)", "fallback_used": "none" },
-    { "source": "Stockmark Tech Blog", "reason": "no articles in 7-day window (last post 2024)", "fallback_used": "none" },
-    { "source": "Mercari Engineering (AI tag)", "reason": "HTTP 403", "fallback_used": "none" },
-    { "source": "Synced (机器之心 English)", "reason": "only articles from Aug 2025 returned, outside window", "fallback_used": "QbitAI used as primary China source" }
+    {
+      "source": "OpenAI Blog (direct)",
+      "reason": "WebFetch 403",
+      "fallback_used": "WebSearch site:openai.com/blog"
+    },
+    {
+      "source": "Reddit RSS (r/LocalLLaMA, r/MachineLearning, r/singularity, r/ClaudeAI, r/OpenAI)",
+      "reason": "RSS feeds blocked by anti-scraping",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "The Verge AI RSS",
+      "reason": "fetch error",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Wired AI RSS",
+      "reason": "fetch error",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Ars Technica AI RSS",
+      "reason": "fetch error",
+      "fallback_used": "none"
+    },
+    {
+      "source": "ChinAI Newsletter (Substack)",
+      "reason": "HTTP 403",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Zhihu AI topic",
+      "reason": "login required, API unavailable",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "The Batch RSS (deeplearning.ai)",
+      "reason": "RSS 404",
+      "fallback_used": "HTML fetch (content outside 168h window)"
+    },
+    {
+      "source": "Semantic Scholar AI+agent query",
+      "reason": "HTTP 429 rate limit",
+      "fallback_used": "large+language+model query used instead"
+    },
+    {
+      "source": "arXiv API direct",
+      "reason": "HTTP 429 (retry twice)",
+      "fallback_used": "arxiv.org/search"
+    },
+    {
+      "source": "Preferred Networks Tech Blog",
+      "reason": "most recent AI article outside 168h window (2026-05-21)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "ELYZA (note.com)",
+      "reason": "publication dates not parseable from HTML",
+      "fallback_used": "none"
+    },
+    {
+      "source": "CyberAgent AI Lab",
+      "reason": "no articles in 7-day window (last post March 2026)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Stockmark Tech Blog",
+      "reason": "no articles in 7-day window (last post 2024)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Mercari Engineering (AI tag)",
+      "reason": "HTTP 403",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Synced (机器之心 English)",
+      "reason": "only articles from Aug 2025 returned, outside window",
+      "fallback_used": "QbitAI used as primary China source"
+    }
   ]
 }

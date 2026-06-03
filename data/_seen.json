@@ -1,8 +1,146 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-03T05:00:00+09:00",
+  "updated_at": "2026-06-04T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
+    "e3f1a2b4c5d60401": {
+      "url_prefix": "https://www.latent.space/p/ainews-microsoft-build-mai-thinki",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60402": {
+      "url_prefix": "https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60403": {
+      "url_prefix": "https://www.qbitai.com/2026/06/427730.html",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60404": {
+      "url_prefix": "https://techcrunch.com/2026/06/02/microsoft-offers-devs-a-better-way",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60405": {
+      "url_prefix": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-busine",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60406": {
+      "url_prefix": "https://huggingface.co/blog/Hcompany/holo31",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60407": {
+      "url_prefix": "https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-ski",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60408": {
+      "url_prefix": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60409": {
+      "url_prefix": "https://arxiv.org/abs/2606.03979",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60410": {
+      "url_prefix": "https://www.semanticscholar.org/paper/b23442046f193186e9d1a790785971e25",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60411": {
+      "url_prefix": "https://www.semanticscholar.org/paper/fddca50008a46c925b288bae079e43ea",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60412": {
+      "url_prefix": "https://stratechery.com/2026/the-google-capital-company/",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60413": {
+      "url_prefix": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-afte",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60414": {
+      "url_prefix": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60415": {
+      "url_prefix": "https://fly.io/blog/youre-all-nuts/",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60416": {
+      "url_prefix": "https://www.lesswrong.com/posts/DX5rKp4L4X2vE3gKn/china-won-t-win-the",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60417": {
+      "url_prefix": "https://techblog.zozo.com/entry/cs-inquiry-ai-automation",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60418": {
+      "url_prefix": "https://support.claude.com/ja/articles/14555399-claude-code-champion-k",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60419": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2606/02/2000000047/",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60420": {
+      "url_prefix": "https://jbpress.ismedia.jp/articles/-/95142",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60421": {
+      "url_prefix": "https://takoratta.hatenablog.com/entry/2026/06/01/084614",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60422": {
+      "url_prefix": "https://www.cnbc.com/2026/06/03/deepseek-slated-to-draw-7-billion-in",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60423": {
+      "url_prefix": "https://36kr.com/p/3837292043484033",
+      "first_seen_at": "2026-06-04",
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 1
+    },
     "e3f1a2b4c5d60301": {
       "url_prefix": "https://huggingface.co/blog/JetBrains/mellum2-launch",
       "first_seen_at": "2026-06-03",
@@ -24,8 +162,8 @@
     "e3f1a2b4c5d60304": {
       "url_prefix": "https://openai.com/index/codex-for-every-role-tool-workflow/",
       "first_seen_at": "2026-06-03",
-      "last_seen_at": "2026-06-03",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-04",
+      "last_seen_count": 2
     },
     "e3f1a2b4c5d60305": {
       "url_prefix": "https://venturebeat.com/infrastructure/microsoft-debuts-surface-rtx-spark-dev-box",
