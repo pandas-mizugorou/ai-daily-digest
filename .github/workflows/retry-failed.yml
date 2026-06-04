@@ -39,4 +39,15 @@ jobs:
         run: |
           echo "Run ${{ github.event.workflow_run.id }} concluded '${{ github.event.workflow_run.conclusion }}' (attempt ${{ github.event.workflow_run.run_attempt }})."
           echo "Re-running only the failed/cancelled jobs (already-succeeded jobs such as the daily digest are skipped)..."
-          gh run rerun ${{ github.event.workflow_run.id }} --failed -R ${{ github.repository }}
+          # 並列 cron / 外部 dispatch (Cloudflare Cron) が concurrency group 'daily-digest'
+          # で重なると、後発に追い越された先発の pending run が「cancelled」で終わる
+          # (= 欠落ではなく冗長除去)。この種の run は起動前にキャンセルされるため
+          #   gh run rerun --failed → "This workflow run cannot be retried" で exit 1
+          # となり、retry-failed 自体が失敗扱い → 失敗通知メールが飛んでいた。
+          # 本当に再実行可能な失敗 (ランナー preemption 等) だけ拾い、再実行不可なら
+          # 無害にスルーする (ジョブは success のまま終える)。
+          if gh run rerun ${{ github.event.workflow_run.id }} --failed -R ${{ github.repository }}; then
+            echo "Re-ran failed jobs of run ${{ github.event.workflow_run.id }}."
+          else
+            echo "Run ${{ github.event.workflow_run.id }} is not retryable (superseded / concurrency-cancelled, or no failed jobs). Nothing to do — ignoring."
+          fi
