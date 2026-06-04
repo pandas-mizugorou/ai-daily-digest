@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-04T05:00:00+09:00",
+  "updated_at": "2026-06-05T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -3577,6 +3577,150 @@
       "url_prefix": "https://huggingface.co/papers/2605.31584",
       "first_seen_at": "2026-06-02",
       "last_seen_at": "2026-06-02",
+      "last_seen_count": 1
+    },
+    "54af4e8bb7d03df7": {
+      "url_prefix": "https://www.latent.space/p/ainews-microsoft-build-",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "e3d6d33a127a7362": {
+      "url_prefix": "https://blog.google/innovation-and-ai/technology/d",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "2d1ef409e5b9349c": {
+      "url_prefix": "https://github.blog/changelog/2026-06-02-copilot-s",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "b39c4ce12197c9ad": {
+      "url_prefix": "https://blogs.windows.com/windowsdeveloper/2026/06",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "f5a536b13c1a72f0": {
+      "url_prefix": "https://openai.com/index/openai-frontier-models-an",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "440b7646f5767e29": {
+      "url_prefix": "https://huggingface.co/blog/Hcompany/holo31",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "5283290f158307d3": {
+      "url_prefix": "https://techcrunch.com/2026/06/03/metas-ai-agent-f",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "220012a3ac675736": {
+      "url_prefix": "https://ideogram.ai/models/4.0",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "91a4ee214fae5415": {
+      "url_prefix": "https://www.latent.space/p/ainews-reve-2-and-ideog",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "5b15e9e57c5cf2d8": {
+      "url_prefix": "https://www.latent.space/p/axiom",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "7e31d5c1f9083c44": {
+      "url_prefix": "https://biohub.org/news/world-model-of-protein-bio",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "38abe95cce4d83dd": {
+      "url_prefix": "https://arxiv.org/abs/2606.00642",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "b1148769570a8037": {
+      "url_prefix": "https://techcrunch.com/2026/06/03/alphabets-record",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "c0e85e43aee4dbe7": {
+      "url_prefix": "https://techcrunch.com/2026/06/03/coralogix-raises",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "efcb57008e76d431": {
+      "url_prefix": "https://www.anthropic.com/news/AI-enabled-cyber-th",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "015b519ee64f1b7f": {
+      "url_prefix": "https://www.theatlantic.com/philosophy/2026/06/no-",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "b254ce8fbf994344": {
+      "url_prefix": "https://law.stanford.edu/press/ai-outperforms-law-",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "81b64f4b0b2b5ae7": {
+      "url_prefix": "https://techblog.zozo.com/entry/cs-inquiry-ai-auto",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "588583f57a4ef9c3": {
+      "url_prefix": "https://tech.layerx.co.jp/entry/ai-agent-long-term",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "08196746a037808e": {
+      "url_prefix": "https://zenn.dev/nasubikun/articles/tmux-for-ai-ag",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "66b6ade0bdb9572e": {
+      "url_prefix": "https://joho-todai.com/ai-tokens-ninety-percent-ga",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "70e1dec7cf4854e8": {
+      "url_prefix": "https://weblab.t.u-tokyo.ac.jp/lecture/course-list",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "ae323bb4be08f072": {
+      "url_prefix": "https://qbitai.com/2026/06/428648.html",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "9ec68d59a51a8889": {
+      "url_prefix": "https://qbitai.com/2026/06/429130.html",
+      "first_seen_at": "2026-06-05",
+      "last_seen_at": "2026-06-05",
       "last_seen_count": 1
     }
   },

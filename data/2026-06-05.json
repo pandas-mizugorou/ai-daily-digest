@@ -24,12 +24,36 @@
     "grounding_flags": 0
   },
   "top_picks": [
-    { "id": "nm-002", "rank": 1, "reason": "Apache 2.0でノートPC動作可能な12Bマルチモーダルモデル。HN 973ptで今週最大の反響。音声ネイティブサポートはオープンウェイト初" },
-    { "id": "nm-001", "rank": 2, "reason": "MicrosoftがOpenAI不依存の自社推論モデルを初公開。SWE-Bench Pro 53%でClaude Opus 4.6に並ぶ。AI業界の均衡が変わる転換点" },
-    { "id": "ta-001", "rank": 3, "reason": "6言語でCopilotエンジンを自社アプリに組み込めるSDKがGA。MCP対応・エンタープライズ統合で開発者に直接刺さる実用リリース" },
-    { "id": "rp-001", "rank": 4, "reason": "形式証明AIがパトナム試験全12問完答・Verina 99%。$200M/$1.6Bバリュエーション。AI自動化研究の新パラダイム" },
-    { "id": "jp-001", "rank": 5, "reason": "ZOZOのClaude Code実装でhatena 237件。Claude Code Skillを動くマニュアルとして70%リードタイム削減。japan枠の必読実践事例" },
-    { "id": "rp-pol-001", "rank": 6, "reason": "Anthropicが1年間の832アカウントAI悪用データを分析。MITRE ATT&CK更新を呼びかけ。セキュリティ担当者必読の公式レポート" }
+    {
+      "id": "nm-002",
+      "rank": 1,
+      "reason": "Apache 2.0でノートPC動作可能な12Bマルチモーダルモデル。HN 973ptで今週最大の反響。音声ネイティブサポートはオープンウェイト初"
+    },
+    {
+      "id": "nm-001",
+      "rank": 2,
+      "reason": "MicrosoftがOpenAI不依存の自社推論モデルを初公開。SWE-Bench Pro 53%でClaude Opus 4.6に並ぶ。AI業界の均衡が変わる転換点"
+    },
+    {
+      "id": "ta-001",
+      "rank": 3,
+      "reason": "6言語でCopilotエンジンを自社アプリに組み込めるSDKがGA。MCP対応・エンタープライズ統合で開発者に直接刺さる実用リリース"
+    },
+    {
+      "id": "rp-001",
+      "rank": 4,
+      "reason": "形式証明AIがパトナム試験全12問完答・Verina 99%。$200M/$1.6Bバリュエーション。AI自動化研究の新パラダイム"
+    },
+    {
+      "id": "jp-001",
+      "rank": 5,
+      "reason": "ZOZOのClaude Code実装でhatena 237件。Claude Code Skillを動くマニュアルとして70%リードタイム削減。japan枠の必読実践事例"
+    },
+    {
+      "id": "rp-pol-001",
+      "rank": 6,
+      "reason": "Anthropicが1年間の832アカウントAI悪用データを分析。MITRE ATT&CK更新を呼びかけ。セキュリティ担当者必読の公式レポート"
+    }
   ],
   "categories": [
     {
@@ -48,8 +72,21 @@
           "category": "new_models",
           "published_at": "2026-06-02",
           "lang": "en",
-          "tags": ["MAI-Thinking-1", "Microsoft Build 2026", "SWE-Bench Pro", "reasoning model", "MAI family"],
-          "scores": { "importance": 5, "depth": 5, "practicality": 3, "freshness": 4, "total": 17, "source_type_bias": 0 },
+          "tags": [
+            "MAI-Thinking-1",
+            "Microsoft Build 2026",
+            "SWE-Bench Pro",
+            "reasoning model",
+            "MAI family"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 17,
+            "source_type_bias": 0
+          },
           "summary_ja": "MicrosoftはBuild 2026で自社開発の推論モデルMAI-Thinking-1を含むMAI familyを発表した。MAI-Thinking-1は35Bのアクティブパラメータを持ち、OpenAI等第三者モデルの蒸留を使わず独自に訓練されている。コーディングベンチマークSWE-Bench ProではAnthropicのClaude Opus 4.6と同等の53%を達成し、独立したブラインドテストではClaude Sonnet 4.6より高く評価された。コンテキスト長は256Kトークン。合計7つのMAIモデルが発表され、推論・コーディング・画像・音声・書き起こしをカバーする。Microsoftは100ページを超える技術レポートを公開し、スケーリングラダーやMFU数値などを明示した透明性の高さが業界から評価されている。",
           "key_points_ja": [
             "MAI-Thinking-1はMicrosoftが独自開発した推論モデル（35B activeパラメータ、コンテキスト256K）。SWE-Bench ProでClaude Opus 4.6と同等の53%を達成し、Microsoftが初めてOpenAIに依存しない競争力あるモデルを公開した",
@@ -59,20 +96,47 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "MAI-Thinking-1のスペックカード。SWE-Bench Pro 53%（Claude Opus 4.6と同等）、AIME 2025 97%（数学推論）、コンテキスト長256K tokens、MAI family 7モデルを発表、技術レポート100ページ超でMFU・スケーリング詳細を公開。Microsoftが初めて独自開発（非蒸留）の推論モデルを公開。",
             "data": {
               "headline": "MAI-Thinking-1: SWE-Bench Pro 53%でClaude Opus 4.6に並ぶ（2026-06-02）",
               "tldr": "Microsoftが独自開発（非蒸留）の推論モデルMAI-Thinking-1をBuild 2026で発表。SWE-Bench Pro 53%でClaude Opus 4.6と同等、AIME 2025で97%を達成。MAI family 7モデルを一挙公開。",
               "points": [
-                { "icon": "🧠", "label": "SWE-Bench Pro", "value": "53%", "note": "Claude Opus 4.6と同等", "tone": "primary" },
-                { "icon": "📐", "label": "AIME 2025", "value": "97%", "note": "数学推論ベンチ", "tone": "success" },
-                { "label": "Context長", "value": "256K tokens", "tone": "default" },
-                { "label": "MAI family", "value": "7モデル", "note": "推論/画像/音声など", "tone": "default" },
-                { "icon": "📋", "label": "技術レポート", "value": "100ページ超", "note": "MFU・スケーリング公開", "tone": "info" }
+                {
+                  "icon": "🧠",
+                  "label": "SWE-Bench Pro",
+                  "value": "53%",
+                  "note": "Claude Opus 4.6と同等",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📐",
+                  "label": "AIME 2025",
+                  "value": "97%",
+                  "note": "数学推論ベンチ",
+                  "tone": "success"
+                },
+                {
+                  "label": "Context長",
+                  "value": "256K tokens",
+                  "tone": "default"
+                },
+                {
+                  "label": "MAI family",
+                  "value": "7モデル",
+                  "note": "推論/画像/音声など",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📋",
+                  "label": "技術レポート",
+                  "value": "100ページ超",
+                  "note": "MFU・スケーリング公開",
+                  "tone": "info"
+                }
               ],
               "context": "MicrosoftはOpenAIとの提携を維持しつつも、第三者蒸留なしに独自で競合水準の推論モデルを構築できることを証明した。Azureの顧客はMAIとOpenAI/Claudeを比較して選べるようになる。",
               "impact": "OpenAIに依存しない自社推論モデルを持つことでMicrosoftはAI技術スタックの自律性を確立。エンタープライズ顧客の選択肢が広がり、AI推論コストの競争圧力が高まる。"
-            }
+            },
+            "alt": "MAI-Thinking-1のスペックカード。SWE-Bench Pro 53%（Claude Opus 4.6と同等）、AIME 2025 97%（数学推論）、コンテキスト長256K tokens、MAI family 7モデルを発表、技術レポート100ページ超でMFU・スケーリング詳細を公開。Microsoftが初めて独自開発（非蒸留）の推論モデルを公開。"
           },
           "x_post": "MicrosoftがBuild 2026でMAI-Thinking-1を発表した。OpenAI等の蒸留を使わず独自に開発した35Bの推論モデルで、SWE-Bench ProでClaude Opus 4.6と同等の53%を達成している。コンテキスト長は256Kトークン。100ページ超の技術レポートも公開した。\n\nhttps://www.latent.space/p/ainews-microsoft-build-mai-thinking"
         },
@@ -87,9 +151,26 @@
           "category": "new_models",
           "published_at": "2026-06-03",
           "lang": "en",
-          "reaction_signal": { "kind": "hn", "points": 973 },
-          "tags": ["Gemma 4", "Google", "open-weight", "multimodal", "Apache 2.0", "on-device"],
-          "scores": { "importance": 5, "depth": 4, "practicality": 5, "freshness": 4, "total": 18, "source_type_bias": 0 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 973
+          },
+          "tags": [
+            "Gemma 4",
+            "Google",
+            "open-weight",
+            "multimodal",
+            "Apache 2.0",
+            "on-device"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 18,
+            "source_type_bias": 0
+          },
           "summary_ja": "GoogleはGemma 4 12BをオープンウェイトモデルとしてApache 2.0ライセンスで公開した。12Bパラメータながら16GBのRAMを搭載したノートPCで動作し、テキスト・画像・音声・動画をエンコーダなしでネイティブに処理できる。音声入力をネイティブサポートする最初の中型オープンウェイトモデルであり、Apache 2.0ライセンスで商用利用も自由。Hacker Newsでは973ポイントを獲得し、オープンソースコミュニティで即座に大きな反響を呼んだ。従来の中型モデルが音声を別エンコーダで処理していたのに対し、統合アーキテクチャで複数モダリティを統一的に扱う新設計が採用されている。",
           "key_points_ja": [
             "Apache 2.0ライセンスで公開。16GB RAM以上のノートPCで動作可能な12Bモデルが、音声・動画・画像のネイティブマルチモーダル処理を提供する",
@@ -98,20 +179,44 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Gemma 4 12BのスペックカードGemma 4 12B（Apache 2.0）、必要RAM 16GB（ノートPC対応）、ライセンスApache 2.0商用可、モダリティはテキスト/画像/音声/動画（エンコーダレス統合）、HN 973ポイント。音声をネイティブサポートする初の中型オープンウェイトモデル。",
             "data": {
               "headline": "Gemma 4 12B: ノートPC対応・音声ネイティブのApache 2.0マルチモーダルモデル",
               "tldr": "Google DeepMindがApache 2.0で公開した12Bモデル。16GB RAMのノートPCで動作し、音声・動画・画像をエンコーダなしでネイティブ処理。HN 973ptの大反響。",
               "points": [
-                { "label": "パラメータ数", "value": "12B", "tone": "primary" },
-                { "label": "必要RAM", "value": "16GB以上", "note": "ノートPC対応", "tone": "success" },
-                { "label": "ライセンス", "value": "Apache 2.0", "note": "商用利用可", "tone": "success" },
-                { "label": "モダリティ", "value": "テキスト/画像/音声/動画", "note": "エンコーダレス統合", "tone": "info" },
-                { "label": "HN反響", "value": "973 pt", "note": "オープンソース界に大反響", "tone": "primary" }
+                {
+                  "label": "パラメータ数",
+                  "value": "12B",
+                  "tone": "primary"
+                },
+                {
+                  "label": "必要RAM",
+                  "value": "16GB以上",
+                  "note": "ノートPC対応",
+                  "tone": "success"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "Apache 2.0",
+                  "note": "商用利用可",
+                  "tone": "success"
+                },
+                {
+                  "label": "モダリティ",
+                  "value": "テキスト/画像/音声/動画",
+                  "note": "エンコーダレス統合",
+                  "tone": "info"
+                },
+                {
+                  "label": "HN反響",
+                  "value": "973 pt",
+                  "note": "オープンソース界に大反響",
+                  "tone": "primary"
+                }
               ],
               "context": "従来の中型オープンモデルは音声を別エンコーダで処理していた。Gemma 4 12Bは統合アーキテクチャで音声もネイティブサポートする初の中型モデル。ローカルAI開発の基盤として即日採用が始まっている。",
               "impact": "ローカルマルチモーダルAIがノートPC水準に達した。Claude APIや外部サービス不要で音声・画像対応アプリを開発できる環境が整い、スモールビジネスや個人開発者の活用が加速する。"
-            }
+            },
+            "alt": "Gemma 4 12BのスペックカードGemma 4 12B（Apache 2.0）、必要RAM 16GB（ノートPC対応）、ライセンスApache 2.0商用可、モダリティはテキスト/画像/音声/動画（エンコーダレス統合）、HN 973ポイント。音声をネイティブサポートする初の中型オープンウェイトモデル。"
           },
           "x_post": "Google DeepMindがGemma 4 12Bをオープンウェイト（Apache 2.0）で公開した。16GBのRAMを搭載したノートPCで動作し、テキスト・画像・音声・動画をエンコーダなしでネイティブ処理できる。音声をネイティブサポートする初の中型モデルで、HNでは973ポイントを獲得した。\n\nhttps://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
         }
@@ -133,8 +238,22 @@
           "category": "tools_apps",
           "published_at": "2026-06-02",
           "lang": "en",
-          "tags": ["GitHub Copilot", "SDK", "GA", "MCP", "agentic", "developer tools"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 5, "freshness": 4, "total": 17, "source_type_bias": 0 },
+          "tags": [
+            "GitHub Copilot",
+            "SDK",
+            "GA",
+            "MCP",
+            "agentic",
+            "developer tools"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 17,
+            "source_type_bias": 0
+          },
           "summary_ja": "GitHubはCopilot SDKの正式版（GA）を発表した。このSDKを使うことで、Copilotのエージェントエンジン（計画立案・ツール呼び出し・ファイル編集・マルチターン対話）を開発者が自社アプリやサービスに直接組み込めるようになった。対応言語はNode.js/TypeScript・Python・Go・.NET・Rust・Javaの6言語で、カスタムツール定義・MCPサポート・システムプロンプトのカスタマイズ機能も提供されている。エンタープライズ向けには既存の監査ログや権限管理と統合した形でCopilotのエージェント能力を活用できる。GitHubの発表によれば、Copilot SDKは本番環境での長期セッション・バックグラウンド実行・ネイティブIDE統合の3シナリオを主な対象としている。",
           "key_points_ja": [
             "6言語（Node.js/Python/Go/.NET/Rust/Java）でCopilotエージェントエンジンを自社アプリに組み込めるSDKがGAに。計画立案・ツール呼び出し・マルチターン対話を提供する",
@@ -143,19 +262,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "GitHub Copilot SDK GAのスペックカード。対応言語6種（Node.js/Python/Go/.NET/Rust/Java）、MCPサポートあり（カスタムツール定義可）、監査ログ統合（エンタープライズ対応）、実行形態は長期セッション/バックグラウンド/IDE統合の3種。Copilotエージェントエンジンを自社アプリに組み込み可能になった。",
             "data": {
               "headline": "GitHub Copilot SDK GA: 6言語対応でエージェントエンジンを自社アプリへ",
               "tldr": "CopilotのAIエージェント機能（計画・ツール呼び出し・ファイル編集）をSDK経由で自社アプリに組み込める。Node.js/Python/Go/.NET/Rust/Java対応でGA。",
               "points": [
-                { "label": "対応言語", "value": "6言語", "note": "Node/Python/Go/.NET/Rust/Java", "tone": "primary" },
-                { "label": "MCP対応", "value": "あり", "note": "カスタムツール定義可", "tone": "success" },
-                { "label": "認証連携", "value": "監査ログ統合", "note": "エンタープライズ対応", "tone": "info" },
-                { "label": "実行形態", "value": "長期/バックグラウンド/IDE統合", "tone": "default" }
+                {
+                  "label": "対応言語",
+                  "value": "6言語",
+                  "note": "Node/Python/Go/.NET/Rust/Java",
+                  "tone": "primary"
+                },
+                {
+                  "label": "MCP対応",
+                  "value": "あり",
+                  "note": "カスタムツール定義可",
+                  "tone": "success"
+                },
+                {
+                  "label": "認証連携",
+                  "value": "監査ログ統合",
+                  "note": "エンタープライズ対応",
+                  "tone": "info"
+                },
+                {
+                  "label": "実行形態",
+                  "value": "長期/バックグラウンド/IDE統合",
+                  "tone": "default"
+                }
               ],
               "context": "これまでCopilotはGitHubのIDEプラグインとしてのみ利用できた。SDKのGAにより、企業が内製開発ツールにCopilotのエージェント能力をネイティブ統合できるようになった。",
               "impact": "GitHubのCopilotエンジンがサードパーティアプリのAI基盤として普及する可能性。Anthropic Managed Agents・OpenAI Assistant APIとの競合が本格化する。"
-            }
+            },
+            "alt": "GitHub Copilot SDK GAのスペックカード。対応言語6種（Node.js/Python/Go/.NET/Rust/Java）、MCPサポートあり（カスタムツール定義可）、監査ログ統合（エンタープライズ対応）、実行形態は長期セッション/バックグラウンド/IDE統合の3種。Copilotエージェントエンジンを自社アプリに組み込み可能になった。"
           },
           "x_post": "GitHub Copilot SDKが正式GAとなった。Node.js・Python・Go・.NET・Rust・Javaの6言語でCopilotのエージェントエンジン（計画/ツール呼び出し/マルチターン対話）を自社アプリに組み込める。MCPサポートとカスタムツール定義も含まれている。\n\nhttps://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/"
         },
@@ -170,8 +308,22 @@
           "category": "tools_apps",
           "published_at": "2026-06-02",
           "lang": "en",
-          "tags": ["Aion 1.0", "Microsoft Build 2026", "on-device AI", "Windows", "ONNX Runtime", "open-weight"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 3, "freshness": 4, "total": 15, "source_type_bias": 0 },
+          "tags": [
+            "Aion 1.0",
+            "Microsoft Build 2026",
+            "on-device AI",
+            "Windows",
+            "ONNX Runtime",
+            "open-weight"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 15,
+            "source_type_bias": 0
+          },
           "summary_ja": "MicrosoftはBuild 2026でAion 1.0モデルファミリーを発表した。Aion 1.0 Instructはサマリー・アクセシビリティ向けの言語モデルで、Aion 1.0 Planは14Bパラメータの推論・ツール呼び出し対応モデル。対応デバイスではWindows上でクラウド接続なし・トークン課金なしでエージェントワークフローを完全にローカル実行できる。Aion 1.0 Instructのオープンウェイトは2026年7月にHugging Faceで公開予定。開発者はONNX RuntimeやDirectML経由でAion 1.0を自社アプリケーションに統合できる。対応するCopilot+PC（NPU搭載デバイス）で最適化された推論が提供される。",
           "key_points_ja": [
             "Aion 1.0 PlanはWindowsに標準搭載される14Bパラメータの推論・ツール呼び出しモデル。クラウドなし・トークン課金なしでローカルエージェントワークフローを実現する",
@@ -180,19 +332,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Aion 1.0スペックカード。Aion 1.0 Plan（14B、推論・ツール呼び出し）はWindows標準搭載でクラウド不要、Aion 1.0 InstructはHugging Faceで2026年7月公開予定。ONNX Runtime/DirectMLでWindows対応デバイス全体で動作。",
             "data": {
               "headline": "Aion 1.0: Windows標準搭載のローカルエージェントモデル（Plan 14B、HF 7月公開予定）",
               "tldr": "Aion 1.0 PlanはWindowsに標準搭載される14Bの推論・ツール呼び出しモデル。クラウド不要でエージェント動作し、オープンウェイトは2026年7月公開予定。",
               "points": [
-                { "label": "サイズ", "value": "14B (Plan)", "note": "推論・ツール呼び出し", "tone": "primary" },
-                { "label": "実行環境", "value": "Windows on-device", "note": "クラウド不要", "tone": "success" },
-                { "label": "OW公開", "value": "2026年7月予定", "note": "Hugging Face", "tone": "info" },
-                { "label": "API", "value": "ONNX Runtime / DirectML", "tone": "default" }
+                {
+                  "label": "サイズ",
+                  "value": "14B (Plan)",
+                  "note": "推論・ツール呼び出し",
+                  "tone": "primary"
+                },
+                {
+                  "label": "実行環境",
+                  "value": "Windows on-device",
+                  "note": "クラウド不要",
+                  "tone": "success"
+                },
+                {
+                  "label": "OW公開",
+                  "value": "2026年7月予定",
+                  "note": "Hugging Face",
+                  "tone": "info"
+                },
+                {
+                  "label": "API",
+                  "value": "ONNX Runtime / DirectML",
+                  "tone": "default"
+                }
               ],
               "context": "Copilot+PC（NPU搭載）ではすでにPhi Silica等が動いているが、Aion 1.0 Planはツール呼び出しに特化した初の標準搭載エージェントモデル。",
               "impact": "エンドユーザーが意識せずローカルAIエージェントを使える世界へ。API課金不要のデバイス内AIが一般普及する転換点となる可能性がある。"
-            }
+            },
+            "alt": "Aion 1.0スペックカード。Aion 1.0 Plan（14B、推論・ツール呼び出し）はWindows標準搭載でクラウド不要、Aion 1.0 InstructはHugging Faceで2026年7月公開予定。ONNX Runtime/DirectMLでWindows対応デバイス全体で動作。"
           }
         },
         {
@@ -206,8 +377,22 @@
           "category": "tools_apps",
           "published_at": "2026-06-01",
           "lang": "en",
-          "tags": ["OpenAI", "AWS Bedrock", "GPT-5.5", "Codex", "enterprise", "GovCloud"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 4, "freshness": 4, "total": 14, "source_type_bias": 0 },
+          "tags": [
+            "OpenAI",
+            "AWS Bedrock",
+            "GPT-5.5",
+            "Codex",
+            "enterprise",
+            "GovCloud"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 14,
+            "source_type_bias": 0
+          },
           "summary_ja": "OpenAIはAmazon Bedrockでのモデル正式提供を発表した。GPT-5.5・GPT-5.4・Codexが商用・GovCloudリージョンの両方でGA（正式公開）となり、OpenAI直接利用と同一の料金体系で提供される。AWS利用コミットメントへのカウントも可能で、企業のクラウド契約と統合して調達できる。さらにOpenAIのサイバーセキュリティ支援プロジェクトDaybreakが次の主要機能としてAWS Bedrockに加わることも発表された。既存のBedrockセキュリティ・ガバナンス・コンプライアンス制御（VPC・AWS PrivateLink等）がOpenAIモデルにも適用される。",
           "key_points_ja": [
             "GPT-5.5・GPT-5.4・Codexが商用・GovCloud両リージョンでAmazon Bedrockに正式GA。OpenAI直接利用と同料金、AWS利用枠カウント対応",
@@ -216,19 +401,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI AWS Bedrockスペックカード。対象モデルGPT-5.5/GPT-5.4/Codex、商用・GovCloud両対応、AWS利用枠カウント可（調達統合）、次のBedrock機能はDaybreak（サイバーセキュリティ）。OpenAI直接利用と同料金。",
             "data": {
               "headline": "OpenAI × AWS Bedrock GA: GPT-5.5/5.4/CodexがGovCloudでも利用可能",
               "tldr": "OpenAIモデルがAmazon Bedrockで正式GA。商用・GovCloud両対応、AWS利用コミットメントに計上可能。料金はOpenAI直接と同等。",
               "points": [
-                { "label": "対象モデル", "value": "GPT-5.5/5.4/Codex", "tone": "primary" },
-                { "label": "対応リージョン", "value": "商用・GovCloud", "note": "政府系も対応", "tone": "success" },
-                { "label": "AWS課金", "value": "利用枠カウント可", "note": "調達統合", "tone": "info" },
-                { "label": "次のBedrock機能", "value": "Daybreak（サイバー）", "tone": "default" }
+                {
+                  "label": "対象モデル",
+                  "value": "GPT-5.5/5.4/Codex",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対応リージョン",
+                  "value": "商用・GovCloud",
+                  "note": "政府系も対応",
+                  "tone": "success"
+                },
+                {
+                  "label": "AWS課金",
+                  "value": "利用枠カウント可",
+                  "note": "調達統合",
+                  "tone": "info"
+                },
+                {
+                  "label": "次のBedrock機能",
+                  "value": "Daybreak（サイバー）",
+                  "tone": "default"
+                }
               ],
               "context": "EnterpriseはAnthropicのClaudeをBedrockで使える状況に続き、今回OpenAIも加わった。AWSがAI調達の一元化プラットフォームに進化している。",
               "impact": "GPT-5.5やCodexをAWSのセキュリティ制御下で使いたい企業（特に政府・金融）への障壁が解消。OpenAI利用が調達プロセスとして標準化される。"
-            }
+            },
+            "alt": "OpenAI AWS Bedrockスペックカード。対象モデルGPT-5.5/GPT-5.4/Codex、商用・GovCloud両対応、AWS利用枠カウント可（調達統合）、次のBedrock機能はDaybreak（サイバーセキュリティ）。OpenAI直接利用と同料金。"
           }
         }
       ]
@@ -249,8 +452,22 @@
           "category": "agents",
           "published_at": "2026-06-02",
           "lang": "en",
-          "tags": ["Computer Use", "Holo3.1", "local AI", "GGUF", "on-device agent", "Hcompany"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 4, "freshness": 4, "total": 16, "source_type_bias": 0 },
+          "tags": [
+            "Computer Use",
+            "Holo3.1",
+            "local AI",
+            "GGUF",
+            "on-device agent",
+            "Hcompany"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 16,
+            "source_type_bias": 0
+          },
           "summary_ja": "Hcompanyはコンシューマハードウェアでローカルに動作するComputer Useエージェントモデルの更新版Holo3.1を公開した。Q4 GGUFチェックポイントが提供されており、クラウドAPIを使わずにPC画面を操作するエージェントを実行できる。以前のバージョンではクラウド前提だったが、今回からオンデバイス推論に最適化されており、プライバシー重視のユースケース（企業のローカル自動化・個人データを扱う業務フロー等）での利用が可能になった。HuggingFace経由でウェイトを無償取得可能で、llama.cpp等の既存ローカル推論環境との互換性がある。",
           "key_points_ja": [
             "Holo3.1はコンシューマHWでローカル動作するComputer Useモデル。Q4 GGUFチェックポイント提供でクラウドAPI不要のPC画面操作エージェントを実行可能",
@@ -259,19 +476,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Holo3.1スペックカード。形式Q4 GGUF（llama.cpp互換）、コンシューマHW上でクラウド不要で動作、PC画面自動操作（Computer Use）対応、HuggingFaceから無償取得可能。プライバシー重視のローカルエージェントワークフローに適用できる。",
             "data": {
               "headline": "Holo3.1: Q4 GGUF対応のローカルComputer Useエージェント（HF無償公開）",
               "tldr": "Hcompanyがクラウド不要でPCを操作できるComputer UseエージェントHolo3.1を公開。Q4 GGUFでコンシューマGPU上で動作。HuggingFaceで無償取得可能。",
               "points": [
-                { "label": "形式", "value": "Q4 GGUF", "note": "llama.cpp互換", "tone": "primary" },
-                { "label": "実行環境", "value": "コンシューマHW", "note": "クラウド不要", "tone": "success" },
-                { "label": "用途", "value": "PC画面自動操作", "note": "Computer Use", "tone": "info" },
-                { "label": "公開", "value": "HuggingFace無償", "tone": "success" }
+                {
+                  "label": "形式",
+                  "value": "Q4 GGUF",
+                  "note": "llama.cpp互換",
+                  "tone": "primary"
+                },
+                {
+                  "label": "実行環境",
+                  "value": "コンシューマHW",
+                  "note": "クラウド不要",
+                  "tone": "success"
+                },
+                {
+                  "label": "用途",
+                  "value": "PC画面自動操作",
+                  "note": "Computer Use",
+                  "tone": "info"
+                },
+                {
+                  "label": "公開",
+                  "value": "HuggingFace無償",
+                  "tone": "success"
+                }
               ],
               "context": "Computer UseエージェントはこれまでクラウドAPIが前提でプライバシーリスクがあった。ローカル実行により、機密情報を外部に送らない企業自動化が実現する。",
               "impact": "ローカルPCで動作するComputer Useエージェントが無償公開されることで、クラウドサービスなしの企業内AI自動化ツール開発が加速する。"
-            }
+            },
+            "alt": "Holo3.1スペックカード。形式Q4 GGUF（llama.cpp互換）、コンシューマHW上でクラウド不要で動作、PC画面自動操作（Computer Use）対応、HuggingFaceから無償取得可能。プライバシー重視のローカルエージェントワークフローに適用できる。"
           }
         },
         {
@@ -285,8 +521,21 @@
           "category": "agents",
           "published_at": "2026-06-03",
           "lang": "en",
-          "tags": ["Meta", "WhatsApp Business", "AI agent", "customer service", "global GA"],
-          "scores": { "importance": 2, "depth": 2, "practicality": 4, "freshness": 4, "total": 12, "source_type_bias": -1 },
+          "tags": [
+            "Meta",
+            "WhatsApp Business",
+            "AI agent",
+            "customer service",
+            "global GA"
+          ],
+          "scores": {
+            "importance": 2,
+            "depth": 2,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 12,
+            "source_type_bias": -1
+          },
           "summary_ja": "MetaはWhatsApp Businessのビジネス向けAIエージェントをグローバルに正式公開した。世界中の企業がWhatsAppの顧客対話チャネルにAIエージェントを展開できるようになった。課金方式はトークン消費量に応じた従量課金制で、小規模事業者から大企業まで柔軟に活用できる設計となっている。WhatsAppはグローバルで20億人以上の月間アクティブユーザーを持つ最大規模のメッセージングプラットフォームであり、企業のAIカスタマーサービス普及において重要なチャネルになると見られている。",
           "key_points_ja": [
             "MetaのWhatsApp Business AIエージェントがグローバルGA。世界中の企業が顧客対応チャネルにAIを展開可能となり、トークン従量課金で柔軟な利用が可能",
@@ -295,19 +544,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Meta WhatsApp Business AIエージェントのスペックカード。対象WhatsApp Business（月間20億ユーザー）、グローバルGA、トークン従量課金、顧客対話自動化用途。",
             "data": {
               "headline": "Meta WhatsApp Business AI: 20億ユーザー基盤でグローバル企業展開開始",
               "tldr": "MetaがWhatsApp Business向けAIエージェントをグローバル公開。トークン従量課金で利用でき、月間20億ユーザーのメッセージプラットフォームで顧客対応を自動化可能。",
               "points": [
-                { "label": "対象", "value": "WhatsApp Business", "note": "20億ユーザー基盤", "tone": "primary" },
-                { "label": "提供範囲", "value": "グローバルGA", "tone": "success" },
-                { "label": "課金", "value": "トークン従量制", "tone": "info" },
-                { "label": "用途", "value": "顧客対話自動化", "tone": "default" }
+                {
+                  "label": "対象",
+                  "value": "WhatsApp Business",
+                  "note": "20億ユーザー基盤",
+                  "tone": "primary"
+                },
+                {
+                  "label": "提供範囲",
+                  "value": "グローバルGA",
+                  "tone": "success"
+                },
+                {
+                  "label": "課金",
+                  "value": "トークン従量制",
+                  "tone": "info"
+                },
+                {
+                  "label": "用途",
+                  "value": "顧客対話自動化",
+                  "tone": "default"
+                }
               ],
               "context": "WhatsApp Businessはすでに数億の企業アカウントが存在する。AIエージェントの追加により、人員不要の24時間顧客対応が可能になる。",
               "impact": "中小事業者のグローバル展開コストが下がる。一方でAI対応が標準化されることで、人的カスタマーサービスの差別化価値が変化する。"
-            }
+            },
+            "alt": "Meta WhatsApp Business AIエージェントのスペックカード。対象WhatsApp Business（月間20億ユーザー）、グローバルGA、トークン従量課金、顧客対話自動化用途。"
           }
         }
       ]
@@ -328,8 +594,22 @@
           "category": "multimodal",
           "published_at": "2026-06-03",
           "lang": "en",
-          "tags": ["Ideogram 4.0", "image generation", "open-weight", "DesignArena", "diffusion transformer", "layout control"],
-          "scores": { "importance": 3, "depth": 4, "practicality": 4, "freshness": 4, "total": 15, "source_type_bias": -1 },
+          "tags": [
+            "Ideogram 4.0",
+            "image generation",
+            "open-weight",
+            "DesignArena",
+            "diffusion transformer",
+            "layout control"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 15,
+            "source_type_bias": -1
+          },
           "summary_ja": "IdeogramはIdeogram 4.0を初のオープンウェイトリリースとして公開した。9.3Bパラメータの拡散Transformerモデルで、テキストプロンプトではなくバウンディングボックスのJSON形式で各画像要素の位置・サイズ・属性を指定する。DesignArenaリーダーボードで即座に1位を獲得し、商用ライセンスでGitHubとHugging Faceからウェイトを取得できる。画像内の複数テキストを別々のフォントで配置できる機能も備えており、グラフィックデザイン用途での活用が期待される。Latent Spaceの報告によれば「画像構成は4年前はAGI難題だったが今は解決された」と評されている。",
           "key_points_ja": [
             "Ideogram初のオープンウェイト（9.3B拡散Transformer）。テキストプロンプトに代わりバウンディングボックスJSONで正確なレイアウト制御が可能。DesignArena 1位を獲得",
@@ -338,19 +618,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Ideogram 4.0のスペックカード。DesignArena 1位、9.3B拡散Transformer、GitHubおよびHuggingFaceで公開（商用ライセンス）、JSONバウンディングBOXによる精密レイアウト制御（複数フォント・テキスト配置対応）。Ideogram初のオープンウェイトリリース。",
             "data": {
               "headline": "Ideogram 4.0: DesignArena 1位の9.3Bオープンウェイト画像生成モデル",
               "tldr": "Ideogram初のオープンウェイトリリース（9.3B拡散Transformer）。DesignArena 1位を獲得。JSONバウンディングボックスで精密なレイアウト制御が可能。",
               "points": [
-                { "label": "DesignArena", "value": "1位", "tone": "success" },
-                { "label": "パラメータ", "value": "9.3B", "note": "拡散Transformer", "tone": "info" },
-                { "label": "ウェイト公開", "value": "GitHub・HF", "note": "商用ライセンス", "tone": "success" },
-                { "label": "レイアウト制御", "value": "JSONバウンディングBOX", "note": "精密配置・複数フォント", "tone": "primary" }
+                {
+                  "label": "DesignArena",
+                  "value": "1位",
+                  "tone": "success"
+                },
+                {
+                  "label": "パラメータ",
+                  "value": "9.3B",
+                  "note": "拡散Transformer",
+                  "tone": "info"
+                },
+                {
+                  "label": "ウェイト公開",
+                  "value": "GitHub・HF",
+                  "note": "商用ライセンス",
+                  "tone": "success"
+                },
+                {
+                  "label": "レイアウト制御",
+                  "value": "JSONバウンディングBOX",
+                  "note": "精密配置・複数フォント",
+                  "tone": "primary"
+                }
               ],
               "context": "従来の画像生成はテキストプロンプトのみで位置制御が困難だった。Ideogram 4.0のJSON指定方式はグラフィックデザイン業務での精密レイアウトを実用化する。",
               "impact": "オープンウェイトで商用品質の画像生成が誰でも利用可能に。グラフィックデザイン業務でのAI活用が加速し、Adobeや既存デザインツールとの競合が本格化。"
-            }
+            },
+            "alt": "Ideogram 4.0のスペックカード。DesignArena 1位、9.3B拡散Transformer、GitHubおよびHuggingFaceで公開（商用ライセンス）、JSONバウンディングBOXによる精密レイアウト制御（複数フォント・テキスト配置対応）。Ideogram初のオープンウェイトリリース。"
           }
         },
         {
@@ -364,8 +663,21 @@
           "category": "multimodal",
           "published_at": "2026-06-04",
           "lang": "en",
-          "tags": ["Reve 2.0", "image generation", "4K", "layout control", "T2I Arena"],
-          "scores": { "importance": 2, "depth": 4, "practicality": 3, "freshness": 5, "total": 14, "source_type_bias": -1 },
+          "tags": [
+            "Reve 2.0",
+            "image generation",
+            "4K",
+            "layout control",
+            "T2I Arena"
+          ],
+          "scores": {
+            "importance": 2,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 14,
+            "source_type_bias": -1
+          },
           "summary_ja": "Reve 2.0は「最高の4K画像モデル」を標榜するクローズドな画像生成サービスとして公開された。テキストプロンプトではなくHTMLのような階層的レイアウト表現で画像要素を制御し、各要素に数学的に定義されたサイズ・位置・属性を割り当てる。Text-to-Image Arenaリーダーボードでスコア1280（全体2位、OpenAI GPT Image 2の次）を獲得した。「画像as Code」アプローチにより全体の構図を変えずに局所的な要素だけを修正できる。Latent Space編集長は「画像構成は4年前はAGIに近い難題だったが、今は解決された」と評価している。",
           "key_points_ja": [
             "テキストプロンプトに代わる階層的レイアウト表現（HTML類似）で4K画像を生成。各要素の位置・サイズ・スタイルを数値で精密指定し、全体構図を変えずに局所編集が可能",
@@ -374,19 +686,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Reve 2.0スペックカード。Text-to-Image Arena 1280点（全体2位、1位はGPT Image 2）、4K対応、HTMLライクな階層レイアウト表現による制御、局所編集対応（全体構図を変えずに部分修正可能）。",
             "data": {
               "headline": "Reve 2.0: T2I Arena 1280点（2位）、4KのHierarchical Layout画像生成",
               "tldr": "Reve 2.0はHTMLライクな階層レイアウト表現で4K画像生成を制御する新サービス。Text-to-Image Arenaスコア1280で全体2位（1位はGPT Image 2）を達成した。",
               "points": [
-                { "label": "T2I Arenaスコア", "value": "1280点（2位）", "note": "GPT Image 2の次", "tone": "primary" },
-                { "label": "最大解像度", "value": "4K", "tone": "info" },
-                { "label": "制御方式", "value": "階層レイアウト表現", "note": "HTML類似構造", "tone": "info" },
-                { "label": "編集方式", "value": "局所編集対応", "note": "全体構図を変えずに", "tone": "success" }
+                {
+                  "label": "T2I Arenaスコア",
+                  "value": "1280点（2位）",
+                  "note": "GPT Image 2の次",
+                  "tone": "primary"
+                },
+                {
+                  "label": "最大解像度",
+                  "value": "4K",
+                  "tone": "info"
+                },
+                {
+                  "label": "制御方式",
+                  "value": "階層レイアウト表現",
+                  "note": "HTML類似構造",
+                  "tone": "info"
+                },
+                {
+                  "label": "編集方式",
+                  "value": "局所編集対応",
+                  "note": "全体構図を変えずに",
+                  "tone": "success"
+                }
               ],
               "context": "画像生成は「呪文詠唱」から「設計図」へ移行しつつある。Reve 2.0はレイアウト仕様をコードで表現することで、プロデザイナーが使える精度を実現。",
               "impact": "広告・グラフィックデザイン業界での実用採用が進む可能性。Stable Diffusion系オープンウェイトとは異なる、クローズドサービスとしての高品質特化路線。"
-            }
+            },
+            "alt": "Reve 2.0スペックカード。Text-to-Image Arena 1280点（全体2位、1位はGPT Image 2）、4K対応、HTMLライクな階層レイアウト表現による制御、局所編集対応（全体構図を変えずに部分修正可能）。"
           }
         }
       ]
@@ -407,8 +738,22 @@
           "category": "research_papers",
           "published_at": "2026-06-03",
           "lang": "en",
-          "tags": ["Axiom Math", "formal verification", "Lean", "Putnam exam", "reinforcement learning", "mathematical AI"],
-          "scores": { "importance": 5, "depth": 5, "practicality": 3, "freshness": 4, "total": 17, "source_type_bias": 1 },
+          "tags": [
+            "Axiom Math",
+            "formal verification",
+            "Lean",
+            "Putnam exam",
+            "reinforcement learning",
+            "mathematical AI"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 17,
+            "source_type_bias": 1
+          },
           "summary_ja": "数学AIスタートアップAxiom MathのCEO Carina Hongがニュースレター「Latent Space」に登場し、形式証明AIへの転換を語った。Axiom Mathは2億ドルを調達し評価額は16億ドル。最大の技術的成果はPatnam試験（米国大学数学競技会の最難関、全12問）の完全正解と、コード生成ベンチマークVerinaで99%のスコアを達成したこと。Axiomはすべての回答をLean（形式証明言語）で検証可能な証明として生成する。強化学習時に形式証明の検証を報酬シグナルとして使うことで「数学的に正しい推論」を直接最適化できると主張する。形式検証はAIが自律的に研究を検査する手段として、AI研究の自動化に不可欠な要素になると論じている。",
           "key_points_ja": [
             "Axiom Mathはパトナム試験（米数学競技最難関）で全12問（12/12）を完全正解。Lean形式証明で検証可能な回答を生成する唯一の数学AIとして達成",
@@ -417,17 +762,35 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "Axiom Mathのベンチマーク棒グラフ。パトナム試験12/12（100%、全問正解）、コード生成ベンチVerina 99%、形式証明率100%（全回答がLean言語で検証可能）。$200M調達・$1.6Bバリュエーションの数学AI企業。",
             "data": {
               "headline": "Axiom Math: 形式証明AIの主要ベンチマーク（2026-06-03）",
               "bars": [
-                { "label": "パトナム試験", "value": "12/12 (100%)", "pct": 100, "note": "全問正解・形式証明", "tone": "success" },
-                { "label": "Verina (コード)", "value": "99%", "pct": 99, "note": "コード生成ベンチ", "tone": "primary" },
-                { "label": "形式証明率", "value": "100%", "pct": 100, "note": "全回答がLean検証可能", "tone": "success" }
+                {
+                  "label": "パトナム試験",
+                  "value": "12/12 (100%)",
+                  "pct": 100,
+                  "note": "全問正解・形式証明",
+                  "tone": "success"
+                },
+                {
+                  "label": "Verina (コード)",
+                  "value": "99%",
+                  "pct": 99,
+                  "note": "コード生成ベンチ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "形式証明率",
+                  "value": "100%",
+                  "pct": 100,
+                  "note": "全回答がLean検証可能",
+                  "tone": "success"
+                }
               ],
               "narrative": "従来の数学AIはパトナム試験に部分的にしか答えられなかった。Lean形式証明の報酬シグナルを用いたRLにより、Axiomは人間の数学者と同等水準の問題解決を達成した。",
               "impact": "形式証明AIが研究開発の自動化に不可欠な存在として浮上。Anthropic・OpenAI等の大手が自動AI研究を追求する中、形式検証の重要性が大幅に高まっている。"
-            }
+            },
+            "alt": "Axiom Mathのベンチマーク棒グラフ。パトナム試験12/12（100%、全問正解）、コード生成ベンチVerina 99%、形式証明率100%（全回答がLean言語で検証可能）。$200M調達・$1.6Bバリュエーションの数学AI企業。"
           },
           "x_post": "Axiom Mathがパトナム試験（米国最難関数学競技）で全12問を完全正解した。形式証明言語Leanで検証可能な証明として全回答を生成し、コード生成ベンチVerinaでも99%を達成している。$200M調達・評価額$1.6B。AIが数学的に正しい推論を学習できる段階に入った。\n\nhttps://www.latent.space/p/axiom"
         },
@@ -442,8 +805,22 @@
           "category": "research_papers",
           "published_at": "2026-06-01",
           "lang": "en",
-          "tags": ["ESMFold2", "protein folding", "BioHub", "open-source", "scaling laws", "biology AI"],
-          "scores": { "importance": 5, "depth": 5, "practicality": 3, "freshness": 4, "total": 17, "source_type_bias": 1 },
+          "tags": [
+            "ESMFold2",
+            "protein folding",
+            "BioHub",
+            "open-source",
+            "scaling laws",
+            "biology AI"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 17,
+            "source_type_bias": 1
+          },
           "summary_ja": "Jack Clark（前OpenAI安全研究ディレクター）のImport AI #459が伝えるところによれば、Chan Zuckerberg BioHubはESMFold2を完全オープンソース（商用制限なし）で公開した。68億タンパク質・10億構造を予測でき、ESMFold2-Fastは長さ1024のタンパク質構造を9.4秒で予測する。がん関連タンパク質バインダー設計で36〜88%のヒット率を実現し、タンパク質AIにもスケーリング則が存在することを示した。同号ではさらに、米国AI経済が2025年に品質調整ベースで年率約2,600%成長したとの試算も紹介されているが、従来のGDP統計ではほぼ見えていないと指摘している。",
           "key_points_ja": [
             "ESMFold2が完全OSS（商用制限なし）で公開。68億タンパク質・10億構造を予測し、がん関連タンパク質バインダーで36〜88%のヒット率を達成",
@@ -452,18 +829,41 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "ESMFold2のベンチマーク棒グラフ。カバー分子数6.8Bタンパク質（生命多様性全体）、構造予測数10億+（pct 90）、がん関連タンパク質バインダーヒット率36〜88%（中央値62%でpct 62）、予測速度9.4秒（1024残基・ESMFold2-Fast）。Chan Zuckerberg BioHub完全OSS・商用制限なしで公開。",
             "data": {
               "headline": "ESMFold2: タンパク質AIのスケーリング則実証（BioHub完全OSS公開）",
               "bars": [
-                { "label": "カバー分子数", "value": "6.8B タンパク質", "pct": 100, "note": "生命多様性全体をカバー", "tone": "primary" },
-                { "label": "構造予測数", "value": "1B+ 構造", "pct": 90, "tone": "info" },
-                { "label": "がんバインダーヒット率", "value": "36〜88%", "pct": 62, "note": "がん関連タンパク質設計", "tone": "success" },
-                { "label": "予測速度 (1024残基)", "value": "9.4秒", "pct": 85, "note": "ESMFold2-Fast", "tone": "default" }
+                {
+                  "label": "カバー分子数",
+                  "value": "6.8B タンパク質",
+                  "pct": 100,
+                  "note": "生命多様性全体をカバー",
+                  "tone": "primary"
+                },
+                {
+                  "label": "構造予測数",
+                  "value": "1B+ 構造",
+                  "pct": 90,
+                  "tone": "info"
+                },
+                {
+                  "label": "がんバインダーヒット率",
+                  "value": "36〜88%",
+                  "pct": 62,
+                  "note": "がん関連タンパク質設計",
+                  "tone": "success"
+                },
+                {
+                  "label": "予測速度 (1024残基)",
+                  "value": "9.4秒",
+                  "pct": 85,
+                  "note": "ESMFold2-Fast",
+                  "tone": "default"
+                }
               ],
               "narrative": "AlphaFold2がタンパク質折り畳み問題を解いた後、ESMFold2は規模と速度で次のステップを踏んだ。完全OSS・商用制限なしで公開されており、製薬研究全体での活用が期待される。",
               "impact": "創薬・材料科学のAI化が加速する。商用制限なしのOSSとして、ベンチャー・学術機関が製品レベルのタンパク質設計ツールを無償で使える環境が整う。"
-            }
+            },
+            "alt": "ESMFold2のベンチマーク棒グラフ。カバー分子数6.8Bタンパク質（生命多様性全体）、構造予測数10億+（pct 90）、がん関連タンパク質バインダーヒット率36〜88%（中央値62%でpct 62）、予測速度9.4秒（1024残基・ESMFold2-Fast）。Chan Zuckerberg BioHub完全OSS・商用制限なしで公開。"
           }
         },
         {
@@ -477,8 +877,22 @@
           "category": "research_papers",
           "published_at": "2026-06-02",
           "lang": "en",
-          "tags": ["privacy", "chain-of-thought", "reasoning trace", "side-channel", "LLM security", "arXiv"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 2, "freshness": 4, "total": 14, "source_type_bias": 1 },
+          "tags": [
+            "privacy",
+            "chain-of-thought",
+            "reasoning trace",
+            "side-channel",
+            "LLM security",
+            "arXiv"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 14,
+            "source_type_bias": 1
+          },
           "summary_ja": "arXiv論文「Hidden Thoughts Are Not Secret」はLLMの推論トレース（chain-of-thought）に潜むプライバシーリスクを明らかにした。ユーザーに表示されない内部推論でも、サイドチャネル攻撃によって機密情報が漏洩しうることを実証している。医療・法務・個人データなどプライバシーが重要な文脈でLLMを展開する際には、推論ステップを隠すだけでは不十分であることを示しており、緩和策として推論トレース全体の暗号化や差分プライバシーの適用を提案している。LLMを企業や政府の機密処理に利用する際の設計指針に影響する可能性がある。",
           "key_points_ja": [
             "ユーザーに非表示のLLM推論トレースでも、サイドチャネル攻撃によって機密情報が漏洩するリスクを実証。「表示しなければ安全」という前提が崩れた",
@@ -487,19 +901,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LLM推論トレース漏洩リスクのサマリーカード。リスク：推論トレースのサイドチャネル漏洩、対象環境：医療・法務・個人情報処理、緩和策：推論暗号化・差分プライバシー適用、論文の主張：推論を非表示にするだけでは安全でない。",
             "data": {
               "headline": "LLM推論トレースのサイドチャネル漏洩リスク——「非表示≠安全」を実証",
               "tldr": "LLMの内部推論（chain-of-thought）はユーザーに非表示でも、サイドチャネル攻撃により機密情報が漏洩する可能性を論文が実証。医療・法務など高プライバシー領域のLLM展開に影響する。",
               "points": [
-                { "icon": "⚠️", "label": "リスク", "value": "推論トレース漏洩", "note": "サイドチャネル攻撃", "tone": "danger" },
-                { "label": "対象環境", "value": "医療・法務・個人情報", "tone": "warning" },
-                { "label": "緩和策", "value": "推論暗号化・差分プライバシー", "tone": "info" },
-                { "label": "含意", "value": "「非表示≠安全」を実証", "tone": "default" }
+                {
+                  "icon": "⚠️",
+                  "label": "リスク",
+                  "value": "推論トレース漏洩",
+                  "note": "サイドチャネル攻撃",
+                  "tone": "danger"
+                },
+                {
+                  "label": "対象環境",
+                  "value": "医療・法務・個人情報",
+                  "tone": "warning"
+                },
+                {
+                  "label": "緩和策",
+                  "value": "推論暗号化・差分プライバシー",
+                  "tone": "info"
+                },
+                {
+                  "label": "含意",
+                  "value": "「非表示≠安全」を実証",
+                  "tone": "default"
+                }
               ],
               "context": "近年の推論モデル（o1系・Claude Sonnet等）は思考ステップを内部で保持する設計が増えている。この論文は、そのトレースをサイドチャネルとして悪用できることを初めて実証した。",
               "impact": "LLM利用のセキュリティ評価に推論トレース漏洩の観点が追加される。特にGovCloud・医療系のコンプライアンス要件に直接影響する可能性がある。"
-            }
+            },
+            "alt": "LLM推論トレース漏洩リスクのサマリーカード。リスク：推論トレースのサイドチャネル漏洩、対象環境：医療・法務・個人情報処理、緩和策：推論暗号化・差分プライバシー適用、論文の主張：推論を非表示にするだけでは安全でない。"
           }
         }
       ]
@@ -520,8 +952,21 @@
           "category": "industry_business",
           "published_at": "2026-06-03",
           "lang": "en",
-          "tags": ["Alphabet", "Google", "fundraising", "AI investment", "industry"],
-          "scores": { "importance": 3, "depth": 2, "practicality": 1, "freshness": 4, "total": 10, "source_type_bias": -1 },
+          "tags": [
+            "Alphabet",
+            "Google",
+            "fundraising",
+            "AI investment",
+            "industry"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 2,
+            "practicality": 1,
+            "freshness": 4,
+            "total": 10,
+            "source_type_bias": -1
+          },
           "summary_ja": "AlphabetがAI事業専用として過去最大規模となる850億ドルの資金調達を完了したとTechCrunchが報じた。AI業界における単一企業の資本配備として史上最大規模となる。この調達により、GoogleはAIインフラ（データセンター・TPUチップ）の大規模拡張と競合他社（OpenAI・Anthropic・Microsoft）との競争において資本面での優位性を確保した。Anthropicの$65B Series H調達（2026年5月）やMicrosoftのBuild 2026での大型投資発表と並び、AIへの資本集積が加速している。",
           "key_points_ja": [
             "AlphabetがAI事業専用として業界史上最大規模の$850億を調達。投資家のGoogle AI戦略への高い信任を示す数字で、競合他社との資本格差が広がった",
@@ -530,11 +975,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "主要AI企業の資金調達比較チャート。Anthropic Series H（2026年5月）$65B対Alphabet AI事業調達（2026年6月）$85B。調達額：$65B（前者）vs $85B（後者）、pct比は76:100。Alphabetが業界史上最大規模を更新した。",
             "data": {
               "headline": "AI資本競争のメガスケール化：$65B → $85Bへ（2026年5〜6月）",
-              "before": { "label": "Anthropic Series H", "sublabel": "2026年5月・$65B" },
-              "after": { "label": "Alphabet AI事業調達", "sublabel": "2026年6月・$85B" },
+              "before": {
+                "label": "Anthropic Series H",
+                "sublabel": "2026年5月・$65B"
+              },
+              "after": {
+                "label": "Alphabet AI事業調達",
+                "sublabel": "2026年6月・$85B"
+              },
               "metrics": [
                 {
                   "label": "調達額",
@@ -558,7 +1008,8 @@
               ],
               "narrative": "2026年に入り、AI主要プレイヤーの資本調達規模が$65B〜$85B水準に達した。5月のAnthropicに続きAlphabetが記録を更新し、AI分野での資本競争が超大型化している。",
               "impact": "AIインフラへの資本集積がメガスケール化。スタートアップ単独では追えないコンピューティング規模の拡大により、大手プラットフォームの参入障壁が高まる。"
-            }
+            },
+            "alt": "主要AI企業の資金調達比較チャート。Anthropic Series H（2026年5月）$65B対Alphabet AI事業調達（2026年6月）$85B。調達額：$65B（前者）vs $85B（後者）、pct比は76:100。Alphabetが業界史上最大規模を更新した。"
           }
         },
         {
@@ -572,8 +1023,22 @@
           "category": "industry_business",
           "published_at": "2026-06-03",
           "lang": "en",
-          "tags": ["Coralogix", "AI observability", "monitoring", "fundraising", "AI agents", "enterprise"],
-          "scores": { "importance": 2, "depth": 3, "practicality": 3, "freshness": 4, "total": 12, "source_type_bias": -1 },
+          "tags": [
+            "Coralogix",
+            "AI observability",
+            "monitoring",
+            "fundraising",
+            "AI agents",
+            "enterprise"
+          ],
+          "scores": {
+            "importance": 2,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 12,
+            "source_type_bias": -1
+          },
           "summary_ja": "ログ管理・可観測性プラットフォームのCoralogixが2億ドルを調達した。調達の目的は本番環境で稼働するAIエージェントの監視・可観測性レイヤーの構築に特化した機能を開発するためとされている。自律的に動作するAIエージェントが企業インフラに広がる中、「エージェントが何をしているか」「失敗の原因はどこか」を追跡するオブザーバビリティの需要が急増している。Coralogixは既存のログ解析・APM機能をAIエージェント向けに拡張し、エージェントの意思決定トレースやツール呼び出し履歴を可視化する機能を計画している。",
           "key_points_ja": [
             "Coralogixが$200Mを調達し、AIエージェント向け監視・可観測性レイヤーの構築に特化。本番環境でのエージェント行動追跡・障害診断のニーズに応える",
@@ -582,19 +1047,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Coralogix $200M調達のサマリーカード。調達額$200M、対象市場：AIエージェント監視・可観測性、機能計画：意思決定トレース追跡・ツール呼び出し履歴可視化、競合：Datadog・New Relicも参入中。",
             "data": {
               "headline": "Coralogix $200M調達：AIエージェント監視市場に本格参入",
               "tldr": "Coralogixが$200M調達でAIエージェント向け可観測性プラットフォームを構築。エージェントの意思決定トレース・ツール呼び出し履歴の可視化を計画する。",
               "points": [
-                { "label": "調達額", "value": "$200M", "tone": "primary" },
-                { "label": "対象市場", "value": "AIエージェント監視", "tone": "info" },
-                { "label": "機能計画", "value": "意思決定トレース追跡", "note": "ツール呼び出し履歴", "tone": "default" },
-                { "label": "競合", "value": "Datadog・New Relic", "note": "各社も参入中", "tone": "warning" }
+                {
+                  "label": "調達額",
+                  "value": "$200M",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象市場",
+                  "value": "AIエージェント監視",
+                  "tone": "info"
+                },
+                {
+                  "label": "機能計画",
+                  "value": "意思決定トレース追跡",
+                  "note": "ツール呼び出し履歴",
+                  "tone": "default"
+                },
+                {
+                  "label": "競合",
+                  "value": "Datadog・New Relic",
+                  "note": "各社も参入中",
+                  "tone": "warning"
+                }
               ],
               "context": "AIエージェントが本番環境で動作し始めた今、「何を判断し何を実行したか」の追跡が運用担当者の悩みになっている。Coralogixはこの隙間市場を早期に押さえに動いた。",
               "impact": "AIエージェントの企業導入には可観測性レイヤーが不可欠になりつつある。専用ツールの普及がエージェント本番運用の信頼性確立を加速する。"
-            }
+            },
+            "alt": "Coralogix $200M調達のサマリーカード。調達額$200M、対象市場：AIエージェント監視・可観測性、機能計画：意思決定トレース追跡・ツール呼び出し履歴可視化、競合：Datadog・New Relicも参入中。"
           }
         }
       ]
@@ -615,8 +1098,22 @@
           "category": "regulation_policy",
           "published_at": "2026-06-03",
           "lang": "en",
-          "tags": ["Anthropic", "cybersecurity", "MITRE ATT&CK", "AI threats", "red team", "safety"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 3, "freshness": 4, "total": 15, "source_type_bias": 0 },
+          "tags": [
+            "Anthropic",
+            "cybersecurity",
+            "MITRE ATT&CK",
+            "AI threats",
+            "red team",
+            "safety"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 15,
+            "source_type_bias": 0
+          },
           "summary_ja": "AnthropicのFrontier Red Teamは1年間にわたるAI悪用サイバー攻撃の調査報告を発表した。悪意ある活動で排除した832のアカウントを分析した結果、攻撃者はAIを特に「侵害後の複雑な活動」（lateral movement、privilege escalation等）において活用していることが判明した。従来のリスク評価手法は有効性を失いつつあり、AIが技術的スキルの低い攻撃者でも複雑な攻撃を自律的に実行できるようにしているという。またMITRE ATT&CKフレームワークはAI活用型攻撃パターンを適切に捕捉できていないとし、セキュリティフレームワークの更新を業界に呼びかけている。",
           "key_points_ja": [
             "Anthropicが1年間で禁止した悪意あるアカウント832件を分析。AIは主に侵害後の複雑な活動（lateral movement・特権昇格等）で使われており、攻撃の自律化が進んでいる",
@@ -625,7 +1122,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Anthropic AI脅威分析のタイムライン。2025年6月：調査開始（Frontier Red Team）、2026年6月3日：1年間の832アカウント分析完了（now）、提言：MITRE ATT&CK更新を業界に要請、継続：AI自律型攻撃の標準化リスクへの対応が必要。",
             "data": {
               "headline": "AnthropicのAI悪用脅威分析：調査から提言まで（2025〜2026）",
               "events": [
@@ -660,7 +1156,8 @@
               ],
               "narrative": "AIによるサイバー攻撃の自律化は急速に進んでいる。Anthropicはモデルメーカーとしてではなくセキュリティリサーチャーとして1年間のデータを公開し、業界全体への警告を発した。",
               "impact": "MITRE ATT&CKの更新が求められ、セキュリティ企業はAI自律攻撃を前提とした新しい防御設計に移行する必要が生じる。Red Team評価の基準再設定も必至。"
-            }
+            },
+            "alt": "Anthropic AI脅威分析のタイムライン。2025年6月：調査開始（Frontier Red Team）、2026年6月3日：1年間の832アカウント分析完了（now）、提言：MITRE ATT&CK更新を業界に要請、継続：AI自律型攻撃の標準化リスクへの対応が必要。"
           },
           "x_post": "Anthropicが1年分のAI悪用サイバー攻撃データを公開した。排除した832アカウントの分析から、AIは侵害後の複雑な活動（lateral movement・特権昇格等）で主に使われており、技術スキルが低い攻撃者でも高度な攻撃が可能になっていることが判明した。MITRE ATT&CKフレームワークの更新を業界に呼びかけている。\n\nhttps://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
         }
@@ -682,9 +1179,26 @@
           "category": "community_buzz",
           "published_at": "2026-06-03",
           "lang": "en",
-          "reaction_signal": { "kind": "hn", "points": 651, "comments": 1112 },
-          "tags": ["Ted Chiang", "AI consciousness", "philosophy", "Hacker News", "The Atlantic"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 1, "freshness": 4, "total": 13, "source_type_bias": -1 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 651,
+            "comments": 1112
+          },
+          "tags": [
+            "Ted Chiang",
+            "AI consciousness",
+            "philosophy",
+            "Hacker News",
+            "The Atlantic"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 1,
+            "freshness": 4,
+            "total": 13,
+            "source_type_bias": -1
+          },
           "summary_ja": "SF作家のテッド・チャン（『あなたの人生の物語』著者）がThe Atlanticに「AIは意識を持たない」と題した論考を寄稿した。チャンはLLMの流暢なアウトプットは主観的体験の証拠ではないと論じ、チャットボットが一人称代名詞を使ったり自己を表明することは道徳的責任の誤配置につながると主張している。この記事はHacker Newsで651ポイント・1,112件のコメントを集め、AIの主観性・意識・道徳的地位をめぐる活発な議論を引き起こした。テッド・チャン自身は生成AIには批判的なスタンスをとり続けており、今回の論考は彼の一貫した主張の延長線上にある。",
           "key_points_ja": [
             "テッド・チャンが「LLMの流暢な出力は意識の証拠ではない」とThe Atlanticに論考。チャットボットが一人称を使う設計は道徳的責任の誤配置だと批判",
@@ -693,19 +1207,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "テッド・チャン「AIは意識を持たない」論考のサマリーカード。HN 651ポイント・1,112コメントの大反響。著者：テッド・チャン（あなたの人生の物語著者）、主張：LLMの流暢な出力は意識の証拠ではない、掲載：The Atlantic（2026年6月）。",
             "data": {
               "headline": "テッド・チャン「AIは意識を持たない」——HN 651pt・1,112コメントで大論争",
               "tldr": "SF作家テッド・チャンがThe Atlanticに論考。LLMの流暢な出力は意識の証拠でなく、チャットボットの一人称使用は道徳的責任の誤配置だと主張。HN 651ptで大論争に。",
               "points": [
-                { "icon": "💬", "label": "HN反響", "value": "651pt / 1,112コメント", "tone": "primary" },
-                { "label": "著者", "value": "テッド・チャン", "note": "あなたの人生の物語著者", "tone": "default" },
-                { "label": "主張", "value": "LLM出力≠意識の証拠", "tone": "info" },
-                { "label": "掲載", "value": "The Atlantic", "tone": "default" }
+                {
+                  "icon": "💬",
+                  "label": "HN反響",
+                  "value": "651pt / 1,112コメント",
+                  "tone": "primary"
+                },
+                {
+                  "label": "著者",
+                  "value": "テッド・チャン",
+                  "note": "あなたの人生の物語著者",
+                  "tone": "default"
+                },
+                {
+                  "label": "主張",
+                  "value": "LLM出力≠意識の証拠",
+                  "tone": "info"
+                },
+                {
+                  "label": "掲載",
+                  "value": "The Atlantic",
+                  "tone": "default"
+                }
               ],
               "context": "AIが「感情を持つ」「思考している」という表現は業界全体に広がっているが、テッド・チャンは哲学的・科学的に根拠がないと主張する。",
               "impact": "AI企業のマーケティング言語（「感じる」「理解する」）に対するアカデミック・法的・市民社会からの批判が強まる可能性。AI製品の倫理設計にも影響しうる。"
-            }
+            },
+            "alt": "テッド・チャン「AIは意識を持たない」論考のサマリーカード。HN 651ポイント・1,112コメントの大反響。著者：テッド・チャン（あなたの人生の物語著者）、主張：LLMの流暢な出力は意識の証拠ではない、掲載：The Atlantic（2026年6月）。"
           }
         },
         {
@@ -719,9 +1251,27 @@
           "category": "community_buzz",
           "published_at": "2026-06-03",
           "lang": "en",
-          "reaction_signal": { "kind": "hn", "points": 406, "comments": 356 },
-          "tags": ["Stanford", "AI legal", "Gemini 2.5 Pro", "law", "benchmark", "Hacker News"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 2, "freshness": 4, "total": 12, "source_type_bias": -1 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 406,
+            "comments": 356
+          },
+          "tags": [
+            "Stanford",
+            "AI legal",
+            "Gemini 2.5 Pro",
+            "law",
+            "benchmark",
+            "Hacker News"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 12,
+            "source_type_bias": -1
+          },
           "summary_ja": "スタンフォード法科大学院のJulian Nyarko教授が主導した研究で、法学教授は2,918件のブラインド評価でAI生成の回答を同僚（人間）の回答より75%の確率で好ましいと評価した結果が明らかになった。40の契約法問題に対する回答を使い、法学教授が教育的に問題があると指摘したのはAI回答が3.53%、同僚回答が12.06%だった。Google Gemini 2.5 Proが75.92%の対戦勝率で全AIの中で首位となった。HNでは406ポイント・356コメントを集め、法律AIの急速な能力向上に対する反応は賛否両論となっている。",
           "key_points_ja": [
             "法学教授が2,918件のブラインド評価でAI回答を同僚より75%の確率で好ましいと評価。Google Gemini 2.5 Proが75.92%の勝率で首位",
@@ -730,18 +1280,40 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "スタンフォード法科大学院の研究：AIと法学教授の評価比較棒グラフ。全体的なAI選好率75%、Gemini 2.5 Proの勝率75.92%、AI回答の有害判定率3.53%、人間回答の有害判定率12.06%。2,918件のブラインド評価による。",
             "data": {
               "headline": "スタンフォード法科大学院: AIが法学教授回答を75%で上回る（2,918件ブラインド評価）",
               "bars": [
-                { "label": "AI選好率（全体）", "value": "75%", "pct": 75, "note": "2,918件ブラインド評価", "tone": "primary" },
-                { "label": "Gemini 2.5 Pro 勝率", "value": "75.92%", "pct": 76, "tone": "success" },
-                { "label": "AI有害判定率", "value": "3.53%", "pct": 4, "note": "vs 人間12.06%", "tone": "success" },
-                { "label": "人間有害判定率", "value": "12.06%", "pct": 12, "tone": "warning" }
+                {
+                  "label": "AI選好率（全体）",
+                  "value": "75%",
+                  "pct": 75,
+                  "note": "2,918件ブラインド評価",
+                  "tone": "primary"
+                },
+                {
+                  "label": "Gemini 2.5 Pro 勝率",
+                  "value": "75.92%",
+                  "pct": 76,
+                  "tone": "success"
+                },
+                {
+                  "label": "AI有害判定率",
+                  "value": "3.53%",
+                  "pct": 4,
+                  "note": "vs 人間12.06%",
+                  "tone": "success"
+                },
+                {
+                  "label": "人間有害判定率",
+                  "value": "12.06%",
+                  "pct": 12,
+                  "tone": "warning"
+                }
               ],
               "narrative": "40の契約法問題に対し、法学教授がブラインドで人間の同僚とAIを比較評価。AIが一貫して高品質な回答を提供し、教育的に有害な回答率も著しく低かった。",
               "impact": "法律教育・法律相談サービスでのAI活用が正当化される実証データ。ロースクールや法律事務所のAI導入検討に直接影響する可能性がある。"
-            }
+            },
+            "alt": "スタンフォード法科大学院の研究：AIと法学教授の評価比較棒グラフ。全体的なAI選好率75%、Gemini 2.5 Proの勝率75.92%、AI回答の有害判定率3.53%、人間回答の有害判定率12.06%。2,918件のブラインド評価による。"
           }
         }
       ]
@@ -762,9 +1334,26 @@
           "category": "japan",
           "published_at": "2026-06-01",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 237 },
-          "tags": ["Claude Code", "ZOZO", "カスタマーサポート", "業務自動化", "Skill", "企業事例"],
-          "scores": { "importance": 5, "depth": 3, "practicality": 4, "freshness": 4, "total": 16, "source_type_bias": 0 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 237
+          },
+          "tags": [
+            "Claude Code",
+            "ZOZO",
+            "カスタマーサポート",
+            "業務自動化",
+            "Skill",
+            "企業事例"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 16,
+            "source_type_bias": 0
+          },
           "summary_ja": "ZOZOTOWNのカスタマーサポートチームがClaude Code Skillを「動くマニュアル」として実装し、問い合わせ調査のリードタイムを平均70%削減した取り組みを公開した。従来は手動でのルックアップと担当者間調整が必要だったトリアージ・診断ステップを自動化することで、対応速度の大幅改善を実現している。Claude Code Skillは実行可能なドキュメントとして機能し、自然言語の手順書が直接実行できるコードに変換される。はてなブックマーク237ユーザーという高い反響が示すように、日本のエンジニアコミュニティでも実践的な企業AIの導入事例として注目を集めている。",
           "key_points_ja": [
             "ZOZOTOWNがClaude Code Skillをカスタマーサポートの「動くマニュアル」として実装し、問い合わせ調査リードタイムを平均70%削減。具体的な数値で効果を証明した希少な国内企業事例",
@@ -773,11 +1362,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "ZOZOTOWNのCS業務改善比較チャート。従来手順（手動ルックアップ）対Claude Code Skill（動くマニュアル）。リードタイム：従来100%対Claude Code Skill 30%（70%削減）、自動化範囲：限定的対トリアージ・診断まで、マニュアル管理：別途文書対コードに統合。",
             "data": {
               "headline": "ZOZOTOWNのCS業務: Claude Code Skill導入前後の比較",
-              "before": { "label": "従来手順", "sublabel": "手動ルックアップ・調整" },
-              "after": { "label": "Claude Code Skill", "sublabel": "動くマニュアル" },
+              "before": {
+                "label": "従来手順",
+                "sublabel": "手動ルックアップ・調整"
+              },
+              "after": {
+                "label": "Claude Code Skill",
+                "sublabel": "動くマニュアル"
+              },
               "metrics": [
                 {
                   "label": "リードタイム",
@@ -810,7 +1404,8 @@
               ],
               "narrative": "ZOZOTOWNは自然言語のマニュアルをそのままClaude Code Skillとして実装する手法を採用。業務文書のAI化により、ドキュメント管理とシステム運用を同時に効率化した。",
               "impact": "カスタマーサポートへのClaude Code活用は、他の業務ドキュメント（社内規程・操作手順・障害対応）への展開モデルになりうる。日本企業のAI内製化の先行事例として注目。"
-            }
+            },
+            "alt": "ZOZOTOWNのCS業務改善比較チャート。従来手順（手動ルックアップ）対Claude Code Skill（動くマニュアル）。リードタイム：従来100%対Claude Code Skill 30%（70%削減）、自動化範囲：限定的対トリアージ・診断まで、マニュアル管理：別途文書対コードに統合。"
           },
           "x_post": "ZOZOTOWNがClaude Code Skillを「動くマニュアル」として実装し、カスタマーサポートの問い合わせ調査リードタイムを平均70%削減した事例を公開した。自然言語の手順書をClaudeが実行できるSkillに変換するアプローチで、業務文書のAI化への応用可能性が高い。\n\nhttps://techblog.zozo.com/entry/cs-inquiry-ai-automation"
         },
@@ -825,9 +1420,26 @@
           "category": "japan",
           "published_at": "2026-06-03",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 42 },
-          "tags": ["AIエージェント", "長期記憶", "LayerX", "ベクトルDB", "RAG", "実装"],
-          "scores": { "importance": 3, "depth": 4, "practicality": 3, "freshness": 4, "total": 14, "source_type_bias": 0 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 42
+          },
+          "tags": [
+            "AIエージェント",
+            "長期記憶",
+            "LayerX",
+            "ベクトルDB",
+            "RAG",
+            "実装"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 14,
+            "source_type_bias": 0
+          },
           "summary_ja": "LayerXのエンジニアがAIエージェントに1年分のニュースデータを処理させ4,552件のメモリファイルを生成する実験を行い、その課題を詳細に報告した。長期記憶の構築実験で特定されたのは、メモリ検索精度の低下・ストレージオーバーヘッド・スケーラビリティの問題で、実際に本番AIエージェントを運用する際の長期記憶設計に対する示唆を提供している。ベクトルDBに格納されたメモリ数が増加するにつれて関連度の低い記憶が検索結果に混入するノイズ問題も確認された。実用的なAIエージェントの長期記憶設計では、メモリの定期的な要約・圧縮・忘却機能が必要と結論している。",
           "key_points_ja": [
             "LayerXがAIエージェントの長期記憶実験を公開。1年分ニュースから4,552件のメモリを生成し、スケール時のメモリ検索精度低下・ストレージ増大・検索速度劣化を具体的に検証",
@@ -836,19 +1448,41 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LayerX AIエージェント長期記憶実験のサマリーカード。実験規模：4,552件メモリ（1年分ニュース）、課題1：検索精度低下（ノイズ混入）、課題2：ストレージ増大、解決方向：定期要約・圧縮・忘却の実装（人間記憶メカニズム参照）。",
             "data": {
               "headline": "LayerX実験: 4,552件の長期記憶スケーリングで見えた3つの課題",
               "tldr": "AIエージェントに1年分ニュース（4,552件メモリ）を処理させた実験で、検索精度劣化・ストレージ増大・ノイズ混入の3課題を実証。実用エージェント設計への重要示唆。",
               "points": [
-                { "label": "実験規模", "value": "4,552件メモリ", "note": "1年分ニュース処理", "tone": "primary" },
-                { "icon": "⚠️", "label": "課題1", "value": "検索精度低下", "note": "メモリ増でノイズ混入", "tone": "warning" },
-                { "icon": "⚠️", "label": "課題2", "value": "ストレージ増大", "note": "スケーラビリティ問題", "tone": "warning" },
-                { "label": "解決方向", "value": "定期要約・圧縮・忘却", "note": "人間記憶メカニズム参照", "tone": "info" }
+                {
+                  "label": "実験規模",
+                  "value": "4,552件メモリ",
+                  "note": "1年分ニュース処理",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "課題1",
+                  "value": "検索精度低下",
+                  "note": "メモリ増でノイズ混入",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "課題2",
+                  "value": "ストレージ増大",
+                  "note": "スケーラビリティ問題",
+                  "tone": "warning"
+                },
+                {
+                  "label": "解決方向",
+                  "value": "定期要約・圧縮・忘却",
+                  "note": "人間記憶メカニズム参照",
+                  "tone": "info"
+                }
               ],
               "context": "AIエージェントに長期記憶を持たせる研究・実装は増えているが、実運用スケールでの課題を具体的に数値で示した事例は少ない。LayerXはAI内製開発の先進企業として実験データを公開した。",
               "impact": "長期記憶型AIエージェントの本番設計において、メモリ管理戦略（要約・忘却・圧縮）の重要性が明確化。ベクトルDB+RAGだけでは長期スケールに対応できないことが実証された。"
-            }
+            },
+            "alt": "LayerX AIエージェント長期記憶実験のサマリーカード。実験規模：4,552件メモリ（1年分ニュース）、課題1：検索精度低下（ノイズ混入）、課題2：ストレージ増大、解決方向：定期要約・圧縮・忘却の実装（人間記憶メカニズム参照）。"
           }
         },
         {
@@ -862,9 +1496,26 @@
           "category": "japan",
           "published_at": "2026-06-03",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 259 },
-          "tags": ["tmux", "Claude Code", "開発ツール", "AIエージェント", "Zenn", "ターミナル"],
-          "scores": { "importance": 4, "depth": 3, "practicality": 5, "freshness": 4, "total": 16, "source_type_bias": 0 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 259
+          },
+          "tags": [
+            "tmux",
+            "Claude Code",
+            "開発ツール",
+            "AIエージェント",
+            "Zenn",
+            "ターミナル"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 16,
+            "source_type_bias": 0
+          },
           "summary_ja": "Zennに投稿された実践ガイドで、Claude CodeやAIエージェント開発者に向けてtmuxの導入を強く勧める記事がはてなブックマーク259ユーザーを集め話題になっている。記事では「使い方を全部覚えなくてよい」というハードルを下げたうえで、長時間実行コマンドや対話型ターミナル操作という、AIエージェントのワークフローで特に問題になる操作への実践的な解決策としてtmuxを位置づけている。Claude Codeでの活用シーンにも言及しており、AIエージェント開発の定番ツールスタックとしてtmuxが認知されつつある状況を示している。",
           "key_points_ja": [
             "Zenn記事「使い方は覚えなくていいからtmuxを入れろ」がはてブ259ユーザーを獲得。Claude Code・AIエージェント開発での長時間コマンドや対話型操作への実践的ソリューションを紹介",
@@ -873,19 +1524,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "tmuxとClaude Codeの組み合わせガイドのサマリーカード。はてなブックマーク259ユーザー（AI開発者コミュニティの高い共感）、主な用途：長時間コマンド管理・Claude Code並列実行、機能：ペイン分割・セッション永続化、学習コスト：最小限で始められる。",
             "data": {
               "headline": "tmux × Claude Code: 長時間・対話型タスクに必須のターミナル管理",
               "tldr": "AIエージェント（特にClaude Code）の開発でtmuxが必須になりつつある。ペイン分割・セッション永続化で長時間コマンドや並列タスクを管理。全コマンドを覚えなくても今すぐ使える。",
               "points": [
-                { "label": "はてブ反響", "value": "259ユーザー", "note": "AI開発者に共感", "tone": "primary" },
-                { "label": "主な用途", "value": "長時間コマンド管理", "note": "Claude Code並列実行", "tone": "info" },
-                { "label": "機能", "value": "ペイン分割・セッション永続", "tone": "default" },
-                { "label": "学習コスト", "value": "最小限で始められる", "note": "必要コマンドだけでOK", "tone": "success" }
+                {
+                  "label": "はてブ反響",
+                  "value": "259ユーザー",
+                  "note": "AI開発者に共感",
+                  "tone": "primary"
+                },
+                {
+                  "label": "主な用途",
+                  "value": "長時間コマンド管理",
+                  "note": "Claude Code並列実行",
+                  "tone": "info"
+                },
+                {
+                  "label": "機能",
+                  "value": "ペイン分割・セッション永続",
+                  "tone": "default"
+                },
+                {
+                  "label": "学習コスト",
+                  "value": "最小限で始められる",
+                  "note": "必要コマンドだけでOK",
+                  "tone": "success"
+                }
               ],
               "context": "Claude CodeやAIエージェントが長時間・多段階のコマンドを実行する場合、通常のターミナルでは管理が困難。tmuxのセッション管理で複数タスクを並列管理できる。",
               "impact": "AIエージェント開発のデファクトツールスタックにtmuxが組み込まれつつある。日本のAIエンジニアコミュニティで実装ノウハウが急速に共有されている。"
-            }
+            },
+            "alt": "tmuxとClaude Codeの組み合わせガイドのサマリーカード。はてなブックマーク259ユーザー（AI開発者コミュニティの高い共感）、主な用途：長時間コマンド管理・Claude Code並列実行、機能：ペイン分割・セッション永続化、学習コスト：最小限で始められる。"
           }
         },
         {
@@ -899,9 +1569,26 @@
           "category": "japan",
           "published_at": "2026-06-02",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 230 },
-          "tags": ["トークン効率化", "コンテキスト圧縮", "AIコスト", "Claude Code", "Cursor", "Netflix"],
-          "scores": { "importance": 5, "depth": 3, "practicality": 4, "freshness": 3, "total": 15, "source_type_bias": 0 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 230
+          },
+          "tags": [
+            "トークン効率化",
+            "コンテキスト圧縮",
+            "AIコスト",
+            "Claude Code",
+            "Cursor",
+            "Netflix"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 3,
+            "total": 15,
+            "source_type_bias": 0
+          },
           "summary_ja": "Netflixのシニアエンジニアが「AIコーディングツールで消費されるトークンの約90%は圧縮可能または冗長なデータである」と主張する知見が日本語記事として紹介され、はてなブックマーク230ユーザーを集め話題となっている。AIコーディングワークフローにおけるトークン使用の大部分がコンテキスト管理の非効率性から来ており、適切なコンテキスト圧縮戦略によって大幅なコスト削減が可能であることを示している。Uberが自社のAIツール予算を4ヶ月で使い切った問題と絡めて、AI活用コストの最適化が企業にとって重要な課題として浮上していることを反映した記事として注目されている。",
           "key_points_ja": [
             "Netflixエンジニアが「AIコーディングツールのトークンの約90%が冗長」と指摘。コンテキスト管理の改善でAI利用コストを大幅削減できる余地があることを主張",
@@ -910,19 +1597,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "「AIトークンの9割はゴミ」記事のサマリーカード。Netflixエンジニアによる試算で冗長トークン率約90%、原因：コンテキスト管理の非効率、対策：圧縮・スライドウィンドウ・要約活用、はてなブックマーク230ユーザー。",
             "data": {
               "headline": "AIトークンの9割は冗長——コンテキスト圧縮戦略でコスト最適化を",
               "tldr": "Netflixエンジニアがコーディングツールのトークン消費を分析した結果、約90%が圧縮・削減可能な冗長データと指摘。AI利用コスト急増に対するコンテキスト最適化の重要性を訴える。",
               "points": [
-                { "icon": "⚠️", "label": "冗長トークン率", "value": "約90%", "note": "Netflixエンジニア試算", "tone": "warning" },
-                { "label": "主な原因", "value": "コンテキスト管理の非効率", "tone": "default" },
-                { "label": "対策", "value": "圧縮・スライドウィンドウ・要約", "tone": "success" },
-                { "label": "はてブ反響", "value": "230ユーザー", "note": "コスト最適化への関心", "tone": "info" }
+                {
+                  "icon": "⚠️",
+                  "label": "冗長トークン率",
+                  "value": "約90%",
+                  "note": "Netflixエンジニア試算",
+                  "tone": "warning"
+                },
+                {
+                  "label": "主な原因",
+                  "value": "コンテキスト管理の非効率",
+                  "tone": "default"
+                },
+                {
+                  "label": "対策",
+                  "value": "圧縮・スライドウィンドウ・要約",
+                  "tone": "success"
+                },
+                {
+                  "label": "はてブ反響",
+                  "value": "230ユーザー",
+                  "note": "コスト最適化への関心",
+                  "tone": "info"
+                }
               ],
               "context": "Claude CodeやCursorなどのAIコーディングツールはコンテキストを長大に保持する設計だが、多くの文脈情報は不要または重複している。コスト削減の余地が大きい。",
               "impact": "企業のAIコスト管理においてトークン効率化が必須の取り組みになる。Uberの年間予算4ヶ月消化問題と同じ文脈で、AI予算策定の前提見直しを迫る内容。"
-            }
+            },
+            "alt": "「AIトークンの9割はゴミ」記事のサマリーカード。Netflixエンジニアによる試算で冗長トークン率約90%、原因：コンテキスト管理の非効率、対策：圧縮・スライドウィンドウ・要約活用、はてなブックマーク230ユーザー。"
           }
         },
         {
@@ -936,9 +1642,26 @@
           "category": "japan",
           "published_at": "2026-06-04",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 163 },
-          "tags": ["東京大学", "LLM", "講義スライド", "教育", "機械学習", "Transformer"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 4, "freshness": 5, "total": 17, "source_type_bias": 0 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 163
+          },
+          "tags": [
+            "東京大学",
+            "LLM",
+            "講義スライド",
+            "教育",
+            "機械学習",
+            "Transformer"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 17,
+            "source_type_bias": 0
+          },
           "summary_ja": "東京大学Web知能・マイニング研究室がLLM大規模言語モデル講座2025の講義スライドを一般公開した。トランスフォーマーアーキテクチャの基礎から最新のモデル動向まで網羅した学術グレードの教材であり、無料で入手可能。はてなブックマーク163ユーザーを集め、学生から現役AIエンジニアまで幅広い層が参照しているとみられる。LLMの理論的理解を深めたい開発者にとって、日本語で入手できる体系的なLLM講義資料として希少価値が高い。日本のAI人材育成において、大学が公開した高品質な教材が産業界でも参照される流れが定着してきている。",
           "key_points_ja": [
             "東大Web知能・マイニング研究室がLLM講座2025の完全スライドを無料公開。トランスフォーマー理論から最新モデルまでの学術的・体系的なLLM教材として注目",
@@ -947,19 +1670,38 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "東大LLM講座2025スライドのサマリーカード。はてなブックマーク163ユーザー（エンジニア・学生に人気）、内容：トランスフォーマー理論から最新LLM動向まで（講座2025年版）、スライド一般公開・無料、提供元：東京大学Web知能・マイニング研究室。",
             "data": {
               "headline": "東大LLM講座2025スライド: 学術グレードのLLM教材を無料一般公開",
               "tldr": "東京大学Web知能・マイニング研究室がLLM講座2025の講義スライドを無料公開。トランスフォーマー理論から最新動向まで体系的に網羅した学術教材。はてブ163ユーザー。",
               "points": [
-                { "label": "はてブ反響", "value": "163ユーザー", "note": "エンジニア・学生に人気", "tone": "primary" },
-                { "label": "内容範囲", "value": "理論〜最新動向", "note": "講座2025年版", "tone": "info" },
-                { "label": "提供形式", "value": "スライド一般公開", "note": "無料取得可能", "tone": "success" },
-                { "label": "提供元", "value": "東京大学", "tone": "default" }
+                {
+                  "label": "はてブ反響",
+                  "value": "163ユーザー",
+                  "note": "エンジニア・学生に人気",
+                  "tone": "primary"
+                },
+                {
+                  "label": "内容範囲",
+                  "value": "理論〜最新動向",
+                  "note": "講座2025年版",
+                  "tone": "info"
+                },
+                {
+                  "label": "提供形式",
+                  "value": "スライド一般公開",
+                  "note": "無料取得可能",
+                  "tone": "success"
+                },
+                {
+                  "label": "提供元",
+                  "value": "東京大学",
+                  "tone": "default"
+                }
               ],
               "context": "LLMの理論的背景を日本語で体系的に学べる公開教材は限られていた。東大のような権威ある機関からの公開により、日本語のLLM教育リソースが充実する。",
               "impact": "AI産業における人材教育が大学と産業界の協調によって加速。現役エンジニアが学術的観点からLLMを理解する機会が増え、研究レベルの実装知識を持つエンジニアが増える。"
-            }
+            },
+            "alt": "東大LLM講座2025スライドのサマリーカード。はてなブックマーク163ユーザー（エンジニア・学生に人気）、内容：トランスフォーマー理論から最新LLM動向まで（講座2025年版）、スライド一般公開・無料、提供元：東京大学Web知能・マイニング研究室。"
           }
         }
       ]
@@ -980,8 +1722,21 @@
           "category": "china",
           "published_at": "2026-06-03",
           "lang": "zh",
-          "tags": ["Coze 3.0", "ByteDance", "Computer Use", "mobile agent", "remote control"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 3, "freshness": 4, "total": 13, "source_type_bias": 0 },
+          "tags": [
+            "Coze 3.0",
+            "ByteDance",
+            "Computer Use",
+            "mobile agent",
+            "remote control"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 13,
+            "source_type_bias": 0
+          },
           "summary_ja": "ByteDanceが開発するAIエージェントプラットフォームCozeのバージョン3.0が、スマートフォンからPC上のエージェントを直接遠隔操作できる機能を追加した。これにより、外出先のスマホからオフィスPCのエージェントタスクを委任・監視・実行できるようになる。モバイル端末からComputer Useエージェントをコントロールするモバイルファーストのエージェントインターフェースとして、成長中のコンピューター操作エージェント市場でCozeが新たな差別化軸を打ち出した。ByteDanceは中国市場でCozeを主要AIエージェントプラットフォームとして展開しており、そのモバイル先行戦略がグローバル市場でも注目されている。",
           "key_points_ja": [
             "ByteDance Coze 3.0がスマートフォンからPC上のAIエージェントを遠隔操作できる機能を追加。外出中でもPCエージェントタスクの委任・監視・実行が可能に",
@@ -990,19 +1745,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Coze 3.0スペックカード。新機能：スマートフォンからPC上のAIエージェントを遠隔制御、提供元：ByteDance、差別化：モバイルファーストのエージェント制御UI（外出先からPCタスクをAIエージェントに委任可能）。",
             "data": {
               "headline": "Coze 3.0: スマホからPCエージェントを遠隔制御するモバイルファーストUI",
               "tldr": "ByteDanceのCoze 3.0がスマートフォンからPC上のAIエージェントを直接操作できる遠隔制御機能を追加。外出先からPCタスクをAIエージェントに委任可能になった。",
               "points": [
-                { "label": "新機能", "value": "モバイル→PC遠隔制御", "tone": "primary" },
-                { "label": "提供元", "value": "ByteDance", "note": "Coze 3.0", "tone": "info" },
-                { "label": "差別化", "value": "モバイルファーストUI", "note": "スマホからエージェント操作", "tone": "success" },
-                { "label": "対象", "value": "PCエージェントタスク", "tone": "default" }
+                {
+                  "label": "新機能",
+                  "value": "モバイル→PC遠隔制御",
+                  "tone": "primary"
+                },
+                {
+                  "label": "提供元",
+                  "value": "ByteDance",
+                  "note": "Coze 3.0",
+                  "tone": "info"
+                },
+                {
+                  "label": "差別化",
+                  "value": "モバイルファーストUI",
+                  "note": "スマホからエージェント操作",
+                  "tone": "success"
+                },
+                {
+                  "label": "対象",
+                  "value": "PCエージェントタスク",
+                  "tone": "default"
+                }
               ],
               "context": "PC上で動作するComputer Useエージェントはデスクトップ前提だった。Coze 3.0はスマホを制御インターフェースとして位置づけ、エージェントのモバイル対応を実現した。",
               "impact": "外出先から自動化タスクを管理できる世界が近づく。中国のAIプラットフォームが先行してモバイルエージェント制御の使用例を作っており、グローバル競合にも影響を与える。"
-            }
+            },
+            "alt": "Coze 3.0スペックカード。新機能：スマートフォンからPC上のAIエージェントを遠隔制御、提供元：ByteDance、差別化：モバイルファーストのエージェント制御UI（外出先からPCタスクをAIエージェントに委任可能）。"
           }
         },
         {
@@ -1016,8 +1789,22 @@
           "category": "china",
           "published_at": "2026-06-04",
           "lang": "zh",
-          "tags": ["CVPR 2026", "Physical AI", "中国AI", "ロボティクス", "体現型AI", "NVIDIA"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 2, "freshness": 5, "total": 13, "source_type_bias": 0 },
+          "tags": [
+            "CVPR 2026",
+            "Physical AI",
+            "中国AI",
+            "ロボティクス",
+            "体現型AI",
+            "NVIDIA"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 13,
+            "source_type_bias": 0
+          },
           "summary_ja": "CVPR 2026（コンピュータビジョンの最高峰学術会議）において、中国のAI企業・研究機関がPhysical AI（ロボティクス・体現型AI）分野の研究成果を発表し、NVIDIA・Tesla・Waymoの関係者を含む聴衆の前で存在感を示した。中国は学術界ではすでにトップカンファレンスに多数の論文を採択されているが、Physical AI分野でも産業応用レベルの研究が増えており、グローバルな競争力の向上が可視化されている。体現型AI・ロボティクス分野での中国の台頭は、米中のAI技術競争に新たな次元を加えている。",
           "key_points_ja": [
             "CVPR 2026で中国企業・研究機関がPhysical AI研究を発表。NVIDIA・Tesla・Waymoらが聴衆として参加するという象徴的な構図が報告されている",
@@ -1026,34 +1813,92 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "CVPR 2026 Physical AIサマリーカード。会議：CVPR 2026（コンピュータビジョン最高峰）、聴衆：NVIDIA・Tesla・Waymo関係者が参加、発表：中国企業・研究機関がPhysical AI研究を発表。体現型AI・ロボティクス分野での中国の国際的台頭を示す。",
             "data": {
               "headline": "CVPR 2026: Physical AIで中国が存在感——NVIDIA・Tesla・Waymoが聴衆として参加",
               "tldr": "CVPR 2026でNVIDIA・Tesla・Waymo参加の聴衆の前で中国企業がPhysical AI研究を発表。体現型AI・ロボティクス分野での中国の研究競争力が国際的に可視化。",
               "points": [
-                { "label": "会議", "value": "CVPR 2026", "note": "コンピュータビジョン最高峰", "tone": "primary" },
-                { "label": "聴衆", "value": "NVIDIA・Tesla・Waymo", "note": "業界リーダーが参加", "tone": "info" },
-                { "label": "発表者", "value": "中国企業・研究機関", "tone": "default" },
-                { "label": "分野", "value": "Physical AI / ロボティクス", "tone": "info" }
+                {
+                  "label": "会議",
+                  "value": "CVPR 2026",
+                  "note": "コンピュータビジョン最高峰",
+                  "tone": "primary"
+                },
+                {
+                  "label": "聴衆",
+                  "value": "NVIDIA・Tesla・Waymo",
+                  "note": "業界リーダーが参加",
+                  "tone": "info"
+                },
+                {
+                  "label": "発表者",
+                  "value": "中国企業・研究機関",
+                  "tone": "default"
+                },
+                {
+                  "label": "分野",
+                  "value": "Physical AI / ロボティクス",
+                  "tone": "info"
+                }
               ],
               "context": "論文採択数ではすでに世界トップクラスの中国だが、Physical AI（体現型AI）分野でも産業応用レベルの研究が増加。米国技術規制の中での中国のAI研究力向上として注目される。",
               "impact": "ロボティクス・Physical AI分野での米中競争が激化。日本を含むアジア諸国の研究機関・企業はこの分野での差別化戦略を迫られる。"
-            }
+            },
+            "alt": "CVPR 2026 Physical AIサマリーカード。会議：CVPR 2026（コンピュータビジョン最高峰）、聴衆：NVIDIA・Tesla・Waymo関係者が参加、発表：中国企業・研究機関がPhysical AI研究を発表。体現型AI・ロボティクス分野での中国の国際的台頭を示す。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "VentureBeat", "reason": "HTTP 403 blocked", "fallback_used": "none" },
-    { "source": "The Verge", "reason": "HTTP 403 blocked", "fallback_used": "none" },
-    { "source": "Ars Technica", "reason": "redirect / no recent AI content", "fallback_used": "none" },
-    { "source": "Mercari Engineering", "reason": "HTTP 403 blocked", "fallback_used": "WebSearch" },
-    { "source": "Preferred Networks", "reason": "no AI articles within 168h", "fallback_used": "none" },
-    { "source": "ChinAI Substack", "reason": "HTTP 403 blocked", "fallback_used": "none" },
-    { "source": "Semantic Scholar API", "reason": "HTTP 429 rate limited", "fallback_used": "none" },
-    { "source": "Papers with Code", "reason": "redirect to HuggingFace, no stable endpoint", "fallback_used": "none" },
-    { "source": "Reddit RSS feeds", "reason": "domain blocked by environment", "fallback_used": "WebSearch" },
-    { "source": "Qiita API", "reason": "rate limited / no results for recent articles", "fallback_used": "none" }
+    {
+      "source": "VentureBeat",
+      "reason": "HTTP 403 blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "The Verge",
+      "reason": "HTTP 403 blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Ars Technica",
+      "reason": "redirect / no recent AI content",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Mercari Engineering",
+      "reason": "HTTP 403 blocked",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Preferred Networks",
+      "reason": "no AI articles within 168h",
+      "fallback_used": "none"
+    },
+    {
+      "source": "ChinAI Substack",
+      "reason": "HTTP 403 blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Semantic Scholar API",
+      "reason": "HTTP 429 rate limited",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Papers with Code",
+      "reason": "redirect to HuggingFace, no stable endpoint",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Reddit RSS feeds",
+      "reason": "domain blocked by environment",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Qiita API",
+      "reason": "rate limited / no results for recent articles",
+      "fallback_used": "none"
+    }
   ]
 }
