@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-05T05:00:00+09:00",
+  "updated_at": "2026-06-06T09:25:16+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -3721,6 +3721,150 @@
       "url_prefix": "https://qbitai.com/2026/06/429130.html",
       "first_seen_at": "2026-06-05",
       "last_seen_at": "2026-06-05",
+      "last_seen_count": 1
+    },
+    "dc0ef612e9d3dc7b84e52fa3334bcae35487fa80": {
+      "url_prefix": "https://www.anthropic.com/institute/recursive-self",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "6ac35ac7687f4154d74c556ecd1227c6096b8eac": {
+      "url_prefix": "https://blog.google/innovation-and-ai/technology/d",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "4e488fc653aef875ec59b1ac305efb65ef272a3b": {
+      "url_prefix": "https://techcrunch.com/2026/06/05/google-will-pay-",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "739064276f1c72c084726a3e6b70abadba300346": {
+      "url_prefix": "https://arxiv.org/abs/2606.06468",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "b93ca35c3f174c66525e75445d313fe117cd9e56": {
+      "url_prefix": "https://note.com/ktknd/n/n362c35f32346",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "e3385b8ec8c6a1d8b19129f0d514c15e5afb21fb": {
+      "url_prefix": "https://chinai.substack.com/p/chinai-361-what-can-",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "25246c2b662ac346c4bb63a9c01c8dc0e9ef199c": {
+      "url_prefix": "https://github.com/github/copilot-sdk",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "f1b4e4736552afa30d9377680ff10598303cd156": {
+      "url_prefix": "https://pc.watch.impress.co.jp/docs/news/2114675.h",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "1c474330a877137bd72a5e1363b931a7b8265aec": {
+      "url_prefix": "https://openai.com/news/product-releases/",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "25995cd83fbf2cdf8608532ff53dd90d5a9710f9": {
+      "url_prefix": "https://github.com/chopratejas/headroom",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "74b95bcee00a23ca53fcbb66430d911c418ef014": {
+      "url_prefix": "https://techcrunch.com/2026/06/04/apple-approves-p",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "741cfa5282d2bd3b9fd6f7752fc1e08a106798aa": {
+      "url_prefix": "https://zenn.dev/dinii/articles/d7be3acc43d868",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "8fc1adebb570091bc2ff14a509746eae4575995b": {
+      "url_prefix": "https://gigazine.net/news/20260605-magenta-realtim",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "daf5de9a20d0e85e8ee5d2e622bcb7c62805d682": {
+      "url_prefix": "https://huggingface.co/papers/2606.02800",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "848ad8c0b11bc5a8841a95e1678c7d34bd64cb03": {
+      "url_prefix": "https://arxiv.org/abs/2606.06473",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "434775dcc73fecd47d3328ce1985721e80ec6290": {
+      "url_prefix": "https://arxiv.org/abs/2606.06467",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "45457fdab25580534832b7f0f630468c0b7f2f42": {
+      "url_prefix": "https://techcrunch.com/2026/06/05/the-token-bill-c",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "fc91750a175db88edb7351a5279326ce82e4727f": {
+      "url_prefix": "https://www.dailycal.org/news/campus/academics/fai",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "0302dea09ef67a8a8f2ebc0420be4db49e9ae573": {
+      "url_prefix": "https://www.reddit.com/r/ClaudeAI/comments/1txisil",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "3228d8ded6f5eb09068331b316156dbef5098d55": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/article/2606/05/2",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "3de9f30d748a27ea3b75ec6735bd8ff0f39f857e": {
+      "url_prefix": "https://qiita.com/shinkai_/items/626dfa7857f2d5547",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "0b6b2fa07ade4f8ddc30cc3bda79ef9c66e021c7": {
+      "url_prefix": "https://www.sbbit.jp/article/cont1/185480",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "588583f57a4ef9c3c475433cd92bf51a117067d8": {
+      "url_prefix": "https://tech.layerx.co.jp/entry/ai-agent-long-term",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "ca504c47ad863704dc25b298d922f1520d35d507": {
+      "url_prefix": "https://36kr.com/p/3839685302241536",
+      "first_seen_at": "2026-06-06",
+      "last_seen_at": "2026-06-06",
       "last_seen_count": 1
     }
   },

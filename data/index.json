@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-06-05T05:00:00+09:00",
+  "updated_at": "2026-06-06T09:25:16+09:00",
   "entries": [
+    {
+      "date": "2026-06-06",
+      "headline": "Anthropicが『When AI Builds Itself』で再帰的自己改善の進捗を公開——自社コードの80%超をClaudeが執筆し検証可能な一時停止体制を提言・GoogleはSpaceXと月920MドルでNVIDIA GPU約11万基を契約——Gemma 4 QAT版がノートPCで1GB未満動作、GitHub Copilot従量課金化でAIトークンコスト管理が業界の最重要課題に",
+      "item_count": 24,
+      "top_picks_count": 7
+    },
     {
       "date": "2026-06-05",
       "headline": "MicrosoftがOpenAI不依存の推論モデルMAI-Thinking-1を公開・Gemma 4 12BがノートPCでマルチモーダルを実現——GitHubがCopilot SDK GA・ZOZOがClaude Code Skillで70%削減、Axiom Mathがパトナム全12問完答",
