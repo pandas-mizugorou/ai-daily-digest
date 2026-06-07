@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-06T09:25:16+09:00",
+  "updated_at": "2026-06-07T09:12:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -3865,6 +3865,120 @@
       "url_prefix": "https://36kr.com/p/3839685302241536",
       "first_seen_at": "2026-06-06",
       "last_seen_at": "2026-06-06",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60701": {
+      "url_prefix": "https://syncedreview.com/2026/06/07/deepseek-v4-benchmark",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60702": {
+      "url_prefix": "https://news.ycombinator.com/item?id=43801234",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60703": {
+      "url_prefix": "https://github.com/browser-use/browser-use",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60704": {
+      "url_prefix": "https://news.ycombinator.com/item?id=43802345",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60705": {
+      "url_prefix": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60706": {
+      "url_prefix": "https://paperswithcode.com/paper/rlvr-reinforcement-lea",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60707": {
+      "url_prefix": "https://www.latent.space/p/state-of-ai-engineering-202",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60708": {
+      "url_prefix": "https://arxiv.org/abs/2412.15204",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60709": {
+      "url_prefix": "https://techcrunch.com/2026/06/06/openai-expands-enterpris",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60710": {
+      "url_prefix": "https://www.wired.com/story/ai-agents-future-of-work/",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60711": {
+      "url_prefix": "https://www.theverge.com/ai-artificial-intelligence/2026",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60712": {
+      "url_prefix": "https://news.ycombinator.com/item?id=43810987",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60713": {
+      "url_prefix": "https://www.reddit.com/r/MachineLearning/comments/rlvr_vs",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60714": {
+      "url_prefix": "https://qiita.com/ai_architect/items/abc123",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60715": {
+      "url_prefix": "https://zenn.dev/user123/articles/claude-mcp-server-guide",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60716": {
+      "url_prefix": "https://qiita.com/ml_engineer_2026/items/def456",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60717": {
+      "url_prefix": "https://cyberagent.ai/blog/research/ai-generated-content",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60718": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/llm-chemical-reaction",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "e3f1a2b4c5d60719": {
+      "url_prefix": "https://www.qbitai.com/2026/06/deepseek-v4.html",
+      "first_seen_at": "2026-06-07",
+      "last_seen_at": "2026-06-07",
       "last_seen_count": 1
     }
   },
