@@ -18,3 +18,7 @@ data/_push-status.json
 
 # validate-digest.mjs の図解検証レポート (実行ごとのテレメトリ。CI のステップサマリで可視化、コミット不要)
 data/_validation/
+
+# collect.mjs が出力する収集候補プール (中間生成物。Claude が読んで Step 6 以降に使う作業データ。
+# 公開対象は最終 data/<date>.json なのでコミット不要)
+data/_collected/
