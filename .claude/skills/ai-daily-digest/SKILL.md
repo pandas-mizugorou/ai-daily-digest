@@ -256,13 +256,25 @@ Step 7.5 で選定した Top Picks（5-7 件）の item にだけ `x_post`（str
 - `data/_seen.json` を更新（`last_seen_count` をインクリメント、新規 URL は `first_seen_at` に当日追加）
 - 全体ヘッドライン `headline` と `summary_ja`（日全体の総括）を生成
 
-### Step 10: commit & push + 通知
+### Step 10: 派生アーティファクト生成 + commit & push + 通知
+
+JSON 書き込み後、commit 前に**派生アーティファクトを再生成**する（依存ゼロ・決定論）:
 
 ```
-git add data/
+node scripts/normalize-digest.mjs "data/<YYYY-MM-DD>.json"   # 図解スキーマ正準化
+node scripts/validate-digest.mjs  "data/<YYYY-MM-DD>.json"   # 図解検証 (止めない)
+node scripts/build-search-index.mjs                          # data/search-index.json
+node scripts/build-feed.mjs                                  # feed.xml / feed-items.xml
+node scripts/build-stats.mjs                                 # data/stats.json
+```
+
+```
+git add data/ feed.xml feed-items.xml
 git commit -m "daily digest: <YYYY-MM-DD> (N items)"
 git push origin main
 ```
+
+（`feed.xml` / `feed-items.xml` はルート直下なので `git add data/` だけだと漏れる。詳細は `references/publish.md`）
 
 ユーザーに以下を通知:
 - 公開 URL: `https://<USER>.github.io/ai-daily-digest/#<YYYY-MM-DD>`

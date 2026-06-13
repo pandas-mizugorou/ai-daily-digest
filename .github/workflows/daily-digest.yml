@@ -229,11 +229,16 @@ jobs:
           node scripts/normalize-digest.mjs "data/${{ steps.date.outputs.value }}.json"
           node scripts/validate-digest.mjs "data/${{ steps.date.outputs.value }}.json"
 
-      # === Phase F-3: 検索インデックス生成 (Claude 出力後・commit 前。ランナー標準 node、依存ゼロ) ===
-      - name: Build search index
+      # === 派生アーティファクト生成 (Claude 出力後・commit 前。ランナー標準 node、依存ゼロ) ===
+      # 検索インデックス (Phase F-3) + RSS フィード (Phase 2-3) + 統計 (Phase 2-5/3-2/3-3)。
+      # いずれも data/<date>.json から決定論生成。失敗しても公開は止めない。
+      - name: Build derived artifacts (search index / feeds / stats)
         if: steps.guard.outputs.done != 'true'
         continue-on-error: true
-        run: node scripts/build-search-index.mjs
+        run: |
+          node scripts/build-search-index.mjs
+          node scripts/build-feed.mjs
+          node scripts/build-stats.mjs
 
       - name: Commit and push changes
         if: steps.guard.outputs.done != 'true'
@@ -259,7 +264,8 @@ jobs:
             COUNT=$(jq '[.categories[].items // [] | length] | add' "data/${DATE}.json" 2>/dev/null || echo "?")
           fi
 
-          git add data/
+          # data/ に加えてルートの RSS フィード (feed.xml / feed-items.xml) も対象
+          git add data/ feed.xml feed-items.xml
           git commit -m "daily digest: ${DATE} (${COUNT} items)"
 
           # main がこの run の (stale な) checkout 以降に進んでいることがある

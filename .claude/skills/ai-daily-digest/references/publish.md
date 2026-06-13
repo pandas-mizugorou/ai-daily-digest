@@ -75,11 +75,23 @@ data/weekly-index.json     # 週次過去一覧（Phase D）
 ```powershell
 cd C:\dev\personal\ai-daily-digest
 git pull --rebase origin main
-# (スキルが data/ を更新)
-git add data/
+# (スキルが data/<date>.json を更新)
+
+# 派生アーティファクトを生成 (依存ゼロ・data/<date>.json から決定論生成)
+node scripts/normalize-digest.mjs "data/<date>.json"   # 図解スキーマ正準化
+node scripts/validate-digest.mjs "data/<date>.json"    # 図解検証 (公開は止めない)
+node scripts/build-search-index.mjs                    # data/search-index.json
+node scripts/build-feed.mjs                            # feed.xml / feed-items.xml
+node scripts/build-stats.mjs                           # data/stats.json (トレンド/品質)
+
+git add data/ feed.xml feed-items.xml
 git commit -m "daily digest: 2026-05-03 (6 items)"
 git push origin main
 ```
+
+**重要**: `feed.xml` / `feed-items.xml` は**リポジトリルート直下**に出力されるため、
+`git add data/` だけでは漏れる。必ず `feed.xml feed-items.xml` も add すること。
+`search-index.json` / `stats.json` は `data/` 配下なので `git add data/` でカバーされる。
 
 ### routine（クラウド側）
 
