@@ -4,8 +4,12 @@
 
 - 静的サイト（HTML + CSS + JS のみ。ビルド不要）
 - スマホファースト + レスポンシブ + PWA（ホーム画面追加・オフライン閲覧対応）
-- データ更新は Anthropic ホストの routine（[`/schedule`](https://docs.claude.com/en/docs/claude-code/scheduled-tasks)）から `git push` で自動反映
-- スキル本体は [`~/.claude/skills/ai-daily-digest/`](file://~/.claude/skills/ai-daily-digest/) に配置
+- データ更新は **GitHub Actions**（`.github/workflows/daily-digest.yml`）または手動実行（`/ai-daily-digest`）から `git push` で反映
+- スキル本体は [`~/.claude/skills/ai-daily-digest/`](file://~/.claude/skills/ai-daily-digest/) に配置（リポジトリ同梱の [`.claude/skills/ai-daily-digest/`](.claude/skills/ai-daily-digest/) が SSOT。`scripts/sync-skill.ps1` でローカルへ同期）
+
+> **運用状況（2026-06）**: 6/15 の Anthropic サブスク課金変更（Agent SDK / Claude Code GitHub Actions が
+> サブスク枠と分離された別枠クレジット化）に備え、自動配信ワークフローを**一時停止中**。当面は手動実行で更新する。
+> 詳細は下記「自動更新の仕組み」を参照。
 
 ## 公開 URL
 
@@ -103,7 +107,7 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 
 1. スマホ / PC でサイトを開き、ヘッダーの 🔔 をタップ
 2. 通知を許可 → 表示された購読 JSON を「コピー」
-3. その JSON を Claude Code に「これを subscriptions.json に登録して」と渡す（`data/subscriptions.json` に追記 commit/push される）
+3. その JSON を **GitHub Secret `SUBSCRIPTIONS_JSON`** に追加する（端末識別情報のため public リポジトリには置かず Secret で管理。ローカル検証時のみ `data/subscriptions.json`＝`.gitignore` 済みを使う）
 4. 以降、日次更新完了時にこの端末へ通知が届く。端末を増やすときは 1–3 を繰り返す
 
 ### 注意
@@ -135,18 +139,42 @@ GitHub の Settings → Pages → Source: `Deploy from a branch` / Branch: `main
 - 対象は Top Picks のみ。それ以外・実装前の過去記事にはボタンを出さない
 - フロントのコピー処理は `assets/xdraft.js` に共通化（3 ページ共有）。検索は `search-index.json` に x_post を含めて対応
 
-## 自動更新の仕組み
+## 更新の仕組み
 
-`/schedule` で routine を登録すると、Anthropic ホスト側で毎朝 5:00 JST にスキルが起動し、本リポジトリへ `git push` する。Pages が自動でデプロイ。
+### 手動実行（現行の主経路）
 
-routine 登録手順は [`~/.claude/skills/ai-daily-digest/SKILL.md`](file://~/.claude/skills/ai-daily-digest/SKILL.md) を参照。
+ローカルで Claude Code に `/ai-daily-digest` と依頼すると、当日分を生成して push する。
+収集の大半は **`scripts/collect.mjs`（決定論収集）**が担い、Claude は WebFetch 補完（公式ブログ中心）+
+スコアリング・選定・日本語要約・図解・グラウンディング検証に集中する。
+
+```bash
+# スキルが内部で実行する収集ステップ（単体でも回せる）
+node scripts/collect.mjs --date 2026-06-13   # data/_collected/<date>.json に候補プールを生成
+```
+
+引数: `--weekly-only`（週次のみ再生成）/ `--date YYYY-MM-DD`（過去日のバックフィル）/ `--dry-run`（push しない）。
+
+### 自動実行（GitHub Actions・現在停止中）
+
+`.github/workflows/daily-digest.yml` が多重 cron（00:07/00:27/00:47 JST）+ Cloudflare Worker（`infra/digest-trigger-worker`、
+03:30 JST に `workflow_dispatch`）で発火し、`claude-code-action` 経由でスキルを実行して push する。
+`watchdog.yml`（異常検知 Issue）/ `retry-failed.yml`（1回自動再実行）が安全網。
+
+**2026-06 時点では本体・watchdog ともに手動無効化（`disabled_manually`）し、Cloudflare Worker の cron も
+空にしている**（6/15 課金変更の様子見）。再開する場合は Actions の各ワークフローを有効化し、
+`infra/digest-trigger-worker/wrangler.toml` の cron を戻して `wrangler deploy` する。
+
+必要な GitHub Secret: `CLAUDE_CODE_OAUTH_TOKEN`（`claude setup-token` で発行・1年有効）、
+`VAPID_PRIVATE_KEY` / `SUBSCRIPTIONS_JSON`（Web Push）、`SECRETS_PAT`（失効購読の自動削除）。
 
 ## データスキーマ
 
-各日のデータは `data/<YYYY-MM-DD>.json`。
+各日のデータは `data/<YYYY-MM-DD>.json`（`schema_version: "2.0"`）。
 
-- `categories[].id`: `new_models` / `tools` / `research` / `industry` / `japan`
-- `items[].scores`: `{ importance, depth, practicality, freshness, total }`（各 5 点・計 20 点）
+- `categories[].id`: 10 カテゴリ `new_models` / `tools_apps` / `agents` / `multimodal` / `research_papers` / `industry_business` / `regulation_policy` / `community_buzz` / `japan` / `china`（旧 ID `tools` / `research` / `industry` は後方互換で残置）
+- `top_picks[]`: 今日の必読 5-7 件（`categories[].items[].id` を参照）
+- `items[].scores`: `{ importance, depth, practicality, freshness, total }`（各 5 点・計 20 点）+ `source_type_bias` / `seen_penalty`
+- `items[].figure`: 図解（4 型: comparison / metric-bars / timeline / summary-card）
 - `headline` / `summary_ja`: その日全体のヘッドラインと総括
 
-詳しくは [`~/.claude/skills/ai-daily-digest/assets/digest-schema.json`](file://~/.claude/skills/ai-daily-digest/assets/digest-schema.json)。
+詳しくは [`.claude/skills/ai-daily-digest/assets/digest-schema.json`](.claude/skills/ai-daily-digest/assets/digest-schema.json)。
