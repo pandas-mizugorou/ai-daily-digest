@@ -359,6 +359,7 @@ button { font: inherit; cursor: pointer; }
 
 /* === Card === */
 .card {
+  position: relative;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -374,7 +375,7 @@ button { font: inherit; cursor: pointer; }
   gap: 12px;
   background: transparent;
   border: none;
-  padding: 14px 16px;
+  padding: 14px 40px 14px 16px; /* 右に bookmark★ 用の余白を確保 */
   text-align: left;
   cursor: pointer;
   font: inherit;
@@ -2285,3 +2286,108 @@ button { font: inherit; cursor: pointer; }
   border-top: 2px solid color-mix(in oklab, var(--accent) 55%, var(--border));
   box-shadow: var(--shadow), var(--elev-hi);
 }
+
+/* ============================================================
+   Phase 2-1 / 2-2: 既読・ブックマーク・ディープリンク・保存ビュー
+   ============================================================ */
+
+/* ブックマーク★ (カード右上・トグルボタン外の独立ボタン) */
+.card-bookmark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fg-subtle);
+  cursor: pointer;
+  transition: color .15s ease, background .15s ease, transform .1s ease;
+}
+.card-bookmark svg { width: 17px; height: 17px; display: block; }
+.card-bookmark:hover { background: var(--bg-soft); color: var(--fg-muted); }
+.card-bookmark:active { transform: scale(.9); }
+.card-bookmark.is-saved { color: var(--accent); }
+.card-bookmark.is-saved svg path { fill: var(--accent); stroke: var(--accent); }
+
+/* 既読: タイトルと出典を淡く（情報は残しつつ「読んだ」を示す） */
+.card.is-read .card-title { opacity: .55; }
+.card.is-read .card-title-ja,
+.card.is-read .card-meta { opacity: .6; }
+.card.is-read::before {
+  content: "✓";
+  position: absolute;
+  top: 14px;
+  left: -1px;
+  width: 4px;
+  font-size: 0; /* 視覚的には左端のアクセントバーのみ */
+}
+.card.is-read { border-left: 3px solid color-mix(in srgb, var(--accent) 35%, var(--border)); }
+
+/* リンクをコピー (card-actions 内・xdraft と同系) */
+.card-copylink {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--fg-muted);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+.card-copylink:hover { background: var(--bg-elevated); color: var(--fg); }
+
+/* ディープリンク着地時の一瞬のハイライト */
+@keyframes aidd-flash {
+  0% { box-shadow: 0 0 0 2px var(--accent); }
+  100% { box-shadow: var(--shadow); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card-flash { animation: aidd-flash 1.6s ease-out; }
+}
+
+/* ヘッダーの保存件数バッジ */
+#saved-link { position: relative; }
+.saved-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* 保存ビュー */
+.saved-view .saved-tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+.saved-tool-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--fg-muted);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+.saved-tool-btn:hover { background: var(--bg-elevated); color: var(--fg); }

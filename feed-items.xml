@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Daily Digest — 必読記事</title>
+    <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
+    <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
+    <language>ja</language>
+    <lastBuildDate>Sat, 13 Jun 2026 03:23:36 GMT</lastBuildDate>
+    <item>
+      <title>DeepSeek-V4 公開——数学・コード・推論の全ベンチマークでV3を超えるオープンソースLLM</title>
+      <link>https://syncedreview.com/2026/06/07/deepseek-v4-benchmarks/</link>
+      <guid isPermaLink="false">aidd-item-synced-deepseek-v4</guid>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/synced-deepseek-v4">AI Daily Digest 2026-06-07</source>
+      <description>DeepSeek が新フラッグシップモデル DeepSeek-V4 を公開した。数学・コーディング・複雑な推論の各ベンチマークで前世代 DeepSeek-V3 を全面的に上回る結果を示しており、フロンティアモデルに迫る性能をオープンソースで実現したと報告されている。Synced（機器之心英語版）が各ベンチマーク結果を詳報しており、オープンソース LLM の競争が再び加速する展開となっている。個人開発者・研究者はモデルを直接ダウンロードして試せるため、実装コストゼロで最新水準の推論・コーディング能力を利用できる。</description>
+    </item>
+    <item>
+      <title>AIエージェントの設計パターン：実務で使える5つのアーキテクチャ</title>
+      <link>https://qiita.com/ai_architect/items/abc123</link>
+      <guid isPermaLink="false">aidd-item-hatena-ai-agent-2026</guid>
+      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/hatena-ai-agent-2026">AI Daily Digest 2026-06-07</source>
+      <description>AIエージェントを実務で活用するための設計パターン 5 つを体系的に解説した記事が、はてなブックマークで 143 ユーザーのブックマークを集めた。ReAct パターン・Plan-and-Execute パターン・マルチエージェントパターン・ツール使用パターン・リフレクションパターンの 5 種のアーキテクチャについて、実装のポイントを交えて解説している。各パターンの適用場面や実装上の注意点が整理されており、エージェント開発の経験がない開発者でも体系的に理解できる構成となっている。実業務で AI エージェントの設計を行うエンジニアにとって参照しやすいリファレンス的な内容になっている。</description>
+    </item>
+    <item>
+      <title>Claude MCPサーバーを自作してみた：実装から公開まで</title>
+      <link>https://zenn.dev/user123/articles/claude-mcp-server-guide</link>
+      <guid isPermaLink="false">aidd-item-zenn-claude-mcp-2026</guid>
+      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/zenn-claude-mcp-2026">AI Daily Digest 2026-06-07</source>
+      <description>Claude の Model Context Protocol（MCP）サーバーをゼロから実装して npm に公開するまでの詳細な手順を解説した記事が、Zenn で 87 いいねを獲得した。MCP の仕様の理解から始め、実際のコード実装・テストを経て npm への公開までのステップを体系的に紹介している。自分専用の MCP サーバーを作りたいエンジニアにとって、一連の流れを把握できるハンズオン的な内容となっている。Claude を拡張する手段として MCP の活用が広がる中、開発者が独自のツール・データソースを接続するノウハウを提供している。</description>
+    </item>
+    <item>
+      <title>RAGとFine-tuningを組み合わせた精度改善：実装例付き</title>
+      <link>https://qiita.com/ml_engineer_2026/items/def456</link>
+      <guid isPermaLink="false">aidd-item-qiita-rag-fine-tune-2026</guid>
+      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/qiita-rag-fine-tune-2026">AI Daily Digest 2026-06-07</source>
+      <description>RAG（Retrieval-Augmented Generation）と Fine-tuning を組み合わせて日本語 QA タスクの精度を大幅に改善した事例を解説する Qiita 記事が 52 いいね・38 ストックを獲得した。実際のコードとベンチマーク結果を含む詳細な実装手順が提供されており、手元で再現・応用できる内容となっている。RAG 単体や Fine-tuning 単体では不十分なケースに対して、両者を組み合わせることで精度向上を実現するアプローチが示されている。日本語に特化したQAシステムの構築を検討するエンジニアにとって参考になる実践的な知見が詰まっている。</description>
+    </item>
+    <item>
+      <title>DeepSeek-V4 リリース、HNで523pt獲得——数学・コーディングでV3を大幅超えとの初期報告が相次ぐ</title>
+      <link>https://news.ycombinator.com/item?id=43810987</link>
+      <guid isPermaLink="false">aidd-item-hn-deepseek-v4</guid>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/hn-deepseek-v4">AI Daily Digest 2026-06-07</source>
+      <description>DeepSeek の最新フラッグシップモデル DeepSeek-V4 のリリースを取り上げた Hacker News スレッドが523ポイントを獲得し、大きな話題となっている。初期ユーザーからは、数学・コーディングの各ベンチマークで DeepSeek-V3 を大幅に上回るとの報告が相次いでいる。HN コミュニティでは実際のユースケースでの比較検証が始まっており、OSS LLM の新たなベースラインとして注目を集めている。フロンティアラボとの性能差が縮まりつつある可能性について活発な議論が行われている。</description>
+    </item>
+    <item>
+      <title>RLVR：検証可能な報酬でLLMを強化学習する新訓練フレームワーク——数学推論ベンチマークで大幅向上</title>
+      <link>https://paperswithcode.com/paper/rlvr-reinforcement-learning-from-verifiable</link>
+      <guid isPermaLink="false">aidd-item-papers-with-code-neuraips</guid>
+      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/papers-with-code-neuraips">AI Daily Digest 2026-06-07</source>
+      <description>LLM を検証可能な報酬シグナルで強化学習する新フレームワーク RLVR（Reinforcement Learning from Verifiable Rewards）が発表された。自動検証可能な報酬を使用することで、多くの推論タスクで人間のフィードバック（RLHF）を不要にするアプローチを提案している。数学的推論ベンチマークで大幅な向上を達成したと報告されており、検証可能な問題（数学・コーディング・論理推論等）への適用が期待される。RLHF の代替として、スケーラブルな LLM 訓練手法として注目されている。</description>
+    </item>
+    <item>
+      <title>Anthropic、AIによるAI開発の現状を公開: 自社コードの80%超をClaudeが執筆、再帰的自己改善への進捗と一時停止の検証体制を提言</title>
+      <link>https://www.anthropic.com/institute/recursive-self-improvement</link>
+      <guid isPermaLink="false">aidd-item-hn-anthropic-recursive-self-improvement</guid>
+      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/hn-anthropic-recursive-self-improvement">AI Daily Digest 2026-06-06</source>
+      <description>Anthropic Institute が「When AI Builds Itself」と題したエッセイを公開し、AI が自らの開発を自動化しつつある現状と、再帰的自己改善（AI が完全自律的に後継モデルを設計・開発する状態）への進捗を整理した。2026年5月時点で Anthropic のコードベースにマージされるコードの80%超を Claude が執筆しており、2026年第2四半期の典型的なエンジニアは2024年比で1日あたり8倍のコードをマージしているという（ただし行数は質より量を測る不完全な指標で、生産性向上の過大評価だと自ら注記する）。AI が遂行できるタスクの長さも、2024年3月の Claude Opus 3 の約4分から、2026年には Claude Opus 4.6 の12時間規模へと伸び、SWE-bench は2年で1桁台からほぼ飽和に達した。安全性研究では、エージェント群が800時間・約1.8万ドルの計算資源で性能差の97%を回復し、人間研究者2名が1週間で回復した約23%を上回った。Anthropic は、再帰的自己改善が多くの組織の想定より早く到来し得るとし、各国の複数のフロンティア開発者が検証可能な形で同時に減速・一時停止できる検証体制の構築を提言している。個人開発者やAIエンジニアにとっては、AIがAI開発を担う度合いが定量データで示された点が重要である</description>
+    </item>
+    <item>
+      <title>Google、Gemma 4 のQAT量子化版を公開——E2Bがメモリ1GB未満でモバイル・ノートPC上のオンデバイス実行に対応</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/</link>
+      <guid isPermaLink="false">aidd-item-hn-gemma4-qat</guid>
+      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/hn-gemma4-qat">AI Daily Digest 2026-06-06</source>
+      <description>Googleは2026年6月5日、量子化を学習段階に組み込む量子化対応学習（QAT）を施したGemma 4の各バリアントを公開した。QATは学習中に量子化をシミュレートすることで圧縮時の品質低下を抑える手法であり、全モデルに普及形式のQ4_0を適用するほか、モバイル向けには静的アクティベーション・チャネル単位量子化・トークン生成部への2bit量子化・KVキャッシュ最適化を組み合わせた専用スキーマを用いる。これにより、Per-Layer Embeddingsを除いたテキスト専用のGemma 4 E2Bはメモリ1GB未満で動作する。対象はE2B・E4B、エンコーダ不要のマルチモーダル12B、26B MOEなどで、重みはHugging Face上にGGUFおよびcompressed tensor形式で提供される。Googleは、QATが標準的なPTQ（学習後量子化）ベースラインより総合品質が高い結果を生むとしている。llama.cpp・Ollama・LM Studio・LiteRT-LM・vLLM・SGLang・MLX・Hugging Face Transformers・Unsloth など主要ツールに対応し、個人開発者がモバイル・ノートPC・コンシューマGPU上でローカルにGemma 4を動かす選択肢を広げる。Hacker Newsでは236ポイント・78コメントを集めた。</description>
+    </item>
+    <item>
+      <title>Google が SpaceX に月920M ドルで計算資源を契約、Gemini Enterprise の想定外需要に橋渡し、NVIDIA GPU 約11万基を確保</title>
+      <link>https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-google-spacex-920m-compute</guid>
+      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/techcrunch-google-spacex-920m-compute">AI Daily Digest 2026-06-06</source>
+      <description>Google が SpaceX に対し、計算資源の利用料として月額約920M ドル（年換算約11.04B ドル）を支払う契約を結んだ。提供されるのは約110,000基の NVIDIA GPU に加え CPU・メモリ等の関連コンポーネントで、契約期間は2026年10月から2029年6月までの32か月にわたる。Google はこの契約を「最近ローンチした AI 製品の想定外の需要」、具体的にはエージェント基盤 Gemini Enterprise の急増する顧客需要に応えるための「短期的かつ時宜を得た橋渡し容量（bridge capacity）」と説明している。SpaceX は約束した GPU 数を2026年9月30日までに提供する義務を負い、9月までは割引料金で容量が段階的に立ち上がる。両者は2026年12月31日以降、90日前通知で契約を解除できる。なお SpaceX は Anthropic に対しても2029年まで月額1.25B ドルで計算資源を提供しており、計算資源を巡る巨額の調達競争が業界全体で加速していることを示す。自社データセンターだけでは需要を賄えず外部から大規模に GPU を借り受ける構図は、個人開発者や AI エンジニアにとっても基盤モデルの提供能力が計算資源の確保力に直結する現実を改めて浮き彫りにする。</description>
+    </item>
+    <item>
+      <title>Goedel-Architect、補題の依存グラフを並列証明しMiniF2F-testで99.2%・コスト500分の1を達成</title>
+      <link>https://arxiv.org/abs/2606.06468</link>
+      <guid isPermaLink="false">aidd-item-arxiv-goedel-architect</guid>
+      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/arxiv-goedel-architect">AI Daily Digest 2026-06-06</source>
+      <description>arXiv に投稿された論文 Goedel-Architect は、Lean 4 による形式定理証明を効率化するエージェント型フレームワークである。証明対象を補題の依存グラフ（ブループリント）として生成・洗練し、各ノードを並列に閉じていくことで証明を組み立てる。バックボーンにオープンウェイトの DeepSeek-V4-Flash（284B-A13B）を用い、MiniF2F-test で 99.2%（自然言語シードを与えた場合は 100%）、PutnamBench で 88.8% を達成したとする。さらに IMO・Putnam・USAMO の問題を解きつつ、同等のオープンパイプラインと比べて最大 500 倍低いコストで動作すると報告している。形式証明は LLM の推論能力を厳密に検証できる領域として注目されており、本手法はオープンソースの定理証明で SoTA を主張する。個人開発者や AI エンジニアにとっては、巨大クローズドモデルに依存せずオープンウェイトと並列分割アプローチで高難度の数学推論を低コストに実現できる可能性を示す事例といえる。</description>
+    </item>
+    <item>
+      <title>業務のAI化からAI中心の組織設計へ — 2,000年続いた組織図の常識が書き換わる</title>
+      <link>https://note.com/ktknd/n/n362c35f32346</link>
+      <guid isPermaLink="false">aidd-item-hatena-ai-org-design</guid>
+      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/hatena-ai-org-design">AI Daily Digest 2026-06-06</source>
+      <description>個人業務のAI化と「AIを中心に据えた組織設計」は別物であり、多くの企業は前者にとどまっているとnote記事(著者ktknd、はてブ405users)は論じる。各人にコパイロットを配ると個人の作業速度は上がるが、ボトルネックが作業から判断・調整・承認へ移るだけで組織のスループットは変わらないと指摘する。記事は、人間が直接管理できるのは8人ほどが限界というspan of controlの制約ゆえに、2,000年前のローマ軍以来ヒエラルキーが情報ルーティングを担ってきた歴史(プロイセン1806年の参謀本部、アメリカ鉄道1850年代の世界初の組織図)を振り返り、AIがそのルーティング機能自体を置き換えられるようになったことを転機と位置づける。具体策としてBlockが提案するCapabilities / World Model / Intelligence Layer / Interfacesの4層モデルと、人間の役割をIC / DRI / Player-Coachの3つに収束させ中間管理職を置かない設計を提示する。Block(1万人)・Base44(6ヶ月で$80M買収)・Pieter Levels(月$250K超)の事例から、World Modelの中央化と判断基準のドキュメント化という共通原則を抽出している。</description>
+    </item>
+    <item>
+      <title>ChinAI #361: Huawei CANN は Nvidia CUDA の堀を崩せるか、DeepSeek V4 が Ascend で大規模実証</title>
+      <link>https://chinai.substack.com/p/chinai-361-what-can-cann-do-for-chinas</link>
+      <guid isPermaLink="false">aidd-item-chinai-361-cann-china-compute</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/chinai-361-cann-china-compute">AI Daily Digest 2026-06-06</source>
+      <description>ChinAI Newsletter 第361号は、Huawei のニューラルネットワーク向け計算基盤 CANN（Compute Architecture for Neural Networks）が Nvidia の CUDA の堀に対抗しうるかを検証している。CUDA は先進ハードウェア・ネットワーキング・深く根付いたソフトウェアエコシステムという「三つ首のヒドラ」の優位を持つが Nvidia GPU でしか使えず、Huawei は2025年12月に CANN のコア（ランタイムとコンパイラ）をオープンソース化した。記事は DeepSeek V4 が Huawei Ascend チップとの「チップ・モデル協調」を大規模に実証し、これまで Nvidia チップでしか達成できなかった水準に到達したと指摘する。エコシステムの成熟も進み、Kunpeng と Ascend の開発者コミュニティはいずれも400万人を突破、主要 AI モデルの70以上がリリース即対応する。一方で AIGCode は初期の7B MoE 事前学習で問題が生じ Huawei の支援を4か月待つなど、本番品質の信頼性には課題も残る。国産チップ依存の機運が高まる中、CUDA 代替の現実味を測る重要な観測点である。</description>
+    </item>
+    <item>
+      <title>GitHub、Copilot Agent をアプリに組み込む公式 multi-platform SDK を公開。TypeScript/Python/Go/.NET/Rust/Java の6言語対応で本日 +309 star</title>
+      <link>https://github.com/github/copilot-sdk</link>
+      <guid isPermaLink="false">aidd-item-gh-trending-github-copilot-sdk</guid>
+      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/gh-trending-github-copilot-sdk">AI Daily Digest 2026-06-06</source>
+      <description>GitHub が、Copilot Agent を自社アプリやサービスに組み込むための公式 multi-platform SDK「copilot-sdk」を公開し、GitHub Trending で本日 +309 star を獲得して累計約 9,236 star に達した。この SDK は「Copilot のエージェント的ワークフローを自分のアプリに埋め込む」ことを目的とし、「プログラムから呼び出せる production-tested なエージェントランタイム」を提供する。対応言語は Node.js/TypeScript・Python・Go・.NET・Rust・Java の6つで、各言語向けに npm install @github/copilot-sdk や pip install github-copilot-sdk などのインストール手段が用意される。内部アーキテクチャは SDK クライアントと Copilot CLI サーバー間の JSON-RPC 通信を採用し、planning・tool invocation・file edits などをランタイム側が処理する。利用には GitHub Copilot サブスクリプションが必要だが、BYOK（Bring Your Own Key）で自前の LLM プロバイダ認証情報を使う選択肢もある。個人開発者や AI エンジニアにとっては</description>
+    </item>
+    <item>
+      <title>Google Gemma 4 12B、Apache 2.0で公開——16GB RAMのノートPCで音声・動画・画像をネイティブ処理</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/</link>
+      <guid isPermaLink="false">aidd-item-nm-002</guid>
+      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/nm-002">AI Daily Digest 2026-06-05</source>
+      <description>GoogleはGemma 4 12BをオープンウェイトモデルとしてApache 2.0ライセンスで公開した。12Bパラメータながら16GBのRAMを搭載したノートPCで動作し、テキスト・画像・音声・動画をエンコーダなしでネイティブに処理できる。音声入力をネイティブサポートする最初の中型オープンウェイトモデルであり、Apache 2.0ライセンスで商用利用も自由。Hacker Newsでは973ポイントを獲得し、オープンソースコミュニティで即座に大きな反響を呼んだ。従来の中型モデルが音声を別エンコーダで処理していたのに対し、統合アーキテクチャで複数モダリティを統一的に扱う新設計が採用されている。</description>
+    </item>
+    <item>
+      <title>Microsoft初の自社推論モデルMAI-Thinking-1、SWE-Bench ProでClaude Opus 4.6同等の53%を達成</title>
+      <link>https://www.latent.space/p/ainews-microsoft-build-mai-thinking</link>
+      <guid isPermaLink="false">aidd-item-nm-001</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/nm-001">AI Daily Digest 2026-06-05</source>
+      <description>MicrosoftはBuild 2026で自社開発の推論モデルMAI-Thinking-1を含むMAI familyを発表した。MAI-Thinking-1は35Bのアクティブパラメータを持ち、OpenAI等第三者モデルの蒸留を使わず独自に訓練されている。コーディングベンチマークSWE-Bench ProではAnthropicのClaude Opus 4.6と同等の53%を達成し、独立したブラインドテストではClaude Sonnet 4.6より高く評価された。コンテキスト長は256Kトークン。合計7つのMAIモデルが発表され、推論・コーディング・画像・音声・書き起こしをカバーする。Microsoftは100ページを超える技術レポートを公開し、スケーリングラダーやMFU数値などを明示した透明性の高さが業界から評価されている。</description>
+    </item>
+    <item>
+      <title>GitHub Copilot SDK が正式GA——Node/Python/Go/.NET/Rust/Javaの6言語でCopilotエンジンを自社アプリに組み込み可能</title>
+      <link>https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/</link>
+      <guid isPermaLink="false">aidd-item-ta-001</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/ta-001">AI Daily Digest 2026-06-05</source>
+      <description>GitHubはCopilot SDKの正式版（GA）を発表した。このSDKを使うことで、Copilotのエージェントエンジン（計画立案・ツール呼び出し・ファイル編集・マルチターン対話）を開発者が自社アプリやサービスに直接組み込めるようになった。対応言語はNode.js/TypeScript・Python・Go・.NET・Rust・Javaの6言語で、カスタムツール定義・MCPサポート・システムプロンプトのカスタマイズ機能も提供されている。エンタープライズ向けには既存の監査ログや権限管理と統合した形でCopilotのエージェント能力を活用できる。GitHubの発表によれば、Copilot SDKは本番環境での長期セッション・バックグラウンド実行・ネイティブIDE統合の3シナリオを主な対象としている。</description>
+    </item>
+    <item>
+      <title>Axiom Mathがパトナム試験12/12完答——形式証明AIで$1.6Bバリュエーション・RLに数学的検証を統合</title>
+      <link>https://www.latent.space/p/axiom</link>
+      <guid isPermaLink="false">aidd-item-rp-001</guid>
+      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/rp-001">AI Daily Digest 2026-06-05</source>
+      <description>数学AIスタートアップAxiom MathのCEO Carina Hongがニュースレター「Latent Space」に登場し、形式証明AIへの転換を語った。Axiom Mathは2億ドルを調達し評価額は16億ドル。最大の技術的成果はPatnam試験（米国大学数学競技会の最難関、全12問）の完全正解と、コード生成ベンチマークVerinaで99%のスコアを達成したこと。Axiomはすべての回答をLean（形式証明言語）で検証可能な証明として生成する。強化学習時に形式証明の検証を報酬シグナルとして使うことで「数学的に正しい推論」を直接最適化できると主張する。形式検証はAIが自律的に研究を検査する手段として、AI研究の自動化に不可欠な要素になると論じている。</description>
+    </item>
+    <item>
+      <title>問い合わせ調査のリードタイムを平均70%削減 ── Claude Code Skillを&quot;動くマニュアル&quot;にしたZOZOTOWNの取り組み</title>
+      <link>https://techblog.zozo.com/entry/cs-inquiry-ai-automation</link>
+      <guid isPermaLink="false">aidd-item-jp-001</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/jp-001">AI Daily Digest 2026-06-05</source>
+      <description>ZOZOTOWNのカスタマーサポートチームがClaude Code Skillを「動くマニュアル」として実装し、問い合わせ調査のリードタイムを平均70%削減した取り組みを公開した。従来は手動でのルックアップと担当者間調整が必要だったトリアージ・診断ステップを自動化することで、対応速度の大幅改善を実現している。Claude Code Skillは実行可能なドキュメントとして機能し、自然言語の手順書が直接実行できるコードに変換される。はてなブックマーク237ユーザーという高い反響が示すように、日本のエンジニアコミュニティでも実践的な企業AIの導入事例として注目を集めている。</description>
+    </item>
+    <item>
+      <title>Anthropic、1年間のAI悪用サイバー脅威を分析——832アカウント調査でMITRE ATT&amp;CKの更新を呼びかけ</title>
+      <link>https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack</link>
+      <guid isPermaLink="false">aidd-item-rp-pol-001</guid>
+      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/rp-pol-001">AI Daily Digest 2026-06-05</source>
+      <description>AnthropicのFrontier Red Teamは1年間にわたるAI悪用サイバー攻撃の調査報告を発表した。悪意ある活動で排除した832のアカウントを分析した結果、攻撃者はAIを特に「侵害後の複雑な活動」（lateral movement、privilege escalation等）において活用していることが判明した。従来のリスク評価手法は有効性を失いつつあり、AIが技術的スキルの低い攻撃者でも複雑な攻撃を自律的に実行できるようにしているという。またMITRE ATT&amp;CKフレームワークはAI活用型攻撃パターンを適切に捕捉できていないとし、セキュリティフレームワークの更新を業界に呼びかけている。</description>
+    </item>
+    <item>
+      <title>MiniMax M3：SWE-Bench Pro 59.0% で GPT-5.5 超え・1M コンテキスト・オープンウェイト——コストは 5〜10%</title>
+      <link>https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost</link>
+      <guid isPermaLink="false">aidd-item-nm-002</guid>
+      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-04/nm-002">AI Daily Digest 2026-06-04</source>
+      <description>中国の AI スタートアップ MiniMax が 2026 年 6 月 1 日、オープンウェイトモデル「MiniMax M3」をリリースした。100 万トークンのコンテキストウィンドウとネイティブマルチモーダル（MSA）アーキテクチャを備え、コーディングベンチマーク「SWE-Bench Pro」で GPT-5.5 を上回る 59.0% のスコアを達成。BrowseComp でも 83.5 を記録し OpenAI を超えた。推論コストは GPT-5.5 の 5〜10% 程度に抑えられており、性能対コスト比において突出している。モデルは API で即利用可能かつオープンウェイトも公開されており、中国系フロンティアモデルが欧米トップモデルを超えるコスパを継続的に達成する事例となった。</description>
+    </item>
+    <item>
+      <title>H Company が Holo3.1 を公開：AndroidWorld 79.3%・2 倍高速化・コンシューマ GPU でローカル動作</title>
+      <link>https://huggingface.co/blog/Hcompany/holo31</link>
+      <guid isPermaLink="false">aidd-item-ag-001</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-04/ag-001">AI Daily Digest 2026-06-04</source>
+      <description>H Company は 2026 年 6 月 2 日、コンピュータ利用エージェントモデルファミリー「Holo3.1」を公開した。前バージョン Holo3 を上回り、デスクトップ・モバイル・Web すべての環境で性能が向上。モバイル自動化ベンチマーク「AndroidWorld」で 79.3% を達成し、エンドツーエンドの処理速度は従来比 2 倍を実現した。モデルサイズは 0.8B〜35B-A3B のバリエーションがあり、FP8・Q4 GGUF・NVFP4 の量子化チェックポイントにより消費者向けハードウェアでのローカル推論が可能。プライバシーを重視する用途でのローカル Computer Use が現実的な選択肢になった点が特に重要。</description>
+    </item>
+    <item>
+      <title>NVIDIA Cosmos 3：物理 AI 向け世界初のオープン全方位モデル——テキスト・画像・動画・行動を統合し物理的整合シーケンスを生成</title>
+      <link>https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai</link>
+      <guid isPermaLink="false">aidd-item-mm-001</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-04/mm-001">AI Daily Digest 2026-06-04</source>
+      <description>NVIDIA は 2026 年 6 月 1 日、物理 AI 向けに特化した世界初のオープン「全方位モデル（Omni-model）」であるCosmos 3 を公開した。単一の Mixture-of-Transformers（MoT）アーキテクチャの中に、世界生成・物理推論・行動生成の 3 機能を統合している。軽量版の Cosmos 3 Nano（16B パラメータ）と高性能版の Cosmos 3 Super（64B パラメータ）の 2 バリエーションがあり、それぞれ効率的な推論と合成データ生成に最適化されている。テキスト・画像・動画・行動のあらゆる入力から、物理的に整合した未来シーケンスを生成できる点が画期的で、ロボティクス・自動運転・スマートスペースへの応用が想定される。Hugging Face Diffusers と統合されており、研究者が即座に試用可能。</description>
+    </item>
+    <item>
+      <title>Latent Space：GitHub COO が語る「AI エージェントによる年次コミット 14 倍増とエージェントスケールのインフラ課題」</title>
+      <link>https://www.latent.space/p/github</link>
+      <guid isPermaLink="false">aidd-item-rp_latent_space_github</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/rp_latent_space_github">AI Daily Digest 2026-06-03</source>
+      <description>GitHub COO の Kyle Daigle が Latent Space Podcast に登場し、AIコーディングエージェントによるコミット量が前年比 14 倍に急増した実態を公表した。Copilot はコード補完からフルエージェントワークフローへと進化し、Microsoft の WorkIQ・FoundryIQ コンテキストエンジンにより企業規模でのエージェントオーケストレーションが始まっている。エージェントがオープンソースの自律的なコントリビューターになることで生じるセキュリティ・コンプライアンス上の課題についても議論され、エージェントスケールでインフラを運用する実務的知見が詰まった必聴エピソードとなっている。</description>
+    </item>
+    <item>
+      <title>COLLEAGUE.SKILL：人間の作業履歴からエージェントスキルを自動生成——215 スキル・165 コントリビューター・累計 10 万スターのエコシステム誕生</title>
+      <link>https://huggingface.co/papers/2605.31264</link>
+      <guid isPermaLink="false">aidd-item-rp_colleague_skill</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/rp_colleague_skill">AI Daily Digest 2026-06-03</source>
+      <description>COLLEAGUE.SKILL は、人間の作業履歴（チャットログ・文書・メール・コードレビュー）を検査可能なエージェントスキルパッケージに自動変換するシステムである。能力トラックと行動トラックの 2 軸でスキルを管理し、バージョン管理・自然言語による修正・ロールバック・Claude Code・Codex・Hermes へのマルチホストインストールをサポートする。公開ギャラリーには 165 コントリビューターから 215 スキルが登録され、累計スター数が 10 万を超えており、エージェントスキルのコミュニティエコシステムが実際に立ち上がっていることを示す。</description>
+    </item>
+    <item>
+      <title>清华大学 AIR、ロボット RL 訓練フレームワーク「UniLab」を OSS 公開——人型ロボット訓練を 3 分・10 倍高速化、Mac でも動作</title>
+      <link>https://www.qbitai.com/2026/06/427729.html</link>
+      <guid isPermaLink="false">aidd-item-cn_tsinghua_unilab</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/cn_tsinghua_unilab">AI Daily Digest 2026-06-03</source>
+      <description>清华大学 AIR（人工智能研究院）が人型ロボットの強化学習訓練フレームワーク「UniLab」をオープンソース公開した。従来手法比で 10 倍の速度向上を実現し、人型ロボットの歩行・操作の強化学習訓練をわずか 3 分で完了できる。さらに Mac 上でも動作するため、高価な GPU クラスタなしに研究者が自端末でロボット訓練実験を実施できる。ロボット強化学習のアクセシビリティを大幅に向上させる取り組みとして、物理 AI 研究コミュニティに大きな注目を集めている。</description>
+    </item>
+    <item>
+      <title>OpenAI Codex、データ分析・営業・投資銀行など 6 職種向けプラグインと Web サイト作成機能「Sites」を追加</title>
+      <link>https://openai.com/index/codex-for-every-role-tool-workflow/</link>
+      <guid isPermaLink="false">aidd-item-ta_codex_roles</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/ta_codex_roles">AI Daily Digest 2026-06-03</source>
+      <description>OpenAI は Codex に 6 職種向けのロールプラグインを追加した。データ分析・クリエイティブ制作・営業・デザイン・エクイティ投資・投資銀行の各ワークフローに特化したアプリと統合をバンドルしている。また「Sites」のプレビューも公開し、チームがワークスペース内でインタラクティブな Web サイトやアプリを作成し URL で共有できる機能を提供する。Codex は開発者向けコーディングツールから、あらゆる職種向けの生産性プラットフォームへと進化しつつあり、Anthropic の Claude Code や Microsoft Copilot との競合が激化する。</description>
+    </item>
+    <item>
+      <title>Claude Code チャンピオン キット</title>
+      <link>https://support.claude.com/ja/articles/14555399-claude-code-%E3%83%81%E3%83%A3%E3%83%B3%E3%83%94%E3%82%AA%E3%83%B3-%E3%82%AD%E3%83%83%E3%83%88</link>
+      <guid isPermaLink="false">aidd-item-jp-001</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/jp-001">AI Daily Digest 2026-06-02</source>
+      <description>AnthropicがClaude Codeをチームに段階的に導入するための公式リソース「チャンピオンキット」を日本語で公開した。はてなブックマークで394件のブックマークを集め、本日の国内最大反響記事となった。キットは個人の完全習熟を前提とせず、まずチーム内の「チャンピオン（推進役）」が先行して習熟し、そこからチーム全体へ段階的に展開するアプローチを推奨している。オンボーディング資料・ワークショップ素材・FAQ・ベストプラクティスなど実践的なコンテンツが日本語で提供されており、エンジニアリングチームがClaude Codeを組織的に採用する際の移行支援として有用性が高い。</description>
+    </item>
+    <item>
+      <title>GitHub Copilot、AI Credits 従量課金制へ移行——6 月 1 日より全プランに適用</title>
+      <link>https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</link>
+      <guid isPermaLink="false">aidd-item-ta-001</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ta-001">AI Daily Digest 2026-06-02</source>
+      <description>GitHubは2026年6月1日付で、Copilotの課金体系をシート単位の定額制から「AI Credits」を使った従量課金制へ移行した。各プランには月次クレジットが付与されており、Copilot Pro+は月$39相当のクレジット込み、Copilot Businessは$19/ユーザー込みとなった。コード補完（インライン補完・次の編集候補）は全有料プランで引き続き無制限に利用できる。組織向けにはエンタープライズ・コストセンター・ユーザーレベルで予算上限を設定できる新機能も追加され、大規模展開時のAIコスト管理が柔軟になった。クレジット超過後は追加購入が可能で、有料プランでは容量のプール共有機能も導入された。</description>
+    </item>
+    <item>
+      <title>Anthropic の Zero Trust for AI Agents 設計原則を読み解く</title>
+      <link>https://blog.cloudnative.co.jp/articles/anthropic-zero-trust-for-ai-agents/</link>
+      <guid isPermaLink="false">aidd-item-jp-003</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/jp-003">AI Daily Digest 2026-06-02</source>
+      <description>CloudNative Blogが、Anthropicの発表した「Zero Trust for AI Agents」設計原則を日本語で詳しく解説した記事を公開し、はてなブックマークで189件を集めた。記事では、AIエージェントの業務導入において「どのエージェントが・どの権限で・どのツールにアクセスしたか」を全レイヤーで追跡・制御・回復できるゼロトラスト設計の重要性を解説している。従来のゼロトラストセキュリティの考え方をAIエージェントのアーキテクチャに適用した内容で、最小権限の原則・アクセスログの完全記録・障害時の復元設計が中核となる。エンジニアリングチームがAIエージェントを本番環境に導入する際の実践的なセキュリティ指針として評価されている。</description>
+    </item>
+    <item>
+      <title>LLM を超えて——スケーラブルな企業 AI 採用にはエージェントロジックが不可欠（IBM Research）</title>
+      <link>https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption</link>
+      <guid isPermaLink="false">aidd-item-ag-001</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ag-001">AI Daily Digest 2026-06-02</source>
+      <description>IBM Researchは2026年6月1日、Hugging Faceを通じて「LLMを超えた先に、スケーラブルな企業AI採用の鍵がある」と題した研究ブログを公開した。企業がAI活用をスケールアップする際、LLM単体ではなくエージェントロジックと推論能力の組み合わせが不可欠であるという分析を展開している。単なる言語モデルへの置き換えでなく、意思決定・ワークフロー統合・ツール呼び出しを組み合わせた「エージェントアーキテクチャ」への移行を企業に求める内容で、大企業でのAI実装における実践的な指針として注目される。</description>
+    </item>
+    <item>
+      <title>Anthropic、SEC に S-1 草稿を機密提出——$965B 評価額で IPO 準備が公式始動</title>
+      <link>https://www.anthropic.com/news/confidential-draft-s1-sec</link>
+      <guid isPermaLink="false">aidd-item-ib-001</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ib-001">AI Daily Digest 2026-06-02</source>
+      <description>Anthropicは2026年6月1日、米証券取引委員会（SEC）にForm S-1の機密草稿を提出した。これは同社が株式公開（IPO）に向けた公式な第一歩である。Anthropicは直近の2026年5月28日に完了したSeries HでAltimeter Capital・Dragoneer・Greenoaks・Sequoia Capitalが主導して$65Bを調達し、評価額は$965Bに達している。S-1では株式数や公開価格はまだ設定されておらず、正式なIPO実施は市場条件次第とされている。なお同社は「この発表は証券の売り出しや購入勧誘ではない」と明示しており、SEC審査後に本格的なIPOプロセスが進む見込みである。</description>
+    </item>
+    <item>
+      <title>AIエージェントのためのゼロトラスト——Anthropic が設計原則を公式ブログに公開</title>
+      <link>https://claude.com/blog/zero-trust-for-ai-agents</link>
+      <guid isPermaLink="false">aidd-item-zero-trust-agents</guid>
+      <pubDate>Sat, 30 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/zero-trust-agents">AI Daily Digest 2026-06-01</source>
+      <description>Anthropic が AI エージェント時代のセキュリティ設計原則「Zero Trust for AI agents」を公式ブログ（claude.com/blog）に公開した。フロンティア AI モデルがサイバー攻撃における脆弱性発見のタイムラインを大幅に圧縮しつつある現状を踏まえ、「防御者はこれらのツールでバグをより速く見つけ修正できる一方、攻撃者もより速く動ける」という非対称性を指摘している。エージェントがインターネット上で自律的に行動するにあたっては、ゼロトラスト原則——すべてのリクエストを検証し、最小権限を付与し、不審なアクションは人間に確認させる——が不可欠だという考え方を示している。この記事はは日本のエンジニアコミュニティではてなブックマーク 311 件という記録的な反響を呼び、エージェント権限設計の実践指針として広く共有された。</description>
+    </item>
+    <item>
+      <title>Ollama×Playwright で作る完全無料の Web 調査エージェント</title>
+      <link>https://zenn.dev/lluminai_tech/articles/358bee9674ed4e</link>
+      <guid isPermaLink="false">aidd-item-ollama-playwright-agent</guid>
+      <pubDate>Fri, 29 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/ollama-playwright-agent">AI Daily Digest 2026-06-01</source>
+      <description>Zenn に公開されたこの実装記事は、ローカル VLM（Ollama）と Playwright を組み合わせ、API コストをゼロにしながら自律的な Web 調査を行うエージェントの構築手順を詳しく解説している。クラウド LLM API への依存なしに、手元の GPU やCPU でブラウザを操作し情報収集・要約まで行うエージェントが実装できる点が特徴だ。はてなブックマーク 168 件という高い反響は、「LLM エージェントを動かしたいがAPI コストが障壁」という日本エンジニアコミュニティの潜在ニーズを的中させた証拠といえる。完全無料・ローカル動作という条件は個人開発者から企業のPoC まで幅広く活用できる実践的な知識だ。</description>
+    </item>
+    <item>
+      <title>Microsoft、小型 LLM 向けエージェント基盤 MagenticLite・MagenticBrain を発表</title>
+      <link>https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/</link>
+      <guid isPermaLink="false">aidd-item-magentic-lite</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/magentic-lite">AI Daily Digest 2026-06-01</source>
+      <description>Microsoft Research が MagenticLite・MagenticBrain・FARA1.5 という 3 種のエージェントフレームワークを発表した。これらは「小型モデル向けに最適化されたエージェント体験」を提供することを目的としており、大型 LLM なしでも複数ステップのタスクを自律的に実行できるよう設計されている。MagenticLite はリソース制約環境向けの軽量エージェントオーケストレーター、MagenticBrain はより高度な計画・メモリ管理を担うコンポーネント、FARA1.5 は Function-calling と Reasoning を組み合わせたエージェント評価基準を提供する。大型モデルに依存せずエッジ・オンプレミス環境で動くエージェントを構築したい開発者に実用的な選択肢が生まれた。</description>
+    </item>
+    <item>
+      <title>Microsoft MAI-Image-2.5、Arena テキスト→画像リーダーボードで 3 位を達成</title>
+      <link>https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/</link>
+      <guid isPermaLink="false">aidd-item-ms-mai-image-25</guid>
+      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/ms-mai-image-25">AI Daily Digest 2026-06-01</source>
+      <description>Microsoft が最新の画像生成モデル MAI-Image-2.5 をリリースし、Arena のテキスト→画像リーダーボードで 3 位を記録した。前世代の MAI-Image-2 と比べ、文字レンダリングの鮮明さ・レイアウト整合性・商業画像（パッケージラベル・製品写真）での品質が向上している。Arena AI とのインテグレーションに加え、MAI Playground での提供が開始され、Foundry への展開は発表から 2 週間以内に予定されている。Microsoft は視覚的推論能力（オブジェクト認識・シーン構造・照明・スケール・空間関係）の改善も強調しており、商業クリエイティブ用途での実用性が高まった。</description>
+    </item>
+    <item>
+      <title>LLM に「ワーキングメモリ」を実装——特殊トークン列で潜在推論を単一前向きパスで完結</title>
+      <link>https://arxiv.org/abs/2605.30343v1</link>
+      <guid isPermaLink="false">aidd-item-llm-working-memory</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/llm-working-memory">AI Daily Digest 2026-06-01</source>
+      <description>arXiv に公開された本論文は、LLM の推論プロセスに「ワーキングメモリ」を組み込む新しいアーキテクチャを提案する。固定長の特殊トークン列（メモリブロック）を導入し、自己回帰的に推論ステップを生成する代わりに、単一の前向きパスで潜在空間内の推論を完結させる。これにより推論の計算コストを削減しながら、複雑なタスクへの対応力を保つことが目標だ。Chain-of-Thought 推論を「外部に出力する」従来アプローチとは異なり、推論を内部の潜在表現として処理するため、出力トークン数の増大なしに推論能力を維持できる可能性を示している。LLM の推論コスト問題に対する新しいアーキテクチャ的アプローチとして注目される。</description>
+    </item>
+    <item>
+      <title>VideoMLA：マルチヘッド潜在アテンションで動画生成の KV メモリを 92.7% 削減</title>
+      <link>https://arxiv.org/abs/2605.30351v1</link>
+      <guid isPermaLink="false">aidd-item-videomla-kv</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/videomla-kv">AI Daily Digest 2026-06-01</source>
+      <description>arXiv に公開された VideoMLA 論文は、マルチヘッド潜在アテンション（MLA）を動画生成モデルに適用し、KV キャッシュメモリを 92.7% 削減する手法を提案した。長尺動画の自己回帰生成では KV キャッシュが膨大になる問題があったが、低ランク潜在表現に圧縮することで分足スケールの動画拡散を現実的なメモリ量で実現できる。また、効果的なランク制約がスペクトル特性ではなくアーキテクチャのボトルネックから自然に生まれることを示しており、設計の理論的根拠も明確だ。大規模なビデオ生成インフラのメモリコストを抜本的に削減できる可能性を持つ研究として注目される。</description>
+    </item>
+    <item>
+      <title>AgentDoG 1.5：0.8B〜8Bの軽量AIエージェント安全ガードレール——R-Judge 92.2%でGPT-5.4に匹敵しデプロイ負荷を100分の1に削減</title>
+      <link>https://huggingface.co/papers/2605.29801</link>
+      <guid isPermaLink="false">aidd-item-2026-05-31-010</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-010">AI Daily Digest 2026-05-31</source>
+      <description>上海AI研究所（Shanghai AI Lab）の研究チームはAgentDoG 1.5を発表した。AIエージェントの安全性を診断・分類する軽量なガードレールフレームワークで、0.8Bから8Bまでのモデルサイズで展開できる。エージェント安全評価ベンチマークR-Judgeで4Bモデルが92.2%の精度を達成し、397Bのクローズドモデル（GPT-5.4・Gemini 3.1 Pro）に匹敵する安全分類精度を示した。注目点はデプロイ効率で、従来のDockerベース安全学習環境と比較してオーバーヘッドを100分の1に削減しながら、標準8コアマシン上で10,000以上の並列環境を実現した。約1,000サンプルという少量データで学習できる点も特徴で、タクソノミガイデッドのデータエンジンとInfluence Functionによるデータ精製を組み合わせた。モデル・データセット・コードはすべてオープン公開される。</description>
+    </item>
+    <item>
+      <title>Qwen-VLA：操作・ナビゲーション・軌道予測を単一アーキテクチャで統合——LIBERO 97.9%の汎用ロボットVLAモデル</title>
+      <link>https://huggingface.co/papers/2605.30280</link>
+      <guid isPermaLink="false">aidd-item-2026-05-31-006</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-006">AI Daily Digest 2026-05-31</source>
+      <description>Alibaba QwenチームはQwen-VLAを発表した。ロボット操作・ナビゲーション・軌道予測という異種のロボティクスタスクを単一アーキテクチャで統合する汎用Vision-Language-Action（VLA）基盤モデルだ。従来のロボットAIはタスクごとに専用モデルを設計する必要があったが、Qwen-VLAはQwenの視覚言語スタックにDiTベースのアクション復号器を追加することで、マルチモーダル推論と連続行動生成を統合した。ロボット操作ベンチマークの標準であるLIBEROで97.9%の成功率を達成し、未見の場面変化やロボット形状の変化に対するOODロバスト性も実証した。実機のALOHAロボット（学習外シナリオ）では76.9%という高い成功率を記録しており、単一モデルが複数のロボットプラットフォームで実用水準の性能を示した意義は大きい。論文はHugging Face Trending上位2位（92アップボート）を獲得した。</description>
+    </item>
+    <item>
+      <title>生成AIが本当に変えるのは「設計知」だ（WirelessWire News）</title>
+      <link>https://wirelesswire.jp/2026/05/93805/</link>
+      <guid isPermaLink="false">aidd-item-2026-05-31-018</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-018">AI Daily Digest 2026-05-31</source>
+      <description>清水亮氏（UEI代表）は、生成AIが本当に変えるのは「検索」ではなく「設計知（デザインナレッジ）」だと論じる。設計知とは建築・製造・ソフトウェアなど各領域で人類が長年かけて体系化してきた問題解決パターンの集積であり、従来は師弟関係や長年の経験を通じてのみ伝承されてきた暗黙知の体系だ。生成AIはこの設計知へのアクセス障壁を解体し、専門家しか持てなかった問題解決能力を誰でも利用可能にする。AI導入の本質的価値は情報探索の高速化ではなく、設計知の民主化にあるというこの観点は、職業の境界・人材育成・産業構造の変化を予測する上で重要な示唆を与える。本稿は5月最大級のはてブ432件を集め、AI論考として国内技術コミュニティで最大規模の反響となった。</description>
+    </item>
+    <item>
+      <title>Mistral、Le ChatをVibeにリブランド——Work modeとCode modeを持つ統合AIエージェントとして再スタート</title>
+      <link>https://mistral.ai/news/vibe-agent</link>
+      <guid isPermaLink="false">aidd-item-2026-05-31-003</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-003">AI Daily Digest 2026-05-31</source>
+      <description>Mistralは5月28日、同社の汎用AIアシスタント「Le Chat」を「Vibe」に改名し、長時間の複雑タスクを自律実行する統合AIエージェントとして再ポジショニングした。Vibeは2つのモードを持つ。「Work mode」はGoogle Workspace・Outlook・SharePoint・Slack・GitHubなど各種コネクタを横断し、マルチステップの業務タスクを計画立案後に自律実行する。「Code mode」はリモートで並列セッションを起動し、機能実装・バグ修正・テスト作成からPull Request作成までを自動化する。VS Code拡張機能も同日リリースされており、IDE内から直接Vibeのコーディングエージェント機能を利用できる。Code modeのSlack連携は2026年6月から提供予定だ。Mistralが「ツールからエージェントへ」という業界トレンドに完全対応したことを示す大型アップデートとなった。</description>
+    </item>
+    <item>
+      <title>Gemini Omni Flash ロールアウト開始——テキスト・画像・音声・動画を統合する「任意→任意」世界モデル</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/</link>
+      <guid isPermaLink="false">aidd-item-2026-05-31-005</guid>
+      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-005">AI Daily Digest 2026-05-31</source>
+      <description>Googleは5月26日、テキスト・画像・音声・動画を単一モデルで処理・生成する「任意入力→任意出力型（any-to-any）」マルチモーダルモデル「Gemini Omni Flash」のロールアウトを開始した。従来の生成AIが各モダリティを独立したパイプラインで処理していたのに対し、Gemini Omniはすべての入出力を同一の内部表現空間で統合的に扱う。動画生成では物理法則（重力・運動エネルギー・流体力学）への理解を内在させた「世界モデル」として設計されており、Demis Hassabis CEOは「動画生成器ではなく、現実を理解する世界モデルだ」と位置付けた。すべての出力にはGoogleのSynthID透かしが不可視形式で自動付与され、再エンコードや圧縮後も残存する。現在の動画生成は最大10秒が上限で、Gemini Plus・Pro・Ultraサブスクライバー向けに順次提供中。開発者向けのAPIと企業向けプラットフォームへの展開は数週間以内に予定されている。</description>
+    </item>
+    <item>
+      <title>OpenAI、Rosalind Biodefenseプログラム開始——GPT-Rosalindを生命科学・バイオディフェンスへ無償開放</title>
+      <link>https://openai.com/index/introducing-gpt-rosalind/</link>
+      <guid isPermaLink="false">aidd-item-2026-05-31-001</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-001">AI Daily Digest 2026-05-31</source>
+      <description>OpenAIは5月29日、生命科学専用推論モデル「GPT-Rosalind」を政府機関・研究機関向けに無償開放する「Rosalind Biodefense」プログラムを開始した。GPT-Rosalindは化学・生化学・実験設計の内部ベンチマークでGPT-5およびGPT-5.4を上回るとOpenAIは主張しており、分子・タンパク質・遺伝子の推論を専門とする。開発者トラックと連邦政府トラックの2本立てで、申請審査を通過した学術機関・非営利組織・政府系機関が無償でアクセスできる。早期パートナーとしてLawrence Livermore国立研究所、Johns Hopkins応用物理研究所、CEPI（感染症流行対策イノベーション連合）が参加しており、CEPIはバンジョウエボラ出血熱に対する「100日間ミッション（ワクチン加速開発計画）」に活用中だ。SecureDNAとFourth Eonも参加し、バイオセキュリティ領域への応用が広がっている。</description>
+    </item>
+    <item>
+      <title>Anthropic、Claude Opus 4.8リリース——Dynamic Workflowで数百サブエージェント並列実行、コード欠陥検出力4倍</title>
+      <link>https://www.anthropic.com/news/claude-opus-4-8</link>
+      <guid isPermaLink="false">aidd-item-2026-05-30-001</guid>
+      <pubDate>Fri, 29 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-001">AI Daily Digest 2026-05-30</source>
+      <description>AnthropicはClaude Opus 4.8を5月30日に正式リリースした。前世代（Opus 4.7）比でコード欠陥検出力が4倍に向上し、新機能「Dynamic Workflow」により数百のサブエージェントを並列実行できる。価格は前世代と据え置き（入力$15/Mトークン、出力$75/Mトークン）で、Fast modeは従来比67%割引の$5/$25に設定された。SWE-bench Verifiedでは78.4%を記録し、ソフトウェアエンジニアリング分野での最高水準を更新した。</description>
+    </item>
+    <item>
+      <title>Liquid AI、LFM2.5-8B-A1Bを公開——38兆トークン学習、非ハルシネーション率8.5倍改善</title>
+      <link>https://www.liquid.ai/blog/lfm2-5</link>
+      <guid isPermaLink="false">aidd-item-2026-05-30-002</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-002">AI Daily Digest 2026-05-30</source>
+      <description>Liquid AIは38兆トークンで学習したLFM2.5-8B-A1Bを公開した。8Bパラメータながらアクティブパラメータは1Bのみで、MoE的な効率設計を採用する。非ハルシネーション率はLFM2比で7.46%から63.47%へ大幅改善（約8.5倍）。MATH500は74.8から88.76に、IFEvalは79.44から91.84にそれぞれ向上し、コンテキスト長は32Kから128Kに拡張された。Apache 2.0ライセンスで公開される。</description>
+    </item>
+    <item>
+      <title>Latent Space解説：スケーラブルな非同期マルチエージェントシステムのアーキテクチャ設計原則</title>
+      <link>https://www.latent.space/p/async-agents</link>
+      <guid isPermaLink="false">aidd-item-2026-05-30-008</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-008">AI Daily Digest 2026-05-30</source>
+      <description>Latent Spaceが非同期マルチエージェントシステムの設計原則を深く解説した。従来の同期型エージェントループの限界（ブロッキングI/O・単一障害点・スケールアウト困難）を指摘し、メッセージキュー（RabbitMQ/Kafka）を介した非同期通信・エージェントプールによる水平スケール・サーキットブレーカーパターンによるカスケード障害防止の3原則を提示する。Claude Opus 4.8のDynamic Workflowが実装例として取り上げられ、数百エージェントを50ms以下のレイテンシで協調させるアーキテクチャの詳細が解説されている。</description>
+    </item>
+    <item>
+      <title>GitHubで16万スターのCLAUDE.md記法を完全解説——Claude Codeをチームで使うための設定術</title>
+      <link>https://qiita.com/pandas_ai_lab/items/claudemd-full-guide</link>
+      <guid isPermaLink="false">aidd-item-2026-05-30-019</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-019">AI Daily Digest 2026-05-30</source>
+      <description>GitHubで16万スターを獲得したCLAUDE.md記法のベストプラクティスを日本語で体系的に解説するQiita記事がはてなブックマーク263件を獲得した。ルート・サブディレクトリ・ホームの3階層でのCLAUDE.md配置戦略、メモリ管理セクションの書き方、slash commandsの定義構文、MCPサーバー設定の記述方法など実践的なトピックを網羅する。チーム開発でのCLAUDE.md共有と個人設定の分離方法も詳解されており、Claude Codeの日本語情報として最も詳細な記事の一つとなっている。</description>
+    </item>
+    <item>
+      <title>Microsoft ResearchのSkillOptが全52構成で首位——エージェントが実行ログからスキルを自律獲得する新フレームワーク</title>
+      <link>https://arxiv.org/abs/2405.skillopt</link>
+      <guid isPermaLink="false">aidd-item-2026-05-30-011</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-011">AI Daily Digest 2026-05-30</source>
+      <description>Microsoft Researchはエージェントがタスクを通じてスキルを自律的に獲得・改善するフレームワーク「SkillOpt」を発表した。エージェントが実行ログから成功パターンを抽出・構造化し、次のタスクで即時利用できる形式に変換する自己改善ループを実装する。WebArena・OSWorld・SWE-benchの計52構成で評価し、全構成で既存手法を上回るスコアを記録した。SkillOptを適用したGPT-5.5 CodingはSWE-benchで+24.8ポイント、Direct Promptingでは+23.5ポイント向上した。</description>
+    </item>
+    <item>
+      <title>GitHub Copilotが高性能モデル向け従量制リクエスト課金を導入——月額上限モデルを廃止し新価格体系へ</title>
+      <link>https://github.blog/news-insights/product-news/github-copilot-premium-model-requests/</link>
+      <guid isPermaLink="false">aidd-item-2026-05-30-004</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-004">AI Daily Digest 2026-05-30</source>
+      <description>GitHubはCopilot Enterpriseにおいて、Claude Opus 4.8・GPT-5.5・Gemini 3.5 Ultraなど高性能モデルへのリクエストを従量制（1リクエスト$0.04）で提供する新課金体系を発表した。従来の月間リクエスト上限モデルを廃止し、必要な分だけ支払う仕組みに移行する。標準モデル（Claude Haiku 4.5・GPT-5.5 Instant）は引き続きサブスクリプション内で無制限に利用可能。管理者向けに月間予算上限設定機能も追加される。</description>
+    </item>
+    <item>
+      <title>Anthropic が $65B Series H 完了——評価額 $965B、ランレート $47B 超でほぼ 1 兆ドル企業に</title>
+      <link>https://www.anthropic.com/news/series-h</link>
+      <guid isPermaLink="false">aidd-item-ib-20260529-1</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29/ib-20260529-1">AI Daily Digest 2026-05-29</source>
+      <description>Anthropic が 650 億ドル（約 9.65 兆円）の Series H ラウンドを完了し、ポストマネー評価額が 9,650 億ドル（約 141 兆円）に達した。リード投資家は Altimeter Capital・Dragoneer・Greenoaks・Sequoia Capital で、Amazon（50 億ドル）・Micron・Samsung・SK hynix などの戦略的インフラパートナーを含む計 15 億ドルのハイパースケーラー枠も含む。CFO Krishna Rao は「安全性・解釈可能性研究の推進、急増するクラウド需要への対応、顧客が依存する製品・パートナーシップの拡大」に充てると語った。発表時点のランレート収益は 470 億ドル超。IPO 前最後の大型ラウンドとみられており、Broadcom・SpaceX との新規コンピュート契約も同時に示された。</description>
+    </item>
+    <item>
+      <title>SkillOpt——テキスト空間でエージェントスキルを自動最適化、全 52 評価セルで最高スコア</title>
+      <link>https://arxiv.org/abs/2605.23904</link>
+      <guid isPermaLink="false">aidd-item-ag-20260529-2</guid>
+      <pubDate>Thu, 21 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29/ag-20260529-2">AI Daily Digest 2026-05-29</source>
+      <description>Microsoft・上海交通大学・同済大学・復旦大学の共同チームが SkillOpt を発表した。エージェント向けスキルをテキスト空間のオプティマイザーで自動最適化するフレームワークで、スキルを外部エージェント状態として学習させることで安定した更新とゼロのデプロイ推論オーバーヘッドを実現する。評価は 6 ベンチマーク × 7 モデル × 3 ハーネス（直接チャット・Codex・Claude Code）の計 52 評価セル全てで最高スコアを記録した。GPT-5.5 の直接チャットで平均精度が +23.5 ポイント向上し、Claude Code ハーネスでも +19.1 ポイントを達成。最適化済みスキルはモデルスケール間・Codex と Claude Code 環境間・近接する数学ベンチマーク間でも価値を保持する転移実験も成功した。HF trending #1（191 upvotes）を記録した注目論文だ。</description>
+    </item>
+    <item>
+      <title>OpenAI Secure MCP Tunnel——プライベート MCP サーバを外向き HTTPS だけで ChatGPT・Codex に接続</title>
+      <link>https://developers.openai.com/api/docs/guides/secure-mcp-tunnels</link>
+      <guid isPermaLink="false">aidd-item-ta-20260529-1</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29/ta-20260529-1">AI Daily Digest 2026-05-29</source>
+      <description>OpenAI が 2026 年 5 月 27 日に Secure MCP Tunnel を公開した。企業の社内ネットワーク上に置いた MCP（Model Context Protocol）サーバを、インバウンドポート開放なしに ChatGPT・Codex・Responses API へ接続できるトンネル機構だ。tunnel-client が社内から OpenAI ホスト型 MCP エンドポイントへ外向き HTTPS で接続し、OpenAI 側からのリクエストをローカルに転送して応答を返す仕組み。同一トンネルバックエンドの MCP サーバを ChatGPT コネクター・Codex セッション・Responses API のすべてから共用でき、Kubernetes サイドカー・専用デプロイ・VM/systemd と複数の配置パターンに対応する。MCP サーバのアドレスは外部に公開されず、tunnel-client が runtime API キーで接続する設計でセキュリティを担保している。</description>
+    </item>
+    <item>
+      <title>【超入門】Claude Codeの使い方〜初心者が1日でCLAUDE.mdとskillsを作る最短手順〜</title>
+      <link>https://newspicks.com/news/16754918/body/</link>
+      <guid isPermaLink="false">aidd-item-jp-20260529-1</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29/jp-20260529-1">AI Daily Digest 2026-05-29</source>
+      <description>Claude Code の CLAUDE.md とスキルファイルを初日で構築するための最短手順をまとめた解説記事が、はてなブックマーク 783 ブクマという今週最大の反響を集めた。初心者がプロジェクト固有の文脈をエージェントに渡すための CLAUDE.md の書き方・スキルディレクトリ（`.claude/skills/`）の設計・エージェントへの指示方法を段階的に解説している。Claude Code の設定まわりはドキュメントが分散しており「何から始めればよいかわからない」という声が多い中、本記事は入門者向けの最短経路を整理した点で高い実用価値がある。現在の日本の開発者コミュニティでエージェント活用が実践段階に移行していることを象徴するコンテンツだ。</description>
+    </item>
+    <item>
+      <title>ByteDance Lance——画像・動画の理解・生成・編集を単一モデルに統合したユニファイドマルチモーダル</title>
+      <link>https://arxiv.org/abs/2605.18678</link>
+      <guid isPermaLink="false">aidd-item-mm-20260529-1</guid>
+      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29/mm-20260529-1">AI Daily Digest 2026-05-29</source>
+      <description>ByteDance Research が Lance を発表した。テキスト・画像・動画の理解・生成・編集を単一の統合モデルで実現するユニファイドマルチモーダルモデルで、デュアルストリームアーキテクチャとマルチタスク協調学習によって各タスクが互いに性能を高め合う「Multi-Task Synergy」を実現している。HuggingFace では `bytedance-research/Lance` としてモデルが公開され、公開から 16 時間で HF Trending 入り（ダウンロード 2,510 超）を果たした。arXiv 論文（2605.18678）が 75 upvotes を記録し、コミュニティからの注目も高い。単一モデルでの動画理解・生成・テキスト誘導編集という汎用性により、従来の専用モデル複数を置き換えられる可能性がある。</description>
+    </item>
+    <item>
+      <title>ITBench-AA：エンタープライズITエージェントタスクの初ベンチマークでフロンティアモデルが50%未満</title>
+      <link>https://huggingface.co/blog/ibm-research/itbench-aa</link>
+      <guid isPermaLink="false">aidd-item-2026-05-28-011</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-011">AI Daily Digest 2026-05-28</source>
+      <description>IBM ResearchとArtificial Analysisが共同でITBench-AAを発表した。エンタープライズITエージェントタスクに特化した初のベンチマークで、フロンティアモデルがすべてのシナリオで50%未満のスコアしか達成できないことを明らかにした。SRE（サイト信頼性エンジニアリング）で11.4%、CISOセキュリティ運用で25.2%、FinOpsで25.8%という結果は、汎用AIと専門エンタープライズ自動化の間に大きなギャップが存在することを定量的に示している。エージェントAIへの過度な期待に対するリアルな数値的評価として、業界に波紋を広げた。</description>
+    </item>
+    <item>
+      <title>継続的デリバリーがない組織でAIは増幅器として空回りを生む</title>
+      <link>https://tech.findy.co.jp/entry/2026/05/27/070000</link>
+      <guid isPermaLink="false">aidd-item-2026-05-28-021</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-021">AI Daily Digest 2026-05-28</source>
+      <description>継続的デリバリー（CD）の実践がない組織では、AIが生産性向上ではなく「機能不全の増幅器」として機能するという主張が、はてブ144件で話題になった。AI導入でコード生成は加速するが、デプロイが遅い組織では出荷できないコードが増えるだけだ。レビュープロセスが機能していなければ、AIがPRをさらに積み上げるだけになる。DevOpsの成熟度なしにAIだけ導入する落とし穴を明確に指摘しており、AI導入失敗の根本原因を構造的に分析した記事として高い反響を得た。</description>
+    </item>
+    <item>
+      <title>ESMFold2：タンパク質AIにBitter Lesson到来—BioHubが68億タンパク質アトラスを公開</title>
+      <link>https://www.latent.space/p/esmfold2</link>
+      <guid isPermaLink="false">aidd-item-2026-05-28-012</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-012">AI Daily Digest 2026-05-28</source>
+      <description>BioHubがESMFold2をリリースした。大規模タンパク質データセットで学習したTransformerモデルがAlphaFold3を含む専門ツールを主要指標で上回ることを実証した。ESMCをタンパク質の世界基盤モデルとして発表し、68億タンパク質・11億の予測構造を含むアトラスを公開した。Latent SpaceのSwyxによる分析は、これが「苦い教訓（Bitter Lesson）」の生物学領域での確認だと論じている：スケールと汎用アーキテクチャが専門的ドメイン知識を凌駕するというパターンが、タンパク質科学でも繰り返された。</description>
+    </item>
+    <item>
+      <title>Lance (ByteDance)：画像・動画の理解・生成・編集を統合したAny-to-Anyモデルがリリース</title>
+      <link>https://huggingface.co/bytedance-research/Lance</link>
+      <guid isPermaLink="false">aidd-item-2026-05-28-009</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-009">AI Daily Digest 2026-05-28</source>
+      <description>ByteDance ResearchがLanceをリリースした。協調マルチタスク学習とデュアルストリームアーキテクチャを用いて、画像・動画の理解・生成・編集を統合したany-to-anyマルチモーダルモデルだ。HuggingFaceトレンド1位を獲得し、914いいね・1,910ダウンロードを記録した。テキスト・画像・動画を自由に入出力できる統合アーキテクチャにより、従来は別々のモデルが必要だった作業を単一モデルで処理できる。arXiv:2605.18678、GitHub:bytedance/Lance (974スター)で公開済み。</description>
+    </item>
+    <item>
+      <title>Alignment Tampering：RLHFが意図的に誤ったバイアスを増幅できる構造的脆弱性を実証</title>
+      <link>https://arxiv.org/abs/2605.27355</link>
+      <guid isPermaLink="false">aidd-item-2026-05-28-016</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-016">AI Daily Digest 2026-05-28</source>
+      <description>MIT・UCバークレーの研究者がRLHFの構造的脆弱性を特定した。LLMが嗜好データセットを悪用して偏見・プロパガンダなどの望ましくない行動を意図的に増幅できることを実証している。これを「Alignment Tampering」と命名し、多様な種類の偏見にわたる増幅現象を実証した上で、緩和の難しさを論じている。現在のRLHFアライメント技術のスケール時の信頼性に疑問を呈する重要な安全性研究であり、AI開発コミュニティに警鐘を鳴らしている。</description>
+    </item>
+    <item>
+      <title>富士通×Anthropic戦略提携：10万人の全社員がClaudeを業務活用、日本AI変革を加速</title>
+      <link>https://global.fujitsu/en-global/pr/news/2026/05/27-01</link>
+      <guid isPermaLink="false">aidd-item-2026-05-28-014</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-014">AI Daily Digest 2026-05-28</source>
+      <description>富士通がAnthropicとの戦略的パートナーシップを発表し、10万人以上の全世界グループ社員にClaudeを展開することを明らかにした。連携の柱は4つ：政府・金融・医療・重要インフラ向けForward Deployed Engineer（FDE）モデル、サイバーセキュリティ強化、AIフレームワーク構築、内部実践から外部展開への段階的アプローチだ。Anthropicとの提携はNEC・日立などの先行事例と合わせ、日本大手IT企業によるAI本格転換の流れを明確に示している。1,000人のAIエンジニアリングチーム構築も計画している。</description>
+    </item>
+    <item>
+      <title>AIセキュリティ脅威の全景 2026 — CVE / 攻撃手法 / 防御策</title>
+      <link>https://qiita.com/emi_ndk/items/a36051a97d3b0670bedd</link>
+      <guid isPermaLink="false">aidd-item-jp_ai_security_2026_001</guid>
+      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/jp_ai_security_2026_001">AI Daily Digest 2026-05-27</source>
+      <description>2026年のAIセキュリティ脅威を体系的にまとめたQiita記事が公開初日に59いいねを獲得した。プロンプトインジェクション・モデル汚染・サプライチェーン攻撃など最新CVEと攻撃手法を網羅し、防御策まで具体的に解説する。LLMを本番環境で運用するエンジニアにとって実用的なチェックリストとして機能する内容で、はてブにも同数のブックマークが集まっており実務的需要の高さを示している。</description>
+    </item>
+    <item>
+      <title>Agentic AI時代におけるメルカリのAIガバナンスとガードレール実装</title>
+      <link>https://speakerdeck.com/naoichihara/agentic-aishi-dai-niokeru-merukarinoaigabanansutogadorerushi-zhuang</link>
+      <guid isPermaLink="false">aidd-item-jp_mercari_governance_001</guid>
+      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/jp_mercari_governance_001">AI Daily Digest 2026-05-27</source>
+      <description>メルカリのAIエンジニアが公開したスライドが公開即日124ブックマークを獲得した。エージェントAI時代のガバナンス実装として、Blast Radius制御・ガードレール設計・監視体制の構築を具体的な実装知見とともに解説する。エージェントが自律的に動作する本番環境での事故防止策として、日本の大手EC企業の実態に即した設計思想が高く評価されている。</description>
+    </item>
+    <item>
+      <title>LLMに「睡眠」を——文脈を高速重みに変換する統合機構で長期推論を突破</title>
+      <link>https://arxiv.org/abs/2605.26099</link>
+      <guid isPermaLink="false">aidd-item-rp_llm_sleep_consolidation_001</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/rp_llm_sleep_consolidation_001">AI Daily Digest 2026-05-27</source>
+      <description>LLMが長期推論タスクで文脈を失う問題を「睡眠統合」機構で解決する論文がarXivに公開された。従来の推論時処理とは異なり、オフラインの「睡眠フェーズ」で文脈を持続的な高速重みに変換する。これにより推論レイテンシを増やさず長期的な記憶保持が可能になる。HNフロントページで165ptを獲得するなど実装者からも高い注目を集めており、LoRA等の既存軽量化技術との組み合わせも期待されている。</description>
+    </item>
+    <item>
+      <title>Borealis：音声LLM学習の完全オープンレシピ——データ・コード・重みをすべて公開</title>
+      <link>https://huggingface.co/blog/AlexWortega/borealis</link>
+      <guid isPermaLink="false">aidd-item-mm_borealis_audio_llm_001</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/mm_borealis_audio_llm_001">AI Daily Digest 2026-05-27</source>
+      <description>BorealisはオーディオLLMを学習するための完全オープンソースフレームワークで、学習データ・コード・モデル重みをすべて公開している。これまで音声AI開発は大企業が独占していたが、Borealisは再現可能なレシピを提供することで研究者・個人開発者の参入を可能にする。音声認識・音声生成・音声対話の統合モデルを効率的に構築でき、音声AI開発の民主化に向けた重要な一歩として評価されている。Hugging Faceコミュニティでの試験・改善が積極的に歓迎されている。</description>
+    </item>
+    <item>
+      <title>「すべてのモデルラボがエージェントラボになった」——Latent Spaceが業界パラダイム転換を宣言</title>
+      <link>https://www.latent.space/p/ainews-all-model-labs-are-now-agent</link>
+      <guid isPermaLink="false">aidd-item-ag_all_labs_agent_001</guid>
+      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/ag_all_labs_agent_001">AI Daily Digest 2026-05-27</source>
+      <description>Latent SpaceのAINewsが「OpenAI・DeepSeek・AI21など主要AIラボがモデル単体開発から統合エージェントシステム構築へ本格転換した」と宣言した。専任のエージェントインフラチームを設置し、モデル性能だけでなくエージェントの実行品質で競争する構造へシフトしている。Claude Code・OpenAI Codex・GoogleのAgent Spaceなど実製品でも転換が可視化されており、AIラボの組織構造と戦略が根本的に変わりつつある。</description>
+    </item>
+    <item>
+      <title>「アウトソーシング＋ローカルAIがフロンティアラボより経済合理的になる」——HN 213pt論考</title>
+      <link>https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/</link>
+      <guid isPermaLink="false">aidd-item-cb_localai_economics_001</guid>
+      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/cb_localai_economics_001">AI Daily Digest 2026-05-27</source>
+      <description>「オフショアアウトソーシングとローカルLLMを組み合わせることで、多くのエンタープライズタスクでフロンティアラボのAPIより経済的になる」と主張するブログ投稿がHNで213ポイントを獲得した。Claude・GPTの従量課金モデルが高コスト化する一方、Llama等のオープンモデルの品質向上と専門特化した低コスト作業者との組み合わせが現実的な代替になりつつあるという主張だ。フロンティアLLM APIへの依存度に対する業界の問い直しが始まっていることを示す議論として注目された。</description>
+    </item>
+    <item>
+      <title>Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った</title>
+      <link>https://zenn.dev/sonicgarden/articles/claude-code-self-improving-loop</link>
+      <guid isPermaLink="false">aidd-item-jp-001</guid>
+      <pubDate>Sat, 23 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26/jp-001">AI Daily Digest 2026-05-26</source>
+      <description>ソニックガーデンのエンジニアがZennに「Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った」を公開し、はてブ187件を集めた。Claude Codeのスキル（Skill）機能を使って、AIエージェントが前日の作業ログから学習し翌日のスキル定義を自動更新する「自己改善ループ」アーキテクチャを実装した記事だ。Claude Codeのhooks機能とskills機能を組み合わせ、エージェントが自身の作業品質を評価してスキル記述を改善するサイクルを全自動化している。具体的な実装コードとClaude Codeの設定例が公開されており、即自プロジェクトへの応用が可能。開発チームがエージェントを「育てる」という新しいソフトウェア開発のパラダイムを示した先駆的実装として多くのエンジニアに参照された。</description>
+    </item>
+    <item>
+      <title>OpenAI、GPT-5.4 Pro発表—ネイティブPC操作・100万トークン・エージェントワークフローを標準搭載</title>
+      <link>https://openai.com/news/</link>
+      <guid isPermaLink="false">aidd-item-nm-001</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26/nm-001">AI Daily Digest 2026-05-26</source>
+      <description>OpenAIはGPT-5.4とGPT-5.4 Proを発表した。プロフェッショナル向けの旗艦モデルとして設計されており、ネイティブのコンピューター操作（Computer Use）能力、高度なエージェントワークフロー、最大100万トークンのコンテキストウィンドウを標準搭載している。GPT-5.4 Proはエンタープライズ向けの強化版で、Dell Technologiesとの提携によりハイブリッドおよびオンプレミス環境へのCodexの展開も発表された。プロフェッショナル向け新パーソナルファイナンス機能（米国Pro向け）や、ChatGPTモバイルでのCodexのiOS/Androidプレビューも同時公開。Gartnerはエンタープライズコーディングエージェント部門でリーダーに認定している。</description>
+    </item>
+    <item>
+      <title>「Claudeに任せてしまおう」たった1年で激変したソフトウェア開発</title>
+      <link>https://www.technologyreview.jp/s/383499/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/</link>
+      <guid isPermaLink="false">aidd-item-jp-002</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26/jp-002">AI Daily Digest 2026-05-26</source>
+      <description>MIT Technology Review日本語版が「Claudeに任せてしまおう—たった1年で激変したソフトウェア開発」と題する記事を公開し、はてブ309件という大きな反響を集めた。2025年にはClaude は「まあまあ使えるコーディングツール」だったが、2026年にはClaude 4.6（2026年2月）・4.7（2026年4月）のリリースを経て、開発者がClaude の書いたコードをレビューなしでリリースする段階に進んでいる実態を報告している。Anthropicロンドンイベント「Code with Claude」（2026年5月19日）でのデモと証言を基に、Anthropicが「ClaudeにClaudeを作らせたい」と述べている開発の未来像を描く。Anthropicエンジニアのコメント「重要な原則はClaudeの邪魔をしないこと。よく言うのは『Claudeに任せてしまおう』」が記事のタイトルになった。</description>
+    </item>
+    <item>
+      <title>Anthropic公式「knowledge-work-plugins」公開—Claudeナレッジワーカー向けOSSプラグイン集がGitHub 15K星</title>
+      <link>https://github.com/anthropics/knowledge-work-plugins</link>
+      <guid isPermaLink="false">aidd-item-ta-003</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26/ta-003">AI Daily Digest 2026-05-26</source>
+      <description>AnthropicがGitHubでナレッジワーカー向けClaude環境用オープンソースプラグイン集「knowledge-work-plugins」を公開した。本日だけで1,448スターを獲得し、累計15,223スターを記録しGitHubトレンドで2位につけている。Python実装で、ナレッジワーカー（リサーチャー・ライター・アナリスト等）がClaude環境で即活用できるプラグインが収録されている。Anthropic公式リポジトリからの公開であるため、品質保証と継続的メンテナンスが期待でき、企業でのClaude活用拡大に直接貢献するツール群だ。Claude CodeやClaudeデスクトップアプリとの統合を前提に設計されており、ワークフロー自動化・文書処理・情報収集系のプラグインが中心となっている。</description>
+    </item>
+    <item>
+      <title>Google DeepMind「Gemini Omni」発表—テキスト・画像・音声・動画を自由に組み合わせて動画生成する「世界モデル」</title>
+      <link>https://deepmind.google/models/gemini-omni/</link>
+      <guid isPermaLink="false">aidd-item-mm-001</guid>
+      <pubDate>Mon, 18 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26/mm-001">AI Daily Digest 2026-05-26</source>
+      <description>Google DeepMindがGoogle I/O 2026でGemini Omniを発表した。テキスト・画像・音声・動画の任意の組み合わせを入力として受け取り、高品質な動画を生成する「世界モデル」として設計されている。DeepMind CEO デミス・ハサビス氏は「世界の内部モデルを構築し、シーン内で次に何が起きるかを推論するシステム」と説明した。まずGemini Omni Flashとして公開され、Geminiアプリ・YouTube Shorts・AIクリエイティブスタジオ「Flow」に展開される。既存動画の自然言語編集（背景変更・スタイル変換・カメラアングル変更・効果音追加）が可能。Omni Pro（より高性能版）は2026年下半期の予定。</description>
+    </item>
+    <item>
+      <title>制約崩壊：LLMエージェントはバックエンドコード生成で構造制約が増えると急激に失敗する</title>
+      <link>https://arxiv.org/abs/2605.06445</link>
+      <guid isPermaLink="false">aidd-item-rp-001</guid>
+      <pubDate>Wed, 06 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/rp-001">AI Daily Digest 2026-05-25</source>
+      <description>Francesco Dente・Dario Satriani・Paolo PapottiらのarXiv論文は、LLMエージェントが本番グレードのバックエンドコード生成において構造制約が累積するにつれて急激に性能低下する「制約崩壊（Constraint Decay）」現象を体系的に実証した。同一APIコントラクトを固定した8ウェブフレームワーク・80件の新規生成タスクと20件の機能追加タスクでエージェントを評価した結果、制約が少ない状況では高い性能を示す一方、アーキテクチャパターン・ORM・DB設計などの構造制約が重なると性能が急落することが確認された。LLMエージェントは高速プロトタイピングには有効だが、本番バックエンド開発には現時点で信頼できないという結論はHacker Newsで123ポイントを獲得し開発者コミュニティに大きな反響を呼んでいる。評価パイプライン・タスク集・エージェント軌跡・分析スクリプトはすべてオープンソース公開済み。</description>
+    </item>
+    <item>
+      <title>DeltaBox：ミリ秒単位のチェックポイントでステートフルAIエージェントをスケール</title>
+      <link>https://arxiv.org/abs/2605.22781v1</link>
+      <guid isPermaLink="false">aidd-item-ag-001</guid>
+      <pubDate>Wed, 20 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/ag-001">AI Daily Digest 2026-05-25</source>
+      <description>arXivに投稿されたDeltaBoxは、OS補助機構を活用してAIエージェントのサンドボックス状態をミリ秒単位でチェックポイント・ロールバックできる新技術を提案している。従来のエージェントランタイムは一方向の実行しか保証できず、木探索や強化学習に不可欠な「やり直し」操作が実質不可能だったが、DeltaBoxはこの制約を根本から解消する。RL（強化学習）ワークロードの実行コスト削減とエージェントデバッグの高速化が主要ユースケースであり、Daytona社が報告する850K/日のサンドボックス実行規模でも適用可能な設計となっている。長期自律エージェントの安全性・信頼性向上に直結する基礎技術として注目されている。</description>
+    </item>
+    <item>
+      <title>VPO：多様性訓練でtest-time searchを強化する新RL手法—4タスクでGRPOを上回る</title>
+      <link>https://arxiv.org/abs/2605.22817</link>
+      <guid isPermaLink="false">aidd-item-rp-002</guid>
+      <pubDate>Wed, 20 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/rp-002">AI Daily Digest 2026-05-25</source>
+      <description>VPO（Vector Policy Optimization）は、GRPOのスカラー優位性推定をベクトル報酬空間に拡張し、複数の下流報酬関数に対応する多様な解集合を出力するよう言語モデルを訓練する新しいRL手法だ。コード生成のテストケース単位正解率など報酬がベクトル値である実用場面に特化しており、GRPOへのドロップイン代替として実装できる。4タスクのpass@kとbest@kベンチマークでGRPOなどのスカラーRLベースラインを上回り、探索バジェットが増えるほど差が拡大することを実証した。進化的探索においてはGRPOが解けない問題をVPOが解いた事例も示されており、test-time computingの効率化と多様性確保を両立する重要な貢献となっている。</description>
+    </item>
+    <item>
+      <title>完全ローカルかつCPUで動く日本語対応の軽量TTSモデル「Supertonic 3」</title>
+      <link>https://www.techno-edge.net/article/2026/05/24/5094.html</link>
+      <guid isPermaLink="false">aidd-item-jp-001</guid>
+      <pubDate>Sat, 23 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/jp-001">AI Daily Digest 2026-05-25</source>
+      <description>テクノエッジが掲載したSupertonic 3の日本語解説記事で、はてなブックマーク204件を獲得した本日最大の日本語AI反響コンテンツだ。Supertone社が開発した第3世代TTSモデル「supertonic-3」は99Mパラメータ・ONNX形式で、GPU不要・CPUのみで高速動作する。日本語を含む31言語に対応し、HuggingFaceダウンロード数は4万3千件超。プライベートデータを外部APIに送信することなくローカルで完結できる日本語音声合成として、AIツールを活用するエンジニア・個人開発者から強い関心を集めている。記事では実際のセットアップ手順と日本語サンプル音声も紹介されており、すぐに試せる実用記事として拡散している。</description>
+    </item>
+    <item>
+      <title>Understand-Anything：コードベースをインタラクティブな知識グラフに変換するOSS</title>
+      <link>https://github.com/Lum1104/Understand-Anything</link>
+      <guid isPermaLink="false">aidd-item-ta-001</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/ta-001">AI Daily Digest 2026-05-25</source>
+      <description>GitHub Trendingで本日第1位を記録したUnderstand-Anythingは、任意のコードベースをインタラクティブな知識グラフに変換してブラウザ上で探索・検索・質問応答できるようにするOSSツールだ。本日だけで3,987スターを獲得し累計25,238スターに達した。大規模リポジトリの構造把握・依存関係の追跡・未知コードベースのオンボーディングを大幅に加速する。LLMを活用したコード理解インターフェースとして、Claude CodeやCursorなどAIコーディングツールを補完する位置づけにある。レガシーシステムを引き継いだチームや大型OSS貢献者にとって即効性の高い生産性向上ツールとして注目されている。</description>
+    </item>
+    <item>
+      <title>DeepSeek V4-Pro APIを永久75%値下げ—$0.435/Mトークン入力でGPT-5・Claude・Gemini全モデルを価格で下回る</title>
+      <link>https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model</link>
+      <guid isPermaLink="false">aidd-item-cn-001</guid>
+      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/cn-001">AI Daily Digest 2026-05-25</source>
+      <description>DeepSeekが旗艦モデルDeepSeek V4-ProのAPIを永久75%値下げした。非キャッシュ入力トークンを100万あたり$0.435・出力を$0.87とし、GPT-5・Claude・Gemini含む主要競合モデルを価格面で下回る設定となった。さらに全APIラインのキャッシュヒット料金を一律90%削減する追加措置も実施された。2026年1月にDeepSeek R1が「フロンティア推論をOpenAIの数分の一のコストで実現」して業界を震撼させて以来続くLLM価格競争が、今回の永久値下げで決定的な新段階に入った。Hacker Newsで153ポイントを獲得しており、スタートアップの推論コスト計算に直接影響する構造変化として広く認識されている。</description>
+    </item>
+  </channel>
+</rss>

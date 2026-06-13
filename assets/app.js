@@ -19,6 +19,8 @@ const els = {
   prevDate: document.getElementById("prev-date"),
   nextDate: document.getElementById("next-date"),
   themeToggle: document.getElementById("theme-toggle"),
+  savedLink: document.getElementById("saved-link"),
+  savedCount: document.getElementById("saved-count"),
   installButton: document.getElementById("install-button"),
   updateBanner: document.getElementById("update-banner"),
   reloadButton: document.getElementById("reload-button"),
@@ -36,6 +38,7 @@ const els = {
 
 let availableDates = [];
 let currentDate = null;
+let currentView = "day"; // "day" | "saved"
 let deferredInstallPrompt = null;
 
 // === Theme ===
@@ -60,6 +63,21 @@ function toggleTheme() {
 }
 applyTheme((() => { try { return localStorage.getItem(THEME_KEY); } catch { return null; } })());
 els.themeToggle.addEventListener("click", toggleTheme);
+
+// === 保存ビューへの導線 + 件数バッジ (Phase 2-1) ===
+function refreshSavedBadge() {
+  if (!els.savedCount) return;
+  const n = savedCount();
+  if (n > 0) {
+    els.savedCount.textContent = n > 99 ? "99+" : String(n);
+    els.savedCount.classList.remove("hidden");
+  } else {
+    els.savedCount.classList.add("hidden");
+  }
+}
+els.savedLink?.addEventListener("click", () => { location.hash = "#saved"; });
+onSavedChange(refreshSavedBadge);
+refreshSavedBadge();
 
 // === Status helpers ===
 function showStatus(message, isError = false) {
@@ -270,6 +288,7 @@ function scoreClass(total) {
 import { renderFigure } from "./figure.js";
 import { copyXDraft, hasXPost } from "./xdraft.js";
 import { faviconFor, sourceTypeChip } from "./provenance.js";
+import { isRead, markRead, isSaved, toggleSaved, removeSaved, savedIds, savedCount, onSavedChange } from "./readstate.js";
 
 function articleAnchorId(itemId) {
   return `article-${(itemId || "").replace(/[^\w\-]/g, "")}`;
@@ -280,6 +299,8 @@ function expandCard(card) {
   card.dataset.expanded = "true";
   const toggle = card.querySelector(".card-toggle");
   if (toggle) toggle.setAttribute("aria-expanded", "true");
+  // 開いたら既読化 (Phase 2-1)
+  if (card.dataset.itemId) { markRead(card.dataset.itemId); card.classList.add("is-read"); }
 }
 
 function collapseCard(card) {
@@ -302,6 +323,7 @@ function revealSummaryToggle(card) {
 function renderCard(item) {
   const node = els.cardTpl.content.firstElementChild.cloneNode(true);
   node.dataset.itemId = item.id || "";
+  node.dataset.date = item.date || currentDate || ""; // ディープリンク用 (保存/検索カードは item.date を持つ)
   node.dataset.expanded = "false";
   if (item.id) node.id = articleAnchorId(item.id);
   const toggle = node.querySelector(".card-toggle");
@@ -407,6 +429,46 @@ function renderCard(item) {
   } else {
     shareBtn.classList.add("hidden");
   }
+
+  // 既読 (Phase 2-1): 一度開いた記事はカードを淡色化
+  if (isRead(item.id)) node.classList.add("is-read");
+
+  // ブックマーク★ (Phase 2-1)
+  const bm = node.querySelector(".card-bookmark");
+  if (bm) {
+    const reflect = () => {
+      const on = isSaved(item.id);
+      bm.classList.toggle("is-saved", on);
+      bm.setAttribute("aria-pressed", String(on));
+      bm.setAttribute("aria-label", on ? "ブックマークを解除" : "ブックマークに保存");
+    };
+    reflect();
+    bm.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleSaved(item.id);
+      reflect();
+    });
+  }
+
+  // リンクをコピー (Phase 2-2 ディープリンク): #YYYY-MM-DD/itemId
+  const copyLinkBtn = node.querySelector(".card-copylink");
+  if (copyLinkBtn) {
+    copyLinkBtn.addEventListener("click", async () => {
+      const day = node.dataset.date || currentDate || "";
+      const deep = `${location.origin}${location.pathname}#${day}/${encodeURIComponent(item.id || "")}`;
+      try {
+        await navigator.clipboard.writeText(deep);
+        copyLinkBtn.textContent = "✓ コピーしました";
+        setTimeout(() => { copyLinkBtn.textContent = "🔗 リンクをコピー"; }, 2000);
+      } catch {
+        copyLinkBtn.textContent = "コピー失敗";
+        setTimeout(() => { copyLinkBtn.textContent = "🔗 リンクをコピー"; }, 2000);
+      }
+    });
+  }
+
+  // 元記事リンクを踏んだら既読化
+  link.addEventListener("click", () => { markRead(item.id); node.classList.add("is-read"); });
 
   return node;
 }
@@ -672,6 +734,7 @@ async function loadDay(date) {
   try {
     const data = await fetchJSON(url, { cache: cacheMode });
     currentDate = data.date || date;
+    currentView = "day";
     renderDay(data);
     updateDateNav();
     updateWeeklyLink(currentDate);
@@ -695,22 +758,148 @@ async function loadDay(date) {
 }
 
 // === Routing ===
+// 受理する hash:
+//   #YYYY-MM-DD            … その日を表示
+//   #YYYY-MM-DD/<itemId>   … その日を表示し、該当カードへスクロール+展開 (Phase 2-2 ディープリンク)
+//   #saved                 … 保存した記事ビュー (Phase 2-1)
+function parseHash() {
+  const h = location.hash;
+  if (h === "#saved") return { kind: "saved" };
+  const m = h.match(/^#(\d{4}-\d{2}-\d{2})(?:\/(.+))?$/);
+  if (m) return { kind: "day", date: m[1], itemId: m[2] ? decodeURIComponent(m[2]) : null };
+  return { kind: "day", date: null, itemId: null };
+}
 function dateFromHash() {
-  const m = location.hash.match(/^#(\d{4}-\d{2}-\d{2})$/);
-  return m ? m[1] : null;
+  const r = parseHash();
+  return r.kind === "day" ? r.date : null;
+}
+
+// ディープリンク先のカードへスクロール+展開
+function focusArticle(itemId) {
+  if (!itemId) return;
+  const el = document.getElementById(articleAnchorId(itemId));
+  if (!el) return;
+  expandCard(el);
+  revealSummaryToggle(el);
+  el.querySelectorAll(".card.reveal:not(.is-visible)").forEach((c) => c.classList.add("is-visible"));
+  el.classList.add("is-visible");
+  requestAnimationFrame(() =>
+    requestAnimationFrame(() => {
+      const header = document.querySelector(".site-header");
+      const headerH = header ? header.getBoundingClientRect().height : 0;
+      const y = el.getBoundingClientRect().top + window.scrollY - headerH - 12;
+      window.scrollTo(0, Math.max(0, y));
+      el.classList.add("card-flash");
+      setTimeout(() => el.classList.remove("card-flash"), 1600);
+    }),
+  );
 }
 
 async function route() {
-  const hashDate = dateFromHash();
-  const date = hashDate && availableDates.includes(hashDate) ? hashDate : availableDates[0];
+  const r = parseHash();
+  if (r.kind === "saved") {
+    await renderSavedView();
+    return;
+  }
+  const date = r.date && availableDates.includes(r.date) ? r.date : availableDates[0];
   if (!date) {
     showStatus("まだデータがありません。最初のニュースが配信されるとここに表示されます。");
     return;
   }
-  if (date !== currentDate) await loadDay(date);
+  // 日付が変わった or 保存ビューから戻ってきた場合は日次を描画し直す
+  if (date !== currentDate || currentView !== "day") {
+    await loadDay(date);
+  }
+  // ディープリンク: 該当カードへ
+  if (r.itemId) requestAnimationFrame(() => focusArticle(r.itemId));
 }
 
 window.addEventListener("hashchange", route);
+
+// === 保存した記事ビュー (Phase 2-1) ===
+let savedIndexCache = null;
+async function loadSavedIndex() {
+  if (savedIndexCache) return savedIndexCache;
+  try {
+    // index.json と同じく no-store（保存ビューは鮮度が重要・毎日更新される索引のため）
+    const data = await fetchJSON(`${DATA_DIR}/search-index.json`, { cache: "no-store" });
+    savedIndexCache = Array.isArray(data.items) ? data.items : [];
+  } catch {
+    savedIndexCache = [];
+  }
+  return savedIndexCache;
+}
+
+async function renderSavedView() {
+  currentView = "saved";
+  hideStatus();
+  els.summary.classList.add("hidden");
+  if (els.topPicks) els.topPicks.classList.add("hidden");
+  if (els.categoryTabs) els.categoryTabs.classList.add("hidden");
+  els.categories.innerHTML = "";
+  document.title = "保存した記事 ・ AI Daily Digest";
+
+  const ids = new Set(savedIds());
+  if (ids.size === 0) {
+    showStatus("保存した記事はまだありません。各カードの🔖で保存できます。");
+    return;
+  }
+  const index = await loadSavedIndex();
+  // id → item (最新の出現を優先。index は新しい日付順)
+  const byId = new Map();
+  for (const it of index) if (ids.has(it.id) && !byId.has(it.id)) byId.set(it.id, it);
+
+  const section = document.createElement("section");
+  section.className = "category saved-view";
+  const header = document.createElement("header");
+  header.className = "category-header";
+  header.innerHTML =
+    `<h2 class="category-title">🔖 保存した記事</h2><span class="category-count">${ids.size}件</span>`;
+  const tools = document.createElement("div");
+  tools.className = "saved-tools";
+  const copyBtn = document.createElement("button");
+  copyBtn.type = "button";
+  copyBtn.className = "saved-tool-btn";
+  copyBtn.textContent = "Markdown でコピー";
+  const backBtn = document.createElement("button");
+  backBtn.type = "button";
+  backBtn.className = "saved-tool-btn";
+  backBtn.textContent = "← 日次に戻る";
+  backBtn.addEventListener("click", () => { location.hash = `#${availableDates[0] || ""}`; });
+  tools.append(copyBtn, backBtn);
+
+  const container = document.createElement("div");
+  container.className = "category-items";
+  const resolved = [];
+  for (const id of savedIds()) {
+    const it = byId.get(id);
+    if (it) { resolved.push(it); container.appendChild(renderCard(it)); }
+  }
+  if (resolved.length === 0) {
+    showStatus("保存した記事を索引から解決できませんでした（古いデータの可能性）。");
+    return;
+  }
+  copyBtn.addEventListener("click", async () => {
+    const md = resolved
+      .map((it) => {
+        const t = (it.lang === "en" || it.lang === "zh") ? (it.title_ja || it.title) : (it.title || it.title_ja);
+        return `- [${t}](${it.url})${it.date ? `  〔${it.date}〕` : ""}`;
+      })
+      .join("\n");
+    try {
+      await navigator.clipboard.writeText(md);
+      copyBtn.textContent = "✓ コピーしました";
+      setTimeout(() => { copyBtn.textContent = "Markdown でコピー"; }, 2000);
+    } catch {
+      copyBtn.textContent = "コピー失敗";
+      setTimeout(() => { copyBtn.textContent = "Markdown でコピー"; }, 2000);
+    }
+  });
+
+  section.append(header, tools, container);
+  els.categories.appendChild(section);
+  applyRevealStagger();
+}
 
 // === Card open/close (event delegation on categories + top-picks containers) ===
 function attachCardEvents(rootEl) {

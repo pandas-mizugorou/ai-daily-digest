@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Daily Digest</title>
+    <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
+    <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
+    <language>ja</language>
+    <lastBuildDate>Sat, 13 Jun 2026 03:23:36 GMT</lastBuildDate>
+    <item>
+      <title>DeepSeek-V4がV3全指標超えのOSSとして公開・HNで523pt——日本語コミュニティはAIエージェント設計パターン143ブクマ、MCP自作ガイドが87いいね</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07</link>
+      <guid isPermaLink="false">aidd-day-2026-06-07</guid>
+      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
+      <description>本日の最大トピックは DeepSeek-V4 のリリース。数学推論・コード生成・推論の各ベンチマークで前世代 V3 を全面的に上回るオープンソース LLM として公開され、HN で 523 ポイント・Synced と量子位が一斉に報道した。日本語コミュニティでは AIエージェント設計パターン 5 種の解説（はてブ 143 ユーザー）、Claude MCP サーバー自作記事（Zenn 87 いいね）、RAG×Fine-tuning 実装解説（Qiita 52 いいね・38 ストック）が高い反響を呼んだ。研究面では検証可能報酬による強化学習 RLVR が注目を集め、EU AI Act の高リスク AI 執行フェーズ突入という規制の節目も迎えた。
+
+【今日の必読】
+・DeepSeek-V4 公開——数学・コード・推論の全ベンチマークでV3を超えるオープンソースLLM
+・AIエージェントの設計パターン：実務で使える5つのアーキテクチャ
+・Claude MCPサーバーを自作してみた：実装から公開まで
+・RAGとFine-tuningを組み合わせた精度改善：実装例付き
+・DeepSeek-V4 リリース、HNで523pt獲得——数学・コーディングでV3を大幅超えとの初期報告が相次ぐ
+・RLVR：検証可能な報酬でLLMを強化学習する新訓練フレームワーク——数学推論ベンチマークで大幅向上</description>
+    </item>
+    <item>
+      <title>Anthropicが『When AI Builds Itself』で再帰的自己改善の進捗を公開——自社コードの80%超をClaudeが執筆し検証可能な一時停止体制を提言・GoogleはSpaceXと月920MドルでNVIDIA GPU約11万基を契約——Gemma 4 QAT版が</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06</link>
+      <guid isPermaLink="false">aidd-day-2026-06-06</guid>
+      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
+      <description>本日のAI業界はAnthropic Instituteの『When AI Builds Itself』が最大の話題となった。同社はコードベースにマージされるコードの80%超をClaudeが執筆し、AIが遂行できるタスク長が約4分(2024年3月のClaude Opus 3)から12時間規模(Claude Opus 4.6)へ伸びたと定量的に示したうえで、再帰的自己改善のリスクに備え各国の複数フロンティア開発者が検証可能な形で同時に一時停止できる体制を提言した。計算資源の争奪も激化し、GoogleはSpaceXと2026年10月から月約920MドルでNVIDIA GPU約11万基を確保。一方でGitHub Copilotの従量課金移行やUber・Pricelineのコスト超過に象徴される『AIトークンコスト危機』が表面化し、モデルルーティングや使用量管理が実務スキルとして急浮上した。オンデバイスではGemma 4のQAT版がノートPC・スマホでの軽量実行を広げ、研究ではGoedel-Architect(定理証明)・MLEvolve(自動ML発見)・Cross-Layer Sparse Attention(長文脈高速化)が効率と自律性の最前線を更新した。
+
+【今日の必読】
+・Anthropic、AIによるAI開発の現状を公開: 自社コードの80%超をClaudeが執筆、再帰的自己改善への進捗と一時停止の検証体制を提言
+・Google、Gemma 4 のQAT量子化版を公開——E2Bがメモリ1GB未満でモバイル・ノートPC上のオンデバイス実行に対応
+・Google が SpaceX に月920M ドルで計算資源を契約、Gemini Enterprise の想定外需要に橋渡し、NVIDIA GPU 約11万基を確保
+・Goedel-Architect、補題の依存グラフを並列証明しMiniF2F-testで99.2%・コスト500分の1を達成
+・業務のAI化からAI中心の組織設計へ — 2,000年続いた組織図の常識が書き換わる
+・ChinAI #361: Huawei CANN は Nvidia CUDA の堀を崩せるか、DeepSeek V4 が Ascend で大規模実証
+・GitHub、Copilot Agent をアプリに組み込む公式 multi-platform SDK を公開。TypeScript/Python/Go/.NET/Rust/Java の6言語対応で本日 +309 star</description>
+    </item>
+    <item>
+      <title>MicrosoftがOpenAI不依存の推論モデルMAI-Thinking-1を公開・Gemma 4 12BがノートPCでマルチモーダルを実現——GitHubがCopilot SDK GA・ZOZOがClaude Code Skillで70%削減、Axiom Mathがパトナム全</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05</link>
+      <guid isPermaLink="false">aidd-day-2026-06-05</guid>
+      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月5日は3つの大型リリースが重なった。MicrosoftがBuild 2026でOpenAI依存を脱した自社推論モデルMAI-Thinking-1（35B、SWE-Bench Pro 53%）を含むMAI family 7モデルを発表し、AzureのAI戦略が転換点を迎えた。GoogleはGemma 4 12B（Apache 2.0）を公開し、16GB RAMのノートPCで音声・動画・画像をネイティブ処理できる初の中型オープンモデルが登場した。GitHubはCopilot SDKをGAとし、6言語でエージェントエンジンを自社アプリに組み込める時代が始まった。学術面ではAxiom Mathがパトナム試験全12問完答という数学AIの新たな到達点を示し、AnthropicはAI悪用サイバー攻撃の1年分データを公開してセキュリティフレームワーク更新を呼びかけた。日本からはZOZOTOWNのClaude Code実装事例（70%リードタイム削減）が国内最大の実践知見として話題を集めた。
+
+【今日の必読】
+・Google Gemma 4 12B、Apache 2.0で公開——16GB RAMのノートPCで音声・動画・画像をネイティブ処理
+・Microsoft初の自社推論モデルMAI-Thinking-1、SWE-Bench ProでClaude Opus 4.6同等の53%を達成
+・GitHub Copilot SDK が正式GA——Node/Python/Go/.NET/Rust/Javaの6言語でCopilotエンジンを自社アプリに組み込み可能
+・Axiom Mathがパトナム試験12/12完答——形式証明AIで$1.6Bバリュエーション・RLに数学的検証を統合
+・問い合わせ調査のリードタイムを平均70%削減 ── Claude Code Skillを&quot;動くマニュアル&quot;にしたZOZOTOWNの取り組み
+・Anthropic、1年間のAI悪用サイバー脅威を分析——832アカウント調査でMITRE ATT&amp;CKの更新を呼びかけ</description>
+    </item>
+    <item>
+      <title>Microsoft が初の自社推論モデル MAI-Thinking-1 を公開・MiniMax M3 が GPT-5.5 を SWE-Bench Pro 59% で超えオープンウェイト公開——ZOZO が Claude Code で調査リードタイム 70% 削減、NVIDIA C</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-04</link>
+      <guid isPermaLink="false">aidd-day-2026-06-04</guid>
+      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月4日は、フロンティアモデルと企業実装の両面で重要な動きが重なった。Microsoft が Build 2026 で初の自社開発推論モデル「MAI-Thinking-1」を公開し、第三者蒸留なしのゼロからの学習と 109 ページの技術報告書で OpenAI 依存脱却の転換点を示した。中国の MiniMax はオープンウェイトモデル「MiniMax M3」で SWE-Bench Pro 59.0% を達成して GPT-5.5 を超え、推論コストを 5〜10% に抑える価格破壊を継続。国内では ZOZO が Claude Code Skill を「動くマニュアル」として活用し問い合わせ調査リードタイムを平均 70% 削減したケースが注目を集め、はてブ 235 件の反響を呼んだ。NVIDIA は物理 AI 向け初のオープン全方位モデル「Cosmos 3」を OSS 公開し、ロボティクス・自動運転の研究基盤整備が加速。DeepSeek の初外部資金調達（$70 億）や Anthropic による AI サイバー脅威の 1 年間実態調査（832 件分析）も、AI の社会実装が急拡大する局面を象徴している。
+
+【今日の必読】
+・Microsoft Build 2026 — 自社開発推論モデル「MAI-Thinking-1」初公開、109 ページ技術報告書も同時公開
+・MiniMax M3：SWE-Bench Pro 59.0% で GPT-5.5 超え・1M コンテキスト・オープンウェイト——コストは 5〜10%
+・問い合わせ調査のリードタイムを平均70%削減 ── Claude Code Skillを「動くマニュアル」にしたZOZOTOWNの取り組み
+・H Company が Holo3.1 を公開：AndroidWorld 79.3%・2 倍高速化・コンシューマ GPU でローカル動作
+・NVIDIA Cosmos 3：物理 AI 向け世界初のオープン全方位モデル——テキスト・画像・動画・行動を統合し物理的整合シーケンスを生成
+・AI 対応サイバー脅威の 1 年間実態——Anthropic が 832 件の不正アカウント分析で「AI が脅威アクターをより危険にしている」を公開データで実証</description>
+    </item>
+    <item>
+      <title>GitHub COO が AI エージェントによる年次コミット 14 倍増を公開・Holo3.1 がモバイル自動化 79.3% 達成——OpenAI が Codex を 6 職種向けプラグインに拡張、ZOZO が Claude Code でリードタイム 70% 削減、清华大学 A</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03</link>
+      <guid isPermaLink="false">aidd-day-2026-06-03</guid>
+      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月3日は、AIエージェントが実業務・インフラ・開発ツールの各層で本格的な成果を刻んだ一日となった。Latent Spaceでは GitHub COO がエージェント駆動の年次コミット 14 倍増を公表し、H Company が 79.3% のモバイル自動化精度を持つ Holo3.1 を公開した。OpenAI は Codex を 6 職種向けプラグインに拡張し、清华大学 AIR はロボット強化学習フレームワーク UniLab を 3 分訓練・10 倍高速化として OSS 公開した。国内では ZOZO が Claude Code Skill でリードタイム 70% 削減、SBI グループが Anthropic と全役職員へのClaude展開で提携するなど、AI実装の加速が続いている。
+
+【今日の必読】
+・Latent Space：GitHub COO が語る「AI エージェントによる年次コミット 14 倍増とエージェントスケールのインフラ課題」
+・問い合わせ調査のリードタイムを平均70%削減 ── Claude Code Skillを&quot;動くマニュアル&quot;にしたZOZOTOWNの取り組み
+・Holo3.1 公開：モバイル自動化 79.3% 精度・0.8B〜35B の 4 サイズ展開、コンシューマ GPU でローカル動作
+・COLLEAGUE.SKILL：人間の作業履歴からエージェントスキルを自動生成——215 スキル・165 コントリビューター・累計 10 万スターのエコシステム誕生
+・清华大学 AIR、ロボット RL 訓練フレームワーク「UniLab」を OSS 公開——人型ロボット訓練を 3 分・10 倍高速化、Mac でも動作
+・OpenAI Codex、データ分析・営業・投資銀行など 6 職種向けプラグインと Web サイト作成機能「Sites」を追加</description>
+    </item>
+    <item>
+      <title>Anthropic が IPO 向け S-1 を SEC に機密提出（評価額 $965B）・NVIDIA Cosmos 3 が物理 AI 向け初のオープンオムニモデルを公開——GitHub Copilot が AI Credits 従量課金制へ移行、国内はてブ上位は Claude</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02</link>
+      <guid isPermaLink="false">aidd-day-2026-06-02</guid>
+      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026 年 6 月 2 日のAIニュース。Anthropicが米証券取引委員会（SEC）にForm S-1の機密草稿を提出し、IPO準備が公式に始動した（Series H $65B調達・$965B評価額）。NVIDIAはロボティクス・自律走行向けの初のオープンオムニモデル「Cosmos 3」をHugging Face経由で公開し、物理AI開発の民主化を促進する。GitHubはCopilotの課金をAI Credits従量制に移行（6月1日付）し、コード補完は全有料プランで引き続き無制限。研究面ではIBM Researchがエンタープライズ AI のスケールにはエージェントロジックが不可欠と提唱し、HF Papersでは検索エージェント・スキル蒸留・長文脈推論の新手法が相次いで公開された。国内ではClaude Codeチャンピオンキット（394はてブ）やZero Trustエージェント解説（189はてブ）が高い反響を集めた。
+
+【今日の必読】
+・Claude Code チャンピオン キット
+・GitHub Copilot、AI Credits 従量課金制へ移行——6 月 1 日より全プランに適用
+・Anthropic の Zero Trust for AI Agents 設計原則を読み解く
+・NVIDIA Cosmos 3 登場——物理 AI 推論・行動向け初のオープンオムニモデル
+・LLM を超えて——スケーラブルな企業 AI 採用にはエージェントロジックが不可欠（IBM Research）
+・Anthropic、SEC に S-1 草稿を機密提出——$965B 評価額で IPO 準備が公式始動</description>
+    </item>
+    <item>
+      <title>Anthropic が Zero Trust for AI Agents 設計原則を公開（はてブ 311 件）・LiquidAI LFM2.5-8B-A1B が本日リリース・SoftBank が仏に最大 €750 億データセンター投資——Microsoft MagenticLit</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01</link>
+      <guid isPermaLink="false">aidd-day-2026-06-01</guid>
+      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
+      <description>6月1日は、AIエージェントのセキュリティ設計とモデルの多様化が同時に進んだ一日だった。Anthropicはエージェント時代のゼロトラスト設計原則をclaude.com/blogに公開し、日本のエンジニアコミュニティでははてなブックマーク311件の記録的反響を呼んだ。LiquidAIが本日LFM2.5-8B-A1Bをリリースし、MicrosoftはMAI-Image-2.5でArenaテキスト→画像リーダーボード3位を達成、さらにMagenticLiteで小型モデル向けエージェント基盤も発表した。インフラ・投資面ではSoftBankが仏に最大€750億のデータセンター投資を宣言し、GroqはNVIDIAとの大型ディール後に$6.5億の追加調達を追求している。日本では「Ollama×Playwright完全無料Webエージェント」Zenn記事が168はてブを集め、ローカルVLMを使ったエージェント実装への関心の高さが改めて示された。
+
+【今日の必読】
+・AIエージェントのためのゼロトラスト——Anthropic が設計原則を公式ブログに公開
+・Ollama×Playwright で作る完全無料の Web 調査エージェント
+・Microsoft、小型 LLM 向けエージェント基盤 MagenticLite・MagenticBrain を発表
+・Microsoft MAI-Image-2.5、Arena テキスト→画像リーダーボードで 3 位を達成
+・LLM に「ワーキングメモリ」を実装——特殊トークン列で潜在推論を単一前向きパスで完結
+・VideoMLA：マルチヘッド潜在アテンションで動画生成の KV メモリを 92.7% 削減</description>
+    </item>
+    <item>
+      <title>Google Gemini Omni が「任意→任意」世界モデルとして展開、OpenAI が GPT-Rosalind をバイオディフェンスに無償開放——Mistral は Vibe にリブランドし国内「設計知」論考がはてブ 432 件</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31</link>
+      <guid isPermaLink="false">aidd-day-2026-05-31</guid>
+      <pubDate>Sat, 30 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月31日、Googleが単一モデルでテキスト・画像・音声・動画を相互変換する「Gemini Omni Flash」のロールアウトを開始し、物理法則を内在した世界モデルとしての動画生成という新しい設計思想を示した。OpenAIは生命科学特化推論モデルGPT-Rosalindを政府機関・研究機関に無償開放するRosalind Biodefenseプログラムを開始し、Lawrence Livermore研究所やCEPIがバンジョウエボラ対策に採用した。MistralはLe ChatをVibeにリブランドしてWork mode＋Code modeを持つ統合エージェントへ再デビューさせ、OpenRouterはCapitalG主導のシリーズBで1億1300万ドルを調達し評価額13億ドルに到達した。国内では清水亮氏の「生成AIが本当に変えるのは設計知だ」論考がはてブ432件を集め、デジタル庁が源内向け国産LLM再公募を開始した。
+
+【今日の必読】
+・AgentDoG 1.5：0.8B〜8Bの軽量AIエージェント安全ガードレール——R-Judge 92.2%でGPT-5.4に匹敵しデプロイ負荷を100分の1に削減
+・Qwen-VLA：操作・ナビゲーション・軌道予測を単一アーキテクチャで統合——LIBERO 97.9%の汎用ロボットVLAモデル
+・生成AIが本当に変えるのは「設計知」だ（WirelessWire News）
+・Mistral、Le ChatをVibeにリブランド——Work modeとCode modeを持つ統合AIエージェントとして再スタート
+・Gemini Omni Flash ロールアウト開始——テキスト・画像・音声・動画を統合する「任意→任意」世界モデル
+・OpenAI、Rosalind Biodefenseプログラム開始——GPT-Rosalindを生命科学・バイオディフェンスへ無償開放</description>
+    </item>
+    <item>
+      <title>Anthropic、Claude Opus 4.8と$650億調達を同日発表——Dynamic Workflowで数百サブエージェント並列実行、SkillOpt全52構成で首位</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30</link>
+      <guid isPermaLink="false">aidd-day-2026-05-30</guid>
+      <pubDate>Fri, 29 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月30日のAI界はAnthropicによる二重発表で幕を開けた。Claude Opus 4.8は前世代比4倍のコード欠陥検出力と数百サブエージェントを並列実行するDynamic Workflowを備え、価格は据え置きでリリース。同日$650億のシリーズH調達も発表し評価額は$9,650億に達した。研究面ではMicrosoft ResearchのSkillOptが52構成全てで首位を記録しエージェントスキルの自律進化を実証、IBMのITBench-AAはフロンティアモデル全機種が50%未満という現実を突きつけた。Liquid AIは38兆トークン学習のLFM2.5-8B-A1Bを公開し非ハルシネーション率を8倍超に改善。日本では「160K星CLAUDE.md記法」記事がはてブ263件を獲得しClaude Code設定の知見が国内コミュニティで広がっている。
+
+【今日の必読】
+・Anthropic、Claude Opus 4.8リリース——Dynamic Workflowで数百サブエージェント並列実行、コード欠陥検出力4倍
+・Liquid AI、LFM2.5-8B-A1Bを公開——38兆トークン学習、非ハルシネーション率8.5倍改善
+・Latent Space解説：スケーラブルな非同期マルチエージェントシステムのアーキテクチャ設計原則
+・GitHubで16万スターのCLAUDE.md記法を完全解説——Claude Codeをチームで使うための設定術
+・Microsoft ResearchのSkillOptが全52構成で首位——エージェントが実行ログからスキルを自律獲得する新フレームワーク
+・GitHub Copilotが高性能モデル向け従量制リクエスト課金を導入——月額上限モデルを廃止し新価格体系へ</description>
+    </item>
+    <item>
+      <title>Anthropic が Claude Opus 4.8 と $65B Series H を同日発表・SkillOpt がエージェントスキル全 52 評価セルで最高記録・OpenAI Secure MCP Tunnel で企業プライベートサーバ解放</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29</link>
+      <guid isPermaLink="false">aidd-day-2026-05-29</guid>
+      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
+      <description>Anthropic が Claude Opus 4.8（Dynamic Workflows で Claude Code が並列数百サブエージェントを管理）と 650 億ドル Series H（評価額 $965B、ランレート $47B 超）を同日発表し、AI 産業の技術・資本両面での集中が新段階に突入した。研究面では Microsoft・上海交大らの SkillOpt が 6 ベンチマーク・7 モデル・3 ハーネスの全 52 評価セルで最高スコアを達成し、エージェントスキルの自動最適化が実証段階に入った。ツール面では OpenAI Secure MCP Tunnel が企業内プライベート MCP サーバを受信ポート不要で ChatGPT・Codex に接続できるようにし、Mistral が Vibe の Work/Code モードと VS Code 拡張を同日公開した。日本ではClaude Code の CLAUDE.md+skills 活用ガイドがはてブ 783 ブクマを記録し、開発者コミュニティでのエージェント実践が加速していることが示された。
+
+【今日の必読】
+・Claude Opus 4.8 発表——Dynamic Workflows で並列数百サブエージェントを統括
+・Anthropic が $65B Series H 完了——評価額 $965B、ランレート $47B 超でほぼ 1 兆ドル企業に
+・SkillOpt——テキスト空間でエージェントスキルを自動最適化、全 52 評価セルで最高スコア
+・OpenAI Secure MCP Tunnel——プライベート MCP サーバを外向き HTTPS だけで ChatGPT・Codex に接続
+・【超入門】Claude Codeの使い方〜初心者が1日でCLAUDE.mdとskillsを作る最短手順〜
+・ByteDance Lance——画像・動画の理解・生成・編集を単一モデルに統合したユニファイドマルチモーダル</description>
+    </item>
+    <item>
+      <title>IBMベンチマークでフロンティアモデルが企業ITタスクで50%未満・BioHub ESMFold2がタンパク質AI革新・ByteDance Lanceが画像動画統合公開—富士通×Anthropic10万人全社展開でRLHF安全性論文も登場</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28</link>
+      <guid isPermaLink="false">aidd-day-2026-05-28</guid>
+      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月28日は、AIエージェントの実用限界を示す研究成果と大手企業のAI全社展開という両極端のニュースが重なった。IBMとArtificial Analysisが共同公開したITBench-AAベンチマークでは、最新フロンティアモデルがエンタープライズITの自律タスクで50%未満のスコアしか達成できず、エージェントAIの現実的課題が浮き彫りになった。一方でBioHubによるESMFold2は68億タンパク質の予測アトラスを公開し、AlphaFold3を超える手法として「タンパク質AIへの苦い教訓」を示した。ByteDance Lanceは画像・動画の理解・生成・編集を統合するany-to-anyモデルとして公開され、HFトレンド1位を獲得。国内では富士通がAnthropicと戦略提携し10万人規模でClaude全社展開を発表。RLHF脆弱性論文「Alignment Tampering」はLLMが意図的にバイアスを増幅できる構造的問題を指摘し、AI安全性コミュニティに警鐘を鳴らした。
+
+【今日の必読】
+・ITBench-AA：エンタープライズITエージェントタスクの初ベンチマークでフロンティアモデルが50%未満
+・継続的デリバリーがない組織でAIは増幅器として空回りを生む
+・ESMFold2：タンパク質AIにBitter Lesson到来—BioHubが68億タンパク質アトラスを公開
+・Lance (ByteDance)：画像・動画の理解・生成・編集を統合したAny-to-Anyモデルがリリース
+・Alignment Tampering：RLHFが意図的に誤ったバイアスを増幅できる構造的脆弱性を実証
+・富士通×Anthropic戦略提携：10万人の全社員がClaudeを業務活用、日本AI変革を加速</description>
+    </item>
+    <item>
+      <title>LLMに「睡眠」統合機構・Borealis音声AI完全公開・全AIラボがエージェントラボ転換——国内AIセキュリティ実践解説とMercariガバナンス知見が最高スコアを記録</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27</link>
+      <guid isPermaLink="false">aidd-day-2026-05-27</guid>
+      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
+      <description>2026-05-27のAIニュースは研究・モデル・業界の三層で動いた。arXivの「Language Models Need Sleep」がオフライン睡眠フェーズで文脈を高速重みに変換し推論レイテンシ増加なしに長期記憶を実現する新機構を提案しHNで165ptを獲得。Borealisは音声LLM学習の完全オープンレシピ（データ・コード・重み）を公開し音声AI開発の民主化を加速。Latent SpaceはAIラボが一斉にエージェントインフラへ転換したという業界構造の変化を宣言し、TurboPuffer・Exa・Modal 3社同時ユニコーン化がその資金面を裏付けた。国内ではQiitaのAIセキュリティ全景解説（59いいね）とMercariのエージェント時代ガバナンス実装スライド（124はてブ）が実務家層に最大の反響を呼び、OpenRouterは$1.3B評価額達成で多モデルルーティング市場の実需を証明した。
+
+【今日の必読】
+・AIセキュリティ脅威の全景 2026 — CVE / 攻撃手法 / 防御策
+・Agentic AI時代におけるメルカリのAIガバナンスとガードレール実装
+・LLMに「睡眠」を——文脈を高速重みに変換する統合機構で長期推論を突破
+・Borealis：音声LLM学習の完全オープンレシピ——データ・コード・重みをすべて公開
+・「すべてのモデルラボがエージェントラボになった」——Latent Spaceが業界パラダイム転換を宣言
+・「アウトソーシング＋ローカルAIがフロンティアラボより経済合理的になる」——HN 213pt論考</description>
+    </item>
+    <item>
+      <title>OpenAI GPT-5.4 Pro がネイティブPC操作と1Mコンテキストで登場・Gemini OmniがAI動画生成の新基準確立・Claude Code自己改善ループ設計が日本最大反響</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26</link>
+      <guid isPermaLink="false">aidd-day-2026-05-26</guid>
+      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月26日、OpenAIがネイティブコンピューター操作と100万トークンコンテキストを搭載したGPT-5.4とGPT-5.4 Proを発表し、エージェント時代の新フラッグシップを投入した。Google DeepMindはGemini Omniを公開—テキスト・画像・音声・動画を任意に組み合わせて高品質映像を生成する「世界モデル」として、AI動画生成の競争を新次元に引き上げた。AIエージェントインフラへの大型投資も相次ぎ、Exa（250億円Series C）・Modal（355億円で評価額4.7B$）・TurboPuffer（ARR $100M達成）が「退屈だが儲かるAIインフラ」として注目を集めた。日本では「Claude Codeのスキルが毎日自己改善する仕組み」記事がZennで187ブクマ、MIT Technology Review日本版「Claudeに任せてしまおう」が309ブクマを獲得し、Claude Code活用ナレッジの蓄積が急速に進んでいる。
+
+【今日の必読】
+・Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った
+・OpenAI、GPT-5.4 Pro発表—ネイティブPC操作・100万トークン・エージェントワークフローを標準搭載
+・「Claudeに任せてしまおう」たった1年で激変したソフトウェア開発
+・Anthropic公式「knowledge-work-plugins」公開—Claudeナレッジワーカー向けOSSプラグイン集がGitHub 15K星
+・Google DeepMind「Gemini Omni」発表—テキスト・画像・音声・動画を自由に組み合わせて動画生成する「世界モデル」
+・SkillOpt：LLMエージェントのスキルを自動最適化—テキスト空間での体系的スキル進化フレームワーク</description>
+    </item>
+    <item>
+      <title>DeepSeek旗艦モデル永久75%値下げでAI価格競争が新段階へ・「制約崩壊」論文でLLMエージェントの実用限界が露呈・Supertonic 3が日本語TTS革命</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25</link>
+      <guid isPermaLink="false">aidd-day-2026-05-25</guid>
+      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月25日のAI動向は、エージェント技術の実用限界と次世代インフラの整備という相反するテーマが交錯した。arXivから「制約崩壊（Constraint Decay）」論文がバックエンドコード生成でのLLMエージェントの構造的脆弱性を示しHN 123ポイントを獲得、開発者コミュニティを揺るがした。同日DeepSeekが旗艦モデルの永久75%値下げを発表しLLM API価格競争が一変。GitHubトレンドではコードを知識グラフ化するUnderstand-AnythingとAnthropicのClaude Codeプラグイン群が急騰し、開発者ツールエコシステムの急成長を示した。日本では完全ローカル動作する日本語TTS「Supertonic 3」解説記事がはてブ204件を集め、ローカルAIの実用化への高い関心が示された。
+
+【今日の必読】
+・制約崩壊：LLMエージェントはバックエンドコード生成で構造制約が増えると急激に失敗する
+・DeltaBox：ミリ秒単位のチェックポイントでステートフルAIエージェントをスケール
+・VPO：多様性訓練でtest-time searchを強化する新RL手法—4タスクでGRPOを上回る
+・完全ローカルかつCPUで動く日本語対応の軽量TTSモデル「Supertonic 3」
+・Understand-Anything：コードベースをインタラクティブな知識グラフに変換するOSS
+・DeepSeek V4-Pro APIを永久75%値下げ—$0.435/Mトークン入力でGPT-5・Claude・Gemini全モデルを価格で下回る</description>
+    </item>
+    <item>
+      <title>MOSS論文がエージェント自己進化でSWE-benchスコアを0.25→0.61へ・Claude Code 2.1.149に使用量分析機能・Latent Space「全モデルラボはエージェントラボへ転換」と宣言</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-24</link>
+      <guid isPermaLink="false">aidd-day-2026-05-24</guid>
+      <pubDate>Sat, 23 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月24日、arXivに投稿されたMOSS論文がエージェントのソースコードレベル自己進化を実証し、SWE-benchグレーダスコアを0.25から0.61へと1サイクルで倍以上に引き上げた。AnthropicはClaude Code 2.1.149をリリースし、/usageコマンドによるカテゴリ別使用量分析・diffスクロール改善・Markdownタスクリスト描画を追加した。Latent Spaceは「全AIラボがモデル単体競争からエージェントハーネス+製品体験統合へ転換した」と宣言し、Modal 3.55億ドル・Exa 2.5億ドルの大型調達がインフラ層の活況を裏付けた。国内ではKarpathyのClaude Code設定ファイルが引き続きGitHubトレンド首位を維持し、AI民主化に対する懐疑論がはてブ520件を集めた。
+
+【今日の必読】
+・Claude Code 2.1.149—/usage コマンドでカテゴリ別使用量分析・diff スクロール・Markdown タスクリスト描画を強化
+・全モデルラボはエージェントラボへ転換——Latent Spaceが業界再編の本質を論じる
+・MOSS 論文：エージェントがソースコードを自己書き換えて進化—SWE-bench スコアを 0.25 から 0.61 へ 1 サイクルで倍以上改善
+・AIで誰もがツールを作る時代、実は来ないんじゃないか説
+・Karpathyの Claude Code スキル設定がGitHubトレンド首位——14.9万スターで開発者が殺到
+・数学 AI が Erdős 未解決問題 9 件・OEIS 予想 44 件を Lean で形式証明—LLM エージェントによる純粋数学研究の実用化</description>
+    </item>
+    <item>
+      <title>ByteDance Lance 3Bが画像・動画を統一モデルで公開・AnthropicのGlasswing初期報告で1万件超の脆弱性発見・MicrosoftがClaude Codeライセンスを返上—Tencent Hy-MT2が無料でMicrosoft翻訳APIを超える</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-23</link>
+      <guid isPermaLink="false">aidd-day-2026-05-23</guid>
+      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月23日は、オープンソースマルチモーダルモデルの台頭とAIセキュリティの実効化が重なった一日だった。ByteDanceがLance（3Bパラメータ）を画像・動画の理解・生成・編集を単一フレームワークに統合するモデルとしてApache 2.0で公開し、業界のオープン化の流れが加速した。AnthropicはProject Glasswingの初期報告を公開し、IBMを含む50社超と協力してClaudeで1万件超の高重大度脆弱性を発見——AIがサイバー防御の実戦ツールとなりつつあることを示した。MicrosoftがExperiences+DevicesチームのClaude Codeライセンスを返上しGitHub Copilot CLIへ移行する方針が判明し、AI開発ツール市場の競争環境を改めて浮き彫りにした。国内では「ローカルLLMの現実的な選び方【2026年春】」が140ブクマを、「AIで誰もがツールを作る時代は来ないんじゃないか説」が506ブクマを集め、AI普及論への実践的な問いが反響を呼んだ。
+
+【今日の必読】
+・Project Glasswing 初期報告：Claude Mythosで1万件超の重大脆弱性を発見、IBMら50社超が参加
+・ByteDance Lance 3B：画像・動画の理解・生成・編集を単一モデルに統合、Apache 2.0でオープンソース公開
+・Tencent Hy-MT2-1.8B 無料公開——商用翻訳APIを凌駕する1.8Bモデル
+・CodeGraph：コードベースを事前グラフ化してClaude Codeのトークン消費を最大94%削減するMCPサーバー
+・MicrosoftがClaude Codeの社内ライセンスを返上——6月末までにGitHub Copilot CLIへ移行、6か月の活用に幕
+・ローカルLLMは本当に手元で動くのか？　ハードウェアとモデルの現実的な選び方【2026年春】</description>
+    </item>
+    <item>
+      <title>Daytona×エージェントインフラが月次74%成長・SenseNova-U1がVE/VAEレス統合アーキで公開・Anthropic公式Claude Codeプラグインディレクトリ開設・OpenAI Ads Managerセルフサービス開始・Trump AI安保令延期</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-22</link>
+      <guid isPermaLink="false">aidd-day-2026-05-22</guid>
+      <pubDate>Thu, 21 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月22日は「エージェントインフラ」と「マルチモーダル統合」の二つの軸が際立った一日だった。エージェントに持続的・ステートフルな計算環境を提供するDaytona（Latent Space取材）が月次74%成長を継続し、SenseTimeのSenseNova-U1はVAEとVisual Encoderを廃した完全統合アーキテクチャで画像理解・生成を単一モデルで実現した。トランプ大統領がAIモデル事前審査を求める大統領令の署名を延期する一方、OpenAIはChatGPT向け広告プラットフォームのセルフサービス提供を開始し商業化への本格シフトを宣言した。Anthropicは公式Claude Codeプラグインディレクトリを公開、日本では546ブクマを集めたAI内蔵介護ラジオが話題となるなど、AIの社会実装が深化する一日となった。
+
+【今日の必読】
+・エージェントにコンピュータを——Daytona CEOが語る月次74%成長とエージェント専用ステートフルコンピュートの設計
+・SenseNova-U1: VEとVAEを廃したNEO-unifyアーキテクチャで画像理解・生成を単一モデルに統合——SenseTimeが全OSS公開
+・Anthropic、Claude Codeプラグイン公式ディレクトリを公開——GitHubトレンド1位・22,000スター超
+・「ソフトウェアは忘れる——エージェントのトレースこそが記憶になる」
+・親の名前を忘れていた高齢者が語り出した——AI内蔵「昭和の青春ラジオ」が介護現場を変えている
+・OpenAI、ChatGPT広告セルフサービス「Ads Manager」ベータ版を一般開放——CPC/CPMビッドに対応</description>
+    </item>
+    <item>
+      <title>OpenAI推論モデルが80年来の数学難問を反証・AnthropicがxAIと月125億円コンピュート契約締結—AutoResearchClawの1.2万件リアクションとGemini 3.5 Flash拡大も重なる</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-21</link>
+      <guid isPermaLink="false">aidd-day-2026-05-21</guid>
+      <pubDate>Wed, 20 May 2026 20:00:00 GMT</pubDate>
+      <description>5月21日は技術的突破と産業再編が重なった一日だった。OpenAIの推論モデルが1946年来未解決のErdős幾何学予想を数学者の検証付きで反証し、AIが著名な未解決問題を初めて自律解決した可能性が浮上。同日、AnthropicがxAIのColossus 1から月12.5億ドル・総額400億ドル超のコンピュートを調達する契約がSpaceXのSEC書類から判明し、競合企業間の前例なきインフラ依存が表面化した。Google I/Oの余波でGemini 3.5 FlashとAntigravity 2.0がグローバル展開を拡大。学術ではAutoResearchClawがHF日次論文で1.2万件のリアクションを集めAI自律研究への期待を高め、日本では政府「Gennai」生成AIの18万人展開とM365 Copilot企業導入根拠記事（はてブ243件）が注目を集めた。
+
+【今日の必読】
+・Gemini 3.5 Flash：エージェント・コーディング向けGoogle最速フロンティアモデル正式公開
+・Forge：5層ガードレールで8Bモデルのエージェント成功率53%→99%に引き上げるOSSフレームワーク
+・AutoResearchClaw：仮説→実験→検証を自律反復するAI科学研究の自己強化ループ（HF 1.2万件）
+・OpenAI推論モデルが1946年来のErdős幾何学予想を著名数学者3名検証付きで反証
+・AnthropicがxAIのColossus 1から月12.5億ドル・総額400億ドル超のコンピュートを調達
+・GPT-5刷新後のM365 Copilotは「今すぐ導入すべき」理由—ROI試算付き実務解説（はてブ243件）</description>
+    </item>
+    <item>
+      <title>Google I/O 2026でGemini 3.5 Flash・Omni発表、KarpathyがAnthropicに参加—エージェント時代の号砲と業界再編が1日で重なる</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-20</link>
+      <guid isPermaLink="false">aidd-day-2026-05-20</guid>
+      <pubDate>Tue, 19 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月20日（JST）、Google I/O 2026で複数の重大発表が集中した。旗艦モデルGemini 3.5 Flashは前世代Gemini 3.1 Proをほぼ全ベンチマークで上回り、独立してコーディングやインフラ構築を実行できる「エージェントAI」へのシフトを宣言。同時発表のGemini Omniは任意の入力から高品質な動画を生成し、Gemini Sparkは24時間365日稼働のパーソナルAIエージェントとして提供が始まった。Anthropic陣営でもOpenAI共同設立者アンドレイ・カーパシー氏が入社し、KPMGが27.6万人規模でClaude全社展開を発表するなど、業界地図を変えるニュースが一日に集中した。国内ではNTTの「tsuzumi 2 Vision」が図表付き日本語文書で国際的フロンティアモデルと肩を並べる性能を示し、AI事業難易度の10段階分類フレームワークがはてブ209件と大きな共感を呼んだ。
+
+【今日の必読】
+・Google I/O 2026：Gemini 3.5 Flashが前世代を全指標で超え、コーディング自律実行できるエージェントAI時代を宣言
+・アンドレイ・カーパシー氏がAnthropicの事前学習チームに入社、Claude高速化に特化した新チームを設立
+・Gemini Omni：テキスト・画像・音声・動画を横断して10秒動画を生成—物理法則・文化まで反映した統合動画生成モデル
+・「AI 事業に難易度ってあるの？」AI 事業の難易度を 10 段階で分類してみた
+・EnvFactory：RL訓練用ツール環境の自動合成でエージェントベンチマークを最大+15%改善
+・NTT製LLM「tsuzumi 2」が図表を「理解」　ビジネス文書全般をカバー</description>
+    </item>
+    <item>
+      <title>DeepSeek V4 Pro（862B）公開・AnthropicがStainless買収・50日で4件のAIサプライチェーン攻撃が露見</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-19</link>
+      <guid isPermaLink="false">aidd-day-2026-05-19</guid>
+      <pubDate>Mon, 18 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月19日は、オープンウェイトAIの競争が再加速した。DeepSeekが862BパラメータのV4 Proと高速版V4 Flash（158B）を公開し、AlibabaのQwen3.6シリーズ（27B・35B）もHugging Faceでトレンド入りした。AnthropicはOpenAI・Google・Cloudflareも利用するSDK生成スタートアップStainlessを買収し開発者エコシステム戦略を強化。セキュリティ面では50日間で4件のAIサプライチェーン攻撃が報告されリリースパイプラインの盲点が明らかになった。国内では「スマホからClaudeでサーバ復旧」「AIコーディングでsecret漏洩を防ぐ4層防衛」がはてブ上位を占め、実践的なAI活用知見の共有が活発だ。
+
+【今日の必読】
+・AI コーディングで secret を漏らさないための４層防衛
+・DeepSeek V4 Pro（862B）がHugging Faceで公開——オープンウェイト最前線が再更新
+・SenseNova-U1——商湯科技がマルチモーダル「理解」と「生成」を統合した統一モデルを発表
+・Darwinファミリー——訓練なしでGPQA Diamond 88.89%を達成し、訓練フリー推論の限界を塗り替える
+・AnthropicがStainlessを買収——OpenAI・Google・Cloudflareも利用するSDK生成スタートアップを取得
+・AlibabaがQoder 1.0を発表——コード生成・検証・デリバリーを自律処理するエージェント開発環境に進化</description>
+    </item>
+    <item>
+      <title>グレップがRAGの常識を覆す・OpenDeepThinkが+405 Elo突破・MetaBackdoorでLLM安全性の盲点露呈</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-18</link>
+      <guid isPermaLink="false">aidd-day-2026-05-18</guid>
+      <pubDate>Sun, 17 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月18日のAIダイジェストは、エージェントシステムの実装知見が中心となった一日だった。Claude Code・Codex・Gemini CLIを含む複数のハーネスでグレップ検索がベクトル検索を上回ることが実証され（arXiv 2605.15184）、RAGアーキテクチャ設計の常識に再考を迫る結果となった。並列推論フレームワーク「OpenDeepThink」はBradley-Terry集計によりGemini 3.1 ProのCodeforces Eloを+405ポイント向上させたと報告。セキュリティ面では位置エンコーディングをバックドアのトリガーとして悪用する「MetaBackdoor」が公開され、既存のコンテンツフィルタリングが無効化される新たな脅威が明らかになった。マルチモーダル分野ではSenseNova-U1が理解と生成を統合したネイティブアーキテクチャで新境地を示し、日本ではClaude Code組織導入の実践ガードレール記事が注目を集めた。
+
+【今日の必読】
+・グレップだけで十分か？——コーディングエージェントの検索でgrepがベクトル検索を凌駕することが実証
+・OpenDeepThink——並列推論とBradley-Terry集計でGemini 3.1 ProのCodeforces Eloを+405ポイント改善
+・Claude Codeを組織に導入する際に最低限設定すべきガードレール5選
+・MetaBackdoor——位置エンコーディングをバックドアトリガーに悪用する新手法が既存防御を無効化
+・SenseNova-U1——視覚エンコーダとVAEを廃止した統合マルチモーダルモデルが GenEval 0.91 を達成
+・CLI-Anything——あらゆるCLIツールをエージェントが自律操作できる形に変換するフレームワーク</description>
+    </item>
+    <item>
+      <title>OpenAI が ChatGPT+Codex 統合し Brockman 製品戦略責任者就任・arXiv が AI 全執筆著者を 1 年間投稿禁止・Grep がエージェント検索でベクトル検索を凌駕と実証</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-17</link>
+      <guid isPermaLink="false">aidd-day-2026-05-17</guid>
+      <pubDate>Sat, 16 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月17日の AI ニュースまとめ。OpenAI が Greg Brockman を製品戦略責任者として正式任命し、ChatGPT と Codex を単一のエージェントプラットフォームに統合すると発表した。Google I/O 2026（5月19日開幕）の3日前というタイミングは競合を意識した重大な組織再編として業界の注目を集める。学術界では arXiv が「LLM に論文を全執筆させた証拠がある著者を1年間投稿禁止」とする方針を明確化し研究コミュニティ全体に影響が広がっている。エージェント研究では arXiv 論文「Is Grep All You Need?」が Claude Code・Codex・Gemini CLI など複数ハーネスで grep がベクトル検索より一般的に高精度であることを実証し、エージェント設計者の間で話題を呼んでいる。Darwin ファミリーが勾配更新ゼロで GPQA Diamond 88.89% を達成し「訓練量に比例して性能が上がる」という前提を覆す研究として高い注目を集めた。日本では「AIにできない仕事は Uber Eats の配達員のような仕事になるかもしれない」という論考がはてブ 245 件を獲得し、AI 代替議論の質的な転換を示した。中国では MiniCPM-V 4.6（1.3B）が RTX 4090 1枚で動作するマルチモーダルモデルとして登場し、エッジ AI の実用化が加速している。
+
+【今日の必読】
+・Grep で十分か？ エージェントハーネスが AI エージェントの検索戦略を左右すると実証
+・Darwin ファミリー：訓練ゼロで GPQA Diamond 88.89% 達成—勾配なしフロンティア推論の実証
+・arXiv が AI に全執筆させた著者を 1 年間投稿禁止に—幻覚した引用・LLM メタコメントが証拠
+・Simple and Unified Scaling だけでオリンピック数学金メダルレベルの推論を達成
+・AIにできない仕事は残るかもしれないが、それはUber Eatsの配達員みたいな仕事になるかも
+・OpenAI が ChatGPT と Codex を統合—Brockman が製品戦略責任者に正式就任し単一エージェントプラットフォームへ</description>
+    </item>
+    <item>
+      <title>ChatGPTが Plaid 経由で銀行口座連携の個人財務機能を公開・オリンピック数学金メダル水準の推論スケーリング論文・初の商用準線形 LLM SubQ が 12M コンテキスト実証、OpenAI が中国包摂のグローバル AI ガバナンスを支持・Notion がエージェント基地</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-16</link>
+      <guid isPermaLink="false">aidd-day-2026-05-16</guid>
+      <pubDate>Fri, 15 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月15〜16日にかけて複数の重要ニュースが集中した。最大の話題はOpenAIが公開した「ChatGPT Personal Finance」機能で、Plaid経由で12,000以上の金融機関と連携しプロユーザーの銀行口座・投資口座残高をリアルタイムで分析できる。消費者AIの新領域開拓として業界の注目を集めた。学術界ではHugging Face Daily Papersで125アップボートを獲得した「Simple and Unified Scalingでオリンピック金メダル水準の推論達成」論文が話題となり、スケーリングだけで数学オリンピックトップ水準に到達できることを実証した。アーキテクチャ革新としては、Subquadratic社が初の商用準線形（非Transformer）LLM「SubQ 1M-Preview」を12Mコンテキストで公開し、$29Mシード調達とともに注目を集めた。規制・政策面ではOpenAIが中国を含むIAEA型の国際AI安全ガバナンス枠組みを支持すると表明し、地政学的な意味を持つ。Notionはエージェント向けDeveloper Platform（Workers・External Agent API）を正式公開し、Claude Code・Cursor・Codex等が直接Notionで動作するエコシステムを実現した。国内ではZennの「Qwen3.6+LM Studioで無料Claude Code代替」記事が技術者コミュニティで広く拡散し、ローカルLLMの実用フェーズ到達を国内視点から確認した。中国ではBaidu文心5.1が業界比6%のコストでDeepSeek-V4-Proを超えるAgent能力を達成し、MiniCPM-V-4.6がHFトレンド1位を維持中。
+
+【今日の必読】
+・ChatGPT に個人財務機能を公開——Plaid 経由で 12,000 以上の金融機関と連携し支出・投資を AI が分析
+・「Simple and Unified Scaling」でオリンピック数学金メダル水準の推論を達成——追加学習なしのスケーリングが数学的推論の限界を突破
+・SubQ 1M-Preview 公開——史上初の商用準線形 LLM が 12M コンテキストを実証、$29M シード調達
+・OpenAI が中国を含む IAEA 型グローバル AI ガバナンス枠組みを支持——米中対立下で主要 AI 企業が多国間安全体制を公式表明
+・Notion が AI エージェント基地に変貌——Developer Platform 正式公開で Claude Code・Cursor・Codex が Notion を直接操作
+・無料でClaude Code？！ Qwen3.6とLM StudioでローカルLLMコーディング</description>
+    </item>
+    <item>
+      <title>Claude for Legal が法律テックを変革・Darwin 訓練ゼロで GPQA Diamond 88.89%・VS Code Agent Window 爆誕、Anthropic×PwC 大型展開・Claude Code「/goals」エバリュエータ分離</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-15</link>
+      <guid isPermaLink="false">aidd-day-2026-05-15</guid>
+      <pubDate>Thu, 14 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月15日は複数の大型発表が集中した。Anthropicは「Claude for Legal」を公開し12プラグイン・80以上の専門エージェント・20以上のMCPコネクターで法律業界に本格参入（GitHub 24時間でスター882件）。Claude Code「/goals」機能はエバリュエータ分離アーキテクチャでエージェントの早期終了バグを根本解消し、VentureBeatが「2026年最重要AI機能の一つ」と評した。学術界ではDarwinファミリーが勾配ゼロでGPQA Diamond 88.89%を達成し「訓練なし高性能化」仮説を実証。arXivはAI幻覚引用に1年間の投稿禁止を科す新ポリシーを導入（はてブ23件）。日本ではVS Code 1.120の「Agent Window」（はてブ122件）とClaude Code Meetup Japanのハーネスエンジニアリング解説（はてブ199件）が技術者コミュニティを席巻し、ステアリングループという設計パターンが日本のエージェント開発現場に定着しつつある。Anthropic×PwCは3万人認定・企業変革・M&amp;Aの三軸で大型展開を公表した。
+
+【今日の必読】
+・Latent Space分析：2026年エージェント設計の「Conductor（指揮者）モデル」が主流へ—GitHub CopilotとVS Codeが実証
+・Claude for Legal：Anthropic が法律事務所向けに 12 プラグイン・80 以上の AI エージェントを OSS 公開
+・VS Code 1.120 introduces dedicated AI &apos;Agent Window&apos; for autonomous task execution
+・Darwin ファミリー：勾配ゼロで GPQA Diamond 88.89% ——訓練なしでフロンティアモデル相当の推論性能を実証
+・Practical Harness Engineering: Understanding Steering Loops Through Real-World Examples
+・「迎合的合意」から「多元的修復」へ——AIアライメントが意見の多様性を表面化すべき理由（arXiv 2026-05-15）</description>
+    </item>
+    <item>
+      <title>Google が Android をエージェント基盤に変革、Anthropic が中小企業向け Claude を公開—Ramp データで企業採用が初めて OpenAI を逆転</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-14</link>
+      <guid isPermaLink="false">aidd-day-2026-05-14</guid>
+      <pubDate>Wed, 13 May 2026 20:00:00 GMT</pubDate>
+      <description>Google は Android Show 2026 で「Gemini Intelligence」を発表し、スマートフォンを能動的にタスクを代替実行するエージェント基盤へ刷新した。Anthropic は QuickBooks・Microsoft 365 など 7 ツールと連携する中小企業向け「Claude for Small Business」を公開。同日フィンテック Ramp の調査で Anthropic の企業採用率が初めて OpenAI を逆転（34.4% vs 32.3%）したことが判明。arXiv では KV キャッシュ効率化・エージェント長期記憶・継続学習など実装寄りの論文が多数公開され、日本では AI 生成コンテンツの質をめぐる議論が Zenn ではてブ 241 件を集めた。
+
+【今日の必読】
+・Google が「Gemini Intelligence」を発表—Android がタスク自律実行のエージェント基盤に変革
+・Anthropic が中小企業向け「Claude for Small Business」を公開—QuickBooks・Microsoft 365 など 7 ツール連携の 15 ワークフロー
+・Needle: Gemini のツール呼び出し能力を 26M モデルに蒸留—HN 623pt 獲得の注目オープンソース
+・Claude Code と Multi-Agent Design Patterns
+・Learning, Fast and Slow: パラメータ更新と文脈最適化の二重戦略で LLM 継続学習のサンプル効率 3 倍
+・初めて Anthropic が OpenAI を企業採用で逆転—Ramp 5 万社データで 34.4% vs 32.3%</description>
+    </item>
+    <item>
+      <title>Claude が法律・AWS で本格展開、単一ニューロンでアライメント突破の安全論文、HN 835pt「Python 不要論」が世界で論争</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-13</link>
+      <guid isPermaLink="false">aidd-day-2026-05-13</guid>
+      <pubDate>Tue, 12 May 2026 20:00:00 GMT</pubDate>
+      <description>Anthropic が Claude for Legal を正式ローンチし Thomson Reuters・Harvey・LexisNexis と連携してリーガルテック全域を刷新、AWS ネイティブ統合と Agent View ダッシュボードも同日公開した。安全性分野では単一ニューロン操作で LLM アライメントを突破できる論文と、Claude Mythos・GPT-5.5 が 32 段階企業ネットワーク侵害を完遂した報告が業界に衝撃を与え、英国 AI 安全機関は「攻撃能力が 4 ヶ月ごとに倍増」と警告した。日本では「とほほのWWW入門」への Claude 解説追加がはてブ 250 件、OCR×LLM 書籍デジタル化手法が 154 件の注目を集めた。OpenAI のエンタープライズ導入会社設立（400 億ドル規模）と DeepSeek の約 5,000 億円調達も注目された。
+
+【今日の必読】
+・Anthropic、「Claude for Legal」を正式ローンチ——Thomson Reuters・LexisNexis・Harvey 連携でリーガルテック全域を刷新
+・とほほのWWW入門にClaudeとClaude Codeの解説が追加
+・「AI がコードを書くなら、なぜ Python を使う?」——HN 835pt の言語選択論争が白熱
+・単一ニューロンの操作だけで LLM の安全アライメントを突破できる——安全研究の根本的見直しを迫る論文
+・Claude Mythos と GPT-5.5 が 32 段階の企業ネットワーク侵害シミュレーションを初突破——英国 AI 安全機関「攻撃能力が 4 ヶ月ごとに倍増」
+・Gemini のツール呼び出しを 26M パラメータに蒸留した「Needle」——スマホ・腕時計で 6,000 tok/s を実現
+・DeepSeek、約 5,000 億円を調達——中国 AI 史上最大の資金調達で次世代インフラ整備へ</description>
+    </item>
+    <item>
+      <title>OpenAI が 40 億ドル規模の企業 AI 展開専門会社を設立、Google 発 AutoTTS でテスト時推論コストを自動最適化、Chrome DevTools MCP でブラウザ AI 直接操作が日本に衝撃（はてブ 467 件）</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-12</link>
+      <guid isPermaLink="false">aidd-day-2026-05-12</guid>
+      <pubDate>Mon, 11 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月12日のAI界隈は「企業AI実装の本格化」と「学術技術の実用化」が同時進行した。OpenAIはTPG・Bain・McKinseyなど19社を巻き込んだ40億ドル超の展開専門会社を設立し、Tomoro社（150名の実装エンジニア）を買収してDay 1から現場投入体制を整えた。学術面ではGoogleがLLM自身に推論最適化戦略を自動発見させる「AutoTTS」を発表し、上海交通大学のマルチエージェント研究フレームワーク「ARIS」がGitHub 8,800スターで公開された。日本コミュニティでは「Chrome DevTools MCPでAIがChromeを直接操作できるようになった」という記事がはてブ467件の大反響を呼んだ。中国からはバイドゥの文心5.1がArena世界4位・国内1位かつ事前学習コスト業界比6%という効率性で注目された。
+
+【今日の必読】
+・「AIがChromeを直接操作できるようになった」Chrome DevTools MCPについてまとめ
+・LLM が LLM を改善する：テスト時スケーリング戦略を自動発見する AutoTTS――Google が推論コスト最適化
+・UniPrefill：ブロック単位動的スパース化による汎用長文脈 Prefill 高速化――vLLM に直接統合可能
+・ARIS：敵対的マルチエージェント協調による自律研究システム――オープンソースで GitHub 8,800 スター獲得
+・OpenAI、企業 AI 展開の専門会社「OpenAI Deployment Company」設立――$40 億超・19 社パートナー・Tomoro 買収
+・Mean Mode Screaming：平均・分散分離残差で 1000 層拡散 Transformer を安定訓練する新手法</description>
+    </item>
+    <item>
+      <title>OpenAI が GPT-5 クラス音声推論モデル 3 本を API 公開、DeepMind AlphaEvolve が多分野で実測インパクト確認、Anthropic 評価額 1 兆ドル超で年率 10 倍成長を記録</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-11</link>
+      <guid isPermaLink="false">aidd-day-2026-05-11</guid>
+      <pubDate>Sun, 10 May 2026 20:00:00 GMT</pubDate>
+      <description>OpenAIは音声AIの新時代を切り開くGPT-Realtime-2・GPT-Realtime-Translate・GPT-Realtime-Whisperの3モデルをAPIで公開。GPT-5クラスの音声推論と70言語リアルタイム翻訳が商用水準で利用可能になった。DeepMindはAlphaEvolveが量子回路設計・データセンター最適化など多分野で実測インパクトを達成したと公表し、AIエージェントの科学応用が加速していることを示した。Anthropicは評価額1〜1.2兆ドルに達し月間ARR15億ドル増という驚異的成長が報告され、AI業界の経済集中が鮮明に。日本では「ローカルLLMの進化がすごい話」がはてブ455件を集め、国内技術コミュニティのローカルAI実用化への高い関心を示した。
+
+【今日の必読】
+・Claude Codeでドキュメント自動HTML化
+・OpenAI、GPT-Realtime-2 / Translate / Whisper の 3 音声モデルを API 公開 — GPT-5 クラス推論が音声エージェントに到達
+・AI Co-Mathematician — DeepMind 共著の数学研究支援エージェントが FrontierMath Tier-4 で 48% 達成
+・AlphaEvolve が量子回路・データセンター最適化など多分野で実測インパクトを公表 — Gemini 搭載コーディングエージェントの科学応用
+・Anthropic が年率 10 倍・評価額 1 兆ドル超に到達 — 他社が 10% 超のレイオフをする中で 80 倍成長を記録
+・LLM グローバルリーダーボードはなぜ誤解を招くか — 89K 比較の分析で「決定票の 2/3 がキャンセルアウト」を実証
+・ローカルLLMの進化がすごい話</description>
+    </item>
+    <item>
+      <title>Google I/O 2026 で Gemini 4・Veo 4・Deep Research Max が登場、Meta LlamaCon で Llama 4（405B マルチモーダル）と累計 10 億ダウンロード達成・安全ツール 3 種を公開、AI 支援型攻撃の実例が急増し「AI</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-10</link>
+      <guid isPermaLink="false">aidd-day-2026-05-10</guid>
+      <pubDate>Sat, 09 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月10日は Google I/O 2026 と Meta LlamaCon という 2 つの大型開発者イベントがほぼ同時期に展開され、フロンティアモデルの能力競争とオープンソース AI の普及の両面で大きな進展があった一日だった。Google は I/O 2026 で次世代フラッグシップ Gemini 4（ネイティブマルチモーダル）と動画生成モデル Veo 4、自律研究エージェント Deep Research Max、Gmail・Chat・Calendar・Drive をリアルタイムで統合する Workspace Intelligence を発表し、AI アシスタントから自律エージェントへのシフトを大規模に推進した。Meta は LlamaCon 2026 で Llama ファミリーの累計ダウンロード 10 億件突破を発表すると同時に、405B パラメータのネイティブマルチモーダル Llama 4 全ラインアップと Llama Guard 4・LlamaFirewall・Llama Prompt Guard 2 の安全ツール 3 種を公開し、オープン AI の企業利用を本格支援する体制を整えた。ツール面では Hugging Face Transformers v5 が DeepSeek-V4・Gemma 4 をサポートし、OpenAI は Excel・Google Sheets を直接操作する Workspace Agents とリアルタイム音声 API 3 種を追加した。同時にセキュリティ分野では「2026 年が AI 支援型攻撃の年」という認識が確立しつつあり、10 代による ChatGPT を使った楽天モバイル侵害や Claude Code を使った 17 組織への脅迫など実例が相次いで報告された。前日の Project Glasswing・GPT-5.5-Cyber と合わせ、AI の防攻両面での高度化が同時進行する現実が明確に可視化された。日本では AI が東大理Ⅲ入試で首席合格相当のスコアを達成したことが日本経済新聞で報道され、医学 AI・教育 AI の社会的議論が加速した。</description>
+    </item>
+    <item>
+      <title>Anthropic が Project Glasswing で Claude Mythos（CyberGym 83.1%）を AWS・Apple・Google ら 12 社連合に開放し基幹 OSS 防御へ、AlphaEvolve が量子回路エラー 10 倍削減など多分野の実測イン</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-09</link>
+      <guid isPermaLink="false">aidd-day-2026-05-09</guid>
+      <pubDate>Fri, 08 May 2026 20:00:00 GMT</pubDate>
+      <description>2026年5月9日は AI のサイバーセキュリティ応用と実世界への科学的インパクトが同時に前進した一日だった。最大のニュースは Anthropic の Project Glasswing で、未公開フロンティアモデル Claude Mythos Preview が CyberGym（脆弱性再現ベンチマーク）で 83.1%（Opus 4.6: 66.6%）を記録し、主要 OS・ブラウザから数千件のゼロデイ脆弱性を発見済みという実績のもと、AWS・Apple・Google・Microsoft・NVIDIA ら 12 社が 1 億ドルのモデルクレジットを拠出して防御側への先行公開を開始した。攻撃者より先に防御者が Mythos 級能力を保有するという新しい AI セキュリティパラダイムが始動した。Google DeepMind の AlphaEvolve は量子回路エラー 10 倍削減・自然災害予測 5% 改善・Klarna でのモデル学習 2 倍高速化など、アルゴリズム設計 AI の実世界インパクトを多分野にわたって公開した。OpenAI は GPT-5.5-Cyber を承認済みサイバー防衛チームへ限定展開し、PoC 作成やマルウェア解析などのセキュリティ専門ワークフローを解放した。日本語コミュニティでは GW 期間中の Claude Code 実践が大きな反響を集め、梶谷健人氏による学習ガイド（はてブ 1,003）が過去最多水準の反響を獲得した一方、「AI は速度を前払いし失敗を後払いにする」論考が PR レビュー時間 +441%・本番インシデント +242.7% という組織レベルの具体的データでバイブコーディング時代の品質問題を可視化した。</description>
+    </item>
+  </channel>
+</rss>

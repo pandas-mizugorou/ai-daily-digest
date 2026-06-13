@@ -2,7 +2,8 @@
 // v28: コンテンツ品質ガード (Track 2) — 未検証主張に ⚠ マーカー (app.js renderCard)
 // v29: ビジュアル上質化 Batch1 — stat-chip / カテゴリ点色 / 図解バー成長fade+delta矢印 / kwクラウド4段量子化 / 可読幅measure
 // v30: ビジュアル上質化 Batch2 — 発行元favicon / source_typeチップ / 今日の構成ミニ棒 / 入場スタッガーfade / dark面エレベーション / Top Picks箱→線
-const VERSION = "v30";
+// v31: 既読/ブックマーク (readstate.js) / 記事ディープリンク / RSS フィードリンク / 保存ビュー
+const VERSION = "v31";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -15,6 +16,7 @@ const STATIC_ASSETS = [
   "./assets/figure.js",
   "./assets/xdraft.js",
   "./assets/provenance.js",
+  "./assets/readstate.js",
   "./assets/styles.css",
   "./assets/favicon.svg",
   "./assets/icons/icon-192.png",
