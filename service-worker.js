@@ -3,7 +3,8 @@
 // v29: ビジュアル上質化 Batch1 — stat-chip / カテゴリ点色 / 図解バー成長fade+delta矢印 / kwクラウド4段量子化 / 可読幅measure
 // v30: ビジュアル上質化 Batch2 — 発行元favicon / source_typeチップ / 今日の構成ミニ棒 / 入場スタッガーfade / dark面エレベーション / Top Picks箱→線
 // v31: 既読/ブックマーク (readstate.js) / 記事ディープリンク / RSS フィードリンク / 保存ビュー
-const VERSION = "v31";
+// v32: トレンド・品質ダッシュボード (/trends/ + data/stats.json)
+const VERSION = "v32";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -31,6 +32,10 @@ const STATIC_ASSETS = [
   "./search/",
   "./search/index.html",
   "./search/app-search.js",
+  // Trends page (Phase 2-5)
+  "./trends/",
+  "./trends/index.html",
+  "./trends/app-trends.js",
 ];
 
 self.addEventListener("install", (event) => {
@@ -58,8 +63,8 @@ self.addEventListener("activate", (event) => {
 });
 
 function isLatestOrIndex(url) {
-  // search-index.json は毎日更新されるので latest/index と同じ network-first
-  return /\/data\/(latest|index|search-index)\.json(\?|$)/.test(url);
+  // search-index.json / stats.json は毎日更新されるので latest/index と同じ network-first
+  return /\/data\/(latest|index|search-index|stats)\.json(\?|$)/.test(url);
 }
 function isDayJson(url) {
   return /\/data\/\d{4}-\d{2}-\d{2}\.json(\?|$)/.test(url);
@@ -71,7 +76,7 @@ function isWeeklyJson(url) {
   return /\/data\/weekly-\d{4}-W\d{2}\.json(\?|$)/.test(url);
 }
 function isStaticAsset(url) {
-  return /\/(index\.html|offline\.html|manifest\.webmanifest|assets\/.+|weekly\/(index\.html|app-weekly\.js)|search\/(index\.html|app-search\.js))$/.test(url) || url.endsWith("/") || url.endsWith("/weekly/") || url.endsWith("/search/");
+  return /\/(index\.html|offline\.html|manifest\.webmanifest|assets\/.+|weekly\/(index\.html|app-weekly\.js)|search\/(index\.html|app-search\.js)|trends\/(index\.html|app-trends\.js))$/.test(url) || url.endsWith("/") || url.endsWith("/weekly/") || url.endsWith("/search/") || url.endsWith("/trends/");
 }
 
 self.addEventListener("fetch", (event) => {

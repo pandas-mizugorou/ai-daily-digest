@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+  <meta name="description" content="AI Daily Digest のトレンドと品質ダッシュボード。収集ファネル・カテゴリ充足率・図解品質・急上昇キーワード・ソース健全性を可視化" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI Trends" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+
+  <title>トレンド・品質 ・ AI Daily Digest</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <h1 class="site-title">
+        <span class="site-title-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M7 16l4-5 3 3 5-7"/></svg>
+        </span>
+        <span class="site-title-text site-title-full">AI Trends &amp; Quality</span>
+        <span class="site-title-text site-title-short" aria-hidden="true">AI Trends</span>
+      </h1>
+      <div class="header-actions">
+        <a class="icon-button" href="../" aria-label="日次ページに戻る">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </a>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="テーマ切替">
+          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container trends-main" tabindex="-1">
+    <section id="status" class="status" aria-live="polite">
+      <p class="status-message">読み込み中…</p>
+    </section>
+    <p id="trends-meta" class="trends-meta hidden"></p>
+    <div id="trends-root" class="trends-root"></div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>蓄積データから自動集計（<code>scripts/build-stats.mjs</code>） ・ <a href="../">日次に戻る</a></p>
+  </footer>
+
+  <script src="./app-trends.js" type="module"></script>
+</body>
+</html>
