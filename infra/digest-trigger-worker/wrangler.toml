@@ -14,14 +14,10 @@ compatibility_date = "2025-01-01"
 # 18:30 UTC = 03:30 JST に発火。digest 生成は実測 20〜30 分なので 5:00 JST まで
 # 十分な余裕がある。配信時刻を変えたい場合はこの UTC cron を編集して再デプロイ。
 #
-# 【2026-06-13 一時停止】6/15 のサブスク課金変更 (Agent SDK / Claude Code GitHub
-# Actions が別枠クレジット化) への様子見のため、本体 daily-digest.yml を手動無効化
-# 中。dispatch 先が無効ワークフローだと Worker の scheduled() が毎日エラーログを
-# 残すだけなので、cron を空にして無駄打ちを止める。自動配信を再開するときは下行の
-# コメントを外して `wrangler deploy` で戻すこと。
+# 【2026-06-13 再開】6/15 課金変更が延期されたため自動配信を再開。本体 daily-digest.yml
+# と watchdog を再有効化し、本 Worker の cron も復元した。
 [triggers]
-crons = []
-# crons = ["30 18 * * *"]   # ← 自動配信を再開するときはこちらに戻す
+crons = ["30 18 * * *"]
 
 # 観測性: 起動ログを Workers Logs(無料枠あり) で見られるようにする。
 [observability]

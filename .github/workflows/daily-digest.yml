@@ -123,6 +123,15 @@ jobs:
           echo "done=$DONE" >> "$GITHUB_OUTPUT"
           echo "guard: already_done=$DONE (event=${{ github.event_name }}, force=$FORCE, target_input='$TARGET_INPUT', date=${{ steps.date.outputs.value }})"
 
+      # === 決定論収集 (Claude 実行前。RSS/API 約40ソースを Node で取得し候補プール化) ===
+      # data/_collected/<date>.json を生成。Claude はこれを読み、collect.mjs が取れない
+      # 公式ブログ等だけ WebFetch で補完するため、収集の WebFetch 回数とターン数が減る。
+      # 失敗しても continue-on-error で従来の全 WebFetch にフォールバックする (非破壊)。
+      - name: Collect candidate pool (deterministic)
+        if: steps.guard.outputs.done != 'true'
+        continue-on-error: true
+        run: node scripts/collect.mjs --date "${{ steps.date.outputs.value }}"
+
       - name: Run /ai-daily-digest skill via Claude Code
         if: steps.guard.outputs.done != 'true'
         uses: anthropics/claude-code-action@v1
@@ -143,7 +152,16 @@ jobs:
 
             ## タスク (日次)
             1. SKILL.md の Step 1〜9 を実行 (Step 10 の git commit/push は後続ジョブで行うので**スキップ**)
-            2. WebFetch / WebSearch で **バッチ 1-7 (合計 60-80 ソース) を並列取得**。`references/sources.md` 参照
+            2. **収集 (主経路 + 補完)**:
+               - **主経路**: まず `data/_collected/${{ steps.date.outputs.value }}.json` を Read する。直前ステップで
+                 `scripts/collect.mjs` が RSS/API 約40ソースを取得・正規化・時間窓フィルタ・URL正規化重複排除
+                 して生成済みの候補プール (中間スキーマ済み・実測280件前後)。**これを Step 3 以降の起点とする**。
+                 ファイルが無い / `items` が空の場合のみ、下記バッチ全てを WebFetch で取得する (フォールバック)。
+               - **補完**: collect.mjs が取れない以下を WebFetch / WebSearch で取得して items にマージ:
+                 公式ブログ (Anthropic / OpenAI=WebSearch / DeepMind / Meta / Microsoft / Mistral / xAI / Nvidia / Cohere) /
+                 GitHub Trending / HF Trending / Papers with Code / OpenReview / 36Kr・機器之心中文 / The Information・X (WebSearch) / CyberAgent・Sakana AI。
+                 補完分は source_type と time_window_hours を付与し、collect.mjs の items と合わせて重複排除する。
+               - 以下は collect.mjs 不在時のフォールバック用のバッチ全量 (`references/sources.md` 参照):
                - バッチ 1: 公式ブログ 10 (Anthropic / OpenAI / DeepMind / Meta / Microsoft / Mistral / xAI / Nvidia / HF Blog / Cohere)
                - バッチ 2: アグリゲータ (HN Algolia 5 / arXiv / HF Trending / GitHub Trending)
                - バッチ 3-A: 日本企業テックブログ 8
