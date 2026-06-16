@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 16 Jun 2026 12:34:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 18:52:57 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicとホワイトハウスがFable 5規制で継続対立——SpaceXがCursorを600億ドルで買収、OpenAI内部財務文書流出で赤字継続が判明、SoftBankとOpenAIが国内インフラ向けセキュリティサービス発表</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-17</link>
+      <guid isPermaLink="false">aidd-day-2026-06-17</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月17日、AI業界を揺るがす最大の焦点はAnthropicと米政府の対立継続だ。6月12日の輸出規制命令でFable 5・Mythos 5へのアクセスを制限したAnthropicだが、幹部がワシントンDCへ飛んでホワイトハウス高官と会談した後も、Wiredによれば両者の見解の隔たりは埋まっていない。同モデルの高度なサイバー能力が国家安全保障上のリスクになり得るかが争点とされる。業界再編ではSpaceX（上場2日後）がAIコーディングツールCursorを600億ドルの全株式交換で買収すると発表し、Elon MuskのAI版三国志構想が具体化した。一方Ars TechnicaがスクープしたOpenAI内部財務文書によると、2024年収益37億ドルは2025年に130億ドルへ急成長するも支出が上回り赤字継続中。ChatGPTの世界月次ユーザーは11億人超ながら初めて市場シェアが50%を切った。日本では孫正義氏率いるソフトバンクがOpenAI「GPT-5.5 Cyber」を使って自社システムで脆弱性1万件を発見したと公表、国内重要インフラ企業へ「Patching as a Service」として優先提供する方針を示した。
+
+【今日の必読】
+・AnthropicとホワイトハウスはClaude Fable 5を巡る対立が継続——高官会談後も見解の隔たり埋まらず
+・SpaceXが600億ドルの全株式交換でAIコーディングプラットフォームCursorを買収へ——上場2日後にMuskのAI版三国志が加速
+・流出財務文書でOpenAIの実態が判明——2024年37億ドルから2025年130億ドルへ急成長も支出超過で赤字継続、ChatGPT月次ユーザーが11億人超に
+・Claude Fable 5 技術解説——Mythosクラスの能力を安全策付きで一般公開、FrontierCode Diamondで29.3%と論争的条件でも実力を示す
+・Sebastian Raschkaが2026年1〜5月のLLM論文精選リストを公開——168時間以内投稿・技術革新ハイライト付きの必読キャッチアップ
+・OpenAI、SoftBankと「Patching as a Service」——GPT-5.5 Cyberで1万件の脆弱性を発見、孫正義「大変な危機」</description>
+    </item>
     <item>
       <title>米政府がAnthropicの最強モデルFable 5/Mythosを輸出規制で停止——中国はGLM-5.2・Kimi K2.7を相次ぎOSS公開で対抗、SpaceXはCursorを600億ドルで買収、AppleはFoundation ModelsをOSS化しClaude/Gemi</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16</link>
@@ -443,13 +458,6 @@
 ・Anthropic が年率 10 倍・評価額 1 兆ドル超に到達 — 他社が 10% 超のレイオフをする中で 80 倍成長を記録
 ・LLM グローバルリーダーボードはなぜ誤解を招くか — 89K 比較の分析で「決定票の 2/3 がキャンセルアウト」を実証
 ・ローカルLLMの進化がすごい話</description>
-    </item>
-    <item>
-      <title>Google I/O 2026 で Gemini 4・Veo 4・Deep Research Max が登場、Meta LlamaCon で Llama 4（405B マルチモーダル）と累計 10 億ダウンロード達成・安全ツール 3 種を公開、AI 支援型攻撃の実例が急増し「AI</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-10</link>
-      <guid isPermaLink="false">aidd-day-2026-05-10</guid>
-      <pubDate>Sat, 09 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月10日は Google I/O 2026 と Meta LlamaCon という 2 つの大型開発者イベントがほぼ同時期に展開され、フロンティアモデルの能力競争とオープンソース AI の普及の両面で大きな進展があった一日だった。Google は I/O 2026 で次世代フラッグシップ Gemini 4（ネイティブマルチモーダル）と動画生成モデル Veo 4、自律研究エージェント Deep Research Max、Gmail・Chat・Calendar・Drive をリアルタイムで統合する Workspace Intelligence を発表し、AI アシスタントから自律エージェントへのシフトを大規模に推進した。Meta は LlamaCon 2026 で Llama ファミリーの累計ダウンロード 10 億件突破を発表すると同時に、405B パラメータのネイティブマルチモーダル Llama 4 全ラインアップと Llama Guard 4・LlamaFirewall・Llama Prompt Guard 2 の安全ツール 3 種を公開し、オープン AI の企業利用を本格支援する体制を整えた。ツール面では Hugging Face Transformers v5 が DeepSeek-V4・Gemma 4 をサポートし、OpenAI は Excel・Google Sheets を直接操作する Workspace Agents とリアルタイム音声 API 3 種を追加した。同時にセキュリティ分野では「2026 年が AI 支援型攻撃の年」という認識が確立しつつあり、10 代による ChatGPT を使った楽天モバイル侵害や Claude Code を使った 17 組織への脅迫など実例が相次いで報告された。前日の Project Glasswing・GPT-5.5-Cyber と合わせ、AI の防攻両面での高度化が同時進行する現実が明確に可視化された。日本では AI が東大理Ⅲ入試で首席合格相当のスコアを達成したことが日本経済新聞で報道され、医学 AI・教育 AI の社会的議論が加速した。</description>
     </item>
   </channel>
 </rss>

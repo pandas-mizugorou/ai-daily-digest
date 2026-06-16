@@ -5,16 +5,46 @@
   "headline": "AnthropicとホワイトハウスがFable 5規制で継続対立——SpaceXがCursorを600億ドルで買収、OpenAI内部財務文書流出で赤字継続が判明、SoftBankとOpenAIが国内インフラ向けセキュリティサービス発表",
   "summary_ja": "2026年6月17日、AI業界を揺るがす最大の焦点はAnthropicと米政府の対立継続だ。6月12日の輸出規制命令でFable 5・Mythos 5へのアクセスを制限したAnthropicだが、幹部がワシントンDCへ飛んでホワイトハウス高官と会談した後も、Wiredによれば両者の見解の隔たりは埋まっていない。同モデルの高度なサイバー能力が国家安全保障上のリスクになり得るかが争点とされる。業界再編ではSpaceX（上場2日後）がAIコーディングツールCursorを600億ドルの全株式交換で買収すると発表し、Elon MuskのAI版三国志構想が具体化した。一方Ars TechnicaがスクープしたOpenAI内部財務文書によると、2024年収益37億ドルは2025年に130億ドルへ急成長するも支出が上回り赤字継続中。ChatGPTの世界月次ユーザーは11億人超ながら初めて市場シェアが50%を切った。日本では孫正義氏率いるソフトバンクがOpenAI「GPT-5.5 Cyber」を使って自社システムで脆弱性1万件を発見したと公表、国内重要インフラ企業へ「Patching as a Service」として優先提供する方針を示した。",
   "skipped_sources": [
-    {"source": "import_ai", "reason": "feed fetch failed: HTTP 403"},
-    {"source": "chinai", "reason": "feed fetch failed: HTTP 403"},
-    {"source": "mercari", "reason": "feed fetch failed: HTTP 403"},
-    {"source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429"},
-    {"source": "reddit_singularity", "reason": "reddit RSS failed: HTTP 429"},
-    {"source": "reddit_claudeai", "reason": "reddit RSS failed: HTTP 429"},
-    {"source": "reddit_openai", "reason": "reddit RSS failed: HTTP 429"},
-    {"source": "semscholar:large language model", "reason": "Semantic Scholar failed: HTTP 429"},
-    {"source": "semscholar:AI agent", "reason": "Semantic Scholar failed: HTTP 429"},
-    {"source": "semscholar:retrieval augmented generation", "reason": "Semantic Scholar failed: HTTP 429"}
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_claudeai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_openai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:large language model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:AI agent",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:retrieval augmented generation",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    }
   ],
   "stats": {
     "total_collected": 297,
@@ -83,7 +113,13 @@
           "category": "regulation_policy",
           "published_at": "2026-06-16",
           "lang": "en",
-          "tags": ["anthropic", "fable-5", "white-house", "export-control", "regulation"],
+          "tags": [
+            "anthropic",
+            "fable-5",
+            "white-house",
+            "export-control",
+            "regulation"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -102,7 +138,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "AnthropicとホワイトハウスのFable 5を巡る対立の経緯。2026年6月9日にFable 5・Mythos 5が公開され、同12日に輸出規制命令が発出。Anthropicが90分以内にアクセス制限を実装した後、幹部がワシントンDCへ出向いて高官と会談。だが6月16日時点でも両者の見解の隔たりは埋まっていない。",
             "data": {
               "headline": "Anthropic vs ホワイトハウス——Fable 5規制の攻防",
               "events": [
@@ -130,7 +165,8 @@
               ],
               "narrative": "WIREDの報道によれば、Anthropicはモデルが提示するリスクレベルに異議を唱えており、この基準が今後のフロンティアモデル展開全般に影響する先例となることを懸念している。",
               "impact": "政府とAI企業の間でリスク評価の枠組みが定まらない中、フロンティアモデルの公開可否が政府裁量に左右される前例が積み重なっている。"
-            }
+            },
+            "alt": "AnthropicとホワイトハウスのFable 5を巡る対立の経緯。2026年6月9日にFable 5・Mythos 5が公開され、同12日に輸出規制命令が発出。Anthropicが90分以内にアクセス制限を実装した後、幹部がワシントンDCへ出向いて高官と会談。だが6月16日時点でも両者の見解の隔たりは埋まっていない。"
           },
           "x_post": "AnthropicとホワイトハウスはFable 5の安全性評価で依然として隔たりがある。6月12日の輸出規制命令後、Anthropic幹部はワシントンDCに飛んで協議したが、合意に至っていない。「今後の全フロンティアモデル展開が政府裁量に左右される」という前例の重さを感じる。\n\nhttps://wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5"
         }
@@ -152,7 +188,13 @@
           "category": "new_models",
           "published_at": "2026-06-10",
           "lang": "en",
-          "tags": ["anthropic", "fable-5", "mythos", "benchmark", "frontier-model"],
+          "tags": [
+            "anthropic",
+            "fable-5",
+            "mythos",
+            "benchmark",
+            "frontier-model"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -171,10 +213,13 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "Claude Fable 5のFrontierCode Diamondベンチマーク比較。前世代スコア13.4%に対し、Fable 5は29.3%を達成。バー幅は最大を100として正規化。",
             "data": {
-              "before": {"label": "前世代 Opus 4.8"},
-              "after": {"label": "Claude Fable 5"},
+              "before": {
+                "label": "前世代 Opus 4.8"
+              },
+              "after": {
+                "label": "Claude Fable 5"
+              },
               "metrics": [
                 {
                   "label": "FrontierCode Diamond スコア",
@@ -187,7 +232,8 @@
               ],
               "narrative": "FrontierCode Diamondは新設の高難度コーディングベンチマーク。Latent Spaceによれば同スコアの解釈にはアスタリスク付きの前提条件があるとされ、条件下での能力評価であることに留意が必要。",
               "impact": "Mythosクラスの能力を一般公開するという技術的挑戦を達成した一方、公開から3日で輸出規制による停止という前例のない事態を招いた。"
-            }
+            },
+            "alt": "Claude Fable 5のFrontierCode Diamondベンチマーク比較。前世代スコア13.4%に対し、Fable 5は29.3%を達成。バー幅は最大を100として正規化。"
           },
           "x_post": "AnthropicのFable 5は、Mythosクラスモデルを安全対策付きで一般公開したもの。新設FrontierCode Diamondベンチマークで13.4%→29.3%と大幅スコアアップを示した。論争的な利用条件を含む点は批判されるが、技術的達成は本物だとLatent Spaceは評する。\n\nhttps://latent.space/p/ainews-anthropic-claude-fable-5-mythos"
         },
@@ -202,7 +248,13 @@
           "category": "new_models",
           "published_at": "2026-06-16",
           "lang": "zh",
-          "tags": ["alibaba", "qwen-robot", "embodied-ai", "china", "robotics"],
+          "tags": [
+            "alibaba",
+            "qwen-robot",
+            "embodied-ai",
+            "china",
+            "robotics"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -221,15 +273,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Alibaba Qwen-Robotシリーズの概要。初の具身AIモデル3本を同時公開。歩行・視覚認識・推論の統合設計。物理世界対応LLMへの中国勢の本格参入。",
             "data": {
               "headline": "Alibaba 初の具身AI「Qwen-Robot」シリーズ",
+              "tldr": "",
               "points": [
-                {"icon": "🤖", "description": "Qwen-Robotシリーズとして初の具身AIモデル3本を同時公開（操作・移動・世界モデル）"},
-                {"icon": "👁", "description": "「辺走辺看辺思考」——歩行・視覚認識・推論をリアルタイム統合する設計"},
-                {"icon": "🌏", "description": "中国勢が物理世界対応LLMをオープンモデルとして公開する流れが加速"}
+                {
+                  "icon": "🤖",
+                  "label": "",
+                  "value": "Qwen-Robotシリーズとして初の具身AIモデル3本を同時公開（操作・移動・世界モデル）",
+                  "description": ""
+                },
+                {
+                  "icon": "👁",
+                  "label": "",
+                  "value": "「辺走辺看辺思考」——歩行・視覚認識・推論をリアルタイム統合する設計",
+                  "description": ""
+                },
+                {
+                  "icon": "🌏",
+                  "label": "",
+                  "value": "中国勢が物理世界対応LLMをオープンモデルとして公開する流れが加速",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "Alibaba Qwen-Robotシリーズの概要。初の具身AIモデル3本を同時公開。歩行・視覚認識・推論の統合設計。物理世界対応LLMへの中国勢の本格参入。"
           }
         }
       ]
@@ -250,7 +318,13 @@
           "category": "tools_apps",
           "published_at": "2026-06-16",
           "lang": "en",
-          "tags": ["meta", "facebook", "ai-search", "social-media", "ai-mode"],
+          "tags": [
+            "meta",
+            "facebook",
+            "ai-search",
+            "social-media",
+            "ai-mode"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -269,15 +343,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Facebook AI Mode検索の概要。公開投稿を情報源にAI生成回答を提供。既存の検索モードと並列追加。フォトプリセット等の新AI機能も同時提供。",
             "data": {
               "headline": "Facebook「AI Mode」検索——公開投稿からAI回答を生成",
+              "tldr": "",
               "points": [
-                {"icon": "🔍", "description": "Facebook検索に「AI Mode」が追加——ユーザーの公開投稿を情報源にAI生成回答を提供"},
-                {"icon": "📸", "description": "スポーツユニフォームを別チームに替えるフォトプリセットなど複数の新AI機能を同時展開"},
-                {"icon": "⚠️", "description": "公開投稿がAI回答の学習・参照に使われることへのプライバシー議論は必至"}
+                {
+                  "icon": "🔍",
+                  "label": "",
+                  "value": "Facebook検索に「AI Mode」が追加——ユーザーの公開投稿を情報源にAI生成回答を提供",
+                  "description": ""
+                },
+                {
+                  "icon": "📸",
+                  "label": "",
+                  "value": "スポーツユニフォームを別チームに替えるフォトプリセットなど複数の新AI機能を同時展開",
+                  "description": ""
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "",
+                  "value": "公開投稿がAI回答の学習・参照に使われることへのプライバシー議論は必至",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "Facebook AI Mode検索の概要。公開投稿を情報源にAI生成回答を提供。既存の検索モードと並列追加。フォトプリセット等の新AI機能も同時提供。"
           }
         },
         {
@@ -291,7 +381,13 @@
           "category": "tools_apps",
           "published_at": "2026-06-16",
           "lang": "en",
-          "tags": ["microsoft", "copilot", "security", "prompt-injection", "vulnerability"],
+          "tags": [
+            "microsoft",
+            "copilot",
+            "security",
+            "prompt-injection",
+            "vulnerability"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -310,7 +406,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "M365 Copilot脆弱性の経緯。研究者が発見・Microsoftに報告後、先週火曜日にパッチ適用。月曜日に研究者がPoCを公開し、プロンプトインジェクションで2FAコードや機密メールを窃取できることを実証した。",
             "data": {
               "headline": "M365 Copilot最高評価脆弱性——プロンプトインジェクションで2FA窃取",
               "events": [
@@ -338,7 +433,8 @@
               ],
               "narrative": "LLMはユーザー指示とサードパーティコンテンツに埋め込まれた悪意ある指示を区別できないという根本問題が背景にある。MicrosoftほかのLLMプロバイダーも同様の問題を未解決のまま抱えている。",
               "impact": "AIアシスタントをビジネス環境に展開する際のセキュリティリスクが明確化。プロンプトインジェクション対策は単一ベンダーでは解決できない業界横断的な課題として認識される。"
-            }
+            },
+            "alt": "M365 Copilot脆弱性の経緯。研究者が発見・Microsoftに報告後、先週火曜日にパッチ適用。月曜日に研究者がPoCを公開し、プロンプトインジェクションで2FAコードや機密メールを窃取できることを実証した。"
           }
         },
         {
@@ -352,7 +448,13 @@
           "category": "tools_apps",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["openrouter", "api", "llm-routing", "cost-optimization", "multi-model"],
+          "tags": [
+            "openrouter",
+            "api",
+            "llm-routing",
+            "cost-optimization",
+            "multi-model"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -362,7 +464,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hn", "points": 211},
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 211
+          },
           "summary_ja": "OpenRouterが「Fusion API」を公開した。複数のLLMを動的にルーティング・組み合わせることでコストと品質を最適化する新しいAPIで、Hacker Newsで211ポイントを獲得し開発者コミュニティの関心を集めている。単一モデルに縛られずタスクに応じたモデル選択を自動化するインフラレイヤーとして注目される。",
           "key_points_ja": [
             "OpenRouterがFusion APIを公開——複数LLMをタスクに応じて動的にルーティング・組み合わせる新API。",
@@ -371,15 +476,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenRouter Fusion APIの概要。複数LLMをタスクに応じて動的ルーティングし、コストと品質を自動最適化。HN 211pt獲得で開発者から注目。",
             "data": {
               "headline": "OpenRouter Fusion API——マルチモデル動的ルーティング",
+              "tldr": "",
               "points": [
-                {"icon": "🔀", "description": "複数のLLMをタスクに応じて動的に組み合わせ、コストと品質を自動最適化するFusion APIを公開"},
-                {"icon": "💡", "description": "HN 211ptを獲得、開発者コミュニティでのマルチモデル活用ニーズを反映"},
-                {"icon": "🛠", "description": "単一モデル依存から脱却するインフラレイヤーとして、LLMアプリ開発の柔軟性を高める"}
+                {
+                  "icon": "🔀",
+                  "label": "",
+                  "value": "複数のLLMをタスクに応じて動的に組み合わせ、コストと品質を自動最適化するFusion APIを公開",
+                  "description": ""
+                },
+                {
+                  "icon": "💡",
+                  "label": "",
+                  "value": "HN 211ptを獲得、開発者コミュニティでのマルチモデル活用ニーズを反映",
+                  "description": ""
+                },
+                {
+                  "icon": "🛠",
+                  "label": "",
+                  "value": "単一モデル依存から脱却するインフラレイヤーとして、LLMアプリ開発の柔軟性を高める",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "OpenRouter Fusion APIの概要。複数LLMをタスクに応じて動的ルーティングし、コストと品質を自動最適化。HN 211pt獲得で開発者から注目。"
           }
         }
       ]
@@ -400,7 +521,13 @@
           "category": "agents",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["multi-agent", "trajectories", "huggingface", "alignment", "ai-village"],
+          "tags": [
+            "multi-agent",
+            "trajectories",
+            "huggingface",
+            "alignment",
+            "ai-village"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -419,15 +546,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AI Villageマルチエージェント軌跡データセットの概要。HuggingFaceで公開。協調・競合エージェントの振る舞いを記録しアライメント研究に活用可能。",
             "data": {
               "headline": "AI Villageマルチエージェント軌跡データをHuggingFaceに公開",
+              "tldr": "",
               "points": [
-                {"icon": "🤝", "description": "複数AIエージェントが協調・競合しながらタスクを進める軌跡データをHuggingFaceで公開"},
-                {"icon": "📊", "description": "エージェント間の意思決定パターンや振る舞いを研究できるオープンデータセットとして提供"},
-                {"icon": "🔬", "description": "LessWrongアライメント研究コミュニティで注目——マルチエージェント安全性研究の基盤として期待"}
+                {
+                  "icon": "🤝",
+                  "label": "",
+                  "value": "複数AIエージェントが協調・競合しながらタスクを進める軌跡データをHuggingFaceで公開",
+                  "description": ""
+                },
+                {
+                  "icon": "📊",
+                  "label": "",
+                  "value": "エージェント間の意思決定パターンや振る舞いを研究できるオープンデータセットとして提供",
+                  "description": ""
+                },
+                {
+                  "icon": "🔬",
+                  "label": "",
+                  "value": "LessWrongアライメント研究コミュニティで注目——マルチエージェント安全性研究の基盤として期待",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "AI Villageマルチエージェント軌跡データセットの概要。HuggingFaceで公開。協調・競合エージェントの振る舞いを記録しアライメント研究に活用可能。"
           }
         },
         {
@@ -441,7 +584,13 @@
           "category": "agents",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["reinforcement-learning", "agentic", "multimodal", "context-aware", "arxiv"],
+          "tags": [
+            "reinforcement-learning",
+            "agentic",
+            "multimodal",
+            "context-aware",
+            "arxiv"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -460,15 +609,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ContextRL論文の概要。コンテキスト適応型RL戦略によりエージェント型・マルチモーダルタスクの両方でLLM精度を向上。固定報酬設計の限界を克服。",
             "data": {
               "headline": "ContextRL——コンテキスト適応型RL戦略でエージェントLLMを強化",
+              "tldr": "",
               "points": [
-                {"icon": "🎯", "description": "コンテキストに応じてRL戦略を動的に切り替える手法を提案——固定報酬設計の限界を超える"},
-                {"icon": "🤖", "description": "エージェント型タスク（ツール呼び出し・計画）とマルチモーダルタスクの両方で精度向上を確認"},
-                {"icon": "📐", "description": "RLによるLLMファインチューニングに柔軟性を与え、多様な実世界タスクへの適応性を向上させる"}
+                {
+                  "icon": "🎯",
+                  "label": "",
+                  "value": "コンテキストに応じてRL戦略を動的に切り替える手法を提案——固定報酬設計の限界を超える",
+                  "description": ""
+                },
+                {
+                  "icon": "🤖",
+                  "label": "",
+                  "value": "エージェント型タスク（ツール呼び出し・計画）とマルチモーダルタスクの両方で精度向上を確認",
+                  "description": ""
+                },
+                {
+                  "icon": "📐",
+                  "label": "",
+                  "value": "RLによるLLMファインチューニングに柔軟性を与え、多様な実世界タスクへの適応性を向上させる",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "ContextRL論文の概要。コンテキスト適応型RL戦略によりエージェント型・マルチモーダルタスクの両方でLLM精度を向上。固定報酬設計の限界を克服。"
           }
         }
       ]
@@ -489,7 +654,13 @@
           "category": "multimodal",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["text-to-music", "evaluation", "music-generation", "llm-judge", "arxiv"],
+          "tags": [
+            "text-to-music",
+            "evaluation",
+            "music-generation",
+            "llm-judge",
+            "arxiv"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -508,15 +679,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "TuneJury論文の概要。テキストから音楽生成を評価するLLM-as-judge手法のオープン指標。人間評価との相関が従来指標より高く、音楽AIの標準ベンチマークを目指す。",
             "data": {
               "headline": "TuneJury——テキスト→音楽生成のオープン自動評価指標",
+              "tldr": "",
               "points": [
-                {"icon": "🎵", "description": "テキストから音楽生成モデルの品質を自動評価するオープン指標TuneJuryを提案"},
-                {"icon": "⚖️", "description": "LLM-as-judge手法で人間の主観評価との相関を従来指標より高めることを実証"},
-                {"icon": "📏", "description": "再現性・信頼性の高い評価フレームワークとして公開——音楽AI研究のベンチマーク標準化を目指す"}
+                {
+                  "icon": "🎵",
+                  "label": "",
+                  "value": "テキストから音楽生成モデルの品質を自動評価するオープン指標TuneJuryを提案",
+                  "description": ""
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "",
+                  "value": "LLM-as-judge手法で人間の主観評価との相関を従来指標より高めることを実証",
+                  "description": ""
+                },
+                {
+                  "icon": "📏",
+                  "label": "",
+                  "value": "再現性・信頼性の高い評価フレームワークとして公開——音楽AI研究のベンチマーク標準化を目指す",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "TuneJury論文の概要。テキストから音楽生成を評価するLLM-as-judge手法のオープン指標。人間評価との相関が従来指標より高く、音楽AIの標準ベンチマークを目指す。"
           }
         },
         {
@@ -530,7 +717,13 @@
           "category": "multimodal",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["segmentation", "sam", "vision", "image-processing", "efficiency"],
+          "tags": [
+            "segmentation",
+            "sam",
+            "vision",
+            "image-processing",
+            "efficiency"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -549,15 +742,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ActiveSAM論文の概要。SAM 3ベースの高速セグメンテーション手法。画像条件付きクラス枝刈りで推論コストを削減しながら精度を維持。エッジ・リアルタイム処理への適用を目指す。",
             "data": {
               "headline": "ActiveSAM——SAM 3ベースの画像条件付き高速セグメンテーション",
+              "tldr": "",
               "points": [
-                {"icon": "✂️", "description": "SAM 3をベースに画像条件付きクラス枝刈りで不要セグメント候補を事前除外——推論速度を大幅向上"},
-                {"icon": "⚡", "description": "精度を維持しながら計算コスト削減——エッジデバイスやリアルタイム処理への展開を可能にする"},
-                {"icon": "🔧", "description": "SAM 3の強力なセグメンテーション能力を効率化し、より広い実環境での活用を実現する実用研究"}
+                {
+                  "icon": "✂️",
+                  "label": "",
+                  "value": "SAM 3をベースに画像条件付きクラス枝刈りで不要セグメント候補を事前除外——推論速度を大幅向上",
+                  "description": ""
+                },
+                {
+                  "icon": "⚡",
+                  "label": "",
+                  "value": "精度を維持しながら計算コスト削減——エッジデバイスやリアルタイム処理への展開を可能にする",
+                  "description": ""
+                },
+                {
+                  "icon": "🔧",
+                  "label": "",
+                  "value": "SAM 3の強力なセグメンテーション能力を効率化し、より広い実環境での活用を実現する実用研究",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "ActiveSAM論文の概要。SAM 3ベースの高速セグメンテーション手法。画像条件付きクラス枝刈りで推論コストを削減しながら精度を維持。エッジ・リアルタイム処理への適用を目指す。"
           }
         }
       ]
@@ -578,7 +787,13 @@
           "category": "research_papers",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["llm", "research-papers", "raschka", "survey", "2026"],
+          "tags": [
+            "llm",
+            "research-papers",
+            "raschka",
+            "survey",
+            "2026"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -597,15 +812,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Raschka 2026年1〜5月LLM論文精選リストの概要。168時間ウィンドウ内の最新論文を重点的に解説。研究者・エンジニア向けの効率的キャッチアップリソース。",
             "data": {
               "headline": "Raschka：2026年1〜5月 LLM研究論文精選リスト",
+              "tldr": "",
               "points": [
-                {"icon": "📚", "description": "2026年1〜5月に発表された主要LLM研究論文を精選——168時間以内の最新投稿を重点的に解説"},
-                {"icon": "🎯", "description": "各論文に技術革新のハイライトと重要度評価付き——優先順位をつけた効率的なキャッチアップが可能"},
-                {"icon": "🗺️", "description": "2026年前半のLLM技術進化の全体地図を俯瞰できる必読リソース"}
+                {
+                  "icon": "📚",
+                  "label": "",
+                  "value": "2026年1〜5月に発表された主要LLM研究論文を精選——168時間以内の最新投稿を重点的に解説",
+                  "description": ""
+                },
+                {
+                  "icon": "🎯",
+                  "label": "",
+                  "value": "各論文に技術革新のハイライトと重要度評価付き——優先順位をつけた効率的なキャッチアップが可能",
+                  "description": ""
+                },
+                {
+                  "icon": "🗺️",
+                  "label": "",
+                  "value": "2026年前半のLLM技術進化の全体地図を俯瞰できる必読リソース",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "Raschka 2026年1〜5月LLM論文精選リストの概要。168時間ウィンドウ内の最新論文を重点的に解説。研究者・エンジニア向けの効率的キャッチアップリソース。"
           },
           "x_post": "Raschkaが2026年1〜5月の精選LLM論文リストを公開した。168時間ウィンドウ内の最新論文を中心に技術革新のハイライトと重要度評価が付く。これ1本で上半期のLLM研究の流れをつかめる——研究者・エンジニア必携のキャッチアップリソースだ。\n\nhttps://magazine.sebastianraschka.com/p/llm-research-papers-the-2026-list"
         },
@@ -620,7 +851,13 @@
           "category": "research_papers",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["rl", "research-agent", "rubric", "evidence-tree", "arxiv"],
+          "tags": [
+            "rl",
+            "research-agent",
+            "rubric",
+            "evidence-tree",
+            "arxiv"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -639,15 +876,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "DEEPRUBRIC論文の概要。証拠ツリーとルーブリック監督信号の組み合わせによりRLリサーチエージェントの推論精度と説明可能性を同時向上。",
             "data": {
               "headline": "DEEPRUBRIC——証拠ツリー×ルーブリック監督でリサーチエージェントを強化",
+              "tldr": "",
               "points": [
-                {"icon": "🌳", "description": "証拠ツリーとルーブリック評価基準を組み合わせたRL監督信号でリサーチエージェントを訓練"},
-                {"icon": "⚖️", "description": "単純な正解/不正解の二値報酬を超え、推論過程の質も評価する細粒度の監督を実現"},
-                {"icon": "✅", "description": "推論精度と説明可能性を同時に改善——AIリサーチエージェントの信頼性向上に貢献する研究"}
+                {
+                  "icon": "🌳",
+                  "label": "",
+                  "value": "証拠ツリーとルーブリック評価基準を組み合わせたRL監督信号でリサーチエージェントを訓練",
+                  "description": ""
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "",
+                  "value": "単純な正解/不正解の二値報酬を超え、推論過程の質も評価する細粒度の監督を実現",
+                  "description": ""
+                },
+                {
+                  "icon": "✅",
+                  "label": "",
+                  "value": "推論精度と説明可能性を同時に改善——AIリサーチエージェントの信頼性向上に貢献する研究",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "DEEPRUBRIC論文の概要。証拠ツリーとルーブリック監督信号の組み合わせによりRLリサーチエージェントの推論精度と説明可能性を同時向上。"
           }
         },
         {
@@ -661,7 +914,13 @@
           "category": "research_papers",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["microsoft", "satya-nadella", "loopcraft", "ecosystem", "frontier-ai"],
+          "tags": [
+            "microsoft",
+            "satya-nadella",
+            "loopcraft",
+            "ecosystem",
+            "frontier-ai"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -680,15 +939,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SatyaのLoopcraft基調講演の概要。60M超視聴数を記録。フロンティアAIエコシステム構築とMicrosoftの戦略的位置づけについて語った業界注目の講演。",
             "data": {
               "headline": "Satya at Loopcraft——フロンティアエコシステム構築ビジョン（60M+ views）",
+              "tldr": "",
               "points": [
-                {"icon": "🌐", "description": "Loopcraft基調講演でSatyaがフロンティアAIエコシステム構築のビジョンを語り——60M超の視聴数を記録"},
-                {"icon": "🤝", "description": "MicrosoftをパートナーシップとプラットフォームでフロンティアAIエコシステムの調整役として再定義"},
-                {"icon": "🔭", "description": "AI企業がエコシステムプレーヤーとして競争から協調へシフトする必要性を訴えた業界注目の講演"}
+                {
+                  "icon": "🌐",
+                  "label": "",
+                  "value": "Loopcraft基調講演でSatyaがフロンティアAIエコシステム構築のビジョンを語り——60M超の視聴数を記録",
+                  "description": ""
+                },
+                {
+                  "icon": "🤝",
+                  "label": "",
+                  "value": "MicrosoftをパートナーシップとプラットフォームでフロンティアAIエコシステムの調整役として再定義",
+                  "description": ""
+                },
+                {
+                  "icon": "🔭",
+                  "label": "",
+                  "value": "AI企業がエコシステムプレーヤーとして競争から協調へシフトする必要性を訴えた業界注目の講演",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "SatyaのLoopcraft基調講演の概要。60M超視聴数を記録。フロンティアAIエコシステム構築とMicrosoftの戦略的位置づけについて語った業界注目の講演。"
           }
         }
       ]
@@ -709,7 +984,13 @@
           "category": "industry_business",
           "published_at": "2026-06-16",
           "lang": "en",
-          "tags": ["spacex", "cursor", "acquisition", "elon-musk", "ai-coding"],
+          "tags": [
+            "spacex",
+            "cursor",
+            "acquisition",
+            "elon-musk",
+            "ai-coding"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -728,15 +1009,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SpaceXによるCursor買収の概要。取引額600億ドルの全株式交換。SpaceX上場2日後に発表。MuskのxAI・Tesla・SpaceX三角形AI戦略の一環。",
             "data": {
               "headline": "SpaceX、Cursorを600億ドルで買収——Musk AI版三国志が加速",
+              "tldr": "",
               "points": [
-                {"icon": "🚀", "description": "SpaceXがAIコーディングプラットフォームCursorを600億ドルの全株式交換で買収発表——上場2日後"},
-                {"icon": "♟️", "description": "xAI・Tesla・SpaceXという三角形でAI開発者エコシステムを押さえるMuskの戦略的布石"},
-                {"icon": "⚔️", "description": "GitHub Copilot・Claude Codeに次ぐAIコーディング市場3位のCursorがSpaceX傘下に——競争構図が変化"}
+                {
+                  "icon": "🚀",
+                  "label": "",
+                  "value": "SpaceXがAIコーディングプラットフォームCursorを600億ドルの全株式交換で買収発表——上場2日後",
+                  "description": ""
+                },
+                {
+                  "icon": "♟️",
+                  "label": "",
+                  "value": "xAI・Tesla・SpaceXという三角形でAI開発者エコシステムを押さえるMuskの戦略的布石",
+                  "description": ""
+                },
+                {
+                  "icon": "⚔️",
+                  "label": "",
+                  "value": "GitHub Copilot・Claude Codeに次ぐAIコーディング市場3位のCursorがSpaceX傘下に——競争構図が変化",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "SpaceXによるCursor買収の概要。取引額600億ドルの全株式交換。SpaceX上場2日後に発表。MuskのxAI・Tesla・SpaceX三角形AI戦略の一環。"
           },
           "x_post": "SpaceXがAIコーディングプラットフォームCursorを600億ドルの全株式交換で買収すると発表した。IPO上場のわずか2日後。xAI・Tesla・SpaceXの三角形でAI開発者エコシステムを押さえるMusk戦略が具体化した形で、GitHub Copilot・Claude Codeとの競争構図が一変する。\n\nhttps://arstechnica.com/ai/2026/06/spacex-to-acquire-ai-coding-platform-cursor-for-60-billion"
         },
@@ -751,7 +1048,13 @@
           "category": "industry_business",
           "published_at": "2026-06-16",
           "lang": "en",
-          "tags": ["openai", "financials", "revenue", "chatgpt", "market-share"],
+          "tags": [
+            "openai",
+            "financials",
+            "revenue",
+            "chatgpt",
+            "market-share"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -770,10 +1073,13 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "OpenAI収益の年次比較。2024年37億ドルから2025年130億ドルへ急増。ChatGPT月次ユーザーは11億人超だが市場シェアは初めて50%を下回った。",
             "data": {
-              "before": {"label": "2024年"},
-              "after": {"label": "2025年（見通し）"},
+              "before": {
+                "label": "2024年"
+              },
+              "after": {
+                "label": "2025年（見通し）"
+              },
               "metrics": [
                 {
                   "label": "年間収益",
@@ -802,7 +1108,8 @@
               ],
               "narrative": "内部文書が流出し、収益が3.5倍以上に急成長する一方で、計算資源コストと開発投資の拡大により赤字が継続していることが判明した。月次支出は約20億ドルに上るとされる。",
               "impact": "ChatGPT利用者数は過去最大だが市場シェアは初めて50%を割り込んだ。競合他社（Anthropic・Google・Meta）の追い上げで収益急増も黒字化には至らない実態が露見した。"
-            }
+            },
+            "alt": "OpenAI収益の年次比較。2024年37億ドルから2025年130億ドルへ急増。ChatGPT月次ユーザーは11億人超だが市場シェアは初めて50%を下回った。"
           },
           "x_post": "流出したOpenAI財務文書によると、収益は2024年37億ドルから2025年130億ドルへ急増するが、月次支出約20億ドルで赤字は継続中だ。ChatGPT月次ユーザー11億人超も市場シェアは初めて50%を下回った。急成長と赤字継続が並走する構造的矛盾が数字で示された。\n\nhttps://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-but-revenues-are-skyrocketing"
         }
@@ -824,7 +1131,13 @@
           "category": "community_buzz",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["anthropic", "fable-5", "export-control", "hacker-news", "community"],
+          "tags": [
+            "anthropic",
+            "fable-5",
+            "export-control",
+            "hacker-news",
+            "community"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -834,7 +1147,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hn", "points": 194},
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 194
+          },
           "summary_ja": "Hacker Newsで「AnthropicはこのFable 5輸出規制をホワイトハウスに求めたのか？」という議論スレッドが194ポイントを獲得した。Anthropicが政府の介入を歓迎していたのか、それとも強制されたのかを巡り、開発者コミュニティの間で活発な議論が交わされた。",
           "key_points_ja": [
             "HNで194ptを獲得した「AnthropicはFable 5輸出規制をホワイトハウスに要求したのか？」スレッド。",
@@ -843,15 +1159,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "HN 194ptを獲得したAnthropicとFable 5輸出規制に関するコミュニティ議論の概要。Anthropicが規制を自発的に求めたのか強制されたのかを巡る議論。",
             "data": {
               "headline": "HN 194pt：「AnthropicはFable 5規制を求めたのか？」",
+              "tldr": "",
               "points": [
-                {"icon": "❓", "description": "「AnthropicがホワイトハウスにFable 5規制を自ら求めたのか？」という問いがHNで194ptを獲得"},
-                {"icon": "💬", "description": "Anthropicが政府介入を歓迎したのか強制されたのかを巡り、開発者コミュニティで活発な議論が展開"},
-                {"icon": "🏛️", "description": "AIラボと政府の関係性・企業の自律性についての懸念が可視化されたコミュニティ議論"}
+                {
+                  "icon": "❓",
+                  "label": "",
+                  "value": "「AnthropicがホワイトハウスにFable 5規制を自ら求めたのか？」という問いがHNで194ptを獲得",
+                  "description": ""
+                },
+                {
+                  "icon": "💬",
+                  "label": "",
+                  "value": "Anthropicが政府介入を歓迎したのか強制されたのかを巡り、開発者コミュニティで活発な議論が展開",
+                  "description": ""
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "",
+                  "value": "AIラボと政府の関係性・企業の自律性についての懸念が可視化されたコミュニティ議論",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "HN 194ptを獲得したAnthropicとFable 5輸出規制に関するコミュニティ議論の概要。Anthropicが規制を自発的に求めたのか強制されたのかを巡る議論。"
           }
         },
         {
@@ -865,7 +1197,13 @@
           "category": "community_buzz",
           "published_at": "2026-06-15",
           "lang": "en",
-          "tags": ["anthropic", "fable-5", "export-control", "jailbreak", "hacker-news"],
+          "tags": [
+            "anthropic",
+            "fable-5",
+            "export-control",
+            "jailbreak",
+            "hacker-news"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -875,7 +1213,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hn", "points": 106},
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 106
+          },
           "summary_ja": "Hacker Newsで「Fable 5の輸出制限はジェイルブレイク対策だとずっと思っていたが、そうではなくCursorとの競争や地政学リスクを巡る話ではないか？」という考察スレッドが106ポイントを獲得した。安全性の問題以外の視点からFable 5規制の背景を読み解こうとする議論。",
           "key_points_ja": [
             "「Fable 5の禁止はジェイルブレイク対策ではなかったのでは？」というHNスレッドが106ptを獲得。",
@@ -884,15 +1225,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "HN 106ptを獲得したFable 5規制の本当の理由を巡るコミュニティ考察。ジェイルブレイク対策説を疑い、競争・地政学リスクの視点から読み解く議論。",
             "data": {
               "headline": "HN 106pt：「Fable 5禁止はジェイルブレイク対策ではなかった？」",
+              "tldr": "",
               "points": [
-                {"icon": "🔍", "description": "「Fable 5規制はジェイルブレイク対策ではなく別の理由では？」という考察がHNで106ptを獲得"},
-                {"icon": "🌐", "description": "競争上の思惑や地政学リスクという、安全性以外の視点からFable 5規制の背景を読み解く議論が展開"},
-                {"icon": "🧐", "description": "AI規制の表向きの理由と実際の背景を区別しようとするコミュニティの批判的視点が表れたスレッド"}
+                {
+                  "icon": "🔍",
+                  "label": "",
+                  "value": "「Fable 5規制はジェイルブレイク対策ではなく別の理由では？」という考察がHNで106ptを獲得",
+                  "description": ""
+                },
+                {
+                  "icon": "🌐",
+                  "label": "",
+                  "value": "競争上の思惑や地政学リスクという、安全性以外の視点からFable 5規制の背景を読み解く議論が展開",
+                  "description": ""
+                },
+                {
+                  "icon": "🧐",
+                  "label": "",
+                  "value": "AI規制の表向きの理由と実際の背景を区別しようとするコミュニティの批判的視点が表れたスレッド",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "HN 106ptを獲得したFable 5規制の本当の理由を巡るコミュニティ考察。ジェイルブレイク対策説を疑い、競争・地政学リスクの視点から読み解く議論。"
           }
         }
       ]
@@ -913,7 +1270,13 @@
           "category": "japan",
           "published_at": "2026-06-15",
           "lang": "ja",
-          "tags": ["technical-writing", "japanese", "writing-tips", "qiita", "hatena"],
+          "tags": [
+            "technical-writing",
+            "japanese",
+            "writing-tips",
+            "qiita",
+            "hatena"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -923,7 +1286,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "bookmarks": 417},
+          "reaction_signal": {
+            "kind": "hatena",
+            "bookmarks": 417
+          },
           "summary_ja": "技術系日本語記事の書き方とテクニックをまとめた記事がはてなブックマークで417件を集めた。読みやすさ・説明の明確さ・サンプルコードの配置などの具体的なライティングテクニックが網羅されており、AI/技術系ライターやエンジニアブロガーに広く参照されている。",
           "key_points_ja": [
             "技術系日本語記事のライティングテクニックをまとめた記事がはてなブックマーク417件を獲得。",
@@ -932,15 +1298,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "技術系日本語記事ライティングテクニック集。はてブ417件獲得。読みやすさ・明確な説明・サンプルコード配置などの実践的なポイントをまとめた記事。",
             "data": {
               "headline": "技術系日本語ライティングのコツ——はてブ417件",
+              "tldr": "",
               "points": [
-                {"icon": "✍️", "description": "技術系日本語記事のライティングコツをまとめた記事がはてブ417件を獲得——実践的で即使えるテクニック集"},
-                {"icon": "📖", "description": "読みやすさ・説明の明確さ・サンプルコード配置など具体的なポイントを網羅した実用的内容"},
-                {"icon": "🤖", "description": "AIツール活用時代に日本語技術文書の品質向上を求めるエンジニアの需要を反映した高反響"}
+                {
+                  "icon": "✍️",
+                  "label": "",
+                  "value": "技術系日本語記事のライティングコツをまとめた記事がはてブ417件を獲得——実践的で即使えるテクニック集",
+                  "description": ""
+                },
+                {
+                  "icon": "📖",
+                  "label": "",
+                  "value": "読みやすさ・説明の明確さ・サンプルコード配置など具体的なポイントを網羅した実用的内容",
+                  "description": ""
+                },
+                {
+                  "icon": "🤖",
+                  "label": "",
+                  "value": "AIツール活用時代に日本語技術文書の品質向上を求めるエンジニアの需要を反映した高反響",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "技術系日本語記事ライティングテクニック集。はてブ417件獲得。読みやすさ・明確な説明・サンプルコード配置などの実践的なポイントをまとめた記事。"
           }
         },
         {
@@ -954,7 +1336,13 @@
           "category": "japan",
           "published_at": "2026-06-15",
           "lang": "ja",
-          "tags": ["claude-code", "developer-workflow", "productivity", "zenn", "hatena"],
+          "tags": [
+            "claude-code",
+            "developer-workflow",
+            "productivity",
+            "zenn",
+            "hatena"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -964,7 +1352,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "bookmarks": 166},
+          "reaction_signal": {
+            "kind": "hatena",
+            "bookmarks": 166
+          },
           "summary_ja": "Claude Codeを実際の開発フローに組み込んだ経験をレポートした記事がはてなブックマーク166件を集めた。コーディング補助・コードレビュー・ドキュメント生成など具体的な活用例を紹介し、開発効率の変化を率直に報告した内容が評価された。",
           "key_points_ja": [
             "Claude Codeを開発フローに組み込んだ実践レポートがはてブ166件を獲得。",
@@ -973,15 +1364,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Code活用による開発フロー変化の実践レポート。はてブ166件獲得。コーディング補助・コードレビュー・ドキュメント生成の具体的な活用例を紹介。",
             "data": {
               "headline": "Claude Code開発フロー活用レポート——はてブ166件",
+              "tldr": "",
               "points": [
-                {"icon": "⚡", "description": "Claude Codeを実際の開発に組み込んだ体験レポートがはてブ166件——コーディング補助・レビュー・ドキュメント生成を実例紹介"},
-                {"icon": "📈", "description": "具体的な効率化の実感を率直に報告した内容が評価——開発者コミュニティの共感を集める"},
-                {"icon": "🇯🇵", "description": "日本の開発者コミュニティでClaude Code実体験を共有する記事への高い需要を示す"}
+                {
+                  "icon": "⚡",
+                  "label": "",
+                  "value": "Claude Codeを実際の開発に組み込んだ体験レポートがはてブ166件——コーディング補助・レビュー・ドキュメント生成を実例紹介",
+                  "description": ""
+                },
+                {
+                  "icon": "📈",
+                  "label": "",
+                  "value": "具体的な効率化の実感を率直に報告した内容が評価——開発者コミュニティの共感を集める",
+                  "description": ""
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "",
+                  "value": "日本の開発者コミュニティでClaude Code実体験を共有する記事への高い需要を示す",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "Claude Code活用による開発フロー変化の実践レポート。はてブ166件獲得。コーディング補助・コードレビュー・ドキュメント生成の具体的な活用例を紹介。"
           }
         },
         {
@@ -995,7 +1402,13 @@
           "category": "japan",
           "published_at": "2026-06-15",
           "lang": "ja",
-          "tags": ["chatgpt", "google", "search", "comparison", "hatena"],
+          "tags": [
+            "chatgpt",
+            "google",
+            "search",
+            "comparison",
+            "hatena"
+          ],
           "scores": {
             "importance": 2,
             "depth": 3,
@@ -1005,7 +1418,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "bookmarks": 103},
+          "reaction_signal": {
+            "kind": "hatena",
+            "bookmarks": 103
+          },
           "summary_ja": "ChatGPTとGoogle検索をタスク別に比較した記事がはてなブックマーク103件を獲得した。実際にいくつかの検索タスクで両者を比較した実験的な内容で、AI検索と従来検索の得意分野の違いを明確化している。日常的な情報収集の変化を身近な視点から捉えた内容が共感を集めた。",
           "key_points_ja": [
             "ChatGPTとGoogle検索をタスク別に実験比較した記事がはてブ103件を獲得。",
@@ -1014,15 +1430,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ChatGPTとGoogle検索のタスク別比較研究。はてブ103件獲得。AIチャット検索と従来型検索の得意分野の違いを実験的に明確化した記事。",
             "data": {
               "headline": "ChatGPT vs Google検索 使い分け比較——はてブ103件",
+              "tldr": "",
               "points": [
-                {"icon": "🔍", "description": "ChatGPTとGoogle検索をタスク別に実験比較——AIチャット検索と従来型検索の得意不得意を明確化"},
-                {"icon": "📊", "description": "情報収集・調査・コード検索など複数タスクでの使い分けの指針を提供する実用的な内容"},
-                {"icon": "📱", "description": "AI検索への移行期における日本の一般ユーザーの感覚に近い視点が共感を集めはてブ103件を獲得"}
+                {
+                  "icon": "🔍",
+                  "label": "",
+                  "value": "ChatGPTとGoogle検索をタスク別に実験比較——AIチャット検索と従来型検索の得意不得意を明確化",
+                  "description": ""
+                },
+                {
+                  "icon": "📊",
+                  "label": "",
+                  "value": "情報収集・調査・コード検索など複数タスクでの使い分けの指針を提供する実用的な内容",
+                  "description": ""
+                },
+                {
+                  "icon": "📱",
+                  "label": "",
+                  "value": "AI検索への移行期における日本の一般ユーザーの感覚に近い視点が共感を集めはてブ103件を獲得",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "ChatGPTとGoogle検索のタスク別比較研究。はてブ103件獲得。AIチャット検索と従来型検索の得意分野の違いを実験的に明確化した記事。"
           }
         },
         {
@@ -1036,7 +1468,13 @@
           "category": "japan",
           "published_at": "2026-06-15",
           "lang": "ja",
-          "tags": ["sakana-ai", "marlin", "japan", "commercial-product", "ai-startup"],
+          "tags": [
+            "sakana-ai",
+            "marlin",
+            "japan",
+            "commercial-product",
+            "ai-startup"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1046,7 +1484,10 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "bookmarks": 24},
+          "reaction_signal": {
+            "kind": "hatena",
+            "bookmarks": 24
+          },
           "summary_ja": "東京を拠点とするAI研究スタートアップSakana AIが初の商用製品「Marlin」を発表した。はてブ24件と反響は控えめだが、研究フェーズから商業展開フェーズへの移行を示す重要なマイルストーン。国内AI企業の製品化加速を示す事例として注目される。",
           "key_points_ja": [
             "Sakana AIが初の商用製品「Marlin」を発表——研究スタートアップから商業展開フェーズへの移行を示す。",
@@ -1055,15 +1496,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Sakana AI初の商用製品「Marlin」発表。研究スタートアップから商業展開フェーズへの移行を示す重要マイルストーン。はてブ24件。",
             "data": {
               "headline": "Sakana AI、初商用製品「Marlin」を発表",
+              "tldr": "",
               "points": [
-                {"icon": "🐟", "description": "Sakana AIが初の商用製品「Marlin」を発表——研究フェーズから商業展開フェーズへの移行を示す"},
-                {"icon": "🇯🇵", "description": "国内AIスタートアップの製品化加速を示す重要マイルストーン——はてブ24件と徐々に注目が集まる"},
-                {"icon": "🔬", "description": "進化的アルゴリズム・AI合成手法で知られるSakana AIが具体的な商業製品のリリースで新フェーズへ"}
+                {
+                  "icon": "🐟",
+                  "label": "",
+                  "value": "Sakana AIが初の商用製品「Marlin」を発表——研究フェーズから商業展開フェーズへの移行を示す",
+                  "description": ""
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "",
+                  "value": "国内AIスタートアップの製品化加速を示す重要マイルストーン——はてブ24件と徐々に注目が集まる",
+                  "description": ""
+                },
+                {
+                  "icon": "🔬",
+                  "label": "",
+                  "value": "進化的アルゴリズム・AI合成手法で知られるSakana AIが具体的な商業製品のリリースで新フェーズへ",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "Sakana AI初の商用製品「Marlin」発表。研究スタートアップから商業展開フェーズへの移行を示す重要マイルストーン。はてブ24件。"
           }
         },
         {
@@ -1077,7 +1534,14 @@
           "category": "japan",
           "published_at": "2026-06-16",
           "lang": "ja",
-          "tags": ["softbank", "openai", "security", "gpt-5.5-cyber", "son-masayoshi", "japan"],
+          "tags": [
+            "softbank",
+            "openai",
+            "security",
+            "gpt-5.5-cyber",
+            "son-masayoshi",
+            "japan"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1096,15 +1560,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SoftBankとOpenAIによるPatching as a Service発表。GPT-5.5 Cyberでソフトバンク自社システムの脆弱性1万件を発見。孫正義氏「大変な危機だがAIで解決できる」と発言。日本の重要インフラ企業に優先提供。",
             "data": {
               "headline": "SoftBank×OpenAI「Patching as a Service」——AI脆弱性診断で1万件発見",
+              "tldr": "",
               "points": [
-                {"icon": "🛡️", "description": "SoftBankとOpenAIが「Patching as a Service」を発表——GPT-5.5 Cyberを使ったAI脆弱性診断サービス"},
-                {"icon": "🔍", "description": "ソフトバンク自社システムにGPT-5.5 Cyberを適用——1万件超の脆弱性を発見し実効性を実証"},
-                {"icon": "⚠️", "description": "孫正義氏「大変な危機だが、AIで解決できる」——日本の重要インフラ企業向けに優先提供"}
+                {
+                  "icon": "🛡️",
+                  "label": "",
+                  "value": "SoftBankとOpenAIが「Patching as a Service」を発表——GPT-5.5 Cyberを使ったAI脆弱性診断サービス",
+                  "description": ""
+                },
+                {
+                  "icon": "🔍",
+                  "label": "",
+                  "value": "ソフトバンク自社システムにGPT-5.5 Cyberを適用——1万件超の脆弱性を発見し実効性を実証",
+                  "description": ""
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "",
+                  "value": "孫正義氏「大変な危機だが、AIで解決できる」——日本の重要インフラ企業向けに優先提供",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "SoftBankとOpenAIによるPatching as a Service発表。GPT-5.5 Cyberでソフトバンク自社システムの脆弱性1万件を発見。孫正義氏「大変な危機だがAIで解決できる」と発言。日本の重要インフラ企業に優先提供。"
           },
           "x_post": "SoftBankとOpenAIがGPT-5.5 Cyberを使った「Patching as a Service」を発表。ソフトバンク自社システムで1万件超の脆弱性を発見した実績を持つ。孫正義氏は「大変な危機だが、AIで解決できる」と語り、国内重要インフラ企業への優先提供を表明した。\n\nhttps://www.itmedia.co.jp/aiplus/articles/2606/16/news001.html"
         }
@@ -1126,7 +1606,13 @@
           "category": "china",
           "published_at": "2026-06-16",
           "lang": "zh",
-          "tags": ["robotics", "full-body-control", "china", "embodied-ai", "locomotion"],
+          "tags": [
+            "robotics",
+            "full-body-control",
+            "china",
+            "embodied-ai",
+            "locomotion"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1145,15 +1631,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "中国チームによる全身ロボット制御AI手法の概要。動的障害物回避・複雑地形横断を実現。体現型AI研究の加速を示す成果。",
             "data": {
               "headline": "中国：全身ロボット制御AIで動的障害物・複雑地形横断を実現",
+              "tldr": "",
               "points": [
-                {"icon": "🤖", "description": "中国研究チームが全身ロボット制御の新AI手法を発表——動的障害物回避と複雑地形横断能力を実証"},
-                {"icon": "🏃", "description": "ヒューマノイドロボットの実世界環境での実用化に向けた技術的な重要ステップとして評価"},
-                {"icon": "🇨🇳", "description": "中国の体現型AI（Embodied AI）研究の急加速を示す成果——グローバルなロボット技術競争が激化"}
+                {
+                  "icon": "🤖",
+                  "label": "",
+                  "value": "中国研究チームが全身ロボット制御の新AI手法を発表——動的障害物回避と複雑地形横断能力を実証",
+                  "description": ""
+                },
+                {
+                  "icon": "🏃",
+                  "label": "",
+                  "value": "ヒューマノイドロボットの実世界環境での実用化に向けた技術的な重要ステップとして評価",
+                  "description": ""
+                },
+                {
+                  "icon": "🇨🇳",
+                  "label": "",
+                  "value": "中国の体現型AI（Embodied AI）研究の急加速を示す成果——グローバルなロボット技術競争が激化",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "中国チームによる全身ロボット制御AI手法の概要。動的障害物回避・複雑地形横断を実現。体現型AI研究の加速を示す成果。"
           }
         },
         {
@@ -1167,7 +1669,13 @@
           "category": "china",
           "published_at": "2026-06-16",
           "lang": "zh",
-          "tags": ["anysearch", "agent", "china", "developer-adoption", "ai-search"],
+          "tags": [
+            "anysearch",
+            "agent",
+            "china",
+            "developer-adoption",
+            "ai-search"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1186,15 +1694,31 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AnySearchエージェントの成長概要。公開1ヶ月で開発者10万人突破。エージェント型検索機能で情報収集・統合・分析を一体化。中国発AIエージェント検索の急成長を示す。",
             "data": {
               "headline": "AnySearch Agent：公開1ヶ月で開発者10万人突破",
+              "tldr": "",
               "points": [
-                {"icon": "📈", "description": "中国発AIエージェント検索「AnySearch」が公開1ヶ月で開発者10万人を突破——急速な採用を示す"},
-                {"icon": "🔍", "description": "エージェント型検索機能で情報収集・統合・分析を一体化——従来の検索AIを超えた使い勝手を提供"},
-                {"icon": "🌐", "description": "中国のAIエージェントプラットフォーム市場での開発者エコシステム構築が急加速"}
+                {
+                  "icon": "📈",
+                  "label": "",
+                  "value": "中国発AIエージェント検索「AnySearch」が公開1ヶ月で開発者10万人を突破——急速な採用を示す",
+                  "description": ""
+                },
+                {
+                  "icon": "🔍",
+                  "label": "",
+                  "value": "エージェント型検索機能で情報収集・統合・分析を一体化——従来の検索AIを超えた使い勝手を提供",
+                  "description": ""
+                },
+                {
+                  "icon": "🌐",
+                  "label": "",
+                  "value": "中国のAIエージェントプラットフォーム市場での開発者エコシステム構築が急加速",
+                  "description": ""
+                }
               ]
-            }
+            },
+            "alt": "AnySearchエージェントの成長概要。公開1ヶ月で開発者10万人突破。エージェント型検索機能で情報収集・統合・分析を一体化。中国発AIエージェント検索の急成長を示す。"
           }
         }
       ]
