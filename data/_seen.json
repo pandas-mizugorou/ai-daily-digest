@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-07T09:12:00+09:00",
+  "updated_at": "2026-06-16T09:30:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -3979,6 +3979,132 @@
       "url_prefix": "https://www.qbitai.com/2026/06/deepseek-v4.html",
       "first_seen_at": "2026-06-07",
       "last_seen_at": "2026-06-07",
+      "last_seen_count": 1
+    },
+    "96e6e17a1115d5a1": {
+      "url_prefix": "https://techcrunch.com/2026/06/15/the-us-governmen",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "7a2e551c033797c3": {
+      "url_prefix": "https://gigazine.net/news/20260615-z-ai-glm-5-2",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "41fe62f42b454d98": {
+      "url_prefix": "https://gigazine.net/news/20260615-kimi-k2-7-code",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "b5a7c312ddd8b242": {
+      "url_prefix": "https://platform.claude.com/docs/en/cli-sdks-libra",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "28e6cc52c0194604": {
+      "url_prefix": "https://openrouter.ai/openrouter/fusion",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "5ea371706428b2a4": {
+      "url_prefix": "https://techcrunch.com/2026/06/15/ai-agents-are-be",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "dbd5adafc4073948": {
+      "url_prefix": "https://github.com/DietrichGebert/ponytail",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "048eb6ac4904ea42": {
+      "url_prefix": "https://importai.substack.com/p/import-ai-461-alig",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "94b123e0324ccee1": {
+      "url_prefix": "https://arxiv.org/abs/2606.17056v1",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "a6678a43a77300e8": {
+      "url_prefix": "https://arxiv.org/abs/2606.17029v1",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "abd33f53be2cf8b8": {
+      "url_prefix": "https://techcrunch.com/2026/06/16/spacex-to-acquir",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "c8219cef3d6d0955": {
+      "url_prefix": "https://techcrunch.com/2026/06/15/salesforce-acqui",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "610268223423a90a": {
+      "url_prefix": "https://news.ycombinator.com/item?id=48542100",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "a9187b00b2f09d1e": {
+      "url_prefix": "https://gabrielweinberg.com/p/people-are-consuming",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "efe58eae059841e7": {
+      "url_prefix": "https://itmedia.co.jp/news/articles/2606/15/news01",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "3811afcd45db9ab9": {
+      "url_prefix": "https://techno-edge.net/article/2026/06/15/5182.ht",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "6f7a7e479c3bd80d": {
+      "url_prefix": "https://sbbit.jp/article/cont1/185600",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "f93469d1e6251374": {
+      "url_prefix": "https://dev.classmethod.jp/articles/gemma4-s3vecto",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "ac190addd8196c6f": {
+      "url_prefix": "https://gihyo.jp/article/2026/06/open-knowledge-fo",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "15265247885d4e40": {
+      "url_prefix": "https://qbitai.com/2026/06/435873.html",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
+      "last_seen_count": 1
+    },
+    "1362ceffafc0c5c2": {
+      "url_prefix": "https://qbitai.com/2026/06/435861.html",
+      "first_seen_at": "2026-06-16",
+      "last_seen_at": "2026-06-16",
       "last_seen_count": 1
     }
   },

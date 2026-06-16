@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 Jun 2026 03:23:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 12:34:32 GMT</lastBuildDate>
+    <item>
+      <title>米政府によるAnthropicモデル停止命令は「ジェイルブレイク」が本質ではない——フロンティアAIへの政府介入という前例</title>
+      <link>https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak</link>
+      <guid isPermaLink="false">aidd-item-tc-anthropic-wh-ban</guid>
+      <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/tc-anthropic-wh-ban">AI Daily Digest 2026-06-16</source>
+      <description>米政府は6月12日、Anthropicに対しMythosクラスの最強モデル（Claude Fable 5・Mythos 5）の利用を米国民に限定し、グローバルアクセスを巻き戻すよう命じる輸出管理命令を出した。Anthropicは与えられた90分以内にアクセス制限を実装した。背景には、中国に関連するグループがFable 5のジェイルブレイク経由でMythosモデルにアクセスした可能性への懸念があり、同モデルがソフトウェアの脆弱性発見に特に有効だった点が問題視されたとされる。Anthropicは命令には従いつつも、「この基準はAI業界全体で新たなフロンティアモデルの展開を止めかねない」と反発している。TechCrunchは今回の判断を「反射的・報復的、あるいはその両方」と評し、AI業界も米政府の介入から無縁ではないというメッセージが明確になったと位置付けている。</description>
+    </item>
+    <item>
+      <title>SpaceX、Cursor開発元Anysphereを600億ドルの全株式交換で買収へ——大型IPO直後の動き</title>
+      <link>https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo</link>
+      <guid isPermaLink="false">aidd-item-tc-spacex-cursor</guid>
+      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/tc-spacex-cursor">AI Daily Digest 2026-06-16</source>
+      <description>SpaceXは、AIコーディングツール「Cursor」を開発するAnysphereを600億ドルの全株式交換で買収すると発表した。6月16日に署名された合併契約では、SpaceXの子会社X67 Inc.がCursorと合併する。買収完了は2026年第3四半期の見込み。SpaceXは4月時点で、Cursorを600億ドルで買収するか、100億ドルで新たなパートナーシップを結ぶかのオプションを確保していた。今回の発表は、Nasdaqで2兆ドル超の評価額・調達額860億ドルとされる同社のIPO直後に行われた。買収は苦戦するSpaceXのAI部門を強化する狙いとされ、同社はIPO投資家に対しAIの市場規模を26兆ドルと見ていると説明している。</description>
+    </item>
+    <item>
+      <title>AppleがFoundation Modelsフレームワークを今夏OSS化——単一Swift APIでオンデバイス・自社クラウド・Claude・Geminiを切替可能に</title>
+      <link>https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models</link>
+      <guid isPermaLink="false">aidd-item-apple-foundation-models</guid>
+      <pubDate>Mon, 08 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/apple-foundation-models">AI Daily Digest 2026-06-16</source>
+      <description>AppleはWWDC 2026（6月9日）で、Apple Intelligenceを支えるオンデバイスAI層であるFoundation Modelsフレームワークを今夏オープンソース化すると発表した。新たなLanguageModelプロトコルにより、Apple自社モデルだけでなくリモートのプロバイダも単一のLanguageModelSessionの背後に置けるようになる。開発者はオンデバイスモデルでプロトタイプを作り、複雑なクエリだけをClaudeやGeminiにルーティングしたり、Swift Package Managerの依存を差し替えるだけでセッションロジックを変えずにプロバイダを切り替えたりできる。フレームワークは画像入力にも対応し、新しいクラウドモデルは小規模開発者にPrivate Cloud Compute上で無償提供される。コスト・レイテンシ・プライバシーに応じてリクエストごとにモデルを選べる設計となっている。</description>
+    </item>
+    <item>
+      <title>Claude Fableのサービス停止を受けて中国企業が最先端モデル「GLM-5.2」を急遽発表、2026年6月中に無料公開へ</title>
+      <link>https://gigazine.net/news/20260615-z-ai-glm-5-2</link>
+      <guid isPermaLink="false">aidd-item-gigazine-glm-5-2</guid>
+      <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/gigazine-glm-5-2">AI Daily Digest 2026-06-16</source>
+      <description>中国企業のZ.ai（Zhipu）が2026年6月13日にAIモデル「GLM-5.2」を発表した。744億ではなく744B（7440億）パラメータ規模のMixture-of-Experts構成で、100万トークンのコンテキストウィンドウを備える。重みはMITライセンスで無償公開され、誰でもダウンロードして利用できる。GLM Coding Planは月10ドル（Lite）から提供される。発表に際してZ.ai創業者のJie Tang氏は、米国政府の命令によってClaude Fableのサービスが停止した件に触れ、「知能はオープンで、誰もがアクセスでき、開発に使える状態であるべきだ」と述べた。米国のAI輸出規制強化への対抗として、地域制限のないオープンモデルを打ち出した形となる。</description>
+    </item>
+    <item>
+      <title>Alibaba、初の具身（身体性）大規模モデル「Qwen-Robot」シリーズを3本同時公開——操作・移動・世界モデル</title>
+      <link>https://qbitai.com/2026/06/435873.html</link>
+      <guid isPermaLink="false">aidd-item-qbitai-qwen-robot</guid>
+      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/qbitai-qwen-robot">AI Daily Digest 2026-06-16</source>
+      <description>Alibabaが6月16日、初の具身（身体性）インテリジェンス大規模モデルシリーズ「Qwen-Robot」を公開した。シリーズはVision-Language-Actionの操作モデル「Qwen-RobotManip」、Vision-Language-Navigationの移動モデル「Qwen-RobotNav」、そして世界モデル「Qwen-RobotWorld」の3本で構成される。RobotManipはロボットの器用な操作能力を高め、RobotNavは機械が物理空間を理解して移動できるようにし、RobotWorldは行動前に物理シーンの変化を予測・シミュレートする動画ベースの世界モデルとして機能する。3モデルはいずれも言語ファーストのインターフェースを持ち、汎用Qwenモデルから合成的に呼び出せる。さらにAlibabaは、Qwen VLMエージェントがQwen-Robotスイートをツールとして呼び出し物理世界とやり取りする内部ロボットエージェント基盤「Qwen-RobotClaw」も公開した。スイートはすでに一部のAlibaba Cloud法人顧客とのパイロットに入っている。</description>
+    </item>
+    <item>
+      <title>Sakana AI、初の商用プロダクト「Marlin」リリース その実力は？【出力レポート全文掲載】</title>
+      <link>https://itmedia.co.jp/news/articles/2606/15/news015.html</link>
+      <guid isPermaLink="false">aidd-item-itmedia-sakana-marlin</guid>
+      <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/itmedia-sakana-marlin">AI Daily Digest 2026-06-16</source>
+      <description>Sakana AIは6月15日、AI調査エージェント「Sakana Marlin」の提供を開始した。4月からβ版として提供していたものを商用化したもので、同社にとって初の商用プロダクトとなる。公開に先立つ11日にはメディア向けにサービスのハンズオンが実施され、事前に集めたテーマでの出力レポートも公開されている。研究・調査に特化したエージェントとして位置づけられ、国産AIスタートアップが研究成果を収益化フェーズへ移す動きを示す事例となっている。</description>
+    </item>
     <item>
       <title>DeepSeek-V4 公開——数学・コード・推論の全ベンチマークでV3を超えるオープンソースLLM</title>
       <link>https://syncedreview.com/2026/06/07/deepseek-v4-benchmarks/</link>
@@ -573,54 +621,6 @@
       <pubDate>Mon, 18 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26/mm-001">AI Daily Digest 2026-05-26</source>
       <description>Google DeepMindがGoogle I/O 2026でGemini Omniを発表した。テキスト・画像・音声・動画の任意の組み合わせを入力として受け取り、高品質な動画を生成する「世界モデル」として設計されている。DeepMind CEO デミス・ハサビス氏は「世界の内部モデルを構築し、シーン内で次に何が起きるかを推論するシステム」と説明した。まずGemini Omni Flashとして公開され、Geminiアプリ・YouTube Shorts・AIクリエイティブスタジオ「Flow」に展開される。既存動画の自然言語編集（背景変更・スタイル変換・カメラアングル変更・効果音追加）が可能。Omni Pro（より高性能版）は2026年下半期の予定。</description>
-    </item>
-    <item>
-      <title>制約崩壊：LLMエージェントはバックエンドコード生成で構造制約が増えると急激に失敗する</title>
-      <link>https://arxiv.org/abs/2605.06445</link>
-      <guid isPermaLink="false">aidd-item-rp-001</guid>
-      <pubDate>Wed, 06 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/rp-001">AI Daily Digest 2026-05-25</source>
-      <description>Francesco Dente・Dario Satriani・Paolo PapottiらのarXiv論文は、LLMエージェントが本番グレードのバックエンドコード生成において構造制約が累積するにつれて急激に性能低下する「制約崩壊（Constraint Decay）」現象を体系的に実証した。同一APIコントラクトを固定した8ウェブフレームワーク・80件の新規生成タスクと20件の機能追加タスクでエージェントを評価した結果、制約が少ない状況では高い性能を示す一方、アーキテクチャパターン・ORM・DB設計などの構造制約が重なると性能が急落することが確認された。LLMエージェントは高速プロトタイピングには有効だが、本番バックエンド開発には現時点で信頼できないという結論はHacker Newsで123ポイントを獲得し開発者コミュニティに大きな反響を呼んでいる。評価パイプライン・タスク集・エージェント軌跡・分析スクリプトはすべてオープンソース公開済み。</description>
-    </item>
-    <item>
-      <title>DeltaBox：ミリ秒単位のチェックポイントでステートフルAIエージェントをスケール</title>
-      <link>https://arxiv.org/abs/2605.22781v1</link>
-      <guid isPermaLink="false">aidd-item-ag-001</guid>
-      <pubDate>Wed, 20 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/ag-001">AI Daily Digest 2026-05-25</source>
-      <description>arXivに投稿されたDeltaBoxは、OS補助機構を活用してAIエージェントのサンドボックス状態をミリ秒単位でチェックポイント・ロールバックできる新技術を提案している。従来のエージェントランタイムは一方向の実行しか保証できず、木探索や強化学習に不可欠な「やり直し」操作が実質不可能だったが、DeltaBoxはこの制約を根本から解消する。RL（強化学習）ワークロードの実行コスト削減とエージェントデバッグの高速化が主要ユースケースであり、Daytona社が報告する850K/日のサンドボックス実行規模でも適用可能な設計となっている。長期自律エージェントの安全性・信頼性向上に直結する基礎技術として注目されている。</description>
-    </item>
-    <item>
-      <title>VPO：多様性訓練でtest-time searchを強化する新RL手法—4タスクでGRPOを上回る</title>
-      <link>https://arxiv.org/abs/2605.22817</link>
-      <guid isPermaLink="false">aidd-item-rp-002</guid>
-      <pubDate>Wed, 20 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/rp-002">AI Daily Digest 2026-05-25</source>
-      <description>VPO（Vector Policy Optimization）は、GRPOのスカラー優位性推定をベクトル報酬空間に拡張し、複数の下流報酬関数に対応する多様な解集合を出力するよう言語モデルを訓練する新しいRL手法だ。コード生成のテストケース単位正解率など報酬がベクトル値である実用場面に特化しており、GRPOへのドロップイン代替として実装できる。4タスクのpass@kとbest@kベンチマークでGRPOなどのスカラーRLベースラインを上回り、探索バジェットが増えるほど差が拡大することを実証した。進化的探索においてはGRPOが解けない問題をVPOが解いた事例も示されており、test-time computingの効率化と多様性確保を両立する重要な貢献となっている。</description>
-    </item>
-    <item>
-      <title>完全ローカルかつCPUで動く日本語対応の軽量TTSモデル「Supertonic 3」</title>
-      <link>https://www.techno-edge.net/article/2026/05/24/5094.html</link>
-      <guid isPermaLink="false">aidd-item-jp-001</guid>
-      <pubDate>Sat, 23 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/jp-001">AI Daily Digest 2026-05-25</source>
-      <description>テクノエッジが掲載したSupertonic 3の日本語解説記事で、はてなブックマーク204件を獲得した本日最大の日本語AI反響コンテンツだ。Supertone社が開発した第3世代TTSモデル「supertonic-3」は99Mパラメータ・ONNX形式で、GPU不要・CPUのみで高速動作する。日本語を含む31言語に対応し、HuggingFaceダウンロード数は4万3千件超。プライベートデータを外部APIに送信することなくローカルで完結できる日本語音声合成として、AIツールを活用するエンジニア・個人開発者から強い関心を集めている。記事では実際のセットアップ手順と日本語サンプル音声も紹介されており、すぐに試せる実用記事として拡散している。</description>
-    </item>
-    <item>
-      <title>Understand-Anything：コードベースをインタラクティブな知識グラフに変換するOSS</title>
-      <link>https://github.com/Lum1104/Understand-Anything</link>
-      <guid isPermaLink="false">aidd-item-ta-001</guid>
-      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/ta-001">AI Daily Digest 2026-05-25</source>
-      <description>GitHub Trendingで本日第1位を記録したUnderstand-Anythingは、任意のコードベースをインタラクティブな知識グラフに変換してブラウザ上で探索・検索・質問応答できるようにするOSSツールだ。本日だけで3,987スターを獲得し累計25,238スターに達した。大規模リポジトリの構造把握・依存関係の追跡・未知コードベースのオンボーディングを大幅に加速する。LLMを活用したコード理解インターフェースとして、Claude CodeやCursorなどAIコーディングツールを補完する位置づけにある。レガシーシステムを引き継いだチームや大型OSS貢献者にとって即効性の高い生産性向上ツールとして注目されている。</description>
-    </item>
-    <item>
-      <title>DeepSeek V4-Pro APIを永久75%値下げ—$0.435/Mトークン入力でGPT-5・Claude・Gemini全モデルを価格で下回る</title>
-      <link>https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model</link>
-      <guid isPermaLink="false">aidd-item-cn-001</guid>
-      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25/cn-001">AI Daily Digest 2026-05-25</source>
-      <description>DeepSeekが旗艦モデルDeepSeek V4-ProのAPIを永久75%値下げした。非キャッシュ入力トークンを100万あたり$0.435・出力を$0.87とし、GPT-5・Claude・Gemini含む主要競合モデルを価格面で下回る設定となった。さらに全APIラインのキャッシュヒット料金を一律90%削減する追加措置も実施された。2026年1月にDeepSeek R1が「フロンティア推論をOpenAIの数分の一のコストで実現」して業界を震撼させて以来続くLLM価格競争が、今回の永久値下げで決定的な新段階に入った。Hacker Newsで153ポイントを獲得しており、スタートアップの推論コスト計算に直接影響する構造変化として広く認識されている。</description>
     </item>
   </channel>
 </rss>

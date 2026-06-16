@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 Jun 2026 03:23:36 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 12:34:32 GMT</lastBuildDate>
+    <item>
+      <title>米政府がAnthropicの最強モデルFable 5/Mythosを輸出規制で停止——中国はGLM-5.2・Kimi K2.7を相次ぎOSS公開で対抗、SpaceXはCursorを600億ドルで買収、AppleはFoundation ModelsをOSS化しClaude/Gemi</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16</link>
+      <guid isPermaLink="false">aidd-day-2026-06-16</guid>
+      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
+      <description>本日の最大トピックは、米政府がAnthropicに対しMythosクラスの最強モデル（Claude Fable 5・Mythos 5）の利用を米国民に限定するよう命じ、Anthropicが90分でアクセスを制限した一件。中国関連グループがジェイルブレイク経由でアクセスした懸念が背景とされ、Anthropicは「フロンティアモデルの展開全般を止めかねない基準だ」と反発している。これに呼応するように中国勢はZ.aiがGLM-5.2（744B MoE・100万トークン文脈・MITライセンス）、Moonshotが Kimi K2.7 Code をオープンモデルとして相次いで公開した。業界ではSpaceXがCursor開発元Anysphereを600億ドルの全株式交換で買収すると発表。WWDCではAppleがFoundation Modelsフレームワークを今夏OSS化し、単一のSwift APIからClaude・Geminiを切り替えられるようにすると示した。中国ではAlibabaが初の具身大モデルQwen-Robotシリーズを公開した。日本ではSakana AIが初の商用プロダクト「Marlin」を提供開始している。
+
+【今日の必読】
+・米政府によるAnthropicモデル停止命令は「ジェイルブレイク」が本質ではない——フロンティアAIへの政府介入という前例
+・SpaceX、Cursor開発元Anysphereを600億ドルの全株式交換で買収へ——大型IPO直後の動き
+・AppleがFoundation Modelsフレームワークを今夏OSS化——単一Swift APIでオンデバイス・自社クラウド・Claude・Geminiを切替可能に
+・Claude Fableのサービス停止を受けて中国企業が最先端モデル「GLM-5.2」を急遽発表、2026年6月中に無料公開へ
+・Alibaba、初の具身（身体性）大規模モデル「Qwen-Robot」シリーズを3本同時公開——操作・移動・世界モデル
+・Sakana AI、初の商用プロダクト「Marlin」リリース その実力は？【出力レポート全文掲載】</description>
+    </item>
     <item>
       <title>DeepSeek-V4がV3全指標超えのOSSとして公開・HNで523pt——日本語コミュニティはAIエージェント設計パターン143ブクマ、MCP自作ガイドが87いいね</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07</link>
@@ -435,13 +450,6 @@
       <guid isPermaLink="false">aidd-day-2026-05-10</guid>
       <pubDate>Sat, 09 May 2026 20:00:00 GMT</pubDate>
       <description>2026年5月10日は Google I/O 2026 と Meta LlamaCon という 2 つの大型開発者イベントがほぼ同時期に展開され、フロンティアモデルの能力競争とオープンソース AI の普及の両面で大きな進展があった一日だった。Google は I/O 2026 で次世代フラッグシップ Gemini 4（ネイティブマルチモーダル）と動画生成モデル Veo 4、自律研究エージェント Deep Research Max、Gmail・Chat・Calendar・Drive をリアルタイムで統合する Workspace Intelligence を発表し、AI アシスタントから自律エージェントへのシフトを大規模に推進した。Meta は LlamaCon 2026 で Llama ファミリーの累計ダウンロード 10 億件突破を発表すると同時に、405B パラメータのネイティブマルチモーダル Llama 4 全ラインアップと Llama Guard 4・LlamaFirewall・Llama Prompt Guard 2 の安全ツール 3 種を公開し、オープン AI の企業利用を本格支援する体制を整えた。ツール面では Hugging Face Transformers v5 が DeepSeek-V4・Gemma 4 をサポートし、OpenAI は Excel・Google Sheets を直接操作する Workspace Agents とリアルタイム音声 API 3 種を追加した。同時にセキュリティ分野では「2026 年が AI 支援型攻撃の年」という認識が確立しつつあり、10 代による ChatGPT を使った楽天モバイル侵害や Claude Code を使った 17 組織への脅迫など実例が相次いで報告された。前日の Project Glasswing・GPT-5.5-Cyber と合わせ、AI の防攻両面での高度化が同時進行する現実が明確に可視化された。日本では AI が東大理Ⅲ入試で首席合格相当のスコアを達成したことが日本経済新聞で報道され、医学 AI・教育 AI の社会的議論が加速した。</description>
-    </item>
-    <item>
-      <title>Anthropic が Project Glasswing で Claude Mythos（CyberGym 83.1%）を AWS・Apple・Google ら 12 社連合に開放し基幹 OSS 防御へ、AlphaEvolve が量子回路エラー 10 倍削減など多分野の実測イン</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-09</link>
-      <guid isPermaLink="false">aidd-day-2026-05-09</guid>
-      <pubDate>Fri, 08 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月9日は AI のサイバーセキュリティ応用と実世界への科学的インパクトが同時に前進した一日だった。最大のニュースは Anthropic の Project Glasswing で、未公開フロンティアモデル Claude Mythos Preview が CyberGym（脆弱性再現ベンチマーク）で 83.1%（Opus 4.6: 66.6%）を記録し、主要 OS・ブラウザから数千件のゼロデイ脆弱性を発見済みという実績のもと、AWS・Apple・Google・Microsoft・NVIDIA ら 12 社が 1 億ドルのモデルクレジットを拠出して防御側への先行公開を開始した。攻撃者より先に防御者が Mythos 級能力を保有するという新しい AI セキュリティパラダイムが始動した。Google DeepMind の AlphaEvolve は量子回路エラー 10 倍削減・自然災害予測 5% 改善・Klarna でのモデル学習 2 倍高速化など、アルゴリズム設計 AI の実世界インパクトを多分野にわたって公開した。OpenAI は GPT-5.5-Cyber を承認済みサイバー防衛チームへ限定展開し、PoC 作成やマルウェア解析などのセキュリティ専門ワークフローを解放した。日本語コミュニティでは GW 期間中の Claude Code 実践が大きな反響を集め、梶谷健人氏による学習ガイド（はてブ 1,003）が過去最多水準の反響を獲得した一方、「AI は速度を前払いし失敗を後払いにする」論考が PR レビュー時間 +441%・本番インシデント +242.7% という組織レベルの具体的データでバイブコーディング時代の品質問題を可視化した。</description>
     </item>
   </channel>
 </rss>
