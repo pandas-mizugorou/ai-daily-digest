@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 16 Jun 2026 18:52:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 19:24:56 GMT</lastBuildDate>
+    <item>
+      <title>ホワイトハウス、Fable 5再公開条件に「全ジェイルブレーク完全遮断」——専門家は「技術的に不可能」と指摘</title>
+      <link>https://wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible</link>
+      <guid isPermaLink="false">aidd-item-wired_ai-the-white-house-wants-anthropic-to-block-all-jai</guid>
+      <pubDate>Wed, 17 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/wired_ai-the-white-house-wants-anthropic-to-block-all-jai">AI Daily Digest 2026-06-18</source>
+      <description>Trump政権がAnthropicに対し、Fable 5モデルの再公開条件として「ガードレールが完全に迂回できないこと」を要求していることがWIREDの取材で判明した。Trump政権関係者がWIREDに対し条件を直接語った。セキュリティ専門家は、ジェイルブレークの完全遮断は技術的に実現不可能であると断言しており、規制当局とAIセーフティ実務の間にある深刻な認識ギャップが浮き彫りになった。</description>
+    </item>
+    <item>
+      <title>Z.ai GLM-5.2公開：Long-Horizon Tasks特化の新モデルをOSS化</title>
+      <link>https://huggingface.co/blog/zai-org/glm-52-blog</link>
+      <guid isPermaLink="false">aidd-item-hf_blog-glm-5-2-built-for-long-horizon-tasks</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/hf_blog-glm-5-2-built-for-long-horizon-tasks">AI Daily Digest 2026-06-18</source>
+      <description>Z.ai（智谱AI）がGLM-5.2をHugging Face経由でオープンソース公開した。設計コンセプトは「Long-Horizon Tasks（長期タスク）」への最適化であり、複数ステップにわたるタスク遂行能力を高めた新世代モデルとして位置付けられている。AnthropicのFable 5が米国規制下にある中で公開されたタイミングとしても注目される。</description>
+    </item>
+    <item>
+      <title>Fable 5・Opus 4.8レッドチーム研究：7826件の有害意図・4種JB手法・三審制で評価</title>
+      <link>https://arxiv.org/abs/2606.18193v1</link>
+      <guid isPermaLink="false">aidd-item-arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m">AI Daily Digest 2026-06-18</source>
+      <description>AnthropicのFable 5およびOpus 4.8に対するレッドチーム研究が公開された。7826件の有害意図（10カテゴリ分類）に対し、HackAgentフレームワークを用いて4種のジェイルブレーク攻撃手法から数十万件の攻撃を生成した。攻撃の成功判定には3つのジャッジモデルによる多数決を採用しており、フロンティアモデルの敵対的ロバスト性を体系的に評価している。</description>
+    </item>
+    <item>
+      <title>Looped World Models：パラメータ共有で100倍の効率化を実現する世界モデル設計</title>
+      <link>https://arxiv.org/abs/2606.18208v1</link>
+      <guid isPermaLink="false">aidd-item-arxiv-looped-world-models</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/arxiv-looped-world-models">AI Daily Digest 2026-06-18</source>
+      <description>世界モデルの新アーキテクチャ「Looped World Models（LoopWM）」が提案された。パラメータを共有するTransformerブロックを繰り返し適用することで、同等品質を100倍のパラメータ効率で達成するという。長期シミュレーションには深い計算が必要だが深いモデルは展開コストが高いというジレンマを、ループ型アーキテクチャとAdaptive Computationで解決する試みであり、世界モデルへの初のloopedアーキテクチャ適用として位置付けられている。</description>
+    </item>
+    <item>
+      <title>5万スターのClaude Code Tips集、本質は2つだけ</title>
+      <link>https://zenn.dev/acntechjp/articles/5409d8e2ad0767</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-5-claude-code-tips-2</guid>
+      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/hatena_it-5-claude-code-tips-2">AI Daily Digest 2026-06-18</source>
+      <description>GitHubで5万スター近くを獲得しGitHub Trending 1位を達成したClaude Codeベストプラクティス集「shanraisshan/claude-code-best-practice」を解説した記事が575はてブを集めた。設定ファイルを配るテンプレート集ではなく「Claude Codeを上手く使うための知識をリンク付きで整理したリファレンス」として機能しており、著者による「本質は2つだけ」という要約が多くの支持を集めた理由である。</description>
+    </item>
+    <item>
+      <title>HuggingFace、エージェントがHubリソースを自律検索できる機能「Agentic Resource Discovery」を公開</title>
+      <link>https://huggingface.co/blog/agentic-resource-discovery-launch</link>
+      <guid isPermaLink="false">aidd-item-hf_blog-agentic-resource-discovery-let-agents-search</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/hf_blog-agentic-resource-discovery-let-agents-search">AI Daily Digest 2026-06-18</source>
+      <description>Hugging FaceがHub上のモデルやデータセットをAIエージェントが自律的に検索・発見できる「Agentic Resource Discovery」機能を公開した。エージェントが必要なリソースを能動的に探索できることで、開発者の手を介さないパイプラインの構築が可能になる。</description>
+    </item>
     <item>
       <title>AnthropicとホワイトハウスはClaude Fable 5を巡る対立が継続——高官会談後も見解の隔たり埋まらず</title>
       <link>https://wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5</link>
@@ -581,54 +629,6 @@
       <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-014">AI Daily Digest 2026-05-28</source>
       <description>富士通がAnthropicとの戦略的パートナーシップを発表し、10万人以上の全世界グループ社員にClaudeを展開することを明らかにした。連携の柱は4つ：政府・金融・医療・重要インフラ向けForward Deployed Engineer（FDE）モデル、サイバーセキュリティ強化、AIフレームワーク構築、内部実践から外部展開への段階的アプローチだ。Anthropicとの提携はNEC・日立などの先行事例と合わせ、日本大手IT企業によるAI本格転換の流れを明確に示している。1,000人のAIエンジニアリングチーム構築も計画している。</description>
-    </item>
-    <item>
-      <title>AIセキュリティ脅威の全景 2026 — CVE / 攻撃手法 / 防御策</title>
-      <link>https://qiita.com/emi_ndk/items/a36051a97d3b0670bedd</link>
-      <guid isPermaLink="false">aidd-item-jp_ai_security_2026_001</guid>
-      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/jp_ai_security_2026_001">AI Daily Digest 2026-05-27</source>
-      <description>2026年のAIセキュリティ脅威を体系的にまとめたQiita記事が公開初日に59いいねを獲得した。プロンプトインジェクション・モデル汚染・サプライチェーン攻撃など最新CVEと攻撃手法を網羅し、防御策まで具体的に解説する。LLMを本番環境で運用するエンジニアにとって実用的なチェックリストとして機能する内容で、はてブにも同数のブックマークが集まっており実務的需要の高さを示している。</description>
-    </item>
-    <item>
-      <title>Agentic AI時代におけるメルカリのAIガバナンスとガードレール実装</title>
-      <link>https://speakerdeck.com/naoichihara/agentic-aishi-dai-niokeru-merukarinoaigabanansutogadorerushi-zhuang</link>
-      <guid isPermaLink="false">aidd-item-jp_mercari_governance_001</guid>
-      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/jp_mercari_governance_001">AI Daily Digest 2026-05-27</source>
-      <description>メルカリのAIエンジニアが公開したスライドが公開即日124ブックマークを獲得した。エージェントAI時代のガバナンス実装として、Blast Radius制御・ガードレール設計・監視体制の構築を具体的な実装知見とともに解説する。エージェントが自律的に動作する本番環境での事故防止策として、日本の大手EC企業の実態に即した設計思想が高く評価されている。</description>
-    </item>
-    <item>
-      <title>LLMに「睡眠」を——文脈を高速重みに変換する統合機構で長期推論を突破</title>
-      <link>https://arxiv.org/abs/2605.26099</link>
-      <guid isPermaLink="false">aidd-item-rp_llm_sleep_consolidation_001</guid>
-      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/rp_llm_sleep_consolidation_001">AI Daily Digest 2026-05-27</source>
-      <description>LLMが長期推論タスクで文脈を失う問題を「睡眠統合」機構で解決する論文がarXivに公開された。従来の推論時処理とは異なり、オフラインの「睡眠フェーズ」で文脈を持続的な高速重みに変換する。これにより推論レイテンシを増やさず長期的な記憶保持が可能になる。HNフロントページで165ptを獲得するなど実装者からも高い注目を集めており、LoRA等の既存軽量化技術との組み合わせも期待されている。</description>
-    </item>
-    <item>
-      <title>Borealis：音声LLM学習の完全オープンレシピ——データ・コード・重みをすべて公開</title>
-      <link>https://huggingface.co/blog/AlexWortega/borealis</link>
-      <guid isPermaLink="false">aidd-item-mm_borealis_audio_llm_001</guid>
-      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/mm_borealis_audio_llm_001">AI Daily Digest 2026-05-27</source>
-      <description>BorealisはオーディオLLMを学習するための完全オープンソースフレームワークで、学習データ・コード・モデル重みをすべて公開している。これまで音声AI開発は大企業が独占していたが、Borealisは再現可能なレシピを提供することで研究者・個人開発者の参入を可能にする。音声認識・音声生成・音声対話の統合モデルを効率的に構築でき、音声AI開発の民主化に向けた重要な一歩として評価されている。Hugging Faceコミュニティでの試験・改善が積極的に歓迎されている。</description>
-    </item>
-    <item>
-      <title>「すべてのモデルラボがエージェントラボになった」——Latent Spaceが業界パラダイム転換を宣言</title>
-      <link>https://www.latent.space/p/ainews-all-model-labs-are-now-agent</link>
-      <guid isPermaLink="false">aidd-item-ag_all_labs_agent_001</guid>
-      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/ag_all_labs_agent_001">AI Daily Digest 2026-05-27</source>
-      <description>Latent SpaceのAINewsが「OpenAI・DeepSeek・AI21など主要AIラボがモデル単体開発から統合エージェントシステム構築へ本格転換した」と宣言した。専任のエージェントインフラチームを設置し、モデル性能だけでなくエージェントの実行品質で競争する構造へシフトしている。Claude Code・OpenAI Codex・GoogleのAgent Spaceなど実製品でも転換が可視化されており、AIラボの組織構造と戦略が根本的に変わりつつある。</description>
-    </item>
-    <item>
-      <title>「アウトソーシング＋ローカルAIがフロンティアラボより経済合理的になる」——HN 213pt論考</title>
-      <link>https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/</link>
-      <guid isPermaLink="false">aidd-item-cb_localai_economics_001</guid>
-      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27/cb_localai_economics_001">AI Daily Digest 2026-05-27</source>
-      <description>「オフショアアウトソーシングとローカルLLMを組み合わせることで、多くのエンタープライズタスクでフロンティアラボのAPIより経済的になる」と主張するブログ投稿がHNで213ポイントを獲得した。Claude・GPTの従量課金モデルが高コスト化する一方、Llama等のオープンモデルの品質向上と専門特化した低コスト作業者との組み合わせが現実的な代替になりつつあるという主張だ。フロンティアLLM APIへの依存度に対する業界の問い直しが始まっていることを示す議論として注目された。</description>
     </item>
   </channel>
 </rss>

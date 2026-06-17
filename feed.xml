@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 16 Jun 2026 18:52:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 19:24:56 GMT</lastBuildDate>
+    <item>
+      <title>ホワイトハウスがAnthropicに「全ジェイルブレーク遮断」を要求——Z.ai GLM-5.2がFable 5不在中にOSS公開、Looped World Modelsが100倍効率化達成、Pew調査で米国人の63%が「AIは速すぎる」</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18</link>
+      <guid isPermaLink="false">aidd-day-2026-06-18</guid>
+      <pubDate>Wed, 17 Jun 2026 20:00:00 GMT</pubDate>
+      <description>Trump政権がAnthropicのFable 5再公開の条件として「ガードレールを完全に迂回できないこと」を要求したことがWIREDの取材で判明し、セキュリティ専門家は技術的に不可能と指摘する。Z.aiはFable 5規制下でGLM-5.2をHugging Face経由でOSS公開した。研究面ではAnthropicモデルへのレッドチーム研究（7826件の有害意図、4種JB手法、三審制）とLooped World Models（従来比100倍パラメータ効率）が注目を集めた。Pew Research調査では米国人の63%がAI進化は速すぎると回答し、日本語圏ではClaude Code Tips集が575はてブを獲得した。
+
+【今日の必読】
+・ホワイトハウス、Fable 5再公開条件に「全ジェイルブレーク完全遮断」——専門家は「技術的に不可能」と指摘
+・Z.ai GLM-5.2公開：Long-Horizon Tasks特化の新モデルをOSS化
+・Fable 5・Opus 4.8レッドチーム研究：7826件の有害意図・4種JB手法・三審制で評価
+・Looped World Models：パラメータ共有で100倍の効率化を実現する世界モデル設計
+・5万スターのClaude Code Tips集、本質は2つだけ
+・HuggingFace、エージェントがHubリソースを自律検索できる機能「Agentic Resource Discovery」を公開</description>
+    </item>
     <item>
       <title>AnthropicとホワイトハウスがFable 5規制で継続対立——SpaceXがCursorを600億ドルで買収、OpenAI内部財務文書流出で赤字継続が判明、SoftBankとOpenAIが国内インフラ向けセキュリティサービス発表</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-17</link>
@@ -442,22 +457,6 @@
 ・ARIS：敵対的マルチエージェント協調による自律研究システム――オープンソースで GitHub 8,800 スター獲得
 ・OpenAI、企業 AI 展開の専門会社「OpenAI Deployment Company」設立――$40 億超・19 社パートナー・Tomoro 買収
 ・Mean Mode Screaming：平均・分散分離残差で 1000 層拡散 Transformer を安定訓練する新手法</description>
-    </item>
-    <item>
-      <title>OpenAI が GPT-5 クラス音声推論モデル 3 本を API 公開、DeepMind AlphaEvolve が多分野で実測インパクト確認、Anthropic 評価額 1 兆ドル超で年率 10 倍成長を記録</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-11</link>
-      <guid isPermaLink="false">aidd-day-2026-05-11</guid>
-      <pubDate>Sun, 10 May 2026 20:00:00 GMT</pubDate>
-      <description>OpenAIは音声AIの新時代を切り開くGPT-Realtime-2・GPT-Realtime-Translate・GPT-Realtime-Whisperの3モデルをAPIで公開。GPT-5クラスの音声推論と70言語リアルタイム翻訳が商用水準で利用可能になった。DeepMindはAlphaEvolveが量子回路設計・データセンター最適化など多分野で実測インパクトを達成したと公表し、AIエージェントの科学応用が加速していることを示した。Anthropicは評価額1〜1.2兆ドルに達し月間ARR15億ドル増という驚異的成長が報告され、AI業界の経済集中が鮮明に。日本では「ローカルLLMの進化がすごい話」がはてブ455件を集め、国内技術コミュニティのローカルAI実用化への高い関心を示した。
-
-【今日の必読】
-・Claude Codeでドキュメント自動HTML化
-・OpenAI、GPT-Realtime-2 / Translate / Whisper の 3 音声モデルを API 公開 — GPT-5 クラス推論が音声エージェントに到達
-・AI Co-Mathematician — DeepMind 共著の数学研究支援エージェントが FrontierMath Tier-4 で 48% 達成
-・AlphaEvolve が量子回路・データセンター最適化など多分野で実測インパクトを公表 — Gemini 搭載コーディングエージェントの科学応用
-・Anthropic が年率 10 倍・評価額 1 兆ドル超に到達 — 他社が 10% 超のレイオフをする中で 80 倍成長を記録
-・LLM グローバルリーダーボードはなぜ誤解を招くか — 89K 比較の分析で「決定票の 2/3 がキャンセルアウト」を実証
-・ローカルLLMの進化がすごい話</description>
     </item>
   </channel>
 </rss>
