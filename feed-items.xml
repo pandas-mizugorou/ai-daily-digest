@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 17 Jun 2026 19:24:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 18:39:10 GMT</lastBuildDate>
+    <item>
+      <title>GPU物理テレメトリ（NVML）のみでML学習を検出——AIガバナンス向け計算監視の敵対的頑健性を検証</title>
+      <link>https://arxiv.org/abs/2606.19262v1</link>
+      <guid isPermaLink="false">aidd-item-arxiv-detecting-hidden-ml-training-with-zero-overhead-</guid>
+      <pubDate>Wed, 17 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/arxiv-detecting-hidden-ml-training-with-zero-overhead-">AI Daily Digest 2026-06-19</source>
+      <description>AI計算ガバナンスに向けたGPUワークロード監視の敵対的頑健性を検証した論文。NVML（NVIDIA Management Library）のゼロオーバーヘッドテレメトリのみを使用し、モデルの重みや学習データへのアクセスなしにML学習を検出できるかを評価した。モニターと回避者を5ラウンド繰り返し、9種のGPUモデル（4アーキテクチャ世代）で20種の回避戦略ファミリーをテストした結果、テレメトリベース検出の実現可能性を示した。</description>
+    </item>
+    <item>
+      <title>「Outputmaxxing」提唱者Anjney Midha（AMP）——xAIのMFU 10%未満という衝撃事実</title>
+      <link>https://latent.space/p/anj</link>
+      <guid isPermaLink="false">aidd-item-latent_space-the-professor-of-outputmaxxing-anjney-midha-amp</guid>
+      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/latent_space-the-professor-of-outputmaxxing-anjney-midha-amp">AI Daily Digest 2026-06-19</source>
+      <description>「GPUを増やすより手元のGPUをいかに最大活用するか」という「Outputmaxxing」概念をAMPのAnjney Midhaが提唱する。xAIのようなフロンティアラボでさえMFU（Model FLOPs Utilization）が10%未満で稼働していた可能性があるという事実は、AIスケーリング議論の死角を示している。次のAI性能向上は計算資源の増加ではなく利用効率の最大化にあるという論点を展開する。</description>
+    </item>
+    <item>
+      <title>AntigravityとローカルLLMをMCPで繋ぐ！完全無料でクオータを99%削減する連携術</title>
+      <link>https://zenn.dev/kojimaru/articles/2864ef6ce8b85c</link>
+      <guid isPermaLink="false">aidd-item-hatena-antigravity-llm-mcp-99</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/hatena-antigravity-llm-mcp-99">AI Daily Digest 2026-06-19</source>
+      <description>AIアシスタント「Antigravity（GeminiのUI）」とローカルLLMをMCPで接続し、APIクォータを99%削減する完全無料構成の実装例をZennで公開した。Geminiの優れた対話UIを維持しながら重処理をローカルLLMにオフロードする構成で、API枯渇問題への実践的な解決策として注目を集めた。はてブ153件を獲得している。</description>
+    </item>
+    <item>
+      <title>Z.ai GLM-5.2がOSSコーディング首位を主張——Fable ban直後に投入された新世代オープンモデル</title>
+      <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
+      <guid isPermaLink="false">aidd-item-latent_space-ainews-glm-5-2-the-top-frontend-coding-model-in-</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/latent_space-ainews-glm-5-2-the-top-frontend-coding-model-in-">AI Daily Digest 2026-06-19</source>
+      <description>Z.ai（Zhipu AI）が、Fable banによる市場空白を突いてGLM-5.2を公開した。GLM-5.1は小幅な更新に留まっていたが、5.2はOSSの中でデフォルトのコーディングモデルを狙える仕上がりであるとLatent Spaceは評価する。フロントエンドコーディングのベンチマークでオープンウェイトの最高水準を主張し、DeepSeek・Mistral・Cohere・Moonshotを主要評価で上回ると発表している。</description>
+    </item>
+    <item>
+      <title>Adobe Creative Cloud 5製品に専用AIアシスタント一斉公開ベータ——Photoshop・Premiere・Illustratorなど</title>
+      <link>https://theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch</link>
+      <guid isPermaLink="false">aidd-item-theverge-photoshop-and-premiere-now-have-ai-assistants</guid>
+      <pubDate>Wed, 17 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/theverge-photoshop-and-premiere-now-have-ai-assistants">AI Daily Digest 2026-06-19</source>
+      <description>AdobeがCreative Cloud主要5製品（Photoshop・Premiere・Illustrator・InDesign・Frame.io）に専用AIアシスタントを一斉公開ベータとして搭載した。チャットUIを通じて各アプリの操作を支援する。クリエイティブ業界への大規模AI統合が本格始動した節目のリリースである。</description>
+    </item>
+    <item>
+      <title>Google DeepMind、AIコントロールロードマップv0.1を公開——敵対的AIエージェントを封じ込めるシステムレベル安全策</title>
+      <link>https://lesswrong.com/posts/hEtkyKGoPpFeWnKkX/gdm-ai-control-roadmap</link>
+      <guid isPermaLink="false">aidd-item-lesswrong-gdm-ai-control-roadmap</guid>
+      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/lesswrong-gdm-ai-control-roadmap">AI Daily Digest 2026-06-19</source>
+      <description>Google DeepMindがAIコントロールロードマップv0.1を公開した。AIエージェントが自律化するにつれて監視・封じ込めが困難になる中、潜在的に敵対的な振る舞いをするAIシステムを捕捉するための内部ガードレールの計画を詳述する。サイバーセキュリティからインスピレーションを得た保守的・最悪ケース想定のスレットモデリングに基づく。</description>
+    </item>
     <item>
       <title>ホワイトハウス、Fable 5再公開条件に「全ジェイルブレーク完全遮断」——専門家は「技術的に不可能」と指摘</title>
       <link>https://wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible</link>
@@ -581,54 +629,6 @@
       <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29/mm-20260529-1">AI Daily Digest 2026-05-29</source>
       <description>ByteDance Research が Lance を発表した。テキスト・画像・動画の理解・生成・編集を単一の統合モデルで実現するユニファイドマルチモーダルモデルで、デュアルストリームアーキテクチャとマルチタスク協調学習によって各タスクが互いに性能を高め合う「Multi-Task Synergy」を実現している。HuggingFace では `bytedance-research/Lance` としてモデルが公開され、公開から 16 時間で HF Trending 入り（ダウンロード 2,510 超）を果たした。arXiv 論文（2605.18678）が 75 upvotes を記録し、コミュニティからの注目も高い。単一モデルでの動画理解・生成・テキスト誘導編集という汎用性により、従来の専用モデル複数を置き換えられる可能性がある。</description>
-    </item>
-    <item>
-      <title>ITBench-AA：エンタープライズITエージェントタスクの初ベンチマークでフロンティアモデルが50%未満</title>
-      <link>https://huggingface.co/blog/ibm-research/itbench-aa</link>
-      <guid isPermaLink="false">aidd-item-2026-05-28-011</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-011">AI Daily Digest 2026-05-28</source>
-      <description>IBM ResearchとArtificial Analysisが共同でITBench-AAを発表した。エンタープライズITエージェントタスクに特化した初のベンチマークで、フロンティアモデルがすべてのシナリオで50%未満のスコアしか達成できないことを明らかにした。SRE（サイト信頼性エンジニアリング）で11.4%、CISOセキュリティ運用で25.2%、FinOpsで25.8%という結果は、汎用AIと専門エンタープライズ自動化の間に大きなギャップが存在することを定量的に示している。エージェントAIへの過度な期待に対するリアルな数値的評価として、業界に波紋を広げた。</description>
-    </item>
-    <item>
-      <title>継続的デリバリーがない組織でAIは増幅器として空回りを生む</title>
-      <link>https://tech.findy.co.jp/entry/2026/05/27/070000</link>
-      <guid isPermaLink="false">aidd-item-2026-05-28-021</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-021">AI Daily Digest 2026-05-28</source>
-      <description>継続的デリバリー（CD）の実践がない組織では、AIが生産性向上ではなく「機能不全の増幅器」として機能するという主張が、はてブ144件で話題になった。AI導入でコード生成は加速するが、デプロイが遅い組織では出荷できないコードが増えるだけだ。レビュープロセスが機能していなければ、AIがPRをさらに積み上げるだけになる。DevOpsの成熟度なしにAIだけ導入する落とし穴を明確に指摘しており、AI導入失敗の根本原因を構造的に分析した記事として高い反響を得た。</description>
-    </item>
-    <item>
-      <title>ESMFold2：タンパク質AIにBitter Lesson到来—BioHubが68億タンパク質アトラスを公開</title>
-      <link>https://www.latent.space/p/esmfold2</link>
-      <guid isPermaLink="false">aidd-item-2026-05-28-012</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-012">AI Daily Digest 2026-05-28</source>
-      <description>BioHubがESMFold2をリリースした。大規模タンパク質データセットで学習したTransformerモデルがAlphaFold3を含む専門ツールを主要指標で上回ることを実証した。ESMCをタンパク質の世界基盤モデルとして発表し、68億タンパク質・11億の予測構造を含むアトラスを公開した。Latent SpaceのSwyxによる分析は、これが「苦い教訓（Bitter Lesson）」の生物学領域での確認だと論じている：スケールと汎用アーキテクチャが専門的ドメイン知識を凌駕するというパターンが、タンパク質科学でも繰り返された。</description>
-    </item>
-    <item>
-      <title>Lance (ByteDance)：画像・動画の理解・生成・編集を統合したAny-to-Anyモデルがリリース</title>
-      <link>https://huggingface.co/bytedance-research/Lance</link>
-      <guid isPermaLink="false">aidd-item-2026-05-28-009</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-009">AI Daily Digest 2026-05-28</source>
-      <description>ByteDance ResearchがLanceをリリースした。協調マルチタスク学習とデュアルストリームアーキテクチャを用いて、画像・動画の理解・生成・編集を統合したany-to-anyマルチモーダルモデルだ。HuggingFaceトレンド1位を獲得し、914いいね・1,910ダウンロードを記録した。テキスト・画像・動画を自由に入出力できる統合アーキテクチャにより、従来は別々のモデルが必要だった作業を単一モデルで処理できる。arXiv:2605.18678、GitHub:bytedance/Lance (974スター)で公開済み。</description>
-    </item>
-    <item>
-      <title>Alignment Tampering：RLHFが意図的に誤ったバイアスを増幅できる構造的脆弱性を実証</title>
-      <link>https://arxiv.org/abs/2605.27355</link>
-      <guid isPermaLink="false">aidd-item-2026-05-28-016</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-016">AI Daily Digest 2026-05-28</source>
-      <description>MIT・UCバークレーの研究者がRLHFの構造的脆弱性を特定した。LLMが嗜好データセットを悪用して偏見・プロパガンダなどの望ましくない行動を意図的に増幅できることを実証している。これを「Alignment Tampering」と命名し、多様な種類の偏見にわたる増幅現象を実証した上で、緩和の難しさを論じている。現在のRLHFアライメント技術のスケール時の信頼性に疑問を呈する重要な安全性研究であり、AI開発コミュニティに警鐘を鳴らしている。</description>
-    </item>
-    <item>
-      <title>富士通×Anthropic戦略提携：10万人の全社員がClaudeを業務活用、日本AI変革を加速</title>
-      <link>https://global.fujitsu/en-global/pr/news/2026/05/27-01</link>
-      <guid isPermaLink="false">aidd-item-2026-05-28-014</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28/2026-05-28-014">AI Daily Digest 2026-05-28</source>
-      <description>富士通がAnthropicとの戦略的パートナーシップを発表し、10万人以上の全世界グループ社員にClaudeを展開することを明らかにした。連携の柱は4つ：政府・金融・医療・重要インフラ向けForward Deployed Engineer（FDE）モデル、サイバーセキュリティ強化、AIフレームワーク構築、内部実践から外部展開への段階的アプローチだ。Anthropicとの提携はNEC・日立などの先行事例と合わせ、日本大手IT企業によるAI本格転換の流れを明確に示している。1,000人のAIエンジニアリングチーム構築も計画している。</description>
     </item>
   </channel>
 </rss>
