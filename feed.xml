@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Jun 2026 18:39:10 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 17:54:27 GMT</lastBuildDate>
+    <item>
+      <title>米政府のFable 5停止が招いたOSS覇権交代——Z.ai GLM-5.2がコーディング首位を宣言、Claude Code Dynamic Workflowsが最大1000サブエージェント並列化、AWS Blocksが接続不要ローカルAIエージェント基盤を提供</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20</link>
+      <guid isPermaLink="false">aidd-day-2026-06-20</guid>
+      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
+      <description>米Trump政権によるAnthropicへのFable 5・Mythos 5配信停止命令が続く中、規制の根拠が一切公表されないという異常事態をWiredが告発した。その空白を突いてZ.aiがGLM-5.2をリリースし、フロントエンドコーディング最強OSSモデルを宣言。Z.aiはさらに2026年12月までにOpen Fable版のリリースを予告している。開発ツール面ではClaude Code Dynamic Workflowsの包括的ガイドが「ultracode」で最大1000サブエージェント並列起動を解説し、AWS BlocksがAWS接続不要のローカルAIエージェント開発基盤として登場した。日本では48時間で248ブクマを集めた「Claude Code自律的自己改善スキル」記事が話題を呼び、OpenAIがChatGPT広告の日本展開を電通・博報堂と連携して開始した。
+
+【今日の必読】
+・Fable ban後の空白を突いたZ.ai GLM-5.2——フロントエンドコーディング世界首位のOSSモデルを宣言
+・トークンの節約法を「VS Code」開発チームが解説、OpenAI、Anthropicそれぞれのポイントも
+・Claude Code Dynamic Workflows 完全ガイド: 最大1000サブエージェントを束ねる自動オーケストレーション
+・MosaicLeaks——研究エージェントは機密を守れるか？ServiceNow・HFが情報漏洩評価ベンチマークを公開
+・「ホワイトハウスはAIルールをリアルタイムで即興している」——根拠不透明なAnthropicへの規制をWiredが告発
+・AWSがAIチップを外部データセンターへ販売する交渉を開始——CEOが「500億ドルの機会」と位置づけ</description>
+    </item>
     <item>
       <title>GDMがAIコントロールロードマップv0.1公開・Adobe Creative Cloud 5製品にAIアシスタント一斉投入——GPU物理テレメトリでAI学習を検出する研究がarXivに登場、GLM-5.2がFable ban後のOSSコーディング首位を主張</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19</link>
@@ -441,22 +456,6 @@
 ・Claude Code と Multi-Agent Design Patterns
 ・Learning, Fast and Slow: パラメータ更新と文脈最適化の二重戦略で LLM 継続学習のサンプル効率 3 倍
 ・初めて Anthropic が OpenAI を企業採用で逆転—Ramp 5 万社データで 34.4% vs 32.3%</description>
-    </item>
-    <item>
-      <title>Claude が法律・AWS で本格展開、単一ニューロンでアライメント突破の安全論文、HN 835pt「Python 不要論」が世界で論争</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-13</link>
-      <guid isPermaLink="false">aidd-day-2026-05-13</guid>
-      <pubDate>Tue, 12 May 2026 20:00:00 GMT</pubDate>
-      <description>Anthropic が Claude for Legal を正式ローンチし Thomson Reuters・Harvey・LexisNexis と連携してリーガルテック全域を刷新、AWS ネイティブ統合と Agent View ダッシュボードも同日公開した。安全性分野では単一ニューロン操作で LLM アライメントを突破できる論文と、Claude Mythos・GPT-5.5 が 32 段階企業ネットワーク侵害を完遂した報告が業界に衝撃を与え、英国 AI 安全機関は「攻撃能力が 4 ヶ月ごとに倍増」と警告した。日本では「とほほのWWW入門」への Claude 解説追加がはてブ 250 件、OCR×LLM 書籍デジタル化手法が 154 件の注目を集めた。OpenAI のエンタープライズ導入会社設立（400 億ドル規模）と DeepSeek の約 5,000 億円調達も注目された。
-
-【今日の必読】
-・Anthropic、「Claude for Legal」を正式ローンチ——Thomson Reuters・LexisNexis・Harvey 連携でリーガルテック全域を刷新
-・とほほのWWW入門にClaudeとClaude Codeの解説が追加
-・「AI がコードを書くなら、なぜ Python を使う?」——HN 835pt の言語選択論争が白熱
-・単一ニューロンの操作だけで LLM の安全アライメントを突破できる——安全研究の根本的見直しを迫る論文
-・Claude Mythos と GPT-5.5 が 32 段階の企業ネットワーク侵害シミュレーションを初突破——英国 AI 安全機関「攻撃能力が 4 ヶ月ごとに倍増」
-・Gemini のツール呼び出しを 26M パラメータに蒸留した「Needle」——スマホ・腕時計で 6,000 tok/s を実現
-・DeepSeek、約 5,000 億円を調達——中国 AI 史上最大の資金調達で次世代インフラ整備へ</description>
     </item>
   </channel>
 </rss>
