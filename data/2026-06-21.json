@@ -24,12 +24,36 @@
     "grounding_flags": 0
   },
   "top_picks": [
-    { "id": "2026-06-21-017", "rank": 1, "reason": "must_read:hatena>=100(429users)+importance5+depth4+practicality5" },
-    { "id": "2026-06-21-019", "rank": 2, "reason": "must_read:hatena>=100(134users)+importance5+practicality5" },
-    { "id": "2026-06-21-001", "rank": 3, "reason": "must_read:importance5+depth4+practicality4" },
-    { "id": "2026-06-21-018", "rank": 4, "reason": "must_read:hatena>=100(112users)+importance5" },
-    { "id": "2026-06-21-005", "rank": 5, "reason": "diversity:agents+official+importance4" },
-    { "id": "2026-06-21-012", "rank": 6, "reason": "score_top:industry_business+freshness5" }
+    {
+      "id": "2026-06-21-017",
+      "rank": 1,
+      "reason": "must_read:hatena>=100(429users)+importance5+depth4+practicality5"
+    },
+    {
+      "id": "2026-06-21-019",
+      "rank": 2,
+      "reason": "must_read:hatena>=100(134users)+importance5+practicality5"
+    },
+    {
+      "id": "2026-06-21-001",
+      "rank": 3,
+      "reason": "must_read:importance5+depth4+practicality4"
+    },
+    {
+      "id": "2026-06-21-018",
+      "rank": 4,
+      "reason": "must_read:hatena>=100(112users)+importance5"
+    },
+    {
+      "id": "2026-06-21-005",
+      "rank": 5,
+      "reason": "diversity:agents+official+importance4"
+    },
+    {
+      "id": "2026-06-21-012",
+      "rank": 6,
+      "reason": "score_top:industry_business+freshness5"
+    }
   ],
   "categories": [
     {
@@ -58,7 +82,14 @@
             "source_type_bias": 1,
             "seen_penalty": -2
           },
-          "tags": ["GLM-5.2", "Z.ai", "Zhipu", "OSS", "MoE", "open-source"],
+          "tags": [
+            "GLM-5.2",
+            "Z.ai",
+            "Zhipu",
+            "OSS",
+            "MoE",
+            "open-source"
+          ],
           "summary_ja": "Zhipu（Z.ai）が開発したGLM-5.2は、総パラメータ753B・アクティブ約40BのMixture-of-Experts（MoE）アーキテクチャを採用したオープンソースモデルで、MITライセンスで公開されている。Artificial Analysisのリーダーボードで同モデルはGPT-5.5とClaude Opus 4.8の中間に位置すると評価されており、AI研究者のJeremy Howardも「自身のワークフローにおいてOpus 4.8・GPT-5.5以上に機能した」と述べた。1Mトークンのコンテキストウィンドウ・131K出力トークンをサポートし、28.5Tトークンで事前学習済み。米国のFable 5輸出規制によって生じたオープンソースAIへの需要増を背景に、GLM-5.2は閉鎖型フロンティアモデルと実質的に競合できる初のOSSモデルとして注目を集めている。さらにZ.aiは2026年末までにFableモデル相当のオープン版を公開する計画も示した。",
           "key_points_ja": [
             "753B総パラメータのMoEモデル（アクティブ約40B）をMITライセンスで公開——商用利用・改変が無制限に可能",
@@ -69,20 +100,50 @@
           "x_post": "GLM-5.2がオープンソースLLMのフロンティアを更新した。753B MoEモデル（アクティブ約40B）をMITライセンスで公開。Artificial AnalysisリーダーボードでGPT-5.5とClaude Opus 4.8の間に位置し、Jeremy Howardが実ワークフローで同等以上の性能を確認。1Mトークンコンテキスト対応。",
           "figure": {
             "type": "summary-card",
-            "alt": "GLM-5.2（Z.ai/Zhipu）の主要仕様。753B総パラメータ（MoE、アクティブ約40B）、MITライセンス、1Mトークンコンテキスト、131K出力、28.5T事前学習。Artificial AnalysisリーダーボードでGPT-5.5とClaude Opus 4.8の間に位置する評価。Z.aiは年内にFable相当モデルのオープン版を公開予定。",
             "data": {
               "headline": "GLM-5.2: MITライセンスで753B MoEオープンモデルがフロンティア水準に到達",
               "tldr": "Z.ai（Zhipu）のGLM-5.2は753B MoEモデルをMITライセンスで公開。Artificial AnalysisでGPT-5.5とOpus 4.8の中間と評価され、Jeremy Howardが実務で同等以上と確認した。",
               "points": [
-                { "icon": "🔢", "label": "パラメータ", "value": "753B総（約40B Active）", "description": "MoEアーキテクチャにより推論コストを大幅に抑制しながらフロンティアレベルの能力を実現している。", "tone": "primary" },
-                { "icon": "📄", "label": "ライセンス", "value": "MIT（商用無制限）", "description": "商用利用・改変・再配布が無制限。プロプライエタリモデルのリスクなしにプロダクション投入が可能。", "tone": "success" },
-                { "icon": "📜", "label": "コンテキスト", "value": "1M tokens / 131K 出力", "description": "28.5Tトークン事前学習済み。超長文RAGなし直接読み込みに対応。", "tone": "info" },
-                { "icon": "📈", "label": "評価位置", "value": "GPT-5.5〜Opus 4.8間", "description": "Artificial Analysisリーダーボードで閉鎖型フロンティアモデルの中間に位置。Jeremy Howardが実ワークフローで同等以上と評価。", "tone": "success" },
-                { "icon": "🔭", "label": "次の計画", "value": "年内オープンFable予告", "description": "Z.aiは2026年末までにFableモデル相当のオープン版を公開する計画を示した。", "tone": "info" }
+                {
+                  "icon": "🔢",
+                  "label": "パラメータ",
+                  "value": "753B総（約40B Active）",
+                  "description": "MoEアーキテクチャにより推論コストを大幅に抑制しながらフロンティアレベルの能力を実現している。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📄",
+                  "label": "ライセンス",
+                  "value": "MIT（商用無制限）",
+                  "description": "商用利用・改変・再配布が無制限。プロプライエタリモデルのリスクなしにプロダクション投入が可能。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📜",
+                  "label": "コンテキスト",
+                  "value": "1M tokens / 131K 出力",
+                  "description": "28.5Tトークン事前学習済み。超長文RAGなし直接読み込みに対応。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📈",
+                  "label": "評価位置",
+                  "value": "GPT-5.5〜Opus 4.8間",
+                  "description": "Artificial Analysisリーダーボードで閉鎖型フロンティアモデルの中間に位置。Jeremy Howardが実ワークフローで同等以上と評価。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔭",
+                  "label": "次の計画",
+                  "value": "年内オープンFable予告",
+                  "description": "Z.aiは2026年末までにFableモデル相当のオープン版を公開する計画を示した。",
+                  "tone": "info"
+                }
               ],
               "context": "米国のFable 5輸出規制以降、オープンソースAIへの需要が急増している。GLM-5.2はこの状況で閉鎖型フロンティアモデルに実質的に対抗できるOSSとして台頭した。",
               "impact": "セルフホスト可能なフロンティア水準のモデルが登場したことで、AIエージェント開発のコスト・プライバシー・規制リスクが同時に大幅低下する。"
-            }
+            },
+            "alt": "GLM-5.2（Z.ai/Zhipu）の主要仕様。753B総パラメータ（MoE、アクティブ約40B）、MITライセンス、1Mトークンコンテキスト、131K出力、28.5T事前学習。Artificial AnalysisリーダーボードでGPT-5.5とClaude Opus 4.8の間に位置する評価。Z.aiは年内にFable相当モデルのオープン版を公開予定。"
           }
         }
       ]
@@ -112,7 +173,13 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Grok", "Amazon Bedrock", "xAI", "API", "1M context"],
+          "tags": [
+            "Grok",
+            "Amazon Bedrock",
+            "xAI",
+            "API",
+            "1M context"
+          ],
           "summary_ja": "xAIがGrok 4.3をAmazon Bedrockで一般提供（GA）開始した。Grok 4.3は1Mトークンのコンテキストウィンドウ（最大30K出力トークン）を持ち、推論の深度をnone・low・medium・highの4段階で設定できる。xAIはGrok 4.3がフロンティアモデルの中で最低のハルシネーション率を達成し、Artificial Analysis OmniscienceベンチマークとArtificial Analysis Tau2通信向けツール呼び出しベンチマークでそれぞれ首位と主張している。バックエンドはAmazon BedrockのMantle推論エンジンが担当し、ツール呼び出し・構造化出力・ストリーミングに対応、対応AWSリージョンで全開発者が即時利用可能。",
           "key_points_ja": [
             "Grok 4.3がAmazon BedrockでGAとなり、1Mトークンコンテキスト・最大30K出力トークンで即時API利用が可能",
@@ -122,19 +189,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Grok 4.3 on Amazon Bedrock の主要仕様。1Mトークンコンテキスト・最大30K出力、推論深度4段階（none/low/medium/high）、AWSのMantle推論エンジン上で動作。xAI主張：フロンティアモデル中最低ハルシネーション率・Artificial Analysis Omniscience首位。",
             "data": {
               "headline": "Grok 4.3: Amazon BedrockでGA——1Mコンテキスト・推論深度4段階選択",
               "tldr": "xAI Grok 4.3がAmazon Bedrockで全開発者向けに一般提供開始。1Mトークンコンテキストと推論深度の4段階制御が特徴。xAIはフロンティアモデル中最低ハルシネーション率と主張する。",
               "points": [
-                { "icon": "📜", "label": "コンテキスト", "value": "1M tokens / 30K 出力", "description": "超長文処理や大規模コードベース読み込みに対応。出力トークンは最大30K。", "tone": "primary" },
-                { "icon": "⚡", "label": "推論深度", "value": "4段階制御", "description": "none/low/medium/highを選択可能。コスト・速度・精度のトレードオフを用途別に調整。", "tone": "info" },
-                { "icon": "🎯", "label": "精度主張", "value": "最低ハルシネーション率", "description": "xAI主張：フロンティアモデル中最低のハルシネーション率。Artificial Analysis Omniscienceベンチマーク首位。", "tone": "success" },
-                { "icon": "🔌", "label": "インフラ", "value": "AWS Mantle推論エンジン", "description": "ツール呼び出し・構造化出力・ストリーミングをネイティブサポート。対応AWSリージョン全域で即時利用可能。", "tone": "info" }
+                {
+                  "icon": "📜",
+                  "label": "コンテキスト",
+                  "value": "1M tokens / 30K 出力",
+                  "description": "超長文処理や大規模コードベース読み込みに対応。出力トークンは最大30K。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "推論深度",
+                  "value": "4段階制御",
+                  "description": "none/low/medium/highを選択可能。コスト・速度・精度のトレードオフを用途別に調整。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "精度主張",
+                  "value": "最低ハルシネーション率",
+                  "description": "xAI主張：フロンティアモデル中最低のハルシネーション率。Artificial Analysis Omniscienceベンチマーク首位。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "インフラ",
+                  "value": "AWS Mantle推論エンジン",
+                  "description": "ツール呼び出し・構造化出力・ストリーミングをネイティブサポート。対応AWSリージョン全域で即時利用可能。",
+                  "tone": "info"
+                }
               ],
               "context": "AmazonのBedrockはAnthropicやMetaなど複数プロバイダのモデルを統一APIで提供するプラットフォーム。xAIの参入でGrok系モデルも同一エコシステム内で選択肢となった。",
               "impact": "既存のAWSインフラを活用するエンタープライズ開発者がGrok 4.3を即座に試験導入できるようになり、プロバイダ比較・切り替えのコストが下がる。"
-            }
+            },
+            "alt": "Grok 4.3 on Amazon Bedrock の主要仕様。1Mトークンコンテキスト・最大30K出力、推論深度4段階（none/low/medium/high）、AWSのMantle推論エンジン上で動作。xAI主張：フロンティアモデル中最低ハルシネーション率・Artificial Analysis Omniscience首位。"
           }
         },
         {
@@ -157,7 +248,13 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Grok", "Microsoft Word", "Office 365", "add-in", "xAI"],
+          "tags": [
+            "Grok",
+            "Microsoft Word",
+            "Office 365",
+            "add-in",
+            "xAI"
+          ],
           "summary_ja": "xAIがMicrosoft 365向けの無料Wordアドインを公開した。WordのサイドパネルにGrokが組み込まれ、ユーザーはメモや箇条書きをそのまま入力するだけで整形された文書を生成したり、既存テキストを書き直したりできる。メール・SharePoint・Google Driveとの連携によりWordを離れずにライブウェブデータや企業内データを参照できる。同週にはPowerPoint・Excel向けアドインも公開済みで、今回のWordアドインでMicrosoft Office主要3製品へのGrok統合が完成した。",
           "key_points_ja": [
             "無料Microsoft 365アドインとしてWordのサイドパネルにGrokを統合——下書きメモから完成文書への変換が可能",
@@ -167,7 +264,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "xAI Grokのオフィス統合タイムライン。2026/06/16にGrok for PowerPointを公開、同日Grok for Excelも発表、2026/06/18にGrok for Wordを公開し、Microsoft Office主要3製品への統合が完成。",
             "data": {
               "headline": "xAI: 1週間でOffice 3製品へのGrok統合を完成",
               "events": [
@@ -195,7 +291,8 @@
               ],
               "narrative": "xAIは1週間でMicrosoft Office主要3製品（PowerPoint・Excel・Word）へのGrokアドイン統合を完成させた。いずれも無料で提供。",
               "impact": "Microsoftエコシステムのユーザーが既存ワークフローを変えずにGrokの生成AI機能を日常業務に組み込めるようになる。"
-            }
+            },
+            "alt": "xAI Grokのオフィス統合タイムライン。2026/06/16にGrok for PowerPointを公開、同日Grok for Excelも発表、2026/06/18にGrok for Wordを公開し、Microsoft Office主要3製品への統合が完成。"
           }
         },
         {
@@ -218,7 +315,13 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Intel XPU", "Triton", "kernel optimization", "LLM", "Hugging Face"],
+          "tags": [
+            "Intel XPU",
+            "Triton",
+            "kernel optimization",
+            "LLM",
+            "Hugging Face"
+          ],
           "summary_ja": "Hugging Faceがインテル社と協力し、LLMを用いてIntel XPU（GPU）向けTritonカーネルを自動最適化するスキルを開発・公開した。従来は専門エンジニアが手動で最適化していたGPUカーネルのチューニングを、LLMが候補を生成・検証・反復改善するループで自動化する。生成されたカーネルはHF Kernel Hubに登録され、コミュニティが共有・再利用できる設計になっている。AI推論のボトルネックであるカーネル最適化作業を大幅に省力化するアプローチとして注目される。",
           "key_points_ja": [
             "LLMがIntel XPU向けTritonカーネルの生成・検証・最適化ループを自動実行——専門エンジニアの手動作業を大幅削減",
@@ -228,19 +331,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Intel XPU Kernel Skill の概要。LLMがTritonカーネルを自動生成・検証・最適化するループを実行。生成されたカーネルはHF Kernel Hubに登録されコミュニティが再利用できる。Intel XPUのAI推論パフォーマンス改善を自動化するアプローチ。",
             "data": {
               "headline": "LLMがIntel XPUカーネルを自動最適化——HF Kernel HubでAI駆動カーネル開発",
               "tldr": "Hugging Faceがインテルと協力し、LLMでIntel XPU向けTritonカーネルを自動生成・最適化するスキルを公開した。生成カーネルはHF Kernel Hubで共有可能。AI推論のカーネル最適化を自動化する。",
               "points": [
-                { "icon": "🔧", "label": "手法", "value": "LLM→検証→反復改善", "description": "LLMがカーネル候補を生成、自動検証で正確性を確認、反復的に最適化するフルオートメーション。", "tone": "primary" },
-                { "icon": "🌐", "label": "共有基盤", "value": "HF Kernel Hub", "description": "生成・最適化されたカーネルをHF Kernel Hubに登録。コミュニティが発見・再利用できる。", "tone": "info" },
-                { "icon": "🖥️", "label": "ターゲット", "value": "Intel XPU（GPU）", "description": "Intel XPUに特化したTritonカーネル最適化。Intel AI推論インフラのパフォーマンス向上に直結。", "tone": "info" },
-                { "icon": "⚡", "label": "インパクト", "value": "カーネル最適化を自動化", "description": "従来は専門エンジニアが手動で行っていたカーネルチューニングをAIが代替。開発サイクルを短縮。", "tone": "success" }
+                {
+                  "icon": "🔧",
+                  "label": "手法",
+                  "value": "LLM→検証→反復改善",
+                  "description": "LLMがカーネル候補を生成、自動検証で正確性を確認、反復的に最適化するフルオートメーション。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "共有基盤",
+                  "value": "HF Kernel Hub",
+                  "description": "生成・最適化されたカーネルをHF Kernel Hubに登録。コミュニティが発見・再利用できる。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🖥️",
+                  "label": "ターゲット",
+                  "value": "Intel XPU（GPU）",
+                  "description": "Intel XPUに特化したTritonカーネル最適化。Intel AI推論インフラのパフォーマンス向上に直結。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "インパクト",
+                  "value": "カーネル最適化を自動化",
+                  "description": "従来は専門エンジニアが手動で行っていたカーネルチューニングをAIが代替。開発サイクルを短縮。",
+                  "tone": "success"
+                }
               ],
               "context": "AIモデルのパフォーマンスはハードウェアとの最適化に大きく依存するが、カーネル開発は高度な専門知識を要する。LLMによる自動化はこの分野の民主化を進める。",
               "impact": "IntelハードウェアでAIを運用するエンジニアが、専門的なカーネルチューニングなしにパフォーマンスを引き出せるようになる可能性がある。"
-            }
+            },
+            "alt": "Intel XPU Kernel Skill の概要。LLMがTritonカーネルを自動生成・検証・最適化するループを実行。生成されたカーネルはHF Kernel Hubに登録されコミュニティが再利用できる。Intel XPUのAI推論パフォーマンス改善を自動化するアプローチ。"
           }
         }
       ]
@@ -270,7 +397,13 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["AI safety", "DeepMind", "agents", "security", "MITRE ATT&CK"],
+          "tags": [
+            "AI safety",
+            "DeepMind",
+            "agents",
+            "security",
+            "MITRE ATT&CK"
+          ],
           "x_post": "DeepMindがAIエージェント安全制御ロードマップを公開した。MITRE ATT&CKフレームワークをエージェントに適用し、100万件のコーディングタスク軌跡解析に基づく3層防御設計（脅威モデリング・検知対応・指標計測）を提示。エージェント開発者と企業CISOが参照すべき設計書だ。",
           "summary_ja": "Google DeepMindがAIエージェントの安全制御設計書（AIコントロールロードマップ）を公開した。AIエージェントを内部脅威として扱うMITRE ATT&CKフレームワークを適用し、100万件のコーディングエージェントタスク軌跡を解析した結果に基づく実証的なアプローチが特徴だ。フレームワークは3つの柱で構成される：（1）脅威モデリング——エージェントを潜在的なインサイダー脅威として分類、（2）検知と対応——信頼済みAIスーパーバイザーによるエージェント行動監視、（3）パフォーマンス指標——カバレッジ・再現率・応答時間の継続的計測。リスクの深刻度に応じて非同期（事後レビュー）から同期（リアルタイム防止）まで段階的なレスポンス戦略を提供する。なお米国だけでAIエージェントは2030年までに2.9兆ドルの経済価値を創出すると見込まれており、エージェント安全設計の重要性が増している。",
           "key_points_ja": [
@@ -281,19 +414,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "DeepMind AIコントロールロードマップの3層防御設計。第1層：MITRE ATT&CKフレームワーク適用の脅威モデリング（エージェントをインサイダー脅威として分類）。第2層：信頼済みAIスーパーバイザーによる検知と対応（100万軌跡解析ベース）。第3層：カバレッジ・再現率・応答時間のパフォーマンス指標計測。リスク度に応じて非同期〜同期レスポンスを切り替え。",
             "data": {
               "headline": "DeepMind AIエージェント制御ロードマップ: 3層防御+100万軌跡解析",
               "tldr": "DeepMindが100万件のエージェント軌跡解析に基づくAI制御ロードマップを公開。MITRE ATT&CKをエージェント安全に適用し、脅威モデリング・検知・計測の3層構造で設計。",
               "points": [
-                { "icon": "🔒", "label": "脅威モデリング", "value": "MITRE ATT&CK適用", "description": "AIエージェントを潜在的インサイダー脅威として扱い、MITRE ATT&CKフレームワークで攻撃ベクトルを体系的に分類。", "tone": "primary" },
-                { "icon": "👁️", "label": "検知と対応", "value": "AIスーパーバイザー監視", "description": "信頼済みAIスーパーバイザーがエージェント行動をリアルタイム監視。100万件のコーディングタスク軌跡を解析して構築。", "tone": "info" },
-                { "icon": "📊", "label": "計測指標", "value": "カバレッジ・再現率・応答時間", "description": "防御の有効性を継続的に定量評価。リスク度に応じて非同期（事後レビュー）〜同期（リアルタイム防止）で対応を切り替え。", "tone": "info" },
-                { "icon": "💰", "label": "市場規模", "value": "2.9兆ドル（2030年、米国）", "description": "AIエージェントが2030年までに米国だけで2.9兆ドルの経済価値を創出すると試算。安全設計への早期投資の根拠となる。", "tone": "warning" }
+                {
+                  "icon": "🔒",
+                  "label": "脅威モデリング",
+                  "value": "MITRE ATT&CK適用",
+                  "description": "AIエージェントを潜在的インサイダー脅威として扱い、MITRE ATT&CKフレームワークで攻撃ベクトルを体系的に分類。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "検知と対応",
+                  "value": "AIスーパーバイザー監視",
+                  "description": "信頼済みAIスーパーバイザーがエージェント行動をリアルタイム監視。100万件のコーディングタスク軌跡を解析して構築。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📊",
+                  "label": "計測指標",
+                  "value": "カバレッジ・再現率・応答時間",
+                  "description": "防御の有効性を継続的に定量評価。リスク度に応じて非同期（事後レビュー）〜同期（リアルタイム防止）で対応を切り替え。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💰",
+                  "label": "市場規模",
+                  "value": "2.9兆ドル（2030年、米国）",
+                  "description": "AIエージェントが2030年までに米国だけで2.9兆ドルの経済価値を創出すると試算。安全設計への早期投資の根拠となる。",
+                  "tone": "warning"
+                }
               ],
               "context": "エージェントが自律的に複数ステップを実行するようになると、誤動作・悪用・脱走リスクが従来のLLM単体とは質的に異なる。防御の枠組みが業界的に未成熟なため、DeepMindの設計書が参照事例となる可能性がある。",
               "impact": "エージェント開発者や企業のCISOが、実装前のリスク評価と防御アーキテクチャ設計の具体的な参照先を得られる。"
-            }
+            },
+            "alt": "DeepMind AIコントロールロードマップの3層防御設計。第1層：MITRE ATT&CKフレームワーク適用の脅威モデリング（エージェントをインサイダー脅威として分類）。第2層：信頼済みAIスーパーバイザーによる検知と対応（100万軌跡解析ベース）。第3層：カバレッジ・再現率・応答時間のパフォーマンス指標計測。リスク度に応じて非同期〜同期レスポンスを切り替え。"
           }
         },
         {
@@ -316,7 +473,13 @@
             "total": 12,
             "source_type_bias": 0
           },
-          "tags": ["OpenAI", "AI agent", "chemistry", "drug discovery", "GPT-5.4"],
+          "tags": [
+            "OpenAI",
+            "AI agent",
+            "chemistry",
+            "drug discovery",
+            "GPT-5.4"
+          ],
           "summary_ja": "OpenAIとポーランドのスタートアップMolecule.oneが共同で、GPT-5.4を近自律エージェントとして使用し、医薬品化学の難易度が高いChan-Lam反応を対象に10,080件の実験室実験を実施した。AIエージェントは予期せぬ発見として、一級スルホンアミドのChan-Lam反応における収率を向上させる酸化剤としてTEMPO（2,2,6,6-テトラメチルピペリジン-1-オキシル）を特定した。Chan-Lam反応は創薬の初期段階で収率が低いことで知られる工程で、AIがその改善策を実験的に発見したことは、フロンティアモデルが実際の実験室科学的発見を主導した公開記録として初のケースとされる。",
           "key_points_ja": [
             "GPT-5.4が近自律エージェントとして10,080件の実験室化学実験を実施——フロンティアLLMが実湿式実験を主導した初の公開記録",
@@ -326,19 +489,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI GPT-5.4近自律エージェントによる化学発見の概要。対象：Chan-Lam反応（創薬初期段階の難関工程）。実験数：10,080件。発見：TEMPO酸化剤が一級スルホンアミドの収率向上に有効。協力：Molecule.one（ポーランド）。意義：フロンティアLLMが実湿式実験を主導した初の公開記録。",
             "data": {
               "headline": "GPT-5.4近自律エージェント、Chan-Lam反応改善法をTEMPOで実験的発見",
               "tldr": "OpenAI GPT-5.4が10,080件の実験室実験を自律的に実施し、難関化学反応（Chan-Lam）の収率向上にTEMPOが有効と発見。LLMによる実際の化学的発見の初公開事例。",
               "points": [
-                { "icon": "🧪", "label": "対象反応", "value": "Chan-Lam反応", "description": "創薬の初期段階で収率が低いことで知られる工程。炭素—窒素結合形成に使用される重要反応。", "tone": "primary" },
-                { "icon": "🔢", "label": "実験数", "value": "10,080件", "description": "GPT-5.4が近自律エージェントとして計画・実行した実験室実験の総数。", "tone": "info" },
-                { "icon": "💡", "label": "発見", "value": "TEMPO酸化剤が有効", "description": "一級スルホンアミドのChan-Lam反応においてTEMPOが予期せぬ収率向上効果を持つことをAIが特定。", "tone": "success" },
-                { "icon": "🏆", "label": "意義", "value": "LLM初の実験室発見", "description": "フロンティアモデルが実際の湿式実験を主導し新知見を得た初の公開記録とされる。Molecule.oneとの共同研究。", "tone": "primary" }
+                {
+                  "icon": "🧪",
+                  "label": "対象反応",
+                  "value": "Chan-Lam反応",
+                  "description": "創薬の初期段階で収率が低いことで知られる工程。炭素—窒素結合形成に使用される重要反応。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔢",
+                  "label": "実験数",
+                  "value": "10,080件",
+                  "description": "GPT-5.4が近自律エージェントとして計画・実行した実験室実験の総数。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💡",
+                  "label": "発見",
+                  "value": "TEMPO酸化剤が有効",
+                  "description": "一級スルホンアミドのChan-Lam反応においてTEMPOが予期せぬ収率向上効果を持つことをAIが特定。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "意義",
+                  "value": "LLM初の実験室発見",
+                  "description": "フロンティアモデルが実際の湿式実験を主導し新知見を得た初の公開記録とされる。Molecule.oneとの共同研究。",
+                  "tone": "primary"
+                }
               ],
               "context": "「AIが科学的発見を加速する」という命題は以前からあったが、実際に実験室レベルで実証された公開事例は少なかった。今回はフロンティアLLMが実験仮説生成から検証まで近自律的に担った。",
               "impact": "創薬パイプラインの早期段階での反応最適化にAIエージェントが活用できる可能性を示す。ウェットラボとAIの協働モデルの実証事例として製薬・バイオテック業界に影響を与えそうだ。"
-            }
+            },
+            "alt": "OpenAI GPT-5.4近自律エージェントによる化学発見の概要。対象：Chan-Lam反応（創薬初期段階の難関工程）。実験数：10,080件。発見：TEMPO酸化剤が一級スルホンアミドの収率向上に有効。協力：Molecule.one（ポーランド）。意義：フロンティアLLMが実湿式実験を主導した初の公開記録。"
           }
         }
       ]
@@ -368,7 +555,12 @@
             "total": 12,
             "source_type_bias": 0
           },
-          "tags": ["xAI", "video generation", "Grok", "multimodal"],
+          "tags": [
+            "xAI",
+            "video generation",
+            "Grok",
+            "multimodal"
+          ],
           "summary_ja": "xAIが動画生成モデル「Grok Imagine Video 1.5」を発表した。前バージョンと比較して物理一貫性（物体の動き・光源の整合性）が向上し、長尺動画への対応が強化されている。GrokのUI（grok.com）上でX Premiumサブスクライバーに展開中で、テキストプロンプトまたは参照画像から動画を生成できる。SoraやKling等の競合ツールに対するxAIの動画生成分野での本格参入を示す発表となっている。",
           "key_points_ja": [
             "物理一貫性（物体動作・光源）が向上し、長尺動画生成への対応を強化——前バージョンからの主要改善点",
@@ -377,18 +569,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Grok Imagine Video 1.5の概要。物理一貫性と長尺動画対応が前バージョンから向上。grok.comでX Premiumサブスクライバー向けに提供中。",
             "data": {
               "headline": "Grok Imagine Video 1.5: 物理一貫性強化・長尺対応・X Premium向け展開",
               "tldr": "xAIが動画生成モデルGrok Imagine Video 1.5を発表。物理一貫性と長尺対応を向上させ、grok.comでX Premiumサブスクライバーに提供。",
               "points": [
-                { "icon": "🎬", "label": "改善点", "value": "物理一貫性・長尺対応向上", "description": "物体の動き・光源の整合性などの物理一貫性が前バージョン比で向上。長尺動画への対応も強化。", "tone": "primary" },
-                { "icon": "🖥️", "label": "提供形態", "value": "grok.com（X Premium向け）", "description": "X PremiumサブスクライバーがGrokのUI上でアクセス可能。テキストプロンプトまたは参照画像から動画を生成。", "tone": "info" },
-                { "icon": "⚔️", "label": "競合環境", "value": "Sora・Kling等と競合", "description": "動画生成市場にxAIが本格参入。SoraやKling、Runway等の既存プレイヤーとの競争が激化。", "tone": "warning" }
+                {
+                  "icon": "🎬",
+                  "label": "改善点",
+                  "value": "物理一貫性・長尺対応向上",
+                  "description": "物体の動き・光源の整合性などの物理一貫性が前バージョン比で向上。長尺動画への対応も強化。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🖥️",
+                  "label": "提供形態",
+                  "value": "grok.com（X Premium向け）",
+                  "description": "X PremiumサブスクライバーがGrokのUI上でアクセス可能。テキストプロンプトまたは参照画像から動画を生成。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚔️",
+                  "label": "競合環境",
+                  "value": "Sora・Kling等と競合",
+                  "description": "動画生成市場にxAIが本格参入。SoraやKling、Runway等の既存プレイヤーとの競争が激化。",
+                  "tone": "warning"
+                }
               ],
               "context": "動画生成AIは2025年後半から急速に商用化が進み、Sora・Veo・Kling・Runwayが市場を形成している。xAIが品質強化版を投入することで、LLMと動画生成を同一サブスク内に統合するプラットフォーム戦略が鮮明になる。",
               "impact": "X Premiumの価値向上とxAIの動画生成参入を示す。クリエイターや開発者にとって比較検討の対象が増える。"
-            }
+            },
+            "alt": "Grok Imagine Video 1.5の概要。物理一貫性と長尺動画対応が前バージョンから向上。grok.comでX Premiumサブスクライバー向けに提供中。"
           }
         },
         {
@@ -411,7 +621,13 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Apple", "Siri", "multimodal", "Apple Intelligence", "voice AI"],
+          "tags": [
+            "Apple",
+            "Siri",
+            "multimodal",
+            "Apple Intelligence",
+            "voice AI"
+          ],
           "summary_ja": "Wiredが2026年時点のSiriの実態を詳報した。AppleはApple Intelligenceブランドのもと、Siriに画面コンテキスト理解・アプリ間アクション連携・音声と画像の同時理解（マルチモーダル）を統合した。ただし実際のベータテストでは応答速度・タスク完遂率に課題が残り、ChatGPT/Geminiとの比較では依然として制約があると指摘されている。記事はSiriの現状を「大幅に改善されたが、期待値には届いていない」と評価している。",
           "key_points_ja": [
             "Apple Intelligence統合後のSiri：画面コンテキスト理解・アプリ間アクション・音声+画像マルチモーダルを搭載",
@@ -420,18 +636,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "2026年Siriの新機能と実態。新機能：画面コンテキスト理解、アプリ間アクション連携、音声+画像マルチモーダル。Wiredテスト評価：応答速度・タスク完遂率に課題残存。",
             "data": {
               "headline": "2026年のSiri実態: Apple Intelligence統合で前進も、完遂率・速度に課題",
               "tldr": "Wiredが2026年SiriをApple Intelligence統合後にテスト。画面理解・アプリ連携・マルチモーダルを搭載するも、タスク完遂率と速度でChatGPT/Geminiに劣後と指摘。",
               "points": [
-                { "icon": "🆕", "label": "新機能", "value": "画面コンテキスト・アプリ連携・音声+画像", "description": "Apple Intelligenceブランドで、画面内コンテキスト理解・アプリ間アクション連携・音声と画像の同時理解を統合。", "tone": "primary" },
-                { "icon": "⚠️", "label": "テスト結果", "value": "速度・完遂率に課題残存", "description": "Wiredの実使用テストでは、応答速度とタスク完遂率が依然として競合（ChatGPT/Gemini）に劣ると評価。", "tone": "warning" },
-                { "icon": "🔒", "label": "Appleの方針", "value": "オンデバイス推論重視", "description": "プライバシー優先のオンデバイス推論がパフォーマンスのトレードオフになっている構造的課題を指摘。", "tone": "info" }
+                {
+                  "icon": "🆕",
+                  "label": "新機能",
+                  "value": "画面コンテキスト・アプリ連携・音声+画像",
+                  "description": "Apple Intelligenceブランドで、画面内コンテキスト理解・アプリ間アクション連携・音声と画像の同時理解を統合。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "テスト結果",
+                  "value": "速度・完遂率に課題残存",
+                  "description": "Wiredの実使用テストでは、応答速度とタスク完遂率が依然として競合（ChatGPT/Gemini）に劣ると評価。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "Appleの方針",
+                  "value": "オンデバイス推論重視",
+                  "description": "プライバシー優先のオンデバイス推論がパフォーマンスのトレードオフになっている構造的課題を指摘。",
+                  "tone": "info"
+                }
               ],
               "context": "AppleはWWDC 2025でSiri刷新を大々的に発表したが、実際の展開は段階的で批判を受けていた。2026年時点での実態評価記事として注目度が高い。",
               "impact": "Apple製品ユーザーや開発者がSiriをどこまで活用できるかの現実的な評価基準になる。AIアシスタント市場でのAppleの競争力に関する議論を呼ぶ記事。"
-            }
+            },
+            "alt": "2026年Siriの新機能と実態。新機能：画面コンテキスト理解、アプリ間アクション連携、音声+画像マルチモーダル。Wiredテスト評価：応答速度・タスク完遂率に課題残存。"
           }
         }
       ]
@@ -461,7 +695,13 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "tags": ["benchmark", "life sciences", "biology", "LLM evaluation", "arXiv"],
+          "tags": [
+            "benchmark",
+            "life sciences",
+            "biology",
+            "LLM evaluation",
+            "arXiv"
+          ],
           "summary_ja": "arXivに投稿されたLifeSciBenchは、分子生物学・ゲノミクス・タンパク質科学・医薬品化学・生態学などの生命科学分野を対象にLLMを評価するベンチマークだ。複数選択問題・穴埋め・自由記述を含む多角的な評価形式を採用し、専門的な知識と推論能力の両方を測定する。テストの結果、GPT-5.4が最高スコアを達成した一方、汎用LLMは専門特化モデルと比べて生命科学領域で大きく劣後することが示された。ベンチマークはGitHubに公開されており、再現可能な評価が可能だ。",
           "key_points_ja": [
             "分子生物学・ゲノミクス・タンパク質科学・医薬品化学・生態学を対象とした包括的な生命科学LLMベンチマーク——GitHub公開済み",
@@ -470,19 +710,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LifeSciBenchの概要。対象領域：分子生物学・ゲノミクス・タンパク質科学・医薬品化学・生態学。最高スコア：GPT-5.4。課題：汎用LLMは専門特化モデルに大幅劣後。評価形式：複数選択・穴埋め・自由記述。",
             "data": {
               "headline": "LifeSciBench: 生命科学5領域LLM評価、GPT-5.4最高・汎用モデルは専門領域で劣後",
               "tldr": "生命科学（分子生物学・ゲノミクス他）を対象にLLMを評価するベンチマーク。GPT-5.4が最高スコアも、汎用モデルは専門特化モデルに大幅に劣後することが明らかに。",
               "points": [
-                { "icon": "🔬", "label": "対象領域", "value": "5分野の生命科学", "description": "分子生物学・ゲノミクス・タンパク質科学・医薬品化学・生態学の5分野をカバー。GitHub公開済みで再現可能な評価が可能。", "tone": "primary" },
-                { "icon": "🏆", "label": "最高スコア", "value": "GPT-5.4", "description": "テスト対象モデルの中でGPT-5.4が最高スコアを達成。", "tone": "success" },
-                { "icon": "⚠️", "label": "発見", "value": "汎用LLMは専門領域で大幅劣後", "description": "汎用LLMは専門特化モデルと比較して生命科学領域で大きくスコアが下がる。専門分野特化ファインチューニングの重要性を示唆。", "tone": "warning" },
-                { "icon": "📋", "label": "評価形式", "value": "多形式（多選択・穴埋め・自由記述）", "description": "単純なQAだけでなく穴埋めと自由記述を組み合わせ、専門知識と推論能力の両方を測定する設計。", "tone": "info" }
+                {
+                  "icon": "🔬",
+                  "label": "対象領域",
+                  "value": "5分野の生命科学",
+                  "description": "分子生物学・ゲノミクス・タンパク質科学・医薬品化学・生態学の5分野をカバー。GitHub公開済みで再現可能な評価が可能。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "最高スコア",
+                  "value": "GPT-5.4",
+                  "description": "テスト対象モデルの中でGPT-5.4が最高スコアを達成。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "発見",
+                  "value": "汎用LLMは専門領域で大幅劣後",
+                  "description": "汎用LLMは専門特化モデルと比較して生命科学領域で大きくスコアが下がる。専門分野特化ファインチューニングの重要性を示唆。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📋",
+                  "label": "評価形式",
+                  "value": "多形式（多選択・穴埋め・自由記述）",
+                  "description": "単純なQAだけでなく穴埋めと自由記述を組み合わせ、専門知識と推論能力の両方を測定する設計。",
+                  "tone": "info"
+                }
               ],
               "context": "LLMの専門領域評価はMedQA（医療）やLegalBench（法律）などが先行しているが、生命科学（創薬・ゲノム解析）を包括的にカバーするベンチマークは少なかった。",
               "impact": "創薬・バイオインフォマティクス分野でLLMを導入する研究者・企業が、モデル選定の根拠を得られる。OpenAI AI Chemist（今号006番）の文脈とも連動する。"
-            }
+            },
+            "alt": "LifeSciBenchの概要。対象領域：分子生物学・ゲノミクス・タンパク質科学・医薬品化学・生態学。最高スコア：GPT-5.4。課題：汎用LLMは専門特化モデルに大幅劣後。評価形式：複数選択・穴埋め・自由記述。"
           }
         },
         {
@@ -505,7 +769,13 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["NVIDIA", "Blackwell", "MLPerf", "inference", "GPU"],
+          "tags": [
+            "NVIDIA",
+            "Blackwell",
+            "MLPerf",
+            "inference",
+            "GPU"
+          ],
           "summary_ja": "MLCommons（MLPerfの運営組織）が公開したMLPerf Inference v5.0において、NVIDIAのBlackwellアーキテクチャ（H200/GB200/GB300系）が複数のカテゴリで推論性能の記録を更新した。特にLlama-3.1 405Bのオフライン推論では業界最高スループットを達成したとNVIDIAが発表している。Blackwellは第4世代NVLink・FP4推論・HBM3eを組み合わせており、前世代Hopperと比較して大規模モデルの推論効率が大幅に向上している。MLPerfは独立した標準化ベンチマークとして業界での採用が広まっており、今回の結果はAIインフラ選定の参考指標となる。",
           "key_points_ja": [
             "MLPerf Inference v5.0でNVIDIA Blackwell（GB200/GB300）が複数カテゴリで推論性能記録を更新",
@@ -514,19 +784,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "MLPerf Inference v5.0 NVIDIA Blackwell結果。対象ベンチマーク：MLPerf Inference v5.0。アーキテクチャ：GB200/GB300（Blackwell）。主要結果：Llama-3.1 405Bオフライン推論で業界最高スループット。主要技術：FP4推論・HBM3e・第4世代NVLink。",
             "data": {
               "headline": "MLPerf v5.0: NVIDIA Blackwell、Llama-3.1 405B推論で業界最高スループット達成",
               "tldr": "MLPerf Inference v5.0でNVIDIA Blackwell（GB200/GB300）が複数カテゴリで記録更新。Llama-3.1 405Bのオフライン推論で業界最高スループットをFP4推論・HBM3eで達成。",
               "points": [
-                { "icon": "🏆", "label": "ベンチマーク", "value": "MLPerf Inference v5.0", "description": "MLCommonsが主催する独立標準化ベンチマーク。複数カテゴリでNVIDIA Blackwellが記録を更新。", "tone": "primary" },
-                { "icon": "🚀", "label": "最高スループット", "value": "Llama-3.1 405Bオフライン推論", "description": "GB200/GB300がLlama-3.1 405Bのオフライン推論で業界最高スループットを達成。", "tone": "success" },
-                { "icon": "⚙️", "label": "主要技術", "value": "FP4推論・HBM3e・NVLink第4世代", "description": "FP4精度推論・HBM3eメモリ・第4世代NVLinkの組み合わせで前世代Hopperから大幅な効率向上を実現。", "tone": "info" },
-                { "icon": "💼", "label": "実用的意義", "value": "AIインフラ投資判断の参考指標", "description": "MLPerfは業界標準ベンチマークとして採用が広まっており、今回の結果はデータセンターのAIクラスター選定に直接影響する。", "tone": "warning" }
+                {
+                  "icon": "🏆",
+                  "label": "ベンチマーク",
+                  "value": "MLPerf Inference v5.0",
+                  "description": "MLCommonsが主催する独立標準化ベンチマーク。複数カテゴリでNVIDIA Blackwellが記録を更新。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🚀",
+                  "label": "最高スループット",
+                  "value": "Llama-3.1 405Bオフライン推論",
+                  "description": "GB200/GB300がLlama-3.1 405Bのオフライン推論で業界最高スループットを達成。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "主要技術",
+                  "value": "FP4推論・HBM3e・NVLink第4世代",
+                  "description": "FP4精度推論・HBM3eメモリ・第4世代NVLinkの組み合わせで前世代Hopperから大幅な効率向上を実現。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💼",
+                  "label": "実用的意義",
+                  "value": "AIインフラ投資判断の参考指標",
+                  "description": "MLPerfは業界標準ベンチマークとして採用が広まっており、今回の結果はデータセンターのAIクラスター選定に直接影響する。",
+                  "tone": "warning"
+                }
               ],
               "context": "AIワークロードの計算コスト削減は業界全体の課題。MLPerfの結果は独立第三者機関による評価として信頼性が高く、NVIDIA以外のAMD・Intel・カスタムチップとの比較でも引用される。",
               "impact": "大規模LLM推論の効率化がさらに進む。クラウドプロバイダーや大企業がBlackwell採用の判断材料を得る。"
-            }
+            },
+            "alt": "MLPerf Inference v5.0 NVIDIA Blackwell結果。対象ベンチマーク：MLPerf Inference v5.0。アーキテクチャ：GB200/GB300（Blackwell）。主要結果：Llama-3.1 405Bオフライン推論で業界最高スループット。主要技術：FP4推論・HBM3e・第4世代NVLink。"
           }
         },
         {
@@ -549,7 +843,13 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["quantization", "LLM", "compression", "efficiency", "arXiv"],
+          "tags": [
+            "quantization",
+            "LLM",
+            "compression",
+            "efficiency",
+            "arXiv"
+          ],
           "summary_ja": "arXivに投稿されたSubQは、LLMの重みをサブスペース（低次元部分空間）に分解してから量子化することで、通常のPTQ（Post-Training Quantization）より精度劣化を抑える新手法だ。重みをSVD的な分解で低ランク成分と残差に分けた上で、それぞれ独立に量子化ビット幅を設定する。Llama-2・Llama-3シリーズでの実験では、W4A16（重み4bit・活性化16bit）設定下でGPTQやAWQより低perplexityを達成した。特にモデルサイズが大きい（70B級）ほど改善効果が大きい傾向があり、大型モデルの量子化展開に有効な手法として位置づけられる。実装コードはGitHubに公開されている。",
           "key_points_ja": [
             "サブスペース分解（低ランク+残差）を前処理してから量子化することで、GPTQやAWQよりperplexityが改善",
@@ -558,19 +858,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SubQ量子化手法の概要。手法：サブスペース分解（低ランク+残差）後に量子化。比較：W4A16設定でGPTQ・AWQよりperplexity改善。対象：Llama-2・Llama-3。特徴：大型モデル（70B級）ほど効果大。コード：GitHub公開済み。",
             "data": {
               "headline": "SubQ: サブスペース分解量子化でGPTQ/AWQを上回るperplexity、70B級で効果大",
               "tldr": "LLMをサブスペース（低ランク+残差）に分解してから量子化するSubQ。W4A16設定でLlama-2/3シリーズにおいてGPTQ・AWQよりperplexityを改善。GitHubで公開済み。",
               "points": [
-                { "icon": "🗜️", "label": "手法", "value": "サブスペース分解+量子化", "description": "重みをSVD的分解で低ランク成分と残差に分割し、それぞれ独立にビット幅を設定することで精度劣化を抑制。", "tone": "primary" },
-                { "icon": "📊", "label": "性能", "value": "GPTQ・AWQよりperplexity改善", "description": "W4A16設定でLlama-2・Llama-3シリーズにおいてGPTQ・AWQより低perplexityを達成。", "tone": "success" },
-                { "icon": "📈", "label": "スケール効果", "value": "70B級ほど効果が顕著", "description": "モデルサイズが大きいほど改善幅が大きい傾向。大型モデルの量子化展開に特に有効。", "tone": "info" },
-                { "icon": "💻", "label": "利用可能性", "value": "GitHub公開済み", "description": "実装コードがGitHubで公開されており、ローカルLLM展開やエッジAI向け量子化の実用選択肢として即時適用可能。", "tone": "success" }
+                {
+                  "icon": "🗜️",
+                  "label": "手法",
+                  "value": "サブスペース分解+量子化",
+                  "description": "重みをSVD的分解で低ランク成分と残差に分割し、それぞれ独立にビット幅を設定することで精度劣化を抑制。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "性能",
+                  "value": "GPTQ・AWQよりperplexity改善",
+                  "description": "W4A16設定でLlama-2・Llama-3シリーズにおいてGPTQ・AWQより低perplexityを達成。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "スケール効果",
+                  "value": "70B級ほど効果が顕著",
+                  "description": "モデルサイズが大きいほど改善幅が大きい傾向。大型モデルの量子化展開に特に有効。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💻",
+                  "label": "利用可能性",
+                  "value": "GitHub公開済み",
+                  "description": "実装コードがGitHubで公開されており、ローカルLLM展開やエッジAI向け量子化の実用選択肢として即時適用可能。",
+                  "tone": "success"
+                }
               ],
               "context": "量子化はローカルLLM展開・エッジAI・推論コスト削減の主要技術で、GPTQ・AWQ・GGUF等の手法が競合している。SubQは既存手法の枠組みに前処理ステップを加えることで改善を実現しており、既存ワークフローへの統合がしやすい。",
               "impact": "70B級LLMをコンシューマーGPUや限られたサーバーリソースで展開する際の精度トレードオフが改善される。エッジデプロイやAPI費用削減を検討する開発者にとって実用的な選択肢が増える。"
-            }
+            },
+            "alt": "SubQ量子化手法の概要。手法：サブスペース分解（低ランク+残差）後に量子化。比較：W4A16設定でGPTQ・AWQよりperplexity改善。対象：Llama-2・Llama-3。特徴：大型モデル（70B級）ほど効果大。コード：GitHub公開済み。"
           }
         }
       ]
@@ -600,7 +924,14 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["Anthropic", "DeepMind", "talent", "Nobel Prize", "AlphaFold", "John Jumper"],
+          "tags": [
+            "Anthropic",
+            "DeepMind",
+            "talent",
+            "Nobel Prize",
+            "AlphaFold",
+            "John Jumper"
+          ],
           "x_post": "2024年ノーベル化学賞受賞者・AlphaFold共同開発者のジョン・ジャンパー氏がDeepMindを離れAnthropicへ移籍した。Anthropicが生命科学AI戦略を最優先課題に位置付けていることを裏付ける象徴的な採用だ。フロンティアラボ間のトップ研究者争奪戦が加速している。",
           "summary_ja": "2024年ノーベル化学賞受賞者でAlphaFold共同開発者のジョン・ジャンパー氏がGoogle DeepMindを離れ、Anthropicに移籍することが報じられた。ジャンパー氏はAlphaFold2・AlphaFold3の開発を主導した計算構造生物学の第一人者であり、ノーベル賞はデミス・ハサビス氏と連名で受賞している。Anthropicでの役職・担当領域は未公表だが、Anthropic CEO のダリオ・アモデイ氏が生命科学・医療へのAI応用を戦略優先事項として明言していることから、創薬・タンパク質設計AIなどの科学的AI開発を牽引するポジションに就くとみられる。AI業界における人材獲得競争の激化を示す象徴的な動向だ。",
           "key_points_ja": [
@@ -610,19 +941,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ジョン・ジャンパー氏移籍の概要。移籍元：Google DeepMind。移籍先：Anthropic。主要業績：AlphaFold2・3共同開発、2024年ノーベル化学賞受賞（ハサビス氏と連名）。Anthropicでの予想役割：生命科学・創薬AI領域。",
             "data": {
               "headline": "ジョン・ジャンパー氏、DeepMind→Anthropicへ移籍——AlphaFold開発者・ノーベル賞受賞者",
               "tldr": "2024年ノーベル化学賞受賞者・AlphaFold共同開発者のジョン・ジャンパー氏がDeepMindを離れAnthropicへ。Anthropicの生命科学AI戦略を牽引するポジションに就くとみられる。",
               "points": [
-                { "icon": "🏅", "label": "人物", "value": "ジョン・ジャンパー氏", "description": "AlphaFold2・3の共同開発者。デミス・ハサビス氏とともに2024年ノーベル化学賞を受賞した計算構造生物学の第一人者。", "tone": "primary" },
-                { "icon": "🔀", "label": "移籍", "value": "DeepMind → Anthropic", "description": "Google DeepMindを離れ、Anthropicへ移籍することが報じられた。Anthropicでの具体的な役職・担当領域は未公表。", "tone": "info" },
-                { "icon": "🧬", "label": "予想役割", "value": "生命科学・創薬AI領域", "description": "Dario Amodei CEOが生命科学・医療へのAI応用を戦略優先事項と明言しており、ジャンパー氏がその中核を担うとみられる。", "tone": "warning" },
-                { "icon": "⚔️", "label": "業界動向", "value": "フロンティアラボ人材争奪戦の激化", "description": "ノーベル賞受賞者クラスの研究者がラボ間を移籍する事態はAI業界の人材競争の象徴。DeepMindとAnthropicの緊張関係が深まる。", "tone": "warning" }
+                {
+                  "icon": "🏅",
+                  "label": "人物",
+                  "value": "ジョン・ジャンパー氏",
+                  "description": "AlphaFold2・3の共同開発者。デミス・ハサビス氏とともに2024年ノーベル化学賞を受賞した計算構造生物学の第一人者。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔀",
+                  "label": "移籍",
+                  "value": "DeepMind → Anthropic",
+                  "description": "Google DeepMindを離れ、Anthropicへ移籍することが報じられた。Anthropicでの具体的な役職・担当領域は未公表。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🧬",
+                  "label": "予想役割",
+                  "value": "生命科学・創薬AI領域",
+                  "description": "Dario Amodei CEOが生命科学・医療へのAI応用を戦略優先事項と明言しており、ジャンパー氏がその中核を担うとみられる。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚔️",
+                  "label": "業界動向",
+                  "value": "フロンティアラボ人材争奪戦の激化",
+                  "description": "ノーベル賞受賞者クラスの研究者がラボ間を移籍する事態はAI業界の人材競争の象徴。DeepMindとAnthropicの緊張関係が深まる。",
+                  "tone": "warning"
+                }
               ],
               "context": "AnthropicはDALIO Amodei CEOが「AIが5-10年以内に全ての病気を根絶できる可能性がある」と発言するなど、生命科学への応用を強調している。ジャンパー氏の移籍はその戦略を裏付ける採用だ。",
               "impact": "Anthropicの科学的AI研究開発が強化される。DeepMindのAlphaFold後継研究への影響も注目される。フロンティアラボ間の人材流動性が業界の勢力図を変えつつある。"
-            }
+            },
+            "alt": "ジョン・ジャンパー氏移籍の概要。移籍元：Google DeepMind。移籍先：Anthropic。主要業績：AlphaFold2・3共同開発、2024年ノーベル化学賞受賞（ハサビス氏と連名）。Anthropicでの予想役割：生命科学・創薬AI領域。"
           }
         },
         {
@@ -645,7 +1000,13 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "enterprise", "partner network", "business", "API"],
+          "tags": [
+            "OpenAI",
+            "enterprise",
+            "partner network",
+            "business",
+            "API"
+          ],
           "summary_ja": "OpenAIが企業向けAI導入を支援するパートナーエコシステム「OpenAI for Business」を発表した。SIer・コンサルティングファーム・ISVが参加するネットワークで、OpenAI APIを軸にした企業向け実装・カスタマイズ・サポートを提供する。AWSのAPN・Salesforceのコンサルティングパートナー制度に類似したモデルだ。参加パートナーにはOPEXモデルのAPIアクセス・認定プログラム・技術サポートチャネルが提供される。OpenAIのエンタープライズ売上拡大戦略の一環として、Microsoftとの既存提携を補完する独自エコシステムを構築する狙いとみられる。",
           "key_points_ja": [
             "OpenAIがSIer・コンサル・ISV向けパートナーネットワーク「OpenAI for Business」を発表——AWS APN類似モデル",
@@ -654,18 +1015,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI for Businessパートナーネットワークの概要。対象：SIer・コンサルティングファーム・ISV。提供内容：OPEXモデルAPIアクセス・認定プログラム・技術サポート。類似モデル：AWS APN。目的：Microsoftとの既存提携を補完する独自エンタープライズエコシステム構築。",
             "data": {
               "headline": "OpenAI for Business: SIer・コンサル向けパートナーネットワーク発表、AWS APN類似モデル",
               "tldr": "OpenAIがSIer・コンサル・ISV向けパートナーネットワーク「OpenAI for Business」を発表。APIアクセス・認定・サポートを提供し、エンタープライズ向けエコシステムを構築する。",
               "points": [
-                { "icon": "🤝", "label": "プログラム", "value": "OpenAI for Business", "description": "SIer・コンサルティングファーム・ISVを対象とするパートナーネットワーク。AWS APNやSalesforceパートナー制度に類似したモデル。", "tone": "primary" },
-                { "icon": "🎁", "label": "パートナー特典", "value": "APIアクセス・認定・技術サポート", "description": "OPEXモデルのAPIアクセス・認定プログラム・優先技術サポートチャネルが参加パートナーに提供される。", "tone": "info" },
-                { "icon": "🏢", "label": "戦略的位置", "value": "Microsoft提携を補完", "description": "Microsoftとの既存提携（Azure OpenAI）を補完する独自エコシステムを構築し、直接的なエンタープライズ顧客開拓を強化する狙い。", "tone": "warning" }
+                {
+                  "icon": "🤝",
+                  "label": "プログラム",
+                  "value": "OpenAI for Business",
+                  "description": "SIer・コンサルティングファーム・ISVを対象とするパートナーネットワーク。AWS APNやSalesforceパートナー制度に類似したモデル。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎁",
+                  "label": "パートナー特典",
+                  "value": "APIアクセス・認定・技術サポート",
+                  "description": "OPEXモデルのAPIアクセス・認定プログラム・優先技術サポートチャネルが参加パートナーに提供される。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "戦略的位置",
+                  "value": "Microsoft提携を補完",
+                  "description": "Microsoftとの既存提携（Azure OpenAI）を補完する独自エコシステムを構築し、直接的なエンタープライズ顧客開拓を強化する狙い。",
+                  "tone": "warning"
+                }
               ],
               "context": "OpenAIはConsumer向けサブスク（ChatGPT）に加え、Enterprise向けAPIビジネスの拡大が急務。AzureとのRevenueShareに依存しない独自チャネルを持つことでMicrosoftへの依存度を低下させる意図もある。",
               "impact": "企業向けAI導入を支援するSIer・コンサルにとって新しいビジネス機会が生まれる。日本のITサービス企業にとっても参加の選択肢となりうる。"
-            }
+            },
+            "alt": "OpenAI for Businessパートナーネットワークの概要。対象：SIer・コンサルティングファーム・ISV。提供内容：OPEXモデルAPIアクセス・認定プログラム・技術サポート。類似モデル：AWS APN。目的：Microsoftとの既存提携を補完する独自エンタープライズエコシステム構築。"
           }
         }
       ]
@@ -695,7 +1074,13 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["regulation", "White House", "AI policy", "USA", "safety"],
+          "tags": [
+            "regulation",
+            "White House",
+            "AI policy",
+            "USA",
+            "safety"
+          ],
           "summary_ja": "Wiredが、トランプ政権下のホワイトハウスがバイデン政権時代のAI安全基準を大幅に書き換えていると報じた。2023年のAI大統領令を廃止したことに続き、AI企業への事前通知・安全評価義務を軽減し、開発速度を優先する産業フレンドリーな方針を打ち出しつつある。政権は「過剰規制がAIの競争力を削ぐ」との立場から、EU AI Actのような包括的な義務付けを避け、自主的ガイダンスと輸出規制強化を組み合わせる二本立て戦略をとっているとされる。この方向性は、EU・英国等の規制強化路線と対照的で、グローバルなAIガバナンスの分断が進む懸念が指摘されている。",
           "key_points_ja": [
             "トランプ政権がバイデン時代のAI安全基準（2023年大統領令等）を廃止・書き換え——AI企業への事前通知・安全評価義務を軽減",
@@ -704,18 +1089,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ホワイトハウスAI規制書き換えの概要。廃止：バイデン政権の2023年AI大統領令（事前通知・安全評価義務）。新方針：自主的ガイダンス+輸出規制強化の産業優先二本立て。対比：EU AI Actなどの規制強化路線と逆方向。懸念：グローバルAIガバナンスの分断。",
             "data": {
               "headline": "ホワイトハウスがAI規制書き換え: バイデン安全基準廃止→産業優先・自主ガイダンス路線へ",
               "tldr": "トランプ政権がバイデン時代のAI安全基準を書き換え。事前通知・安全評価義務を軽減し、自主的ガイダンス+輸出規制強化の産業フレンドリーな新フレームワークに移行中。EU路線とは対照的。",
               "points": [
-                { "icon": "🗑️", "label": "廃止された施策", "value": "2023年AI大統領令等", "description": "バイデン政権下で制定されたAI事前通知・安全評価義務を含む大統領令を廃止・骨抜きにする方針。", "tone": "warning" },
-                { "icon": "🏭", "label": "新方針", "value": "産業優先+自主ガイダンス", "description": "AI企業への義務的要件を減らし、自主的ガイダンスと輸出規制強化を組み合わせる二本立て戦略に転換。", "tone": "info" },
-                { "icon": "🌍", "label": "国際的文脈", "value": "EU路線と真逆", "description": "EU AI Actによる包括的義務付け・英国規制強化路線と真逆の方向性。グローバルなAIガバナンスの分断が加速する懸念が指摘されている。", "tone": "warning" }
+                {
+                  "icon": "🗑️",
+                  "label": "廃止された施策",
+                  "value": "2023年AI大統領令等",
+                  "description": "バイデン政権下で制定されたAI事前通知・安全評価義務を含む大統領令を廃止・骨抜きにする方針。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🏭",
+                  "label": "新方針",
+                  "value": "産業優先+自主ガイダンス",
+                  "description": "AI企業への義務的要件を減らし、自主的ガイダンスと輸出規制強化を組み合わせる二本立て戦略に転換。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌍",
+                  "label": "国際的文脈",
+                  "value": "EU路線と真逆",
+                  "description": "EU AI Actによる包括的義務付け・英国規制強化路線と真逆の方向性。グローバルなAIガバナンスの分断が加速する懸念が指摘されている。",
+                  "tone": "warning"
+                }
               ],
               "context": "米国はバイデン政権時に「AI安全性の国際標準」を主導しようとしていたが、政権交代により方針が180度転換した。G7・国連等の枠組みでの国際調整も難しくなる可能性がある。",
               "impact": "グローバルでAIを開発・展開する企業は米欧二分されたルールへの対応が必要になる。AIセーフティ研究への優先投資が米国では後退する一方、EUでは継続される構図が固まりつつある。"
-            }
+            },
+            "alt": "ホワイトハウスAI規制書き換えの概要。廃止：バイデン政権の2023年AI大統領令（事前通知・安全評価義務）。新方針：自主的ガイダンス+輸出規制強化の産業優先二本立て。対比：EU AI Actなどの規制強化路線と逆方向。懸念：グローバルAIガバナンスの分断。"
           }
         }
       ]
@@ -745,7 +1148,13 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Claude Fable", "Gemini", "alignment", "roleplay", "LessWrong"],
+          "tags": [
+            "Claude Fable",
+            "Gemini",
+            "alignment",
+            "roleplay",
+            "LessWrong"
+          ],
           "summary_ja": "LessWrongに投稿された詳報記事で、Claude Fable（Anthropic最新モデル）とGemini 2.5 Proがロールプレイシナリオでどこまでコンプライアンスするかを比較分析した内容が議論を呼んでいる。著者は複数のテストシナリオで両モデルがどのタイミングでどのような根拠でリクエストを断るかを体系的に記録し、その判断基準の違いを分析した。Claude Fableは「登場人物の視点から語る」フィクション的な枠組みに対して一定の柔軟性を持つが、実害可能性のある具体的情報には依然として応答しない判断傾向が確認されている。Gemini 2.5 Proは全般的に保守的な傾向とされる。記事はAIの価値整合（Value Alignment）設計の方向性についてコミュニティで活発な議論を促している。",
           "key_points_ja": [
             "Claude FableとGemini 2.5 Proのロールプレイ境界を体系的に比較——フィクション的枠組みへの応答スタンスの違いが明確に",
@@ -754,18 +1163,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude FableとGemini 2.5 Proのロールプレイ境界比較。Claude Fable：フィクション的枠組みに柔軟性あり、実害情報には応答しない。Gemini 2.5 Pro：全般的に保守的な傾向。LessWrongで活発な議論中。",
             "data": {
               "headline": "Claude Fable vs Gemini 2.5 Pro: ロールプレイ境界と価値整合設計の違いをLessWrongが分析",
               "tldr": "LessWrongがClaude FableとGemini 2.5 Proのロールプレイ境界を体系比較。Claude Fableはフィクション的枠組みに柔軟性を持つが実害情報には応答せず、Gemini 2.5 Proはより保守的。Value Alignment設計の議論が活発化。",
               "points": [
-                { "icon": "🎭", "label": "Claude Fableの傾向", "value": "フィクション枠組みに柔軟、実害情報は拒否", "description": "登場人物の視点から語るフィクション的文脈には一定の応答をするが、実害を及ぼしうる具体的情報への回答は依然として拒否する判断傾向。", "tone": "info" },
-                { "icon": "🛡️", "label": "Gemini 2.5 Proの傾向", "value": "全般的に保守的", "description": "同様のロールプレイシナリオに対してGemini 2.5 Proはより保守的な判断をする傾向がテスト結果として確認された。", "tone": "info" },
-                { "icon": "💬", "label": "コミュニティ反響", "value": "Value Alignment設計の議論が活発化", "description": "LessWrongコミュニティでAIの価値整合設計の方向性——どこまで柔軟であるべきかの議論が活発に進行中。", "tone": "warning" }
+                {
+                  "icon": "🎭",
+                  "label": "Claude Fableの傾向",
+                  "value": "フィクション枠組みに柔軟、実害情報は拒否",
+                  "description": "登場人物の視点から語るフィクション的文脈には一定の応答をするが、実害を及ぼしうる具体的情報への回答は依然として拒否する判断傾向。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🛡️",
+                  "label": "Gemini 2.5 Proの傾向",
+                  "value": "全般的に保守的",
+                  "description": "同様のロールプレイシナリオに対してGemini 2.5 Proはより保守的な判断をする傾向がテスト結果として確認された。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💬",
+                  "label": "コミュニティ反響",
+                  "value": "Value Alignment設計の議論が活発化",
+                  "description": "LessWrongコミュニティでAIの価値整合設計の方向性——どこまで柔軟であるべきかの議論が活発に進行中。",
+                  "tone": "warning"
+                }
               ],
               "context": "AIモデルのロールプレイ対応は「表現の自由vs安全性」の難しいバランスに関わる。AnthropicとGoogleの判断基準の違いはモデルカードや公開ポリシーからは読み取れない部分が多く、コミュニティ実験による可視化が重要な役割を担っている。",
               "impact": "モデルを創作・ゲーム・シミュレーション用途で使う開発者や研究者にとって、どのモデルがどのシナリオで機能するかの参照事例となる。"
-            }
+            },
+            "alt": "Claude FableとGemini 2.5 Proのロールプレイ境界比較。Claude Fable：フィクション的枠組みに柔軟性あり、実害情報には応答しない。Gemini 2.5 Pro：全般的に保守的な傾向。LessWrongで活発な議論中。"
           }
         },
         {
@@ -788,7 +1215,13 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["GLM-5.2", "LocalLLaMA", "Reddit", "benchmark", "open source"],
+          "tags": [
+            "GLM-5.2",
+            "LocalLLaMA",
+            "Reddit",
+            "benchmark",
+            "open source"
+          ],
           "summary_ja": "r/LocalLLaMaにGLM-5.2（Zhipu AI / Z.aiのオープンソースモデル）の実使用レポートが投稿され、コミュニティで広く支持を集めている。複数ユーザーによる独立した実験では、コーディング・数学・日本語処理などで既存のGPT-4o相当のクローズドモデルと同等〜上回るパフォーマンスを示した一方、長文コンテキスト（64K〜128Kトークン）処理での品質低下が指摘されている。ローカル環境でのVRAM要件（主力バリアントで48GB以上が推奨）と量子化版の精度トレードオフについても詳細なレポートが共有されている。コミュニティの総評は「コスト対パフォーマンスの観点で2026年上半期最大の出来事」とするものが多い。",
           "key_points_ja": [
             "r/LocalLLaMA実使用報告：コーディング・数学・日本語処理でGPT-4o相当〜上回る性能——コスト対パフォーマンスで高評価",
@@ -797,19 +1230,43 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "r/LocalLLaMA GLM-5.2実使用レポート集計。良い点：コーディング・数学・日本語でGPT-4o相当〜上回る、コスト対パフォーマンス高評価。注意点：長文コンテキスト（64K+）で品質低下。ローカル環境：主力バリアント48GB+ VRAM推奨。",
             "data": {
               "headline": "r/LocalLLaMA GLM-5.2評価: コスト対性能で高評価、長文64K+は品質低下に要注意",
               "tldr": "r/LocalLLaMaにGLM-5.2の実使用報告が多数投稿。コーディング・数学・日本語でGPT-4o相当〜上回る評価一方、64K+の長文コンテキストで品質低下。主力バリアントはVRAM 48GB+推奨。",
               "points": [
-                { "icon": "✅", "label": "評価が高い点", "value": "コーディング・数学・日本語処理", "description": "複数の独立した実験でコーディング・数学推論・日本語処理においてGPT-4o相当〜上回るパフォーマンスを示す報告が多い。", "tone": "success" },
-                { "icon": "⚠️", "label": "注意点", "value": "長文コンテキスト（64K+）で品質低下", "description": "64K〜128Kトークンの長文コンテキスト処理で品質が低下するという報告が複数ユーザーから共有されている。", "tone": "warning" },
-                { "icon": "💻", "label": "ローカル要件", "value": "主力バリアント: VRAM 48GB+推奨", "description": "フルモデルのローカル動作には48GB以上のVRAMが推奨。量子化版は精度とのトレードオフがあり、用途による選択が必要。", "tone": "info" },
-                { "icon": "🏆", "label": "コミュニティ評価", "value": "2026年上半期最大のコスト対性能モデル", "description": "コミュニティの総評として「コスト対パフォーマンスの観点で2026年上半期最大の出来事」とする声が多い。", "tone": "success" }
+                {
+                  "icon": "✅",
+                  "label": "評価が高い点",
+                  "value": "コーディング・数学・日本語処理",
+                  "description": "複数の独立した実験でコーディング・数学推論・日本語処理においてGPT-4o相当〜上回るパフォーマンスを示す報告が多い。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "注意点",
+                  "value": "長文コンテキスト（64K+）で品質低下",
+                  "description": "64K〜128Kトークンの長文コンテキスト処理で品質が低下するという報告が複数ユーザーから共有されている。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "💻",
+                  "label": "ローカル要件",
+                  "value": "主力バリアント: VRAM 48GB+推奨",
+                  "description": "フルモデルのローカル動作には48GB以上のVRAMが推奨。量子化版は精度とのトレードオフがあり、用途による選択が必要。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "コミュニティ評価",
+                  "value": "2026年上半期最大のコスト対性能モデル",
+                  "description": "コミュニティの総評として「コスト対パフォーマンスの観点で2026年上半期最大の出来事」とする声が多い。",
+                  "tone": "success"
+                }
               ],
               "context": "GLM-5.2の公式発表（新モデルカテゴリ001番）に対して、コミュニティが独立した実使用検証を行い、公式ベンチマークを裏付ける（または反証する）データを提供している。",
               "impact": "ローカルLLM開発者やコスト意識の高い企業が採用検討の実用的な参考にできる。特に日本語処理の評価は国内ユーザーにとって重要な判断材料となる。"
-            }
+            },
+            "alt": "r/LocalLLaMA GLM-5.2実使用レポート集計。良い点：コーディング・数学・日本語でGPT-4o相当〜上回る、コスト対パフォーマンス高評価。注意点：長文コンテキスト（64K+）で品質低下。ローカル環境：主力バリアント48GB+ VRAM推奨。"
           }
         }
       ]
@@ -830,7 +1287,10 @@
           "url": "https://qiita.com/enomoso_pm/items/68d1a29728e5ee339779",
           "published_at": "2026-06-20",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 429 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 429
+          },
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -840,7 +1300,14 @@
             "source_type_bias": 0,
             "reaction_boost": 2
           },
-          "tags": ["draw.io", "AI駆動開発", "図解", "Qiita", "実装", "はてブ人気"],
+          "tags": [
+            "draw.io",
+            "AI駆動開発",
+            "図解",
+            "Qiita",
+            "実装",
+            "はてブ人気"
+          ],
           "summary_ja": "受託開発・SES現場で頻発する「AIに図を描かせると見た目はそれっぽいが実際には使えない図が出てくる」問題を、draw.io専用の生成スキルを設計することで解決した実装記事だ。AIへの指示を汎用的な「図を描いて」から、draw.ioのXML形式に特化したプロンプト設計に変えることで、そのまま業務で使える成果物を得られるようになった経緯と具体的な実装方法が丁寧に解説されている。業務フロー・ER図・シーケンス図・システム構成図など多様な図種への対応実績も共有されており、AI駆動開発を実践する現場エンジニアに刺さる内容としてはてなブックマーク429ユーザーの反響を集めた。",
           "key_points_ja": [
             "「AIに図を描かせても使えない」問題の根本原因：汎用指示ではなくdraw.ioのXML形式に特化したスキル設計で解決",
@@ -850,19 +1317,43 @@
           "x_post": "AIに図を描かせると「それっぽいけど使えない」問題、draw.io専用の生成スキルで解決できると実証した記事がはてブ429users。汎用指示ではなくdraw.ioのXML形式に特化したプロンプト設計が鍵。業務フロー・ER図・シーケンス図対応。",
           "figure": {
             "type": "summary-card",
-            "alt": "AIでdraw.io図を生成するスキル設計の概要。問題：汎用「図を描いて」指示ではそのまま使えない図しか出てこない。解決策：draw.io XMLフォーマット特化のプロンプトスキル設計。対応図種：業務フロー・ER図・シーケンス図・システム構成図。反響：はてブ429ユーザー。",
             "data": {
               "headline": "AI駆動開発でdraw.io生成スキル設計——「使えない図」問題をXML特化プロンプトで解決",
               "tldr": "「AIに図を描かせると使えない図しか出ない」問題を、draw.io XML形式に特化したプロンプトスキル設計で解決した実装記事。はてブ429ユーザーが反応。",
               "points": [
-                { "icon": "❌", "label": "従来の問題", "value": "「図を描いて」では使えない図しか出ない", "description": "汎用的な「図を描いて」指示ではAIは見た目はそれっぽいが業務では使えない図を出力してしまう問題が受託現場で頻発していた。", "tone": "warning" },
-                { "icon": "✅", "label": "解決策", "value": "draw.io XML形式特化のスキル設計", "description": "汎用指示からdraw.io XML形式に特化したプロンプトスキルに変更することで、そのまま業務で使える成果物を得られるようになった。", "tone": "success" },
-                { "icon": "📐", "label": "対応図種", "value": "業務フロー・ER図・シーケンス図・他", "description": "業務フロー図・ER図・シーケンス図・システム構成図・画面遷移図・体制図・CI/CDパイプライン等の多様な図種に対応実績あり。", "tone": "primary" },
-                { "icon": "🔥", "label": "コミュニティ反響", "value": "はてブ429ユーザー", "description": "2026年6月20日公開後にはてなブックマーク429ユーザーが反応。AI駆動開発の実践知見として日本コミュニティで最大の反響。", "tone": "primary" }
+                {
+                  "icon": "❌",
+                  "label": "従来の問題",
+                  "value": "「図を描いて」では使えない図しか出ない",
+                  "description": "汎用的な「図を描いて」指示ではAIは見た目はそれっぽいが業務では使えない図を出力してしまう問題が受託現場で頻発していた。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "✅",
+                  "label": "解決策",
+                  "value": "draw.io XML形式特化のスキル設計",
+                  "description": "汎用指示からdraw.io XML形式に特化したプロンプトスキルに変更することで、そのまま業務で使える成果物を得られるようになった。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📐",
+                  "label": "対応図種",
+                  "value": "業務フロー・ER図・シーケンス図・他",
+                  "description": "業務フロー図・ER図・シーケンス図・システム構成図・画面遷移図・体制図・CI/CDパイプライン等の多様な図種に対応実績あり。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔥",
+                  "label": "コミュニティ反響",
+                  "value": "はてブ429ユーザー",
+                  "description": "2026年6月20日公開後にはてなブックマーク429ユーザーが反応。AI駆動開発の実践知見として日本コミュニティで最大の反響。",
+                  "tone": "primary"
+                }
               ],
               "context": "AI駆動開発が現場に浸透するにつれ、「AIに作らせたものが実際には使えない」という実体験が蓄積されてきた。draw.ioはエンジニアが業務で多用するダイアグラムツールで、XML形式へのAI生成は技術的に複雑で専用対応が必要だった。",
               "impact": "AI駆動開発を導入する受託開発・SES現場のエンジニアが、即座に業務適用できる具体的な設計パターンを得られる。Qiitaで無料公開されており実装コードも共有されている。"
-            }
+            },
+            "alt": "AIでdraw.io図を生成するスキル設計の概要。問題：汎用「図を描いて」指示ではそのまま使えない図しか出てこない。解決策：draw.io XMLフォーマット特化のプロンプトスキル設計。対応図種：業務フロー・ER図・シーケンス図・システム構成図。反響：はてブ429ユーザー。"
           }
         },
         {
@@ -876,7 +1367,10 @@
           "url": "https://speakerdeck.com/oikon48/claude-codewodonoyouni-kiyatutiatupusiteiruka",
           "published_at": "2026-06-20",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 112 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 112
+          },
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -886,7 +1380,13 @@
             "source_type_bias": 0,
             "reaction_boost": 2
           },
-          "tags": ["Claude Code", "キャッチアップ", "SpeakerDeck", "Zennfes", "はてブ人気"],
+          "tags": [
+            "Claude Code",
+            "キャッチアップ",
+            "SpeakerDeck",
+            "Zennfes",
+            "はてブ人気"
+          ],
           "summary_ja": "Zennfes 2026 Spring（Zennが主催するオンラインカンファレンス）での登壇資料で、Claude Codeの急速な進化をどのように追いかけているかという実践的なキャッチアップ手法を共有した内容だ。Claude Codeは数週間単位で機能追加・仕様変更が続いており、公式ドキュメントだけでは追いきれないという問題意識から、コミュニティの情報収集・試し方・学習サイクルの回し方を体系化した内容が紹介されている。はてなブックマーク112ユーザーが反応しており、Claude Codeを業務で使っているエンジニアの共感を集めた資料となっている。",
           "key_points_ja": [
             "Claude Codeの急速な進化に追いつくための情報収集・試し方・学習サイクルを体系化——Zennfes 2026 Spring登壇資料",
@@ -896,18 +1396,36 @@
           "x_post": "Claude Codeの急速な進化を「どうキャッチアップするか」を体系化したZennfes登壇資料がはてブ112users。公式ドキュメントだけでは追いきれない機能追加への実践的対処法を共有。私自身も参考にしたい内容。",
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Codeキャッチアップ手法の概要。課題：Claude Codeは数週間単位で機能追加・仕様変更が続き公式ドキュメントだけでは追いきれない。解決：コミュニティ情報収集・試し方・学習サイクルの体系化。反響：はてブ112ユーザー。",
             "data": {
               "headline": "Claude Codeキャッチアップ手法を体系化——Zennfes登壇資料がはてブ112ユーザーの反響",
               "tldr": "Claude Codeの急速な進化への実践的なキャッチアップ手法を体系化したZennfes 2026 Spring登壇資料。情報収集・試し方・学習サイクルを共有。はてブ112ユーザーが反応。",
               "points": [
-                { "icon": "⚡", "label": "背景", "value": "Claude Codeは数週間単位で機能追加", "description": "Claude Codeは急速に進化しており、公式ドキュメントだけでは追いきれない機能追加・仕様変更が続いているという問題意識。", "tone": "warning" },
-                { "icon": "📋", "label": "内容", "value": "情報収集・試し方・学習サイクルの体系化", "description": "コミュニティからの情報収集方法・効果的な試し方・学習サイクルの回し方を実践から体系化した知見を共有。", "tone": "primary" },
-                { "icon": "🔥", "label": "反響", "value": "はてブ112ユーザー", "description": "Zennfes 2026 Spring登壇資料としてはてなブックマーク112ユーザーが反応。Claude Codeを業務で使うエンジニアの共感を集めた。", "tone": "success" }
+                {
+                  "icon": "⚡",
+                  "label": "背景",
+                  "value": "Claude Codeは数週間単位で機能追加",
+                  "description": "Claude Codeは急速に進化しており、公式ドキュメントだけでは追いきれない機能追加・仕様変更が続いているという問題意識。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📋",
+                  "label": "内容",
+                  "value": "情報収集・試し方・学習サイクルの体系化",
+                  "description": "コミュニティからの情報収集方法・効果的な試し方・学習サイクルの回し方を実践から体系化した知見を共有。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔥",
+                  "label": "反響",
+                  "value": "はてブ112ユーザー",
+                  "description": "Zennfes 2026 Spring登壇資料としてはてなブックマーク112ユーザーが反応。Claude Codeを業務で使うエンジニアの共感を集めた。",
+                  "tone": "success"
+                }
               ],
               "context": "Claude Codeは2025〜2026年にかけて急速に機能が拡張されており、ユーザーコミュニティでも「追いきれない」という声が多い。Zennfesはエンジニア向けオンラインカンファレンスで登壇者の実践知見が集まる場。",
               "impact": "Claude Codeを業務導入・活用するエンジニアが効率的なキャッチアップ方法を得られる。SpeakerDeckで無料公開されており誰でも閲覧可能。"
-            }
+            },
+            "alt": "Claude Codeキャッチアップ手法の概要。課題：Claude Codeは数週間単位で機能追加・仕様変更が続き公式ドキュメントだけでは追いきれない。解決：コミュニティ情報収集・試し方・学習サイクルの体系化。反響：はてブ112ユーザー。"
           }
         },
         {
@@ -921,7 +1439,10 @@
           "url": "https://itmedia.co.jp/news/articles/2606/19/news102.html",
           "published_at": "2026-06-19",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 134 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 134
+          },
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -931,7 +1452,14 @@
             "source_type_bias": 0,
             "reaction_boost": 2
           },
-          "tags": ["OpenAI", "Codex", "Record & Replay", "AI agent", "ITmedia", "はてブ人気"],
+          "tags": [
+            "OpenAI",
+            "Codex",
+            "Record & Replay",
+            "AI agent",
+            "ITmedia",
+            "はてブ人気"
+          ],
           "summary_ja": "OpenAI Codexに追加された新機能「Record & Replay」をITmediaが詳報した。ユーザーが画面操作を録画しておくと、次回からAIが同様の作業を手順書に沿って自律的に実行する機能だ。録画した手順を使う際は、新しいスレッドでCodexに利用指示を出し、アップロードするファイルや対象日付など毎回異なる値を渡せば、Codexが手順通りに作業を進める。OpenAIは録画時の注意点として、手順を短く完結した内容にすること・パスワード等の機密情報を含めないことを挙げている。繰り返し作業の自動化を「プログラミング不要」で実現するというコンセプトが、はてなブックマーク134ユーザーの反響を集めた。",
           "key_points_ja": [
             "OpenAI Codexに「Record & Replay」追加——画面操作を録画した手順をAIが毎回自律実行する機能",
@@ -941,14 +1469,30 @@
           "x_post": "OpenAI CodexのRecord & Replay機能がITmediaで紹介されはてブ134users。画面操作を録画しておくとAIが次回から手順通りに自動実行。プログラミング不要で繰り返し作業を自動化できる——非エンジニアにも刺さるコンセプトだ。",
           "figure": {
             "type": "timeline",
-            "alt": "OpenAI Codex Record & Replayの利用フロー。Step1（過去）：ユーザーが画面操作を録画→手順書が生成される。Step2（現在）：新スレッドでCodexに手順の利用を指示＋毎回異なる値（ファイル・日付等）を渡す。Step3（直後）：CodexがAIが手順通りに自律的に作業を実行する。",
             "data": {
+              "headline": "",
               "events": [
-                { "label": "Step 1: 録画", "description": "ユーザーが画面操作を録画する。手順は短く完結した内容にし、パスワード等の機密情報は含めないことが推奨されている。", "status": "past" },
-                { "label": "Step 2: 指示＋値の入力", "description": "新スレッドでCodexに「この手順を使って」と指示し、毎回異なる値（アップロードファイル・対象日付等）を渡す。", "status": "now" },
-                { "label": "Step 3: AI自律実行", "description": "Codexが録画手順に沿って作業を自律的に実行する。繰り返し作業のプログラミング不要自動化が実現する。", "status": "upcoming" }
+                {
+                  "when": "",
+                  "label": "Step 1: 録画",
+                  "description": "ユーザーが画面操作を録画する。手順は短く完結した内容にし、パスワード等の機密情報は含めないことが推奨されている。",
+                  "status": "past"
+                },
+                {
+                  "when": "",
+                  "label": "Step 2: 指示＋値の入力",
+                  "description": "新スレッドでCodexに「この手順を使って」と指示し、毎回異なる値（アップロードファイル・対象日付等）を渡す。",
+                  "status": "now"
+                },
+                {
+                  "when": "",
+                  "label": "Step 3: AI自律実行",
+                  "description": "Codexが録画手順に沿って作業を自律的に実行する。繰り返し作業のプログラミング不要自動化が実現する。",
+                  "status": "upcoming"
+                }
               ]
-            }
+            },
+            "alt": "OpenAI Codex Record & Replayの利用フロー。Step1（過去）：ユーザーが画面操作を録画→手順書が生成される。Step2（現在）：新スレッドでCodexに手順の利用を指示＋毎回異なる値（ファイル・日付等）を渡す。Step3（直後）：CodexがAIが手順通りに自律的に作業を実行する。"
           }
         },
         {
@@ -971,7 +1515,13 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["PLaMo", "Preferred Networks", "国産LLM", "LLM開発", "日本企業テックブログ"],
+          "tags": [
+            "PLaMo",
+            "Preferred Networks",
+            "国産LLM",
+            "LLM開発",
+            "日本企業テックブログ"
+          ],
           "summary_ja": "Preferred NetworksがPLaMo-3.0-Prime-β（自社開発LLM）をLLM開発の実業務でどのように使っているかを詳報したテックブログを公開した。LLM開発には学習データ準備・評価・実験結果分析などの研究開発タスクに加え、CI整備・ドキュメント保守といったソフトウェア開発タスクも含まれるが、これらすべてにPLaMoを積極活用している。開発チーム自身が毎日PLaMoを使うことで、ベンチマークでは見えにくい能力や改善ポイントを日常的に観察できるという「dogfooding」戦略の実態が共有されている。自社モデルを自社開発に組み込む取り組みとして国内AI開発の参考事例となる。",
           "key_points_ja": [
             "PFN開発チームがPLaMo-3.0-Prime-βを研究開発タスク（データ準備・評価・実験分析）とCI・ドキュメント保守の両方で日常活用",
@@ -980,18 +1530,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Preferred Networks PLaMo-3.0-Prime-βの活用実態。活用領域：研究開発（データ準備・評価・実験分析）＋ソフトウェア開発（CI整備・ドキュメント保守）。戦略：自社モデルを自社開発で使うdogfooding。効果：ベンチマークで見えにくい能力を日常観察。",
             "data": {
               "headline": "PFNがPLaMo-3.0-Prime-βを自社LLM開発に組み込むdogfooding戦略を詳報",
               "tldr": "Preferred NetworksがPLaMo-3.0-Prime-βを研究開発タスク（データ準備・評価・分析）とCI・ドキュメント保守の両方で日常活用。自社モデルを自社開発に使うdogfooding戦略の実態を公開。",
               "points": [
-                { "icon": "🔬", "label": "研究開発タスク活用", "value": "データ準備・評価・実験分析", "description": "LLM学習に必要な学習データ準備・モデル評価・実験結果分析などの研究開発タスクをPLaMoで自動化・効率化。", "tone": "primary" },
-                { "icon": "⚙️", "label": "ソフトウェア開発活用", "value": "CI整備・ドキュメント保守", "description": "複数人で共通コードベースを使うCI整備・確認・ドキュメント保守などの一般的なソフトウェア開発タスクにもPLaMoを活用。", "tone": "info" },
-                { "icon": "🐕", "label": "dogfooding戦略", "value": "自社モデルを自社開発で使う", "description": "開発チーム自身が毎日PLaMoを使うことで、ベンチマークでは見えにくい能力や改善ポイントを日常業務の中で継続的に観察できる。", "tone": "success" }
+                {
+                  "icon": "🔬",
+                  "label": "研究開発タスク活用",
+                  "value": "データ準備・評価・実験分析",
+                  "description": "LLM学習に必要な学習データ準備・モデル評価・実験結果分析などの研究開発タスクをPLaMoで自動化・効率化。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "ソフトウェア開発活用",
+                  "value": "CI整備・ドキュメント保守",
+                  "description": "複数人で共通コードベースを使うCI整備・確認・ドキュメント保守などの一般的なソフトウェア開発タスクにもPLaMoを活用。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🐕",
+                  "label": "dogfooding戦略",
+                  "value": "自社モデルを自社開発で使う",
+                  "description": "開発チーム自身が毎日PLaMoを使うことで、ベンチマークでは見えにくい能力や改善ポイントを日常業務の中で継続的に観察できる。",
+                  "tone": "success"
+                }
               ],
               "context": "国産LLMの開発・活用が日本AI業界の重要テーマとなっている。PFNは数少ない国内フロンティアLLM開発者であり、自社モデルの実用報告は国内AI開発の参照事例として価値が高い。",
               "impact": "LLM開発を行う企業や研究機関が、自社モデルを内部開発に組み込む際の参考にできる。国産LLMの実力評価の実例としても注目される。"
-            }
+            },
+            "alt": "Preferred Networks PLaMo-3.0-Prime-βの活用実態。活用領域：研究開発（データ準備・評価・実験分析）＋ソフトウェア開発（CI整備・ドキュメント保守）。戦略：自社モデルを自社開発で使うdogfooding。効果：ベンチマークで見えにくい能力を日常観察。"
           }
         },
         {
@@ -1005,7 +1573,10 @@
           "url": "https://watch.impress.co.jp/docs/news/2118669.html",
           "published_at": "2026-06-19",
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 77 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 77
+          },
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -1015,7 +1586,13 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "tags": ["理研", "スパコン", "AI基盤", "日本", "国内AI"],
+          "tags": [
+            "理研",
+            "スパコン",
+            "AI基盤",
+            "日本",
+            "国内AI"
+          ],
           "summary_ja": "理化学研究所（理研）がAIに特化したスーパーコンピュータの名称を「理究（りきゅう）」に決定し、2026年7月に稼働開始する見通しを発表した。「理究」の名称は、理研の「理」と究める・探究の「究」を組み合わせたものだ。国内のAI研究・開発を支える計算基盤として、学術機関・企業の大規模LLM学習や推論ワークロードを担うことが期待されている。富岳の後継としての位置付けではなく、AI専用の計算インフラとして新たに整備されるもので、国内AI研究の計算リソース不足の解消に貢献するとみられる。",
           "key_points_ja": [
             "理研のAI特化スパコンが「理究（りきゅう）」と命名——理研の「理」＋究める「究」の造語で2026年7月稼働予定",
@@ -1024,18 +1601,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "理研AI特化スパコン「理究」の概要。名称：理究（りきゅう）。稼働予定：2026年7月。位置付け：AI専用の新計算インフラ（富岳の後継ではない）。期待役割：学術機関・企業の大規模LLM学習・推論。命名由来：理研の「理」＋究める「究」。",
             "data": {
               "headline": "理研AI特化スパコン「理究（りきゅう）」命名——2026年7月稼働、国内LLM研究基盤として期待",
               "tldr": "理化学研究所がAI特化スパコンを「理究（りきゅう）」と命名し、2026年7月に稼働予定と発表。AI専用計算インフラとして学術機関・企業のLLM学習・推論ワークロードを担う。",
               "points": [
-                { "icon": "💻", "label": "名称", "value": "理究（りきゅう）", "description": "理化学研究所の「理」と究める・探究の「究」を組み合わせた命名。", "tone": "primary" },
-                { "icon": "📅", "label": "稼働予定", "value": "2026年7月", "description": "2026年7月に稼働開始予定。富岳の後継ではなくAI専用の新計算インフラとして新たに整備される。", "tone": "info" },
-                { "icon": "🎯", "label": "役割", "value": "大規模LLM学習・推論の国内基盤", "description": "学術機関・企業の大規模LLM学習や推論ワークロードを担う国内AI研究・開発の計算基盤として機能することが期待される。", "tone": "success" }
+                {
+                  "icon": "💻",
+                  "label": "名称",
+                  "value": "理究（りきゅう）",
+                  "description": "理化学研究所の「理」と究める・探究の「究」を組み合わせた命名。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📅",
+                  "label": "稼働予定",
+                  "value": "2026年7月",
+                  "description": "2026年7月に稼働開始予定。富岳の後継ではなくAI専用の新計算インフラとして新たに整備される。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "役割",
+                  "value": "大規模LLM学習・推論の国内基盤",
+                  "description": "学術機関・企業の大規模LLM学習や推論ワークロードを担う国内AI研究・開発の計算基盤として機能することが期待される。",
+                  "tone": "success"
+                }
               ],
               "context": "日本のAI研究は計算リソース不足が長年の課題となっており、国産スパコン基盤の整備が求められていた。理究は国内AI研究の競争力強化に向けた重要なインフラ投資だ。",
               "impact": "国内AI研究者・企業が大規模計算リソースにアクセスしやすくなる。国産LLM開発（PLaMo・ELYZA等）の学習環境が改善される可能性がある。"
-            }
+            },
+            "alt": "理研AI特化スパコン「理究」の概要。名称：理究（りきゅう）。稼働予定：2026年7月。位置付け：AI専用の新計算インフラ（富岳の後継ではない）。期待役割：学術機関・企業の大規模LLM学習・推論。命名由来：理研の「理」＋究める「究」。"
           }
         }
       ]
@@ -1065,7 +1660,13 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Terence Tao", "数学", "AI", "量子位", "中国"],
+          "tags": [
+            "Terence Tao",
+            "数学",
+            "AI",
+            "量子位",
+            "中国"
+          ],
           "summary_ja": "量子位（QbitAI）がフィールズ賞受賞者・数学者のテレンス・タオ（陶哲轩）氏に関する特集記事を掲載した。タオ氏は12年前（2014年頃）に「AIが将来的に数学の定理証明を支援できるようになる」という予言に等しい見解を示していたが、LLMと形式的証明システム（Lean等）の発展によりその予言が現実化しつつあるという内容だ。タオ氏は最近、AIを活用した数学研究を積極的に実践しており、世界最高の知性の一人がAI研究の最も熱狂的な支持者の一人になっている状況を詳報している。",
           "key_points_ja": [
             "テレンス・タオ氏が12年前に示した「AIが数学証明を支援できるようになる」という見解が、LLM+形式証明システム（Lean等）の発展で現実化",
@@ -1074,18 +1675,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "テレンス・タオ氏とAIの関係。2014年頃の予言：AIが将来的に数学の定理証明を支援できると示唆。現在：LLM+Lean等の形式証明システムで予言が現実化。タオ氏の活動：AIを積極活用した数学研究を実践。位置付け：世界最高の知性の一人がAI研究の熱狂的支持者に。",
             "data": {
               "headline": "テレンス・タオの「AI数学予言」がLLM+形式証明システムで現実化——数学の天才がAI支持者に",
               "tldr": "フィールズ賞受賞者テレンス・タオ氏が12年前に示した「AIが数学証明を支援できる」という見解が、LLMとLean等の形式証明システムの発展で現実化。タオ氏自身がAI活用数学研究を積極実践中。",
               "points": [
-                { "icon": "🔮", "label": "12年前の予言", "value": "AIが数学証明を支援できるようになる", "description": "タオ氏が2014年頃に示した見解。当時は遠い将来の話とみられていたが、LLMと形式的証明システムの発展で現実化しつつある。", "tone": "primary" },
-                { "icon": "🧮", "label": "現実化の要因", "value": "LLM＋Lean等の形式証明システム", "description": "大規模言語モデルとLeanなどの形式的定理証明システムの組み合わせにより、AIが数学の証明補助・自動証明を実現できる段階に到達。", "tone": "info" },
-                { "icon": "🤩", "label": "タオ氏の転向", "value": "AI研究の熱狂的支持者に", "description": "タオ氏自身がAIを活用した数学研究を積極的に実践するようになり、AI×数学研究の象徴的存在になっている。", "tone": "success" }
+                {
+                  "icon": "🔮",
+                  "label": "12年前の予言",
+                  "value": "AIが数学証明を支援できるようになる",
+                  "description": "タオ氏が2014年頃に示した見解。当時は遠い将来の話とみられていたが、LLMと形式的証明システムの発展で現実化しつつある。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🧮",
+                  "label": "現実化の要因",
+                  "value": "LLM＋Lean等の形式証明システム",
+                  "description": "大規模言語モデルとLeanなどの形式的定理証明システムの組み合わせにより、AIが数学の証明補助・自動証明を実現できる段階に到達。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🤩",
+                  "label": "タオ氏の転向",
+                  "value": "AI研究の熱狂的支持者に",
+                  "description": "タオ氏自身がAIを活用した数学研究を積極的に実践するようになり、AI×数学研究の象徴的存在になっている。",
+                  "tone": "success"
+                }
               ],
               "context": "AI×数学の融合は「AIが科学的発見を加速する」という命題の重要な試金石となっている。フィールズ賞受賞者クラスの数学者がAIを積極的に活用・推奨することは、業界全体へのシグナルとして大きな意味を持つ。",
               "impact": "AI×数学研究の可能性が広く認識される。数学教育・研究にAIを活用する動きが加速する可能性がある。中国AI業界でもAI×科学研究の話題性が高まっている。"
-            }
+            },
+            "alt": "テレンス・タオ氏とAIの関係。2014年頃の予言：AIが将来的に数学の定理証明を支援できると示唆。現在：LLM+Lean等の形式証明システムで予言が現実化。タオ氏の活動：AIを積極活用した数学研究を実践。位置付け：世界最高の知性の一人がAI研究の熱狂的支持者に。"
           }
         },
         {
@@ -1108,7 +1727,14 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["ロボット", "人形ロボット", "小脳", "ゼロショット", "中国", "量子位"],
+          "tags": [
+            "ロボット",
+            "人形ロボット",
+            "小脳",
+            "ゼロショット",
+            "中国",
+            "量子位"
+          ],
           "summary_ja": "量子位（QbitAI）が、人形ロボットの「汎用小脳」と呼ばれる低レベルモーターコントロールシステムに関する研究を報じた。世界最大規模となる2万時間の人間動作データを活用して学習されたこのシステムは、ゼロショット汎化（学習していない環境・タスクでも動作可能）を実現したとされる。従来の人形ロボットは特定の環境・動作に特化したコントローラーが必要だったが、汎用小脳により多様な環境・タスクへの適応が可能になるという。人形ロボットが「GPT時代」に入ったと表現されるほどの技術的飛躍として中国AI業界で注目されている。",
           "key_points_ja": [
             "世界初・人形ロボット汎用小脳：世界最大規模2万時間の人間動作データで学習し、ゼロショット汎化（未見環境でも動作）を実現",
@@ -1117,31 +1743,78 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "人形ロボット汎用小脳の概要。学習データ：世界最大規模2万時間の人間動作データ。能力：ゼロショット汎化（学習していない環境・タスクでも動作）。意義：特化型コントローラーから汎用小脳への転換——人形ロボットの「GPT時代」開始と評価。",
             "data": {
               "headline": "人形ロボット汎用「小脳」：2万時間データでゼロショット汎化、GPTモーメントと評される",
               "tldr": "世界最大規模2万時間の人間動作データで学習した人形ロボットの汎用小脳が、ゼロショット汎化（未見環境でも動作）を実現。人形ロボットの「GPT時代」開始と評される技術的転換点。",
               "points": [
-                { "icon": "🧠", "label": "汎用小脳", "value": "世界初・人形ロボット用汎用モーター制御", "description": "特定の環境・動作に特化したコントローラーではなく、多様な環境・タスクに適応できる汎用的な低レベルモーター制御システム。", "tone": "primary" },
-                { "icon": "📊", "label": "学習データ", "value": "2万時間の人間動作データ（世界最大規模）", "description": "世界最大規模の2万時間の人間動作データを活用して学習。これにより汎化能力の高いモーター制御が実現した。", "tone": "info" },
-                { "icon": "🚀", "label": "技術的成果", "value": "ゼロショット汎化を実現", "description": "学習データに含まれない新しい環境・タスクでも適切に動作できるゼロショット汎化を達成。", "tone": "success" },
-                { "icon": "🔥", "label": "業界評価", "value": "人形ロボットの「GPT時代」開始", "description": "量子位は「人形ロボットにGPTモーメントが来た」と評価。中国のヒューマノイドロボット研究の技術的転換点として注目される。", "tone": "primary" }
+                {
+                  "icon": "🧠",
+                  "label": "汎用小脳",
+                  "value": "世界初・人形ロボット用汎用モーター制御",
+                  "description": "特定の環境・動作に特化したコントローラーではなく、多様な環境・タスクに適応できる汎用的な低レベルモーター制御システム。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "学習データ",
+                  "value": "2万時間の人間動作データ（世界最大規模）",
+                  "description": "世界最大規模の2万時間の人間動作データを活用して学習。これにより汎化能力の高いモーター制御が実現した。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🚀",
+                  "label": "技術的成果",
+                  "value": "ゼロショット汎化を実現",
+                  "description": "学習データに含まれない新しい環境・タスクでも適切に動作できるゼロショット汎化を達成。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔥",
+                  "label": "業界評価",
+                  "value": "人形ロボットの「GPT時代」開始",
+                  "description": "量子位は「人形ロボットにGPTモーメントが来た」と評価。中国のヒューマノイドロボット研究の技術的転換点として注目される。",
+                  "tone": "primary"
+                }
               ],
               "context": "人形ロボットは2025〜2026年に急速に注目度が高まっており、テスラOptimus・フィギュアAI・1X等が競合する市場。中国では政府のロボット産業支援もあり、大学・企業が急速に研究を加速している。",
               "impact": "人形ロボットの汎用動作制御が実用化に近づく。製造業・介護・物流への応用が視野に入ってくる。日本の製造業ロボット市場にも中国勢の競争圧力が増す可能性がある。"
-            }
+            },
+            "alt": "人形ロボット汎用小脳の概要。学習データ：世界最大規模2万時間の人間動作データ。能力：ゼロショット汎化（学習していない環境・タスクでも動作）。意義：特化型コントローラーから汎用小脳への転換——人形ロボットの「GPT時代」開始と評価。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "hn:AI", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:LLM", "reason": "HN API failed: HTTP 400" },
-    { "source": "openai_blog", "reason": "HTTP 403; data sourced via WebSearch", "fallback_used": "WebSearch site:openai.com" },
-    { "source": "xai_news", "reason": "HTTP 403; data sourced via WebSearch", "fallback_used": "WebSearch site:x.ai" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "hn:AI",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:LLM",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "openai_blog",
+      "reason": "HTTP 403; data sourced via WebSearch",
+      "fallback_used": "WebSearch site:openai.com"
+    },
+    {
+      "source": "xai_news",
+      "reason": "HTTP 403; data sourced via WebSearch",
+      "fallback_used": "WebSearch site:x.ai"
+    }
   ]
 }

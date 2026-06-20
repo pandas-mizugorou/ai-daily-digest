@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 19 Jun 2026 17:54:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 17:18:36 GMT</lastBuildDate>
+    <item>
+      <title>ノーベル賞・AlphaFold創始者ジャンパー氏がAnthropicへ移籍——GLM-5.2がOSS最強を維持、DeepMindがAIエージェント安全制御ロードマップ公開、OpenAI化学AIが実験室で新発見</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21</link>
+      <guid isPermaLink="false">aidd-day-2026-06-21</guid>
+      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月21日は、2024年ノーベル化学賞受賞者でAlphaFold共同開発者のジョン・ジャンパー氏がDeepMindを離れAnthropicに移籍するという業界を驚かせる人材動向で幕を開けた。Fable 5輸出規制が続く中、Z.aiのGLM-5.2（753B MoE、MIT）はArtificial AnalysisリーダーボードでGPT-5.5とClaude Opus 4.8の間に位置すると評価され、OSSフロンティアとしての地位を固めた。DeepMindは100万件のエージェントタスク軌跡を解析したAI制御ロードマップを公開し、OpenAIはGPT-5.4を近自律エージェントとして使用した実験室での化学新発見を発表した。日本ではClaude Codeやdraw.io生成スキルに関する実装記事が高反響を集め、AI活用の実践知見の共有が活発だった。
+
+【今日の必読】
+・【AI駆動開発】AIに「図を描いて」と頼むと&quot;それっぽいけど使えない図&quot;が出てくる問題を、draw.io生成スキルで倒した
+・画面操作を&quot;録画&quot;→AIが作業代行 Codexに新機能「Record &amp; Replay」
+・GLM-5.2がGPT-5.5水準に肉薄——Z.aiが753B MoEオープンモデルでOSSフロンティアを刷新
+・Claude Codeをどのようにキャッチアップしているか
+・DeepMindがAIエージェント安全制御ロードマップ公開——100万軌跡解析・MITRE ATT&amp;CK適用の3層防御設計
+・ノーベル賞受賞・AlphaFold共同開発者ジョン・ジャンパー氏がDeepMindを離れAnthropicへ移籍</description>
+    </item>
     <item>
       <title>米政府のFable 5停止が招いたOSS覇権交代——Z.ai GLM-5.2がコーディング首位を宣言、Claude Code Dynamic Workflowsが最大1000サブエージェント並列化、AWS Blocksが接続不要ローカルAIエージェント基盤を提供</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20</link>
@@ -441,21 +456,6 @@
 ・Darwin ファミリー：勾配ゼロで GPQA Diamond 88.89% ——訓練なしでフロンティアモデル相当の推論性能を実証
 ・Practical Harness Engineering: Understanding Steering Loops Through Real-World Examples
 ・「迎合的合意」から「多元的修復」へ——AIアライメントが意見の多様性を表面化すべき理由（arXiv 2026-05-15）</description>
-    </item>
-    <item>
-      <title>Google が Android をエージェント基盤に変革、Anthropic が中小企業向け Claude を公開—Ramp データで企業採用が初めて OpenAI を逆転</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-14</link>
-      <guid isPermaLink="false">aidd-day-2026-05-14</guid>
-      <pubDate>Wed, 13 May 2026 20:00:00 GMT</pubDate>
-      <description>Google は Android Show 2026 で「Gemini Intelligence」を発表し、スマートフォンを能動的にタスクを代替実行するエージェント基盤へ刷新した。Anthropic は QuickBooks・Microsoft 365 など 7 ツールと連携する中小企業向け「Claude for Small Business」を公開。同日フィンテック Ramp の調査で Anthropic の企業採用率が初めて OpenAI を逆転（34.4% vs 32.3%）したことが判明。arXiv では KV キャッシュ効率化・エージェント長期記憶・継続学習など実装寄りの論文が多数公開され、日本では AI 生成コンテンツの質をめぐる議論が Zenn ではてブ 241 件を集めた。
-
-【今日の必読】
-・Google が「Gemini Intelligence」を発表—Android がタスク自律実行のエージェント基盤に変革
-・Anthropic が中小企業向け「Claude for Small Business」を公開—QuickBooks・Microsoft 365 など 7 ツール連携の 15 ワークフロー
-・Needle: Gemini のツール呼び出し能力を 26M モデルに蒸留—HN 623pt 獲得の注目オープンソース
-・Claude Code と Multi-Agent Design Patterns
-・Learning, Fast and Slow: パラメータ更新と文脈最適化の二重戦略で LLM 継続学習のサンプル効率 3 倍
-・初めて Anthropic が OpenAI を企業採用で逆転—Ramp 5 万社データで 34.4% vs 32.3%</description>
     </item>
   </channel>
 </rss>

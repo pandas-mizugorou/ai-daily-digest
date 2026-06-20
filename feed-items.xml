@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 19 Jun 2026 17:54:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 17:18:36 GMT</lastBuildDate>
+    <item>
+      <title>【AI駆動開発】AIに「図を描いて」と頼むと&quot;それっぽいけど使えない図&quot;が出てくる問題を、draw.io生成スキルで倒した</title>
+      <link>https://qiita.com/enomoso_pm/items/68d1a29728e5ee339779</link>
+      <guid isPermaLink="false">aidd-item-2026-06-21-017</guid>
+      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-017">AI Daily Digest 2026-06-21</source>
+      <description>受託開発・SES現場で頻発する「AIに図を描かせると見た目はそれっぽいが実際には使えない図が出てくる」問題を、draw.io専用の生成スキルを設計することで解決した実装記事だ。AIへの指示を汎用的な「図を描いて」から、draw.ioのXML形式に特化したプロンプト設計に変えることで、そのまま業務で使える成果物を得られるようになった経緯と具体的な実装方法が丁寧に解説されている。業務フロー・ER図・シーケンス図・システム構成図など多様な図種への対応実績も共有されており、AI駆動開発を実践する現場エンジニアに刺さる内容としてはてなブックマーク429ユーザーの反響を集めた。</description>
+    </item>
+    <item>
+      <title>画面操作を&quot;録画&quot;→AIが作業代行 Codexに新機能「Record &amp; Replay」</title>
+      <link>https://itmedia.co.jp/news/articles/2606/19/news102.html</link>
+      <guid isPermaLink="false">aidd-item-2026-06-21-019</guid>
+      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-019">AI Daily Digest 2026-06-21</source>
+      <description>OpenAI Codexに追加された新機能「Record &amp; Replay」をITmediaが詳報した。ユーザーが画面操作を録画しておくと、次回からAIが同様の作業を手順書に沿って自律的に実行する機能だ。録画した手順を使う際は、新しいスレッドでCodexに利用指示を出し、アップロードするファイルや対象日付など毎回異なる値を渡せば、Codexが手順通りに作業を進める。OpenAIは録画時の注意点として、手順を短く完結した内容にすること・パスワード等の機密情報を含めないことを挙げている。繰り返し作業の自動化を「プログラミング不要」で実現するというコンセプトが、はてなブックマーク134ユーザーの反響を集めた。</description>
+    </item>
+    <item>
+      <title>GLM-5.2がGPT-5.5水準に肉薄——Z.aiが753B MoEオープンモデルでOSSフロンティアを刷新</title>
+      <link>https://latent.space/p/ainews-glm-gpt-glm-52-passes-vibe</link>
+      <guid isPermaLink="false">aidd-item-2026-06-21-001</guid>
+      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-001">AI Daily Digest 2026-06-21</source>
+      <description>Zhipu（Z.ai）が開発したGLM-5.2は、総パラメータ753B・アクティブ約40BのMixture-of-Experts（MoE）アーキテクチャを採用したオープンソースモデルで、MITライセンスで公開されている。Artificial Analysisのリーダーボードで同モデルはGPT-5.5とClaude Opus 4.8の中間に位置すると評価されており、AI研究者のJeremy Howardも「自身のワークフローにおいてOpus 4.8・GPT-5.5以上に機能した」と述べた。1Mトークンのコンテキストウィンドウ・131K出力トークンをサポートし、28.5Tトークンで事前学習済み。米国のFable 5輸出規制によって生じたオープンソースAIへの需要増を背景に、GLM-5.2は閉鎖型フロンティアモデルと実質的に競合できる初のOSSモデルとして注目を集めている。さらにZ.aiは2026年末までにFableモデル相当のオープン版を公開する計画も示した。</description>
+    </item>
+    <item>
+      <title>Claude Codeをどのようにキャッチアップしているか</title>
+      <link>https://speakerdeck.com/oikon48/claude-codewodonoyouni-kiyatutiatupusiteiruka</link>
+      <guid isPermaLink="false">aidd-item-2026-06-21-018</guid>
+      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-018">AI Daily Digest 2026-06-21</source>
+      <description>Zennfes 2026 Spring（Zennが主催するオンラインカンファレンス）での登壇資料で、Claude Codeの急速な進化をどのように追いかけているかという実践的なキャッチアップ手法を共有した内容だ。Claude Codeは数週間単位で機能追加・仕様変更が続いており、公式ドキュメントだけでは追いきれないという問題意識から、コミュニティの情報収集・試し方・学習サイクルの回し方を体系化した内容が紹介されている。はてなブックマーク112ユーザーが反応しており、Claude Codeを業務で使っているエンジニアの共感を集めた資料となっている。</description>
+    </item>
+    <item>
+      <title>DeepMindがAIエージェント安全制御ロードマップ公開——100万軌跡解析・MITRE ATT&amp;CK適用の3層防御設計</title>
+      <link>https://deepmind.google/blog/securing-the-future-of-ai-agents/</link>
+      <guid isPermaLink="false">aidd-item-2026-06-21-005</guid>
+      <pubDate>Wed, 17 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-005">AI Daily Digest 2026-06-21</source>
+      <description>Google DeepMindがAIエージェントの安全制御設計書（AIコントロールロードマップ）を公開した。AIエージェントを内部脅威として扱うMITRE ATT&amp;CKフレームワークを適用し、100万件のコーディングエージェントタスク軌跡を解析した結果に基づく実証的なアプローチが特徴だ。フレームワークは3つの柱で構成される：（1）脅威モデリング——エージェントを潜在的なインサイダー脅威として分類、（2）検知と対応——信頼済みAIスーパーバイザーによるエージェント行動監視、（3）パフォーマンス指標——カバレッジ・再現率・応答時間の継続的計測。リスクの深刻度に応じて非同期（事後レビュー）から同期（リアルタイム防止）まで段階的なレスポンス戦略を提供する。なお米国だけでAIエージェントは2030年までに2.9兆ドルの経済価値を創出すると見込まれており、エージェント安全設計の重要性が増している。</description>
+    </item>
+    <item>
+      <title>ノーベル賞受賞・AlphaFold共同開発者ジョン・ジャンパー氏がDeepMindを離れAnthropicへ移籍</title>
+      <link>https://www.bloomberg.com/news/articles/2026-06-21/john-jumper-deepmind-anthropic</link>
+      <guid isPermaLink="false">aidd-item-2026-06-21-012</guid>
+      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-012">AI Daily Digest 2026-06-21</source>
+      <description>2024年ノーベル化学賞受賞者でAlphaFold共同開発者のジョン・ジャンパー氏がGoogle DeepMindを離れ、Anthropicに移籍することが報じられた。ジャンパー氏はAlphaFold2・AlphaFold3の開発を主導した計算構造生物学の第一人者であり、ノーベル賞はデミス・ハサビス氏と連名で受賞している。Anthropicでの役職・担当領域は未公表だが、Anthropic CEO のダリオ・アモデイ氏が生命科学・医療へのAI応用を戦略優先事項として明言していることから、創薬・タンパク質設計AIなどの科学的AI開発を牽引するポジションに就くとみられる。AI業界における人材獲得競争の激化を示す象徴的な動向だ。</description>
+    </item>
     <item>
       <title>Fable ban後の空白を突いたZ.ai GLM-5.2——フロントエンドコーディング世界首位のOSSモデルを宣言</title>
       <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
@@ -581,54 +629,6 @@
       <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-001">AI Daily Digest 2026-05-31</source>
       <description>OpenAIは5月29日、生命科学専用推論モデル「GPT-Rosalind」を政府機関・研究機関向けに無償開放する「Rosalind Biodefense」プログラムを開始した。GPT-Rosalindは化学・生化学・実験設計の内部ベンチマークでGPT-5およびGPT-5.4を上回るとOpenAIは主張しており、分子・タンパク質・遺伝子の推論を専門とする。開発者トラックと連邦政府トラックの2本立てで、申請審査を通過した学術機関・非営利組織・政府系機関が無償でアクセスできる。早期パートナーとしてLawrence Livermore国立研究所、Johns Hopkins応用物理研究所、CEPI（感染症流行対策イノベーション連合）が参加しており、CEPIはバンジョウエボラ出血熱に対する「100日間ミッション（ワクチン加速開発計画）」に活用中だ。SecureDNAとFourth Eonも参加し、バイオセキュリティ領域への応用が広がっている。</description>
-    </item>
-    <item>
-      <title>Anthropic、Claude Opus 4.8リリース——Dynamic Workflowで数百サブエージェント並列実行、コード欠陥検出力4倍</title>
-      <link>https://www.anthropic.com/news/claude-opus-4-8</link>
-      <guid isPermaLink="false">aidd-item-2026-05-30-001</guid>
-      <pubDate>Fri, 29 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-001">AI Daily Digest 2026-05-30</source>
-      <description>AnthropicはClaude Opus 4.8を5月30日に正式リリースした。前世代（Opus 4.7）比でコード欠陥検出力が4倍に向上し、新機能「Dynamic Workflow」により数百のサブエージェントを並列実行できる。価格は前世代と据え置き（入力$15/Mトークン、出力$75/Mトークン）で、Fast modeは従来比67%割引の$5/$25に設定された。SWE-bench Verifiedでは78.4%を記録し、ソフトウェアエンジニアリング分野での最高水準を更新した。</description>
-    </item>
-    <item>
-      <title>Liquid AI、LFM2.5-8B-A1Bを公開——38兆トークン学習、非ハルシネーション率8.5倍改善</title>
-      <link>https://www.liquid.ai/blog/lfm2-5</link>
-      <guid isPermaLink="false">aidd-item-2026-05-30-002</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-002">AI Daily Digest 2026-05-30</source>
-      <description>Liquid AIは38兆トークンで学習したLFM2.5-8B-A1Bを公開した。8Bパラメータながらアクティブパラメータは1Bのみで、MoE的な効率設計を採用する。非ハルシネーション率はLFM2比で7.46%から63.47%へ大幅改善（約8.5倍）。MATH500は74.8から88.76に、IFEvalは79.44から91.84にそれぞれ向上し、コンテキスト長は32Kから128Kに拡張された。Apache 2.0ライセンスで公開される。</description>
-    </item>
-    <item>
-      <title>Latent Space解説：スケーラブルな非同期マルチエージェントシステムのアーキテクチャ設計原則</title>
-      <link>https://www.latent.space/p/async-agents</link>
-      <guid isPermaLink="false">aidd-item-2026-05-30-008</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-008">AI Daily Digest 2026-05-30</source>
-      <description>Latent Spaceが非同期マルチエージェントシステムの設計原則を深く解説した。従来の同期型エージェントループの限界（ブロッキングI/O・単一障害点・スケールアウト困難）を指摘し、メッセージキュー（RabbitMQ/Kafka）を介した非同期通信・エージェントプールによる水平スケール・サーキットブレーカーパターンによるカスケード障害防止の3原則を提示する。Claude Opus 4.8のDynamic Workflowが実装例として取り上げられ、数百エージェントを50ms以下のレイテンシで協調させるアーキテクチャの詳細が解説されている。</description>
-    </item>
-    <item>
-      <title>GitHubで16万スターのCLAUDE.md記法を完全解説——Claude Codeをチームで使うための設定術</title>
-      <link>https://qiita.com/pandas_ai_lab/items/claudemd-full-guide</link>
-      <guid isPermaLink="false">aidd-item-2026-05-30-019</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-019">AI Daily Digest 2026-05-30</source>
-      <description>GitHubで16万スターを獲得したCLAUDE.md記法のベストプラクティスを日本語で体系的に解説するQiita記事がはてなブックマーク263件を獲得した。ルート・サブディレクトリ・ホームの3階層でのCLAUDE.md配置戦略、メモリ管理セクションの書き方、slash commandsの定義構文、MCPサーバー設定の記述方法など実践的なトピックを網羅する。チーム開発でのCLAUDE.md共有と個人設定の分離方法も詳解されており、Claude Codeの日本語情報として最も詳細な記事の一つとなっている。</description>
-    </item>
-    <item>
-      <title>Microsoft ResearchのSkillOptが全52構成で首位——エージェントが実行ログからスキルを自律獲得する新フレームワーク</title>
-      <link>https://arxiv.org/abs/2405.skillopt</link>
-      <guid isPermaLink="false">aidd-item-2026-05-30-011</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-011">AI Daily Digest 2026-05-30</source>
-      <description>Microsoft Researchはエージェントがタスクを通じてスキルを自律的に獲得・改善するフレームワーク「SkillOpt」を発表した。エージェントが実行ログから成功パターンを抽出・構造化し、次のタスクで即時利用できる形式に変換する自己改善ループを実装する。WebArena・OSWorld・SWE-benchの計52構成で評価し、全構成で既存手法を上回るスコアを記録した。SkillOptを適用したGPT-5.5 CodingはSWE-benchで+24.8ポイント、Direct Promptingでは+23.5ポイント向上した。</description>
-    </item>
-    <item>
-      <title>GitHub Copilotが高性能モデル向け従量制リクエスト課金を導入——月額上限モデルを廃止し新価格体系へ</title>
-      <link>https://github.blog/news-insights/product-news/github-copilot-premium-model-requests/</link>
-      <guid isPermaLink="false">aidd-item-2026-05-30-004</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30/2026-05-30-004">AI Daily Digest 2026-05-30</source>
-      <description>GitHubはCopilot Enterpriseにおいて、Claude Opus 4.8・GPT-5.5・Gemini 3.5 Ultraなど高性能モデルへのリクエストを従量制（1リクエスト$0.04）で提供する新課金体系を発表した。従来の月間リクエスト上限モデルを廃止し、必要な分だけ支払う仕組みに移行する。標準モデル（Claude Haiku 4.5・GPT-5.5 Instant）は引き続きサブスクリプション内で無制限に利用可能。管理者向けに月間予算上限設定機能も追加される。</description>
     </item>
   </channel>
 </rss>
