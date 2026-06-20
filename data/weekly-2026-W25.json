@@ -4,12 +4,12 @@
   "to": "2026-06-21",
   "generated_at": "2026-06-21T05:00:00+09:00",
   "schema_version": "1.0",
-  "headline": "米政府のFable 5輸出規制停止・Z.aiのGLM-5.2即座反攻・SpaceXのCursor買収・ノーベル賞受賞者のAnthropic移籍が重なり、AI覇権争いが地政学・商業・人材の三戦線に拡大した週",
-  "summary_ja": "2026年第25週は、米政府によるClaude Fable 5・Mythos 5輸出規制停止を起点に、AI業界の全戦線が同時に動いた週となった。輸出管理命令はAnthropicに90分以内のアクセス制限実装を要求し、再公開条件「ジェイルブレーク完全遮断」を専門家が技術的不可能と指摘する中、交渉は平行線をたどった。この空白に中国Z.aiがGLM-5.2（753B MoE、MIT無償公開）を即座に投入。Artificial Analysisでフロンティアモデルに肉薄すると評価され、2026年末のFable相当OSS公開も予告された。商業面ではSpaceXがCursorを600億ドルで買収しMusk勢力が開発者市場に参入。2024年ノーベル化学賞受賞・AlphaFold共同開発者ジャンパー氏がAnthropicへ移籍し創薬AIへの布石とみられる。DeepMindはAIエージェント安全制御ロードマップv0.1を公開、OpenAIはGPT-5.4が実験室で医薬品化学の新知見を発見したと報告。規制・競争・人材・安全の全領域が連鎖した歴史的一週間となった。",
+  "headline": "米政府のFable 5輸出規制・GLM-5.2 OSSフロンティア制覇・SpaceX/Cursor 600億ドル買収——AI覇権が規制・技術・M&Aの三戦線に拡大した週",
+  "summary_ja": "今週のAI業界は「政府介入」「OSSの逆襲」「大型M&A」という三本柱が同時進行した激動の7日間となった。米政府がAnthropicへFable 5・Mythos 5の輸出規制を発動し、White HouseはFable 5再公開条件に「全ジェイルブレーク完全遮断」を要求したが、専門家は「技術的に不可能」と断言。規制当局とAI安全実務の深刻な認識ギャップが浮き彫りになった。この空白を突いたのが中国Z.aiで、GLM-5.2（753B MoE・MITライセンス）はGPT-5.5水準の評価を獲得しOSSフロンティアが閉鎖型モデルと実質競合できることを証明した。商業面ではSpaceXがCursor開発元Anysphereを600億ドルで買収してMusk帝国が開発者ツール市場に本格参入、OpenAI内部財務の流出で2025年130億ドル収益（赤字継続）が明らかになった。GPU物理テレメトリのみでML学習を検出する手法も登場しAIガバナンスの技術的実現可能性を示した。来週はFable 5規制解除交渉（7月1日までの復活確率55%）とAWSの自社AIチップ外販計画の動向に注目したい。",
   "stats": {
     "total_collected_week": 140,
-    "after_dedup": 135,
-    "selected_items": 29,
+    "after_dedup": 131,
+    "selected_items": 25,
     "top_count": 10
   },
   "top_10": [
@@ -17,163 +17,190 @@
       "id": "tc-anthropic-wh-ban",
       "date": "2026-06-16",
       "rank": 1,
-      "reason": "今週最大のニュース。米政府がClaude Fable 5・Mythos 5へのグローバルアクセスを90分で停止させた輸出管理命令。AIフロンティアモデルへの政府介入という前代未聞の前例",
+      "reason": "週最大ニュース。米政府が90分以内にAnthropicへFable 5・Mythos 5の輸出規制を命令、フロンティアAIへの政府介入が現実化した前例",
       "category": "regulation_policy"
     },
     {
-      "id": "gigazine-glm-5-2",
+      "id": "tc-spacex-cursor",
       "date": "2026-06-16",
       "rank": 2,
-      "reason": "Fable 5停止直後に中国Z.aiが744B MoE・MIT無償公開のGLM-5.2を発表。規制の空白をOSSが埋める構図の象徴的ニュース",
-      "category": "new_models"
-    },
-    {
-      "id": "apple-foundation-models",
-      "date": "2026-06-16",
-      "rank": 3,
-      "reason": "WWDCでAppleがFoundation ModelsをOSS化。単一Swift APIでオンデバイス・Claude・Geminiを切替可能にする開発者インフラの転換点",
-      "category": "tools_apps"
-    },
-    {
-      "id": "ars-spacex-cursor-60b",
-      "date": "2026-06-17",
-      "rank": 4,
-      "reason": "SpaceX上場2日後に600億ドルの全株式交換でCursorを買収。Musk率いるxAI・Tesla・SpaceXの三角形がAI開発者市場に本格参入",
+      "reason": "SpaceXがCursor開発元Anysphereを600億ドル全株式交換で買収、MuskがAI開発者ツール市場に本格参入する歴史的M&A",
       "category": "industry_business"
     },
     {
       "id": "ls-fable5-mythos-safe",
       "date": "2026-06-17",
-      "rank": 5,
-      "reason": "Latent SpaceによるFable 5の技術的深掘り。FrontierCode Diamondで13.4%→29.3%の達成と論争的条件の実態を解説。停止3日前の決定版技術分析",
+      "rank": 3,
+      "reason": "Latent SpaceによるFable 5技術深掘り——FrontierCode Diamondで29.3%・論争的条件での能力検証、輸出規制議論の技術的バックボーン",
       "category": "new_models"
-    },
-    {
-      "id": "raschka-2026-llm-list",
-      "date": "2026-06-17",
-      "rank": 6,
-      "reason": "Sebastian Raschkaが2026年1〜5月のLLM精選論文リストを公開。score=19で今週最高スコア。研究者・エンジニアの必読キャッチアップリソース",
-      "category": "research_papers"
     },
     {
       "id": "ars-openai-financial-leak",
       "date": "2026-06-17",
-      "rank": 7,
-      "reason": "OpenAI内部財務文書が流出。2024年37億→2025年130億ドルの急成長も支出超で赤字継続。IPO前哨戦の実態が明らかに",
+      "rank": 4,
+      "reason": "OpenAI内部財務書類が流出、2024年37億→2025年130億ドルの急成長も支出超で赤字継続の実態が明らかに",
       "category": "industry_business"
     },
     {
-      "id": "2026-06-21-012",
-      "date": "2026-06-21",
-      "rank": 8,
-      "reason": "2024年ノーベル化学賞受賞・AlphaFold共同開発者ジョン・ジャンパー氏がDeepMind→Anthropicへ移籍。AI創薬・タンパク質設計での戦略的布石",
-      "category": "industry_business"
+      "id": "apple-foundation-models",
+      "date": "2026-06-16",
+      "rank": 5,
+      "reason": "WWDCでAppleがFoundation ModelsをOSS化、単一Swift APIでClaude/Geminiを切替可能にする統合レイヤーを発表",
+      "category": "tools_apps"
+    },
+    {
+      "id": "arxiv-detecting-hidden-ml-training-with-zero-overhead-",
+      "date": "2026-06-19",
+      "rank": 6,
+      "reason": "GPU物理テレメトリのみでML学習を検出する手法を20種の回避戦略・9GPUモデルで検証、AIガバナンスの技術的実現可能性を証明",
+      "category": "research_papers"
     },
     {
       "id": "2026-06-21-005",
       "date": "2026-06-21",
-      "rank": 9,
-      "reason": "Google DeepMindがAIエージェント安全制御ロードマップv0.1を公開。100万件の軌跡データ解析・MITRE ATT&CK適用の実証的3層防御設計",
+      "rank": 7,
+      "reason": "DeepMindがAIエージェント安全制御ロードマップ公開——100万軌跡解析・MITRE ATT&CK適用の3層防御設計で業界標準を提示",
       "category": "agents"
     },
     {
-      "id": "2026-06-21-006",
+      "id": "2026-06-21-017",
       "date": "2026-06-21",
+      "rank": 8,
+      "reason": "はてブ429ユーザー反応。draw.io AI生成スキルで「それっぽいだけの図」問題を解決した実装知見がAI駆動開発コミュニティに拡散",
+      "category": "japan"
+    },
+    {
+      "id": "2026-06-21-001",
+      "date": "2026-06-21",
+      "rank": 9,
+      "reason": "GLM-5.2が753B MoEでGPT-5.5水準に到達、Jeremy Howardも実ワークフローで確認。Z.aiが2026年末Open Fable公開を予告",
+      "category": "new_models"
+    },
+    {
+      "id": "wired_ai-the-white-house-wants-anthropic-to-block-all-jai",
+      "date": "2026-06-18",
       "rank": 10,
-      "reason": "OpenAI GPT-5.4が近自律エージェントとして1万件超の実験室実験を実施し、医薬品化学でTEMPOを新知見として発見。LLMが実湿式実験を主導した初の公開記録",
-      "category": "agents"
+      "reason": "White HouseがFable 5再公開条件に「全ジェイルブレーク完全遮断」を要求、専門家が技術的不可能性を証言する規制実務の断絶を報道",
+      "category": "regulation_policy"
     }
   ],
   "papers_5": [
     {
-      "id": "raschka-2026-llm-list",
-      "date": "2026-06-17",
-      "category": "research_papers"
-    },
-    {
-      "id": "2026-06-21-011",
-      "date": "2026-06-21",
+      "id": "arxiv-detecting-hidden-ml-training-with-zero-overhead-",
+      "date": "2026-06-19",
+      "rank": 1,
+      "reason": "AI計算ガバナンスの技術的実現可能性を問う最重要論文、importance=5・total=18",
       "category": "research_papers"
     },
     {
       "id": "arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m",
       "date": "2026-06-18",
+      "rank": 2,
+      "reason": "7826件の有害意図・4種JB手法・三審制で評価したFable 5初規模レッドチーム研究",
       "category": "research_papers"
     },
     {
       "id": "arxiv-looped-world-models",
       "date": "2026-06-18",
+      "rank": 3,
+      "reason": "パラメータ共有で100倍効率を達成するLoopedアーキテクチャ、世界モデルへの初適用として研究的インパクト大",
       "category": "research_papers"
     },
     {
-      "id": "arxiv-detecting-hidden-ml-training-with-zero-overhead-",
-      "date": "2026-06-19",
+      "id": "raschka-2026-llm-list",
+      "date": "2026-06-17",
+      "rank": 4,
+      "reason": "Raschkaが2026年1〜5月の精選LLM論文リストを公開、技術キャッチアップの最短経路として必読",
       "category": "research_papers"
     },
     {
-      "id": "2026-06-21-009",
-      "date": "2026-06-21",
+      "id": "arxiv-value-axis",
+      "date": "2026-06-16",
+      "rank": 5,
+      "reason": "LLMの価値軸分析論文、AIアライメント研究の新フレームワークを提示",
       "category": "research_papers"
     }
   ],
   "models_3": [
     {
+      "id": "ls-fable5-mythos-safe",
+      "date": "2026-06-17",
+      "rank": 1,
+      "reason": "Anthropic Claude Fable 5 / Mythos 5——輸出規制で停止された今週最注目モデル、FrontierCode Diamondで29.3%達成",
+      "category": "new_models"
+    },
+    {
       "id": "gigazine-glm-5-2",
       "date": "2026-06-16",
+      "rank": 2,
+      "reason": "Z.ai GLM-5.2——744B MoE・100万トークン文脈・MIT無償公開、Fable 5規制直後に投入されたOSSフロンティア対抗モデル",
       "category": "new_models"
     },
     {
       "id": "2026-06-21-001",
       "date": "2026-06-21",
-      "category": "new_models"
-    },
-    {
-      "id": "gigazine-kimi-k2-7",
-      "date": "2026-06-16",
+      "rank": 3,
+      "reason": "GLM-5.2 753B MoE vibe check——GPT-5.5とOpus 4.8の中間評価を取得、Z.aiが2026年末Open Fable公開を予告",
       "category": "new_models"
     }
   ],
   "community_buzz_3": [
     {
+      "id": "hn-local-coding-model",
+      "date": "2026-06-16",
+      "rank": 1,
+      "reason": "HN 1084pt。ローカルモデルへの完全移行実態を問うスレッドに200超のコメント、Claude/GPT代替の現実を可視化",
+      "category": "community_buzz"
+    },
+    {
+      "id": "hn-not-everyone-ai",
+      "date": "2026-06-16",
+      "rank": 2,
+      "reason": "HN 505pt。調査データでAI普及の誇張された認識に反論、実態把握コンテンツとして強い反響",
+      "category": "community_buzz"
+    },
+    {
       "id": "2026-06-21-016",
       "date": "2026-06-21",
-      "category": "community_buzz"
-    },
-    {
-      "id": "2026-06-21-015",
-      "date": "2026-06-21",
-      "category": "community_buzz"
-    },
-    {
-      "id": "lesswrong-claude-fable-5-and-mythos-5-capabilities",
-      "date": "2026-06-20",
+      "rank": 3,
+      "reason": "r/LocalLLaMA。GLM-5.2の実使用報告——「このコスト帯でGPT-4o超は驚異」と長文コンテキスト注意点も指摘",
       "category": "community_buzz"
     }
   ],
   "japan_3": [
     {
-      "id": "2026-06-21-017",
-      "date": "2026-06-21",
-      "category": "japan"
-    },
-    {
       "id": "hatena_it-5-claude-code-tips-2",
       "date": "2026-06-18",
+      "rank": 1,
+      "reason": "はてブ575ユーザー（週最高反響）。GitHubで5万スターのClaude Code Tips集2、日本語圏での実装知識リファレンス",
       "category": "japan"
     },
     {
-      "id": "hatena-codex-skill",
-      "date": "2026-06-19",
-      "category": "japan"
-    },
-    {
-      "id": "2026-06-21-019",
+      "id": "2026-06-21-017",
       "date": "2026-06-21",
+      "rank": 2,
+      "reason": "はてブ429ユーザー。draw.io AI生成スキルで「それっぽいだけの図」問題を解決した実装知見",
+      "category": "japan"
+    },
+    {
+      "id": "hatena_it-vs-code-openai-anthropic-github-copilot",
+      "date": "2026-06-20",
+      "rank": 3,
+      "reason": "はてブ196ユーザー。VS Code公式チームによるGitHub Copilotトークン最適化ガイド、OpenAI・Anthropic両API対応",
+      "category": "japan"
+    },
+    {
+      "id": "hatena-antigravity-llm-mcp-99",
+      "date": "2026-06-19",
+      "rank": 4,
+      "reason": "はてブ153ユーザー。Antigravity+MCP+ローカルLLMでAPIクォータ99%削減の実装例、claude-code活用の実践知見",
       "category": "japan"
     },
     {
       "id": "2026-06-21-018",
       "date": "2026-06-21",
+      "rank": 5,
+      "reason": "はてブ112ユーザー。Claude Codeキャッチアップ方法を解説したZennfes登壇資料",
       "category": "japan"
     }
   ],
@@ -181,45 +208,126 @@
     {
       "id": "qbitai-qwen-robot",
       "date": "2026-06-16",
+      "rank": 1,
+      "reason": "Alibaba初の具身（身体性）大規模モデルQwen-Robotシリーズ3本を同時公開——操作・移動・世界モデル",
       "category": "china"
     },
     {
-      "id": "2026-06-21-023",
-      "date": "2026-06-21",
-      "category": "china"
-    },
-    {
-      "id": "2026-06-21-022",
-      "date": "2026-06-21",
+      "id": "qbitai-robot-fullbody",
+      "date": "2026-06-17",
+      "rank": 2,
+      "reason": "中国研究チームが全身ロボット制御新手法を発表——動的障害物回避と複雑地形横断を実現するAIシステム",
       "category": "china"
     },
     {
       "id": "qbitai-abot-earth0-5-hugging-face",
       "date": "2026-06-19",
+      "rank": 3,
+      "reason": "ABot-Earth0.5がHF論文3ランキング同時首位——Unity/Unreal対応のインタラクティブWorld Model",
       "category": "china"
     }
   ],
   "keyword_cloud": [
-    { "keyword": "fable-5", "count": 12, "delta_vs_prev_week": 12 },
-    { "keyword": "agents", "count": 12, "delta_vs_prev_week": -12 },
-    { "keyword": "anthropic", "count": 10, "delta_vs_prev_week": -4 },
-    { "keyword": "open-source", "count": 10, "delta_vs_prev_week": -2 },
-    { "keyword": "GLM-5.2", "count": 9, "delta_vs_prev_week": 9 },
-    { "keyword": "regulation", "count": 8, "delta_vs_prev_week": 8 },
-    { "keyword": "export-control", "count": 8, "delta_vs_prev_week": 8 },
-    { "keyword": "LLM", "count": 8, "delta_vs_prev_week": -1 },
-    { "keyword": "japan", "count": 8, "delta_vs_prev_week": -1 },
-    { "keyword": "benchmark", "count": 7, "delta_vs_prev_week": -5 },
-    { "keyword": "white-house", "count": 6, "delta_vs_prev_week": 6 },
-    { "keyword": "claude-code", "count": 6, "delta_vs_prev_week": -10 },
-    { "keyword": "alignment", "count": 5, "delta_vs_prev_week": -1 },
-    { "keyword": "robotics", "count": 5, "delta_vs_prev_week": 5 },
-    { "keyword": "multimodal", "count": 5, "delta_vs_prev_week": -9 },
-    { "keyword": "api", "count": 5, "delta_vs_prev_week": 0 },
-    { "keyword": "xAI", "count": 4, "delta_vs_prev_week": 4 },
-    { "keyword": "openai", "count": 4, "delta_vs_prev_week": -4 },
-    { "keyword": "ai-safety", "count": 4, "delta_vs_prev_week": -2 },
-    { "keyword": "china", "count": 4, "delta_vs_prev_week": 4 }
+    {
+      "keyword": "fable-5",
+      "count": 12,
+      "delta_vs_prev_week": 12
+    },
+    {
+      "keyword": "agents",
+      "count": 12,
+      "delta_vs_prev_week": 12
+    },
+    {
+      "keyword": "anthropic",
+      "count": 10,
+      "delta_vs_prev_week": 10
+    },
+    {
+      "keyword": "open-source",
+      "count": 10,
+      "delta_vs_prev_week": 10
+    },
+    {
+      "keyword": "GLM-5.2",
+      "count": 9,
+      "delta_vs_prev_week": 9
+    },
+    {
+      "keyword": "regulation",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "export-control",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "LLM",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "japan",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "benchmark",
+      "count": 7,
+      "delta_vs_prev_week": 7
+    },
+    {
+      "keyword": "white-house",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "claude-code",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "alignment",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "robotics",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "multimodal",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "api",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "xAI",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    },
+    {
+      "keyword": "openai",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    },
+    {
+      "keyword": "ai-safety",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    },
+    {
+      "keyword": "china",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    }
   ],
   "watchlist_next_week": [
     {
@@ -232,7 +340,7 @@
       "topic": "Z.ai Open Fable モデル公開（2026年末予告）",
       "reason": "GLM-5.2のバイブチェック通過後、Z.aiが2026年12月までにFable相当オープンウェイトモデルの公開を予告。実現すれば閉鎖型フロンティアモデルとOSSの格差が解消",
       "watch_until": "2026-12-31",
-      "source_item_id": "latent_space-ainews-glm-gpt-glm-5-2-passes-vibe-check-z-ai-fo"
+      "source_item_id": "2026-06-21-001"
     },
     {
       "topic": "理研「理究」AI特化スパコン稼働",
@@ -242,152 +350,803 @@
     },
     {
       "topic": "OpenAI IPO準備の加速",
-      "reason": "Transformer共同考案者ノーム・シャジーア氏採用など著名人材を連続獲得。IPO前の組織体制強化が本格化しており、今後の資本政策・評価額の動向が焦点",
+      "reason": "著名人材の連続獲得でIPO前の組織体制強化が本格化。資本政策・評価額の動向が今後の業界構造に影響",
       "watch_until": "2026-09-30",
-      "source_item_id": "techcrunch-openai-is-bringing-on-some-big-guns-in-the-lead-"
+      "source_item_id": "ars-openai-financial-leak"
     },
     {
       "topic": "AWSのAIチップ外販vsNvidia競争",
-      "reason": "AWSが自社AIチップを外部データセンターへ販売する交渉を開始。CEOが「500億ドルの機会」と位置づけ。実現すればAI推論インフラ市場の競争構図が根本から変化",
+      "reason": "AWSが自社AIチップを外部データセンターへ販売する交渉を開始。CEOが「500億ドルの機会」と位置づけ、実現すればAI推論インフラ市場の競争構図が根本から変化",
       "watch_until": "2026-09-30",
       "source_item_id": "techcrunch-amazon-hopes-to-challenge-nvidia-more-directly-b"
     }
   ],
   "week_items_index": [
-    { "id": "2026-06-21-001", "date": "2026-06-21", "category": "new_models", "source": "latent_space" },
-    { "id": "2026-06-21-002", "date": "2026-06-21", "category": "tools_apps", "source": "xai" },
-    { "id": "2026-06-21-003", "date": "2026-06-21", "category": "tools_apps", "source": "xai" },
-    { "id": "2026-06-21-004", "date": "2026-06-21", "category": "tools_apps", "source": "huggingface" },
-    { "id": "2026-06-21-005", "date": "2026-06-21", "category": "agents", "source": "google_deepmind" },
-    { "id": "2026-06-21-006", "date": "2026-06-21", "category": "agents", "source": "openai" },
-    { "id": "2026-06-21-007", "date": "2026-06-21", "category": "multimodal", "source": "xai" },
-    { "id": "2026-06-21-008", "date": "2026-06-21", "category": "multimodal", "source": "wired" },
-    { "id": "2026-06-21-009", "date": "2026-06-21", "category": "research_papers", "source": "arxiv" },
-    { "id": "2026-06-21-010", "date": "2026-06-21", "category": "research_papers", "source": "nvidia" },
-    { "id": "2026-06-21-011", "date": "2026-06-21", "category": "research_papers", "source": "arxiv" },
-    { "id": "2026-06-21-012", "date": "2026-06-21", "category": "industry_business", "source": "bloomberg" },
-    { "id": "2026-06-21-013", "date": "2026-06-21", "category": "industry_business", "source": "techcrunch" },
-    { "id": "2026-06-21-014", "date": "2026-06-21", "category": "regulation_policy", "source": "wired" },
-    { "id": "2026-06-21-015", "date": "2026-06-21", "category": "community_buzz", "source": "lesswrong" },
-    { "id": "2026-06-21-016", "date": "2026-06-21", "category": "community_buzz", "source": "reddit_localllama" },
-    { "id": "2026-06-21-017", "date": "2026-06-21", "category": "japan", "source": "hatena" },
-    { "id": "2026-06-21-018", "date": "2026-06-21", "category": "japan", "source": "hatena" },
-    { "id": "2026-06-21-019", "date": "2026-06-21", "category": "japan", "source": "hatena" },
-    { "id": "2026-06-21-020", "date": "2026-06-21", "category": "japan", "source": "preferred_networks" },
-    { "id": "2026-06-21-021", "date": "2026-06-21", "category": "japan", "source": "hatena" },
-    { "id": "2026-06-21-022", "date": "2026-06-21", "category": "china", "source": "qbitai" },
-    { "id": "2026-06-21-023", "date": "2026-06-21", "category": "china", "source": "qbitai" },
-    { "id": "apple-foundation-models", "date": "2026-06-16", "category": "tools_apps", "source": "hacker_news" },
-    { "id": "ars-copilot-critical-vuln", "date": "2026-06-17", "category": "tools_apps", "source": "arstechnica" },
-    { "id": "ars-openai-financial-leak", "date": "2026-06-17", "category": "industry_business", "source": "arstechnica" },
-    { "id": "ars-spacex-cursor-60b", "date": "2026-06-17", "category": "industry_business", "source": "arstechnica" },
-    { "id": "arstechnica_ai-ai-coding-agents-taught-robots-how-to-install-gp", "date": "2026-06-19", "category": "agents", "source": "arstechnica" },
-    { "id": "arstechnica_ai-anthropic-pauses-token-based-billing-for-its-cla", "date": "2026-06-18", "category": "industry_business", "source": "arstechnica" },
-    { "id": "arstechnica_ai-bernie-sanders-unveils-7-trillion-plan-to-give-a", "date": "2026-06-19", "category": "regulation_policy", "source": "arstechnica" },
-    { "id": "arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m", "date": "2026-06-18", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-activesam", "date": "2026-06-17", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-context-rl", "date": "2026-06-17", "category": "agents", "source": "arxiv" },
-    { "id": "arxiv-deeprubric", "date": "2026-06-16", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-detecting-hidden-ml-training-with-zero-overhead-", "date": "2026-06-19", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-dreamreasoner-8b-block-size-curriculum-learning-", "date": "2026-06-19", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-freestyle-free-control-of-style-content-dual-ref", "date": "2026-06-20", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-how-transparent-is-diffusiongemma", "date": "2026-06-20", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-ledgeragent-structured-state-for-policy-adherent", "date": "2026-06-20", "category": "agents", "source": "arxiv" },
-    { "id": "arxiv-looped-world-models", "date": "2026-06-18", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-native-active-perception-as-reasoning-for-omni-m", "date": "2026-06-19", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-tunejury", "date": "2026-06-17", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-value-axis", "date": "2026-06-16", "category": "research_papers", "source": "arxiv" },
-    { "id": "devio-gemma4-rag", "date": "2026-06-16", "category": "japan", "source": "developersio" },
-    { "id": "gigazine-glm-5-2", "date": "2026-06-16", "category": "new_models", "source": "gigazine" },
-    { "id": "gigazine-kimi-k2-7", "date": "2026-06-16", "category": "new_models", "source": "gigazine" },
-    { "id": "gihyo-google-okf", "date": "2026-06-16", "category": "japan", "source": "gihyo" },
-    { "id": "hatena-1-ai-zeta", "date": "2026-06-18", "category": "japan", "source": "hatena" },
-    { "id": "hatena-ai", "date": "2026-06-19", "category": "community_buzz", "source": "hatena" },
-    { "id": "hatena-ai-layerx", "date": "2026-06-20", "category": "japan", "source": "layerx_tech" },
-    { "id": "hatena-antigravity-llm-mcp-99", "date": "2026-06-19", "category": "japan", "source": "hatena" },
-    { "id": "hatena-chatgpt-openai", "date": "2026-06-20", "category": "industry_business", "source": "nikkei" },
-    { "id": "hatena-chatgpt-vs-google", "date": "2026-06-17", "category": "japan", "source": "hatena" },
-    { "id": "hatena-claude-code-devflow", "date": "2026-06-17", "category": "japan", "source": "hatena" },
-    { "id": "hatena-codex-skill", "date": "2026-06-19", "category": "japan", "source": "hatena" },
-    { "id": "hatena-japanese-tech-writing", "date": "2026-06-17", "category": "japan", "source": "hatena" },
-    { "id": "hatena-llm", "date": "2026-06-18", "category": "japan", "source": "hatena" },
-    { "id": "hatena-sakana-marlin", "date": "2026-06-17", "category": "japan", "source": "hatena" },
-    { "id": "hatena_it-5-claude-code-tips-2", "date": "2026-06-18", "category": "japan", "source": "hatena_it" },
-    { "id": "hatena_it-ai-codex-record-replay", "date": "2026-06-20", "category": "japan", "source": "itmedia" },
-    { "id": "hatena_it-ai-self-improvement", "date": "2026-06-20", "category": "japan", "source": "zenn" },
-    { "id": "hatena_it-aws-aws-blocks", "date": "2026-06-20", "category": "tools_apps", "source": "zenn" },
-    { "id": "hatena_it-google-ai-okf-developersio", "date": "2026-06-18", "category": "japan", "source": "hatena_it" },
-    { "id": "hatena_it-pc-llm-whichllm-ai-technoedge", "date": "2026-06-18", "category": "japan", "source": "hatena_it" },
-    { "id": "hatena_it-vs-code-openai-anthropic-github-copilot", "date": "2026-06-20", "category": "japan", "source": "forest_watch" },
-    { "id": "hf_blog-agentic-resource-discovery-let-agents-search", "date": "2026-06-18", "category": "agents", "source": "huggingface" },
-    { "id": "hf_blog-beyond-lora-can-you-beat-the-most-popular-fine-t", "date": "2026-06-19", "category": "research_papers", "source": "huggingface" },
-    { "id": "hf_blog-from-the-hugging-face-hub-to-robot-hardware-with", "date": "2026-06-18", "category": "agents", "source": "huggingface" },
-    { "id": "hf_blog-glm-5-2-built-for-long-horizon-tasks", "date": "2026-06-18", "category": "new_models", "source": "huggingface" },
-    { "id": "hf_blog-is-it-agentic-enough-benchmarking-open-models-on", "date": "2026-06-19", "category": "research_papers", "source": "huggingface" },
-    { "id": "hf_blog-molmomotion-language-guided-3d-motion-forecastin", "date": "2026-06-18", "category": "multimodal", "source": "huggingface" },
-    { "id": "hf_blog-mosaicleaks-can-your-research-agent-keep-a-secre", "date": "2026-06-20", "category": "agents", "source": "huggingface" },
-    { "id": "hn-anthropic-ask", "date": "2026-06-17", "category": "community_buzz", "source": "hacker_news" },
-    { "id": "hn-fable-ban", "date": "2026-06-17", "category": "community_buzz", "source": "hacker_news" },
-    { "id": "hn-local-coding-model", "date": "2026-06-16", "category": "community_buzz", "source": "hacker_news" },
-    { "id": "hn-not-everyone-ai", "date": "2026-06-16", "category": "community_buzz", "source": "hacker_news" },
-    { "id": "hn-openrouter-fusion", "date": "2026-06-17", "category": "tools_apps", "source": "hacker_news" },
-    { "id": "importai-461", "date": "2026-06-16", "category": "research_papers", "source": "import_ai" },
-    { "id": "itmedia-sakana-marlin", "date": "2026-06-16", "category": "japan", "source": "itmedia" },
-    { "id": "itmedia-softbank-openai-security", "date": "2026-06-17", "category": "japan", "source": "itmedia" },
-    { "id": "itmedia_ai-ai", "date": "2026-06-19", "category": "japan", "source": "itmedia" },
-    { "id": "latent_space-ainews-glm-5-2-the-top-frontend-coding-model-in-", "date": "2026-06-19", "category": "new_models", "source": "latent_space" },
-    { "id": "latent_space-ainews-glm-gpt-glm-5-2-passes-vibe-check-z-ai-fo", "date": "2026-06-20", "category": "new_models", "source": "latent_space" },
-    { "id": "latent_space-ainews-midjourney-medical-scan-your-organs-like-", "date": "2026-06-20", "category": "industry_business", "source": "latent_space" },
-    { "id": "latent_space-the-professor-of-outputmaxxing-anjney-midha-amp", "date": "2026-06-19", "category": "industry_business", "source": "latent_space" },
-    { "id": "lesswrong-a-brief-list-of-ways-ai-safety-efforts-could-be-", "date": "2026-06-20", "category": "community_buzz", "source": "lesswrong" },
-    { "id": "lesswrong-ai-173-ai-pauses", "date": "2026-06-19", "category": "community_buzz", "source": "lesswrong" },
-    { "id": "lesswrong-ai-village", "date": "2026-06-17", "category": "agents", "source": "lesswrong" },
-    { "id": "lesswrong-claude-fable-5-and-mythos-5-capabilities", "date": "2026-06-20", "category": "community_buzz", "source": "lesswrong" },
-    { "id": "lesswrong-gdm-ai-control-roadmap", "date": "2026-06-19", "category": "agents", "source": "lesswrong" },
-    { "id": "lesswrong-how-far-do-open-weights-trail-the-frontier", "date": "2026-06-19", "category": "research_papers", "source": "lesswrong" },
-    { "id": "lesswrong-porting-machiavelli-to-inspect", "date": "2026-06-18", "category": "research_papers", "source": "lesswrong" },
-    { "id": "lesswrong-reinforcement-learning-towards-broadly-and-persi", "date": "2026-06-20", "category": "research_papers", "source": "lesswrong" },
-    { "id": "lesswrong-several-frontier-models-are-substantially-prefil", "date": "2026-06-18", "category": "research_papers", "source": "lesswrong" },
-    { "id": "lesswrong-the-once-and-future-fable-3-fix-this-code", "date": "2026-06-18", "category": "community_buzz", "source": "lesswrong" },
-    { "id": "ls-fable5-mythos-safe", "date": "2026-06-17", "category": "new_models", "source": "latent_space" },
-    { "id": "ls-satya-loopcraft", "date": "2026-06-17", "category": "research_papers", "source": "latent_space" },
-    { "id": "openrouter-fusion", "date": "2026-06-16", "category": "tools_apps", "source": "hacker_news" },
-    { "id": "pfn-plamo-3-0-prime-llm", "date": "2026-06-19", "category": "japan", "source": "preferred_networks" },
-    { "id": "ponytail-agent", "date": "2026-06-16", "category": "agents", "source": "hacker_news" },
-    { "id": "qbitai-135", "date": "2026-06-18", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-2", "date": "2026-06-20", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-258m", "date": "2026-06-19", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-abot-earth0-5-hugging-face", "date": "2026-06-19", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-ai-10-p-10-token", "date": "2026-06-18", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-anysearch", "date": "2026-06-16", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-anysearch-agent", "date": "2026-06-17", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-gpt-ai", "date": "2026-06-20", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-qwen-robot", "date": "2026-06-16", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-robot-fullbody", "date": "2026-06-17", "category": "china", "source": "qbitai" },
-    { "id": "raschka-2026-llm-list", "date": "2026-06-17", "category": "research_papers", "source": "latent_space" },
-    { "id": "raschka-llm-research-papers-the-2026-list-january-to-may", "date": "2026-06-19", "category": "research_papers", "source": "sebastian_raschka" },
-    { "id": "sbbit-mixi-genai", "date": "2026-06-16", "category": "japan", "source": "sbbit" },
-    { "id": "stratechery-the-state-of-fable-the-jailbreak-problem-spacex-", "date": "2026-06-18", "category": "regulation_policy", "source": "stratechery" },
-    { "id": "tc-anthropic-wh-ban", "date": "2026-06-16", "category": "regulation_policy", "source": "techcrunch" },
-    { "id": "tc-newcore-agent-identity", "date": "2026-06-16", "category": "agents", "source": "techcrunch" },
-    { "id": "tc-salesforce-fin", "date": "2026-06-16", "category": "industry_business", "source": "techcrunch" },
-    { "id": "tc-spacex-cursor", "date": "2026-06-16", "category": "industry_business", "source": "techcrunch" },
-    { "id": "techcrunch-amazon-hopes-to-challenge-nvidia-more-directly-b", "date": "2026-06-20", "category": "industry_business", "source": "techcrunch" },
-    { "id": "techcrunch-google-bets-on-gemini-to-reinvent-the-smart-home", "date": "2026-06-18", "category": "tools_apps", "source": "techcrunch" },
-    { "id": "techcrunch-openai-is-bringing-on-some-big-guns-in-the-lead-", "date": "2026-06-20", "category": "industry_business", "source": "techcrunch" },
-    { "id": "techcrunch-world-leaders-want-american-ai-they-just-don-t-w", "date": "2026-06-19", "category": "regulation_policy", "source": "techcrunch" },
-    { "id": "techcrunch-world-model-maker-odyssey-nabs-1-45b-valuation-b", "date": "2026-06-18", "category": "industry_business", "source": "techcrunch" },
-    { "id": "technoedge-genai-weekly-147", "date": "2026-06-16", "category": "japan", "source": "technoedge" },
-    { "id": "theverge-adobe-s-redesigned-ai-studio-remembers-what-your", "date": "2026-06-19", "category": "tools_apps", "source": "theverge" },
-    { "id": "theverge-facebook-ai-mode", "date": "2026-06-17", "category": "tools_apps", "source": "theverge" },
-    { "id": "theverge-midjourney-goes-from-generating-cat-images-to-fu", "date": "2026-06-19", "category": "industry_business", "source": "theverge" },
-    { "id": "theverge-photoshop-and-premiere-now-have-ai-assistants", "date": "2026-06-19", "category": "tools_apps", "source": "theverge" },
-    { "id": "theverge-the-next-humanoid-robot-might-not-look-human-at-", "date": "2026-06-18", "category": "multimodal", "source": "theverge" },
-    { "id": "theverge-two-thirds-of-americans-think-ai-is-advancing-to", "date": "2026-06-18", "category": "community_buzz", "source": "theverge" },
-    { "id": "wired-anthropic-wh-fable5", "date": "2026-06-17", "category": "regulation_policy", "source": "wired" },
-    { "id": "wired_ai-operating-a-humanoid-with-your-body-is-a-hot-job", "date": "2026-06-18", "category": "multimodal", "source": "wired" },
-    { "id": "wired_ai-the-white-house-is-making-up-its-rules-for-ai-in", "date": "2026-06-20", "category": "regulation_policy", "source": "wired" },
-    { "id": "wired_ai-the-white-house-wants-anthropic-to-block-all-jai", "date": "2026-06-18", "category": "regulation_policy", "source": "wired" },
-    { "id": "zenn_ai-claude-code-dynamic-workflows-1000", "date": "2026-06-20", "category": "tools_apps", "source": "zenn" }
+    {
+      "id": "arstechnica_ai-ai-coding-agents-taught-robots-how-to-install-gp",
+      "date": "2026-06-19",
+      "category": "agents",
+      "source": "arstechnica"
+    },
+    {
+      "id": "arstechnica_ai-anthropic-pauses-token-based-billing-for-its-cla",
+      "date": "2026-06-18",
+      "category": "tools_apps",
+      "source": "arstechnica_ai"
+    },
+    {
+      "id": "ars-openai-financial-leak",
+      "date": "2026-06-17",
+      "category": "industry_business",
+      "source": "arstechnica"
+    },
+    {
+      "id": "ars-spacex-cursor-60b",
+      "date": "2026-06-17",
+      "category": "industry_business",
+      "source": "arstechnica"
+    },
+    {
+      "id": "ars-copilot-critical-vuln",
+      "date": "2026-06-17",
+      "category": "tools_apps",
+      "source": "arstechnica"
+    },
+    {
+      "id": "arstechnica_ai-bernie-sanders-unveils-7-trillion-plan-to-give-a",
+      "date": "2026-06-19",
+      "category": "industry_business",
+      "source": "arstechnica"
+    },
+    {
+      "id": "2026-06-21-009",
+      "date": "2026-06-21",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-context-rl",
+      "date": "2026-06-17",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "2026-06-21-011",
+      "date": "2026-06-21",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-tunejury",
+      "date": "2026-06-17",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-activesam",
+      "date": "2026-06-17",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-deeprubric",
+      "date": "2026-06-17",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-deeprubric",
+      "date": "2026-06-16",
+      "category": "research_papers",
+      "source": "arXiv"
+    },
+    {
+      "id": "arxiv-value-axis",
+      "date": "2026-06-16",
+      "category": "research_papers",
+      "source": "arXiv"
+    },
+    {
+      "id": "arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m",
+      "date": "2026-06-18",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-looped-world-models",
+      "date": "2026-06-18",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-dreamreasoner-8b-block-size-curriculum-learning-",
+      "date": "2026-06-19",
+      "category": "new_models",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-detecting-hidden-ml-training-with-zero-overhead-",
+      "date": "2026-06-19",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-native-active-perception-as-reasoning-for-omni-m",
+      "date": "2026-06-19",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-freestyle-free-control-of-style-content-dual-ref",
+      "date": "2026-06-20",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-ledgeragent-structured-state-for-policy-adherent",
+      "date": "2026-06-20",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-how-transparent-is-diffusiongemma",
+      "date": "2026-06-20",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "hatena-chatgpt-vs-google",
+      "date": "2026-06-17",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-japanese-tech-writing",
+      "date": "2026-06-17",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-sakana-marlin",
+      "date": "2026-06-17",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-claude-code-devflow",
+      "date": "2026-06-17",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "2026-06-21-005",
+      "date": "2026-06-21",
+      "category": "agents",
+      "source": "google_deepmind"
+    },
+    {
+      "id": "devio-gemma4-rag",
+      "date": "2026-06-16",
+      "category": "japan",
+      "source": "DevelopersIO"
+    },
+    {
+      "id": "hatena_it-google-ai-okf-developersio",
+      "date": "2026-06-18",
+      "category": "japan",
+      "source": "hatena_it"
+    },
+    {
+      "id": "2026-06-21-010",
+      "date": "2026-06-21",
+      "category": "research_papers",
+      "source": "nvidia"
+    },
+    {
+      "id": "hatena_it-vs-code-openai-anthropic-github-copilot",
+      "date": "2026-06-20",
+      "category": "japan",
+      "source": "forest_watch"
+    },
+    {
+      "id": "hn-not-everyone-ai",
+      "date": "2026-06-16",
+      "category": "community_buzz",
+      "source": "Hacker News"
+    },
+    {
+      "id": "gigazine-kimi-k2-7",
+      "date": "2026-06-16",
+      "category": "new_models",
+      "source": "GIGAZINE"
+    },
+    {
+      "id": "gigazine-glm-5-2",
+      "date": "2026-06-16",
+      "category": "new_models",
+      "source": "GIGAZINE"
+    },
+    {
+      "id": "gihyo-google-okf",
+      "date": "2026-06-16",
+      "category": "japan",
+      "source": "gihyo.jp"
+    },
+    {
+      "id": "ponytail-agent",
+      "date": "2026-06-16",
+      "category": "agents",
+      "source": "Hacker News / GitHub"
+    },
+    {
+      "id": "hf_blog-mosaicleaks-can-your-research-agent-keep-a-secre",
+      "date": "2026-06-20",
+      "category": "agents",
+      "source": "hf_blog"
+    },
+    {
+      "id": "hf_blog-agentic-resource-discovery-let-agents-search",
+      "date": "2026-06-18",
+      "category": "tools_apps",
+      "source": "hf_blog"
+    },
+    {
+      "id": "hf_blog-molmomotion-language-guided-3d-motion-forecastin",
+      "date": "2026-06-18",
+      "category": "new_models",
+      "source": "hf_blog"
+    },
+    {
+      "id": "hf_blog-from-the-hugging-face-hub-to-robot-hardware-with",
+      "date": "2026-06-18",
+      "category": "agents",
+      "source": "hf_blog"
+    },
+    {
+      "id": "2026-06-21-004",
+      "date": "2026-06-21",
+      "category": "tools_apps",
+      "source": "huggingface"
+    },
+    {
+      "id": "hf_blog-is-it-agentic-enough-benchmarking-open-models-on",
+      "date": "2026-06-19",
+      "category": "tools_apps",
+      "source": "huggingface"
+    },
+    {
+      "id": "hf_blog-beyond-lora-can-you-beat-the-most-popular-fine-t",
+      "date": "2026-06-19",
+      "category": "tools_apps",
+      "source": "huggingface"
+    },
+    {
+      "id": "hf_blog-glm-5-2-built-for-long-horizon-tasks",
+      "date": "2026-06-18",
+      "category": "new_models",
+      "source": "hf_blog"
+    },
+    {
+      "id": "importai-461",
+      "date": "2026-06-16",
+      "category": "research_papers",
+      "source": "Import AI"
+    },
+    {
+      "id": "itmedia_ai-ai",
+      "date": "2026-06-19",
+      "category": "japan",
+      "source": "itmedia"
+    },
+    {
+      "id": "itmedia-sakana-marlin",
+      "date": "2026-06-16",
+      "category": "japan",
+      "source": "ITmedia AI+"
+    },
+    {
+      "id": "hatena-1-ai-zeta",
+      "date": "2026-06-18",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-ai-codex-record-replay",
+      "date": "2026-06-20",
+      "category": "tools_apps",
+      "source": "itmedia_ai"
+    },
+    {
+      "id": "ls-fable5-mythos-safe",
+      "date": "2026-06-17",
+      "category": "new_models",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent_space-ainews-glm-5-2-the-top-frontend-coding-model-in-",
+      "date": "2026-06-19",
+      "category": "new_models",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent_space-ainews-glm-gpt-glm-5-2-passes-vibe-check-z-ai-fo",
+      "date": "2026-06-20",
+      "category": "new_models",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent_space-ainews-midjourney-medical-scan-your-organs-like-",
+      "date": "2026-06-20",
+      "category": "multimodal",
+      "source": "latent_space"
+    },
+    {
+      "id": "ls-satya-loopcraft",
+      "date": "2026-06-17",
+      "category": "research_papers",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent_space-the-professor-of-outputmaxxing-anjney-midha-amp",
+      "date": "2026-06-19",
+      "category": "agents",
+      "source": "latent_space"
+    },
+    {
+      "id": "lesswrong-reinforcement-learning-towards-broadly-and-persi",
+      "date": "2026-06-20",
+      "category": "research_papers",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-how-far-do-open-weights-trail-the-frontier",
+      "date": "2026-06-19",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-the-once-and-future-fable-3-fix-this-code",
+      "date": "2026-06-18",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-ai-173-ai-pauses",
+      "date": "2026-06-19",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-porting-machiavelli-to-inspect",
+      "date": "2026-06-18",
+      "category": "agents",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-gdm-ai-control-roadmap",
+      "date": "2026-06-19",
+      "category": "regulation_policy",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-several-frontier-models-are-substantially-prefil",
+      "date": "2026-06-18",
+      "category": "research_papers",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-claude-fable-5-and-mythos-5-capabilities",
+      "date": "2026-06-20",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-a-brief-list-of-ways-ai-safety-efforts-could-be-",
+      "date": "2026-06-20",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "raschka-llm-research-papers-the-2026-list-january-to-may",
+      "date": "2026-06-19",
+      "category": "research_papers",
+      "source": "sebastian_raschka"
+    },
+    {
+      "id": "raschka-2026-llm-list",
+      "date": "2026-06-17",
+      "category": "research_papers",
+      "source": "latent_space"
+    },
+    {
+      "id": "hn-anthropic-ask",
+      "date": "2026-06-17",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    },
+    {
+      "id": "hn-local-coding-model",
+      "date": "2026-06-16",
+      "category": "community_buzz",
+      "source": "Hacker News"
+    },
+    {
+      "id": "hn-fable-ban",
+      "date": "2026-06-17",
+      "category": "community_buzz",
+      "source": "hacker_news"
+    },
+    {
+      "id": "hatena-chatgpt-openai",
+      "date": "2026-06-20",
+      "category": "japan",
+      "source": "nikkei"
+    },
+    {
+      "id": "2026-06-21-006",
+      "date": "2026-06-21",
+      "category": "agents",
+      "source": "openai"
+    },
+    {
+      "id": "openrouter-fusion",
+      "date": "2026-06-16",
+      "category": "tools_apps",
+      "source": "Hacker News"
+    },
+    {
+      "id": "apple-foundation-models",
+      "date": "2026-06-16",
+      "category": "tools_apps",
+      "source": "Hacker News"
+    },
+    {
+      "id": "qbitai-anysearch",
+      "date": "2026-06-16",
+      "category": "china",
+      "source": "量子位 (QbitAI)"
+    },
+    {
+      "id": "qbitai-qwen-robot",
+      "date": "2026-06-16",
+      "category": "china",
+      "source": "量子位 (QbitAI)"
+    },
+    {
+      "id": "qbitai-135",
+      "date": "2026-06-18",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-ai-10-p-10-token",
+      "date": "2026-06-18",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-258m",
+      "date": "2026-06-19",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-abot-earth0-5-hugging-face",
+      "date": "2026-06-19",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-2",
+      "date": "2026-06-20",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-gpt-ai",
+      "date": "2026-06-20",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "2026-06-21-022",
+      "date": "2026-06-21",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "2026-06-21-017",
+      "date": "2026-06-21",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "sbbit-mixi-genai",
+      "date": "2026-06-16",
+      "category": "japan",
+      "source": "ビジネス+IT"
+    },
+    {
+      "id": "2026-06-21-018",
+      "date": "2026-06-21",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "stratechery-the-state-of-fable-the-jailbreak-problem-spacex-",
+      "date": "2026-06-18",
+      "category": "industry_business",
+      "source": "stratechery"
+    },
+    {
+      "id": "hatena-ai-layerx",
+      "date": "2026-06-20",
+      "category": "japan",
+      "source": "layerx_tech"
+    },
+    {
+      "id": "pfn-plamo-3-0-prime-llm",
+      "date": "2026-06-19",
+      "category": "japan",
+      "source": "preferred_networks"
+    },
+    {
+      "id": "tc-newcore-agent-identity",
+      "date": "2026-06-16",
+      "category": "agents",
+      "source": "TechCrunch AI"
+    },
+    {
+      "id": "tc-salesforce-fin",
+      "date": "2026-06-16",
+      "category": "industry_business",
+      "source": "TechCrunch AI"
+    },
+    {
+      "id": "tc-anthropic-wh-ban",
+      "date": "2026-06-16",
+      "category": "regulation_policy",
+      "source": "TechCrunch AI"
+    },
+    {
+      "id": "tc-spacex-cursor",
+      "date": "2026-06-16",
+      "category": "industry_business",
+      "source": "TechCrunch AI"
+    },
+    {
+      "id": "techcrunch-google-bets-on-gemini-to-reinvent-the-smart-home",
+      "date": "2026-06-18",
+      "category": "tools_apps",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-world-leaders-want-american-ai-they-just-don-t-w",
+      "date": "2026-06-19",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-world-model-maker-odyssey-nabs-1-45b-valuation-b",
+      "date": "2026-06-18",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-amazon-hopes-to-challenge-nvidia-more-directly-b",
+      "date": "2026-06-20",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-openai-is-bringing-on-some-big-guns-in-the-lead-",
+      "date": "2026-06-20",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "2026-06-21-013",
+      "date": "2026-06-21",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "technoedge-genai-weekly-147",
+      "date": "2026-06-16",
+      "category": "japan",
+      "source": "テクノエッジ TechnoEdge"
+    },
+    {
+      "id": "hatena_it-pc-llm-whichllm-ai-technoedge",
+      "date": "2026-06-18",
+      "category": "japan",
+      "source": "hatena_it"
+    },
+    {
+      "id": "theverge-the-next-humanoid-robot-might-not-look-human-at-",
+      "date": "2026-06-18",
+      "category": "multimodal",
+      "source": "theverge"
+    },
+    {
+      "id": "theverge-two-thirds-of-americans-think-ai-is-advancing-to",
+      "date": "2026-06-18",
+      "category": "community_buzz",
+      "source": "theverge"
+    },
+    {
+      "id": "theverge-midjourney-goes-from-generating-cat-images-to-fu",
+      "date": "2026-06-19",
+      "category": "multimodal",
+      "source": "theverge"
+    },
+    {
+      "id": "theverge-facebook-ai-mode",
+      "date": "2026-06-17",
+      "category": "tools_apps",
+      "source": "theverge"
+    },
+    {
+      "id": "theverge-photoshop-and-premiere-now-have-ai-assistants",
+      "date": "2026-06-19",
+      "category": "tools_apps",
+      "source": "theverge"
+    },
+    {
+      "id": "theverge-adobe-s-redesigned-ai-studio-remembers-what-your",
+      "date": "2026-06-19",
+      "category": "multimodal",
+      "source": "theverge"
+    },
+    {
+      "id": "hatena-ai",
+      "date": "2026-06-19",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "2026-06-21-021",
+      "date": "2026-06-21",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "wired-anthropic-wh-fable5",
+      "date": "2026-06-17",
+      "category": "regulation_policy",
+      "source": "wired"
+    },
+    {
+      "id": "wired_ai-the-white-house-is-making-up-its-rules-for-ai-in",
+      "date": "2026-06-20",
+      "category": "regulation_policy",
+      "source": "wired_ai"
+    },
+    {
+      "id": "wired_ai-operating-a-humanoid-with-your-body-is-a-hot-job",
+      "date": "2026-06-18",
+      "category": "multimodal",
+      "source": "wired_ai"
+    },
+    {
+      "id": "wired_ai-the-white-house-wants-anthropic-to-block-all-jai",
+      "date": "2026-06-18",
+      "category": "regulation_policy",
+      "source": "wired_ai"
+    },
+    {
+      "id": "2026-06-21-012",
+      "date": "2026-06-21",
+      "category": "industry_business",
+      "source": "bloomberg"
+    },
+    {
+      "id": "itmedia-softbank-openai-security",
+      "date": "2026-06-17",
+      "category": "japan",
+      "source": "itmedia"
+    },
+    {
+      "id": "2026-06-21-015",
+      "date": "2026-06-21",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "lesswrong-ai-village",
+      "date": "2026-06-17",
+      "category": "agents",
+      "source": "lesswrong"
+    },
+    {
+      "id": "qbitai-anysearch-agent",
+      "date": "2026-06-17",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-robot-fullbody",
+      "date": "2026-06-17",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "2026-06-21-016",
+      "date": "2026-06-21",
+      "category": "community_buzz",
+      "source": "reddit_localllama"
+    },
+    {
+      "id": "2026-06-21-008",
+      "date": "2026-06-21",
+      "category": "multimodal",
+      "source": "wired"
+    },
+    {
+      "id": "2026-06-21-014",
+      "date": "2026-06-21",
+      "category": "regulation_policy",
+      "source": "wired"
+    },
+    {
+      "id": "2026-06-21-007",
+      "date": "2026-06-21",
+      "category": "multimodal",
+      "source": "xai"
+    },
+    {
+      "id": "2026-06-21-002",
+      "date": "2026-06-21",
+      "category": "tools_apps",
+      "source": "xai"
+    },
+    {
+      "id": "2026-06-21-003",
+      "date": "2026-06-21",
+      "category": "tools_apps",
+      "source": "xai"
+    },
+    {
+      "id": "hatena_it-5-claude-code-tips-2",
+      "date": "2026-06-18",
+      "category": "japan",
+      "source": "hatena_it"
+    },
+    {
+      "id": "hatena-codex-skill",
+      "date": "2026-06-19",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-aws-aws-blocks",
+      "date": "2026-06-20",
+      "category": "tools_apps",
+      "source": "zenn"
+    },
+    {
+      "id": "hatena-antigravity-llm-mcp-99",
+      "date": "2026-06-19",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "zenn_ai-claude-code-dynamic-workflows-1000",
+      "date": "2026-06-20",
+      "category": "tools_apps",
+      "source": "zenn"
+    },
+    {
+      "id": "hatena-llm",
+      "date": "2026-06-18",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-ai-self-improvement",
+      "date": "2026-06-20",
+      "category": "japan",
+      "source": "zenn"
+    }
   ]
 }
