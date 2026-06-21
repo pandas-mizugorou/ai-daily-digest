@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 20 Jun 2026 17:18:36 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 17:40:05 GMT</lastBuildDate>
+    <item>
+      <title>トランプ政権がAnthropicを輸出規制対象に指定——SpaceX・Cursor買収とJumper転籍でAI業界急変</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22</link>
+      <guid isPermaLink="false">aidd-day-2026-06-22</guid>
+      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月22日、米トランプ政権がAnthropicのFable 5・Mythos 5を輸出規制対象に指定し、外国籍ユーザーへのアクセスが全停止となる前例のない措置が発動された。この空白を突く形でZ.aiのGLM-5.2が「フロントエンドコーディング世界最強OSS」を宣言した一方、SpaceXがCursor開発元Anysphereを600億ドルで買収する合意も正式化し、AIコーディングツール市場は大きく再編された。ノーベル化学賞受賞のAlphaFold創始者John JumperがDeepMindを退職しAnthropicへ転籍するサプライズも重なり、Googleは48時間でAI最高人材を2人失った。国内ではdraw.io生成スキル（542ブクマ）・時雨堂のSKILL.md実践知（327ブクマ）がトレンド上位を飾り、AIエージェント活用の実務知見が活発に共有された。
+
+【今日の必読】
+・トランプ政権がAnthropicのFable 5・Mythos 5を輸出規制対象に指定——ジェイルブレーク申告が引き金
+・SpaceXがCursor開発元Anysphereを600億ドル全株式交換で買収——AIコーディングツール史上最大のM&amp;A
+・ノーベル賞受賞・AlphaFold共同創始者のJohn JumperがDeepMind退職——Anthropicへ転籍、Google48時間で人材2名を喪失
+・GLM-5.2がフロントエンドコーディング世界最強のOSSモデルを宣言——Fable規制の空白を狙った戦略的リリース
+・iOS 27でSiri AIが全面刷新——Google Gemini搭載の会話型アシスタントとアプリ横断コンテキスト理解
+・時雨堂のスキル</description>
+    </item>
     <item>
       <title>ノーベル賞・AlphaFold創始者ジャンパー氏がAnthropicへ移籍——GLM-5.2がOSS最強を維持、DeepMindがAIエージェント安全制御ロードマップ公開、OpenAI化学AIが実験室で新発見</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21</link>
@@ -441,21 +456,6 @@
 ・OpenAI が中国を含む IAEA 型グローバル AI ガバナンス枠組みを支持——米中対立下で主要 AI 企業が多国間安全体制を公式表明
 ・Notion が AI エージェント基地に変貌——Developer Platform 正式公開で Claude Code・Cursor・Codex が Notion を直接操作
 ・無料でClaude Code？！ Qwen3.6とLM StudioでローカルLLMコーディング</description>
-    </item>
-    <item>
-      <title>Claude for Legal が法律テックを変革・Darwin 訓練ゼロで GPQA Diamond 88.89%・VS Code Agent Window 爆誕、Anthropic×PwC 大型展開・Claude Code「/goals」エバリュエータ分離</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-15</link>
-      <guid isPermaLink="false">aidd-day-2026-05-15</guid>
-      <pubDate>Thu, 14 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月15日は複数の大型発表が集中した。Anthropicは「Claude for Legal」を公開し12プラグイン・80以上の専門エージェント・20以上のMCPコネクターで法律業界に本格参入（GitHub 24時間でスター882件）。Claude Code「/goals」機能はエバリュエータ分離アーキテクチャでエージェントの早期終了バグを根本解消し、VentureBeatが「2026年最重要AI機能の一つ」と評した。学術界ではDarwinファミリーが勾配ゼロでGPQA Diamond 88.89%を達成し「訓練なし高性能化」仮説を実証。arXivはAI幻覚引用に1年間の投稿禁止を科す新ポリシーを導入（はてブ23件）。日本ではVS Code 1.120の「Agent Window」（はてブ122件）とClaude Code Meetup Japanのハーネスエンジニアリング解説（はてブ199件）が技術者コミュニティを席巻し、ステアリングループという設計パターンが日本のエージェント開発現場に定着しつつある。Anthropic×PwCは3万人認定・企業変革・M&amp;Aの三軸で大型展開を公表した。
-
-【今日の必読】
-・Latent Space分析：2026年エージェント設計の「Conductor（指揮者）モデル」が主流へ—GitHub CopilotとVS Codeが実証
-・Claude for Legal：Anthropic が法律事務所向けに 12 プラグイン・80 以上の AI エージェントを OSS 公開
-・VS Code 1.120 introduces dedicated AI &apos;Agent Window&apos; for autonomous task execution
-・Darwin ファミリー：勾配ゼロで GPQA Diamond 88.89% ——訓練なしでフロンティアモデル相当の推論性能を実証
-・Practical Harness Engineering: Understanding Steering Loops Through Real-World Examples
-・「迎合的合意」から「多元的修復」へ——AIアライメントが意見の多様性を表面化すべき理由（arXiv 2026-05-15）</description>
     </item>
   </channel>
 </rss>

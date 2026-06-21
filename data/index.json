@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-06-21T05:00:00+09:00",
+  "updated_at": "2026-06-22T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-06-22",
+      "headline": "トランプ政権がAnthropicを輸出規制対象に指定——SpaceX・Cursor買収とJumper転籍でAI業界急変",
+      "item_count": 24,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-06-21",
       "headline": "ノーベル賞・AlphaFold創始者ジャンパー氏がAnthropicへ移籍——GLM-5.2がOSS最強を維持、DeepMindがAIエージェント安全制御ロードマップ公開、OpenAI化学AIが実験室で新発見",

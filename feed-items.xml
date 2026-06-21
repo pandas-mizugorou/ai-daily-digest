@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 20 Jun 2026 17:18:36 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 17:40:05 GMT</lastBuildDate>
+    <item>
+      <title>トランプ政権がAnthropicのFable 5・Mythos 5を輸出規制対象に指定——ジェイルブレーク申告が引き金</title>
+      <link>https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits</link>
+      <guid isPermaLink="false">aidd-item-2026-06-22-001</guid>
+      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-001">AI Daily Digest 2026-06-22</source>
+      <description>米商務省が2026年6月、AnthropicのFable 5・Mythos 5を輸出規制対象に指定した。これにより外国籍ユーザー（米国在住者を含む）はアクセスが不可能となり、Anthropicは両モデルを事実上全停止せざるを得ない状況となった。直接の引き金は「他社がMythos 5をジェイルブレークできたと申告した」という報告で、米商務省は国家安全保障上のリスクを理由に挙げた。Anthropicは以前から自律型兵器・国内監視ツールへの使用を拒否するポリシーを堅持し、ペンタゴンから「サプライチェーンリスク」に指定されていた経緯があり、政府との摩擦は以前から続いていた。なおClaude Sonnet等の他モデルは規制の対象外となっている。GLM-5.2（Z.ai）がこの空白を即座に狙ったことで、OSSコーディングモデル市場の競争が加速している。</description>
+    </item>
+    <item>
+      <title>SpaceXがCursor開発元Anysphereを600億ドル全株式交換で買収——AIコーディングツール史上最大のM&amp;A</title>
+      <link>https://stratechery.com/2026/the-state-of-fable-the-jailbreak-problem-spacex-acquires-cursor</link>
+      <guid isPermaLink="false">aidd-item-2026-06-22-014</guid>
+      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-014">AI Daily Digest 2026-06-22</source>
+      <description>SpaceXがAIコーディングツールCursorを開発するAnysphereを600億ドル（約9兆円）の全株式交換で買収することで合意した、とStratecheryが報じた。CursorのARRは2026年2月の20億ドルから6月には40億ドルへと倍増しており、AIコーディングツール市場の急成長ぶりを示している。この取引はAIソフトウェアツール領域における史上最大規模のM&amp;Aとなる見込みだ。Stratechery記事ではFable 5の輸出規制問題・ジェイルブレーク問題と並んでCursor買収が分析されており、AIコーディングツールがエンタープライズ戦略の中核に位置づけられる時代の到来を示している。</description>
+    </item>
+    <item>
+      <title>ノーベル賞受賞・AlphaFold共同創始者のJohn JumperがDeepMind退職——Anthropicへ転籍、Google48時間で人材2名を喪失</title>
+      <link>https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/</link>
+      <guid isPermaLink="false">aidd-item-2026-06-22-015</guid>
+      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-015">AI Daily Digest 2026-06-22</source>
+      <description>AlphaFoldの共同創始者でノーベル化学賞受賞者のJohn Jumper氏がGoogle DeepMindを退職し、AnthropicへAI研究者として転籍することをTechCrunchが報じた。AlphaFoldは2020年にタンパク質構造予測の精度を革命的に向上させ、Jumper氏は2024年にノーベル化学賞を受賞。Anthropicへの転籍は2026年6月20日に明らかになったが、前日にはGeminiの共同リードを担っていたNoam Shazeer氏もOpenAIへの移籍を発表しており、GoogleはわずかA48時間以内にAI最高位の人材2名を失った形となった。AIトップ人材の争奪戦の激化を示す象徴的な出来事として業界に衝撃を与えた。</description>
+    </item>
+    <item>
+      <title>GLM-5.2がフロントエンドコーディング世界最強のOSSモデルを宣言——Fable規制の空白を狙った戦略的リリース</title>
+      <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
+      <guid isPermaLink="false">aidd-item-2026-06-22-006</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-006">AI Daily Digest 2026-06-22</source>
+      <description>Z.ai（智谱AI）のGLM-5.2が、フロントエンドコーディングにおいてDeepSeek・Mistral・Cohere・Moonshotといった主要OSSモデルを上回る評価を得ているとLatent Space AINewsが報じた。タイミングは意図的であり、「Fable 5の輸出規制停止後の週末に機会主義的にリリース」されたものとされる。Latent Spaceは「GLM 5.1はマイナーアップデートだったが、5.2はデフォルトのコーディングモデルとして本格的な候補になった」と評価しており、OSSコーディングモデルの覇権争いに新たな展開をもたらした。モデルはMITライセンスで公開されており、商用利用・微調整が自由な点も開発者にとって魅力的となっている。Fable 5とMythos 5の輸出規制により主要コーディングモデルが失われた空白を埋める存在として、GLM-5.2への関心が急速に高まっている。</description>
+    </item>
+    <item>
+      <title>iOS 27でSiri AIが全面刷新——Google Gemini搭載の会話型アシスタントとアプリ横断コンテキスト理解</title>
+      <link>https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27</link>
+      <guid isPermaLink="false">aidd-item-2026-06-22-007</guid>
+      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-007">AI Daily Digest 2026-06-22</source>
+      <description>AppleはWWDC 2026でiOS 27を発表し、Google Geminiを基盤とした新しい「Siri AI」を披露した。新Siriは会話的・常時起動・実際に役立つ（conversational, omnipresent, and actually helpful）と評価され、スタンドアロンアプリとしてホーム画面に独立配置することも可能になった。iOS 27はSiri AI以外にも多数の実用AI機能を実装しており、Safariでは複数タブをAIが管理・要約する機能、メッセージでは返信提案・スマートフィルタリング、通話では要約・文字起こしが加わる。保護者向けには子どもが利用できるアプリ・連絡先をAIレベルで詳細設定するコントロール機能も追加された。Liquid Glassデザインとパーソナライズスライダーによる外観刷新もiOS 27の特徴の一つである。</description>
+    </item>
+    <item>
+      <title>時雨堂のスキル</title>
+      <link>https://voluntas.ghost.io/shiguredo-skill-20206-06</link>
+      <guid isPermaLink="false">aidd-item-2026-06-22-019</guid>
+      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-019">AI Daily Digest 2026-06-22</source>
+      <description>時雨堂（Shiguredo）が2026年6月時点で実際に採用しているSKILL.mdのスキル一覧を公開した記事が327ブクマを集め、Claude Codeスキル設計のリファレンスとして注目を浴びた。記事では「この記事を読む人でSKILL.mdを知らない人は居ないと思う」とし、LLMに食わせるまとまった文章として機能するスキルの実例を共有している。現時点での採用スキルを「2026年6月時点のスナップショット」として共有するもので、固定されたものではなく随時更新されるという実態を示している。Claude Codeで使われるスキルファイルの実例を業務利用企業が公開した事例として、実践的なSKILL.md設計の参考になる貴重なリソースだ。</description>
+    </item>
     <item>
       <title>【AI駆動開発】AIに「図を描いて」と頼むと&quot;それっぽいけど使えない図&quot;が出てくる問題を、draw.io生成スキルで倒した</title>
       <link>https://qiita.com/enomoso_pm/items/68d1a29728e5ee339779</link>
@@ -53,14 +101,6 @@
       <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-012">AI Daily Digest 2026-06-21</source>
       <description>2024年ノーベル化学賞受賞者でAlphaFold共同開発者のジョン・ジャンパー氏がGoogle DeepMindを離れ、Anthropicに移籍することが報じられた。ジャンパー氏はAlphaFold2・AlphaFold3の開発を主導した計算構造生物学の第一人者であり、ノーベル賞はデミス・ハサビス氏と連名で受賞している。Anthropicでの役職・担当領域は未公表だが、Anthropic CEO のダリオ・アモデイ氏が生命科学・医療へのAI応用を戦略優先事項として明言していることから、創薬・タンパク質設計AIなどの科学的AI開発を牽引するポジションに就くとみられる。AI業界における人材獲得競争の激化を示す象徴的な動向だ。</description>
-    </item>
-    <item>
-      <title>Fable ban後の空白を突いたZ.ai GLM-5.2——フロントエンドコーディング世界首位のOSSモデルを宣言</title>
-      <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
-      <guid isPermaLink="false">aidd-item-latent_space-ainews-glm-5-2-the-top-frontend-coding-model-in-</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20/latent_space-ainews-glm-5-2-the-top-frontend-coding-model-in-">AI Daily Digest 2026-06-20</source>
-      <description>Z.ai（Zhipu AI）がFable 5停止後の空白を狙い、GLM-5.2をリリースした。GLM-5.1は小幅な更新に留まっていたが、5.2はOSSのデフォルトコーディングモデルを狙える仕上がりとLatent Spaceが評価する。フロントエンドコーディングのベンチマークでオープンウェイト最高水準を主張し、DeepSeek・Mistral・Cohere・Moonshot AIを主要評価で上回ると発表している。</description>
     </item>
     <item>
       <title>トークンの節約法を「VS Code」開発チームが解説、OpenAI、Anthropicそれぞれのポイントも</title>
@@ -581,54 +621,6 @@
       <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/videomla-kv">AI Daily Digest 2026-06-01</source>
       <description>arXiv に公開された VideoMLA 論文は、マルチヘッド潜在アテンション（MLA）を動画生成モデルに適用し、KV キャッシュメモリを 92.7% 削減する手法を提案した。長尺動画の自己回帰生成では KV キャッシュが膨大になる問題があったが、低ランク潜在表現に圧縮することで分足スケールの動画拡散を現実的なメモリ量で実現できる。また、効果的なランク制約がスペクトル特性ではなくアーキテクチャのボトルネックから自然に生まれることを示しており、設計の理論的根拠も明確だ。大規模なビデオ生成インフラのメモリコストを抜本的に削減できる可能性を持つ研究として注目される。</description>
-    </item>
-    <item>
-      <title>AgentDoG 1.5：0.8B〜8Bの軽量AIエージェント安全ガードレール——R-Judge 92.2%でGPT-5.4に匹敵しデプロイ負荷を100分の1に削減</title>
-      <link>https://huggingface.co/papers/2605.29801</link>
-      <guid isPermaLink="false">aidd-item-2026-05-31-010</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-010">AI Daily Digest 2026-05-31</source>
-      <description>上海AI研究所（Shanghai AI Lab）の研究チームはAgentDoG 1.5を発表した。AIエージェントの安全性を診断・分類する軽量なガードレールフレームワークで、0.8Bから8Bまでのモデルサイズで展開できる。エージェント安全評価ベンチマークR-Judgeで4Bモデルが92.2%の精度を達成し、397Bのクローズドモデル（GPT-5.4・Gemini 3.1 Pro）に匹敵する安全分類精度を示した。注目点はデプロイ効率で、従来のDockerベース安全学習環境と比較してオーバーヘッドを100分の1に削減しながら、標準8コアマシン上で10,000以上の並列環境を実現した。約1,000サンプルという少量データで学習できる点も特徴で、タクソノミガイデッドのデータエンジンとInfluence Functionによるデータ精製を組み合わせた。モデル・データセット・コードはすべてオープン公開される。</description>
-    </item>
-    <item>
-      <title>Qwen-VLA：操作・ナビゲーション・軌道予測を単一アーキテクチャで統合——LIBERO 97.9%の汎用ロボットVLAモデル</title>
-      <link>https://huggingface.co/papers/2605.30280</link>
-      <guid isPermaLink="false">aidd-item-2026-05-31-006</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-006">AI Daily Digest 2026-05-31</source>
-      <description>Alibaba QwenチームはQwen-VLAを発表した。ロボット操作・ナビゲーション・軌道予測という異種のロボティクスタスクを単一アーキテクチャで統合する汎用Vision-Language-Action（VLA）基盤モデルだ。従来のロボットAIはタスクごとに専用モデルを設計する必要があったが、Qwen-VLAはQwenの視覚言語スタックにDiTベースのアクション復号器を追加することで、マルチモーダル推論と連続行動生成を統合した。ロボット操作ベンチマークの標準であるLIBEROで97.9%の成功率を達成し、未見の場面変化やロボット形状の変化に対するOODロバスト性も実証した。実機のALOHAロボット（学習外シナリオ）では76.9%という高い成功率を記録しており、単一モデルが複数のロボットプラットフォームで実用水準の性能を示した意義は大きい。論文はHugging Face Trending上位2位（92アップボート）を獲得した。</description>
-    </item>
-    <item>
-      <title>生成AIが本当に変えるのは「設計知」だ（WirelessWire News）</title>
-      <link>https://wirelesswire.jp/2026/05/93805/</link>
-      <guid isPermaLink="false">aidd-item-2026-05-31-018</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-018">AI Daily Digest 2026-05-31</source>
-      <description>清水亮氏（UEI代表）は、生成AIが本当に変えるのは「検索」ではなく「設計知（デザインナレッジ）」だと論じる。設計知とは建築・製造・ソフトウェアなど各領域で人類が長年かけて体系化してきた問題解決パターンの集積であり、従来は師弟関係や長年の経験を通じてのみ伝承されてきた暗黙知の体系だ。生成AIはこの設計知へのアクセス障壁を解体し、専門家しか持てなかった問題解決能力を誰でも利用可能にする。AI導入の本質的価値は情報探索の高速化ではなく、設計知の民主化にあるというこの観点は、職業の境界・人材育成・産業構造の変化を予測する上で重要な示唆を与える。本稿は5月最大級のはてブ432件を集め、AI論考として国内技術コミュニティで最大規模の反響となった。</description>
-    </item>
-    <item>
-      <title>Mistral、Le ChatをVibeにリブランド——Work modeとCode modeを持つ統合AIエージェントとして再スタート</title>
-      <link>https://mistral.ai/news/vibe-agent</link>
-      <guid isPermaLink="false">aidd-item-2026-05-31-003</guid>
-      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-003">AI Daily Digest 2026-05-31</source>
-      <description>Mistralは5月28日、同社の汎用AIアシスタント「Le Chat」を「Vibe」に改名し、長時間の複雑タスクを自律実行する統合AIエージェントとして再ポジショニングした。Vibeは2つのモードを持つ。「Work mode」はGoogle Workspace・Outlook・SharePoint・Slack・GitHubなど各種コネクタを横断し、マルチステップの業務タスクを計画立案後に自律実行する。「Code mode」はリモートで並列セッションを起動し、機能実装・バグ修正・テスト作成からPull Request作成までを自動化する。VS Code拡張機能も同日リリースされており、IDE内から直接Vibeのコーディングエージェント機能を利用できる。Code modeのSlack連携は2026年6月から提供予定だ。Mistralが「ツールからエージェントへ」という業界トレンドに完全対応したことを示す大型アップデートとなった。</description>
-    </item>
-    <item>
-      <title>Gemini Omni Flash ロールアウト開始——テキスト・画像・音声・動画を統合する「任意→任意」世界モデル</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/</link>
-      <guid isPermaLink="false">aidd-item-2026-05-31-005</guid>
-      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-005">AI Daily Digest 2026-05-31</source>
-      <description>Googleは5月26日、テキスト・画像・音声・動画を単一モデルで処理・生成する「任意入力→任意出力型（any-to-any）」マルチモーダルモデル「Gemini Omni Flash」のロールアウトを開始した。従来の生成AIが各モダリティを独立したパイプラインで処理していたのに対し、Gemini Omniはすべての入出力を同一の内部表現空間で統合的に扱う。動画生成では物理法則（重力・運動エネルギー・流体力学）への理解を内在させた「世界モデル」として設計されており、Demis Hassabis CEOは「動画生成器ではなく、現実を理解する世界モデルだ」と位置付けた。すべての出力にはGoogleのSynthID透かしが不可視形式で自動付与され、再エンコードや圧縮後も残存する。現在の動画生成は最大10秒が上限で、Gemini Plus・Pro・Ultraサブスクライバー向けに順次提供中。開発者向けのAPIと企業向けプラットフォームへの展開は数週間以内に予定されている。</description>
-    </item>
-    <item>
-      <title>OpenAI、Rosalind Biodefenseプログラム開始——GPT-Rosalindを生命科学・バイオディフェンスへ無償開放</title>
-      <link>https://openai.com/index/introducing-gpt-rosalind/</link>
-      <guid isPermaLink="false">aidd-item-2026-05-31-001</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31/2026-05-31-001">AI Daily Digest 2026-05-31</source>
-      <description>OpenAIは5月29日、生命科学専用推論モデル「GPT-Rosalind」を政府機関・研究機関向けに無償開放する「Rosalind Biodefense」プログラムを開始した。GPT-Rosalindは化学・生化学・実験設計の内部ベンチマークでGPT-5およびGPT-5.4を上回るとOpenAIは主張しており、分子・タンパク質・遺伝子の推論を専門とする。開発者トラックと連邦政府トラックの2本立てで、申請審査を通過した学術機関・非営利組織・政府系機関が無償でアクセスできる。早期パートナーとしてLawrence Livermore国立研究所、Johns Hopkins応用物理研究所、CEPI（感染症流行対策イノベーション連合）が参加しており、CEPIはバンジョウエボラ出血熱に対する「100日間ミッション（ワクチン加速開発計画）」に活用中だ。SecureDNAとFourth Eonも参加し、バイオセキュリティ領域への応用が広がっている。</description>
     </item>
   </channel>
 </rss>

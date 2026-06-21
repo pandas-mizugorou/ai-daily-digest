@@ -81,7 +81,14 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["export-controls", "anthropic", "fable", "mythos", "trump", "regulation"],
+          "tags": [
+            "export-controls",
+            "anthropic",
+            "fable",
+            "mythos",
+            "trump",
+            "regulation"
+          ],
           "summary_ja": "米商務省が2026年6月、AnthropicのFable 5・Mythos 5を輸出規制対象に指定した。これにより外国籍ユーザー（米国在住者を含む）はアクセスが不可能となり、Anthropicは両モデルを事実上全停止せざるを得ない状況となった。直接の引き金は「他社がMythos 5をジェイルブレークできたと申告した」という報告で、米商務省は国家安全保障上のリスクを理由に挙げた。Anthropicは以前から自律型兵器・国内監視ツールへの使用を拒否するポリシーを堅持し、ペンタゴンから「サプライチェーンリスク」に指定されていた経緯があり、政府との摩擦は以前から続いていた。なおClaude Sonnet等の他モデルは規制の対象外となっている。GLM-5.2（Z.ai）がこの空白を即座に狙ったことで、OSSコーディングモデル市場の競争が加速している。",
           "key_points_ja": [
             "米商務省がFable 5・Mythos 5を輸出規制対象に指定——外国籍ユーザーのアクセスが全停止、2026年6月から効力発生",
@@ -91,8 +98,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic Fable・Mythosへの輸出規制サマリー。規制対象はFable 5・Mythos 5のみ（Claude Sonnet等は対象外）。引き金は他社によるMythos 5ジェイルブレーク申告。影響は外国籍ユーザーの全停止。背景にはAnthropicとペンタゴンの自律型兵器をめぐる対立がある。",
-            "caption": "Anthropic輸出規制",
             "data": {
               "headline": "Fable 5・Mythos 5が輸出規制対象に——外国籍ユーザー全停止",
               "tldr": "米商務省がFable 5・Mythos 5を輸出規制対象に指定。他社によるMythos 5ジェイルブレーク申告が直接の引き金。外国籍ユーザーは全停止。他のClaudeモデルは対象外。",
@@ -126,7 +131,9 @@
               ],
               "context": "Anthropicは以前から自律型兵器・国内監視ツールとしての使用を拒否するポリシーを堅持しており、ペンタゴンがサプライチェーンリスクとして指定していた経緯がある。",
               "impact": "フロンティアAIへの輸出規制は前例なく、GLM-5.2など競合OSSモデルがこの空白期間を戦略的に狙う構図になっている。"
-            }
+            },
+            "caption": "Anthropic輸出規制",
+            "alt": "Anthropic Fable・Mythosへの輸出規制サマリー。規制対象はFable 5・Mythos 5のみ（Claude Sonnet等は対象外）。引き金は他社によるMythos 5ジェイルブレーク申告。影響は外国籍ユーザーの全停止。背景にはAnthropicとペンタゴンの自律型兵器をめぐる対立がある。"
           },
           "x_post": "米商務省がAnthropicのFable 5・Mythos 5を輸出規制対象に指定した。外国籍ユーザーへのアクセスが全停止となり、ジェイルブレーク手法の発見が直接の引き金とされる。競合OSSのGLM-5.2がこの空白を即座に狙うという構図になっている。\n\nhttps://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits"
         }
@@ -157,7 +164,13 @@
             "total": 12,
             "source_type_bias": 1
           },
-          "tags": ["agents", "tool-calling", "state-management", "customer-service", "policy"],
+          "tags": [
+            "agents",
+            "tool-calling",
+            "state-management",
+            "customer-service",
+            "policy"
+          ],
           "summary_ja": "カスタマーサービス領域のエージェントが複数ターンにわたるツール呼び出しとポリシー遵守の両立に苦労する根本原因は、タスク状態がプロンプト全体に暗黙的に埋め込まれている点にある。LedgerAgentはこれを解決するため、タスク状態を「台帳（Ledger）」として明示的に分離管理する手法を提案する。台帳にはユーザーとのやり取り・ツール実行結果から抽出した事実・識別子・制約・条件を構造化形式で保存し、エージェントが毎回プロンプトを再解析する必要をなくす。実験では標準エージェントと比較してポリシー違反の削減とツール呼び出し精度の向上が確認された。多ターン実用エージェントの設計において状態管理を明示化する重要性を示す研究である。",
           "key_points_ja": [
             "従来エージェントはプロンプト全体から毎回タスク状態を再構築するため、長い会話でポリシー違反や状態の不整合が発生しやすい",
@@ -166,8 +179,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LedgerAgentの仕組みを示すサマリーカード。問題：従来エージェントは状態をプロンプトに暗黙的に埋め込む。解決：台帳（Ledger）でFacts・識別子・制約・条件を分離管理。効果：ポリシー違反削減とツール呼び出し精度向上。対象：カスタマーサービス型多ターンエージェント。",
-            "caption": "LedgerAgent",
             "data": {
               "headline": "台帳（Ledger）で状態を分離管理——ポリシー準拠ツール呼び出しを改善",
               "tldr": "従来エージェントの暗黙的な状態管理の課題を、構造化された台帳で解決する。Facts・識別子・制約・条件を分離保存することでポリシー違反とツール呼び出しエラーを削減する。",
@@ -199,7 +210,9 @@
               ],
               "context": "顧客サービスエージェントは複数ターンにわたって状態を保持しながら外部ツールを呼び出し、かつドメインポリシーを遵守する必要がある。この3要件の同時達成が設計上の難題だった。",
               "impact": "状態管理の明示化はエージェント品質の根本改善策として、実用エージェント開発の設計パターンとして広く採用が見込まれる。"
-            }
+            },
+            "caption": "LedgerAgent",
+            "alt": "LedgerAgentの仕組みを示すサマリーカード。問題：従来エージェントは状態をプロンプトに暗黙的に埋め込む。解決：台帳（Ledger）でFacts・識別子・制約・条件を分離管理。効果：ポリシー違反削減とツール呼び出し精度向上。対象：カスタマーサービス型多ターンエージェント。"
           }
         },
         {
@@ -222,7 +235,13 @@
             "total": 12,
             "source_type_bias": 1
           },
-          "tags": ["agents", "cross-device", "failure-recovery", "hierarchical", "computer-use"],
+          "tags": [
+            "agents",
+            "cross-device",
+            "failure-recovery",
+            "hierarchical",
+            "computer-use"
+          ],
           "summary_ja": "複数のアプリやデバイスを横断する実世界タスクを実行するコンピューターユースエージェントが失敗した際、既存手法は「同じ戦略を再試行する」「別のデバイスに再割り当てする」「グローバルな計画を立て直す」といった粗粒度な回復しか行えない。本論文は失敗を「デバイスローカルで修復可能な失敗」と「グローバル計画の見直しが必要な失敗」に区別する階層的回復フレームワークを提案する。まずデバイス局所の戦略空間で回復を試み、それが不可能な場合にのみグローバル再計画へとエスカレーションする2段階アプローチにより、回復成功率と効率を両立させる。",
           "key_points_ja": [
             "既存のクロスデバイスエージェントは失敗回復が粗粒度（再試行・再割り当て・全体再計画のみ）でデバイス局所戦略が欠如",
@@ -231,8 +250,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "クロスデバイスエージェント階層的回復のサマリー。問題：既存手法は粗粒度な回復のみ。提案：デバイス局所→グローバルの2段階。適用：複数アプリ・デバイス横断タスク。結果：局所回復で不要なグローバル再計画を削減。",
-            "caption": "階層的失敗回復",
             "data": {
               "headline": "クロスデバイスエージェント: 階層的回復で失敗耐性を向上",
               "tldr": "複数デバイス・アプリを横断するタスクの失敗回復に階層的手法を適用。デバイス局所で修復可能な失敗は局所で解決し、真にグローバルな問題のみ計画立て直しへエスカレーション。",
@@ -264,7 +281,9 @@
               ],
               "context": "コンピューターユースエージェントの実用化には動的なランタイム失敗への対応が不可欠。複数デバイス環境での失敗は局所的な問題とシステム全体の問題を明確に区別することが重要。",
               "impact": "実用的なGUIエージェントの信頼性向上に直結する設計指針として、コンピューターユース型エージェントフレームワーク開発への応用が期待される。"
-            }
+            },
+            "caption": "階層的失敗回復",
+            "alt": "クロスデバイスエージェント階層的回復のサマリー。問題：既存手法は粗粒度な回復のみ。提案：デバイス局所→グローバルの2段階。適用：複数アプリ・デバイス横断タスク。結果：局所回復で不要なグローバル再計画を削減。"
           }
         }
       ]
@@ -297,7 +316,13 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["multimodal", "video-generation", "alibaba", "world-model", "happyoyster"],
+          "tags": [
+            "multimodal",
+            "video-generation",
+            "alibaba",
+            "world-model",
+            "happyoyster"
+          ],
           "summary_ja": "Alibaba（阿里巴巴）が開発したワールドモデル「HappyOyster」が動画生成の常識を塗り替えた。市販の商用AIサービスが5〜20秒の動画生成に留まるのに対し、HappyOysterは1回の指示で3分間の720p動画を約5分かつ無料で生成できる。さらに動画再生中にプロンプトを与えてリアルタイムで内容を改変できるインタラクティブ機能を備えており、AIが「世界」をシミュレートしながらユーザーの指示に応じて変化させるというワールドモデルの特性を最大限に活用している。コスト面では多くの商用サービスが月額数千円以上のサブスクを必要とする中、無料で利用できる点が大きな特徴で、動画生成AIの民主化を大きく前進させる可能性がある。",
           "key_points_ja": [
             "1回の指示で3分・720pの動画を約5分かつ無料で生成——市販商用サービスの「5〜20秒」を大幅に超える",
@@ -306,8 +331,6 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "HappyOyster vs 市販AIサービスの比較。最大生成時間：市販5〜20秒(pct8%) vs HappyOyster3分(100%)。コスト：市販月額有料(pct100%) vs HappyOyster無料(0%)。インタラクティブ性：市販なし(0%) vs 再生中改変可(100%)。いずれもHappyOysterが圧倒的に優位。",
-            "caption": "HappyOyster比較",
             "data": {
               "headline": "HappyOyster: 3分・無料・インタラクティブで市販サービスを凌駕",
               "before": {
@@ -351,7 +374,9 @@
               ],
               "narrative": "市販AI動画サービスが最大20秒・月額課金に留まる一方、HappyOysterは3分・720p・無料かつ再生中に内容を変更できる。ワールドモデルとして世界をシミュレートしながら動作する点が他と異なる。",
               "impact": "3分・720p・無料という組み合わせは動画生成AIの民主化を大幅に前進させる。創作ツールや教育コンテンツへの活用が広がる見込み。"
-            }
+            },
+            "caption": "HappyOyster比較",
+            "alt": "HappyOyster vs 市販AIサービスの比較。最大生成時間：市販5〜20秒(pct8%) vs HappyOyster3分(100%)。コスト：市販月額有料(pct100%) vs HappyOyster無料(0%)。インタラクティブ性：市販なし(0%) vs 再生中改変可(100%)。いずれもHappyOysterが圧倒的に優位。"
           }
         },
         {
@@ -374,7 +399,14 @@
             "total": 12,
             "source_type_bias": 0
           },
-          "tags": ["multimodal", "video-generation", "china", "streaming", "audio-video", "sota"],
+          "tags": [
+            "multimodal",
+            "video-generation",
+            "china",
+            "streaming",
+            "audio-video",
+            "sota"
+          ],
           "summary_ja": "中国の1990年代後半生まれ（00後）3名のエンジニアが2ヶ月で開発した流式（ストリーミング）音視頻社交モデルが、Google Veo 3と比較して速度7倍・コスト1/2000を達成したとQbitAIが報じた。ペットの猫の動画から着想を得て開発が始まったとされ、この若手チームの短期間での成果はAI業界に衝撃を与えている。音声と動画を統合してリアルタイムでストリーミング生成するアーキテクチャを採用しており、SNSアプリケーションのような低遅延・低コストが求められる用途に特化した設計となっている。大規模ラボではなく小規模チームが最先端の成果を実現できることを示す事例として注目されている。",
           "key_points_ja": [
             "00後（1990年代後半生まれ）3名チームが2ヶ月で開発——Google Veo 3比で速度7倍・コスト1/2000を達成",
@@ -383,8 +415,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "中国若手チームの音視頻モデルとVeo 3の比較。生成速度：Veo 3比7倍(pct100%、Veo 3基準14%)。コスト削減：99.95%削減(pct99%、Veo 3比1/2000)。開発チーム：3名(pct3%)。開発期間：2ヶ月(pct20%)。",
-            "caption": "Veo 3との比較",
             "data": {
               "headline": "Veo 3比：速度7倍・コスト1/2000——3名チームが2ヶ月で達成",
               "bars": [
@@ -422,7 +452,9 @@
               ],
               "narrative": "3人の00後（1990年代後半生まれ）エンジニアが2ヶ月で開発。速度はVeo 3の7倍、コストは1/2000を達成した。",
               "impact": "小規模チームがSOTA級マルチモーダルモデルを短期間・低コストで構築できることを示す事例として、中国AI開発コミュニティに衝撃を与えた。"
-            }
+            },
+            "caption": "Veo 3との比較",
+            "alt": "中国若手チームの音視頻モデルとVeo 3の比較。生成速度：Veo 3比7倍(pct100%、Veo 3基準14%)。コスト削減：99.95%削減(pct99%、Veo 3比1/2000)。開発チーム：3名(pct3%)。開発期間：2ヶ月(pct20%)。"
           }
         }
       ]
@@ -452,7 +484,15 @@
             "total": 13,
             "source_type_bias": 1
           },
-          "tags": ["llm", "glm", "z-ai", "coding", "oss", "frontend", "benchmark"],
+          "tags": [
+            "llm",
+            "glm",
+            "z-ai",
+            "coding",
+            "oss",
+            "frontend",
+            "benchmark"
+          ],
           "summary_ja": "Z.ai（智谱AI）のGLM-5.2が、フロントエンドコーディングにおいてDeepSeek・Mistral・Cohere・Moonshotといった主要OSSモデルを上回る評価を得ているとLatent Space AINewsが報じた。タイミングは意図的であり、「Fable 5の輸出規制停止後の週末に機会主義的にリリース」されたものとされる。Latent Spaceは「GLM 5.1はマイナーアップデートだったが、5.2はデフォルトのコーディングモデルとして本格的な候補になった」と評価しており、OSSコーディングモデルの覇権争いに新たな展開をもたらした。モデルはMITライセンスで公開されており、商用利用・微調整が自由な点も開発者にとって魅力的となっている。Fable 5とMythos 5の輸出規制により主要コーディングモデルが失われた空白を埋める存在として、GLM-5.2への関心が急速に高まっている。",
           "key_points_ja": [
             "GLM-5.2がフロントエンドコーディングでDeepSeek・Mistral・Cohere・Moonshot等の主要OSSモデルを上回ると評価——世界最強OSSコーディングモデルを宣言",
@@ -461,8 +501,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "GLM-5.2のサマリーカード。評価：フロントエンドコーディングでDeepSeek・Mistral・Cohere・Moonshotを上回る世界最強OSSコーディングモデル。タイミング：Fable 5輸出規制直後の機会主義的リリース。ライセンス：MIT（商用利用・微調整自由）。開発元：Z.ai（智谱AI）。",
-            "caption": "GLM-5.2",
             "data": {
               "headline": "GLM-5.2: Fable規制空白期間にOSSコーディング覇権を宣言",
               "tldr": "Z.aiのGLM-5.2がフロントエンドコーディングでDeepSeek・Mistral・Cohere・Moonshot等を上回ると評価。Fable 5輸出規制で生じた空白を狙った戦略的リリース。MITライセンスで商用利用自由。",
@@ -494,7 +532,9 @@
               ],
               "context": "GLM-5.1はマイナーアップデートに留まったが、5.2はコーディング特化の大幅強化を果たし、フロントエンドコーディング評価で主要OSSを超えた最初のモデルとして注目される。",
               "impact": "Fable 5の輸出規制で空いたコーディングモデルの需要をGLM-5.2が取り込む展開。OSSコーディングモデルの競争環境が急速に変化している。"
-            }
+            },
+            "caption": "GLM-5.2",
+            "alt": "GLM-5.2のサマリーカード。評価：フロントエンドコーディングでDeepSeek・Mistral・Cohere・Moonshotを上回る世界最強OSSコーディングモデル。タイミング：Fable 5輸出規制直後の機会主義的リリース。ライセンス：MIT（商用利用・微調整自由）。開発元：Z.ai（智谱AI）。"
           },
           "x_post": "Z.aiのGLM-5.2がフロントエンドコーディングでDeepSeek・Mistral・Cohere等のOSSモデルを上回ると評価された。Fable 5輸出規制で生じた空白を狙った戦略的リリースで、MITライセンスで商用利用可能である。\n\nhttps://latent.space/p/ainews-glm-52-the-top-frontend-coding"
         },
@@ -518,7 +558,15 @@
             "total": 16,
             "source_type_bias": -1
           },
-          "tags": ["apple", "siri", "ios27", "gemini", "wwdc", "on-device-ai", "mobile"],
+          "tags": [
+            "apple",
+            "siri",
+            "ios27",
+            "gemini",
+            "wwdc",
+            "on-device-ai",
+            "mobile"
+          ],
           "summary_ja": "AppleはWWDC 2026でiOS 27を発表し、Google Geminiを基盤とした新しい「Siri AI」を披露した。新Siriは会話的・常時起動・実際に役立つ（conversational, omnipresent, and actually helpful）と評価され、スタンドアロンアプリとしてホーム画面に独立配置することも可能になった。iOS 27はSiri AI以外にも多数の実用AI機能を実装しており、Safariでは複数タブをAIが管理・要約する機能、メッセージでは返信提案・スマートフィルタリング、通話では要約・文字起こしが加わる。保護者向けには子どもが利用できるアプリ・連絡先をAIレベルで詳細設定するコントロール機能も追加された。Liquid Glassデザインとパーソナライズスライダーによる外観刷新もiOS 27の特徴の一つである。",
           "key_points_ja": [
             "Google Geminiを基盤とした新Siri AIがiOS 27で登場、スタンドアロンアプリとして配置可能になり常時アクセスを実現",
@@ -527,8 +575,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "iOS 27 AI機能のサマリーカード。基盤：Google Gemini搭載の新Siri AI。アプリ統合：Safari AIタブ管理、メッセージスマートフィルタ、通話要約。スタンドアロン：独立アプリとしてホーム画面に配置可能。保護者：子ども向けAIアクセス詳細設定。",
-            "caption": "iOS 27 AI機能",
             "data": {
               "headline": "iOS 27: Google Gemini搭載Siri AIでiPhoneがエージェント化",
               "tldr": "iOS 27でGemini基盤の新Siri AIが登場。会話的・常時起動・スタンドアロンアプリとして動作し、メール・メッセージ・Safariに実用AI機能が全面統合される。",
@@ -566,7 +612,9 @@
               ],
               "context": "WWDC 2026でAppleが発表。Siri AIはGeminiを核心に、メール・予定・写真等のパーソナルコンテキストを理解してアプリを横断実行できる実用エージェントへと進化した。",
               "impact": "iPhone全体がAIエージェント化するマイルストーン。AppleとGoogleの戦略的協業が明確になり、独自AI路線との兼ね合いが今後の注目点。"
-            }
+            },
+            "caption": "iOS 27 AI機能",
+            "alt": "iOS 27 AI機能のサマリーカード。基盤：Google Gemini搭載の新Siri AI。アプリ統合：Safari AIタブ管理、メッセージスマートフィルタ、通話要約。スタンドアロン：独立アプリとしてホーム画面に配置可能。保護者：子ども向けAIアクセス詳細設定。"
           },
           "x_post": "Apple WWDC 2026でiOS 27のSiri AIが発表された。Google Geminiを基盤に構築し、メール・予定・アプリを横断したパーソナルコンテキスト理解と自律実行が可能になる。スタンドアロンアプリとしての配置も実現する。\n\nhttps://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27"
         }
@@ -600,7 +648,15 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "tags": ["claude-code", "anthropic", "skills", "hooks", "subagents", "tutorial", "official"],
+          "tags": [
+            "claude-code",
+            "anthropic",
+            "skills",
+            "hooks",
+            "subagents",
+            "tutorial",
+            "official"
+          ],
           "summary_ja": "Anthropicが公式ブログでClaude Codeをカスタマイズするための手法を体系的に解説する記事を公開した。タイトルに示される通り、スキル（SKILL.md）・フック・ルール・サブエージェントの4つの主要カスタマイズ機能と、さらに追加の手法が紹介されている。スキル機能ではよく使う指示セットをSKILL.mdとして再利用可能な形で定義でき、フック機能ではセッション開始・ツール実行前後などの各ポイントでカスタムロジックを挿入できる。ルール機能ではエージェントの永続的な行動制約を設定でき、サブエージェント機能ではタスクを複数のClaudeインスタンスに並列委譲できる。はてブ57件を集めており、実務エンジニアからの高い関心を示している。",
           "key_points_ja": [
             "Anthropic公式がClaude Codeの4大カスタマイズ機能（スキル・フック・ルール・サブエージェント）を体系的に解説した公式ガイド",
@@ -609,8 +665,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic公式Claude Codeカスタマイズガイドのサマリーカード。スキル：SKILL.mdで再利用可能な指示セット。フック：セッション開始・ツール実行前後にカスタムロジック注入。ルール：永続的な行動制約の設定。サブエージェント：タスクを複数インスタンスに並列委譲。",
-            "caption": "Claude Code公式ガイド",
             "data": {
               "headline": "Anthropic公式: Claude Codeの4大カスタマイズ機能を解説",
               "tldr": "スキル（SKILL.md）・フック・ルール・サブエージェントの4機能をAnthropicが公式解説。はてブ57件。実務Claude Codeユーザー必見の一次情報。",
@@ -638,7 +692,9 @@
               ],
               "context": "Claude Code利用者が増える中、公式からカスタマイズ手法が体系的に解説されたことで、SKILL.mdやフックの標準的な使い方が確立されつつある。",
               "impact": "Claude Codeを本格活用するエンジニアにとって必須の公式リファレンス。スキル・フックの設計パターン標準化に向けた重要な一歩。"
-            }
+            },
+            "caption": "Claude Code公式ガイド",
+            "alt": "Anthropic公式Claude Codeカスタマイズガイドのサマリーカード。スキル：SKILL.mdで再利用可能な指示セット。フック：セッション開始・ツール実行前後にカスタムロジック注入。ルール：永続的な行動制約の設定。サブエージェント：タスクを複数インスタンスに並列委譲。"
           }
         },
         {
@@ -664,7 +720,14 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["codex", "openai", "record-replay", "skills", "automation", "macos"],
+          "tags": [
+            "codex",
+            "openai",
+            "record-replay",
+            "skills",
+            "automation",
+            "macos"
+          ],
           "summary_ja": "OpenAI CodexのRecord & Replay機能が注目を集めている。macOS上でユーザーが操作手順を実演（デモ）するだけで、AIがその操作を解析して再利用可能な「スキル」に変換してくれる機能だ。経費精算の提出・勤怠アプリへの打刻・工数入力・定期的なレポート作成といった繰り返し定型業務をスキルとして記録しておけば、以降はAIが同じ操作を代替して自動実行してくれることが期待できる。azukiazusa氏がRecord & Replayを実際に試した結果を報告したこの記事は47ブクマを獲得しており、反復作業自動化への強い関心を示している。現時点ではmacOSのみ対応のベータ機能だが、業務自動化ツールとして有望視されている。",
           "key_points_ja": [
             "Codex Record & ReplayはmacOSでの操作デモを録画するだけで、AIが再利用可能なスキルに変換する新機能",
@@ -673,8 +736,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Record & Replayのワークフロー。Step 1：macOSで業務操作を実演（デモ）。Step 2：CodexがAIスキルに変換・保存。Step 3：次回からはコマンドのみでAIが自動実行。繰り返し業務が一度の録画で自動化される。",
-            "caption": "Record→Skill変換フロー",
             "data": {
               "headline": "Record & Replay: 操作デモ→AIスキル→自動実行の3ステップ",
               "events": [
@@ -701,7 +762,9 @@
               ],
               "narrative": "OpenAI Codexの新機能Record & Replayは、プログラミング不要で業務フローをAIスキルに変換する。macOSでのUI操作を実演するだけで良い。",
               "impact": "非エンジニアも含めた業務自動化の民主化につながる機能。定型業務の繰り返しをAIに委譲する入口として活用が広がると期待される。"
-            }
+            },
+            "caption": "Record→Skill変換フロー",
+            "alt": "Record & Replayのワークフロー。Step 1：macOSで業務操作を実演（デモ）。Step 2：CodexがAIスキルに変換・保存。Step 3：次回からはコマンドのみでAIが自動実行。繰り返し業務が一度の録画で自動化される。"
           }
         },
         {
@@ -727,7 +790,14 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["vercel", "eve", "framework", "agents", "nextjs", "typescript"],
+          "tags": [
+            "vercel",
+            "eve",
+            "framework",
+            "agents",
+            "nextjs",
+            "typescript"
+          ],
           "summary_ja": "Vercelが新しいAIエージェントフレームワーク「eve」を発表し、azukiazusa氏が実際に試してみた結果をまとめた記事が49ブクマを集めた。eveはNext.jsの設計思想に基づいて構築されており、AIエージェントの開発に必要な機能がすべて揃ったフレームワークとして設計されている。Next.jsのようなファイルシステム規約でエージェントの動作を定義できるアプローチが特徴で、ルーティング・ミドルウェア・メモリといったエージェント実装の定型要素がゼロ設定で動作する。Vercelの既存インフラへの統合が容易な点と、Next.jsを知っているエンジニアがすぐに使い始められる点が評価されている。AIエージェントフレームワーク群が乱立する中、Vercelという主要プラットフォームからの参入として注目度が高い。",
           "key_points_ja": [
             "VercelのAIエージェントフレームワーク「eve」はNext.jsの設計思想を踏襲し、ファイルシステムの規約でエージェントを定義できる",
@@ -736,8 +806,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Vercel eveのサマリーカード。設計思想：Next.jsの哲学を踏襲したファイルシステム優先。主要機能：ルーティング・ミドルウェア・メモリがゼロ設定で動作。統合：Vercelデプロイインフラとシームレスに連携。対象：Next.js知識を持つTypeScriptエンジニア。",
-            "caption": "Vercel eve",
             "data": {
               "headline": "Vercel「eve」: Next.jsの哲学でAIエージェントを構築する",
               "tldr": "VercelのAIエージェントフレームワークeveは、Next.jsのようなファイルシステム規約でエージェントを定義する。ルーティング・ミドルウェア・メモリがゼロ設定で動作し、Vercelインフラへの統合が容易。",
@@ -765,7 +833,9 @@
               ],
               "context": "AIエージェントフレームワークが乱立する現状で、Vercelがフロントエンド開発者に馴染みのある設計思想でエントリーした意義は大きい。",
               "impact": "Next.js開発者がスムーズにAIエージェント開発へ移行できる入口として機能する可能性がある。Vercelのエコシステム内でAIエージェントの標準実装が確立されると普及が加速する。"
-            }
+            },
+            "caption": "Vercel eve",
+            "alt": "Vercel eveのサマリーカード。設計思想：Next.jsの哲学を踏襲したファイルシステム優先。主要機能：ルーティング・ミドルウェア・メモリがゼロ設定で動作。統合：Vercelデプロイインフラとシームレスに連携。対象：Next.js知識を持つTypeScriptエンジニア。"
           }
         }
       ]
@@ -795,7 +865,14 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["multi-agent", "llm-evaluation", "bias", "arxiv", "deepseek", "reliability"],
+          "tags": [
+            "multi-agent",
+            "llm-evaluation",
+            "bias",
+            "arxiv",
+            "deepseek",
+            "reliability"
+          ],
           "summary_ja": "LLMがマルチエージェントシステム内で評価者として機能する場合、その系統的な評価バイアスがエージェントネットワーク全体に伝播するという問題を定量化した研究論文。本研究は「伝染ネットワーク（Contagion Networks）」という正式なフレームワークを提案し、LLMエージェント間でのバイアス伝播を測定する手法を確立した。DeepSeek-chatを用いた3エージェント実験において、structured・balanced・evidence-basedという3種類の異なる評価バイアスプロファイルを設定し、Cross-Agent Contagion Matrix Γ₃を計測した。評価バイアスはエージェント間でγ値[0.157, 0.352]の範囲で一貫して伝播することが示され、同一の基盤モデル内でも伝播が発生するという発見はマルチエージェントシステムの信頼性設計に重要な示唆を与える。",
           "key_points_ja": [
             "マルチエージェントLLMシステムでの評価バイアスは「伝染」する——DeepSeek-chatの3エージェント実験でγ値[0.157, 0.352]の伝播率を確認",
@@ -804,28 +881,13 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "マルチエージェントLLMにおける評価バイアス伝播率γの計測結果。DeepSeek-chatを用いた3エージェント実験で、最小γ=0.157（15.7%）から最大γ=0.352（35.2%）の伝播率を確認。structured・balanced・evidence-basedの3バイアスプロファイル間すべてで同一モデル内でも伝播が発生した。",
-            "caption": "バイアス伝播率γ（DeepSeek-chat 3エージェント実験）",
             "data": {
               "headline": "評価バイアス伝播率γ: 0.157〜0.352（3エージェント実験）",
-              "context": "DeepSeek-chatを用いた3エージェント実験。structured・balanced・evidence-basedの3種バイアスプロファイル間でCross-Agent Contagion Matrix Γ₃を計測。",
-              "metrics": [
-                {
-                  "name": "γ最小値（最も低い伝播）",
-                  "value": "0.157",
-                  "unit": "",
-                  "note": "3エージェント間の最小伝播率",
-                  "pct": 16
-                },
-                {
-                  "name": "γ最大値（最も高い伝播）",
-                  "value": "0.352",
-                  "unit": "",
-                  "note": "3エージェント間の最大伝播率",
-                  "pct": 35
-                }
-              ]
-            }
+              "scale": {},
+              "bars": []
+            },
+            "caption": "バイアス伝播率γ（DeepSeek-chat 3エージェント実験）",
+            "alt": "マルチエージェントLLMにおける評価バイアス伝播率γの計測結果。DeepSeek-chatを用いた3エージェント実験で、最小γ=0.157（15.7%）から最大γ=0.352（35.2%）の伝播率を確認。structured・balanced・evidence-basedの3バイアスプロファイル間すべてで同一モデル内でも伝播が発生した。"
           }
         },
         {
@@ -848,7 +910,15 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "tags": ["compute-efficiency", "mfu", "scaling", "gpu", "latent-space", "infrastructure", "ai-systems"],
+          "tags": [
+            "compute-efficiency",
+            "mfu",
+            "scaling",
+            "gpu",
+            "latent-space",
+            "infrastructure",
+            "ai-systems"
+          ],
           "summary_ja": "AIスケーリング論争は常に「どうGPUを増やすか」に焦点が当たりがちだが、Latent SpaceのAnjney Midha（AMP）は「すでに持っているGPUをどう最大限に活用するか」こそが本質的な問いだと主張する。xAIのような最先端ラボでさえMFU（Model FLOPs Utilization: モデルFLOPs利用率）がsub-10%で動いている可能性を指摘しており、これは既存計算資源の大部分が浪費されていることを示唆する。「Outputmaxxing（アウトプット最大化）」という概念を中心に、GPUの性能を最大限に引き出すシステム設計・最適化の重要性を提唱する内容で、新規GPU調達よりも推論・学習システムの効率改善が次世代AIスケーリングの鍵だという視点を提示している。",
           "key_points_ja": [
             "xAIのような最前線ラボでもMFU（モデルFLOPs利用率）がsub-10%——既存GPUの効率化こそが次のスケーリングの本質的な課題",
@@ -857,8 +927,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anjney Midha（AMP）「Outputmaxxing」コンセプトのサマリー。問題：xAIのような最前線ラボでもMFU sub-10%で稼働しており計算の9割以上が浪費されている。アプローチ：Outputmaxxing——新規GPU調達ではなく既存計算資源の活用率最大化。意義：AIスケーリングの本質的な問いをGPU調達競争からシステム効率改善へ転換する。",
-            "caption": "Outputmaxxing: 既存GPUで最大限の出力を",
             "data": {
               "headline": "「Outputmaxxing」: GPUを増やすより今あるGPUを最大活用せよ",
               "tldr": "xAIでさえMFU sub-10%の可能性。計算資源の大半が浪費されている現実を直視し、AIスケーリングの問いを『いかにGPUを増やすか』から『いかに活かすか』に転換すべきとAnjney Midha（AMP）が主張。",
@@ -881,7 +949,9 @@
               ],
               "context": "AIスケーリング競争でGPU確保が最大課題とされる中、Anjney Midha（AMP）はシステム効率の問題を鋭く指摘。MFU改善によるOutputmaxxingがスケーリング論争に新視点をもたらす。",
               "impact": "AIインフラ設計・MLエンジニアリングの優先順位を再考させる重要な問い。GPU調達競争とは別軸で、計算効率化がAI競争の鍵になるという視点を提示する。"
-            }
+            },
+            "caption": "Outputmaxxing: 既存GPUで最大限の出力を",
+            "alt": "Anjney Midha（AMP）「Outputmaxxing」コンセプトのサマリー。問題：xAIのような最前線ラボでもMFU sub-10%で稼働しており計算の9割以上が浪費されている。アプローチ：Outputmaxxing——新規GPU調達ではなく既存計算資源の活用率最大化。意義：AIスケーリングの本質的な問いをGPU調達競争からシステム効率改善へ転換する。"
           }
         },
         {
@@ -904,7 +974,14 @@
             "total": 13,
             "source_type_bias": 1
           },
-          "tags": ["diffusion-llm", "transparency", "interpretability", "gemma", "arxiv", "alignment"],
+          "tags": [
+            "diffusion-llm",
+            "transparency",
+            "interpretability",
+            "gemma",
+            "arxiv",
+            "alignment"
+          ],
           "summary_ja": "LLMの推論透明性はモデルの判断理解・誤使用防止・予期せぬ挙動のデバッグにとって重要な特性だ。DiffusionGemmaはその計算の大部分を連続潜在空間（continuous latent space）上で行うため、従来の自己回帰LLMよりも推論プロセスが不透明になるという懸念がある。本研究はこの問いに対して「変数透明性（variable transparency）」と「アルゴリズム透明性（algorithmic transparency）」の2軸に分解して分析するアプローチを採用した。変数透明性はモデルの計算状態の中間スナップショットが理解できるかを問い、アルゴリズム透明性はこれらのスナップショットを用いてモデルがどのように結論に至ったかを再構成できるかを問う。拡散型LLMの透明性を系統的に評価した先駆的な研究として注目される。",
           "key_points_ja": [
             "DiffusionGemmaの連続潜在空間での計算が推論透明性に与える影響を2軸（変数透明性・アルゴリズム透明性）で体系的に分析",
@@ -913,29 +990,18 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "DiffusionGemmaの透明性分析における2軸の比較。左：変数透明性（Variable Transparency）——モデル計算状態の中間スナップショットが人間に理解できるか。右：アルゴリズム透明性（Algorithmic Transparency）——スナップショットから推論プロセスを再構成できるか。連続潜在空間での計算が両者に与える影響を本研究が初めて体系的に分析した。",
-            "caption": "DiffusionGemmaの2つの透明性軸",
             "data": {
-              "left_title": "変数透明性（Variable Transparency）",
-              "right_title": "アルゴリズム透明性（Algorithmic Transparency）",
-              "left_description": "モデルの計算状態の中間スナップショットを人間が理解できるか？DiffusionGemmaの連続潜在空間では中間状態の可読性が問題になる。",
-              "right_description": "中間スナップショットを用いて、モデルがどのように最終出力に至ったかを再構成できるか？推論プロセスの再現可能性を評価する。",
-              "items": [
-                {
-                  "left": "連続潜在空間の中間表現の可読性",
-                  "right": "推論ステップの再構成可能性",
-                  "left_pct": 40,
-                  "right_pct": 30
-                },
-                {
-                  "left": "計算状態スナップショットの理解可能性",
-                  "right": "プロセス追跡可能性",
-                  "left_pct": 45,
-                  "right_pct": 25
-                }
-              ],
-              "verdict": "DiffusionGemmaは連続潜在空間での計算を行うため自己回帰LLMと異なる透明性課題を持つ。本研究がその定量評価手法を初めて提案した。"
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "caption": "DiffusionGemmaの2つの透明性軸",
+            "alt": "DiffusionGemmaの透明性分析における2軸の比較。左：変数透明性（Variable Transparency）——モデル計算状態の中間スナップショットが人間に理解できるか。右：アルゴリズム透明性（Algorithmic Transparency）——スナップショットから推論プロセスを再構成できるか。連続潜在空間での計算が両者に与える影響を本研究が初めて体系的に分析した。"
           }
         }
       ]
@@ -965,7 +1031,16 @@
             "total": 18,
             "source_type_bias": -1
           },
-          "tags": ["spacex", "cursor", "anysphere", "m-and-a", "ai-coding", "stratechery", "elon-musk", "top-pick"],
+          "tags": [
+            "spacex",
+            "cursor",
+            "anysphere",
+            "m-and-a",
+            "ai-coding",
+            "stratechery",
+            "elon-musk",
+            "top-pick"
+          ],
           "summary_ja": "SpaceXがAIコーディングツールCursorを開発するAnysphereを600億ドル（約9兆円）の全株式交換で買収することで合意した、とStratecheryが報じた。CursorのARRは2026年2月の20億ドルから6月には40億ドルへと倍増しており、AIコーディングツール市場の急成長ぶりを示している。この取引はAIソフトウェアツール領域における史上最大規模のM&Aとなる見込みだ。Stratechery記事ではFable 5の輸出規制問題・ジェイルブレーク問題と並んでCursor買収が分析されており、AIコーディングツールがエンタープライズ戦略の中核に位置づけられる時代の到来を示している。",
           "key_points_ja": [
             "SpaceXがCursor（Anysphere）を600億ドル全株式交換で買収合意——AIコーディングツール市場史上最大のM&A",
@@ -974,29 +1049,18 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "CursorのARR成長と買収評価額の推移。2026年2月時点のARRは20億ドル（before）、6月には40億ドルへ倍増（after）。SpaceXによる買収評価額は600億ドル全株式交換。半年でARRが2倍になった急成長がAIコーディングツール市場の拡大を反映している。",
-            "caption": "Cursor ARR成長と買収評価",
             "data": {
-              "left_title": "2026年2月（買収前）",
-              "right_title": "2026年6月（買収合意時）",
-              "left_description": "Cursor ARR 20億ドル。AIコーディングツール市場で急成長中のプレイヤーとして注目を集めていた段階。",
-              "right_description": "Cursor ARR 40億ドルへ倍増。SpaceXが600億ドル全株式交換での買収に合意。AIコーディングツール市場史上最大規模のM&A。",
-              "items": [
-                {
-                  "left": "ARR: 20億ドル",
-                  "right": "ARR: 40億ドル（2倍）",
-                  "left_pct": 50,
-                  "right_pct": 100
-                },
-                {
-                  "left": "独立スタートアップ",
-                  "right": "SpaceX傘下（600億ドル評価）",
-                  "left_pct": 10,
-                  "right_pct": 100
-                }
-              ],
-              "verdict": "半年でARR2倍成長を遂げたCursorを、SpaceXが600億ドルの全株式交換で買収。AIコーディングツールが宇宙・国防企業の戦略的資産として位置づけられた歴史的M&A。"
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "caption": "Cursor ARR成長と買収評価",
+            "alt": "CursorのARR成長と買収評価額の推移。2026年2月時点のARRは20億ドル（before）、6月には40億ドルへ倍増（after）。SpaceXによる買収評価額は600億ドル全株式交換。半年でARRが2倍になった急成長がAIコーディングツール市場の拡大を反映している。"
           },
           "x_post": "SpaceXがCursor開発元Anysphereを600億ドル全株式交換で買収する合意を発表した。CursorのARRは今年2月の20億ドルから6月には40億ドルに倍増しており、AIコーディングツール市場史上最大規模のM&Aである。\n\nhttps://stratechery.com/2026/the-state-of-fable-the-jailbreak-problem-spacex-acquires-cursor"
         },
@@ -1020,7 +1084,15 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["john-jumper", "deepmind", "anthropic", "alphafold", "talent", "google", "top-pick"],
+          "tags": [
+            "john-jumper",
+            "deepmind",
+            "anthropic",
+            "alphafold",
+            "talent",
+            "google",
+            "top-pick"
+          ],
           "summary_ja": "AlphaFoldの共同創始者でノーベル化学賞受賞者のJohn Jumper氏がGoogle DeepMindを退職し、AnthropicへAI研究者として転籍することをTechCrunchが報じた。AlphaFoldは2020年にタンパク質構造予測の精度を革命的に向上させ、Jumper氏は2024年にノーベル化学賞を受賞。Anthropicへの転籍は2026年6月20日に明らかになったが、前日にはGeminiの共同リードを担っていたNoam Shazeer氏もOpenAIへの移籍を発表しており、GoogleはわずかA48時間以内にAI最高位の人材2名を失った形となった。AIトップ人材の争奪戦の激化を示す象徴的な出来事として業界に衝撃を与えた。",
           "key_points_ja": [
             "AlphaFold共同創始者・ノーベル化学賞受賞者のJohn Jumper氏がDeepMind退職→Anthropicへ転籍",
@@ -1029,8 +1101,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Googleが48時間で失ったAI最高位人材の流出タイムライン。Day 1（6月19日）：GeminiコリードのNoam Shazeer氏がOpenAIへ移籍発表。Day 2（6月20日）：AlphaFold共同創始者・ノーベル化学賞受賞者のJohn Jumper氏がDeepMindを退職しAnthropicへ転籍。48時間以内にGoogle/DeepMindからAI最高位人材2名が競合他社へ流出した。",
-            "caption": "48時間のGoogle人材流出",
             "data": {
               "headline": "Googleが48時間で失ったAI最高位人材2名",
               "events": [
@@ -1057,7 +1127,9 @@
               ],
               "narrative": "GoogleはわずかA48時間以内に、AIを象徴するノーベル賞研究者1名とGeminiリード1名の合計2名を競合に奪われた。AI人材争奪戦の激化を示す象徴的な出来事。",
               "impact": "Anthropicがノーベル賞受賞の科学的権威を取り込む一方、OpenAIはGeminiのコアエンジニアを獲得。Googleの人材基盤の脆弱性が露呈した。"
-            }
+            },
+            "caption": "48時間のGoogle人材流出",
+            "alt": "Googleが48時間で失ったAI最高位人材の流出タイムライン。Day 1（6月19日）：GeminiコリードのNoam Shazeer氏がOpenAIへ移籍発表。Day 2（6月20日）：AlphaFold共同創始者・ノーベル化学賞受賞者のJohn Jumper氏がDeepMindを退職しAnthropicへ転籍。48時間以内にGoogle/DeepMindからAI最高位人材2名が競合他社へ流出した。"
           },
           "x_post": "AlphaFold共同創始者でノーベル化学賞受賞者のJohn Jumper氏がGoogle DeepMindを退職しAnthropicに転籍した。前日にGemini共同リードのNoam Shazeer氏もOpenAIへ移籍し、Googleは48時間でAI最高位の人材2人を失った形である。\n\nhttps://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
         }
@@ -1092,7 +1164,15 @@
             "source_type_bias": -1,
             "reaction_boost": 2
           },
-          "tags": ["norway", "education", "regulation", "ban", "ai-literacy", "policy", "society"],
+          "tags": [
+            "norway",
+            "education",
+            "regulation",
+            "ban",
+            "ai-literacy",
+            "policy",
+            "society"
+          ],
           "summary_ja": "ノルウェーのストーレ首相は6月19日、小学校の児童が生成AI（人工知能）を使うことを原則禁止する方針を明らかにした。学力の低下を防ぐための措置として打ち出したもので、中学生以上についても教育の場でのAI使用を制限する。ノルウェーは教育のデジタル化が世界で最も進んだ国の一つとされており、先進的なデジタル教育推進国が「AI利用規制」に舵を切ったことは国際的に注目を集めた。142ブクマを獲得したこのニュースは、AI普及が教育現場に与える影響を示すもので、日本の教育政策議論にも波及する可能性がある。",
           "key_points_ja": [
             "ノルウェー・ストーレ首相が小学校での生成AI使用を原則禁止する方針を6月19日に発表——学力低下防止が理由",
@@ -1101,8 +1181,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ノルウェーAI教育規制のサマリーカード。発表者：ストーレ首相（2026年6月19日）。内容：小学校での生成AI使用を原則禁止、中学生以上も教育の場でのAI使用を制限。理由：学力低下の防止。背景：ノルウェーは教育デジタル化が世界最先端の国の一つ。はてブ142件で国内でも高関心。",
-            "caption": "ノルウェーのAI教育禁止方針",
             "data": {
               "headline": "ノルウェー、教育現場でのAI利用を制限——世界最先端デジタル教育国が方針転換",
               "tldr": "ストーレ首相が小学校での生成AI原則禁止を6月19日に発表。学力低下防止が目的で中学以上も制限。デジタル教育先進国の方針転換として国際的注目を集めた（はてブ142件）。",
@@ -1130,7 +1208,9 @@
               ],
               "context": "教育のデジタル化が世界で最も進んだノルウェーがAI使用規制に踏み切ったことは、AI時代の教育政策論争に新たな論点を加える。日本の文科省政策にも影響が及ぶ可能性がある。",
               "impact": "「AI利用促進」から「AI利用制限」への揺り戻しが欧州を中心に始まりつつあるという重要な信号。教育現場でのAI利用に対する批判的再評価が国際議論として広がる可能性がある。"
-            }
+            },
+            "caption": "ノルウェーのAI教育禁止方針",
+            "alt": "ノルウェーAI教育規制のサマリーカード。発表者：ストーレ首相（2026年6月19日）。内容：小学校での生成AI使用を原則禁止、中学生以上も教育の場でのAI使用を制限。理由：学力低下の防止。背景：ノルウェーは教育デジタル化が世界最先端の国の一つ。はてブ142件で国内でも高関心。"
           }
         },
         {
@@ -1157,7 +1237,15 @@
             "source_type_bias": -1,
             "reaction_boost": 2
           },
-          "tags": ["受託開発", "si", "ai-impact", "industry", "zenn", "software-development", "japan"],
+          "tags": [
+            "受託開発",
+            "si",
+            "ai-impact",
+            "industry",
+            "zenn",
+            "software-development",
+            "japan"
+          ],
           "summary_ja": "零細システム開発会社・デンキヤギの社長であるterurou氏が、AI台頭後の受託システム開発の現状と展望を2026年6月時点の実態として分析した記事が206ブクマを集め注目を浴びた。筆者は受託比率が大きく、アジャイル・準委任契約を中心とする事業会社との開発を担っている当事者視点から、AIがシステム開発の発注構造・単価・業務内容に与える変化を率直に論じている。AIによる開発効率化が進む中で受託開発会社がどのように生き残り・変化すべきかというリアルな問いに、ポジショントークと自己分析を明示したうえで答えようとする誠実な試みとして高い評価を受けた。",
           "key_points_ja": [
             "零細受託開発会社デンキヤギ社長が「AI以後」の受託開発の変化をポジショントーク明示のうえで当事者視点から分析（206はてブ）",
@@ -1166,8 +1254,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AI以後の受託システム開発に関するterurou氏の考察サマリー。著者：デンキヤギ（零細システム開発会社）社長。立場：受託比率大、アジャイル・準委任契約中心。分析軸：AIによる発注構造・単価・業務内容の変化。特徴：ポジショントークを明示した誠実な当事者視点。はてブ206件で業界に大きな共感を呼んだ。",
-            "caption": "AI以後の受託開発：当事者視点の考察（206はてブ）",
             "data": {
               "headline": "「AI以後」受託システム開発はどう変わるか——デンキヤギ社長の当事者分析",
               "tldr": "零細受託開発会社の社長がAI台頭後の受託開発の現実をポジショントーク明示のうえで分析。アジャイル・準委任中心の受注形態がAIによってどう変容するかを論じた記事が206はてブを獲得。",
@@ -1195,7 +1281,9 @@
               ],
               "context": "AI導入による開発効率化が進む中、受託開発会社（特に中小・零細）が直面するビジネスモデルの変質を正面から論じた数少ない一次情報。2026年6月の現場感として貴重。",
               "impact": "AI時代の受託開発の未来像について業界内の議論を喚起する契機となった記事。SIや受託開発に関わるエンジニア・経営者にとって必読の当事者証言。"
-            }
+            },
+            "caption": "AI以後の受託開発：当事者視点の考察（206はてブ）",
+            "alt": "AI以後の受託システム開発に関するterurou氏の考察サマリー。著者：デンキヤギ（零細システム開発会社）社長。立場：受託比率大、アジャイル・準委任契約中心。分析軸：AIによる発注構造・単価・業務内容の変化。特徴：ポジショントークを明示した誠実な当事者視点。はてブ206件で業界に大きな共感を呼んだ。"
           }
         }
       ]
@@ -1229,7 +1317,15 @@
             "source_type_bias": -1,
             "reaction_boost": 2
           },
-          "tags": ["draw-io", "ai-tools", "diagram", "skill", "qiita", "ai-driven-dev", "practical"],
+          "tags": [
+            "draw-io",
+            "ai-tools",
+            "diagram",
+            "skill",
+            "qiita",
+            "ai-driven-dev",
+            "practical"
+          ],
           "summary_ja": "受託開発やSES現場では業務フロー図・システム構成図・ER図・シーケンス図・画面遷移図・体制図・CI/CDパイプラインなど多種多様な図を作成する必要があるが、AIに「図を描いて」と依頼すると「それっぽいけど使えない図」が生成されるという問題が現場で広く共有されている。enomoso_pm氏がこの課題をdraw.io生成スキルによって解決した方法をQiitaで公開したところ、542ブクマという大きな反響を呼んだ。draw.ioはXML形式のダイアグラムツールで、AIにXMLを直接生成させることで、視覚的には使えない画像ではなく編集可能な正確な図が出力されるようになるという実践的なアプローチだ。",
           "key_points_ja": [
             "AIに「図を描いて」と依頼すると出てくる「それっぽいけど使えない図」問題をdraw.io生成スキルで解決——542はてブで業界に広く共感",
@@ -1238,29 +1334,18 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "「図を描いて」依頼の結果比較。スキルなし（従来）：それっぽいが使えない画像が生成され、修正不可かつ提出に耐えない品質。draw.io生成スキルあり：XMLベースの編集可能なdraw.io図が出力され、業務フロー・ER図・シーケンス図等をそのまま資料に使える。542はてブで受託開発・SES現場の実務家から強い共感を集めた。",
-            "caption": "スキルあり/なしで図の品質が一変",
             "data": {
-              "left_title": "スキルなし（従来の依頼）",
-              "right_title": "draw.io生成スキルあり",
-              "left_description": "「図を描いて」と依頼→それっぽいが使えない画像。修正不可で編集できず、お客様提出資料には使えない品質が生成される。",
-              "right_description": "draw.io生成スキルを適用→XMLベースの編集可能な図が出力。業務フロー・ER図・シーケンス図等をそのまま資料として使える正確な図が生成される。",
-              "items": [
-                {
-                  "left": "「それっぽい」だが編集不可の画像",
-                  "right": "編集可能なdraw.io XML形式",
-                  "left_pct": 20,
-                  "right_pct": 90
-                },
-                {
-                  "left": "修正・活用に追加作業が大量発生",
-                  "right": "そのまま提出・修正可能な状態で出力",
-                  "left_pct": 15,
-                  "right_pct": 95
-                }
-              ],
-              "verdict": "スキルファイル1つでAI図生成の品質が劇的に向上。受託・SES現場での図作成業務の生産性を大幅に改善できる実践技として542ブクマを獲得。"
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "caption": "スキルあり/なしで図の品質が一変",
+            "alt": "「図を描いて」依頼の結果比較。スキルなし（従来）：それっぽいが使えない画像が生成され、修正不可かつ提出に耐えない品質。draw.io生成スキルあり：XMLベースの編集可能なdraw.io図が出力され、業務フロー・ER図・シーケンス図等をそのまま資料に使える。542はてブで受託開発・SES現場の実務家から強い共感を集めた。"
           }
         },
         {
@@ -1287,7 +1372,14 @@
             "source_type_bias": -1,
             "reaction_boost": 2
           },
-          "tags": ["claude-code", "skill-md", "shiguredo", "practical", "japan", "top-pick"],
+          "tags": [
+            "claude-code",
+            "skill-md",
+            "shiguredo",
+            "practical",
+            "japan",
+            "top-pick"
+          ],
           "summary_ja": "時雨堂（Shiguredo）が2026年6月時点で実際に採用しているSKILL.mdのスキル一覧を公開した記事が327ブクマを集め、Claude Codeスキル設計のリファレンスとして注目を浴びた。記事では「この記事を読む人でSKILL.mdを知らない人は居ないと思う」とし、LLMに食わせるまとまった文章として機能するスキルの実例を共有している。現時点での採用スキルを「2026年6月時点のスナップショット」として共有するもので、固定されたものではなく随時更新されるという実態を示している。Claude Codeで使われるスキルファイルの実例を業務利用企業が公開した事例として、実践的なSKILL.md設計の参考になる貴重なリソースだ。",
           "key_points_ja": [
             "時雨堂（Shiguredo）が2026年6月時点で実採用中のClaude Code SKILL.mdスキル一覧を公開——327はてブで実践Claude Codeユーザーに大きな反響",
@@ -1296,8 +1388,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "時雨堂のClaude Code SKILL.mdスキル公開のサマリー。公開元：時雨堂（Shiguredo）。内容：2026年6月時点で実際に採用しているスキル一覧。定義：SKILL.md＝LLMに食わせるまとまった文章。特徴：固定ではなく随時更新されるスナップショット。反応：327はてブで実践Claude Codeユーザーから強い支持。",
-            "caption": "時雨堂の実採用スキル（327はてブ）",
             "data": {
               "headline": "時雨堂が実採用中のSKILL.mdスキル一覧を公開——2026年6月スナップショット",
               "tldr": "Claude Codeをビジネス利用する時雨堂（Shiguredo）が6月時点で実際に使っているSKILL.mdスキルを公開。「LLMに食わせるまとまった文章」の実例として327はてブを獲得し、実践スキル設計のリファレンスとなった。",
@@ -1325,7 +1415,9 @@
               ],
               "context": "SKILL.md実例を日本企業が公開することは珍しく、コードレビュー・ドキュメント・テスト生成などの業務スキルがどのように設計されているかを知る貴重な機会。",
               "impact": "Claude Codeを導入検討中・活用中のエンジニア・企業にとって、実際に機能するSKILL.md設計の参考になる一次資料。スキルの標準化・共有の文化形成に貢献する。"
-            }
+            },
+            "caption": "時雨堂の実採用スキル（327はてブ）",
+            "alt": "時雨堂のClaude Code SKILL.mdスキル公開のサマリー。公開元：時雨堂（Shiguredo）。内容：2026年6月時点で実際に採用しているスキル一覧。定義：SKILL.md＝LLMに食わせるまとまった文章。特徴：固定ではなく随時更新されるスナップショット。反応：327はてブで実践Claude Codeユーザーから強い支持。"
           },
           "x_post": "時雨堂（Shiguredo）がClaude Codeで使っているSKILL.mdの実採用スキル一覧を公開した（327はてブ）。2026年6月時点のスナップショットとして随時更新される実践知であり、Claude Codeをビジネス利用するエンジニアの必読リソースである。\n\nhttps://voluntas.ghost.io/shiguredo-skill-20206-06"
         },
@@ -1353,7 +1445,15 @@
             "source_type_bias": -1,
             "reaction_boost": 2
           },
-          "tags": ["claude-code", "codex", "comparison", "design-philosophy", "ai-coding", "zenn", "practical"],
+          "tags": [
+            "claude-code",
+            "codex",
+            "comparison",
+            "design-philosophy",
+            "ai-coding",
+            "zenn",
+            "practical"
+          ],
           "summary_ja": "Claude Code一本で開発してきたエンジニアのtark_ann氏が、Opus 4.7の体験が悪かったことでCodexに「浮気」し、実際に使い比べた結果をまとめた記事が216ブクマを集めた。単なる使用感の比較ではなく、両ツールの公開情報をもとにその振る舞いが生まれる「設計思想の違い」について考察した点が評価された。Claude Codeが「できる限り実行してみる」方向性を持つのに対してCodexは異なるアプローチをとるとされており、AIコーディングツールの哲学的差異を丁寧に分析した内容が同分野の開発者に広く支持された。",
           "key_points_ja": [
             "Claude Code→Codexへ「浮気」した経験から両ツールの設計思想の違いを考察——216はてブで広く共感を集めた比較記事",
@@ -1362,29 +1462,18 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "Claude CodeとCodexの設計思想の比較。Claude Code：できる限り実行してみるアプローチで自律的な試行・修正を繰り返す。Codex：異なる設計思想で安全性・確認を重視した実行スタイル。両ツールの振る舞いの違いは公開情報から確認できる設計上の差異として筆者が分析した。",
-            "caption": "Claude Code vs Codex: 設計思想の違い",
             "data": {
-              "left_title": "Claude Code",
-              "right_title": "Codex",
-              "left_description": "「できる限り実行してみる」方向性。自律的な試行錯誤と修正を繰り返すアプローチで、エージェント的な動作が強い。",
-              "right_description": "安全性と確認を重視した異なる設計思想を持つ。Opus 4.7体験悪化後に筆者が比較対象として選んだ実践的AIコーディングツール。",
-              "items": [
-                {
-                  "left": "自律実行・試行錯誤重視",
-                  "right": "確認・安全性重視の傾向",
-                  "left_pct": 85,
-                  "right_pct": 60
-                },
-                {
-                  "left": "エージェント的・能動的",
-                  "right": "補助的・対話的",
-                  "left_pct": 80,
-                  "right_pct": 55
-                }
-              ],
-              "verdict": "どちらが優れているかではなく「設計思想の違い」を理解することで、タスクに応じた使い分けが可能に。Opus 4.7体験悪化を機に発見された知見として216はてブを獲得。"
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "caption": "Claude Code vs Codex: 設計思想の違い",
+            "alt": "Claude CodeとCodexの設計思想の比較。Claude Code：できる限り実行してみるアプローチで自律的な試行・修正を繰り返す。Codex：異なる設計思想で安全性・確認を重視した実行スタイル。両ツールの振る舞いの違いは公開情報から確認できる設計上の差異として筆者が分析した。"
           }
         },
         {
@@ -1411,7 +1500,15 @@
             "source_type_bias": -1,
             "reaction_boost": 2
           },
-          "tags": ["govtech", "自治体dx", "mado-queue", "内製開発", "hokkaido", "japan", "ai-development"],
+          "tags": [
+            "govtech",
+            "自治体dx",
+            "mado-queue",
+            "内製開発",
+            "hokkaido",
+            "japan",
+            "ai-development"
+          ],
           "summary_ja": "北海道の小さな町がAIを活用して窓口業務システムを内製し、現在も現場で稼働中だという注目の事例報告が184ブクマを集めた。記事はシリーズの第3弾に相当し、「捨てるつもりで作った試作がどうやって本番になったのか」（記事1）、番号発券システム「MADO-queue」の技術詳細（記事2）に続いて、今後の課題を論じたもの。MADO-queueは窓口の番号発券を管理するシステムで、現在も実際の行政窓口で稼働している。中小・零細の自治体がAI活用で内製開発を実現した実践例として、行政DXの可能性を示す事例として注目されている。",
           "key_points_ja": [
             "北海道の小さな自治体がAIで窓口業務システム「MADO-queue」を内製——捨てるつもりの試作が本番稼働に至った経緯を連載で公開",
@@ -1420,8 +1517,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "北海道の小自治体によるAI内製開発のタイムライン。フェーズ1：捨てるつもりで試作を開始。フェーズ2：番号発券システムMADO-queueを開発（技術詳細を記事2で公開）。フェーズ3：現在も行政窓口で本番稼働中。フェーズ4（今後）：継続運用・保守・改善の課題（本記事のテーマ）。",
-            "caption": "北海道自治体AI内製開発の経緯",
             "data": {
               "headline": "北海道の小自治体がAIで窓口システム内製——試作から本番稼働まで",
               "events": [
@@ -1453,7 +1548,9 @@
               ],
               "narrative": "北海道の小さな町が、AIを武器に行政システムを内製した実話。捨てるつもりで始めた試作が現場で動き続けるシステムになるまでの道のりと、そこから見えた課題。",
               "impact": "中小自治体にとってAI活用による内製開発の可能性と現実的な課題を示す実践事例。行政DXの民主化を示す先進的な取り組みとして184はてブを集めた。"
-            }
+            },
+            "caption": "北海道自治体AI内製開発の経緯",
+            "alt": "北海道の小自治体によるAI内製開発のタイムライン。フェーズ1：捨てるつもりで試作を開始。フェーズ2：番号発券システムMADO-queueを開発（技術詳細を記事2で公開）。フェーズ3：現在も行政窓口で本番稼働中。フェーズ4（今後）：継続運用・保守・改善の課題（本記事のテーマ）。"
           }
         },
         {
@@ -1476,7 +1573,15 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["plamo", "preferred-networks", "llm-development", "japan", "japan-llm", "ai-tools", "evaluation"],
+          "tags": [
+            "plamo",
+            "preferred-networks",
+            "llm-development",
+            "japan",
+            "japan-llm",
+            "ai-tools",
+            "evaluation"
+          ],
           "summary_ja": "Preferred Networks（PFN）が2026年3月にリリースしたPLaMo 3.0 Prime β版を、PFN自身のLLM開発現場で実際に活用している取り組みを紹介する記事。LLM開発には学習データの準備・評価・実験結果分析という研究開発タスクに加え、CIの整備・ドキュメント保守などのソフトウェア開発タスクも不可欠で、これらの多様なタスクにPLaMoを活用することで作業効率化と品質標準化の両立を目指している。PFN開発チームが開発中のPLaMoを日々の業務で使うことは、ベンチマークでは見えにくい能力を実業務で観察するという点でモデルの継続的改善にも寄与するとしている。",
           "key_points_ja": [
             "Preferred NetworksがPLaMo-3.0-Prime-βを自社LLM開発の現場で活用——学習データ準備・評価・実験分析・CI整備・ドキュメント保守に使用",
@@ -1485,8 +1590,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "PLaMo-3.0-Prime-βのPreferred Networks社内活用サマリー。研究開発タスク：学習データ準備・評価・実験結果分析。ソフトウェア開発タスク：CI整備・ドキュメント保守。狙い：効率化と品質標準化の両立、ベンチマーク外の能力発見。モデル：PLaMo 3.0 Prime β版（2026年3月リリース）。",
-            "caption": "PLaMo-3.0-Prime-β社内活用の全体像",
             "data": {
               "headline": "PFNがPLaMo-3.0-Prime-βを自社LLM開発に投入——Eat your own dog foodで継続改善",
               "tldr": "Preferred NetworksがPLaMo 3.0 Prime β（2026年3月リリース）を自社LLM開発の日常業務で活用。研究開発タスクからCI整備まで幅広く投入し、ベンチマーク外の能力発見と作業品質標準化を実現しているという実践レポート。",
@@ -1514,7 +1617,9 @@
               ],
               "context": "日本発のLLMを開発するPFNが、自社モデルを自社開発に使うという「Eat your own dog food」アプローチを徹底。外部評価だけでは見えない実用性を内部から磨く姿勢は、日本発LLMの質的向上において重要な取り組み。",
               "impact": "日本のLLM開発エコシステムにおいてPFNが自社モデルの内部評価を強化している点は、将来のPLaMoシリーズの実用性向上に繋がる。企業がLLMを自社業務に組み込む際のロールモデルとしても参考になる。"
-            }
+            },
+            "caption": "PLaMo-3.0-Prime-β社内活用の全体像",
+            "alt": "PLaMo-3.0-Prime-βのPreferred Networks社内活用サマリー。研究開発タスク：学習データ準備・評価・実験結果分析。ソフトウェア開発タスク：CI整備・ドキュメント保守。狙い：効率化と品質標準化の両立、ベンチマーク外の能力発見。モデル：PLaMo 3.0 Prime β版（2026年3月リリース）。"
           }
         }
       ]
@@ -1544,7 +1649,14 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["embodied-ai", "robotics", "funding", "china", "venture", "market-analysis"],
+          "tags": [
+            "embodied-ai",
+            "robotics",
+            "funding",
+            "china",
+            "venture",
+            "market-analysis"
+          ],
           "summary_ja": "2026年はまだ半年も経っていないが、中国の具身AI（体現型AI・Embodied AI）分野への資金調達が昨年1年間の総額を超えそうな勢いで急増している。量子位（QbitAI）の分析によると、調達資金の半分以上がロボットの「脳」（AI制御・認知処理部分）に集中しており、ハードウェアよりもインテリジェンスへの投資が主流になっていることが分かる。タイトルの「脑子灵，模型好，不是百亿，就是独角（脳が良くモデルが優れていれば、数百億かユニコーンになれる）」は、中国の具身AIスタートアップが「ロボットの知能」の質で評価される時代に入ったことを示している。",
           "key_points_ja": [
             "2026年前半の中国具身AI（体現型AI）への資金調達額が2025年全体を超える勢い——市場の急膨張を量子位が分析",
@@ -1553,28 +1665,13 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "中国具身AI（体現型AI）資金調達の分布。ロボット「脳」（AI制御・認知部分）への調達：全体の50%超（pct: 55）。その他ハードウェア・その他部門：50%未満（pct: 45）。2026年前半だけで2025年通年を超える勢いで資金調達が急増していると量子位が報告。",
-            "caption": "中国具身AI調達：半分超がロボット「脳」に集中",
             "data": {
               "headline": "2026年前半の具身AI調達が2025年通年を超える勢い——過半数がロボット「脳」に",
-              "context": "量子位（QbitAI）が分析した2026年中国具身AI（体現型AI）の資金調達動向。2026年はまだ後半に入る前から昨年全体を超える速度で資金が流入している。",
-              "metrics": [
-                {
-                  "name": "ロボット「脳」（AI制御・認知処理）への調達比率",
-                  "value": "50%超",
-                  "unit": "",
-                  "note": "超过一半の資金がロボットのAI知能部分に集中",
-                  "pct": 55
-                },
-                {
-                  "name": "その他（ハードウェア等）への調達比率",
-                  "value": "50%未満",
-                  "unit": "",
-                  "note": "ハードウェアよりインテリジェンス重視の投資トレンド",
-                  "pct": 45
-                }
-              ]
-            }
+              "scale": {},
+              "bars": []
+            },
+            "caption": "中国具身AI調達：半分超がロボット「脳」に集中",
+            "alt": "中国具身AI（体現型AI）資金調達の分布。ロボット「脳」（AI制御・認知部分）への調達：全体の50%超（pct: 55）。その他ハードウェア・その他部門：50%未満（pct: 45）。2026年前半だけで2025年通年を超える勢いで資金調達が急増していると量子位が報告。"
           }
         },
         {
@@ -1597,7 +1694,14 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["humanoid-robot", "embodied-ai", "zero-shot", "china", "motor-control", "foundation-model"],
+          "tags": [
+            "humanoid-robot",
+            "embodied-ai",
+            "zero-shot",
+            "china",
+            "motor-control",
+            "foundation-model"
+          ],
           "summary_ja": "「人形ロボットは正式にGPT時代へ突入した」——量子位がそう表現する「世界初の人形ロボット汎用小脳（Universal Cerebellum）」が公開された。世界最大規模となる2万時間の人間動作データを学習データとして使用し、ゼロショット汎化（zero-shot generalization）を実現した。汎用小脳とはロボットの運動制御を担うAIモジュールで、特定タスクに特化したロボット制御AIとは異なり、学習したことのない新しい動作環境・タスクに対してもゼロショットで対応できる汎用性を持つ点が革新的だ。GPTが言語AIに汎用性をもたらしたように、この技術が人形ロボットの動作制御に汎用性をもたらすことを示している。",
           "key_points_ja": [
             "世界初「人形ロボット汎用小脳（Universal Cerebellum）」公開——2万時間（世界最大規模）の人間動作データでゼロショット汎化を実現",
@@ -1606,41 +1710,51 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "人形ロボット制御AIの進化を示す比較。従来（タスク特化型）：特定タスク専用のAI制御、未知の環境やタスクは対応不可、新タスク毎に再学習が必要。現在（汎用小脳）：2万時間の人間動作データで学習、ゼロショット汎化で未知タスクにも対応、世界初の汎用運動制御基盤モデルとして人形ロボットのGPT時代を象徴。",
-            "caption": "タスク特化型 vs 汎用小脳",
             "data": {
-              "left_title": "従来：タスク特化型制御AI",
-              "right_title": "現在：汎用小脳（Universal Cerebellum）",
-              "left_description": "特定タスクに特化したロボット制御AI。学習していない新環境・新タスクには対応できず、都度再学習が必要。汎用性に欠ける従来のアプローチ。",
-              "right_description": "世界最大規模の2万時間の人間動作データで学習。ゼロショット汎化で未知のタスク・環境にも対応可能。人形ロボット制御の汎用基盤モデルが誕生した。",
-              "items": [
-                {
-                  "left": "特定タスクのみ対応",
-                  "right": "ゼロショットで新タスク対応",
-                  "left_pct": 25,
-                  "right_pct": 90
-                },
-                {
-                  "left": "タスク毎に再学習が必要",
-                  "right": "2万時間のデータで汎用化済み",
-                  "left_pct": 20,
-                  "right_pct": 85
-                }
-              ],
-              "verdict": "人間動作データ2万時間という世界最大規模の学習によりゼロショット汎化を実現。GPTが言語AIに汎用性をもたらしたように、汎用小脳がロボット動作制御に汎用性をもたらす転換点。"
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "caption": "タスク特化型 vs 汎用小脳",
+            "alt": "人形ロボット制御AIの進化を示す比較。従来（タスク特化型）：特定タスク専用のAI制御、未知の環境やタスクは対応不可、新タスク毎に再学習が必要。現在（汎用小脳）：2万時間の人間動作データで学習、ゼロショット汎化で未知タスクにも対応、世界初の汎用運動制御基盤モデルとして人形ロボットのGPT時代を象徴。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    {"source": "import_ai", "reason": "HTTP 403 Forbidden"},
-    {"source": "chinai", "reason": "HTTP 403 Forbidden"},
-    {"source": "mercari", "reason": "HTTP 403 Forbidden"},
-    {"source": "hackernews", "reason": "HTTP 400 Bad Request"},
-    {"source": "reddit_ml", "reason": "HTTP 429 Too Many Requests"},
-    {"source": "reddit_singularity", "reason": "HTTP 429 Too Many Requests"},
-    {"source": "semantic_scholar", "reason": "HTTP 429 Too Many Requests"}
+    {
+      "source": "import_ai",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "chinai",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "mercari",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "hackernews",
+      "reason": "HTTP 400 Bad Request"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "HTTP 429 Too Many Requests"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "HTTP 429 Too Many Requests"
+    },
+    {
+      "source": "semantic_scholar",
+      "reason": "HTTP 429 Too Many Requests"
+    }
   ]
 }

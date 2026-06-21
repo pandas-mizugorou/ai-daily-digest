@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-21T05:00:00+09:00",
+  "updated_at": "2026-06-22T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -4320,8 +4320,8 @@
     "c7822207d57fd6a6": {
       "url_prefix": "https://stratechery.com/2026/the-state-of-fable-th",
       "first_seen_at": "2026-06-18",
-      "last_seen_at": "2026-06-18",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 2
     },
     "644f4c4522be7897": {
       "url_prefix": "https://techcrunch.com/2026/06/17/world-model-make",
@@ -4386,8 +4386,8 @@
     "ccd5b3c16ccb2a71": {
       "url_prefix": "https://latent.space/p/ainews-glm-52-the-top-front",
       "first_seen_at": "2026-06-19",
-      "last_seen_at": "2026-06-19",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 2
     },
     "52c427b091186220": {
       "url_prefix": "https://arxiv.org/abs/2606.19257v1",
@@ -4416,8 +4416,8 @@
     "944331fb560f6505": {
       "url_prefix": "https://latent.space/p/anj",
       "first_seen_at": "2026-06-19",
-      "last_seen_at": "2026-06-19",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 2
     },
     "3127716f4ff7f7c1": {
       "url_prefix": "https://arstechnica.com/ai/2026/06/ai-coding-agent",
@@ -4506,8 +4506,8 @@
     "c99464dac71c24a7": {
       "url_prefix": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-",
       "first_seen_at": "2026-06-19",
-      "last_seen_at": "2026-06-21",
-      "last_seen_count": 2
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 3
     },
     "4749604c75179443": {
       "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/18/20000",
@@ -4794,8 +4794,8 @@
     "7f0cfd904f8524d8": {
       "url_prefix": "https://qiita.com/enomoso_pm/items/68d1a29728e5ee3",
       "first_seen_at": "2026-06-21",
-      "last_seen_at": "2026-06-21",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 2
     },
     "bcb16a2e6c4f24a9": {
       "url_prefix": "https://speakerdeck.com/oikon48/claude-codewodonoy",
@@ -4824,7 +4824,115 @@
     "9894d418db7f697f": {
       "url_prefix": "https://qbitai.com/2026/06/436813.html",
       "first_seen_at": "2026-06-21",
-      "last_seen_at": "2026-06-21",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 2
+    },
+    "6216267411e365f5": {
+      "url_prefix": "https://techcrunch.com/2026/06/21/when-the-trump-a",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "1f615c97960f1edc": {
+      "url_prefix": "https://arxiv.org/abs/2606.20529v1",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "3e4cfc9a1c3d36f7": {
+      "url_prefix": "https://arxiv.org/abs/2606.20487v1",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "2320474c3346e86b": {
+      "url_prefix": "https://techno-edge.net/article/2026/06/20/5207.ht",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "c9f4eab3f2e60c2d": {
+      "url_prefix": "https://qbitai.com/2026/06/436996.html",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "d519e422b4775531": {
+      "url_prefix": "https://techcrunch.com/2026/06/21/beyond-siri-here",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "72ace9c8a7a468c8": {
+      "url_prefix": "https://claude.com/ja/blog/steering-claude-code-sk",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "e483a80868effabe": {
+      "url_prefix": "https://azukiazusa.dev/blog/workflow-to-reusable-s",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "1862411b0370eff4": {
+      "url_prefix": "https://azukiazusa.dev/blog/ai-agent-framework-eve",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "512d793572315e62": {
+      "url_prefix": "https://arxiv.org/abs/2606.20493v1",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "d705fe8fc417f7e3": {
+      "url_prefix": "https://arxiv.org/abs/2606.20560v1",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "232b0ce5ea49209e": {
+      "url_prefix": "https://techcrunch.com/2026/06/20/nobel-laureate-j",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "8be5610300a6c6c9": {
+      "url_prefix": "https://47news.jp/14500110.html",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "14056d671da24883": {
+      "url_prefix": "https://zenn.dev/terurou/articles/eb9e7a4ca7b364",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "54ee8da1d171d228": {
+      "url_prefix": "https://voluntas.ghost.io/shiguredo-skill-20206-06",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "93470268a1f7017c": {
+      "url_prefix": "https://zenn.dev/tark_ann/articles/e8b09c6db73bfb",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "0976a7f3c7c27196": {
+      "url_prefix": "https://note.com/memuro_dx_oss/n/nb0d5871aa78c",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "2d113c07e453a0c8": {
+      "url_prefix": "https://qbitai.com/2026/06/437198.html",
+      "first_seen_at": "2026-06-22",
+      "last_seen_at": "2026-06-22",
       "last_seen_count": 1
     }
   },
