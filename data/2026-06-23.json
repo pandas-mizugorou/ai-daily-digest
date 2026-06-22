@@ -100,7 +100,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AI音楽生成訓練データのサマリー。規模：2,100万曲以上。含まれるアーティスト：Taylor Swift・Beatles・Nirvana他。検索方法：アーティスト名で検索可能。はてブ：58件。The Atlanticの調査で判明。",
             "data": {
               "headline": "AI音楽生成に使われた2,100万曲、検索可能データベースで公開",
               "tldr": "Taylor Swift・Beatles・Nirvanaなど2,100万曲以上がAI訓練データとして使用されたことが判明。アーティスト自身がデータベースを検索して確認可能に。",
@@ -125,7 +124,8 @@
               "context": "The Atlanticが調査・報道した内容をGigazineが日本語で紹介。",
               "impact": "著作権保護楽曲の無断訓練使用の是非が改めて問われ、音楽業界とAI産業の権利交渉に影響する可能性がある。"
             },
-            "caption": "AI音楽訓練データ問題"
+            "caption": "AI音楽訓練データ問題",
+            "alt": "AI音楽生成訓練データのサマリー。規模：2,100万曲以上。含まれるアーティスト：Taylor Swift・Beatles・Nirvana他。検索方法：アーティスト名で検索可能。はてブ：58件。The Atlanticの調査で判明。"
           }
         }
       ]
@@ -172,7 +172,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "Sakana FuguのベンチマークとAPI価格の概要。Fugu Ultraはルービックキューブ解法で19手達成。Claude Fable 5を上回るベンチマーク結果を複数指標で達成。API入力価格は100万トークンあたり5ドルから。",
             "data": {
               "bars": [
                 {
@@ -198,7 +197,8 @@
               "impact": "マルチエージェントを単一モデルAPIとして抽象化する新アーキテクチャが、国内AIスタートアップの新たな技術方向性として注目される。",
               "headline": "Sakana AIが「マルチエージェントをモデルとして提供」するFuguを発表——Claude Fable 5超えを達成"
             },
-            "caption": "Sakana Fugu 性能・価格概要"
+            "caption": "Sakana Fugu 性能・価格概要",
+            "alt": "Sakana FuguのベンチマークとAPI価格の概要。Fugu Ultraはルービックキューブ解法で19手達成。Claude Fable 5を上回るベンチマーク結果を複数指標で達成。API入力価格は100万トークンあたり5ドルから。"
           },
           "x_post": "Sakana AIが「マルチエージェントをモデルとして提供」するFuguを発表した。Fugu UltraはClaude Fable 5を上回るベンチマーク結果を達成し、ルービックキューブ解法では19手でGPT-5.5も超えた。APIは100万トークンあたり5〜30ドルで提供される。\n\nhttps://sakana.ai/fugu"
         },
@@ -237,7 +237,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "LINEヤフーPJ One Pieceのビフォー・アフタータイムライン。従来：データ収集・加工・分析・可視化を手作業でつなぐ。After：分析エージェントが全工程を自動オーケストレーション。結果：分析専門家が実行者から設計者・判断者へシフト。",
             "data": {
               "events": [
                 {
@@ -269,7 +268,8 @@
               "impact": "大規模企業でのエージェント導入がデータ分析職の役割定義をどう変えるかを示す具体的事例として参考になる。",
               "headline": "LINEヤフーが分析エージェント「PJ One Piece」で分析業務を一気通貫化——専門組織がAI時代の役割転換に挑む"
             },
-            "caption": "LINEヤフー PJ One Piece"
+            "caption": "LINEヤフー PJ One Piece",
+            "alt": "LINEヤフーPJ One Pieceのビフォー・アフタータイムライン。従来：データ収集・加工・分析・可視化を手作業でつなぐ。After：分析エージェントが全工程を自動オーケストレーション。結果：分析専門家が実行者から設計者・判断者へシフト。"
           }
         }
       ]
@@ -314,7 +314,6 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "FreeStyleの二重参照生成フレームワーク比較。従来の単一参照生成ではスタイルと内容の分離が不十分でスタイル意味漏洩が発生するが、FreeStyleではスタイル参照と内容参照を明示的に分離することで両方の品質を向上させる。",
             "data": {
               "before": {
                 "label": "従来の単一参照画像生成"
@@ -352,7 +351,8 @@
               "impact": "コミュニティLoRAの蓄積を学習データとして活用する手法は、スタイル転送系の画像生成タスク全般に応用できる可能性がある。",
               "headline": "FreeStyle——コミュニティLoRAから学習したスタイルと内容の二重参照画像生成フレームワーク"
             },
-            "caption": "FreeStyle 比較"
+            "caption": "FreeStyle 比較",
+            "alt": "FreeStyleの二重参照生成フレームワーク比較。従来の単一参照生成ではスタイルと内容の分離が不十分でスタイル意味漏洩が発生するが、FreeStyleではスタイル参照と内容参照を明示的に分離することで両方の品質を向上させる。"
           }
         },
         {
@@ -391,7 +391,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "HappyHorse 1.1の5つの改善軸を示すバーチャート。動的表現・被写体一貫性（最大9参照画像）・指示追従・映像品質・音声の5つの改善が示されている。最大1080p、3〜15秒動画生成に対応。",
             "data": {
               "bars": [
                 {
@@ -429,7 +428,8 @@
               "impact": "Alibaba Cloud BailianおよびQianwenAI経由で利用可能で、中国発動画生成モデルの実用化が着実に進んでいる。",
               "headline": "AlibabaがHappyHorse 1.1を公開——動的表現・被写体一貫性など5軸で全面強化"
             },
-            "caption": "HappyHorse 1.1 改善5軸"
+            "caption": "HappyHorse 1.1 改善5軸",
+            "alt": "HappyHorse 1.1の5つの改善軸を示すバーチャート。動的表現・被写体一貫性（最大9参照画像）・指示追従・映像品質・音声の5つの改善が示されている。最大1080p、3〜15秒動画生成に対応。"
           }
         }
       ]
@@ -477,7 +477,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "PLaMo 3.0 Primeの主要スペック比較。コンテキストウィンドウは64K→256K（4倍）。競合クラス比較ではQwen 3.6-27B・Claude Haiku 4.5と同等以上の性能を達成。Amazon BedrockおよびSnowflakeと連携開始。",
             "data": {
               "bars": [
                 {
@@ -503,7 +502,8 @@
               "impact": "国産LLMが主要グローバルモデルと対等に競合できる段階に到達。日本語特化能力とコスト競争力の組み合わせが国内企業導入の追い風になる。",
               "headline": "PFNが国産フラッグシップ「PLaMo 3.0 Prime」を正式リリース——256Kコンテキスト・ReasoningとNon-reason"
             },
-            "caption": "PLaMo 3.0 Prime 主要スペック"
+            "caption": "PLaMo 3.0 Prime 主要スペック",
+            "alt": "PLaMo 3.0 Primeの主要スペック比較。コンテキストウィンドウは64K→256K（4倍）。競合クラス比較ではQwen 3.6-27B・Claude Haiku 4.5と同等以上の性能を達成。Amazon BedrockおよびSnowflakeと連携開始。"
           },
           "x_post": "Preferred Networksが国産フラッグシップ「PLaMo 3.0 Prime」を正式リリースした。コンテキストウィンドウを256Kに拡張し、ReasoningとNon-reasoning二刀流を提供する。Qwen 3.6-27B・GPT-5.4 mini・Claude Haiku 4.5と競合する性能を達成した。\n\nhttps://preferred.jp/ja/news/pr20260622"
         },
@@ -545,7 +545,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "GLM-5.2の競合比較。フロントエンドコーディングでオープンモデル首位水準。DeepSWEエージェントベンチマークでも上位ランク。OpenRouter対応プロバイダー数16社と実用性も高い。",
             "data": {
               "bars": [
                 {
@@ -571,7 +570,8 @@
               "impact": "Fable/Mythos輸出規制の影響でオープンモデルへの需要が増大する中、GLM-5.2の台頭はAI市場のパワーバランスシフトを加速させる可能性がある。",
               "headline": "GLM-5.2、オープンモデル最高峰のコーディング性能を誇示——Fable輸出禁止の間隙に戦略リリース"
             },
-            "caption": "GLM-5.2 コーディング性能比較"
+            "caption": "GLM-5.2 コーディング性能比較",
+            "alt": "GLM-5.2の競合比較。フロントエンドコーディングでオープンモデル首位水準。DeepSWEエージェントベンチマークでも上位ランク。OpenRouter対応プロバイダー数16社と実用性も高い。"
           },
           "x_post": "Zhipu AIのGLM-5.2が、Claude Fable輸出禁止の空白を狙ってリリースされた。フロントエンドコーディングでオープンモデル首位と評価され、DeepSeek・Mistral・Cohereを上回る。DeepSWEエージェントベンチマークでも高順位だ。\n\nhttps://latent.space/p/ainews-glm-52-the-top-frontend-coding"
         },
@@ -610,7 +610,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Ling 2.6モデルのサマリー。総パラメータ数：約1兆（MoE）。軽量版：Ling-2.6-flash（100B）。最小動作VRAM：24GB（Q4量子化）。設計目標：即時エージェント知能。ベースモデルはHuggingFaceで公開済み。",
             "data": {
               "headline": "兆パラメータMoE「Ling 2.6」技術レポート公開——100Bフラッシュ版も同時リリース",
               "tldr": "inclusionAIのLing 2.6はパラメータ数1兆のMoEアーキテクチャ採用。軽量版Ling-2.6-flash（100B）は24GBのGPUでも動作可能。Agentとしての高効率推論に注力。",
@@ -635,7 +634,8 @@
               "context": "arXivで技術レポートを公開。ベースモデルはHuggingFaceで公開済み。",
               "impact": "1兆パラメータ規模のオープンMoEが民主化されつつあることを示す象徴的なリリース。"
             },
-            "caption": "Ling 2.6 概要"
+            "caption": "Ling 2.6 概要",
+            "alt": "Ling 2.6モデルのサマリー。総パラメータ数：約1兆（MoE）。軽量版：Ling-2.6-flash（100B）。最小動作VRAM：24GB（Q4量子化）。設計目標：即時エージェント知能。ベースモデルはHuggingFaceで公開済み。"
           }
         }
       ]
@@ -683,7 +683,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Claude Fable 5・Opus 4.8の破壊的変更タイムライン。2026年6月9日Fable 5一般公開後、6月22日に重大な変更がリリースノートで発表。thinkingモード制約変更・サンプリングパラメータ制限・Fable 5のZDR不可・30日データ保持必須が主要変更点。本番APIユーザーは即時対応が必要。",
             "data": {
               "events": [
                 {
@@ -721,7 +720,8 @@
               "impact": "特にコンプライアンス要件の高い企業は、Fable 5のZDR不可とデータ保持義務化により、採用可否の法務確認が必要になる。",
               "headline": "Anthropicが2026年6月22日付けでClaude Fable 5・Opus 4.8に重大な破壊的変更を導入——既存コードへの即時対"
             },
-            "caption": "Claude Fable 5 破壊的変更"
+            "caption": "Claude Fable 5 破壊的変更",
+            "alt": "Claude Fable 5・Opus 4.8の破壊的変更タイムライン。2026年6月9日Fable 5一般公開後、6月22日に重大な変更がリリースノートで発表。thinkingモード制約変更・サンプリングパラメータ制限・Fable 5のZDR不可・30日データ保持必須が主要変更点。本番APIユーザーは即時対応が必要。"
           },
           "x_post": "Anthropicが6月22日付でClaude Fable 5・Opus 4.8に重大な破壊的変更を導入した。thinkingモード制約・サンプリング制限が既存コードに影響し、Fable 5はZDR不可・30日データ保持必須となった。本番APIユーザーはリリースノートを即時確認。\n\nhttps://qiita.com/picnic/items/7f47405f515731b37f3f"
         },
@@ -760,7 +760,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI Patch the Planetサマリー。イニシアティブ：Patch the Planet（OSSバグ修正）。モデル：GPT-5.5-Cyber（改良版）。背景：Anthropic Mythosへの対抗。目的：AIによるオープンソースセキュリティ強化。",
             "data": {
               "headline": "OpenAI「Patch the Planet」でOSSバグ修正参入——GPT-5.5-Cyberも強化",
               "tldr": "OpenAIがGPT-5.5-Cyberの改良版とオープンソースバグ修正「Patch the Planet」イニシアティブを発表。Anthropic Mythosへの対抗軸として位置づけ。",
@@ -785,7 +784,8 @@
               "context": "Wiredが報道。AIモデルのサイバーセキュリティ能力への業界注目が高まる中で発表。",
               "impact": "AI企業がOSSセキュリティ強化に積極参入することで、ソフトウェアサプライチェーンのセキュリティが向上する可能性がある。"
             },
-            "caption": "OpenAI Patch the Planet"
+            "caption": "OpenAI Patch the Planet",
+            "alt": "OpenAI Patch the Planetサマリー。イニシアティブ：Patch the Planet（OSSバグ修正）。モデル：GPT-5.5-Cyber（改良版）。背景：Anthropic Mythosへの対抗。目的：AIによるオープンソースセキュリティ強化。"
           }
         },
         {
@@ -823,7 +823,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Gemini Interactions APIのGAまでのタイムライン。ベータ提供開始から2026年6月22日の正式GA移行まで。Googleが全機能・全モデルへの標準アクセス経路として推奨を明言。既存Gemini API実装の見直しが推奨される。",
             "data": {
               "events": [
                 {
@@ -855,7 +854,8 @@
               "impact": "AIエージェント・自動化パイプライン構築者にとってGemini APIの使い方を見直す節目となる。",
               "headline": "Google、Gemini Interactions APIを正式GA——全最新モデルへの標準アクセス経路が確定"
             },
-            "caption": "Gemini Interactions API GA"
+            "caption": "Gemini Interactions API GA",
+            "alt": "Gemini Interactions APIのGAまでのタイムライン。ベータ提供開始から2026年6月22日の正式GA移行まで。Googleが全機能・全モデルへの標準アクセス経路として推奨を明言。既存Gemini API実装の見直しが推奨される。"
           }
         }
       ]
@@ -902,7 +902,6 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "AGENTS.mdの生成方法によるコーディングエージェント性能比較。手書き（静的）AGENTS.mdよりProbe-and-Refine（動的生成）の方がエージェント成功率・リポジトリ理解精度が有意に向上する。誤修正率も大幅減少。",
             "data": {
               "before": {
                 "label": "手書き（静的）AGENTS.md"
@@ -940,7 +939,8 @@
               "impact": "AGENTS.md・CLAUDE.md活用の正しい手法が明らかになったことで、コーディングエージェントの本番運用最適化に直結する実践的知見となる。",
               "headline": "コーディングエージェントの性能はAGENTS.mdの「作り方」で決まる——Probe-and-Refine手法が解決策を提示"
             },
-            "caption": "AGENTS.md 生成方法比較"
+            "caption": "AGENTS.md 生成方法比較",
+            "alt": "AGENTS.mdの生成方法によるコーディングエージェント性能比較。手書き（静的）AGENTS.mdよりProbe-and-Refine（動的生成）の方がエージェント成功率・リポジトリ理解精度が有意に向上する。誤修正率も大幅減少。"
           },
           "x_post": "コーディングエージェントの性能はAGENTS.mdの「作り方」で決まるという研究が発表された。Probe-and-Refineと呼ぶ手法でエージェントがリポジトリを実際に探索して指示文を自動精錬すると、手書きのAGENTS.mdより性能が有意に向上する。\n\nhttps://arxiv.org/abs/2606.20512v1"
         },
@@ -981,7 +981,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "CWE-Traceフレームワークのサマリー。データセット：834サンプル・74 CWEs（Linuxカーネル手動収集）。評価モデル数：8つのLLM。新指標：DFI + HDD。評価設計：時系列分割でデータ汚染防止。結論：高スコア≠実際のセキュリティ推論能力。",
             "data": {
               "headline": "CWE-Traceが示すLLMの脆弱性検出の限界——高スコア≠実際のセキュリティ推論能力",
               "tldr": "Linuxカーネルから手動収集した834サンプル・74 CWEカテゴリで8つのLLMを評価。ベンチマーク高得点モデルでも実際のセキュリティ推論は限定的と判明。",
@@ -1006,7 +1005,8 @@
               "context": "2025年以前/以降で時系列分割してデータ汚染を防ぐ厳格な評価設計を採用。",
               "impact": "LLMのセキュリティタスク評価の信頼性に疑問を呈し、より厳格なベンチマーク設計の必要性を示す。"
             },
-            "caption": "CWE-Trace 診断結果"
+            "caption": "CWE-Trace 診断結果",
+            "alt": "CWE-Traceフレームワークのサマリー。データセット：834サンプル・74 CWEs（Linuxカーネル手動収集）。評価モデル数：8つのLLM。新指標：DFI + HDD。評価設計：時系列分割でデータ汚染防止。結論：高スコア≠実際のセキュリティ推論能力。"
           }
         },
         {
@@ -1046,7 +1046,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Wikipedia編集とLLM価値観操作の研究サマリー。研究チーム：Brazilek・Navas・Gnauck（2026）。DOI：10.5281/zenodo.19981454。手法：PAWがWikipedia事実を追加→LLM応答変化を観測。結論：組織的Wikipedia編集でLLM出力を変容可能。",
             "data": {
               "headline": "WikipediaへのAI擁護編集がLLMの価値観に直接影響することを実証",
               "tldr": "Pro-Animal Wikipedians（PAW）グループが動物関連の事実を組織的にWikipediaへ追加した結果、LLMの動物に関する応答が変化した。Zenodo DOI 10.5281/zenodo.19981454。",
@@ -1071,7 +1070,8 @@
               "context": "LessWrong経由で紹介。WikipediaはLLM訓練データで非常に高い重みを持つ。",
               "impact": "少数の組織的編集者がLLMを通じて多数ユーザーに間接影響を与えられるという脆弱性が明らかに。"
             },
-            "caption": "Wikipedia→LLM価値観操作の実証"
+            "caption": "Wikipedia→LLM価値観操作の実証",
+            "alt": "Wikipedia編集とLLM価値観操作の研究サマリー。研究チーム：Brazilek・Navas・Gnauck（2026）。DOI：10.5281/zenodo.19981454。手法：PAWがWikipedia事実を追加→LLM応答変化を観測。結論：組織的Wikipedia編集でLLM出力を変容可能。"
           }
         }
       ]
@@ -1116,7 +1116,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SpaceX×Reflection AIコンピュート契約サマリー。契約金額：月額1億5,000万ドル（$150M）。契約期間：2026年7月〜2029年。インフラ：SpaceX Colossus 2（テネシー州メンフィス近郊）。チップ：Nvidia GB300。",
             "data": {
               "headline": "Reflection AIとSpaceXが月1億5,000万ドルの大規模コンピュート契約を締結",
               "tldr": "オープンソースAI研究所Reflection AIが2026年7月〜2029年まで毎月$150Mを支払い、テネシー州のSpaceX Colossus 2でNvidia GB300チップを利用する長期契約を締結。",
@@ -1141,7 +1140,8 @@
               "context": "TechCrunchが報道。Reflection AIはオープンソース指向のAI研究所。",
               "impact": "AIスタートアップが大規模コンピュートを長期確保する競争が激化していることを示す。"
             },
-            "caption": "SpaceX×Reflection AI コンピュート契約"
+            "caption": "SpaceX×Reflection AI コンピュート契約",
+            "alt": "SpaceX×Reflection AIコンピュート契約サマリー。契約金額：月額1億5,000万ドル（$150M）。契約期間：2026年7月〜2029年。インフラ：SpaceX Colossus 2（テネシー州メンフィス近郊）。チップ：Nvidia GB300。"
           }
         },
         {
@@ -1180,7 +1180,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Anthropic対米政府の対立タイムライン。MythosのAIサイバーセキュリティ能力公開→Fable一般公開→トランプ政権による輸出規制指定という流れ。3つの焦点：政府対立の行方・透明性・自主規制。",
             "data": {
               "events": [
                 {
@@ -1212,7 +1211,8 @@
               "impact": "AI能力の公開基準と輸出規制の枠組みが今後の業界標準を形成する可能性がある。",
               "headline": "MIT Tech Review分析：Anthropic対米政府の対立で注目すべき3つの焦点"
             },
-            "caption": "Anthropic対米政府 対立タイムライン"
+            "caption": "Anthropic対米政府 対立タイムライン",
+            "alt": "Anthropic対米政府の対立タイムライン。MythosのAIサイバーセキュリティ能力公開→Fable一般公開→トランプ政権による輸出規制指定という流れ。3つの焦点：政府対立の行方・透明性・自主規制。"
           }
         }
       ]
@@ -1262,7 +1262,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LLM日本語技術文書ルール集のサマリー。公開元：技術書出版社代表。スキル名：japanese-tech-writing。はてブ数：777件（記録的）。適用対象：Claude Code・ChatGPT。「AI臭い文章を生成させない」規範集として話題に。",
             "data": {
               "headline": "はてブ777件｜LLMへの日本語技術文書スキル「japanese-tech-writing」",
               "tldr": "「japanese-tech-writing」スキルを使いLLMに規範を守らせることで、AI臭くない高品質な技術文書を生成できる。技術書出版社代表が公開し777件の異例ブックマーク数を記録。",
@@ -1287,7 +1286,8 @@
               "context": "技術書出版社の視点から蓄積した日本語技術ライティングの規範をLLM向けに体系化したもの。",
               "impact": "日本語でLLMに技術文書を書かせたい全エンジニアが参考にできる実践的スキルセット。"
             },
-            "caption": "LLM技術文書ルール集（はてブ777）"
+            "caption": "LLM技術文書ルール集（はてブ777）",
+            "alt": "LLM日本語技術文書ルール集のサマリー。公開元：技術書出版社代表。スキル名：japanese-tech-writing。はてブ数：777件（記録的）。適用対象：Claude Code・ChatGPT。「AI臭い文章を生成させない」規範集として話題に。"
           },
           "x_post": "技術書出版社代表が公開したLLM向け日本語技術文書スキル「japanese-tech-writing」がはてブで777件を記録した。「AI臭い文章を生成させない」ための具体的な規範集で、Claude CodeやChatGPTで技術文書を書くエンジニアに広く共有されている。\n\nhttps://techno-edge.net/article/2026/06/22/5209.html"
         },
@@ -1330,7 +1330,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AIスキルアトロフィー問題のサマリー。現象名：スキルアトロフィー（技術萎縮）。事例：医師のAI診断補助→スキル低下。Nature研究：スキル萎縮メカニズムを確認。はてブ：196件。エンジニアにも共通する問い。",
             "data": {
               "headline": "AIに頼るほど技術が落ちる——Natureも警鐘、医師・エンジニアで懸念が拡大",
               "tldr": "AIへの依存が人間のスキル低下（スキルアトロフィー）を招くという懸念についてNature研究や医師調査を整理。AIと共存しながらスキルを維持できるかが課題。",
@@ -1355,7 +1354,8 @@
               "context": "ITmediaが報道。エンジニアも他人事ではない問いとして196件のブックマーク。",
               "impact": "AIを道具として活用しながらスキルも維持できる人材とそうでない人材の分化が進む。"
             },
-            "caption": "AIスキルアトロフィー問題"
+            "caption": "AIスキルアトロフィー問題",
+            "alt": "AIスキルアトロフィー問題のサマリー。現象名：スキルアトロフィー（技術萎縮）。事例：医師のAI診断補助→スキル低下。Nature研究：スキル萎縮メカニズムを確認。はてブ：196件。エンジニアにも共通する問い。"
           }
         }
       ]
@@ -1401,7 +1401,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Code worktreeバグ#70069のサマリー。コマンド：claude -w worktree。症状：約70件の編集がすべてmainに着地。警告：一切なし。issue：GitHub #70069（2026-06-22起票）。AIエージェント並行開発での使用に要注意。",
             "data": {
               "headline": "Claude Code -w オプションの深刻バグ：worktreeへの編集が70件すべてmainに着地",
               "tldr": "`claude -w <worktree>`で開いたセッションで約70件の編集がすべてmain(master)へ直接適用されるバグ。警告は一切なし。GitHub #70069として報告済み。",
@@ -1426,7 +1425,8 @@
               "context": "Qiitaユーザーyurukusaが詳細調査レポートを公開。対応中。",
               "impact": "AIエージェント並行開発でworktreeを多用する開発者は意図しないmain汚染リスクに要注意。"
             },
-            "caption": "Claude Code worktreeバグ #70069"
+            "caption": "Claude Code worktreeバグ #70069",
+            "alt": "Claude Code worktreeバグ#70069のサマリー。コマンド：claude -w worktree。症状：約70件の編集がすべてmainに着地。警告：一切なし。issue：GitHub #70069（2026-06-22起票）。AIエージェント並行開発での使用に要注意。"
           }
         },
         {
@@ -1465,7 +1465,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "ループエンジニアリングの4層スタックと必須要素。プロンプト→コンテキスト→ハーネス→ループの4層構造。実用ループには5つの必須アクション。Claude Codeでは3ファイルパターンで実装可能。",
             "data": {
               "bars": [
                 {
@@ -1491,7 +1490,8 @@
               "impact": "Claude Codeを使った無人自動化の設計思想が体系化されたことで、実務への適用が加速する可能性がある。",
               "headline": "「ループエンジニアリング」入門——プロンプト・コンテキスト・ハーネスの次に来る自動化の層"
             },
-            "caption": "ループエンジニアリング 4層スタック"
+            "caption": "ループエンジニアリング 4層スタック",
+            "alt": "ループエンジニアリングの4層スタックと必須要素。プロンプト→コンテキスト→ハーネス→ループの4層構造。実用ループには5つの必須アクション。Claude Codeでは3ファイルパターンで実装可能。"
           }
         },
         {
@@ -1529,7 +1529,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Claude API障害タイムライン。2026年6月22日、Opus 4.8/4.7/4.6・Sonnet 4.6・Haiku 4.5の全主要モデルで同時エラー率上昇。現在は解決済み。本番対策：フォールバック・リトライ・モデル分散の設計が重要。",
             "data": {
               "events": [
                 {
@@ -1561,7 +1560,8 @@
               "impact": "フォールバックモデルの設定と適切なリトライロジックが本番APIシステムの可用性確保に不可欠であることが再確認された。",
               "headline": "Claude API、2026年6月22日にOpus/Sonnet/Haiku全モデルで広範囲エラー——本番運用の障害対策を見直す機会に"
             },
-            "caption": "Claude API障害レポート（2026-06-22）"
+            "caption": "Claude API障害レポート（2026-06-22）",
+            "alt": "Claude API障害タイムライン。2026年6月22日、Opus 4.8/4.7/4.6・Sonnet 4.6・Haiku 4.5の全主要モデルで同時エラー率上昇。現在は解決済み。本番対策：フォールバック・リトライ・モデル分散の設計が重要。"
           }
         },
         {
@@ -1602,7 +1602,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ゼロをイチにする仕事の変化サマリー。変化前：エンジニアがコードをゼロから書く。変化後：AIが生成したコードを評価・改善。影響：エンジニアの自己効力感・職業アイデンティティ。はてブ185件の共感。",
             "data": {
               "headline": "「ゼロをイチにする仕事」がAIで変わる——エンジニアの役割シフトを考察",
               "tldr": "AIエージェントが「ゼロからコードを書く」役割を担うようになり、エンジニアの主な仕事が「評価・改善・設計」へとシフトしつつある。はてブ185件。",
@@ -1627,7 +1626,8 @@
               "context": "ブログsmasato.log。Copilot時代→Agenticsフェーズへの移行を分析。",
               "impact": "職能定義の再考がエンジニアコミュニティ全体に求められる転換点を示す。"
             },
-            "caption": "ゼロをイチにする仕事の終わり"
+            "caption": "ゼロをイチにする仕事の終わり",
+            "alt": "ゼロをイチにする仕事の変化サマリー。変化前：エンジニアがコードをゼロから書く。変化後：AIが生成したコードを評価・改善。影響：エンジニアの自己効力感・職業アイデンティティ。はてブ185件の共感。"
           }
         },
         {
@@ -1668,7 +1668,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AIモデル崩壊のサマリー。現象：モデル崩壊（Model Collapse）。メカニズム：AI生成データ→訓練混入→次世代性能劣化のサイクル。Nature研究：メカニズム確認済み。解決策：訓練データの多様性確保。はてブ76件。",
             "data": {
               "headline": "モデル崩壊とは何か——AI生成データの混入サイクルとNatureが示す多様性の重要性",
               "tldr": "AI生成テキストが訓練データに混入し次世代AIの性能が劣化する「モデル崩壊」をjoisino氏が解説。Natureの研究を引用しつつ多様性確保が解決策と論じる。はてブ76件。",
@@ -1693,7 +1692,8 @@
               "context": "機械学習研究者joisino氏のブログ。はてブ76件（reaction boost +1）。",
               "impact": "AI生成コンテンツが急増する時代に訓練データ品質管理が将来のモデル品質を左右する。"
             },
-            "caption": "AIモデル崩壊と多様性"
+            "caption": "AIモデル崩壊と多様性",
+            "alt": "AIモデル崩壊のサマリー。現象：モデル崩壊（Model Collapse）。メカニズム：AI生成データ→訓練混入→次世代性能劣化のサイクル。Nature研究：メカニズム確認済み。解決策：訓練データの多様性確保。はてブ76件。"
           }
         }
       ]
@@ -1740,7 +1740,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "Spatial-TTTの性能比較バーチャート。MindCube-Tinyベンチマーク：Spatial-TTT 76.2% vs Gemini-3-pro 63.9%。メモリ効率：11.9GB（Spatial-TTT）vs 21.2GB（産業モデル）。計算効率：799.4 vs 1403.1 TFLOPs。",
             "data": {
               "bars": [
                 {
@@ -1766,7 +1765,8 @@
               "impact": "軽量モデルによる長時間動画理解の実用化が進むことで、ロボティクス・自動運転・AR/VRなどの実装コスト低下につながる。",
               "headline": "清華大学Spatial-TTT空間AIモデルがECCV 2026採択——2BパラメータでGeminiを超えた"
             },
-            "caption": "Spatial-TTT vs Gemini 性能比較"
+            "caption": "Spatial-TTT vs Gemini 性能比較",
+            "alt": "Spatial-TTTの性能比較バーチャート。MindCube-Tinyベンチマーク：Spatial-TTT 76.2% vs Gemini-3-pro 63.9%。メモリ効率：11.9GB（Spatial-TTT）vs 21.2GB（産業モデル）。計算効率：799.4 vs 1403.1 TFLOPs。"
           }
         },
         {
@@ -1804,7 +1804,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "DeepSeekのAgent人材緊急採用サマリー。採用状況：担当者自らが各所で広告掲示。引用：DeepSeek缺Agent人才缺疯了！。戦略：Agentに全力投資が公式に示唆。背景：基盤モデル→Agent能力への競合軸シフト。",
             "data": {
               "headline": "DeepSeekがAgentエンジニアを緊急大募集——「Agent人材が不足しすぎ」と担当者が吐露",
               "tldr": "DeepSeekのAgent担当者が各所でリクルーティング広告を掲示するほどAgent人材が不足。DeepSeekが次の競合軸をAgentと位置づけていることを示す業界シグナル。",
@@ -1829,7 +1828,8 @@
               "context": "QbitAIが報道。DeepSeekは推論効率の高さで評価されてきたが、次の注力分野が明確に。",
               "impact": "中国AI企業の競争軸がAgentに移行しつつあることを示す人材採用動向。"
             },
-            "caption": "DeepSeek Agent人材緊急採用"
+            "caption": "DeepSeek Agent人材緊急採用",
+            "alt": "DeepSeekのAgent人材緊急採用サマリー。採用状況：担当者自らが各所で広告掲示。引用：DeepSeek缺Agent人才缺疯了！。戦略：Agentに全力投資が公式に示唆。背景：基盤モデル→Agent能力への競合軸シフト。"
           }
         }
       ]

@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 21 Jun 2026 17:40:05 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 19:15:24 GMT</lastBuildDate>
+    <item>
+      <title>Sakana AIが「マルチエージェントをモデルとして提供」するFuguを発表——Claude Fable 5超えを達成</title>
+      <link>https://sakana.ai/fugu</link>
+      <guid isPermaLink="false">aidd-item-2026-06-23-ag-sakana-fugu</guid>
+      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-ag-sakana-fugu">AI Daily Digest 2026-06-23</source>
+      <description>東京を拠点とするAI企業Sakana AIは2026年6月22日、マルチエージェントシステム「Sakana Fugu」を発表した。FuguはクローズドモデルとオープンモデルからなるAgent Poolを活用し、ユーザー入力に応じて最適なモデルを自動選択・組み合わせることで、まるで単一モデルを使っているかのような体験を提供する。スタンダードな日常業務向けの「Fugu」と高精度タスク向けの「Fugu Ultra」の2バリアントがあり、ベンチマークテストではFugu UltraおよびFuguがClaude Fable 5を上回る性能を達成したとアピールされている。ルービックキューブの解法タスクでは、Fugu Ultraが19手でGemini 3.1 Pro・Claude Opus 4.8・GPT-5.5を上回った。APIは入力/出力で100万トークンあたり5〜30ドル、サブスクリプションは月額20〜200ドル（StandardからMaxプラン）で提供される。利用者はどのモデルが出力を生成したか特定できない仕組みとなっている。なお、ベンチマーク比較の対象プールからはClaude Fable 5およびClaude Mythos Previewが除外されている。</description>
+    </item>
+    <item>
+      <title>PLaMo 3.0 Prime: 国産フラッグシップLLM正式リリース</title>
+      <link>https://preferred.jp/ja/news/pr20260622</link>
+      <guid isPermaLink="false">aidd-item-2026-06-23-nm-plamo-30-prime</guid>
+      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-nm-plamo-30-prime">AI Daily Digest 2026-06-23</source>
+      <description>Preferred Networks（PFN）は2026年6月22日、国産生成AI基盤モデルの最新フラッグシップ「PLaMo 3.0 Prime」を正式リリースした。NICTとの共同開発で、コンテキストウィンドウを64Kから256Kへ大幅拡張した。複雑な論理タスク向けのReasoningモデルと速度重視のNon-reasoningモデルという2バリアントを提供する。複数のベンチマーク評価において「日本語能力と費用対効果のバランス」を示し、Qwen 3.6-27B・GPT-5.4 mini・Claude Haiku 4.5と競合する性能を達成したとされる。Amazon Bedrock MarketplaceおよびSnowflakeとの連携も開始しており、クラウドAPI・オンプレミスの両形態で利用可能。フルスクラッチで開発する国産モデルとして、HELM Safetyベンチマークでも国際水準のセーフティ性能を示している。</description>
+    </item>
+    <item>
+      <title>AI臭い文章を生成させないためのLLM技術文書ルール集</title>
+      <link>https://techno-edge.net/article/2026/06/22/5209.html</link>
+      <guid isPermaLink="false">aidd-item-2026-06-23-cb-llm-doc-rules-777</guid>
+      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-cb-llm-doc-rules-777">AI Daily Digest 2026-06-23</source>
+      <description>TechnoEdgeに掲載された記事が、技術書出版社代表によるLLM向け日本語技術文書スキル「japanese-tech-writing」を紹介し、はてなブックマークで777件という異例のブックマーク数を記録した。本ルール集は「AI臭い文章」を避けながら、LLMに読み手が理解しやすい質の高い日本語技術文書を生成・推敲させるための規範をまとめたものだ。どのような指示をLLMに与えることで技術的に正確で流暢な日本語文書が生まれるかという、日本語技術ライティングの実践的ノウハウが凝縮されており、Claude CodeやChatGPTを使って技術文書を書く現場のエンジニアに広く共有されている。</description>
+    </item>
+    <item>
+      <title>コーディングエージェントの性能はAGENTS.mdの「作り方」で決まる——Probe-and-Refine手法が解決策を提示</title>
+      <link>https://arxiv.org/abs/2606.20512v1</link>
+      <guid isPermaLink="false">aidd-item-2026-06-23-rp-probe-refine-agents-md</guid>
+      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-rp-probe-refine-agents-md">AI Daily Digest 2026-06-23</source>
+      <description>LLMベースのコーディングエージェントがリポジトリの高レベル知識（どのファイルがどのサブシステムを担うか、テストの実行方法、過去に誤った修正を引き起こしたワークフロー等）を効率的に利用するためのAGENTS.mdファイルに関する研究が公開された。AGENTS.mdが役に立つかどうかは研究者間で意見が割れていたが、本研究ではその「作り方」こそが決定的変数であることを明らかにした。新たに提案する「Probe-and-Refine」チューニング手法は、エージェントがリポジトリを実際に探索（Probe）し、得られた知見に基づいてガイダンスを洗練（Refine）していく自動生成プロセスで、静的に作成したAGENTS.mdと比べて性能が有意に向上することを示した。CLAUDE.mdやCURSOR.rulesにも同様の知見が適用できる。</description>
+    </item>
+    <item>
+      <title>Claude Fable 5・Opus 4.8の破壊的変更と移行ガイド（2026-06-22）</title>
+      <link>https://qiita.com/picnic/items/7f47405f515731b37f3f</link>
+      <guid isPermaLink="false">aidd-item-2026-06-23-ta-fable5-breaking-changes</guid>
+      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-ta-fable5-breaking-changes">AI Daily Digest 2026-06-23</source>
+      <description>Anthropicは2026年6月22日にリリースノートを更新し、Claude Fable 5・Claude Mythos 5・Claude Opus 4.8に関する複数の重要な破壊的変更を明らかにした。中でも「thinkingモードの制約変更」と「サンプリングパラメータの制限」は既存コードへの影響が大きい変更だ。さらにClaude Fable 5では30日間のデータ保持が必須となり、Zero Data Retention（ZDR）オプションが利用不可となった。このためコンプライアンス要件が厳しい企業では、Fable 5採用前に法務確認が必要になる。本番環境でClaude APIを利用している開発者は速やかにリリースノートを確認し、影響範囲を点検することが推奨される。</description>
+    </item>
+    <item>
+      <title>GLM-5.2、オープンモデル最高峰のコーディング性能を誇示——Fable輸出禁止の間隙に戦略リリース</title>
+      <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
+      <guid isPermaLink="false">aidd-item-2026-06-23-nm-glm-52</guid>
+      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-nm-glm-52">AI Daily Digest 2026-06-23</source>
+      <description>Z.ai（Zhipu AI）の最新フラッグシップ「GLM-5.2」は、Claude Fableの輸出規制が続く中でリリースされ、フロントエンドコーディングなどの実用タスクでオープンモデル首位を争う性能を示している。Latent Space AINewsは「GLM-5.2は世界トップのフロントエンドコーディングモデル」と評価し、DeepSeek・Mistral・Cohere・Moonshot AIなど主要オープンモデルラボを多くの評価指標で上回ると報告されている。DeepSWEコーディングエージェントベンチマークでも高位にランキングされており、コスト対効果のパレートフロンティア上に位置するとされる。現在OpenRouterには16の推論プロバイダーが対応している。なおZ.aiは12月にOpen Fableの公開を予告している。</description>
+    </item>
     <item>
       <title>トランプ政権がAnthropicのFable 5・Mythos 5を輸出規制対象に指定——ジェイルブレーク申告が引き金</title>
       <link>https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits</link>
@@ -29,14 +77,6 @@
       <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-015">AI Daily Digest 2026-06-22</source>
       <description>AlphaFoldの共同創始者でノーベル化学賞受賞者のJohn Jumper氏がGoogle DeepMindを退職し、AnthropicへAI研究者として転籍することをTechCrunchが報じた。AlphaFoldは2020年にタンパク質構造予測の精度を革命的に向上させ、Jumper氏は2024年にノーベル化学賞を受賞。Anthropicへの転籍は2026年6月20日に明らかになったが、前日にはGeminiの共同リードを担っていたNoam Shazeer氏もOpenAIへの移籍を発表しており、GoogleはわずかA48時間以内にAI最高位の人材2名を失った形となった。AIトップ人材の争奪戦の激化を示す象徴的な出来事として業界に衝撃を与えた。</description>
-    </item>
-    <item>
-      <title>GLM-5.2がフロントエンドコーディング世界最強のOSSモデルを宣言——Fable規制の空白を狙った戦略的リリース</title>
-      <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
-      <guid isPermaLink="false">aidd-item-2026-06-22-006</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-006">AI Daily Digest 2026-06-22</source>
-      <description>Z.ai（智谱AI）のGLM-5.2が、フロントエンドコーディングにおいてDeepSeek・Mistral・Cohere・Moonshotといった主要OSSモデルを上回る評価を得ているとLatent Space AINewsが報じた。タイミングは意図的であり、「Fable 5の輸出規制停止後の週末に機会主義的にリリース」されたものとされる。Latent Spaceは「GLM 5.1はマイナーアップデートだったが、5.2はデフォルトのコーディングモデルとして本格的な候補になった」と評価しており、OSSコーディングモデルの覇権争いに新たな展開をもたらした。モデルはMITライセンスで公開されており、商用利用・微調整が自由な点も開発者にとって魅力的となっている。Fable 5とMythos 5の輸出規制により主要コーディングモデルが失われた空白を埋める存在として、GLM-5.2への関心が急速に高まっている。</description>
     </item>
     <item>
       <title>iOS 27でSiri AIが全面刷新——Google Gemini搭載の会話型アシスタントとアプリ横断コンテキスト理解</title>
@@ -573,54 +613,6 @@
       <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ib-001">AI Daily Digest 2026-06-02</source>
       <description>Anthropicは2026年6月1日、米証券取引委員会（SEC）にForm S-1の機密草稿を提出した。これは同社が株式公開（IPO）に向けた公式な第一歩である。Anthropicは直近の2026年5月28日に完了したSeries HでAltimeter Capital・Dragoneer・Greenoaks・Sequoia Capitalが主導して$65Bを調達し、評価額は$965Bに達している。S-1では株式数や公開価格はまだ設定されておらず、正式なIPO実施は市場条件次第とされている。なお同社は「この発表は証券の売り出しや購入勧誘ではない」と明示しており、SEC審査後に本格的なIPOプロセスが進む見込みである。</description>
-    </item>
-    <item>
-      <title>AIエージェントのためのゼロトラスト——Anthropic が設計原則を公式ブログに公開</title>
-      <link>https://claude.com/blog/zero-trust-for-ai-agents</link>
-      <guid isPermaLink="false">aidd-item-zero-trust-agents</guid>
-      <pubDate>Sat, 30 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/zero-trust-agents">AI Daily Digest 2026-06-01</source>
-      <description>Anthropic が AI エージェント時代のセキュリティ設計原則「Zero Trust for AI agents」を公式ブログ（claude.com/blog）に公開した。フロンティア AI モデルがサイバー攻撃における脆弱性発見のタイムラインを大幅に圧縮しつつある現状を踏まえ、「防御者はこれらのツールでバグをより速く見つけ修正できる一方、攻撃者もより速く動ける」という非対称性を指摘している。エージェントがインターネット上で自律的に行動するにあたっては、ゼロトラスト原則——すべてのリクエストを検証し、最小権限を付与し、不審なアクションは人間に確認させる——が不可欠だという考え方を示している。この記事はは日本のエンジニアコミュニティではてなブックマーク 311 件という記録的な反響を呼び、エージェント権限設計の実践指針として広く共有された。</description>
-    </item>
-    <item>
-      <title>Ollama×Playwright で作る完全無料の Web 調査エージェント</title>
-      <link>https://zenn.dev/lluminai_tech/articles/358bee9674ed4e</link>
-      <guid isPermaLink="false">aidd-item-ollama-playwright-agent</guid>
-      <pubDate>Fri, 29 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/ollama-playwright-agent">AI Daily Digest 2026-06-01</source>
-      <description>Zenn に公開されたこの実装記事は、ローカル VLM（Ollama）と Playwright を組み合わせ、API コストをゼロにしながら自律的な Web 調査を行うエージェントの構築手順を詳しく解説している。クラウド LLM API への依存なしに、手元の GPU やCPU でブラウザを操作し情報収集・要約まで行うエージェントが実装できる点が特徴だ。はてなブックマーク 168 件という高い反響は、「LLM エージェントを動かしたいがAPI コストが障壁」という日本エンジニアコミュニティの潜在ニーズを的中させた証拠といえる。完全無料・ローカル動作という条件は個人開発者から企業のPoC まで幅広く活用できる実践的な知識だ。</description>
-    </item>
-    <item>
-      <title>Microsoft、小型 LLM 向けエージェント基盤 MagenticLite・MagenticBrain を発表</title>
-      <link>https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/</link>
-      <guid isPermaLink="false">aidd-item-magentic-lite</guid>
-      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/magentic-lite">AI Daily Digest 2026-06-01</source>
-      <description>Microsoft Research が MagenticLite・MagenticBrain・FARA1.5 という 3 種のエージェントフレームワークを発表した。これらは「小型モデル向けに最適化されたエージェント体験」を提供することを目的としており、大型 LLM なしでも複数ステップのタスクを自律的に実行できるよう設計されている。MagenticLite はリソース制約環境向けの軽量エージェントオーケストレーター、MagenticBrain はより高度な計画・メモリ管理を担うコンポーネント、FARA1.5 は Function-calling と Reasoning を組み合わせたエージェント評価基準を提供する。大型モデルに依存せずエッジ・オンプレミス環境で動くエージェントを構築したい開発者に実用的な選択肢が生まれた。</description>
-    </item>
-    <item>
-      <title>Microsoft MAI-Image-2.5、Arena テキスト→画像リーダーボードで 3 位を達成</title>
-      <link>https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/</link>
-      <guid isPermaLink="false">aidd-item-ms-mai-image-25</guid>
-      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/ms-mai-image-25">AI Daily Digest 2026-06-01</source>
-      <description>Microsoft が最新の画像生成モデル MAI-Image-2.5 をリリースし、Arena のテキスト→画像リーダーボードで 3 位を記録した。前世代の MAI-Image-2 と比べ、文字レンダリングの鮮明さ・レイアウト整合性・商業画像（パッケージラベル・製品写真）での品質が向上している。Arena AI とのインテグレーションに加え、MAI Playground での提供が開始され、Foundry への展開は発表から 2 週間以内に予定されている。Microsoft は視覚的推論能力（オブジェクト認識・シーン構造・照明・スケール・空間関係）の改善も強調しており、商業クリエイティブ用途での実用性が高まった。</description>
-    </item>
-    <item>
-      <title>LLM に「ワーキングメモリ」を実装——特殊トークン列で潜在推論を単一前向きパスで完結</title>
-      <link>https://arxiv.org/abs/2605.30343v1</link>
-      <guid isPermaLink="false">aidd-item-llm-working-memory</guid>
-      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/llm-working-memory">AI Daily Digest 2026-06-01</source>
-      <description>arXiv に公開された本論文は、LLM の推論プロセスに「ワーキングメモリ」を組み込む新しいアーキテクチャを提案する。固定長の特殊トークン列（メモリブロック）を導入し、自己回帰的に推論ステップを生成する代わりに、単一の前向きパスで潜在空間内の推論を完結させる。これにより推論の計算コストを削減しながら、複雑なタスクへの対応力を保つことが目標だ。Chain-of-Thought 推論を「外部に出力する」従来アプローチとは異なり、推論を内部の潜在表現として処理するため、出力トークン数の増大なしに推論能力を維持できる可能性を示している。LLM の推論コスト問題に対する新しいアーキテクチャ的アプローチとして注目される。</description>
-    </item>
-    <item>
-      <title>VideoMLA：マルチヘッド潜在アテンションで動画生成の KV メモリを 92.7% 削減</title>
-      <link>https://arxiv.org/abs/2605.30351v1</link>
-      <guid isPermaLink="false">aidd-item-videomla-kv</guid>
-      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01/videomla-kv">AI Daily Digest 2026-06-01</source>
-      <description>arXiv に公開された VideoMLA 論文は、マルチヘッド潜在アテンション（MLA）を動画生成モデルに適用し、KV キャッシュメモリを 92.7% 削減する手法を提案した。長尺動画の自己回帰生成では KV キャッシュが膨大になる問題があったが、低ランク潜在表現に圧縮することで分足スケールの動画拡散を現実的なメモリ量で実現できる。また、効果的なランク制約がスペクトル特性ではなくアーキテクチャのボトルネックから自然に生まれることを示しており、設計の理論的根拠も明確だ。大規模なビデオ生成インフラのメモリコストを抜本的に削減できる可能性を持つ研究として注目される。</description>
     </item>
   </channel>
 </rss>

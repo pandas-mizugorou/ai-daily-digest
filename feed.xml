@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 21 Jun 2026 17:40:05 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 19:15:24 GMT</lastBuildDate>
+    <item>
+      <title>Sakana FuguがClaude Fable 5超えのマルチエージェントAPIを公開——PLaMo 3.0 Prime正式リリース、AGENTS.md自動生成研究、はてブ777件LLM文書ルール集が注目</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23</link>
+      <guid isPermaLink="false">aidd-day-2026-06-23</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月23日、Sakana AIがマルチエージェントを単一APIとして提供する「Fugu」を正式リリースし、Fugu UltraがClaude Fable 5を上回るベンチマーク結果を達成したと発表した。国内ではPreferred Networksが256Kコンテキスト・Reasoning/Non-reasoning二刀流の「PLaMo 3.0 Prime」を正式リリースし、Amazon BedrockとSnowflakeとの連携も開始。Claude APIでは全主要モデル（Opus 4.8・Sonnet 4.6・Haiku 4.5）に重大な破壊的変更が加わり、Fable 5のZDR不可と30日データ保持必須化が開発者に衝撃を与えた。研究面では「AGENTS.mdの効果はその生成方法次第」とするProbe-and-Refine論文がarXivで注目を集め、LLM文書ルール集「japanese-tech-writing」がはてブ777件を記録した。中国ではZhipu AIのGLM-5.2がオープンモデルのコーディング首位を維持し、清華大学の空間インテリジェンスモデルSpatial-TTTがGeminiを超えてECCV 2026に採択された。
+
+【今日の必読】
+・Sakana AIが「マルチエージェントをモデルとして提供」するFuguを発表——Claude Fable 5超えを達成
+・PLaMo 3.0 Prime: 国産フラッグシップLLM正式リリース
+・AI臭い文章を生成させないためのLLM技術文書ルール集
+・コーディングエージェントの性能はAGENTS.mdの「作り方」で決まる——Probe-and-Refine手法が解決策を提示
+・Claude Fable 5・Opus 4.8の破壊的変更と移行ガイド（2026-06-22）
+・GLM-5.2、オープンモデル最高峰のコーディング性能を誇示——Fable輸出禁止の間隙に戦略リリース</description>
+    </item>
     <item>
       <title>トランプ政権がAnthropicを輸出規制対象に指定——SpaceX・Cursor買収とJumper転籍でAI業界急変</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22</link>
@@ -441,21 +456,6 @@
 ・Simple and Unified Scaling だけでオリンピック数学金メダルレベルの推論を達成
 ・AIにできない仕事は残るかもしれないが、それはUber Eatsの配達員みたいな仕事になるかも
 ・OpenAI が ChatGPT と Codex を統合—Brockman が製品戦略責任者に正式就任し単一エージェントプラットフォームへ</description>
-    </item>
-    <item>
-      <title>ChatGPTが Plaid 経由で銀行口座連携の個人財務機能を公開・オリンピック数学金メダル水準の推論スケーリング論文・初の商用準線形 LLM SubQ が 12M コンテキスト実証、OpenAI が中国包摂のグローバル AI ガバナンスを支持・Notion がエージェント基地</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-16</link>
-      <guid isPermaLink="false">aidd-day-2026-05-16</guid>
-      <pubDate>Fri, 15 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月15〜16日にかけて複数の重要ニュースが集中した。最大の話題はOpenAIが公開した「ChatGPT Personal Finance」機能で、Plaid経由で12,000以上の金融機関と連携しプロユーザーの銀行口座・投資口座残高をリアルタイムで分析できる。消費者AIの新領域開拓として業界の注目を集めた。学術界ではHugging Face Daily Papersで125アップボートを獲得した「Simple and Unified Scalingでオリンピック金メダル水準の推論達成」論文が話題となり、スケーリングだけで数学オリンピックトップ水準に到達できることを実証した。アーキテクチャ革新としては、Subquadratic社が初の商用準線形（非Transformer）LLM「SubQ 1M-Preview」を12Mコンテキストで公開し、$29Mシード調達とともに注目を集めた。規制・政策面ではOpenAIが中国を含むIAEA型の国際AI安全ガバナンス枠組みを支持すると表明し、地政学的な意味を持つ。Notionはエージェント向けDeveloper Platform（Workers・External Agent API）を正式公開し、Claude Code・Cursor・Codex等が直接Notionで動作するエコシステムを実現した。国内ではZennの「Qwen3.6+LM Studioで無料Claude Code代替」記事が技術者コミュニティで広く拡散し、ローカルLLMの実用フェーズ到達を国内視点から確認した。中国ではBaidu文心5.1が業界比6%のコストでDeepSeek-V4-Proを超えるAgent能力を達成し、MiniCPM-V-4.6がHFトレンド1位を維持中。
-
-【今日の必読】
-・ChatGPT に個人財務機能を公開——Plaid 経由で 12,000 以上の金融機関と連携し支出・投資を AI が分析
-・「Simple and Unified Scaling」でオリンピック数学金メダル水準の推論を達成——追加学習なしのスケーリングが数学的推論の限界を突破
-・SubQ 1M-Preview 公開——史上初の商用準線形 LLM が 12M コンテキストを実証、$29M シード調達
-・OpenAI が中国を含む IAEA 型グローバル AI ガバナンス枠組みを支持——米中対立下で主要 AI 企業が多国間安全体制を公式表明
-・Notion が AI エージェント基地に変貌——Developer Platform 正式公開で Claude Code・Cursor・Codex が Notion を直接操作
-・無料でClaude Code？！ Qwen3.6とLM StudioでローカルLLMコーディング</description>
     </item>
   </channel>
 </rss>

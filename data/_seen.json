@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-22T05:00:00+09:00",
+  "updated_at": "2026-06-23T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -4386,8 +4386,8 @@
     "ccd5b3c16ccb2a71": {
       "url_prefix": "https://latent.space/p/ainews-glm-52-the-top-front",
       "first_seen_at": "2026-06-19",
-      "last_seen_at": "2026-06-22",
-      "last_seen_count": 2
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 3
     },
     "52c427b091186220": {
       "url_prefix": "https://arxiv.org/abs/2606.19257v1",
@@ -4933,6 +4933,150 @@
       "url_prefix": "https://qbitai.com/2026/06/437198.html",
       "first_seen_at": "2026-06-22",
       "last_seen_at": "2026-06-22",
+      "last_seen_count": 1
+    },
+    "e2e3a3d6001e528b": {
+      "url_prefix": "https://gigazine.net/news/20260621-songs-mashed-in",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "f6daca2cfbd0fb8f": {
+      "url_prefix": "https://sakana.ai/fugu",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "b46e4bd7d57b8252": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/techverse2026-105",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "8867b54e7a185207": {
+      "url_prefix": "https://qbitai.com/2026/06/437317.html",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "ce96c6ac0232669c": {
+      "url_prefix": "https://arxiv.org/abs/2606.20506v1",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "ec99b40193b22565": {
+      "url_prefix": "https://preferred.jp/ja/news/pr20260622",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "87055bce6c7d53c2": {
+      "url_prefix": "https://arxiv.org/abs/2606.15079",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "7043d2241628b5dd": {
+      "url_prefix": "https://qiita.com/picnic/items/7f47405f515731b37f3",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "620c1d57d32a2f81": {
+      "url_prefix": "https://qiita.com/picnic/items/bb10af76b534d9fc596",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "183fa22deabbe537": {
+      "url_prefix": "https://wired.com/story/openai-launches-full-scale",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "ddb381b770447ede": {
+      "url_prefix": "https://arxiv.org/abs/2606.20512v1",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "005c67a810c66673": {
+      "url_prefix": "https://arxiv.org/abs/2606.20502v1",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "cd5b71c78bbd5b46": {
+      "url_prefix": "https://lesswrong.com/posts/xwGTp23TJB5FmdzHu/advo",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "88c9406f759f1aae": {
+      "url_prefix": "https://techcrunch.com/2026/06/22/spacex-inks-comp",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "432ec2dfc19caf93": {
+      "url_prefix": "https://technologyreview.com/2026/06/22/1139424/th",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "975a4dcaddb90406": {
+      "url_prefix": "https://techno-edge.net/article/2026/06/22/5209.ht",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "faacbef2a8ee8322": {
+      "url_prefix": "https://itmedia.co.jp/news/articles/2606/22/news04",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "b45d13455e1356dc": {
+      "url_prefix": "https://blog.smasato.net/entry/2026/06/21/181605",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "896fec02dad181cc": {
+      "url_prefix": "https://qiita.com/yurukusa/items/105542b22c84422ae",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "9de7e9fcc696844c": {
+      "url_prefix": "https://qiita.com/picnic/items/64d12430e8946cc6d67",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "dddbb598e6afd44a": {
+      "url_prefix": "https://joisino.hatenablog.com/entry/collapse",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "2b6923816d0b3215": {
+      "url_prefix": "https://qiita.com/Syoitu/items/97ed37e7ba9c38dc75d",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "969d50d19a129374": {
+      "url_prefix": "https://qbitai.com/2026/06/437249.html",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "08c73332b101c87f": {
+      "url_prefix": "https://qbitai.com/2026/06/437235.html",
+      "first_seen_at": "2026-06-23",
+      "last_seen_at": "2026-06-23",
       "last_seen_count": 1
     }
   },
