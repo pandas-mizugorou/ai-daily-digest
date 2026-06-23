@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-23T05:00:00+09:00",
+  "updated_at": "2026-06-24T06:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5077,6 +5077,150 @@
       "url_prefix": "https://qbitai.com/2026/06/437235.html",
       "first_seen_at": "2026-06-23",
       "last_seen_at": "2026-06-23",
+      "last_seen_count": 1
+    },
+    "975b25a4cb47a567": {
+      "url_prefix": "https://zenn.dev/okssusucha/articles/20260623-jetb",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "644614febffa1401": {
+      "url_prefix": "https://qbitai.com/2026/06/437503.html",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "0b690c5df303dfe7": {
+      "url_prefix": "https://huggingface.co/blog/ibm-research/cuga-apps",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "092304ccd772c1e8": {
+      "url_prefix": "https://zenn.dev/okssusucha/articles/20260623-code",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "6c0735b991af3bc1": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/techverse2026-60",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "64748ac3266300d1": {
+      "url_prefix": "https://www.anthropic.com/news/introducing-claude-",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "983f67b630457d41": {
+      "url_prefix": "https://theverge.com/report/954826/midjourney-medi",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "8985793f9d5be985": {
+      "url_prefix": "https://arxiv.org/abs/2606.23687v1",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "6aa73df744307dfd": {
+      "url_prefix": "https://arxiv.org/abs/2606.23654v1",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "caa52e71af35efe3": {
+      "url_prefix": "https://arxiv.org/abs/2606.23671v1",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "75ac058e06850a18": {
+      "url_prefix": "https://arxiv.org/abs/2606.23678v1",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "525a9fefa47f23bc": {
+      "url_prefix": "https://latent.space/p/ainews-spacex-is-already-a-",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "972115220a4b8e85": {
+      "url_prefix": "https://techcrunch.com/2026/06/22/ai-chipmaker-gro",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "385e5c9878804038": {
+      "url_prefix": "https://latent.space/p/gray-swan",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "2dabdba8a7d4d0a4": {
+      "url_prefix": "https://lesswrong.com/posts/fgvmKqRGvBteKeDoc/a-sy",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "419e78928b61b1d3": {
+      "url_prefix": "https://wired.com/story/meta-pauses-employee-track",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "9f76c835bed222ee": {
+      "url_prefix": "https://techcrunch.com/2026/06/22/the-ai-world-is-",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "4ed85d71e3e8cac3": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/23/20000",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "3325ea7d0a54ffca": {
+      "url_prefix": "https://atmarkit.itmedia.co.jp/ait/articles/2606/2",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "f4fd15b670ed6577": {
+      "url_prefix": "https://zenn.dev/ryok/articles/loop-engineering-ev",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "f527c5bc1f1a13b5": {
+      "url_prefix": "https://zenn.dev/takna/articles/anthropic-ai-agent",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "6ef75dc277818ccb": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/23/20000",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "5e3fb0d441698a95": {
+      "url_prefix": "https://qbitai.com/2026/06/437672.html",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "55ce46e14d6f013a": {
+      "url_prefix": "https://qbitai.com/2026/06/437340.html",
+      "first_seen_at": "2026-06-24",
+      "last_seen_at": "2026-06-24",
       "last_seen_count": 1
     }
   },

@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 22 Jun 2026 19:15:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 18:18:38 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがSlack常駐型AIエージェント「Claude Tag」を発表——SpaceXのGPU事業が年280億ドル規模のNeocloudに、JetBrains Mellum2とDoubao Seed 2.1が登場</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24</link>
+      <guid isPermaLink="false">aidd-day-2026-06-24</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月24日、AnthropicはSlack上で常駐して自律的にタスクを実行する「Claude Tag」を発表し、企業全体で1つのAIアイデンティティを共有する新たなエンタープライズ戦略を打ち出した。AI産業動向では、Latent SpaceがSpaceXのGPU賃貸収益を年280億ドル規模と試算——Anthropic・Google・Reflection AIの3社が月合計23億ドル超の契約を締結している事実が注目を集めた。研究面では、EnterpriseClawBench（実業務セッション852タスク）、Randomized YaRN（短コンテキスト学習での長文汎化）、adversarial prefill自己認識率（平均27.3%）の3論文が実用的観点で注目された。日本からは、Anthropicの設計知見20原則をまとめたZenn記事、LINEヤフーの遺伝的アルゴリズムによるプロンプト自動最適化、トヨタファイナンスのAIエージェント+RPA併用事例が公開された。モデル面ではJetBrainsが速度・コスト優先の12B Focal MoE「Mellum2」を、ByteDanceが18時間自律チップ設計デモの「Doubao Seed 2.1」をそれぞれ発表した。
+
+【今日の必読】
+・Anthropic、Slack常駐型AIエージェント「Claude Tag」を発表 — 社内全員が1つのClaudeを共有するEnterpriseエージェント戦略
+・EnterpriseClawBench：実際の職場エージェントセッションから構築した852タスクの企業向けベンチマーク
+・SpaceXのGPU賃貸収益が年280億ドル規模のNeocloud事業に確定 — Anthropic・Google・Reflection AI 3社で月合計23億ドル超
+・Anthropic公式に学ぶ AIエージェント設計20の原則
+・Randomized YaRN：短コンテキスト学習データのまま長文推論汎化を改善する訓練手法
+・Mythosバン後のAIセキュリティ — Gray Swanが語る自動redteamingの優位と「致命的三つ組み」</description>
+    </item>
     <item>
       <title>Sakana FuguがClaude Fable 5超えのマルチエージェントAPIを公開——PLaMo 3.0 Prime正式リリース、AGENTS.md自動生成研究、はてブ777件LLM文書ルール集が注目</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23</link>
@@ -441,21 +456,6 @@
 ・MetaBackdoor——位置エンコーディングをバックドアトリガーに悪用する新手法が既存防御を無効化
 ・SenseNova-U1——視覚エンコーダとVAEを廃止した統合マルチモーダルモデルが GenEval 0.91 を達成
 ・CLI-Anything——あらゆるCLIツールをエージェントが自律操作できる形に変換するフレームワーク</description>
-    </item>
-    <item>
-      <title>OpenAI が ChatGPT+Codex 統合し Brockman 製品戦略責任者就任・arXiv が AI 全執筆著者を 1 年間投稿禁止・Grep がエージェント検索でベクトル検索を凌駕と実証</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-17</link>
-      <guid isPermaLink="false">aidd-day-2026-05-17</guid>
-      <pubDate>Sat, 16 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月17日の AI ニュースまとめ。OpenAI が Greg Brockman を製品戦略責任者として正式任命し、ChatGPT と Codex を単一のエージェントプラットフォームに統合すると発表した。Google I/O 2026（5月19日開幕）の3日前というタイミングは競合を意識した重大な組織再編として業界の注目を集める。学術界では arXiv が「LLM に論文を全執筆させた証拠がある著者を1年間投稿禁止」とする方針を明確化し研究コミュニティ全体に影響が広がっている。エージェント研究では arXiv 論文「Is Grep All You Need?」が Claude Code・Codex・Gemini CLI など複数ハーネスで grep がベクトル検索より一般的に高精度であることを実証し、エージェント設計者の間で話題を呼んでいる。Darwin ファミリーが勾配更新ゼロで GPQA Diamond 88.89% を達成し「訓練量に比例して性能が上がる」という前提を覆す研究として高い注目を集めた。日本では「AIにできない仕事は Uber Eats の配達員のような仕事になるかもしれない」という論考がはてブ 245 件を獲得し、AI 代替議論の質的な転換を示した。中国では MiniCPM-V 4.6（1.3B）が RTX 4090 1枚で動作するマルチモーダルモデルとして登場し、エッジ AI の実用化が加速している。
-
-【今日の必読】
-・Grep で十分か？ エージェントハーネスが AI エージェントの検索戦略を左右すると実証
-・Darwin ファミリー：訓練ゼロで GPQA Diamond 88.89% 達成—勾配なしフロンティア推論の実証
-・arXiv が AI に全執筆させた著者を 1 年間投稿禁止に—幻覚した引用・LLM メタコメントが証拠
-・Simple and Unified Scaling だけでオリンピック数学金メダルレベルの推論を達成
-・AIにできない仕事は残るかもしれないが、それはUber Eatsの配達員みたいな仕事になるかも
-・OpenAI が ChatGPT と Codex を統合—Brockman が製品戦略責任者に正式就任し単一エージェントプラットフォームへ</description>
     </item>
   </channel>
 </rss>

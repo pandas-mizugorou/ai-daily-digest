@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 22 Jun 2026 19:15:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 18:18:38 GMT</lastBuildDate>
+    <item>
+      <title>Anthropic、Slack常駐型AIエージェント「Claude Tag」を発表 — 社内全員が1つのClaudeを共有するEnterpriseエージェント戦略</title>
+      <link>https://www.anthropic.com/news/introducing-claude-tag</link>
+      <guid isPermaLink="false">aidd-item-2026-06-24-ag-claude-tag</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-ag-claude-tag">AI Daily Digest 2026-06-24</source>
+      <description>AnthropicはSlack上で常駐して自律的にタスクを実行するAIエージェント「Claude Tag」を発表した。Claude EnterpriseおよびTeamユーザー向けのリサーチプレビューとして提供される。タスクが割り当てられると複数のステップに分解して自律実行し、結果をSlackスレッドで報告する。「ambient」モードでは担当チャンネルを能動的に監視して未対応スレッドにフォローアップする機能も持つ。社内全従業員が一つのClaudeアイデンティティを共有する設計により従業員間のタスク引き継ぎが可能になり、組織の文脈・制度知識をAIが継続的に蓄積する戦略的意図がある。</description>
+    </item>
+    <item>
+      <title>EnterpriseClawBench：実際の職場エージェントセッションから構築した852タスクの企業向けベンチマーク</title>
+      <link>https://arxiv.org/abs/2606.23654v1</link>
+      <guid isPermaLink="false">aidd-item-2026-06-24-rp-enterprise-clawbench</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-rp-enterprise-clawbench">AI Daily Digest 2026-06-24</source>
+      <description>企業エージェントが職場内でファイルを読み、ツールを呼び出し、成果物を生成するシナリオに特化したベンチマーク「EnterpriseClawBench」が発表された。実際の業務エージェントセッションの大規模アーカイブから852の再現可能なタスクを抽出し、それぞれに復元済みフィクスチャ・書き直したプロンプト・ロールクラス・スキルサブクラス・ハードルール・セマンティックルーブリックが付属している。合成データではなく実業務に起源を持つという点でリアリティが高く、エンタープライズエージェントの実用的評価基盤として期待される。</description>
+    </item>
+    <item>
+      <title>SpaceXのGPU賃貸収益が年280億ドル規模のNeocloud事業に確定 — Anthropic・Google・Reflection AI 3社で月合計23億ドル超</title>
+      <link>https://latent.space/p/ainews-spacex-is-already-a-28byr</link>
+      <guid isPermaLink="false">aidd-item-2026-06-24-ib-spacex-28byr-neocloud</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-ib-spacex-28byr-neocloud">AI Daily Digest 2026-06-24</source>
+      <description>Latent SpaceがSpaceXのGPU賃貸収益を集計した。Anthropic（月12.5億ドル、コロッサス1・2で約32.5万チップ）、Google（月9.2億ドル、GB300容量）、Reflection AI（月1.5億ドル、2026年7月1日から2029年まで）の3社との契約合計は月23.2億ドル（年換算278億ドル）に上り、「年280億ドル規模のNeocloud」が確定した。BlackwellチップのGPU賃料は1時間10ドル超で90日間の解約条項付き。SpaceXはAI算力の「Neocloud」レイヤーとして独自のポジションを確立している。</description>
+    </item>
+    <item>
+      <title>Anthropic公式に学ぶ AIエージェント設計20の原則</title>
+      <link>https://zenn.dev/takna/articles/anthropic-ai-agent-design-20-principles</link>
+      <guid isPermaLink="false">aidd-item-2026-06-24-jp-anthropic-agent-20</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-jp-anthropic-agent-20">AI Daily Digest 2026-06-24</source>
+      <description>AnthropicのエンジニアリングブログとClaude Codeの公式ドキュメントから、エージェント設計に効く原則を抽出・整理したZenn記事。各原則を「主張＋根拠」形式で簡潔にまとめ、加えて「担保（どこで守るか）」を1行で付記している。一次情報への索引として使うことを想定した構成で、エージェント開発・コンテキスト設計・ツール設計の設計判断に即座に活用できる内容となっている。</description>
+    </item>
+    <item>
+      <title>Randomized YaRN：短コンテキスト学習データのまま長文推論汎化を改善する訓練手法</title>
+      <link>https://arxiv.org/abs/2606.23687v1</link>
+      <guid isPermaLink="false">aidd-item-2026-06-24-rp-randomized-yarn</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-rp-randomized-yarn">AI Daily Digest 2026-06-24</source>
+      <description>LLMは一般に短いシーケンスで事前学習された後、追加学習で長コンテキストに対応するが、それ以上の長さへの汎化は依然難しい。本論文が提案する「Randomized YaRN」は、YaRNベースの位置外挿・ランダム位置エンコード・長さカリキュラムの3要素を組み合わせた訓練手法である。短コンテキストデータでの学習中に、トークンにYaRN位置エンコードを割り当てることで、学習時の最大長を超えた長文シーケンスへの汎化能力を向上させる。長コンテキスト推論の実用的な改善手法として注目される。</description>
+    </item>
+    <item>
+      <title>Mythosバン後のAIセキュリティ — Gray Swanが語る自動redteamingの優位と「致命的三つ組み」</title>
+      <link>https://latent.space/p/gray-swan</link>
+      <guid isPermaLink="false">aidd-item-2026-06-24-reg-gray-swan</guid>
+      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-reg-gray-swan">AI Daily Digest 2026-06-24</source>
+      <description>AIセキュリティ企業Gray SwanがLatent Spaceポッドキャストで、Mythos/Fableバン後のredteaming動向を語った。Gray Swanは自動redteaming製品「Shade」（人間テスターを超える精度）、コミュニティプラットフォーム「Gray Swan Arena」（Discord 15,000人以上）、エンタープライズ向けガードレールモデル「Cygnal」の3製品を展開する。プロンプトインジェクション侵害の「致命的三つ組み」は（1）外部（信頼できない）データの取込、（2）内部のプライベートデータへのアクセス、（3）外部へのデータ送出、の組み合わせと指摘した。AIセキュリティが損害保険の引き受けフレームワークに収束するという見方も示した。</description>
+    </item>
     <item>
       <title>Sakana AIが「マルチエージェントをモデルとして提供」するFuguを発表——Claude Fable 5超えを達成</title>
       <link>https://sakana.ai/fugu</link>
@@ -573,46 +621,6 @@
       <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/ta_codex_roles">AI Daily Digest 2026-06-03</source>
       <description>OpenAI は Codex に 6 職種向けのロールプラグインを追加した。データ分析・クリエイティブ制作・営業・デザイン・エクイティ投資・投資銀行の各ワークフローに特化したアプリと統合をバンドルしている。また「Sites」のプレビューも公開し、チームがワークスペース内でインタラクティブな Web サイトやアプリを作成し URL で共有できる機能を提供する。Codex は開発者向けコーディングツールから、あらゆる職種向けの生産性プラットフォームへと進化しつつあり、Anthropic の Claude Code や Microsoft Copilot との競合が激化する。</description>
-    </item>
-    <item>
-      <title>Claude Code チャンピオン キット</title>
-      <link>https://support.claude.com/ja/articles/14555399-claude-code-%E3%83%81%E3%83%A3%E3%83%B3%E3%83%94%E3%82%AA%E3%83%B3-%E3%82%AD%E3%83%83%E3%83%88</link>
-      <guid isPermaLink="false">aidd-item-jp-001</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/jp-001">AI Daily Digest 2026-06-02</source>
-      <description>AnthropicがClaude Codeをチームに段階的に導入するための公式リソース「チャンピオンキット」を日本語で公開した。はてなブックマークで394件のブックマークを集め、本日の国内最大反響記事となった。キットは個人の完全習熟を前提とせず、まずチーム内の「チャンピオン（推進役）」が先行して習熟し、そこからチーム全体へ段階的に展開するアプローチを推奨している。オンボーディング資料・ワークショップ素材・FAQ・ベストプラクティスなど実践的なコンテンツが日本語で提供されており、エンジニアリングチームがClaude Codeを組織的に採用する際の移行支援として有用性が高い。</description>
-    </item>
-    <item>
-      <title>GitHub Copilot、AI Credits 従量課金制へ移行——6 月 1 日より全プランに適用</title>
-      <link>https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/</link>
-      <guid isPermaLink="false">aidd-item-ta-001</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ta-001">AI Daily Digest 2026-06-02</source>
-      <description>GitHubは2026年6月1日付で、Copilotの課金体系をシート単位の定額制から「AI Credits」を使った従量課金制へ移行した。各プランには月次クレジットが付与されており、Copilot Pro+は月$39相当のクレジット込み、Copilot Businessは$19/ユーザー込みとなった。コード補完（インライン補完・次の編集候補）は全有料プランで引き続き無制限に利用できる。組織向けにはエンタープライズ・コストセンター・ユーザーレベルで予算上限を設定できる新機能も追加され、大規模展開時のAIコスト管理が柔軟になった。クレジット超過後は追加購入が可能で、有料プランでは容量のプール共有機能も導入された。</description>
-    </item>
-    <item>
-      <title>Anthropic の Zero Trust for AI Agents 設計原則を読み解く</title>
-      <link>https://blog.cloudnative.co.jp/articles/anthropic-zero-trust-for-ai-agents/</link>
-      <guid isPermaLink="false">aidd-item-jp-003</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/jp-003">AI Daily Digest 2026-06-02</source>
-      <description>CloudNative Blogが、Anthropicの発表した「Zero Trust for AI Agents」設計原則を日本語で詳しく解説した記事を公開し、はてなブックマークで189件を集めた。記事では、AIエージェントの業務導入において「どのエージェントが・どの権限で・どのツールにアクセスしたか」を全レイヤーで追跡・制御・回復できるゼロトラスト設計の重要性を解説している。従来のゼロトラストセキュリティの考え方をAIエージェントのアーキテクチャに適用した内容で、最小権限の原則・アクセスログの完全記録・障害時の復元設計が中核となる。エンジニアリングチームがAIエージェントを本番環境に導入する際の実践的なセキュリティ指針として評価されている。</description>
-    </item>
-    <item>
-      <title>LLM を超えて——スケーラブルな企業 AI 採用にはエージェントロジックが不可欠（IBM Research）</title>
-      <link>https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption</link>
-      <guid isPermaLink="false">aidd-item-ag-001</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ag-001">AI Daily Digest 2026-06-02</source>
-      <description>IBM Researchは2026年6月1日、Hugging Faceを通じて「LLMを超えた先に、スケーラブルな企業AI採用の鍵がある」と題した研究ブログを公開した。企業がAI活用をスケールアップする際、LLM単体ではなくエージェントロジックと推論能力の組み合わせが不可欠であるという分析を展開している。単なる言語モデルへの置き換えでなく、意思決定・ワークフロー統合・ツール呼び出しを組み合わせた「エージェントアーキテクチャ」への移行を企業に求める内容で、大企業でのAI実装における実践的な指針として注目される。</description>
-    </item>
-    <item>
-      <title>Anthropic、SEC に S-1 草稿を機密提出——$965B 評価額で IPO 準備が公式始動</title>
-      <link>https://www.anthropic.com/news/confidential-draft-s1-sec</link>
-      <guid isPermaLink="false">aidd-item-ib-001</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02/ib-001">AI Daily Digest 2026-06-02</source>
-      <description>Anthropicは2026年6月1日、米証券取引委員会（SEC）にForm S-1の機密草稿を提出した。これは同社が株式公開（IPO）に向けた公式な第一歩である。Anthropicは直近の2026年5月28日に完了したSeries HでAltimeter Capital・Dragoneer・Greenoaks・Sequoia Capitalが主導して$65Bを調達し、評価額は$965Bに達している。S-1では株式数や公開価格はまだ設定されておらず、正式なIPO実施は市場条件次第とされている。なお同社は「この発表は証券の売り出しや購入勧誘ではない」と明示しており、SEC審査後に本格的なIPOプロセスが進む見込みである。</description>
     </item>
   </channel>
 </rss>
