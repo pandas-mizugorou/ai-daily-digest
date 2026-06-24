@@ -85,24 +85,58 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "ASIC", "chip", "Broadcom", "AI hardware", "inference"],
+          "tags": [
+            "OpenAI",
+            "ASIC",
+            "chip",
+            "Broadcom",
+            "AI hardware",
+            "inference"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAI初のカスタムAIチップ「Jalapeño」概要。Broadcomとの共同設計によるASIC（推論専用集積回路）で、AIサーバーに搭載して現在・将来のOpenAI製LLMの推論を担う。「インテリジェンスプロセッサ」と称されOpenAI初の自社AIシリコンとなる。",
             "data": {
               "headline": "OpenAI初のカスタムAI推論チップ「Jalapeño」——BroadcomとのASIC共同設計",
               "tldr": "OpenAIがBroadcomと共同設計した推論専用ASIC「Jalapeño」を発表。「インテリジェンスプロセッサ」としてAIサーバーに搭載し、現在・将来のLLM推論を担う。OpenAI初の自社AIシリコンとなる。",
               "points": [
-                { "icon": "🏷️", "label": "チップ名", "value": "Jalapeño", "tone": "primary" },
-                { "icon": "🤝", "label": "設計パートナー", "value": "Broadcom（共同設計）", "tone": "default" },
-                { "icon": "⚡", "label": "チップ種別", "value": "ASIC（推論専用）", "note": "Application-Specific IC", "tone": "info" },
-                { "icon": "🎯", "label": "用途", "value": "AIサーバー向け推論", "note": "現在・将来のLLM対応", "tone": "default" },
-                { "icon": "🔑", "label": "位置付け", "value": "OpenAI初の自社カスタムAIシリコン", "tone": "success" }
+                {
+                  "icon": "🏷️",
+                  "label": "チップ名",
+                  "value": "Jalapeño",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "設計パートナー",
+                  "value": "Broadcom（共同設計）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "チップ種別",
+                  "value": "ASIC（推論専用）",
+                  "note": "Application-Specific IC",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "用途",
+                  "value": "AIサーバー向け推論",
+                  "note": "現在・将来のLLM対応",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔑",
+                  "label": "位置付け",
+                  "value": "OpenAI初の自社カスタムAIシリコン",
+                  "tone": "success"
+                }
               ],
               "context": "GoogleのTPU、Amazon Trainium、Meta MTIAと同様に、主要AIラボが独自シリコンを持つ流れが加速している。",
               "impact": "AI推論の専用シリコン化が進み、汎用GPU一辺倒だったAIインフラ競争に新たな構造変化をもたらす可能性がある。"
-            }
+            },
+            "alt": "OpenAI初のカスタムAIチップ「Jalapeño」概要。Broadcomとの共同設計によるASIC（推論専用集積回路）で、AIサーバーに搭載して現在・将来のOpenAI製LLMの推論を担う。「インテリジェンスプロセッサ」と称されOpenAI初の自社AIシリコンとなる。"
           },
           "x_post": "OpenAIがBroadcomと共同設計した推論専用ASIC「Jalapeño」を発表した。「インテリジェンスプロセッサ」と称するこのチップはAIサーバー向けで、現在・将来のLLM推論を担う。OpenAI初の自社カスタムAIシリコンであり、NVIDIA依存からの戦略転換を示す動きである。\n\nhttps://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno"
         },
@@ -130,25 +164,60 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["OCR", "open source", "Baidu", "MIT license", "document parsing", "SGLang"],
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
+          "tags": [
+            "OCR",
+            "open source",
+            "Baidu",
+            "MIT license",
+            "document parsing",
+            "SGLang"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "Unlimited-OCR 3.3B主要仕様。Baiduが開発したMITライセンスのOCRモデル。単一画像からPDFまでワンショット解析、32K出力長、Base/Gundamの2モード、Transformers/SGLang対応。",
             "data": {
               "headline": "Unlimited-OCR 3.3B: MITライセンス全文書一括解析——32K出力・SGLang対応",
               "tldr": "Baiduの3.3B OCRモデルがModelScopeで公開。単一画像・複数ページPDF・文書を一括解析するワンショット設計で、32Kトークン長文出力、SGLang/Transformers推論対応。MITライセンスで商用利用可能。",
               "points": [
-                { "icon": "📐", "label": "パラメータ数", "value": "3.3B", "tone": "default" },
-                { "icon": "📄", "label": "入力対応", "value": "画像・複数ページPDF", "tone": "default" },
-                { "icon": "📝", "label": "最大出力長", "value": "32Kトークン", "tone": "info" },
-                { "icon": "🔄", "label": "推論エンジン", "value": "Transformers / SGLang", "tone": "default" },
-                { "icon": "✅", "label": "ライセンス", "value": "MIT（商用可）", "tone": "success" }
+                {
+                  "icon": "📐",
+                  "label": "パラメータ数",
+                  "value": "3.3B",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📄",
+                  "label": "入力対応",
+                  "value": "画像・複数ページPDF",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📝",
+                  "label": "最大出力長",
+                  "value": "32Kトークン",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "推論エンジン",
+                  "value": "Transformers / SGLang",
+                  "tone": "default"
+                },
+                {
+                  "icon": "✅",
+                  "label": "ライセンス",
+                  "value": "MIT（商用可）",
+                  "tone": "success"
+                }
               ],
               "context": "DeepSeek-OCRスタイルの文書解析をさらに推し進めることを目的としたオープンモデル。GitHubはbaidu/Unlimited-OCR。",
               "impact": "ローカルLLM環境でのOCR処理に即利用可能なMITライセンスモデルの登場で、文書解析パイプラインのオープン化が進む。"
-            }
+            },
+            "alt": "Unlimited-OCR 3.3B主要仕様。Baiduが開発したMITライセンスのOCRモデル。単一画像からPDFまでワンショット解析、32K出力長、Base/Gundamの2モード、Transformers/SGLang対応。"
           }
         }
       ]
@@ -182,24 +251,56 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Figma", "design tools", "AI motion", "shader", "Config 2026", "full-stack"],
+          "tags": [
+            "Figma",
+            "design tools",
+            "AI motion",
+            "shader",
+            "Config 2026",
+            "full-stack"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "Figma Config 2026主要アップデート。AIモーショングラフィクス・シェーダーツール新設、コードレイヤー追加、AIカスタムプラグイン生成、フルスタック開発キャンバスへの刷新の4点が発表された。",
             "data": {
               "headline": "Figma Config 2026: AIモーション・シェーダー・コードレイヤーでフルスタック開発基盤に進化",
               "tldr": "年次カンファレンスConfig 2026でFigmaが大型アップデートを発表。AIモーショングラフィクス・シェーダーツール・コードレイヤー追加でフルスタック開発キャンバスに進化。繰り返しタスクはAIプラグインで自動化。",
               "points": [
-                { "icon": "🎬", "label": "新機能①", "value": "AIモーショングラフィクス", "tone": "primary" },
-                { "icon": "✨", "label": "新機能②", "value": "シェーダーツール", "tone": "default" },
-                { "icon": "💻", "label": "新機能③", "value": "コードレイヤー新設", "tone": "default" },
-                { "icon": "🤖", "label": "新機能④", "value": "AIカスタムプラグイン生成", "tone": "info" },
-                { "icon": "🔗", "label": "全体像", "value": "フルスタック開発最適化キャンバス", "tone": "success" }
+                {
+                  "icon": "🎬",
+                  "label": "新機能①",
+                  "value": "AIモーショングラフィクス",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "✨",
+                  "label": "新機能②",
+                  "value": "シェーダーツール",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💻",
+                  "label": "新機能③",
+                  "value": "コードレイヤー新設",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "新機能④",
+                  "value": "AIカスタムプラグイン生成",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔗",
+                  "label": "全体像",
+                  "value": "フルスタック開発最適化キャンバス",
+                  "tone": "success"
+                }
               ],
               "context": "年次カンファレンスConfig 2026にて発表。デザインとコードの統合をさらに推し進め「チーム・AIエージェント・素材が一か所に集まる」形を目指す。",
               "impact": "デザイン・コード・AIエージェントが一体化したキャンバスへの移行が加速し、デザイナー・エンジニア双方のワークフローが変化する。"
-            }
+            },
+            "alt": "Figma Config 2026主要アップデート。AIモーショングラフィクス・シェーダーツール新設、コードレイヤー追加、AIカスタムプラグイン生成、フルスタック開発キャンバスへの刷新の4点が発表された。"
           }
         },
         {
@@ -226,24 +327,57 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Mistral", "OCR", "multilingual", "document parsing", "self-hosting", "bounding box"],
+          "tags": [
+            "Mistral",
+            "OCR",
+            "multilingual",
+            "document parsing",
+            "self-hosting",
+            "bounding box"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "Mistral OCR 4主要機能。170言語対応（日本語含む）、バウンディングボックス出力、信頼度スコア出力、単一コンテナ自己ホスティング対応。データ主権・コンプライアンス要件に対応。",
             "data": {
               "headline": "Mistral OCR 4: 170言語・バウンディングボックス・信頼度スコア・自己ホスティング対応",
               "tldr": "Mistral AIがOCRモデル新版を公開。日本語含む170言語対応・バウンディングボックス・信頼度スコア出力を新追加。単一コンテナで自己ホスティングも可能でデータ主権対応。",
               "points": [
-                { "icon": "🌍", "label": "対応言語", "value": "170言語（日本語含む）", "tone": "primary" },
-                { "icon": "📍", "label": "新機能①", "value": "バウンディングボックス出力", "note": "要望の多かった機能", "tone": "success" },
-                { "icon": "📊", "label": "新機能②", "value": "信頼度スコア出力", "tone": "default" },
-                { "icon": "🏠", "label": "デプロイ", "value": "単一コンテナで自己ホスト可", "tone": "info" },
-                { "icon": "🔒", "label": "用途", "value": "データ主権・コンプライアンス対応", "tone": "default" }
+                {
+                  "icon": "🌍",
+                  "label": "対応言語",
+                  "value": "170言語（日本語含む）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📍",
+                  "label": "新機能①",
+                  "value": "バウンディングボックス出力",
+                  "note": "要望の多かった機能",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📊",
+                  "label": "新機能②",
+                  "value": "信頼度スコア出力",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏠",
+                  "label": "デプロイ",
+                  "value": "単一コンテナで自己ホスト可",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "用途",
+                  "value": "データ主権・コンプライアンス対応",
+                  "tone": "default"
+                }
               ],
               "context": "厳格なデータ主権やコンプライアンスが求められる組織を想定。クラウド外での文書処理を実現する。",
               "impact": "高精度の多言語OCRが自己ホスト可能になり、クラウド外でのドキュメント処理パイプライン構築の選択肢が広がる。"
-            }
+            },
+            "alt": "Mistral OCR 4主要機能。170言語対応（日本語含む）、バウンディングボックス出力、信頼度スコア出力、単一コンテナ自己ホスティング対応。データ主権・コンプライアンス要件に対応。"
           }
         },
         {
@@ -270,11 +404,17 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Gemini", "Google AI", "API", "Interactions API", "GA", "server-side state"],
+          "tags": [
+            "Gemini",
+            "Google AI",
+            "API",
+            "Interactions API",
+            "GA",
+            "server-side state"
+          ],
           "lang": "ja",
           "figure": {
             "type": "timeline",
-            "alt": "Gemini Interactions API進化の流れ。2025年12月にベータ公開、2026年6月22日にGA化してデフォルトAPIに格上げ。AI Studio・公式ドキュメントが新APIデフォルト表示に切り替わり、今後開発者の移行が求められる。",
             "data": {
               "headline": "Gemini Interactions API: ベータ(2025/12)からGA(2026/06)へ、デフォルトAPIが変わる",
               "events": [
@@ -302,7 +442,8 @@
               ],
               "narrative": "Interactions APIは単なるAPIバージョンアップではなく、会話状態の管理主体をクライアントからサーバーへ移すアーキテクチャ転換。Geminiベースのアプリをビルドするすべてのエンジニアに影響する。",
               "impact": "Geminiを使ったチャットボット・エージェントアプリのコードベースに影響があり、新規開発では今後新APIに準拠する必要がある。"
-            }
+            },
+            "alt": "Gemini Interactions API進化の流れ。2025年12月にベータ公開、2026年6月22日にGA化してデフォルトAPIに格上げ。AI Studio・公式ドキュメントが新APIデフォルト表示に切り替わり、今後開発者の移行が求められる。"
           }
         }
       ]
@@ -337,11 +478,18 @@
             "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["Claude Tag", "Anthropic", "Slack", "agents", "async", "Opus 4.8", "LLM UIUX"],
+          "tags": [
+            "Claude Tag",
+            "Anthropic",
+            "Slack",
+            "agents",
+            "async",
+            "Opus 4.8",
+            "LLM UIUX"
+          ],
           "lang": "en",
           "figure": {
             "type": "timeline",
-            "alt": "Claude UIUXの進化タイムライン。第一期2023-2024にブラウザ上のClaude.ai（Web）、第二期2025にClaude Code（Desktop）、第三期2026年6月にClaude Tag（Slack）が登場。Latent SpaceはWeb→Desktop→SlackをLLM UIUX第三の大転換と評価。",
             "data": {
               "headline": "Claude: Web → Desktop → Slack——LLM UIUX第三の大転換",
               "events": [
@@ -369,7 +517,8 @@
               ],
               "narrative": "Latent SpaceはClaude TagをLLM UIUXの「第三の大転換」と評価。Web→Desktopに続き、SlackというチームのOSに常駐するエージェントが日常業務に溶け込む新フェーズの始まり。",
               "impact": "Slackを使うエンジニアチームにとって、コードレビュー・ドキュメント生成・タスク実行が@メンション一つで始められる大きな変化。"
-            }
+            },
+            "alt": "Claude UIUXの進化タイムライン。第一期2023-2024にブラウザ上のClaude.ai（Web）、第二期2025にClaude Code（Desktop）、第三期2026年6月にClaude Tag（Slack）が登場。Latent SpaceはWeb→Desktop→SlackをLLM UIUX第三の大転換と評価。"
           },
           "x_post": "AnthropicがSlack向け「Claude Tag」をベータ公開した。@Claudeとメンションするだけで、コードベースやツールと連携しながらチームの同僚として非同期タスクを自律実行する。基盤モデルはOpus 4.8。Latent SpaceはこれをLLM UIUXの「第三の大転換」（Web→Desktop→Slack）と評した。\n\nhttps://latent.space/p/ainews-claude-tag-multiplayer-proactive"
         },
@@ -397,23 +546,51 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["agentic AI", "training data", "open source", "ablation study", "SWE-bench", "LLM agents"],
+          "tags": [
+            "agentic AI",
+            "training data",
+            "open source",
+            "ablation study",
+            "SWE-bench",
+            "LLM agents"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "OpenThoughts-Agent概要。汎用エージェントモデル学習データパイプラインを完全公開。100超の制御実験、SWE-Smith・SERA・Nemotron-Terminalなど先行研究との差別化、多様なエージェントタスクへの汎化が目的。",
             "data": {
               "headline": "OpenThoughts-Agent: 100超アブレーション実験で最適化した汎用エージェント学習データパイプライン",
               "tldr": "汎用エージェントモデル訓練のためのデータキュレーションパイプラインを完全公開。100超の制御実験で各段階を最適化。SWE-Smithらが単一ベンチマーク特化だった空白を埋める。",
               "points": [
-                { "icon": "🔬", "label": "実験規模", "value": "100超の制御アブレーション", "tone": "primary" },
-                { "icon": "📂", "label": "オープン範囲", "value": "データパイプライン全段階", "tone": "success" },
-                { "icon": "🎯", "label": "目標", "value": "多様なエージェントタスクへの汎化", "tone": "default" },
-                { "icon": "📌", "label": "先行研究との差", "value": "単一ベンチマーク特化を超えた汎化", "note": "SWE-Smith/SERA/Nemotron比", "tone": "info" }
+                {
+                  "icon": "🔬",
+                  "label": "実験規模",
+                  "value": "100超の制御アブレーション",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📂",
+                  "label": "オープン範囲",
+                  "value": "データパイプライン全段階",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "目標",
+                  "value": "多様なエージェントタスクへの汎化",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📌",
+                  "label": "先行研究との差",
+                  "value": "単一ベンチマーク特化を超えた汎化",
+                  "note": "SWE-Smith/SERA/Nemotron比",
+                  "tone": "info"
+                }
               ],
               "narrative": "SWE-SmithやNemotron-Terminalなど先行研究は特定ベンチマーク特化。OT-Agentは汎化性能を重視した完全公開パイプラインで業界の知識ギャップを埋める。",
               "impact": "エージェントモデルの研究開発チームに直ちに使えるオープンデータパイプライン。汎用エージェントの学習コスト低減が期待できる。"
-            }
+            },
+            "alt": "OpenThoughts-Agent概要。汎用エージェントモデル学習データパイプラインを完全公開。100超の制御実験、SWE-Smith・SERA・Nemotron-Terminalなど先行研究との差別化、多様なエージェントタスクへの汎化が目的。"
           }
         }
       ]
@@ -447,25 +624,60 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 28 },
-          "tags": ["NVIDIA", "3D generation", "ArtiFixer", "Wan 2.1", "3D reconstruction", "photo-to-3D"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 28
+          },
+          "tags": [
+            "NVIDIA",
+            "3D generation",
+            "ArtiFixer",
+            "Wan 2.1",
+            "3D reconstruction",
+            "photo-to-3D"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "NVIDIA ArtiFixer概要。複数写真から3Dシーンを生成するAIモデル。Wan 2.1ベース、入力画像にない部分を自己回帰的生成で補完、欠損視点の問題を解決。",
             "data": {
               "headline": "NVIDIA ArtiFixer: 欠損部分を生成で補完する写真→3D再構成モデル",
               "tldr": "NVIDIAが複数写真から3Dシーンを生成するArtiFixer発表。Wan 2.1ベースで入力画像にない部分を自己回帰的生成で補完し高品質3Dを構築。従来3D再構成の欠損視点問題を解決。",
               "points": [
-                { "icon": "🏢", "label": "開発元", "value": "NVIDIA", "tone": "default" },
-                { "icon": "🔧", "label": "ベースモデル", "value": "Wan 2.1（動画生成AI）", "tone": "default" },
-                { "icon": "📸", "label": "入力", "value": "複数の参考写真", "tone": "default" },
-                { "icon": "🔲", "label": "出力", "value": "高品質3Dシーン", "tone": "primary" },
-                { "icon": "✨", "label": "特徴", "value": "欠損部分を生成で自動補完", "tone": "success" }
+                {
+                  "icon": "🏢",
+                  "label": "開発元",
+                  "value": "NVIDIA",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "ベースモデル",
+                  "value": "Wan 2.1（動画生成AI）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📸",
+                  "label": "入力",
+                  "value": "複数の参考写真",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔲",
+                  "label": "出力",
+                  "value": "高品質3Dシーン",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "✨",
+                  "label": "特徴",
+                  "value": "欠損部分を生成で自動補完",
+                  "tone": "success"
+                }
               ],
               "context": "従来のフォトグラメトリーでは未撮影の視点が穴になるが、ArtiFixerはWan 2.1の生成能力を使って穴を埋める。",
               "impact": "フォトグラメトリーやメタバースコンテンツ制作への応用が期待される。撮影コスト削減と3Dモデルの品質向上が同時に実現できる可能性がある。"
-            }
+            },
+            "alt": "NVIDIA ArtiFixer概要。複数写真から3Dシーンを生成するAIモデル。Wan 2.1ベース、入力画像にない部分を自己回帰的生成で補完、欠損視点の問題を解決。"
           }
         },
         {
@@ -492,25 +704,59 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 53 },
-          "tags": ["Krea 2", "image generation", "open model", "ComfyUI", "local generation"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 53
+          },
+          "tags": [
+            "Krea 2",
+            "image generation",
+            "open model",
+            "ComfyUI",
+            "local generation"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "Krea 2オープンモデル化の要点。KreaがKrea 2を公開モデル化。ComfyUI対応でローカル生成可能、実写風・イラスト風の両スタイル対応、Technical Report同時公開。",
             "data": {
               "headline": "Krea 2 オープンモデル化: ComfyUI対応・実写・イラスト双方に高品質生成",
               "tldr": "Krea AIが画像生成AI「Krea 2」をオープンモデル化。実写風・イラスト風どちらも高品質生成が可能で、ComfyUIへの対応も完了しローカル環境で即利用できる。",
               "points": [
-                { "icon": "🔓", "label": "ライセンス", "value": "オープンモデル化", "tone": "primary" },
-                { "icon": "🖼️", "label": "生成スタイル", "value": "実写風・イラスト風両対応", "tone": "default" },
-                { "icon": "🔌", "label": "UI統合", "value": "ComfyUI対応済み", "tone": "success" },
-                { "icon": "🖥️", "label": "実行環境", "value": "ローカル生成可能", "tone": "default" },
-                { "icon": "📄", "label": "技術文書", "value": "Technical Report公開", "tone": "info" }
+                {
+                  "icon": "🔓",
+                  "label": "ライセンス",
+                  "value": "オープンモデル化",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🖼️",
+                  "label": "生成スタイル",
+                  "value": "実写風・イラスト風両対応",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "UI統合",
+                  "value": "ComfyUI対応済み",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🖥️",
+                  "label": "実行環境",
+                  "value": "ローカル生成可能",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📄",
+                  "label": "技術文書",
+                  "value": "Technical Report公開",
+                  "tone": "info"
+                }
               ],
               "context": "KreaはStable Diffusionなどと競合する画像生成AIで、これまでクローズドなサービスとして提供。オープンモデル化で独自の強みをコミュニティに開放した。",
               "impact": "ローカル画像生成コミュニティに新たな選択肢が加わる。ComfyUI統合で既存ワークフローにすぐ組み込める点が特に実用的。"
-            }
+            },
+            "alt": "Krea 2オープンモデル化の要点。KreaがKrea 2を公開モデル化。ComfyUI対応でローカル生成可能、実写風・イラスト風の両スタイル対応、Technical Report同時公開。"
           }
         }
       ]
@@ -544,24 +790,56 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["quantum computing", "LDPC codes", "LLM", "error correction", "algebraic", "arXiv"],
+          "tags": [
+            "quantum computing",
+            "LDPC codes",
+            "LLM",
+            "error correction",
+            "algebraic",
+            "arXiv"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "LLMによる量子LDPC（qLDPC）コード発見の仕組み。SCEフレームワークがLLMと代数的変異文法を組み合わせて離散最適化を実行。liftedプロダクトコード族という量子CSS構造を発見。量子コンピュータの誤り訂正精度向上に貢献。",
             "data": {
               "headline": "LLMが量子誤り訂正コードの新族を発見——SCEフレームワークが離散最適化の壁を突破",
               "tldr": "LLMと代数的変異文法を組み合わせたSCEフレームワークを提案。量子LDPC（qLDPC）コードの離散最適化という難問に適用し、liftedプロダクトコードという新しい量子CSS構造の族を発見した。",
               "points": [
-                { "icon": "🔬", "label": "フレームワーク", "value": "SCE（構造化概念進化）", "tone": "primary" },
-                { "icon": "🤖", "label": "役割", "value": "LLMが設計エージェントとして機能", "tone": "default" },
-                { "icon": "🧮", "label": "変異操作", "value": "代数的変異文法", "tone": "info" },
-                { "icon": "✅", "label": "発見物", "value": "liftedプロダクトコード族（CSS構造）", "tone": "success" },
-                { "icon": "💡", "label": "意義", "value": "量子コンピュータの誤り訂正精度向上に貢献", "tone": "default" }
+                {
+                  "icon": "🔬",
+                  "label": "フレームワーク",
+                  "value": "SCE（構造化概念進化）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "役割",
+                  "value": "LLMが設計エージェントとして機能",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🧮",
+                  "label": "変異操作",
+                  "value": "代数的変異文法",
+                  "tone": "info"
+                },
+                {
+                  "icon": "✅",
+                  "label": "発見物",
+                  "value": "liftedプロダクトコード族（CSS構造）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💡",
+                  "label": "意義",
+                  "value": "量子コンピュータの誤り訂正精度向上に貢献",
+                  "tone": "default"
+                }
               ],
               "context": "量子コンピュータの実用化には誤り訂正が必須。qLDPCコードは有望な手法だが設計が難問だった。LLMをこの離散最適化に活用するアプローチは新しい。",
               "impact": "LLMを科学的発見の道具として使う事例が増加している。量子コンピューティングとLLMの融合という新領域の可能性を示す。"
-            }
+            },
+            "alt": "LLMによる量子LDPC（qLDPC）コード発見の仕組み。SCEフレームワークがLLMと代数的変異文法を組み合わせて離散最適化を実行。liftedプロダクトコード族という量子CSS構造を発見。量子コンピュータの誤り訂正精度向上に貢献。"
           }
         },
         {
@@ -588,24 +866,56 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["agent memory", "LLM agents", "memory systems", "evaluation", "RAG", "lifecycle"],
+          "tags": [
+            "agent memory",
+            "LLM agents",
+            "memory systems",
+            "evaluation",
+            "RAG",
+            "lifecycle"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "エージェントメモリシステムの進化と評価の問題点。単純なRAGから永続保存・取得・更新・ライフサイクル管理を持つデータ管理システムへ進化。しかし評価はF1/BLEUのブラックボックスに依存し、運用コストやアーキテクチャトレードオフが見えていない。",
             "data": {
               "headline": "エージェントメモリの進化と評価の乖離——F1/BLEUブラックボックスの限界を指摘",
               "tldr": "LLMエージェントのメモリは単純なRAGから複雑なデータ管理システムに進化した。しかし現行評価はF1/BLEUのエンドツーエンド指標に依存しシステム内部をブラックボックス化。運用コストやアーキテクチャトレードオフが評価できていない。",
               "points": [
-                { "icon": "📈", "label": "メモリの進化", "value": "RAG→永続保存・ライフサイクル管理", "tone": "default" },
-                { "icon": "❌", "label": "現行評価の問題", "value": "F1/BLEUブラックボックス評価", "tone": "danger" },
-                { "icon": "🔍", "label": "見えていない課題", "value": "運用コスト・アーキテクチャトレードオフ", "tone": "warning" },
-                { "icon": "🔑", "label": "論文の提言", "value": "システムレベル評価基準の必要性", "tone": "info" },
-                { "icon": "🔄", "label": "新概念", "value": "ライフサイクルガバナンス設計", "tone": "success" }
+                {
+                  "icon": "📈",
+                  "label": "メモリの進化",
+                  "value": "RAG→永続保存・ライフサイクル管理",
+                  "tone": "default"
+                },
+                {
+                  "icon": "❌",
+                  "label": "現行評価の問題",
+                  "value": "F1/BLEUブラックボックス評価",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "見えていない課題",
+                  "value": "運用コスト・アーキテクチャトレードオフ",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔑",
+                  "label": "論文の提言",
+                  "value": "システムレベル評価基準の必要性",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "新概念",
+                  "value": "ライフサイクルガバナンス設計",
+                  "tone": "success"
+                }
               ],
               "context": "エージェントシステムが実運用に入るにつれメモリ設計が重要になってきたが、それを正しく評価する枠組みがまだ整備されていない。",
               "impact": "エージェントシステムを設計・評価する開発者は、F1/BLEUだけでなくシステムコスト・ライフサイクル管理の視点を評価に組み込む必要がある。"
-            }
+            },
+            "alt": "エージェントメモリシステムの進化と評価の問題点。単純なRAGから永続保存・取得・更新・ライフサイクル管理を持つデータ管理システムへ進化。しかし評価はF1/BLEUのブラックボックスに依存し、運用コストやアーキテクチャトレードオフが見えていない。"
           }
         },
         {
@@ -632,11 +942,18 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Anthropic", "Fable", "Mythos", "AI safety", "jailbreak", "regulation", "export control"],
+          "tags": [
+            "Anthropic",
+            "Fable",
+            "Mythos",
+            "AI safety",
+            "jailbreak",
+            "regulation",
+            "export control"
+          ],
           "lang": "en",
           "figure": {
             "type": "timeline",
-            "alt": "Fable/Mythosをめぐる出来事の経緯。Anthropicがサイバー能力を持つMythos 5を開発、公開版Fable 5をリリース、Amazon研究者がジェイルブレイク成功を示し、外国籍ユーザーのアクセスが制限された。",
             "data": {
               "headline": "Fable/Mythos規制の経緯——開発から輸出規制による外国籍アクセス制限まで",
               "events": [
@@ -671,7 +988,8 @@
               ],
               "narrative": "Fable規制はAnthropicが自社最高モデルの能力を率直に開示したことが国際的な規制問題に発展した事例。AIの透明性と安全保障の緊張を示す。",
               "impact": "AIフロンティア企業が能力評価を公表することのリスクが改めて浮き彫りになった。国際的なAI輸出規制が自社従業員にも影響する先例となる。"
-            }
+            },
+            "alt": "Fable/Mythosをめぐる出来事の経緯。Anthropicがサイバー能力を持つMythos 5を開発、公開版Fable 5をリリース、Amazon研究者がジェイルブレイク成功を示し、外国籍ユーザーのアクセスが制限された。"
           }
         }
       ]
@@ -705,24 +1023,57 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["Qualcomm", "Modular", "acquisition", "chip software", "Mojo", "AI infrastructure"],
+          "tags": [
+            "Qualcomm",
+            "Modular",
+            "acquisition",
+            "chip software",
+            "Mojo",
+            "AI infrastructure"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "Qualcomm/Modular買収案件の概要。QualcommがAIチップソフトスタック新興Modularを約40億ドルで買収。ModularはMojoプログラミング言語でAIインフラの開発ツールを提供。Wiredはこれをマルチビリオンダラーの大型エグジットと報道。",
             "data": {
               "headline": "Qualcomm、AIソフトスタック新興Modularを約40億ドルで買収",
               "tldr": "QualcommがModularを約40億ドルで買収。WiredはModularを「AI時代最有望チップソフトスタートアップの一つ」と評価。ModularはMojo言語などAIインフラ開発ツールを手がけていた。",
               "points": [
-                { "icon": "🤝", "label": "買収企業", "value": "Qualcomm", "tone": "default" },
-                { "icon": "🎯", "label": "買収対象", "value": "Modular（チップソフト新興）", "tone": "default" },
-                { "icon": "💰", "label": "買収額", "value": "約40億ドル（nearly $4B）", "tone": "primary" },
-                { "icon": "💡", "label": "Modularの強み", "value": "AIインフラ開発ツールチェーン", "note": "Mojo言語など", "tone": "info" },
-                { "icon": "🔑", "label": "戦略的意図", "value": "エッジ・モバイルAIソフト強化", "tone": "default" }
+                {
+                  "icon": "🤝",
+                  "label": "買収企業",
+                  "value": "Qualcomm",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "買収対象",
+                  "value": "Modular（チップソフト新興）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💰",
+                  "label": "買収額",
+                  "value": "約40億ドル（nearly $4B）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💡",
+                  "label": "Modularの強み",
+                  "value": "AIインフラ開発ツールチェーン",
+                  "note": "Mojo言語など",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔑",
+                  "label": "戦略的意図",
+                  "value": "エッジ・モバイルAIソフト強化",
+                  "tone": "default"
+                }
               ],
               "context": "NVIDIAのCUDA依存からの脱却を目指す各社がAIインフラソフト技術の取得を急いでいる。Qualcommにとってはエッジデバイス向けAI最適化の強化が狙い。",
               "impact": "AIチップソフトウェアスタックの争奪戦が加速。オープンソースAIツールや代替ソフトインフラへの投資・買収が今後も続く可能性が高い。"
-            }
+            },
+            "alt": "Qualcomm/Modular買収案件の概要。QualcommがAIチップソフトスタック新興Modularを約40億ドルで買収。ModularはMojoプログラミング言語でAIインフラの開発ツールを提供。Wiredはこれをマルチビリオンダラーの大型エグジットと報道。"
           },
           "x_post": "QualcommがAIチップソフトスタック新興「Modular」を約40億ドルで買収すると明らかになった。WiredはModularを「AI時代で最も有望なチップソフトスタートアップの一つ」と評している。ModularはMojoプログラミング言語などAIインフラ開発ツールを手がけていた。\n\nhttps://wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-dollar4-billion"
         },
@@ -750,15 +1101,26 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["Oracle", "layoffs", "AI automation", "SEC filing", "workforce reduction"],
+          "tags": [
+            "Oracle",
+            "layoffs",
+            "AI automation",
+            "SEC filing",
+            "workforce reduction"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "alt": "Oracleの社員数比較。2025年度申告：162,000名、2026年度申告：141,000名。差分：21,000名削減（12.9%）。AI導入をSEC申告書に削減理由として明記。",
             "data": {
               "headline": "Oracle: 1年間で2万1,000人削減——AIを削減理由としてSEC申告に明記",
-              "before": { "label": "2025年SEC申告", "sublabel": "前年度末（2024/05/31）" },
-              "after": { "label": "2026年SEC申告", "sublabel": "当年度末（2025/05/31）" },
+              "before": {
+                "label": "2025年SEC申告",
+                "sublabel": "前年度末（2024/05/31）"
+              },
+              "after": {
+                "label": "2026年SEC申告",
+                "sublabel": "当年度末（2025/05/31）"
+              },
               "metrics": [
                 {
                   "icon": "👥",
@@ -774,7 +1136,8 @@
               ],
               "narrative": "OracleはSEC申告書に「AIテクノロジーの採用・展開が今後も人員削減をもたらす可能性がある」と明示。大手企業がAI自動化による雇用削減を公式申告書に記載した注目の事例。",
               "impact": "大企業がAI導入による雇用削減をSECに公式開示する前例を作った。規制当局や投資家がAI自動化の雇用影響を把握する上での新たな報告基準となる可能性がある。"
-            }
+            },
+            "alt": "Oracleの社員数比較。2025年度申告：162,000名、2026年度申告：141,000名。差分：21,000名削減（12.9%）。AI導入をSEC申告書に削減理由として明記。"
           }
         }
       ]
@@ -808,23 +1171,50 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["Anthropic", "Dario Amodei", "Trump", "White House", "AI policy", "regulation"],
+          "tags": [
+            "Anthropic",
+            "Dario Amodei",
+            "Trump",
+            "White House",
+            "AI policy",
+            "regulation"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "alt": "AnthropicとトランプWHの関係悪化。Dario AmodeiがWH高リスク会合から排除されTom Brownが代理出席。政府高官がDarioを「weirdo」と呼ぶ発言も報告。Fable/Mythos規制問題が背景にある。",
             "data": {
               "headline": "AnthropicとトランプWHの対立——Dario AmodeiがWH会合から排除",
               "tldr": "Wired報道によれば、WH重要会合でAnthropicはCEO Dario AmodeiをTom Brownに交代。政府高官がDarioを「weirdo」と呼ぶ発言も。Fable/Mythos規制問題が背景にある。",
               "points": [
-                { "icon": "🔄", "label": "出席者交代", "value": "Dario Amodei→Tom Brown（共同創業者）", "tone": "warning" },
-                { "icon": "💬", "label": "政府高官発言", "value": "Darioを「weirdo（奇人）」と表現", "tone": "danger" },
-                { "icon": "⚖️", "label": "背景の対立", "value": "Fable/Mythos輸出規制問題", "tone": "default" },
-                { "icon": "🏛️", "label": "構図", "value": "AI安全性 vs トランプ政権の政策志向", "tone": "info" }
+                {
+                  "icon": "🔄",
+                  "label": "出席者交代",
+                  "value": "Dario Amodei→Tom Brown（共同創業者）",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "💬",
+                  "label": "政府高官発言",
+                  "value": "Darioを「weirdo（奇人）」と表現",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "背景の対立",
+                  "value": "Fable/Mythos輸出規制問題",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "構図",
+                  "value": "AI安全性 vs トランプ政権の政策志向",
+                  "tone": "info"
+                }
               ],
               "context": "AnthropicはAI安全性を最優先するスタンスを維持しており、トランプ政権のAI開発加速・規制緩和志向と衝突している。Fable/Mythosモデルの輸出規制問題が直接の引き金。",
               "impact": "米国のAIフロンティア企業と政府の関係が、AI安全性スタンスによって二分化しつつあることを示す。今後のAI規制形成に影響が出る可能性がある。"
-            }
+            },
+            "alt": "AnthropicとトランプWHの関係悪化。Dario AmodeiがWH高リスク会合から排除されTom Brownが代理出席。政府高官がDarioを「weirdo」と呼ぶ発言も報告。Fable/Mythos規制問題が背景にある。"
           },
           "x_post": "Wired報道によれば、AnthropicはWHとの高リスク会合でCEO Dario AmodeiをTom Brownに交代させていた。政府高官がDarioを「weirdo」と呼んでいるという。Fable/Mythos輸出規制問題が背景にあり、AnthropicとトランプWHの対立が表面化している。\n\nhttps://wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei"
         }
@@ -860,24 +1250,56 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "tags": ["終末期医療", "AI相談", "NHK", "はてブ人気", "医療AI", "高齢者"],
+          "tags": [
+            "終末期医療",
+            "AI相談",
+            "NHK",
+            "はてブ人気",
+            "医療AI",
+            "高齢者"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "NHKクロ現が取材した末期がん86歳のAI相談事例。はてブ310件の大きな反響。終末期において本音を打ち明けられる相手としてAIが機能した体験談を本人・家族・医師の視点から報告。",
             "data": {
               "headline": "「本当の気持ちを話せる存在」——末期がん86歳のAI相談体験がNHKクロ現に",
               "tldr": "NHKクロ現取材：末期がんの86歳が「最後の相談相手」としてAIを活用する実例。本人・家族・医師の声を取材。はてブ310件を記録した終末期×AI利用の問題提起。",
               "points": [
-                { "icon": "📺", "label": "メディア", "value": "NHKクロ現", "tone": "default" },
-                { "icon": "👴", "label": "主人公", "value": "末期がん・86歳", "tone": "default" },
-                { "icon": "💬", "label": "AIの使われ方", "value": "「本音を話せる最後の相談相手」", "tone": "primary" },
-                { "icon": "🔖", "label": "はてブ反響", "value": "310件", "tone": "info" },
-                { "icon": "🏥", "label": "取材視点", "value": "本人・家族・医師それぞれ", "tone": "default" }
+                {
+                  "icon": "📺",
+                  "label": "メディア",
+                  "value": "NHKクロ現",
+                  "tone": "default"
+                },
+                {
+                  "icon": "👴",
+                  "label": "主人公",
+                  "value": "末期がん・86歳",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💬",
+                  "label": "AIの使われ方",
+                  "value": "「本音を話せる最後の相談相手」",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔖",
+                  "label": "はてブ反響",
+                  "value": "310件",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏥",
+                  "label": "取材視点",
+                  "value": "本人・家族・医師それぞれ",
+                  "tone": "default"
+                }
               ],
               "context": "終末期医療において、患者が家族や医師に本音を言えない場面でAIが補完的な役割を果たしているという実態をNHKが取材。AIの医療現場での活用事例として注目。",
               "impact": "終末期・高齢者介護という難しい社会課題にAIが具体的に関与している実例として、日本のコミュニティで大きな共感と議論を呼んだ。"
-            }
+            },
+            "alt": "NHKクロ現が取材した末期がん86歳のAI相談事例。はてブ310件の大きな反響。終末期において本音を打ち明けられる相手としてAIが機能した体験談を本人・家族・医師の視点から報告。"
           },
           "x_post": "NHKクロ現が末期がんの86歳がAIを「最後の相談相手」として活用する実例を取材した。「本当の気持ちを話せる存在がいなかった」という言葉とともに、本人・家族・医師それぞれの声を報告。はてブ310件を集める反響となった。\n\nhttps://www.nhk.or.jp/gendai/articles/4953/"
         },
@@ -906,23 +1328,50 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "tags": ["オートリザーブ", "AIエージェント", "予約代行", "飲食店", "副作用", "はてブ人気"],
+          "tags": [
+            "オートリザーブ",
+            "AIエージェント",
+            "予約代行",
+            "飲食店",
+            "副作用",
+            "はてブ人気"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "FNN報道：AI予約代行「オートリザーブ」が飲食店に与える影響。AIが自動予約する仕組みで無断キャンセル・架空予約問題が発生。はてブ104件の反響。AIエージェントの現実世界での副作用事例。",
             "data": {
               "headline": "AI予約代行「オートリザーブ」——AIエージェントが飲食店に与える予期せぬ副作用",
               "tldr": "FNN報道：AIが自動で飲食店予約を行う「オートリザーブ」で無断キャンセル・架空予約問題が発生。飲食店から悲鳴の声。はてブ104件の反響。",
               "points": [
-                { "icon": "🤖", "label": "サービス", "value": "オートリザーブ（AI予約代行）", "tone": "default" },
-                { "icon": "😰", "label": "飲食店の問題", "value": "無断キャンセル・架空予約", "tone": "danger" },
-                { "icon": "📺", "label": "メディア", "value": "FNNプライムオンライン", "tone": "default" },
-                { "icon": "🔖", "label": "はてブ反響", "value": "104件", "tone": "info" }
+                {
+                  "icon": "🤖",
+                  "label": "サービス",
+                  "value": "オートリザーブ（AI予約代行）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "😰",
+                  "label": "飲食店の問題",
+                  "value": "無断キャンセル・架空予約",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "📺",
+                  "label": "メディア",
+                  "value": "FNNプライムオンライン",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔖",
+                  "label": "はてブ反響",
+                  "value": "104件",
+                  "tone": "info"
+                }
               ],
               "context": "AIエージェントが人間の代わりに外部サービスと連携する予約代行サービスが普及しつつある一方、店舗側が被るノーショー・架空予約という新しい問題も生まれている。",
               "impact": "AIエージェントが第三者（店舗・事業者）に与える副作用・責任帰属問題は、今後のAI活用ルール整備の議論を加速させる可能性がある。"
-            }
+            },
+            "alt": "FNN報道：AI予約代行「オートリザーブ」が飲食店に与える影響。AIが自動予約する仕組みで無断キャンセル・架空予約問題が発生。はてブ104件の反響。AIエージェントの現実世界での副作用事例。"
           }
         }
       ]
@@ -956,15 +1405,27 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["PLaMo", "Preferred Networks", "PFN", "国産LLM", "256K", "推論強化"],
+          "tags": [
+            "PLaMo",
+            "Preferred Networks",
+            "PFN",
+            "国産LLM",
+            "256K",
+            "推論強化"
+          ],
           "lang": "ja",
           "figure": {
             "type": "comparison",
-            "alt": "PLaMo 3.0 Primeの主要スペック変化。コンテキスト長が64K→256Kトークンへ4倍拡張。推論能力を大幅強化し、gpt-oss-120b、Qwen3.6-27b、GPT-5.4 Mini、Claude Haiku 4.5と比較して競争力を示した。",
             "data": {
               "headline": "PLaMo 3.0 Prime：コンテキスト4倍・推論強化で国産AIの新基準",
-              "before": { "label": "PLaMo 2.x", "sublabel": "前モデル" },
-              "after": { "label": "PLaMo 3.0 Prime", "sublabel": "新リリース（2026-06-24）" },
+              "before": {
+                "label": "PLaMo 2.x",
+                "sublabel": "前モデル"
+              },
+              "after": {
+                "label": "PLaMo 3.0 Prime",
+                "sublabel": "新リリース（2026-06-24）"
+              },
               "metrics": [
                 {
                   "icon": "📄",
@@ -980,7 +1441,8 @@
               ],
               "narrative": "PFNが国産LLMのコンテキスト長を64K→256Kへ4倍拡張。推論能力も大幅強化し、gpt-oss-120b・Qwen3.6-27b・GPT-5.4 Mini・Claude Haiku 4.5と比較してPLaMo 3.0 Primeの競争力を示した。",
               "impact": "日本語LLM国産モデルの実用性水準が大幅向上。日本企業ユーザーが海外モデルへの依存を低減できる選択肢として、産業AI化の加速が期待される。"
-            }
+            },
+            "alt": "PLaMo 3.0 Primeの主要スペック変化。コンテキスト長が64K→256Kトークンへ4倍拡張。推論能力を大幅強化し、gpt-oss-120b、Qwen3.6-27b、GPT-5.4 Mini、Claude Haiku 4.5と比較して競争力を示した。"
           },
           "x_post": "PFNがPLaMo 3.0 Primeをリリース。コンテキスト長を64K→256Kトークンへ4倍拡張し推論能力を大幅強化。gpt-oss-120b、Qwen3.6-27b、GPT-5.4 Mini、Claude Haiku 4.5との比較で国産AIの新基準を示した。\n\nhttps://tech.preferred.jp/ja/blog/plamo-3-0-prime/"
         },
@@ -1009,24 +1471,56 @@
             "source_type_bias": 0,
             "reaction_boost": 2
           },
-          "tags": ["Open Notebook", "NotebookLM", "RAG", "OSS", "自己ホスト", "はてブ人気"],
+          "tags": [
+            "Open Notebook",
+            "NotebookLM",
+            "RAG",
+            "OSS",
+            "自己ホスト",
+            "はてブ人気"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "Open NotebookはNotebookLMにインスパイアされたOSS。はてブ452件の大反響。自己ホスト型RAGでユーザー指定ドキュメントのみのQ&Aを実現。外部にデータを送らない完全プライベートなドキュメント解析ツール。",
             "data": {
               "headline": "Open Notebook——NotebookLMをOSSで再現、自前RAGを完全無料・プライベートに",
               "tldr": "NotebookLMにインスパイアされたOSS「Open Notebook」がはてブ452件の大反響。ユーザー自身のドキュメントだけを対象としたRAGシステムを完全自己ホストで構築可能。",
               "points": [
-                { "icon": "📓", "label": "プロジェクト", "value": "Open Notebook（OSS）", "tone": "default" },
-                { "icon": "💡", "label": "モデル", "value": "NotebookLM（Google）にインスパイア", "tone": "default" },
-                { "icon": "🔒", "label": "プライバシー", "value": "ユーザー指定ドキュメントのみ・外部送信なし", "tone": "primary" },
-                { "icon": "🔖", "label": "はてブ反響", "value": "452件", "tone": "info" },
-                { "icon": "💰", "label": "コスト", "value": "完全無料・自己ホスト", "tone": "default" }
+                {
+                  "icon": "📓",
+                  "label": "プロジェクト",
+                  "value": "Open Notebook（OSS）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💡",
+                  "label": "モデル",
+                  "value": "NotebookLM（Google）にインスパイア",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "プライバシー",
+                  "value": "ユーザー指定ドキュメントのみ・外部送信なし",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔖",
+                  "label": "はてブ反響",
+                  "value": "452件",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💰",
+                  "label": "コスト",
+                  "value": "完全無料・自己ホスト",
+                  "tone": "default"
+                }
               ],
               "context": "GoogleのNotebookLMが人気を博す中、データプライバシーを重視するユーザーや企業がOSSで同等機能を自前構築したいというニーズが高まっている。",
               "impact": "RAGによるドキュメントQ&AをOSSで簡単に自己ホストできる選択肢が増え、企業や研究者の内部ナレッジ管理のAI化が加速する可能性がある。"
-            }
+            },
+            "alt": "Open NotebookはNotebookLMにインスパイアされたOSS。はてブ452件の大反響。自己ホスト型RAGでユーザー指定ドキュメントのみのQ&Aを実現。外部にデータを送らない完全プライベートなドキュメント解析ツール。"
           }
         },
         {
@@ -1054,11 +1548,17 @@
             "source_type_bias": 0,
             "reaction_boost": 0
           },
-          "tags": ["富士通", "PHOTON", "LLMアーキテクチャ", "Transformer代替", "GPU推論", "はてブ"],
+          "tags": [
+            "富士通",
+            "PHOTON",
+            "LLMアーキテクチャ",
+            "Transformer代替",
+            "GPU推論",
+            "はてブ"
+          ],
           "lang": "ja",
           "figure": {
             "type": "metric-bars",
-            "alt": "富士通PHOTONとTransformerの速度比較。PHOTONはTransformerより最大475倍高速とされる（富士通発表値）。GPU上での推論効率を大幅改善するLLMアーキテクチャ。",
             "data": {
               "headline": "富士通PHOTON vs Transformer——最大475倍の推論速度向上を主張",
               "bars": [
@@ -1079,7 +1579,8 @@
               ],
               "narrative": "富士通が発表したLLMアーキテクチャ「PHOTON」はTransformerと比較して最大475倍の高速化を実現するとしている（富士通発表値）。GPU上での推論効率大幅改善が特徴。",
               "impact": "Transformer代替アーキテクチャの研究が世界的に加速する中、日本の大手IT企業が独自アーキテクチャを発表したことでAI基盤技術開発の国内競争が活性化する可能性がある。"
-            }
+            },
+            "alt": "富士通PHOTONとTransformerの速度比較。PHOTONはTransformerより最大475倍高速とされる（富士通発表値）。GPU上での推論効率を大幅改善するLLMアーキテクチャ。"
           }
         },
         {
@@ -1107,36 +1608,46 @@
             "source_type_bias": -1,
             "reaction_boost": 1
           },
-          "tags": ["サイバネティクス", "ループエンジニアリング", "AI開発", "Peter Steinberger", "はてブ人気", "vibe coding"],
+          "tags": [
+            "サイバネティクス",
+            "ループエンジニアリング",
+            "AI開発",
+            "Peter Steinberger",
+            "はてブ人気",
+            "vibe coding"
+          ],
           "lang": "en",
           "figure": {
             "type": "timeline",
-            "alt": "ループエンジニアリングとサイバネティクスの歴史的対比。1948年Wienerのサイバネティクス提唱から現代のAIエージェントループまでのフィードバック制御思想の系譜。",
             "data": {
               "headline": "ループエンジニアリングの系譜——サイバネティクスからAIエージェントへ",
               "events": [
                 {
-                  "date": "1948年",
+                  "when": "1948年",
                   "label": "サイバネティクス誕生",
                   "description": "Norbert Wienerが「サイバネティクス」を提唱。フィードバック制御論として機械・生物・社会における制御と通信の原理を定式化",
+                  "status": "past",
                   "tone": "default"
                 },
                 {
-                  "date": "〜2020年代",
+                  "when": "〜2020年代",
                   "label": "従来のソフトウェア開発",
                   "description": "人間が仕様→実装→テスト→修正のループを手動で回す。フィードバックサイクルは遅く・コスト高",
+                  "status": "past",
                   "tone": "default"
                 },
                 {
-                  "date": "2024-2026年",
+                  "when": "2024-2026年",
                   "label": "AIエージェントループの台頭",
                   "description": "AIが実装→テスト→修正を自律的に反復するループエンジニアリング。Peter SteinbergerはこれをWienerのサイバネティクスの再発見と論じる",
+                  "status": "now",
                   "tone": "primary"
                 }
               ],
               "narrative": "PSPDFKit創業者Peter Steinbergerが「ループエンジニアリングはサイバネティクスの再発見」と論じ、はてブ136件の反響。AI駆動開発の本質を1948年の制御理論から読み解く歴史的視点。",
               "impact": "AI時代のソフトウェア開発を歴史的・理論的に位置づける視点として、エンジニア・研究者コミュニティでの議論を促している。"
-            }
+            },
+            "alt": "ループエンジニアリングとサイバネティクスの歴史的対比。1948年Wienerのサイバネティクス提唱から現代のAIエージェントループまでのフィードバック制御思想の系譜。"
           }
         },
         {
@@ -1164,23 +1675,50 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "tags": ["AI駆動開発", "チーム開発", "vibe coding", "はてブ人気", "Zenn", "組織AI活用"],
+          "tags": [
+            "AI駆動開発",
+            "チーム開発",
+            "vibe coding",
+            "はてブ人気",
+            "Zenn",
+            "組織AI活用"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "alt": "Zenn記事「チームで回るAI駆動開発ループ」の概要。はてブ119件の反響。個人のバイブコーディング・AIエージェント利用からチーム・組織全体のAI駆動開発への拡張方法論を実践的に論じた記事。",
             "data": {
               "headline": "チームで機能するAI駆動開発ループ——個人実践から組織展開へ",
               "tldr": "Zenn記事がはてブ119件。個人のバイブコーディング・AIエージェント利用をチーム・組織で機能させるループ設計の実践知識をまとめた。日本語開発者コミュニティで広く共有。",
               "points": [
-                { "icon": "👤", "label": "個人利用の課題", "value": "一人AI活用は成功しやすいがチーム展開が難しい", "tone": "default" },
-                { "icon": "👥", "label": "チーム拡張", "value": "組織でAI駆動開発ループを回す設計方法論", "tone": "primary" },
-                { "icon": "🔖", "label": "はてブ反響", "value": "119件", "tone": "info" },
-                { "icon": "📝", "label": "媒体", "value": "Zenn（日本語技術ブログ）", "tone": "default" }
+                {
+                  "icon": "👤",
+                  "label": "個人利用の課題",
+                  "value": "一人AI活用は成功しやすいがチーム展開が難しい",
+                  "tone": "default"
+                },
+                {
+                  "icon": "👥",
+                  "label": "チーム拡張",
+                  "value": "組織でAI駆動開発ループを回す設計方法論",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔖",
+                  "label": "はてブ反響",
+                  "value": "119件",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📝",
+                  "label": "媒体",
+                  "value": "Zenn（日本語技術ブログ）",
+                  "tone": "default"
+                }
               ],
               "context": "AI駆動開発（バイブコーディング・AIエージェントによるループ実行）の個人利用は広まりつつあるが、チームや組織全体への展開においてはワークフロー設計・権限管理・品質管理の課題がある。",
               "impact": "日本語開発者コミュニティが個人レベルを超えてチーム・組織でのAI開発実践を積極的に議論・共有するフェーズに移行しつつある。"
-            }
+            },
+            "alt": "Zenn記事「チームで回るAI駆動開発ループ」の概要。はてブ119件の反響。個人のバイブコーディング・AIエージェント利用からチーム・組織全体のAI駆動開発への拡張方法論を実践的に論じた記事。"
           }
         }
       ]
@@ -1214,23 +1752,50 @@
             "total": 10,
             "source_type_bias": 0
           },
-          "tags": ["WAIC 2026", "SAIL賞", "中国AI", "表彰", "量子位", "世界人工知能大会"],
+          "tags": [
+            "WAIC 2026",
+            "SAIL賞",
+            "中国AI",
+            "表彰",
+            "量子位",
+            "世界人工知能大会"
+          ],
           "lang": "zh",
           "figure": {
             "type": "summary-card",
-            "alt": "WAIC 2026 SAIL賞の概要。TOP30プロジェクトと青年優秀論文TOP20を発表。「卓越人工智能引領者奖」も授与。中国AI業界の権威ある年次表彰として、中国AI産業・学術の最前線を示す。",
             "data": {
               "headline": "WAIC 2026 SAIL賞TOP30・青年論文TOP20発表——中国AI業界の年次最高表彰",
               "tldr": "世界人工知能大会（WAIC 2026）でSAIL賞TOP30プロジェクトと青年優秀論文TOP20を発表。「卓越人工智能引領者奖」も授与。中国AI産業・学術の最前線を示す権威ある表彰。",
               "points": [
-                { "icon": "🏆", "label": "表彰", "value": "SAIL賞（卓越人工智能引領者奖）TOP30", "tone": "primary" },
-                { "icon": "📄", "label": "論文", "value": "青年優秀論文 TOP20", "tone": "default" },
-                { "icon": "🌐", "label": "会議", "value": "WAIC 2026（世界人工知能大会）", "tone": "default" },
-                { "icon": "📍", "label": "開催地", "value": "上海", "tone": "default" }
+                {
+                  "icon": "🏆",
+                  "label": "表彰",
+                  "value": "SAIL賞（卓越人工智能引領者奖）TOP30",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📄",
+                  "label": "論文",
+                  "value": "青年優秀論文 TOP20",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "会議",
+                  "value": "WAIC 2026（世界人工知能大会）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📍",
+                  "label": "開催地",
+                  "value": "上海",
+                  "tone": "default"
+                }
               ],
               "context": "WAICは中国政府・上海市が主導する最大のAI国際会議。SAIL賞は政府機関・学術界・産業界が共同で選定する権威ある表彰で、中国のAI政策方向性を反映する。",
               "impact": "受賞プロジェクト・論文は中国AI研究の重点領域を示す指標となり、国際的なAI競争の文脈で注目される。"
-            }
+            },
+            "alt": "WAIC 2026 SAIL賞の概要。TOP30プロジェクトと青年優秀論文TOP20を発表。「卓越人工智能引領者奖」も授与。中国AI業界の権威ある年次表彰として、中国AI産業・学術の最前線を示す。"
           }
         },
         {
@@ -1257,23 +1822,52 @@
             "total": 11,
             "source_type_bias": 0
           },
-          "tags": ["Claude Code", "Karpathy", "LLM変革", "Anthropic", "量子位", "中国語メディア"],
+          "tags": [
+            "Claude Code",
+            "Karpathy",
+            "LLM変革",
+            "Anthropic",
+            "量子位",
+            "中国語メディア"
+          ],
           "lang": "zh",
           "figure": {
             "type": "summary-card",
-            "alt": "量子位によるClaude Code大アップグレード報道。Karpathyが「LLM第三の変革」と評価。Anthropicの製品コード約65%がClaude Tag参与完成との数字が量子位原文に記載（注：量子位が引用する数字のため原典要確認）。",
             "data": {
               "headline": "Karpathy「Claude CodeはLLM第三の変革」——量子位が詳報",
               "tldr": "量子位（中国）がClaude Code大規模アップグレードを詳報。Karpathyが「chatbots→copilotsに続くLLMの第三の変革」と評価。量子位原文には「A社約65%の製品コードがClaude Tag参与で完成」との数字が記載。",
               "points": [
-                { "icon": "🔧", "label": "製品", "value": "Claude Code（大規模アップグレード）", "tone": "default" },
-                { "icon": "💬", "label": "Karpathy評価", "value": "LLMの「第三の変革」", "note": "chatbots→copilotsに続く", "tone": "primary" },
-                { "icon": "📊", "label": "量子位引用数字", "value": "A社製品コードの約65%がClaude Tag参与", "note": "量子位が報告する数字・原典要確認", "tone": "info" },
-                { "icon": "🌏", "label": "報道媒体", "value": "量子位（中国語AI専門メディア）", "tone": "default" }
+                {
+                  "icon": "🔧",
+                  "label": "製品",
+                  "value": "Claude Code（大規模アップグレード）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💬",
+                  "label": "Karpathy評価",
+                  "value": "LLMの「第三の変革」",
+                  "note": "chatbots→copilotsに続く",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "量子位引用数字",
+                  "value": "A社製品コードの約65%がClaude Tag参与",
+                  "note": "量子位が報告する数字・原典要確認",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌏",
+                  "label": "報道媒体",
+                  "value": "量子位（中国語AI専門メディア）",
+                  "tone": "default"
+                }
               ],
               "context": "中国の主要AI専門メディア量子位がAnthropicの最新動向をいち早く詳報。Karpathyの評価がコミュニティで大きな反響を呼んでいる。",
               "impact": "中国のAI開発者・エンジニアコミュニティへのClaudeツール普及が進んでおり、グローバルAI開発エコシステムにおけるAnthropicの存在感が高まっている。"
-            }
+            },
+            "alt": "量子位によるClaude Code大アップグレード報道。Karpathyが「LLM第三の変革」と評価。Anthropicの製品コード約65%がClaude Tag参与完成との数字が量子位原文に記載（注：量子位が引用する数字のため原典要確認）。"
           }
         }
       ]

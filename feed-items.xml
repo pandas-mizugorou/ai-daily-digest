@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 23 Jun 2026 18:18:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 17:45:07 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがClaude TagでSlackに「チームの同僚」として常駐——Latent SpaceがLLM UIUX「第三の大転換」と評価</title>
+      <link>https://latent.space/p/ainews-claude-tag-multiplayer-proactive</link>
+      <guid isPermaLink="false">aidd-item-latent_space-ainews-claude-tag-multiplayer-proactive-persiste</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/latent_space-ainews-claude-tag-multiplayer-proactive-persiste">AI Daily Digest 2026-06-25</source>
+      <description>Anthropicがチーム向け新機能「Claude Tag」を発表し、SlackにClaudeをチームメンバーとして参加させる機能をベータ提供開始した。指定したSlackチャンネルにClaudeを招待し、「@Claude」とメンションするだけで、コードベース・ドキュメント・各種ツールを参照しながら非同期かつ自律的にタスクを実行する。基盤モデルにはOpus 4.8が採用され、厳格な権限管理のもとで組織的な自動化が可能。Latent SpaceはClaude Tag発表を「Web → Desktop → Slack」という「LLMのUIUX第三の大転換」と位置付け、Shopify・Stripe・Rampなど先行する企業のバックグラウンドエージェント事例を挙げてAnthropicの戦略的意図を分析した。複数メディアはAnthropicの製品チームコードの約65%がClaude Tagで作成されていると報告している。</description>
+    </item>
+    <item>
+      <title>OpenAI、Broadcomとの共同設計で推論専用ASICチップ「Jalapeño」を発表——初の自社AI専用シリコン</title>
+      <link>https://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno</link>
+      <guid isPermaLink="false">aidd-item-theverge-openai-reveals-its-first-ai-processor-jalapeño</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/theverge-openai-reveals-its-first-ai-processor-jalapeño">AI Daily Digest 2026-06-25</source>
+      <description>OpenAIがBroadcomとの共同設計による推論専用ASICチップ「Jalapeño」を発表した。「インテリジェンスプロセッサ」と称されるこのチップはAIサーバー向けで、現在および将来のLLMを動かすために設計されている。ASIC（特定用途向け集積回路）として推論に特化した設計を採用しており、汎用GPUとは異なる専用シリコンとなる。OpenAIにとって初の自社カスタムAIチップであり、NVIDIAのGPUへの依存を低減して自社のAIインフラ戦略を加速する重要な一手と位置付けられる。GoogleのTPUやAmazon Trainium、Meta MTIAと同様に主要AIフロンティアラボが独自シリコンを持つ流れに乗る形で、AIインフラ競争に新たな構造変化をもたらす可能性がある。</description>
+    </item>
+    <item>
+      <title>トランプWHがDario Amodeiを「ウィアード（奇人）」と呼び会合から排除——Tom Brownが代理出席に</title>
+      <link>https://wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei</link>
+      <guid isPermaLink="false">aidd-item-wired_ai-the-trump-white-house-is-over-anthropic-ceo-dari</guid>
+      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/wired_ai-the-trump-white-house-is-over-anthropic-ceo-dari">AI Daily Digest 2026-06-25</source>
+      <description>Wiredが報道したところによると、ホワイトハウスとの重要会合においてAnthropicはCEOのDario Amodeiを出席者から外し、共同創業者のTom Brownに代えていた。政府高官の一人はDario Amodeiを「weirdo（奇人）」と呼んでいるという。AnthropicはFable/Mythosモデルをめぐる規制問題で米政府と対立関係にあり、この出席者交代はその緊張の表れとして注目されている。AIの安全性を重視するAnthropicのスタンスがトランプ政権の政策志向と相容れないことを示す一例とみられる。</description>
+    </item>
+    <item>
+      <title>PLaMo 3.0 Prime リリース——256Kコンテキスト・推論強化で国産最高水準を更新</title>
+      <link>https://tech.preferred.jp/ja/blog/plamo-3-0-prime/</link>
+      <guid isPermaLink="false">aidd-item-pfn-plamo-3-0-prime</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/pfn-plamo-3-0-prime">AI Daily Digest 2026-06-25</source>
+      <description>Preferred Networks（PFN）がPLaMo 3.0 Primeをリリースした。コンテキスト長を従来の64Kトークンから256Kトークンへ4倍に拡張し、推論能力を大幅に強化した国産大規模言語モデル。ベンチマーク比較ではgpt-oss-120b、Qwen3.6-27b、GPT-5.4 Mini、Claude Haiku 4.5と比較され国産AIの新基準を示している。長文書類の解析・複雑な多段階推論・日本語ビジネス文書処理において高い能力を発揮し、国内企業ユーザーの実用要件に応える。</description>
+    </item>
+    <item>
+      <title>QualcommがAIチップソフトスタック新興「Modular」を約40億ドルで買収——AI時代の有望スタートアップが大型エグジット</title>
+      <link>https://wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-dollar4-billion</link>
+      <guid isPermaLink="false">aidd-item-wired_ai-qualcomm-buys-buzzy-chip-startup-modular-for-nea</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/wired_ai-qualcomm-buys-buzzy-chip-startup-modular-for-nea">AI Daily Digest 2026-06-25</source>
+      <description>QualcommがAIチップソフトスタック新興企業「Modular」を約40億ドル（nearly $4 billion）で買収することが明らかになった。Wiredはモジュラーを「AI時代で最も有望なチップソフトウェアスタートアップの一つ」と評しており、マルチビリオンダラーのエグジットとなる。ModularはMojoプログラミング言語など、AIインフラの開発ツールチェーンを手がける企業として注目されていた。QualcommはエッジAI・モバイルAIへの投資を強化しており、ModularのAIソフトスタック技術を取り込むことで競争力強化を図る。</description>
+    </item>
+    <item>
+      <title>末期がんの86歳、AIに相談してみた結果……NHKクロ現が取材（310はてブ）</title>
+      <link>https://www.nhk.or.jp/gendai/articles/4953/</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-86-ai-ai</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/hatena_it-86-ai-ai">AI Daily Digest 2026-06-25</source>
+      <description>NHKクロ現が「末期がんの86歳がAIに相談する」という実例を取材し、はてなブックマーク上で310件のブックマークを集めた。AIを「最後の相談相手」として活用する具体的な体験談が、本人・家族・医師それぞれの視点から描かれている。終末期医療において人と人の対話が難しい場面でAIが補完的役割を担う実態が、多くのユーザーの関心を集めた。「本当の気持ちを話せる存在がいなかった」という言葉がリアルな課題を提示している。</description>
+    </item>
     <item>
       <title>Anthropic、Slack常駐型AIエージェント「Claude Tag」を発表 — 社内全員が1つのClaudeを共有するEnterpriseエージェント戦略</title>
       <link>https://www.anthropic.com/news/introducing-claude-tag</link>
@@ -589,38 +637,6 @@
       <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-04/mm-001">AI Daily Digest 2026-06-04</source>
       <description>NVIDIA は 2026 年 6 月 1 日、物理 AI 向けに特化した世界初のオープン「全方位モデル（Omni-model）」であるCosmos 3 を公開した。単一の Mixture-of-Transformers（MoT）アーキテクチャの中に、世界生成・物理推論・行動生成の 3 機能を統合している。軽量版の Cosmos 3 Nano（16B パラメータ）と高性能版の Cosmos 3 Super（64B パラメータ）の 2 バリエーションがあり、それぞれ効率的な推論と合成データ生成に最適化されている。テキスト・画像・動画・行動のあらゆる入力から、物理的に整合した未来シーケンスを生成できる点が画期的で、ロボティクス・自動運転・スマートスペースへの応用が想定される。Hugging Face Diffusers と統合されており、研究者が即座に試用可能。</description>
-    </item>
-    <item>
-      <title>Latent Space：GitHub COO が語る「AI エージェントによる年次コミット 14 倍増とエージェントスケールのインフラ課題」</title>
-      <link>https://www.latent.space/p/github</link>
-      <guid isPermaLink="false">aidd-item-rp_latent_space_github</guid>
-      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/rp_latent_space_github">AI Daily Digest 2026-06-03</source>
-      <description>GitHub COO の Kyle Daigle が Latent Space Podcast に登場し、AIコーディングエージェントによるコミット量が前年比 14 倍に急増した実態を公表した。Copilot はコード補完からフルエージェントワークフローへと進化し、Microsoft の WorkIQ・FoundryIQ コンテキストエンジンにより企業規模でのエージェントオーケストレーションが始まっている。エージェントがオープンソースの自律的なコントリビューターになることで生じるセキュリティ・コンプライアンス上の課題についても議論され、エージェントスケールでインフラを運用する実務的知見が詰まった必聴エピソードとなっている。</description>
-    </item>
-    <item>
-      <title>COLLEAGUE.SKILL：人間の作業履歴からエージェントスキルを自動生成——215 スキル・165 コントリビューター・累計 10 万スターのエコシステム誕生</title>
-      <link>https://huggingface.co/papers/2605.31264</link>
-      <guid isPermaLink="false">aidd-item-rp_colleague_skill</guid>
-      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/rp_colleague_skill">AI Daily Digest 2026-06-03</source>
-      <description>COLLEAGUE.SKILL は、人間の作業履歴（チャットログ・文書・メール・コードレビュー）を検査可能なエージェントスキルパッケージに自動変換するシステムである。能力トラックと行動トラックの 2 軸でスキルを管理し、バージョン管理・自然言語による修正・ロールバック・Claude Code・Codex・Hermes へのマルチホストインストールをサポートする。公開ギャラリーには 165 コントリビューターから 215 スキルが登録され、累計スター数が 10 万を超えており、エージェントスキルのコミュニティエコシステムが実際に立ち上がっていることを示す。</description>
-    </item>
-    <item>
-      <title>清华大学 AIR、ロボット RL 訓練フレームワーク「UniLab」を OSS 公開——人型ロボット訓練を 3 分・10 倍高速化、Mac でも動作</title>
-      <link>https://www.qbitai.com/2026/06/427729.html</link>
-      <guid isPermaLink="false">aidd-item-cn_tsinghua_unilab</guid>
-      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/cn_tsinghua_unilab">AI Daily Digest 2026-06-03</source>
-      <description>清华大学 AIR（人工智能研究院）が人型ロボットの強化学習訓練フレームワーク「UniLab」をオープンソース公開した。従来手法比で 10 倍の速度向上を実現し、人型ロボットの歩行・操作の強化学習訓練をわずか 3 分で完了できる。さらに Mac 上でも動作するため、高価な GPU クラスタなしに研究者が自端末でロボット訓練実験を実施できる。ロボット強化学習のアクセシビリティを大幅に向上させる取り組みとして、物理 AI 研究コミュニティに大きな注目を集めている。</description>
-    </item>
-    <item>
-      <title>OpenAI Codex、データ分析・営業・投資銀行など 6 職種向けプラグインと Web サイト作成機能「Sites」を追加</title>
-      <link>https://openai.com/index/codex-for-every-role-tool-workflow/</link>
-      <guid isPermaLink="false">aidd-item-ta_codex_roles</guid>
-      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03/ta_codex_roles">AI Daily Digest 2026-06-03</source>
-      <description>OpenAI は Codex に 6 職種向けのロールプラグインを追加した。データ分析・クリエイティブ制作・営業・デザイン・エクイティ投資・投資銀行の各ワークフローに特化したアプリと統合をバンドルしている。また「Sites」のプレビューも公開し、チームがワークスペース内でインタラクティブな Web サイトやアプリを作成し URL で共有できる機能を提供する。Codex は開発者向けコーディングツールから、あらゆる職種向けの生産性プラットフォームへと進化しつつあり、Anthropic の Claude Code や Microsoft Copilot との競合が激化する。</description>
     </item>
   </channel>
 </rss>

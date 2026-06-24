@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-24T06:00:00+09:00",
+  "updated_at": "2026-06-25T05:30:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5221,6 +5221,150 @@
       "url_prefix": "https://qbitai.com/2026/06/437340.html",
       "first_seen_at": "2026-06-24",
       "last_seen_at": "2026-06-24",
+      "last_seen_count": 1
+    },
+    "21e939ad1e7ba17f": {
+      "url_prefix": "https://www.theverge.com/2026/06/24/openai-jalapeno-ai-chip-broadcom",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "ff519e763cae14ca": {
+      "url_prefix": "https://www.modelscope.cn/models/unlimited-ocr",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "5f97a3d3f30911d7": {
+      "url_prefix": "https://www.theverge.com/2026/06/24/figma-config-2026-ai-motion-graphics",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "0121e66c3e5bee62": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/articles/2606/24/news107.html",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "7b3ccd48a87ccf7d": {
+      "url_prefix": "https://zenn.dev/google_cloud_jp/articles/gemini-interactions-api-ga",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "0be6ca13370497d4": {
+      "url_prefix": "https://www.latent.space/p/ainews-claude-tag-multiplayer",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "59165b3f248af16c": {
+      "url_prefix": "https://arxiv.org/abs/2506.14001",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "54b6b9f081e261ea": {
+      "url_prefix": "https://gigazine.net/news/20260624-nvidia-artifixer-3d/",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "2eee4a57c3dc033f": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/articles/2606/24/news108.html",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "c47e7244304fbbca": {
+      "url_prefix": "https://arxiv.org/abs/2506.13339",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "ca7cfb0ad58d7e87": {
+      "url_prefix": "https://arxiv.org/abs/2506.13964",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "6ee291093d75183f": {
+      "url_prefix": "https://www.lesswrong.com/posts/fable-in-shackles-2026",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "fb7f44e598f8e06c": {
+      "url_prefix": "https://wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-doll",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "354c2d6af4c36f63": {
+      "url_prefix": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fue",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "6c3d9ab106b93895": {
+      "url_prefix": "https://wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "74861b355d2b7450": {
+      "url_prefix": "https://www.nhk.or.jp/gendai/articles/4953/",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "0ef292839f3dacde": {
+      "url_prefix": "https://www.fnn.jp/articles/-/828752",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "1fa2bf9ca043a35e": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime/",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "7e5d941b5925bc5f": {
+      "url_prefix": "https://github.com/nkasmanoff/open-notebook",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "2d2b20b7ccbea3d5": {
+      "url_prefix": "https://pr.fujitsu.com/jp/news/2026/06/24.html",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "5074b5270808c1c6": {
+      "url_prefix": "https://steipete.com/posts/loop-engineering-is-cybernetics-rediscovered/",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "c49d3ee825e733c7": {
+      "url_prefix": "https://zenn.dev/explaza/articles/ai-driven-dev-loop",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "38a658d55eefe6e8": {
+      "url_prefix": "https://www.qbitai.com/2026/06/waic-sail-awards-2026.html",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "8f4649696a18b852": {
+      "url_prefix": "https://www.qbitai.com/2026/06/claude-code-karpathy-llm-third-revolution.html",
+      "first_seen_at": "2026-06-25",
+      "last_seen_at": "2026-06-25",
       "last_seen_count": 1
     }
   },

@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 23 Jun 2026 18:18:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 17:45:07 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがSlack常駐型AIエージェント「Claude Tag」を発表、OpenAIはBroadcomと共同設計の推論専用チップ「Jalapeño」を公開——QualcommがAIソフトスタックのModularを約40億ドルで買収、PLaMo 3.0 Primeが25</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25</link>
+      <guid isPermaLink="false">aidd-day-2026-06-25</guid>
+      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
+      <description>AnthropicのClaude TagはSlackにClaudeをチームの同僚として常駐させ、@メンションで非同期・自律的にタスクを実行する機能で、Latent SpaceはこれをLLMのUIUX「第三の大転換」（Web→Desktop→Slack）と評価した。同日OpenAIはBroadcomとの共同設計による推論専用ASIC「Jalapeño」を発表し、自社LLMのNVIDIA依存を低減する戦略を鮮明にした。業界では米政府との対立が深まるなか、Wired報道によりAnthropicはDario AmodeiをWhite House会合の出席者からTom Brownへ交代させていたことが明らかになった。QualcommはAIチップソフトスタックの新興企業Modularを約40億ドルで買収、国内ではPFNがPLaMo 3.0 Primeをリリースして256Kコンテキストと推論強化で国産AIの水準を引き上げた。
+
+【今日の必読】
+・AnthropicがClaude TagでSlackに「チームの同僚」として常駐——Latent SpaceがLLM UIUX「第三の大転換」と評価
+・OpenAI、Broadcomとの共同設計で推論専用ASICチップ「Jalapeño」を発表——初の自社AI専用シリコン
+・トランプWHがDario Amodeiを「ウィアード（奇人）」と呼び会合から排除——Tom Brownが代理出席に
+・PLaMo 3.0 Prime リリース——256Kコンテキスト・推論強化で国産最高水準を更新
+・QualcommがAIチップソフトスタック新興「Modular」を約40億ドルで買収——AI時代の有望スタートアップが大型エグジット
+・末期がんの86歳、AIに相談してみた結果……NHKクロ現が取材（310はてブ）</description>
+    </item>
     <item>
       <title>AnthropicがSlack常駐型AIエージェント「Claude Tag」を発表——SpaceXのGPU事業が年280億ドル規模のNeocloudに、JetBrains Mellum2とDoubao Seed 2.1が登場</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24</link>
@@ -441,21 +456,6 @@
 ・Darwinファミリー——訓練なしでGPQA Diamond 88.89%を達成し、訓練フリー推論の限界を塗り替える
 ・AnthropicがStainlessを買収——OpenAI・Google・Cloudflareも利用するSDK生成スタートアップを取得
 ・AlibabaがQoder 1.0を発表——コード生成・検証・デリバリーを自律処理するエージェント開発環境に進化</description>
-    </item>
-    <item>
-      <title>グレップがRAGの常識を覆す・OpenDeepThinkが+405 Elo突破・MetaBackdoorでLLM安全性の盲点露呈</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-18</link>
-      <guid isPermaLink="false">aidd-day-2026-05-18</guid>
-      <pubDate>Sun, 17 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月18日のAIダイジェストは、エージェントシステムの実装知見が中心となった一日だった。Claude Code・Codex・Gemini CLIを含む複数のハーネスでグレップ検索がベクトル検索を上回ることが実証され（arXiv 2605.15184）、RAGアーキテクチャ設計の常識に再考を迫る結果となった。並列推論フレームワーク「OpenDeepThink」はBradley-Terry集計によりGemini 3.1 ProのCodeforces Eloを+405ポイント向上させたと報告。セキュリティ面では位置エンコーディングをバックドアのトリガーとして悪用する「MetaBackdoor」が公開され、既存のコンテンツフィルタリングが無効化される新たな脅威が明らかになった。マルチモーダル分野ではSenseNova-U1が理解と生成を統合したネイティブアーキテクチャで新境地を示し、日本ではClaude Code組織導入の実践ガードレール記事が注目を集めた。
-
-【今日の必読】
-・グレップだけで十分か？——コーディングエージェントの検索でgrepがベクトル検索を凌駕することが実証
-・OpenDeepThink——並列推論とBradley-Terry集計でGemini 3.1 ProのCodeforces Eloを+405ポイント改善
-・Claude Codeを組織に導入する際に最低限設定すべきガードレール5選
-・MetaBackdoor——位置エンコーディングをバックドアトリガーに悪用する新手法が既存防御を無効化
-・SenseNova-U1——視覚エンコーダとVAEを廃止した統合マルチモーダルモデルが GenEval 0.91 を達成
-・CLI-Anything——あらゆるCLIツールをエージェントが自律操作できる形に変換するフレームワーク</description>
     </item>
   </channel>
 </rss>
