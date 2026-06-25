@@ -61,21 +61,51 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "North Mini Code 概要",
-            "alt": "Cohere North Mini Code の主要仕様。30B総パラメータ・アクティブ3BのMoE、Apache 2.0ライセンス、H100 GPU一枚で動作。コード生成よりエージェントループでのツール呼び出し継続作業に最適化した設計。CohereがエンタープライズRAA路線から初めてオープンコーディングモデルへ転換した注目作。",
             "data": {
               "headline": "Cohere North Mini Code: 30B MoE Apache 2.0、H100一枚で動くエージェント向けコーディングモデル",
               "tldr": "CohereがApache 2.0で初のオープンウェイトコーディングMoEを公開。30B総パラメータ・アクティブ3BでH100一枚に収まり、エージェントのツール呼び出し用途に最適化。",
               "points": [
-                { "icon": "📦", "label": "アーキテクチャ", "value": "30B / active 3B MoE", "description": "トークンごとに一部の専門家のみ使う疎な設計で、推論時の計算量を削減しながら高品質を維持。", "tone": "primary" },
-                { "icon": "📄", "label": "ライセンス", "value": "Apache 2.0", "description": "重みを丸ごと公開。商用利用・改変・再配布が自由で、企業内デプロイや派生モデル開発が可能。", "tone": "success" },
-                { "icon": "🖥️", "label": "動作環境", "value": "H100 GPU 1枚", "description": "H100一枚に載るサイズで、高コストなマルチGPUクラスタなしに推論・ファインチューニングが可能。", "tone": "success" },
-                { "icon": "🔧", "label": "主用途", "value": "エージェントループ", "description": "単発コード生成よりも、エージェントがツールを呼びながら継続作業を進める使い方を想定した最適化設計。", "tone": "info" },
-                { "icon": "🏢", "label": "戦略的意義", "value": "Cohere初OSSコーディング", "description": "埋め込み・エンタープライズRAGが本業のCohereが、初めてオープンウェイトのコーディングモデルを公開。方針転換として業界の注目を集めている。", "tone": "primary" }
+                {
+                  "icon": "📦",
+                  "label": "アーキテクチャ",
+                  "value": "30B / active 3B MoE",
+                  "description": "トークンごとに一部の専門家のみ使う疎な設計で、推論時の計算量を削減しながら高品質を維持。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📄",
+                  "label": "ライセンス",
+                  "value": "Apache 2.0",
+                  "description": "重みを丸ごと公開。商用利用・改変・再配布が自由で、企業内デプロイや派生モデル開発が可能。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🖥️",
+                  "label": "動作環境",
+                  "value": "H100 GPU 1枚",
+                  "description": "H100一枚に載るサイズで、高コストなマルチGPUクラスタなしに推論・ファインチューニングが可能。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "主用途",
+                  "value": "エージェントループ",
+                  "description": "単発コード生成よりも、エージェントがツールを呼びながら継続作業を進める使い方を想定した最適化設計。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "戦略的意義",
+                  "value": "Cohere初OSSコーディング",
+                  "description": "埋め込み・エンタープライズRAGが本業のCohereが、初めてオープンウェイトのコーディングモデルを公開。方針転換として業界の注目を集めている。",
+                  "tone": "primary"
+                }
               ],
               "context": "これまでCohereはエンタープライズRAGや埋め込みモデルに強みを持つクローズド路線だった。Apache 2.0でのオープン化は、Llamaエコシステムやオープンソースコーディングモデルが普及する中での競争参入を意味する。",
               "impact": "H100一枚で動くエージェント対応コーディングMoEが自由に使えるようになり、エンタープライズ内デプロイやプライベートエージェント開発のハードルが下がる。"
-            }
+            },
+            "caption": "North Mini Code 概要",
+            "alt": "Cohere North Mini Code の主要仕様。30B総パラメータ・アクティブ3BのMoE、Apache 2.0ライセンス、H100 GPU一枚で動作。コード生成よりエージェントループでのツール呼び出し継続作業に最適化した設計。CohereがエンタープライズRAA路線から初めてオープンコーディングモデルへ転換した注目作。"
           },
           "x_post": "CohereがApache 2.0で「North Mini Code」を公開した。30B総パラメータ・アクティブ3BのMoE構成でH100一枚に収まり、エージェントループでのツール呼び出し作業に最適化。エンタープライズRAA路線のCohereが初めてOSSコーディングモデルを投入した転換点である。\n\nhttps://zenn.dev/okssusucha/articles/20260625-cohere-north-mini-code"
         },
@@ -98,12 +128,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "GLM-5.2 vs Opus 4.8 用途別比較",
-            "alt": "GLM-5.2とOpus 4.8をタスク種別で比較。単発読み込みタスク（ログ解析・リポジトリ検索）ではGLM-5.2がコストと速度で優位。エージェントループ（自律デバッグ・マルチファイルリファクタリング）ではOpus 4.8の推論力・キャッシュ効率が逆転し優位。タスクの形状で最適モデルが変わるという重要な実務知見。",
             "data": {
               "headline": "GLM-5.2 vs Opus 4.8: タスク形状でコスト効率が逆転する",
-              "before": { "label": "単発タスク", "sublabel": "ログ解析・リポジトリ検索" },
-              "after": { "label": "エージェントループ", "sublabel": "自律デバッグ・マルチファイルRefactor" },
+              "before": {
+                "label": "単発タスク",
+                "sublabel": "ログ解析・リポジトリ検索"
+              },
+              "after": {
+                "label": "エージェントループ",
+                "sublabel": "自律デバッグ・マルチファイルRefactor"
+              },
               "metrics": [
                 {
                   "icon": "💰",
@@ -139,7 +173,9 @@
               ],
               "narrative": "GLM-5.2のカタログ価格は安いが「巨大なコードを1度だけ読む」か「状態保持で繰り返しツールを呼ぶ」かで最適モデルが異なる。モデル選択の基準はリスト価格ではなくタスク形状。",
               "impact": "エンジニアが複数モデルを使い分けるルーティング戦略の重要性が増す。単発タスクは安価なオープンモデルへ、エージェントループは高精度モデルへ振り分けることでコストと品質を両立できる。"
-            }
+            },
+            "caption": "GLM-5.2 vs Opus 4.8 用途別比較",
+            "alt": "GLM-5.2とOpus 4.8をタスク種別で比較。単発読み込みタスク（ログ解析・リポジトリ検索）ではGLM-5.2がコストと速度で優位。エージェントループ（自律デバッグ・マルチファイルリファクタリング）ではOpus 4.8の推論力・キャッシュ効率が逆転し優位。タスクの形状で最適モデルが変わるという重要な実務知見。"
           }
         },
         {
@@ -160,19 +196,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "ハイブリッドモデル分析",
-            "alt": "ハイブリッドモデル（Transformer + SSM）のトークン予測特性分析。Transformerは局所文脈依存トークンを得意とし、SSMは長距離依存パターンでより効率的。Allen AIがHugging Face公式ブログで公開した研究で、ハイブリッドLLM設計の根拠を実証する内容。",
             "data": {
               "headline": "Transformer + SSM ハイブリッド: 各アーキテクチャの得意トークンを解明",
               "tldr": "Transformerは局所文脈、SSMは長距離依存——Allen AIが実証することでハイブリッドLLM設計の理論的根拠を提供。",
               "points": [
-                { "icon": "📈", "label": "Transformer得意", "value": "局所文脈依存トークン", "description": "周辺の近いトークンに強く依存するパターン（構文・近接参照）をTransformerが効率的に処理。", "tone": "primary" },
-                { "icon": "📜", "label": "SSM得意", "value": "長距離依存パターン", "description": "文書全体にわたる長距離の依存関係を、SSMが効率的なメモリ構造で処理できることを実証。", "tone": "success" },
-                { "icon": "🔧", "label": "実装示唆", "value": "ハイブリッド設計の合理性", "description": "両アーキテクチャの得意領域が補完的であることが実証され、ハイブリッドモデルが単一設計を上回る理論的根拠が明確化。", "tone": "info" }
+                {
+                  "icon": "📈",
+                  "label": "Transformer得意",
+                  "value": "局所文脈依存トークン",
+                  "description": "周辺の近いトークンに強く依存するパターン（構文・近接参照）をTransformerが効率的に処理。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📜",
+                  "label": "SSM得意",
+                  "value": "長距離依存パターン",
+                  "description": "文書全体にわたる長距離の依存関係を、SSMが効率的なメモリ構造で処理できることを実証。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "実装示唆",
+                  "value": "ハイブリッド設計の合理性",
+                  "description": "両アーキテクチャの得意領域が補完的であることが実証され、ハイブリッドモデルが単一設計を上回る理論的根拠が明確化。",
+                  "tone": "info"
+                }
               ],
               "context": "Mamba系SSMとTransformerを組み合わせたハイブリッドLLMが注目を集めており、設計の合理性を理論面から裏付ける研究が求められていた。",
               "impact": "ハイブリッドLLM設計において、どのレイヤーにSSMを配置するかという設計決定に実証的な根拠が与えられる。"
-            }
+            },
+            "caption": "ハイブリッドモデル分析",
+            "alt": "ハイブリッドモデル（Transformer + SSM）のトークン予測特性分析。Transformerは局所文脈依存トークンを得意とし、SSMは長距離依存パターンでより効率的。Allen AIがHugging Face公式ブログで公開した研究で、ハイブリッドLLM設計の根拠を実証する内容。"
           }
         }
       ]
@@ -201,20 +255,44 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Sandbox Agents 設計",
-            "alt": "OpenAI Agents SDK Sandbox Agentsの概要。エージェントのシェル実行を隔離環境に限定して破壊的コマンドリスクを防止し、作業状態を永続化して継続性も確保する設計。JS/TS版v0.12.0とPython版で対応済み。",
             "data": {
               "headline": "OpenAI Sandbox Agents: 安全性と継続性を同時に解決するエージェント隔離実行",
               "tldr": "エージェントによるシェル操作の破壊リスクと作業消失を、隔離環境で同時解決。JS/TS v0.12.0で正式対応。",
               "points": [
-                { "icon": "🔒", "label": "安全性", "value": "隔離実行環境", "description": "rm -rfなどの破壊的コマンドをコンテナ内に封じ込め、ホスト環境への影響をゼロに。", "tone": "success" },
-                { "icon": "💾", "label": "継続性", "value": "状態永続化", "description": "プロセスが落ちても中間ファイル・パッケージインストール結果が保持され、長時間タスクを再開可能。", "tone": "success" },
-                { "icon": "🐍", "label": "対応SDK", "value": "JS v0.12.0 / Python", "description": "@openai/agents v0.12.0とPython版の両方でサンドボックス実行周辺機能が整備された。", "tone": "info" },
-                { "icon": "👥", "label": "並列実行", "value": "安全な並列化", "description": "各エージェントを独立した隔離環境で動かすことで、並列タスクの競合リスクを排除。", "tone": "primary" }
+                {
+                  "icon": "🔒",
+                  "label": "安全性",
+                  "value": "隔離実行環境",
+                  "description": "rm -rfなどの破壊的コマンドをコンテナ内に封じ込め、ホスト環境への影響をゼロに。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💾",
+                  "label": "継続性",
+                  "value": "状態永続化",
+                  "description": "プロセスが落ちても中間ファイル・パッケージインストール結果が保持され、長時間タスクを再開可能。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🐍",
+                  "label": "対応SDK",
+                  "value": "JS v0.12.0 / Python",
+                  "description": "@openai/agents v0.12.0とPython版の両方でサンドボックス実行周辺機能が整備された。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "👥",
+                  "label": "並列実行",
+                  "value": "安全な並列化",
+                  "description": "各エージェントを独立した隔離環境で動かすことで、並列タスクの競合リスクを排除。",
+                  "tone": "primary"
+                }
               ],
               "context": "エージェントにシェルを持たせる実装が増える中、ファイルシステムへの影響と長時間実行の安定性が共通課題だった。Sandbox Agentsはこれを設計レベルで解決するアプローチ。",
               "impact": "エージェントの本番運用ハードルが下がり、CI/CDへの組み込みや自律デバッグエージェントの実用化が加速する可能性がある。"
-            }
+            },
+            "caption": "Sandbox Agents 設計",
+            "alt": "OpenAI Agents SDK Sandbox Agentsの概要。エージェントのシェル実行を隔離環境に限定して破壊的コマンドリスクを防止し、作業状態を永続化して継続性も確保する設計。JS/TS版v0.12.0とPython版で対応済み。"
           }
         },
         {
@@ -236,19 +314,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Managed Agents概要",
-            "alt": "Anthropicが提供するClaude Managed Agentsの機能概要。認証・スケーリング・ツール呼び出し管理・エラーハンドリングをプラットフォームが担うフルマネージド型エージェント基盤。β公開中で機能拡充が続いている。",
             "data": {
               "headline": "Claude Managed Agents: エージェント基盤の構築課題をフルマネージドで解決",
               "tldr": "Anthropicがエージェント実行基盤を丸ごと提供。認証・スケーリング・ツール管理を代行し、開発者はロジックに集中できる。",
               "points": [
-                { "icon": "🔌", "label": "マネージド化", "value": "フルマネージド基盤", "description": "エージェント実行に必要な認証・スケーリング・ツール呼び出し管理・エラーハンドリングをAnthropicが提供。", "tone": "primary" },
-                { "icon": "🔧", "label": "開発者体験", "value": "ロジックに集中", "description": "インフラ面の課題を抽象化することで、開発者はエージェントのビジネスロジックのみに専念できる。", "tone": "success" },
-                { "icon": "✅", "label": "提供状況", "value": "β版公開中", "description": "β期間中も継続的に機能追加が行われており、本番対応に向けた機能拡充が進行中。", "tone": "info" }
+                {
+                  "icon": "🔌",
+                  "label": "マネージド化",
+                  "value": "フルマネージド基盤",
+                  "description": "エージェント実行に必要な認証・スケーリング・ツール呼び出し管理・エラーハンドリングをAnthropicが提供。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "開発者体験",
+                  "value": "ロジックに集中",
+                  "description": "インフラ面の課題を抽象化することで、開発者はエージェントのビジネスロジックのみに専念できる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "✅",
+                  "label": "提供状況",
+                  "value": "β版公開中",
+                  "description": "β期間中も継続的に機能追加が行われており、本番対応に向けた機能拡充が進行中。",
+                  "tone": "info"
+                }
               ],
               "context": "エージェント基盤の自社構築はツール管理・並列実行制御・信頼性確保など多くの課題を抱える。Anthropicによるマネージドプラットフォームはこれを解決する方向性を示している。",
               "impact": "Anthropicのエコシステム内でのエージェント開発が加速し、Claude活用のエンタープライズ普及が進む可能性がある。"
-            }
+            },
+            "caption": "Claude Managed Agents概要",
+            "alt": "Anthropicが提供するClaude Managed Agentsの機能概要。認証・スケーリング・ツール呼び出し管理・エラーハンドリングをプラットフォームが担うフルマネージド型エージェント基盤。β公開中で機能拡充が続いている。"
           }
         },
         {
@@ -270,19 +366,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Figma Motion 概要",
-            "alt": "Figma Motionの主要特徴。タイムライン型キーフレーム操作でAdobe Flash時代を想起させるアニメーション制作UIと、AIによる自動アニメーション生成機能を搭載。Figmaの2025年IPO後のAI機能拡充戦略の一環として発表。",
             "data": {
               "headline": "Figma Motion: タイムライン型アニメーション制作 + AIアニメーション生成",
               "tldr": "Figmaがアニメーション制作機能「Motion」を発表。Flash時代のタイムライン操作感とAI自動生成を組み合わせた新機能。",
               "points": [
-                { "icon": "🎬", "label": "操作UI", "value": "タイムライン型", "description": "キーフレームを打つ操作感がAdobe Flash時代を想起させると話題。デザイナーに直感的なUI。", "tone": "primary" },
-                { "icon": "🤖", "label": "AI機能", "value": "AIアニメ生成", "description": "プロンプトからアニメーションを自動生成できるAI機能を搭載し、制作時間を大幅に短縮。", "tone": "success" },
-                { "icon": "🌐", "label": "統合性", "value": "Figma内完結", "description": "動画・インタラクション制作をFigmaワークフロー内に統合し、ツール切り替えの手間を削減。", "tone": "info" }
+                {
+                  "icon": "🎬",
+                  "label": "操作UI",
+                  "value": "タイムライン型",
+                  "description": "キーフレームを打つ操作感がAdobe Flash時代を想起させると話題。デザイナーに直感的なUI。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "AI機能",
+                  "value": "AIアニメ生成",
+                  "description": "プロンプトからアニメーションを自動生成できるAI機能を搭載し、制作時間を大幅に短縮。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "統合性",
+                  "value": "Figma内完結",
+                  "description": "動画・インタラクション制作をFigmaワークフロー内に統合し、ツール切り替えの手間を削減。",
+                  "tone": "info"
+                }
               ],
               "context": "Figmaは2022年にAdobeへの買収提案を受けたが規制により撤回され、2025年にIPO。AI機能の積極導入でデザインツールのリーダーシップを維持しようとしている。",
               "impact": "デザインからプロトタイプ・アニメーション制作までをFigma一本で完結できる環境が整い、ノーコードのモーション制作ハードルが下がる。"
-            }
+            },
+            "caption": "Figma Motion 概要",
+            "alt": "Figma Motionの主要特徴。タイムライン型キーフレーム操作でAdobe Flash時代を想起させるアニメーション制作UIと、AIによる自動アニメーション生成機能を搭載。Figmaの2025年IPO後のAI機能拡充戦略の一環として発表。"
           }
         }
       ]
@@ -311,8 +425,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "Gemini 3.5 Flash 機能展開",
-            "alt": "Gemini 3.5 FlashのComputer Use搭載までの経緯。2026年5月19日にGemini 3.5 FlashがGA化。2026年6月24日にComputer Use機能を標準ツールとして統合。Webブラウザ・モバイル・デスクトップの3環境で画面操作エージェントが構築可能に。",
             "data": {
               "headline": "Gemini 3.5 Flash: 専用モデル限定だったComputer Useを主力モデルに標準統合",
               "events": [
@@ -340,7 +452,9 @@
               ],
               "narrative": "Computer Useはこれまで専用モデルに限定されていたため実験的な位置付けだった。主力の汎用モデルGemini 3.5 Flashへの統合は、画面操作エージェントが本格的に普及段階に移行したことを意味する。",
               "impact": "APIを持たない社内システム・レガシーUI・複数アプリをまたぐ手作業の自動化が開発者にとって現実的な選択肢となる。RPAの代替・E2Eテスト自動化・データ入力エージェントなど幅広い応用が期待される。"
-            }
+            },
+            "caption": "Gemini 3.5 Flash 機能展開",
+            "alt": "Gemini 3.5 FlashのComputer Use搭載までの経緯。2026年5月19日にGemini 3.5 FlashがGA化。2026年6月24日にComputer Use機能を標準ツールとして統合。Webブラウザ・モバイル・デスクトップの3環境で画面操作エージェントが構築可能に。"
           },
           "x_post": "GoogleがGemini 3.5 Flashの標準ツールにComputer Useを統合した。専用モデルなしでブラウザ・モバイル・デスクトップの画面操作エージェントを構築可能となり、AIによる実務自動化が本格普及段階に移行したことを示す。\n\nhttps://itmedia.co.jp/aiplus/article/2606/25/2000000127"
         },
@@ -363,19 +477,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Meta-Harness競合状況",
-            "alt": "メタハーネス（エージェント統合・標準化基盤）の競合プロジェクト一覧。Conductor・Zed ACP・OpenInspect・Cloudflare Flue・Vercel Eve・HarnessAgentに続き、DatabricksのOmnigentがOSSとして参入。エージェント実行の標準化レイヤーが2026年夏の主要トレンドに。",
             "data": {
               "headline": "Meta-Harness Summer: エージェント統合基盤の標準化競争が本格化",
               "tldr": "DatabricksがOmnigentをOSS公開。エージェントを標準化・プラガブルに統合するメタハーネス競争が加速している。",
               "points": [
-                { "icon": "🔧", "label": "Omnigent", "value": "Databricks OSS", "description": "Databricks CTO Matei Zahariaが主導するオープンソースのエージェント統合基盤。コーディング・知識作業エージェントを標準化・プラガブルに接続するアーキテクチャ。", "tone": "primary" },
-                { "icon": "🌐", "label": "競合群", "value": "6+ プロジェクト", "description": "Conductor・Zed ACP・OpenInspect・Cloudflare Flue・Vercel Eve・HarnessAgentなど、複数のメタハーネスプロジェクトが競合する状況に。", "tone": "info" },
-                { "icon": "📈", "label": "トレンド背景", "value": "エージェント普及加速", "description": "Shopify・Stripe・Ramp・Paradigmなどが独自エージェントを構築する中、標準化・相互運用性への需要が急増している。", "tone": "success" }
+                {
+                  "icon": "🔧",
+                  "label": "Omnigent",
+                  "value": "Databricks OSS",
+                  "description": "Databricks CTO Matei Zahariaが主導するオープンソースのエージェント統合基盤。コーディング・知識作業エージェントを標準化・プラガブルに接続するアーキテクチャ。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "競合群",
+                  "value": "6+ プロジェクト",
+                  "description": "Conductor・Zed ACP・OpenInspect・Cloudflare Flue・Vercel Eve・HarnessAgentなど、複数のメタハーネスプロジェクトが競合する状況に。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📈",
+                  "label": "トレンド背景",
+                  "value": "エージェント普及加速",
+                  "description": "Shopify・Stripe・Ramp・Paradigmなどが独自エージェントを構築する中、標準化・相互運用性への需要が急増している。",
+                  "tone": "success"
+                }
               ],
               "context": "コーディングエージェントや自律エージェントが実務展開される中、複数エージェントの統合・監視・スケール管理を担うメタ層の重要性が増している。Databricks（バリュエーション1750億ドル）がこの領域に参入したことで競争が本格化。",
               "impact": "メタハーネスの標準化が進めば、組織内の複数エージェントを統一インターフェースで管理・監視・スケールさせることが容易になる。逆に規格乱立が続けば相互運用性コストが増大するリスクも。"
-            }
+            },
+            "caption": "Meta-Harness競合状況",
+            "alt": "メタハーネス（エージェント統合・標準化基盤）の競合プロジェクト一覧。Conductor・Zed ACP・OpenInspect・Cloudflare Flue・Vercel Eve・HarnessAgentに続き、DatabricksのOmnigentがOSSとして参入。エージェント実行の標準化レイヤーが2026年夏の主要トレンドに。"
           }
         }
       ]
@@ -402,23 +534,50 @@
             "学習データにAI生成画像を一切使っていないと明言——データの純粋性を重視した設計方針",
             "はてブ145件の反響——日本コミュニティでも注目"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 145 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 145
+          },
           "figure": {
             "type": "summary-card",
-            "caption": "Krea 2 モデル仕様",
-            "alt": "Krea 2の12Bオープンウェイト画像生成モデルの仕様。RawとTurbo（蒸留済み高速版）の2種類。最大2048×2048対応。学習データにAI生成画像を使用していないと明言しており、データ純粋性を重視。はてブ145件の注目を集めた。",
             "data": {
               "headline": "Krea 2: 12B オープンウェイト画像生成モデル、AI画像を学習データから排除",
               "tldr": "12BパラメータのオープンウェイトKrea 2がRaw + Turboの2種で公開。AI生成画像を学習データから完全排除した純粋性が特徴。",
               "points": [
-                { "icon": "📦", "label": "モデル規模", "value": "12B パラメータ", "description": "RawベースモデルとTurbo蒸留版の2種類を公開。オープンウェイトで自由に利用・改変が可能。", "tone": "primary" },
-                { "icon": "🖼️", "label": "解像度", "value": "最大2048×2048", "description": "2048×2048の高解像度出力に対応（Rawの学習データは1024まで）。商用品質の出力が期待される。", "tone": "success" },
-                { "icon": "🔒", "label": "学習データ", "value": "AI画像を排除", "description": "学習データにAI生成画像を一切使っていないと公式が明言。著作権・品質面でのデータ純粋性を重視した方針。", "tone": "info" },
-                { "icon": "⚡", "label": "Turbo版", "value": "蒸留済み高速版", "description": "推論速度を優先したTurbo蒸留版も同時公開。用途に応じてRaw/Turboを選択可能。", "tone": "success" }
+                {
+                  "icon": "📦",
+                  "label": "モデル規模",
+                  "value": "12B パラメータ",
+                  "description": "RawベースモデルとTurbo蒸留版の2種類を公開。オープンウェイトで自由に利用・改変が可能。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🖼️",
+                  "label": "解像度",
+                  "value": "最大2048×2048",
+                  "description": "2048×2048の高解像度出力に対応（Rawの学習データは1024まで）。商用品質の出力が期待される。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "学習データ",
+                  "value": "AI画像を排除",
+                  "description": "学習データにAI生成画像を一切使っていないと公式が明言。著作権・品質面でのデータ純粋性を重視した方針。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "Turbo版",
+                  "value": "蒸留済み高速版",
+                  "description": "推論速度を優先したTurbo蒸留版も同時公開。用途に応じてRaw/Turboを選択可能。",
+                  "tone": "success"
+                }
               ],
               "context": "Stable Diffusionなどのオープン画像生成モデル市場では学習データの品質・著作権対応が重要課題。AI生成画像の学習データからの排除は、商用利用や法的リスク軽減の観点で差別化ポイントになりつつある。",
               "impact": "オープンウェイトの高品質画像生成モデルが増えることで、ローカルでの高品質生成・商用利用・ファインチューニングのエコシステムがさらに拡大する。"
-            }
+            },
+            "caption": "Krea 2 モデル仕様",
+            "alt": "Krea 2の12Bオープンウェイト画像生成モデルの仕様。RawとTurbo（蒸留済み高速版）の2種類。最大2048×2048対応。学習データにAI生成画像を使用していないと明言しており、データ純粋性を重視。はてブ145件の注目を集めた。"
           }
         },
         {
@@ -440,19 +599,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "DeepMind×A24 投資",
-            "alt": "Google DeepMindがインディー映画スタジオA24に7500万ドル（約110億円）を投資。ファンがSNSで反発し、A24も「状況を把握している」とコメント。AI企業がエンターテイメント産業の資金調達・制作に関与する流れが加速している事例。",
             "data": {
               "headline": "Google DeepMind、A24に$75M投資——AI企業のハリウッド影響力拡大に反発も",
               "tldr": "DeepMindがインディー映画A24に7500万ドル投資。AI×コンテンツ融合への反発がSNSで拡散。",
               "points": [
-                { "icon": "💰", "label": "投資額", "value": "$75M（約110億円）", "description": "Google DeepMindによるA24への資本投資。AI企業によるコンテンツ産業への直接的な資金提供として注目。", "tone": "primary" },
-                { "icon": "⚠️", "label": "ファン反応", "value": "SNSで激しい反発", "description": "インディー映画の独立性を重視するA24ファンがSNSで失望・怒りを表明。A24ブランドへの信頼低下を懸念する声が相次ぐ。", "tone": "danger" },
-                { "icon": "🏢", "label": "業界文脈", "value": "AI×ハリウッドの深化", "description": "AI企業がコンテンツ制作・配給・スタジオへの関与を深める大きなトレンドの一事例として位置付けられる。", "tone": "info" }
+                {
+                  "icon": "💰",
+                  "label": "投資額",
+                  "value": "$75M（約110億円）",
+                  "description": "Google DeepMindによるA24への資本投資。AI企業によるコンテンツ産業への直接的な資金提供として注目。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "ファン反応",
+                  "value": "SNSで激しい反発",
+                  "description": "インディー映画の独立性を重視するA24ファンがSNSで失望・怒りを表明。A24ブランドへの信頼低下を懸念する声が相次ぐ。",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "業界文脈",
+                  "value": "AI×ハリウッドの深化",
+                  "description": "AI企業がコンテンツ制作・配給・スタジオへの関与を深める大きなトレンドの一事例として位置付けられる。",
+                  "tone": "info"
+                }
               ],
               "context": "OpenAI・MicrosoftなどがHollywood制作会社との提携を進める中、Google DeepMindもコンテンツ産業への投資を開始。クリエイター・ファン・AI企業の三つ巴の緊張が高まっている。",
               "impact": "AI企業とコンテンツ産業の融合が加速する中、インディー・クリエイティブ業界でのAI受容への反発が強まる可能性。コンテンツ制作AIの倫理・著作権議論にも波及する懸念がある。"
-            }
+            },
+            "caption": "DeepMind×A24 投資",
+            "alt": "Google DeepMindがインディー映画スタジオA24に7500万ドル（約110億円）を投資。ファンがSNSで反発し、A24も「状況を把握している」とコメント。AI企業がエンターテイメント産業の資金調達・制作に関与する流れが加速している事例。"
           }
         }
       ]
@@ -481,11 +658,12 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "音声AI安全性評価",
-            "alt": "4つの主要リアルタイム音声AIシステムの安全性評価。評価は3シナリオ（泣き声で大丈夫と言う発信者・怯えた声での送金承認・皮肉な同意での登録）で実施。全システムが感情・声調を無視して言葉のみを処理し、危険な応答をした。GPT Realtime 2・Gemini 3.1 Flash Live・Qwen3.5 Omni Plus/Omni Flashの4モデルが評価対象。",
             "data": {
               "headline": "主要リアルタイム音声AI 4システム全て「感情を無視」する安全上の欠陥を実証",
-              "scale": { "max_label": "100%=完全に問題ある応答", "unit": "%" },
+              "scale": {
+                "max_label": "100%=完全に問題ある応答",
+                "unit": "%"
+              },
               "bars": [
                 {
                   "icon": "😢",
@@ -514,7 +692,9 @@
               ],
               "narrative": "評価したGPT Realtime 2・Gemini 3.1 Flash Live・Qwen3.5 Omni Plus/Omni Flashの4システムは設計上「テキスト的な意味」しか処理せず、音声に含まれる感情・声調・皮肉を無視する共通の欠陥を持つ。",
               "impact": "音声AIを危機対応コールセンター・金融取引承認・医療相談に使う場合、感情状態の誤判断が実害につながるリスクがある。設計段階で音声感情認識の統合が必要なことが明確になった。"
-            }
+            },
+            "caption": "音声AI安全性評価",
+            "alt": "4つの主要リアルタイム音声AIシステムの安全性評価。評価は3シナリオ（泣き声で大丈夫と言う発信者・怯えた声での送金承認・皮肉な同意での登録）で実施。全システムが感情・声調を無視して言葉のみを処理し、危険な応答をした。GPT Realtime 2・Gemini 3.1 Flash Live・Qwen3.5 Omni Plus/Omni Flashの4モデルが評価対象。"
           },
           "x_post": "リアルタイム音声AI4システム（GPT Realtime 2・Gemini 3.1 Flash Live等）が感情・声調を無視し言葉のみを処理する欠陥をarXivが実証した。危機対応・金融承認での利用に深刻なリスクがある。\n\nhttps://arxiv.org/abs/2606.26083v1"
         },
@@ -537,19 +717,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI安全性研究の現状",
-            "alt": "Gray SwanのZico Kolter（OpenAI取締役会Safety委員）とMatt Fredrikson（CMU教授）によるAI安全性の現状解説。米政府のMythos・Fable輸出規制後、ジェイルブレイクと間接プロンプトインジェクションが業界の主要議題に。Gray SwanによるAI赤チーム演習・安全評価の最前線を紹介。",
             "data": {
               "headline": "Mythos輸出規制後のAI安全性: ジェイルブレイクと間接プロンプトインジェクションが主要議題に",
               "tldr": "米輸出規制でAI安全性への注目が急増。Gray Swanの研究者がジェイルブレイクと間接プロンプトインジェクションの実態を解説。",
               "points": [
-                { "icon": "🔒", "label": "研究対象", "value": "ジェイルブレイク/IPI", "description": "ジェイルブレイクと間接プロンプトインジェクション（IPI）が輸出規制の契機となり、業界全体の安全評価の中心に。", "tone": "danger" },
-                { "icon": "🎓", "label": "研究者", "value": "Kolter & Fredrikson", "description": "OpenAI取締役会Safety委員のZico KolterとCMUのMatt FredriksonがGray Swanの研究体制を解説。", "tone": "primary" },
-                { "icon": "🛡️", "label": "実践研究", "value": "Hackaprompt他", "description": "Hackapromptなど実際の赤チーム演習・脆弱性評価を通じた実証的なAI安全性研究の動向。", "tone": "info" }
+                {
+                  "icon": "🔒",
+                  "label": "研究対象",
+                  "value": "ジェイルブレイク/IPI",
+                  "description": "ジェイルブレイクと間接プロンプトインジェクション（IPI）が輸出規制の契機となり、業界全体の安全評価の中心に。",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🎓",
+                  "label": "研究者",
+                  "value": "Kolter & Fredrikson",
+                  "description": "OpenAI取締役会Safety委員のZico KolterとCMUのMatt FredriksonがGray Swanの研究体制を解説。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🛡️",
+                  "label": "実践研究",
+                  "value": "Hackaprompt他",
+                  "description": "Hackapromptなど実際の赤チーム演習・脆弱性評価を通じた実証的なAI安全性研究の動向。",
+                  "tone": "info"
+                }
               ],
               "context": "米政府によるMythos・Fable輸出規制は、AIシステムの安全性（特にジェイルブレイク耐性）を輸出管理の観点から初めて本格評価した事例として歴史的な転換点となった。",
               "impact": "AI安全性研究への資金・人材投入が政府・民間双方から加速する見込み。モデル開発者はジェイルブレイク耐性を製品仕様として公開することが求められるようになる可能性がある。"
-            }
+            },
+            "caption": "AI安全性研究の現状",
+            "alt": "Gray SwanのZico Kolter（OpenAI取締役会Safety委員）とMatt Fredrikson（CMU教授）によるAI安全性の現状解説。米政府のMythos・Fable輸出規制後、ジェイルブレイクと間接プロンプトインジェクションが業界の主要議題に。Gray SwanによるAI赤チーム演習・安全評価の最前線を紹介。"
           }
         },
         {
@@ -571,12 +769,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "蒸留 vs 通常RL 多様性比較",
-            "alt": "オンポリシー自己蒸留と通常の強化学習のロールアウト多様性比較。自己蒸留はpass@1精度が向上する一方、pass@kカーブがフラット化（多サンプルを生成しても精度が上がらない）。通常RLは多様性が維持され、parallel samplingによる精度向上の余地が残る。",
             "data": {
               "headline": "自己蒸留はpass@1を上げるがpass@kをフラット化——多様性トレードオフを実証",
-              "before": { "label": "通常RL", "sublabel": "標準的な強化学習" },
-              "after": { "label": "自己蒸留", "sublabel": "On-Policy Self-Distillation" },
+              "before": {
+                "label": "通常RL",
+                "sublabel": "標準的な強化学習"
+              },
+              "after": {
+                "label": "自己蒸留",
+                "sublabel": "On-Policy Self-Distillation"
+              },
               "metrics": [
                 {
                   "icon": "📈",
@@ -614,7 +816,9 @@
               ],
               "narrative": "自己蒸留は教師が「正解サンプルに条件付き」でフィードバックするバイアスが積み重なり、多様性が失われる。これにより並列サンプリング（pass@k）の効果が消滅する隠れたコストが生まれる。",
               "impact": "エージェントや推論タスクで多数のサンプルを生成して最良解を選ぶ戦略（pass@k）が重要な場合、自己蒸留の適用には注意が必要。タスクの性質に応じて訓練手法を使い分ける設計が求められる。"
-            }
+            },
+            "caption": "蒸留 vs 通常RL 多様性比較",
+            "alt": "オンポリシー自己蒸留と通常の強化学習のロールアウト多様性比較。自己蒸留はpass@1精度が向上する一方、pass@kカーブがフラット化（多サンプルを生成しても精度が上がらない）。通常RLは多様性が維持され、parallel samplingによる精度向上の余地が残る。"
           }
         }
       ]
@@ -643,8 +847,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "Jalapeño 開発・展開計画",
-            "alt": "OpenAI・Broadcom共同開発のLLM推論チップ「Jalapeño」の開発・展開タイムライン。設計からテープアウトまで9カ月で完了。2026年末に初期展開を開始予定。複数世代の長期計画の第1世代として位置付けており、NVIDIAへの依存脱却に向けた戦略的な動き。",
             "data": {
               "headline": "OpenAI初の自社製LLM推論チップ「Jalapeño」: 9カ月で設計完了、年内展開へ",
               "events": [
@@ -679,7 +881,9 @@
               ],
               "narrative": "ChatGPTとCodexの推論コストはNVIDIA GPUへの依存が大きく、長期的な収益性の障壁になっていた。Jalapeñoはこれを解消する戦略的投資の第一歩で、専用シリコンによる推論効率化を狙う。",
               "impact": "LLMの推論コストがOpenAI自社設計チップで改善されれば、API価格の引き下げや新サービス展開が加速する可能性がある。Google TPU・AWS Trainium的な垂直統合モデルへの移行を意味する。"
-            }
+            },
+            "caption": "Jalapeño 開発・展開計画",
+            "alt": "OpenAI・Broadcom共同開発のLLM推論チップ「Jalapeño」の開発・展開タイムライン。設計からテープアウトまで9カ月で完了。2026年末に初期展開を開始予定。複数世代の長期計画の第1世代として位置付けており、NVIDIAへの依存脱却に向けた戦略的な動き。"
           },
           "x_post": "OpenAIとBroadcomが共同開発した推論専用チップ「Jalapeño」を発表した。設計からテープアウトまで9カ月で完了。NVIDIA依存脱却を目指す初の自社カスタムシリコンであり、年内に大規模データセンターへの初期展開を予定している。\n\nhttps://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale"
         },
@@ -702,19 +906,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Qualcomm×Modular買収",
-            "alt": "QualcommによるAIチップソフトスタックスタートアップModularの約40億ドル買収。ModularはMLIRベースのAIコンパイラ・ランタイムを開発。Qualcommがチップからソフトウェアまで垂直統合を強化し、NVIDIAのCUDAエコシステムへの対抗軸を形成する戦略的買収。",
             "data": {
               "headline": "Qualcomm、AIソフトスタックのModularを約$4Bで買収——垂直統合でNVIDIA対抗軸を形成",
               "tldr": "約40億ドルのModular買収でQualcommはチップからAIコンパイラまで垂直統合。NVIDIAのCUDAへの対抗軸を強化。",
               "points": [
-                { "icon": "💰", "label": "買収額", "value": "約$4B（約5800億円）", "description": "AI時代の最有望チップソフトスタートアップの一つとされるModularを約40億ドルで買収。", "tone": "primary" },
-                { "icon": "🔧", "label": "Modularの強み", "value": "MLIRベースAIスタック", "description": "MLIRを基盤とした次世代AIコンパイラ・ランタイムスタック。複数ハードウェアへの最適化が可能。", "tone": "success" },
-                { "icon": "📈", "label": "戦略的意図", "value": "垂直統合・CUDA対抗", "description": "チップハードウェアからソフトウェアスタックまでの垂直統合で、NVIDIAのCUDAエコシステムへの対抗軸を強化。", "tone": "info" }
+                {
+                  "icon": "💰",
+                  "label": "買収額",
+                  "value": "約$4B（約5800億円）",
+                  "description": "AI時代の最有望チップソフトスタートアップの一つとされるModularを約40億ドルで買収。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "Modularの強み",
+                  "value": "MLIRベースAIスタック",
+                  "description": "MLIRを基盤とした次世代AIコンパイラ・ランタイムスタック。複数ハードウェアへの最適化が可能。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "戦略的意図",
+                  "value": "垂直統合・CUDA対抗",
+                  "description": "チップハードウェアからソフトウェアスタックまでの垂直統合で、NVIDIAのCUDAエコシステムへの対抗軸を強化。",
+                  "tone": "info"
+                }
               ],
               "context": "NVIDIAがGPU+CUDAの垂直統合でAI推論市場を支配する中、Qualcomm・AMD・IntelはソフトウェアスタックとHWの統合強化で対抗しようとしている。",
               "impact": "チップ市場のソフトウェアスタック競争が激化し、AI開発者がCUDA以外の選択肢を持てる可能性が高まる。Modularのオープンソース戦略との整合性が今後の焦点になる。"
-            }
+            },
+            "caption": "Qualcomm×Modular買収",
+            "alt": "QualcommによるAIチップソフトスタックスタートアップModularの約40億ドル買収。ModularはMLIRベースのAIコンパイラ・ランタイムを開発。Qualcommがチップからソフトウェアまで垂直統合を強化し、NVIDIAのCUDAエコシステムへの対抗軸を形成する戦略的買収。"
           }
         }
       ]
@@ -743,19 +965,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "英国警察予測AI問題",
-            "alt": "英国警察が構築した犯罪予測AIシステムの問題点。WIREDの調査報道によると、一部予測結果が信頼できず、精度検証プロセスに不備があることが明らかに。警察業務へのAI導入における説明責任・偏見・透明性の課題を浮き彫りにしており、EU AI Actなどの規制議論への示唆がある。",
             "data": {
               "headline": "英国警察の犯罪予測AI: 信頼できない予測と検証プロセス不備をWIREDが調査報道",
               "tldr": "英国警察の予測的治安維持AIが一部で信頼できない結果を出していたとWIREDが報道。AI×公安の規制課題を示す事例。",
               "points": [
-                { "icon": "⚠️", "label": "精度問題", "value": "信頼できない予測", "description": "一部の犯罪予測結果が信頼できないことが判明。精度検証プロセスの不備がシステム全体の信頼性を損なっていた。", "tone": "danger" },
-                { "icon": "🔒", "label": "透明性課題", "value": "説明責任の不足", "description": "AI予測の根拠・アルゴリズムの偏見・意思決定への影響について市民への説明責任が十分でない。", "tone": "warning" },
-                { "icon": "📖", "label": "示唆", "value": "規制議論への教訓", "description": "EU AI Actが高リスク用途と位置付ける警察業務AIの実態として、規制・監査の必要性を示す事例。", "tone": "info" }
+                {
+                  "icon": "⚠️",
+                  "label": "精度問題",
+                  "value": "信頼できない予測",
+                  "description": "一部の犯罪予測結果が信頼できないことが判明。精度検証プロセスの不備がシステム全体の信頼性を損なっていた。",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "透明性課題",
+                  "value": "説明責任の不足",
+                  "description": "AI予測の根拠・アルゴリズムの偏見・意思決定への影響について市民への説明責任が十分でない。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📖",
+                  "label": "示唆",
+                  "value": "規制議論への教訓",
+                  "description": "EU AI Actが高リスク用途と位置付ける警察業務AIの実態として、規制・監査の必要性を示す事例。",
+                  "tone": "info"
+                }
               ],
               "context": "EU AI ActはAI予測システムを高リスク用途として規制対象にしており、加盟国の法執行機関は2025年から段階的に規制適用を受けている。英国はBrexitでEU AI Actの適用外だが、独自の規制議論が進んでいる。",
               "impact": "警察・公安業務へのAI導入における透明性・説明責任・精度検証の基準策定が急務であることが再確認された。AIシステムを本番導入する前の監査・評価プロセスの重要性が高まる。"
-            }
+            },
+            "caption": "英国警察予測AI問題",
+            "alt": "英国警察が構築した犯罪予測AIシステムの問題点。WIREDの調査報道によると、一部予測結果が信頼できず、精度検証プロセスに不備があることが明らかに。警察業務へのAI導入における説明責任・偏見・透明性の課題を浮き彫りにしており、EU AI Actなどの規制議論への示唆がある。"
           }
         }
       ]
@@ -784,8 +1024,6 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "NY-12 AI代理戦争の経緯",
-            "alt": "AnthropicとOpenAIが2700万ドルを投じたニューヨーク第12区議会選挙の経緯。AI推進派スーパーPACがAlex Bores氏を標的に。Bores氏が注目を集めたが民主党予備選で僅差敗北。AI企業の選挙参入の初の大型事例として結論は「引き分け」。",
             "data": {
               "headline": "NY-12 AI代理戦争: AnthropicとOpenAIが2700万ドルを投じるも引き分け",
               "events": [
@@ -813,7 +1051,9 @@
               ],
               "narrative": "AI企業が選挙政治に本格参入した初の大型事例。2700万ドルという異例の資金投入にもかかわらず「引き分け」に終わったことは、AI業界の政治的影響力の限界も示している。",
               "impact": "AI企業の選挙介入という前例が生まれたことで、今後の選挙サイクルでAI政策が争点化される可能性が高まる。規制側もAI企業の政治資金への監視を強める可能性がある。"
-            }
+            },
+            "caption": "NY-12 AI代理戦争の経緯",
+            "alt": "AnthropicとOpenAIが2700万ドルを投じたニューヨーク第12区議会選挙の経緯。AI推進派スーパーPACがAlex Bores氏を標的に。Bores氏が注目を集めたが民主党予備選で僅差敗北。AI企業の選挙参入の初の大型事例として結論は「引き分け」。"
           },
           "x_post": "AnthropicとOpenAIが支援するスーパーPACが合計2700万ドルをニューヨーク第12区議会選挙に投入した代理戦争が引き分けで決着した。AI企業が選挙政治に本格参入した初の大型事例として歴史に記録される。\n\nhttps://theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results"
         },
@@ -836,19 +1076,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "エンジニア採用トレンド",
-            "alt": "SignalFireデータが示すエンジニア採用の現状。AIによるエンジニア置き換え予測に反し、新規採用に占めるエンジニアシェアは増加。AIがエンジニアを代替するのではなく、エンジニアがAIを活用して生産性を向上させる構図が現実として定着しつつあると示すデータ。",
             "data": {
               "headline": "SignalFireデータ: AIレイオフ時代でもエンジニア採用シェアは増加——最も回復力高い職種に",
               "tldr": "「AIがエンジニアを奪う」という予測に反し、エンジニアは新規採用シェアが増加している最も回復力高い職種とSignalFireが示す。",
               "points": [
-                { "icon": "📈", "label": "エンジニア採用", "value": "シェア増加", "description": "SignalFireのデータで、新規採用に占めるエンジニアの割合が増加していることが判明。AI主導のレイオフ時代でも底堅い。", "tone": "success" },
-                { "icon": "🔧", "label": "実態", "value": "AI活用で生産性向上", "description": "エンジニアがAIに置き換えられるのではなく、AIツールを活用して生産性を高め、むしろ需要が増す構図。", "tone": "info" },
-                { "icon": "⚠️", "label": "言説との乖離", "value": "予測と現実の差", "description": "「AIがエンジニア職を大量に奪う」という主流的予測と、実際の採用トレンドが乖離していることを示す。", "tone": "warning" }
+                {
+                  "icon": "📈",
+                  "label": "エンジニア採用",
+                  "value": "シェア増加",
+                  "description": "SignalFireのデータで、新規採用に占めるエンジニアの割合が増加していることが判明。AI主導のレイオフ時代でも底堅い。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "実態",
+                  "value": "AI活用で生産性向上",
+                  "description": "エンジニアがAIに置き換えられるのではなく、AIツールを活用して生産性を高め、むしろ需要が増す構図。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "言説との乖離",
+                  "value": "予測と現実の差",
+                  "description": "「AIがエンジニア職を大量に奪う」という主流的予測と、実際の採用トレンドが乖離していることを示す。",
+                  "tone": "warning"
+                }
               ],
               "context": "2024〜2025年のテック大手レイオフ後、AIによるホワイトカラー置き換え議論が激化していた。しかしSignalFireは採用データの実態が言説と乖離していることを指摘している。",
               "impact": "エンジニアのキャリア設計において「AIへの補完的スキル習得」が付加価値向上の方向性として有効であることが示唆される。企業のAI投資がエンジニア採用を削減する方向には向かっていない可能性がある。"
-            }
+            },
+            "caption": "エンジニア採用トレンド",
+            "alt": "SignalFireデータが示すエンジニア採用の現状。AIによるエンジニア置き換え予測に反し、新規採用に占めるエンジニアシェアは増加。AIがエンジニアを代替するのではなく、エンジニアがAIを活用して生産性を向上させる構図が現実として定着しつつあると示すデータ。"
           }
         }
       ]
@@ -875,22 +1133,43 @@
             "「マネジャー視点」でAIを活用するスキルを養う内容で、単なるAI使い方説明を超えた構成",
             "AI活用リテラシーが業務標準スキルとなりつつある時代の入門教材として注目"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 299 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 299
+          },
           "figure": {
             "type": "summary-card",
-            "caption": "Google公式AI講座の内容",
-            "alt": "Google公式の初心者向けAI講座のレポート記事がはてブ299件を獲得。実習パートではGeminiを使った業務課題（ボードゲーム配送スケジュール管理・造園業の植物選定）を実践。マネジャー視点でのAI活用スキルを養う内容で、AI業務リテラシー向上の入門として高く評価された。",
             "data": {
               "headline": "Google公式AI講座がはてブ299件——Gemini実習付き「マネジャー視点」の入門講座",
               "tldr": "Google公式の無料AI講座レポートがはてブ299件獲得。実習パートでGemini活用の業務課題を実践する「想像以上の完成度」と評価。",
               "points": [
-                { "icon": "🎓", "label": "反響", "value": "はてブ299件", "description": "ITmediaのGoogle公式AI講座受講レポートがはてブ299件を獲得。AI業務活用の入門として多くの人の関心を集めた。", "tone": "primary" },
-                { "icon": "🔧", "label": "実習内容", "value": "Geminiで業務課題", "description": "おもちゃ会社のボードゲーム配送スケジュール管理や造園業の水使用制限考慮など、実践的な業務課題をGeminiで解く実習。", "tone": "success" },
-                { "icon": "👥", "label": "対象スキル", "value": "マネジャー視点", "description": "「マネジャー視点でAIを活用する」スキルを中心に構成されており、単なるツール説明を超えた実務志向の内容。", "tone": "info" }
+                {
+                  "icon": "🎓",
+                  "label": "反響",
+                  "value": "はてブ299件",
+                  "description": "ITmediaのGoogle公式AI講座受講レポートがはてブ299件を獲得。AI業務活用の入門として多くの人の関心を集めた。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "実習内容",
+                  "value": "Geminiで業務課題",
+                  "description": "おもちゃ会社のボードゲーム配送スケジュール管理や造園業の水使用制限考慮など、実践的な業務課題をGeminiで解く実習。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "👥",
+                  "label": "対象スキル",
+                  "value": "マネジャー視点",
+                  "description": "「マネジャー視点でAIを活用する」スキルを中心に構成されており、単なるツール説明を超えた実務志向の内容。",
+                  "tone": "info"
+                }
               ],
               "context": "「AIを使って当たり前」の時代が到来し、AI活用リテラシーが業務の前提スキルとなりつつある。Googleが公式に無料で提供する初心者向け講座の完成度が高いことは、業界全体の普及促進にとっても重要。",
               "impact": "無料の高品質なAI業務活用講座が普及することで、AI活用の裾野が広がり、中小企業・非IT部門でのAI導入ハードルが下がる。"
-            }
+            },
+            "caption": "Google公式AI講座の内容",
+            "alt": "Google公式の初心者向けAI講座のレポート記事がはてブ299件を獲得。実習パートではGeminiを使った業務課題（ボードゲーム配送スケジュール管理・造園業の植物選定）を実践。マネジャー視点でのAI活用スキルを養う内容で、AI業務リテラシー向上の入門として高く評価された。"
           }
         },
         {
@@ -910,15 +1189,22 @@
             "はてブ139件の反響——日本のAIコミュニティで注目の国産AI研究成果",
             "詳細な実装・学術的検証の公開が今後の評価に向けて期待される"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 139 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 139
+          },
           "figure": {
             "type": "comparison",
-            "caption": "PHOTON vs Transformer 比較",
-            "alt": "富士通PHOTONと従来Transformerアーキテクチャの性能比較。GPU当たりのスループット（処理性能）でPHOTONがTransformerの最大475倍に達するという。LLMの運用GPUを大幅削減し、AI推論コストの低減が期待される。はてブ139件の注目を集めた国産AI研究成果。",
             "data": {
               "headline": "富士通PHOTON: Transformer比最大475倍のGPUスループットでLLM運用コストを削減",
-              "before": { "label": "Transformer", "sublabel": "従来の主流アーキテクチャ" },
-              "after": { "label": "PHOTON", "sublabel": "富士通の新アーキテクチャ" },
+              "before": {
+                "label": "Transformer",
+                "sublabel": "従来の主流アーキテクチャ"
+              },
+              "after": {
+                "label": "PHOTON",
+                "sublabel": "富士通の新アーキテクチャ"
+              },
               "metrics": [
                 {
                   "icon": "⚡",
@@ -945,7 +1231,9 @@
               ],
               "narrative": "LLMのGPU需要が逼迫する中、Transformer以外のアーキテクチャによる効率化へのニーズが高まっている。富士通PHOTONは国産AIの研究成果として、AI推論コスト削減のアプローチに新たな選択肢を提示する。",
               "impact": "独立した外部検証が行われれば、AI推論インフラのコスト構造を大きく変える可能性がある。GPUリソース不足に悩む企業にとって代替アーキテクチャへの関心が高まる。"
-            }
+            },
+            "caption": "PHOTON vs Transformer 比較",
+            "alt": "富士通PHOTONと従来Transformerアーキテクチャの性能比較。GPU当たりのスループット（処理性能）でPHOTONがTransformerの最大475倍に達するという。LLMの運用GPUを大幅削減し、AI推論コストの低減が期待される。はてブ139件の注目を集めた国産AI研究成果。"
           },
           "x_post": "富士通がGPU当たりのスループットをTransformer比最大475倍とする新LLMアーキテクチャ「PHOTON」を発表した。はてブ139件を獲得した国産AI研究の成果であり、AI推論コストの大幅削減が期待される。\n\nhttps://itmedia.co.jp/aiplus/article/2606/24/2000000125"
         },
@@ -968,12 +1256,16 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "PLaMo 3.0 Prime vs 競合",
-            "alt": "PLaMo 3.0 Primeと競合モデルの比較。コンテキスト長を64Kから256Kへ拡張（4倍）。日本語性能でgpt-oss-120b・Qwen3.6-27bなど同性能帯オープンモデルおよびGPT-5.4 Mini・Claude Haiku 4.5など同価格帯クローズドモデルに対し競争力を発揮。国産最高水準の日本語性能とコスト効率を両立。",
             "data": {
               "headline": "PLaMo 3.0 Prime: コンテキスト256K拡張、国産最高水準の日本語性能とコスト競争力",
-              "before": { "label": "PLaMo 3.0 Prime β版", "sublabel": "前バージョン" },
-              "after": { "label": "PLaMo 3.0 Prime", "sublabel": "正式版（本日リリース）" },
+              "before": {
+                "label": "PLaMo 3.0 Prime β版",
+                "sublabel": "前バージョン"
+              },
+              "after": {
+                "label": "PLaMo 3.0 Prime",
+                "sublabel": "正式版（本日リリース）"
+              },
               "metrics": [
                 {
                   "icon": "📜",
@@ -1011,7 +1303,9 @@
               ],
               "narrative": "国産AIモデルとして日本語特有のニュアンス・ビジネス文書処理への対応を強みとし、コスト効率でも競合できるポジションを確立。特に256Kコンテキストは長文処理の実務ニーズに応える。",
               "impact": "PLaMo 3.0 Primeが同価格帯のグローバルモデルと競争できることが示され、日本語AI処理の国産選択肢が実用段階に達したことを意味する。データ主権・セキュリティを重視する国内企業への訴求が高まる。"
-            }
+            },
+            "caption": "PLaMo 3.0 Prime vs 競合",
+            "alt": "PLaMo 3.0 Primeと競合モデルの比較。コンテキスト長を64Kから256Kへ拡張（4倍）。日本語性能でgpt-oss-120b・Qwen3.6-27bなど同性能帯オープンモデルおよびGPT-5.4 Mini・Claude Haiku 4.5など同価格帯クローズドモデルに対し競争力を発揮。国産最高水準の日本語性能とコスト効率を両立。"
           }
         },
         {
@@ -1033,19 +1327,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "マルチエージェント開発の課題",
-            "alt": "LINEヤフーがTech-Verse 2026で発表したマルチエージェント開発プロセス設計の知見。AIコーディングの難所はコード生成よりも意図を正確な仕様に変換するプロセス設計にあると指摘。複数AIエージェントに議論させて品質を担保する手法を紹介。",
             "data": {
               "headline": "LINEヤフー: AIエージェントに議論させてコード品質を担保するマルチエージェント開発設計",
               "tldr": "AI時代の開発の難所は「コード生成」より「意図→仕様変換・品質保証プロセス」の設計。マルチエージェント議論が解決策。",
               "points": [
-                { "icon": "🔧", "label": "核心課題", "value": "意図→仕様変換", "description": "AIコーディングで難しいのはコードを出すこと自体ではなく、人間の意図を正確な仕様に変換するプロセス設計にある。", "tone": "primary" },
-                { "icon": "👥", "label": "解決手法", "value": "マルチエージェント議論", "description": "複数のAIエージェントに議論・批評させることで、単独エージェントでは気づけない仕様の矛盾・欠落を発見できる。", "tone": "success" },
-                { "icon": "🏢", "label": "実践", "value": "Tech-Verse 2026事例", "description": "LINEヤフーのTech-Verse 2026での発表事例として、実際の開発現場での試行錯誤が公開されている。", "tone": "info" }
+                {
+                  "icon": "🔧",
+                  "label": "核心課題",
+                  "value": "意図→仕様変換",
+                  "description": "AIコーディングで難しいのはコードを出すこと自体ではなく、人間の意図を正確な仕様に変換するプロセス設計にある。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👥",
+                  "label": "解決手法",
+                  "value": "マルチエージェント議論",
+                  "description": "複数のAIエージェントに議論・批評させることで、単独エージェントでは気づけない仕様の矛盾・欠落を発見できる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "実践",
+                  "value": "Tech-Verse 2026事例",
+                  "description": "LINEヤフーのTech-Verse 2026での発表事例として、実際の開発現場での試行錯誤が公開されている。",
+                  "tone": "info"
+                }
               ],
               "context": "コーディングエージェントが実務展開される中、エージェントの出力品質をどう担保するかが共通の課題になっている。マルチエージェントによる相互批評・議論は品質担保の一つのアプローチとして注目されている。",
               "impact": "マルチエージェント設計のノウハウが公開されることで、日本企業でのエージェント開発プロセス設計の参考事例として価値がある。"
-            }
+            },
+            "caption": "マルチエージェント開発の課題",
+            "alt": "LINEヤフーがTech-Verse 2026で発表したマルチエージェント開発プロセス設計の知見。AIコーディングの難所はコード生成よりも意図を正確な仕様に変換するプロセス設計にあると指摘。複数AIエージェントに議論させて品質を担保する手法を紹介。"
           }
         },
         {
@@ -1067,19 +1379,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code 効果分析",
-            "alt": "6プロジェクトのBacklogデータを用いたClaude Code導入効果の実証分析。1人あたりの課題完了数で導入前後を比較したところ、体制設計の違いが効果に大きく影響することが判明。同一ツールでも体制次第で結果が大きく異なる実証データ。",
             "data": {
               "headline": "Claude Code 6プロジェクト実測: 効果を決めるのは「使い方」より「体制」",
               "tldr": "BacklogデータでClaude Code導入効果を実測したところ、体制設計の違いが成果に大きな影響を与えることが判明。感覚ではなく数字での実証。",
               "points": [
-                { "icon": "📊", "label": "実測方法", "value": "Backlog課題完了数", "description": "社内課題管理ツールBacklogのログで「1人あたりの課題完了数」を導入前後で比較という実証的アプローチ。", "tone": "primary" },
-                { "icon": "📈", "label": "主要発見", "value": "体制が効果を左右", "description": "同じClaude Codeを使っても、チームの体制設計（役割分担・レビュー方法・使い方ガイドライン）によって効果が大きく変わる。", "tone": "success" },
-                { "icon": "🔧", "label": "実践的価値", "value": "AI導入の指針", "description": "「とにかく使え」ではなく体制設計が先という、AI導入プロジェクト管理者への具体的示唆。", "tone": "info" }
+                {
+                  "icon": "📊",
+                  "label": "実測方法",
+                  "value": "Backlog課題完了数",
+                  "description": "社内課題管理ツールBacklogのログで「1人あたりの課題完了数」を導入前後で比較という実証的アプローチ。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📈",
+                  "label": "主要発見",
+                  "value": "体制が効果を左右",
+                  "description": "同じClaude Codeを使っても、チームの体制設計（役割分担・レビュー方法・使い方ガイドライン）によって効果が大きく変わる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "実践的価値",
+                  "value": "AI導入の指針",
+                  "description": "「とにかく使え」ではなく体制設計が先という、AI導入プロジェクト管理者への具体的示唆。",
+                  "tone": "info"
+                }
               ],
               "context": "Claude CodeなどのAIコーディングツール導入が進む中、その効果を定量的に示した実証事例は少ない。感覚論ではなくデータに基づく意思決定をサポートする希少な事例として価値が高い。",
               "impact": "AI開発ツール導入の際に「体制設計」が先決事項であることが示され、ツール選定より組織設計が先という認識の転換を促す可能性がある。"
-            }
+            },
+            "caption": "Claude Code 効果分析",
+            "alt": "6プロジェクトのBacklogデータを用いたClaude Code導入効果の実証分析。1人あたりの課題完了数で導入前後を比較したところ、体制設計の違いが効果に大きく影響することが判明。同一ツールでも体制次第で結果が大きく異なる実証データ。"
           }
         }
       ]
@@ -1108,8 +1438,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "中国AIアプリ成長指標",
-            "alt": "中国AIアプリ市場の急成長を示す指標。AIアプリ企業がARR3億ドル（約450億円）を突破し初のユニコーンが誕生。モデル競争から収益化フェーズへの移行を示す2026年の節目となるデータ。",
             "data": {
               "headline": "中国AIアプリ収益化元年: ARR 3億ドル突破のユニコーン誕生",
               "bars": [
@@ -1140,7 +1468,9 @@
               ],
               "narrative": "中国のAI産業がモデル開発・インフラ競争の段階を経て、アプリ層での本格的な収益化フェーズに入った。3億ドルARRは中国AI市場の成熟度を示す節目となる。",
               "impact": "グローバルなAIアプリ市場の競争構図に影響を与える。特に翻訳・音声・コード生成などの汎用AIアプリ領域で中国勢の存在感が増す。"
-            }
+            },
+            "caption": "中国AIアプリ成長指標",
+            "alt": "中国AIアプリ市場の急成長を示す指標。AIアプリ企業がARR3億ドル（約450億円）を突破し初のユニコーンが誕生。モデル競争から収益化フェーズへの移行を示す2026年の節目となるデータ。"
           }
         },
         {
@@ -1162,19 +1492,37 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "GLM vs Fable予測",
-            "alt": "Elon Musk氏がGLM（中国・清华大学発のオープンソースLLM）についてFableに追いつくのは時間の問題と予測したと量子位が報道。GLMは直近で複数の新モデルを連続リリースし急速に進化している。中国OSS LLMのグローバル競争への参入を示す。",
             "data": {
               "headline": "Musk氏「GLMがFableに追いつくのは時間の問題」——中国OSS LLMの急速進化",
               "tldr": "量子位報道: Elon MuskがGLMのFable追い上げを予測。清华AI「追光」戦略が外部からも認められた形。",
               "points": [
-                { "icon": "🔮", "label": "Musk氏予測", "value": "GLM追いつく時間の問題", "description": "Elon Musk氏がGLM（清华大学発OSS LLM）についてFableに追いつくのは時間の問題と発言したと量子位が報道。", "tone": "primary" },
-                { "icon": "🚀", "label": "GLMの進化速度", "value": "複数モデルを連続投入", "description": "GLM-Z1-Rumble・GLM-4-Air-0414・GLM-52B-Opusなど精力的にモデルをリリースし、グローバルOSSランキングで存在感を増している。", "tone": "success" },
-                { "icon": "🏃", "label": "戦略", "value": "清华AI「追光」", "description": "量子位が清华AIの開発方針を「追光（光を追う）」戦略と称し、グローバル最高水準への追い上げを目指す姿勢を象徴。", "tone": "info" }
+                {
+                  "icon": "🔮",
+                  "label": "Musk氏予測",
+                  "value": "GLM追いつく時間の問題",
+                  "description": "Elon Musk氏がGLM（清华大学発OSS LLM）についてFableに追いつくのは時間の問題と発言したと量子位が報道。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🚀",
+                  "label": "GLMの進化速度",
+                  "value": "複数モデルを連続投入",
+                  "description": "GLM-Z1-Rumble・GLM-4-Air-0414・GLM-52B-Opusなど精力的にモデルをリリースし、グローバルOSSランキングで存在感を増している。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏃",
+                  "label": "戦略",
+                  "value": "清华AI「追光」",
+                  "description": "量子位が清华AIの開発方針を「追光（光を追う）」戦略と称し、グローバル最高水準への追い上げを目指す姿勢を象徴。",
+                  "tone": "info"
+                }
               ],
               "context": "OpenAIやAnthropicの最上位モデルが急速に進化する中、中国のオープンソースLLMコミュニティがどこまで追いつけるかが業界の注目点。GLMはQwenと並んで中国を代表するOSS LLMシリーズとなっている。",
               "impact": "グローバルオープンソースLLM競争に中国勢が本格参入することで、Llama・Qwen・GLMなどOSSモデルの選択肢が増え、AIアクセシビリティの向上につながる。"
-            }
+            },
+            "caption": "GLM vs Fable予測",
+            "alt": "Elon Musk氏がGLM（中国・清华大学発のオープンソースLLM）についてFableに追いつくのは時間の問題と予測したと量子位が報道。GLMは直近で複数の新モデルを連続リリースし急速に進化している。中国OSS LLMのグローバル競争への参入を示す。"
           }
         }
       ]

@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 24 Jun 2026 17:45:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 17:45:04 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI初の推論専用チップ「Jalapeño」発表、音声AIは感情を読めない——富士通の新アーキテクチャPHOTONがTransformer比475倍の処理効率、Gemini 3.5 FlashがComputer Useを標準搭載</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26</link>
+      <guid isPermaLink="false">aidd-day-2026-06-26</guid>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
+      <description>OpenAIとBroadcomが共同開発した初の自社製LLM推論チップ「Jalapeño」が発表されるなど、AIハードウェア競争が本格化した一日。一方で、リアルタイム音声AIが言葉のみを処理し感情音声を無視するという安全上の重大な課題を示す研究も公開された。国内では富士通がTransformer比最大475倍のスループットを実現する新LLMアーキテクチャ「PHOTON」を発表。GoogleのGemini 3.5 FlashへのComputer Use標準搭載、Cohere初のオープンソースコーディングモデル「North Mini Code」のリリースなど、エコシステムの拡充も続く。AI政策面では、AnthropicとOpenAIが2700万ドルを投じたニューヨーク州議会選挙での代理戦争の結果が判明した。
+
+【今日の必読】
+・リアルタイム音声AIは「聞こえている」が「聴いていない」——感情・声調を無視する重大な安全リスクを実証
+・OpenAI初の自社製推論チップ「Jalapeño」発表——Broadcomと共同開発、年内展開へ
+・Gemini 3.5 Flash gains built-in Computer Use tool for browser, mobile, and desktop automation
+・富士通、Transformerの最大475倍GPUスループットの新LLMアーキテクチャ「PHOTON」を開発
+・H100 one-GPU Apache 2.0 coding MoE: Cohere North Mini Code
+・2700万ドルのAI代理戦争——AnthropicとOpenAIが支援した米議会選挙がドローで決着</description>
+    </item>
     <item>
       <title>AnthropicがSlack常駐型AIエージェント「Claude Tag」を発表、OpenAIはBroadcomと共同設計の推論専用チップ「Jalapeño」を公開——QualcommがAIソフトスタックのModularを約40億ドルで買収、PLaMo 3.0 Primeが25</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25</link>
@@ -441,21 +456,6 @@
 ・「AI 事業に難易度ってあるの？」AI 事業の難易度を 10 段階で分類してみた
 ・EnvFactory：RL訓練用ツール環境の自動合成でエージェントベンチマークを最大+15%改善
 ・NTT製LLM「tsuzumi 2」が図表を「理解」　ビジネス文書全般をカバー</description>
-    </item>
-    <item>
-      <title>DeepSeek V4 Pro（862B）公開・AnthropicがStainless買収・50日で4件のAIサプライチェーン攻撃が露見</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-19</link>
-      <guid isPermaLink="false">aidd-day-2026-05-19</guid>
-      <pubDate>Mon, 18 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月19日は、オープンウェイトAIの競争が再加速した。DeepSeekが862BパラメータのV4 Proと高速版V4 Flash（158B）を公開し、AlibabaのQwen3.6シリーズ（27B・35B）もHugging Faceでトレンド入りした。AnthropicはOpenAI・Google・Cloudflareも利用するSDK生成スタートアップStainlessを買収し開発者エコシステム戦略を強化。セキュリティ面では50日間で4件のAIサプライチェーン攻撃が報告されリリースパイプラインの盲点が明らかになった。国内では「スマホからClaudeでサーバ復旧」「AIコーディングでsecret漏洩を防ぐ4層防衛」がはてブ上位を占め、実践的なAI活用知見の共有が活発だ。
-
-【今日の必読】
-・AI コーディングで secret を漏らさないための４層防衛
-・DeepSeek V4 Pro（862B）がHugging Faceで公開——オープンウェイト最前線が再更新
-・SenseNova-U1——商湯科技がマルチモーダル「理解」と「生成」を統合した統一モデルを発表
-・Darwinファミリー——訓練なしでGPQA Diamond 88.89%を達成し、訓練フリー推論の限界を塗り替える
-・AnthropicがStainlessを買収——OpenAI・Google・Cloudflareも利用するSDK生成スタートアップを取得
-・AlibabaがQoder 1.0を発表——コード生成・検証・デリバリーを自律処理するエージェント開発環境に進化</description>
     </item>
   </channel>
 </rss>

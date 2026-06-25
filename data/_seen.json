@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-25T05:30:00+09:00",
+  "updated_at": "2026-06-26T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5298,8 +5298,8 @@
     "fb7f44e598f8e06c": {
       "url_prefix": "https://wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-doll",
       "first_seen_at": "2026-06-25",
-      "last_seen_at": "2026-06-25",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 2
     },
     "354c2d6af4c36f63": {
       "url_prefix": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fue",
@@ -5365,6 +5365,150 @@
       "url_prefix": "https://www.qbitai.com/2026/06/claude-code-karpathy-llm-third-revolution.html",
       "first_seen_at": "2026-06-25",
       "last_seen_at": "2026-06-25",
+      "last_seen_count": 1
+    },
+    "f16279eb846d8288": {
+      "url_prefix": "https://zenn.dev/okssusucha/articles/20260625-cohere-north-mini-code",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "25ccc2cc86e36707": {
+      "url_prefix": "https://zenn.dev/davidvl/articles/95abe23a3f88a6",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "8c2366641dc374d8": {
+      "url_prefix": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "9f651f160322f7d0": {
+      "url_prefix": "https://zenn.dev/okssusucha/articles/20260625-openai-agents-sdk-sandbox-agents",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "d2fb4d012fa13e7c": {
+      "url_prefix": "https://atmarkit.itmedia.co.jp/ait/articles/2606/25/news058.html",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "2860623f470c18cb": {
+      "url_prefix": "https://itmedia.co.jp/news/articles/2606/25/news132.html",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "a1b9d62975487df9": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/25/2000000127",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "0e0b2f084298a36c": {
+      "url_prefix": "https://latent.space/p/ainews-its-meta-harness-summer",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "52163679a4aa2907": {
+      "url_prefix": "https://techno-edge.net/article/2026/06/25/5223.html",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "0260ca7fad36d07c": {
+      "url_prefix": "https://wired.com/story/a24-knows-youre-mad-about-the-google-ai-collab",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "390ecc0b4887a572": {
+      "url_prefix": "https://arxiv.org/abs/2606.26083v1",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "d2c54f82ed4e320b": {
+      "url_prefix": "https://latent.space/p/gray-swan",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "e5c8b78ee5244804": {
+      "url_prefix": "https://arxiv.org/abs/2606.26091v1",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "4b42f7d894172e0f": {
+      "url_prefix": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-design",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "7390d6ddbbb8b649": {
+      "url_prefix": "https://wired.com/story/british-police-built-a-sprawling-crime-prediction-machin",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "81fa342bae131fd9": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "da787d006b22bf65": {
+      "url_prefix": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-n",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "f0854f4dc8dbc524": {
+      "url_prefix": "https://itmedia.co.jp/business/articles/2606/25/news034.html",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "b910c39499bc7607": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/24/2000000125",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "18a8b4fb41c27ed8": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "a5bc04307852b057": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/techverse2026-219",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "0f9f8eaff8418836": {
+      "url_prefix": "https://zenn.dev/i_kimishi/articles/claude-code-team-structure",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "b98f410932740279": {
+      "url_prefix": "https://synced.global/china-ai-app-unicorn-300m-arr",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "29b45323b795b1c8": {
+      "url_prefix": "https://synced.global/china-glm-elon-prediction",
+      "first_seen_at": "2026-06-26",
+      "last_seen_at": "2026-06-26",
       "last_seen_count": 1
     }
   },
