@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-26T05:00:00+09:00",
+  "updated_at": "2026-06-27T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5412,14 +5412,14 @@
     "0e0b2f084298a36c": {
       "url_prefix": "https://latent.space/p/ainews-its-meta-harness-summer",
       "first_seen_at": "2026-06-26",
-      "last_seen_at": "2026-06-26",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 2
     },
     "52163679a4aa2907": {
       "url_prefix": "https://techno-edge.net/article/2026/06/25/5223.html",
       "first_seen_at": "2026-06-26",
-      "last_seen_at": "2026-06-26",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 2
     },
     "0260ca7fad36d07c": {
       "url_prefix": "https://wired.com/story/a24-knows-youre-mad-about-the-google-ai-collab",
@@ -5484,14 +5484,14 @@
     "18a8b4fb41c27ed8": {
       "url_prefix": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release",
       "first_seen_at": "2026-06-26",
-      "last_seen_at": "2026-06-26",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 2
     },
     "a5bc04307852b057": {
       "url_prefix": "https://techblog.lycorp.co.jp/ja/techverse2026-219",
       "first_seen_at": "2026-06-26",
-      "last_seen_at": "2026-06-26",
-      "last_seen_count": 1
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 2
     },
     "0f9f8eaff8418836": {
       "url_prefix": "https://zenn.dev/i_kimishi/articles/claude-code-team-structure",
@@ -5509,6 +5509,132 @@
       "url_prefix": "https://synced.global/china-glm-elon-prediction",
       "first_seen_at": "2026-06-26",
       "last_seen_at": "2026-06-26",
+      "last_seen_count": 1
+    },
+    "d5c131187e0fcf48": {
+      "url_prefix": "https://lesswrong.com/posts/MkwL4AcbE44yePEQx/whit",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "bd6d5805dbf5b8e2": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/95",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "ea41ff4e1a5d7ba0": {
+      "url_prefix": "https://pc.watch.impress.co.jp/docs/news/2120513.h",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "61fe0e4252aee858": {
+      "url_prefix": "https://huggingface.co/blog/vllm-jobs",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "6ed33e4a79ecf771": {
+      "url_prefix": "https://gigazine.net/news/20260626-openrouter-mcp-",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "448f75ecc4921fdd": {
+      "url_prefix": "https://qiita.com/kinamocchi_tech/items/159623f451",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "a5a3eba61e22b568": {
+      "url_prefix": "https://arxiv.org/abs/2606.27377v1",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "b271a099082b9919": {
+      "url_prefix": "https://arxiv.org/abs/2606.27288v1",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "8d07c34d39e6abf3": {
+      "url_prefix": "https://arxiv.org/abs/2606.27326v1",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "efc8f3942a58f466": {
+      "url_prefix": "https://latent.space/p/ainews-openai-reports-media",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "df468e9806716b12": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/95",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "40d6f890dfd34881": {
+      "url_prefix": "https://latent.space/p/ainews-spacex-is-already-a-",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "3be3b52342acd364": {
+      "url_prefix": "https://arstechnica.com/tech-policy/2026/06/anthro",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "e5397ade212507ef": {
+      "url_prefix": "https://arstechnica.com/gadgets/2026/06/notion-kil",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "2aa2437505bc2fe4": {
+      "url_prefix": "https://tech.uzabase.com/entry/2026/06/26/100727",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "80fc9820ebc21b0b": {
+      "url_prefix": "https://goodpatch.com/blog/2026-06-github",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "5920055aa320be98": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/26/20000",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "3c66a5bc75541346": {
+      "url_prefix": "https://techblog.tebiki.co.jp/2026/06/26/154458",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "1dcec76905a5a8e2": {
+      "url_prefix": "https://hatena.ne.jp/ownedmedia/article/ga4-ai-vs-",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "9294ac330a45781e": {
+      "url_prefix": "https://qbitai.com/2026/06/438789.html",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "a2dea867d0bb8b7f": {
+      "url_prefix": "https://qbitai.com/2026/06/438703.html",
+      "first_seen_at": "2026-06-27",
+      "last_seen_at": "2026-06-27",
       "last_seen_count": 1
     }
   },

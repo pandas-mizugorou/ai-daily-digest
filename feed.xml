@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 25 Jun 2026 17:45:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 17:39:22 GMT</lastBuildDate>
+    <item>
+      <title>米政府がGPT-5.6公開を制御・AlibabによるClaude最大規模複製攻撃をAnthropicが暴露——Anthropic Mythos規制2週間継続、Codex社内トークン56倍成長</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27</link>
+      <guid isPermaLink="false">aidd-day-2026-06-27</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <description>米トランプ政権がフロンティアAIモデルの公開を直接管理する事態が明確になった一日。OpenAIはGPT-5.6（Sol/Terra/Luna）をホワイトハウスの要請で段階公開し、Anthropicは「Mythos級」モデルの規制が2週間継続中と認め、解決の見通しが立っていないと報告。Anthropicはさらに、中国AlibabaによるClaude能力複製の「過去最大キャンペーン」を米上院議員に書簡で暴露した。学術面では、67モデルを用いた研究でLLMアンサンブルの精度上限が「共同失敗率」に規定されることが示され、OpenAI社内Codexのトークン使用量が調査部門で56倍増と急増していることも明らかに。国内ではGoodpatchの15人デザイナーがClaude Code×GitHubで組織運営を刷新し、UzabaseがClaude CodeスキルでSLO対応を自動化するなど、AIエージェント活用が実務定着フェーズへ移行している。
+
+【今日の必読】
+・AnthropicのMythosモデル危機が深刻化——トランプ政権命令から2週間、解決の見通しなし
+・OpenAIがGPT-5.6（Sol/Terra/Luna）を発表——米AI規制ドラマのさなかの段階公開
+・Anthropicが中国Alibabaによる「過去最大のClaude複製攻撃」を上院議員への書簡で暴露
+・ホワイトハウスがGPT-5.6アクセスをアドホック個別決定——透明な正式手続きなき新体制が成立
+・生産性向上を「個人レベル」から「組織レベル」へ 15人のデザイナーで「Claude Code × GitHub」で組織運営をした結果
+・OpenAI社内Codexのトークン使用量が調査56倍・CS32倍・エンジ27倍・法務13倍——非エンジニア部門へのAIエージェント普及を示す内部データ</description>
+    </item>
     <item>
       <title>OpenAI初の推論専用チップ「Jalapeño」発表、音声AIは感情を読めない——富士通の新アーキテクチャPHOTONがTransformer比475倍の処理効率、Gemini 3.5 FlashがComputer Useを標準搭載</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26</link>
@@ -441,21 +456,6 @@
 ・OpenAI推論モデルが1946年来のErdős幾何学予想を著名数学者3名検証付きで反証
 ・AnthropicがxAIのColossus 1から月12.5億ドル・総額400億ドル超のコンピュートを調達
 ・GPT-5刷新後のM365 Copilotは「今すぐ導入すべき」理由—ROI試算付き実務解説（はてブ243件）</description>
-    </item>
-    <item>
-      <title>Google I/O 2026でGemini 3.5 Flash・Omni発表、KarpathyがAnthropicに参加—エージェント時代の号砲と業界再編が1日で重なる</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-20</link>
-      <guid isPermaLink="false">aidd-day-2026-05-20</guid>
-      <pubDate>Tue, 19 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月20日（JST）、Google I/O 2026で複数の重大発表が集中した。旗艦モデルGemini 3.5 Flashは前世代Gemini 3.1 Proをほぼ全ベンチマークで上回り、独立してコーディングやインフラ構築を実行できる「エージェントAI」へのシフトを宣言。同時発表のGemini Omniは任意の入力から高品質な動画を生成し、Gemini Sparkは24時間365日稼働のパーソナルAIエージェントとして提供が始まった。Anthropic陣営でもOpenAI共同設立者アンドレイ・カーパシー氏が入社し、KPMGが27.6万人規模でClaude全社展開を発表するなど、業界地図を変えるニュースが一日に集中した。国内ではNTTの「tsuzumi 2 Vision」が図表付き日本語文書で国際的フロンティアモデルと肩を並べる性能を示し、AI事業難易度の10段階分類フレームワークがはてブ209件と大きな共感を呼んだ。
-
-【今日の必読】
-・Google I/O 2026：Gemini 3.5 Flashが前世代を全指標で超え、コーディング自律実行できるエージェントAI時代を宣言
-・アンドレイ・カーパシー氏がAnthropicの事前学習チームに入社、Claude高速化に特化した新チームを設立
-・Gemini Omni：テキスト・画像・音声・動画を横断して10秒動画を生成—物理法則・文化まで反映した統合動画生成モデル
-・「AI 事業に難易度ってあるの？」AI 事業の難易度を 10 段階で分類してみた
-・EnvFactory：RL訓練用ツール環境の自動合成でエージェントベンチマークを最大+15%改善
-・NTT製LLM「tsuzumi 2」が図表を「理解」　ビジネス文書全般をカバー</description>
     </item>
   </channel>
 </rss>

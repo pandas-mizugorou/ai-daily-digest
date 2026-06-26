@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 25 Jun 2026 17:45:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 17:39:22 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicのMythosモデル危機が深刻化——トランプ政権命令から2週間、解決の見通しなし</title>
+      <link>https://theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations</link>
+      <guid isPermaLink="false">aidd-item-industry-anthropic-mythos-trump-drama</guid>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/industry-anthropic-mythos-trump-drama">AI Daily Digest 2026-06-27</source>
+      <description>AnthropicがMythos級モデルをオフラインにしたトランプ政権からの命令から2週間が経過したが、解決の見通しが立っていない。同社は即座にワシントンDCへ多数の幹部を派遣するなど動いたが、週内に複数回の取材にもコメントを断り、進展に関する公開情報がほとんどない膠着状態が続いている。Anthropicの最上位フロンティアモデル群（Mythos/Fable級）が国家安全保障上の理由で機能停止したまま、AIラボと政権との交渉が続いている異例の状況だ。</description>
+    </item>
+    <item>
+      <title>OpenAIがGPT-5.6（Sol/Terra/Luna）を発表——米AI規制ドラマのさなかの段階公開</title>
+      <link>https://theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview</link>
+      <guid isPermaLink="false">aidd-item-new-gpt56-sol-terra-luna</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/new-gpt56-sol-terra-luna">AI Daily Digest 2026-06-27</source>
+      <description>OpenAIはトランプ政権の要請から24時間以内に、GPT-5.6の新スイートを限定公開した。モデルは3段構成：旗艦モデル「Sol」、大量処理向け中間モデル「Terra」、低コストモデル「Luna」で構成されており、ホワイトハウスの安全保障上の懸念を受けてStaggered公開（特定ユーザー限定のプレビュー）形式が採用された。公開延期が報じられてから1日未満での発表という異例の経緯は、米政府とAI企業の緊張関係を象徴する展開となった。</description>
+    </item>
+    <item>
+      <title>Anthropicが中国Alibabaによる「過去最大のClaude複製攻撃」を上院議員への書簡で暴露</title>
+      <link>https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities</link>
+      <guid isPermaLink="false">aidd-item-buzz-anthropic-alibaba-cloning</guid>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/buzz-anthropic-alibaba-cloning">AI Daily Digest 2026-06-27</source>
+      <description>AnthropicがAlibabaによるClaude能力の不法抽出を米上院議員への書簡で暴露した。書簡は上院委員会「AIとアメリカンドリーム」の聴聞会前日（6月10日）にTim Scott上院議員・Elizabeth Warren上院議員宛に送付され、「これまでに測定した中でClaude能力を不法抽出しようとする最大のキャンペーンの新たな機密証拠」を共有した。Mythos発表後に同モデルが外国市場から規制されると、中国がAnthropicのモデル能力に追いつくための攻撃を強化した文脈で発生した事案とされる。</description>
+    </item>
+    <item>
+      <title>ホワイトハウスがGPT-5.6アクセスをアドホック個別決定——透明な正式手続きなき新体制が成立</title>
+      <link>https://lesswrong.com/posts/MkwL4AcbE44yePEQx/white-house-will-ad-hoc-decide-who-can-individually-access</link>
+      <guid isPermaLink="false">aidd-item-policy-whitehouse-gpt56-adhoc</guid>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/policy-whitehouse-gpt56-adhoc">AI Daily Digest 2026-06-27</source>
+      <description>GPT-5.6の段階公開を契機に、米国ではフロンティアAIモデルへのアクセス権をホワイトハウスが不透明なアドホック方式で個別決定する体制が事実上確立された。LessWrongの分析者Zviは「フロンティアAIモデルの公開ポリシーとして良くない新標準が生まれた」と警告し、透明性・予測可能性のある正式手続きを整備する機会を数年間失ってきた結果がこの状況だと指摘した。誰がどのモデルにいつアクセスできるかが政権の裁量で決まる体制は、AI産業・研究・政策立案の全方面に長期的な不確実性をもたらすとされる。</description>
+    </item>
+    <item>
+      <title>生産性向上を「個人レベル」から「組織レベル」へ 15人のデザイナーで「Claude Code × GitHub」で組織運営をした結果</title>
+      <link>https://goodpatch.com/blog/2026-06-github</link>
+      <guid isPermaLink="false">aidd-item-japan-goodpatch-15-designers</guid>
+      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/japan-goodpatch-15-designers">AI Daily Digest 2026-06-27</source>
+      <description>グッドパッチのサービスデザイナーが、15人のデザイナーチームでClaude Code×GitHubを活用して組織運営を「個人レベル」から「組織レベル」の生産性向上へと引き上げた経験を報告した。デザイナーがクライアントワークとは別に行う「組織貢献活動」という社内プロジェクトに、Claude CodeとGitHubを組み合わせた開発フローを非エンジニアのデザイナー15人で実践した。個人の取り組みにとどまらず組織全体の運営に展開した先進事例として、はてブ178件という高い関心を集めている。</description>
+    </item>
+    <item>
+      <title>OpenAI社内Codexのトークン使用量が調査56倍・CS32倍・エンジ27倍・法務13倍——非エンジニア部門へのAIエージェント普及を示す内部データ</title>
+      <link>https://latent.space/p/ainews-openai-reports-median-internal</link>
+      <guid isPermaLink="false">aidd-item-research-codex-56x-token-growth</guid>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/research-codex-56x-token-growth">AI Daily Digest 2026-06-27</source>
+      <description>OpenAIの社内調査データとして、Codexの出力トークン使用量が2025年11月から2026年6月にかけて全部門で急増したことが公開された。Active利用者の中央値で調査部門が56倍、カスタマーサポートが32倍、エンジニアリングが27倍、法務が13倍という急成長を記録。2025年8月時点では平均的なOpenAI社員がトークンの10%未満しかCodexに使っていなかったが、その後劇的に変化し非エンジニア部門での大規模なAIエージェント活用への移行が実証された。</description>
+    </item>
     <item>
       <title>リアルタイム音声AIは「聞こえている」が「聴いていない」——感情・声調を無視する重大な安全リスクを実証</title>
       <link>https://arxiv.org/abs/2606.26083v1</link>
@@ -613,54 +661,6 @@
       <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/gh-trending-github-copilot-sdk">AI Daily Digest 2026-06-06</source>
       <description>GitHub が、Copilot Agent を自社アプリやサービスに組み込むための公式 multi-platform SDK「copilot-sdk」を公開し、GitHub Trending で本日 +309 star を獲得して累計約 9,236 star に達した。この SDK は「Copilot のエージェント的ワークフローを自分のアプリに埋め込む」ことを目的とし、「プログラムから呼び出せる production-tested なエージェントランタイム」を提供する。対応言語は Node.js/TypeScript・Python・Go・.NET・Rust・Java の6つで、各言語向けに npm install @github/copilot-sdk や pip install github-copilot-sdk などのインストール手段が用意される。内部アーキテクチャは SDK クライアントと Copilot CLI サーバー間の JSON-RPC 通信を採用し、planning・tool invocation・file edits などをランタイム側が処理する。利用には GitHub Copilot サブスクリプションが必要だが、BYOK（Bring Your Own Key）で自前の LLM プロバイダ認証情報を使う選択肢もある。個人開発者や AI エンジニアにとっては</description>
-    </item>
-    <item>
-      <title>Google Gemma 4 12B、Apache 2.0で公開——16GB RAMのノートPCで音声・動画・画像をネイティブ処理</title>
-      <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/</link>
-      <guid isPermaLink="false">aidd-item-nm-002</guid>
-      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/nm-002">AI Daily Digest 2026-06-05</source>
-      <description>GoogleはGemma 4 12BをオープンウェイトモデルとしてApache 2.0ライセンスで公開した。12Bパラメータながら16GBのRAMを搭載したノートPCで動作し、テキスト・画像・音声・動画をエンコーダなしでネイティブに処理できる。音声入力をネイティブサポートする最初の中型オープンウェイトモデルであり、Apache 2.0ライセンスで商用利用も自由。Hacker Newsでは973ポイントを獲得し、オープンソースコミュニティで即座に大きな反響を呼んだ。従来の中型モデルが音声を別エンコーダで処理していたのに対し、統合アーキテクチャで複数モダリティを統一的に扱う新設計が採用されている。</description>
-    </item>
-    <item>
-      <title>Microsoft初の自社推論モデルMAI-Thinking-1、SWE-Bench ProでClaude Opus 4.6同等の53%を達成</title>
-      <link>https://www.latent.space/p/ainews-microsoft-build-mai-thinking</link>
-      <guid isPermaLink="false">aidd-item-nm-001</guid>
-      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/nm-001">AI Daily Digest 2026-06-05</source>
-      <description>MicrosoftはBuild 2026で自社開発の推論モデルMAI-Thinking-1を含むMAI familyを発表した。MAI-Thinking-1は35Bのアクティブパラメータを持ち、OpenAI等第三者モデルの蒸留を使わず独自に訓練されている。コーディングベンチマークSWE-Bench ProではAnthropicのClaude Opus 4.6と同等の53%を達成し、独立したブラインドテストではClaude Sonnet 4.6より高く評価された。コンテキスト長は256Kトークン。合計7つのMAIモデルが発表され、推論・コーディング・画像・音声・書き起こしをカバーする。Microsoftは100ページを超える技術レポートを公開し、スケーリングラダーやMFU数値などを明示した透明性の高さが業界から評価されている。</description>
-    </item>
-    <item>
-      <title>GitHub Copilot SDK が正式GA——Node/Python/Go/.NET/Rust/Javaの6言語でCopilotエンジンを自社アプリに組み込み可能</title>
-      <link>https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/</link>
-      <guid isPermaLink="false">aidd-item-ta-001</guid>
-      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/ta-001">AI Daily Digest 2026-06-05</source>
-      <description>GitHubはCopilot SDKの正式版（GA）を発表した。このSDKを使うことで、Copilotのエージェントエンジン（計画立案・ツール呼び出し・ファイル編集・マルチターン対話）を開発者が自社アプリやサービスに直接組み込めるようになった。対応言語はNode.js/TypeScript・Python・Go・.NET・Rust・Javaの6言語で、カスタムツール定義・MCPサポート・システムプロンプトのカスタマイズ機能も提供されている。エンタープライズ向けには既存の監査ログや権限管理と統合した形でCopilotのエージェント能力を活用できる。GitHubの発表によれば、Copilot SDKは本番環境での長期セッション・バックグラウンド実行・ネイティブIDE統合の3シナリオを主な対象としている。</description>
-    </item>
-    <item>
-      <title>Axiom Mathがパトナム試験12/12完答——形式証明AIで$1.6Bバリュエーション・RLに数学的検証を統合</title>
-      <link>https://www.latent.space/p/axiom</link>
-      <guid isPermaLink="false">aidd-item-rp-001</guid>
-      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/rp-001">AI Daily Digest 2026-06-05</source>
-      <description>数学AIスタートアップAxiom MathのCEO Carina Hongがニュースレター「Latent Space」に登場し、形式証明AIへの転換を語った。Axiom Mathは2億ドルを調達し評価額は16億ドル。最大の技術的成果はPatnam試験（米国大学数学競技会の最難関、全12問）の完全正解と、コード生成ベンチマークVerinaで99%のスコアを達成したこと。Axiomはすべての回答をLean（形式証明言語）で検証可能な証明として生成する。強化学習時に形式証明の検証を報酬シグナルとして使うことで「数学的に正しい推論」を直接最適化できると主張する。形式検証はAIが自律的に研究を検査する手段として、AI研究の自動化に不可欠な要素になると論じている。</description>
-    </item>
-    <item>
-      <title>問い合わせ調査のリードタイムを平均70%削減 ── Claude Code Skillを&quot;動くマニュアル&quot;にしたZOZOTOWNの取り組み</title>
-      <link>https://techblog.zozo.com/entry/cs-inquiry-ai-automation</link>
-      <guid isPermaLink="false">aidd-item-jp-001</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/jp-001">AI Daily Digest 2026-06-05</source>
-      <description>ZOZOTOWNのカスタマーサポートチームがClaude Code Skillを「動くマニュアル」として実装し、問い合わせ調査のリードタイムを平均70%削減した取り組みを公開した。従来は手動でのルックアップと担当者間調整が必要だったトリアージ・診断ステップを自動化することで、対応速度の大幅改善を実現している。Claude Code Skillは実行可能なドキュメントとして機能し、自然言語の手順書が直接実行できるコードに変換される。はてなブックマーク237ユーザーという高い反響が示すように、日本のエンジニアコミュニティでも実践的な企業AIの導入事例として注目を集めている。</description>
-    </item>
-    <item>
-      <title>Anthropic、1年間のAI悪用サイバー脅威を分析——832アカウント調査でMITRE ATT&amp;CKの更新を呼びかけ</title>
-      <link>https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack</link>
-      <guid isPermaLink="false">aidd-item-rp-pol-001</guid>
-      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-05/rp-pol-001">AI Daily Digest 2026-06-05</source>
-      <description>AnthropicのFrontier Red Teamは1年間にわたるAI悪用サイバー攻撃の調査報告を発表した。悪意ある活動で排除した832のアカウントを分析した結果、攻撃者はAIを特に「侵害後の複雑な活動」（lateral movement、privilege escalation等）において活用していることが判明した。従来のリスク評価手法は有効性を失いつつあり、AIが技術的スキルの低い攻撃者でも複雑な攻撃を自律的に実行できるようにしているという。またMITRE ATT&amp;CKフレームワークはAI活用型攻撃パターンを適切に捕捉できていないとし、セキュリティフレームワークの更新を業界に呼びかけている。</description>
     </item>
   </channel>
 </rss>

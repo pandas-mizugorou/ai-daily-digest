@@ -78,7 +78,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ホワイトハウスがGPT-5.6公開を個別アドホック決定する新体制の問題点を示すサマリーカード。透明性の欠如・予測不能性・制度整備機会の損失という3つのリスクを構造化。",
             "data": {
               "headline": "ホワイトハウスがフロンティアAIアクセスを個別管理——不透明なアドホック体制が「新標準」に",
               "tldr": "GPT-5.6の段階公開を契機に、米国はフロンティアAIモデルへのアクセス権をホワイトハウスが不透明なアドホック方式で個別決定する体制に移行した。",
@@ -105,7 +104,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "ホワイトハウスがGPT-5.6公開を個別アドホック決定する新体制の問題点を示すサマリーカード。透明性の欠如・予測不能性・制度整備機会の損失という3つのリスクを構造化。"
           },
           "scores": {
             "importance": 3,
@@ -140,7 +140,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "GPT-5.6スイートの3モデル構成（Sol・Terra・Luna）とトランプ政権要請による段階公開の経緯を示すサマリーカード。旗艦・中間・低コストの用途別体制と政治的背景を整理。",
             "data": {
               "headline": "GPT-5.6スイート：Sol（旗艦）・Terra（高ボリューム）・Luna（低コスト）の3段構成",
               "tldr": "OpenAIがトランプ政権要請の24時間以内にGPT-5.6を限定公開。旗艦Sol、中間Terra、低コストLunaの3モデル体制で、ホワイトハウスの安全保障懸念を受けたStaggered形式での提供。",
@@ -174,7 +173,8 @@
                   "tone": "warning"
                 }
               ]
-            }
+            },
+            "alt": "GPT-5.6スイートの3モデル構成（Sol・Terra・Luna）とトランプ政権要請による段階公開の経緯を示すサマリーカード。旗艦・中間・低コストの用途別体制と政治的背景を整理。"
           },
           "scores": {
             "importance": 3,
@@ -201,7 +201,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LFM2.5-230Mのスマートフォン推論性能（213tok/s）とオンデバイス展開特性を示すサマリーカード。軽量設計・クラウド不要・無料公開の3要素を整理。",
             "data": {
               "headline": "LFM2.5-230M：スマートフォンで213 tok/s——クラウド不要のオンデバイスLLM",
               "tldr": "Liquid AIのLFM2.5-230Mが230Mパラメータの軽量設計で、スマートフォン上でも毎秒213トークンの推論速度を実現。無料公開でエッジAI開発に新たな選択肢を提供。",
@@ -235,7 +234,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "LFM2.5-230Mのスマートフォン推論性能（213tok/s）とオンデバイス展開特性を示すサマリーカード。軽量設計・クラウド不要・無料公開の3要素を整理。"
           },
           "scores": {
             "importance": 3,
@@ -262,19 +262,19 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "PLaMo 3.0 Primeのコンテキストウィンドウがβ版の64Kから正式版の256Kへ4倍拡張されたことを示す比較図。左がβ版64K、右が正式版256K。",
             "data": {
-              "title": "コンテキスト長の拡張：PLaMo 3.0 Prime β版→正式版",
-              "before_label": "PLaMo 3.0 Prime β版",
-              "after_label": "PLaMo 3.0 Prime（正式版）",
-              "metric": "コンテキスト長",
-              "before_value": "64K トークン",
-              "after_value": "256K トークン",
-              "before_pct": 25,
-              "after_pct": 100,
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": [],
               "narrative": "正式版でコンテキスト長を64Kから256Kへ4倍拡張。長文文書処理や複数ファイル横断タスクへの対応力を大幅強化した。",
               "impact": "PFN内部の日本語ベンチマークで同性能帯オープンモデル（gpt-oss-120b、Qwen3.6-27b）や同価格帯クローズドモデル（GPT-5.4 Mini、Claude Haiku 4.5）に対して高い競争力を示す。"
-            }
+            },
+            "alt": "PLaMo 3.0 Primeのコンテキストウィンドウがβ版の64Kから正式版の256Kへ4倍拡張されたことを示す比較図。左がβ版64K、右が正式版256K。"
           },
           "scores": {
             "importance": 3,
@@ -308,7 +308,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "HF JobsでvLLMサーバーをワンコマンド起動できる新機能のサマリーカード。公式統合・単一コマンド実行・インフラ簡略化の3要素を整理。",
             "data": {
               "headline": "HF Jobs + vLLM：コマンド1つでクラウドLLM推論サーバーを起動",
               "tldr": "Hugging Faceが、HF Jobs上でvLLM推論サーバーをワンコマンドで起動できる公式機能を追加。推論インフラのセットアップを大幅に簡略化し、LLMの評価・デプロイを加速する。",
@@ -335,7 +334,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "HF JobsでvLLMサーバーをワンコマンド起動できる新機能のサマリーカード。公式統合・単一コマンド実行・インフラ簡略化の3要素を整理。"
           },
           "scores": {
             "importance": 4,
@@ -362,7 +362,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenRouter MCP Serverの機能概要を示すサマリーカード。AIエージェントがOpenRouter上のモデル情報を参照して最適モデルを自律選択する仕組みを整理。",
             "data": {
               "headline": "OpenRouter MCP Server：エージェントが自律的に最適AIモデルを選ぶ新MCP",
               "tldr": "OpenRouterのMCPサーバーにより、AIエージェントがOpenRouter上の多数のモデルから得意分野・コスト・性能を参照してタスクに最適なモデルを動的に選択できるようになった。",
@@ -389,7 +388,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "OpenRouter MCP Serverの機能概要を示すサマリーカード。AIエージェントがOpenRouter上のモデル情報を参照して最適モデルを自律選択する仕組みを整理。"
           },
           "scores": {
             "importance": 3,
@@ -416,7 +416,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic SDK Python v0.112.0 / TypeScript v0.106.0の主要新機能を示すサマリーカード。system.messageストリーミングサポートを中心とした両SDK同時更新の内容を整理。",
             "data": {
               "headline": "Anthropic SDK Python v0.112.0 / TypeScript v0.106.0：system.messageストリーミング対応",
               "tldr": "AnthropicがPython・TypeScript両SDKを同日更新。ストリーミングレスポンスでsystem.messageイベントが処理できるようになり、Claude APIのリアルタイム制御が強化された。",
@@ -443,7 +442,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "Anthropic SDK Python v0.112.0 / TypeScript v0.106.0の主要新機能を示すサマリーカード。system.messageストリーミングサポートを中心とした両SDK同時更新の内容を整理。"
           },
           "scores": {
             "importance": 3,
@@ -477,27 +477,33 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "AIエージェント統合フレームワーク（メタハーネス）の変遷を示すタイムライン。Conductor/ACPから始まりDatabricks Omnigentまでの主要ツールの登場順を整理。",
             "data": {
-              "title": "メタハーネスの変遷：エージェント統合フレームワーク競争の流れ",
+              "headline": "",
               "events": [
                 {
+                  "when": "",
                   "label": "第1世代",
                   "description": "ConductorとZedのACP（Agent Control Protocol）が登場。エージェント統合フレームワークの最初期実装として基礎概念を確立。",
+                  "status": "past",
                   "tone": "info"
                 },
                 {
+                  "when": "",
                   "label": "第2世代",
                   "description": "OpenInspect、Cloudflare Flue、Vercel Eve/HarnessAgent、Heypiと複数の実装が相次いで出現。メタハーネス層の概念が定着し競争が始まる。",
+                  "status": "past",
                   "tone": "info"
                 },
                 {
+                  "when": "",
                   "label": "Omnigent（Databricks）",
                   "description": "DatabricksのCTO Matei ZahariaがオープンソースのOmnigentを発表。プラグイン形式でコーディング・知識業務エージェントを標準化・セキュア・スケーラブルに統合するアーキテクチャを提供。",
+                  "status": "now",
                   "tone": "primary"
                 }
               ]
-            }
+            },
+            "alt": "AIエージェント統合フレームワーク（メタハーネス）の変遷を示すタイムライン。Conductor/ACPから始まりDatabricks Omnigentまでの主要ツールの登場順を整理。"
           },
           "scores": {
             "importance": 5,
@@ -524,7 +530,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LINEヤフーのマルチエージェント連携による開発プロセス再設計の概要サマリーカード。課題認識・解決手法・実践事例の3要素を整理。",
             "data": {
               "headline": "AIエージェントに議論させる——マルチエージェント連携で開発プロセスを再設計",
               "tldr": "LINEヤフーがTech-Verse 2026でAIコーディングの本質課題（意図伝達）を指摘し、複数エージェントを議論させることで批評・改善ループを自動化するマルチエージェント開発フローを発表。",
@@ -551,7 +556,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "LINEヤフーのマルチエージェント連携による開発プロセス再設計の概要サマリーカード。課題認識・解決手法・実践事例の3要素を整理。"
           },
           "scores": {
             "importance": 3,
@@ -585,7 +591,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Krea 2（12B OW）とBoogu-Image-0.1の主要スペックを示すサマリーカード。12Bパラメータ・AI画像不使用学習・最大2048px・Raw/Turboの2バリアントを整理。",
             "data": {
               "headline": "Krea 2（12B OW）＋Boogu-Image-0.1：AI画像不使用のOSS高品質画像生成モデルが登場",
               "tldr": "Krea 2（12B OW）が学習データにAI画像不使用で最大2048×2048対応のRaw/Turbo2バリアントを公開。Boogu-Image-0.1も同時期登場し、Z-Image市場に新たな競合が加わった。",
@@ -612,7 +617,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "Krea 2（12B OW）とBoogu-Image-0.1の主要スペックを示すサマリーカード。12Bパラメータ・AI画像不使用学習・最大2048px・Raw/Turboの2バリアントを整理。"
           },
           "scores": {
             "importance": 5,
@@ -639,7 +645,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "DanceOPDが統合する3つの画像生成能力（T2I・ローカル編集・グローバル編集）とオンポリシー蒸留による解決手法を示すサマリーカード。",
             "data": {
               "headline": "DanceOPD：T2I・ローカル編集・グローバル編集を単一モデルに統合するオンポリシー蒸留",
               "tldr": "従来の画像生成モデルで相互干渉していたT2I・ローカル編集・グローバル編集の3能力を、オンポリシー生成フィールド蒸留で1モデルに統合するDanceOPDフレームワークを提案。",
@@ -666,7 +671,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "DanceOPDが統合する3つの画像生成能力（T2I・ローカル編集・グローバル編集）とオンポリシー蒸留による解決手法を示すサマリーカード。"
           },
           "scores": {
             "importance": 4,
@@ -700,7 +706,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "LLMアンサンブルの精度上限が共同失敗率βで規定されることを示すサマリーカード。β（共同失敗率）・上限精度(1-β)・ρ（ペアワイズ誤差相関）の概念と関係を整理。",
             "data": {
               "headline": "LLMアンサンブルの精度上限 = 1 − β（共同失敗率）——67モデルで実証された見落とされがちな限界",
               "tldr": "どんなルーティング・投票・MoAでもアンサンブル精度は(1-β)を超えられない。βは「全モデルが同クエリで同時に間違える率」で、通常の指標ρでは測れないことを67モデル研究が示す。",
@@ -727,7 +732,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "LLMアンサンブルの精度上限が共同失敗率βで規定されることを示すサマリーカード。β（共同失敗率）・上限精度(1-β)・ρ（ペアワイズ誤差相関）の概念と関係を整理。"
           },
           "scores": {
             "importance": 5,
@@ -754,7 +760,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "ワールドモデルのハルシネーションが予測・予防できることを示すサマリーカード。ハルシネーションの集中領域・MMBench2データセット・3種パターンの概要を整理。",
             "data": {
               "headline": "ワールドモデルのハルシネーション：予測可能・予防可能——MMBench2（427h/210タスク）で実証",
               "tldr": "視覚的ワールドモデルのハルシネーションは低カバレッジ状態空間に集中し、軽量シグナルで予測・軽減できることをMMBench2（427時間・210タスク）と350Mパラメータモデルで検証。",
@@ -781,7 +786,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "ワールドモデルのハルシネーションが予測・予防できることを示すサマリーカード。ハルシネーションの集中領域・MMBench2データセット・3種パターンの概要を整理。"
           },
           "scores": {
             "importance": 4,
@@ -809,7 +815,6 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "alt": "OpenAI社内Codex出力トークン成長倍率を部門別に示す棒グラフ。2025年11月から2026年6月の増加率：調査56倍・CS32倍・エンジニアリング27倍・法務13倍。",
             "data": {
               "title": "OpenAI社内Codexトークン成長倍率（部門別、2025/11→2026/06）",
               "unit": "倍（中央値、active利用者）",
@@ -840,7 +845,8 @@
                 }
               ],
               "narrative": "2025年11月から2026年6月の間に、OpenAI社内でのCodex使用量が全部門で急拡大。調査部門の56倍増が最大で、法務・CSなど非エンジニア職種でも大幅な成長を記録した。"
-            }
+            },
+            "alt": "OpenAI社内Codex出力トークン成長倍率を部門別に示す棒グラフ。2025年11月から2026年6月の増加率：調査56倍・CS32倍・エンジニアリング27倍・法務13倍。"
           },
           "scores": {
             "importance": 5,
@@ -875,27 +881,33 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "AnthropicのMythos問題の経緯を示すタイムライン。トランプ政権の金曜夜の命令から2週間後の膠着状態まで、幹部のDC派遣を含む対応の流れを整理。",
             "data": {
-              "title": "Anthropic Mythos問題の経緯",
+              "headline": "",
               "events": [
                 {
+                  "when": "",
                   "label": "約2週間前（金曜夕方）",
                   "description": "トランプ政権からMythos級モデルに関する最後通牒。Anthropicは即座にMythos/Fable級のモデルをオフラインに移行。",
+                  "status": "past",
                   "tone": "danger"
                 },
                 {
+                  "when": "",
                   "label": "緊急対応",
                   "description": "Anthropicが多数の幹部をワシントンDCへ緊急派遣。政権との交渉を開始したが、外部への公開情報はほとんどなし。",
+                  "status": "past",
                   "tone": "warning"
                 },
                 {
+                  "when": "",
                   "label": "2週間後（現在）",
                   "description": "依然として解決の見通しなし。Anthropicは複数回の取材にもコメントを断り続け、Mythos/Fable級モデルの機能停止が継続中。",
+                  "status": "now",
                   "tone": "danger"
                 }
               ]
-            }
+            },
+            "alt": "AnthropicのMythos問題の経緯を示すタイムライン。トランプ政権の金曜夜の命令から2週間後の膠着状態まで、幹部のDC派遣を含む対応の流れを整理。"
           },
           "scores": {
             "importance": 3,
@@ -922,7 +934,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SpaceXのNeocloud事業規模を示すサマリーカード。Anthropic・Google・Reflection AIとの3件のGPU賃貸契約から試算した月次・年次収益と単価を整理。",
             "data": {
               "headline": "SpaceX Neocloud：主要AIラボ3社向けGPU賃貸で月$2.32B・年換算$28B規模に",
               "tldr": "SpaceXがAnthropicとGoogleに続きReflection AIとも3件目のGPU賃貸契約。3社合計で月$2.32B（年換算$28B）に達し、Blackwell 1時間$10超という高単価でNeocloud事業が確立。",
@@ -949,7 +960,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "SpaceXのNeocloud事業規模を示すサマリーカード。Anthropic・Google・Reflection AIとの3件のGPU賃貸契約から試算した月次・年次収益と単価を整理。"
           },
           "scores": {
             "importance": 4,
@@ -984,7 +996,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "AnthropicがAlibaba向けに書簡で告発した過去最大のClaude複製攻撃の概要サマリーカード。攻撃の性質・書簡の送付先・背景となるMythos規制の3要素を整理。",
             "data": {
               "headline": "AnthropicがAlibaba告発：Claudeの過去最大規模の能力複製攻撃を米上院議員に暴露",
               "tldr": "AnthropicがAlibabaによる「過去最大のClaude不法複製キャンペーン」の機密証拠を6/10付け書簡でTim Scott・Elizabeth Warren上院議員に提出。Mythos規制後の中国の反撃として発生。",
@@ -1011,7 +1022,8 @@
                   "tone": "warning"
                 }
               ]
-            }
+            },
+            "alt": "AnthropicがAlibaba向けに書簡で告発した過去最大のClaude複製攻撃の概要サマリーカード。攻撃の性質・書簡の送付先・背景となるMythos規制の3要素を整理。"
           },
           "scores": {
             "importance": 3,
@@ -1038,27 +1050,33 @@
           ],
           "figure": {
             "type": "timeline",
-            "alt": "Notion MailのSkiff買収から廃止決定までの経緯を示すタイムライン。AIエージェントへのユーザー移行を廃止理由とした業界パラダイムシフトの証拠。",
             "data": {
-              "title": "Notion Mail の歴史：Skiff買収からAIエージェントによる廃止まで",
+              "headline": "",
               "events": [
                 {
+                  "when": "",
                   "label": "2024年2月",
                   "description": "Notionが暗号化メール・生産性スタートアップSkiffを買収。Skiff買収チームがNotion Mailの開発を担当することに。",
+                  "status": "past",
                   "tone": "info"
                 },
                 {
+                  "when": "",
                   "label": "2025年4月",
                   "description": "NotionがSkiff技術をベースにしたGmailクライアント「Notion Mail」をリリース。",
+                  "status": "past",
                   "tone": "info"
                 },
                 {
+                  "when": "",
                   "label": "2026年9月22日（廃止予定）",
                   "description": "リリースから1年余りで廃止決定。「ユーザーの大半が受信トレイを開かなくなりAIエージェントに移行した」ことを公式廃止理由として表明。",
+                  "status": "now",
                   "tone": "warning"
                 }
               ]
-            }
+            },
+            "alt": "Notion MailのSkiff買収から廃止決定までの経緯を示すタイムライン。AIエージェントへのユーザー移行を廃止理由とした業界パラダイムシフトの証拠。"
           },
           "scores": {
             "importance": 3,
@@ -1092,7 +1110,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "UzabaseがClaude CodeスキルでSLO対応を自動化した実践報告のサマリーカード。自動化対象業務・実現した効果・Platform Engineering現場でのClaude Code活用実態を整理。",
             "data": {
               "headline": "Claude CodeスキルでSLO対応を自動化——Uzabase Platform Engineeringの実践事例",
               "tldr": "NewsPicksのPlatform EngineeringチームがClaude Codeのスキル機能でSLO違反検知・調査・対応を自動化。「エンジニアの仕事のほとんどはClaudeに」という現場の実態を具体的に報告（はてブ126件）。",
@@ -1119,7 +1136,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "UzabaseがClaude CodeスキルでSLO対応を自動化した実践報告のサマリーカード。自動化対象業務・実現した効果・Platform Engineering現場でのClaude Code活用実態を整理。"
           },
           "scores": {
             "importance": 5,
@@ -1147,7 +1165,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Goodpatch 15人デザイナーチームがClaude Code×GitHubで組織運営を刷新した事例のサマリーカード。活用形態・参加者・成果の3要素を整理。",
             "data": {
               "headline": "Goodpatch：15人デザイナーがClaude Code×GitHubで組織単位の生産性向上を実現",
               "tldr": "グッドパッチの15人デザイナーチームが「組織貢献活動」でClaude Code×GitHubを活用し生産性向上を個人→組織レベルへ展開。非エンジニアによるClaude Code組織活用の先進事例（はてブ178件）。",
@@ -1174,7 +1191,8 @@
                   "tone": "success"
                 }
               ]
-            }
+            },
+            "alt": "Goodpatch 15人デザイナーチームがClaude Code×GitHubで組織運営を刷新した事例のサマリーカード。活用形態・参加者・成果の3要素を整理。"
           },
           "scores": {
             "importance": 5,
@@ -1201,19 +1219,19 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "Amazon Bedrockのトークン処理量が2026年Q1単独で過去全累計を上回ったことを示す比較図。左が過去累計・右が2026年Q1のみの処理量を相対比較。",
             "data": {
-              "title": "Amazon Bedrockトークン処理量の急拡大（2026年Q1）",
-              "before_label": "過去累計（26年Q1以前）",
-              "after_label": "2026年Q1のみ",
-              "metric": "トークン処理量（相対比較）",
-              "before_value": "過去全期間の累計",
-              "after_value": "1四半期で過去累計超え",
-              "before_pct": 49,
-              "after_pct": 100,
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": [],
               "narrative": "2026年第1四半期の1四半期分だけで、それ以前の全期間累計を超えるBedrockトークン処理量を記録。AWS Summit Japan 2026の基調講演で発表された。",
               "impact": "企業のAI活用がPoC段階から本格運用フェーズへ急速に移行していることを示す象徴的なデータ。クラウドAI推論インフラとしてのBedrock採用が国内外で急拡大中。"
-            }
+            },
+            "alt": "Amazon Bedrockのトークン処理量が2026年Q1単独で過去全累計を上回ったことを示す比較図。左が過去累計・右が2026年Q1のみの処理量を相対比較。"
           },
           "scores": {
             "importance": 3,
@@ -1240,7 +1258,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "tebiki CTOによるAI時代の人材育成哲学のサマリーカード。AIがコードを書く時代における育成の重点・採用視点・本質的な問いを整理。",
             "data": {
               "headline": "AIがコードを書く時代の育成哲学：「ものをつくる前に人をつくる」——tebiki CTO",
               "tldr": "AIがコーディングを担う時代だからこそ、若手エンジニアに求めるのはコードを書く技術ではなくシニアへ成長する能力。tebiki CTOが問う育成哲学（はてブ74件）。",
@@ -1267,7 +1284,8 @@
                   "tone": "warning"
                 }
               ]
-            }
+            },
+            "alt": "tebiki CTOによるAI時代の人材育成哲学のサマリーカード。AIがコードを書く時代における育成の重点・採用視点・本質的な問いを整理。"
           },
           "scores": {
             "importance": 4,
@@ -1294,7 +1312,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "SNS流入とAI経由流入のユーザー行動の違いを示すサマリーカード。SNS40%・低エンゲージメントとAI数%・高エンゲージメントの対比を整理。",
             "data": {
               "headline": "SNS vs AI流入：数ではなく「質」の違いをGA4データが示す",
               "tldr": "GA4分析でSNS流入（全体の40%）は1ページ離脱が多い一方、AI経由流入（数%）はエンゲージメントが高い傾向が判明。生成AIが新たな質の高いトラフィック経路として定着。",
@@ -1321,7 +1338,8 @@
                   "tone": "info"
                 }
               ]
-            }
+            },
+            "alt": "SNS流入とAI経由流入のユーザー行動の違いを示すサマリーカード。SNS40%・低エンゲージメントとAI数%・高エンゲージメントの対比を整理。"
           },
           "scores": {
             "importance": 3,
@@ -1355,7 +1373,6 @@
           ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Fable 5段階的復活とGPT-5.6追随を中国メディアが分析したサマリーカード。規制ドラマへの中国業界の懐疑的視点と解釈を整理。",
             "data": {
               "headline": "Claude Fable 5段階復活・GPT-5.6即追随——中国メディアが読む米AI規制ドラマの真意",
               "tldr": "量子位がClaude Fable 5段階復活→GPT-5.6即追随の構図を分析。「マーケティング計画では？」という中国AI業界の懐疑的視点から米国のAI規制ドラマを外部観察した記事。",
@@ -1382,7 +1399,8 @@
                   "tone": "primary"
                 }
               ]
-            }
+            },
+            "alt": "Claude Fable 5段階的復活とGPT-5.6追随を中国メディアが分析したサマリーカード。規制ドラマへの中国業界の懐疑的視点と解釈を整理。"
           },
           "scores": {
             "importance": 3,
@@ -1409,19 +1427,19 @@
           ],
           "figure": {
             "type": "comparison",
-            "alt": "NVIDIAのMoEオープンソースライブラリ導入でファインチューニング速度が3.7倍に向上することを示す比較図。標準実装と比較した加速率。",
             "data": {
-              "title": "NVIDIA MoEライブラリ：ファインチューニング速度を3.7倍に高速化",
-              "before_label": "標準実装（Transformers v5）",
-              "after_label": "NVIDIA MoEライブラリ追加後",
-              "metric": "ファインチューニング速度（相対比較）",
-              "before_value": "基準（1×）",
-              "after_value": "3.7倍",
-              "before_pct": 27,
-              "after_pct": 100,
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": [],
               "narrative": "NVIDIAのMoEライブラリはTransformers v5に専門家並列・DeepEP・TransformerEngineを追加し、1行のimportでファインチューニングを3.7倍高速化する。",
               "impact": "MoEモデルの訓練・ファインチューニングコストを大幅に削減し、大規模MoEモデルの研究・商用開発をより身近にする。"
-            }
+            },
+            "alt": "NVIDIAのMoEオープンソースライブラリ導入でファインチューニング速度が3.7倍に向上することを示す比較図。標準実装と比較した加速率。"
           },
           "scores": {
             "importance": 3,
