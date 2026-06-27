@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-27T05:00:00+09:00",
+  "updated_at": "2026-06-28T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5635,6 +5635,114 @@
       "url_prefix": "https://qbitai.com/2026/06/438703.html",
       "first_seen_at": "2026-06-27",
       "last_seen_at": "2026-06-27",
+      "last_seen_count": 1
+    },
+    "de70cea033e25913": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "d9f3fcd1bcf137b7": {
+      "url_prefix": "https://latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "08c6570fb3929603": {
+      "url_prefix": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "47ffa546c5dd4913": {
+      "url_prefix": "https://lesswrong.com/posts/jXLi3dhSpSMd7B6z8/just-a-wrapper-how-much-do-scaffolds-matter-1",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "a16e4df18a514a4a": {
+      "url_prefix": "https://gigazine.net/news/20260627-hister",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "2aa7dbbb2e82cecd": {
+      "url_prefix": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "5ea8fae292f397c2": {
+      "url_prefix": "https://qbitai.com/2026/06/439236.html",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "e1ff5adff2fa2aef": {
+      "url_prefix": "https://arxiv.org/abs/2606.27359v1",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "7fd9e7bccdd5324a": {
+      "url_prefix": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "a2f6fad37ec5cba6": {
+      "url_prefix": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "c24f19e320a6121e": {
+      "url_prefix": "https://lesswrong.com/posts/MkwL4AcbE44yePEQx/white-house-will-ad-hoc-decide-who-can-individually-access",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "0f5dc55152beeed8": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1ugj1sf/nemotron3super120ba12b_hybrid_mambamoe_holds",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "158805edaefbc4ba": {
+      "url_prefix": "https://qiita.com/tehito/items/356e5f1dba112a075be1",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "6b75f7b22985b36f": {
+      "url_prefix": "https://blog.lai.so/pi-coding-agent",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "78c05c62b3c5a684": {
+      "url_prefix": "https://tech.medpeer.co.jp/entry/2026/06/26/122446",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "b1a1824ec3774b5a": {
+      "url_prefix": "https://itmedia.co.jp/enterprise/articles/2606/25/news052.html",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "ca686053c47163a8": {
+      "url_prefix": "https://qbitai.com/2026/06/438895.html",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "1eb6f2e6b776e19a": {
+      "url_prefix": "https://qbitai.com/2026/06/439393.html",
+      "first_seen_at": "2026-06-28",
+      "last_seen_at": "2026-06-28",
       "last_seen_count": 1
     }
   },

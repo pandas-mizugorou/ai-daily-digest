@@ -5,7 +5,47 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 26 Jun 2026 17:39:22 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 17:47:10 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI GPT-5.6 Sol/Terra/Luna 限定公開——Mythos超えコーディング性能、Cyber Criticalは超えない設計</title>
+      <link>https://latent.space/p/ainews-openai-gpt-56-sol-terra-luna</link>
+      <guid isPermaLink="false">aidd-item-latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28/latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-">AI Daily Digest 2026-06-28</source>
+      <description>OpenAIはGPT-5.6シリーズとして旗艦の「Sol」、バランス型の「Terra」、高速・低価格の「Luna」の3モデルを発表し、信頼できる少数パートナー向けに限定プレビューを開始した。旗艦のSolはコーディングエージェントタスクのサブセットでMythosを上回る性能を示す一方、OpenAIはSolがサイバー攻撃における「Cyber Critical」の閾値を超えないことを強調した。ChromiumとFirefoxのバグを特定し攻撃の原型要素を特定できるが、自律的なエクスプロイトは生成しないという評価結果に基づく。米政府との調整を踏まえ数週間以内に一般公開する計画だが、当面は限定パートナーのみが利用できる。</description>
+    </item>
+    <item>
+      <title>正直に言う。お前のClaude Codeの使い方は間違っている - Qiita</title>
+      <link>https://qiita.com/tehito/items/356e5f1dba112a075be1</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-claude-code-qiita</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28/hatena_it-claude-code-qiita">AI Daily Digest 2026-06-28</source>
+      <description>「CLAUDE.mdは憲法。Skillsは六法全書」という比喩で始まるこのQiita記事が、はてブIT部門で779件のブックマークを獲得して日本のAIエンジニアコミュニティで最大の話題となっている。Claude Codeを使う際に多くの人が犯しがちなミスとして、「特定の作業のときだけ要る知識」をCLAUDE.mdに常時読み込ませるのではなく、Agent Skills（.claude/skills/）に分離して「引かせる」設計が正しいと解説する。指示に複数の作業を詰め込む「全部盛り指示」や、コンテキスト管理の誤りについても具体的に批判している。</description>
+    </item>
+    <item>
+      <title>AnthropicのMythos 5、トランプ政権との2週間交渉を経て米国一部組織向けに提供再開</title>
+      <link>https://theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations</link>
+      <guid isPermaLink="false">aidd-item-theverge-anthropic-s-mythos-5-is-back</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28/theverge-anthropic-s-mythos-5-is-back">AI Daily Digest 2026-06-28</source>
+      <description>AnthropicのClaude Mythos 5がトランプ政権との2週間に及ぶ交渉を経て、米国の一部組織向けに提供を再開した。The Vergeが確認した政府からAnthropicへの書簡によれば、アクセスが認められたのは100以上の米国企業および政府機関とされる。一方、一般公開されているパブリック版「Claude Fable 5」の提供再開は認められておらず、引き続き利用できない状態が続いている。OpenAIのGPT-5.6も同日に限定公開となり、米政府がフロンティアAIモデルへのアクセスを個別に管理するという新たな体制が事実上確立しつつある。</description>
+    </item>
+    <item>
+      <title>「ただのラッパー」ではない——スキャフォールドの違いが同一モデルの性能を最大100倍変える</title>
+      <link>https://lesswrong.com/posts/jXLi3dhSpSMd7B6z8/just-a-wrapper-how-much-do-scaffolds-matter-1</link>
+      <guid isPermaLink="false">aidd-item-lesswrong-just-a-wrapper-how-much-do-scaffolds-matter</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28/lesswrong-just-a-wrapper-how-much-do-scaffolds-matter">AI Daily Digest 2026-06-28</source>
+      <description>MITのHans Gundlachら4名による研究が、AIモデルのスキャフォールド（デプロイ時のソフトウェア環境とコンテキスト文書）が性能に与える影響を系統的に定量化した。同一モデルであっても、スキャフォールドの選択によってベンチマーク上の推論効率が最大100倍変わることが判明した。さらに注目すべきは、データ内のコスパばらつきをモデルよりもスキャフォールドのほうが大きく説明するという点だ。同じスキャフォールドがモデルによって異なる効果を示すため、スキャフォールドとモデルの組み合わせ検証が実用上は不可欠となる。</description>
+    </item>
+    <item>
+      <title>OpenAIが政府要請でGPT-5.6公開を制限——「このプロセスを長期デフォルトにすべきでない」と公式声明</title>
+      <link>https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-openai-limits-gpt-5-6-rollout-after-government-r</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28/techcrunch-openai-limits-gpt-5-6-rollout-after-government-r">AI Daily Digest 2026-06-28</source>
+      <description>OpenAIは米政府の要請を受けてGPT-5.6の一般公開を制限したが、同時にこの政府アクセスプロセスを長期的なデフォルトにすべきでないという公式声明を発表した。OpenAIは「このプロセスは開発者・企業・サイバー防衛者・国際パートナーを含む、必要としているユーザーから最良のツールを奪う」と警告している。政府の要請に従いつつも異議を表明するという対応は、AIガバナンスにおける業界と政府の緊張関係を明確に示している。</description>
+    </item>
     <item>
       <title>AnthropicのMythosモデル危機が深刻化——トランプ政権命令から2週間、解決の見通しなし</title>
       <link>https://theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations</link>
@@ -605,62 +645,6 @@
       <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/papers-with-code-neuraips">AI Daily Digest 2026-06-07</source>
       <description>LLM を検証可能な報酬シグナルで強化学習する新フレームワーク RLVR（Reinforcement Learning from Verifiable Rewards）が発表された。自動検証可能な報酬を使用することで、多くの推論タスクで人間のフィードバック（RLHF）を不要にするアプローチを提案している。数学的推論ベンチマークで大幅な向上を達成したと報告されており、検証可能な問題（数学・コーディング・論理推論等）への適用が期待される。RLHF の代替として、スケーラブルな LLM 訓練手法として注目されている。</description>
-    </item>
-    <item>
-      <title>Anthropic、AIによるAI開発の現状を公開: 自社コードの80%超をClaudeが執筆、再帰的自己改善への進捗と一時停止の検証体制を提言</title>
-      <link>https://www.anthropic.com/institute/recursive-self-improvement</link>
-      <guid isPermaLink="false">aidd-item-hn-anthropic-recursive-self-improvement</guid>
-      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/hn-anthropic-recursive-self-improvement">AI Daily Digest 2026-06-06</source>
-      <description>Anthropic Institute が「When AI Builds Itself」と題したエッセイを公開し、AI が自らの開発を自動化しつつある現状と、再帰的自己改善（AI が完全自律的に後継モデルを設計・開発する状態）への進捗を整理した。2026年5月時点で Anthropic のコードベースにマージされるコードの80%超を Claude が執筆しており、2026年第2四半期の典型的なエンジニアは2024年比で1日あたり8倍のコードをマージしているという（ただし行数は質より量を測る不完全な指標で、生産性向上の過大評価だと自ら注記する）。AI が遂行できるタスクの長さも、2024年3月の Claude Opus 3 の約4分から、2026年には Claude Opus 4.6 の12時間規模へと伸び、SWE-bench は2年で1桁台からほぼ飽和に達した。安全性研究では、エージェント群が800時間・約1.8万ドルの計算資源で性能差の97%を回復し、人間研究者2名が1週間で回復した約23%を上回った。Anthropic は、再帰的自己改善が多くの組織の想定より早く到来し得るとし、各国の複数のフロンティア開発者が検証可能な形で同時に減速・一時停止できる検証体制の構築を提言している。個人開発者やAIエンジニアにとっては、AIがAI開発を担う度合いが定量データで示された点が重要である</description>
-    </item>
-    <item>
-      <title>Google、Gemma 4 のQAT量子化版を公開——E2Bがメモリ1GB未満でモバイル・ノートPC上のオンデバイス実行に対応</title>
-      <link>https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/</link>
-      <guid isPermaLink="false">aidd-item-hn-gemma4-qat</guid>
-      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/hn-gemma4-qat">AI Daily Digest 2026-06-06</source>
-      <description>Googleは2026年6月5日、量子化を学習段階に組み込む量子化対応学習（QAT）を施したGemma 4の各バリアントを公開した。QATは学習中に量子化をシミュレートすることで圧縮時の品質低下を抑える手法であり、全モデルに普及形式のQ4_0を適用するほか、モバイル向けには静的アクティベーション・チャネル単位量子化・トークン生成部への2bit量子化・KVキャッシュ最適化を組み合わせた専用スキーマを用いる。これにより、Per-Layer Embeddingsを除いたテキスト専用のGemma 4 E2Bはメモリ1GB未満で動作する。対象はE2B・E4B、エンコーダ不要のマルチモーダル12B、26B MOEなどで、重みはHugging Face上にGGUFおよびcompressed tensor形式で提供される。Googleは、QATが標準的なPTQ（学習後量子化）ベースラインより総合品質が高い結果を生むとしている。llama.cpp・Ollama・LM Studio・LiteRT-LM・vLLM・SGLang・MLX・Hugging Face Transformers・Unsloth など主要ツールに対応し、個人開発者がモバイル・ノートPC・コンシューマGPU上でローカルにGemma 4を動かす選択肢を広げる。Hacker Newsでは236ポイント・78コメントを集めた。</description>
-    </item>
-    <item>
-      <title>Google が SpaceX に月920M ドルで計算資源を契約、Gemini Enterprise の想定外需要に橋渡し、NVIDIA GPU 約11万基を確保</title>
-      <link>https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/</link>
-      <guid isPermaLink="false">aidd-item-techcrunch-google-spacex-920m-compute</guid>
-      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/techcrunch-google-spacex-920m-compute">AI Daily Digest 2026-06-06</source>
-      <description>Google が SpaceX に対し、計算資源の利用料として月額約920M ドル（年換算約11.04B ドル）を支払う契約を結んだ。提供されるのは約110,000基の NVIDIA GPU に加え CPU・メモリ等の関連コンポーネントで、契約期間は2026年10月から2029年6月までの32か月にわたる。Google はこの契約を「最近ローンチした AI 製品の想定外の需要」、具体的にはエージェント基盤 Gemini Enterprise の急増する顧客需要に応えるための「短期的かつ時宜を得た橋渡し容量（bridge capacity）」と説明している。SpaceX は約束した GPU 数を2026年9月30日までに提供する義務を負い、9月までは割引料金で容量が段階的に立ち上がる。両者は2026年12月31日以降、90日前通知で契約を解除できる。なお SpaceX は Anthropic に対しても2029年まで月額1.25B ドルで計算資源を提供しており、計算資源を巡る巨額の調達競争が業界全体で加速していることを示す。自社データセンターだけでは需要を賄えず外部から大規模に GPU を借り受ける構図は、個人開発者や AI エンジニアにとっても基盤モデルの提供能力が計算資源の確保力に直結する現実を改めて浮き彫りにする。</description>
-    </item>
-    <item>
-      <title>Goedel-Architect、補題の依存グラフを並列証明しMiniF2F-testで99.2%・コスト500分の1を達成</title>
-      <link>https://arxiv.org/abs/2606.06468</link>
-      <guid isPermaLink="false">aidd-item-arxiv-goedel-architect</guid>
-      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/arxiv-goedel-architect">AI Daily Digest 2026-06-06</source>
-      <description>arXiv に投稿された論文 Goedel-Architect は、Lean 4 による形式定理証明を効率化するエージェント型フレームワークである。証明対象を補題の依存グラフ（ブループリント）として生成・洗練し、各ノードを並列に閉じていくことで証明を組み立てる。バックボーンにオープンウェイトの DeepSeek-V4-Flash（284B-A13B）を用い、MiniF2F-test で 99.2%（自然言語シードを与えた場合は 100%）、PutnamBench で 88.8% を達成したとする。さらに IMO・Putnam・USAMO の問題を解きつつ、同等のオープンパイプラインと比べて最大 500 倍低いコストで動作すると報告している。形式証明は LLM の推論能力を厳密に検証できる領域として注目されており、本手法はオープンソースの定理証明で SoTA を主張する。個人開発者や AI エンジニアにとっては、巨大クローズドモデルに依存せずオープンウェイトと並列分割アプローチで高難度の数学推論を低コストに実現できる可能性を示す事例といえる。</description>
-    </item>
-    <item>
-      <title>業務のAI化からAI中心の組織設計へ — 2,000年続いた組織図の常識が書き換わる</title>
-      <link>https://note.com/ktknd/n/n362c35f32346</link>
-      <guid isPermaLink="false">aidd-item-hatena-ai-org-design</guid>
-      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/hatena-ai-org-design">AI Daily Digest 2026-06-06</source>
-      <description>個人業務のAI化と「AIを中心に据えた組織設計」は別物であり、多くの企業は前者にとどまっているとnote記事(著者ktknd、はてブ405users)は論じる。各人にコパイロットを配ると個人の作業速度は上がるが、ボトルネックが作業から判断・調整・承認へ移るだけで組織のスループットは変わらないと指摘する。記事は、人間が直接管理できるのは8人ほどが限界というspan of controlの制約ゆえに、2,000年前のローマ軍以来ヒエラルキーが情報ルーティングを担ってきた歴史(プロイセン1806年の参謀本部、アメリカ鉄道1850年代の世界初の組織図)を振り返り、AIがそのルーティング機能自体を置き換えられるようになったことを転機と位置づける。具体策としてBlockが提案するCapabilities / World Model / Intelligence Layer / Interfacesの4層モデルと、人間の役割をIC / DRI / Player-Coachの3つに収束させ中間管理職を置かない設計を提示する。Block(1万人)・Base44(6ヶ月で$80M買収)・Pieter Levels(月$250K超)の事例から、World Modelの中央化と判断基準のドキュメント化という共通原則を抽出している。</description>
-    </item>
-    <item>
-      <title>ChinAI #361: Huawei CANN は Nvidia CUDA の堀を崩せるか、DeepSeek V4 が Ascend で大規模実証</title>
-      <link>https://chinai.substack.com/p/chinai-361-what-can-cann-do-for-chinas</link>
-      <guid isPermaLink="false">aidd-item-chinai-361-cann-china-compute</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/chinai-361-cann-china-compute">AI Daily Digest 2026-06-06</source>
-      <description>ChinAI Newsletter 第361号は、Huawei のニューラルネットワーク向け計算基盤 CANN（Compute Architecture for Neural Networks）が Nvidia の CUDA の堀に対抗しうるかを検証している。CUDA は先進ハードウェア・ネットワーキング・深く根付いたソフトウェアエコシステムという「三つ首のヒドラ」の優位を持つが Nvidia GPU でしか使えず、Huawei は2025年12月に CANN のコア（ランタイムとコンパイラ）をオープンソース化した。記事は DeepSeek V4 が Huawei Ascend チップとの「チップ・モデル協調」を大規模に実証し、これまで Nvidia チップでしか達成できなかった水準に到達したと指摘する。エコシステムの成熟も進み、Kunpeng と Ascend の開発者コミュニティはいずれも400万人を突破、主要 AI モデルの70以上がリリース即対応する。一方で AIGCode は初期の7B MoE 事前学習で問題が生じ Huawei の支援を4か月待つなど、本番品質の信頼性には課題も残る。国産チップ依存の機運が高まる中、CUDA 代替の現実味を測る重要な観測点である。</description>
-    </item>
-    <item>
-      <title>GitHub、Copilot Agent をアプリに組み込む公式 multi-platform SDK を公開。TypeScript/Python/Go/.NET/Rust/Java の6言語対応で本日 +309 star</title>
-      <link>https://github.com/github/copilot-sdk</link>
-      <guid isPermaLink="false">aidd-item-gh-trending-github-copilot-sdk</guid>
-      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-06/gh-trending-github-copilot-sdk">AI Daily Digest 2026-06-06</source>
-      <description>GitHub が、Copilot Agent を自社アプリやサービスに組み込むための公式 multi-platform SDK「copilot-sdk」を公開し、GitHub Trending で本日 +309 star を獲得して累計約 9,236 star に達した。この SDK は「Copilot のエージェント的ワークフローを自分のアプリに埋め込む」ことを目的とし、「プログラムから呼び出せる production-tested なエージェントランタイム」を提供する。対応言語は Node.js/TypeScript・Python・Go・.NET・Rust・Java の6つで、各言語向けに npm install @github/copilot-sdk や pip install github-copilot-sdk などのインストール手段が用意される。内部アーキテクチャは SDK クライアントと Copilot CLI サーバー間の JSON-RPC 通信を採用し、planning・tool invocation・file edits などをランタイム側が処理する。利用には GitHub Copilot サブスクリプションが必要だが、BYOK（Bring Your Own Key）で自前の LLM プロバイダ認証情報を使う選択肢もある。個人開発者や AI エンジニアにとっては</description>
     </item>
   </channel>
 </rss>

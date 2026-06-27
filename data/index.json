@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-06-27T05:00:00+09:00",
+  "updated_at": "2026-06-28T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-06-28",
+      "headline": "GPT-5.6 Sol/Terra/LunaがMythosを超えるコーディング性能で限定デビュー、Mythos 5も2週間の交渉を経て米国の一部組織向けに復活——政府によるフロンティアAIアクセス管理が新常態へ",
+      "item_count": 22,
+      "top_picks_count": 5
+    },
     {
       "date": "2026-06-27",
       "headline": "米政府がGPT-5.6公開を制御・AlibabによるClaude最大規模複製攻撃をAnthropicが暴露——Anthropic Mythos規制2週間継続、Codex社内トークン56倍成長",

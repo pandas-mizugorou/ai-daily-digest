@@ -5,7 +5,21 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 26 Jun 2026 17:39:22 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 17:47:10 GMT</lastBuildDate>
+    <item>
+      <title>GPT-5.6 Sol/Terra/LunaがMythosを超えるコーディング性能で限定デビュー、Mythos 5も2週間の交渉を経て米国の一部組織向けに復活——政府によるフロンティアAIアクセス管理が新常態へ</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28</link>
+      <guid isPermaLink="false">aidd-day-2026-06-28</guid>
+      <pubDate>Sat, 27 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月27日、OpenAIがGPT-5.6シリーズ（Sol/Terra/Luna）の限定プレビューを発表した。旗艦モデルSolはMythosを上回るコーディングエージェント性能を持ちながら、サイバー攻撃の「Cyber Critical」閾値は超えない設計であり、米政府との調整を経て信頼できる少数のパートナー向けに公開された。同日、AnthropicのMythos 5もトランプ政権との2週間に及ぶ交渉を経て、100以上の米国企業・機関向けへの限定再提供が始まった。スキャフォールドの選択がモデル性能を最大100倍左右するという研究も注目を集め、日本では「Claude Codeの正しい使い方」を論じたQiita記事がはてブ779件を記録した。
+
+【今日の必読】
+・OpenAI GPT-5.6 Sol/Terra/Luna 限定公開——Mythos超えコーディング性能、Cyber Criticalは超えない設計
+・正直に言う。お前のClaude Codeの使い方は間違っている - Qiita
+・AnthropicのMythos 5、トランプ政権との2週間交渉を経て米国一部組織向けに提供再開
+・「ただのラッパー」ではない——スキャフォールドの違いが同一モデルの性能を最大100倍変える
+・OpenAIが政府要請でGPT-5.6公開を制限——「このプロセスを長期デフォルトにすべきでない」と公式声明</description>
+    </item>
     <item>
       <title>米政府がGPT-5.6公開を制御・AlibabによるClaude最大規模複製攻撃をAnthropicが暴露——Anthropic Mythos規制2週間継続、Codex社内トークン56倍成長</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27</link>
@@ -441,21 +455,6 @@
 ・「ソフトウェアは忘れる——エージェントのトレースこそが記憶になる」
 ・親の名前を忘れていた高齢者が語り出した——AI内蔵「昭和の青春ラジオ」が介護現場を変えている
 ・OpenAI、ChatGPT広告セルフサービス「Ads Manager」ベータ版を一般開放——CPC/CPMビッドに対応</description>
-    </item>
-    <item>
-      <title>OpenAI推論モデルが80年来の数学難問を反証・AnthropicがxAIと月125億円コンピュート契約締結—AutoResearchClawの1.2万件リアクションとGemini 3.5 Flash拡大も重なる</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-21</link>
-      <guid isPermaLink="false">aidd-day-2026-05-21</guid>
-      <pubDate>Wed, 20 May 2026 20:00:00 GMT</pubDate>
-      <description>5月21日は技術的突破と産業再編が重なった一日だった。OpenAIの推論モデルが1946年来未解決のErdős幾何学予想を数学者の検証付きで反証し、AIが著名な未解決問題を初めて自律解決した可能性が浮上。同日、AnthropicがxAIのColossus 1から月12.5億ドル・総額400億ドル超のコンピュートを調達する契約がSpaceXのSEC書類から判明し、競合企業間の前例なきインフラ依存が表面化した。Google I/Oの余波でGemini 3.5 FlashとAntigravity 2.0がグローバル展開を拡大。学術ではAutoResearchClawがHF日次論文で1.2万件のリアクションを集めAI自律研究への期待を高め、日本では政府「Gennai」生成AIの18万人展開とM365 Copilot企業導入根拠記事（はてブ243件）が注目を集めた。
-
-【今日の必読】
-・Gemini 3.5 Flash：エージェント・コーディング向けGoogle最速フロンティアモデル正式公開
-・Forge：5層ガードレールで8Bモデルのエージェント成功率53%→99%に引き上げるOSSフレームワーク
-・AutoResearchClaw：仮説→実験→検証を自律反復するAI科学研究の自己強化ループ（HF 1.2万件）
-・OpenAI推論モデルが1946年来のErdős幾何学予想を著名数学者3名検証付きで反証
-・AnthropicがxAIのColossus 1から月12.5億ドル・総額400億ドル超のコンピュートを調達
-・GPT-5刷新後のM365 Copilotは「今すぐ導入すべき」理由—ROI試算付き実務解説（はてブ243件）</description>
     </item>
   </channel>
 </rss>
