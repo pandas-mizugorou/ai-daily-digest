@@ -4,12 +4,12 @@
   "to": "2026-06-28",
   "generated_at": "2026-06-28T05:00:00+09:00",
   "schema_version": "1.0",
-  "headline": "AnthropicのMythos 5が輸出規制から2週間で一部復活——OpenAIはGPT-5.6（Sol/Terra/Luna）を限定公開・初の自社チップJalapeñoを発表し、AI覇権が規制・チップ・エージェントの三正面に拡大した週",
-  "summary_ja": "今週はAnthropicへの輸出規制ドラマが頂点に達した。月曜（6/22）にFable 5・Mythos 5への輸出規制が確定し、同日SpaceXがCursorを600億ドルで買収という史上最大のAIコーディングM&Aが成立。水曜にはAnthropicがSlack常駐型「Claude Tag」を、Sakana AIが「Fugu」でFable超えマルチエージェントAPIを、PFNが国産「PLaMo 3.0 Prime」を正式リリース。木曜にはOpenAIが初の自社推論チップ「Jalapeño」を発表し、GPT-5.6（Sol/Terra/Luna）を政府調整後に限定公開。金曜にはAnthropicが中国AlibabaによるClaude大規模複製攻撃を上院書簡で暴露し、日曜（6/28）にはMythos 5が交渉2週間を経て一部組織向けに再開した。政府がフロンティアAIのアクセスをアドホック決定する新体制への懸念が業界全体に広まり、透明な規制フレームワーク策定が急務となった。来週はGPT-5.6の公開拡大とJalapeñoの詳細が焦点となる。",
+  "headline": "AnthropicのMythos 5が輸出規制から2週間で限定復活——OpenAIは初の自社チップJalapeñoとGPT-5.6を発表、AIガバナンスの「新常態」が確立された週",
+  "summary_ja": "2026年W26（6月22日〜28日）は、フロンティアAIのガバナンス危機が週の軸となった。トランプ政権がAnthropicのFable 5・Mythos 5を輸出規制対象に指定し、外国籍ユーザーのアクセスが全停止する前代未聞の事態が勃発。2週間の交渉を経て週末にMythos 5は米国100機関向けに限定再提供されたが、公開版Fable 5は依然停止中だ。規制の空白を突く形でOpenAIがGPT-5.6（Sol/Terra/Luna）を限定公開し、政府によるアドホック個別管理という「新常態」が確立した。インフラ面ではOpenAIが初の自社推論チップ「Jalapeño」をBroadcomと共同発表しNVIDIA依存脱却を加速。エージェント領域ではAnthropicのSlack常駐「Claude Tag」とSakana AIのマルチエージェント基盤「Fugu」が相次いで登場し、PFNは国産PLaMo 3.0 Primeを正式リリース。さらにAnthropicが中国Alibabaによる「Claude能力の過去最大の不法抽出」を米上院議員に書簡で暴露し、AIをめぐる地政学的緊張が鮮明になった週でもある。来週はGPT-5.6の公開拡大とFable 5規制解除の動向が焦点となる。",
   "stats": {
     "total_collected_week": 169,
-    "after_dedup": 159,
-    "selected_items": 28,
+    "after_dedup": 156,
+    "selected_items": 30,
     "top_count": 10
   },
   "top_10": [
@@ -17,1315 +17,462 @@
       "id": "2026-06-22-001",
       "date": "2026-06-22",
       "rank": 1,
-      "reason": "importance5: Trump政権がFable 5・Mythos 5を輸出規制指定、外国籍ユーザーのアクセス全停止で週の中心テーマに",
+      "reason": "トランプ政権がFable 5・Mythos 5を輸出規制対象に指定——週全体の最重要ニュース、外国籍ユーザーアクセス全停止という前代未聞の事態",
       "category": "regulation_policy"
     },
     {
       "id": "theverge-anthropic-s-mythos-5-is-back",
       "date": "2026-06-28",
       "rank": 2,
-      "reason": "importance5+top_pick: 2週間の交渉を経てMythos 5の提供が一部組織向けに再開、規制ドラマへの決着",
+      "reason": "Mythos 5が2週間の交渉を経て米国100機関向けに限定再提供——政府によるフロンティアAIアクセス管理の「新常態」を示す週末の決着",
       "category": "regulation_policy"
     },
     {
       "id": "latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-",
       "date": "2026-06-28",
       "rank": 3,
-      "reason": "importance5+top_pick: Sol/Terra/Lunaの3ティア構成・Mythos超えコーディング性能・数週間以内の一般公開予定",
+      "reason": "GPT-5.6（Sol/Terra/Luna）が限定公開——Mythosを超えるコーディング性能で、AIモデル選定の基準が変わる歴史的リリース",
       "category": "new_models"
     },
     {
       "id": "2026-06-22-014",
       "date": "2026-06-22",
       "rank": 4,
-      "reason": "importance5+score18+top_pick: SpaceXがCursor開発元Anysphereを600億ドルで買収、AIコーディングツール史上最大M&A",
+      "reason": "SpaceXがCursor開発元Anysphereを600億ドルで買収——AIコーディングツール市場史上最大のM&A、エージェント×宇宙という新産業連合の誕生",
       "category": "industry_business"
+    },
+    {
+      "id": "2026-06-24-ag-claude-tag",
+      "date": "2026-06-24",
+      "rank": 5,
+      "reason": "Anthropicが「Claude Tag」をSlackに常駐するエンタープライズエージェントとして発表——チームの同僚としてAIが組織内に定着する時代の幕開け",
+      "category": "agents"
+    },
+    {
+      "id": "theverge-openai-reveals-its-first-ai-processor-jalapeño",
+      "date": "2026-06-25",
+      "rank": 6,
+      "reason": "OpenAIが初の自社製推論チップ「Jalapeño」をBroadcomと共同発表——GoogleのTPU・Amazon Trainiumと並ぶ独自シリコン路線への重大な戦略転換",
+      "category": "new_models"
     },
     {
       "id": "2026-06-23-ag-sakana-fugu",
       "date": "2026-06-23",
-      "rank": 5,
-      "reason": "importance5+score18+top_pick: マルチエージェントをモデルAPIとして提供する革新的アーキテクチャ、Fable超えベンチマーク達成",
-      "category": "agents"
-    },
-    {
-      "id": "latent_space-ainews-claude-tag-multiplayer-proactive-persiste",
-      "date": "2026-06-25",
-      "rank": 6,
-      "reason": "importance5+score18+top_pick: Claude TagがSlackにAIエージェントを常駐させるLLM UIUX「第三の大転換」",
-      "category": "agents"
-    },
-    {
-      "id": "industry-openai-jalapeno-broadcom",
-      "date": "2026-06-26",
       "rank": 7,
-      "reason": "importance4+freshness5+top_pick: OpenAI初の自社AI推論チップJalapeño発表、NVIDIA依存脱却戦略の第一歩",
-      "category": "industry_business"
+      "reason": "Sakana AIがマルチエージェントをモデルAPIとして提供する「Fugu」を発表——Claude Fable 5超えを主張し、エージェント×API統合の新パラダイムを提示",
+      "category": "agents"
     },
     {
       "id": "2026-06-23-nm-plamo-30-prime",
       "date": "2026-06-23",
       "rank": 8,
-      "reason": "importance5+score18+japan_corp+top_pick: 国産フラッグシップ正式リリース、256K・Bedrock対応・競合クラス性能",
+      "reason": "PFNが国産フラッグシップ「PLaMo 3.0 Prime」を正式リリース——256Kコンテキスト・Amazon Bedrock対応・競合クラス性能で国産LLMの新基準を確立",
       "category": "new_models"
     },
     {
       "id": "research-realtime-voice-ai",
       "date": "2026-06-26",
       "rank": 9,
-      "reason": "importance5+top_pick: 主要リアルタイム音声AIが感情・声調を無視する重大安全問題を実証、音声AI安全の必読研究",
+      "reason": "主要4音声AIシステムが感情・声調を無視して言葉のみを処理するという重大な安全リスクを実証——音声AI安全設計への緊急な問題提起",
       "category": "research_papers"
     },
     {
-      "id": "hatena_it-claude-code-qiita",
-      "date": "2026-06-28",
+      "id": "buzz-anthropic-alibaba-cloning",
+      "date": "2026-06-27",
       "rank": 10,
-      "reason": "practicality5+japan_guarantee+top_pick+hatena779件: Claude Code実践知の週間最高エンゲージメント",
-      "category": "japan"
+      "reason": "AnthropicがAlibabaによる「Claude能力の過去最大の不法抽出キャンペーン」を米上院議員に書簡で暴露——AI能力の国際的盗用と輸出規制が交差する前例のない事案",
+      "category": "community_buzz"
     }
   ],
   "papers_5": [
     {
       "id": "2026-06-23-rp-probe-refine-agents-md",
-      "date": "2026-06-23"
+      "date": "2026-06-23",
+      "reason": "AGENTS.mdの効果は生成方法次第という発見——score=18・depth=5でエージェント開発実践に直結する最重要論文",
+      "category": "research_papers"
     },
     {
       "id": "2026-06-24-rp-enterprise-clawbench",
-      "date": "2026-06-24"
+      "date": "2026-06-24",
+      "reason": "実際の職場エージェントセッションから852タスクを構築した初のエンタープライズベンチマーク——合成データでなく実業務起源の評価基盤",
+      "category": "research_papers"
     },
     {
       "id": "2026-06-24-rp-randomized-yarn",
-      "date": "2026-06-24"
+      "date": "2026-06-24",
+      "reason": "短コンテキスト学習データのまま長文推論汎化を改善するRandomized YaRN——位置エンコード設計の実践的改善手法",
+      "category": "research_papers"
     },
     {
       "id": "research-realtime-voice-ai",
-      "date": "2026-06-26"
+      "date": "2026-06-26",
+      "reason": "GPT Realtime 2・Gemini 3.1 Flash Live・Qwen3.5 Omni等4システムを横断した音声AI安全性の重大欠陥実証研究",
+      "category": "research_papers"
     },
     {
       "id": "research-codex-56x-token-growth",
-      "date": "2026-06-27"
-    },
-    {
-      "id": "latent_space-red-teaming-after-mythos-zico-kolter-matt-fredri",
-      "date": "2026-06-28"
+      "date": "2026-06-27",
+      "reason": "OpenAI社内Codexのトークン使用量が調査56倍・CS32倍・法務13倍に急増——非エンジニア部門へのAIエージェント普及を示す具体的内部データ",
+      "category": "research_papers"
     }
   ],
   "models_3": [
     {
-      "id": "new-gpt56-sol-terra-luna",
-      "date": "2026-06-27"
-    },
-    {
       "id": "2026-06-23-nm-plamo-30-prime",
-      "date": "2026-06-23"
+      "date": "2026-06-23",
+      "reason": "国産フラッグシップPLaMo 3.0 Prime、importance=5・score=18——256K・Bedrock対応・競合クラス性能で今週最重要モデルリリース",
+      "category": "new_models"
     },
     {
-      "id": "2026-06-23-nm-glm-52",
-      "date": "2026-06-23"
+      "id": "latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-",
+      "date": "2026-06-28",
+      "reason": "GPT-5.6 Sol/Terra/Luna——Mythosを超えるコーディング性能で今週最注目の限定公開フロンティアモデル、数週間以内に一般公開予定",
+      "category": "new_models"
+    },
+    {
+      "id": "2026-06-22-006",
+      "date": "2026-06-22",
+      "reason": "GLM-5.2がFable輸出規制の空白を突いてフロントエンドコーディングOSSトップを宣言——MITライセンスで即活用可能",
+      "category": "new_models"
+    },
+    {
+      "id": "2026-06-22-007",
+      "date": "2026-06-22",
+      "reason": "iOS 27でGoogle Gemini搭載の新Siri AIが登場——WWDC 2026の最重要発表、モバイルAI体験を刷新",
+      "category": "new_models"
+    },
+    {
+      "id": "new-cohere-north-mini-code",
+      "date": "2026-06-26",
+      "reason": "CohereがApache 2.0でH100一枚に収まるエージェント向けコーディングMoEを初公開——RAG路線からOSSコーディングへの戦略転換",
+      "category": "new_models"
     }
   ],
   "community_buzz_3": [
     {
       "id": "2026-06-23-cb-llm-doc-rules-777",
-      "date": "2026-06-23"
+      "date": "2026-06-23",
+      "reason": "はてブ777件——LLM活用の日本語技術文書生成規範集として即実践可能な週間最高エンゲージメント記事",
+      "category": "community_buzz"
     },
     {
-      "id": "buzz-anthropic-alibaba-cloning",
-      "date": "2026-06-27"
+      "id": "hatena_it-86-ai-ai",
+      "date": "2026-06-25",
+      "reason": "NHKクロ現の映像が310ブクマ——AIによる感情的サポートの社会的受容を示す高反響コンテンツ",
+      "category": "community_buzz"
+    },
+    {
+      "id": "2026-06-22-017",
+      "date": "2026-06-22",
+      "reason": "「AI以後の受託システム開発」——現役デンキヤギ社長の当事者分析が206はてブ、業界従事者の関心を集める",
+      "category": "community_buzz"
     },
     {
       "id": "buzz-ai-proxy-war-ny12",
-      "date": "2026-06-26"
+      "date": "2026-06-26",
+      "reason": "AnthropicとOpenAIが合計2700万ドルを投じた米議会選挙の代理戦争が引き分け——AI企業が選挙政治に本格参入した初の大型事例",
+      "category": "community_buzz"
+    },
+    {
+      "id": "buzz-anthropic-alibaba-cloning",
+      "date": "2026-06-27",
+      "reason": "AnthropicがAlibabaの「Claude能力不法抽出」を上院に書簡で暴露——コミュニティで最も衝撃的な地政学的AI事案",
+      "category": "community_buzz"
     }
   ],
   "japan_3": [
     {
       "id": "hatena_it-claude-code-qiita",
-      "date": "2026-06-28"
-    },
-    {
-      "id": "2026-06-22-019",
-      "date": "2026-06-22"
+      "date": "2026-06-28",
+      "reason": "はてブ779件で週間最高——日本のAIエンジニアがClaude Codeの運用設計を再考するきっかけとなった実践記事",
+      "category": "japan"
     },
     {
       "id": "2026-06-22-018",
-      "date": "2026-06-22"
+      "date": "2026-06-22",
+      "reason": "AIが出す「それっぽいけど使えない図」問題をdraw.io生成スキルで解決——542はてブ急上昇の実践技",
+      "category": "japan"
     },
     {
-      "id": "japan-fujitsu-photon-475x",
-      "date": "2026-06-26"
+      "id": "2026-06-22-019",
+      "date": "2026-06-22",
+      "reason": "時雨堂が実採用中のClaude Code SKILL.md一覧を公開——327はてブ、実務エンジニアが即参照できる実践知",
+      "category": "japan"
     },
     {
       "id": "japan-goodpatch-15-designers",
-      "date": "2026-06-27"
-    }
-  ],
-  "china_3": [
-    {
-      "id": "china-ai-app-unicorn-300m-arr",
-      "date": "2026-06-26"
-    },
-    {
-      "id": "qbitai-gpt-5-6-fable5",
-      "date": "2026-06-28"
-    },
-    {
-      "id": "china-claudefable5-gpt56-staged",
-      "date": "2026-06-27"
-    },
-    {
-      "id": "2026-06-22-005",
-      "date": "2026-06-22"
-    }
-  ],
-  "keyword_cloud": [
-    {
-      "keyword": "japan",
-      "count": 21,
-      "delta_vs_prev_week": 13
-    },
-    {
-      "keyword": "agents",
-      "count": 11,
-      "delta_vs_prev_week": -1
-    },
-    {
-      "keyword": "anthropic",
-      "count": 9,
-      "delta_vs_prev_week": -1
-    },
-    {
-      "keyword": "claude-code",
-      "count": 8,
-      "delta_vs_prev_week": 2
-    },
-    {
-      "keyword": "export-controls",
-      "count": 8,
-      "delta_vs_prev_week": 0
-    },
-    {
-      "keyword": "llm",
-      "count": 7,
-      "delta_vs_prev_week": -1
-    },
-    {
-      "keyword": "gpt-5.6",
-      "count": 6,
-      "delta_vs_prev_week": 6
-    },
-    {
-      "keyword": "regulation",
-      "count": 6,
-      "delta_vs_prev_week": -2
-    },
-    {
-      "keyword": "china",
-      "count": 6,
-      "delta_vs_prev_week": 2
-    },
-    {
-      "keyword": "multi-agent",
-      "count": 5,
-      "delta_vs_prev_week": 5
-    },
-    {
-      "keyword": "open-source",
-      "count": 5,
-      "delta_vs_prev_week": -5
-    },
-    {
-      "keyword": "multimodal",
-      "count": 4,
-      "delta_vs_prev_week": -1
-    },
-    {
-      "keyword": "coding",
-      "count": 4,
-      "delta_vs_prev_week": 4
-    },
-    {
-      "keyword": "enterprise",
-      "count": 4,
-      "delta_vs_prev_week": 4
-    },
-    {
-      "keyword": "benchmark",
-      "count": 4,
-      "delta_vs_prev_week": -3
-    },
-    {
-      "keyword": "mythos",
-      "count": 3,
-      "delta_vs_prev_week": 3
-    },
-    {
-      "keyword": "spacex",
-      "count": 3,
-      "delta_vs_prev_week": 3
-    },
-    {
-      "keyword": "compute",
-      "count": 3,
-      "delta_vs_prev_week": 3
-    },
-    {
-      "keyword": "claude-tag",
-      "count": 3,
-      "delta_vs_prev_week": 3
-    },
-    {
-      "keyword": "openai",
-      "count": 3,
-      "delta_vs_prev_week": -1
-    }
-  ],
-  "watchlist_next_week": [
-    {
-      "topic": "GPT-5.6（Sol/Terra/Luna）一般公開",
-      "reason": "米政府との調整後「数週間以内」の一般公開を予定（Latent Space AINewsが報告）、段階的ロールアウトの拡大範囲と条件が焦点",
-      "watch_until": "2026-07-11",
-      "source_item_id": "latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-"
-    },
-    {
-      "topic": "OpenAI Jalapeño チップ年内初期展開",
-      "reason": "Broadcomとの共同開発チップを年内に初期データセンター展開予定。複数世代計画の第一歩としてNVIDIA依存脱却の実現性が問われる",
-      "watch_until": "2026-12-31",
-      "source_item_id": "industry-openai-jalapeno-broadcom"
-    },
-    {
-      "topic": "Z.ai Open Fable 12月公開",
-      "reason": "GLM-5.2記事でZ.aiが12月にOpen Fableを公開すると予告。OSSフロンティアモデル競争に新展開をもたらす可能性",
-      "watch_until": "2026-12-31",
-      "source_item_id": "2026-06-23-nm-glm-52"
-    },
-    {
-      "topic": "Anthropic-政府間の輸出規制フレームワーク透明化",
-      "reason": "Mythos 5提供再開後も政府がフロンティアAIアクセスをアドホック決定する体制への懸念が高まっており、正式な能力開示と輸出規制の明文化が業界の焦点",
-      "watch_until": "2026-07-31",
-      "source_item_id": "2026-06-22-001"
-    },
-    {
-      "topic": "富士通 PHOTON アーキテクチャの詳細論文・学術検証",
-      "reason": "Transformer比475倍スループット主張について、詳細実装の論文公開と独立した学術的検証結果が今後の評価に向けて期待される",
-      "watch_until": "2026-09-30",
-      "source_item_id": "japan-fujitsu-photon-475x"
-    }
-  ],
-  "week_items_index": [
-    {
-      "id": "2026-06-22-001",
-      "date": "2026-06-22",
-      "category": "regulation_policy",
-      "source": "techcrunch"
-    },
-    {
-      "id": "2026-06-22-002",
-      "date": "2026-06-22",
-      "category": "agents",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-22-003",
-      "date": "2026-06-22",
-      "category": "agents",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-22-004",
-      "date": "2026-06-22",
-      "category": "multimodal",
-      "source": "techno-edge"
-    },
-    {
-      "id": "2026-06-22-005",
-      "date": "2026-06-22",
-      "category": "multimodal",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-22-006",
-      "date": "2026-06-22",
-      "category": "new_models",
-      "source": "latent_space"
-    },
-    {
-      "id": "2026-06-22-007",
-      "date": "2026-06-22",
-      "category": "new_models",
-      "source": "techcrunch"
-    },
-    {
-      "id": "2026-06-22-008",
-      "date": "2026-06-22",
-      "category": "tools_apps",
-      "source": "anthropic"
-    },
-    {
-      "id": "2026-06-22-009",
-      "date": "2026-06-22",
-      "category": "tools_apps",
-      "source": "azukiazusa"
-    },
-    {
-      "id": "2026-06-22-010",
-      "date": "2026-06-22",
-      "category": "tools_apps",
-      "source": "azukiazusa"
-    },
-    {
-      "id": "2026-06-22-011",
-      "date": "2026-06-22",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-22-012",
-      "date": "2026-06-22",
-      "category": "research_papers",
-      "source": "latent_space"
-    },
-    {
-      "id": "2026-06-22-013",
-      "date": "2026-06-22",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-22-014",
-      "date": "2026-06-22",
-      "category": "industry_business",
-      "source": "stratechery"
-    },
-    {
-      "id": "2026-06-22-015",
-      "date": "2026-06-22",
-      "category": "industry_business",
-      "source": "techcrunch"
-    },
-    {
-      "id": "2026-06-22-016",
-      "date": "2026-06-22",
-      "category": "community_buzz",
-      "source": "kyodo_47news"
-    },
-    {
-      "id": "2026-06-22-017",
-      "date": "2026-06-22",
-      "category": "community_buzz",
-      "source": "zenn_terurou"
-    },
-    {
-      "id": "2026-06-22-018",
-      "date": "2026-06-22",
-      "category": "japan",
-      "source": "qiita_enomoso"
-    },
-    {
-      "id": "2026-06-22-019",
-      "date": "2026-06-22",
-      "category": "japan",
-      "source": "voluntas_ghost"
-    },
-    {
-      "id": "2026-06-22-020",
-      "date": "2026-06-22",
-      "category": "japan",
-      "source": "zenn_tark_ann"
-    },
-    {
-      "id": "2026-06-22-021",
-      "date": "2026-06-22",
-      "category": "japan",
-      "source": "note_memuro"
-    },
-    {
-      "id": "2026-06-22-022",
-      "date": "2026-06-22",
-      "category": "japan",
-      "source": "pfn_tech_blog"
-    },
-    {
-      "id": "2026-06-22-023",
-      "date": "2026-06-22",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-22-024",
-      "date": "2026-06-22",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-23-reg-ai-music-21m",
-      "date": "2026-06-23",
-      "category": "regulation_policy",
-      "source": "gigazine"
-    },
-    {
-      "id": "2026-06-23-ag-sakana-fugu",
-      "date": "2026-06-23",
-      "category": "agents",
-      "source": "sakana_ai"
-    },
-    {
-      "id": "2026-06-23-ag-lycorp-pj-onepiece",
-      "date": "2026-06-23",
-      "category": "agents",
-      "source": "lycorp"
-    },
-    {
-      "id": "2026-06-23-mm-freestyle-dual-ref",
-      "date": "2026-06-23",
-      "category": "multimodal",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-23-mm-alibaba-happyhorse-11",
-      "date": "2026-06-23",
-      "category": "multimodal",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-23-nm-plamo-30-prime",
-      "date": "2026-06-23",
-      "category": "new_models",
-      "source": "preferred"
-    },
-    {
-      "id": "2026-06-23-nm-glm-52",
-      "date": "2026-06-23",
-      "category": "new_models",
-      "source": "latent_space"
-    },
-    {
-      "id": "2026-06-23-nm-ling-26",
-      "date": "2026-06-23",
-      "category": "new_models",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-23-ta-fable5-breaking-changes",
-      "date": "2026-06-23",
-      "category": "tools_apps",
-      "source": "qiita"
-    },
-    {
-      "id": "2026-06-23-ta-openai-patch-planet",
-      "date": "2026-06-23",
-      "category": "tools_apps",
-      "source": "wired"
-    },
-    {
-      "id": "2026-06-23-ta-gemini-interactions-ga",
-      "date": "2026-06-23",
-      "category": "tools_apps",
-      "source": "qiita"
-    },
-    {
-      "id": "2026-06-23-rp-probe-refine-agents-md",
-      "date": "2026-06-23",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-23-rp-cwe-trace",
-      "date": "2026-06-23",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-23-rp-wikipedia-llm-values",
-      "date": "2026-06-23",
-      "category": "research_papers",
-      "source": "lesswrong"
-    },
-    {
-      "id": "2026-06-23-ib-spacex-reflection-ai",
-      "date": "2026-06-23",
-      "category": "industry_business",
-      "source": "techcrunch"
-    },
-    {
-      "id": "2026-06-23-ib-mit-tr-anthropic-feud",
-      "date": "2026-06-23",
-      "category": "industry_business",
-      "source": "mit_tr"
-    },
-    {
-      "id": "2026-06-23-cb-llm-doc-rules-777",
-      "date": "2026-06-23",
-      "category": "community_buzz",
-      "source": "hatena"
-    },
-    {
-      "id": "2026-06-23-cb-ai-skill-atrophy",
-      "date": "2026-06-23",
-      "category": "community_buzz",
-      "source": "hatena"
-    },
-    {
-      "id": "2026-06-23-jp-claude-worktree-bug-70069",
-      "date": "2026-06-23",
-      "category": "japan",
-      "source": "qiita"
-    },
-    {
-      "id": "2026-06-23-jp-loop-engineering-intro",
-      "date": "2026-06-23",
-      "category": "japan",
-      "source": "qiita"
-    },
-    {
-      "id": "2026-06-23-jp-claude-api-incident",
-      "date": "2026-06-23",
-      "category": "japan",
-      "source": "qiita"
-    },
-    {
-      "id": "2026-06-23-jp-zero-to-one-work-ends",
-      "date": "2026-06-23",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "2026-06-23-jp-model-collapse-diversity",
-      "date": "2026-06-23",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "2026-06-23-cn-spatial-ttt-tsinghua-eccv",
-      "date": "2026-06-23",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-23-cn-deepseek-agent-hiring",
-      "date": "2026-06-23",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-24-nm-jetbrains-mellum2",
-      "date": "2026-06-24",
-      "category": "new_models",
-      "source": "zenn"
-    },
-    {
-      "id": "2026-06-24-nm-doubao-seed-21",
-      "date": "2026-06-24",
-      "category": "new_models",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-24-ta-cuga-ibm",
-      "date": "2026-06-24",
-      "category": "tools_apps",
-      "source": "huggingface"
-    },
-    {
-      "id": "2026-06-24-ta-codex-record-replay",
-      "date": "2026-06-24",
-      "category": "tools_apps",
-      "source": "zenn"
-    },
-    {
-      "id": "2026-06-24-ta-lineyahoo-prompt-ga",
-      "date": "2026-06-24",
-      "category": "tools_apps",
-      "source": "lycorp"
-    },
-    {
-      "id": "2026-06-24-ag-claude-tag",
-      "date": "2026-06-24",
-      "category": "agents",
-      "source": "anthropic"
-    },
-    {
-      "id": "2026-06-24-mm-midjourney-medical",
-      "date": "2026-06-24",
-      "category": "multimodal",
-      "source": "theverge"
-    },
-    {
-      "id": "2026-06-24-rp-randomized-yarn",
-      "date": "2026-06-24",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-24-rp-enterprise-clawbench",
-      "date": "2026-06-24",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-24-rp-adversarial-prefill",
-      "date": "2026-06-24",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-24-rp-air-mllm-reasoning",
-      "date": "2026-06-24",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "2026-06-24-ib-spacex-28byr-neocloud",
-      "date": "2026-06-24",
-      "category": "industry_business",
-      "source": "latent_space"
-    },
-    {
-      "id": "2026-06-24-ib-groq-650m",
-      "date": "2026-06-24",
-      "category": "industry_business",
-      "source": "techcrunch"
-    },
-    {
-      "id": "2026-06-24-reg-gray-swan",
-      "date": "2026-06-24",
-      "category": "regulation_policy",
-      "source": "latent_space"
-    },
-    {
-      "id": "2026-06-24-reg-ai-compute-verification",
-      "date": "2026-06-24",
-      "category": "regulation_policy",
-      "source": "lesswrong"
-    },
-    {
-      "id": "2026-06-24-cb-meta-keystroke-pause",
-      "date": "2026-06-24",
-      "category": "community_buzz",
-      "source": "wired"
-    },
-    {
-      "id": "2026-06-24-cb-ai-loopy",
-      "date": "2026-06-24",
-      "category": "community_buzz",
-      "source": "techcrunch"
-    },
-    {
-      "id": "2026-06-24-jp-nri-secure-mythos",
-      "date": "2026-06-24",
-      "category": "japan",
-      "source": "itmedia"
-    },
-    {
-      "id": "2026-06-24-jp-toyota-finance-agent-rpa",
-      "date": "2026-06-24",
-      "category": "japan",
-      "source": "itmedia"
-    },
-    {
-      "id": "2026-06-24-jp-loop-engineering-eval",
-      "date": "2026-06-24",
-      "category": "japan",
-      "source": "zenn"
+      "date": "2026-06-27",
+      "reason": "Goodpatchの15人デザイナーチームがClaude Code×GitHubで組織運営を刷新——はてブ178件の非エンジニア職種活用の先進事例",
+      "category": "japan"
     },
     {
       "id": "2026-06-24-jp-anthropic-agent-20",
       "date": "2026-06-24",
-      "category": "japan",
-      "source": "zenn"
+      "reason": "Anthropic公式知見を20原則に整理した即実践可能なエージェント設計ガイド——日本語開発者の索引として高評価",
+      "category": "japan"
+    }
+  ],
+  "china_3": [
+    {
+      "id": "2026-06-22-024",
+      "date": "2026-06-22",
+      "reason": "世界初「人形ロボット汎用小脳」——2万時間の人間動作データでゼロショット汎化を実現、中国の具身AI研究が新段階に",
+      "category": "china"
     },
     {
-      "id": "2026-06-24-jp-ai-38pct-usage",
-      "date": "2026-06-24",
-      "category": "japan",
-      "source": "itmedia"
+      "id": "2026-06-23-cn-spatial-ttt-tsinghua-eccv",
+      "date": "2026-06-23",
+      "reason": "清華大のSpatial TTT——ECCV採択のテスト時間学習によるマルチモーダル空間理解の最先端研究",
+      "category": "china"
     },
     {
-      "id": "2026-06-24-cn-cloud-agentic-xpeng-kimi",
-      "date": "2026-06-24",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "2026-06-24-cn-tesla-ai-compute",
-      "date": "2026-06-24",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "theverge-openai-reveals-its-first-ai-processor-jalapeño",
-      "date": "2026-06-25",
-      "category": "new_models",
-      "source": "theverge"
-    },
-    {
-      "id": "reddit_localllama-unlimited-ocr-is-now-on-modelscope-a-3-3b-multil",
-      "date": "2026-06-25",
-      "category": "new_models",
-      "source": "reddit"
-    },
-    {
-      "id": "theverge-figma-now-has-ai-motion-graphics-and-shader-tool",
-      "date": "2026-06-25",
-      "category": "tools_apps",
-      "source": "theverge"
-    },
-    {
-      "id": "itmedia_ai-mistral-ocr-ocr-4-170",
-      "date": "2026-06-25",
-      "category": "tools_apps",
-      "source": "itmedia"
-    },
-    {
-      "id": "zenn_llm-gemini-api-interactions-api",
-      "date": "2026-06-25",
-      "category": "tools_apps",
-      "source": "zenn"
-    },
-    {
-      "id": "latent_space-ainews-claude-tag-multiplayer-proactive-persiste",
-      "date": "2026-06-25",
-      "category": "agents",
-      "source": "latent_space"
-    },
-    {
-      "id": "arxiv-openthoughts-agent-data-recipes-for-agentic-mode",
-      "date": "2026-06-25",
-      "category": "agents",
-      "source": "arxiv"
-    },
-    {
-      "id": "hatena-3d-ai-artifixer-nvidia",
-      "date": "2026-06-25",
-      "category": "multimodal",
-      "source": "hatena"
-    },
-    {
-      "id": "hatena_it-ai-krea-2-comfyui",
-      "date": "2026-06-25",
-      "category": "multimodal",
-      "source": "hatena"
-    },
-    {
-      "id": "arxiv-large-language-model-discovery-of-quantum-ldpc-c",
-      "date": "2026-06-25",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "arxiv-are-we-ready-for-an-agent-native-memory-system",
-      "date": "2026-06-25",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "lesswrong-fable-in-shackles",
-      "date": "2026-06-25",
-      "category": "research_papers",
-      "source": "lesswrong"
-    },
-    {
-      "id": "wired_ai-qualcomm-buys-buzzy-chip-startup-modular-for-nea",
-      "date": "2026-06-25",
-      "category": "industry_business",
-      "source": "wired"
-    },
-    {
-      "id": "arstechnica_ai-oracle-s-21-000-layoffs-help-drive-its-debt-fuel",
-      "date": "2026-06-25",
-      "category": "industry_business",
-      "source": "arstechnica"
-    },
-    {
-      "id": "wired_ai-the-trump-white-house-is-over-anthropic-ceo-dari",
-      "date": "2026-06-25",
-      "category": "regulation_policy",
-      "source": "wired"
-    },
-    {
-      "id": "hatena_it-86-ai-ai",
-      "date": "2026-06-25",
-      "category": "community_buzz",
-      "source": "hatena_it"
-    },
-    {
-      "id": "hatena_it-ai-ai-fnn",
-      "date": "2026-06-25",
-      "category": "community_buzz",
-      "source": "hatena_it"
-    },
-    {
-      "id": "pfn-plamo-3-0-prime",
-      "date": "2026-06-25",
-      "category": "japan",
-      "source": "pfn"
-    },
-    {
-      "id": "hatena-notebooklm-open-notebook",
-      "date": "2026-06-25",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "hatena_it-transformer-475-gpu-llm-photon",
-      "date": "2026-06-25",
-      "category": "japan",
-      "source": "hatena_it"
-    },
-    {
-      "id": "hatena-item",
-      "date": "2026-06-25",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "hatena_it-ai",
-      "date": "2026-06-25",
-      "category": "japan",
-      "source": "hatena_it"
-    },
-    {
-      "id": "qbitai-2026-sail-top30-top20",
-      "date": "2026-06-25",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "qbitai-claude-code-llm",
-      "date": "2026-06-25",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "new-cohere-north-mini-code",
-      "date": "2026-06-26",
-      "category": "new_models",
-      "source": "zenn"
-    },
-    {
-      "id": "new-glm-52-opus-comparison",
-      "date": "2026-06-26",
-      "category": "new_models",
-      "source": "zenn"
-    },
-    {
-      "id": "new-hf-hybrid-model-prediction",
-      "date": "2026-06-26",
-      "category": "new_models",
-      "source": "huggingface"
-    },
-    {
-      "id": "tools-openai-sandbox-agents",
-      "date": "2026-06-26",
-      "category": "tools_apps",
-      "source": "zenn"
-    },
-    {
-      "id": "tools-claude-managed-agents",
-      "date": "2026-06-26",
-      "category": "tools_apps",
-      "source": "itmedia"
-    },
-    {
-      "id": "tools-figma-motion",
-      "date": "2026-06-26",
-      "category": "tools_apps",
-      "source": "itmedia"
-    },
-    {
-      "id": "agents-gemini-flash-computer-use",
-      "date": "2026-06-26",
-      "category": "agents",
-      "source": "itmedia"
-    },
-    {
-      "id": "agents-meta-harness-databricks",
-      "date": "2026-06-26",
-      "category": "agents",
-      "source": "latent_space"
-    },
-    {
-      "id": "multi-krea2-open-weight",
-      "date": "2026-06-26",
-      "category": "multimodal",
-      "source": "hatena"
-    },
-    {
-      "id": "multi-deepmind-a24",
-      "date": "2026-06-26",
-      "category": "multimodal",
-      "source": "wired"
-    },
-    {
-      "id": "research-realtime-voice-ai",
-      "date": "2026-06-26",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "research-latent-red-teaming",
-      "date": "2026-06-26",
-      "category": "research_papers",
-      "source": "latent_space"
-    },
-    {
-      "id": "research-onpolicy-distillation",
-      "date": "2026-06-26",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "industry-openai-jalapeno-broadcom",
-      "date": "2026-06-26",
-      "category": "industry_business",
-      "source": "arstechnica"
-    },
-    {
-      "id": "industry-qualcomm-modular-4b",
-      "date": "2026-06-26",
-      "category": "industry_business",
-      "source": "wired"
-    },
-    {
-      "id": "policy-british-police-crime-prediction",
-      "date": "2026-06-26",
-      "category": "regulation_policy",
-      "source": "wired"
-    },
-    {
-      "id": "buzz-ai-proxy-war-ny12",
-      "date": "2026-06-26",
-      "category": "community_buzz",
-      "source": "theverge"
-    },
-    {
-      "id": "buzz-ai-engineers-resilient",
-      "date": "2026-06-26",
-      "category": "community_buzz",
-      "source": "techcrunch"
-    },
-    {
-      "id": "japan-google-ai-lecture",
-      "date": "2026-06-26",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "japan-fujitsu-photon-475x",
-      "date": "2026-06-26",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "japan-plamo-3-prime",
-      "date": "2026-06-26",
-      "category": "japan",
-      "source": "preferred_networks"
-    },
-    {
-      "id": "japan-lineyahoo-multi-agent-discussion",
-      "date": "2026-06-26",
-      "category": "japan",
-      "source": "lycorp"
-    },
-    {
-      "id": "japan-claude-code-team-structure",
-      "date": "2026-06-26",
-      "category": "japan",
-      "source": "zenn"
+      "id": "2026-06-22-023",
+      "date": "2026-06-22",
+      "reason": "2026年前半だけで昨年全体を超える具身AI（体現型AI）資金調達——ロボット脳への資本集中が加速",
+      "category": "china"
     },
     {
       "id": "china-ai-app-unicorn-300m-arr",
       "date": "2026-06-26",
-      "category": "china",
-      "source": "synced"
-    },
-    {
-      "id": "china-glm-elon-prediction",
-      "date": "2026-06-26",
-      "category": "china",
-      "source": "synced"
-    },
-    {
-      "id": "policy-whitehouse-gpt56-adhoc",
-      "date": "2026-06-27",
-      "category": "regulation_policy",
-      "source": "lesswrong"
-    },
-    {
-      "id": "new-gpt56-sol-terra-luna",
-      "date": "2026-06-27",
-      "category": "new_models",
-      "source": "theverge"
-    },
-    {
-      "id": "new-lfm25-230m-mobile",
-      "date": "2026-06-27",
-      "category": "new_models",
-      "source": "hatena"
-    },
-    {
-      "id": "new-plamo30-prime-256k",
-      "date": "2026-06-27",
-      "category": "new_models",
-      "source": "preferred_networks"
-    },
-    {
-      "id": "tools-hf-vllm-jobs-onecommand",
-      "date": "2026-06-27",
-      "category": "tools_apps",
-      "source": "huggingface"
-    },
-    {
-      "id": "tools-openrouter-mcp-server",
-      "date": "2026-06-27",
-      "category": "tools_apps",
-      "source": "hatena"
-    },
-    {
-      "id": "tools-anthropic-sdk-py0112-ts0106",
-      "date": "2026-06-27",
-      "category": "tools_apps",
-      "source": "qiita"
-    },
-    {
-      "id": "agents-omnigent-meta-harness",
-      "date": "2026-06-27",
-      "category": "agents",
-      "source": "latent_space"
-    },
-    {
-      "id": "agents-lycorp-multi-agent-debate",
-      "date": "2026-06-27",
-      "category": "agents",
-      "source": "lycorp"
-    },
-    {
-      "id": "multimodal-krea2-12b-openweight",
-      "date": "2026-06-27",
-      "category": "multimodal",
-      "source": "hatena"
-    },
-    {
-      "id": "multimodal-danceopd-unified-gen",
-      "date": "2026-06-27",
-      "category": "multimodal",
-      "source": "arxiv"
-    },
-    {
-      "id": "research-llm-ensemble-cofailure",
-      "date": "2026-06-27",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "research-world-model-hallucination",
-      "date": "2026-06-27",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "research-codex-56x-token-growth",
-      "date": "2026-06-27",
-      "category": "research_papers",
-      "source": "latent_space"
-    },
-    {
-      "id": "industry-anthropic-mythos-trump-drama",
-      "date": "2026-06-27",
-      "category": "industry_business",
-      "source": "theverge"
-    },
-    {
-      "id": "industry-spacex-28b-neocloud",
-      "date": "2026-06-27",
-      "category": "industry_business",
-      "source": "latent_space"
-    },
-    {
-      "id": "buzz-anthropic-alibaba-cloning",
-      "date": "2026-06-27",
-      "category": "community_buzz",
-      "source": "arstechnica"
-    },
-    {
-      "id": "buzz-notion-mail-ai-agents",
-      "date": "2026-06-27",
-      "category": "community_buzz",
-      "source": "arstechnica"
-    },
-    {
-      "id": "japan-uzabase-claude-code-slo",
-      "date": "2026-06-27",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "japan-goodpatch-15-designers",
-      "date": "2026-06-27",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "japan-aws-bedrock-q1-2026",
-      "date": "2026-06-27",
-      "category": "japan",
-      "source": "itmedia"
-    },
-    {
-      "id": "japan-tebiki-cto-ai-era",
-      "date": "2026-06-27",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "japan-ga4-ai-traffic-quality",
-      "date": "2026-06-27",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "china-claudefable5-gpt56-staged",
-      "date": "2026-06-27",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "china-nvidia-moe-import-3-7x",
-      "date": "2026-06-27",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "theverge-anthropic-s-mythos-5-is-back",
-      "date": "2026-06-28",
-      "category": "regulation_policy",
-      "source": "theverge"
-    },
-    {
-      "id": "latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-",
-      "date": "2026-06-28",
-      "category": "new_models",
-      "source": "latent_space"
-    },
-    {
-      "id": "techcrunch-asian-ai-startups-launch-mythos-like-models-as-a",
-      "date": "2026-06-28",
-      "category": "new_models",
-      "source": "techcrunch"
-    },
-    {
-      "id": "lesswrong-just-a-wrapper-how-much-do-scaffolds-matter",
-      "date": "2026-06-28",
-      "category": "agents",
-      "source": "lesswrong"
-    },
-    {
-      "id": "latent_space-ainews-it-s-meta-harness-summer",
-      "date": "2026-06-28",
-      "category": "agents",
-      "source": "latent_space"
-    },
-    {
-      "id": "hatena-chrome-firefox-hister-mcp-ai",
-      "date": "2026-06-28",
-      "category": "tools_apps",
-      "source": "hatena"
-    },
-    {
-      "id": "raschka-using-local-coding-agents",
-      "date": "2026-06-28",
-      "category": "tools_apps",
-      "source": "sebastian_raschka"
-    },
-    {
-      "id": "arxiv-hallucination-in-world-models-is-predictable-and",
-      "date": "2026-06-28",
-      "category": "multimodal",
-      "source": "arxiv"
+      "reason": "中国AI消費アプリが年間ARR 3億ドルのユニコーンに——アジア市場でのAIアプリ収益化が欧米以上のペースで加速",
+      "category": "china"
     },
     {
       "id": "qbitai-cvpr-2026",
       "date": "2026-06-28",
-      "category": "multimodal",
-      "source": "qbitai"
-    },
-    {
-      "id": "latent_space-red-teaming-after-mythos-zico-kolter-matt-fredri",
-      "date": "2026-06-28",
-      "category": "research_papers",
-      "source": "latent_space"
-    },
-    {
-      "id": "arxiv-when-are-likely-answers-right-on-sequence-probab",
-      "date": "2026-06-28",
-      "category": "research_papers",
-      "source": "arxiv"
-    },
-    {
-      "id": "techcrunch-openai-limits-gpt-5-6-rollout-after-government-r",
-      "date": "2026-06-28",
-      "category": "industry_business",
-      "source": "techcrunch"
-    },
-    {
-      "id": "arstechnica_ai-nyt-slams-microsoft-for-building-copyright-infri",
-      "date": "2026-06-28",
-      "category": "industry_business",
-      "source": "arstechnica"
-    },
-    {
-      "id": "lesswrong-white-house-will-ad-hoc-decide-who-can-individua",
-      "date": "2026-06-28",
-      "category": "community_buzz",
-      "source": "lesswrong"
-    },
-    {
-      "id": "reddit_localllama-nemotron-3-super-120b-a12b-hybrid-mamba-moe-hold",
-      "date": "2026-06-28",
-      "category": "community_buzz",
-      "source": "reddit"
-    },
-    {
-      "id": "hatena_it-claude-code-qiita",
-      "date": "2026-06-28",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "hatena_it-ai-pi-coding-agent",
-      "date": "2026-06-28",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "hatena_it-claude-enterprise",
-      "date": "2026-06-28",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "hatena-7-ai",
-      "date": "2026-06-28",
-      "category": "japan",
-      "source": "hatena"
-    },
-    {
-      "id": "lycorp-ai-techverse2026-219",
-      "date": "2026-06-28",
-      "category": "japan",
-      "source": "lycorp"
-    },
-    {
-      "id": "qbitai-gpt-5-6-fable5",
-      "date": "2026-06-28",
-      "category": "china",
-      "source": "qbitai"
-    },
-    {
-      "id": "qbitai-browserbc-agent",
-      "date": "2026-06-28",
-      "category": "china",
-      "source": "qbitai"
+      "reason": "CVPR 2026で杭州チームが世界初のエッジストリーミング・マルチモーダルを実現——中国発研究がエッジAI最前線をリード",
+      "category": "china"
     }
+  ],
+  "keyword_cloud": [
+    { "keyword": "japan", "count": 21, "delta_vs_prev_week": 13 },
+    { "keyword": "agents", "count": 11, "delta_vs_prev_week": -1 },
+    { "keyword": "anthropic", "count": 9, "delta_vs_prev_week": -1 },
+    { "keyword": "claude-code", "count": 8, "delta_vs_prev_week": 2 },
+    { "keyword": "export-controls", "count": 8, "delta_vs_prev_week": 0 },
+    { "keyword": "llm", "count": 7, "delta_vs_prev_week": -1 },
+    { "keyword": "gpt-5.6", "count": 6, "delta_vs_prev_week": 6 },
+    { "keyword": "regulation", "count": 6, "delta_vs_prev_week": -2 },
+    { "keyword": "china", "count": 6, "delta_vs_prev_week": 2 },
+    { "keyword": "multi-agent", "count": 5, "delta_vs_prev_week": 5 },
+    { "keyword": "open-source", "count": 5, "delta_vs_prev_week": -5 },
+    { "keyword": "multimodal", "count": 4, "delta_vs_prev_week": -1 },
+    { "keyword": "coding", "count": 4, "delta_vs_prev_week": 4 },
+    { "keyword": "enterprise", "count": 4, "delta_vs_prev_week": 4 },
+    { "keyword": "benchmark", "count": 4, "delta_vs_prev_week": -3 },
+    { "keyword": "mythos", "count": 3, "delta_vs_prev_week": 3 },
+    { "keyword": "spacex", "count": 3, "delta_vs_prev_week": 3 },
+    { "keyword": "compute", "count": 3, "delta_vs_prev_week": 3 },
+    { "keyword": "claude-tag", "count": 3, "delta_vs_prev_week": 3 },
+    { "keyword": "openai", "count": 3, "delta_vs_prev_week": 1 }
+  ],
+  "watchlist_next_week": [
+    {
+      "topic": "OpenAI GPT-5.6（Sol/Terra/Luna）の一般公開",
+      "reason": "政府との調整後に数週間以内の一般公開を予定。段階的ロールアウトのスケジュールと対象範囲が来週の焦点",
+      "watch_until": "2026-07-15",
+      "source_item_id": "latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-"
+    },
+    {
+      "topic": "Claude Fable 5（公開版）の輸出規制解除",
+      "reason": "Mythos 5は限定再提供されたが公開版Fable 5は依然停止中。政府との交渉継続中で解除のタイミングが最大の注目点",
+      "watch_until": "2026-07-14",
+      "source_item_id": "theverge-anthropic-s-mythos-5-is-back"
+    },
+    {
+      "topic": "アジアAIスタートアップのMythos相当モデルラッシュ",
+      "reason": "Fable規制継続の間に欧米以外の代替モデルが急増中。来週もリリースが続き米国モデルのシェア喪失が進む可能性",
+      "watch_until": "2026-07-07",
+      "source_item_id": "techcrunch-asian-ai-startups-launch-mythos-like-models-as-a"
+    },
+    {
+      "topic": "Claude TagのEnterprise/Team向けGA移行",
+      "reason": "リサーチプレビューで開始したClaude Tag（Slack常駐エージェント）の正式一般提供への移行スケジュールが来週以降に注目",
+      "watch_until": "2026-07-31",
+      "source_item_id": "2026-06-24-ag-claude-tag"
+    },
+    {
+      "topic": "DatabricksのOmnigentとメタハーネス競争の標準化動向",
+      "reason": "Omnigent（Databricks）・Conductor/ACP（Zed）・Cloudflare Flue・Vercel Eveが並立するメタハーネス競争の収斂・連携動向が来週に具体化",
+      "watch_until": "2026-07-14",
+      "source_item_id": "agents-omnigent-meta-harness"
+    },
+    {
+      "topic": "Z.ai Open Fable（12月公開予定）",
+      "reason": "Z.aiが12月にOpen Fableの公開を予告——フロンティアOSSモデルとして輸出規制下での代替品筆頭候補。中間アップデートに注目",
+      "watch_until": "2026-12-31",
+      "source_item_id": "2026-06-23-nm-glm-52"
+    }
+  ],
+  "week_items_index": [
+    { "id": "2026-06-22-001", "date": "2026-06-22", "category": "regulation_policy", "source": "techcrunch" },
+    { "id": "2026-06-22-002", "date": "2026-06-22", "category": "agents", "source": "arxiv" },
+    { "id": "2026-06-22-003", "date": "2026-06-22", "category": "agents", "source": "arxiv" },
+    { "id": "2026-06-22-004", "date": "2026-06-22", "category": "multimodal", "source": "techno-edge" },
+    { "id": "2026-06-22-005", "date": "2026-06-22", "category": "multimodal", "source": "qbitai" },
+    { "id": "2026-06-22-006", "date": "2026-06-22", "category": "new_models", "source": "latent_space" },
+    { "id": "2026-06-22-007", "date": "2026-06-22", "category": "new_models", "source": "techcrunch" },
+    { "id": "2026-06-22-008", "date": "2026-06-22", "category": "tools_apps", "source": "anthropic" },
+    { "id": "2026-06-22-009", "date": "2026-06-22", "category": "tools_apps", "source": "azukiazusa" },
+    { "id": "2026-06-22-010", "date": "2026-06-22", "category": "tools_apps", "source": "azukiazusa" },
+    { "id": "2026-06-22-011", "date": "2026-06-22", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-22-012", "date": "2026-06-22", "category": "research_papers", "source": "latent_space" },
+    { "id": "2026-06-22-013", "date": "2026-06-22", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-22-014", "date": "2026-06-22", "category": "industry_business", "source": "stratechery" },
+    { "id": "2026-06-22-015", "date": "2026-06-22", "category": "industry_business", "source": "techcrunch" },
+    { "id": "2026-06-22-016", "date": "2026-06-22", "category": "community_buzz", "source": "kyodo_47news" },
+    { "id": "2026-06-22-017", "date": "2026-06-22", "category": "community_buzz", "source": "zenn_terurou" },
+    { "id": "2026-06-22-018", "date": "2026-06-22", "category": "japan", "source": "qiita_enomoso" },
+    { "id": "2026-06-22-019", "date": "2026-06-22", "category": "japan", "source": "voluntas_ghost" },
+    { "id": "2026-06-22-020", "date": "2026-06-22", "category": "japan", "source": "zenn_tark_ann" },
+    { "id": "2026-06-22-021", "date": "2026-06-22", "category": "japan", "source": "note_memuro" },
+    { "id": "2026-06-22-022", "date": "2026-06-22", "category": "japan", "source": "pfn_tech_blog" },
+    { "id": "2026-06-22-023", "date": "2026-06-22", "category": "china", "source": "qbitai" },
+    { "id": "2026-06-22-024", "date": "2026-06-22", "category": "china", "source": "qbitai" },
+    { "id": "2026-06-23-reg-ai-music-21m", "date": "2026-06-23", "category": "regulation_policy", "source": "gigazine" },
+    { "id": "2026-06-23-ag-sakana-fugu", "date": "2026-06-23", "category": "agents", "source": "sakana_ai" },
+    { "id": "2026-06-23-ag-lycorp-pj-onepiece", "date": "2026-06-23", "category": "agents", "source": "lycorp" },
+    { "id": "2026-06-23-mm-freestyle-dual-ref", "date": "2026-06-23", "category": "multimodal", "source": "arxiv" },
+    { "id": "2026-06-23-mm-alibaba-happyhorse-11", "date": "2026-06-23", "category": "multimodal", "source": "qbitai" },
+    { "id": "2026-06-23-nm-plamo-30-prime", "date": "2026-06-23", "category": "new_models", "source": "preferred" },
+    { "id": "2026-06-23-nm-glm-52", "date": "2026-06-23", "category": "new_models", "source": "latent_space" },
+    { "id": "2026-06-23-nm-ling-26", "date": "2026-06-23", "category": "new_models", "source": "arxiv" },
+    { "id": "2026-06-23-ta-fable5-breaking-changes", "date": "2026-06-23", "category": "tools_apps", "source": "qiita" },
+    { "id": "2026-06-23-ta-openai-patch-planet", "date": "2026-06-23", "category": "tools_apps", "source": "wired" },
+    { "id": "2026-06-23-ta-gemini-interactions-ga", "date": "2026-06-23", "category": "tools_apps", "source": "qiita" },
+    { "id": "2026-06-23-rp-probe-refine-agents-md", "date": "2026-06-23", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-23-rp-cwe-trace", "date": "2026-06-23", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-23-rp-wikipedia-llm-values", "date": "2026-06-23", "category": "research_papers", "source": "lesswrong" },
+    { "id": "2026-06-23-ib-spacex-reflection-ai", "date": "2026-06-23", "category": "industry_business", "source": "techcrunch" },
+    { "id": "2026-06-23-ib-mit-tr-anthropic-feud", "date": "2026-06-23", "category": "industry_business", "source": "mit_tr" },
+    { "id": "2026-06-23-cb-llm-doc-rules-777", "date": "2026-06-23", "category": "community_buzz", "source": "hatena" },
+    { "id": "2026-06-23-cb-ai-skill-atrophy", "date": "2026-06-23", "category": "community_buzz", "source": "hatena" },
+    { "id": "2026-06-23-jp-claude-worktree-bug-70069", "date": "2026-06-23", "category": "japan", "source": "qiita" },
+    { "id": "2026-06-23-jp-loop-engineering-intro", "date": "2026-06-23", "category": "japan", "source": "qiita" },
+    { "id": "2026-06-23-jp-claude-api-incident", "date": "2026-06-23", "category": "japan", "source": "qiita" },
+    { "id": "2026-06-23-jp-zero-to-one-work-ends", "date": "2026-06-23", "category": "japan", "source": "hatena" },
+    { "id": "2026-06-23-jp-model-collapse-diversity", "date": "2026-06-23", "category": "japan", "source": "hatena" },
+    { "id": "2026-06-23-cn-spatial-ttt-tsinghua-eccv", "date": "2026-06-23", "category": "china", "source": "qbitai" },
+    { "id": "2026-06-23-cn-deepseek-agent-hiring", "date": "2026-06-23", "category": "china", "source": "qbitai" },
+    { "id": "2026-06-24-nm-jetbrains-mellum2", "date": "2026-06-24", "category": "new_models", "source": "zenn" },
+    { "id": "2026-06-24-nm-doubao-seed-21", "date": "2026-06-24", "category": "new_models", "source": "qbitai" },
+    { "id": "2026-06-24-ta-cuga-ibm", "date": "2026-06-24", "category": "tools_apps", "source": "huggingface" },
+    { "id": "2026-06-24-ta-codex-record-replay", "date": "2026-06-24", "category": "tools_apps", "source": "zenn" },
+    { "id": "2026-06-24-ta-lineyahoo-prompt-ga", "date": "2026-06-24", "category": "tools_apps", "source": "lycorp" },
+    { "id": "2026-06-24-ag-claude-tag", "date": "2026-06-24", "category": "agents", "source": "anthropic" },
+    { "id": "2026-06-24-mm-midjourney-medical", "date": "2026-06-24", "category": "multimodal", "source": "theverge" },
+    { "id": "2026-06-24-rp-randomized-yarn", "date": "2026-06-24", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-24-rp-enterprise-clawbench", "date": "2026-06-24", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-24-rp-adversarial-prefill", "date": "2026-06-24", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-24-rp-air-mllm-reasoning", "date": "2026-06-24", "category": "research_papers", "source": "arxiv" },
+    { "id": "2026-06-24-ib-spacex-28byr-neocloud", "date": "2026-06-24", "category": "industry_business", "source": "latent_space" },
+    { "id": "2026-06-24-ib-groq-650m", "date": "2026-06-24", "category": "industry_business", "source": "techcrunch" },
+    { "id": "2026-06-24-reg-gray-swan", "date": "2026-06-24", "category": "regulation_policy", "source": "latent_space" },
+    { "id": "2026-06-24-reg-ai-compute-verification", "date": "2026-06-24", "category": "regulation_policy", "source": "lesswrong" },
+    { "id": "2026-06-24-cb-meta-keystroke-pause", "date": "2026-06-24", "category": "community_buzz", "source": "wired" },
+    { "id": "2026-06-24-cb-ai-loopy", "date": "2026-06-24", "category": "community_buzz", "source": "techcrunch" },
+    { "id": "2026-06-24-jp-nri-secure-mythos", "date": "2026-06-24", "category": "japan", "source": "itmedia" },
+    { "id": "2026-06-24-jp-toyota-finance-agent-rpa", "date": "2026-06-24", "category": "japan", "source": "itmedia" },
+    { "id": "2026-06-24-jp-loop-engineering-eval", "date": "2026-06-24", "category": "japan", "source": "zenn" },
+    { "id": "2026-06-24-jp-anthropic-agent-20", "date": "2026-06-24", "category": "japan", "source": "zenn" },
+    { "id": "2026-06-24-jp-ai-38pct-usage", "date": "2026-06-24", "category": "japan", "source": "itmedia" },
+    { "id": "2026-06-24-cn-cloud-agentic-xpeng-kimi", "date": "2026-06-24", "category": "china", "source": "qbitai" },
+    { "id": "2026-06-24-cn-tesla-ai-compute", "date": "2026-06-24", "category": "china", "source": "qbitai" },
+    { "id": "theverge-openai-reveals-its-first-ai-processor-jalapeño", "date": "2026-06-25", "category": "new_models", "source": "theverge" },
+    { "id": "reddit_localllama-unlimited-ocr-is-now-on-modelscope-a-3-3b-multil", "date": "2026-06-25", "category": "new_models", "source": "reddit" },
+    { "id": "theverge-figma-now-has-ai-motion-graphics-and-shader-tool", "date": "2026-06-25", "category": "tools_apps", "source": "theverge" },
+    { "id": "itmedia_ai-mistral-ocr-ocr-4-170", "date": "2026-06-25", "category": "tools_apps", "source": "itmedia" },
+    { "id": "zenn_llm-gemini-api-interactions-api", "date": "2026-06-25", "category": "tools_apps", "source": "zenn" },
+    { "id": "latent_space-ainews-claude-tag-multiplayer-proactive-persiste", "date": "2026-06-25", "category": "agents", "source": "latent_space" },
+    { "id": "arxiv-openthoughts-agent-data-recipes-for-agentic-mode", "date": "2026-06-25", "category": "agents", "source": "arxiv" },
+    { "id": "hatena-3d-ai-artifixer-nvidia", "date": "2026-06-25", "category": "multimodal", "source": "hatena" },
+    { "id": "hatena_it-ai-krea-2-comfyui", "date": "2026-06-25", "category": "multimodal", "source": "hatena" },
+    { "id": "arxiv-large-language-model-discovery-of-quantum-ldpc-c", "date": "2026-06-25", "category": "research_papers", "source": "arxiv" },
+    { "id": "arxiv-are-we-ready-for-an-agent-native-memory-system", "date": "2026-06-25", "category": "research_papers", "source": "arxiv" },
+    { "id": "lesswrong-fable-in-shackles", "date": "2026-06-25", "category": "research_papers", "source": "lesswrong" },
+    { "id": "wired_ai-qualcomm-buys-buzzy-chip-startup-modular-for-nea", "date": "2026-06-25", "category": "industry_business", "source": "wired" },
+    { "id": "arstechnica_ai-oracle-s-21-000-layoffs-help-drive-its-debt-fuel", "date": "2026-06-25", "category": "industry_business", "source": "arstechnica" },
+    { "id": "wired_ai-the-trump-white-house-is-over-anthropic-ceo-dari", "date": "2026-06-25", "category": "regulation_policy", "source": "wired" },
+    { "id": "hatena_it-86-ai-ai", "date": "2026-06-25", "category": "community_buzz", "source": "hatena_it" },
+    { "id": "hatena_it-ai-ai-fnn", "date": "2026-06-25", "category": "community_buzz", "source": "hatena_it" },
+    { "id": "pfn-plamo-3-0-prime", "date": "2026-06-25", "category": "japan", "source": "pfn" },
+    { "id": "hatena-notebooklm-open-notebook", "date": "2026-06-25", "category": "japan", "source": "hatena" },
+    { "id": "hatena_it-transformer-475-gpu-llm-photon", "date": "2026-06-25", "category": "japan", "source": "hatena_it" },
+    { "id": "hatena-item", "date": "2026-06-25", "category": "japan", "source": "hatena" },
+    { "id": "hatena_it-ai", "date": "2026-06-25", "category": "japan", "source": "hatena_it" },
+    { "id": "qbitai-2026-sail-top30-top20", "date": "2026-06-25", "category": "china", "source": "qbitai" },
+    { "id": "qbitai-claude-code-llm", "date": "2026-06-25", "category": "china", "source": "qbitai" },
+    { "id": "new-cohere-north-mini-code", "date": "2026-06-26", "category": "new_models", "source": "zenn" },
+    { "id": "new-glm-52-opus-comparison", "date": "2026-06-26", "category": "new_models", "source": "zenn" },
+    { "id": "new-hf-hybrid-model-prediction", "date": "2026-06-26", "category": "new_models", "source": "huggingface" },
+    { "id": "tools-openai-sandbox-agents", "date": "2026-06-26", "category": "tools_apps", "source": "zenn" },
+    { "id": "tools-claude-managed-agents", "date": "2026-06-26", "category": "tools_apps", "source": "itmedia" },
+    { "id": "tools-figma-motion", "date": "2026-06-26", "category": "tools_apps", "source": "itmedia" },
+    { "id": "agents-gemini-flash-computer-use", "date": "2026-06-26", "category": "agents", "source": "itmedia" },
+    { "id": "agents-meta-harness-databricks", "date": "2026-06-26", "category": "agents", "source": "latent_space" },
+    { "id": "multi-krea2-open-weight", "date": "2026-06-26", "category": "multimodal", "source": "hatena" },
+    { "id": "multi-deepmind-a24", "date": "2026-06-26", "category": "multimodal", "source": "wired" },
+    { "id": "research-realtime-voice-ai", "date": "2026-06-26", "category": "research_papers", "source": "arxiv" },
+    { "id": "research-latent-red-teaming", "date": "2026-06-26", "category": "research_papers", "source": "latent_space" },
+    { "id": "research-onpolicy-distillation", "date": "2026-06-26", "category": "research_papers", "source": "arxiv" },
+    { "id": "industry-openai-jalapeno-broadcom", "date": "2026-06-26", "category": "industry_business", "source": "arstechnica" },
+    { "id": "industry-qualcomm-modular-4b", "date": "2026-06-26", "category": "industry_business", "source": "wired" },
+    { "id": "policy-british-police-crime-prediction", "date": "2026-06-26", "category": "regulation_policy", "source": "wired" },
+    { "id": "buzz-ai-proxy-war-ny12", "date": "2026-06-26", "category": "community_buzz", "source": "theverge" },
+    { "id": "buzz-ai-engineers-resilient", "date": "2026-06-26", "category": "community_buzz", "source": "techcrunch" },
+    { "id": "japan-google-ai-lecture", "date": "2026-06-26", "category": "japan", "source": "hatena" },
+    { "id": "japan-fujitsu-photon-475x", "date": "2026-06-26", "category": "japan", "source": "hatena" },
+    { "id": "japan-plamo-3-prime", "date": "2026-06-26", "category": "japan", "source": "preferred_networks" },
+    { "id": "japan-lineyahoo-multi-agent-discussion", "date": "2026-06-26", "category": "japan", "source": "lycorp" },
+    { "id": "japan-claude-code-team-structure", "date": "2026-06-26", "category": "japan", "source": "zenn" },
+    { "id": "china-ai-app-unicorn-300m-arr", "date": "2026-06-26", "category": "china", "source": "synced" },
+    { "id": "china-glm-elon-prediction", "date": "2026-06-26", "category": "china", "source": "synced" },
+    { "id": "policy-whitehouse-gpt56-adhoc", "date": "2026-06-27", "category": "regulation_policy", "source": "lesswrong" },
+    { "id": "new-gpt56-sol-terra-luna", "date": "2026-06-27", "category": "new_models", "source": "theverge" },
+    { "id": "new-lfm25-230m-mobile", "date": "2026-06-27", "category": "new_models", "source": "hatena" },
+    { "id": "new-plamo30-prime-256k", "date": "2026-06-27", "category": "new_models", "source": "preferred_networks" },
+    { "id": "tools-hf-vllm-jobs-onecommand", "date": "2026-06-27", "category": "tools_apps", "source": "huggingface" },
+    { "id": "tools-openrouter-mcp-server", "date": "2026-06-27", "category": "tools_apps", "source": "hatena" },
+    { "id": "tools-anthropic-sdk-py0112-ts0106", "date": "2026-06-27", "category": "tools_apps", "source": "qiita" },
+    { "id": "agents-omnigent-meta-harness", "date": "2026-06-27", "category": "agents", "source": "latent_space" },
+    { "id": "agents-lycorp-multi-agent-debate", "date": "2026-06-27", "category": "agents", "source": "lycorp" },
+    { "id": "multimodal-krea2-12b-openweight", "date": "2026-06-27", "category": "multimodal", "source": "hatena" },
+    { "id": "multimodal-danceopd-unified-gen", "date": "2026-06-27", "category": "multimodal", "source": "arxiv" },
+    { "id": "research-llm-ensemble-cofailure", "date": "2026-06-27", "category": "research_papers", "source": "arxiv" },
+    { "id": "research-world-model-hallucination", "date": "2026-06-27", "category": "research_papers", "source": "arxiv" },
+    { "id": "research-codex-56x-token-growth", "date": "2026-06-27", "category": "research_papers", "source": "latent_space" },
+    { "id": "industry-anthropic-mythos-trump-drama", "date": "2026-06-27", "category": "industry_business", "source": "theverge" },
+    { "id": "industry-spacex-28b-neocloud", "date": "2026-06-27", "category": "industry_business", "source": "latent_space" },
+    { "id": "buzz-anthropic-alibaba-cloning", "date": "2026-06-27", "category": "community_buzz", "source": "arstechnica" },
+    { "id": "buzz-notion-mail-ai-agents", "date": "2026-06-27", "category": "community_buzz", "source": "arstechnica" },
+    { "id": "japan-uzabase-claude-code-slo", "date": "2026-06-27", "category": "japan", "source": "hatena" },
+    { "id": "japan-goodpatch-15-designers", "date": "2026-06-27", "category": "japan", "source": "hatena" },
+    { "id": "japan-aws-bedrock-q1-2026", "date": "2026-06-27", "category": "japan", "source": "itmedia" },
+    { "id": "japan-tebiki-cto-ai-era", "date": "2026-06-27", "category": "japan", "source": "hatena" },
+    { "id": "japan-ga4-ai-traffic-quality", "date": "2026-06-27", "category": "japan", "source": "hatena" },
+    { "id": "china-claudefable5-gpt56-staged", "date": "2026-06-27", "category": "china", "source": "qbitai" },
+    { "id": "china-nvidia-moe-import-3-7x", "date": "2026-06-27", "category": "china", "source": "qbitai" },
+    { "id": "theverge-anthropic-s-mythos-5-is-back", "date": "2026-06-28", "category": "regulation_policy", "source": "theverge" },
+    { "id": "latent_space-ainews-openai-gpt-5-6-sol-terra-luna-restricted-", "date": "2026-06-28", "category": "new_models", "source": "latent_space" },
+    { "id": "techcrunch-asian-ai-startups-launch-mythos-like-models-as-a", "date": "2026-06-28", "category": "new_models", "source": "techcrunch" },
+    { "id": "lesswrong-just-a-wrapper-how-much-do-scaffolds-matter", "date": "2026-06-28", "category": "agents", "source": "lesswrong" },
+    { "id": "latent_space-ainews-it-s-meta-harness-summer", "date": "2026-06-28", "category": "agents", "source": "latent_space" },
+    { "id": "hatena-chrome-firefox-hister-mcp-ai", "date": "2026-06-28", "category": "tools_apps", "source": "hatena" },
+    { "id": "raschka-using-local-coding-agents", "date": "2026-06-28", "category": "tools_apps", "source": "sebastian_raschka" },
+    { "id": "arxiv-hallucination-in-world-models-is-predictable-and", "date": "2026-06-28", "category": "multimodal", "source": "arxiv" },
+    { "id": "qbitai-cvpr-2026", "date": "2026-06-28", "category": "multimodal", "source": "qbitai" },
+    { "id": "latent_space-red-teaming-after-mythos-zico-kolter-matt-fredri", "date": "2026-06-28", "category": "research_papers", "source": "latent_space" },
+    { "id": "arxiv-when-are-likely-answers-right-on-sequence-probab", "date": "2026-06-28", "category": "research_papers", "source": "arxiv" },
+    { "id": "techcrunch-openai-limits-gpt-5-6-rollout-after-government-r", "date": "2026-06-28", "category": "industry_business", "source": "techcrunch" },
+    { "id": "arstechnica_ai-nyt-slams-microsoft-for-building-copyright-infri", "date": "2026-06-28", "category": "industry_business", "source": "arstechnica" },
+    { "id": "lesswrong-white-house-will-ad-hoc-decide-who-can-individua", "date": "2026-06-28", "category": "community_buzz", "source": "lesswrong" },
+    { "id": "reddit_localllama-nemotron-3-super-120b-a12b-hybrid-mamba-moe-hold", "date": "2026-06-28", "category": "community_buzz", "source": "reddit" },
+    { "id": "hatena_it-claude-code-qiita", "date": "2026-06-28", "category": "japan", "source": "hatena" },
+    { "id": "hatena_it-ai-pi-coding-agent", "date": "2026-06-28", "category": "japan", "source": "hatena" },
+    { "id": "hatena_it-claude-enterprise", "date": "2026-06-28", "category": "japan", "source": "hatena" },
+    { "id": "hatena-7-ai", "date": "2026-06-28", "category": "japan", "source": "hatena" },
+    { "id": "lycorp-ai-techverse2026-219", "date": "2026-06-28", "category": "japan", "source": "lycorp" },
+    { "id": "qbitai-gpt-5-6-fable5", "date": "2026-06-28", "category": "china", "source": "qbitai" },
+    { "id": "qbitai-browserbc-agent", "date": "2026-06-28", "category": "china", "source": "qbitai" }
   ]
 }
