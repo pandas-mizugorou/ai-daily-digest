@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-06-28T05:00:00+09:00",
+  "updated_at": "2026-06-29T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-06-29",
+      "headline": "OpenAI社内Codexトークン使用量がResearch部門で6か月56倍に急成長——55モデル×2.2万判定でLLMジャッジの同族バイアスを統計的に実証、DSpark投機的デコーディングでDeepSeek-V4の推論速度を最大85%向上",
+      "item_count": 18,
+      "top_picks_count": 5
+    },
     {
       "date": "2026-06-28",
       "headline": "GPT-5.6 Sol/Terra/LunaがMythosを超えるコーディング性能で限定デビュー、Mythos 5も2週間の交渉を経て米国の一部組織向けに復活——政府によるフロンティアAIアクセス管理が新常態へ",

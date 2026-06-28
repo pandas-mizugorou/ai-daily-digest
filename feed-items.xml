@@ -5,7 +5,47 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 27 Jun 2026 17:47:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 16:59:10 GMT</lastBuildDate>
+    <item>
+      <title>Zed 完全ガイド - izanami</title>
+      <link>https://izanami.dev/post/903fe0a2-878a-4f4b-a02c-d8784d8ef731</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-zed-izanami</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29/hatena_it-zed-izanami">AI Daily Digest 2026-06-29</source>
+      <description>izanamiが公開したZed完全ガイドがはてブ190件を獲得した。ZedはRustネイティブのOSSエディタで、Electronを使わない高速動作を特徴とし、マルチバッファ・AI・Git・協業・リモート開発を標準搭載している。「乗り換え手順ではなく、Zedの機能をこれ1本で見渡すリファレンス」として、導入から主要機能・設定・ショートカットまでを網羅している。Claude CodeなどAIエージェントとの連携も標準機能としてカバーされており、Claude Codeユーザーがエディタ環境を見直す際の最初の参考資料として機能している。</description>
+    </item>
+    <item>
+      <title>55個のLLMが互いを盲目採点した研究——22,254判定で同族モデルへの採点バイアスを8ファミリー全てで統計的に実証（MIT公開）</title>
+      <link>https://reddit.com/r/LocalLLaMA/comments/1uhi81a/i_had_55_llms_blindgrade_each_other_22k_judgments</link>
+      <guid isPermaLink="false">aidd-item-reddit_localllama-i-had-55-llms-blind-grade-each-other-22k-judgmen</guid>
+      <pubDate>Sat, 27 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29/reddit_localllama-i-had-55-llms-blind-grade-each-other-22k-judgmen">AI Daily Digest 2026-06-29</source>
+      <description>r/LocalLLaMAで公開されたオープン評価研究が注目を集めた。N個のモデルが同じプロンプトに回答し互いを盲目採点するN×N行列（自己採点除く）を設計し、55モデル11ファミリーにわたる22,254件の有効判定を集計した。予想外の知見は、同族モデルへの採点バイアスがデータ充足全8ファミリーで統計的に有意だったこと（p&lt;0.05、7/8はBonferroni補正後も有意）だ。0-10スケールで、Qwenは同族Qwenモデルに+0.91点の加点、xAIは+0.75点の加点、一方Mistralは自社モデルに約1.0点のペナルティという逆バイアスを示した。コード・データセット・プロンプトはすべてMITライセンス公開だ。</description>
+    </item>
+    <item>
+      <title>OpenAI社内のCodexトークン使用量が6か月でResearch部門56倍・Engineering部門27倍に急増——AI経済研究部門が内部アダプションデータを公開</title>
+      <link>https://latent.space/p/ainews-openai-reports-median-internal</link>
+      <guid isPermaLink="false">aidd-item-latent_space-ainews-openai-reports-median-internal-codex-outp</guid>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29/latent_space-ainews-openai-reports-median-internal-codex-outp">AI Daily Digest 2026-06-29</source>
+      <description>OpenAIの経済研究部門が、社内でのCodexトークン使用量の変化データを公開した。2025年8月時点では平均的なOpenAI社員のトークンの10%未満しかCodexに使われていなかったが、その後6か月で劇的に変化した。2026年6月の中央値はNovember 2025比でResearch部門56倍・CustomerSupport部門32倍・Engineering部門27倍・Legal部門13倍に急増した。コーディング以外の知識作業でも、AIによるトークン使用が爆発的に拡大していることを示す、フロンティアAI企業内部からの希少な一次データだ。</description>
+    </item>
+    <item>
+      <title>🚀ローカル LLM 選び、もう「VRAM に入る一番デカいやつ」で決めるの卒業しよ？ - whichllm を RTX 4060 Ti 16GB で測ってみた - Qiita</title>
+      <link>https://qiita.com/aktsmm/items/6b2ef723c2e660c93731</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-llm-vram-whichllm-rtx-4060-ti-16gb-qiita</guid>
+      <pubDate>Sat, 27 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29/hatena_it-llm-vram-whichllm-rtx-4060-ti-16gb-qiita">AI Daily Digest 2026-06-29</source>
+      <description>「VRAMに入る一番デカいやつ」というローカルLLM選定の従来基準を、実測データで見直すQiita記事がはてブ71件を獲得した。RTX 4060 Ti 16GBという普及帯のGPUで、whichllmベンチマークを使って複数モデルの速度・品質・コストのバランスを実測した。単純なモデルサイズ最大化ではなく、ユースケースに応じたバランスで選ぶという新しい視点を日本の開発者コミュニティに提示している。</description>
+    </item>
+    <item>
+      <title>DeepSeek CEO梁文锋署名のDSparkを10のポイントで理解する——投機的デコーディングでDeepSeek-V4の推論速度を最大85%向上</title>
+      <link>https://qbitai.com/2026/06/439548.html</link>
+      <guid isPermaLink="false">aidd-item-qbitai-dspark-10</guid>
+      <pubDate>Sat, 27 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29/qbitai-dspark-10">AI Daily Digest 2026-06-29</source>
+      <description>DeepSeekと北京大学の研究チームが、LLM推論を高速化する投機的デコーディングフレームワーク「DSpark」をオープンソースで公開した。DeepSeek CEOの梁文锋（Liang Wenfeng）が署名した本論文は「精髓在于极强的系统工程（本質は極めて強力なシステムエンジニアリングにある）」と主張する。DeepSeek-V4の本番運用では、スループットを維持したまま生成速度を最大85%高めたと報告されている。量子位（QbitAI）がこの論文を「10のポイント」に要約して紹介した。</description>
+    </item>
     <item>
       <title>OpenAI GPT-5.6 Sol/Terra/Luna 限定公開——Mythos超えコーディング性能、Cyber Criticalは超えない設計</title>
       <link>https://latent.space/p/ainews-openai-gpt-56-sol-terra-luna</link>
@@ -85,14 +125,6 @@
       <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/japan-goodpatch-15-designers">AI Daily Digest 2026-06-27</source>
       <description>グッドパッチのサービスデザイナーが、15人のデザイナーチームでClaude Code×GitHubを活用して組織運営を「個人レベル」から「組織レベル」の生産性向上へと引き上げた経験を報告した。デザイナーがクライアントワークとは別に行う「組織貢献活動」という社内プロジェクトに、Claude CodeとGitHubを組み合わせた開発フローを非エンジニアのデザイナー15人で実践した。個人の取り組みにとどまらず組織全体の運営に展開した先進事例として、はてブ178件という高い関心を集めている。</description>
-    </item>
-    <item>
-      <title>OpenAI社内Codexのトークン使用量が調査56倍・CS32倍・エンジ27倍・法務13倍——非エンジニア部門へのAIエージェント普及を示す内部データ</title>
-      <link>https://latent.space/p/ainews-openai-reports-median-internal</link>
-      <guid isPermaLink="false">aidd-item-research-codex-56x-token-growth</guid>
-      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/research-codex-56x-token-growth">AI Daily Digest 2026-06-27</source>
-      <description>OpenAIの社内調査データとして、Codexの出力トークン使用量が2025年11月から2026年6月にかけて全部門で急増したことが公開された。Active利用者の中央値で調査部門が56倍、カスタマーサポートが32倍、エンジニアリングが27倍、法務が13倍という急成長を記録。2025年8月時点では平均的なOpenAI社員がトークンの10%未満しかCodexに使っていなかったが、その後劇的に変化し非エンジニア部門での大規模なAIエージェント活用への移行が実証された。</description>
     </item>
     <item>
       <title>リアルタイム音声AIは「聞こえている」が「聴いていない」——感情・声調を無視する重大な安全リスクを実証</title>
@@ -597,54 +629,6 @@
       <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/itmedia-sakana-marlin">AI Daily Digest 2026-06-16</source>
       <description>Sakana AIは6月15日、AI調査エージェント「Sakana Marlin」の提供を開始した。4月からβ版として提供していたものを商用化したもので、同社にとって初の商用プロダクトとなる。公開に先立つ11日にはメディア向けにサービスのハンズオンが実施され、事前に集めたテーマでの出力レポートも公開されている。研究・調査に特化したエージェントとして位置づけられ、国産AIスタートアップが研究成果を収益化フェーズへ移す動きを示す事例となっている。</description>
-    </item>
-    <item>
-      <title>DeepSeek-V4 公開——数学・コード・推論の全ベンチマークでV3を超えるオープンソースLLM</title>
-      <link>https://syncedreview.com/2026/06/07/deepseek-v4-benchmarks/</link>
-      <guid isPermaLink="false">aidd-item-synced-deepseek-v4</guid>
-      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/synced-deepseek-v4">AI Daily Digest 2026-06-07</source>
-      <description>DeepSeek が新フラッグシップモデル DeepSeek-V4 を公開した。数学・コーディング・複雑な推論の各ベンチマークで前世代 DeepSeek-V3 を全面的に上回る結果を示しており、フロンティアモデルに迫る性能をオープンソースで実現したと報告されている。Synced（機器之心英語版）が各ベンチマーク結果を詳報しており、オープンソース LLM の競争が再び加速する展開となっている。個人開発者・研究者はモデルを直接ダウンロードして試せるため、実装コストゼロで最新水準の推論・コーディング能力を利用できる。</description>
-    </item>
-    <item>
-      <title>AIエージェントの設計パターン：実務で使える5つのアーキテクチャ</title>
-      <link>https://qiita.com/ai_architect/items/abc123</link>
-      <guid isPermaLink="false">aidd-item-hatena-ai-agent-2026</guid>
-      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/hatena-ai-agent-2026">AI Daily Digest 2026-06-07</source>
-      <description>AIエージェントを実務で活用するための設計パターン 5 つを体系的に解説した記事が、はてなブックマークで 143 ユーザーのブックマークを集めた。ReAct パターン・Plan-and-Execute パターン・マルチエージェントパターン・ツール使用パターン・リフレクションパターンの 5 種のアーキテクチャについて、実装のポイントを交えて解説している。各パターンの適用場面や実装上の注意点が整理されており、エージェント開発の経験がない開発者でも体系的に理解できる構成となっている。実業務で AI エージェントの設計を行うエンジニアにとって参照しやすいリファレンス的な内容になっている。</description>
-    </item>
-    <item>
-      <title>Claude MCPサーバーを自作してみた：実装から公開まで</title>
-      <link>https://zenn.dev/user123/articles/claude-mcp-server-guide</link>
-      <guid isPermaLink="false">aidd-item-zenn-claude-mcp-2026</guid>
-      <pubDate>Fri, 05 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/zenn-claude-mcp-2026">AI Daily Digest 2026-06-07</source>
-      <description>Claude の Model Context Protocol（MCP）サーバーをゼロから実装して npm に公開するまでの詳細な手順を解説した記事が、Zenn で 87 いいねを獲得した。MCP の仕様の理解から始め、実際のコード実装・テストを経て npm への公開までのステップを体系的に紹介している。自分専用の MCP サーバーを作りたいエンジニアにとって、一連の流れを把握できるハンズオン的な内容となっている。Claude を拡張する手段として MCP の活用が広がる中、開発者が独自のツール・データソースを接続するノウハウを提供している。</description>
-    </item>
-    <item>
-      <title>RAGとFine-tuningを組み合わせた精度改善：実装例付き</title>
-      <link>https://qiita.com/ml_engineer_2026/items/def456</link>
-      <guid isPermaLink="false">aidd-item-qiita-rag-fine-tune-2026</guid>
-      <pubDate>Thu, 04 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/qiita-rag-fine-tune-2026">AI Daily Digest 2026-06-07</source>
-      <description>RAG（Retrieval-Augmented Generation）と Fine-tuning を組み合わせて日本語 QA タスクの精度を大幅に改善した事例を解説する Qiita 記事が 52 いいね・38 ストックを獲得した。実際のコードとベンチマーク結果を含む詳細な実装手順が提供されており、手元で再現・応用できる内容となっている。RAG 単体や Fine-tuning 単体では不十分なケースに対して、両者を組み合わせることで精度向上を実現するアプローチが示されている。日本語に特化したQAシステムの構築を検討するエンジニアにとって参考になる実践的な知見が詰まっている。</description>
-    </item>
-    <item>
-      <title>DeepSeek-V4 リリース、HNで523pt獲得——数学・コーディングでV3を大幅超えとの初期報告が相次ぐ</title>
-      <link>https://news.ycombinator.com/item?id=43810987</link>
-      <guid isPermaLink="false">aidd-item-hn-deepseek-v4</guid>
-      <pubDate>Sat, 06 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/hn-deepseek-v4">AI Daily Digest 2026-06-07</source>
-      <description>DeepSeek の最新フラッグシップモデル DeepSeek-V4 のリリースを取り上げた Hacker News スレッドが523ポイントを獲得し、大きな話題となっている。初期ユーザーからは、数学・コーディングの各ベンチマークで DeepSeek-V3 を大幅に上回るとの報告が相次いでいる。HN コミュニティでは実際のユースケースでの比較検証が始まっており、OSS LLM の新たなベースラインとして注目を集めている。フロンティアラボとの性能差が縮まりつつある可能性について活発な議論が行われている。</description>
-    </item>
-    <item>
-      <title>RLVR：検証可能な報酬でLLMを強化学習する新訓練フレームワーク——数学推論ベンチマークで大幅向上</title>
-      <link>https://paperswithcode.com/paper/rlvr-reinforcement-learning-from-verifiable</link>
-      <guid isPermaLink="false">aidd-item-papers-with-code-neuraips</guid>
-      <pubDate>Wed, 03 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-07/papers-with-code-neuraips">AI Daily Digest 2026-06-07</source>
-      <description>LLM を検証可能な報酬シグナルで強化学習する新フレームワーク RLVR（Reinforcement Learning from Verifiable Rewards）が発表された。自動検証可能な報酬を使用することで、多くの推論タスクで人間のフィードバック（RLHF）を不要にするアプローチを提案している。数学的推論ベンチマークで大幅な向上を達成したと報告されており、検証可能な問題（数学・コーディング・論理推論等）への適用が期待される。RLHF の代替として、スケーラブルな LLM 訓練手法として注目されている。</description>
     </item>
   </channel>
 </rss>

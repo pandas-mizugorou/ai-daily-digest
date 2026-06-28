@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-28T05:00:00+09:00",
+  "updated_at": "2026-06-29T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5743,6 +5743,114 @@
       "url_prefix": "https://qbitai.com/2026/06/439393.html",
       "first_seen_at": "2026-06-28",
       "last_seen_at": "2026-06-28",
+      "last_seen_count": 1
+    },
+    "a4f291e3c07b5d82": {
+      "url_prefix": "https://lesswrong.com/posts/yrbyyvFvuaGfRAtB7/evaluating-offline-monitoring-of-internal-ai-agents-2",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "8c30f71ae945b263": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "3b12d84cf906a750": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uhfg05/i_built_a_tool_to_turn_your_claude_code_sessions",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "7e58a926f043c81d": {
+      "url_prefix": "https://arxiv.org/abs/2606.27377v1",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "2d9b437a1c865ef0": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uhi81a/i_had_55_llms_blindgrade_each_other_22k_judgments",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "f0c6782d4e391b5a": {
+      "url_prefix": "https://arxiv.org/abs/2606.27369v1",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "91a25b6fc8d047e3": {
+      "url_prefix": "https://lesswrong.com/posts/JFjNmPTbH8kL6xtp6/gpt-5-6-the-system-card",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "4d73e0a19b2c8f56": {
+      "url_prefix": "https://latent.space/p/ainews-openai-reports-median-internal",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "b8f46d302e751ca9": {
+      "url_prefix": "https://latent.space/p/ainews-spacex-is-already-a-28byr",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "6529c71b4f083d0e": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "e312a09b7c548f6d": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uh8von/ornith_35b_is_great_so_far",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "5a87f1c34b0e9d72": {
+      "url_prefix": "https://izanami.dev/post/903fe0a2-878a-4f4b-a02c-d8784d8ef731",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "d091bc478ef62a35": {
+      "url_prefix": "https://qiita.com/aktsmm/items/6b2ef723c2e660c93731",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "73c45902a8d1fe60": {
+      "url_prefix": "https://techno-edge.net/article/2026/06/28/5232.html",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "19e8d326f0b74a51": {
+      "url_prefix": "https://zenn.dev/yukkie1114/articles/3d927e8c28e085",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "0c4b9a71e258d306": {
+      "url_prefix": "https://zenn.dev/okssusucha/articles/20260628-anthropic-agent-sdk-credit-pause-june-202",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "f5a17e83b2c490d6": {
+      "url_prefix": "https://qbitai.com/2026/06/439548.html",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "2870e4c9a3f15b0d": {
+      "url_prefix": "https://qbitai.com/2026/06/439464.html",
+      "first_seen_at": "2026-06-29",
+      "last_seen_at": "2026-06-29",
       "last_seen_count": 1
     }
   },

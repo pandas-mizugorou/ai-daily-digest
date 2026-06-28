@@ -5,7 +5,21 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 27 Jun 2026 17:47:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 16:59:10 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI社内Codexトークン使用量がResearch部門で6か月56倍に急成長——55モデル×2.2万判定でLLMジャッジの同族バイアスを統計的に実証、DSpark投機的デコーディングでDeepSeek-V4の推論速度を最大85%向上</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29</link>
+      <guid isPermaLink="false">aidd-day-2026-06-29</guid>
+      <pubDate>Sun, 28 Jun 2026 20:00:00 GMT</pubDate>
+      <description>OpenAIの経済研究部門が社内Codexのトークン使用量データを公開した。2025年11月比でResearch部門56倍・CustomerSupport部門32倍・Engineering部門27倍・Legal部門13倍という急成長は、AIが知識労働全般を根本から変えていることを示す一次データだ。55個のLLMが互いを盲目採点した2.2万件の判定解析では、同族モデルへの採点バイアスがQwen・xAI・Mistralなど8ファミリー全てで統計的に有意（p&lt;0.05）と確認され、LLMアズジャッジ手法への根本的な疑問が提起された。DeepSeek CEO梁文锋が署名したDSparkがOSS公開され、投機的デコーディングでDeepSeek-V4の推論速度を最大85%高速化したと報告されている。国内では「Zed完全ガイド」がはてブ190件を獲得し、Claude Codeを使う開発者の間でエディタ環境の見直しが進んでいる。
+
+【今日の必読】
+・Zed 完全ガイド - izanami
+・55個のLLMが互いを盲目採点した研究——22,254判定で同族モデルへの採点バイアスを8ファミリー全てで統計的に実証（MIT公開）
+・OpenAI社内のCodexトークン使用量が6か月でResearch部門56倍・Engineering部門27倍に急増——AI経済研究部門が内部アダプションデータを公開
+・🚀ローカル LLM 選び、もう「VRAM に入る一番デカいやつ」で決めるの卒業しよ？ - whichllm を RTX 4060 Ti 16GB で測ってみた - Qiita
+・DeepSeek CEO梁文锋署名のDSparkを10のポイントで理解する——投機的デコーディングでDeepSeek-V4の推論速度を最大85%向上</description>
+    </item>
     <item>
       <title>GPT-5.6 Sol/Terra/LunaがMythosを超えるコーディング性能で限定デビュー、Mythos 5も2週間の交渉を経て米国の一部組織向けに復活——政府によるフロンティアAIアクセス管理が新常態へ</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28</link>
@@ -440,21 +454,6 @@
 ・CodeGraph：コードベースを事前グラフ化してClaude Codeのトークン消費を最大94%削減するMCPサーバー
 ・MicrosoftがClaude Codeの社内ライセンスを返上——6月末までにGitHub Copilot CLIへ移行、6か月の活用に幕
 ・ローカルLLMは本当に手元で動くのか？　ハードウェアとモデルの現実的な選び方【2026年春】</description>
-    </item>
-    <item>
-      <title>Daytona×エージェントインフラが月次74%成長・SenseNova-U1がVE/VAEレス統合アーキで公開・Anthropic公式Claude Codeプラグインディレクトリ開設・OpenAI Ads Managerセルフサービス開始・Trump AI安保令延期</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-22</link>
-      <guid isPermaLink="false">aidd-day-2026-05-22</guid>
-      <pubDate>Thu, 21 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月22日は「エージェントインフラ」と「マルチモーダル統合」の二つの軸が際立った一日だった。エージェントに持続的・ステートフルな計算環境を提供するDaytona（Latent Space取材）が月次74%成長を継続し、SenseTimeのSenseNova-U1はVAEとVisual Encoderを廃した完全統合アーキテクチャで画像理解・生成を単一モデルで実現した。トランプ大統領がAIモデル事前審査を求める大統領令の署名を延期する一方、OpenAIはChatGPT向け広告プラットフォームのセルフサービス提供を開始し商業化への本格シフトを宣言した。Anthropicは公式Claude Codeプラグインディレクトリを公開、日本では546ブクマを集めたAI内蔵介護ラジオが話題となるなど、AIの社会実装が深化する一日となった。
-
-【今日の必読】
-・エージェントにコンピュータを——Daytona CEOが語る月次74%成長とエージェント専用ステートフルコンピュートの設計
-・SenseNova-U1: VEとVAEを廃したNEO-unifyアーキテクチャで画像理解・生成を単一モデルに統合——SenseTimeが全OSS公開
-・Anthropic、Claude Codeプラグイン公式ディレクトリを公開——GitHubトレンド1位・22,000スター超
-・「ソフトウェアは忘れる——エージェントのトレースこそが記憶になる」
-・親の名前を忘れていた高齢者が語り出した——AI内蔵「昭和の青春ラジオ」が介護現場を変えている
-・OpenAI、ChatGPT広告セルフサービス「Ads Manager」ベータ版を一般開放——CPC/CPMビッドに対応</description>
     </item>
   </channel>
 </rss>
