@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-29T05:00:00+09:00",
+  "updated_at": "2026-06-30T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5851,6 +5851,126 @@
       "url_prefix": "https://qbitai.com/2026/06/439464.html",
       "first_seen_at": "2026-06-29",
       "last_seen_at": "2026-06-29",
+      "last_seen_count": 1
+    },
+    "a1b2c3d4e5f63001": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "b2c3d4e5f6a73002": {
+      "url_prefix": "https://itmedia.co.jp/news/articles/2606/28/news019.html",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "c3d4e5f6a7b83003": {
+      "url_prefix": "https://gigazine.net/news/20260629-ornith-agentic-coding-ai",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "d4e5f6a7b8c93004": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "e5f6a7b8c9d03005": {
+      "url_prefix": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "f6a7b8c9d0e13006": {
+      "url_prefix": "https://arxiv.org/abs/2606.28270v1",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "a7b8c9d0e1f23007": {
+      "url_prefix": "https://azukiazusa.dev/blog/ai-agent-framework-flue",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "b8c9d0e1f2a33008": {
+      "url_prefix": "https://arxiv.org/abs/2606.28249v1",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "c9d0e1f2a3b43009": {
+      "url_prefix": "https://arxiv.org/abs/2606.28273v1",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "d0e1f2a3b4c5300a": {
+      "url_prefix": "https://arxiv.org/abs/2606.28235v1",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "e1f2a3b4c5d6300b": {
+      "url_prefix": "https://arxiv.org/abs/2606.28279v1",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "f2a3b4c5d6e7300c": {
+      "url_prefix": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "a3b4c5d6e7f8300d": {
+      "url_prefix": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "b4c5d6e7f8a9300e": {
+      "url_prefix": "https://lesswrong.com/posts/bpBYm5jiS4tpyzuDS/wsj-article-claiming-china-has-matched-anthropic-is-obvious",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "c5d6e7f8a9ba300f": {
+      "url_prefix": "https://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "d6e7f8a9bac03010": {
+      "url_prefix": "https://techno-edge.net/article/2026/06/29/5234.html",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "e7f8a9bacbd13011": {
+      "url_prefix": "https://zenn.dev/branbran/articles/5730c47e1abac9",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "f8a9bacbdce23012": {
+      "url_prefix": "https://qiita.com/4q_sano/items/2c9d2686bdbc5e085191",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "a9bacbdcedf33013": {
+      "url_prefix": "https://github.com/hirokawaguchi/open-genai",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "bacbdcedf0a43014": {
+      "url_prefix": "https://qbitai.com/2026/06/439863.html",
+      "first_seen_at": "2026-06-30",
+      "last_seen_at": "2026-06-30",
       "last_seen_count": 1
     }
   },

@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 Jun 2026 16:59:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 18:39:57 GMT</lastBuildDate>
+    <item>
+      <title>Claudeに「オントロジー」を持たせたら、コスト半分・3倍速になるかも</title>
+      <link>https://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-claude-3</guid>
+      <pubDate>Sun, 28 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30/hatena_it-claude-3">AI Daily Digest 2026-06-30</source>
+      <description>ClaudeCodeに設計知識を渡す際にオントロジー（知識構造）を採用した実験記事がZennに投稿され、はてブ239usersを獲得した。著者のKomlock lab VPoE阿部氏は、これまで@でファイルを指定・CLAUDE.mdにルールを追記・.claudeを整備する方法でナレッジを渡してきたが、AIの調子でアウトプット精度にブレが出る課題があったという。オントロジーとして設計知識を構造化して渡すことで、同じナレッジをより安定して活用でき、コストが半分・速度が3倍になる可能性があると実証した。</description>
+    </item>
+    <item>
+      <title>数十ページのPDFを1回で処理、ローカルOCRモデル「Unlimited OCR」をバイドゥが無料公開。商用利用もできる（生成AIクローズアップ）</title>
+      <link>https://techno-edge.net/article/2026/06/29/5234.html</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-pdf-1-ocr-unlimited-ocr-ai-technoedge</guid>
+      <pubDate>Sun, 28 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30/hatena_it-pdf-1-ocr-unlimited-ocr-ai-technoedge">AI Daily Digest 2026-06-30</source>
+      <description>Baiduの研究チームが開発したエンドツーエンドのOCRモデル「Unlimited OCR」が無料で公開された。数十ページのPDFなど長文を一括処理できる特徴があり、商用利用も可能だ。テクノエッジの紹介記事がはてブ274usersを獲得した。</description>
+    </item>
+    <item>
+      <title>超便利なClaude Designの実践的な活用方法</title>
+      <link>https://zenn.dev/branbran/articles/5730c47e1abac9</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-claude-design</guid>
+      <pubDate>Sun, 28 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30/hatena_it-claude-design">AI Daily Digest 2026-06-30</source>
+      <description>Claude Designの実践的な活用方法を解説したZenn記事がはてブ197usersを獲得した。完成したデザインは.zip/PDF/PPTX/HTML形式でエクスポートでき、Canva・Adobe・Vercelなどへの連携にも対応している。共有リンクには「表示のみ/コメント/編集」のアクセス権を設定して発行できる。既存プロジェクトからデザインシステムを構築するプロトタイピングフローも紹介している。</description>
+    </item>
+    <item>
+      <title>「エージェントではなくリポジトリを統治せよ」——自律コーディングエージェントのエコシステムレベルリスクを統合摩擦コストで測定</title>
+      <link>https://arxiv.org/abs/2606.28235v1</link>
+      <guid isPermaLink="false">aidd-item-arxiv-govern-the-repository-not-the-agent-measuring-ec</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30/arxiv-govern-the-repository-not-the-agent-measuring-ec">AI Daily Digest 2026-06-30</source>
+      <description>自律コーディングエージェントが共有リポジトリでPRを大規模に開いてマージする時代になったが、評価はいまも「エージェント単体・隔離タスク」で行われている。各エージェントが個別テストを通過しても、リポジトリには単一の貢献では説明できない問題が蓄積する。本論文はこの問題がエージェント個体に帰属するか、リポジトリに帰属するかを問い、「integration friction（統合摩擦コスト）」——他の貢献者が並行変更中のコードベースへ貢献を統合するコスト——を測定指標として研究する。</description>
+    </item>
+    <item>
+      <title>ANIS——エージェント固有の免疫システム：ランタイム防御のアーキテクチャ・分類体系・エンジニアリング</title>
+      <link>https://arxiv.org/abs/2606.28270v1</link>
+      <guid isPermaLink="false">aidd-item-arxiv-agent-native-immune-system-architecture-taxonomy</guid>
+      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30/arxiv-agent-native-immune-system-architecture-taxonomy">AI Daily Digest 2026-06-30</source>
+      <description>自律エージェントが持続的メモリ・ツール使用プロトコル・マルチエージェント協調を持つようになり、AIの脅威ランドスケープが根本的に拡大した。境界セキュリティや学習時アライメントはエージェントの推論ループの外側に存在するため不十分であり、メモリポイズニング・ツールチェーン操作・マルチエージェントプロトコル攻撃に対しては完全なアライメントを持つエージェントでさえ脆弱だと本論文は指摘する。この課題に対処するためにANIS（Agent-Native Immune System）を導入し、アーキテクチャ・分類体系・エンジニアリング手法を提示した。</description>
+    </item>
+    <item>
+      <title>Claude Opus 4.7と同等性能のコーディングAIモデル「Ornith-1.0」が登場、ローカルで動作する小型モデルもラインナップ</title>
+      <link>https://gigazine.net/news/20260629-ornith-agentic-coding-ai</link>
+      <guid isPermaLink="false">aidd-item-hatena-claude-opus-4-7-ai-ornith-1-0</guid>
+      <pubDate>Sun, 28 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30/hatena-claude-opus-4-7-ai-ornith-1-0">AI Daily Digest 2026-06-30</source>
+      <description>AI研究組織DeepReinforceがコーディングAIモデルファミリー「Ornith-1.0」をオープンウェイトとして公開した。最上位モデルのOrnith-1.0-397Bは複数のベンチマークテストでClaude Opus 4.7を上回るスコアを報告している。「Self-Scaffolding LLMs for Agentic Coding」というアプローチで、エージェントコーディングに特化した設計だ。ローカル環境で動作可能な小型モデルもラインナップされており、DeepReinforceのブログで詳細が公開されている。</description>
+    </item>
     <item>
       <title>Zed 完全ガイド - izanami</title>
       <link>https://izanami.dev/post/903fe0a2-878a-4f4b-a02c-d8784d8ef731</link>
@@ -581,54 +629,6 @@
       <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-17/itmedia-softbank-openai-security">AI Daily Digest 2026-06-17</source>
       <description>ソフトバンクとOpenAIが国内重要インフラ企業向けのAI活用脆弱性診断サービス「Patching as a Service」を発表した。OpenAIのGPT-5.5 Cyberモデルを使いソフトバンク自社システムの脆弱性を診断したところ1万件超が発見された。孫正義会長は「大変な危機だが、AIで解決できる」と述べた。サービスは日本の重要インフラ企業向けに優先提供される。</description>
-    </item>
-    <item>
-      <title>米政府によるAnthropicモデル停止命令は「ジェイルブレイク」が本質ではない——フロンティアAIへの政府介入という前例</title>
-      <link>https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak</link>
-      <guid isPermaLink="false">aidd-item-tc-anthropic-wh-ban</guid>
-      <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/tc-anthropic-wh-ban">AI Daily Digest 2026-06-16</source>
-      <description>米政府は6月12日、Anthropicに対しMythosクラスの最強モデル（Claude Fable 5・Mythos 5）の利用を米国民に限定し、グローバルアクセスを巻き戻すよう命じる輸出管理命令を出した。Anthropicは与えられた90分以内にアクセス制限を実装した。背景には、中国に関連するグループがFable 5のジェイルブレイク経由でMythosモデルにアクセスした可能性への懸念があり、同モデルがソフトウェアの脆弱性発見に特に有効だった点が問題視されたとされる。Anthropicは命令には従いつつも、「この基準はAI業界全体で新たなフロンティアモデルの展開を止めかねない」と反発している。TechCrunchは今回の判断を「反射的・報復的、あるいはその両方」と評し、AI業界も米政府の介入から無縁ではないというメッセージが明確になったと位置付けている。</description>
-    </item>
-    <item>
-      <title>SpaceX、Cursor開発元Anysphereを600億ドルの全株式交換で買収へ——大型IPO直後の動き</title>
-      <link>https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo</link>
-      <guid isPermaLink="false">aidd-item-tc-spacex-cursor</guid>
-      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/tc-spacex-cursor">AI Daily Digest 2026-06-16</source>
-      <description>SpaceXは、AIコーディングツール「Cursor」を開発するAnysphereを600億ドルの全株式交換で買収すると発表した。6月16日に署名された合併契約では、SpaceXの子会社X67 Inc.がCursorと合併する。買収完了は2026年第3四半期の見込み。SpaceXは4月時点で、Cursorを600億ドルで買収するか、100億ドルで新たなパートナーシップを結ぶかのオプションを確保していた。今回の発表は、Nasdaqで2兆ドル超の評価額・調達額860億ドルとされる同社のIPO直後に行われた。買収は苦戦するSpaceXのAI部門を強化する狙いとされ、同社はIPO投資家に対しAIの市場規模を26兆ドルと見ていると説明している。</description>
-    </item>
-    <item>
-      <title>AppleがFoundation Modelsフレームワークを今夏OSS化——単一Swift APIでオンデバイス・自社クラウド・Claude・Geminiを切替可能に</title>
-      <link>https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models</link>
-      <guid isPermaLink="false">aidd-item-apple-foundation-models</guid>
-      <pubDate>Mon, 08 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/apple-foundation-models">AI Daily Digest 2026-06-16</source>
-      <description>AppleはWWDC 2026（6月9日）で、Apple Intelligenceを支えるオンデバイスAI層であるFoundation Modelsフレームワークを今夏オープンソース化すると発表した。新たなLanguageModelプロトコルにより、Apple自社モデルだけでなくリモートのプロバイダも単一のLanguageModelSessionの背後に置けるようになる。開発者はオンデバイスモデルでプロトタイプを作り、複雑なクエリだけをClaudeやGeminiにルーティングしたり、Swift Package Managerの依存を差し替えるだけでセッションロジックを変えずにプロバイダを切り替えたりできる。フレームワークは画像入力にも対応し、新しいクラウドモデルは小規模開発者にPrivate Cloud Compute上で無償提供される。コスト・レイテンシ・プライバシーに応じてリクエストごとにモデルを選べる設計となっている。</description>
-    </item>
-    <item>
-      <title>Claude Fableのサービス停止を受けて中国企業が最先端モデル「GLM-5.2」を急遽発表、2026年6月中に無料公開へ</title>
-      <link>https://gigazine.net/news/20260615-z-ai-glm-5-2</link>
-      <guid isPermaLink="false">aidd-item-gigazine-glm-5-2</guid>
-      <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/gigazine-glm-5-2">AI Daily Digest 2026-06-16</source>
-      <description>中国企業のZ.ai（Zhipu）が2026年6月13日にAIモデル「GLM-5.2」を発表した。744億ではなく744B（7440億）パラメータ規模のMixture-of-Experts構成で、100万トークンのコンテキストウィンドウを備える。重みはMITライセンスで無償公開され、誰でもダウンロードして利用できる。GLM Coding Planは月10ドル（Lite）から提供される。発表に際してZ.ai創業者のJie Tang氏は、米国政府の命令によってClaude Fableのサービスが停止した件に触れ、「知能はオープンで、誰もがアクセスでき、開発に使える状態であるべきだ」と述べた。米国のAI輸出規制強化への対抗として、地域制限のないオープンモデルを打ち出した形となる。</description>
-    </item>
-    <item>
-      <title>Alibaba、初の具身（身体性）大規模モデル「Qwen-Robot」シリーズを3本同時公開——操作・移動・世界モデル</title>
-      <link>https://qbitai.com/2026/06/435873.html</link>
-      <guid isPermaLink="false">aidd-item-qbitai-qwen-robot</guid>
-      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/qbitai-qwen-robot">AI Daily Digest 2026-06-16</source>
-      <description>Alibabaが6月16日、初の具身（身体性）インテリジェンス大規模モデルシリーズ「Qwen-Robot」を公開した。シリーズはVision-Language-Actionの操作モデル「Qwen-RobotManip」、Vision-Language-Navigationの移動モデル「Qwen-RobotNav」、そして世界モデル「Qwen-RobotWorld」の3本で構成される。RobotManipはロボットの器用な操作能力を高め、RobotNavは機械が物理空間を理解して移動できるようにし、RobotWorldは行動前に物理シーンの変化を予測・シミュレートする動画ベースの世界モデルとして機能する。3モデルはいずれも言語ファーストのインターフェースを持ち、汎用Qwenモデルから合成的に呼び出せる。さらにAlibabaは、Qwen VLMエージェントがQwen-Robotスイートをツールとして呼び出し物理世界とやり取りする内部ロボットエージェント基盤「Qwen-RobotClaw」も公開した。スイートはすでに一部のAlibaba Cloud法人顧客とのパイロットに入っている。</description>
-    </item>
-    <item>
-      <title>Sakana AI、初の商用プロダクト「Marlin」リリース その実力は？【出力レポート全文掲載】</title>
-      <link>https://itmedia.co.jp/news/articles/2606/15/news015.html</link>
-      <guid isPermaLink="false">aidd-item-itmedia-sakana-marlin</guid>
-      <pubDate>Sun, 14 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-16/itmedia-sakana-marlin">AI Daily Digest 2026-06-16</source>
-      <description>Sakana AIは6月15日、AI調査エージェント「Sakana Marlin」の提供を開始した。4月からβ版として提供していたものを商用化したもので、同社にとって初の商用プロダクトとなる。公開に先立つ11日にはメディア向けにサービスのハンズオンが実施され、事前に集めたテーマでの出力レポートも公開されている。研究・調査に特化したエージェントとして位置づけられ、国産AIスタートアップが研究成果を収益化フェーズへ移す動きを示す事例となっている。</description>
     </item>
   </channel>
 </rss>

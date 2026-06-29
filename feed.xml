@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 Jun 2026 16:59:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 18:39:57 GMT</lastBuildDate>
+    <item>
+      <title>Claude Codeオントロジー活用でコスト半分・3倍速を実証——Ornith-1.0がOpus 4.7超えでオープン公開、ANISがエージェントランタイム防御を体系化</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30</link>
+      <guid isPermaLink="false">aidd-day-2026-06-30</guid>
+      <pubDate>Mon, 29 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年6月30日のAIニュースダイジェスト。日本コミュニティではClaudeCodeに「オントロジー」として設計知識を持たせることでAPIコストが半分・速度が3倍になる可能性を実証した記事がはてブ239usersを獲得。Baidu製エンドツーエンドOCRモデル「Unlimited OCR」の無料公開（274users）、Claude Designの実践活用法（197users）も高反響を集めた。研究面ではANIS（Agent-Native Immune System）がエージェントのランタイム防御フレームワークを体系化し、「リポジトリを統治せよ」論文が自律コーディングエージェントのガバナンス単位を問い直した。規制面では米上院ウォーレン議員らがAIチャットボットへの健康・位置情報売却禁止法案を準備し、AnthropicのMythos輸出規制については信頼パートナー向け再開が一部容認された。DeepReinforceのOrnith-1.0-397BはClaude Opus 4.7超えベンチマークをオープンウェイトで公開した。
+
+【今日の必読】
+・Claudeに「オントロジー」を持たせたら、コスト半分・3倍速になるかも
+・数十ページのPDFを1回で処理、ローカルOCRモデル「Unlimited OCR」をバイドゥが無料公開。商用利用もできる（生成AIクローズアップ）
+・超便利なClaude Designの実践的な活用方法
+・「エージェントではなくリポジトリを統治せよ」——自律コーディングエージェントのエコシステムレベルリスクを統合摩擦コストで測定
+・ANIS——エージェント固有の免疫システム：ランタイム防御のアーキテクチャ・分類体系・エンジニアリング
+・Claude Opus 4.7と同等性能のコーディングAIモデル「Ornith-1.0」が登場、ローカルで動作する小型モデルもラインナップ</description>
+    </item>
     <item>
       <title>OpenAI社内Codexトークン使用量がResearch部門で6か月56倍に急成長——55モデル×2.2万判定でLLMジャッジの同族バイアスを統計的に実証、DSpark投機的デコーディングでDeepSeek-V4の推論速度を最大85%向上</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-29</link>
@@ -439,21 +454,6 @@
 ・AIで誰もがツールを作る時代、実は来ないんじゃないか説
 ・Karpathyの Claude Code スキル設定がGitHubトレンド首位——14.9万スターで開発者が殺到
 ・数学 AI が Erdős 未解決問題 9 件・OEIS 予想 44 件を Lean で形式証明—LLM エージェントによる純粋数学研究の実用化</description>
-    </item>
-    <item>
-      <title>ByteDance Lance 3Bが画像・動画を統一モデルで公開・AnthropicのGlasswing初期報告で1万件超の脆弱性発見・MicrosoftがClaude Codeライセンスを返上—Tencent Hy-MT2が無料でMicrosoft翻訳APIを超える</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-23</link>
-      <guid isPermaLink="false">aidd-day-2026-05-23</guid>
-      <pubDate>Fri, 22 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月23日は、オープンソースマルチモーダルモデルの台頭とAIセキュリティの実効化が重なった一日だった。ByteDanceがLance（3Bパラメータ）を画像・動画の理解・生成・編集を単一フレームワークに統合するモデルとしてApache 2.0で公開し、業界のオープン化の流れが加速した。AnthropicはProject Glasswingの初期報告を公開し、IBMを含む50社超と協力してClaudeで1万件超の高重大度脆弱性を発見——AIがサイバー防御の実戦ツールとなりつつあることを示した。MicrosoftがExperiences+DevicesチームのClaude Codeライセンスを返上しGitHub Copilot CLIへ移行する方針が判明し、AI開発ツール市場の競争環境を改めて浮き彫りにした。国内では「ローカルLLMの現実的な選び方【2026年春】」が140ブクマを、「AIで誰もがツールを作る時代は来ないんじゃないか説」が506ブクマを集め、AI普及論への実践的な問いが反響を呼んだ。
-
-【今日の必読】
-・Project Glasswing 初期報告：Claude Mythosで1万件超の重大脆弱性を発見、IBMら50社超が参加
-・ByteDance Lance 3B：画像・動画の理解・生成・編集を単一モデルに統合、Apache 2.0でオープンソース公開
-・Tencent Hy-MT2-1.8B 無料公開——商用翻訳APIを凌駕する1.8Bモデル
-・CodeGraph：コードベースを事前グラフ化してClaude Codeのトークン消費を最大94%削減するMCPサーバー
-・MicrosoftがClaude Codeの社内ライセンスを返上——6月末までにGitHub Copilot CLIへ移行、6か月の活用に幕
-・ローカルLLMは本当に手元で動くのか？　ハードウェアとモデルの現実的な選び方【2026年春】</description>
     </item>
   </channel>
 </rss>
