@@ -335,11 +335,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "pct": 75,
-              "label": "1つの侵害エッジが占めうる攻撃成功割合（最大）",
-              "before_pct": 0,
-              "after_pct": 75,
-              "note": "MASの通信チャネルレベルの攻撃影響が非常に不均一であることを実証（MESA論文）"
+              "headline": "",
+              "scale": {},
+              "bars": []
             },
             "alt": "MASの通信チャネルへの攻撃影響：1つの侵害されたエッジが全攻撃成功の最大75%を占めうる実測値（MESA, arXiv 2026-06-30）"
           }
@@ -378,11 +376,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "pct": 100,
-              "before_pct": 0,
-              "after_pct": 100,
-              "label": "実コーディングエージェントセッション数：約4,300件（約35万LLMステップ・約43万ツール呼び出し）",
-              "note": "Claude Code日常利用から収集した実ワークロードトレースをTraceLab論文で公開（arXiv 2026-06-30）"
+              "headline": "",
+              "scale": {},
+              "bars": []
             },
             "alt": "TraceLabの実績：Claude Code日常利用から収集した約4,300セッション・約35万LLMステップ・約43万ツール呼び出しのトレースデータを公開。コーディングエージェントの実ワークロードを初めて定量化"
           }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-30T05:00:00+09:00",
+  "updated_at": "2026-07-01T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -5971,6 +5971,132 @@
       "url_prefix": "https://qbitai.com/2026/06/439863.html",
       "first_seen_at": "2026-06-30",
       "last_seen_at": "2026-06-30",
+      "last_seen_count": 1
+    },
+    "237ea4e6a660f05ac793397e5645e2c945236407": {
+      "url_prefix": "https://qiita.com/okssusucha/items/2348bbcf0d61e4de0a67",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "5877029bd7bc8fa0bcd4c452f9d8bb6679c3893f": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uj7egu/introducing_longcat20",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "ebcdf2022d059590a4064def28bd1d1baf23501a": {
+      "url_prefix": "https://cloud.google.com/blog/ja/products/data-analytics/how-the-open-",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "bb8f0a40ca0fbfbc6c304896a7717c48733c57d1": {
+      "url_prefix": "https://qiita.com/shohei_yamamoto/items/123c16729211d16b0816",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "f21e5b84e5299ab853914c9fe29c086f19dde010": {
+      "url_prefix": "https://qiita.com/otakumesi/items/414c2e1836df4d8e278d",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "a88507a46f12a71e6d5d06c95fd7536dc01075d5": {
+      "url_prefix": "https://arxiv.org/abs/2606.30616v1",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "ff56b7df42b3b35614d473a9d9fcdf03d7f34643": {
+      "url_prefix": "https://arxiv.org/abs/2606.30602v1",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "27ff3e3c0582d11b6185832df7335546d2b8ca2c": {
+      "url_prefix": "https://arxiv.org/abs/2606.30560v1",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "ebc400b5561017d1f699cbf0e99398c3ec410ff2": {
+      "url_prefix": "https://arxiv.org/abs/2606.30573v1",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "f6c43d73b3fc46e779ed50aadf8340531daac457": {
+      "url_prefix": "https://arxiv.org/abs/2606.30627v1",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "4ca20c76e3a27dba5ef2cee0d8c2d10dff0bb8a7": {
+      "url_prefix": "https://gigazine.net/news/20260629-anthropic-economic-report",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "b6b38fb298782d75f0a42b46f502fe748c7f73c1": {
+      "url_prefix": "https://gigazine.net/news/20260629-suno-incubator-program-spark",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "e816553306df53b13213278e7bc89aa5ff545bcc": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uj7xcs/i_hate_dario_amodei_a",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "ce9fe864a35c9e31743aae141f78da0d31e5ee9b": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uj9viw/been_running_qwen3627",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "96338c39c7a716c3e1595709e96a29d230017540": {
+      "url_prefix": "https://zenn.dev/keitayamamoto/articles/d053a6cc096287",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "f444e2f3421450fa984cad2bf971434a089b4c64": {
+      "url_prefix": "https://blog.jxck.io/entries/2026-06-29/tc39-llm-wiki.html",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "e3c7a70949aaad9163de96d37070e696536f9b39": {
+      "url_prefix": "https://zenn.dev/yohei/articles/2026-06-28-kg-ontology-redefinition",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "9c5730d6657f3b0b791cc5d8a128a4cc74acc47b": {
+      "url_prefix": "https://acro-engineer.hatenablog.com/entry/2026/06/29/120000",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "96d517d6a7822eaf9d63aa56b169e6b2c53f6c39": {
+      "url_prefix": "https://kaminashi-developer.hatenablog.jp/entry/runn-api-test-architec",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "dbe68ea3941fb4dddd73c8a060b161b0b5cc8fe7": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uj0fkw/deepseek_v4_pr_merged",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "62226eaf82c7df8644ffac532b9b5fdf6fe1eb7d": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_op",
+      "first_seen_at": "2026-07-01",
+      "last_seen_at": "2026-07-01",
       "last_seen_count": 1
     }
   },

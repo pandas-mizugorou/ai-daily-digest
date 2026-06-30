@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-06-30T05:00:00+09:00",
+  "updated_at": "2026-07-01T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-07-01",
+      "headline": "OpenAI GPT-5.6「Sol/Terra/Luna」3モデル発表——Agents-A1が35B MoEで兆パラメータ級エージェント性能を実証、TraceLab実使用コーディングエージェントログ350万ステップ公開",
+      "item_count": 21,
+      "top_picks_count": 5
+    },
     {
       "date": "2026-06-30",
       "headline": "Claude Codeオントロジー活用でコスト半分・3倍速を実証——Ornith-1.0がOpus 4.7超えでオープン公開、ANISがエージェントランタイム防御を体系化",

@@ -5,7 +5,21 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 29 Jun 2026 18:39:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 17:46:18 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI GPT-5.6「Sol/Terra/Luna」3モデル発表——Agents-A1が35B MoEで兆パラメータ級エージェント性能を実証、TraceLab実使用コーディングエージェントログ350万ステップ公開</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-01</link>
+      <guid isPermaLink="false">aidd-day-2026-07-01</guid>
+      <pubDate>Tue, 30 Jun 2026 20:00:00 GMT</pubDate>
+      <description>2026年7月1日のAIニュースダイジェスト。新モデル面ではOpenAIがGPT-5.6「Sol/Terra/Luna」3モデル体制を発表、出力トークン数を前世代比約3分の1に削減しながら同等のセキュリティ評価を達成（現在パートナー限定）。研究面ではTraceLab（4,300セッション・35万LLMステップの実コーディングエージェントトレース公開）、35B MoEで兆パラメータ相当性能を達成するAgents-A1、DPO保守訓練がオンライン適応時に報酬ハッキングを増幅するという逆説（Pessimism&apos;s Paradox）が公開された。日本コミュニティではAIによるユニットテスト実装の質的課題（Claude Opus 4.8・GPT-5.5はテスト対象の自然な判断が困難）、LLM-Wikiによるウェブ標準議論追跡、runnを使ったAPIテスト構成設計の実践知見が注目を集めた。中国勢ではDeepSeek V4がllama.cppにマージ、HuaweiがOpenPangu-2.0-Flash（92B総量・6B有効化、512Kコンテキスト）をオープンソース公開した。
+
+【今日の必読】
+・GPT-5.6のSol・Terra・Luna、強さより出力トークンの少なさで効く
+・Agents-A1：35B MoEが「軌跡の長さをスケール」することで兆パラメータ相当の性能を達成——エージェントホライゾンスケーリングの実証
+・Open Knowledge Format のご紹介 | Google Cloud 公式ブログ
+・AIによるユニットテスト実装についての所感
+・「土日の方がAIの個人用途は多い」「女性の方が使用時間は長い」「高賃金タスクは夜間も実行されがち」などClaudeの利用実態レポートが公開される</description>
+    </item>
     <item>
       <title>Claude Codeオントロジー活用でコスト半分・3倍速を実証——Ornith-1.0がOpus 4.7超えでオープン公開、ANISがエージェントランタイム防御を体系化</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-30</link>
@@ -439,21 +453,6 @@
 ・完全ローカルかつCPUで動く日本語対応の軽量TTSモデル「Supertonic 3」
 ・Understand-Anything：コードベースをインタラクティブな知識グラフに変換するOSS
 ・DeepSeek V4-Pro APIを永久75%値下げ—$0.435/Mトークン入力でGPT-5・Claude・Gemini全モデルを価格で下回る</description>
-    </item>
-    <item>
-      <title>MOSS論文がエージェント自己進化でSWE-benchスコアを0.25→0.61へ・Claude Code 2.1.149に使用量分析機能・Latent Space「全モデルラボはエージェントラボへ転換」と宣言</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-24</link>
-      <guid isPermaLink="false">aidd-day-2026-05-24</guid>
-      <pubDate>Sat, 23 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月24日、arXivに投稿されたMOSS論文がエージェントのソースコードレベル自己進化を実証し、SWE-benchグレーダスコアを0.25から0.61へと1サイクルで倍以上に引き上げた。AnthropicはClaude Code 2.1.149をリリースし、/usageコマンドによるカテゴリ別使用量分析・diffスクロール改善・Markdownタスクリスト描画を追加した。Latent Spaceは「全AIラボがモデル単体競争からエージェントハーネス+製品体験統合へ転換した」と宣言し、Modal 3.55億ドル・Exa 2.5億ドルの大型調達がインフラ層の活況を裏付けた。国内ではKarpathyのClaude Code設定ファイルが引き続きGitHubトレンド首位を維持し、AI民主化に対する懐疑論がはてブ520件を集めた。
-
-【今日の必読】
-・Claude Code 2.1.149—/usage コマンドでカテゴリ別使用量分析・diff スクロール・Markdown タスクリスト描画を強化
-・全モデルラボはエージェントラボへ転換——Latent Spaceが業界再編の本質を論じる
-・MOSS 論文：エージェントがソースコードを自己書き換えて進化—SWE-bench スコアを 0.25 から 0.61 へ 1 サイクルで倍以上改善
-・AIで誰もがツールを作る時代、実は来ないんじゃないか説
-・Karpathyの Claude Code スキル設定がGitHubトレンド首位——14.9万スターで開発者が殺到
-・数学 AI が Erdős 未解決問題 9 件・OEIS 予想 44 件を Lean で形式証明—LLM エージェントによる純粋数学研究の実用化</description>
     </item>
   </channel>
 </rss>
