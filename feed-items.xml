@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 30 Jun 2026 17:46:18 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 17:48:54 GMT</lastBuildDate>
+    <item>
+      <title>Fable 5が3週間ぶりに全世界復活——米輸出規制解除、Mythos 5はGlasswingプログラム限定が継続</title>
+      <link>https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release</link>
+      <guid isPermaLink="false">aidd-item-arstechnica_ai-after-spooking-trump-into-safety-testing-anthrop</guid>
+      <pubDate>Wed, 01 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02/arstechnica_ai-after-spooking-trump-into-safety-testing-anthrop">AI Daily Digest 2026-07-02</source>
+      <description>米政府は6月12日に課したFable 5・Mythos 5への輸出規制を解除し、7月2日よりFable 5が全世界で再公開された。AnthropicはPro/Max/Team/Enterprise向けに7月7日まで週間使用量の50%上限を適用し、以降は通常使用制限に移行する。Mythos 5は6月26日に米国組織向けに一部復活しているが、引き続きGlasswingプログラムに参加する防衛的サイバーセキュリティ研究者のみに限定される。政府との協議の中でAnthropicは、報告されたジェイルブレーク技術を99%超の精度でブロックする新分類器を実装したことを明らかにした。</description>
+    </item>
+    <item>
+      <title>Claude Sonnet 5 正式公開——Opus並みの性能をSonnet価格帯で、エージェント実行コスト半減を狙う</title>
+      <link>https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-anthropic-launches-claude-sonnet-5-as-a-cheaper-</guid>
+      <pubDate>Tue, 30 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02/techcrunch-anthropic-launches-claude-sonnet-5-as-a-cheaper-">AI Daily Digest 2026-07-02</source>
+      <description>AnthropicはClaude Sonnet 5を発表した。エージェント機能を強化し、GPT-5.5やGemini Proよりも低価格でOpus 4.8相当の性能を提供するという位置づけ。安全性改善も含まれており、エージェントによる長時間タスク実行のコスト障壁を下げることを主要な目標に掲げている。</description>
+    </item>
+    <item>
+      <title>Claude Scienceを発表——AlphaFold創始者John Jumper起用、「科学研究版Claude Code」でDeepMindに挑む</title>
+      <link>https://technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product</link>
+      <guid isPermaLink="false">aidd-item-mit_tr_ai-claude-science-is-anthropic-s-newest-flagship-pr</guid>
+      <pubDate>Tue, 30 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02/mit_tr_ai-claude-science-is-anthropic-s-newest-flagship-pr">AI Daily Digest 2026-07-02</source>
+      <description>AnthropicはClaude Scienceを発表した。科学研究者向けに設計された新フラッグシップ製品で、「科学界のClaude Code」と位置づけられる。ノーベル賞受賞者でAlphaFold創始者のJohn Jumper氏の採用を武器に、10年にわたりAI×科学分野を牽引してきたGoogle DeepMindに真正面から挑む。Anthropic自身も顧みられない疾患の創薬研究でClaude Scienceを活用するとしており、マーケティングだけでなく実用にも投資する姿勢を示した。</description>
+    </item>
+    <item>
+      <title>AI Engineer World&apos;s Fair 2日目：「Loopcraft」「ソフトウェアファクトリー」が合言葉——エージェントは組立ラインへ</title>
+      <link>https://latent.space/p/aiewf-daily-dispatch-loops</link>
+      <guid isPermaLink="false">aidd-item-latent_space-aiewf-daily-dispatch-loops-software-factories-fo</guid>
+      <pubDate>Tue, 30 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02/latent_space-aiewf-daily-dispatch-loops-software-factories-fo">AI Daily Digest 2026-07-02</source>
+      <description>AI Engineer World&apos;s Fairの2日目、swyx（共同創設者）の基調講演「Loopcraft: The Art of Stacking Loops」を皮切りに、会場全体で「ループ」「ソフトウェアファクトリー」が中心テーマとなった。swyx氏はAIエンジニアリングの進化を「チャット→ツール→目標→オートメーション（ループ）」と図式化し、現在の開発は「全てクロンジョブとループだ」と述べた。Warp CEOのZach Lloyd氏も、CLIツール競争の次フェーズとして「ソフトウェアファクトリー基盤」を独自取材で論じた。</description>
+    </item>
+    <item>
+      <title>LLMは「グループシンク（集団思考）」に陥っている——「1〜10の乱数は?」に全モデルが「7」と答える問題</title>
+      <link>https://technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out</link>
+      <guid isPermaLink="false">aidd-item-mit_tr_ai-llms-are-stuck-in-a-groupthink-groove-this-start</guid>
+      <pubDate>Tue, 30 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02/mit_tr_ai-llms-are-stuck-in-a-groupthink-groove-this-start">AI Daily Digest 2026-07-02</source>
+      <description>MIT Technology Reviewは、LLMが同じ答えに収束する傾向（グループシンク）を報告した。「1から10の乱数を言って」と聞くと、ほぼ全ての主要モデルが「7」と答える。オーストラリアのスタートアップSpringboardsはFlintというモデルで、全体的なランダム性を上げるのではなく、特定の意思決定ポイントにのみランダム性を注入するアプローチを実験中。NeurIPS受賞論文でも、AIモデルが互いに訓練データを学習することで均質化が加速する現象が示されている。</description>
+    </item>
+    <item>
+      <title>ClaudeCodeとObsidianで設計・作業メモを残す - 虎の穴ラボ技術ブログ</title>
+      <link>https://toranoana-lab.hatenablog.com/entry/2026/06/30/130000</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-claudecode-obsidian</guid>
+      <pubDate>Tue, 30 Jun 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02/hatena_it-claudecode-obsidian">AI Daily Digest 2026-07-02</source>
+      <description>虎の穴ラボの技術ブログ（はてブ172ユーザー）。AIエージェントとの相性が良いと話題のObsidianを導入し、Claude Codeに設計メモ・作業記録を残させる仕組みを実装した実践報告。コーディングにAIエージェントを使うと「作業記録がうまく残らない」という課題を解決するアプローチで、Claude CodeとObsidianの組み合わせによるワークフロー構築を具体的に解説している。</description>
+    </item>
     <item>
       <title>GPT-5.6のSol・Terra・Luna、強さより出力トークンの少なさで効く</title>
       <link>https://qiita.com/okssusucha/items/2348bbcf0d61e4de0a67</link>
@@ -573,54 +621,6 @@
       <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-19/lesswrong-gdm-ai-control-roadmap">AI Daily Digest 2026-06-19</source>
       <description>Google DeepMindがAIコントロールロードマップv0.1を公開した。AIエージェントが自律化するにつれて監視・封じ込めが困難になる中、潜在的に敵対的な振る舞いをするAIシステムを捕捉するための内部ガードレールの計画を詳述する。サイバーセキュリティからインスピレーションを得た保守的・最悪ケース想定のスレットモデリングに基づく。</description>
-    </item>
-    <item>
-      <title>ホワイトハウス、Fable 5再公開条件に「全ジェイルブレーク完全遮断」——専門家は「技術的に不可能」と指摘</title>
-      <link>https://wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible</link>
-      <guid isPermaLink="false">aidd-item-wired_ai-the-white-house-wants-anthropic-to-block-all-jai</guid>
-      <pubDate>Wed, 17 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/wired_ai-the-white-house-wants-anthropic-to-block-all-jai">AI Daily Digest 2026-06-18</source>
-      <description>Trump政権がAnthropicに対し、Fable 5モデルの再公開条件として「ガードレールが完全に迂回できないこと」を要求していることがWIREDの取材で判明した。Trump政権関係者がWIREDに対し条件を直接語った。セキュリティ専門家は、ジェイルブレークの完全遮断は技術的に実現不可能であると断言しており、規制当局とAIセーフティ実務の間にある深刻な認識ギャップが浮き彫りになった。</description>
-    </item>
-    <item>
-      <title>Z.ai GLM-5.2公開：Long-Horizon Tasks特化の新モデルをOSS化</title>
-      <link>https://huggingface.co/blog/zai-org/glm-52-blog</link>
-      <guid isPermaLink="false">aidd-item-hf_blog-glm-5-2-built-for-long-horizon-tasks</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/hf_blog-glm-5-2-built-for-long-horizon-tasks">AI Daily Digest 2026-06-18</source>
-      <description>Z.ai（智谱AI）がGLM-5.2をHugging Face経由でオープンソース公開した。設計コンセプトは「Long-Horizon Tasks（長期タスク）」への最適化であり、複数ステップにわたるタスク遂行能力を高めた新世代モデルとして位置付けられている。AnthropicのFable 5が米国規制下にある中で公開されたタイミングとしても注目される。</description>
-    </item>
-    <item>
-      <title>Fable 5・Opus 4.8レッドチーム研究：7826件の有害意図・4種JB手法・三審制で評価</title>
-      <link>https://arxiv.org/abs/2606.18193v1</link>
-      <guid isPermaLink="false">aidd-item-arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/arxiv-a-red-team-study-of-anthropic-fable-5-opus-4-8-m">AI Daily Digest 2026-06-18</source>
-      <description>AnthropicのFable 5およびOpus 4.8に対するレッドチーム研究が公開された。7826件の有害意図（10カテゴリ分類）に対し、HackAgentフレームワークを用いて4種のジェイルブレーク攻撃手法から数十万件の攻撃を生成した。攻撃の成功判定には3つのジャッジモデルによる多数決を採用しており、フロンティアモデルの敵対的ロバスト性を体系的に評価している。</description>
-    </item>
-    <item>
-      <title>Looped World Models：パラメータ共有で100倍の効率化を実現する世界モデル設計</title>
-      <link>https://arxiv.org/abs/2606.18208v1</link>
-      <guid isPermaLink="false">aidd-item-arxiv-looped-world-models</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/arxiv-looped-world-models">AI Daily Digest 2026-06-18</source>
-      <description>世界モデルの新アーキテクチャ「Looped World Models（LoopWM）」が提案された。パラメータを共有するTransformerブロックを繰り返し適用することで、同等品質を100倍のパラメータ効率で達成するという。長期シミュレーションには深い計算が必要だが深いモデルは展開コストが高いというジレンマを、ループ型アーキテクチャとAdaptive Computationで解決する試みであり、世界モデルへの初のloopedアーキテクチャ適用として位置付けられている。</description>
-    </item>
-    <item>
-      <title>5万スターのClaude Code Tips集、本質は2つだけ</title>
-      <link>https://zenn.dev/acntechjp/articles/5409d8e2ad0767</link>
-      <guid isPermaLink="false">aidd-item-hatena_it-5-claude-code-tips-2</guid>
-      <pubDate>Mon, 15 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/hatena_it-5-claude-code-tips-2">AI Daily Digest 2026-06-18</source>
-      <description>GitHubで5万スター近くを獲得しGitHub Trending 1位を達成したClaude Codeベストプラクティス集「shanraisshan/claude-code-best-practice」を解説した記事が575はてブを集めた。設定ファイルを配るテンプレート集ではなく「Claude Codeを上手く使うための知識をリンク付きで整理したリファレンス」として機能しており、著者による「本質は2つだけ」という要約が多くの支持を集めた理由である。</description>
-    </item>
-    <item>
-      <title>HuggingFace、エージェントがHubリソースを自律検索できる機能「Agentic Resource Discovery」を公開</title>
-      <link>https://huggingface.co/blog/agentic-resource-discovery-launch</link>
-      <guid isPermaLink="false">aidd-item-hf_blog-agentic-resource-discovery-let-agents-search</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-18/hf_blog-agentic-resource-discovery-let-agents-search">AI Daily Digest 2026-06-18</source>
-      <description>Hugging FaceがHub上のモデルやデータセットをAIエージェントが自律的に検索・発見できる「Agentic Resource Discovery」機能を公開した。エージェントが必要なリソースを能動的に探索できることで、開発者の手を介さないパイプラインの構築が可能になる。</description>
     </item>
   </channel>
 </rss>

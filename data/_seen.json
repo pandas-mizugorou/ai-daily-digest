@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-01T05:00:00+09:00",
+  "updated_at": "2026-07-02T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6097,6 +6097,138 @@
       "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_op",
       "first_seen_at": "2026-07-01",
       "last_seen_at": "2026-07-01",
+      "last_seen_count": 1
+    },
+    "da4b74e8ab491e1c7df56cd00425e7f6bd7ac11b": {
+      "url_prefix": "https://arstechnica.com/tech-policy/2026/07/after-spooking-t",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "ed93069ae7772a4459507bdaa9b7380b670a7f58": {
+      "url_prefix": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "a6d00f07a038b1134a9446640363ee9c5b6926a1": {
+      "url_prefix": "https://arstechnica.com/ai/2026/06/googles-new-nano-banana-2",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "3b2a0e32718835c3bfa52b3a4c4ad0d07d341015": {
+      "url_prefix": "https://technologyreview.com/2026/06/30/1139987/claude-scien",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "602807a7aefa4c2a360aa36b4ac693da9a9904cd": {
+      "url_prefix": "https://techcrunch.com/2026/06/30/gemini-spark-google-s-agen",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "db2a5ab22b1ff2b5d9beaa7aea131ca95d8b5399": {
+      "url_prefix": "https://latent.space/p/aiewf-daily-dispatch-loops",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "3f9d6cf37be6d5b9b6adcf6cfe5017aba0fba7d5": {
+      "url_prefix": "https://wired.com/story/claude-helped-a-hacker-find-a-way-to",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "dadf7c46ca6f4df81eaa820c2433712740eff117": {
+      "url_prefix": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "ce118bf98cdb72c5d76479024a65d33bee6727cd": {
+      "url_prefix": "https://arxiv.org/abs/2606.32034v1",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "bd9429f1e8e2dd0a195c7645298c2e1ed1f90a64": {
+      "url_prefix": "https://arxiv.org/abs/2606.32032v1",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "f30b61d5534941f8a3cac8b369bbde87056d184a": {
+      "url_prefix": "https://arxiv.org/abs/2606.32025v1",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "71f78a6f83c77f13a552f5e8925c3c8575f6c5de": {
+      "url_prefix": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-h",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "3d2973cf4402d1739948fb9cdbba54932541e690": {
+      "url_prefix": "https://techcrunch.com/2026/06/30/meta-like-spacex-looks-to-",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "0b15b9bd14f7d7f8b037dbe22f86c11ba749adca": {
+      "url_prefix": "https://techcrunch.com/2026/06/30/venice-ai-becomes-a-unicor",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "256c7b6b79aa07c9edf00d6d9326afd3c9caf177": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uknx14/swerebench_",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "93bfcda64bff5668d633c3f7c9e9ff2550b79c78": {
+      "url_prefix": "https://technologyreview.com/2026/07/01/1140003/llms-are-stu",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "5c2b2b7429c7e3056f7bcd2c845a9acbbb9a13c6": {
+      "url_prefix": "https://toranoana-lab.hatenablog.com/entry/2026/06/30/130000",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "7e0a51f45b27ff252fa6b3d2b18beb18b1b3c0e7": {
+      "url_prefix": "https://digital.asahi.com/articles/ASV6V15JYV6VDIFI00TM.html",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "b673a5624268e7ac280452322d5be44c90153f40": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2606/30/2000000143",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "8fba8908f48b46c1a411fa181b3384d165d1a785": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260701b",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "15b6a13e26459e007d7e82974b7801c0368ea9f0": {
+      "url_prefix": "https://qbitai.com/2026/07/441225.html",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "8a5a0e67ac262ac4e49a8d635bb54b99c7e84e70": {
+      "url_prefix": "https://qbitai.com/2026/07/441183.html",
+      "first_seen_at": "2026-07-02",
+      "last_seen_at": "2026-07-02",
       "last_seen_count": 1
     }
   },

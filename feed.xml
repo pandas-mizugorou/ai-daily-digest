@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 30 Jun 2026 17:46:18 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 17:48:54 GMT</lastBuildDate>
+    <item>
+      <title>Claude Fable 5が3週間ぶりに全世界復活——輸出規制解除、Sonnet 5・Claude Scienceも同時投入、AI Engineer World&apos;s Fairで「ソフトウェアファクトリー」論が台頭</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02</link>
+      <guid isPermaLink="false">aidd-day-2026-07-02</guid>
+      <pubDate>Wed, 01 Jul 2026 20:00:00 GMT</pubDate>
+      <description>2026年7月2日のAIニュースダイジェスト。規制面では、米政府が6月12日に課したFable 5・Mythos 5への輸出規制を約3週間で解除し、7月2日よりFable 5が全世界で再公開された（Mythos 5はGlasswingプログラム経由の米国組織限定が継続）。新モデル面ではClaude Sonnet 5がエージェント向け低コスト代替として公開。製品面ではAnthropicが「科学研究版Claude Code」をうたうClaude Scienceを発表し、AlphaFold創始者John Jumper氏を起用した。Googleは画像生成モデルNano Banana 2 Lite（Gemini 3.1 Flash Lite Image）を公開。AI Engineer World&apos;s Fairでは「ソフトウェアファクトリー」「ループ」がキーワードに浮上し、エージェントは自動化パイプラインの核へ移行しつつある。Wiredが報告した「Claude Opus 4.7を使って米国の主要音楽フェスのチケットシステムに侵入した研究者」事案はAIエージェントによるセキュリティリスクを改めて浮き彫りにした。日本コミュニティではClaude CodeとObsidianを連携させて設計・作業メモを永続化する手法がはてブ172ユーザーを集め、AIブームと宮崎駿作品の思想的共鳴を論じた記事（89ユーザー）も話題になった。
+
+【今日の必読】
+・Fable 5が3週間ぶりに全世界復活——米輸出規制解除、Mythos 5はGlasswingプログラム限定が継続
+・Claude Sonnet 5 正式公開——Opus並みの性能をSonnet価格帯で、エージェント実行コスト半減を狙う
+・Claude Scienceを発表——AlphaFold創始者John Jumper起用、「科学研究版Claude Code」でDeepMindに挑む
+・AI Engineer World&apos;s Fair 2日目：「Loopcraft」「ソフトウェアファクトリー」が合言葉——エージェントは組立ラインへ
+・LLMは「グループシンク（集団思考）」に陥っている——「1〜10の乱数は?」に全モデルが「7」と答える問題
+・ClaudeCodeとObsidianで設計・作業メモを残す - 虎の穴ラボ技術ブログ</description>
+    </item>
     <item>
       <title>OpenAI GPT-5.6「Sol/Terra/Luna」3モデル発表——Agents-A1が35B MoEで兆パラメータ級エージェント性能を実証、TraceLab実使用コーディングエージェントログ350万ステップ公開</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-01</link>
@@ -438,21 +453,6 @@
 ・Anthropic公式「knowledge-work-plugins」公開—Claudeナレッジワーカー向けOSSプラグイン集がGitHub 15K星
 ・Google DeepMind「Gemini Omni」発表—テキスト・画像・音声・動画を自由に組み合わせて動画生成する「世界モデル」
 ・SkillOpt：LLMエージェントのスキルを自動最適化—テキスト空間での体系的スキル進化フレームワーク</description>
-    </item>
-    <item>
-      <title>DeepSeek旗艦モデル永久75%値下げでAI価格競争が新段階へ・「制約崩壊」論文でLLMエージェントの実用限界が露呈・Supertonic 3が日本語TTS革命</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-25</link>
-      <guid isPermaLink="false">aidd-day-2026-05-25</guid>
-      <pubDate>Sun, 24 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月25日のAI動向は、エージェント技術の実用限界と次世代インフラの整備という相反するテーマが交錯した。arXivから「制約崩壊（Constraint Decay）」論文がバックエンドコード生成でのLLMエージェントの構造的脆弱性を示しHN 123ポイントを獲得、開発者コミュニティを揺るがした。同日DeepSeekが旗艦モデルの永久75%値下げを発表しLLM API価格競争が一変。GitHubトレンドではコードを知識グラフ化するUnderstand-AnythingとAnthropicのClaude Codeプラグイン群が急騰し、開発者ツールエコシステムの急成長を示した。日本では完全ローカル動作する日本語TTS「Supertonic 3」解説記事がはてブ204件を集め、ローカルAIの実用化への高い関心が示された。
-
-【今日の必読】
-・制約崩壊：LLMエージェントはバックエンドコード生成で構造制約が増えると急激に失敗する
-・DeltaBox：ミリ秒単位のチェックポイントでステートフルAIエージェントをスケール
-・VPO：多様性訓練でtest-time searchを強化する新RL手法—4タスクでGRPOを上回る
-・完全ローカルかつCPUで動く日本語対応の軽量TTSモデル「Supertonic 3」
-・Understand-Anything：コードベースをインタラクティブな知識グラフに変換するOSS
-・DeepSeek V4-Pro APIを永久75%値下げ—$0.435/Mトークン入力でGPT-5・Claude・Gemini全モデルを価格で下回る</description>
     </item>
   </channel>
 </rss>
