@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-02T05:00:00+09:00",
+  "updated_at": "2026-07-04T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6216,8 +6216,8 @@
     "8fba8908f48b46c1a411fa181b3384d165d1a785": {
       "url_prefix": "https://techblog.lycorp.co.jp/ja/20260701b",
       "first_seen_at": "2026-07-02",
-      "last_seen_at": "2026-07-02",
-      "last_seen_count": 1
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 2
     },
     "15b6a13e26459e007d7e82974b7801c0368ea9f0": {
       "url_prefix": "https://qbitai.com/2026/07/441225.html",
@@ -6229,6 +6229,126 @@
       "url_prefix": "https://qbitai.com/2026/07/441183.html",
       "first_seen_at": "2026-07-02",
       "last_seen_at": "2026-07-02",
+      "last_seen_count": 1
+    },
+    "958641df3fce2e0848647b9948b2ceae67363fd5": {
+      "url_prefix": "https://latent.space/p/ainews-sonn",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "39412d8a157f3adbdd1a83316de7d362aad24b92": {
+      "url_prefix": "https://latent.space/p/ainews-open",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "1253fdbd5ceae530b4ffc2cc21af3aeb4e3c0d29": {
+      "url_prefix": "https://theverge.com/ai-artificial",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "39217bafd159845d3063ca44ccceddf61e6f136a": {
+      "url_prefix": "https://magazine.sebastianraschka.",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "791fc0f41004deddbdb38220d52d7c138d7a2cdb": {
+      "url_prefix": "https://latent.space/p/the-website",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "8aecbb6a57c24429fbeb1e5521820f8d06a9f356": {
+      "url_prefix": "https://latent.space/p/aiewf-daily",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "1d5ef05bf3f333e0dbd34e6a98071be1eb96171f": {
+      "url_prefix": "https://latent.space/p/vercel-agen",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "ff4018825bd554745ed6dfcc693a36df5f4eca3d": {
+      "url_prefix": "https://arxiv.org/abs/2607.02512v1",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "6347529c9019613e8f4e83930bf41c81335b2f40": {
+      "url_prefix": "https://arxiv.org/abs/2607.02514v1",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "97273832ace947fc81c1501d70a0a3778d989e28": {
+      "url_prefix": "https://lesswrong.com/posts/EJQngi",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "23ff659d49776e8bf168f9581d8cb7f8e36953c1": {
+      "url_prefix": "https://techcrunch.com/2026/07/02/",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "10577aaf950764040dbee5e911cd0bf9ee63117d": {
+      "url_prefix": "https://wired.com/story/can-cursor",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "28f15aa4e09cd2f13400fe1eeb390381a0f0622b": {
+      "url_prefix": "https://lesswrong.com/posts/r9HsHH",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "b97dfb6a3918886ff3afddd7a886f798eb96d8cd": {
+      "url_prefix": "https://techcrunch.com/2026/07/02/",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "21fea2ace96f0929df43ecd67ca909f051f2a2c5": {
+      "url_prefix": "https://itmedia.co.jp/news/article",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "35f643e3080aaa397f4f53933bb58eb22e6f6f89": {
+      "url_prefix": "https://kensuu.com/n/nab3eb1959ef2",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "60787be99bcbaf4a3e51c5ddb9fae8c681007c44": {
+      "url_prefix": "https://zenn.dev/gys/articles/fabl",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "d724c772f717fdec063078401291702af4ef2642": {
+      "url_prefix": "https://atmarkit.itmedia.co.jp/ait",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "861da1e3e7fbda363e5c240126f01d0a9be1e377": {
+      "url_prefix": "https://qbitai.com/2026/07/442567.",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "eef4e143667cec2243d0d4344ecab2fdf700692a": {
+      "url_prefix": "https://qbitai.com/2026/07/442452.",
+      "first_seen_at": "2026-07-04",
+      "last_seen_at": "2026-07-04",
       "last_seen_count": 1
     }
   },

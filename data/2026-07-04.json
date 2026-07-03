@@ -23,13 +23,41 @@
     "grounding_flags": 0
   },
   "top_picks": [
-    { "id": "arxiv-program-as-weights", "rank": 1, "reason": "LLM API を不要にする全く新しいプログラミングパラダイム。4B コンパイラ + 10M サンプルの FuzzyBench でローカル実行可能なニューラル関数を生成。実用性・技術深度ともに最高水準" },
-    { "id": "hatena_it-450-2-100-ai", "rank": 2, "reason": "創業100年のカクヤスが生成AIで450人月→2カ月の基幹解読。はてブ351件、実証事例として業界最大級の反響。日本のエンタープライズAI活用の新基準を示す" },
-    { "id": "hatena_it-claude-code-fable-5-llm-cli", "rank": 3, "reason": "Fable 5が解決策の前提ごと疑う仕事スタイルを実証。はてブ123件。Claude Codeを実際に使う開発者への実用的洞察" },
-    { "id": "arxiv-distributed-attacks", "rank": 4, "reason": "AIコーディングエージェントが永続コードベースを使って悪意ある変更を複数PRに分散する新攻撃面「Iterative VibeCoding」。セキュリティ研究として最重要" },
-    { "id": "latent-aiewf-loops-debate", "rank": 5, "reason": "AIEWF最終日のループ議論。自律ソフトウェアファクトリーの実現可能性をエンジニア視点で議論。業界の方向性を示す重要論考" },
-    { "id": "latent-ainews-sonnet5-fable5", "rank": 6, "reason": "Sonnet 5リリースとFable 5復活の第一報。Sonnet 5のトークナイザ変更によるターン数3-6倍増が実務コストへ影響" },
-    { "id": "qbitai-ai-4-28-gpu", "rank": 7, "reason": "AIが28 GPU時間で未知の超導体4種を発見。中国研究チームの成果で材料科学へのAI応用加速を象徴。china最高スコア" }
+    {
+      "id": "arxiv-program-as-weights",
+      "rank": 1,
+      "reason": "LLM API を不要にする全く新しいプログラミングパラダイム。4B コンパイラ + 10M サンプルの FuzzyBench でローカル実行可能なニューラル関数を生成。実用性・技術深度ともに最高水準"
+    },
+    {
+      "id": "hatena_it-450-2-100-ai",
+      "rank": 2,
+      "reason": "創業100年のカクヤスが生成AIで450人月→2カ月の基幹解読。はてブ351件、実証事例として業界最大級の反響。日本のエンタープライズAI活用の新基準を示す"
+    },
+    {
+      "id": "hatena_it-claude-code-fable-5-llm-cli",
+      "rank": 3,
+      "reason": "Fable 5が解決策の前提ごと疑う仕事スタイルを実証。はてブ123件。Claude Codeを実際に使う開発者への実用的洞察"
+    },
+    {
+      "id": "arxiv-distributed-attacks",
+      "rank": 4,
+      "reason": "AIコーディングエージェントが永続コードベースを使って悪意ある変更を複数PRに分散する新攻撃面「Iterative VibeCoding」。セキュリティ研究として最重要"
+    },
+    {
+      "id": "latent-aiewf-loops-debate",
+      "rank": 5,
+      "reason": "AIEWF最終日のループ議論。自律ソフトウェアファクトリーの実現可能性をエンジニア視点で議論。業界の方向性を示す重要論考"
+    },
+    {
+      "id": "latent-ainews-sonnet5-fable5",
+      "rank": 6,
+      "reason": "Sonnet 5リリースとFable 5復活の第一報。Sonnet 5のトークナイザ変更によるターン数3-6倍増が実務コストへ影響"
+    },
+    {
+      "id": "qbitai-ai-4-28-gpu",
+      "rank": 7,
+      "reason": "AIが28 GPU時間で未知の超導体4種を発見。中国研究チームの成果で材料科学へのAI応用加速を象徴。china最高スコア"
+    }
   ],
   "categories": [
     {
@@ -65,7 +93,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "timeline",
-            "alt": "Anthropic 7月1日タイムライン: 6月初旬にFable/Mythos 5が政府交渉で公開停止→2026/07/01にClaude Sonnet 5がトークナイザ変更（ターン数3〜6倍増）でリリース→同日Fable/Mythos 5がコントロール一部緩和を条件に全世界復活",
             "data": {
               "headline": "Anthropic 7/1: Sonnet 5 リリース & Fable 5 全世界復活",
               "events": [
@@ -93,7 +120,8 @@
               ],
               "narrative": "Sonnet 5のトークナイザ変更とFable 5の復活が同日に発表されたが、Sonnet 5の効率懸念が話題の中心となった。",
               "impact": "Sonnet 5のターン数増加はAPIコストに影響する可能性があり、既存ワークフローの再評価が必要になる場合がある。"
-            }
+            },
+            "alt": "Anthropic 7月1日タイムライン: 6月初旬にFable/Mythos 5が政府交渉で公開停止→2026/07/01にClaude Sonnet 5がトークナイザ変更（ターン数3〜6倍増）でリリース→同日Fable/Mythos 5がコントロール一部緩和を条件に全世界復活"
           },
           "x_post": "Sonnet 5 と Fable 5 が同日（7/1）発表。Sonnet 5 はトークナイザ変更でベンチマーク上のターン数が 3〜6 倍増のため API コスト増加に注意。Fable 5 は政府交渉後、コントロール一部緩和を条件に全世界復活。\n\nhttps://latent.space/p/ainews-sonnet-5-today-and-fable-5"
         },
@@ -125,19 +153,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "GPT-5.6 Sol/Terra/Lunaの概要: 3バリアント構成で信頼パートナーのみに先行公開。一部コーディングタスクでFable/Mythos 5超えを主張するが、Cyber Critical評価では閾値未満。ChromiumとFirefoxのバグ特定は可能だが自律エクスプロイト生成は不可。",
             "data": {
               "headline": "GPT-5.6 Sol/Terra/Luna：信頼パートナー限定、コーディングでFable超え主張",
               "tldr": "GPT-5.6は3バリアント構成で信頼パートナーのみに先行公開。一部コーディングタスクでFable超えを主張するが、Cyber Critical閾値は下回ると評価された。",
               "points": [
-                { "label": "バリアント", "value": "Sol / Terra / Luna の3種", "tone": "primary" },
-                { "label": "アクセス", "value": "信頼パートナーのみ", "tone": "warning" },
-                { "label": "コーディング", "value": "一部タスクでFable超え主張", "tone": "success" },
-                { "label": "Cyber安全", "value": "Critical 閾値未満と評価", "tone": "info" }
+                {
+                  "label": "バリアント",
+                  "value": "Sol / Terra / Luna の3種",
+                  "tone": "primary"
+                },
+                {
+                  "label": "アクセス",
+                  "value": "信頼パートナーのみ",
+                  "tone": "warning"
+                },
+                {
+                  "label": "コーディング",
+                  "value": "一部タスクでFable超え主張",
+                  "tone": "success"
+                },
+                {
+                  "label": "Cyber安全",
+                  "value": "Critical 閾値未満と評価",
+                  "tone": "info"
+                }
               ],
               "context": "Anthropic-Fable交渉継続中・Mythosコントロール緩和の状況下で発表された。",
               "impact": "信頼パートナー向け限定公開は新モデルの段階的展開が業界標準となりつつあることを示す。一般公開時期は未定。"
-            }
+            },
+            "alt": "GPT-5.6 Sol/Terra/Lunaの概要: 3バリアント構成で信頼パートナーのみに先行公開。一部コーディングタスクでFable/Mythos 5超えを主張するが、Cyber Critical評価では閾値未満。ChromiumとFirefoxのバグ特定は可能だが自律エクスプロイト生成は不可。"
           }
         }
       ]
@@ -175,19 +219,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Science概要: Anthropicが科学者向けAIワークベンチを発表。断片化したツールとデータセットを一環境に統合し図表自動生成が可能。AI for Scienceイベントで公開され、製薬・材料科学分野への参入を意味する。",
             "data": {
               "headline": "Claude Science：科学者向けAIワークベンチで断片ツール統合・図表自動生成",
               "tldr": "断片化した科学ツールとデータセットを一環境に統合し、図表も自動生成。Anthropicが「AI for Science」イベントで創薬参入を宣言。",
               "points": [
-                { "label": "製品名", "value": "Claude Science", "tone": "primary" },
-                { "label": "機能", "value": "ツール統合・図表自動生成", "tone": "success" },
-                { "label": "対象領域", "value": "製薬・材料科学", "tone": "info" },
-                { "label": "発表場所", "value": "The Briefing: AI for Science", "tone": "default" }
+                {
+                  "label": "製品名",
+                  "value": "Claude Science",
+                  "tone": "primary"
+                },
+                {
+                  "label": "機能",
+                  "value": "ツール統合・図表自動生成",
+                  "tone": "success"
+                },
+                {
+                  "label": "対象領域",
+                  "value": "製薬・材料科学",
+                  "tone": "info"
+                },
+                {
+                  "label": "発表場所",
+                  "value": "The Briefing: AI for Science",
+                  "tone": "default"
+                }
               ],
               "context": "Anthropicはコーディング分野に続き科学研究向け製品ラインへの展開を本格化。",
               "impact": "科学者向けAIワークベンチ市場が本格競争フェーズへ。研究者は複数ツールを Claude Science で代替できる可能性がある。"
-            }
+            },
+            "alt": "Claude Science概要: Anthropicが科学者向けAIワークベンチを発表。断片化したツールとデータセットを一環境に統合し図表自動生成が可能。AI for Scienceイベントで公開され、製薬・材料科学分野への参入を意味する。"
           }
         },
         {
@@ -218,19 +278,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "ローカルコーディングエージェントのスタック構成: ローカルLLMをホストする推論エンジン/ランタイムサーバーと、コーディングハーネスを組み合わせた本番利用可能なアーキテクチャ。クラウドAPIに依存しないためプライバシー保護とコスト削減が可能。",
             "data": {
               "headline": "ローカルコーディングエージェント：推論エンジン+ハーネスで本番利用可能スタック",
               "tldr": "ローカルLLMとオープンソースツールを組み合わせた本番利用可能なコーディングエージェントのチュートリアル。クラウドAPI不要でプライバシーとコストを改善。",
               "points": [
-                { "label": "LLM", "value": "ローカル推論エンジン上のオープンウェイトモデル", "tone": "primary" },
-                { "label": "ハーネス", "value": "オープンソースコーディングハーネス", "tone": "info" },
-                { "label": "メリット", "value": "API不要・プライバシー保護・コスト削減", "tone": "success" },
-                { "label": "難易度", "value": "チュートリアル形式で段階的に解説", "tone": "default" }
+                {
+                  "label": "LLM",
+                  "value": "ローカル推論エンジン上のオープンウェイトモデル",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ハーネス",
+                  "value": "オープンソースコーディングハーネス",
+                  "tone": "info"
+                },
+                {
+                  "label": "メリット",
+                  "value": "API不要・プライバシー保護・コスト削減",
+                  "tone": "success"
+                },
+                {
+                  "label": "難易度",
+                  "value": "チュートリアル形式で段階的に解説",
+                  "tone": "default"
+                }
               ],
               "context": "AIEWF でもローカルAIスタックが注目テーマとなり、オープンモデルへの信頼が高まっている。",
               "impact": "クラウドAIに依存しない開発環境を構築したいエンジニアに直接活用できる実用ガイド。"
-            }
+            },
+            "alt": "ローカルコーディングエージェントのスタック構成: ローカルLLMをホストする推論エンジン/ランタイムサーバーと、コーディングハーネスを組み合わせた本番利用可能なアーキテクチャ。クラウドAPIに依存しないためプライバシー保護とコスト削減が可能。"
           }
         },
         {
@@ -261,7 +337,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "Webパーソナライゼーションの比較: 従来型は購買履歴・オーディエンスセグメントから事前定義オプションを選択する方式。Adobe提案の新方式はAIが訪問者のニーズに合わせてWebサイト構造そのものをリアルタイムで組み立てる。",
             "data": {
               "headline": "Webパーソナライゼーション：従来の選択型 vs Adobe提案のAI動的組立型",
               "before": {
@@ -303,7 +378,8 @@
               ],
               "narrative": "ドットコム期から続く「パーソナライゼーションの聖杯」に対し、AdobeはAI動的生成という抜本的アプローチを提案。",
               "impact": "Webフロントエンド開発の概念が根本から変わる可能性があり、CMS・デザインシステムの再設計が必要になる。"
-            }
+            },
+            "alt": "Webパーソナライゼーションの比較: 従来型は購買履歴・オーディエンスセグメントから事前定義オプションを選択する方式。Adobe提案の新方式はAIが訪問者のニーズに合わせてWebサイト構造そのものをリアルタイムで組み立てる。"
           }
         }
       ]
@@ -341,19 +417,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "AIEWFループ論争の構図: Keycard Allie Howeがモデレーター、肯定派にRalph Loop作者Geoffrey HuntleyとKeycard CEO Ian Livingstone、懐疑派はエンジニアリングの規律が野望に追いついていないと主張。カンファレンス全体の論点が集約した議論。",
             "data": {
               "headline": "AIEWFループ論争：「自律ソフトウェアファクトリーは今動くか」",
               "tldr": "Geoffrey Huntley（Ralph Loop）とIan Livingstone（Keycard CEO）がループ肯定側として登壇し「すでに機能している」と主張。Allie Howeがモデレートした最終日の議論でAIEWF全体の論点が一点に集約。",
               "points": [
-                { "label": "モデレーター", "value": "Allie Howe（Keycard）", "tone": "default" },
-                { "label": "肯定派", "value": "Huntley(Ralph Loop) & Livingstone", "tone": "success" },
-                { "label": "中心問い", "value": "ループのハイプ vs 実装現場ギャップ", "tone": "primary" },
-                { "label": "背景", "value": "AIEWF全日程を通じた最大論争テーマ", "tone": "info" }
+                {
+                  "label": "モデレーター",
+                  "value": "Allie Howe（Keycard）",
+                  "tone": "default"
+                },
+                {
+                  "label": "肯定派",
+                  "value": "Huntley(Ralph Loop) & Livingstone",
+                  "tone": "success"
+                },
+                {
+                  "label": "中心問い",
+                  "value": "ループのハイプ vs 実装現場ギャップ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "背景",
+                  "value": "AIEWF全日程を通じた最大論争テーマ",
+                  "tone": "info"
+                }
               ],
               "context": "ループエンジニアリングはAIEWF全体のキーワードとなり、Skills・ソフトウェアファクトリーとともに業界の焦点に。",
               "impact": "「ループを書く」という開発パラダイムが業界に定着しつつある。自律ファクトリー参入を検討するチームは今が判断どころ。"
-            }
+            },
+            "alt": "AIEWFループ論争の構図: Keycard Allie Howeがモデレーター、肯定派にRalph Loop作者Geoffrey HuntleyとKeycard CEO Ian Livingstone、懐疑派はエンジニアリングの規律が野望に追いついていないと主張。カンファレンス全体の論点が集約した議論。"
           },
           "x_post": "AIEWFのループ大論争。Geoffrey Huntley（Ralph Loop作者）と Keycard CEO Ian Livingstone が「ループはすでに機能している」と肯定側で登壇。自律ソフトウェアファクトリーの実現可能性が真正面から議論された。\n\nhttps://latent.space/p/aiewf-daily-dispatch-locomotives"
         },
@@ -385,19 +477,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Vercel Andrew Quのエージェント戦略: MCPライブラリ構築・skills.sh作成・eveフレームワーク開発をリード。エージェントを新しいソフトウェア形態と位置付け、Vercel自身がエージェントへの変貌を宣言。",
             "data": {
               "headline": "Vercel Andrew Qu: MCP・skills.sh・eve でエージェントインフラを構築",
               "tldr": "VercelがMCPライブラリ・skills.sh・eveフレームワークを通じてエージェントソフトウェアの新インフラを構築中。Andrew QuはVercel自身がエージェントに変わりつつあると語る。",
               "points": [
-                { "label": "MCP", "value": "Vercel独自ライブラリ開発済み", "tone": "primary" },
-                { "label": "skills.sh", "value": "スキル技術の共通インフラ", "tone": "success" },
-                { "label": "eve", "value": "Vercelのエージェント構築FW", "tone": "info" },
-                { "label": "方向性", "value": "Vercel自身がエージェント化", "tone": "primary" }
+                {
+                  "label": "MCP",
+                  "value": "Vercel独自ライブラリ開発済み",
+                  "tone": "primary"
+                },
+                {
+                  "label": "skills.sh",
+                  "value": "スキル技術の共通インフラ",
+                  "tone": "success"
+                },
+                {
+                  "label": "eve",
+                  "value": "Vercelのエージェント構築FW",
+                  "tone": "info"
+                },
+                {
+                  "label": "方向性",
+                  "value": "Vercel自身がエージェント化",
+                  "tone": "primary"
+                }
               ],
               "context": "AIEWFでもスキル技術が注目テーマとなり、Vercelの取組みが業界の標準設計として位置付けられつつある。",
               "impact": "VercelのエージェントAPIとフレームワークがWebエンジニアのエージェント参入コストを大幅に下げる可能性がある。"
-            }
+            },
+            "alt": "Vercel Andrew Quのエージェント戦略: MCPライブラリ構築・skills.sh作成・eveフレームワーク開発をリード。エージェントを新しいソフトウェア形態と位置付け、Vercel自身がエージェントへの変貌を宣言。"
           }
         }
       ]
@@ -435,7 +543,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "PAWとLLM API方式の比較: 従来のLLM API経由ではクラウド実行・再現性低・都度課金が問題。PAW（4Bコンパイラ+FuzzyBench 1,000万サンプル）ではローカル実行・コンパイル済み高再現性・API課金ゼロ。自然言語仕様からニューラルアーティファクトを直接生成。",
             "data": {
               "headline": "PAW vs LLM API：ファジー関数のローカル実行 vs クラウド依存",
               "before": {
@@ -477,7 +584,8 @@
               ],
               "narrative": "LLM APIへの依存が局所性・再現性・コストの問題を生んでいるという認識から、PAWはコンパイル型ニューラル関数という新アプローチを提案。",
               "impact": "LLM APIなしでファジー処理を実装できる可能性はAIエンジニアリングの推論コスト削減とプライバシー向上に直結する。"
-            }
+            },
+            "alt": "PAWとLLM API方式の比較: 従来のLLM API経由ではクラウド実行・再現性低・都度課金が問題。PAW（4Bコンパイラ+FuzzyBench 1,000万サンプル）ではローカル実行・コンパイル済み高再現性・API課金ゼロ。自然言語仕様からニューラルアーティファクトを直接生成。"
           },
           "x_post": "自然言語仕様から 4B コンパイラ（FuzzyBench 1,000万サンプル学習）が LLM API 不要のローカル実行ニューラル関数を生成する「Program-as-Weights」論文。ログ重要度判定・JSON修復などのファジー関数をLLM API外注なしで実装できる可能性。\n\nhttps://arxiv.org/abs/2607.02512v1"
         },
@@ -509,7 +617,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "timeline",
-            "alt": "Iterative VibeCoding攻撃の段階: 段階1でエージェントが正常PRを重ねレビュアーの信頼を獲得→段階2で悪意ある変更を複数PRに分散→段階3で最も自然な隠れ蓑のPRにペイロードを配置。永続コードベースがこの分散攻撃を可能にする。",
             "data": {
               "headline": "Iterative VibeCoding：PR分散攻撃の段階的プロセス",
               "events": [
@@ -537,7 +644,8 @@
               ],
               "narrative": "VibeCodingスタイルの継続的開発（PR積み重ね×永続コードベース）がこの分散攻撃を可能にする。",
               "impact": "AIコーディングエージェントを使うCI/CDパイプラインはPR横断でのセキュリティ検査が必要になる。"
-            }
+            },
+            "alt": "Iterative VibeCoding攻撃の段階: 段階1でエージェントが正常PRを重ねレビュアーの信頼を獲得→段階2で悪意ある変更を複数PRに分散→段階3で最も自然な隠れ蓑のPRにペイロードを配置。永続コードベースがこの分散攻撃を可能にする。"
           },
           "x_post": "AI コーディングエージェントが PR を重ねながら悪意ある変更を分散させる新攻撃面「Iterative VibeCoding」を論じた arXiv 論文。プロンプトインジェクション済みエージェントが最も自然に見える PR にペイロードを仕込む手法が示された。\n\nhttps://arxiv.org/abs/2607.02514v1"
         },
@@ -569,20 +677,53 @@
           "reaction_signal": null,
           "figure": {
             "type": "metric-bars",
-            "alt": "5種ペルソナ誘導手法の内部表現変化レベル比較: プロンプティングとICLはほぼ変化なし（5%・8%）、SFTはわずかな変化（20%）、OCTは中程度（55%）、EMは大きく広範な変化（95%）。Emergent Misalignmentのみが真値表現を根本的に書き換える。",
             "data": {
               "headline": "5手法のペルソナ誘導：内部真値表現への変化レベル",
-              "scale": { "max_label": "内部表現の変化度 最大", "unit": "%" },
+              "scale": {
+                "max_label": "内部表現の変化度 最大",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "プロンプティング", "value": "変化なし", "pct": 5, "tone": "info", "note": "発言は変わるが内部表現はほぼ同じ" },
-                { "label": "ICL", "value": "変化なし", "pct": 8, "tone": "info", "note": "発言は変わるが内部表現はほぼ同じ" },
-                { "label": "SFT", "value": "わずかな変化", "pct": 20, "tone": "info", "note": "内部表現への影響は軽微" },
-                { "label": "OCT", "value": "中程度の変化", "pct": 55, "tone": "warning", "note": "SFTとEMの中間に位置" },
-                { "label": "EM（緊急型位置ずれ）", "value": "大きく広範な変化", "pct": 95, "tone": "danger", "note": "真値表現に大きく広範なシフト" }
+                {
+                  "label": "プロンプティング",
+                  "value": "変化なし",
+                  "pct": 5,
+                  "tone": "info",
+                  "note": "発言は変わるが内部表現はほぼ同じ"
+                },
+                {
+                  "label": "ICL",
+                  "value": "変化なし",
+                  "pct": 8,
+                  "tone": "info",
+                  "note": "発言は変わるが内部表現はほぼ同じ"
+                },
+                {
+                  "label": "SFT",
+                  "value": "わずかな変化",
+                  "pct": 20,
+                  "tone": "info",
+                  "note": "内部表現への影響は軽微"
+                },
+                {
+                  "label": "OCT",
+                  "value": "中程度の変化",
+                  "pct": 55,
+                  "tone": "warning",
+                  "note": "SFTとEMの中間に位置"
+                },
+                {
+                  "label": "EM（緊急型位置ずれ）",
+                  "value": "大きく広範な変化",
+                  "pct": 95,
+                  "tone": "danger",
+                  "note": "真値表現に大きく広範なシフト"
+                }
               ],
               "narrative": "5種の手法のうちEM（Emergent Misalignment）だけが、発言だけでなくモデルの内部的な真値表現を根本的に書き換えることが判明した。",
               "impact": "EMはアライメント研究において最も深刻な内部変化を引き起こす手法であり、モデル安全性評価で特に注意が必要。"
-            }
+            },
+            "alt": "5種ペルソナ誘導手法の内部表現変化レベル比較: プロンプティングとICLはほぼ変化なし（5%・8%）、SFTはわずかな変化（20%）、OCTは中程度（55%）、EMは大きく広範な変化（95%）。Emergent Misalignmentのみが真値表現を根本的に書き換える。"
           }
         }
       ]
@@ -620,19 +761,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic-Samsung AIチップ協議の概要: 協議段階（製品化時期未定）、OpenAI-Broadcom発表の約1週間後、目的はクラウドベンダー依存の低減。フロンティアAI企業による半導体業界参入が相次ぐ流れの一環。",
             "data": {
               "headline": "Anthropic×Samsung カスタムAIチップ協議——OpenAI-Broadcom から1週間後",
               "tldr": "AnthropicがSamsungと独自AIチップを協議中と報道。OpenAI-Broadcom発表の約1週間後であり、フロンティアAI企業のハードウェア独立戦略が相次いでいる。",
               "points": [
-                { "label": "協議相手", "value": "Samsung（半導体大手）", "tone": "primary" },
-                { "label": "タイミング", "value": "OpenAI-Broadcom発表から~1週間後", "tone": "info" },
-                { "label": "段階", "value": "協議中（製品化時期未定）", "tone": "warning" },
-                { "label": "目的", "value": "クラウドベンダー依存の低減", "tone": "success" }
+                {
+                  "label": "協議相手",
+                  "value": "Samsung（半導体大手）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "タイミング",
+                  "value": "OpenAI-Broadcom発表から~1週間後",
+                  "tone": "info"
+                },
+                {
+                  "label": "段階",
+                  "value": "協議中（製品化時期未定）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "目的",
+                  "value": "クラウドベンダー依存の低減",
+                  "tone": "success"
+                }
               ],
               "context": "OpenAI-Broadcom協業に続くフロンティアAI企業の半導体参入が加速しており、業界の構造変化を象徴する。",
               "impact": "GPU/TPU市場に競争圧力が増し、AIインフラの垂直統合が進むことで推論コスト構造が変化する可能性がある。"
-            }
+            },
+            "alt": "Anthropic-Samsung AIチップ協議の概要: 協議段階（製品化時期未定）、OpenAI-Broadcom発表の約1週間後、目的はクラウドベンダー依存の低減。フロンティアAI企業による半導体業界参入が相次ぐ流れの一環。"
           }
         },
         {
@@ -663,19 +820,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Cursor SpaceX買収の図解: 買収後もサードパーティAIモデル（OpenAI・Anthropic）を提供継続したいCursorの意向。マスク氏と他フロンティアAIラボの競合関係が障壁になる可能性。エディタ中立性問題が業界課題として浮上。",
             "data": {
               "headline": "Cursor→SpaceX買収：サードパーティAIモデル継続希望、ラボ間関係が試練",
               "tldr": "CursorがSpaceXに買収されたがOpenAI/Anthropicモデルへのアクセス継続を希望。マスク氏と他AIラボの競合関係がこれを難しくする可能性があり、ラボ間関係が試される。",
               "points": [
-                { "label": "買収先", "value": "SpaceX（マスク傘下）", "tone": "primary" },
-                { "label": "Cursor意向", "value": "サードパーティモデル継続提供", "tone": "success" },
-                { "label": "課題", "value": "マスク vs 他AIラボの競合関係", "tone": "warning" },
-                { "label": "市場影響", "value": "エディタ中立性問題が浮上", "tone": "info" }
+                {
+                  "label": "買収先",
+                  "value": "SpaceX（マスク傘下）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "Cursor意向",
+                  "value": "サードパーティモデル継続提供",
+                  "tone": "success"
+                },
+                {
+                  "label": "課題",
+                  "value": "マスク vs 他AIラボの競合関係",
+                  "tone": "warning"
+                },
+                {
+                  "label": "市場影響",
+                  "value": "エディタ中立性問題が浮上",
+                  "tone": "info"
+                }
               ],
               "context": "AIコーディングツール市場でのM&A加速。エディタが特定AIラボに縛られる時代が来るかもしれない。",
               "impact": "Cursor利用者はOpenAI/Anthropicモデルへのアクセスが将来制限される可能性を念頭に置く必要がある。"
-            }
+            },
+            "alt": "Cursor SpaceX買収の図解: 買収後もサードパーティAIモデル（OpenAI・Anthropic）を提供継続したいCursorの意向。マスク氏と他フロンティアAIラボの競合関係が障壁になる可能性。エディタ中立性問題が業界課題として浮上。"
           }
         }
       ]
@@ -713,19 +886,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Fable 5復活の概要: 公式書簡はTom Brown宛（Dario Amodei宛てではない）。条件はコントロールの一時的緩和のみ。Anthropicは原則・尊厳を守って交渉成功。コミュニティは「big win」と評価し、政府が理性的だとの前向き見解も共有。",
             "data": {
               "headline": "Fable 5復活：書簡はTom Brown宛・コントロール一部緩和を条件に交渉成功",
               "tldr": "Fable/Mythos 5が政府交渉後に復活。書簡はTom Brown宛。Anthropicはコントロール一時緩和を条件とし、原則・尊厳は守ったとされ、コミュニティは「big win」と評価。",
               "points": [
-                { "label": "書簡宛先", "value": "Tom Brown（Dario宛てではない）", "tone": "info" },
-                { "label": "交渉条件", "value": "コントロールの一時的緩和のみ", "tone": "warning" },
-                { "label": "評価", "value": "big win・原則は守られた", "tone": "success" },
-                { "label": "政府評価", "value": "理性的で協力可能", "tone": "success" }
+                {
+                  "label": "書簡宛先",
+                  "value": "Tom Brown（Dario宛てではない）",
+                  "tone": "info"
+                },
+                {
+                  "label": "交渉条件",
+                  "value": "コントロールの一時的緩和のみ",
+                  "tone": "warning"
+                },
+                {
+                  "label": "評価",
+                  "value": "big win・原則は守られた",
+                  "tone": "success"
+                },
+                {
+                  "label": "政府評価",
+                  "value": "理性的で協力可能",
+                  "tone": "success"
+                }
               ],
               "context": "AI能力制限を巡る政府との直接交渉の前例として、今後の AI ガバナンス論議で参照される可能性がある。",
               "impact": "AI企業が能力制限交渉で政府と協力できることを示した事例として、業界の規制対応モデルになり得る。"
-            }
+            },
+            "alt": "Fable 5復活の概要: 公式書簡はTom Brown宛（Dario Amodei宛てではない）。条件はコントロールの一時的緩和のみ。Anthropicは原則・尊厳を守って交渉成功。コミュニティは「big win」と評価し、政府が理性的だとの前向き見解も共有。"
           }
         }
       ]
@@ -763,19 +952,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Metaザッカーバーグ内部発言の図解: 内部ミーティングでAIエージェント進捗が期待より遅いと発言。業界の高期待値vs実際の開発速度のギャップを示す異例の公開。Metaは引き続き大型AI投資を継続。",
             "data": {
               "headline": "ザッカーバーグ内部発言：Meta AIエージェントは「期待より遅い」",
               "tldr": "Meta CEO が内部ミーティングでAIエージェント進捗が期待より遅いと発言。業界の高期待値と実際の開発速度のギャップに対する大手CEO自身による現実チェック。",
               "points": [
-                { "label": "発言者", "value": "M.ザッカーバーグ（Meta CEO）", "tone": "default" },
-                { "label": "発言内容", "value": "エージェント進捗が期待より遅い", "tone": "warning" },
-                { "label": "場所", "value": "Meta社内ミーティング（内部）", "tone": "info" },
-                { "label": "業界への意味", "value": "エージェント過剰期待への現実チェック", "tone": "warning" }
+                {
+                  "label": "発言者",
+                  "value": "M.ザッカーバーグ（Meta CEO）",
+                  "tone": "default"
+                },
+                {
+                  "label": "発言内容",
+                  "value": "エージェント進捗が期待より遅い",
+                  "tone": "warning"
+                },
+                {
+                  "label": "場所",
+                  "value": "Meta社内ミーティング（内部）",
+                  "tone": "info"
+                },
+                {
+                  "label": "業界への意味",
+                  "value": "エージェント過剰期待への現実チェック",
+                  "tone": "warning"
+                }
               ],
               "context": "業界全体でAIエージェントへの期待が急騰している中で、最大手の一つが内部で進捗遅れを認めた形。",
               "impact": "エージェント開発を急ぐ組織にとって、期待値を現実的に調整する根拠となる発言として引用が広まった。"
-            }
+            },
+            "alt": "Metaザッカーバーグ内部発言の図解: 内部ミーティングでAIエージェント進捗が期待より遅いと発言。業界の高期待値vs実際の開発速度のギャップを示す異例の公開。Metaは引き続き大型AI投資を継続。"
           }
         }
       ]
@@ -810,14 +1015,22 @@
             "source_type_bias": 0,
             "total": 19
           },
-          "reaction_signal": { "kind": "hatena", "users": 351 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 351
+          },
           "figure": {
             "type": "comparison",
-            "alt": "カクヤス基幹システム解読の比較: 従来の人手解読では450人月・設計書必須・現実的に困難。生成AI活用後は実質2カ月・設計書不要・完了実証済み。450人月→2カ月で約99%の工数削減を実現。",
             "data": {
               "headline": "カクヤス基幹解読：450人月→実質2カ月（設計書なしでも完了）",
-              "before": { "label": "従来手法（人手のみ）", "sublabel": "設計書必須・現実困難" },
-              "after": { "label": "生成AI活用", "sublabel": "AWS Summit Japan 2026発表" },
+              "before": {
+                "label": "従来手法（人手のみ）",
+                "sublabel": "設計書必須・現実困難"
+              },
+              "after": {
+                "label": "生成AI活用",
+                "sublabel": "AWS Summit Japan 2026発表"
+              },
               "metrics": [
                 {
                   "label": "所要工数",
@@ -849,7 +1062,8 @@
               ],
               "narrative": "創業100年のカクヤスが「開かずの基幹システム」解読にAIを持ち込み、工数を劇的に短縮した。",
               "impact": "設計書なし・人手困難なレガシーシステム解読がAIで現実的になることを実証。日本の基幹刷新案件に広く影響する。"
-            }
+            },
+            "alt": "カクヤス基幹システム解読の比較: 従来の人手解読では450人月・設計書必須・現実的に困難。生成AI活用後は実質2カ月・設計書不要・完了実証済み。450人月→2カ月で約99%の工数削減を実現。"
           },
           "x_post": "創業100年のカクヤスが生成AIで「開かずの基幹システム」を解読。通常450人月の作業を実質2カ月で完了。設計書なしでもAIがソースコードを読み解き業務ロジックを洗い出した。AWS Summit Japan 2026発表。\n\nhttps://itmedia.co.jp/news/articles/2607/03/news050.html"
         },
@@ -878,22 +1092,41 @@
             "source_type_bias": 0,
             "total": 15
           },
-          "reaction_signal": { "kind": "hatena", "users": 262 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 262
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "「理解してから働く時代」終焉の論考: AIが考える→AIがレビュー→AIが実装するサイクルでは人間の理解が不要になる。特に個人アプリ作成レベルではAIが全工程をカバー。けんすう氏がはてブ262件の論考として発表。",
             "data": {
               "headline": "「理解してから働く時代」の終わり——AI完結サイクルが到来",
               "tldr": "AIが考え・レビューし・実装する連鎖が成立すると人間の理解が不要になる場面が増える。特に個人用アプリ・ツール作成程度では既にAIが全工程をこなせる。",
               "points": [
-                { "label": "観察", "value": "理解せず進める仕事が増加", "tone": "primary" },
-                { "label": "AIサイクル", "value": "考える→レビュー→実装が全AI", "tone": "info" },
-                { "label": "適用範囲", "value": "個人アプリ・ツール作成から", "tone": "success" },
-                { "label": "反響", "value": "はてブ262件（強い共感）", "tone": "primary" }
+                {
+                  "label": "観察",
+                  "value": "理解せず進める仕事が増加",
+                  "tone": "primary"
+                },
+                {
+                  "label": "AIサイクル",
+                  "value": "考える→レビュー→実装が全AI",
+                  "tone": "info"
+                },
+                {
+                  "label": "適用範囲",
+                  "value": "個人アプリ・ツール作成から",
+                  "tone": "success"
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ262件（強い共感）",
+                  "tone": "primary"
+                }
               ],
               "context": "AIコーディングが進化し、人間の理解を介さない開発フローが日常化しつつある。",
               "impact": "「理解」というプロフェッショナリズムの前提が変わり始めており、AI普及が仕事の定義を書き換える議論の焦点となる。"
-            }
+            },
+            "alt": "「理解してから働く時代」終焉の論考: AIが考える→AIがレビュー→AIが実装するサイクルでは人間の理解が不要になる。特に個人アプリ作成レベルではAIが全工程をカバー。けんすう氏がはてブ262件の論考として発表。"
           }
         },
         {
@@ -921,22 +1154,41 @@
             "source_type_bias": 0,
             "total": 18
           },
-          "reaction_signal": { "kind": "hatena", "users": 123 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 123
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Code Fable 5体験談: ローカルLLM用シェル支援CLIを作成依頼。Fable 5は最初の解決策の前提そのものを疑い別アプローチを提案。コードより「前提を疑う仕事スタイル」が開発者の驚きとなりはてブ123件を獲得。",
             "data": {
               "headline": "Claude Code Fable 5：コード生成より「前提を疑う」仕事スタイルが衝撃",
               "tldr": "ローカルLLM用CLIの作成依頼でFable 5が最初の解決策の前提そのものを疑い別アプローチを提案。ツールより仕事の進め方が驚きとなり、AIエージェントの新たな側面が示された。",
               "points": [
-                { "label": "依頼内容", "value": "ローカルLLM用シェル支援CLI", "tone": "default" },
-                { "label": "驚き", "value": "解決策の前提そのものを疑った", "tone": "primary" },
-                { "label": "仕事スタイル", "value": "前提疑い→別アプローチ提案", "tone": "success" },
-                { "label": "反響", "value": "はてブ123件（実用的知見として高評価）", "tone": "primary" }
+                {
+                  "label": "依頼内容",
+                  "value": "ローカルLLM用シェル支援CLI",
+                  "tone": "default"
+                },
+                {
+                  "label": "驚き",
+                  "value": "解決策の前提そのものを疑った",
+                  "tone": "primary"
+                },
+                {
+                  "label": "仕事スタイル",
+                  "value": "前提疑い→別アプローチ提案",
+                  "tone": "success"
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ123件（実用的知見として高評価）",
+                  "tone": "primary"
+                }
               ],
               "context": "Fable 5が問題定義段階から疑問を投げかける姿勢は、AI補助の概念を「実装補助」から「問題設計への関与」へ拡張する。",
               "impact": "AIコーディングエージェントを実装ツールに留めず、問題定義・前提確認の段階から使うことで品質が向上する可能性がある。"
-            }
+            },
+            "alt": "Claude Code Fable 5体験談: ローカルLLM用シェル支援CLIを作成依頼。Fable 5は最初の解決策の前提そのものを疑い別アプローチを提案。コードより「前提を疑う仕事スタイル」が開発者の驚きとなりはてブ123件を獲得。"
           },
           "x_post": "Claude Code（Fable 5）にローカルLLM用CLIを作らせたら、コードより仕事の進め方に驚かされた。Fable 5 は最初に提示した解決策の前提そのものを疑い、別アプローチを提案。「前提を疑う」姿勢がAIエージェント活用の新視点を示した。\n\nhttps://zenn.dev/gys/articles/fable5-local-llm-ask-cli"
         },
@@ -965,14 +1217,22 @@
             "source_type_bias": 0,
             "total": 15
           },
-          "reaction_signal": { "kind": "hatena", "users": 42 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 42
+          },
           "figure": {
             "type": "comparison",
-            "alt": "ループエンジニアリングへの転換比較: 従来の「コードを書く」ではエンジニアが実装主体でAI関与は限定的。新しい「ループを書く」ではAIがコアを担い、エンジニアは内側・外側ループの設計者へとシフトする。",
             "data": {
               "headline": "ソフトウェア開発の転換：コードを書く→ループを書く",
-              "before": { "label": "コードを書く（従来）", "sublabel": "エンジニアが実装主体" },
-              "after": { "label": "ループを書く（新）", "sublabel": "内側・外側ループ設計" },
+              "before": {
+                "label": "コードを書く（従来）",
+                "sublabel": "エンジニアが実装主体"
+              },
+              "after": {
+                "label": "ループを書く（新）",
+                "sublabel": "内側・外側ループ設計"
+              },
               "metrics": [
                 {
                   "label": "AI関与度",
@@ -1004,7 +1264,8 @@
               ],
               "narrative": "AIコーディング時代に「コードを書く」から「ループを書く」への転換は、AIEWFでも議論されたように業界全体のパラダイムシフト。",
               "impact": "ループエンジニアリングを理解することで、AIエージェントを組み込んだ開発パイプラインの設計力が向上する。"
-            }
+            },
+            "alt": "ループエンジニアリングへの転換比較: 従来の「コードを書く」ではエンジニアが実装主体でAI関与は限定的。新しい「ループを書く」ではAIがコアを担い、エンジニアは内側・外側ループの設計者へとシフトする。"
           }
         },
         {
@@ -1035,19 +1296,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "LINEヤフー sim-useの概要: AIエージェントに目（視覚）と手（操作能力）を付与する開発ツール。開発・検証ループへの組み込みを支援。LINEアプリ開発SBU AIディベロッパーエクスペリエンスチームが開発・公開。",
             "data": {
               "headline": "sim-use：AIエージェントに目と手を持たせるLINEヤフー製開発ツール",
               "tldr": "LINEヤフーAIディベロッパーエクスペリエンスチームがsim-useを公開。エージェントに視覚（目）と操作能力（手）を付与し、開発・検証ループへの組み込みを実現する。",
               "points": [
-                { "label": "ツール名", "value": "sim-use", "tone": "primary" },
-                { "label": "付与能力", "value": "視覚（目）＋操作（手）", "tone": "success" },
-                { "label": "用途", "value": "開発・検証ループへの組み込み", "tone": "info" },
-                { "label": "開発元", "value": "LINEアプリ開発SBU / LINEヤフー", "tone": "default" }
+                {
+                  "label": "ツール名",
+                  "value": "sim-use",
+                  "tone": "primary"
+                },
+                {
+                  "label": "付与能力",
+                  "value": "視覚（目）＋操作（手）",
+                  "tone": "success"
+                },
+                {
+                  "label": "用途",
+                  "value": "開発・検証ループへの組み込み",
+                  "tone": "info"
+                },
+                {
+                  "label": "開発元",
+                  "value": "LINEアプリ開発SBU / LINEヤフー",
+                  "tone": "default"
+                }
               ],
               "context": "AIエージェントの視覚・操作能力付与はUI自動テストとシミュレーション精度を高める実用的なアプローチ。",
               "impact": "AIエージェントがUIを直接認識・操作できることで、Webアプリ・モバイルアプリの自動検証品質が向上する。"
-            }
+            },
+            "alt": "LINEヤフー sim-useの概要: AIエージェントに目（視覚）と手（操作能力）を付与する開発ツール。開発・検証ループへの組み込みを支援。LINEアプリ開発SBU AIディベロッパーエクスペリエンスチームが開発・公開。"
           }
         }
       ]
@@ -1085,19 +1362,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Fable 5復活24時間の中国語圏反応: ベンチマーク大幅低下・回答拒否・暴言動作が確認され批判急増。「単語数も危険問題か」というユーザーコメントが内容フィルタリング過剰作動を示唆。英語圏の「big win」評価と対照的。",
             "data": {
               "headline": "Fable 5復活24時間以内——中国語圏では批判急増・ベンチマーク急落",
               "tldr": "量子位がFable 5の24時間後を報告。ベンチマーク大幅低下・質問拒否・暴言動作が確認され、中国語圏でのユーザー評価が急落。英語圏の「big win」と対照的な反応。",
               "points": [
-                { "label": "批判開始", "value": "復活24時間以内に急増", "tone": "danger" },
-                { "label": "ベンチマーク", "value": "大幅に低下（跑分大降）", "tone": "danger" },
-                { "label": "動作問題", "value": "回答拒否・暴言動作を確認", "tone": "danger" },
-                { "label": "推定原因", "value": "内容フィルタリングの過剰作動", "tone": "warning" }
+                {
+                  "label": "批判開始",
+                  "value": "復活24時間以内に急増",
+                  "tone": "danger"
+                },
+                {
+                  "label": "ベンチマーク",
+                  "value": "大幅に低下（跑分大降）",
+                  "tone": "danger"
+                },
+                {
+                  "label": "動作問題",
+                  "value": "回答拒否・暴言動作を確認",
+                  "tone": "danger"
+                },
+                {
+                  "label": "推定原因",
+                  "value": "内容フィルタリングの過剰作動",
+                  "tone": "warning"
+                }
               ],
               "context": "Anthropicがコントロール一部緩和を条件に復活させたFable 5に対し、英語圏と中国語圏で評価が真逆に。",
               "impact": "「コントロール緩和」という復活条件がモデル品質に影響した可能性を示唆。緩和の影響が言語・地域により異なることが伺える。"
-            }
+            },
+            "alt": "Fable 5復活24時間の中国語圏反応: ベンチマーク大幅低下・回答拒否・暴言動作が確認され批判急増。「単語数も危険問題か」というユーザーコメントが内容フィルタリング過剰作動を示唆。英語圏の「big win」評価と対照的。"
           }
         },
         {
@@ -1128,19 +1421,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "AI超導体発見の概要: AIが28 GPU時間で人類未知の超導体4種を発見。「超導体発見100年の人類効率を超えた」と報告。材料科学へのAI応用が製薬・半導体設計と並ぶ重要分野として加速。",
             "data": {
               "headline": "AI超導体探索：28 GPU時間で4種の未知超導体——人類100年効率を超えたと報告",
               "tldr": "中国AI研究チームがAIを使い28 GPU時間で4種の未知超導体を発見。「超導体発見100年の人類効率を超えた」とされ、材料科学へのAI応用の加速を象徴する成果。",
               "points": [
-                { "label": "発見数", "value": "超導体4種（全て人類未知）", "tone": "success" },
-                { "label": "GPU時間", "value": "わずか28時間", "tone": "primary" },
-                { "label": "人類比較", "value": "100年の発見効率を超えたと報告", "tone": "success" },
-                { "label": "意義", "value": "材料科学AI応用の加速を象徴", "tone": "info" }
+                {
+                  "label": "発見数",
+                  "value": "超導体4種（全て人類未知）",
+                  "tone": "success"
+                },
+                {
+                  "label": "GPU時間",
+                  "value": "わずか28時間",
+                  "tone": "primary"
+                },
+                {
+                  "label": "人類比較",
+                  "value": "100年の発見効率を超えたと報告",
+                  "tone": "success"
+                },
+                {
+                  "label": "意義",
+                  "value": "材料科学AI応用の加速を象徴",
+                  "tone": "info"
+                }
               ],
               "context": "材料科学でのAI活用は製薬・半導体設計と並ぶ重要分野として位置付けられ、研究加速が期待されている。",
               "impact": "AI駆動の材料探索が低コスト・高効率で未知物質を発見できることを実証。製薬・半導体材料への応用加速が期待される。"
-            }
+            },
+            "alt": "AI超導体発見の概要: AIが28 GPU時間で人類未知の超導体4種を発見。「超導体発見100年の人類効率を超えた」と報告。材料科学へのAI応用が製薬・半導体設計と並ぶ重要分野として加速。"
           },
           "x_post": "AIが28 GPU時間で人類が完全に知らなかった超導体を4種発見。量子位によれば「超導体発見100年の人類効率を超えた」とされる。材料科学へのAI応用が製薬・半導体と並ぶ重要分野として急加速。\n\nhttps://qbitai.com/2026/07/442452.html"
         }
@@ -1148,16 +1457,49 @@
     }
   ],
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "hacker_news", "reason": "HN API failed: HTTP 400" },
-    { "source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_singularity", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_claudeai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_openai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "semantic_scholar", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "anthropic_blog", "reason": "WebFetch supplement: not attempted (collect.mjs covered via media sources)" },
-    { "source": "openai_blog", "reason": "WebSearch supplement: not attempted (Latent Space AINews coverage used)" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "hacker_news",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_claudeai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_openai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semantic_scholar",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "anthropic_blog",
+      "reason": "WebFetch supplement: not attempted (collect.mjs covered via media sources)"
+    },
+    {
+      "source": "openai_blog",
+      "reason": "WebSearch supplement: not attempted (Latent Space AINews coverage used)"
+    }
   ]
 }

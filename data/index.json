@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-07-02T05:00:00+09:00",
+  "updated_at": "2026-07-04T05:00:00+09:00",
   "entries": [
+    {
+      "date": "2026-07-04",
+      "headline": "Anthropic が科学者向け Claude Science を投入、Program-as-Weights が LLM API 不要の小型コンパイラを提案——カクヤスが生成 AI で 450 人月→2 カ月の基幹解読",
+      "item_count": 21,
+      "top_picks_count": 7
+    },
     {
       "date": "2026-07-02",
       "headline": "Claude Fable 5が3週間ぶりに全世界復活——輸出規制解除、Sonnet 5・Claude Scienceも同時投入、AI Engineer World's Fairで「ソフトウェアファクトリー」論が台頭",
