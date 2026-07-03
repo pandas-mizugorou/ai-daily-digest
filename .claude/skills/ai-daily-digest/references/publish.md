@@ -16,7 +16,7 @@ data/latest.json           # 当日の内容を複製
 data/index.json            # 直近 90 日のエントリ一覧を更新（top_picks_count も格納）
 data/archive/<year>.json   # 90 日超のロールオーバー先（必要時のみ）
 data/_seen.json            # 直近 90 日に push した URL ハッシュ + last_seen_count（リポジトリ管理）
-data/weekly-YYYY-WW.json   # 週次サマリ（金曜のみ生成、Phase D）
+data/weekly-YYYY-WW.json   # 週次サマリ（日曜のみ生成、Phase D）
 data/weekly-latest.json    # 週次最新（Phase D）
 data/weekly-index.json     # 週次過去一覧（Phase D）
 ```
@@ -30,7 +30,7 @@ data/weekly-index.json     # 週次過去一覧（Phase D）
 
 ```jsonc
 {
-  "version": "2.0",
+  "schema_version": "1.0",
   "updated_at": "2026-05-10T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
@@ -177,7 +177,7 @@ Content-Type: application/json
 - 段階化ペナルティ（last_seen_count=1 で -1、=2 で -2、=3+ で -3）が反映されているか scoring ステップでログ出力
 - リポジトリ管理に切り替わっているか（`.gitignore` から `data/_seen.json` を削除済か）確認
 
-## 週次サマリ（金曜のみ）の書き込みルール
+## 週次サマリ（日曜のみ）の書き込みルール
 
 `/ai-daily-digest` Phase D 以降。詳細は `references/weekly.md` 参照。
 
