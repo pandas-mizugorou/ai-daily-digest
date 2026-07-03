@@ -62,7 +62,7 @@
 | arXiv / HF Models / 日本企業ブログ / Stratechery / 学術 / 中華圏 | 168h (7d) | arXiv / HF Trending / PFN / ELYZA / Sakana AI / LINEヤフー / CyberAgent / Stockmark / メルカリ / Sansan / Stratechery / Papers with Code / Semantic Scholar / Latent Space / Import AI / The Batch / 36Kr / 量子位 / 機器之心 / ChinAI |
 | OpenReview / Sebastian Raschka | 336h (14d) | OpenReview / sebastianraschka.com |
 
-**既出ペナルティ（段階化）**: `data/_seen.json`（直近 90 日に push 済みの URL ハッシュ + `last_seen_count` + `first_seen_at`）を読み、`last_seen_count` に応じて段階的に `freshness` を減点:
+**既出ペナルティ（段階化）**: `data/_seen.json`（直近 90 日に push 済みの正規化 URL キー + `last_seen_count` + `first_seen_at`）を読み、`last_seen_count` に応じて段階的に `freshness` を減点:
 
 | `last_seen_count` | freshness 減点 |
 |---|---|
@@ -71,7 +71,7 @@
 | 3 以上 | -3 |
 | `first_seen_at` が 30 日以上前 | 追加で -3（古い記事の再注目を除外） |
 
-`data/_seen.json` の管理仕様は `references/publish.md` を参照（リポジトリ管理に移行、URL ハッシュ + プレフィックスのみで個人情報リスクなし）。
+`data/_seen.json` の管理仕様は `references/publish.md` を参照（リポジトリ管理に移行、正規化 URL キー + プレフィックスのみで個人情報リスクなし）。
 
 **日本企業テックブログの例外**: 日本企業のテックブログ（Preferred Networks / ELYZA / Sakana AI / LINEヤフー / CyberAgent AI Lab / Stockmark / メルカリ / Sansan）は投稿頻度が週〜月単位のため、**7 日以内なら freshness は最低 2 を保証**。優れた実装記事を週次更新の遅延で取りこぼさないため。
 
