@@ -284,26 +284,106 @@
     }
   ],
   "keyword_cloud": [
-    { "keyword": "agents", "count": 13, "delta_vs_prev_week": 2 },
-    { "keyword": "japan", "count": 17, "delta_vs_prev_week": -4 },
-    { "keyword": "loops", "count": 8, "delta_vs_prev_week": 8 },
-    { "keyword": "claude-code", "count": 9, "delta_vs_prev_week": 1 },
-    { "keyword": "security", "count": 7, "delta_vs_prev_week": 7 },
-    { "keyword": "anthropic", "count": 7, "delta_vs_prev_week": -2 },
-    { "keyword": "fable-5", "count": 6, "delta_vs_prev_week": 6 },
-    { "keyword": "llm", "count": 6, "delta_vs_prev_week": -1 },
-    { "keyword": "coding", "count": 6, "delta_vs_prev_week": 2 },
-    { "keyword": "aiewf", "count": 5, "delta_vs_prev_week": 5 },
-    { "keyword": "openai", "count": 5, "delta_vs_prev_week": 2 },
-    { "keyword": "china", "count": 5, "delta_vs_prev_week": -1 },
-    { "keyword": "benchmark", "count": 4, "delta_vs_prev_week": 0 },
-    { "keyword": "hardware", "count": 4, "delta_vs_prev_week": 4 },
-    { "keyword": "spacex", "count": 4, "delta_vs_prev_week": 1 },
-    { "keyword": "cursor", "count": 4, "delta_vs_prev_week": 4 },
-    { "keyword": "multi-agent", "count": 4, "delta_vs_prev_week": -1 },
-    { "keyword": "open-source", "count": 4, "delta_vs_prev_week": -1 },
-    { "keyword": "enterprise", "count": 4, "delta_vs_prev_week": 0 },
-    { "keyword": "safety", "count": 4, "delta_vs_prev_week": 4 }
+    {
+      "keyword": "agents",
+      "count": 13,
+      "delta_vs_prev_week": 2
+    },
+    {
+      "keyword": "japan",
+      "count": 17,
+      "delta_vs_prev_week": -4
+    },
+    {
+      "keyword": "loops",
+      "count": 8,
+      "delta_vs_prev_week": 8
+    },
+    {
+      "keyword": "claude-code",
+      "count": 9,
+      "delta_vs_prev_week": 1
+    },
+    {
+      "keyword": "security",
+      "count": 7,
+      "delta_vs_prev_week": 7
+    },
+    {
+      "keyword": "anthropic",
+      "count": 7,
+      "delta_vs_prev_week": -2
+    },
+    {
+      "keyword": "fable-5",
+      "count": 6,
+      "delta_vs_prev_week": 6
+    },
+    {
+      "keyword": "llm",
+      "count": 6,
+      "delta_vs_prev_week": -1
+    },
+    {
+      "keyword": "coding",
+      "count": 6,
+      "delta_vs_prev_week": 2
+    },
+    {
+      "keyword": "aiewf",
+      "count": 5,
+      "delta_vs_prev_week": 5
+    },
+    {
+      "keyword": "openai",
+      "count": 5,
+      "delta_vs_prev_week": 2
+    },
+    {
+      "keyword": "china",
+      "count": 5,
+      "delta_vs_prev_week": -1
+    },
+    {
+      "keyword": "benchmark",
+      "count": 4,
+      "delta_vs_prev_week": 0
+    },
+    {
+      "keyword": "hardware",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    },
+    {
+      "keyword": "spacex",
+      "count": 4,
+      "delta_vs_prev_week": 1
+    },
+    {
+      "keyword": "cursor",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    },
+    {
+      "keyword": "multi-agent",
+      "count": 4,
+      "delta_vs_prev_week": -1
+    },
+    {
+      "keyword": "open-source",
+      "count": 4,
+      "delta_vs_prev_week": -1
+    },
+    {
+      "keyword": "enterprise",
+      "count": 4,
+      "delta_vs_prev_week": 0
+    },
+    {
+      "keyword": "safety",
+      "count": 4,
+      "delta_vs_prev_week": 4
+    }
   ],
   "watchlist_next_week": [
     {
@@ -344,130 +424,755 @@
     }
   ],
   "week_items_index": [
-    { "id": "lesswrong-evaluating-offline-monitoring-of-internal-ai-age", "date": "2026-06-29", "category": "regulation_policy", "source": "lesswrong" },
-    { "id": "pfn-plamo-3-0-prime", "date": "2026-06-29", "category": "new_models", "source": "preferred_networks" },
-    { "id": "reddit_localllama-i-built-a-tool-to-turn-your-claude-code-sessions", "date": "2026-06-29", "category": "tools_apps", "source": "reddit" },
-    { "id": "arxiv-danceopd-on-policy-generative-field-distillation", "date": "2026-06-29", "category": "multimodal", "source": "arxiv" },
-    { "id": "reddit_localllama-i-had-55-llms-blind-grade-each-other-22k-judgmen", "date": "2026-06-29", "category": "research_papers", "source": "reddit" },
-    { "id": "arxiv-reinforcement-learning-without-ground-truth-solu", "date": "2026-06-29", "category": "research_papers", "source": "arxiv" },
-    { "id": "lesswrong-gpt-5-6-the-system-card", "date": "2026-06-29", "category": "research_papers", "source": "lesswrong" },
-    { "id": "latent_space-ainews-openai-reports-median-internal-codex-outp", "date": "2026-06-29", "category": "industry_business", "source": "latent_space" },
-    { "id": "latent_space-ainews-spacex-is-already-a-28b-yr-neocloud", "date": "2026-06-29", "category": "industry_business", "source": "latent_space" },
-    { "id": "theverge-prosecutors-used-chatgpt-logs-as-evidence-in-the", "date": "2026-06-29", "category": "community_buzz", "source": "theverge" },
-    { "id": "reddit_localllama-ornith-35b-is-great-so-far", "date": "2026-06-29", "category": "community_buzz", "source": "reddit" },
-    { "id": "hatena_it-zed-izanami", "date": "2026-06-29", "category": "japan", "source": "hatena" },
-    { "id": "hatena_it-llm-vram-whichllm-rtx-4060-ti-16gb-qiita", "date": "2026-06-29", "category": "japan", "source": "hatena" },
-    { "id": "hatena_it-opus-4-8-glm-5-2-vram4-5gb-ai-gemma4-12b-coder-a", "date": "2026-06-29", "category": "japan", "source": "hatena" },
-    { "id": "hatena-claude-code-codex-owasp-benchmark", "date": "2026-06-29", "category": "japan", "source": "hatena" },
-    { "id": "zenn_llm-claude-agent-sdk-anthropic", "date": "2026-06-29", "category": "japan", "source": "zenn" },
-    { "id": "qbitai-dspark-10", "date": "2026-06-29", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-ocr-deepseek", "date": "2026-06-29", "category": "china", "source": "qbitai" },
-    { "id": "theverge-lawmakers-want-to-ban-ai-companies-from-selling-", "date": "2026-06-30", "category": "regulation_policy", "source": "theverge" },
-    { "id": "hatena-anthropic-mythos-fable-5", "date": "2026-06-30", "category": "regulation_policy", "source": "hatena" },
-    { "id": "hatena-claude-opus-4-7-ai-ornith-1-0", "date": "2026-06-30", "category": "new_models", "source": "hatena" },
-    { "id": "theverge-china-s-z-ai-claims-it-can-match-mythos-on-cyber", "date": "2026-06-30", "category": "new_models", "source": "theverge" },
-    { "id": "techcrunch-cursor-now-has-a-mobile-app-for-guiding-your-cod", "date": "2026-06-30", "category": "tools_apps", "source": "techcrunch" },
-    { "id": "arxiv-agent-native-immune-system-architecture-taxonomy", "date": "2026-06-30", "category": "agents", "source": "arxiv" },
-    { "id": "hatena-ai-flue", "date": "2026-06-30", "category": "agents", "source": "hatena" },
-    { "id": "arxiv-hpro-hierarchical-progressive-reward-optimizatio", "date": "2026-06-30", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-vision-default-prior-override-causal-mechanisms-", "date": "2026-06-30", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-govern-the-repository-not-the-agent-measuring-ec", "date": "2026-06-30", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-agentic-hardware-design-as-repository-level-code", "date": "2026-06-30", "category": "research_papers", "source": "arxiv" },
-    { "id": "techcrunch-arena-the-ai-leaderboard-everyone-uses-is-now-a-", "date": "2026-06-30", "category": "industry_business", "source": "techcrunch" },
-    { "id": "techcrunch-tidal-cracks-down-on-ai-music-by-cutting-off-mon", "date": "2026-06-30", "category": "industry_business", "source": "techcrunch" },
-    { "id": "lesswrong-wsj-article-claiming-china-has-matched-anthropic", "date": "2026-06-30", "category": "community_buzz", "source": "lesswrong" },
-    { "id": "hatena_it-claude-3", "date": "2026-06-30", "category": "japan", "source": "hatena" },
-    { "id": "hatena_it-pdf-1-ocr-unlimited-ocr-ai-technoedge", "date": "2026-06-30", "category": "japan", "source": "hatena" },
-    { "id": "hatena_it-claude-design", "date": "2026-06-30", "category": "japan", "source": "hatena" },
-    { "id": "hatena-claude-code-ai-document-skills-pdf-excel-word-po", "date": "2026-06-30", "category": "japan", "source": "hatena" },
-    { "id": "hatena-github-hirokawaguchi-open-genai-ai-genai-llm-ope", "date": "2026-06-30", "category": "japan", "source": "hatena" },
-    { "id": "qbitai-claude-mythos", "date": "2026-06-30", "category": "china", "source": "qbitai" },
-    { "id": "qiita-2348bbcf0d61e4de0a67", "date": "2026-07-01", "category": "new_models", "source": "qiita" },
-    { "id": "reddit_localllama-introducing-longcat-2-0-a-large-scale-moe-langua", "date": "2026-07-01", "category": "new_models", "source": "reddit" },
-    { "id": "hatena-open-knowledge-format-google-cloud", "date": "2026-07-01", "category": "tools_apps", "source": "hatena" },
-    { "id": "qiita-123c16729211d16b0816", "date": "2026-07-01", "category": "tools_apps", "source": "qiita" },
-    { "id": "qiita-414c2e1836df4d8e278d", "date": "2026-07-01", "category": "tools_apps", "source": "qiita" },
-    { "id": "arxiv-scaling-the-horizon-not-the-parameters-reaching-", "date": "2026-07-01", "category": "agents", "source": "arxiv" },
-    { "id": "arxiv-mesa-prioritizing-vulnerable-communication-chann", "date": "2026-07-01", "category": "agents", "source": "arxiv" },
-    { "id": "arxiv-tracelab-characterizing-coding-agent-workloads-f", "date": "2026-07-01", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-swe-interact-reimagining-swe-benchmarks-as-user-", "date": "2026-07-01", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-pessimism-s-paradox-conservative-offline-traini", "date": "2026-07-01", "category": "research_papers", "source": "arxiv" },
-    { "id": "hatena-ai-claude", "date": "2026-07-01", "category": "industry_business", "source": "hatena" },
-    { "id": "hatena-ai-suno-spark-suno-suno", "date": "2026-07-01", "category": "regulation_policy", "source": "hatena" },
-    { "id": "reddit_localllama-i-hate-dario-amodei-and-everything-he-stands-for", "date": "2026-07-01", "category": "community_buzz", "source": "reddit" },
-    { "id": "reddit_localllama-been-running-qwen3-6-27b-through-a-3-critic-harn", "date": "2026-07-01", "category": "community_buzz", "source": "reddit" },
-    { "id": "hatena-ai", "date": "2026-07-01", "category": "japan", "source": "hatena" },
-    { "id": "hatena-web-llm-wiki-blog-jxck-io", "date": "2026-07-01", "category": "japan", "source": "hatena" },
-    { "id": "hatena-item", "date": "2026-07-01", "category": "japan", "source": "hatena" },
-    { "id": "hatena-claude-taste-of-tech-topics", "date": "2026-07-01", "category": "japan", "source": "hatena" },
-    { "id": "hatena-runn-api", "date": "2026-07-01", "category": "japan", "source": "hatena" },
-    { "id": "reddit_localllama-deepseek-v4-pr-merged-into-llama-cpp", "date": "2026-07-01", "category": "china", "source": "reddit" },
-    { "id": "reddit_localllama-huawei-open-sources-openpangu-2-0-flash-92b-tota", "date": "2026-07-01", "category": "china", "source": "reddit" },
-    { "id": "arstechnica_ai-after-spooking-trump-into-safety-testing-anthrop", "date": "2026-07-02", "category": "regulation_policy", "source": "arstechnica" },
-    { "id": "techcrunch-anthropic-launches-claude-sonnet-5-as-a-cheaper-", "date": "2026-07-02", "category": "new_models", "source": "techcrunch" },
-    { "id": "arstechnica_ai-google-s-new-nano-banana-2-lite-image-model-is-i", "date": "2026-07-02", "category": "new_models", "source": "arstechnica" },
-    { "id": "mit_tr_ai-claude-science-is-anthropic-s-newest-flagship-pr", "date": "2026-07-02", "category": "tools_apps", "source": "mit_tech_review" },
-    { "id": "techcrunch-gemini-spark-google-s-agentic-assistant-is-now-a-", "date": "2026-07-02", "category": "tools_apps", "source": "techcrunch" },
-    { "id": "latent_space-aiewf-daily-dispatch-loops-software-factories-fo", "date": "2026-07-02", "category": "agents", "source": "latent_space" },
-    { "id": "wired_ai-claude-helped-a-hacker-find-a-way-to-issue-ticke", "date": "2026-07-02", "category": "agents", "source": "wired" },
-    { "id": "arstechnica_ai-new-attack-provides-one-more-reason-why-ai-brows", "date": "2026-07-02", "category": "multimodal", "source": "arstechnica" },
-    { "id": "arxiv-qval-cheaply-evaluating-dense-supervision-signal", "date": "2026-07-02", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-reinforcement-learning-with-metacognitive-feedba", "date": "2026-07-02", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-generative-skill-composition-for-llm-agents", "date": "2026-07-02", "category": "research_papers", "source": "arxiv" },
-    { "id": "techcrunch-nvidia-competitor-etched-hits-5b-valuation-1b-in", "date": "2026-07-02", "category": "industry_business", "source": "techcrunch" },
-    { "id": "techcrunch-meta-like-spacex-looks-to-turn-excess-ai-compute", "date": "2026-07-02", "category": "industry_business", "source": "techcrunch" },
-    { "id": "techcrunch-venice-ai-becomes-a-unicorn-with-65m-series-a-as", "date": "2026-07-02", "category": "industry_business", "source": "techcrunch" },
-    { "id": "reddit_localllama-swe-rebench-leaderboard-update-glm-5-2-qwen3-6-2", "date": "2026-07-02", "category": "community_buzz", "source": "reddit" },
-    { "id": "mit_tr_ai-llms-are-stuck-in-a-groupthink-groove-this-start", "date": "2026-07-02", "category": "community_buzz", "source": "mit_tech_review" },
-    { "id": "hatena_it-claudecode-obsidian", "date": "2026-07-02", "category": "japan", "source": "hatena" },
-    { "id": "hatena-ai-30", "date": "2026-07-02", "category": "japan", "source": "hatena" },
-    { "id": "itmedia_ai-llm-sarashina3", "date": "2026-07-02", "category": "japan", "source": "itmedia" },
-    { "id": "qbitai-loop-hugging-face", "date": "2026-07-02", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-transformer-10", "date": "2026-07-02", "category": "china", "source": "qbitai" },
-    { "id": "latent-ainews-sonnet5-fable5", "date": "2026-07-04", "category": "new_models", "source": "latent_space" },
-    { "id": "latent-ainews-gpt56", "date": "2026-07-04", "category": "new_models", "source": "latent_space" },
-    { "id": "theverge-anthropic-claude-science", "date": "2026-07-04", "category": "tools_apps", "source": "theverge" },
-    { "id": "raschka-local-coding-agents", "date": "2026-07-04", "category": "tools_apps", "source": "sebastian_raschka" },
-    { "id": "latent-website-future-adobe", "date": "2026-07-04", "category": "tools_apps", "source": "latent_space" },
-    { "id": "latent-aiewf-loops-debate", "date": "2026-07-04", "category": "agents", "source": "latent_space" },
-    { "id": "latent-vercel-andrew-qu", "date": "2026-07-04", "category": "agents", "source": "latent_space" },
-    { "id": "arxiv-program-as-weights", "date": "2026-07-04", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-distributed-attacks", "date": "2026-07-04", "category": "research_papers", "source": "arxiv" },
-    { "id": "lesswrong-role-playing-models", "date": "2026-07-04", "category": "research_papers", "source": "lesswrong" },
-    { "id": "techcrunch-anthropic-samsung-chip", "date": "2026-07-04", "category": "industry_business", "source": "techcrunch" },
-    { "id": "wired-cursor-spacex", "date": "2026-07-04", "category": "industry_business", "source": "wired" },
-    { "id": "lesswrong-fable-return", "date": "2026-07-04", "category": "regulation_policy", "source": "lesswrong" },
-    { "id": "techcrunch-zuckerberg-ai-agents", "date": "2026-07-04", "category": "community_buzz", "source": "techcrunch" },
-    { "id": "hatena_it-450-2-100-ai", "date": "2026-07-04", "category": "japan", "source": "hatena" },
-    { "id": "hatena-kensuu-rikai-era", "date": "2026-07-04", "category": "japan", "source": "hatena" },
-    { "id": "hatena_it-claude-code-fable-5-llm-cli", "date": "2026-07-04", "category": "japan", "source": "hatena" },
-    { "id": "hatena-atmarkit-loop-engineering", "date": "2026-07-04", "category": "japan", "source": "hatena" },
-    { "id": "qbitai-fable-5-24", "date": "2026-07-04", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-ai-4-28-gpu", "date": "2026-07-04", "category": "china", "source": "qbitai" },
-    { "id": "mistral-leanstral-1-5", "date": "2026-07-05", "category": "new_models", "source": "mistral_blog" },
-    { "id": "reddit_localllama-google-tabfm-1-0-0", "date": "2026-07-05", "category": "new_models", "source": "reddit_localllama" },
-    { "id": "itmedia_ai-claude-fable-5-ai-2", "date": "2026-07-05", "category": "new_models", "source": "itmedia_ai" },
-    { "id": "xai-grok-voice-agent-builder", "date": "2026-07-05", "category": "tools_apps", "source": "xai_blog" },
-    { "id": "hatena-claude-pro-max-web-artifacts", "date": "2026-07-05", "category": "tools_apps", "source": "pc_watch" },
-    { "id": "hatena-cloudflare-ai-3", "date": "2026-07-05", "category": "tools_apps", "source": "itmedia" },
-    { "id": "latent_space-autoresearch-the-feedback-loop-behind-self-impro", "date": "2026-07-05", "category": "agents", "source": "latent_space" },
-    { "id": "lycorp-sim-use", "date": "2026-07-05", "category": "agents", "source": "lycorp" },
-    { "id": "arxiv-visually-grounded-self-reflection-for-vision-lan", "date": "2026-07-05", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-orbitquant-data-agnostic-quantization-for-image-", "date": "2026-07-05", "category": "multimodal", "source": "arxiv" },
-    { "id": "arxiv-lacuna-a-testbed-for-evaluating-localization-pre", "date": "2026-07-05", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-online-safety-monitoring-for-llms", "date": "2026-07-05", "category": "research_papers", "source": "arxiv" },
-    { "id": "arxiv-what-llm-agents-say-when-no-one-is-watching-soci", "date": "2026-07-05", "category": "research_papers", "source": "arxiv" },
-    { "id": "wired_ai-can-cursor-remain-a-platform-for-openai-and-anth", "date": "2026-07-05", "category": "industry_business", "source": "wired" },
-    { "id": "hatena-anthropic-samsung-ai-nvidia", "date": "2026-07-05", "category": "industry_business", "source": "hatena" },
-    { "id": "itmedia-trump-ai-regulation", "date": "2026-07-05", "category": "regulation_policy", "source": "itmedia_ai" },
-    { "id": "theverge-the-fanfiction-community", "date": "2026-07-05", "category": "community_buzz", "source": "theverge" },
-    { "id": "hatena-agent-ransomware", "date": "2026-07-05", "category": "community_buzz", "source": "hatena" },
-    { "id": "hatena_it-ai-upstream", "date": "2026-07-05", "category": "japan", "source": "hatena_it" },
-    { "id": "hatena-ai-8-3-3", "date": "2026-07-05", "category": "japan", "source": "hatena" },
-    { "id": "hatena-claude-fable-5-anthropic-x-7-8", "date": "2026-07-05", "category": "japan", "source": "hatena" },
-    { "id": "zenn_llm-ai-incident", "date": "2026-07-05", "category": "japan", "source": "zenn" },
-    { "id": "hatena-claude-30-machikojo", "date": "2026-07-05", "category": "japan", "source": "hatena" },
-    { "id": "qbitai-fable-5-china-backlash", "date": "2026-07-05", "category": "china", "source": "qbitai" },
-    { "id": "qbitai-physical-ai-life-science", "date": "2026-07-05", "category": "china", "source": "qbitai" }
+    {
+      "id": "lesswrong-evaluating-offline-monitoring-of-internal-ai-age",
+      "date": "2026-06-29",
+      "category": "regulation_policy",
+      "source": "lesswrong"
+    },
+    {
+      "id": "pfn-plamo-3-0-prime",
+      "date": "2026-06-29",
+      "category": "new_models",
+      "source": "preferred_networks"
+    },
+    {
+      "id": "reddit_localllama-i-built-a-tool-to-turn-your-claude-code-sessions",
+      "date": "2026-06-29",
+      "category": "tools_apps",
+      "source": "reddit"
+    },
+    {
+      "id": "arxiv-danceopd-on-policy-generative-field-distillation",
+      "date": "2026-06-29",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "reddit_localllama-i-had-55-llms-blind-grade-each-other-22k-judgmen",
+      "date": "2026-06-29",
+      "category": "research_papers",
+      "source": "reddit"
+    },
+    {
+      "id": "arxiv-reinforcement-learning-without-ground-truth-solu",
+      "date": "2026-06-29",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "lesswrong-gpt-5-6-the-system-card",
+      "date": "2026-06-29",
+      "category": "research_papers",
+      "source": "lesswrong"
+    },
+    {
+      "id": "latent_space-ainews-openai-reports-median-internal-codex-outp",
+      "date": "2026-06-29",
+      "category": "industry_business",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent_space-ainews-spacex-is-already-a-28b-yr-neocloud",
+      "date": "2026-06-29",
+      "category": "industry_business",
+      "source": "latent_space"
+    },
+    {
+      "id": "theverge-prosecutors-used-chatgpt-logs-as-evidence-in-the",
+      "date": "2026-06-29",
+      "category": "community_buzz",
+      "source": "theverge"
+    },
+    {
+      "id": "reddit_localllama-ornith-35b-is-great-so-far",
+      "date": "2026-06-29",
+      "category": "community_buzz",
+      "source": "reddit"
+    },
+    {
+      "id": "hatena_it-zed-izanami",
+      "date": "2026-06-29",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-llm-vram-whichllm-rtx-4060-ti-16gb-qiita",
+      "date": "2026-06-29",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-opus-4-8-glm-5-2-vram4-5gb-ai-gemma4-12b-coder-a",
+      "date": "2026-06-29",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-claude-code-codex-owasp-benchmark",
+      "date": "2026-06-29",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "zenn_llm-claude-agent-sdk-anthropic",
+      "date": "2026-06-29",
+      "category": "japan",
+      "source": "zenn"
+    },
+    {
+      "id": "qbitai-dspark-10",
+      "date": "2026-06-29",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-ocr-deepseek",
+      "date": "2026-06-29",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "theverge-lawmakers-want-to-ban-ai-companies-from-selling-",
+      "date": "2026-06-30",
+      "category": "regulation_policy",
+      "source": "theverge"
+    },
+    {
+      "id": "hatena-anthropic-mythos-fable-5",
+      "date": "2026-06-30",
+      "category": "regulation_policy",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-claude-opus-4-7-ai-ornith-1-0",
+      "date": "2026-06-30",
+      "category": "new_models",
+      "source": "hatena"
+    },
+    {
+      "id": "theverge-china-s-z-ai-claims-it-can-match-mythos-on-cyber",
+      "date": "2026-06-30",
+      "category": "new_models",
+      "source": "theverge"
+    },
+    {
+      "id": "techcrunch-cursor-now-has-a-mobile-app-for-guiding-your-cod",
+      "date": "2026-06-30",
+      "category": "tools_apps",
+      "source": "techcrunch"
+    },
+    {
+      "id": "arxiv-agent-native-immune-system-architecture-taxonomy",
+      "date": "2026-06-30",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "hatena-ai-flue",
+      "date": "2026-06-30",
+      "category": "agents",
+      "source": "hatena"
+    },
+    {
+      "id": "arxiv-hpro-hierarchical-progressive-reward-optimizatio",
+      "date": "2026-06-30",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-vision-default-prior-override-causal-mechanisms-",
+      "date": "2026-06-30",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-govern-the-repository-not-the-agent-measuring-ec",
+      "date": "2026-06-30",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-agentic-hardware-design-as-repository-level-code",
+      "date": "2026-06-30",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "techcrunch-arena-the-ai-leaderboard-everyone-uses-is-now-a-",
+      "date": "2026-06-30",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-tidal-cracks-down-on-ai-music-by-cutting-off-mon",
+      "date": "2026-06-30",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "lesswrong-wsj-article-claiming-china-has-matched-anthropic",
+      "date": "2026-06-30",
+      "category": "community_buzz",
+      "source": "lesswrong"
+    },
+    {
+      "id": "hatena_it-claude-3",
+      "date": "2026-06-30",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-pdf-1-ocr-unlimited-ocr-ai-technoedge",
+      "date": "2026-06-30",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-claude-design",
+      "date": "2026-06-30",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-claude-code-ai-document-skills-pdf-excel-word-po",
+      "date": "2026-06-30",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-github-hirokawaguchi-open-genai-ai-genai-llm-ope",
+      "date": "2026-06-30",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "qbitai-claude-mythos",
+      "date": "2026-06-30",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qiita-2348bbcf0d61e4de0a67",
+      "date": "2026-07-01",
+      "category": "new_models",
+      "source": "qiita"
+    },
+    {
+      "id": "reddit_localllama-introducing-longcat-2-0-a-large-scale-moe-langua",
+      "date": "2026-07-01",
+      "category": "new_models",
+      "source": "reddit"
+    },
+    {
+      "id": "hatena-open-knowledge-format-google-cloud",
+      "date": "2026-07-01",
+      "category": "tools_apps",
+      "source": "hatena"
+    },
+    {
+      "id": "qiita-123c16729211d16b0816",
+      "date": "2026-07-01",
+      "category": "tools_apps",
+      "source": "qiita"
+    },
+    {
+      "id": "qiita-414c2e1836df4d8e278d",
+      "date": "2026-07-01",
+      "category": "tools_apps",
+      "source": "qiita"
+    },
+    {
+      "id": "arxiv-scaling-the-horizon-not-the-parameters-reaching-",
+      "date": "2026-07-01",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-mesa-prioritizing-vulnerable-communication-chann",
+      "date": "2026-07-01",
+      "category": "agents",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-tracelab-characterizing-coding-agent-workloads-f",
+      "date": "2026-07-01",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-swe-interact-reimagining-swe-benchmarks-as-user-",
+      "date": "2026-07-01",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-pessimism-s-paradox-conservative-offline-traini",
+      "date": "2026-07-01",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "hatena-ai-claude",
+      "date": "2026-07-01",
+      "category": "industry_business",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-ai-suno-spark-suno-suno",
+      "date": "2026-07-01",
+      "category": "regulation_policy",
+      "source": "hatena"
+    },
+    {
+      "id": "reddit_localllama-i-hate-dario-amodei-and-everything-he-stands-for",
+      "date": "2026-07-01",
+      "category": "community_buzz",
+      "source": "reddit"
+    },
+    {
+      "id": "reddit_localllama-been-running-qwen3-6-27b-through-a-3-critic-harn",
+      "date": "2026-07-01",
+      "category": "community_buzz",
+      "source": "reddit"
+    },
+    {
+      "id": "hatena-ai",
+      "date": "2026-07-01",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-web-llm-wiki-blog-jxck-io",
+      "date": "2026-07-01",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-item",
+      "date": "2026-07-01",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-claude-taste-of-tech-topics",
+      "date": "2026-07-01",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-runn-api",
+      "date": "2026-07-01",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "reddit_localllama-deepseek-v4-pr-merged-into-llama-cpp",
+      "date": "2026-07-01",
+      "category": "china",
+      "source": "reddit"
+    },
+    {
+      "id": "reddit_localllama-huawei-open-sources-openpangu-2-0-flash-92b-tota",
+      "date": "2026-07-01",
+      "category": "china",
+      "source": "reddit"
+    },
+    {
+      "id": "arstechnica_ai-after-spooking-trump-into-safety-testing-anthrop",
+      "date": "2026-07-02",
+      "category": "regulation_policy",
+      "source": "arstechnica"
+    },
+    {
+      "id": "techcrunch-anthropic-launches-claude-sonnet-5-as-a-cheaper-",
+      "date": "2026-07-02",
+      "category": "new_models",
+      "source": "techcrunch"
+    },
+    {
+      "id": "arstechnica_ai-google-s-new-nano-banana-2-lite-image-model-is-i",
+      "date": "2026-07-02",
+      "category": "new_models",
+      "source": "arstechnica"
+    },
+    {
+      "id": "mit_tr_ai-claude-science-is-anthropic-s-newest-flagship-pr",
+      "date": "2026-07-02",
+      "category": "tools_apps",
+      "source": "mit_tech_review"
+    },
+    {
+      "id": "techcrunch-gemini-spark-google-s-agentic-assistant-is-now-a-",
+      "date": "2026-07-02",
+      "category": "tools_apps",
+      "source": "techcrunch"
+    },
+    {
+      "id": "latent_space-aiewf-daily-dispatch-loops-software-factories-fo",
+      "date": "2026-07-02",
+      "category": "agents",
+      "source": "latent_space"
+    },
+    {
+      "id": "wired_ai-claude-helped-a-hacker-find-a-way-to-issue-ticke",
+      "date": "2026-07-02",
+      "category": "agents",
+      "source": "wired"
+    },
+    {
+      "id": "arstechnica_ai-new-attack-provides-one-more-reason-why-ai-brows",
+      "date": "2026-07-02",
+      "category": "multimodal",
+      "source": "arstechnica"
+    },
+    {
+      "id": "arxiv-qval-cheaply-evaluating-dense-supervision-signal",
+      "date": "2026-07-02",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-reinforcement-learning-with-metacognitive-feedba",
+      "date": "2026-07-02",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-generative-skill-composition-for-llm-agents",
+      "date": "2026-07-02",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "techcrunch-nvidia-competitor-etched-hits-5b-valuation-1b-in",
+      "date": "2026-07-02",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-meta-like-spacex-looks-to-turn-excess-ai-compute",
+      "date": "2026-07-02",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "techcrunch-venice-ai-becomes-a-unicorn-with-65m-series-a-as",
+      "date": "2026-07-02",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "reddit_localllama-swe-rebench-leaderboard-update-glm-5-2-qwen3-6-2",
+      "date": "2026-07-02",
+      "category": "community_buzz",
+      "source": "reddit"
+    },
+    {
+      "id": "mit_tr_ai-llms-are-stuck-in-a-groupthink-groove-this-start",
+      "date": "2026-07-02",
+      "category": "community_buzz",
+      "source": "mit_tech_review"
+    },
+    {
+      "id": "hatena_it-claudecode-obsidian",
+      "date": "2026-07-02",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-ai-30",
+      "date": "2026-07-02",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "itmedia_ai-llm-sarashina3",
+      "date": "2026-07-02",
+      "category": "japan",
+      "source": "itmedia"
+    },
+    {
+      "id": "qbitai-loop-hugging-face",
+      "date": "2026-07-02",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-transformer-10",
+      "date": "2026-07-02",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "latent-ainews-sonnet5-fable5",
+      "date": "2026-07-04",
+      "category": "new_models",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent-ainews-gpt56",
+      "date": "2026-07-04",
+      "category": "new_models",
+      "source": "latent_space"
+    },
+    {
+      "id": "theverge-anthropic-claude-science",
+      "date": "2026-07-04",
+      "category": "tools_apps",
+      "source": "theverge"
+    },
+    {
+      "id": "raschka-local-coding-agents",
+      "date": "2026-07-04",
+      "category": "tools_apps",
+      "source": "sebastian_raschka"
+    },
+    {
+      "id": "latent-website-future-adobe",
+      "date": "2026-07-04",
+      "category": "tools_apps",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent-aiewf-loops-debate",
+      "date": "2026-07-04",
+      "category": "agents",
+      "source": "latent_space"
+    },
+    {
+      "id": "latent-vercel-andrew-qu",
+      "date": "2026-07-04",
+      "category": "agents",
+      "source": "latent_space"
+    },
+    {
+      "id": "arxiv-program-as-weights",
+      "date": "2026-07-04",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-distributed-attacks",
+      "date": "2026-07-04",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "lesswrong-role-playing-models",
+      "date": "2026-07-04",
+      "category": "research_papers",
+      "source": "lesswrong"
+    },
+    {
+      "id": "techcrunch-anthropic-samsung-chip",
+      "date": "2026-07-04",
+      "category": "industry_business",
+      "source": "techcrunch"
+    },
+    {
+      "id": "wired-cursor-spacex",
+      "date": "2026-07-04",
+      "category": "industry_business",
+      "source": "wired"
+    },
+    {
+      "id": "lesswrong-fable-return",
+      "date": "2026-07-04",
+      "category": "regulation_policy",
+      "source": "lesswrong"
+    },
+    {
+      "id": "techcrunch-zuckerberg-ai-agents",
+      "date": "2026-07-04",
+      "category": "community_buzz",
+      "source": "techcrunch"
+    },
+    {
+      "id": "hatena_it-450-2-100-ai",
+      "date": "2026-07-04",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-kensuu-rikai-era",
+      "date": "2026-07-04",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-claude-code-fable-5-llm-cli",
+      "date": "2026-07-04",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-atmarkit-loop-engineering",
+      "date": "2026-07-04",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "qbitai-fable-5-24",
+      "date": "2026-07-04",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-ai-4-28-gpu",
+      "date": "2026-07-04",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "mistral-leanstral-1-5",
+      "date": "2026-07-05",
+      "category": "new_models",
+      "source": "mistral_blog"
+    },
+    {
+      "id": "reddit_localllama-google-tabfm-1-0-0",
+      "date": "2026-07-05",
+      "category": "new_models",
+      "source": "reddit_localllama"
+    },
+    {
+      "id": "itmedia_ai-claude-fable-5-ai-2",
+      "date": "2026-07-05",
+      "category": "new_models",
+      "source": "itmedia_ai"
+    },
+    {
+      "id": "xai-grok-voice-agent-builder",
+      "date": "2026-07-05",
+      "category": "tools_apps",
+      "source": "xai_blog"
+    },
+    {
+      "id": "hatena-claude-pro-max-web-artifacts",
+      "date": "2026-07-05",
+      "category": "tools_apps",
+      "source": "pc_watch"
+    },
+    {
+      "id": "hatena-cloudflare-ai-3",
+      "date": "2026-07-05",
+      "category": "tools_apps",
+      "source": "itmedia"
+    },
+    {
+      "id": "latent_space-autoresearch-the-feedback-loop-behind-self-impro",
+      "date": "2026-07-05",
+      "category": "agents",
+      "source": "latent_space"
+    },
+    {
+      "id": "lycorp-sim-use",
+      "date": "2026-07-05",
+      "category": "agents",
+      "source": "lycorp"
+    },
+    {
+      "id": "arxiv-visually-grounded-self-reflection-for-vision-lan",
+      "date": "2026-07-05",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-orbitquant-data-agnostic-quantization-for-image-",
+      "date": "2026-07-05",
+      "category": "multimodal",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-lacuna-a-testbed-for-evaluating-localization-pre",
+      "date": "2026-07-05",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-online-safety-monitoring-for-llms",
+      "date": "2026-07-05",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "arxiv-what-llm-agents-say-when-no-one-is-watching-soci",
+      "date": "2026-07-05",
+      "category": "research_papers",
+      "source": "arxiv"
+    },
+    {
+      "id": "wired_ai-can-cursor-remain-a-platform-for-openai-and-anth",
+      "date": "2026-07-05",
+      "category": "industry_business",
+      "source": "wired"
+    },
+    {
+      "id": "hatena-anthropic-samsung-ai-nvidia",
+      "date": "2026-07-05",
+      "category": "industry_business",
+      "source": "hatena"
+    },
+    {
+      "id": "itmedia-trump-ai-regulation",
+      "date": "2026-07-05",
+      "category": "regulation_policy",
+      "source": "itmedia_ai"
+    },
+    {
+      "id": "theverge-the-fanfiction-community",
+      "date": "2026-07-05",
+      "category": "community_buzz",
+      "source": "theverge"
+    },
+    {
+      "id": "hatena-agent-ransomware",
+      "date": "2026-07-05",
+      "category": "community_buzz",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena_it-ai-upstream",
+      "date": "2026-07-05",
+      "category": "japan",
+      "source": "hatena_it"
+    },
+    {
+      "id": "hatena-ai-8-3-3",
+      "date": "2026-07-05",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "hatena-claude-fable-5-anthropic-x-7-8",
+      "date": "2026-07-05",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "zenn_llm-ai-incident",
+      "date": "2026-07-05",
+      "category": "japan",
+      "source": "zenn"
+    },
+    {
+      "id": "hatena-claude-30-machikojo",
+      "date": "2026-07-05",
+      "category": "japan",
+      "source": "hatena"
+    },
+    {
+      "id": "qbitai-fable-5-china-backlash",
+      "date": "2026-07-05",
+      "category": "china",
+      "source": "qbitai"
+    },
+    {
+      "id": "qbitai-physical-ai-life-science",
+      "date": "2026-07-05",
+      "category": "china",
+      "source": "qbitai"
+    }
   ]
 }
