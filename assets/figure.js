@@ -64,11 +64,14 @@ function renderSummaryCard(d) {
         : `<span class="fig-point-icon fig-point-icon-empty" aria-hidden="true"></span>`;
       const note = p.note ? `<span class="fig-point-note">${escapeHtml(p.note)}</span>` : "";
       const description = p.description ? `<p class="fig-point-description">${escapeHtml(p.description)}</p>` : "";
+      // ラベルは在るときだけ出す（プレーン文字列 point は label 無しで value に本文が載る。
+      // 空 span を出すと flex gap で value 手前に余白が生じるため空なら描かない）。
+      const label = p.label ? `<span class="fig-point-label">${escapeHtml(p.label)}</span>` : "";
       li.innerHTML = `
         ${icon}
         <div class="fig-point-body">
           <div class="fig-point-headline">
-            <span class="fig-point-label">${escapeHtml(p.label ?? "")}</span>
+            ${label}
             <span class="fig-point-value">${escapeHtml(p.value ?? "")}</span>
           </div>
           ${note}

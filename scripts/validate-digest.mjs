@@ -88,8 +88,15 @@ function validateFigure(fig) {
     if (p.length < 2) E(`points が ${p.length} 件 (2-6 必須)`);
     else if (p.length > 6) W(`points が ${p.length} 件 (6 件超)`);
     p.forEach((x, i) => {
-      if (!isStr(x.label)) E(`points[${i}].label 欠落`);
-      if (!isStr(x.value) && !isStr(x.description)) E(`points[${i}] が空 (value/description どちらも無い)`);
+      const renderable = isStr(x.value) || isStr(x.description);
+      // value/description が無い point は本当に空＝描画破綻 (error)。
+      if (!renderable) E(`points[${i}] が空 (value/description どちらも無い)`);
+      // value はあるが label が無い場合は描画はできる (value に本文が載る)。
+      // 理想は「観点(label)＋値(value)」の二段組なので品質 warning に留める (error にしない)。
+      if (!isStr(x.label)) {
+        if (renderable) W(`points[${i}].label 欠落 (value のみで描画は可・二段組にならず締まりが弱い)`);
+        else E(`points[${i}].label 欠落`);
+      }
     });
     if (!isStr(d.context)) W("summary-card の context 欠落");
   }

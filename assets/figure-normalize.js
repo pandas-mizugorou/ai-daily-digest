@@ -29,9 +29,18 @@ export function toneFromDelta(delta) {
   return "default"; // 「-67%」など"良い減少"もあるため負号だけで danger にはしない
 }
 
+// metrics が「そのまま描ける」形か (全 metric が数値バー幅 before_pct/after_pct を 0-100 で持つ)。
+// 1 つでも欠けると renderer が 50/50 フォールバックになるため、未正準として作り直す。
+function comparisonMetricsRenderable(metrics) {
+  const inRange = (v) => typeof v === "number" && isFinite(v) && v >= 0 && v <= 100;
+  return Array.isArray(metrics) && metrics.length > 0 && metrics.every((m) => m && inRange(m.before_pct) && inRange(m.after_pct));
+}
+
 function normalizeComparison(f) {
   const d = f.data;
-  if (d && (d.before || d.after || (Array.isArray(d.metrics) && d.metrics.some((m) => m && (m.before != null || m.before_pct != null))))) return d;
+  // 早期リターンは「before/after ラベル」だけでなく「metrics まで描画可能」なときのみ。
+  // (ラベルはあるが _pct 欠落 → renderer 50/50 になるケースを作り直して明示的に幅を入れる。)
+  if (d && (d.before || d.after) && comparisonMetricsRenderable(d.metrics)) return d;
   const rawMetrics = Array.isArray(f.metrics) ? f.metrics : (d && d.metrics) || [];
   const metrics = rawMetrics.map((m) => {
     const before = m.before ?? m.left;
@@ -113,9 +122,30 @@ function normalizeMetricBars(f) {
   };
 }
 
+// 最初の非空白文字列を返す (?? は "" を素通しするため、空文字プレースホルダを
+// 次の候補へフォールバックさせたいときに使う)。
+function firstNonBlank(...vals) {
+  for (const v of vals) {
+    if (typeof v === "string" && v.trim() !== "") return v;
+    if (typeof v === "number" && isFinite(v)) return String(v);
+  }
+  return "";
+}
+
+// timeline イベントが正準か (レンダラがそのまま描ける形か)。
+// when が非空文字列 かつ status が既定 3 値 のときのみ正準とみなす。
+function timelineEventsCanonical(events) {
+  const ok = new Set(["past", "now", "upcoming"]);
+  return Array.isArray(events) && events.length > 0 && events.every(
+    (e) => e && typeof e.when === "string" && e.when.trim() !== "" && ok.has(e.status),
+  );
+}
+
 function normalizeTimeline(f, refNow) {
   const d = f.data;
-  if (d && Array.isArray(d.events) && d.events.some((e) => e && e.when != null)) return d;
+  // 早期リターンは「全イベントが正準 (非空 when + 正しい status)」のときだけ。
+  // 一部でも when:"" のプレースホルダ (time が別キーの手順型など) を含むなら作り直す。
+  if (d && timelineEventsCanonical(d.events)) return d;
   const raw = Array.isArray(f.events) ? f.events : (d && d.events) || [];
   const now = refNow != null ? refNow : Date.now();
   const parsed = raw.map((e) => {
@@ -137,7 +167,10 @@ function normalizeTimeline(f, refNow) {
       else status = "past";
     }
     return {
-      when: e.when ?? e.date ?? "",
+      // 生成側が when/date/time いずれのキーで時点を返しても拾う
+      // (time は "Step 1" のような手順ラベル型タイムラインで使われる)。
+      // 空文字プレースホルダは次候補へフォールバック (?? では素通ししてしまうため)。
+      when: firstNonBlank(e.when, e.date, e.time),
       label: e.label ?? "",
       description: e.description ?? e.value ?? "",
       status,
@@ -152,11 +185,17 @@ function normalizeTimeline(f, refNow) {
   };
 }
 
-function normalizeSummaryCard(f) {
-  const d = f.data;
-  if (d && (d.tldr != null || (Array.isArray(d.points) && d.points.some((p) => p && "value" in p)))) return d;
-  const rawPts = Array.isArray(f.points) ? f.points : (d && d.points) || [];
-  const points = rawPts.map((p) => ({
+// summary-card の 1 point を正準オブジェクト {label,value,...} に寄せる。
+// 受け付ける入力: (a) 文字列 (生成が箇条書き文字列だけ返した場合) →
+//   その文字列を value に載せる、(b) {label, description} だけのフラット obj →
+//   description を value に、(c) 既に正準な {label, value, ...} obj → そのまま整形。
+// レンダラ (figure.js) は p.label / p.value を参照するため、これらが欠けると
+// 「空の箇条書き」になって図が壊れる。ここで必ず value を確保する。
+function normalizePoint(p) {
+  if (typeof p === "string") return { label: "", value: p.trim(), tone: undefined };
+  // 数値・真偽値などプリミティブは文字列化して value に載せる (取りこぼし防止)。
+  if (p == null || typeof p !== "object") return { label: "", value: p == null ? "" : String(p) };
+  return {
     icon: p.icon,
     label: p.label ?? "",
     // フラット schema の point は {label, description} で description が実質「値」。value 欄に出す。
@@ -164,7 +203,24 @@ function normalizeSummaryCard(f) {
     note: p.note,
     description: p.value != null ? p.description : "",
     tone: p.tone,
-  }));
+  };
+}
+
+// point が既に正準か (レンダラがそのまま描ける形か) を判定。
+// 「文字列 point が 1 つでもある」または「value も description も持たない obj がある」なら未正準。
+function pointsAreCanonical(points) {
+  return Array.isArray(points) && points.length > 0 && points.every(
+    (p) => p && typeof p === "object" && (typeof p.value === "string" || typeof p.description === "string"),
+  );
+}
+
+function normalizeSummaryCard(f) {
+  const d = f.data;
+  // 早期リターンは「points まで正準」な場合のみ。tldr の有無で判定してはいけない
+  // (tldr があっても points が文字列配列のことがあり、その場合レンダラで空箇条書きになる)。
+  if (d && d.tldr != null && pointsAreCanonical(d.points)) return d;
+  const rawPts = Array.isArray(f.points) ? f.points : (d && d.points) || [];
+  const points = rawPts.map(normalizePoint);
   return {
     headline: (d && d.headline) ?? f.headline ?? f.title ?? "",
     tldr: (d && d.tldr) ?? f.tldr ?? "",

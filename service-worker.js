@@ -4,7 +4,10 @@
 // v30: ビジュアル上質化 Batch2 — 発行元favicon / source_typeチップ / 今日の構成ミニ棒 / 入場スタッガーfade / dark面エレベーション / Top Picks箱→線
 // v31: 既読/ブックマーク (readstate.js) / 記事ディープリンク / RSS フィードリンク / 保存ビュー
 // v32: トレンド・品質ダッシュボード (/trends/ + data/stats.json)
-const VERSION = "v32";
+// v33: 図解バグ修正 — summary-card の points が文字列配列だと空箇条書きになる不具合を
+//      normalizeSummaryCard で必ず正準化して解消 (figure-normalize.js / figure.js)。
+//      timeline の time→when エイリアス追加。過去分は normalize-digest で一括修復済。
+const VERSION = "v33";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
