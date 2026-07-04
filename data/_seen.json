@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-04T05:00:00+09:00",
+  "updated_at": "2026-07-05T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6349,6 +6349,156 @@
       "url_prefix": "https://qbitai.com/2026/07/442452.",
       "first_seen_at": "2026-07-04",
       "last_seen_at": "2026-07-04",
+      "last_seen_count": 1
+    },
+    "20760114f5884215": {
+      "url_prefix": "https://mistral.ai/news/leanstral-1-5/",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "c7a4e54de266ea96": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1un5hyi/googletabfm100",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "fdd72d422ce33947": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/articles/2607/03/news131.html",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "9bc0945bcd34e1fc": {
+      "url_prefix": "https://x.ai/news/grok-voice-agent-builder",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "cf7bf6b5209e199f": {
+      "url_prefix": "https://pc.watch.impress.co.jp/docs/news/2122167.html",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "c4486f35e543a7f7": {
+      "url_prefix": "https://www.itmedia.co.jp/news/articles/2607/03/news087.html",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "11d4812cb46d61ae": {
+      "url_prefix": "https://latent.space/p/autoresearch-introspection",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "c91ccd244cbbf87d": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260701b",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "694710d0dcb0f0d9": {
+      "url_prefix": "https://arxiv.org/abs/2607.02490v1",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "f6160f74bbf1586e": {
+      "url_prefix": "https://arxiv.org/abs/2607.02461v1",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "2a139a0d3da36398": {
+      "url_prefix": "https://arxiv.org/abs/2607.02513v1",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "d0f1e023124689b8": {
+      "url_prefix": "https://arxiv.org/abs/2607.02510v1",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "ad4aa6cb6589c00c": {
+      "url_prefix": "https://arxiv.org/abs/2607.02507v1",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "ee9cf6e4ebb1b3b2": {
+      "url_prefix": "https://www.wired.com/story/ai-can-cursor-remain-a-platform-for-openai-and-anthr",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "6300e818facbe824": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/www.itmedia.co.jp/aiplus/articles/2507/03/news052",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "7671c886971f5a89": {
+      "url_prefix": "https://www.itmedia.co.jp/aiplus/articles/2507/03/news066.html",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "41d4c9581432073d": {
+      "url_prefix": "https://www.theverge.com/ai-artificial-intelligence/694808/fanfiction-community-",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "94cc49a5bb8a15d1": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/news.mynavi.jp/techplus/article/20260703-3106622/",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "c0d63e0af096118d": {
+      "url_prefix": "https://it.hatena.ne.jp/entry/ai-engineer-upstream",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "97814ac4b00f63d4": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/zenn.dev/ks0302/articles/6ac2d7ad5fe54f",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "8cdcb47cf4af3808": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/note.com/kadota_takahiro/n/nfabe5anthropic",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "04312ea0f979f868": {
+      "url_prefix": "https://zenn.dev/llm_sre/articles/ai-incident-response-report",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "ded04d1f611db104": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/note.com/machikojo_claude/n/n30days_claude",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "f4d540187d7ebba9": {
+      "url_prefix": "https://www.qbitai.com/2026/07/fable5-china-reaction.html",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "e9d5db066ff77bf7": {
+      "url_prefix": "https://www.qbitai.com/2026/07/physical-ai-life-science-progress.html",
+      "first_seen_at": "2026-07-05",
+      "last_seen_at": "2026-07-05",
       "last_seen_count": 1
     }
   },

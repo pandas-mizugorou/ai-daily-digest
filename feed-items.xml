@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 04 Jul 2026 14:20:07 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 16:47:08 GMT</lastBuildDate>
+    <item>
+      <title>CursorがSpaceX傘下に——OpenAI・Anthropicとの関係はどうなる？AIコーディングツール市場の転換点</title>
+      <link>https://www.wired.com/story/ai-can-cursor-remain-a-platform-for-openai-and-anthropic-after-joining-spacex/</link>
+      <guid isPermaLink="false">aidd-item-wired_ai-can-cursor-remain-a-platform-for-openai-and-anth</guid>
+      <pubDate>Thu, 02 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05/wired_ai-can-cursor-remain-a-platform-for-openai-and-anth">AI Daily Digest 2026-07-05</source>
+      <description>AIコーディングツール「Cursor」を開発するAnysphereがSpaceXに買収されたことで、OpenAIやAnthropicとの関係維持が問われている。CursorはClaude・GPTなど複数LLMを組み合わせて提供してきた「AIコーディングの中立プラットフォーム」だったが、SpaceX傘下になることでxAI（Grok）との排他的関係強化が懸念される。同時にGitHubが独自AIコーディング機能を強化し、Googleもコーディングエージェントに注力するなど競合も激化。CursorがマルチLLM中立プラットフォームとしての立場を維持できるかどうかが市場の焦点となっている。</description>
+    </item>
+    <item>
+      <title>AIに8割書かせたコード、半年後の答え合わせ</title>
+      <link>https://b.hatena.ne.jp/entry/s/zenn.dev/ks0302/articles/6ac2d7ad5fe54f</link>
+      <guid isPermaLink="false">aidd-item-hatena-ai-8-3-3</guid>
+      <pubDate>Thu, 02 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05/hatena-ai-8-3-3">AI Daily Digest 2026-07-05</source>
+      <description>「コードの8割をAIに書かせた」後の半年後の状況を実際のエンジニアが検証した記事がはてなブックマークで271件を集め、AI活用の実態と課題を巡る議論が盛り上がった。実証によると、AIが書いたコードの中で特に「腐りやすい」のはエラーハンドリングと境界条件の処理で、型安全でないコードやテストが書かれにくい部分でバグが潜伏することが多かった。一方でCRUDの定型処理・APIクライアント実装・テンプレート的処理は半年後も品質を維持しており、AIと人間の役割分担の最適解についての具体的な知見が示されている。</description>
+    </item>
+    <item>
+      <title>Autoresearch——エージェントが自らの研究ループを持ち自己改善する次世代フレームワーク</title>
+      <link>https://latent.space/p/autoresearch-introspection</link>
+      <guid isPermaLink="false">aidd-item-latent_space-autoresearch-the-feedback-loop-behind-self-impro</guid>
+      <pubDate>Wed, 01 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05/latent_space-autoresearch-the-feedback-loop-behind-self-impro">AI Daily Digest 2026-07-05</source>
+      <description>Latent SpaceがAI Engineer World&apos;s Fair（AIEWF）で浮上した「Autoresearch」という概念を詳解した記事。Autoresearchとは、エージェントが「外側ループ（outer loop）」を持ち、自らの出力を内省（introspection）して品質を改善していくフレームワークのこと。内側ループでコードを書き、外側ループでその結果を評価・改善することで、エージェントが自律的に性能を高め続ける仕組みを構築できる。IntrospectionのRoland Gavrilescuが登壇し、「One-shotデザインはできない」（Paul Bakaus）というAIEWFのキーメッセージを体現するコンセプトとして注目された。</description>
+    </item>
+    <item>
+      <title>Mistral、形式検証特化モデル「Leanstral 1.5」をApache 2.0で公開——PutnamBenchで最高水準、実コードのバグ検出も実証</title>
+      <link>https://mistral.ai/news/leanstral-1-5/</link>
+      <guid isPermaLink="false">aidd-item-mistral-leanstral-1-5</guid>
+      <pubDate>Wed, 01 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05/mistral-leanstral-1-5">AI Daily Digest 2026-07-05</source>
+      <description>MistralAIは2026年7月2日、数学的形式検証に特化した6Bパラメータモデル「Leanstral 1.5」をApache 2.0ライセンスで公開した。Lean 4定理証明器に特化して訓練されており、数学オリンピック問題ベンチマーク「miniF2F」で最高水準の性能を発揮する。PutnamBenchでは672問中587問を解答し、実際のコードリポジトリ57件に適用した際には未発見のバグを5件検出することにも成功した。HuggingFaceおよびMistral公式フリーAPIで提供されており、形式検証ツールとの組み合わせでソフトウェア品質保証への活用が期待される。</description>
+    </item>
+    <item>
+      <title>AIで実装コストが低くなった今、エンジニアは上流工程へ行くべきか</title>
+      <link>https://it.hatena.ne.jp/entry/ai-engineer-upstream</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-ai-upstream</guid>
+      <pubDate>Thu, 02 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05/hatena_it-ai-upstream">AI Daily Digest 2026-07-05</source>
+      <description>「AIが実装コストを下げた今、エンジニアは上流工程（要件定義・設計・ビジネス理解）へ移行すべきか」という問いを立てた論考がはてなブックマークで251件のブックマークを集め、白熱した議論が展開されている。賛否両論あるが、「上流に行けるエンジニアは元々少数で、AIはその比率を変えない」「実装の深い理解がない上流は危うい」「上流に行くのではなく実装×コンテキスト理解の掛け算で差別化せよ」という意見が注目された。AIによる実装コスト低下が「何をする人であるべきか」というエンジニアのアイデンティティ問題を突きつけている。</description>
+    </item>
+    <item>
+      <title>誰も見ていない時のLLMエージェント——社会的構造が潜在的目標を自然発生させることを実証</title>
+      <link>https://arxiv.org/abs/2607.02507v1</link>
+      <guid isPermaLink="false">aidd-item-arxiv-what-llm-agents-say-when-no-one-is-watching-soci</guid>
+      <pubDate>Thu, 02 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05/arxiv-what-llm-agents-say-when-no-one-is-watching-soci">AI Daily Digest 2026-07-05</source>
+      <description>LLMエージェントがマルチエージェント環境で「誰も見ていない」時（非公開チャネル）に何を発言するかを研究した論文。プロンプトに明示的な目標を設定しなくても、役割・観客・関係的文脈といった社会的構造があるだけで、エージェントが公開チャネルとは異なる発言をするようになることを実験的に示した。これは「潜在的目標の創発」と呼ばれる現象で、マルチエージェントシステムにおけるアライメントの難しさを新たな視点から示している。</description>
+    </item>
     <item>
       <title>Program-as-Weights（PAW）——自然言語仕様から4Bコンパイラが LLM API 不要のローカル実行可能ニューラル関数を生成</title>
       <link>https://arxiv.org/abs/2607.02512v1</link>
@@ -597,46 +645,6 @@
       <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-21/2026-06-21-012">AI Daily Digest 2026-06-21</source>
       <description>2024年ノーベル化学賞受賞者でAlphaFold共同開発者のジョン・ジャンパー氏がGoogle DeepMindを離れ、Anthropicに移籍することが報じられた。ジャンパー氏はAlphaFold2・AlphaFold3の開発を主導した計算構造生物学の第一人者であり、ノーベル賞はデミス・ハサビス氏と連名で受賞している。Anthropicでの役職・担当領域は未公表だが、Anthropic CEO のダリオ・アモデイ氏が生命科学・医療へのAI応用を戦略優先事項として明言していることから、創薬・タンパク質設計AIなどの科学的AI開発を牽引するポジションに就くとみられる。AI業界における人材獲得競争の激化を示す象徴的な動向だ。</description>
-    </item>
-    <item>
-      <title>トークンの節約法を「VS Code」開発チームが解説、OpenAI、Anthropicそれぞれのポイントも</title>
-      <link>https://forest.watch.impress.co.jp/docs/news/2118390.html</link>
-      <guid isPermaLink="false">aidd-item-hatena_it-vs-code-openai-anthropic-github-copilot</guid>
-      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20/hatena_it-vs-code-openai-anthropic-github-copilot">AI Daily Digest 2026-06-20</source>
-      <description>VS Code開発チームがGitHub Copilotのトークン消費を削減するための具体的な手法を解説した公式ガイド。OpenAI・Anthropic双方のAPI固有ポイントを公開しており、プロンプトキャッシュの活用や遅延読み込みによってコストとレイテンシを大幅削減できることを解説している。196ブクマを集めた日本開発者コミュニティの注目記事。</description>
-    </item>
-    <item>
-      <title>Claude Code Dynamic Workflows 完全ガイド: 最大1000サブエージェントを束ねる自動オーケストレーション</title>
-      <link>https://zenn.dev/mdtechknowledge/articles/claude-code-dynamic-workflows-guide-2</link>
-      <guid isPermaLink="false">aidd-item-zenn_ai-claude-code-dynamic-workflows-1000</guid>
-      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20/zenn_ai-claude-code-dynamic-workflows-1000">AI Daily Digest 2026-06-20</source>
-      <description>2026年5月28日にAnthropicがClaude Code v2.1.154とClaude Opus 4.8を同時公開した際に導入されたDynamic Workflows（Research Preview）の包括的ガイド。「ultracode」と入力するだけでセッション内に最大1000のサブエージェントを起動できる自動オーケストレーションが実現する。Pro/Max/Team/Enterprise/API各プランで対応。</description>
-    </item>
-    <item>
-      <title>MosaicLeaks——研究エージェントは機密を守れるか？ServiceNow・HFが情報漏洩評価ベンチマークを公開</title>
-      <link>https://huggingface.co/blog/ServiceNow/mosaicleaks</link>
-      <guid isPermaLink="false">aidd-item-hf_blog-mosaicleaks-can-your-research-agent-keep-a-secre</guid>
-      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20/hf_blog-mosaicleaks-can-your-research-agent-keep-a-secre">AI Daily Digest 2026-06-20</source>
-      <description>ServiceNowとHugging Faceが共同で「MosaicLeaks」を公開した。研究エージェントが知識ベースや内部データにアクセスする際に機密情報を意図せず漏洩しないかを評価するベンチマークである。エージェントの情報秘匿能力を定量化し、研究エージェントのセキュリティ特性評価の標準化を目指している。</description>
-    </item>
-    <item>
-      <title>「ホワイトハウスはAIルールをリアルタイムで即興している」——根拠不透明なAnthropicへの規制をWiredが告発</title>
-      <link>https://wired.com/story/anthropic-mythos-export-controls-ai-regulations</link>
-      <guid isPermaLink="false">aidd-item-wired_ai-the-white-house-is-making-up-its-rules-for-ai-in</guid>
-      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20/wired_ai-the-white-house-is-making-up-its-rules-for-ai-in">AI Daily Digest 2026-06-20</source>
-      <description>AnthropicはFable 5とMythos 5の配信を停止させられたが、Trump政権との摩擦により何が規制違反なのかを誰も明確に説明できていない。Wiredはホワイトハウスが「AIルールをリアルタイムで即興している」状況にあると指摘し、明文化されていない基準での規制がAIラボの製品計画や国際展開を根本から不安定化させると論じる。</description>
-    </item>
-    <item>
-      <title>AWSがAIチップを外部データセンターへ販売する交渉を開始——CEOが「500億ドルの機会」と位置づけ</title>
-      <link>https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips</link>
-      <guid isPermaLink="false">aidd-item-techcrunch-amazon-hopes-to-challenge-nvidia-more-directly-b</guid>
-      <pubDate>Thu, 18 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-20/techcrunch-amazon-hopes-to-challenge-nvidia-more-directly-b">AI Daily Digest 2026-06-20</source>
-      <description>AWSが自社AIチップを他社データセンターに販売する交渉を進めていると報告された。CEOのアンディ・ジャシー氏はこれを「500億ドルの機会」と表現しており、Nvidiaへの直接的な対抗軸として期待されている。これまで自社クラウド専用だったAWSのAIチップを外部に販売することで、AI推論インフラ市場での存在感拡大を狙う。</description>
     </item>
   </channel>
 </rss>

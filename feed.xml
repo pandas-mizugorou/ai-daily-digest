@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 04 Jul 2026 14:20:07 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 16:47:08 GMT</lastBuildDate>
+    <item>
+      <title>CursorがSpaceX傘下へ——AIモデル中立性に問い、Mistralが形式検証特化モデルを投入、「AIに8割書かせたコード半年後の答え合わせ」はてブ271件</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05</link>
+      <guid isPermaLink="false">aidd-day-2026-07-05</guid>
+      <pubDate>Sat, 04 Jul 2026 20:00:00 GMT</pubDate>
+      <description>本日はAIコーディングツール大手CursorのSpaceX買収という業界を揺るがすニュースが最大の注目を集めた。国家安全保障企業SpaceX内でAnthropicやOpenAIのモデルを継続利用できるかという問いは、AIエコシステムの中立性を問う前例となりつつある。Mistralは数学形式検証特化6Bモデル「Leanstral 1.5」をApache 2.0で公開し、実コードでの未知バグ検出を実証。日本では「AIに8割書かせたコード・半年後の答え合わせ」（はてブ271件）と「AI時代にエンジニアは上流へ行くべきか」（251件）が白熱した議論を呼んでいる。
+
+【今日の必読】
+・CursorがSpaceX傘下に——OpenAI・Anthropicとの関係はどうなる？AIコーディングツール市場の転換点
+・AIに8割書かせたコード、半年後の答え合わせ
+・Autoresearch——エージェントが自らの研究ループを持ち自己改善する次世代フレームワーク
+・Mistral、形式検証特化モデル「Leanstral 1.5」をApache 2.0で公開——PutnamBenchで最高水準、実コードのバグ検出も実証
+・AIで実装コストが低くなった今、エンジニアは上流工程へ行くべきか
+・誰も見ていない時のLLMエージェント——社会的構造が潜在的目標を自然発生させることを実証</description>
+    </item>
     <item>
       <title>Anthropic が科学者向け Claude Science を投入、Program-as-Weights が LLM API 不要の小型コンパイラを提案——カクヤスが生成 AI で 450 人月→2 カ月の基幹解読</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-04</link>
@@ -439,21 +454,6 @@
 ・Lance (ByteDance)：画像・動画の理解・生成・編集を統合したAny-to-Anyモデルがリリース
 ・Alignment Tampering：RLHFが意図的に誤ったバイアスを増幅できる構造的脆弱性を実証
 ・富士通×Anthropic戦略提携：10万人の全社員がClaudeを業務活用、日本AI変革を加速</description>
-    </item>
-    <item>
-      <title>LLMに「睡眠」統合機構・Borealis音声AI完全公開・全AIラボがエージェントラボ転換——国内AIセキュリティ実践解説とMercariガバナンス知見が最高スコアを記録</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-27</link>
-      <guid isPermaLink="false">aidd-day-2026-05-27</guid>
-      <pubDate>Tue, 26 May 2026 20:00:00 GMT</pubDate>
-      <description>2026-05-27のAIニュースは研究・モデル・業界の三層で動いた。arXivの「Language Models Need Sleep」がオフライン睡眠フェーズで文脈を高速重みに変換し推論レイテンシ増加なしに長期記憶を実現する新機構を提案しHNで165ptを獲得。Borealisは音声LLM学習の完全オープンレシピ（データ・コード・重み）を公開し音声AI開発の民主化を加速。Latent SpaceはAIラボが一斉にエージェントインフラへ転換したという業界構造の変化を宣言し、TurboPuffer・Exa・Modal 3社同時ユニコーン化がその資金面を裏付けた。国内ではQiitaのAIセキュリティ全景解説（59いいね）とMercariのエージェント時代ガバナンス実装スライド（124はてブ）が実務家層に最大の反響を呼び、OpenRouterは$1.3B評価額達成で多モデルルーティング市場の実需を証明した。
-
-【今日の必読】
-・AIセキュリティ脅威の全景 2026 — CVE / 攻撃手法 / 防御策
-・Agentic AI時代におけるメルカリのAIガバナンスとガードレール実装
-・LLMに「睡眠」を——文脈を高速重みに変換する統合機構で長期推論を突破
-・Borealis：音声LLM学習の完全オープンレシピ——データ・コード・重みをすべて公開
-・「すべてのモデルラボがエージェントラボになった」——Latent Spaceが業界パラダイム転換を宣言
-・「アウトソーシング＋ローカルAIがフロンティアラボより経済合理的になる」——HN 213pt論考</description>
     </item>
   </channel>
 </rss>

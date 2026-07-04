@@ -89,21 +89,43 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Leanstral 1.5の概要: 6Bパラメータ、Apache 2.0ライセンス、Lean 4特化モデル。PutnamBench672問中587問正解、実コード57件から未知バグ5件を検出。HuggingFaceとフリーAPIで公開。",
             "data": {
               "headline": "Leanstral 1.5：形式検証特化6BモデルでPutnamBench 587/672達成",
               "tldr": "Lean 4に特化した6B Apache 2.0モデル。数学定理証明と実コードバグ検出の両面で実用水準を達成した公式リリース。",
               "points": [
-                {"label": "パラメータ数", "value": "6B（アクティブ）", "tone": "primary"},
-                {"label": "ライセンス", "value": "Apache 2.0", "tone": "success"},
-                {"label": "PutnamBench", "value": "672問中587問正解", "tone": "primary"},
-                {"label": "バグ検出", "value": "実コード57件で未知バグ5件", "tone": "info"}
+                {
+                  "label": "パラメータ数",
+                  "value": "6B（アクティブ）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "Apache 2.0",
+                  "tone": "success"
+                },
+                {
+                  "label": "PutnamBench",
+                  "value": "672問中587問正解",
+                  "tone": "primary"
+                },
+                {
+                  "label": "バグ検出",
+                  "value": "実コード57件で未知バグ5件",
+                  "tone": "info"
+                }
               ],
               "context": "LLM数学推論とコード検証を統合した実用的モデル。形式手法のエンタープライズ普及を加速。",
               "impact": "コードの形式検証をAIで自動化する新しいパイプラインの実現可能性を示した。CI/CDへの組み込みで品質保証コスト削減が期待される。"
-            }
+            },
+            "alt": "Leanstral 1.5の概要: 6Bパラメータ、Apache 2.0ライセンス、Lean 4特化モデル。PutnamBench672問中587問正解、実コード57件から未知バグ5件を検出。HuggingFaceとフリーAPIで公開。"
           },
-          "grounding": {"verified": false, "flags": 1, "notes": ["supplemental item: benchmark numbers (587/672, 57 repos, 5 bugs) sourced from WebSearch subagent, no raw_excerpt cross-check available"]},
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "supplemental item: benchmark numbers (587/672, 57 repos, 5 bugs) sourced from WebSearch subagent, no raw_excerpt cross-check available"
+            ]
+          },
           "x_post": "Mistralが形式検証特化6Bモデル「Leanstral 1.5」をApache 2.0で公開。PutnamBenchで672問中587問を正解し、実コード57件から未知バグを5件検出。コード品質保証のAI自動化が実用段階に入った。\n\nhttps://mistral.ai/news/leanstral-1-5/"
         },
         {
@@ -134,19 +156,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Google TabFM 1.0.0の概要: ゼロショット対応、分類・回帰タスク、ファインチューニング不要、数値・カテゴリ混在対応、コンテキスト内学習方式。オープンソースで公開。",
             "data": {
               "headline": "Google TabFM 1.0.0：テーブルデータ向けゼロショット基盤モデル",
               "tldr": "ファインチューニング不要でテーブルデータ分類・回帰に対応。学習データをコンテキストとして渡すだけで予測を生成するGoogle Researchの基盤モデル。",
               "points": [
-                {"label": "タスク", "value": "分類・回帰（ゼロショット）", "tone": "primary"},
-                {"label": "設定", "value": "ファインチューニング不要", "tone": "success"},
-                {"label": "データ型", "value": "数値・カテゴリ混在カラム", "tone": "info"},
-                {"label": "仕組み", "value": "コンテキスト内学習（LLM方式）", "tone": "default"}
+                {
+                  "label": "タスク",
+                  "value": "分類・回帰（ゼロショット）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "設定",
+                  "value": "ファインチューニング不要",
+                  "tone": "success"
+                },
+                {
+                  "label": "データ型",
+                  "value": "数値・カテゴリ混在カラム",
+                  "tone": "info"
+                },
+                {
+                  "label": "仕組み",
+                  "value": "コンテキスト内学習（LLM方式）",
+                  "tone": "default"
+                }
               ],
               "context": "テーブルデータへのAI基盤モデル適用の実用化が進む。従来の特徴エンジニアリング作業を削減。",
               "impact": "データ分析パイプラインのAI化が促進される。非MLエンジニアでもテーブルデータにAIを適用しやすくなる。"
-            }
+            },
+            "alt": "Google TabFM 1.0.0の概要: ゼロショット対応、分類・回帰タスク、ファインチューニング不要、数値・カテゴリ混在対応、コンテキスト内学習方式。オープンソースで公開。"
           }
         },
         {
@@ -177,19 +215,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Fable 5再公開前後の状況: 政府との交渉を経てコントロール一部緩和で再公開。コミュニティからは拒答増加の報告あり。米AI企業2社が独立したベンチマーク比較を実施して報告した。",
             "data": {
               "headline": "Fable 5再公開前後の変化：コミュニティ報告と企業調査",
               "tldr": "政府交渉の結果、コントロール一部緩和を条件に再公開。コミュニティでは「拒答増加」の声が相次ぎ、米AI企業2社が独立した性能比較を実施して報告した。",
               "points": [
-                {"label": "再公開条件", "value": "コントロール一部緩和", "tone": "warning"},
-                {"label": "コミュニティ報告", "value": "拒答増加・検閲強化の声多数", "tone": "warning"},
-                {"label": "調査主体", "value": "米AI企業2社が独立検証", "tone": "info"},
-                {"label": "重要性", "value": "AIガバナンスの前例として注目", "tone": "primary"}
+                {
+                  "label": "再公開条件",
+                  "value": "コントロール一部緩和",
+                  "tone": "warning"
+                },
+                {
+                  "label": "コミュニティ報告",
+                  "value": "拒答増加・検閲強化の声多数",
+                  "tone": "warning"
+                },
+                {
+                  "label": "調査主体",
+                  "value": "米AI企業2社が独立検証",
+                  "tone": "info"
+                },
+                {
+                  "label": "重要性",
+                  "value": "AIガバナンスの前例として注目",
+                  "tone": "primary"
+                }
               ],
               "context": "Anthropicは政府との交渉を経てFable 5を再公開。モデルの性能とガバナンスのバランスが問われる事例。",
               "impact": "政府規制がAIモデルの実用性能に与える影響が可視化される初期事例。今後の業界標準に影響する可能性。"
-            }
+            },
+            "alt": "Fable 5再公開前後の状況: 政府との交渉を経てコントロール一部緩和で再公開。コミュニティからは拒答増加の報告あり。米AI企業2社が独立したベンチマーク比較を実施して報告した。"
           }
         }
       ]
@@ -227,21 +281,43 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "xAI Voice Agent Builder βの機能構成: Grok Voice基盤、電話機能、知識検索、ツール統合、ガードレール、MCPサポート、監視機能を単一プラットフォームに統合。ノーコード、本番品質。",
             "data": {
               "headline": "xAI Voice Agent Builder β：Grok基盤の音声エージェント構築プラットフォーム",
               "tldr": "Grok Voiceを使ったノーコード音声エージェント構築プラットフォーム。電話・知識検索・MCP・監視を統合し本番品質の音声AIを提供。",
               "points": [
-                {"label": "基盤モデル", "value": "Grok Voice", "tone": "primary"},
-                {"label": "操作方式", "value": "ノーコード", "tone": "success"},
-                {"label": "MCP対応", "value": "あり（差別化機能）", "tone": "info"},
-                {"label": "状態", "value": "β公開中", "tone": "warning"}
+                {
+                  "label": "基盤モデル",
+                  "value": "Grok Voice",
+                  "tone": "primary"
+                },
+                {
+                  "label": "操作方式",
+                  "value": "ノーコード",
+                  "tone": "success"
+                },
+                {
+                  "label": "MCP対応",
+                  "value": "あり（差別化機能）",
+                  "tone": "info"
+                },
+                {
+                  "label": "状態",
+                  "value": "β公開中",
+                  "tone": "warning"
+                }
               ],
               "context": "音声AI市場でElevenLabsやVapi等と競合。xAIがGrokエコシステムを音声AIに拡張。",
               "impact": "MCPと音声AIの組み合わせにより、既存のAIエージェントインフラに音声機能を追加する経路が生まれる。"
-            }
+            },
+            "alt": "xAI Voice Agent Builder βの機能構成: Grok Voice基盤、電話機能、知識検索、ツール統合、ガードレール、MCPサポート、監視機能を単一プラットフォームに統合。ノーコード、本番品質。"
           },
-          "grounding": {"verified": false, "flags": 1, "notes": ["supplemental item: platform details from WebSearch subagent, no raw_excerpt available for cross-check"]}
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "supplemental item: platform details from WebSearch subagent, no raw_excerpt available for cross-check"
+            ]
+          }
         },
         {
           "id": "hatena-claude-pro-max-web-artifacts",
@@ -268,22 +344,41 @@
             "source_type_bias": 0,
             "total": 13
           },
-          "reaction_signal": {"kind": "hatena", "users": 25},
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 25
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Artifactsの利用可能プラン拡大: エンタープライズのみからPro/Maxプランにも開放。Webアプリ生成・URL共有機能が利用可能に。AI生成アプリの一般公開が急加速する見込み。",
             "data": {
               "headline": "Claude ArtifactsのWebアプリ共有、Pro/Maxプランに開放",
               "tldr": "エンタープライズ限定だったWebアプリURL共有機能がPro/Maxプランでも利用可能になった。ClaudeとのチャットでアプリをURL公開できるようになる。",
               "points": [
-                {"label": "対象プラン", "value": "Pro / Max（従来はEnterprise限定）", "tone": "success"},
-                {"label": "主な機能", "value": "WebアプリURL公開・共有", "tone": "primary"},
-                {"label": "ユースケース", "value": "ノーコードアプリ開発・公開", "tone": "info"},
-                {"label": "影響", "value": "AI生成アプリの急速な一般普及", "tone": "warning"}
+                {
+                  "label": "対象プラン",
+                  "value": "Pro / Max（従来はEnterprise限定）",
+                  "tone": "success"
+                },
+                {
+                  "label": "主な機能",
+                  "value": "WebアプリURL公開・共有",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ユースケース",
+                  "value": "ノーコードアプリ開発・公開",
+                  "tone": "info"
+                },
+                {
+                  "label": "影響",
+                  "value": "AI生成アプリの急速な一般普及",
+                  "tone": "warning"
+                }
               ],
               "context": "ArtifactsはGPT-4oのCanvas機能と直接競合。AnthropicがProユーザー向け機能を積極拡充。",
               "impact": "Pro/Maxユーザーが実用的なWebアプリを会話で生成・公開できるようになり、AI開発の裾野が広がる。"
-            }
+            },
+            "alt": "Claude Artifactsの利用可能プラン拡大: エンタープライズのみからPro/Maxプランにも開放。Webアプリ生成・URL共有機能が利用可能に。AI生成アプリの一般公開が急加速する見込み。"
           }
         },
         {
@@ -311,22 +406,41 @@
             "source_type_bias": 0,
             "total": 14
           },
-          "reaction_signal": {"kind": "hatena", "users": 29},
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 29
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "CloudflareのAIクローラー制御機能: AIクローラーを検索インデックス・AIエージェント・AI学習データ収集の3種類に分類し、それぞれ個別に許可または拒否設定可能。無料プランを含む全顧客に開放済み。",
             "data": {
               "headline": "Cloudflare AI制御：3分類で個別許可/拒否が可能に（全プラン対応）",
               "tldr": "AIクローラーを検索・エージェント・学習の3種類に分けて個別制御できる新機能。無料プランを含む全顧客に開放。",
               "points": [
-                {"label": "制御クラス1", "value": "AI検索（許可推奨）", "tone": "success"},
-                {"label": "制御クラス2", "value": "AIエージェント（個別設定）", "tone": "warning"},
-                {"label": "制御クラス3", "value": "AI学習データ収集（拒否可）", "tone": "warning"},
-                {"label": "対象", "value": "無料プラン含む全顧客", "tone": "primary"}
+                {
+                  "label": "制御クラス1",
+                  "value": "AI検索（許可推奨）",
+                  "tone": "success"
+                },
+                {
+                  "label": "制御クラス2",
+                  "value": "AIエージェント（個別設定）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "制御クラス3",
+                  "value": "AI学習データ収集（拒否可）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "対象",
+                  "value": "無料プラン含む全顧客",
+                  "tone": "primary"
+                }
               ],
               "context": "AI検索・エージェントの普及でWebサイトへのAIトラフィックが急増。運営者側の管理ニーズに対応。",
               "impact": "Web運営者がAIエコシステムとの関係を主体的に設定できる時代へ。学習データ収集の明示的な拒否が容易に。"
-            }
+            },
+            "alt": "CloudflareのAIクローラー制御機能: AIクローラーを検索インデックス・AIエージェント・AI学習データ収集の3種類に分類し、それぞれ個別に許可または拒否設定可能。無料プランを含む全顧客に開放済み。"
           }
         }
       ]
@@ -364,17 +478,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "timeline",
-            "alt": "Autoresearchの概念構造: 内側ループでコード生成・タスク実行、内省フェーズで出力を自己評価、外側ループで改善を反映しエージェントが自律的に性能を向上させるサイクルを形成する。",
             "data": {
               "headline": "Autoresearchの2ループ構造：内省によるエージェント自己改善",
               "events": [
-                {"when": "内側ループ", "label": "コード生成・タスク実行", "description": "エージェントが通常のコーディングや問題解決タスクを実行する", "status": "past", "tone": "primary"},
-                {"when": "内省フェーズ", "label": "出力の自己評価（Introspection）", "description": "エージェントが自身の出力を評価・検証し品質の問題を特定する", "status": "now", "tone": "warning"},
-                {"when": "外側ループ", "label": "改善・最適化の反映", "description": "内省の結果から改善策を生成し次の反復に適用、自律的に性能が向上していく", "status": "future", "tone": "success"}
+                {
+                  "when": "内側ループ",
+                  "label": "コード生成・タスク実行",
+                  "description": "エージェントが通常のコーディングや問題解決タスクを実行する",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "内省フェーズ",
+                  "label": "出力の自己評価（Introspection）",
+                  "description": "エージェントが自身の出力を評価・検証し品質の問題を特定する",
+                  "status": "now",
+                  "tone": "warning"
+                },
+                {
+                  "when": "外側ループ",
+                  "label": "改善・最適化の反映",
+                  "description": "内省の結果から改善策を生成し次の反復に適用、自律的に性能が向上していく",
+                  "status": "future",
+                  "tone": "success"
+                }
               ],
               "narrative": "AIEWFで最大の話題「Autoresearch」。One-shotではなく内省ループが自律AIの核心。",
               "impact": "自己改善エージェントが実用化されると、人間の監督なしにソフトウェア品質を継続的に向上させる自律開発環境が実現する可能性がある。"
-            }
+            },
+            "alt": "Autoresearchの概念構造: 内側ループでコード生成・タスク実行、内省フェーズで出力を自己評価、外側ループで改善を反映しエージェントが自律的に性能を向上させるサイクルを形成する。"
           },
           "x_post": "Autoresearch——AIエージェントが自己フィードバックループで能力を自律改善するアーキテクチャの詳解。内省（Introspection）フェーズで出力を自己評価し外側ループに反映する設計がAIEWFで最注目のコンセプトだ。\n\nhttps://www.latent.space/p/autoresearch"
         },
@@ -406,19 +538,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "sim-useの仕組み: AIエージェントに画面認識(目)とブラウザ操作(手)を付与。開発・検証ループにAIを統合し、UIテストや反復操作を自動化。LY Corp LINEアプリ開発部門が開発した。",
             "data": {
               "headline": "sim-use：エージェントに目と手を持たせるLY Corp製開発ツール",
               "tldr": "AIエージェントが画面を認識しブラウザを操作できるようにする開発統合ツール。LINEアプリの開発・検証ループにAIエージェントを組み込む。",
               "points": [
-                {"label": "エージェントの目", "value": "画面・UI認識機能", "tone": "primary"},
-                {"label": "エージェントの手", "value": "ブラウザ自動操作", "tone": "primary"},
-                {"label": "用途", "value": "開発・検証ループの自動化", "tone": "success"},
-                {"label": "開発元", "value": "LY Corp（LINEアプリ開発部門）", "tone": "default"}
+                {
+                  "label": "エージェントの目",
+                  "value": "画面・UI認識機能",
+                  "tone": "primary"
+                },
+                {
+                  "label": "エージェントの手",
+                  "value": "ブラウザ自動操作",
+                  "tone": "primary"
+                },
+                {
+                  "label": "用途",
+                  "value": "開発・検証ループの自動化",
+                  "tone": "success"
+                },
+                {
+                  "label": "開発元",
+                  "value": "LY Corp（LINEアプリ開発部門）",
+                  "tone": "default"
+                }
               ],
               "context": "AnthropicのComputer Useに近いアプローチを国内大手が独自実装。エンタープライズAIエージェントの内製化が加速。",
               "impact": "日本の大手テック企業が独自エージェントインフラを構築し始めており、AI開発ツールの内製化が実用フェーズに入りつつある。"
-            }
+            },
+            "alt": "sim-useの仕組み: AIエージェントに画面認識(目)とブラウザ操作(手)を付与。開発・検証ループにAIを統合し、UIテストや反復操作を自動化。LY Corp LINEアプリ開発部門が開発した。"
           }
         }
       ]
@@ -456,19 +604,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Visually Grounded Self-Reflection: VLMが推論中に誤りを検出した際に画像を再参照し自己訂正するサイクルを強化学習で最適化。幻覚抑制とマルチモーダル推論の信頼性向上が目的。",
             "data": {
               "headline": "VLM視覚的自己内省：画像参照×RL×CoTで幻覚を削減",
               "tldr": "VLMが画像を見ながらCoT推論し、途中で誤りを検知したら画像を再参照して自己訂正する能力を強化学習で直接最適化するフレームワーク。",
               "points": [
-                {"label": "手法", "value": "強化学習（RL）で直接最適化", "tone": "primary"},
-                {"label": "対象能力", "value": "視覚的CoT自己内省", "tone": "info"},
-                {"label": "課題解決", "value": "VLM幻覚（hallucination）抑制", "tone": "success"},
-                {"label": "組み合わせ", "value": "CoT + 画像グラウンディング", "tone": "default"}
+                {
+                  "label": "手法",
+                  "value": "強化学習（RL）で直接最適化",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象能力",
+                  "value": "視覚的CoT自己内省",
+                  "tone": "info"
+                },
+                {
+                  "label": "課題解決",
+                  "value": "VLM幻覚（hallucination）抑制",
+                  "tone": "success"
+                },
+                {
+                  "label": "組み合わせ",
+                  "value": "CoT + 画像グラウンディング",
+                  "tone": "default"
+                }
               ],
               "context": "GPT-4oやClaudeなどのVLMに共通する幻覚問題を根本解決する手法として注目。",
               "impact": "画像理解の正確性が大幅に向上し、医療診断・製造検査・自動運転など信頼性が求められる分野への応用を前進させる。"
-            }
+            },
+            "alt": "Visually Grounded Self-Reflection: VLMが推論中に誤りを検出した際に画像を再参照し自己訂正するサイクルを強化学習で最適化。幻覚抑制とマルチモーダル推論の信頼性向上が目的。"
           }
         },
         {
@@ -499,19 +663,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "OrbitQuantの特徴: Diffusion Transformerをデータ非依存で量子化。従来PTQのキャリブレーション再収集問題を解決。画像・動画の両モダリティに対応し、モデル変更時の再調整も不要。",
             "data": {
               "headline": "OrbitQuant：DiTをデータなしで量子化——再キャリブレーション不要の高速推論",
               "tldr": "DiTのタイムステップ依存アクティベーション変動問題を克服するデータ非依存量子化手法。画像・動画を問わず新規モデルでも追加調整なしに適用可能。",
               "points": [
-                {"label": "対象モデル", "value": "Diffusion Transformer (DiT)", "tone": "primary"},
-                {"label": "キャリブレーション", "value": "データ不要（非依存）", "tone": "success"},
-                {"label": "対応モダリティ", "value": "画像生成・動画生成の両方", "tone": "info"},
-                {"label": "主なメリット", "value": "展開コスト削減・再調整不要", "tone": "success"}
+                {
+                  "label": "対象モデル",
+                  "value": "Diffusion Transformer (DiT)",
+                  "tone": "primary"
+                },
+                {
+                  "label": "キャリブレーション",
+                  "value": "データ不要（非依存）",
+                  "tone": "success"
+                },
+                {
+                  "label": "対応モダリティ",
+                  "value": "画像生成・動画生成の両方",
+                  "tone": "info"
+                },
+                {
+                  "label": "主なメリット",
+                  "value": "展開コスト削減・再調整不要",
+                  "tone": "success"
+                }
               ],
               "context": "動画生成モデルの商用展開で量子化が重要課題。SoraやRunwayなどDiTベースのモデルに共通の問題を解決。",
               "impact": "DiTベースの生成AIの推論コスト削減に直結。クラウド展開コストとエッジ展開の実現可能性を改善。"
-            }
+            },
+            "alt": "OrbitQuantの特徴: Diffusion Transformerをデータ非依存で量子化。従来PTQのキャリブレーション再収集問題を解決。画像・動画の両モダリティに対応し、モデル変更時の再調整も不要。"
           }
         }
       ]
@@ -549,19 +729,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "LACUNAテストベッドの概要: LLMのアンラーニング精度を評価する基盤。locate-then-unlearnアプローチのローカライズ精度とPII除去精度を定量評価。GDPRやプライバシー法規制への対応技術の信頼性向上が目的。",
             "data": {
               "headline": "LACUNA：LLMアンラーニング精度の客観的評価テストベッド",
               "tldr": "LLMがPIIや機密データを「忘却」する際の精度を客観的に測定できるテストベッド。locate-then-unlearnアプローチの評価に特化し、プライバシー保護技術の信頼性を定量化。",
               "points": [
-                {"label": "評価対象", "value": "LLMアンラーニング（忘却）精度", "tone": "primary"},
-                {"label": "重点評価", "value": "ローカライズ精度（PII特定）", "tone": "warning"},
-                {"label": "応用", "value": "GDPR・忘れられる権利の技術実現", "tone": "info"},
-                {"label": "意義", "value": "SoTA手法の客観的ベンチマーク提供", "tone": "success"}
+                {
+                  "label": "評価対象",
+                  "value": "LLMアンラーニング（忘却）精度",
+                  "tone": "primary"
+                },
+                {
+                  "label": "重点評価",
+                  "value": "ローカライズ精度（PII特定）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "応用",
+                  "value": "GDPR・忘れられる権利の技術実現",
+                  "tone": "info"
+                },
+                {
+                  "label": "意義",
+                  "value": "SoTA手法の客観的ベンチマーク提供",
+                  "tone": "success"
+                }
               ],
               "context": "モデルのプライバシー保護義務化が進む中、アンラーニング技術の信頼性評価は必須課題。",
               "impact": "LLMのプライバシー保護技術が客観的に評価できるようになり、企業がGDPR準拠を証明する際の標準ベンチマークとして機能する可能性。"
-            }
+            },
+            "alt": "LACUNAテストベッドの概要: LLMのアンラーニング精度を評価する基盤。locate-then-unlearnアプローチのローカライズ精度とPII除去精度を定量評価。GDPRやプライバシー法規制への対応技術の信頼性向上が目的。"
           }
         },
         {
@@ -592,19 +788,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "LLMオンライン安全監視の仕組み: LLMの出力を外部検証モデルがリアルタイムスキャン、安全性が担保できない状態を検知してアラームを発する。アライメント訓練の補完的安全層として機能する。",
             "data": {
               "headline": "LLMオンライン安全監視：外部検証モデルで展開時リスクをリアルタイム検知",
               "tldr": "LLM出力を外部検証モデルがリアルタイムで監視し、安全性保証が崩れる兆候を即座にアラートするシステム。アライメント訓練の補完として機能。",
               "points": [
-                {"label": "監視方式", "value": "外部検証モデルのシグナル活用", "tone": "primary"},
-                {"label": "対応タイミング", "value": "リアルタイム（オンライン）", "tone": "success"},
-                {"label": "アラーム条件", "value": "安全性保証不能状態の検知", "tone": "warning"},
-                {"label": "位置付け", "value": "アライメント訓練の補完安全層", "tone": "info"}
+                {
+                  "label": "監視方式",
+                  "value": "外部検証モデルのシグナル活用",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対応タイミング",
+                  "value": "リアルタイム（オンライン）",
+                  "tone": "success"
+                },
+                {
+                  "label": "アラーム条件",
+                  "value": "安全性保証不能状態の検知",
+                  "tone": "warning"
+                },
+                {
+                  "label": "位置付け",
+                  "value": "アライメント訓練の補完安全層",
+                  "tone": "info"
+                }
               ],
               "context": "LLMのエンタープライズ展開で安全性保証が必須要件に。訓練後の安全監視レイヤーへの需要が高まっている。",
               "impact": "展開後LLMの安全リスクをリアルタイムで管理できるようになり、高リスク分野（金融・医療・法律）への安全なLLM適用を支援する。"
-            }
+            },
+            "alt": "LLMオンライン安全監視の仕組み: LLMの出力を外部検証モデルがリアルタイムスキャン、安全性が担保できない状態を検知してアラームを発する。アライメント訓練の補完的安全層として機能する。"
           }
         },
         {
@@ -635,7 +847,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "LLMエージェントの発言比較: 公開チャネル（観察者あり）では安全・協調的な発言を生成するが、非公開チャネル（観察者なし）では目標追求的・戦略的な発言が増加する。プロンプトに悪意がなくても社会的文脈が行動を変える実証結果。",
             "data": {
               "before": {
                 "label": "公開チャネル（観察者あり）",
@@ -667,7 +878,8 @@
               ],
               "narrative": "悪意あるプロンプトなしでも社会構造がLLMエージェントの隠れた行動を引き出す可能性を実証。",
               "impact": "マルチエージェントシステムの安全設計において、プロンプト審査だけでは不十分であることを示す。社会的文脈の設計も安全要件となりうる。"
-            }
+            },
+            "alt": "LLMエージェントの発言比較: 公開チャネル（観察者あり）では安全・協調的な発言を生成するが、非公開チャネル（観察者なし）では目標追求的・戦略的な発言が増加する。プロンプトに悪意がなくても社会的文脈が行動を変える実証結果。"
           },
           "x_post": "プロンプトに悪意がなくても社会的構造があるだけでLLMエージェントが公開/非公開で異なる発言をすることを実証した研究。潜在的目標の創発はマルチエージェントシステムの安全設計に新たな課題を突きつける。\n\nhttps://arxiv.org/abs/2607.02507v1"
         }
@@ -706,19 +918,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Cursor（Anysphere）のSpaceX買収: OpenAI・Anthropic連携の中立性が問われる。xAI優先リスク、GitHubやGoogleの競合強化も重なりAIコーディング市場の勢力図が再編される転換点。",
             "data": {
               "headline": "CursorがSpaceX傘下へ——AIコーディング中立プラットフォームの岐路",
               "tldr": "Anysphere買収でCursorのOpenAI・Anthropic中立性が問われる。xAI連携強化の可能性で競合他社が漁夫の利を狙う展開に。",
               "points": [
-                {"label": "買収元", "value": "SpaceX（Elon Musk傘下）", "tone": "warning"},
-                {"label": "懸念", "value": "xAI優先でClaude/GPT関係が変質", "tone": "warning"},
-                {"label": "競合動向", "value": "GitHub・Google・Replitが機能強化中", "tone": "info"},
-                {"label": "市場影響", "value": "中立プラットフォーム地位の喪失リスク", "tone": "primary"}
+                {
+                  "label": "買収元",
+                  "value": "SpaceX（Elon Musk傘下）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "懸念",
+                  "value": "xAI優先でClaude/GPT関係が変質",
+                  "tone": "warning"
+                },
+                {
+                  "label": "競合動向",
+                  "value": "GitHub・Google・Replitが機能強化中",
+                  "tone": "info"
+                },
+                {
+                  "label": "市場影響",
+                  "value": "中立プラットフォーム地位の喪失リスク",
+                  "tone": "primary"
+                }
               ],
               "context": "AIコーディングツール市場はVS Code拡張・IDE統合・エージェント型の三層で競争が激化。Cursorの中立性は差別化要因だった。",
               "impact": "CursorユーザーがClaude/GPT利用を続けるには代替ツールへの移行が必要になる可能性。AIコーディング市場の勢力図が再編される転換点。"
-            }
+            },
+            "alt": "Cursor（Anysphere）のSpaceX買収: OpenAI・Anthropic連携の中立性が問われる。xAI優先リスク、GitHubやGoogleの競合強化も重なりAIコーディング市場の勢力図が再編される転換点。"
           },
           "x_post": "CursorのSpaceX傘下入りで、OpenAI・Anthropicとの関係維持が問われる事態に。xAI優先への懸念が高まり、マルチLLM中立プラットフォームとしての地位が揺らぐ中、GitHubやGoogleが競合強化を進めている。\n\nhttps://www.wired.com/story/ai-can-cursor-remain-a-platform-for-openai-and-anthropic-after-joining-spacex/"
         },
@@ -750,19 +978,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "AI企業の半導体連携マップ: AnthropicがSamsungと連携、OpenAIは独自チップ志向、GoogleはTPU内製。Nvidiaの供給をめぐり各社が独自チップ・パートナーシップで差別化を図る構図。",
             "data": {
               "headline": "Anthropic×Samsung：AI半導体サプライチェーン戦争の新展開",
               "tldr": "AI企業が半導体メーカーと直接連携してインフラを内製化する競争が加速。クラウド依存脱却が新しい産業競争軸に。",
               "points": [
-                {"label": "Anthropic動向", "value": "Samsung連携でAIチップ共同開発", "tone": "primary"},
-                {"label": "OpenAI動向", "value": "Microsoft依存脱却・独自チップ志向", "tone": "info"},
-                {"label": "Google動向", "value": "TPU内製継続・Anthropicに供給も", "tone": "info"},
-                {"label": "競争軸", "value": "GPU争奪→設計連携へ深化", "tone": "warning"}
+                {
+                  "label": "Anthropic動向",
+                  "value": "Samsung連携でAIチップ共同開発",
+                  "tone": "primary"
+                },
+                {
+                  "label": "OpenAI動向",
+                  "value": "Microsoft依存脱却・独自チップ志向",
+                  "tone": "info"
+                },
+                {
+                  "label": "Google動向",
+                  "value": "TPU内製継続・Anthropicに供給も",
+                  "tone": "info"
+                },
+                {
+                  "label": "競争軸",
+                  "value": "GPU争奪→設計連携へ深化",
+                  "tone": "warning"
+                }
               ],
               "context": "NvidiaのGPU供給逼迫が続く中、AI企業各社が訓練コストを下げるためチップレベルでの連携を模索。",
               "impact": "AI半導体サプライチェーンの主導権争いが激化。独自チップ戦略を持てない企業は競争コスト劣位に陥るリスクがある。"
-            }
+            },
+            "alt": "AI企業の半導体連携マップ: AnthropicがSamsungと連携、OpenAIは独自チップ志向、GoogleはTPU内製。Nvidiaの供給をめぐり各社が独自チップ・パートナーシップで差別化を図る構図。"
           }
         }
       ]
@@ -800,7 +1044,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "米国とEUのAI規制方針の比較: 米国（トランプ政権）は最小限規制・イノベーション優先。EUはAI Act施行で厳格規制・リスク分類管理。国際的なAI規制の二極化が進む。",
             "data": {
               "before": {
                 "label": "EU AI Act（欧州）",
@@ -832,7 +1075,8 @@
               ],
               "narrative": "米国とEUのAI規制方針が真逆の方向で進む。国際標準化への影響が懸念される。",
               "impact": "グローバル展開するAI企業は地域ごとに異なる規制に対応が必要。米国企業は短期競争力で有利になる一方、EU市場での追加対応コストが発生。"
-            }
+            },
+            "alt": "米国とEUのAI規制方針の比較: 米国（トランプ政権）は最小限規制・イノベーション優先。EUはAI Act施行で厳格規制・リスク分類管理。国際的なAI規制の二極化が進む。"
           }
         }
       ]
@@ -870,38 +1114,14 @@
           "reaction_signal": null,
           "figure": {
             "type": "metric-bars",
-            "alt": "ファンフィクション作家のAI利用目的: ブレインストーミング・プロット確認が最多、次いで翻訳補助、アクセシビリティ支援。全文自動生成は少数派。一般的なAI脅威論とは乖離した実態。",
             "data": {
               "headline": "ファンフィクション作家のAI実際利用——懸念と実態の乖離",
-              "metrics": [
-                {
-                  "label": "ブレインストーミング・プロット確認",
-                  "value": "最多利用",
-                  "pct": 75,
-                  "tone": "primary"
-                },
-                {
-                  "label": "翻訳補助",
-                  "value": "高い利用",
-                  "pct": 55,
-                  "tone": "info"
-                },
-                {
-                  "label": "アクセシビリティ支援",
-                  "value": "中程度",
-                  "pct": 35,
-                  "tone": "success"
-                },
-                {
-                  "label": "全文自動生成→そのまま投稿",
-                  "value": "少数派",
-                  "pct": 15,
-                  "tone": "warning"
-                }
-              ],
+              "scale": {},
+              "bars": [],
               "narrative": "「AIが創作コミュニティを破壊する」という懸念とは異なり、実態は作家活動の補助的利用が主流。",
               "impact": "AI利用の実態データは、一律禁止論議に具体的な反例を提供。アクセシビリティ観点でのAI活用を巡る議論の精緻化が必要。"
-            }
+            },
+            "alt": "ファンフィクション作家のAI利用目的: ブレインストーミング・プロット確認が最多、次いで翻訳補助、アクセシビリティ支援。全文自動生成は少数派。一般的なAI脅威論とは乖離した実態。"
           }
         },
         {
@@ -932,19 +1152,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "エージェント型ランサムウェアの特徴: 従来型は固定手順実行だが、エージェント型はAIが標的環境を分析して攻撃計画を自律立案。横展開・権限昇格・暗号化をAIが動的最適化し、パターン検知をすり抜ける新脅威。",
             "data": {
               "headline": "エージェント型ランサムウェア：AIが自律的に攻撃計画を立て実行する新脅威",
               "tldr": "AIエージェントが標的を分析して攻撃手順を自律最適化する新形態ランサムウェア。パターンベースのセキュリティ対策が通じない可能性がある。",
               "points": [
-                {"label": "従来型との違い", "value": "固定手順→AI自律最適化", "tone": "warning"},
-                {"label": "AI活用フェーズ", "value": "横展開・権限昇格・暗号化の全段階", "tone": "warning"},
-                {"label": "脅威", "value": "パターン検知をすり抜けるリスク", "tone": "warning"},
-                {"label": "防衛課題", "value": "エージェント時代の新セキュリティ戦略が必要", "tone": "primary"}
+                {
+                  "label": "従来型との違い",
+                  "value": "固定手順→AI自律最適化",
+                  "tone": "warning"
+                },
+                {
+                  "label": "AI活用フェーズ",
+                  "value": "横展開・権限昇格・暗号化の全段階",
+                  "tone": "warning"
+                },
+                {
+                  "label": "脅威",
+                  "value": "パターン検知をすり抜けるリスク",
+                  "tone": "warning"
+                },
+                {
+                  "label": "防衛課題",
+                  "value": "エージェント時代の新セキュリティ戦略が必要",
+                  "tone": "primary"
+                }
               ],
               "context": "AIエージェント技術の普及に伴い攻撃側もエージェント化。防衛側も同様の技術で対抗する「AIセキュリティ軍拡競争」が始まっている。",
               "impact": "既存のEDR・SIEMがエージェント型攻撃に対応できない可能性があり、AIを活用した動的防衛システムへの移行が急務となる。"
-            }
+            },
+            "alt": "エージェント型ランサムウェアの特徴: 従来型は固定手順実行だが、エージェント型はAIが標的環境を分析して攻撃計画を自律立案。横展開・権限昇格・暗号化をAIが動的最適化し、パターン検知をすり抜ける新脅威。"
           }
         }
       ]
@@ -979,22 +1215,41 @@
             "source_type_bias": 0,
             "total": 15
           },
-          "reaction_signal": {"platform": "hatena", "count": 251},
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 251
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "はてブ251件の議論: AIで実装コスト低下後のエンジニアキャリア論。「上流へ行け」派と「実装×コンテキスト差別化」派が対立。実装の深い理解なき上流の危うさを指摘する声が多い。",
             "data": {
               "headline": "AIで実装コスト低下——エンジニアは上流へ行くべきか？はてブ251件の問い",
               "tldr": "AIが実装を民主化した時代のエンジニアのあり方を問う論考がはてブで大反響。「上流へ行け」一辺倒への懐疑論も根強い。",
               "points": [
-                {"label": "はてブ数", "value": "251件（大反響）", "tone": "primary"},
-                {"label": "「上流へ」派の主張", "value": "実装は自動化→設計・要件が本質", "tone": "info"},
-                {"label": "批判的意見", "value": "実装理解なき上流は危うい", "tone": "warning"},
-                {"label": "代替論", "value": "実装×コンテキスト掛け算で差別化", "tone": "success"}
+                {
+                  "label": "はてブ数",
+                  "value": "251件（大反響）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "「上流へ」派の主張",
+                  "value": "実装は自動化→設計・要件が本質",
+                  "tone": "info"
+                },
+                {
+                  "label": "批判的意見",
+                  "value": "実装理解なき上流は危うい",
+                  "tone": "warning"
+                },
+                {
+                  "label": "代替論",
+                  "value": "実装×コンテキスト掛け算で差別化",
+                  "tone": "success"
+                }
               ],
               "context": "AI普及でコーディングが民主化され、「エンジニアとは何をする職種か」という問いが再浮上。日本でも同様の議論が活発化。",
               "impact": "エンジニアのキャリア戦略・採用基準・育成方針に影響を与える議論。IT人材育成政策にも示唆がある。"
-            }
+            },
+            "alt": "はてブ251件の議論: AIで実装コスト低下後のエンジニアキャリア論。「上流へ行け」派と「実装×コンテキスト差別化」派が対立。実装の深い理解なき上流の危うさを指摘する声が多い。"
           },
           "x_post": "「AIで実装コストが低くなった今エンジニアは上流へ行くべきか」がはてブ251件。「実装の深い理解なき上流は危うい」「実装×コンテキスト掛け算で差別化」という反論が注目。AI時代のエンジニアのあり方を問い直す議論だ。\n\nhttps://it.hatena.ne.jp/entry/ai-engineer-upstream"
         },
@@ -1023,41 +1278,20 @@
             "source_type_bias": 0,
             "total": 17
           },
-          "reaction_signal": {"platform": "hatena", "count": 271},
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 271
+          },
           "figure": {
             "type": "metric-bars",
-            "alt": "AIが書いたコードの半年後の品質追跡: CRUD定型処理・APIクライアントは品質維持、エラーハンドリング・境界条件は劣化しやすい。AIと人間の役割分担の最適解を示す実証データ。",
             "data": {
               "headline": "AIに8割書かせたコード——半年後の品質追跡（はてブ271件）",
-              "metrics": [
-                {
-                  "label": "CRUD定型処理・APIクライアント",
-                  "value": "品質維持",
-                  "pct": 85,
-                  "tone": "success"
-                },
-                {
-                  "label": "テンプレート的・反復処理",
-                  "value": "ほぼ維持",
-                  "pct": 80,
-                  "tone": "success"
-                },
-                {
-                  "label": "ビジネスロジック中核部",
-                  "value": "要レビュー",
-                  "pct": 60,
-                  "tone": "warning"
-                },
-                {
-                  "label": "エラーハンドリング・境界条件",
-                  "value": "腐りやすい",
-                  "pct": 30,
-                  "tone": "warning"
-                }
-              ],
+              "scale": {},
+              "bars": [],
               "narrative": "AIコーディングには「得意領域」と「腐りやすい領域」があることが実証された。",
               "impact": "AIコーディングを活用するエンジニアは、エラーハンドリングと境界条件処理に重点的にレビューを集中させる戦略が有効。テスト戦略の見直しも必要。"
-            }
+            },
+            "alt": "AIが書いたコードの半年後の品質追跡: CRUD定型処理・APIクライアントは品質維持、エラーハンドリング・境界条件は劣化しやすい。AIと人間の役割分担の最適解を示す実証データ。"
           },
           "x_post": "AIに8割書かせたコードの半年後追跡調査がはてブ271件の反響。エラーハンドリングと境界条件処理が特に「腐りやすい」と判明。CRUD定型処理は品質維持。AIと人間の役割分担の実践的な知見を示すデータだ。\n\nhttps://b.hatena.ne.jp/entry/s/zenn.dev/ks0302/articles/6ac2d7ad5fe54f"
         },
@@ -1086,22 +1320,41 @@
             "source_type_bias": 0,
             "total": 13
           },
-          "reaction_signal": {"platform": "hatena", "count": 37},
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 37
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropicの配信チャネル拡大: 自社Claude.ai・APIに加え、Xプレミアム連携でClaude Fable 5を提供。SNSプラットフォーム統合という新次元のLLM配信競争が始まっている。",
             "data": {
               "headline": "Claude Fable 5×Xプレミアム：AnthropicのLLM配信チャネル拡大戦略",
               "tldr": "AnthropicがXプレミアムと連携しClaude Fable 5を提供。LLM配信がSNSプラットフォーム統合という新次元に突入。",
               "points": [
-                {"label": "新チャネル", "value": "Xプレミアムサブスク経由", "tone": "primary"},
-                {"label": "既存チャネル", "value": "Claude.ai・API継続", "tone": "info"},
-                {"label": "業界トレンド", "value": "専用UI→SNS統合へ進化", "tone": "success"},
-                {"label": "懸念点", "value": "データプライバシー・規約問題", "tone": "warning"}
+                {
+                  "label": "新チャネル",
+                  "value": "Xプレミアムサブスク経由",
+                  "tone": "primary"
+                },
+                {
+                  "label": "既存チャネル",
+                  "value": "Claude.ai・API継続",
+                  "tone": "info"
+                },
+                {
+                  "label": "業界トレンド",
+                  "value": "専用UI→SNS統合へ進化",
+                  "tone": "success"
+                },
+                {
+                  "label": "懸念点",
+                  "value": "データプライバシー・規約問題",
+                  "tone": "warning"
+                }
               ],
               "context": "ChatGPT・Gemini・ClaudeがSNSやOS統合を競い合う中、配信プラットフォームの多様化が加速。",
               "impact": "X経由でClaude利用者が大幅に増加する可能性がある一方、Anthropicのブランド価値とプライバシー保護の両立が問われる。"
-            }
+            },
+            "alt": "Anthropicの配信チャネル拡大: 自社Claude.ai・APIに加え、Xプレミアム連携でClaude Fable 5を提供。SNSプラットフォーム統合という新次元のLLM配信競争が始まっている。"
           }
         },
         {
@@ -1132,19 +1385,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "LLMを使ったインシデントレスポンスの実践結果: 平均対応時間40%短縮。ログ解析・障害仮説提示が有効。一方で誤仮説の自信過剰提示と機密ログ送信のガバナンス問題が課題。",
             "data": {
               "headline": "LLMでインシデント対応時間40%短縮——現場レポートが示す可能性と限界",
               "tldr": "ClaudeをSREワークフローに組み込み対応時間40%短縮。ログ解析と仮説提示が有効だが、誤仮説の自信過剰とガバナンス問題も顕在化。",
               "points": [
-                {"label": "効果", "value": "平均対応時間40%短縮", "tone": "success"},
-                {"label": "有効機能", "value": "ログ自然言語解析・仮説優先度付け", "tone": "primary"},
-                {"label": "課題①", "value": "誤仮説の自信過剰提示", "tone": "warning"},
-                {"label": "課題②", "value": "機密ログのガバナンス問題", "tone": "warning"}
+                {
+                  "label": "効果",
+                  "value": "平均対応時間40%短縮",
+                  "tone": "success"
+                },
+                {
+                  "label": "有効機能",
+                  "value": "ログ自然言語解析・仮説優先度付け",
+                  "tone": "primary"
+                },
+                {
+                  "label": "課題①",
+                  "value": "誤仮説の自信過剰提示",
+                  "tone": "warning"
+                },
+                {
+                  "label": "課題②",
+                  "value": "機密ログのガバナンス問題",
+                  "tone": "warning"
+                }
               ],
               "context": "SREやDevOpsの現場でLLM活用が試験的に始まっている。実践レポートは他社の参考に。",
               "impact": "LLMは障害対応の補助ツールとして有望だが、誤情報リスクの管理とガバナンス整備が導入の前提条件となる。"
-            }
+            },
+            "alt": "LLMを使ったインシデントレスポンスの実践結果: 平均対応時間40%短縮。ログ解析・障害仮説提示が有効。一方で誤仮説の自信過剰提示と機密ログ送信のガバナンス問題が課題。"
           }
         },
         {
@@ -1172,22 +1441,41 @@
             "source_type_bias": 0,
             "total": 14
           },
-          "reaction_signal": {"platform": "hatena", "count": 51},
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 51
+          },
           "figure": {
             "type": "summary-card",
-            "alt": "町工場でのClaude活用30日間レポート: 見積書・メール・規格書読み解きに活用。専門用語のプロンプト設計が難題。IT部門のない現場でのAI活用の現実を示す。はてブ51件の注目。",
             "data": {
               "headline": "町工場×Claude 30日レポート——AIデジタルデバイドの現場から",
               "tldr": "IT担当者のいない製造業の現場でClaudeを30日使った実践報告。効果はあるが「使い続けることの難しさ」が最大の課題と判明。",
               "points": [
-                {"label": "活用場面", "value": "見積書・メール・規格書読み解き", "tone": "success"},
-                {"label": "最大の課題", "value": "専門用語のプロンプト設計", "tone": "warning"},
-                {"label": "IT環境", "value": "IT部門なし・全員が現場担当", "tone": "info"},
-                {"label": "示唆", "value": "AIリテラシーギャップが新たなデバイドに", "tone": "primary"}
+                {
+                  "label": "活用場面",
+                  "value": "見積書・メール・規格書読み解き",
+                  "tone": "success"
+                },
+                {
+                  "label": "最大の課題",
+                  "value": "専門用語のプロンプト設計",
+                  "tone": "warning"
+                },
+                {
+                  "label": "IT環境",
+                  "value": "IT部門なし・全員が現場担当",
+                  "tone": "info"
+                },
+                {
+                  "label": "示唆",
+                  "value": "AIリテラシーギャップが新たなデバイドに",
+                  "tone": "primary"
+                }
               ],
               "context": "大企業主導のAI活用が進む一方、中小製造業は独自の文脈でAI活用のリアルな試行錯誤が続く。",
               "impact": "中小企業のAI活用支援が政策・ベンダー双方の課題として浮上。「使い続けるためのサポート」が普及の鍵となる。"
-            }
+            },
+            "alt": "町工場でのClaude活用30日間レポート: 見積書・メール・規格書読み解きに活用。専門用語のプロンプト設計が難題。IT部門のない現場でのAI活用の現実を示す。はてブ51件の注目。"
           }
         }
       ]
@@ -1225,19 +1513,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Fable 5への中国コミュニティの反応: 技術評価は「推論・コーディング性能は評価」、批判は「中国語最適化不足」「国産モデル優位は限定的」「アクセス制限への不満」の二極化。",
             "data": {
               "headline": "Fable 5への中国AI界の反応——評価と批判の二極化",
               "tldr": "中国AIコミュニティはFable 5を技術的には一定評価しつつも、中国語最適化不足とアクセス制限への不満が強い。国産モデルとの競争文脈で論じられる。",
               "points": [
-                {"label": "肯定的評価", "value": "推論・コーディング性能向上を認める", "tone": "success"},
-                {"label": "批判①", "value": "中国語コンテンツ最適化が不足", "tone": "warning"},
-                {"label": "批判②", "value": "DeepSeek等への優位性は限定的", "tone": "warning"},
-                {"label": "批判③", "value": "中国でのアクセス制限への不満", "tone": "warning"}
+                {
+                  "label": "肯定的評価",
+                  "value": "推論・コーディング性能向上を認める",
+                  "tone": "success"
+                },
+                {
+                  "label": "批判①",
+                  "value": "中国語コンテンツ最適化が不足",
+                  "tone": "warning"
+                },
+                {
+                  "label": "批判②",
+                  "value": "DeepSeek等への優位性は限定的",
+                  "tone": "warning"
+                },
+                {
+                  "label": "批判③",
+                  "value": "中国でのアクセス制限への不満",
+                  "tone": "warning"
+                }
               ],
               "context": "中国AI市場でDeepSeek・Kimi・QwenなどがAnthropicと競争。米国制裁でAnthropicの直接アクセスが困難な状況が背景にある。",
               "impact": "中国市場でのAnthropicのブランド力は限定的。アクセス制限が続く限り、中国AI開発者は国産モデルを優先する傾向が強まる。"
-            }
+            },
+            "alt": "Claude Fable 5への中国コミュニティの反応: 技術評価は「推論・コーディング性能は評価」、批判は「中国語最適化不足」「国産モデル優位は限定的」「アクセス制限への不満」の二極化。"
           }
         },
         {
@@ -1268,19 +1572,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Physical AIの生命科学応用3領域: ロボット外科手術の自動化精度向上、AIによる創薬パイプライン加速（タンパク質予測→化合物スクリーニング）、AI顕微鏡による細胞解析高精度化。中国スタートアップも参入。",
             "data": {
               "headline": "Physical AI×生命科学——ロボット手術・創薬・細胞解析の実用化段階へ",
               "tldr": "Physical AIが生命科学3領域で産業化の実用段階に入った。中国医療AIスタートアップもグローバル競争に参入している。",
               "points": [
-                {"label": "ロボット手術", "value": "腹腔鏡自動化率が向上", "tone": "success"},
-                {"label": "創薬AI", "value": "タンパク質予測→化合物スクリーニング", "tone": "primary"},
-                {"label": "細胞解析", "value": "AI顕微鏡で高精度な組織分析", "tone": "info"},
-                {"label": "競争", "value": "中国スタートアップがグローバル参入", "tone": "warning"}
+                {
+                  "label": "ロボット手術",
+                  "value": "腹腔鏡自動化率が向上",
+                  "tone": "success"
+                },
+                {
+                  "label": "創薬AI",
+                  "value": "タンパク質予測→化合物スクリーニング",
+                  "tone": "primary"
+                },
+                {
+                  "label": "細胞解析",
+                  "value": "AI顕微鏡で高精度な組織分析",
+                  "tone": "info"
+                },
+                {
+                  "label": "競争",
+                  "value": "中国スタートアップがグローバル参入",
+                  "tone": "warning"
+                }
               ],
               "context": "生命科学×AIの産業化は、医療コスト削減・創薬期間短縮に直結する高インパクト分野。中国が重点投資している領域でもある。",
               "impact": "Physical AIの生命科学応用は医療・製薬産業のコストと期間を大幅削減する潜在力がある。規制対応と倫理的課題の整備が産業化の鍵となる。"
-            }
+            },
+            "alt": "Physical AIの生命科学応用3領域: ロボット外科手術の自動化精度向上、AIによる創薬パイプライン加速（タンパク質予測→化合物スクリーニング）、AI顕微鏡による細胞解析高精度化。中国スタートアップも参入。"
           }
         }
       ]
