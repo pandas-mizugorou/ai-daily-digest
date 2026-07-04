@@ -88,15 +88,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "GLM-5.2 概要",
-            "alt": "Z.aiのGLM-5.2はFable ban直後にリリースされたOSSコーディングモデル。GLM-5.1から大幅強化でフロントエンドコーディングのオープンウェイト首位を主張し、DeepSeek・Mistral・Cohere・Moonshotを主要評価で上回るとする。",
             "data": {
+              "headline": "GLM-5.2 概要",
+              "tldr": "",
               "points": [
-                "リリース時期: Fable 5 ban直後（2026-06-17）",
-                "位置づけ: OSSコーディングモデルのデフォルト候補",
-                "優位性: DeepSeek / Mistral / Cohere / Moonshot を評価で上回ると主張"
+                {
+                  "label": "",
+                  "value": "リリース時期: Fable 5 ban直後（2026-06-17）"
+                },
+                {
+                  "label": "",
+                  "value": "位置づけ: OSSコーディングモデルのデフォルト候補"
+                },
+                {
+                  "label": "",
+                  "value": "優位性: DeepSeek / Mistral / Cohere / Moonshot を評価で上回ると主張"
+                }
               ]
-            }
+            },
+            "alt": "Z.aiのGLM-5.2はFable ban直後にリリースされたOSSコーディングモデル。GLM-5.1から大幅強化でフロントエンドコーディングのオープンウェイト首位を主張し、DeepSeek・Mistral・Cohere・Moonshotを主要評価で上回るとする。"
           },
           "x_post": "Z.ai（Zhipu AI）がFable ban直後にGLM-5.2を公開した。OSSコーディングモデルの首位を主張するモデルで、DeepSeek・Mistral・Cohere・Moonshotを主要評価で上回ると発表。Fable 5不在の市場空白を狙った戦略的リリースである。\n\nhttps://latent.space/p/ainews-glm-52-the-top-frontend-coding"
         },
@@ -130,15 +140,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "DreamReasoner-8B アーキテクチャ",
-            "alt": "DreamReasoner-8BはDiffusion LMのLong CoT問題を小から大へのブロックサイズカリキュラム学習で解決した8Bパラメータモデル。大ブロックサイズ学習でLong CoT失敗という課題を発見し克服した。",
             "data": {
+              "headline": "DreamReasoner-8B アーキテクチャ",
+              "tldr": "",
               "points": [
-                "問題: 大ブロックサイズ学習 → Long CoT推論が失敗する",
-                "解決: ブロックサイズカリキュラム学習（小→大）",
-                "モデル: DreamReasoner-8B（arXiv: 2606.19257）"
+                {
+                  "label": "",
+                  "value": "問題: 大ブロックサイズ学習 → Long CoT推論が失敗する"
+                },
+                {
+                  "label": "",
+                  "value": "解決: ブロックサイズカリキュラム学習（小→大）"
+                },
+                {
+                  "label": "",
+                  "value": "モデル: DreamReasoner-8B（arXiv: 2606.19257）"
+                }
               ]
-            }
+            },
+            "alt": "DreamReasoner-8BはDiffusion LMのLong CoT問題を小から大へのブロックサイズカリキュラム学習で解決した8Bパラメータモデル。大ブロックサイズ学習でLong CoT失敗という課題を発見し克服した。"
           }
         }
       ]
@@ -177,17 +197,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Adobe AIアシスタント対応製品（公開ベータ）",
-            "alt": "AdobeがCreative Cloud 5製品に一斉AIアシスタントを公開ベータ投入。Photoshop、Premiere、Illustrator、InDesign、Frame.ioが対象で本日より提供開始。",
             "data": {
+              "headline": "Adobe AIアシスタント対応製品（公開ベータ）",
+              "tldr": "",
               "points": [
-                "Photoshop — 画像編集AIアシスタント",
-                "Premiere Pro — 動画編集AIアシスタント",
-                "Illustrator — ベクターデザインAIアシスタント",
-                "InDesign — レイアウトAIアシスタント",
-                "Frame.io — 映像レビューAIアシスタント"
+                {
+                  "label": "",
+                  "value": "Photoshop — 画像編集AIアシスタント"
+                },
+                {
+                  "label": "",
+                  "value": "Premiere Pro — 動画編集AIアシスタント"
+                },
+                {
+                  "label": "",
+                  "value": "Illustrator — ベクターデザインAIアシスタント"
+                },
+                {
+                  "label": "",
+                  "value": "InDesign — レイアウトAIアシスタント"
+                },
+                {
+                  "label": "",
+                  "value": "Frame.io — 映像レビューAIアシスタント"
+                }
               ]
-            }
+            },
+            "alt": "AdobeがCreative Cloud 5製品に一斉AIアシスタントを公開ベータ投入。Photoshop、Premiere、Illustrator、InDesign、Frame.ioが対象で本日より提供開始。"
           },
           "x_post": "AdobeがCreative Cloud主要5製品（Photoshop・Premiere・Illustrator・InDesign・Frame.io）に専用AIアシスタントを本日一斉公開ベータ投入した。クリエイティブ業界へのAI大規模統合の本格的な節目となるリリースである。\n\nhttps://theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch"
         },
@@ -221,16 +257,17 @@
           ],
           "figure": {
             "type": "comparison",
-            "title": "PEFT画像生成ベンチマーク：LoRA vs OFT",
-            "alt": "FLUX.2ベースの画像生成でOFTはLoRAより高い類似度（0.708 vs 0.697）を低いVRAM使用量（9.01GB vs 9.97GB）で達成した。LoRAのHF Hub独占（98.4%）は自己強化的な人気によるもの。",
             "data": {
-              "left_label": "LoRA",
-              "right_label": "OFT",
-              "rows": [
-                {"label": "画像類似度スコア（高いほど良）", "before_pct": 70, "after_pct": 71},
-                {"label": "VRAMメモリ使用量（低いほど良）", "before_pct": 100, "after_pct": 90}
-              ]
-            }
+              "headline": "PEFT画像生成ベンチマーク：LoRA vs OFT",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "alt": "FLUX.2ベースの画像生成でOFTはLoRAより高い類似度（0.708 vs 0.697）を低いVRAM使用量（9.01GB vs 9.97GB）で達成した。LoRAのHF Hub独占（98.4%）は自己強化的な人気によるもの。"
           }
         },
         {
@@ -263,16 +300,29 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "エージェント評価3ティアの構成",
-            "alt": "HFのエージェント評価フレームワークは3段階（bare/clone/skill）でオープンモデルのエージェント性能を測定。Qwen3-14Bでは文書強化で精度100%→0%の逆転が発生し、モデルサイズ横断テストの重要性を示した。",
             "data": {
+              "headline": "エージェント評価3ティアの構成",
+              "tldr": "",
               "points": [
-                "bare: インストール済みライブラリのみ提供",
-                "clone: フルソースコードを提供",
-                "skill: キュレーション文書・サンプルを提供",
-                "検証例: Qwen3-14B感情分類 clone=100% → skill=0%"
+                {
+                  "label": "",
+                  "value": "bare: インストール済みライブラリのみ提供"
+                },
+                {
+                  "label": "",
+                  "value": "clone: フルソースコードを提供"
+                },
+                {
+                  "label": "",
+                  "value": "skill: キュレーション文書・サンプルを提供"
+                },
+                {
+                  "label": "",
+                  "value": "検証例: Qwen3-14B感情分類 clone=100% → skill=0%"
+                }
               ]
-            }
+            },
+            "alt": "HFのエージェント評価フレームワークは3段階（bare/clone/skill）でオープンモデルのエージェント性能を測定。Qwen3-14Bでは文書強化で精度100%→0%の逆転が発生し、モデルサイズ横断テストの重要性を示した。"
           }
         }
       ]
@@ -311,15 +361,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Outputmaxxing の概念",
-            "alt": "xAIがMFU 10%未満で稼働していた事実からOutputmaxxing（既存GPU効率最大化戦略）の重要性を示す。GPUを増やすより既存GPUの使い方を最適化する次のスケーリング戦略。",
             "data": {
+              "headline": "Outputmaxxing の概念",
+              "tldr": "",
               "points": [
-                "xAIのMFU: フロンティアラボでも10%未満の可能性",
-                "Outputmaxxing: 既存GPU利用効率の最大化を優先",
-                "次のスケーリング戦略: 計算量増加より計算効率改善"
+                {
+                  "label": "",
+                  "value": "xAIのMFU: フロンティアラボでも10%未満の可能性"
+                },
+                {
+                  "label": "",
+                  "value": "Outputmaxxing: 既存GPU利用効率の最大化を優先"
+                },
+                {
+                  "label": "",
+                  "value": "次のスケーリング戦略: 計算量増加より計算効率改善"
+                }
               ]
-            }
+            },
+            "alt": "xAIがMFU 10%未満で稼働していた事実からOutputmaxxing（既存GPU効率最大化戦略）の重要性を示す。GPUを増やすより既存GPUの使い方を最適化する次のスケーリング戦略。"
           },
           "x_post": "xAIがMFU（モデル演算利用率）10%未満で稼働していた可能性があるという事実を起点に、GPUを増やすより既存GPUを最大活用する「Outputmaxxing」戦略の重要性を論じるLatent Spaceポッドキャストである。\n\nhttps://latent.space/p/anj"
         },
@@ -353,15 +413,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "AIエージェントによるロボット自律訓練",
-            "alt": "AIコーディングエージェントがロボットアームにGPU装着・ケーブルタイ切断の精密作業を自律的に学習させた実験。エージェントが物理世界のロボット訓練を指揮できることを実証。",
             "data": {
+              "headline": "AIエージェントによるロボット自律訓練",
+              "tldr": "",
               "points": [
-                "エージェント入力: ロボットアーム + 計算資源 + トークンバジェット",
-                "成功タスク: GPUをマザーボードに挿す・ケーブルタイを切断する",
-                "意義: 物理ロボット訓練の自律指揮を実証"
+                {
+                  "label": "",
+                  "value": "エージェント入力: ロボットアーム + 計算資源 + トークンバジェット"
+                },
+                {
+                  "label": "",
+                  "value": "成功タスク: GPUをマザーボードに挿す・ケーブルタイを切断する"
+                },
+                {
+                  "label": "",
+                  "value": "意義: 物理ロボット訓練の自律指揮を実証"
+                }
               ]
-            }
+            },
+            "alt": "AIコーディングエージェントがロボットアームにGPU装着・ケーブルタイ切断の精密作業を自律的に学習させた実験。エージェントが物理世界のロボット訓練を指揮できることを実証。"
           }
         }
       ]
@@ -400,15 +470,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Midjourney Scannerの概要",
-            "alt": "Midjourney初のハードウェア製品は超音波センサーリングを使った全身医療スキャナー。CEO David Holzが画像生成AIから医療デバイスへの事業転換を発表。",
             "data": {
+              "headline": "Midjourney Scannerの概要",
+              "tldr": "",
               "points": [
-                "製品: 超音波センサーリングを使った全身スキャナー",
-                "発表者: CEO David Holz",
-                "関連計画: サンフランシスコにスパ施設建設"
+                {
+                  "label": "",
+                  "value": "製品: 超音波センサーリングを使った全身スキャナー"
+                },
+                {
+                  "label": "",
+                  "value": "発表者: CEO David Holz"
+                },
+                {
+                  "label": "",
+                  "value": "関連計画: サンフランシスコにスパ施設建設"
+                }
               ]
-            }
+            },
+            "alt": "Midjourney初のハードウェア製品は超音波センサーリングを使った全身医療スキャナー。CEO David Holzが画像生成AIから医療デバイスへの事業転換を発表。"
           }
         },
         {
@@ -441,15 +521,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Adobe Firefly新スタジオの特徴",
-            "alt": "Adobe Firefly AIスタジオが再設計され、永続コンテキストで過去のクリエイティブプロジェクトを記憶。再利用アセットと統一ワークフロー管理機能を搭載。",
             "data": {
+              "headline": "Adobe Firefly新スタジオの特徴",
+              "tldr": "",
               "points": [
-                "永続コンテキスト: 過去のクリエイティブ作業を記憶",
-                "再利用アセット: デザイン要素の横断利用",
-                "統一ワークフロー: 生成・編集を一元管理"
+                {
+                  "label": "",
+                  "value": "永続コンテキスト: 過去のクリエイティブ作業を記憶"
+                },
+                {
+                  "label": "",
+                  "value": "再利用アセット: デザイン要素の横断利用"
+                },
+                {
+                  "label": "",
+                  "value": "統一ワークフロー: 生成・編集を一元管理"
+                }
               ]
-            }
+            },
+            "alt": "Adobe Firefly AIスタジオが再設計され、永続コンテキストで過去のクリエイティブプロジェクトを記憶。再利用アセットと統一ワークフロー管理機能を搭載。"
           }
         }
       ]
@@ -488,15 +578,23 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "title": "GPU監視研究のスコープ",
-            "alt": "5ラウンドの攻防繰り返しで20種の回避戦略ファミリーを9GPUモデル（4アーキテクチャ世代）で評価したAI計算ガバナンス向け監視研究。ゼロオーバーヘッドNVMLテレメトリがML学習検出に有効であることを示す。",
             "data": {
               "bars": [
-                {"label": "評価した回避戦略ファミリー（20種）", "pct": 100},
-                {"label": "テストGPUモデル（9種 / 4世代）", "pct": 45},
-                {"label": "モニター・回避者イテレーション（5回）", "pct": 25}
+                {
+                  "label": "評価した回避戦略ファミリー（20種）",
+                  "pct": 100
+                },
+                {
+                  "label": "テストGPUモデル（9種 / 4世代）",
+                  "pct": 45
+                },
+                {
+                  "label": "モニター・回避者イテレーション（5回）",
+                  "pct": 25
+                }
               ]
-            }
+            },
+            "alt": "5ラウンドの攻防繰り返しで20種の回避戦略ファミリーを9GPUモデル（4アーキテクチャ世代）で評価したAI計算ガバナンス向け監視研究。ゼロオーバーヘッドNVMLテレメトリがML学習検出に有効であることを示す。"
           },
           "x_post": "GPUテレメトリ（NVML）のみでML学習実行を検出できるかを検証した論文がarXivに公開。モデル重みや学習データへのアクセスなし。5ラウンドの攻防で20種の回避戦略を9GPUモデルで評価し、AIガバナンス向け計算監視の実現可能性を論じる基礎研究である。\n\nhttps://arxiv.org/abs/2606.19262v1"
         },
@@ -530,15 +628,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "OmniAgent アーキテクチャ",
-            "alt": "OmniAgentはPOMDP推論サイクルで長尺動画の音声視覚情報を選択的に処理する。watch-it-allパラダイムを廃した能動的知覚アーキテクチャで効率的なオムニモーダル理解を実現。",
             "data": {
+              "headline": "OmniAgent アーキテクチャ",
+              "tldr": "",
               "points": [
-                "アーキテクチャ: POMDPベースのObservation-Thought-Actionサイクル",
-                "特徴: 音声・映像の重要キューのみを選択的にテキストメモリへ蒸留",
-                "用途: 長尺動画のオムニモーダル理解"
+                {
+                  "label": "",
+                  "value": "アーキテクチャ: POMDPベースのObservation-Thought-Actionサイクル"
+                },
+                {
+                  "label": "",
+                  "value": "特徴: 音声・映像の重要キューのみを選択的にテキストメモリへ蒸留"
+                },
+                {
+                  "label": "",
+                  "value": "用途: 長尺動画のオムニモーダル理解"
+                }
               ]
-            }
+            },
+            "alt": "OmniAgentはPOMDP推論サイクルで長尺動画の音声視覚情報を選択的に処理する。watch-it-allパラダイムを廃した能動的知覚アーキテクチャで効率的なオムニモーダル理解を実現。"
           }
         },
         {
@@ -571,15 +679,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "2026 LLM論文リスト（Jan-May）",
-            "alt": "Sebastian Raschkaが選ぶ2026年1月〜5月のLLM重要論文キュレーションリスト。各論文に技術解説付き。",
             "data": {
+              "headline": "2026 LLM論文リスト（Jan-May）",
+              "tldr": "",
               "points": [
-                "著者: Sebastian Raschka（元Apple MLリサーチャー）",
-                "対象期間: 2026年1月〜5月",
-                "形式: 論文ごとの技術解説・重要性コメント付きキュレーション"
+                {
+                  "label": "",
+                  "value": "著者: Sebastian Raschka（元Apple MLリサーチャー）"
+                },
+                {
+                  "label": "",
+                  "value": "対象期間: 2026年1月〜5月"
+                },
+                {
+                  "label": "",
+                  "value": "形式: 論文ごとの技術解説・重要性コメント付きキュレーション"
+                }
               ]
-            }
+            },
+            "alt": "Sebastian Raschkaが選ぶ2026年1月〜5月のLLM重要論文キュレーションリスト。各論文に技術解説付き。"
           }
         }
       ]
@@ -618,15 +736,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "G7でのAI依存リスク議論",
-            "alt": "G7サミットでマクロン仏大統領・モディ印首相が米国製AI遮断リスクを警告。Anthropicブラックアウトがそのリスクを現実化した。各国のAI主権議論が加速。",
             "data": {
+              "headline": "G7でのAI依存リスク議論",
+              "tldr": "",
               "points": [
-                "警告者: フランスのマクロン大統領、インドのモディ首相（G7サミット）",
-                "懸念内容: 米国が一夜にして米国製AI供給を遮断できる",
-                "背景: AnthropicのFable 5/Mythos 5ブラックアウト事件"
+                {
+                  "label": "",
+                  "value": "警告者: フランスのマクロン大統領、インドのモディ首相（G7サミット）"
+                },
+                {
+                  "label": "",
+                  "value": "懸念内容: 米国が一夜にして米国製AI供給を遮断できる"
+                },
+                {
+                  "label": "",
+                  "value": "背景: AnthropicのFable 5/Mythos 5ブラックアウト事件"
+                }
               ]
-            }
+            },
+            "alt": "G7サミットでマクロン仏大統領・モディ印首相が米国製AI遮断リスクを警告。Anthropicブラックアウトがそのリスクを現実化した。各国のAI主権議論が加速。"
           }
         },
         {
@@ -659,15 +787,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "サンダース議員のAI課税プラン",
-            "alt": "年間AI売上2億ドル超の企業株式に一時的50%税を課し7兆ドルを調達、国民主権投資ファンドを設立するサンダース議員の提案。",
             "data": {
+              "headline": "サンダース議員のAI課税プラン",
+              "tldr": "",
               "points": [
-                "課税内容: AI大手企業株式への一時的50%課税",
-                "対象: 年間AI売上2億ドル以上の企業",
-                "目的: 7兆ドルの国民主権投資ファンド設立"
+                {
+                  "label": "",
+                  "value": "課税内容: AI大手企業株式への一時的50%課税"
+                },
+                {
+                  "label": "",
+                  "value": "対象: 年間AI売上2億ドル以上の企業"
+                },
+                {
+                  "label": "",
+                  "value": "目的: 7兆ドルの国民主権投資ファンド設立"
+                }
               ]
-            }
+            },
+            "alt": "年間AI売上2億ドル超の企業株式に一時的50%税を課し7兆ドルを調達、国民主権投資ファンドを設立するサンダース議員の提案。"
           }
         }
       ]
@@ -706,15 +844,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "GDM AIコントロールロードマップv0.1",
-            "alt": "Google DeepMindがAIエージェントの敵対的行動を封じ込めるシステムレベルのガードレール計画「AI Control Roadmap v0.1」を公開。サイバーセキュリティ式スレットモデリングに基づく内部安全策。",
             "data": {
+              "headline": "GDM AIコントロールロードマップv0.1",
+              "tldr": "",
               "points": [
-                "目的: 自律化するAIエージェントの敵対的行動をシステムレベルで封じ込め",
-                "手法: サイバーセキュリティ式・最悪ケース想定のスレットモデリング",
-                "フェーズ: v0.1（初版）——GDM社内ガードレール実装・採用計画"
+                {
+                  "label": "",
+                  "value": "目的: 自律化するAIエージェントの敵対的行動をシステムレベルで封じ込め"
+                },
+                {
+                  "label": "",
+                  "value": "手法: サイバーセキュリティ式・最悪ケース想定のスレットモデリング"
+                },
+                {
+                  "label": "",
+                  "value": "フェーズ: v0.1（初版）——GDM社内ガードレール実装・採用計画"
+                }
               ]
-            }
+            },
+            "alt": "Google DeepMindがAIエージェントの敵対的行動を封じ込めるシステムレベルのガードレール計画「AI Control Roadmap v0.1」を公開。サイバーセキュリティ式スレットモデリングに基づく内部安全策。"
           },
           "x_post": "Google DeepMindがAI Control Roadmap v0.1を公開した。自律化するAIエージェントの敵対的行動をシステムレベルで封じ込める内部ガードレール計画で、サイバーセキュリティ式のスレットモデリングを採用している。\n\nhttps://lesswrong.com/posts/hEtkyKGoPpFeWnKkX/gdm-ai-control-roadmap"
         }
@@ -754,15 +902,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "AI #173: White House AI停止事件の要点",
-            "alt": "White HouseがClaude Fable 5とMythos 5を輸出管理により金曜17:23に停止。AIポーズの政治的手法として前例的な事件のLessWrong週次分析。",
             "data": {
+              "headline": "AI #173: White House AI停止事件の要点",
+              "tldr": "",
               "points": [
-                "停止モデル: Claude Fable 5 / Claude Mythos 5",
-                "停止手段: 輸出管理（White House発動、金曜17:23）",
-                "LessWrong #173のキーテーマ: AIポーズの是非と政府介入の前例"
+                {
+                  "label": "",
+                  "value": "停止モデル: Claude Fable 5 / Claude Mythos 5"
+                },
+                {
+                  "label": "",
+                  "value": "停止手段: 輸出管理（White House発動、金曜17:23）"
+                },
+                {
+                  "label": "",
+                  "value": "LessWrong #173のキーテーマ: AIポーズの是非と政府介入の前例"
+                }
               ]
-            }
+            },
+            "alt": "White HouseがClaude Fable 5とMythos 5を輸出管理により金曜17:23に停止。AIポーズの政治的手法として前例的な事件のLessWrong週次分析。"
           }
         },
         {
@@ -795,15 +953,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "オープンウェイトvsフロンティアの遅延分析",
-            "alt": "Epoch ECIを使用してオープンウェイトモデルがフロンティアクローズドモデルより何ヶ月遅延しているかを分析。AAインデックスより精緻なECI指標で月単位の差を定量化。",
             "data": {
+              "headline": "オープンウェイトvsフロンティアの遅延分析",
+              "tldr": "",
               "points": [
-                "指標: Epoch ECI（Economic Competitiveness Index）",
-                "手法: 各オープンウェイトモデルと同水準クローズドモデルのリリース差（月数）を算出",
-                "結論: ECI指標でオープン/クローズドフロンティア間の差を定量化"
+                {
+                  "label": "",
+                  "value": "指標: Epoch ECI（Economic Competitiveness Index）"
+                },
+                {
+                  "label": "",
+                  "value": "手法: 各オープンウェイトモデルと同水準クローズドモデルのリリース差（月数）を算出"
+                },
+                {
+                  "label": "",
+                  "value": "結論: ECI指標でオープン/クローズドフロンティア間の差を定量化"
+                }
               ]
-            }
+            },
+            "alt": "Epoch ECIを使用してオープンウェイトモデルがフロンティアクローズドモデルより何ヶ月遅延しているかを分析。AAインデックスより精緻なECI指標で月単位の差を定量化。"
           }
         }
       ]
@@ -824,7 +992,10 @@
           "lang": "ja",
           "summary_en": "",
           "raw_excerpt": "会社員のためのCodex資料作成術：Skillで統一感のあるプレゼン資料を作る実践ガイド はじめに 最近、業務資料の作成にも生成AIを活用する機会が増えてきました。ただし、AIにいきなり「プレゼン資料を作って」と依頼しても、実務でそのまま使える資料になるとは限りません。",
-          "reaction_signal": {"kind": "hatena", "users": 321},
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 321
+          },
           "time_window_hours": 48,
           "category_hint": "japan",
           "score": {
@@ -842,15 +1013,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Codex資料作成術（はてブ321ユーザー）",
-            "alt": "OpenAI Codex + Skill機能を活用して統一感のあるビジネスプレゼン資料を作る実践ガイド。はてブ321ユーザーを獲得した今週最大の反響記事。",
             "data": {
+              "headline": "Codex資料作成術（はてブ321ユーザー）",
+              "tldr": "",
               "points": [
-                "活用ツール: OpenAI Codex + Skill機能",
-                "成果物: 統一感のあるビジネスプレゼン資料",
-                "反響: はてブ321ユーザー（2026-06-17時点）"
+                {
+                  "label": "",
+                  "value": "活用ツール: OpenAI Codex + Skill機能"
+                },
+                {
+                  "label": "",
+                  "value": "成果物: 統一感のあるビジネスプレゼン資料"
+                },
+                {
+                  "label": "",
+                  "value": "反響: はてブ321ユーザー（2026-06-17時点）"
+                }
               ]
-            }
+            },
+            "alt": "OpenAI Codex + Skill機能を活用して統一感のあるビジネスプレゼン資料を作る実践ガイド。はてブ321ユーザーを獲得した今週最大の反響記事。"
           }
         },
         {
@@ -865,7 +1046,10 @@
           "lang": "ja",
           "summary_en": "",
           "raw_excerpt": "自称AI絵師がイラストレーターとして企業に応募してくるケースが本当に増えているらしい→採用側が頭を抱えるエピソードが次々と寄せられる 神楽月はじめ @november_1 パソコンを奪われて紙と鉛筆を渡されて描けと言われたら アナログ絵師：紙と鉛筆で絵を描く（得意分野） デジタル絵師：紙と鉛筆で絵を描く（余裕） AI絵師：紙と鉛筆を前にして泣く、紙を破り捨て鉛筆を折る",
-          "reaction_signal": {"kind": "hatena", "users": 155},
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 155
+          },
           "time_window_hours": 48,
           "category_hint": "japan",
           "score": {
@@ -883,15 +1067,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "AI絵師応募問題の構図",
-            "alt": "AI画像生成ツールのみを使うAI絵師がイラストレーター求人に応募増加。「紙と鉛筆を渡されたら描けない」という基礎技術問題で採用側が苦慮。はてブ155件。",
             "data": {
+              "headline": "AI絵師応募問題の構図",
+              "tldr": "",
               "points": [
-                "問題: AI生成ツール依存の応募者が「アナログで描けない」",
-                "採用側の苦慮: 技術力の真の評価方法が不明確",
-                "反響: はてブ155ユーザー（日本クリエイター業界の懸念）"
+                {
+                  "label": "",
+                  "value": "問題: AI生成ツール依存の応募者が「アナログで描けない」"
+                },
+                {
+                  "label": "",
+                  "value": "採用側の苦慮: 技術力の真の評価方法が不明確"
+                },
+                {
+                  "label": "",
+                  "value": "反響: はてブ155ユーザー（日本クリエイター業界の懸念）"
+                }
               ]
-            }
+            },
+            "alt": "AI画像生成ツールのみを使うAI絵師がイラストレーター求人に応募増加。「紙と鉛筆を渡されたら描けない」という基礎技術問題で採用側が苦慮。はてブ155件。"
           }
         },
         {
@@ -906,7 +1100,10 @@
           "lang": "ja",
           "summary_en": "",
           "raw_excerpt": "AntigravityとローカルLLMをMCPで繋ぐ！完全無料でクオータを99%削減する連携術 はじめに 生成AIをヘビーに使い倒す開発者や学習者にとって、最大の敵は「APIクオータ（利用制限）の枯渇」ではないでしょうか。私はAIアシスタント「Antigravity（Gemini）」の優秀な対話UI（特に出力に対してピンポイントでコメントできる機能）が大好きで、思考整理やブログの下書きに使い込んでいました。",
-          "reaction_signal": {"kind": "hatena", "users": 153},
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 153
+          },
           "time_window_hours": 48,
           "category_hint": "japan",
           "score": {
@@ -924,15 +1121,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Antigravity+MCP構成（クォータ99%削減）",
-            "alt": "AntigravityとローカルLLMをMCPで接続しAPIクォータを99%削減する構成。Gemini UIを維持したまま完全無料でヘビーAI利用を実現。はてブ153件。",
             "data": {
+              "headline": "Antigravity+MCP構成（クォータ99%削減）",
+              "tldr": "",
               "points": [
-                "構成: Antigravity（Gemini UI）+ MCP + ローカルLLM",
-                "効果: APIクォータ99%削減",
-                "特徴: 完全無料・Geminiの対話UI品質を維持"
+                {
+                  "label": "",
+                  "value": "構成: Antigravity（Gemini UI）+ MCP + ローカルLLM"
+                },
+                {
+                  "label": "",
+                  "value": "効果: APIクォータ99%削減"
+                },
+                {
+                  "label": "",
+                  "value": "特徴: 完全無料・Geminiの対話UI品質を維持"
+                }
               ]
-            }
+            },
+            "alt": "AntigravityとローカルLLMをMCPで接続しAPIクォータを99%削減する構成。Gemini UIを維持したまま完全無料でヘビーAI利用を実現。はてブ153件。"
           },
           "x_post": "AntigravityとローカルLLMをMCPで接続してAPIクォータを99%削減した構成のZenn実装記事がはてブ153件を獲得。完全無料でGeminiの対話UI品質を維持したままローカルLLMに重処理をオフロードする実用的な構成例である。\n\nhttps://zenn.dev/kojimaru/articles/2864ef6ce8b85c"
         },
@@ -966,15 +1173,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "PLaMo-3.0-Prime-β 社内活用",
-            "alt": "PFNがPLaMo-3.0-Prime-βをLLM開発業務（データ準備・評価・分析）に実稼働投入した国産モデルの自己活用事例。",
             "data": {
+              "headline": "PLaMo-3.0-Prime-β 社内活用",
+              "tldr": "",
               "points": [
-                "モデル: PLaMo-3.0-Prime-β（PFN開発）",
-                "活用場面: 学習データ準備・評価・実験分析（LLM開発業務全般）",
-                "意義: 国産モデルが自社開発業務で実用レベルに達したことを示す"
+                {
+                  "label": "",
+                  "value": "モデル: PLaMo-3.0-Prime-β（PFN開発）"
+                },
+                {
+                  "label": "",
+                  "value": "活用場面: 学習データ準備・評価・実験分析（LLM開発業務全般）"
+                },
+                {
+                  "label": "",
+                  "value": "意義: 国産モデルが自社開発業務で実用レベルに達したことを示す"
+                }
               ]
-            }
+            },
+            "alt": "PFNがPLaMo-3.0-Prime-βをLLM開発業務（データ準備・評価・分析）に実稼働投入した国産モデルの自己活用事例。"
           }
         },
         {
@@ -1007,15 +1224,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "安野氏「牧歌的時代の終焉」発言",
-            "alt": "チームみらい安野貴博代表が「牧歌的なAI開発の時代が終わった」とAnthropicモデル停止騒動を受けて会見で発言。日本政治でのAI主権議論が本格化。",
             "data": {
+              "headline": "安野氏「牧歌的時代の終焉」発言",
+              "tldr": "",
               "points": [
-                "発言者: チームみらい 安野貴博党首（2026-06-18会見）",
-                "発言内容: 「牧歌的なAI開発の時代が終わった」",
-                "背景: Anthropic Mythos 5・Fable 5の提供停止騒動"
+                {
+                  "label": "",
+                  "value": "発言者: チームみらい 安野貴博党首（2026-06-18会見）"
+                },
+                {
+                  "label": "",
+                  "value": "発言内容: 「牧歌的なAI開発の時代が終わった」"
+                },
+                {
+                  "label": "",
+                  "value": "背景: Anthropic Mythos 5・Fable 5の提供停止騒動"
+                }
               ]
-            }
+            },
+            "alt": "チームみらい安野貴博代表が「牧歌的なAI開発の時代が終わった」とAnthropicモデル停止騒動を受けて会見で発言。日本政治でのAI主権議論が本格化。"
           }
         }
       ]
@@ -1054,15 +1281,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "ABot-Earth0.5 概要",
-            "alt": "ABot-Earth0.5はHF論文ランキング3指標を同時首位獲得。Unity/Unrealへ直接インポート可能なインタラクティブ3D World Model。国際CG権威 陳宝権教授が高評価。",
             "data": {
+              "headline": "ABot-Earth0.5 概要",
+              "tldr": "",
               "points": [
-                "達成: HF論文ランキング3指標同時首位",
-                "機能: Unity・Unreal Engineへの直接インポート対応",
-                "評価: 国際CG権威 陳宝権教授（Baoquan Chen）が高評価"
+                {
+                  "label": "",
+                  "value": "達成: HF論文ランキング3指標同時首位"
+                },
+                {
+                  "label": "",
+                  "value": "機能: Unity・Unreal Engineへの直接インポート対応"
+                },
+                {
+                  "label": "",
+                  "value": "評価: 国際CG権威 陳宝権教授（Baoquan Chen）が高評価"
+                }
               ]
-            }
+            },
+            "alt": "ABot-Earth0.5はHF論文ランキング3指標を同時首位獲得。Unity/Unrealへ直接インポート可能なインタラクティブ3D World Model。国際CG権威 陳宝権教授が高評価。"
           }
         },
         {
@@ -1095,15 +1332,25 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "何恺明チーム 258M文生图モデル",
-            "alt": "何恺明チームの258Mパラメータ軽量テキスト→画像生成モデル。著者は何恺明教授と学部生5名の全6人チーム。少パラメータでの高品質生成を実証。",
             "data": {
+              "headline": "何恺明チーム 258M文生图モデル",
+              "tldr": "",
               "points": [
-                "モデル: 258Mパラメータの軽量テキスト→画像生成",
-                "著者: 何恺明教授 + 学部生5名（全6人）",
-                "意義: 少パラメータでの高品質生成への新アプローチ"
+                {
+                  "label": "",
+                  "value": "モデル: 258Mパラメータの軽量テキスト→画像生成"
+                },
+                {
+                  "label": "",
+                  "value": "著者: 何恺明教授 + 学部生5名（全6人）"
+                },
+                {
+                  "label": "",
+                  "value": "意義: 少パラメータでの高品質生成への新アプローチ"
+                }
               ]
-            }
+            },
+            "alt": "何恺明チームの258Mパラメータ軽量テキスト→画像生成モデル。著者は何恺明教授と学部生5名の全6人チーム。少パラメータでの高品質生成を実証。"
           }
         }
       ]

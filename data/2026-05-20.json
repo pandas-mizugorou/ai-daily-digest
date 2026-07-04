@@ -23,12 +23,36 @@
     }
   },
   "top_picks": [
-    { "id": "nm-001", "rank": 1, "reason": "Google I/O 2026の旗艦モデル。前世代比全ベンチマーク超え・エージェントAI宣言でフロンティアが更新" },
-    { "id": "ib-001", "rank": 2, "reason": "OpenAI共同設立者がAnthropicに入社。AI研究の最前線での人材移動として業界インパクト最大級" },
-    { "id": "mm-001", "rank": 3, "reason": "任意入力→動画生成の統合モデル。Google I/O同日展開開始で即利用可能" },
-    { "id": "jp-002", "rank": 4, "reason": "はてブ209件。AI事業の難易度を10段階でフレーム化した実践的分類がエンジニアに刺さった" },
-    { "id": "rp-002", "rank": 5, "reason": "RL訓練インフラの自動化で+15%改善。エージェント開発の民主化に直結する研究成果" },
-    { "id": "jp-001", "rank": 6, "reason": "純国産LLMがGPT-5.2相当の図表読解性能を達成。日本語AIの実用水準到達を示す" }
+    {
+      "id": "nm-001",
+      "rank": 1,
+      "reason": "Google I/O 2026の旗艦モデル。前世代比全ベンチマーク超え・エージェントAI宣言でフロンティアが更新"
+    },
+    {
+      "id": "ib-001",
+      "rank": 2,
+      "reason": "OpenAI共同設立者がAnthropicに入社。AI研究の最前線での人材移動として業界インパクト最大級"
+    },
+    {
+      "id": "mm-001",
+      "rank": 3,
+      "reason": "任意入力→動画生成の統合モデル。Google I/O同日展開開始で即利用可能"
+    },
+    {
+      "id": "jp-002",
+      "rank": 4,
+      "reason": "はてブ209件。AI事業の難易度を10段階でフレーム化した実践的分類がエンジニアに刺さった"
+    },
+    {
+      "id": "rp-002",
+      "rank": 5,
+      "reason": "RL訓練インフラの自動化で+15%改善。エージェント開発の民主化に直結する研究成果"
+    },
+    {
+      "id": "jp-001",
+      "rank": 6,
+      "reason": "純国産LLMがGPT-5.2相当の図表読解性能を達成。日本語AIの実用水準到達を示す"
+    }
   ],
   "categories": [
     {
@@ -62,24 +86,66 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "tags": ["Gemini", "Google", "Google I/O", "エージェント", "コーディング", "LLM"],
+          "tags": [
+            "Gemini",
+            "Google",
+            "Google I/O",
+            "エージェント",
+            "コーディング",
+            "LLM"
+          ],
           "x_post": "Google I/O 2026でGemini 3.5 Flashが発表された。前世代3.1 Proをほぼ全ベンチマークで超え、独立してコーディングパイプラインを実行しOSをゼロから構築できる性能を持つという。会話AIからエージェントAIへの本格転換を宣言した発表だと私は受け取っている。\n\nhttps://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
           "figure": {
             "type": "metric-bars",
-            "caption": "Gemini 3.5 Flash vs 3.1 Pro",
-            "alt": "Gemini 3.5 FlashとGemini 3.1 Proのベンチマーク比較。コーディング・エージェントタスク・マルチモーダル推論でGemini 3.5 Flashが前世代を上回り、最適化版では12倍の速度向上を達成。",
             "data": {
               "headline": "Gemini 3.5 Flash: ほぼ全指標で3.1 Proを超過",
-              "scale": { "max_label": "3.1 Pro比相対性能", "unit": "相対スコア" },
+              "scale": {
+                "max_label": "3.1 Pro比相対性能",
+                "unit": "相対スコア"
+              },
               "bars": [
-                { "label": "コーディング", "value": "3.1 Proを超過", "pct": 92, "baseline_pct": 75, "baseline_label": "3.1 Pro", "delta": "+超過", "tone": "success" },
-                { "label": "エージェント", "value": "3.1 Proを超過", "pct": 89, "baseline_pct": 70, "baseline_label": "3.1 Pro", "delta": "+超過", "tone": "success" },
-                { "label": "マルチモーダル", "value": "3.1 Proを超過", "pct": 85, "baseline_pct": 72, "baseline_label": "3.1 Pro", "delta": "+超過", "tone": "success" },
-                { "label": "推論速度(最適化版)", "value": "12x faster", "pct": 100, "baseline_pct": 8, "baseline_label": "3.1 Pro同等", "delta": "12倍", "tone": "primary" }
+                {
+                  "label": "コーディング",
+                  "value": "3.1 Proを超過",
+                  "pct": 92,
+                  "baseline_pct": 75,
+                  "baseline_label": "3.1 Pro",
+                  "delta": "+超過",
+                  "tone": "success"
+                },
+                {
+                  "label": "エージェント",
+                  "value": "3.1 Proを超過",
+                  "pct": 89,
+                  "baseline_pct": 70,
+                  "baseline_label": "3.1 Pro",
+                  "delta": "+超過",
+                  "tone": "success"
+                },
+                {
+                  "label": "マルチモーダル",
+                  "value": "3.1 Proを超過",
+                  "pct": 85,
+                  "baseline_pct": 72,
+                  "baseline_label": "3.1 Pro",
+                  "delta": "+超過",
+                  "tone": "success"
+                },
+                {
+                  "label": "推論速度(最適化版)",
+                  "value": "12x faster",
+                  "pct": 100,
+                  "baseline_pct": 8,
+                  "baseline_label": "3.1 Pro同等",
+                  "delta": "12倍",
+                  "tone": "primary"
+                }
               ],
               "narrative": "Gemini 3.5 FlashはGoogle I/O 2026で発表された旗艦モデル。コーディング・エージェント・マルチモーダルの全指標で前世代3.1 Proを超え、最適化版では12倍の高速化を実現。",
               "impact": "エンジニアは本日よりGemini APIで利用可能。OSを自律構築できるレベルのエージェント性能が実用段階へ。"
-            }
+            },
+            "caption": "Gemini 3.5 Flash vs 3.1 Pro",
+            "alt": "Gemini 3.5 FlashとGemini 3.1 Proのベンチマーク比較。コーディング・エージェントタスク・マルチモーダル推論でGemini 3.5 Flashが前世代を上回り、最適化版では12倍の速度向上を達成。"
           }
         },
         {
@@ -108,25 +174,74 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 0 },
-          "tags": ["MiniCPM", "vision", "軽量モデル", "マルチモーダル", "エッジAI", "openbmb"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 0
+          },
+          "tags": [
+            "MiniCPM",
+            "vision",
+            "軽量モデル",
+            "マルチモーダル",
+            "エッジAI",
+            "openbmb"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "1B vs 7B+ 性能比較",
-            "alt": "MiniCPM-V 4.6（1B）と7B以上の大規模ビジョン言語モデルの比較。パラメータ数は7分の1以下ながら、画像理解・テキスト生成タスクで同等水準の性能を発揮することを示す。",
             "data": {
               "headline": "MiniCPM-V 4.6: 1B で 7B+ に匹敵する画像理解性能",
-              "before": { "label": "7B+ モデル", "sublabel": "標準的なビジョンモデル" },
-              "after": { "label": "MiniCPM-V 4.6", "sublabel": "1B 軽量設計" },
+              "before": {
+                "label": "7B+ モデル",
+                "sublabel": "標準的なビジョンモデル"
+              },
+              "after": {
+                "label": "MiniCPM-V 4.6",
+                "sublabel": "1B 軽量設計"
+              },
               "metrics": [
-                { "label": "パラメータ", "before": "7B+", "after": "1B", "before_pct": 100, "after_pct": 14, "delta": "1/7以下", "delta_tone": "success", "note": "推論コスト大幅削減" },
-                { "label": "画像理解", "before": "ベースライン", "after": "同等水準", "before_pct": 80, "after_pct": 78, "delta": "同等", "delta_tone": "info" },
-                { "label": "テキスト生成", "before": "ベースライン", "after": "同等水準", "before_pct": 75, "after_pct": 74, "delta": "同等", "delta_tone": "info" },
-                { "label": "推論速度", "before": "標準", "after": "高速", "before_pct": 50, "after_pct": 80, "delta": "+高速", "delta_tone": "success" }
+                {
+                  "label": "パラメータ",
+                  "before": "7B+",
+                  "after": "1B",
+                  "before_pct": 100,
+                  "after_pct": 14,
+                  "delta": "1/7以下",
+                  "delta_tone": "success",
+                  "note": "推論コスト大幅削減"
+                },
+                {
+                  "label": "画像理解",
+                  "before": "ベースライン",
+                  "after": "同等水準",
+                  "before_pct": 80,
+                  "after_pct": 78,
+                  "delta": "同等",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "テキスト生成",
+                  "before": "ベースライン",
+                  "after": "同等水準",
+                  "before_pct": 75,
+                  "after_pct": 74,
+                  "delta": "同等",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "推論速度",
+                  "before": "標準",
+                  "after": "高速",
+                  "before_pct": 50,
+                  "after_pct": 80,
+                  "delta": "+高速",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "openbmbが1Bの軽量モデルで7B+の性能水準に追いついた。エッジデバイスへの展開が現実的に。",
               "impact": "スマートフォン・IoTデバイスへの高精度ビジョンAI実装コストが劇的に下がる可能性。"
-            }
+            },
+            "caption": "1B vs 7B+ 性能比較",
+            "alt": "MiniCPM-V 4.6（1B）と7B以上の大規模ビジョン言語モデルの比較。パラメータ数は7分の1以下ながら、画像理解・テキスト生成タスクで同等水準の性能を発揮することを示す。"
           }
         }
       ]
@@ -162,23 +277,48 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Antigravity", "Google", "開発ツール", "エージェント", "IDE", "Gemini"],
+          "tags": [
+            "Antigravity",
+            "Google",
+            "開発ツール",
+            "エージェント",
+            "IDE",
+            "Gemini"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Antigravity 2.0 概要",
-            "alt": "Google Antigravity 2.0のサマリー。エージェントファースト設計のデスクトップアプリで、Gemini 3.5 Flash搭載、マルチエージェント並列実行対応、Google I/O 2026から提供開始。",
             "data": {
               "headline": "Antigravity 2.0: エージェントが主役の次世代開発環境",
               "tldr": "GoogleがI/O 2026でエージェントネイティブのデスクトップ開発アプリを公開。AIが主体的にコードを書き、テストし、デプロイする環境を提供。人間は高レベル指示のみでOK。",
               "points": [
-                { "icon": "🤖", "label": "設計思想", "value": "エージェントファースト", "tone": "primary" },
-                { "icon": "⚡", "label": "搭載モデル", "value": "Gemini 3.5 Flash" },
-                { "icon": "🔀", "label": "並列実行", "value": "マルチエージェント対応" },
-                { "icon": "📅", "label": "提供開始", "value": "2026-05-19 (I/O同日)", "tone": "success" }
+                {
+                  "icon": "🤖",
+                  "label": "設計思想",
+                  "value": "エージェントファースト",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "搭載モデル",
+                  "value": "Gemini 3.5 Flash"
+                },
+                {
+                  "icon": "🔀",
+                  "label": "並列実行",
+                  "value": "マルチエージェント対応"
+                },
+                {
+                  "icon": "📅",
+                  "label": "提供開始",
+                  "value": "2026-05-19 (I/O同日)",
+                  "tone": "success"
+                }
               ],
               "context": "従来のIDE統合（Claude Code for VS Code等）はエディタにAIを組み込む設計。Antigravityはエージェントを主役としてゼロから設計された点で質的に異なる。",
               "impact": "開発フローの自動化が加速。人間エンジニアの役割がコーディングから指示・レビューへシフトする流れを加速。"
-            }
+            },
+            "caption": "Antigravity 2.0 概要",
+            "alt": "Google Antigravity 2.0のサマリー。エージェントファースト設計のデスクトップアプリで、Gemini 3.5 Flash搭載、マルチエージェント並列実行対応、Google I/O 2026から提供開始。"
           }
         },
         {
@@ -207,23 +347,44 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["Google", "スマートグラス", "ウェアラブル", "Gemini", "音声AI", "ハードウェア"],
+          "tags": [
+            "Google",
+            "スマートグラス",
+            "ウェアラブル",
+            "Gemini",
+            "音声AI",
+            "ハードウェア"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Google スマートグラス",
-            "alt": "Google Gemini搭載スマートグラスの概要。音声コマンドでGeminiと会話、ナビ、撮影が可能。Meta Ray-Bansへの競合製品として2026年Google I/Oで発表。",
             "data": {
               "headline": "Google、Gemini搭載音声スマートグラスをI/O 2026で発表",
               "tldr": "音声だけでGeminiに指示できるスマートグラスをGoogleが公開。Meta Ray-Bansと直接競合し、ウェアラブルAIデバイス市場に本格参入。",
               "points": [
-                { "label": "AI搭載", "value": "Gemini (音声対応)", "tone": "primary" },
-                { "label": "競合製品", "value": "Meta Ray-Bans" },
-                { "label": "主な機能", "value": "会話・ナビ・撮影" },
-                { "label": "発表日", "value": "2026-05-19 (I/O)", "tone": "success" }
+                {
+                  "label": "AI搭載",
+                  "value": "Gemini (音声対応)",
+                  "tone": "primary"
+                },
+                {
+                  "label": "競合製品",
+                  "value": "Meta Ray-Bans"
+                },
+                {
+                  "label": "主な機能",
+                  "value": "会話・ナビ・撮影"
+                },
+                {
+                  "label": "発表日",
+                  "value": "2026-05-19 (I/O)",
+                  "tone": "success"
+                }
               ],
               "context": "Metaがスマートグラスで先行し、Ray-Bansが普及。GoogleはAndroid/Geminiエコシステムの強みで追随。",
               "impact": "AI搭載ウェアラブルの競争が激化。常時接続AIアシスタントの新しいハードウェア形態が市場に定着する可能性。"
-            }
+            },
+            "caption": "Google スマートグラス",
+            "alt": "Google Gemini搭載スマートグラスの概要。音声コマンドでGeminiと会話、ナビ、撮影が可能。Meta Ray-Bansへの競合製品として2026年Google I/Oで発表。"
           }
         },
         {
@@ -252,23 +413,64 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["rtk", "CLI", "トークン最適化", "Claude Code", "Cursor", "Rust", "開発ツール"],
+          "tags": [
+            "rtk",
+            "CLI",
+            "トークン最適化",
+            "Claude Code",
+            "Cursor",
+            "Rust",
+            "開発ツール"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "rtk トークン削減率",
-            "alt": "rtkによるLLMトークン消費削減効果。一般的な開発コマンド（git status、ls、diff等）の出力で60-90%のトークン削減を実現。GitHubスター50,765。",
             "data": {
               "headline": "rtk: 開発コマンドのトークン消費を最大90%削減",
-              "scale": { "max_label": "従来比 100%", "unit": "%" },
+              "scale": {
+                "max_label": "従来比 100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "git status", "value": "10-40%消費", "pct": 25, "baseline_pct": 100, "baseline_label": "最適化なし", "delta": "-75%", "tone": "success" },
-                { "label": "ls出力", "value": "10-30%消費", "pct": 20, "baseline_pct": 100, "baseline_label": "最適化なし", "delta": "-80%", "tone": "success" },
-                { "label": "diff出力", "value": "10-40%消費", "pct": 30, "baseline_pct": 100, "baseline_label": "最適化なし", "delta": "-70%", "tone": "success" },
-                { "label": "平均削減率", "value": "60-90%削減", "pct": 75, "tone": "primary", "note": "GitHubスター50k+" }
+                {
+                  "label": "git status",
+                  "value": "10-40%消費",
+                  "pct": 25,
+                  "baseline_pct": 100,
+                  "baseline_label": "最適化なし",
+                  "delta": "-75%",
+                  "tone": "success"
+                },
+                {
+                  "label": "ls出力",
+                  "value": "10-30%消費",
+                  "pct": 20,
+                  "baseline_pct": 100,
+                  "baseline_label": "最適化なし",
+                  "delta": "-80%",
+                  "tone": "success"
+                },
+                {
+                  "label": "diff出力",
+                  "value": "10-40%消費",
+                  "pct": 30,
+                  "baseline_pct": 100,
+                  "baseline_label": "最適化なし",
+                  "delta": "-70%",
+                  "tone": "success"
+                },
+                {
+                  "label": "平均削減率",
+                  "value": "60-90%削減",
+                  "pct": 75,
+                  "tone": "primary",
+                  "note": "GitHubスター50k+"
+                }
               ],
               "narrative": "AIコーディングツールの普及でAPIコストが急増する中、rtkは開発コマンド出力の最適化でトークン使用量を劇的に削減。",
               "impact": "Claude Code/Cursor利用者のAPIコストを月単位で大幅削減できる可能性。日常的な開発ワークフローへの即座の適用が可能。"
-            }
+            },
+            "caption": "rtk トークン削減率",
+            "alt": "rtkによるLLMトークン消費削減効果。一般的な開発コマンド（git status、ls、diff等）の出力で60-90%のトークン削減を実現。GitHubスター50,765。"
           }
         }
       ]
@@ -304,22 +506,51 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["Gemini Spark", "Google", "エージェント", "パーソナルAI", "自律実行", "Android"],
+          "tags": [
+            "Gemini Spark",
+            "Google",
+            "エージェント",
+            "パーソナルAI",
+            "自律実行",
+            "Android"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Gemini Spark 展開ロードマップ",
-            "alt": "Gemini Sparkの展開タイムライン。2026年5月19日のGoogle I/O発表から始まり、AI Ultraユーザーへの段階展開、Android全ユーザー、Google Search統合の順で提供が拡大する。",
             "data": {
               "headline": "Gemini Spark: パーソナルAIエージェントの展開計画",
               "events": [
-                { "when": "2026/05/19", "label": "Google I/O 2026で発表", "description": "Gemini Sparkを正式発表。24/7稼働のパーソナルAIエージェントとしてデジタルライフ管理を目指す", "status": "now", "tone": "primary" },
-                { "when": "2026/05〜", "label": "AI Ultraユーザーへ先行提供", "description": "Gemini AI Ultraサブスクリプション加入者からGemini Spark機能が段階的に展開される", "status": "now", "tone": "success" },
-                { "when": "2026 Q2-Q3", "label": "Google Search統合エージェント", "description": "Search上でユーザーがAIエージェントを直接作成・カスタマイズ・管理できる機能が展開予定", "status": "upcoming" },
-                { "when": "2026 後半", "label": "Android全体統合", "description": "Androidデバイス全体へのGemini Sparkの本格統合。常時アクセスできるパーソナルAI基盤へ", "status": "upcoming" }
+                {
+                  "when": "2026/05/19",
+                  "label": "Google I/O 2026で発表",
+                  "description": "Gemini Sparkを正式発表。24/7稼働のパーソナルAIエージェントとしてデジタルライフ管理を目指す",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026/05〜",
+                  "label": "AI Ultraユーザーへ先行提供",
+                  "description": "Gemini AI Ultraサブスクリプション加入者からGemini Spark機能が段階的に展開される",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "2026 Q2-Q3",
+                  "label": "Google Search統合エージェント",
+                  "description": "Search上でユーザーがAIエージェントを直接作成・カスタマイズ・管理できる機能が展開予定",
+                  "status": "upcoming"
+                },
+                {
+                  "when": "2026 後半",
+                  "label": "Android全体統合",
+                  "description": "Androidデバイス全体へのGemini Sparkの本格統合。常時アクセスできるパーソナルAI基盤へ",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "Google I/O 2026でGeminiが会話型AIからエージェント型AIへ本格転換。Sparkが消費者向けパーソナルAIの標準となることを目指す。",
               "impact": "スマートフォンのAIアシスタントが反応型から先行動型へ進化。ユーザーの日常ワークフローへのAI統合が深まる。"
-            }
+            },
+            "caption": "Gemini Spark 展開ロードマップ",
+            "alt": "Gemini Sparkの展開タイムライン。2026年5月19日のGoogle I/O発表から始まり、AI Ultraユーザーへの段階展開、Android全ユーザー、Google Search統合の順で提供が拡大する。"
           }
         },
         {
@@ -348,23 +579,43 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Co-Scientist", "DeepMind", "マルチエージェント", "研究支援", "科学AI", "Google I/O"],
+          "tags": [
+            "Co-Scientist",
+            "DeepMind",
+            "マルチエージェント",
+            "研究支援",
+            "科学AI",
+            "Google I/O"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Co-Scientist 概要",
-            "alt": "Google DeepMind Co-Scientistのサマリー。マルチエージェントAI研究パートナーで、仮説生成・文献調査・実験設計を複数エージェントが協調実行。生命科学・材料科学・数学で活用開始。",
             "data": {
               "headline": "Co-Scientist: 複数AIが協調する科学研究加速プラットフォーム",
               "tldr": "DeepMindが発表したマルチエージェント研究支援AI。専門化された複数エージェントが仮説生成から実験設計まで自律協調し、研究者の創造的作業時間を増やす。",
               "points": [
-                { "label": "エージェント数", "value": "複数専門特化", "tone": "primary" },
-                { "label": "対応分野", "value": "生命科学・材料・数学" },
-                { "label": "品質保証", "value": "エージェント間相互検証" },
-                { "label": "提供形態", "value": "Google研究者向け実験展開" }
+                {
+                  "label": "エージェント数",
+                  "value": "複数専門特化",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対応分野",
+                  "value": "生命科学・材料・数学"
+                },
+                {
+                  "label": "品質保証",
+                  "value": "エージェント間相互検証"
+                },
+                {
+                  "label": "提供形態",
+                  "value": "Google研究者向け実験展開"
+                }
               ],
               "context": "OpenAIのDeep Research、Anthropicの研究支援機能など各社が科学AI分野を競争中。DeepMindは複数エージェント協調で差別化。",
               "impact": "研究者のAI活用が高度化。ライフサイエンス・材料科学のR&Dサイクルが短縮される可能性。"
-            }
+            },
+            "caption": "Co-Scientist 概要",
+            "alt": "Google DeepMind Co-Scientistのサマリー。マルチエージェントAI研究パートナーで、仮説生成・文献調査・実験設計を複数エージェントが協調実行。生命科学・材料科学・数学で活用開始。"
           }
         }
       ]
@@ -400,25 +651,54 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["Gemini Omni", "Google", "動画生成", "マルチモーダル", "Google I/O", "テキストtoビデオ"],
+          "tags": [
+            "Gemini Omni",
+            "Google",
+            "動画生成",
+            "マルチモーダル",
+            "Google I/O",
+            "テキストtoビデオ"
+          ],
           "x_post": "GoogleがGemini Omniを発表した。テキスト・画像・音声・動画の任意入力から最大10秒の動画を生成でき、物理法則や文化を反映した一貫性ある出力が可能だという。本日よりGemini Ultra/Pro/Plus加入者への展開が始まっている。\n\nhttps://deepmind.google/models/gemini-omni/",
           "figure": {
             "type": "summary-card",
-            "caption": "Gemini Omni 生成フロー",
-            "alt": "Gemini Omniの入出力フロー。テキスト・画像・音声・動画の任意入力を受け取り、Geminiの推論で横断理解し、最大10秒の高品質動画を出力。物理法則・文化・科学の知識を反映。",
             "data": {
               "headline": "Gemini Omni: 任意入力→動画生成の統合マルチモーダルモデル",
               "tldr": "テキスト・画像・音声・動画を組み合わせた入力から、物理法則や文化を反映した10秒動画を生成。本日よりGemini Ultra/Pro/Plus加入者に展開開始、YouTubeでも無償提供。",
               "points": [
-                { "icon": "📥", "label": "入力形式", "value": "テキスト/画像/音声/動画", "tone": "primary" },
-                { "icon": "📤", "label": "出力", "value": "最大10秒高品質動画" },
-                { "icon": "🧠", "label": "推論", "value": "Gemini統合理解ベース" },
-                { "icon": "📅", "label": "展開", "value": "2026-05-19 Ultra/Pro/Plus" },
-                { "icon": "🎬", "label": "YouTube", "value": "同週から無償提供", "tone": "success" }
+                {
+                  "icon": "📥",
+                  "label": "入力形式",
+                  "value": "テキスト/画像/音声/動画",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📤",
+                  "label": "出力",
+                  "value": "最大10秒高品質動画"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "推論",
+                  "value": "Gemini統合理解ベース"
+                },
+                {
+                  "icon": "📅",
+                  "label": "展開",
+                  "value": "2026-05-19 Ultra/Pro/Plus"
+                },
+                {
+                  "icon": "🎬",
+                  "label": "YouTube",
+                  "value": "同週から無償提供",
+                  "tone": "success"
+                }
               ],
               "context": "Veo 3、Sora、RunwayなどAI動画生成が競争激化する中、Gemini Omniはマルチモーダル推論と生成を統合した点で差別化。",
               "impact": "コンテンツクリエイターやマーケターのビデオ制作コストが大幅削減。YouTubeショーツ向け無償提供でAI動画生成が爆発的普及の可能性。"
-            }
+            },
+            "caption": "Gemini Omni 生成フロー",
+            "alt": "Gemini Omniの入出力フロー。テキスト・画像・音声・動画の任意入力を受け取り、Geminiの推論で横断理解し、最大10秒の高品質動画を出力。物理法則・文化・科学の知識を反映。"
           }
         },
         {
@@ -447,24 +727,71 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["Lance", "ByteDance", "マルチモーダル", "Any-to-Any", "統合モデル", "画像生成", "動画生成"],
+          "tags": [
+            "Lance",
+            "ByteDance",
+            "マルチモーダル",
+            "Any-to-Any",
+            "統合モデル",
+            "画像生成",
+            "動画生成"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "単機能モデル vs Lance",
-            "alt": "従来の専用単機能モデル（理解専用・生成専用・編集専用）とLanceの比較。Lanceは単一モデルで理解・生成・編集の全タスクを処理でき、システム複雑性を削減しながらタスク間のシナジーで性能も向上する。",
             "data": {
               "headline": "Lance: 専用モデル群を1つに統合したAny-to-Any設計",
-              "before": { "label": "従来構成", "sublabel": "理解/生成/編集 各専用モデル" },
-              "after": { "label": "Lance", "sublabel": "単一統合モデル" },
+              "before": {
+                "label": "従来構成",
+                "sublabel": "理解/生成/編集 各専用モデル"
+              },
+              "after": {
+                "label": "Lance",
+                "sublabel": "単一統合モデル"
+              },
               "metrics": [
-                { "label": "モデル数", "before": "3+", "after": "1", "before_pct": 100, "after_pct": 33, "delta": "-67%", "delta_tone": "success", "note": "システム複雑性削減" },
-                { "label": "タスク対応", "before": "専用タスクのみ", "after": "全タスク対応", "before_pct": 60, "after_pct": 90, "delta": "+汎用性", "delta_tone": "success" },
-                { "label": "知識転移", "before": "タスク間ゼロ", "after": "シナジー効果", "before_pct": 0, "after_pct": 70, "delta": "+学習効率", "delta_tone": "success" },
-                { "label": "リソース効率", "before": "低", "after": "高", "before_pct": 40, "after_pct": 80, "delta": "+効率化", "delta_tone": "success" }
+                {
+                  "label": "モデル数",
+                  "before": "3+",
+                  "after": "1",
+                  "before_pct": 100,
+                  "after_pct": 33,
+                  "delta": "-67%",
+                  "delta_tone": "success",
+                  "note": "システム複雑性削減"
+                },
+                {
+                  "label": "タスク対応",
+                  "before": "専用タスクのみ",
+                  "after": "全タスク対応",
+                  "before_pct": 60,
+                  "after_pct": 90,
+                  "delta": "+汎用性",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "知識転移",
+                  "before": "タスク間ゼロ",
+                  "after": "シナジー効果",
+                  "before_pct": 0,
+                  "after_pct": 70,
+                  "delta": "+学習効率",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "リソース効率",
+                  "before": "低",
+                  "after": "高",
+                  "before_pct": 40,
+                  "after_pct": 80,
+                  "delta": "+効率化",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "従来は理解・生成・編集それぞれに専用モデルが必要。Lanceは統合設計でタスク間のシナジーを活用。",
               "impact": "マルチモーダルAIシステムの開発・運用コストが大幅削減。ByteDance製品への実装を通じて実用化が加速する可能性。"
-            }
+            },
+            "caption": "単機能モデル vs Lance",
+            "alt": "従来の専用単機能モデル（理解専用・生成専用・編集専用）とLanceの比較。Lanceは単一モデルで理解・生成・編集の全タスクを処理でき、システム複雑性を削減しながらタスク間のシナジーで性能も向上する。"
           }
         }
       ]
@@ -500,22 +827,50 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["Project Genie", "Street View", "世界モデル", "Google DeepMind", "シミュレーション", "ロボティクス"],
+          "tags": [
+            "Project Genie",
+            "Street View",
+            "世界モデル",
+            "Google DeepMind",
+            "シミュレーション",
+            "ロボティクス"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Project Genie 進化の軌跡",
-            "alt": "Project Genieの開発タイムライン。2024年のジェネリック環境生成から2025年のGenie 2（より多様な環境）、2026年のStreet View統合（現実の場所）、そしてWaymo自動運転シミュレーターへの実装へと進化。",
             "data": {
               "headline": "Project Genie: インタラクティブ世界モデルの進化",
               "events": [
-                { "when": "2024", "label": "Genie 1: 仮想世界生成", "description": "ゲーム風のジェネリックな2D/3D環境を生成する世界モデルの原型を発表", "status": "past" },
-                { "when": "2025", "label": "Genie 2: 環境多様化", "description": "より多様で物理的に整合した3D環境の生成が可能になり、ロボット訓練への応用が進む", "status": "past" },
-                { "when": "2026/05/19", "label": "Street View統合で現実の場所へ", "description": "280億枚の実写Street View画像と統合。現実の場所を起点にインタラクティブな世界を生成。Waymo実装済み", "status": "now", "tone": "primary" },
-                { "when": "2026 後半", "label": "細部精度の向上（計画中）", "description": "現在は実験的プロトタイプ。Googleは詳細精度をさらに向上させ、より忠実な現実シミュレーションを目指す", "status": "upcoming" }
+                {
+                  "when": "2024",
+                  "label": "Genie 1: 仮想世界生成",
+                  "description": "ゲーム風のジェネリックな2D/3D環境を生成する世界モデルの原型を発表",
+                  "status": "past"
+                },
+                {
+                  "when": "2025",
+                  "label": "Genie 2: 環境多様化",
+                  "description": "より多様で物理的に整合した3D環境の生成が可能になり、ロボット訓練への応用が進む",
+                  "status": "past"
+                },
+                {
+                  "when": "2026/05/19",
+                  "label": "Street View統合で現実の場所へ",
+                  "description": "280億枚の実写Street View画像と統合。現実の場所を起点にインタラクティブな世界を生成。Waymo実装済み",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026 後半",
+                  "label": "細部精度の向上（計画中）",
+                  "description": "現在は実験的プロトタイプ。Googleは詳細精度をさらに向上させ、より忠実な現実シミュレーションを目指す",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "2024年の概念実証から2026年の実写統合まで2年で急速に進化。自動運転・ロボット訓練の実用基盤として定着。",
               "impact": "自動運転・ロボティクス・都市シミュレーションのコストと安全リスクを大幅削減。稀有な状況のデータ取得が現実的に。"
-            }
+            },
+            "caption": "Project Genie 進化の軌跡",
+            "alt": "Project Genieの開発タイムライン。2024年のジェネリック環境生成から2025年のGenie 2（より多様な環境）、2026年のStreet View統合（現実の場所）、そしてWaymo自動運転シミュレーターへの実装へと進化。"
           }
         },
         {
@@ -544,25 +899,66 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
-          "tags": ["EnvFactory", "強化学習", "ツール使用", "エージェント", "arXiv", "RL訓練"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
+          "tags": [
+            "EnvFactory",
+            "強化学習",
+            "ツール使用",
+            "エージェント",
+            "arXiv",
+            "RL訓練"
+          ],
           "x_post": "EnvFactoryという研究が発表された。RL訓練用のツール環境を自動合成するフレームワークで、85の検証済み環境から2,575の軌跡を生成し、エージェントベンチマークで最大+15%の性能向上を達成したという。ツール使用エージェントのスケール訓練に実用的な貢献だと私は考えている。\n\nhttps://arxiv.org/abs/2605.18703v1",
           "figure": {
             "type": "metric-bars",
-            "caption": "EnvFactory 性能改善",
-            "alt": "EnvFactoryによるエージェントベンチマーク改善。85の検証済み環境から2,575軌跡を生成し、下流エージェントのベンチマークで最大+15%の性能向上。HuggingFace Paperで119アップvotes。",
             "data": {
               "headline": "EnvFactory: RL環境自動合成でエージェント性能+15%",
-              "scale": { "max_label": "ベースライン比", "unit": "%" },
+              "scale": {
+                "max_label": "ベースライン比",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "生成環境数", "value": "2,575軌跡", "pct": 100, "note": "85検証済み環境から自動合成", "tone": "primary" },
-                { "label": "ベンチマーク改善", "value": "+15%", "pct": 75, "baseline_pct": 60, "baseline_label": "ベースライン", "delta": "+15%", "tone": "success" },
-                { "label": "環境設計コスト", "value": "大幅削減", "pct": 20, "baseline_pct": 100, "baseline_label": "従来の人手設計", "delta": "-80%", "tone": "success" },
-                { "label": "HF upvotes", "value": "119票", "pct": 60, "tone": "info", "note": "コミュニティ注目度" }
+                {
+                  "label": "生成環境数",
+                  "value": "2,575軌跡",
+                  "pct": 100,
+                  "note": "85検証済み環境から自動合成",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ベンチマーク改善",
+                  "value": "+15%",
+                  "pct": 75,
+                  "baseline_pct": 60,
+                  "baseline_label": "ベースライン",
+                  "delta": "+15%",
+                  "tone": "success"
+                },
+                {
+                  "label": "環境設計コスト",
+                  "value": "大幅削減",
+                  "pct": 20,
+                  "baseline_pct": 100,
+                  "baseline_label": "従来の人手設計",
+                  "delta": "-80%",
+                  "tone": "success"
+                },
+                {
+                  "label": "HF upvotes",
+                  "value": "119票",
+                  "pct": 60,
+                  "tone": "info",
+                  "note": "コミュニティ注目度"
+                }
               ],
               "narrative": "RL訓練環境の自動生成でエージェント研究の民主化が進む。2,575の多様な訓練軌跡が15%の性能改善を実現。",
               "impact": "ツール使用エージェントのRLトレーニングが研究室規模でも可能に。エージェントAI開発の参入障壁が下がる。"
-            }
+            },
+            "caption": "EnvFactory 性能改善",
+            "alt": "EnvFactoryによるエージェントベンチマーク改善。85の検証済み環境から2,575軌跡を生成し、下流エージェントのベンチマークで最大+15%の性能向上。HuggingFace Paperで119アップvotes。"
           }
         },
         {
@@ -591,25 +987,52 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
-          "tags": ["ARIS", "自律研究", "マルチエージェント", "対抗的検証", "オープンソース", "研究AI"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
+          "tags": [
+            "ARIS",
+            "自律研究",
+            "マルチエージェント",
+            "対抗的検証",
+            "オープンソース",
+            "研究AI"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ARIS アーキテクチャ",
-            "alt": "ARISの3層アーキテクチャ。実行層（タスク実行）・オーケストレーション層（調整）・保証層（クロスモデル検証）で構成。HuggingFace Papers119アップvotes。",
             "data": {
               "headline": "ARIS: 対抗的マルチエージェントで研究信頼性を担保",
               "tldr": "複数のAIモデルが互いの出力を検証し合う対抗的協調で、長期研究タスクの誤り伝播を防ぐ自律研究システム。オープンソースで公開中。",
               "points": [
-                { "label": "実行層", "value": "タスク実行エージェント群", "tone": "primary" },
-                { "label": "調整層", "value": "オーケストレーション" },
-                { "label": "保証層", "value": "クロスモデル検証" },
-                { "label": "HF upvotes", "value": "119票", "tone": "success" },
-                { "label": "公開形態", "value": "オープンソース" }
+                {
+                  "label": "実行層",
+                  "value": "タスク実行エージェント群",
+                  "tone": "primary"
+                },
+                {
+                  "label": "調整層",
+                  "value": "オーケストレーション"
+                },
+                {
+                  "label": "保証層",
+                  "value": "クロスモデル検証"
+                },
+                {
+                  "label": "HF upvotes",
+                  "value": "119票",
+                  "tone": "success"
+                },
+                {
+                  "label": "公開形態",
+                  "value": "オープンソース"
+                }
               ],
               "context": "単一モデルの長期研究は累積誤りが問題。ARISは複数モデルの相互批判で信頼性を確保する設計思想。",
               "impact": "研究者がAIを使った文献調査・分析の信頼性に悩む問題に実用的なソリューションを提供。"
-            }
+            },
+            "caption": "ARIS アーキテクチャ",
+            "alt": "ARISの3層アーキテクチャ。実行層（タスク実行）・オーケストレーション層（調整）・保証層（クロスモデル検証）で構成。HuggingFace Papers119アップvotes。"
           }
         }
       ]
@@ -645,23 +1068,51 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["Karpathy", "Anthropic", "OpenAI", "事前学習", "人材", "業界動向"],
+          "tags": [
+            "Karpathy",
+            "Anthropic",
+            "OpenAI",
+            "事前学習",
+            "人材",
+            "業界動向"
+          ],
           "x_post": "OpenAI共同設立者のアンドレイ・カーパシー氏がAnthropicの事前学習チームに参加した。Claude高速化に特化した新チームを立ち上げるとのことで、フロンティアAI研究者の移籍としてはこの数年で最も注目すべき動きの一つだと私は考える。\n\nhttps://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
           "figure": {
             "type": "timeline",
-            "caption": "Karpathy キャリアの軌跡",
-            "alt": "アンドレイ・カーパシー氏のキャリアタイムライン。2015年OpenAI共同設立、2017年Tesla FSD責任者、2022年Tesla退職後OpenAI復帰、2024年Eureka Labs創業、2026年5月Anthropic入社。",
             "data": {
               "headline": "Karpathy、Anthropicへ—フロンティアAI最重要人物の移籍",
               "events": [
-                { "when": "2015-2017", "label": "OpenAI 共同設立", "description": "OpenAIの立ち上げメンバーとして深層学習・コンピュータービジョンを担当", "status": "past" },
-                { "when": "2017-2022", "label": "Tesla FSD 責任者", "description": "Tesla Full Self-DrivingおよびAutopilotプログラムのAI責任者として大規模実装を主導", "status": "past" },
-                { "when": "2023-2024", "label": "OpenAI 復帰→退社", "description": "OpenAIに1年間復帰後退社。独自の教育AIスタートアップEureka Labsを設立", "status": "past" },
-                { "when": "2026/05/19", "label": "Anthropic 事前学習チーム入社", "description": "Claude加速に特化した新チームをリードするためAnthropicに参加。R&Dへの回帰を宣言", "status": "now", "tone": "primary" }
+                {
+                  "when": "2015-2017",
+                  "label": "OpenAI 共同設立",
+                  "description": "OpenAIの立ち上げメンバーとして深層学習・コンピュータービジョンを担当",
+                  "status": "past"
+                },
+                {
+                  "when": "2017-2022",
+                  "label": "Tesla FSD 責任者",
+                  "description": "Tesla Full Self-DrivingおよびAutopilotプログラムのAI責任者として大規模実装を主導",
+                  "status": "past"
+                },
+                {
+                  "when": "2023-2024",
+                  "label": "OpenAI 復帰→退社",
+                  "description": "OpenAIに1年間復帰後退社。独自の教育AIスタートアップEureka Labsを設立",
+                  "status": "past"
+                },
+                {
+                  "when": "2026/05/19",
+                  "label": "Anthropic 事前学習チーム入社",
+                  "description": "Claude加速に特化した新チームをリードするためAnthropicに参加。R&Dへの回帰を宣言",
+                  "status": "now",
+                  "tone": "primary"
+                }
               ],
               "narrative": "世界で最も影響力あるAI研究者の1人がAnthropicへ。Claudeの事前学習研究が大幅に強化される見通し。",
               "impact": "AnthropicのGPT対抗研究力が大幅強化。LLM競争においてAnthropicの基礎研究優位が加速する可能性。"
-            }
+            },
+            "caption": "Karpathy キャリアの軌跡",
+            "alt": "アンドレイ・カーパシー氏のキャリアタイムライン。2015年OpenAI共同設立、2017年Tesla FSD責任者、2022年Tesla退職後OpenAI復帰、2024年Eureka Labs創業、2026年5月Anthropic入社。"
           }
         },
         {
@@ -690,24 +1141,53 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["KPMG", "Anthropic", "Claude", "エンタープライズ", "Big4", "戦略提携"],
+          "tags": [
+            "KPMG",
+            "Anthropic",
+            "Claude",
+            "エンタープライズ",
+            "Big4",
+            "戦略提携"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "KPMG × Anthropic 提携概要",
-            "alt": "KPMGとAnthropicの戦略提携概要。27.6万人全社員にClaude展開、Digital Gateway統合、KPMG BlazにClaude Code組み込み、PEパートナー指定、税務・法務新ツール提供。",
             "data": {
               "headline": "KPMG × Anthropic: 27.6万人規模の全社Claude展開",
               "tldr": "KPMGが27.6万人全社員にClaudeを展開。Digital Gatewayへの統合、Claude Code組み込みIT近代化ツール、PEパートナー指定と多層的な協業が始まる。PwC展開に続くBig 4でのClaude浸透加速。",
               "points": [
-                { "icon": "👥", "label": "対象人数", "value": "27.6万人以上", "tone": "primary" },
-                { "icon": "🏗️", "label": "統合基盤", "value": "KPMG Digital Gateway" },
-                { "icon": "💻", "label": "開発支援", "value": "KPMG Blaze + Claude Code" },
-                { "icon": "🤝", "label": "PE指定", "value": "優先パートナー", "tone": "success" },
-                { "icon": "📊", "label": "先行事例", "value": "PwC展開（5/14）と連続" }
+                {
+                  "icon": "👥",
+                  "label": "対象人数",
+                  "value": "27.6万人以上",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏗️",
+                  "label": "統合基盤",
+                  "value": "KPMG Digital Gateway"
+                },
+                {
+                  "icon": "💻",
+                  "label": "開発支援",
+                  "value": "KPMG Blaze + Claude Code"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "PE指定",
+                  "value": "優先パートナー",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📊",
+                  "label": "先行事例",
+                  "value": "PwC展開（5/14）と連続"
+                }
               ],
               "context": "2026年5月だけでPwCとKPMGという二大Big 4がClaude全社展開を発表。プロフェッショナルサービス業界のAI採用が一段階加速した。",
               "impact": "会計・税務・法務業界でのClaude浸透が確定的に。エンタープライズAIスタンダードとしてのClaude地位が強化。"
-            }
+            },
+            "caption": "KPMG × Anthropic 提携概要",
+            "alt": "KPMGとAnthropicの戦略提携概要。27.6万人全社員にClaude展開、Digital Gateway統合、KPMG BlazにClaude Code組み込み、PEパートナー指定、税務・法務新ツール提供。"
           }
         }
       ]
@@ -743,23 +1223,62 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["医療AI", "倫理", "LLM", "安全性", "arXiv", "臨床倫理", "価値観多様性"],
+          "tags": [
+            "医療AI",
+            "倫理",
+            "LLM",
+            "安全性",
+            "arXiv",
+            "臨床倫理",
+            "価値観多様性"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "AI医師の倫理観 vs 臨床多様性",
-            "alt": "現実の医療現場の価値観多様性（プルーラリズム）とLLM医療AIの価値観傾向の比較。臨床家は患者の自律性・恩恵・无危害・公平性を状況に応じバランスさせるが、LLMは決定論的に特定の価値観を優先する傾向がある。",
             "data": {
               "headline": "LLM医療AI: 臨床の価値観多様性を単一化するリスク",
-              "before": { "label": "現実の臨床現場", "sublabel": "価値観プルーラリズム" },
-              "after": { "label": "LLM医療AI", "sublabel": "決定論的価値観" },
+              "before": {
+                "label": "現実の臨床現場",
+                "sublabel": "価値観プルーラリズム"
+              },
+              "after": {
+                "label": "LLM医療AI",
+                "sublabel": "決定論的価値観"
+              },
               "metrics": [
-                { "label": "価値観多様性", "before": "高（患者別・状況別）", "after": "低（ほぼ固定）", "before_pct": 90, "after_pct": 20, "delta": "-70%", "delta_tone": "danger", "note": "実験で判明した傾向" },
-                { "label": "患者自律性重視", "before": "状況依存", "after": "特定傾向に偏る", "before_pct": 60, "after_pct": 85, "delta": "+偏り", "delta_tone": "warning" },
-                { "label": "倫理的柔軟性", "before": "高（医師間で議論）", "after": "低（モデルで固定）", "before_pct": 80, "after_pct": 25, "delta": "-55%", "delta_tone": "danger" }
+                {
+                  "label": "価値観多様性",
+                  "before": "高（患者別・状況別）",
+                  "after": "低（ほぼ固定）",
+                  "before_pct": 90,
+                  "after_pct": 20,
+                  "delta": "-70%",
+                  "delta_tone": "danger",
+                  "note": "実験で判明した傾向"
+                },
+                {
+                  "label": "患者自律性重視",
+                  "before": "状況依存",
+                  "after": "特定傾向に偏る",
+                  "before_pct": 60,
+                  "after_pct": 85,
+                  "delta": "+偏り",
+                  "delta_tone": "warning"
+                },
+                {
+                  "label": "倫理的柔軟性",
+                  "before": "高（医師間で議論）",
+                  "after": "低（モデルで固定）",
+                  "before_pct": 80,
+                  "after_pct": 25,
+                  "delta": "-55%",
+                  "delta_tone": "danger"
+                }
               ],
               "narrative": "医療AIが広く展開されると、本来多様であるべき臨床倫理判断が特定の価値観に収斂するリスクがある。論文はこの「展開モノカルチャー」問題を初めて定量的に示した。",
               "impact": "医療AI規制・評価基準の整備が急務。精度だけでなく価値観多様性の維持が新たな評価軸に。"
-            }
+            },
+            "caption": "AI医師の倫理観 vs 臨床多様性",
+            "alt": "現実の医療現場の価値観多様性（プルーラリズム）とLLM医療AIの価値観傾向の比較。臨床家は患者の自律性・恩恵・无危害・公平性を状況に応じバランスさせるが、LLMは決定論的に特定の価値観を優先する傾向がある。"
           }
         }
       ]
@@ -795,23 +1314,56 @@
             "total": 10,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "Musk", "Altman", "裁判", "ガバナンス", "非営利"],
+          "tags": [
+            "OpenAI",
+            "Musk",
+            "Altman",
+            "裁判",
+            "ガバナンス",
+            "非営利"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Musk v. Altman 裁判経緯",
-            "alt": "Musk v. Altman裁判のタイムライン。2024年訴訟提起から2026年5月オルトマン証言、5月14日最終弁論、5月18日陪審員評決（全請求棄却）、マスク側控訴表明へ。",
             "data": {
               "headline": "Musk v. Altman: OpenAIガバナンス裁判の全経緯",
               "events": [
-                { "when": "2024年初", "label": "マスク、OpenAIを提訴", "description": "OpenAIがMicrosoftから資金を受け営利部門を設立したことは「慈善信託の侵害」としてマスク氏が提訴", "status": "past" },
-                { "when": "2026/05/12", "label": "オルトマン証言", "description": "オルトマン氏が証言台に立ち、OpenAI設立時からの経緯を説明。マスク氏との共通認識があったことを主張", "status": "past" },
-                { "when": "2026/05/14", "label": "最終弁論", "description": "双方の弁論が完了し陪審員に評決を委ねる段階へ", "status": "past" },
-                { "when": "2026/05/18", "label": "全請求棄却（時効）", "description": "陪審員団が2時間未満で全請求を棄却。時効3年が理由で実質問題には踏み込まず", "status": "now", "tone": "warning" },
-                { "when": "2026/05以降", "label": "第9巡回区控訴裁判所へ", "description": "マスク側が控訴を表明。非営利ミッション転換の合法性問題は未解決のまま継続", "status": "upcoming" }
+                {
+                  "when": "2024年初",
+                  "label": "マスク、OpenAIを提訴",
+                  "description": "OpenAIがMicrosoftから資金を受け営利部門を設立したことは「慈善信託の侵害」としてマスク氏が提訴",
+                  "status": "past"
+                },
+                {
+                  "when": "2026/05/12",
+                  "label": "オルトマン証言",
+                  "description": "オルトマン氏が証言台に立ち、OpenAI設立時からの経緯を説明。マスク氏との共通認識があったことを主張",
+                  "status": "past"
+                },
+                {
+                  "when": "2026/05/14",
+                  "label": "最終弁論",
+                  "description": "双方の弁論が完了し陪審員に評決を委ねる段階へ",
+                  "status": "past"
+                },
+                {
+                  "when": "2026/05/18",
+                  "label": "全請求棄却（時効）",
+                  "description": "陪審員団が2時間未満で全請求を棄却。時効3年が理由で実質問題には踏み込まず",
+                  "status": "now",
+                  "tone": "warning"
+                },
+                {
+                  "when": "2026/05以降",
+                  "label": "第9巡回区控訴裁判所へ",
+                  "description": "マスク側が控訴を表明。非営利ミッション転換の合法性問題は未解決のまま継続",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "AI業界最大の法廷闘争が「時効」という手続き的理由で終結。核心問題は先送りとなった。",
               "impact": "AI非営利組織のガバナンスルールに関する法的不確実性が続く。次の控訴審でより踏み込んだ判断が出るか注目。"
-            }
+            },
+            "caption": "Musk v. Altman 裁判経緯",
+            "alt": "Musk v. Altman裁判のタイムライン。2024年訴訟提起から2026年5月オルトマン証言、5月14日最終弁論、5月18日陪審員評決（全請求棄却）、マスク側控訴表明へ。"
           }
         },
         {
@@ -840,23 +1392,60 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Google Search", "UI刷新", "AI検索", "SEO", "Google I/O", "ウェブ"],
+          "tags": [
+            "Google Search",
+            "UI刷新",
+            "AI検索",
+            "SEO",
+            "Google I/O",
+            "ウェブ"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "旧Google検索 vs 新UI",
-            "alt": "旧Googleの検索ボックス（1998-2026）とGoogle I/O 2026発表の新UIの比較。入力形式がテキスト専用からマルチモーダル対話型に、表示がリンクリストからAI生成動的UIに、パラダイムがキーワード検索からAI対話・探索に変化。",
             "data": {
               "headline": "Google Search UI: 25年ぶりの刷新でAI対話型へ",
-              "before": { "label": "旧Google Search", "sublabel": "1998〜2026（25年間）" },
-              "after": { "label": "新Google Search", "sublabel": "2026年5月〜" },
+              "before": {
+                "label": "旧Google Search",
+                "sublabel": "1998〜2026（25年間）"
+              },
+              "after": {
+                "label": "新Google Search",
+                "sublabel": "2026年5月〜"
+              },
               "metrics": [
-                { "label": "入力形式", "before": "テキスト専用", "after": "テキスト+画像+音声+動画", "before_pct": 30, "after_pct": 90, "delta": "+マルチモーダル", "delta_tone": "success" },
-                { "label": "表示形式", "before": "静的リンクリスト", "after": "AI生成動的UI", "before_pct": 30, "after_pct": 85, "delta": "+動的生成", "delta_tone": "primary" },
-                { "label": "AI統合度", "before": "後付け（AI Overview）", "after": "ネイティブ統合", "before_pct": 30, "after_pct": 100, "delta": "+統合", "delta_tone": "success" }
+                {
+                  "label": "入力形式",
+                  "before": "テキスト専用",
+                  "after": "テキスト+画像+音声+動画",
+                  "before_pct": 30,
+                  "after_pct": 90,
+                  "delta": "+マルチモーダル",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "表示形式",
+                  "before": "静的リンクリスト",
+                  "after": "AI生成動的UI",
+                  "before_pct": 30,
+                  "after_pct": 85,
+                  "delta": "+動的生成",
+                  "delta_tone": "primary"
+                },
+                {
+                  "label": "AI統合度",
+                  "before": "後付け（AI Overview）",
+                  "after": "ネイティブ統合",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "+統合",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Googleが25年間維持してきた「キーワード検索」パラダイムを正式に廃止。AIとの対話・探索が検索の新標準に。",
               "impact": "SEO・コンテンツマーケティング戦略の根本的見直しが必要。オーガニック検索トラフィックの構造変化が加速。"
-            }
+            },
+            "caption": "旧Google検索 vs 新UI",
+            "alt": "旧Googleの検索ボックス（1998-2026）とGoogle I/O 2026発表の新UIの比較。入力形式がテキスト専用からマルチモーダル対話型に、表示がリンクリストからAI生成動的UIに、パラダイムがキーワード検索からAI対話・探索に変化。"
           }
         }
       ]
@@ -892,25 +1481,65 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 27 },
-          "tags": ["tsuzumi", "NTT", "国産LLM", "ビジョン", "ビジネス文書", "日本語AI"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 27
+          },
+          "tags": [
+            "tsuzumi",
+            "NTT",
+            "国産LLM",
+            "ビジョン",
+            "ビジネス文書",
+            "日本語AI"
+          ],
           "x_post": "NTTが「tsuzumi 2 Vision」を発表した。図表付きビジネス文書の理解においてGPT-5.2やLlama 4 Scout（109B）と同等水準の性能を持ち、純国産LLMとして日本語ビジネス文書処理の実用水準に到達したことを示す成果である。\n\nhttps://www.watch.impress.co.jp/docs/news/2109501.html",
           "figure": {
             "type": "metric-bars",
-            "caption": "tsuzumi 2 Vision ベンチマーク",
-            "alt": "tsuzumi 2 Visionの図表入り日本語文書理解ベンチマーク比較。GPT-5.2、Llama 4 Scout（109B）、Gemma 4（31B）と同等水準の性能を達成。純国産かつ軽量設計。",
             "data": {
               "headline": "tsuzumi 2 Vision: 国産LLMが国際フロンティアモデルに並ぶ",
-              "scale": { "max_label": "図表入り文書理解スコア", "unit": "相対スコア" },
+              "scale": {
+                "max_label": "図表入り文書理解スコア",
+                "unit": "相対スコア"
+              },
               "bars": [
-                { "label": "tsuzumi 2 Vision", "value": "国際水準", "pct": 82, "tone": "primary", "note": "純国産・軽量" },
-                { "label": "GPT-5.2", "value": "同等水準", "pct": 85, "baseline_label": "比較対象", "delta": "同等", "delta_tone": "info" },
-                { "label": "Llama 4 Scout (109B)", "value": "同等水準", "pct": 83, "baseline_label": "比較対象", "delta": "同等", "delta_tone": "info" },
-                { "label": "Gemma 4 (31B)", "value": "同等水準", "pct": 80, "baseline_label": "比較対象", "delta": "同等", "delta_tone": "info" }
+                {
+                  "label": "tsuzumi 2 Vision",
+                  "value": "国際水準",
+                  "pct": 82,
+                  "tone": "primary",
+                  "note": "純国産・軽量"
+                },
+                {
+                  "label": "GPT-5.2",
+                  "value": "同等水準",
+                  "pct": 85,
+                  "baseline_label": "比較対象",
+                  "delta": "同等",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "Llama 4 Scout (109B)",
+                  "value": "同等水準",
+                  "pct": 83,
+                  "baseline_label": "比較対象",
+                  "delta": "同等",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "Gemma 4 (31B)",
+                  "value": "同等水準",
+                  "pct": 80,
+                  "baseline_label": "比較対象",
+                  "delta": "同等",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "NTTの純国産LLMが図表付きビジネス文書理解で国際的フロンティアモデルと並ぶ性能を達成。軽量かつ日本語特化の利点も維持。",
               "impact": "セキュリティ・データ主権重視の日本企業が国産ビジョンLLMを実用選択肢として採用できる段階に到達。"
-            }
+            },
+            "caption": "tsuzumi 2 Vision ベンチマーク",
+            "alt": "tsuzumi 2 Visionの図表入り日本語文書理解ベンチマーク比較。GPT-5.2、Llama 4 Scout（109B）、Gemma 4（31B）と同等水準の性能を達成。純国産かつ軽量設計。"
           }
         },
         {
@@ -939,25 +1568,65 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 209 },
-          "tags": ["AI事業", "難易度分類", "Reasoning Agent", "LLM", "事業設計", "エンジニア"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 209
+          },
+          "tags": [
+            "AI事業",
+            "難易度分類",
+            "Reasoning Agent",
+            "LLM",
+            "事業設計",
+            "エンジニア"
+          ],
           "x_post": "AI事業の難易度を10段階で分類した記事がはてブ209件を集めた。API単発呼び出しがL4-5、Reasoning Agentが自律的に多段タスクを完遂するのがL8以上と定義されており、2026年はそのL8境界が突破されつつある時代だと整理されている。\n\nhttps://blog.asial.co.jp/6786/",
           "figure": {
             "type": "timeline",
-            "caption": "AI事業難易度10段階",
-            "alt": "AI事業難易度の10段階分類。L1-3が2024年以前に実現可能、L4-5がAPI単発呼び出し、L6-7がAgent基礎、L8-9がReasoning Agent自律多段実行、L10が完全自律AI事業。",
             "data": {
               "headline": "AI事業難易度10段階：どのレイヤーで競争するか",
               "events": [
-                { "when": "L1-3", "label": "既存AIの組み込み", "description": "2024年以前から実現可能。画像認識・翻訳・レコメンドなど確立された機能の組み込み", "status": "past", "tone": "default" },
-                { "when": "L4-5", "label": "LLM API 単発呼び出し", "description": "ClaudeやGPTのAPIを1回呼び出して回答を返す。プロンプト設計が差別化の鍵", "status": "past", "tone": "default" },
-                { "when": "L6-7", "label": "Agent 基礎・RAG", "description": "ツール呼び出し・RAG・複数ステップの実行。2025年から普及した実装パターン", "status": "now", "tone": "info" },
-                { "when": "L8-9", "label": "Reasoning Agent 自律多段実行", "description": "「思考トークン」で深い推論を行いながら人間の介入なしに複数タスクを完遂。2026年に境界突破", "status": "now", "tone": "primary" },
-                { "when": "L10", "label": "完全自律AI事業", "description": "人間の指示ほぼなしにビジネスタスク全体を自律実行。2026年時点では未到達域", "status": "upcoming", "tone": "warning" }
+                {
+                  "when": "L1-3",
+                  "label": "既存AIの組み込み",
+                  "description": "2024年以前から実現可能。画像認識・翻訳・レコメンドなど確立された機能の組み込み",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "L4-5",
+                  "label": "LLM API 単発呼び出し",
+                  "description": "ClaudeやGPTのAPIを1回呼び出して回答を返す。プロンプト設計が差別化の鍵",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "L6-7",
+                  "label": "Agent 基礎・RAG",
+                  "description": "ツール呼び出し・RAG・複数ステップの実行。2025年から普及した実装パターン",
+                  "status": "now",
+                  "tone": "info"
+                },
+                {
+                  "when": "L8-9",
+                  "label": "Reasoning Agent 自律多段実行",
+                  "description": "「思考トークン」で深い推論を行いながら人間の介入なしに複数タスクを完遂。2026年に境界突破",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "L10",
+                  "label": "完全自律AI事業",
+                  "description": "人間の指示ほぼなしにビジネスタスク全体を自律実行。2026年時点では未到達域",
+                  "status": "upcoming",
+                  "tone": "warning"
+                }
               ],
               "narrative": "はてブ209件獲得の人気記事。AI事業設計の難易度軸を10段階で明示し、2026年のReasoning Agent時代の位置づけを整理。",
               "impact": "エンジニア・PM・経営層が「自社の事業がどのレベルにあるか」「どこで競争優位を築くか」を判断する共通言語が生まれた。"
-            }
+            },
+            "caption": "AI事業難易度10段階",
+            "alt": "AI事業難易度の10段階分類。L1-3が2024年以前に実現可能、L4-5がAPI単発呼び出し、L6-7がAgent基礎、L8-9がReasoning Agent自律多段実行、L10が完全自律AI事業。"
           }
         },
         {
@@ -986,24 +1655,65 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 46 },
-          "tags": ["セキュリティ", "生成AI", "ソフトウェア開発", "プロンプトインジェクション", "AIエージェント", "IAM"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 46
+          },
+          "tags": [
+            "セキュリティ",
+            "生成AI",
+            "ソフトウェア開発",
+            "プロンプトインジェクション",
+            "AIエージェント",
+            "IAM"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "AIセキュリティ: 方向性A vs B",
-            "alt": "生成AI開発のセキュリティアプローチ比較。方向性A（限定的運用・人間承認主体）と方向性B（仕組みで境界を作り・人間が権限付与・AIが判定）の違いを示す。",
             "data": {
               "headline": "AI開発セキュリティ: 単独対策の限界と「仕組み担保」への転換",
-              "before": { "label": "方向性A（限定的運用）", "sublabel": "人間が個別に対策" },
-              "after": { "label": "方向性B（仕組み担保）", "sublabel": "設計で境界を作る" },
+              "before": {
+                "label": "方向性A（限定的運用）",
+                "sublabel": "人間が個別に対策"
+              },
+              "after": {
+                "label": "方向性B（仕組み担保）",
+                "sublabel": "設計で境界を作る"
+              },
               "metrics": [
-                { "label": "スケーラビリティ", "before": "低（権限拡大に追随困難）", "after": "高（設計で担保）", "before_pct": 30, "after_pct": 80, "delta": "+拡張性", "delta_tone": "success" },
-                { "label": "誤動作耐性", "before": "低（確率的誤りに弱い）", "after": "高（確定的仕組みで防御）", "before_pct": 35, "after_pct": 75, "delta": "+耐性", "delta_tone": "success" },
-                { "label": "実装コスト", "before": "低（すぐ始められる）", "after": "高（設計が必要）", "before_pct": 70, "after_pct": 40, "delta": "+コスト", "delta_tone": "warning", "note": "長期的には方向性Bが安全" }
+                {
+                  "label": "スケーラビリティ",
+                  "before": "低（権限拡大に追随困難）",
+                  "after": "高（設計で担保）",
+                  "before_pct": 30,
+                  "after_pct": 80,
+                  "delta": "+拡張性",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "誤動作耐性",
+                  "before": "低（確率的誤りに弱い）",
+                  "after": "高（確定的仕組みで防御）",
+                  "before_pct": 35,
+                  "after_pct": 75,
+                  "delta": "+耐性",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "実装コスト",
+                  "before": "低（すぐ始められる）",
+                  "after": "高（設計が必要）",
+                  "before_pct": 70,
+                  "after_pct": 40,
+                  "delta": "+コスト",
+                  "delta_tone": "warning",
+                  "note": "長期的には方向性Bが安全"
+                }
               ],
               "narrative": "AIエージェントの権限拡大が進む2026年現在、単独の人間承認やブラックリストでは追いつかない。サンドボックス・IAMなどの確定的仕組みへの移行が必要。",
               "impact": "AI開発チームはセキュリティ設計を初期から組み込む必要がある。後付けの人間承認モデルは権限拡大に対応できない。"
-            }
+            },
+            "caption": "AIセキュリティ: 方向性A vs B",
+            "alt": "生成AI開発のセキュリティアプローチ比較。方向性A（限定的運用・人間承認主体）と方向性B（仕組みで境界を作り・人間が権限付与・AIが判定）の違いを示す。"
           }
         },
         {
@@ -1032,23 +1742,62 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Google", "Gemini", "サブスク", "価格", "日本市場", "AIサービス"],
+          "tags": [
+            "Google",
+            "Gemini",
+            "サブスク",
+            "価格",
+            "日本市場",
+            "AIサービス"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "AI サブスク価格比較",
-            "alt": "主要AIサブスクリプション価格比較（日本市場）。ChatGPT Plus約3,000円、Claude Pro約3,000円、Google Gemini新プラン14,500円（中間）。",
             "data": {
               "headline": "Google AI サブスク値下げ—日本市場での競争力比較",
-              "before": { "label": "改定前", "sublabel": "Google Ultra（高額）" },
-              "after": { "label": "改定後", "sublabel": "新プラン追加（¥14,500）" },
+              "before": {
+                "label": "改定前",
+                "sublabel": "Google Ultra（高額）"
+              },
+              "after": {
+                "label": "改定後",
+                "sublabel": "新プラン追加（¥14,500）"
+              },
               "metrics": [
-                { "label": "ChatGPT Plus", "before": "約3,000円/月", "after": "約3,000円/月", "before_pct": 20, "after_pct": 20, "delta": "変更なし", "delta_tone": "info", "note": "競合比較基準" },
-                { "label": "Claude Pro", "before": "約3,000円/月", "after": "約3,000円/月", "before_pct": 20, "after_pct": 20, "delta": "変更なし", "delta_tone": "info" },
-                { "label": "Google 新プラン", "before": "（なし）", "after": "¥14,500/月", "before_pct": 0, "after_pct": 97, "delta": "新設", "delta_tone": "success", "note": "中間・プレミアム層向け" }
+                {
+                  "label": "ChatGPT Plus",
+                  "before": "約3,000円/月",
+                  "after": "約3,000円/月",
+                  "before_pct": 20,
+                  "after_pct": 20,
+                  "delta": "変更なし",
+                  "delta_tone": "info",
+                  "note": "競合比較基準"
+                },
+                {
+                  "label": "Claude Pro",
+                  "before": "約3,000円/月",
+                  "after": "約3,000円/月",
+                  "before_pct": 20,
+                  "after_pct": 20,
+                  "delta": "変更なし",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "Google 新プラン",
+                  "before": "（なし）",
+                  "after": "¥14,500/月",
+                  "before_pct": 0,
+                  "after_pct": 97,
+                  "delta": "新設",
+                  "delta_tone": "success",
+                  "note": "中間・プレミアム層向け"
+                }
               ],
               "narrative": "Google I/O 2026の新機能群（Spark・Omni・Genie等）をフックに、サブスク価格を調整して日本市場への浸透を図る。",
               "impact": "ヘビーAIユーザーの月額コストが最適化可能に。Gemini Ultra新機能への早期アクセスを目的とするユーザーには実質値下げ効果。"
-            }
+            },
+            "caption": "AI サブスク価格比較",
+            "alt": "主要AIサブスクリプション価格比較（日本市場）。ChatGPT Plus約3,000円、Claude Pro約3,000円、Google Gemini新プラン14,500円（中間）。"
           }
         },
         {
@@ -1077,23 +1826,45 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["SMBC", "富士通", "ソフトバンク", "ヘルスケアAI", "国産AI", "医療DX"],
+          "tags": [
+            "SMBC",
+            "富士通",
+            "ソフトバンク",
+            "ヘルスケアAI",
+            "国産AI",
+            "医療DX"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "国産ヘルスケアAI基盤",
-            "alt": "SMBC・富士通・ソフトバンクの国産AIヘルスケア基盤開発プロジェクト概要。医療データ解析によるパーソナル健康アドバイスを目指し、国産AI採用でデータ主権を確保。",
             "data": {
               "headline": "SMBC×富士通×ソフトバンク: 国産AIヘルスケア基盤の共同開発",
               "tldr": "金融・IT・通信の3社が医療データ活用AIヘルスケア基盤を共同開発。個人健康アドバイスの実現と、国産AI採用によるデータ主権確保を両立させる。",
               "points": [
-                { "label": "参加企業", "value": "SMBC・富士通・SoftBank", "tone": "primary" },
-                { "label": "AI活用", "value": "個人医療データ解析", "tone": "info" },
-                { "label": "出力", "value": "パーソナル健康アドバイス" },
-                { "label": "特徴", "value": "国産AI・データ主権確保", "tone": "success" }
+                {
+                  "label": "参加企業",
+                  "value": "SMBC・富士通・SoftBank",
+                  "tone": "primary"
+                },
+                {
+                  "label": "AI活用",
+                  "value": "個人医療データ解析",
+                  "tone": "info"
+                },
+                {
+                  "label": "出力",
+                  "value": "パーソナル健康アドバイス"
+                },
+                {
+                  "label": "特徴",
+                  "value": "国産AI・データ主権確保",
+                  "tone": "success"
+                }
               ],
               "context": "医療AIはデータプライバシーが特に重要なため、国産AI採用が合理的。BigTechとの差別化で日本企業が医療DXをリードする狙い。",
               "impact": "日本の医療×AI分野に大手3社連合が参入。国産ヘルスケアAI基盤の標準化と普及が加速する可能性。"
-            }
+            },
+            "caption": "国産ヘルスケアAI基盤",
+            "alt": "SMBC・富士通・ソフトバンクの国産AIヘルスケア基盤開発プロジェクト概要。医療データ解析によるパーソナル健康アドバイスを目指し、国産AI採用でデータ主権を確保。"
           }
         }
       ]
@@ -1129,25 +1900,50 @@
             "total": 11,
             "source_type_bias": 0
           },
-          "tags": ["Kimi", "月之暗面", "資金調達", "中国AI", "LLM", "スタートアップ"],
-          "lang": "zh",
+          "tags": [
+            "Kimi",
+            "月之暗面",
+            "資金調達",
+            "中国AI",
+            "LLM",
+            "スタートアップ"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Kimi 資金調達概要",
-            "alt": "Kimi（月之暗面）の資金調達サマリー。調達額約20億ドル（約3,000億円）、評価額200億ドル超、中国生成AI単発調達として過去最大規模の一つ。設立2023年、長コンテキストLLMが強み。",
             "data": {
               "headline": "Kimi: 約20億ドル調達で評価額200億ドル超に",
               "tldr": "月之暗面（Kimi）が中国LLMスタートアップ史上最大規模の単発調達を完了。評価額は200億ドルを超え、長コンテキスト・多言語対応LLMとして国際的存在感を高める。",
               "points": [
-                { "icon": "💰", "label": "調達額", "value": "約20億ドル（≈3,000億円）", "tone": "primary" },
-                { "icon": "📈", "label": "評価額", "value": "200億ドル超", "tone": "success" },
-                { "label": "設立", "value": "2023年（中国）" },
-                { "label": "強み", "value": "長コンテキスト・中日英対応" },
-                { "label": "用途", "value": "モデル強化・海外展開" }
+                {
+                  "icon": "💰",
+                  "label": "調達額",
+                  "value": "約20億ドル（≈3,000億円）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📈",
+                  "label": "評価額",
+                  "value": "200億ドル超",
+                  "tone": "success"
+                },
+                {
+                  "label": "設立",
+                  "value": "2023年（中国）"
+                },
+                {
+                  "label": "強み",
+                  "value": "長コンテキスト・中日英対応"
+                },
+                {
+                  "label": "用途",
+                  "value": "モデル強化・海外展開"
+                }
               ],
               "context": "DeepSeekが国際的注目を集める中、Kimiも長コンテキスト処理で差別化。中国LLM第2世代の台頭を示す資金調達。",
               "impact": "中国AI企業への巨額投資継続で、米中LLM競争がモデル性能だけでなく資金力・インフラでも拮抗。"
-            }
+            },
+            "caption": "Kimi 資金調達概要",
+            "alt": "Kimi（月之暗面）の資金調達サマリー。調達額約20億ドル（約3,000億円）、評価額200億ドル超、中国生成AI単発調達として過去最大規模の一つ。設立2023年、長コンテキストLLMが強み。"
           }
         },
         {
@@ -1176,36 +1972,84 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["中国AI政策", "AIoT", "エージェント", "スマートデバイス", "オープンソース", "政策"],
-          "lang": "zh",
+          "tags": [
+            "中国AI政策",
+            "AIoT",
+            "エージェント",
+            "スマートデバイス",
+            "オープンソース",
+            "政策"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "中国2026 AI政策概要",
-            "alt": "中国2026年AI政策のサマリー。AIエージェントとAIターミナルの融合を重点支援、オープンソースエコシステム互換を推進、AIoT産業の3大価値再構築（プロトコル・エッジAI・エージェントUI）を促進。",
             "data": {
               "headline": "中国2026年政策: AIエージェント×AIoTの「双向奔赴」",
               "tldr": "中国の新AI政策がAIエージェントとスマートデバイスの融合を支援。オープンソースエコシステムとの互換推進でAIoTコスト削減を図り、プロトコル・エッジAI・エージェントUI の3領域で価値再構築が進む。",
               "points": [
-                { "label": "政策重点", "value": "エージェント×AIターミナル融合", "tone": "primary" },
-                { "label": "支援内容", "value": "オープンソースエコシステム互換" },
-                { "label": "3大機会", "value": "プロトコル/エッジAI/エージェントUI" },
-                { "label": "対象産業", "value": "AIoT（AI+IoT融合）", "tone": "info" }
+                {
+                  "label": "政策重点",
+                  "value": "エージェント×AIターミナル融合",
+                  "tone": "primary"
+                },
+                {
+                  "label": "支援内容",
+                  "value": "オープンソースエコシステム互換"
+                },
+                {
+                  "label": "3大機会",
+                  "value": "プロトコル/エッジAI/エージェントUI"
+                },
+                {
+                  "label": "対象産業",
+                  "value": "AIoT（AI+IoT融合）",
+                  "tone": "info"
+                }
               ],
               "context": "中国政府がハードウェアレベルでのAI普及インフラを整備中。欧米のソフトウェア先行と異なり、デバイス統合まで含めた垂直統合エコシステムを構築。",
               "impact": "中国のAIoT産業が政策支援でグローバル競争力を強化。特にエッジAI推論チップとエージェント統合UIが新たな競争領域に。"
-            }
+            },
+            "caption": "中国2026 AI政策概要",
+            "alt": "中国2026年AI政策のサマリー。AIエージェントとAIターミナルの融合を重点支援、オープンソースエコシステム互換を推進、AIoT産業の3大価値再構築（プロトコル・エッジAI・エージェントUI）を促進。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "OpenAI Blog", "reason": "HTTP 403", "fallback_used": "WebSearch site:openai.com" },
-    { "source": "The Verge RSS", "reason": "fetch blocked", "fallback_used": "WebSearch" },
-    { "source": "Reddit RSS", "reason": "fetch blocked", "fallback_used": "WebSearch" },
-    { "source": "Wired AI RSS", "reason": "fetch blocked", "fallback_used": "WebSearch" },
-    { "source": "Synced (Synced Review)", "reason": "RSS 403", "fallback_used": "WebSearch site:syncedreview.com" },
-    { "source": "Import AI Substack", "reason": "RSS 403", "fallback_used": "skipped" },
-    { "source": "量子位 RSS", "reason": "intermittent 404", "fallback_used": "WebSearch site:qbitai.com" }
+    {
+      "source": "OpenAI Blog",
+      "reason": "HTTP 403",
+      "fallback_used": "WebSearch site:openai.com"
+    },
+    {
+      "source": "The Verge RSS",
+      "reason": "fetch blocked",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Reddit RSS",
+      "reason": "fetch blocked",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Wired AI RSS",
+      "reason": "fetch blocked",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Synced (Synced Review)",
+      "reason": "RSS 403",
+      "fallback_used": "WebSearch site:syncedreview.com"
+    },
+    {
+      "source": "Import AI Substack",
+      "reason": "RSS 403",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "量子位 RSS",
+      "reason": "intermittent 404",
+      "fallback_used": "WebSearch site:qbitai.com"
+    }
   ]
 }

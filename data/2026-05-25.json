@@ -23,12 +23,36 @@
     }
   },
   "top_picks": [
-    { "id": "rp-001", "rank": 1, "reason": "importance=5(academic+1)+arXiv源泉penalty考慮後18pt。LLMエージェントのバックエンドコード生成における「制約崩壊」という新概念を実証したHN 123pt獲得の高スコア論文。本番AI開発者全員が把握すべき実用的脆弱性" },
-    { "id": "ag-001", "rank": 2, "reason": "DeltaBox:ミリ秒スケールのエージェントstate checkpoint/rollback。academic +1でスコア17。エージェント木探索・RL訓練に不可欠な「やり直し」操作を実現した基礎インフラ技術" },
-    { "id": "rp-002", "rank": 3, "reason": "VPO:多様性訓練でtest-time searchを改善する新RL手法。academic +1でスコア16。PPO/GRPOを上回る実験結果とtest-time computing研究への重要な貢献" },
-    { "id": "jp-001", "rank": 4, "reason": "はてブ204件 reaction boost +2でスコア17。japan保証枠。CPU動作日本語TTS「Supertonic 3」解説はHF 43K+ダウンロードと呼応した本日最大の日本語反響コンテンツ" },
-    { "id": "ta-001", "rank": 5, "reason": "GitHub Trend 1位・本日+3,987スターのコード知識グラフ変換OSSツール。スコア17。実用性=5、鮮度=5のバランスが優れ、開発者への即時価値が高い" },
-    { "id": "cn-001", "rank": 6, "reason": "DeepSeek旗艦永久75%値下げ。importance=4(media-1)+スコア16。china保証枠。API価格のコモディティ化という業界全体への構造的影響。HN 153pt獲得" }
+    {
+      "id": "rp-001",
+      "rank": 1,
+      "reason": "importance=5(academic+1)+arXiv源泉penalty考慮後18pt。LLMエージェントのバックエンドコード生成における「制約崩壊」という新概念を実証したHN 123pt獲得の高スコア論文。本番AI開発者全員が把握すべき実用的脆弱性"
+    },
+    {
+      "id": "ag-001",
+      "rank": 2,
+      "reason": "DeltaBox:ミリ秒スケールのエージェントstate checkpoint/rollback。academic +1でスコア17。エージェント木探索・RL訓練に不可欠な「やり直し」操作を実現した基礎インフラ技術"
+    },
+    {
+      "id": "rp-002",
+      "rank": 3,
+      "reason": "VPO:多様性訓練でtest-time searchを改善する新RL手法。academic +1でスコア16。PPO/GRPOを上回る実験結果とtest-time computing研究への重要な貢献"
+    },
+    {
+      "id": "jp-001",
+      "rank": 4,
+      "reason": "はてブ204件 reaction boost +2でスコア17。japan保証枠。CPU動作日本語TTS「Supertonic 3」解説はHF 43K+ダウンロードと呼応した本日最大の日本語反響コンテンツ"
+    },
+    {
+      "id": "ta-001",
+      "rank": 5,
+      "reason": "GitHub Trend 1位・本日+3,987スターのコード知識グラフ変換OSSツール。スコア17。実用性=5、鮮度=5のバランスが優れ、開発者への即時価値が高い"
+    },
+    {
+      "id": "cn-001",
+      "rank": 6,
+      "reason": "DeepSeek旗艦永久75%値下げ。importance=4(media-1)+スコア16。china保証枠。API価格のコモディティ化という業界全体への構造的影響。HN 153pt獲得"
+    }
   ],
   "categories": [
     {
@@ -47,7 +71,14 @@
           "category": "new_models",
           "published_at": "2026-05-22",
           "lang": "zh",
-          "tags": ["cohere", "command-a-plus", "open-source", "llm", "apache-2.0", "enterprise"],
+          "tags": [
+            "cohere",
+            "command-a-plus",
+            "open-source",
+            "llm",
+            "apache-2.0",
+            "enterprise"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -65,19 +96,40 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Command A+ 主要スペック",
-            "alt": "Cohere Command A+ 218Bの主要4指標を横棒グラフで表示。パラメータ数218B（棒90%）、多言語対応30言語以上（棒80%）、コンテキスト長256K tokens（棒75%）、ライセンス自由度Apache 2.0（棒100%）。全て商用利用可能。",
             "data": {
               "headline": "Command A+ 218B: 主要4指標—大規模OSS商用モデルとして即実用",
               "bars": [
-                { "label": "パラメータ数", "value": "218B", "pct": 90, "note": "Apache 2.0 完全商用可" },
-                { "label": "多言語対応", "value": "30言語+", "pct": 80, "note": "原生引用機能付き" },
-                { "label": "コンテキスト長", "value": "256K tokens", "pct": 75, "note": "長文文書処理に対応" },
-                { "label": "ライセンス自由度", "value": "Apache 2.0", "pct": 100, "tone": "success", "note": "改変・再配布・商用すべて可" }
+                {
+                  "label": "パラメータ数",
+                  "value": "218B",
+                  "pct": 90,
+                  "note": "Apache 2.0 完全商用可"
+                },
+                {
+                  "label": "多言語対応",
+                  "value": "30言語+",
+                  "pct": 80,
+                  "note": "原生引用機能付き"
+                },
+                {
+                  "label": "コンテキスト長",
+                  "value": "256K tokens",
+                  "pct": 75,
+                  "note": "長文文書処理に対応"
+                },
+                {
+                  "label": "ライセンス自由度",
+                  "value": "Apache 2.0",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "改変・再配布・商用すべて可"
+                }
               ],
               "narrative": "Cohereは従来クローズドAPIが主力だったが、218Bオープンモデル公開でエコシステム戦略に転換。Meta Llama 4と同様に大型商用OSS競争が激化している。",
               "impact": "自社推論サーバーでの大規模モデル運用を検討している企業にとって、商用可能な200B超モデルの選択肢が実質的に増えた。"
-            }
+            },
+            "caption": "Command A+ 主要スペック",
+            "alt": "Cohere Command A+ 218Bの主要4指標を横棒グラフで表示。パラメータ数218B（棒90%）、多言語対応30言語以上（棒80%）、コンテキスト長256K tokens（棒75%）、ライセンス自由度Apache 2.0（棒100%）。全て商用利用可能。"
           }
         },
         {
@@ -91,7 +143,13 @@
           "category": "new_models",
           "published_at": "2026-05-22",
           "lang": "en",
-          "tags": ["video-llm", "multimodal", "small-model", "huggingface", "open-source"],
+          "tags": [
+            "video-llm",
+            "multimodal",
+            "small-model",
+            "huggingface",
+            "open-source"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -109,22 +167,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Marlin-2B 概要",
-            "alt": "Marlin-2Bのサマリーカード。見出し「2Bで動画理解を実現した軽量マルチモーダルモデル」。特徴：Video-Text-to-Text、2Bパラメータ、6K+ダウンロード、HF Trending 3位。エッジ推論対応。",
             "data": {
               "headline": "2Bで動画理解—Video-LLMの軽量化新指標",
               "tldr": "NemoStationが2Bパラメータで動画→テキスト変換を実現するMarlin-2Bを公開。HFトレンド3位、エッジデプロイを想定した実用設計。モデルウェイトはHFで即日利用可能。",
               "points": [
-                { "label": "タスク", "value": "Video-Text-to-Text", "tone": "primary" },
-                { "label": "パラメータ", "value": "2B", "tone": "success" },
-                { "label": "HFダウンロード", "value": "6,030+", "tone": "default" },
-                { "label": "HF Likes", "value": "303", "tone": "default" },
-                { "label": "デプロイ想定", "value": "エッジ・ローカル", "tone": "info" },
-                { "label": "ライセンス", "value": "オープン", "tone": "success" }
+                {
+                  "label": "タスク",
+                  "value": "Video-Text-to-Text",
+                  "tone": "primary"
+                },
+                {
+                  "label": "パラメータ",
+                  "value": "2B",
+                  "tone": "success"
+                },
+                {
+                  "label": "HFダウンロード",
+                  "value": "6,030+",
+                  "tone": "default"
+                },
+                {
+                  "label": "HF Likes",
+                  "value": "303",
+                  "tone": "default"
+                },
+                {
+                  "label": "デプロイ想定",
+                  "value": "エッジ・ローカル",
+                  "tone": "info"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "オープン",
+                  "tone": "success"
+                }
               ],
               "context": "Video-LLM分野はGPT-4o・Gemini系の大型モデルが主流だが、2Bクラスでの動画理解は組み込みやエッジ応用に重要な未開拓領域。",
               "impact": "モバイル・IoTデバイスでの動画AI処理の敷居を大幅に下げる可能性がある。"
-            }
+            },
+            "caption": "Marlin-2B 概要",
+            "alt": "Marlin-2Bのサマリーカード。見出し「2Bで動画理解を実現した軽量マルチモーダルモデル」。特徴：Video-Text-to-Text、2Bパラメータ、6K+ダウンロード、HF Trending 3位。エッジ推論対応。"
           }
         },
         {
@@ -138,7 +220,14 @@
           "category": "new_models",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["linear-attention", "architecture", "mamba", "deltanet", "ssm", "efficient-transformers"],
+          "tags": [
+            "linear-attention",
+            "architecture",
+            "mamba",
+            "deltanet",
+            "ssm",
+            "efficient-transformers"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -156,20 +245,51 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "アーキテクチャ比較",
-            "alt": "Gated DeltaNet-2とMamba-2の比較。言語モデリング性能でGated DeltaNet-2が優位。消去ゲートと書き込みゲートが独立しているGated DeltaNet-2 vs 結合操作のMamba-2の対比。",
             "data": {
               "headline": "Gated DeltaNet-2 vs Mamba-2: リニアアテンション性能比較",
-              "before": { "label": "Mamba-2", "sublabel": "結合した消去/書き込みゲート" },
-              "after": { "label": "Gated DeltaNet-2", "sublabel": "独立チャネルワイズゲート" },
+              "before": {
+                "label": "Mamba-2",
+                "sublabel": "結合した消去/書き込みゲート"
+              },
+              "after": {
+                "label": "Gated DeltaNet-2",
+                "sublabel": "独立チャネルワイズゲート"
+              },
               "metrics": [
-                { "label": "言語モデリング", "before": "ベースライン", "after": "全指標で上回る", "before_pct": 60, "after_pct": 78, "delta": "↑改善", "delta_tone": "success" },
-                { "label": "長文脈検索", "before": "限定的", "after": "大幅改善", "before_pct": 45, "after_pct": 72, "delta": "↑大幅", "delta_tone": "success" },
-                { "label": "計算量", "before": "O(n)", "after": "O(n)", "before_pct": 80, "after_pct": 80, "delta": "同等", "delta_tone": "info", "note": "線形計算量維持" }
+                {
+                  "label": "言語モデリング",
+                  "before": "ベースライン",
+                  "after": "全指標で上回る",
+                  "before_pct": 60,
+                  "after_pct": 78,
+                  "delta": "↑改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "長文脈検索",
+                  "before": "限定的",
+                  "after": "大幅改善",
+                  "before_pct": 45,
+                  "after_pct": 72,
+                  "delta": "↑大幅",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "計算量",
+                  "before": "O(n)",
+                  "after": "O(n)",
+                  "before_pct": 80,
+                  "after_pct": 80,
+                  "delta": "同等",
+                  "delta_tone": "info",
+                  "note": "線形計算量維持"
+                }
               ],
               "narrative": "従来のリニアアテンションはゲート操作の結合により記憶制御が不安定だった。チャネルワイズの独立化で表現力を根本から改善した。",
               "impact": "次世代大規模モデルのアーキテクチャ選択肢としてSSM代替の実力を実証。実装公開で即試用可能。"
-            }
+            },
+            "caption": "アーキテクチャ比較",
+            "alt": "Gated DeltaNet-2とMamba-2の比較。言語モデリング性能でGated DeltaNet-2が優位。消去ゲートと書き込みゲートが独立しているGated DeltaNet-2 vs 結合操作のMamba-2の対比。"
           }
         }
       ]
@@ -190,7 +310,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["code-understanding", "knowledge-graph", "developer-tools", "oss", "github-trending"],
+          "tags": [
+            "code-understanding",
+            "knowledge-graph",
+            "developer-tools",
+            "oss",
+            "github-trending"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -208,22 +334,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Understand-Anything",
-            "alt": "Understand-Anythingのサマリーカード。GitHub Trend 1位、+3987スター/日、累計25238スター。機能：コード→知識グラフ変換、ブラウザ内探索・検索・Q&A。OSSで即利用可能。",
             "data": {
               "headline": "コードを知識グラフに変換—GitHub本日1位の開発者ツール",
               "tldr": "任意のコードベースをインタラクティブな知識グラフに変換し、ブラウザで探索・質問応答できるOSSツール。本日+3,987スターでGitHub Trend 1位。大型リポジトリのオンボーディング時間を大幅削減。",
               "points": [
-                { "label": "GitHub Stars", "value": "25,238 (+3,987今日)", "tone": "success" },
-                { "label": "ライセンス", "value": "OSS・即利用可", "tone": "success" },
-                { "label": "主な用途", "value": "コードベース理解・オンボーディング", "tone": "primary" },
-                { "label": "入力", "value": "任意のコードリポジトリ", "tone": "default" },
-                { "label": "出力", "value": "インタラクティブ知識グラフ", "tone": "primary" },
-                { "label": "AI連携", "value": "Claude Code・Cursorと補完", "tone": "info" }
+                {
+                  "label": "GitHub Stars",
+                  "value": "25,238 (+3,987今日)",
+                  "tone": "success"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "OSS・即利用可",
+                  "tone": "success"
+                },
+                {
+                  "label": "主な用途",
+                  "value": "コードベース理解・オンボーディング",
+                  "tone": "primary"
+                },
+                {
+                  "label": "入力",
+                  "value": "任意のコードリポジトリ",
+                  "tone": "default"
+                },
+                {
+                  "label": "出力",
+                  "value": "インタラクティブ知識グラフ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "AI連携",
+                  "value": "Claude Code・Cursorと補完",
+                  "tone": "info"
+                }
               ],
               "context": "AIコーディングツールが普及する中、「コードを書く」能力より「既存コードを理解する」ための支援ツールの需要が急増している。",
               "impact": "レガシーシステム引き継ぎや大型OSSへの初回貢献時のオンボーディング工数を大幅に削減できる。"
-            }
+            },
+            "caption": "Understand-Anything",
+            "alt": "Understand-Anythingのサマリーカード。GitHub Trend 1位、+3987スター/日、累計25238スター。機能：コード→知識グラフ変換、ブラウザ内探索・検索・Q&A。OSSで即利用可能。"
           },
           "x_post": "コードベースをインタラクティブな知識グラフに変換するOSS「Understand-Anything」が本日GitHub Trend 1位を獲得し、累計25,238スターに達した。任意のコードリポジトリをブラウザ上で探索・検索・質問応答できる。大規模リポジトリへの初回貢献やレガシーシステム引き継ぎ時のオンボーディングを大幅に短縮できる実用ツールだ。\nhttps://github.com/Lum1104/Understand-Anything"
         },
@@ -238,7 +388,14 @@
           "category": "tools_apps",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["claude-code", "plugins", "mcp", "knowledge-workers", "enterprise", "anthropic"],
+          "tags": [
+            "claude-code",
+            "plugins",
+            "mcp",
+            "knowledge-workers",
+            "enterprise",
+            "anthropic"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -256,22 +413,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "knowledge-work-plugins",
-            "alt": "knowledge-work-pluginsのサマリーカード。GitHub 13,852スター。Anthropic公式。対象職種：法務・財務・人事・マーケティング。MCPプロトコル準拠。claude-plugins-officialとの二本柱体制。",
             "data": {
               "headline": "Anthropic公式ナレッジワーカー向けClaude Codeプラグイン集",
               "tldr": "法務・財務・人事・マーケティング向けClaude Codeプラグインの公式コレクション。MCP準拠で社内システム統合テンプレートを提供。claude-plugins-officialとの二本柱でエンタープライズ全職種をカバー。",
               "points": [
-                { "label": "GitHub Stars", "value": "13,852", "tone": "primary" },
-                { "label": "発行元", "value": "Anthropic公式", "tone": "success" },
-                { "label": "対象職種", "value": "法務・財務・人事・マーケ", "tone": "primary" },
-                { "label": "プロトコル", "value": "MCP準拠", "tone": "info" },
-                { "label": "統合先", "value": "社内DMS・CRM・スプレッドシート", "tone": "default" },
-                { "label": "ライセンス", "value": "OSS公開", "tone": "success" }
+                {
+                  "label": "GitHub Stars",
+                  "value": "13,852",
+                  "tone": "primary"
+                },
+                {
+                  "label": "発行元",
+                  "value": "Anthropic公式",
+                  "tone": "success"
+                },
+                {
+                  "label": "対象職種",
+                  "value": "法務・財務・人事・マーケ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "プロトコル",
+                  "value": "MCP準拠",
+                  "tone": "info"
+                },
+                {
+                  "label": "統合先",
+                  "value": "社内DMS・CRM・スプレッドシート",
+                  "tone": "default"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "OSS公開",
+                  "tone": "success"
+                }
               ],
               "context": "claude-plugins-official（エンジニア向け）と合わせた二本柱で、Anthropicはエンタープライズ全職種へのClaude Code普及を本格展開。",
               "impact": "非エンジニア社員がClaude Codeで業務フローを自動化できる参考実装が揃い、企業全体でのAI化が加速する。"
-            }
+            },
+            "caption": "knowledge-work-plugins",
+            "alt": "knowledge-work-pluginsのサマリーカード。GitHub 13,852スター。Anthropic公式。対象職種：法務・財務・人事・マーケティング。MCPプロトコル準拠。claude-plugins-officialとの二本柱体制。"
           }
         },
         {
@@ -285,7 +466,14 @@
           "category": "tools_apps",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["ai-engineering", "llm", "tutorial", "rag", "agents", "github-trending"],
+          "tags": [
+            "ai-engineering",
+            "llm",
+            "tutorial",
+            "rag",
+            "agents",
+            "github-trending"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -303,22 +491,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "ai-engineering-from-scratch",
-            "alt": "ai-engineering-from-scratchのサマリーカード。GitHub 15,579スター、本日+1,836。カバー範囲：RAG・エージェント・評価・デプロイ。Anthropic/OpenAI両API対応。AWS/GCP/Azure対応。",
             "data": {
               "headline": "ゼロから本番まで—AIエンジニアリング実践カリキュラム本日トレンド2位",
               "tldr": "LLMアプリのゼロから本番デプロイまでを体系的にカバーする教育リポジトリ。RAG・エージェント・評価・プロンプトエンジニアリングを網羅。Anthropic/OpenAI両API対応。本日GitHubトレンド2位。",
               "points": [
-                { "label": "GitHub Stars", "value": "15,579 (+1,836今日)", "tone": "success" },
-                { "label": "カバー範囲", "value": "RAG・エージェント・評価・デプロイ", "tone": "primary" },
-                { "label": "API対応", "value": "Anthropic・OpenAI両対応", "tone": "info" },
-                { "label": "クラウド", "value": "AWS・GCP・Azure", "tone": "default" },
-                { "label": "対象者", "value": "バックエンド→AI転換エンジニア", "tone": "default" },
-                { "label": "費用", "value": "OSS・完全無料", "tone": "success" }
+                {
+                  "label": "GitHub Stars",
+                  "value": "15,579 (+1,836今日)",
+                  "tone": "success"
+                },
+                {
+                  "label": "カバー範囲",
+                  "value": "RAG・エージェント・評価・デプロイ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "API対応",
+                  "value": "Anthropic・OpenAI両対応",
+                  "tone": "info"
+                },
+                {
+                  "label": "クラウド",
+                  "value": "AWS・GCP・Azure",
+                  "tone": "default"
+                },
+                {
+                  "label": "対象者",
+                  "value": "バックエンド→AI転換エンジニア",
+                  "tone": "default"
+                },
+                {
+                  "label": "費用",
+                  "value": "OSS・完全無料",
+                  "tone": "success"
+                }
               ],
               "context": "AI人材育成需要の高まりとAIエンジニアへのキャリアチェンジ志望者の増加が背景。体系的な実践カリキュラムへの需要が高い。",
               "impact": "社内AIエンジニア育成コストを削減できる実践的教材。独学者のキャリアチェンジ支援にも直結。"
-            }
+            },
+            "caption": "ai-engineering-from-scratch",
+            "alt": "ai-engineering-from-scratchのサマリーカード。GitHub 15,579スター、本日+1,836。カバー範囲：RAG・エージェント・評価・デプロイ。Anthropic/OpenAI両API対応。AWS/GCP/Azure対応。"
           }
         }
       ]
@@ -339,7 +551,14 @@
           "category": "agents",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["agents", "sandbox", "checkpoint", "reinforcement-learning", "arxiv", "infrastructure"],
+          "tags": [
+            "agents",
+            "sandbox",
+            "checkpoint",
+            "reinforcement-learning",
+            "arxiv",
+            "infrastructure"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -357,20 +576,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "エージェント実行比較",
-            "alt": "DeltaBoxと従来手法の比較。従来：一方向実行のみ・ロールバック不可・RL訓練コスト高。DeltaBox：ミリ秒チェックポイント・任意ロールバック可・RL効率化。3指標で比較。",
             "data": {
               "headline": "DeltaBox vs 従来エージェントランタイム: 状態管理の革新",
-              "before": { "label": "従来ランタイム", "sublabel": "一方向実行のみ" },
-              "after": { "label": "DeltaBox", "sublabel": "ミリ秒チェックポイント" },
+              "before": {
+                "label": "従来ランタイム",
+                "sublabel": "一方向実行のみ"
+              },
+              "after": {
+                "label": "DeltaBox",
+                "sublabel": "ミリ秒チェックポイント"
+              },
               "metrics": [
-                { "label": "ロールバック", "before": "不可", "after": "任意時点から可", "before_pct": 0, "after_pct": 90, "delta": "解決", "delta_tone": "success" },
-                { "label": "状態保存速度", "before": "秒〜分", "after": "ミリ秒", "before_pct": 20, "after_pct": 95, "delta": "100x+高速", "delta_tone": "success" },
-                { "label": "RL訓練コスト", "before": "高い（失敗後リセット必要）", "after": "低い（任意点から再開）", "before_pct": 30, "after_pct": 80, "delta": "大幅削減", "delta_tone": "success" }
+                {
+                  "label": "ロールバック",
+                  "before": "不可",
+                  "after": "任意時点から可",
+                  "before_pct": 0,
+                  "after_pct": 90,
+                  "delta": "解決",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "状態保存速度",
+                  "before": "秒〜分",
+                  "after": "ミリ秒",
+                  "before_pct": 20,
+                  "after_pct": 95,
+                  "delta": "100x+高速",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "RL訓練コスト",
+                  "before": "高い（失敗後リセット必要）",
+                  "after": "低い（任意点から再開）",
+                  "before_pct": 30,
+                  "after_pct": 80,
+                  "delta": "大幅削減",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "エージェントの「やり直し」能力はRL訓練・木探索・デバッグの全領域で必須。DeltaBoxはOSレベルのコピーオンライト技術でこれをミリ秒で実現した。",
               "impact": "エージェントインフラの根幹となる技術。Daytona等のサンドボックスプロバイダーが採用すれば業界標準になる可能性がある。"
-            }
+            },
+            "caption": "エージェント実行比較",
+            "alt": "DeltaBoxと従来手法の比較。従来：一方向実行のみ・ロールバック不可・RL訓練コスト高。DeltaBox：ミリ秒チェックポイント・任意ロールバック可・RL効率化。3指標で比較。"
           },
           "x_post": "DeltaBoxはOSレベルのデルタ方式でAIエージェントサンドボックスのチェックポイントを14ms・ロールバックを5msで実行できる手法だ。従来の「一方向実行しかできない」制約を解消し、SWE-benchとRLベンチマークで固定時間予算内の探索ノード数を大幅に改善することを実証。エージェントインフラの基礎技術として注目している。\nhttps://arxiv.org/abs/2605.22781v1"
         },
@@ -385,7 +634,13 @@
           "category": "agents",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["agents", "self-evolution", "code-rewriting", "swe-bench", "autonomous-agents"],
+          "tags": [
+            "agents",
+            "self-evolution",
+            "code-rewriting",
+            "swe-bench",
+            "autonomous-agents"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -404,20 +659,47 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "MOSS自己進化サイクル",
-            "alt": "MOSSの自己進化プロセスのタイムライン。Step1：本番環境での失敗検出。Step2：ソースコードの問題箇所特定。Step3：自律的なコード書き換え。Step4：改善版のテスト実行。Step5：スコア0.25→0.61へ改善。",
             "data": {
               "headline": "MOSS自己進化サイクル: 本番失敗→自動改善のループ",
               "events": [
-                { "when": "Step 1", "label": "本番失敗の検出", "description": "エージェントが実タスクで失敗。エラーログと失敗パターンを記録。", "status": "past" },
-                { "when": "Step 2", "label": "ソースコード問題特定", "description": "失敗原因をソースコードレベルで診断。構造的な問題箇所を特定。", "status": "past" },
-                { "when": "Step 3", "label": "自律コード書き換え", "description": "LLMが問題箇所を自律的に書き換え。強化学習なしでソースレベル適応。", "status": "now", "tone": "primary" },
-                { "when": "Step 4", "label": "改善版テスト実行", "description": "書き換えたコードをSWE-bench等のベンチマークで自動検証。", "status": "upcoming" },
-                { "when": "結果", "label": "スコア 0.25→0.61", "description": "SWE-bench SWE-verifyで0.25から0.61へ。人間介入なしの自律改善。", "status": "upcoming", "tone": "success" }
+                {
+                  "when": "Step 1",
+                  "label": "本番失敗の検出",
+                  "description": "エージェントが実タスクで失敗。エラーログと失敗パターンを記録。",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "ソースコード問題特定",
+                  "description": "失敗原因をソースコードレベルで診断。構造的な問題箇所を特定。",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "自律コード書き換え",
+                  "description": "LLMが問題箇所を自律的に書き換え。強化学習なしでソースレベル適応。",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "改善版テスト実行",
+                  "description": "書き換えたコードをSWE-bench等のベンチマークで自動検証。",
+                  "status": "upcoming"
+                },
+                {
+                  "when": "結果",
+                  "label": "スコア 0.25→0.61",
+                  "description": "SWE-bench SWE-verifyで0.25から0.61へ。人間介入なしの自律改善。",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "MOSSの自己進化ループは本番失敗をトリガーとしてソースコードを書き換える。従来のfine-tuningやRLとは異なる解釈可能な適応メカニズム。",
               "impact": "長期稼働エージェントの自律的品質維持を実現。エンタープライズ展開での運用コスト削減に直結する可能性がある。"
-            }
+            },
+            "caption": "MOSS自己進化サイクル",
+            "alt": "MOSSの自己進化プロセスのタイムライン。Step1：本番環境での失敗検出。Step2：ソースコードの問題箇所特定。Step3：自律的なコード書き換え。Step4：改善版のテスト実行。Step5：スコア0.25→0.61へ改善。"
           }
         }
       ]
@@ -438,7 +720,16 @@
           "category": "multimodal",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["bytedance", "lance", "multimodal", "image-generation", "video-understanding", "moe", "apache-2.0", "unified-model"],
+          "tags": [
+            "bytedance",
+            "lance",
+            "multimodal",
+            "image-generation",
+            "video-understanding",
+            "moe",
+            "apache-2.0",
+            "unified-model"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -457,20 +748,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "統合モデルの性能比較",
-            "alt": "Lance（3B）と先行統合マルチモーダルモデルの比較。GenEvalスコア：Lance 0.90（最高）対比較モデル群0.60-0.80。VBench総合：Lance 85.11（最高）。学習GPU数：最大128（効率的）対他社数千。",
             "data": {
               "headline": "ByteDance Lance: 統合マルチモーダルモデルとして性能・効率の両立",
-              "before": { "label": "先行統合モデル（比較群）", "sublabel": "理解か生成かに特化した設計" },
-              "after": { "label": "Lance 3B", "sublabel": "理解・生成・編集を統合" },
+              "before": {
+                "label": "先行統合モデル（比較群）",
+                "sublabel": "理解か生成かに特化した設計"
+              },
+              "after": {
+                "label": "Lance 3B",
+                "sublabel": "理解・生成・編集を統合"
+              },
               "metrics": [
-                { "label": "GenEval", "before": "〜0.70（平均）", "after": "0.90（最高）", "before_pct": 70, "after_pct": 90, "delta": "+0.20↑", "delta_tone": "success" },
-                { "label": "VBench総合", "before": "〜78（平均）", "after": "85.11（最高）", "before_pct": 78, "after_pct": 85, "delta": "+7↑", "delta_tone": "success" },
-                { "label": "学習コスト", "before": "数百〜数千GPU", "after": "最大128GPU", "before_pct": 90, "after_pct": 30, "delta": "大幅削減", "delta_tone": "success" }
+                {
+                  "label": "GenEval",
+                  "before": "〜0.70（平均）",
+                  "after": "0.90（最高）",
+                  "before_pct": 70,
+                  "after_pct": 90,
+                  "delta": "+0.20↑",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "VBench総合",
+                  "before": "〜78（平均）",
+                  "after": "85.11（最高）",
+                  "before_pct": 78,
+                  "after_pct": 85,
+                  "delta": "+7↑",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "学習コスト",
+                  "before": "数百〜数千GPU",
+                  "after": "最大128GPU",
+                  "before_pct": 90,
+                  "after_pct": 30,
+                  "delta": "大幅削減",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "3Bという比較的コンパクトなサイズで統合マルチモーダルを実現し、性能指標でも先行モデルを上回った。Apache 2.0公開で活用の敷居も低い。",
               "impact": "画像・動画を扱うプロダクト開発者に、単一モデルで生成・理解・編集をまかなえる現実的な選択肢が生まれた。"
-            }
+            },
+            "caption": "統合モデルの性能比較",
+            "alt": "Lance（3B）と先行統合マルチモーダルモデルの比較。GenEvalスコア：Lance 0.90（最高）対比較モデル群0.60-0.80。VBench総合：Lance 85.11（最高）。学習GPU数：最大128（効率的）対他社数千。"
           }
         },
         {
@@ -484,7 +805,17 @@
           "category": "multimodal",
           "published_at": "2026-05-24",
           "lang": "en",
-          "tags": ["tts", "text-to-speech", "japanese", "multilingual", "onnx", "local-inference", "cpu", "supertone", "31-languages"],
+          "tags": [
+            "tts",
+            "text-to-speech",
+            "japanese",
+            "multilingual",
+            "onnx",
+            "local-inference",
+            "cpu",
+            "supertone",
+            "31-languages"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -502,19 +833,40 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "supertonic-3 主要スペック",
-            "alt": "supertonic-3の4指標横棒グラフ。モデルサイズ99M（棒25%）、対応言語31言語（棒80%）、HFダウンロード43K+（棒70%）、GPU不要率100%（棒100%）。",
             "data": {
               "headline": "supertonic-3: 99Mで31言語・GPU不要のローカルTTS新標準",
               "bars": [
-                { "label": "モデルサイズ", "value": "99M params", "pct": 25, "note": "0.7B〜2Bクラスより大幅に軽量" },
-                { "label": "対応言語", "value": "31言語", "pct": 80, "note": "日本語含む多言語対応" },
-                { "label": "HFダウンロード", "value": "43,000+", "pct": 70, "note": "公開後急速に拡散" },
-                { "label": "CPU動作", "value": "GPU不要", "pct": 100, "tone": "success", "note": "エッジ・ブラウザ・モバイル対応" }
+                {
+                  "label": "モデルサイズ",
+                  "value": "99M params",
+                  "pct": 25,
+                  "note": "0.7B〜2Bクラスより大幅に軽量"
+                },
+                {
+                  "label": "対応言語",
+                  "value": "31言語",
+                  "pct": 80,
+                  "note": "日本語含む多言語対応"
+                },
+                {
+                  "label": "HFダウンロード",
+                  "value": "43,000+",
+                  "pct": 70,
+                  "note": "公開後急速に拡散"
+                },
+                {
+                  "label": "CPU動作",
+                  "value": "GPU不要",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "エッジ・ブラウザ・モバイル対応"
+                }
               ],
               "narrative": "大型TTS（0.7B〜2B）と比べて大幅に小さい99Mパラメータで同等速度を実現。ONNX形式でブラウザ・エッジへの組み込みも容易。",
               "impact": "GPU不要のローカル音声合成が31言語で使えるようになり、プライバシー重視の音声アプリやエッジAI製品の開発コストが大幅に下がる。"
-            }
+            },
+            "caption": "supertonic-3 主要スペック",
+            "alt": "supertonic-3の4指標横棒グラフ。モデルサイズ99M（棒25%）、対応言語31言語（棒80%）、HFダウンロード43K+（棒70%）、GPU不要率100%（棒100%）。"
           }
         }
       ]
@@ -535,7 +887,14 @@
           "category": "research_papers",
           "published_at": "2026-05-07",
           "lang": "en",
-          "tags": ["llm-agents", "constraint-decay", "backend-code-generation", "software-engineering", "hn-123pt", "evaluation"],
+          "tags": [
+            "llm-agents",
+            "constraint-decay",
+            "backend-code-generation",
+            "software-engineering",
+            "hn-123pt",
+            "evaluation"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -553,20 +912,51 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "制約の有無によるエージェント性能比較",
-            "alt": "制約崩壊の概念図。左：制約なし（緩い仕様）でLLMエージェントが高性能。右：構造制約増加（アーキテクチャ・ORM・DB設計）で性能急落。中央の矢印に「制約崩壊」ラベル。",
             "data": {
               "headline": "制約崩壊: 構造制約の累積でLLMエージェント性能が急落",
-              "before": { "label": "制約なし（プロトタイプ環境）", "sublabel": "緩い仕様での自由なコード生成" },
-              "after": { "label": "本番制約あり（構造仕様遵守）", "sublabel": "アーキテクチャ・ORM・DB設計遵守が必要" },
+              "before": {
+                "label": "制約なし（プロトタイプ環境）",
+                "sublabel": "緩い仕様での自由なコード生成"
+              },
+              "after": {
+                "label": "本番制約あり（構造仕様遵守）",
+                "sublabel": "アーキテクチャ・ORM・DB設計遵守が必要"
+              },
               "metrics": [
-                { "label": "タスク成功率", "before": "高い（制約なし）", "after": "急激に低下", "before_pct": 80, "after_pct": 30, "delta": "−50%以上", "delta_tone": "danger" },
-                { "label": "本番利用適性", "before": "プロトタイプ用途に有効", "after": "本番には信頼できない", "before_pct": 75, "after_pct": 20, "delta": "限定的", "delta_tone": "warning" },
-                { "label": "再現性", "before": "評価基盤", "after": "OSS公開済み", "before_pct": 70, "after_pct": 100, "delta": "追試可能", "delta_tone": "success", "note": "8フレームワーク・100タスク" }
+                {
+                  "label": "タスク成功率",
+                  "before": "高い（制約なし）",
+                  "after": "急激に低下",
+                  "before_pct": 80,
+                  "after_pct": 30,
+                  "delta": "−50%以上",
+                  "delta_tone": "danger"
+                },
+                {
+                  "label": "本番利用適性",
+                  "before": "プロトタイプ用途に有効",
+                  "after": "本番には信頼できない",
+                  "before_pct": 75,
+                  "after_pct": 20,
+                  "delta": "限定的",
+                  "delta_tone": "warning"
+                },
+                {
+                  "label": "再現性",
+                  "before": "評価基盤",
+                  "after": "OSS公開済み",
+                  "before_pct": 70,
+                  "after_pct": 100,
+                  "delta": "追試可能",
+                  "delta_tone": "success",
+                  "note": "8フレームワーク・100タスク"
+                }
               ],
               "narrative": "LLMエージェントは制約のない状況では高性能を発揮するが、本番仕様の構造制約が重なると急激に崩壊する。プロトタイプ用途と本番用途を明確に分けるべき根拠となる研究。",
               "impact": "AIエージェントを本番バックエンド開発に活用しようとしているチームへの重要な警告。現状の利用範囲を見直す契機となる論文。"
-            }
+            },
+            "caption": "制約の有無によるエージェント性能比較",
+            "alt": "制約崩壊の概念図。左：制約なし（緩い仕様）でLLMエージェントが高性能。右：構造制約増加（アーキテクチャ・ORM・DB設計）で性能急落。中央の矢印に「制約崩壊」ラベル。"
           },
           "x_post": "LLMエージェントは本番仕様の構造制約（アーキテクチャパターン・ORM・DB設計）が積み重なると急激に性能低下する「制約崩壊」をarXiv論文が実証した。8フレームワーク100タスクで評価し、本番バックエンド開発には現時点で信頼できないと結論。プロトタイプと本番の用途を明確に分けるべき重要な警告研究だ。\nhttps://arxiv.org/abs/2605.06445"
         },
@@ -581,7 +971,15 @@
           "category": "research_papers",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["rl", "policy-optimization", "test-time-search", "diversity", "grpo", "pass-at-k", "llm-training"],
+          "tags": [
+            "rl",
+            "policy-optimization",
+            "test-time-search",
+            "diversity",
+            "grpo",
+            "pass-at-k",
+            "llm-training"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -599,20 +997,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "VPO vs スカラーRLベースライン",
-            "alt": "VPOとGRPO（スカラーRLの代表）の性能比較。pass@k：VPO優位で探索バジェット増で差拡大。best@k：VPO優位。進化的探索：VPOが解けた問題数でGRPOを大幅上回る。",
             "data": {
               "headline": "Vector Policy Optimization vs GRPO: test-time search 性能比較",
-              "before": { "label": "GRPO（スカラーRL代表）", "sublabel": "単一報酬関数に特化した最適化" },
-              "after": { "label": "VPO", "sublabel": "ベクトル報酬×多様性訓練" },
+              "before": {
+                "label": "GRPO（スカラーRL代表）",
+                "sublabel": "単一報酬関数に特化した最適化"
+              },
+              "after": {
+                "label": "VPO",
+                "sublabel": "ベクトル報酬×多様性訓練"
+              },
               "metrics": [
-                { "label": "pass@k", "before": "ベースライン", "after": "上回る（バジェット増で差拡大）", "before_pct": 65, "after_pct": 78, "delta": "↑改善", "delta_tone": "success" },
-                { "label": "best@k", "before": "ベースライン", "after": "上回る", "before_pct": 65, "after_pct": 76, "delta": "↑改善", "delta_tone": "success" },
-                { "label": "進化的探索", "before": "解けない問題あり", "after": "GRPOで解けない問題も解決", "before_pct": 50, "after_pct": 80, "delta": "質的突破", "delta_tone": "success" }
+                {
+                  "label": "pass@k",
+                  "before": "ベースライン",
+                  "after": "上回る（バジェット増で差拡大）",
+                  "before_pct": 65,
+                  "after_pct": 78,
+                  "delta": "↑改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "best@k",
+                  "before": "ベースライン",
+                  "after": "上回る",
+                  "before_pct": 65,
+                  "after_pct": 76,
+                  "delta": "↑改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "進化的探索",
+                  "before": "解けない問題あり",
+                  "after": "GRPOで解けない問題も解決",
+                  "before_pct": 50,
+                  "after_pct": 80,
+                  "delta": "質的突破",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "RL訓練で「多様な解」を明示的に学ばせることで、test-time searchの探索効率が根本から改善される。",
               "impact": "test-time computingスケーリングの効率化に直接貢献。LLM訓練パイプラインのRL段階に今すぐ組み込める実装可能な改善手法。"
-            }
+            },
+            "caption": "VPO vs スカラーRLベースライン",
+            "alt": "VPOとGRPO（スカラーRLの代表）の性能比較。pass@k：VPO優位で探索バジェット増で差拡大。best@k：VPO優位。進化的探索：VPOが解けた問題数でGRPOを大幅上回る。"
           },
           "x_post": "VPO（Vector Policy Optimization）はGRPOのスカラー優位性推定をベクトル報酬空間に拡張し、多様な解集合を出力するよう訓練する新RL手法だ。pass@kとbest@kの4タスクでGRPOを上回り探索バジェット増で差が拡大。進化的探索ではGRPOが解けない問題をVPOが解いた。test-time searchの効率化に直結する研究だ。\nhttps://arxiv.org/abs/2605.22817"
         },
@@ -627,7 +1055,15 @@
           "category": "research_papers",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["kv-cache", "llm-inference", "memory-management", "long-context", "gpu-memory", "cpu-offload", "ai-hardware"],
+          "tags": [
+            "kv-cache",
+            "llm-inference",
+            "memory-management",
+            "long-context",
+            "gpu-memory",
+            "cpu-offload",
+            "ai-hardware"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -645,19 +1081,41 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "KVDriveの階層型キャッシュ管理フロー",
-            "alt": "KVDriveの処理フロー図。Step1：推論リクエスト受信。Step2：KVキャッシュを優先度でGPU HBM・CPU DRAM・ストレージに配置。Step3：先読みスケジューラが次の転送を準備。Step4：スループット向上・遅延低減を達成。",
             "data": {
               "headline": "KVDrive: 三階層メモリ統合で長文脈推論コストを削減",
               "events": [
-                { "when": "Step 1", "label": "推論リクエスト受信", "description": "長文脈入力（128K+ tokens）を受け取りKVキャッシュサイズを推計。", "status": "past" },
-                { "when": "Step 2", "label": "階層型キャッシュ配置", "description": "重要度・アクセス頻度に基づきGPU HBM・CPU DRAM・ストレージに自動配置。", "status": "past" },
-                { "when": "Step 3", "label": "先読みスケジューリング", "description": "次のデコードステップで必要なKVをGPUへ事前転送しI/Oレイテンシを隠蔽。", "status": "now", "tone": "primary" },
-                { "when": "結果", "label": "コスト削減・性能維持", "description": "追加HBMなしで長文脈推論を実現。単一GPU環境でも256K token対応が現実的に。", "status": "upcoming", "tone": "success" }
+                {
+                  "when": "Step 1",
+                  "label": "推論リクエスト受信",
+                  "description": "長文脈入力（128K+ tokens）を受け取りKVキャッシュサイズを推計。",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "階層型キャッシュ配置",
+                  "description": "重要度・アクセス頻度に基づきGPU HBM・CPU DRAM・ストレージに自動配置。",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "先読みスケジューリング",
+                  "description": "次のデコードステップで必要なKVをGPUへ事前転送しI/Oレイテンシを隠蔽。",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "結果",
+                  "label": "コスト削減・性能維持",
+                  "description": "追加HBMなしで長文脈推論を実現。単一GPU環境でも256K token対応が現実的に。",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "従来はGPU HBMの容量を超えると長文脈推論が不可能だったが、KVDriveの階層型管理でこの制約を緩和。",
               "impact": "高コストなHBM増設なしに長文脈対応できる推論インフラの設計指針を提供。中小規模のAI開発チームにも直接利益がある。"
-            }
+            },
+            "caption": "KVDriveの階層型キャッシュ管理フロー",
+            "alt": "KVDriveの処理フロー図。Step1：推論リクエスト受信。Step2：KVキャッシュを優先度でGPU HBM・CPU DRAM・ストレージに配置。Step3：先読みスケジューラが次の転送を準備。Step4：スループット向上・遅延低減を達成。"
           }
         }
       ]
@@ -678,7 +1136,15 @@
           "category": "industry_business",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["unicorn", "ai-startup", "venture-capital", "ai-infrastructure", "funding", "nscale", "seed-stage"],
+          "tags": [
+            "unicorn",
+            "ai-startup",
+            "venture-capital",
+            "ai-infrastructure",
+            "funding",
+            "nscale",
+            "seed-stage"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -696,19 +1162,41 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "2026年AIユニコーン動向",
-            "alt": "2026年新規ユニコーン統計横棒グラフ。総数98社（棒100%）、AIスタートアップ25社以上（棒26%）、AIインフラ分野複数社（棒15%）、シードユニコーン出現（棒5%、前例なし）。",
             "data": {
               "headline": "2026年: AIユニコーン量産—インフラ・フロンティアラボが主役",
               "bars": [
-                { "label": "新規ユニコーン総数", "value": "98社", "pct": 100, "note": "2026年1〜5月" },
-                { "label": "AI企業比率", "value": "25社以上（26%+）", "pct": 26, "tone": "primary", "note": "4分の1超がAI関連" },
-                { "label": "AIインフラ新規", "value": "複数社", "pct": 15, "note": "Nscale・Nexthop AI等" },
-                { "label": "シードステージ", "value": "前例なし", "pct": 5, "tone": "warning", "note": "シードでユニコーン評価達成" }
+                {
+                  "label": "新規ユニコーン総数",
+                  "value": "98社",
+                  "pct": 100,
+                  "note": "2026年1〜5月"
+                },
+                {
+                  "label": "AI企業比率",
+                  "value": "25社以上（26%+）",
+                  "pct": 26,
+                  "tone": "primary",
+                  "note": "4分の1超がAI関連"
+                },
+                {
+                  "label": "AIインフラ新規",
+                  "value": "複数社",
+                  "pct": 15,
+                  "note": "Nscale・Nexthop AI等"
+                },
+                {
+                  "label": "シードステージ",
+                  "value": "前例なし",
+                  "pct": 5,
+                  "tone": "warning",
+                  "note": "シードでユニコーン評価達成"
+                }
               ],
               "narrative": "LLMモデル競争が一巡し、推論インフラ・データセンター・ネットワーク等への資金集中が加速。AIエコシステムの厚みが増している。",
               "impact": "AIインフラ領域への投資過熱が続く中、評価額と事業実態のギャップに注意が必要。一方で本物のインフラ企業には長期的な成長余地がある。"
-            }
+            },
+            "caption": "2026年AIユニコーン動向",
+            "alt": "2026年新規ユニコーン統計横棒グラフ。総数98社（棒100%）、AIスタートアップ25社以上（棒26%）、AIインフラ分野複数社（棒15%）、シードユニコーン出現（棒5%、前例なし）。"
           }
         },
         {
@@ -722,7 +1210,16 @@
           "category": "industry_business",
           "published_at": "2026-05-19",
           "lang": "en",
-          "tags": ["kpmg", "enterprise-ai", "finance", "survey", "roi", "multi-agent", "ai-adoption", "workforce"],
+          "tags": [
+            "kpmg",
+            "enterprise-ai",
+            "finance",
+            "survey",
+            "roi",
+            "multi-agent",
+            "ai-adoption",
+            "workforce"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -740,19 +1237,43 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "KPMG AI財務調査2026 主要数値",
-            "alt": "KPMG調査4指標横棒グラフ。AI展開計画93%（棒93%）、マルチエージェント計画50%（棒50%）、ROI達成74%（棒74%）、最大障壁は組織変革（定性）。",
             "data": {
               "headline": "KPMG 2026: エンタープライズAI本格展開フェーズに突入",
               "bars": [
-                { "label": "18ヶ月以内AI展開計画", "value": "93%", "pct": 93, "tone": "primary", "note": "財務機能へのAI導入・スケール" },
-                { "label": "マルチエージェント計画", "value": "50%", "pct": 50, "tone": "info", "note": "エージェントオーケストレーション予定" },
-                { "label": "ROI達成率（期待通り以上）", "value": "74%", "pct": 74, "tone": "success", "note": "46%期待通り＋28%超過" },
-                { "label": "役割別ユースケース不明確", "value": "64%が課題", "pct": 64, "tone": "warning", "note": "人材育成の最大障壁" }
+                {
+                  "label": "18ヶ月以内AI展開計画",
+                  "value": "93%",
+                  "pct": 93,
+                  "tone": "primary",
+                  "note": "財務機能へのAI導入・スケール"
+                },
+                {
+                  "label": "マルチエージェント計画",
+                  "value": "50%",
+                  "pct": 50,
+                  "tone": "info",
+                  "note": "エージェントオーケストレーション予定"
+                },
+                {
+                  "label": "ROI達成率（期待通り以上）",
+                  "value": "74%",
+                  "pct": 74,
+                  "tone": "success",
+                  "note": "46%期待通り＋28%超過"
+                },
+                {
+                  "label": "役割別ユースケース不明確",
+                  "value": "64%が課題",
+                  "pct": 64,
+                  "tone": "warning",
+                  "note": "人材育成の最大障壁"
+                }
               ],
               "narrative": "AI投資のROIが出始めた一方で、組織的な変化管理と役割別人材育成が次の壁として浮上している。",
               "impact": "エンタープライズAI導入の次フェーズは技術選定よりも組織変革とロールアウト設計が鍵。マルチエージェント半数導入は大きな実装需要を示す。"
-            }
+            },
+            "caption": "KPMG AI財務調査2026 主要数値",
+            "alt": "KPMG調査4指標横棒グラフ。AI展開計画93%（棒93%）、マルチエージェント計画50%（棒50%）、ROI達成74%（棒74%）、最大障壁は組織変革（定性）。"
           }
         }
       ]
@@ -773,7 +1294,15 @@
           "category": "regulation_policy",
           "published_at": "2026-05-22",
           "lang": "en",
-          "tags": ["multi-agent", "kv-cache", "safety", "privacy", "latent-communication", "information-leakage", "agentic-ai"],
+          "tags": [
+            "multi-agent",
+            "kv-cache",
+            "safety",
+            "privacy",
+            "latent-communication",
+            "information-leakage",
+            "agentic-ai"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -791,22 +1320,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "LCGuard: KV共有エージェントの漏洩防御",
-            "alt": "LCGuardのサマリーカード。問題：KVキャッシュ共有でエージェント間情報漏洩。解法：LCGuardによる潜在通信ガード。評価：複数ベンチマーク・複数トポロジー。結果：タスク性能維持＋漏洩低減。",
             "data": {
               "headline": "LCGuard: KVキャッシュ共有マルチエージェントの新セキュリティ課題に対処",
               "tldr": "マルチエージェントシステムでKVキャッシュを共有する際に発生する潜在通信漏洩を防ぐLCGuardを提案。再構成攻撃モデルで評価し、性能を維持しながら漏洩リスクを低減することを実証。",
               "points": [
-                { "label": "脅威モデル", "value": "再構成型KV漏洩攻撃", "tone": "warning" },
-                { "label": "対象", "value": "KV共有マルチエージェント", "tone": "primary" },
-                { "label": "評価範囲", "value": "複数ベンチマーク・モデル・トポロジー", "tone": "default" },
-                { "label": "結果", "value": "タスク性能維持＋漏洩低減", "tone": "success" },
-                { "label": "対象分野", "value": "cs.CR（セキュリティ）", "tone": "default" },
-                { "label": "公開日", "value": "2026-05-22", "tone": "info" }
+                {
+                  "label": "脅威モデル",
+                  "value": "再構成型KV漏洩攻撃",
+                  "tone": "warning"
+                },
+                {
+                  "label": "対象",
+                  "value": "KV共有マルチエージェント",
+                  "tone": "primary"
+                },
+                {
+                  "label": "評価範囲",
+                  "value": "複数ベンチマーク・モデル・トポロジー",
+                  "tone": "default"
+                },
+                {
+                  "label": "結果",
+                  "value": "タスク性能維持＋漏洩低減",
+                  "tone": "success"
+                },
+                {
+                  "label": "対象分野",
+                  "value": "cs.CR（セキュリティ）",
+                  "tone": "default"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026-05-22",
+                  "tone": "info"
+                }
               ],
               "context": "推論コスト削減のためKVキャッシュ共有を採用するマルチエージェントアーキテクチャが増える中、内部通信経路のセキュリティが盲点になりやすい。",
               "impact": "エンタープライズ向けマルチエージェント展開を設計する際に、KV共有のセキュリティ含意を事前に評価するための研究基盤を提供する。"
-            }
+            },
+            "caption": "LCGuard: KV共有エージェントの漏洩防御",
+            "alt": "LCGuardのサマリーカード。問題：KVキャッシュ共有でエージェント間情報漏洩。解法：LCGuardによる潜在通信ガード。評価：複数ベンチマーク・複数トポロジー。結果：タスク性能維持＋漏洩低減。"
           }
         }
       ]
@@ -827,7 +1380,15 @@
           "category": "community_buzz",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["ai-washing", "rebrand", "hacker-news", "criticism", "marketing", "enterprise-ai", "skepticism"],
+          "tags": [
+            "ai-washing",
+            "rebrand",
+            "hacker-news",
+            "criticism",
+            "marketing",
+            "enterprise-ai",
+            "skepticism"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -845,20 +1406,36 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "AIウォッシングとは",
-            "alt": "AIウォッシングのサマリーカード。定義：実質的なAI活用なしにAIを標榜する再ブランディング。影響対象：投資家・採用担当・開発者。対策：技術DDと実装確認。",
             "data": {
               "headline": "AIウォッシング: LLMブーム特有ではない構造的マーケティング問題",
               "tldr": "AIブームに乗じて既存製品に「AI活用」ラベルを貼り替える企業の急増がHNで炎上。技術的な変更を伴わない再ブランディングが投資家・採用担当・開発者に誤情報を拡散している。",
               "points": [
-                { "label": "定義", "value": "実質変更なしのAIラベル貼り替え", "tone": "warning" },
-                { "label": "被害者層", "value": "投資家・採用担当・開発者", "tone": "warning" },
-                { "label": "構造的特性", "value": "クラウド・IoT期にも繰り返し", "tone": "default" },
-                { "label": "対策", "value": "技術DDと実装レビュー", "tone": "success" }
+                {
+                  "label": "定義",
+                  "value": "実質変更なしのAIラベル貼り替え",
+                  "tone": "warning"
+                },
+                {
+                  "label": "被害者層",
+                  "value": "投資家・採用担当・開発者",
+                  "tone": "warning"
+                },
+                {
+                  "label": "構造的特性",
+                  "value": "クラウド・IoT期にも繰り返し",
+                  "tone": "default"
+                },
+                {
+                  "label": "対策",
+                  "value": "技術DDと実装レビュー",
+                  "tone": "success"
+                }
               ],
               "context": "AI投資ブームが過熱する中で、投資家・顧客・採用候補者向けの「AI活用」を謳う再ブランディングが急増している。",
               "impact": "AIツール・サービス選定時に実際の技術的実装を確認するデューデリジェンスが開発者・企業にとってますます重要になっている。"
-            }
+            },
+            "caption": "AIウォッシングとは",
+            "alt": "AIウォッシングのサマリーカード。定義：実質的なAI活用なしにAIを標榜する再ブランディング。影響対象：投資家・採用担当・開発者。対策：技術DDと実装確認。"
           }
         },
         {
@@ -872,7 +1449,15 @@
           "category": "community_buzz",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["claude", "llm-limitations", "software-architecture", "ai-coding", "claude-code", "system-design", "hacker-news"],
+          "tags": [
+            "claude",
+            "llm-limitations",
+            "software-architecture",
+            "ai-coding",
+            "claude-code",
+            "system-design",
+            "hacker-news"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -890,20 +1475,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "LLMの適切な役割 vs 危険な役割",
-            "alt": "LLMの使い方比較。左（適切）：実装補助・コードレビュー・テスト生成・説明生成。右（危険）：システム設計委譲・アーキテクチャ決定・技術スタック選定委任。",
             "data": {
               "headline": "Claude/LLMの「やらせてよい仕事」vs「やらせると危ない仕事」",
-              "before": { "label": "危険な使い方", "sublabel": "アーキテクトとして振る舞わせる" },
-              "after": { "label": "適切な使い方", "sublabel": "実装補助ツールとして活用" },
+              "before": {
+                "label": "危険な使い方",
+                "sublabel": "アーキテクトとして振る舞わせる"
+              },
+              "after": {
+                "label": "適切な使い方",
+                "sublabel": "実装補助ツールとして活用"
+              },
               "metrics": [
-                { "label": "システム設計", "before": "Claude委任（危険）", "after": "人間が設計・Claudeで検証", "before_pct": 20, "after_pct": 80, "delta": "明確な役割分担が必要", "delta_tone": "warning" },
-                { "label": "実装スピード", "before": "委任でも速い", "after": "補助で最速", "before_pct": 70, "after_pct": 90, "delta": "実装補助は高い価値", "delta_tone": "success" },
-                { "label": "長期保守性", "before": "設計根拠不明で低下リスク", "after": "人間設計で担保", "before_pct": 30, "after_pct": 80, "delta": "設計責任は人間が持つ", "delta_tone": "success" }
+                {
+                  "label": "システム設計",
+                  "before": "Claude委任（危険）",
+                  "after": "人間が設計・Claudeで検証",
+                  "before_pct": 20,
+                  "after_pct": 80,
+                  "delta": "明確な役割分担が必要",
+                  "delta_tone": "warning"
+                },
+                {
+                  "label": "実装スピード",
+                  "before": "委任でも速い",
+                  "after": "補助で最速",
+                  "before_pct": 70,
+                  "after_pct": 90,
+                  "delta": "実装補助は高い価値",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "長期保守性",
+                  "before": "設計根拠不明で低下リスク",
+                  "after": "人間設計で担保",
+                  "before_pct": 30,
+                  "after_pct": 80,
+                  "delta": "設計責任は人間が持つ",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "LLMはコードを書く能力と設計を判断する能力は別物。前者は卓越しているが後者は現時点では信頼できない。",
               "impact": "Claude CodeやCursorなどAIコーディングツールの利用範囲を明確に定義することが、長期プロジェクトの保守性向上に直結する。"
-            }
+            },
+            "caption": "LLMの適切な役割 vs 危険な役割",
+            "alt": "LLMの使い方比較。左（適切）：実装補助・コードレビュー・テスト生成・説明生成。右（危険）：システム設計委譲・アーキテクチャ決定・技術スタック選定委任。"
           }
         }
       ]
@@ -924,7 +1539,16 @@
           "category": "japan",
           "published_at": "2026-05-24",
           "lang": "ja",
-          "tags": ["supertonic-3", "tts", "local-inference", "cpu", "japanese", "onnx", "supertone", "はてブ204"],
+          "tags": [
+            "supertonic-3",
+            "tts",
+            "local-inference",
+            "cpu",
+            "japanese",
+            "onnx",
+            "supertone",
+            "はてブ204"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -943,22 +1567,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Supertonic 3 日本語活用ガイド",
-            "alt": "Supertonic 3日本語解説のサマリーカード。はてブ204件、HF43K+ダウンロード、CPU動作、31言語対応、ONNX形式、GPU不要。日本語セットアップ手順付き。",
             "data": {
               "headline": "supertonic-3 日本語対応TTS—ローカル完結で今日から使える",
               "tldr": "GPU不要・CPUのみで日本語TTS推論ができるsupertonic-3の日本語解説記事。99M・ONNX形式で31言語対応。HF 4万3千件超ダウンロード・はてブ204件と日本AIコミュニティで最大の反響。",
               "points": [
-                { "label": "はてなブックマーク", "value": "204件", "tone": "success" },
-                { "label": "HFダウンロード", "value": "43,000+", "tone": "success" },
-                { "label": "動作環境", "value": "CPU動作・GPU不要", "tone": "primary" },
-                { "label": "モデルサイズ", "value": "99M params", "tone": "default" },
-                { "label": "対応言語", "value": "31言語（日本語含む）", "tone": "info" },
-                { "label": "形式", "value": "ONNX・ローカル完結", "tone": "success" }
+                {
+                  "label": "はてなブックマーク",
+                  "value": "204件",
+                  "tone": "success"
+                },
+                {
+                  "label": "HFダウンロード",
+                  "value": "43,000+",
+                  "tone": "success"
+                },
+                {
+                  "label": "動作環境",
+                  "value": "CPU動作・GPU不要",
+                  "tone": "primary"
+                },
+                {
+                  "label": "モデルサイズ",
+                  "value": "99M params",
+                  "tone": "default"
+                },
+                {
+                  "label": "対応言語",
+                  "value": "31言語（日本語含む）",
+                  "tone": "info"
+                },
+                {
+                  "label": "形式",
+                  "value": "ONNX・ローカル完結",
+                  "tone": "success"
+                }
               ],
               "context": "外部APIへのデータ送信を避けつつ実用的な音声合成を実現したいエンジニアに、supertonic-3はコスト・プライバシー・性能の三条件を同時に満たす選択肢。",
               "impact": "日本語ローカルTTSの実用敷居が大幅に低下。個人開発プロジェクト・業務自動化ツール・教育アプリへの音声機能追加が低コストで可能になる。"
-            }
+            },
+            "caption": "Supertonic 3 日本語活用ガイド",
+            "alt": "Supertonic 3日本語解説のサマリーカード。はてブ204件、HF43K+ダウンロード、CPU動作、31言語対応、ONNX形式、GPU不要。日本語セットアップ手順付き。"
           },
           "x_post": "Supertone社「supertonic-3」は99Mパラメータ・ONNX形式で31言語に対応し、GPU不要のCPUのみでリアルタイムTTSを実現する。HuggingFaceダウンロード数4万3千件超。外部APIに頼らないローカル完結の実用日本語音声合成として、組み込み・プライベートデプロイ用途に今日から使える。\nhttps://www.techno-edge.net/article/2026/05/24/5094.html"
         },
@@ -973,7 +1621,15 @@
           "category": "japan",
           "published_at": "2026-05-24",
           "lang": "ja",
-          "tags": ["ai-safety", "generative-ai", "security", "japanese", "technical-book", "gihyo", "はてブ79"],
+          "tags": [
+            "ai-safety",
+            "generative-ai",
+            "security",
+            "japanese",
+            "technical-book",
+            "gihyo",
+            "はてブ79"
+          ],
           "scores": {
             "importance": 2,
             "depth": 4,
@@ -992,22 +1648,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "生成AIの安全性入門",
-            "alt": "技術評論社「生成AIの安全性入門」サマリーカード。はてブ79件。主要カバー内容：プロンプトインジェクション、データ漏洩、ハルシネーション、モデル汚染。対象：AI導入担当・セキュリティ担当。",
             "data": {
               "headline": "生成AIの安全性入門（技術評論社）—業務AI時代に必要な安全知識",
               "tldr": "生成AIが業務インフラ化した現在、プロンプトインジェクション・データ漏洩・モデル汚染などのリスクを体系的に学べる日本語実務書。はてブ79件。",
               "points": [
-                { "label": "はてなブックマーク", "value": "79件", "tone": "success" },
-                { "label": "出版社", "value": "技術評論社（gihyo）", "tone": "default" },
-                { "label": "主要トピック1", "value": "プロンプトインジェクション対策", "tone": "warning" },
-                { "label": "主要トピック2", "value": "データ漏洩・プライバシーリスク", "tone": "warning" },
-                { "label": "対象読者", "value": "AI導入担当・セキュリティエンジニア", "tone": "info" },
-                { "label": "言語", "value": "日本語", "tone": "default" }
+                {
+                  "label": "はてなブックマーク",
+                  "value": "79件",
+                  "tone": "success"
+                },
+                {
+                  "label": "出版社",
+                  "value": "技術評論社（gihyo）",
+                  "tone": "default"
+                },
+                {
+                  "label": "主要トピック1",
+                  "value": "プロンプトインジェクション対策",
+                  "tone": "warning"
+                },
+                {
+                  "label": "主要トピック2",
+                  "value": "データ漏洩・プライバシーリスク",
+                  "tone": "warning"
+                },
+                {
+                  "label": "対象読者",
+                  "value": "AI導入担当・セキュリティエンジニア",
+                  "tone": "info"
+                },
+                {
+                  "label": "言語",
+                  "value": "日本語",
+                  "tone": "default"
+                }
               ],
               "context": "生成AIが業務インフラ化するにつれ、「安全に使う」ための専門知識の需要が急拡大している。",
               "impact": "企業のAI導入プロジェクトでセキュリティリスク評価を行う担当者が参照すべき日本語での基礎資料。"
-            }
+            },
+            "caption": "生成AIの安全性入門",
+            "alt": "技術評論社「生成AIの安全性入門」サマリーカード。はてブ79件。主要カバー内容：プロンプトインジェクション、データ漏洩、ハルシネーション、モデル汚染。対象：AI導入担当・セキュリティ担当。"
           }
         },
         {
@@ -1021,7 +1701,15 @@
           "category": "japan",
           "published_at": "2026-05-21",
           "lang": "ja",
-          "tags": ["google-io-2026", "gemini", "gemini-omni", "ai-glasses", "google", "まとめ", "はてブ581"],
+          "tags": [
+            "google-io-2026",
+            "gemini",
+            "gemini-omni",
+            "ai-glasses",
+            "google",
+            "まとめ",
+            "はてブ581"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1040,19 +1728,40 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "Google I/O 2026 主要発表タイムライン",
-            "alt": "Google I/O 2026発表のタイムライン。Day1：Gemini Omni発表・Gemini 3.5 Flash提供開始。Day1続：Gemini Spark（24/7エージェント）・Search Agentの発表。Day2：AIスマートグラス（秋2026）発表。その後：75%AIコード生成発言が拡散。",
             "data": {
               "headline": "Google I/O 2026: GeminiがプラットフォームへとシフトしたDay",
               "events": [
-                { "when": "5/19 Day1", "label": "Gemini Omni発表", "description": "テキスト・画像・動画統合のGemini Omniと、当日提供開始のGemini 3.5 Flashを発表。", "status": "past" },
-                { "when": "5/19 続", "label": "Gemini Spark・Search Agent", "description": "24/7稼働のパーソナルエージェントGemini Sparkと、条件付きWebモニタリングSearch Agentを発表。", "status": "past" },
-                { "when": "5/20 Day2", "label": "AIスマートグラス発表", "description": "Samsung・Qualcomm・Gentle Monster・Warby Parkerと連合でGemini搭載スマートグラスを秋2026リリース予定と発表。", "status": "past" },
-                { "when": "発言", "label": "75%AIコード宣言", "description": "Pichai CEO「Googleの新規コードの75%はAI生成・エンジニアがオーケストレーターへ移行」と発言。", "status": "past", "tone": "primary" }
+                {
+                  "when": "5/19 Day1",
+                  "label": "Gemini Omni発表",
+                  "description": "テキスト・画像・動画統合のGemini Omniと、当日提供開始のGemini 3.5 Flashを発表。",
+                  "status": "past"
+                },
+                {
+                  "when": "5/19 続",
+                  "label": "Gemini Spark・Search Agent",
+                  "description": "24/7稼働のパーソナルエージェントGemini Sparkと、条件付きWebモニタリングSearch Agentを発表。",
+                  "status": "past"
+                },
+                {
+                  "when": "5/20 Day2",
+                  "label": "AIスマートグラス発表",
+                  "description": "Samsung・Qualcomm・Gentle Monster・Warby Parkerと連合でGemini搭載スマートグラスを秋2026リリース予定と発表。",
+                  "status": "past"
+                },
+                {
+                  "when": "発言",
+                  "label": "75%AIコード宣言",
+                  "description": "Pichai CEO「Googleの新規コードの75%はAI生成・エンジニアがオーケストレーターへ移行」と発言。",
+                  "status": "past",
+                  "tone": "primary"
+                }
               ],
               "narrative": "Google I/O 2026はGeminiの「使うAI」から「働くAI」へのシフトを宣言した会議。エージェントOS化戦略が全サービスに波及。",
               "impact": "GoogleがAIをプラットフォーム化した影響はAnthropicやOpenAIとの競争を超え、ソフトウェア産業全体の役割分業を変える。"
-            }
+            },
+            "caption": "Google I/O 2026 主要発表タイムライン",
+            "alt": "Google I/O 2026発表のタイムライン。Day1：Gemini Omni発表・Gemini 3.5 Flash提供開始。Day1続：Gemini Spark（24/7エージェント）・Search Agentの発表。Day2：AIスマートグラス（秋2026）発表。その後：75%AIコード生成発言が拡散。"
           }
         },
         {
@@ -1066,7 +1775,14 @@
           "category": "japan",
           "published_at": "2026-05-22",
           "lang": "ja",
-          "tags": ["ai-democratization", "software-development", "opinion", "はてブ520", "tool-building", "llm-impact"],
+          "tags": [
+            "ai-democratization",
+            "software-development",
+            "opinion",
+            "はてブ520",
+            "tool-building",
+            "llm-impact"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1085,20 +1801,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "AI民主化論の楽観論vs懐疑論",
-            "alt": "AI民主化の楽観論と懐疑論の比較。左：「技術的敷居が下がれば誰もが作る」。右：「やりたいと思う人はそもそも少ない」—内発的動機が問題。",
             "data": {
               "headline": "AI民主化: 「技術的に可能」と「やりたいと思う」は別問題",
-              "before": { "label": "楽観論", "sublabel": "技術的敷居の低下→普及" },
-              "after": { "label": "懐疑論（本記事）", "sublabel": "動機の問題は技術では解決しない" },
+              "before": {
+                "label": "楽観論",
+                "sublabel": "技術的敷居の低下→普及"
+              },
+              "after": {
+                "label": "懐疑論（本記事）",
+                "sublabel": "動機の問題は技術では解決しない"
+              },
               "metrics": [
-                { "label": "技術的アクセス", "before": "AIで劇的に低下", "after": "同意—確かに低下する", "before_pct": 90, "after_pct": 90, "delta": "合意点", "delta_tone": "info" },
-                { "label": "内発的動機", "before": "敷居が下がれば出てくる", "after": "希少で技術に左右されない", "before_pct": 80, "after_pct": 20, "delta": "核心的対立点", "delta_tone": "warning" },
-                { "label": "歴史的証拠", "before": "前例なし（新しい時代）", "after": "ノーコード・ローコードが既に示す", "before_pct": 50, "after_pct": 70, "delta": "懐疑論が先例を持つ", "delta_tone": "warning" }
+                {
+                  "label": "技術的アクセス",
+                  "before": "AIで劇的に低下",
+                  "after": "同意—確かに低下する",
+                  "before_pct": 90,
+                  "after_pct": 90,
+                  "delta": "合意点",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "内発的動機",
+                  "before": "敷居が下がれば出てくる",
+                  "after": "希少で技術に左右されない",
+                  "before_pct": 80,
+                  "after_pct": 20,
+                  "delta": "核心的対立点",
+                  "delta_tone": "warning"
+                },
+                {
+                  "label": "歴史的証拠",
+                  "before": "前例なし（新しい時代）",
+                  "after": "ノーコード・ローコードが既に示す",
+                  "before_pct": 50,
+                  "after_pct": 70,
+                  "delta": "懐疑論が先例を持つ",
+                  "delta_tone": "warning"
+                }
               ],
               "narrative": "「誰もがツールを作れる」は技術的命題であり「誰もがツールを作りたがる」という動機的命題とは異なる。この混同が民主化議論の盲点。",
               "impact": "AIコーディングツールの普及戦略において、技術的障壁の除去だけでなく動機づけや文脈設計が重要であるという示唆を与える。"
-            }
+            },
+            "caption": "AI民主化論の楽観論vs懐疑論",
+            "alt": "AI民主化の楽観論と懐疑論の比較。左：「技術的敷居が下がれば誰もが作る」。右：「やりたいと思う人はそもそも少ない」—内発的動機が問題。"
           }
         },
         {
@@ -1112,7 +1858,14 @@
           "category": "japan",
           "published_at": "2026-05-22",
           "lang": "ja",
-          "tags": ["google-io-2026", "engineer-identity", "ai-impact", "career", "はてブ157", "reflection"],
+          "tags": [
+            "google-io-2026",
+            "engineer-identity",
+            "ai-impact",
+            "career",
+            "はてブ157",
+            "reflection"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1131,22 +1884,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "AIとエンジニアのアイデンティティシフト",
-            "alt": "アイデンティティシフトのサマリーカード。Before：コードを書くエンジニア。After：設計・判断・コンテキスト提供のエンジニア。契機：Google I/O 2026。",
             "data": {
               "headline": "AI時代のエンジニアアイデンティティシフト：コードを書く→価値を判断する",
               "tldr": "Google I/O 2026の「75%AIコード」発言を受けた内省記事。コードを書くことから問題解決・設計・コンテキスト判断という人間固有の価値へのシフトを「アイデンティティシフト」と呼び分析。はてブ157件。",
               "points": [
-                { "label": "はてなブックマーク", "value": "157件", "tone": "success" },
-                { "label": "契機", "value": "Google I/O 2026 75%AIコード発言", "tone": "primary" },
-                { "label": "Before", "value": "コードを書くエンジニア", "tone": "default" },
-                { "label": "After（提言）", "value": "設計・判断・コンテキスト提供者", "tone": "info" },
-                { "label": "変化の性質", "value": "スキル更新ではなくアイデンティティシフト", "tone": "warning" },
-                { "label": "対象", "value": "AI時代のIT従事者全般", "tone": "default" }
+                {
+                  "label": "はてなブックマーク",
+                  "value": "157件",
+                  "tone": "success"
+                },
+                {
+                  "label": "契機",
+                  "value": "Google I/O 2026 75%AIコード発言",
+                  "tone": "primary"
+                },
+                {
+                  "label": "Before",
+                  "value": "コードを書くエンジニア",
+                  "tone": "default"
+                },
+                {
+                  "label": "After（提言）",
+                  "value": "設計・判断・コンテキスト提供者",
+                  "tone": "info"
+                },
+                {
+                  "label": "変化の性質",
+                  "value": "スキル更新ではなくアイデンティティシフト",
+                  "tone": "warning"
+                },
+                {
+                  "label": "対象",
+                  "value": "AI時代のIT従事者全般",
+                  "tone": "default"
+                }
               ],
               "context": "AIコーディングツールが業務に浸透するにつれ、多くのエンジニアが「自分の価値とは何か」を再考している。",
               "impact": "エンジニアとしてのキャリア再定義・チームビルディング・採用基準の見直しに取り組む個人・組織への示唆を与える記事。"
-            }
+            },
+            "caption": "AIとエンジニアのアイデンティティシフト",
+            "alt": "アイデンティティシフトのサマリーカード。Before：コードを書くエンジニア。After：設計・判断・コンテキスト提供のエンジニア。契機：Google I/O 2026。"
           }
         }
       ]
@@ -1167,7 +1944,15 @@
           "category": "china",
           "published_at": "2026-05-23",
           "lang": "en",
-          "tags": ["deepseek", "v4-pro", "api-pricing", "price-cut", "llm-cost", "china-ai", "hn-153pt"],
+          "tags": [
+            "deepseek",
+            "v4-pro",
+            "api-pricing",
+            "price-cut",
+            "llm-cost",
+            "china-ai",
+            "hn-153pt"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -1185,20 +1970,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "DeepSeek V4-Pro vs 競合モデル価格比較",
-            "alt": "LLM APIコスト比較表。DeepSeek V4-Pro入力$0.435/M（最安）、出力$0.87/M（最安）。競合モデル（GPT-5・Claude・Gemini）はいずれも上回る価格帯。",
             "data": {
               "headline": "DeepSeek V4-Pro: 永久値下げで主要LLM API最安水準へ",
-              "before": { "label": "競合LLM API（GPT-5・Claude等）", "sublabel": "従来のフロンティアモデル価格帯" },
-              "after": { "label": "DeepSeek V4-Pro（永久75%値下げ後）", "sublabel": "新規永久価格" },
+              "before": {
+                "label": "競合LLM API（GPT-5・Claude等）",
+                "sublabel": "従来のフロンティアモデル価格帯"
+              },
+              "after": {
+                "label": "DeepSeek V4-Pro（永久75%値下げ後）",
+                "sublabel": "新規永久価格"
+              },
               "metrics": [
-                { "label": "入力 (非キャッシュ)", "before": "数$〜十数$/Mトークン（競合平均）", "after": "$0.435/Mトークン", "before_pct": 90, "after_pct": 15, "delta": "75%削減", "delta_tone": "success" },
-                { "label": "出力", "before": "数$〜数十$/Mトークン（競合平均）", "after": "$0.87/Mトークン", "before_pct": 90, "after_pct": 15, "delta": "75%削減", "delta_tone": "success" },
-                { "label": "キャッシュヒット", "before": "通常料金", "after": "全API 90%削減", "before_pct": 100, "after_pct": 10, "delta": "90%削減", "delta_tone": "success" }
+                {
+                  "label": "入力 (非キャッシュ)",
+                  "before": "数$〜十数$/Mトークン（競合平均）",
+                  "after": "$0.435/Mトークン",
+                  "before_pct": 90,
+                  "after_pct": 15,
+                  "delta": "75%削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "出力",
+                  "before": "数$〜数十$/Mトークン（競合平均）",
+                  "after": "$0.87/Mトークン",
+                  "before_pct": 90,
+                  "after_pct": 15,
+                  "delta": "75%削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "キャッシュヒット",
+                  "before": "通常料金",
+                  "after": "全API 90%削減",
+                  "before_pct": 100,
+                  "after_pct": 10,
+                  "delta": "90%削減",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "DeepSeek R1（2026年1月）以来のLLM価格戦争が、今回の永久値下げで一時的な値引き競争から構造的な低価格化へと転換した。",
               "impact": "スタートアップの推論コスト計算が根本から変わる。API費用がビジネスモデルのボトルネックになっていたプロダクトが経済的に成立しやすくなる。"
-            }
+            },
+            "caption": "DeepSeek V4-Pro vs 競合モデル価格比較",
+            "alt": "LLM APIコスト比較表。DeepSeek V4-Pro入力$0.435/M（最安）、出力$0.87/M（最安）。競合モデル（GPT-5・Claude・Gemini）はいずれも上回る価格帯。"
           },
           "x_post": "DeepSeekがV4-Proを永久75%値下げ。非キャッシュ入力$0.435/Mトークン・出力$0.87/MトークンでGPT-5・Claude・Gemini全モデルを価格で下回り、さらに全APIのキャッシュヒット料金を90%削減した。LLM API価格競争が構造的な低価格化フェーズへ移行し、スタートアップの推論コストに直接影響する。\nhttps://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model"
         },
@@ -1213,7 +2028,15 @@
           "category": "china",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["google", "sundar-pichai", "ai-coding", "google-io-2026", "75-percent", "agentic-coding", "workforce"],
+          "tags": [
+            "google",
+            "sundar-pichai",
+            "ai-coding",
+            "google-io-2026",
+            "75-percent",
+            "agentic-coding",
+            "workforce"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1231,35 +2054,89 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "GoogleのAI生成コード比率の推移",
-            "alt": "GoogleのAI生成コード比率タイムライン。2024年秋：25%（初回公表）。2025年秋：50%。2026年5月（Google I/O）：75%。今後：エージェントオーケストレーションモデルへ。",
             "data": {
               "headline": "Google AIコード比率: 1年半で25%→75%",
               "events": [
-                { "when": "2024年秋", "label": "25%（初回公表）", "description": "Sundar PichaiがGoogleコードの25%がAI生成と初めて公開。業界に衝撃。", "status": "past" },
-                { "when": "2025年秋", "label": "50%に上昇", "description": "半年で倍増。AIコーディングツールの業務浸透が加速。", "status": "past" },
-                { "when": "2026年5月", "label": "75%に到達", "description": "Google I/O 2026でPichaiが発表。Gemini 3.5 Flash + Antigravityが牽引。", "status": "now", "tone": "primary" },
-                { "when": "今後", "label": "エージェントオーケストレーション", "description": "コード比率より「エージェントが長期タスクをどれだけこなせるか」が新指標になる。", "status": "upcoming" }
+                {
+                  "when": "2024年秋",
+                  "label": "25%（初回公表）",
+                  "description": "Sundar PichaiがGoogleコードの25%がAI生成と初めて公開。業界に衝撃。",
+                  "status": "past"
+                },
+                {
+                  "when": "2025年秋",
+                  "label": "50%に上昇",
+                  "description": "半年で倍増。AIコーディングツールの業務浸透が加速。",
+                  "status": "past"
+                },
+                {
+                  "when": "2026年5月",
+                  "label": "75%に到達",
+                  "description": "Google I/O 2026でPichaiが発表。Gemini 3.5 Flash + Antigravityが牽引。",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "今後",
+                  "label": "エージェントオーケストレーション",
+                  "description": "コード比率より「エージェントが長期タスクをどれだけこなせるか」が新指標になる。",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "1年半でGoogle内のAIコード比率が25%から75%に急上昇。単なる補助ツールから主要開発手法へ転換したことを示す。",
               "impact": "「エンジニアが書く」から「エンジニアが指示する」へのシフトが大企業で現実になった。採用・評価・チーム設計の見直しを迫る数字。"
-            }
+            },
+            "caption": "GoogleのAI生成コード比率の推移",
+            "alt": "GoogleのAI生成コード比率タイムライン。2024年秋：25%（初回公表）。2025年秋：50%。2026年5月（Google I/O）：75%。今後：エージェントオーケストレーションモデルへ。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "reddit_r_localllama", "reason": "WebFetch blocked by reddit.com" },
-    { "source": "reddit_r_machinelearning", "reason": "WebFetch blocked by reddit.com" },
-    { "source": "xai_news", "reason": "HTTP 403 Forbidden" },
-    { "source": "theverge_rss", "reason": "WebFetch blocked by theverge.com" },
-    { "source": "paperswithcode", "reason": "Redirect to HF papers; fallback used" },
-    { "source": "importai_substack", "reason": "HTTP 403 Forbidden" },
-    { "source": "deeplearningai_batch", "reason": "HTTP 404 Not Found" },
-    { "source": "microsoft_blogs", "reason": "Redirect to news.microsoft.com; not refetched" },
-    { "source": "semantic_scholar_api", "reason": "Not fetched in this run" },
-    { "source": "openreview", "reason": "Not fetched in this run" },
-    { "source": "cohere_blog", "reason": "Blog page returned no article listings" }
+    {
+      "source": "reddit_r_localllama",
+      "reason": "WebFetch blocked by reddit.com"
+    },
+    {
+      "source": "reddit_r_machinelearning",
+      "reason": "WebFetch blocked by reddit.com"
+    },
+    {
+      "source": "xai_news",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "theverge_rss",
+      "reason": "WebFetch blocked by theverge.com"
+    },
+    {
+      "source": "paperswithcode",
+      "reason": "Redirect to HF papers; fallback used"
+    },
+    {
+      "source": "importai_substack",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "deeplearningai_batch",
+      "reason": "HTTP 404 Not Found"
+    },
+    {
+      "source": "microsoft_blogs",
+      "reason": "Redirect to news.microsoft.com; not refetched"
+    },
+    {
+      "source": "semantic_scholar_api",
+      "reason": "Not fetched in this run"
+    },
+    {
+      "source": "openreview",
+      "reason": "Not fetched in this run"
+    },
+    {
+      "source": "cohere_blog",
+      "reason": "Blog page returned no article listings"
+    }
   ]
 }

@@ -23,12 +23,36 @@
     }
   },
   "top_picks": [
-    { "id": "jp-001", "rank": 1, "reason": "はてブ187件+Zenn実装記事。reaction boost +2でスコア19。Claude Codeスキルの自己改善ループという新設計パターンを示した日本最高スコア記事。japan枠保証かつ即実践可能な実装知識" },
-    { "id": "nm-001", "rank": 2, "reason": "OpenAI GPT-5.4 Pro公開。ネイティブcomputer-use、1Mトークン、エージェントワークフロー搭載。importance=5、practicality=4でスコア18。本日の最重要英語ニュース" },
-    { "id": "jp-002", "rank": 3, "reason": "はてブ309件のMIT Technology Review Japan記事。Claude 4.7時代のコーディング文化の転換点を記録。reaction +2でスコア18。英語・日本語どちらの読者にも刺さる" },
-    { "id": "ta-003", "rank": 4, "reason": "Anthropic公式GitHub knowledge-work-plugins。今日+1,448スター。official+importance=4、practicality=5でスコア17。Claude環境で即使えるナレッジワーカー向けプラグイン集" },
-    { "id": "mm-001", "rank": 5, "reason": "Gemini Omni：世界モデルとして設計された任意入力→動画出力AI。importance=5、DeepMind公式発表。マルチモーダルAI競争の新フェーズを象徴する重要発表" },
-    { "id": "rp-001", "rank": 6, "reason": "SkillOpt：LLMエージェントのスキルを自動最適化する新手法。arXiv当日公開+HF 151upvotes。academic +1でスコア16。エージェント開発者全員が注目すべき手法" }
+    {
+      "id": "jp-001",
+      "rank": 1,
+      "reason": "はてブ187件+Zenn実装記事。reaction boost +2でスコア19。Claude Codeスキルの自己改善ループという新設計パターンを示した日本最高スコア記事。japan枠保証かつ即実践可能な実装知識"
+    },
+    {
+      "id": "nm-001",
+      "rank": 2,
+      "reason": "OpenAI GPT-5.4 Pro公開。ネイティブcomputer-use、1Mトークン、エージェントワークフロー搭載。importance=5、practicality=4でスコア18。本日の最重要英語ニュース"
+    },
+    {
+      "id": "jp-002",
+      "rank": 3,
+      "reason": "はてブ309件のMIT Technology Review Japan記事。Claude 4.7時代のコーディング文化の転換点を記録。reaction +2でスコア18。英語・日本語どちらの読者にも刺さる"
+    },
+    {
+      "id": "ta-003",
+      "rank": 4,
+      "reason": "Anthropic公式GitHub knowledge-work-plugins。今日+1,448スター。official+importance=4、practicality=5でスコア17。Claude環境で即使えるナレッジワーカー向けプラグイン集"
+    },
+    {
+      "id": "mm-001",
+      "rank": 5,
+      "reason": "Gemini Omni：世界モデルとして設計された任意入力→動画出力AI。importance=5、DeepMind公式発表。マルチモーダルAI競争の新フェーズを象徴する重要発表"
+    },
+    {
+      "id": "rp-001",
+      "rank": 6,
+      "reason": "SkillOpt：LLMエージェントのスキルを自動最適化する新手法。arXiv当日公開+HF 151upvotes。academic +1でスコア16。エージェント開発者全員が注目すべき手法"
+    }
   ],
   "categories": [
     {
@@ -48,7 +72,14 @@
           "category": "new_models",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["gpt-5.4", "openai", "computer-use", "agentic", "1m-context", "frontier-model"],
+          "tags": [
+            "gpt-5.4",
+            "openai",
+            "computer-use",
+            "agentic",
+            "1m-context",
+            "frontier-model"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -66,20 +97,44 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "GPT-5.4 Pro",
-            "alt": "GPT-5.4 Proの主要機能4項目を示したサマリーカード。ネイティブComputer Use（ブラウザ・デスクトップの自律操作）、100万トークンコンテキスト、エージェントワークフロー標準搭載、Dell連携でオンプレミス対応の4点が記載されている。",
             "data": {
               "headline": "GPT-5.4 Pro：エージェント時代のOpenAI旗艦モデル",
               "tldr": "ネイティブPC操作・1Mトークン・エージェントワークフローを搭載したプロフェッショナル向け最上位モデル。Dell提携でオンプレミス展開も対応。",
               "points": [
-                { "icon": "🖥️", "label": "Computer Use", "value": "ネイティブ対応", "tone": "success", "description": "ブラウザ・デスクトップ操作を自律実行。エージェントが人間の代わりにGUI操作を担う" },
-                { "icon": "📄", "label": "コンテキスト", "value": "100万トークン", "tone": "primary", "description": "大規模コードベースや長文書を一括処理。GPT-5.3の8倍以上" },
-                { "icon": "🤖", "label": "エージェント", "value": "標準搭載", "tone": "success", "description": "計画・実行・リカバリーを自律実行するワークフローをデフォルトで利用可能" },
-                { "icon": "🏢", "label": "オンプレミス", "value": "Dell連携", "tone": "info", "description": "Dell Technologiesと提携しハイブリッド/オンプレミス環境へのCodex展開が可能に" }
+                {
+                  "icon": "🖥️",
+                  "label": "Computer Use",
+                  "value": "ネイティブ対応",
+                  "tone": "success",
+                  "description": "ブラウザ・デスクトップ操作を自律実行。エージェントが人間の代わりにGUI操作を担う"
+                },
+                {
+                  "icon": "📄",
+                  "label": "コンテキスト",
+                  "value": "100万トークン",
+                  "tone": "primary",
+                  "description": "大規模コードベースや長文書を一括処理。GPT-5.3の8倍以上"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "エージェント",
+                  "value": "標準搭載",
+                  "tone": "success",
+                  "description": "計画・実行・リカバリーを自律実行するワークフローをデフォルトで利用可能"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "オンプレミス",
+                  "value": "Dell連携",
+                  "tone": "info",
+                  "description": "Dell Technologiesと提携しハイブリッド/オンプレミス環境へのCodex展開が可能に"
+                }
               ],
               "context": "Gartnerエンタープライズコーディングエージェント部門でリーダー認定。ChatGPTモバイルにもCodexプレビューが全プラン提供開始。",
               "impact": "エージェント時代の新標準を定義。「AIが単体ツール→自律エージェントへ」という移行を加速させる基盤モデル。"
-            }
+            },
+            "caption": "GPT-5.4 Pro",
+            "alt": "GPT-5.4 Proの主要機能4項目を示したサマリーカード。ネイティブComputer Use（ブラウザ・デスクトップの自律操作）、100万トークンコンテキスト、エージェントワークフロー標準搭載、Dell連携でオンプレミス対応の4点が記載されている。"
           }
         },
         {
@@ -93,7 +148,15 @@
           "category": "new_models",
           "published_at": "2026-05-19",
           "lang": "en",
-          "tags": ["gemini", "google", "flash", "benchmark", "terminal-bench", "agent", "pricing"],
+          "tags": [
+            "gemini",
+            "google",
+            "flash",
+            "benchmark",
+            "terminal-bench",
+            "agent",
+            "pricing"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -103,7 +166,10 @@
             "source_type_bias": 0,
             "seen_penalty": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 87 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 87
+          },
           "summary_ja": "Google DeepMindがGemini 3.5 FlashをGoogle I/O 2026で正式リリース（GA）した。驚くべきことに、FlashクラスのモデルがGemini 3.1 Proを超えるエージェントベンチマーク性能を示している。Terminal-Bench 2.1では76.2%を記録し、Gemini 3.1 Pro（70.3%）を6ポイント上回った。GPT-5.5との差は2ポイント（78.2% vs 76.2%）と僅差。出力速度は280トークン/秒以上で同等フロンティアモデルの4倍以上。価格は入力$1.50/出力$9.00（1Mトークン）と競争力のある設定で、100万トークンコンテキストに対応している。コーディングとエージェントタスクに特化した設計で、即日APIで利用可能。",
           "key_points_ja": [
             "Terminal-Bench 2.1で76.2%を達成し、Gemini 3.1 Pro（70.3%）を6ポイント超えてFlash→Pro超えを初実現",
@@ -113,19 +179,44 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Gemini 3.5 Flash ベンチマーク",
-            "alt": "Gemini 3.5 FlashのTerminal-Bench 2.1スコア76.2%を示す棒グラフ。比較基準としてGemini 3.1 Pro 70.3%（前世代Pro）とGPT-5.5 78.2%（トップ競合）を表示。速度280トークン/秒は従来比4倍、価格は$1.50/$9.00（入力/出力 per 1M tokens）。",
             "data": {
               "headline": "Gemini 3.5 Flash：FlashクラスがProを超えた",
-              "scale": { "max_label": "Terminal-Bench 2.1スコア", "unit": "%" },
+              "scale": {
+                "max_label": "Terminal-Bench 2.1スコア",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "Gemini 3.5 Flash", "value": "76.2%", "pct": 91, "baseline_pct": 84, "baseline_label": "Gemini 3.1 Pro", "delta": "+6pt", "tone": "success", "note": "FlashがProを初超え" },
-                { "label": "出力速度", "value": "280 tok/s", "pct": 80, "delta": "4x", "tone": "primary", "note": "同等フロンティア比" },
-                { "label": "GPT-5.5 差分", "value": "-2pt", "pct": 94, "tone": "info", "note": "78.2% vs 76.2%" }
+                {
+                  "label": "Gemini 3.5 Flash",
+                  "value": "76.2%",
+                  "pct": 91,
+                  "baseline_pct": 84,
+                  "baseline_label": "Gemini 3.1 Pro",
+                  "delta": "+6pt",
+                  "tone": "success",
+                  "note": "FlashがProを初超え"
+                },
+                {
+                  "label": "出力速度",
+                  "value": "280 tok/s",
+                  "pct": 80,
+                  "delta": "4x",
+                  "tone": "primary",
+                  "note": "同等フロンティア比"
+                },
+                {
+                  "label": "GPT-5.5 差分",
+                  "value": "-2pt",
+                  "pct": 94,
+                  "tone": "info",
+                  "note": "78.2% vs 76.2%"
+                }
               ],
               "narrative": "Google I/O 2026で発表。FlashクラスがProを超えた初のケース。価格$1.50/1Mトークンで即日API提供。",
               "impact": "コーディング・エージェントで最高コスパを狙う開発者の第一選択肢に浮上。"
-            }
+            },
+            "caption": "Gemini 3.5 Flash ベンチマーク",
+            "alt": "Gemini 3.5 FlashのTerminal-Bench 2.1スコア76.2%を示す棒グラフ。比較基準としてGemini 3.1 Pro 70.3%（前世代Pro）とGPT-5.5 78.2%（トップ競合）を表示。速度280トークン/秒は従来比4倍、価格は$1.50/$9.00（入力/出力 per 1M tokens）。"
           }
         },
         {
@@ -139,7 +230,14 @@
           "category": "new_models",
           "published_at": "2026-05-22",
           "lang": "en",
-          "tags": ["tencent", "translation", "hy-mt2", "multilingual", "open-source", "moe"],
+          "tags": [
+            "tencent",
+            "translation",
+            "hy-mt2",
+            "multilingual",
+            "open-source",
+            "moe"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -148,7 +246,10 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 45 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 45
+          },
           "summary_ja": "TencentがHugging Faceでマルチリンガル翻訳モデル「Hy-MT2」を公開した。1.8Bと30B（MoE、活性化3Bパラメータ）の2サイズが提供されており、HFトレンドで5.55Kダウンロードを記録している。独自ベンチマークではMicrosoft Azure Translator APIを複数の言語ペアで上回るスコアを示しており、完全無料・自己ホスティング可能な翻訳ソリューションとして注目される。1.8Bモデルはエッジデバイスやオンプレミス環境への展開が可能で、商用利用についてもライセンスが許容的な設計。30B-A3Bは高精度・高スループット要件に対応する上位モデルで、5.55KダウンロードはHFトレンド上位を維持している。翻訳API依存からの脱却を検討する企業・開発者に実用的な選択肢を提供する。",
           "key_points_ja": [
             "1.8Bと30B MoE（活性化3B）の2サイズを同時公開。5.55Kダウンロードでトレンド1位を継続",
@@ -158,20 +259,51 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "Hy-MT2 vs MS Translator",
-            "alt": "Tencent Hy-MT2とMicrosoft Azure Translatorの比較表。コスト（無料vs有料API）、モデルサイズ（1.8B/30Bvsクラウドのみ）、自己ホスティング（可vs不可）、複数言語ペアのスコア（Hy-MT2優位）の4指標を比較。",
             "data": {
               "headline": "Hy-MT2：無料でMicrosoft翻訳APIを超える多言語翻訳",
-              "before": { "label": "Microsoft Translator", "sublabel": "Azure有料API" },
-              "after": { "label": "Tencent Hy-MT2", "sublabel": "オープンウェイト・無料" },
+              "before": {
+                "label": "Microsoft Translator",
+                "sublabel": "Azure有料API"
+              },
+              "after": {
+                "label": "Tencent Hy-MT2",
+                "sublabel": "オープンウェイト・無料"
+              },
               "metrics": [
-                { "label": "コスト", "before": "有料API課金", "after": "無料", "before_pct": 40, "after_pct": 100, "delta": "完全無料", "delta_tone": "success" },
-                { "label": "翻訳スコア", "before": "ベースライン", "after": "複数言語で超え", "before_pct": 70, "after_pct": 78, "delta": "+優位", "delta_tone": "success", "note": "独自ベンチマーク" },
-                { "label": "自己ホスティング", "before": "不可", "after": "1.8B〜30B", "before_pct": 0, "after_pct": 100, "delta": "完全対応", "delta_tone": "success" }
+                {
+                  "label": "コスト",
+                  "before": "有料API課金",
+                  "after": "無料",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "delta": "完全無料",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "翻訳スコア",
+                  "before": "ベースライン",
+                  "after": "複数言語で超え",
+                  "before_pct": 70,
+                  "after_pct": 78,
+                  "delta": "+優位",
+                  "delta_tone": "success",
+                  "note": "独自ベンチマーク"
+                },
+                {
+                  "label": "自己ホスティング",
+                  "before": "不可",
+                  "after": "1.8B〜30B",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "完全対応",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "TencentがHFで1.8Bと30B MoEの2サイズを同時公開。商用可能なライセンスで翻訳API置き換えを狙う。",
               "impact": "翻訳API依存の排除を検討する企業・開発者に実用的な代替手段を提供。"
-            }
+            },
+            "caption": "Hy-MT2 vs MS Translator",
+            "alt": "Tencent Hy-MT2とMicrosoft Azure Translatorの比較表。コスト（無料vs有料API）、モデルサイズ（1.8B/30Bvsクラウドのみ）、自己ホスティング（可vs不可）、複数言語ペアのスコア（Hy-MT2優位）の4指標を比較。"
           }
         }
       ]
@@ -192,7 +324,14 @@
           "category": "tools_apps",
           "published_at": "2026-05-24",
           "lang": "en",
-          "tags": ["paperswithcode", "huggingface", "research-tools", "benchmark", "sota", "ml-infra"],
+          "tags": [
+            "paperswithcode",
+            "huggingface",
+            "research-tools",
+            "benchmark",
+            "sota",
+            "ml-infra"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -209,19 +348,34 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "PwC on Hugging Face",
-            "alt": "PapersWithCodeリニューアルの概要を示したカード。HFへの移行（論文×実装の統合）、SoTAトラッカー強化、HFエコシステム統合（モデル・データ・Spaces）、研究→実装フローの短縮、という4つの新要素が記載されている。",
             "data": {
               "headline": "PapersWithCode × HF統合：論文→実装が即試せる研究プラットフォームへ",
               "tldr": "Hugging FaceがPwCを引き継ぎリニューアル。論文・実装・SoTAトラッカー・デモをHFハブ上で統合し、ML研究コミュニティの定番ツールが進化。",
               "points": [
-                { "label": "論文統合", "value": "HFハブ連携", "tone": "success", "description": "論文からモデル・データセット・Spacesへ直接ナビゲート可能" },
-                { "label": "SoTA追跡", "value": "機能強化", "tone": "primary", "description": "ベンチマーク最新値をHFエコシステムと同期して自動更新" },
-                { "label": "実装アクセス", "value": "即試し可能", "tone": "success", "description": "論文→実装→Spaceデモの3ステップをプラットフォーム内で完結" }
+                {
+                  "label": "論文統合",
+                  "value": "HFハブ連携",
+                  "tone": "success",
+                  "description": "論文からモデル・データセット・Spacesへ直接ナビゲート可能"
+                },
+                {
+                  "label": "SoTA追跡",
+                  "value": "機能強化",
+                  "tone": "primary",
+                  "description": "ベンチマーク最新値をHFエコシステムと同期して自動更新"
+                },
+                {
+                  "label": "実装アクセス",
+                  "value": "即試し可能",
+                  "tone": "success",
+                  "description": "論文→実装→Spaceデモの3ステップをプラットフォーム内で完結"
+                }
               ],
               "context": "PapersWithCodeは数万本の論文と実装を紐付けてきた研究者必携ツール。HF傘下でディスカバリー機能が大幅強化。",
               "impact": "論文発見から実装試験まての時間が大幅短縮。研究→プロダクトの橋渡し機能として価値向上。"
-            }
+            },
+            "caption": "PwC on Hugging Face",
+            "alt": "PapersWithCodeリニューアルの概要を示したカード。HFへの移行（論文×実装の統合）、SoTAトラッカー強化、HFエコシステム統合（モデル・データ・Spaces）、研究→実装フローの短縮、という4つの新要素が記載されている。"
           }
         },
         {
@@ -235,7 +389,14 @@
           "category": "tools_apps",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["knowledge-graph", "code-understanding", "oss", "github-trending", "visualization", "llm"],
+          "tags": [
+            "knowledge-graph",
+            "code-understanding",
+            "oss",
+            "github-trending",
+            "visualization",
+            "llm"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -252,18 +413,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Understand-Anything",
-            "alt": "Understand-AnythingのGitHubトレンド1位達成を示すカード。本日+5,625スター（累計30,645）、TypeScript実装、LLM連携による知識グラフ生成、対話的UI提供の4点を記載。",
             "data": {
               "headline": "コード→知識グラフ変換OSS、本日GitHub Trend 1位・30K超",
               "tldr": "LLMを使ってコードを対話型知識グラフに変換するOSS。本日+5,625スターでGitHubトレンド首位。大規模コードリポジトリの理解を視覚的に支援する。",
               "points": [
-                { "label": "本日スター", "value": "+5,625", "tone": "success", "description": "本日獲得スター数でGitHubトレンド全カテゴリ1位を獲得" },
-                { "label": "累計スター", "value": "30,645", "tone": "primary", "description": "急成長中の注目OSSプロジェクト" },
-                { "label": "技術スタック", "value": "TypeScript+LLM", "tone": "info", "description": "LLMによるコード解析と対話型グラフUIを組み合わせた設計" }
+                {
+                  "label": "本日スター",
+                  "value": "+5,625",
+                  "tone": "success",
+                  "description": "本日獲得スター数でGitHubトレンド全カテゴリ1位を獲得"
+                },
+                {
+                  "label": "累計スター",
+                  "value": "30,645",
+                  "tone": "primary",
+                  "description": "急成長中の注目OSSプロジェクト"
+                },
+                {
+                  "label": "技術スタック",
+                  "value": "TypeScript+LLM",
+                  "tone": "info",
+                  "description": "LLMによるコード解析と対話型グラフUIを組み合わせた設計"
+                }
               ],
               "impact": "大規模コードの構造理解・新人オンボーディング・ドキュメント生成に即使える実用ツール。"
-            }
+            },
+            "caption": "Understand-Anything",
+            "alt": "Understand-AnythingのGitHubトレンド1位達成を示すカード。本日+5,625スター（累計30,645）、TypeScript実装、LLM連携による知識グラフ生成、対話的UI提供の4点を記載。"
           }
         },
         {
@@ -278,7 +454,14 @@
           "category": "tools_apps",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["anthropic", "claude", "plugins", "knowledge-work", "oss", "github-trending"],
+          "tags": [
+            "anthropic",
+            "claude",
+            "plugins",
+            "knowledge-work",
+            "oss",
+            "github-trending"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -295,18 +478,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "knowledge-work-plugins",
-            "alt": "Anthropic公式knowledge-work-pluginsのサマリーカード。本日+1,448スター（累計15,223）、Anthropic公式メンテナンス、Python実装、ナレッジワーカー向けClaude統合プラグインの4要素を記載。",
             "data": {
               "headline": "Anthropic公式：Claude×ナレッジワークを繋ぐOSSプラグイン集",
               "tldr": "AnthropicがClaudeナレッジワーカー向けOSSプラグイン集を公開。本日+1,448スターでGitHubトレンド2位。リサーチ・ライティング・分析ワークフローをClaude環境で即自動化できる。",
               "points": [
-                { "label": "公式保証", "value": "Anthropic製", "tone": "success", "description": "Anthropic公式リポジトリによる品質保証と継続的メンテナンス" },
-                { "label": "本日スター", "value": "+1,448", "tone": "primary", "description": "GitHub Trendingで全体2位。累計15,223スター" },
-                { "label": "対象者", "value": "ナレッジワーカー", "tone": "info", "description": "研究者・ライター・アナリスト向けのワークフロー自動化プラグイン群" }
+                {
+                  "label": "公式保証",
+                  "value": "Anthropic製",
+                  "tone": "success",
+                  "description": "Anthropic公式リポジトリによる品質保証と継続的メンテナンス"
+                },
+                {
+                  "label": "本日スター",
+                  "value": "+1,448",
+                  "tone": "primary",
+                  "description": "GitHub Trendingで全体2位。累計15,223スター"
+                },
+                {
+                  "label": "対象者",
+                  "value": "ナレッジワーカー",
+                  "tone": "info",
+                  "description": "研究者・ライター・アナリスト向けのワークフロー自動化プラグイン群"
+                }
               ],
               "impact": "Claude CodeやClaudeデスクトップを活用する企業・個人のワークフロー自動化を即促進。"
-            }
+            },
+            "caption": "knowledge-work-plugins",
+            "alt": "Anthropic公式knowledge-work-pluginsのサマリーカード。本日+1,448スター（累計15,223）、Anthropic公式メンテナンス、Python実装、ナレッジワーカー向けClaude統合プラグインの4要素を記載。"
           }
         }
       ]
@@ -327,7 +525,14 @@
           "category": "agents",
           "published_at": "2026-05-20",
           "lang": "en",
-          "tags": ["deepmind", "multi-agent", "science", "research-automation", "hypothesis-generation", "google-io"],
+          "tags": [
+            "deepmind",
+            "multi-agent",
+            "science",
+            "research-automation",
+            "hypothesis-generation",
+            "google-io"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -344,19 +549,43 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "Co-Scientist ワークフロー",
-            "alt": "Co-Scientistの科学研究ワークフローを示すタイムライン。仮説生成エージェント→文献調査エージェント→実験設計エージェント→結果分析エージェントの4段階が記載されており、各ステップで専門化されたAIエージェントが研究者と協調して処理することを示す。",
             "data": {
               "headline": "Co-Scientist：4つのエージェントが科学研究を分担自律実行",
               "events": [
-                { "when": "Stage 1", "label": "仮説生成", "description": "研究課題から仮説候補を自動生成。検証可能性・新規性を評価してランク付け", "status": "past", "tone": "primary" },
-                { "when": "Stage 2", "label": "文献調査", "description": "仮説に関連する文献を網羅的に収集・要約。既存知識との差分を特定", "status": "past", "tone": "primary" },
-                { "when": "Stage 3", "label": "実験設計", "description": "検証のための実験プロトコルを提案。必要なリソースと手順を明示", "status": "now", "tone": "success" },
-                { "when": "Stage 4", "label": "結果分析", "description": "実験データを分析して仮説の検証・棄却を判定。次の仮説生成にフィードバック", "status": "upcoming", "tone": "info" }
+                {
+                  "when": "Stage 1",
+                  "label": "仮説生成",
+                  "description": "研究課題から仮説候補を自動生成。検証可能性・新規性を評価してランク付け",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Stage 2",
+                  "label": "文献調査",
+                  "description": "仮説に関連する文献を網羅的に収集・要約。既存知識との差分を特定",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Stage 3",
+                  "label": "実験設計",
+                  "description": "検証のための実験プロトコルを提案。必要なリソースと手順を明示",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "Stage 4",
+                  "label": "結果分析",
+                  "description": "実験データを分析して仮説の検証・棄却を判定。次の仮説生成にフィードバック",
+                  "status": "upcoming",
+                  "tone": "info"
+                }
               ],
               "narrative": "Google I/O 2026で発表。Gemini基盤の専門化マルチエージェントが科学研究の各フェーズを協調処理する。",
               "impact": "研究者の発見サイクルを大幅短縮。特に化学・生物・材料科学での仮説検証速度向上に期待。"
-            }
+            },
+            "caption": "Co-Scientist ワークフロー",
+            "alt": "Co-Scientistの科学研究ワークフローを示すタイムライン。仮説生成エージェント→文献調査エージェント→実験設計エージェント→結果分析エージェントの4段階が記載されており、各ステップで専門化されたAIエージェントが研究者と協調して処理することを示す。"
           }
         },
         {
@@ -370,7 +599,14 @@
           "category": "agents",
           "published_at": "2026-05-23",
           "lang": "en",
-          "tags": ["agents", "memory", "traces", "huggingface", "agent-architecture", "persistence"],
+          "tags": [
+            "agents",
+            "memory",
+            "traces",
+            "huggingface",
+            "agent-architecture",
+            "persistence"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -387,18 +623,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "トレース=エージェント記憶",
-            "alt": "エージェントトレースが記憶として機能するアーキテクチャを示すサマリーカード。従来のベクトルDB記憶と実行トレース記憶の違い（意味的記憶vs手続き的記憶）、トレースによる長期コンテキスト保持、RAGシステムへの適用可能性が記載されている。",
             "data": {
               "headline": "エージェントトレース=手続き的メモリ：新アーキテクチャパターン",
               "tldr": "HFが提案するエージェント記憶論：実行トレースを永続メモリとして使うことで、「何をやったか」という手続き記憶を自然に保持できる。ベクトルDB型メモリの意味的記憶を補完する設計パターン。",
               "points": [
-                { "label": "記憶タイプ", "value": "手続き的記憶", "tone": "primary", "description": "トレースは「何をやったか」を保持。ベクトルDBの「何を知っているか」を補完" },
-                { "label": "永続性", "value": "セッション超え", "tone": "success", "description": "実行ログを保存することでエージェントが過去の経験を引き継げる" },
-                { "label": "適用先", "value": "RAG/長期エージェント", "tone": "info", "description": "長期対話エージェント・RAGシステムの設計に直接応用可能" }
+                {
+                  "label": "記憶タイプ",
+                  "value": "手続き的記憶",
+                  "tone": "primary",
+                  "description": "トレースは「何をやったか」を保持。ベクトルDBの「何を知っているか」を補完"
+                },
+                {
+                  "label": "永続性",
+                  "value": "セッション超え",
+                  "tone": "success",
+                  "description": "実行ログを保存することでエージェントが過去の経験を引き継げる"
+                },
+                {
+                  "label": "適用先",
+                  "value": "RAG/長期エージェント",
+                  "tone": "info",
+                  "description": "長期対話エージェント・RAGシステムの設計に直接応用可能"
+                }
               ],
               "impact": "エージェントの「忘れる問題」への実践的解決策。トレース活用で長期タスクの信頼性が向上。"
-            }
+            },
+            "caption": "トレース=エージェント記憶",
+            "alt": "エージェントトレースが記憶として機能するアーキテクチャを示すサマリーカード。従来のベクトルDB記憶と実行トレース記憶の違い（意味的記憶vs手続き的記憶）、トレースによる長期コンテキスト保持、RAGシステムへの適用可能性が記載されている。"
           }
         }
       ]
@@ -420,7 +671,15 @@
           "category": "multimodal",
           "published_at": "2026-05-19",
           "lang": "en",
-          "tags": ["gemini-omni", "google", "deepmind", "world-model", "video-generation", "multimodal", "google-io"],
+          "tags": [
+            "gemini-omni",
+            "google",
+            "deepmind",
+            "world-model",
+            "video-generation",
+            "multimodal",
+            "google-io"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -439,20 +698,44 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Gemini Omni 能力",
-            "alt": "Gemini Omniの主要能力を示すサマリーカード。入力モダリティ（テキスト・画像・音声・動画の任意組み合わせ）、世界モデル設計（シーン推論）、動画編集能力（自然言語による背景・スタイル・カメラ変更）、展開先（Geminiアプリ・YouTube Shorts・Flow）が記載されている。",
             "data": {
               "headline": "Gemini Omni：任意入力→動画生成の世界モデル",
               "tldr": "テキスト・画像・音声・動画を任意組み合わせで入力し高品質動画を生成。既存動画の自然言語編集も可能。DeepMindが「世界モデル」と定義する次世代マルチモーダルAI。",
               "points": [
-                { "icon": "🎥", "label": "入力", "value": "4モダリティ任意", "tone": "success", "description": "テキスト・画像・音声・動画を自由に組み合わせて入力可能" },
-                { "icon": "🌍", "label": "モデル設計", "value": "世界モデル", "tone": "primary", "description": "シーン内部モデルを構築し「次に何が起きるか」を推論して生成" },
-                { "icon": "✏️", "label": "動画編集", "value": "自然言語で", "tone": "success", "description": "既存動画の背景・スタイル・カメラ・効果音を自然言語で変更" },
-                { "icon": "📱", "label": "展開先", "value": "Gemini/YT/Flow", "tone": "info", "description": "Geminiアプリ・YouTube Shorts・AIクリエイティブスタジオFlowに即日展開" }
+                {
+                  "icon": "🎥",
+                  "label": "入力",
+                  "value": "4モダリティ任意",
+                  "tone": "success",
+                  "description": "テキスト・画像・音声・動画を自由に組み合わせて入力可能"
+                },
+                {
+                  "icon": "🌍",
+                  "label": "モデル設計",
+                  "value": "世界モデル",
+                  "tone": "primary",
+                  "description": "シーン内部モデルを構築し「次に何が起きるか」を推論して生成"
+                },
+                {
+                  "icon": "✏️",
+                  "label": "動画編集",
+                  "value": "自然言語で",
+                  "tone": "success",
+                  "description": "既存動画の背景・スタイル・カメラ・効果音を自然言語で変更"
+                },
+                {
+                  "icon": "📱",
+                  "label": "展開先",
+                  "value": "Gemini/YT/Flow",
+                  "tone": "info",
+                  "description": "Geminiアプリ・YouTube Shorts・AIクリエイティブスタジオFlowに即日展開"
+                }
               ],
               "context": "Pro版は2026年下半期予定。Google I/O 2026発表。Sora・Veoとの三つ巴競争が本格化。",
               "impact": "AI動画生成が「専用ツール」から「マルチモーダルAIの標準機能」へ移行する転換点。"
-            }
+            },
+            "caption": "Gemini Omni 能力",
+            "alt": "Gemini Omniの主要能力を示すサマリーカード。入力モダリティ（テキスト・画像・音声・動画の任意組み合わせ）、世界モデル設計（シーン推論）、動画編集能力（自然言語による背景・スタイル・カメラ変更）、展開先（Geminiアプリ・YouTube Shorts・Flow）が記載されている。"
           }
         },
         {
@@ -466,7 +749,14 @@
           "category": "multimodal",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["audio-llm", "open-source", "speech", "training-recipe", "borealis", "huggingface"],
+          "tags": [
+            "audio-llm",
+            "open-source",
+            "speech",
+            "training-recipe",
+            "borealis",
+            "huggingface"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -483,19 +773,39 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Borealis レシピ構成",
-            "alt": "BorealisのオープンAudio LLMレシピを示すカード。3つの公開要素（オープンデータ・オープンコード・オープン重み）と3つの音声能力（音声認識・理解・生成の統合）、ライセンス（商用・研究両用途）が記載されている。",
             "data": {
               "headline": "Borealis：音声LLM訓練の完全オープンレシピ",
               "tldr": "データ・コード・重みをすべて公開した音声LLM訓練の完全再現可能レシピ。音声認識・理解・生成を統合したAudio LLMを独自構築できる初のオープンリソース。",
               "points": [
-                { "label": "データ", "value": "完全公開", "tone": "success", "description": "訓練データ収集パイプラインを含む完全なデータセットを公開" },
-                { "label": "コード", "value": "完全公開", "tone": "success", "description": "モデルアーキテクチャ・訓練スクリプト・評価コードをすべて公開" },
-                { "label": "モデル重み", "value": "完全公開", "tone": "success", "description": "事前訓練済みチェックポイントを公開。即ファインチューニング可能" },
-                { "label": "ライセンス", "value": "商用・研究可", "tone": "info", "description": "独自音声LLM開発・商用製品への組み込みを許容する寛容ライセンス" }
+                {
+                  "label": "データ",
+                  "value": "完全公開",
+                  "tone": "success",
+                  "description": "訓練データ収集パイプラインを含む完全なデータセットを公開"
+                },
+                {
+                  "label": "コード",
+                  "value": "完全公開",
+                  "tone": "success",
+                  "description": "モデルアーキテクチャ・訓練スクリプト・評価コードをすべて公開"
+                },
+                {
+                  "label": "モデル重み",
+                  "value": "完全公開",
+                  "tone": "success",
+                  "description": "事前訓練済みチェックポイントを公開。即ファインチューニング可能"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "商用・研究可",
+                  "tone": "info",
+                  "description": "独自音声LLM開発・商用製品への組み込みを許容する寛容ライセンス"
+                }
               ],
               "impact": "音声AI開発コストを大幅削減。独自音声LLMを持ちたい企業・研究機関への直接的な支援。"
-            }
+            },
+            "caption": "Borealis レシピ構成",
+            "alt": "BorealisのオープンAudio LLMレシピを示すカード。3つの公開要素（オープンデータ・オープンコード・オープン重み）と3つの音声能力（音声認識・理解・生成の統合）、ライセンス（商用・研究両用途）が記載されている。"
           }
         }
       ]
@@ -517,7 +827,14 @@
           "category": "research_papers",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["agent-skills", "self-evolving", "llm-agent", "optimization", "arxiv", "skillopt"],
+          "tags": [
+            "agent-skills",
+            "self-evolving",
+            "llm-agent",
+            "optimization",
+            "arxiv",
+            "skillopt"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -526,7 +843,10 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
           "summary_ja": "arXivで本日公開されたSkillOptは、LLMエージェントのスキルをテキスト空間で体系的に最適化する新手法を提案している。Hugging Face Papersで151アップボートを獲得し、エージェント研究コミュニティで即注目を集めた。既存のエージェントスキルが「手作り・ワンショット生成・制御されない自己修正」という問題を持つのに対し、SkillOptはスキルを外部エージェント状態として扱い、安定した更新と推論時のオーバーヘッドゼロという特性を実現している。複数のベンチマークとモデルで性能改善を示し、SkillOptで訓練されたスキルは「スキルを持たない状態」から「ワンショット生成スキル」を安定して超えることを確認。エージェントフレームワークに即統合可能なプラグイン的設計が実用性を高めている。",
           "key_points_ja": [
             "エージェントスキルをテキスト空間で体系的最適化。推論時のオーバーヘッドゼロで本番統合が容易",
@@ -536,20 +856,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "SkillOpt vs 従来手法",
-            "alt": "SkillOptと従来のエージェントスキル手法を比較する図。スキル安定性（SkillOpt：安定した更新 vs 従来：制御されない自己修正）、推論オーバーヘッド（SkillOpt：ゼロ vs 従来：あり）、性能（SkillOpt：ベンチマーク全超え vs 従来：ワンショット）の3指標で比較。",
             "data": {
               "headline": "SkillOpt：エージェントスキルを体系的最適化—ゼロオーバーヘッドで安定進化",
-              "before": { "label": "従来手法", "sublabel": "手作り/ワンショット" },
-              "after": { "label": "SkillOpt", "sublabel": "テキスト空間最適化" },
+              "before": {
+                "label": "従来手法",
+                "sublabel": "手作り/ワンショット"
+              },
+              "after": {
+                "label": "SkillOpt",
+                "sublabel": "テキスト空間最適化"
+              },
               "metrics": [
-                { "label": "更新安定性", "before": "不安定（制御なし）", "after": "安定（体系的更新）", "before_pct": 40, "after_pct": 85, "delta": "大幅改善", "delta_tone": "success" },
-                { "label": "推論コスト", "before": "オーバーヘッドあり", "after": "ゼロ追加コスト", "before_pct": 55, "after_pct": 100, "delta": "解消", "delta_tone": "success" },
-                { "label": "ベンチマーク", "before": "ベースライン", "after": "全ベンチで超え", "before_pct": 60, "after_pct": 80, "delta": "+優位", "delta_tone": "success" }
+                {
+                  "label": "更新安定性",
+                  "before": "不安定（制御なし）",
+                  "after": "安定（体系的更新）",
+                  "before_pct": 40,
+                  "after_pct": 85,
+                  "delta": "大幅改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "推論コスト",
+                  "before": "オーバーヘッドあり",
+                  "after": "ゼロ追加コスト",
+                  "before_pct": 55,
+                  "after_pct": 100,
+                  "delta": "解消",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "ベンチマーク",
+                  "before": "ベースライン",
+                  "after": "全ベンチで超え",
+                  "before_pct": 60,
+                  "after_pct": 80,
+                  "delta": "+優位",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "arXiv 2026-05-25公開。HF Papers 151upvotes獲得の注目論文。エージェントスキルの自動進化という新研究方向を提示。",
               "impact": "エージェントフレームワークに即統合可能。スキル設計の自動化でエージェント開発コストを削減。"
-            }
+            },
+            "caption": "SkillOpt vs 従来手法",
+            "alt": "SkillOptと従来のエージェントスキル手法を比較する図。スキル安定性（SkillOpt：安定した更新 vs 従来：制御されない自己修正）、推論オーバーヘッド（SkillOpt：ゼロ vs 従来：あり）、性能（SkillOpt：ベンチマーク全超え vs 従来：ワンショット）の3指標で比較。"
           }
         },
         {
@@ -563,7 +913,14 @@
           "category": "research_papers",
           "published_at": "2026-05-19",
           "lang": "en",
-          "tags": ["autonomous-research", "multi-agent", "ai-scientist", "self-healing", "arxiv", "science-automation"],
+          "tags": [
+            "autonomous-research",
+            "multi-agent",
+            "ai-scientist",
+            "self-healing",
+            "arxiv",
+            "science-automation"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -573,7 +930,10 @@
             "source_type_bias": 1,
             "seen_penalty": -1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
           "summary_ja": "arXiv 2605.20025として公開されたAutoResearchClawは、「アイデア→論文」を全自律で実行するマルチエージェント研究システムだ。HF Papersで179アップボート（GitHub 12.7Kスター）を獲得している。5つのメカニズムを統合：①多角的仮説生成のための構造化マルチエージェント討論、②失敗をPivot/Refineループで知識化する自己修復実行エンジン、③数値の捏造・引用の幻覚を防ぐ検証可能な結果報告、④完全自律〜ステップ監視まで7段階のヒューマンインザループモード、⑤過去の失敗を将来の防護策に変えるクロスラン進化。ARC-Benchの25トピック実験でAI Scientist v2を54.7%超えることを実証した。",
           "key_points_ja": [
             "ARC-Benchで25トピック実験を実施し、AI Scientist v2を54.7%上回るスコアで自律研究の新SoTAを達成",
@@ -583,19 +943,39 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "AutoResearchClaw vs AI Scientist v2",
-            "alt": "AutoResearchClawのARC-Benchパフォーマンスを示す棒グラフ。AI Scientist v2対比+54.7%のスコア、GitHub 12.7Kスター、HF 179アップボート、5つの主要メカニズム（討論・自己修復・検証・HITL・クロスラン進化）を示す。",
             "data": {
               "headline": "AutoResearchClaw：自律研究でAI Scientist v2を54.7%超え",
-              "scale": { "unit": "%" },
+              "scale": {
+                "unit": "%"
+              },
               "bars": [
-                { "label": "ARC-Bench優位", "value": "+54.7%", "pct": 85, "tone": "success", "note": "vs AI Scientist v2" },
-                { "label": "GitHub Stars", "value": "12.7K", "pct": 75, "tone": "primary", "note": "公開後急成長" },
-                { "label": "HF Upvotes", "value": "179", "pct": 65, "tone": "info", "note": "HF Papers trending" }
+                {
+                  "label": "ARC-Bench優位",
+                  "value": "+54.7%",
+                  "pct": 85,
+                  "tone": "success",
+                  "note": "vs AI Scientist v2"
+                },
+                {
+                  "label": "GitHub Stars",
+                  "value": "12.7K",
+                  "pct": 75,
+                  "tone": "primary",
+                  "note": "公開後急成長"
+                },
+                {
+                  "label": "HF Upvotes",
+                  "value": "179",
+                  "pct": 65,
+                  "tone": "info",
+                  "note": "HF Papers trending"
+                }
               ],
               "narrative": "arXiv 2026-05-19公開。5機構35著者共著。自己修復・検証・クロスラン進化で自律研究の信頼性を確保。",
               "impact": "自律科学研究の新標準を提示。研究自動化ツールの開発者・科学者全員が参照すべき論文。"
-            }
+            },
+            "caption": "AutoResearchClaw vs AI Scientist v2",
+            "alt": "AutoResearchClawのARC-Benchパフォーマンスを示す棒グラフ。AI Scientist v2対比+54.7%のスコア、GitHub 12.7Kスター、HF 179アップボート、5つの主要メカニズム（討論・自己修復・検証・HITL・クロスラン進化）を示す。"
           }
         },
         {
@@ -609,7 +989,14 @@
           "category": "research_papers",
           "published_at": "2026-05-23",
           "lang": "en",
-          "tags": ["agent-labs", "model-labs", "industry-analysis", "latent-space", "swyx", "ai-transition"],
+          "tags": [
+            "agent-labs",
+            "model-labs",
+            "industry-analysis",
+            "latent-space",
+            "swyx",
+            "ai-transition"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -627,18 +1014,36 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "モデル→エージェントラボ転換",
-            "alt": "AIラボのモデルラボからエージェントラボへの転換タイムラインを示す図。2024年：モデルベンチマーク競争が最盛期、2025年：エージェント機能を製品に統合、2026年：全主要ラボがエージェントラボを宣言、の3段階が記載されている。",
             "data": {
               "headline": "2024→2026：AIラボのエージェントラボ化の流れ",
               "events": [
-                { "when": "2024年", "label": "モデルベンチマーク戦争", "description": "MMLU・HumanEval・GPQAでの数値競争が最盛期。性能数値がラボの評価基準だった", "status": "past", "tone": "default" },
-                { "when": "2025年", "label": "エージェント機能を製品統合", "description": "ツール呼び出し・長期コンテキスト・Computer Useが主要製品機能として登場", "status": "past", "tone": "primary" },
-                { "when": "2026年", "label": "全ラボがエージェントラボ宣言", "description": "OpenAI・AI21・DeepSeek等が「モデル単体は製品でない」と明言。エージェント完遂率が評価基準へ", "status": "now", "tone": "success" }
+                {
+                  "when": "2024年",
+                  "label": "モデルベンチマーク戦争",
+                  "description": "MMLU・HumanEval・GPQAでの数値競争が最盛期。性能数値がラボの評価基準だった",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "2025年",
+                  "label": "エージェント機能を製品統合",
+                  "description": "ツール呼び出し・長期コンテキスト・Computer Useが主要製品機能として登場",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026年",
+                  "label": "全ラボがエージェントラボ宣言",
+                  "description": "OpenAI・AI21・DeepSeek等が「モデル単体は製品でない」と明言。エージェント完遂率が評価基準へ",
+                  "status": "now",
+                  "tone": "success"
+                }
               ],
               "narrative": "Latent Space/Swyx分析。2026年AI競争は実業務タスク完遂率でラボが評価される時代に突入した。",
               "impact": "AI開発者・投資家はモデル性能よりもエージェント実行インフラと統合能力を優先評価すべき局面。"
-            }
+            },
+            "caption": "モデル→エージェントラボ転換",
+            "alt": "AIラボのモデルラボからエージェントラボへの転換タイムラインを示す図。2024年：モデルベンチマーク競争が最盛期、2025年：エージェント機能を製品に統合、2026年：全主要ラボがエージェントラボを宣言、の3段階が記載されている。"
           }
         }
       ]
@@ -659,7 +1064,15 @@
           "category": "industry_business",
           "published_at": "2026-05-22",
           "lang": "en",
-          "tags": ["exa", "modal", "turbopuffer", "funding", "ai-infra", "unicorn", "series-c"],
+          "tags": [
+            "exa",
+            "modal",
+            "turbopuffer",
+            "funding",
+            "ai-infra",
+            "unicorn",
+            "series-c"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -676,19 +1089,39 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "AIインフラ3社の規模",
-            "alt": "3つのAIインフラ企業の規模を示す棒グラフ。Exa（$250M調達・評価額$2.2B）、Modal（$355M調達・評価額$4.7B・ARR $300M）、TurboPuffer（ARR $100M・黒字・調達$1M未満）の3社を比較している。",
             "data": {
               "headline": "AIインフラ3社が同週大型調達—エージェント時代のバックエンドに資金集中",
-              "scale": { "unit": "M$" },
+              "scale": {
+                "unit": "M$"
+              },
               "bars": [
-                { "label": "Modal 調達額", "value": "$355M", "pct": 100, "tone": "success", "note": "評価額$4.7B（9ヶ月で4倍）" },
-                { "label": "Exa 調達額", "value": "$250M", "pct": 70, "tone": "primary", "note": "評価額$2.2B・AI検索API" },
-                { "label": "TurboPuffer ARR", "value": "$100M", "pct": 28, "tone": "info", "note": "黒字・調達$1M未満" }
+                {
+                  "label": "Modal 調達額",
+                  "value": "$355M",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "評価額$4.7B（9ヶ月で4倍）"
+                },
+                {
+                  "label": "Exa 調達額",
+                  "value": "$250M",
+                  "pct": 70,
+                  "tone": "primary",
+                  "note": "評価額$2.2B・AI検索API"
+                },
+                {
+                  "label": "TurboPuffer ARR",
+                  "value": "$100M",
+                  "pct": 28,
+                  "tone": "info",
+                  "note": "黒字・調達$1M未満"
+                }
               ],
               "narrative": "同週に3社がユニコーン化または大型調達。エージェントインフラへの投資が生成AIの次フェーズを形成している。",
               "impact": "AI競争の富はモデルラボではなくインフラ提供者に集積しつつある。エージェント時代のインフラ選定が競争優位を決定。"
-            }
+            },
+            "caption": "AIインフラ3社の規模",
+            "alt": "3つのAIインフラ企業の規模を示す棒グラフ。Exa（$250M調達・評価額$2.2B）、Modal（$355M調達・評価額$4.7B・ARR $300M）、TurboPuffer（ARR $100M・黒字・調達$1M未満）の3社を比較している。"
           }
         },
         {
@@ -702,7 +1135,14 @@
           "category": "industry_business",
           "published_at": "2026-05-25",
           "lang": "en",
-          "tags": ["clickup", "layoffs", "ai-agents", "workforce", "automation", "future-of-work"],
+          "tags": [
+            "clickup",
+            "layoffs",
+            "ai-agents",
+            "workforce",
+            "automation",
+            "future-of-work"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -719,20 +1159,50 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "ClickUp 削減前後",
-            "alt": "ClickUpのAI導入による組織変化を示す比較図。従業員数（1,300名→1,010名、-290名=22%削減）とAIエージェント数（0→3,000体）を並べて対比。1人当たりAIエージェント数（0→約3体）も示している。",
             "data": {
               "headline": "ClickUp：22%人員削減→3,000 AIエージェントへ置換",
-              "before": { "label": "削減前", "sublabel": "1,300名の組織" },
-              "after": { "label": "削減後", "sublabel": "AIエージェント主体" },
+              "before": {
+                "label": "削減前",
+                "sublabel": "1,300名の組織"
+              },
+              "after": {
+                "label": "削減後",
+                "sublabel": "AIエージェント主体"
+              },
               "metrics": [
-                { "label": "従業員数", "before": "1,300名", "after": "1,010名（-290）", "before_pct": 100, "after_pct": 78, "delta": "-22%", "delta_tone": "danger" },
-                { "label": "AIエージェント", "before": "ほぼゼロ", "after": "3,000体", "before_pct": 2, "after_pct": 100, "delta": "+3,000体", "delta_tone": "success" },
-                { "label": "1人当たりAI", "before": "〜0体", "after": "〜3体", "before_pct": 0, "after_pct": 100, "delta": "3:1比率", "delta_tone": "warning" }
+                {
+                  "label": "従業員数",
+                  "before": "1,300名",
+                  "after": "1,010名（-290）",
+                  "before_pct": 100,
+                  "after_pct": 78,
+                  "delta": "-22%",
+                  "delta_tone": "danger"
+                },
+                {
+                  "label": "AIエージェント",
+                  "before": "ほぼゼロ",
+                  "after": "3,000体",
+                  "before_pct": 2,
+                  "after_pct": 100,
+                  "delta": "+3,000体",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "1人当たりAI",
+                  "before": "〜0体",
+                  "after": "〜3体",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "3:1比率",
+                  "delta_tone": "warning"
+                }
               ],
               "narrative": "2026年5月21日に断行。CEO は「AIを使って仕事を自動化する人は常に職がある」と宣言。",
               "impact": "生成AIによる大規模雇用代替の最初の公然とした事例。AI時代の組織設計への問いを投げかける。"
-            }
+            },
+            "caption": "ClickUp 削減前後",
+            "alt": "ClickUpのAI導入による組織変化を示す比較図。従業員数（1,300名→1,010名、-290名=22%削減）とAIエージェント数（0→3,000体）を並べて対比。1人当たりAIエージェント数（0→約3体）も示している。"
           }
         }
       ]
@@ -753,7 +1223,14 @@
           "category": "regulation_policy",
           "published_at": "2026-05-22",
           "lang": "en",
-          "tags": ["glasswing", "security", "vulnerability", "anthropic", "ai-safety", "critical-infrastructure"],
+          "tags": [
+            "glasswing",
+            "security",
+            "vulnerability",
+            "anthropic",
+            "ai-safety",
+            "critical-infrastructure"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -763,7 +1240,10 @@
             "source_type_bias": 0,
             "seen_penalty": -1
           },
-          "reaction_signal": { "kind": "hatena", "users": 49 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 49
+          },
           "summary_ja": "Anthropicがマルチ産業セキュリティイニシアティブ「Project Glasswing」の初期報告書を公開した。Claude「Mythos」を使った自動脆弱性診断が、主要インフラソフトウェアで10,000件以上の重大脆弱性を発見したと報告している。脆弱性の件数はAIによる高速スキャンが人間の修正・パッチ適用能力をはるかに超えるペースで積み上がっており、「発見より修正が遅い」という本質的な問題を浮き彫りにしている。Big Techパートナー（Microsoft・Google・Metaなど）と連携した大規模なセキュリティ強化プログラムとして、エネルギー・金融・医療インフラの防御を目標としている。AIが生み出す脆弱性発見の加速と、それに対応する人間・組織の速度ギャップという新たな安全問題を定義した報告書として注目された。",
           "key_points_ja": [
             "Claude「Mythos」による自動スキャンが主要インフラソフトウェアで重大脆弱性10,000件超を発見",
@@ -772,19 +1252,34 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Glasswing 発見規模",
-            "alt": "Project Glasswingの脆弱性発見規模を示すサマリーカード。発見脆弱性数10,000件超、スキャン対象（主要インフラソフトウェア）、使用AI（Claude Mythos）、パートナー（Big Tech複数社）、課題（発見速度>修正速度というギャップ）が記載されている。",
             "data": {
               "headline": "Glasswing：AI脆弱性診断が1万件超を発見—人間の修正が追いつかない",
               "tldr": "AnthropicのClaude「Mythos」が主要インフラで10,000件超の重大脆弱性を発見。AIスキャン速度が人間の修正能力を超え「発見>修正」という新たな安全課題を提示。",
               "points": [
-                { "label": "発見件数", "value": "10,000件超", "tone": "danger", "description": "Claude Mythosによる重大脆弱性。修正が追いつかないペースで蓄積中" },
-                { "label": "スキャン対象", "value": "主要インフラ", "tone": "warning", "description": "エネルギー・金融・医療の重要インフラソフトウェアが対象" },
-                { "label": "パートナー", "value": "Big Tech連携", "tone": "info", "description": "Microsoft・Google・Meta等と連携した大規模セキュリティ強化プログラム" }
+                {
+                  "label": "発見件数",
+                  "value": "10,000件超",
+                  "tone": "danger",
+                  "description": "Claude Mythosによる重大脆弱性。修正が追いつかないペースで蓄積中"
+                },
+                {
+                  "label": "スキャン対象",
+                  "value": "主要インフラ",
+                  "tone": "warning",
+                  "description": "エネルギー・金融・医療の重要インフラソフトウェアが対象"
+                },
+                {
+                  "label": "パートナー",
+                  "value": "Big Tech連携",
+                  "tone": "info",
+                  "description": "Microsoft・Google・Meta等と連携した大規模セキュリティ強化プログラム"
+                }
               ],
               "context": "2026-05-22公開（初期報告書）。AnthropicのAI安全活動の柱の一つ。Project Glasswingは継続中のマルチ産業プログラム。",
               "impact": "AI活用の脆弱性スキャン加速は「良いニュース」だが、修正能力の整備なしには脆弱性の「認知ギャップ」が拡大するリスク。"
-            }
+            },
+            "caption": "Glasswing 発見規模",
+            "alt": "Project Glasswingの脆弱性発見規模を示すサマリーカード。発見脆弱性数10,000件超、スキャン対象（主要インフラソフトウェア）、使用AI（Claude Mythos）、パートナー（Big Tech複数社）、課題（発見速度>修正速度というギャップ）が記載されている。"
           }
         }
       ]
@@ -805,7 +1300,14 @@
           "category": "community_buzz",
           "published_at": "2026-05-25",
           "lang": "ja",
-          "tags": ["noroboto", "ai-security", "prompt-injection", "steganography", "adversarial", "ai-safety"],
+          "tags": [
+            "noroboto",
+            "ai-security",
+            "prompt-injection",
+            "steganography",
+            "adversarial",
+            "ai-safety"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -814,7 +1316,10 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hatena", "users": 121 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 121
+          },
           "summary_ja": "「ノロボト（Noroboto）攻撃」と呼ばれる新しいAI攻撃手法がGigazineで121ブクマを集めて話題となった。特殊なフォントで書かれたテキストは人間の目には通常の文字として見えないが、AIが読み取ると命令として解釈して実行するというステガノグラフィ的なプロンプトインジェクション手法だ。Webページや文書に埋め込まれた不可視の命令をAIアシスタントが実行してしまうという脆弱性で、RAGシステムやAIブラウジングエージェントが悪意あるページを処理する際のリスクが示されている。LLMのトークン化メカニズムが人間の視覚認識と異なることを利用した攻撃で、AI安全コミュニティで広く議論されている。",
           "key_points_ja": [
             "特殊フォントで人間には見えないテキストをAIが読んで命令実行するプロンプトインジェクション新手法",
@@ -823,18 +1328,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "ノロボト攻撃の仕組み",
-            "alt": "ノロボト攻撃の仕組みを示すサマリーカード。人間には見えない特殊フォントテキストがWebページに埋め込まれ、AIがそれを命令として解釈実行する流れ、脅威対象（RAGシステム・AIブラウジングエージェント）が記載されている。",
             "data": {
               "headline": "ノロボト攻撃：人間には見えないAI専用命令でエージェントを乗っ取る",
               "tldr": "特殊フォントで書かれた人間に見えないテキストをAIが読んで実行するプロンプトインジェクション。RAG・AIブラウジングエージェントが悪意あるページを処理する際に危険。",
               "points": [
-                { "label": "攻撃手法", "value": "特殊フォント埋め込み", "tone": "danger", "description": "人間の目には見えないが、AIのトークナイザーは命令として読み取る" },
-                { "label": "脅威対象", "value": "RAG・エージェント", "tone": "warning", "description": "外部コンテンツを処理するAIシステムが主な標的" },
-                { "label": "日本での反響", "value": "はてブ121件", "tone": "info", "description": "AI安全の実用的脅威として日本コミュニティで広く話題" }
+                {
+                  "label": "攻撃手法",
+                  "value": "特殊フォント埋め込み",
+                  "tone": "danger",
+                  "description": "人間の目には見えないが、AIのトークナイザーは命令として読み取る"
+                },
+                {
+                  "label": "脅威対象",
+                  "value": "RAG・エージェント",
+                  "tone": "warning",
+                  "description": "外部コンテンツを処理するAIシステムが主な標的"
+                },
+                {
+                  "label": "日本での反響",
+                  "value": "はてブ121件",
+                  "tone": "info",
+                  "description": "AI安全の実用的脅威として日本コミュニティで広く話題"
+                }
               ],
               "impact": "AIエージェントが外部データを処理する全システムで入力サニタイゼーションが急務。"
-            }
+            },
+            "caption": "ノロボト攻撃の仕組み",
+            "alt": "ノロボト攻撃の仕組みを示すサマリーカード。人間には見えない特殊フォントテキストがWebページに埋め込まれ、AIがそれを命令として解釈実行する流れ、脅威対象（RAGシステム・AIブラウジングエージェント）が記載されている。"
           }
         },
         {
@@ -848,7 +1368,14 @@
           "category": "community_buzz",
           "published_at": "2026-05-21",
           "lang": "en",
-          "tags": ["spotify", "universal-music", "ai-music", "copyright", "licensing", "ai-covers"],
+          "tags": [
+            "spotify",
+            "universal-music",
+            "ai-music",
+            "copyright",
+            "licensing",
+            "ai-covers"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -865,18 +1392,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Spotify×UMG AI音楽合意",
-            "alt": "SpotifyとUniversal MusicのAI音楽ライセンス合意を示すサマリーカード。対象ユーザー（Spotify Premium）、コンテンツ（参加アーティストのAIカバー・リミックス）、収益モデル（アーティストへの収益配分）、業界意義（著作権+AI生成の初主要合意）が記載されている。",
             "data": {
               "headline": "Spotify×UMG：AI音楽著作権問題に「認可+収益シェア」の解が誕生",
               "tldr": "Spotify PremiumユーザーがAIで公式アーティスト楽曲をカバー・リミックス可能に。Universal Music参加アーティストへの収益配分も設計。音楽AI×著作権の業界初の主要合意。",
               "points": [
-                { "label": "対象", "value": "Spotify Premium", "tone": "info", "description": "Premiumユーザー限定でAIカバー・リミックス生成が可能に" },
-                { "label": "収益", "value": "参加者に分配", "tone": "success", "description": "合意アーティストに生成件数に応じた収益を配分する設計" },
-                { "label": "業界意義", "value": "初主要合意", "tone": "primary", "description": "AI生成音楽の著作権問題に業界大手が「認可+シェア」で初正式合意" }
+                {
+                  "label": "対象",
+                  "value": "Spotify Premium",
+                  "tone": "info",
+                  "description": "Premiumユーザー限定でAIカバー・リミックス生成が可能に"
+                },
+                {
+                  "label": "収益",
+                  "value": "参加者に分配",
+                  "tone": "success",
+                  "description": "合意アーティストに生成件数に応じた収益を配分する設計"
+                },
+                {
+                  "label": "業界意義",
+                  "value": "初主要合意",
+                  "tone": "primary",
+                  "description": "AI生成音楽の著作権問題に業界大手が「認可+シェア」で初正式合意"
+                }
               ],
               "impact": "AI音楽生成サービスにとって合法的ビジネスモデルの前例。著作権問題を抱える他のAIコンテンツ分野への波及も期待。"
-            }
+            },
+            "caption": "Spotify×UMG AI音楽合意",
+            "alt": "SpotifyとUniversal MusicのAI音楽ライセンス合意を示すサマリーカード。対象ユーザー（Spotify Premium）、コンテンツ（参加アーティストのAIカバー・リミックス）、収益モデル（アーティストへの収益配分）、業界意義（著作権+AI生成の初主要合意）が記載されている。"
           }
         }
       ]
@@ -897,7 +1439,14 @@
           "category": "japan",
           "published_at": "2026-05-24",
           "lang": "ja",
-          "tags": ["claude-code", "skill", "self-improving", "zenn", "automation", "ai-engineering"],
+          "tags": [
+            "claude-code",
+            "skill",
+            "self-improving",
+            "zenn",
+            "automation",
+            "ai-engineering"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -906,7 +1455,10 @@
             "total": 19,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 187 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 187
+          },
           "x_post": "Claude Codeのhooks＋skills機能を組み合わせ、前日の作業ログからスキル定義を自動更新する「自己改善ループ」を実装した記事が公開された。エージェントが自身の作業品質を評価してスキル記述を毎日自律改善する設計であり、私はこれがエージェントを「育てる」という新しい開発パラダイムの実践的な第一歩だと考える。\n\nhttps://zenn.dev/sonicgarden/articles/claude-code-self-improving-loop",
           "summary_ja": "ソニックガーデンのエンジニアがZennに「Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った」を公開し、はてブ187件を集めた。Claude Codeのスキル（Skill）機能を使って、AIエージェントが前日の作業ログから学習し翌日のスキル定義を自動更新する「自己改善ループ」アーキテクチャを実装した記事だ。Claude Codeのhooks機能とskills機能を組み合わせ、エージェントが自身の作業品質を評価してスキル記述を改善するサイクルを全自動化している。具体的な実装コードとClaude Codeの設定例が公開されており、即自プロジェクトへの応用が可能。開発チームがエージェントを「育てる」という新しいソフトウェア開発のパラダイムを示した先駆的実装として多くのエンジニアに参照された。",
           "key_points_ja": [
@@ -916,19 +1468,43 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "自己改善ループ",
-            "alt": "Claude Codeスキル自己改善ループのタイムラインを示す図。開発作業→ログ記録（Claude Code hooks）→自己評価（AIがログを分析）→スキル更新（skills定義を自動改善）→翌日の開発作業（改善されたスキルで実行）という5段階のサイクルが記載されている。",
             "data": {
               "headline": "Claude Codeスキル自己改善ループ：4ステップで毎日自動成長",
               "events": [
-                { "when": "Day N", "label": "開発作業・ログ記録", "description": "Claude Codeが開発を実行。hooksがすべての作業ログを自動記録", "status": "past", "tone": "default" },
-                { "when": "作業後", "label": "自己評価フェーズ", "description": "AIがログを分析し、どのスキルが効果的だったか・改善が必要かを評価", "status": "past", "tone": "primary" },
-                { "when": "夜間", "label": "スキル定義を自動更新", "description": "評価結果に基づいてskills/ディレクトリ内のスキル定義を自動書き換え", "status": "now", "tone": "success" },
-                { "when": "Day N+1", "label": "改善後のスキルで作業", "description": "更新されたスキルでClaude Codeが動作。毎日少しずつ賢くなるサイクルが完成", "status": "upcoming", "tone": "success" }
+                {
+                  "when": "Day N",
+                  "label": "開発作業・ログ記録",
+                  "description": "Claude Codeが開発を実行。hooksがすべての作業ログを自動記録",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "作業後",
+                  "label": "自己評価フェーズ",
+                  "description": "AIがログを分析し、どのスキルが効果的だったか・改善が必要かを評価",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "夜間",
+                  "label": "スキル定義を自動更新",
+                  "description": "評価結果に基づいてskills/ディレクトリ内のスキル定義を自動書き換え",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "Day N+1",
+                  "label": "改善後のスキルで作業",
+                  "description": "更新されたスキルでClaude Codeが動作。毎日少しずつ賢くなるサイクルが完成",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "ソニックガーデンが実装・公開。Claude Codeの公式機能（hooks+skills）だけで完全ループを実現。",
               "impact": "エージェントを「育てる」という新しい開発パラダイムを示す。即プロジェクトへの導入が可能。"
-            }
+            },
+            "caption": "自己改善ループ",
+            "alt": "Claude Codeスキル自己改善ループのタイムラインを示す図。開発作業→ログ記録（Claude Code hooks）→自己評価（AIがログを分析）→スキル更新（skills定義を自動改善）→翌日の開発作業（改善されたスキルで実行）という5段階のサイクルが記載されている。"
           }
         },
         {
@@ -942,7 +1518,14 @@
           "category": "japan",
           "published_at": "2026-05-25",
           "lang": "ja",
-          "tags": ["claude-code", "software-engineering", "mit-tech-review", "claude-4.7", "ai-development", "code-with-claude"],
+          "tags": [
+            "claude-code",
+            "software-engineering",
+            "mit-tech-review",
+            "claude-4.7",
+            "ai-development",
+            "code-with-claude"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -951,7 +1534,10 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 309 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 309
+          },
           "x_post": "MIT Technology Review Japanが「Claudeに任せてしまおう—たった1年で激変したソフトウェア開発」を公開した。Claude 4.7（2026年4月）以降、開発者がAIの書いたコードをレビューなしでリリースする段階に達したという内容である。Anthropicエンジニアの「Claudeの邪魔をしないこと」という言葉が示す開発文化の転換点を、私は重要な証言として記録しておきたい。\n\nhttps://www.technologyreview.jp/s/383499/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
           "summary_ja": "MIT Technology Review日本語版が「Claudeに任せてしまおう—たった1年で激変したソフトウェア開発」と題する記事を公開し、はてブ309件という大きな反響を集めた。2025年にはClaude は「まあまあ使えるコーディングツール」だったが、2026年にはClaude 4.6（2026年2月）・4.7（2026年4月）のリリースを経て、開発者がClaude の書いたコードをレビューなしでリリースする段階に進んでいる実態を報告している。Anthropicロンドンイベント「Code with Claude」（2026年5月19日）でのデモと証言を基に、Anthropicが「ClaudeにClaudeを作らせたい」と述べている開発の未来像を描く。Anthropicエンジニアのコメント「重要な原則はClaudeの邪魔をしないこと。よく言うのは『Claudeに任せてしまおう』」が記事のタイトルになった。",
           "key_points_ja": [
@@ -961,19 +1547,43 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "Claude Codeの1年間の進化",
-            "alt": "Claude Codeの2025年から2026年への進化を示すタイムライン。2025年：まあまあ使えるコーディングツール、2026年2月・Claude 4.6：信頼性が大幅向上、2026年4月・Claude 4.7：レビューなしリリースが現実に、2026年5月・Code with Claude：AnthropicがClaudeにClaudeを作らせたいと宣言、の4段階が記載されている。",
             "data": {
               "headline": "Claude Code 1年間の変革：「まあまあ」→「任せてしまおう」",
               "events": [
-                { "when": "2025年", "label": "まあまあ使えるツール", "description": "Claude は便利なコーディング支援ツール。人間が必ずレビューする前提", "status": "past", "tone": "default" },
-                { "when": "2026年2月", "label": "Claude 4.6リリース", "description": "信頼性・コンテキスト理解が大幅向上。開発者の活用範囲が急拡大", "status": "past", "tone": "primary" },
-                { "when": "2026年4月", "label": "Claude 4.7リリース", "description": "「レビューなしでリリース」が現実に。開発文化の転換点となる", "status": "now", "tone": "success" },
-                { "when": "2026年5月", "label": "ClaudeがClaudeを作る宣言", "description": "Code with Claudeイベントでanthropicが「ClaudeにClaudeを開発させたい」と表明", "status": "upcoming", "tone": "warning" }
+                {
+                  "when": "2025年",
+                  "label": "まあまあ使えるツール",
+                  "description": "Claude は便利なコーディング支援ツール。人間が必ずレビューする前提",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "2026年2月",
+                  "label": "Claude 4.6リリース",
+                  "description": "信頼性・コンテキスト理解が大幅向上。開発者の活用範囲が急拡大",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026年4月",
+                  "label": "Claude 4.7リリース",
+                  "description": "「レビューなしでリリース」が現実に。開発文化の転換点となる",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "2026年5月",
+                  "label": "ClaudeがClaudeを作る宣言",
+                  "description": "Code with Claudeイベントでanthropicが「ClaudeにClaudeを開発させたい」と表明",
+                  "status": "upcoming",
+                  "tone": "warning"
+                }
               ],
               "narrative": "MIT Technology Review Japan 2026-05-25公開、はてブ309件。「Claudeに任せてしまおう」という文化的転換の記録。",
               "impact": "AI×ソフトウェア開発の文化的転換点。1年でここまで変わった現実を日本最大クラスの反響が示している。"
-            }
+            },
+            "caption": "Claude Codeの1年間の進化",
+            "alt": "Claude Codeの2025年から2026年への進化を示すタイムライン。2025年：まあまあ使えるコーディングツール、2026年2月・Claude 4.6：信頼性が大幅向上、2026年4月・Claude 4.7：レビューなしリリースが現実に、2026年5月・Code with Claude：AnthropicがClaudeにClaudeを作らせたいと宣言、の4段階が記載されている。"
           }
         },
         {
@@ -987,7 +1597,14 @@
           "category": "japan",
           "published_at": "2026-05-22",
           "lang": "ja",
-          "tags": ["code-review", "ai-human-collaboration", "claude-code", "zenn", "engineering-process", "ai-workflow"],
+          "tags": [
+            "code-review",
+            "ai-human-collaboration",
+            "claude-code",
+            "zenn",
+            "engineering-process",
+            "ai-workflow"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -996,7 +1613,10 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 257 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 257
+          },
           "summary_ja": "コードレビュープロセスを6段階に体系化し、各段階でAIが担うべき作業と人間が担うべき作業を明確に分けたZenn記事がはてブ257件を集めた。6段階の設計とは：①文法・型エラーチェック（AI）、②コーディング規約チェック（AI）、③ロジックの正しさ確認（AI+人間）、④設計方針の適切さ（人間主体）、⑤ビジネスロジックとの整合性（人間）、⑥将来の拡張性・保守性（人間）というフレームワーク。Claude Codeを活用した①②の完全自動化例も含めて実装ノウハウが詳述されている。AIが機械的判定可能な下位レイヤーを担当し、人間は価値判断が必要な上位レイヤーに集中する役割分担が開発チームの生産性を大幅に改善したという報告は多くのエンジニアの共感を呼んだ。",
           "key_points_ja": [
             "コードレビューを6段階に分類しAI担当（文法・規約）と人間担当（設計・ビジネス・保守性）を明確化",
@@ -1005,18 +1625,36 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "6段階コードレビュー",
-            "alt": "6段階コードレビューフレームワークのタイムラインを示す図。ステージ1（文法・型エラー、AI担当）→2（コーディング規約、AI担当）→3（ロジック正確性、AI+人間）→4（設計方針、人間主体）→5（ビジネスロジック整合性、人間）→6（拡張性・保守性、人間）の6段階が記載されている。",
             "data": {
               "headline": "6段階レビューでAI×人間の最適分業を実現",
               "events": [
-                { "when": "Stage 1-2", "label": "AI完全担当", "description": "文法・型エラーチェック・コーディング規約確認をClaude Codeが全自動処理", "status": "past", "tone": "success" },
-                { "when": "Stage 3", "label": "AI+人間協働", "description": "ロジックの正しさはAIが一次確認し、複雑な部分は人間が判断", "status": "past", "tone": "primary" },
-                { "when": "Stage 4-6", "label": "人間が判断", "description": "設計方針・ビジネスロジック整合性・将来の保守性は人間の価値判断が不可欠", "status": "now", "tone": "warning" }
+                {
+                  "when": "Stage 1-2",
+                  "label": "AI完全担当",
+                  "description": "文法・型エラーチェック・コーディング規約確認をClaude Codeが全自動処理",
+                  "status": "past",
+                  "tone": "success"
+                },
+                {
+                  "when": "Stage 3",
+                  "label": "AI+人間協働",
+                  "description": "ロジックの正しさはAIが一次確認し、複雑な部分は人間が判断",
+                  "status": "past",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Stage 4-6",
+                  "label": "人間が判断",
+                  "description": "設計方針・ビジネスロジック整合性・将来の保守性は人間の価値判断が不可欠",
+                  "status": "now",
+                  "tone": "warning"
+                }
               ],
               "narrative": "Zenn 2026-05-22公開、はてブ257件。Claude Codeで段階1-2の完全自動化を実現した実装例も公開。",
               "impact": "コードレビューの構造化でチーム全体の生産性向上。AIと人間の適切な役割分担の実践的フレームワーク。"
-            }
+            },
+            "caption": "6段階コードレビュー",
+            "alt": "6段階コードレビューフレームワークのタイムラインを示す図。ステージ1（文法・型エラー、AI担当）→2（コーディング規約、AI担当）→3（ロジック正確性、AI+人間）→4（設計方針、人間主体）→5（ビジネスロジック整合性、人間）→6（拡張性・保守性、人間）の6段階が記載されている。"
           }
         },
         {
@@ -1030,7 +1668,14 @@
           "category": "japan",
           "published_at": "2026-05-22",
           "lang": "ja",
-          "tags": ["claude-code", "pull-request", "google-engineering", "skills", "automation", "code-quality"],
+          "tags": [
+            "claude-code",
+            "pull-request",
+            "google-engineering",
+            "skills",
+            "automation",
+            "code-quality"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -1039,7 +1684,10 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 243 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 243
+          },
           "summary_ja": "Claude Codeのskills機能にGoogle Engineering Practicesのガイドライン全文を読み込ませ、質の高いPull Request説明文を自動生成するスキルを実装した記事がはてブ243件を集めた。Googleの「エンジニアリングプラクティス（Code Review Guidelines・CL Author's Guide等）」をskillのコンテキストとして与えることで、Claude Codeが変更の背景・影響範囲・テスト手順を網羅した完成度の高いPR説明文を生成する。実装したスキルのコードとプロンプト設計が公開されており、GitHubのdiff情報からGooglerが書くような詳細なPR descriptionを自動生成する手順が詳述されている。「人間がレビューしたくなるPR」をAIが自律的に書けるという実践的な成果は、Claude Codeコミュニティで大きな反響を呼んだ。",
           "key_points_ja": [
             "Google Engineering Practices全文をClaude Codeスキルに注入し、高品質PR説明を自動生成する実装を公開",
@@ -1048,18 +1696,33 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code PR自動生成",
-            "alt": "Claude Code Google Engineering Practices PR生成スキルのサマリーカード。入力（GitHubのdiff）、参照ドキュメント（Google Engineering Practices）、出力（背景・影響範囲・テスト手順を含む高品質PR説明文）、はてブ243件の反響が記載されている。",
             "data": {
               "headline": "Google Engineering Practices × Claude Code：高品質PR説明を全自動生成",
               "tldr": "Google Code Review GuidelinesをClaude Codeスキルに読み込ませ、GitHubのdiffから高品質PR説明を自動生成。背景・影響・テスト手順を含む完成度の高い説明文を自律生成。はてブ243件の実装記事。",
               "points": [
-                { "label": "インプット", "value": "GitHub diff", "tone": "info", "description": "GitHubのコード差分を自動取得して分析" },
-                { "label": "参照知識", "value": "Google Eng Practices", "tone": "primary", "description": "Code Review Guidelines・CL Author's Guide等をスキルに注入" },
-                { "label": "アウトプット", "value": "高品質PR説明", "tone": "success", "description": "背景・影響範囲・テスト手順を含む「Googlerが書くようなPR」を自動生成" }
+                {
+                  "label": "インプット",
+                  "value": "GitHub diff",
+                  "tone": "info",
+                  "description": "GitHubのコード差分を自動取得して分析"
+                },
+                {
+                  "label": "参照知識",
+                  "value": "Google Eng Practices",
+                  "tone": "primary",
+                  "description": "Code Review Guidelines・CL Author's Guide等をスキルに注入"
+                },
+                {
+                  "label": "アウトプット",
+                  "value": "高品質PR説明",
+                  "tone": "success",
+                  "description": "背景・影響範囲・テスト手順を含む「Googlerが書くようなPR」を自動生成"
+                }
               ],
               "impact": "コードレビューの品質標準化とPR作成時間の大幅削減。チーム開発の効率化に直接貢献。"
-            }
+            },
+            "caption": "Claude Code PR自動生成",
+            "alt": "Claude Code Google Engineering Practices PR生成スキルのサマリーカード。入力（GitHubのdiff）、参照ドキュメント（Google Engineering Practices）、出力（背景・影響範囲・テスト手順を含む高品質PR説明文）、はてブ243件の反響が記載されている。"
           }
         },
         {
@@ -1073,7 +1736,15 @@
           "category": "japan",
           "published_at": "2026-05-19",
           "lang": "ja",
-          "tags": ["hitachi", "anthropic", "claude", "enterprise", "lumada", "physical-ai", "japan-ai"],
+          "tags": [
+            "hitachi",
+            "anthropic",
+            "claude",
+            "enterprise",
+            "lumada",
+            "physical-ai",
+            "japan-ai"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1090,19 +1761,34 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "日立×Anthropic提携内容",
-            "alt": "日立とAnthropicの戦略的パートナーシップを示すサマリーカード。導入規模（29万名全従業員）、対象分野（エネルギー・交通・製造・金融の重要インフラ）、Lumada 3.0との統合、共同育成（10万人のAIプロ人材）、グローバル組織（Frontier AI Deployment Center）が記載されている。",
             "data": {
               "headline": "日立×Anthropic：29万名へClaude導入・重要インフラのフロンティアAI化",
               "tldr": "日立製作所が全世界29万人にClaudeを展開。Lumada 3.0とフロンティアAIを統合し、エネルギー・交通・製造・金融の重要インフラ分野を強化。10万人のAI人材共同育成も発表。",
               "points": [
-                { "label": "導入規模", "value": "29万名", "tone": "primary", "description": "世界の日立グループ全従業員に先進AI（Claude含む）を展開" },
-                { "label": "対象分野", "value": "重要インフラ4分野", "tone": "success", "description": "エネルギー・交通・製造・金融の重要インフラでLumada 3.0×Claudeを活用" },
-                { "label": "人材育成", "value": "10万人", "tone": "info", "description": "Frontier AI Deployment Center設立。AIプロフェッショナル10万人を共同育成" }
+                {
+                  "label": "導入規模",
+                  "value": "29万名",
+                  "tone": "primary",
+                  "description": "世界の日立グループ全従業員に先進AI（Claude含む）を展開"
+                },
+                {
+                  "label": "対象分野",
+                  "value": "重要インフラ4分野",
+                  "tone": "success",
+                  "description": "エネルギー・交通・製造・金融の重要インフラでLumada 3.0×Claudeを活用"
+                },
+                {
+                  "label": "人材育成",
+                  "value": "10万人",
+                  "tone": "info",
+                  "description": "Frontier AI Deployment Center設立。AIプロフェッショナル10万人を共同育成"
+                }
               ],
               "context": "2026-05-19発表。AIが物理的インフラに直接影響する「フィジカルAI」分野での大規模展開。",
               "impact": "日本企業のAI活用が「業務効率化」から「重要インフラの運用変革」へ移行する象徴的事例。"
-            }
+            },
+            "caption": "日立×Anthropic提携内容",
+            "alt": "日立とAnthropicの戦略的パートナーシップを示すサマリーカード。導入規模（29万名全従業員）、対象分野（エネルギー・交通・製造・金融の重要インフラ）、Lumada 3.0との統合、共同育成（10万人のAIプロ人材）、グローバル組織（Frontier AI Deployment Center）が記載されている。"
           }
         }
       ]
@@ -1123,7 +1809,14 @@
           "category": "china",
           "published_at": "2026-05-22",
           "lang": "zh",
-          "tags": ["zhipu", "glm-5.1", "inference-speed", "huawei-ascend", "china-ai", "llm-api"],
+          "tags": [
+            "zhipu",
+            "glm-5.1",
+            "inference-speed",
+            "huawei-ascend",
+            "china-ai",
+            "llm-api"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1140,19 +1833,40 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "GLM-5.1-HighSpeed 速度比較",
-            "alt": "GLM-5.1-HighSpeedの推論速度400トークン/秒と主要競合モデルとの比較棒グラフ。Mercury 2（1,009 tok/s、ただし拡散型）、GLM-5.1-HighSpeed（400 tok/s）、Claude Haiku推論（89 tok/s）、GPT-5 Mini（71 tok/s）を比較。旗艦クラスでは世界最高速。",
             "data": {
               "headline": "GLM-5.1-HighSpeed：旗艦モデルAPI最速400トークン/秒を達成",
-              "scale": { "unit": "tok/s", "max_label": "推論速度" },
+              "scale": {
+                "unit": "tok/s",
+                "max_label": "推論速度"
+              },
               "bars": [
-                { "label": "GLM-5.1-HighSpeed", "value": "400 tok/s", "pct": 100, "tone": "success", "note": "旗艦クラスで世界最高速" },
-                { "label": "Claude 4.5 Haiku推論", "value": "89 tok/s", "pct": 22, "tone": "default", "note": "比較対象（Anthropic）" },
-                { "label": "GPT-5 Mini", "value": "71 tok/s", "pct": 18, "tone": "default", "note": "比較対象（OpenAI）" }
+                {
+                  "label": "GLM-5.1-HighSpeed",
+                  "value": "400 tok/s",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "旗艦クラスで世界最高速"
+                },
+                {
+                  "label": "Claude 4.5 Haiku推論",
+                  "value": "89 tok/s",
+                  "pct": 22,
+                  "tone": "default",
+                  "note": "比較対象（Anthropic）"
+                },
+                {
+                  "label": "GPT-5 Mini",
+                  "value": "71 tok/s",
+                  "pct": 18,
+                  "tone": "default",
+                  "note": "比較対象（OpenAI）"
+                }
               ],
               "narrative": "Huawei Ascendチップのみで訓練。NVIDIAに依存しない中国AI半導体戦略の重要な成果として注目。",
               "impact": "高速推論が必要なリアルタイムエージェント・音声インタラクション用途でGLM-5.1が有力な選択肢に。"
-            }
+            },
+            "caption": "GLM-5.1-HighSpeed 速度比較",
+            "alt": "GLM-5.1-HighSpeedの推論速度400トークン/秒と主要競合モデルとの比較棒グラフ。Mercury 2（1,009 tok/s、ただし拡散型）、GLM-5.1-HighSpeed（400 tok/s）、Claude Haiku推論（89 tok/s）、GPT-5 Mini（71 tok/s）を比較。旗艦クラスでは世界最高速。"
           }
         },
         {
@@ -1166,7 +1880,14 @@
           "category": "china",
           "published_at": "2026-05-22",
           "lang": "zh",
-          "tags": ["fei-fei-li", "spatial-ai", "embodied-intelligence", "benchmark", "stanford", "china-ai"],
+          "tags": [
+            "fei-fei-li",
+            "spatial-ai",
+            "embodied-intelligence",
+            "benchmark",
+            "stanford",
+            "china-ai"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -1183,32 +1904,83 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "空間AI評価ベンチマーク",
-            "alt": "李飛飛チームの空間AIベンチマークを示すサマリーカード。位置付け（具身AIのImageNet）、評価対象（ロボティクス・AR・自律走行）、評価能力（3Dシーン理解・物体操作・ナビゲーション）、目標（具身AI研究の統一評価基盤の確立）が記載されている。",
             "data": {
               "headline": "李飛飛チーム：具身AI評価の「ImageNet」となる空間AIベンチマーク発表",
               "tldr": "スタンフォード・李飛飛チームが具身AIの空間理解を評価するベンチマークを発表。3Dシーン理解・物体操作・ナビゲーションを統一評価。ロボティクス・AR・自律走行研究の標準化に向けた重要な提案。",
               "points": [
-                { "label": "位置付け", "value": "具身AIのImageNet", "tone": "primary", "description": "画像認識のImageNetと同様に具身AI研究を統一的に比較評価できる基盤を目指す" },
-                { "label": "評価対象", "value": "空間推論能力", "tone": "success", "description": "物体位置・方向・奥行き・相互関係を理解する能力を3Dタスクで評価" },
-                { "label": "応用分野", "value": "ロボティクス他3分野", "tone": "info", "description": "ロボティクス・拡張現実・自律走行など現実世界に作用するAIシステムが対象" }
+                {
+                  "label": "位置付け",
+                  "value": "具身AIのImageNet",
+                  "tone": "primary",
+                  "description": "画像認識のImageNetと同様に具身AI研究を統一的に比較評価できる基盤を目指す"
+                },
+                {
+                  "label": "評価対象",
+                  "value": "空間推論能力",
+                  "tone": "success",
+                  "description": "物体位置・方向・奥行き・相互関係を理解する能力を3Dタスクで評価"
+                },
+                {
+                  "label": "応用分野",
+                  "value": "ロボティクス他3分野",
+                  "tone": "info",
+                  "description": "ロボティクス・拡張現実・自律走行など現実世界に作用するAIシステムが対象"
+                }
               ],
               "impact": "具身AI研究の方向性を統一する標準評価基盤として定着すれば、研究加速と実用化の橋渡し機能を担う。"
-            }
+            },
+            "caption": "空間AI評価ベンチマーク",
+            "alt": "李飛飛チームの空間AIベンチマークを示すサマリーカード。位置付け（具身AIのImageNet）、評価対象（ロボティクス・AR・自律走行）、評価能力（3Dシーン理解・物体操作・ナビゲーション）、目標（具身AI研究の統一評価基盤の確立）が記載されている。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "reddit_r_localllama", "reason": "Claude Code unable to fetch from reddit.com", "fallback_used": "none" },
-    { "source": "reddit_r_machinelearning", "reason": "Claude Code unable to fetch from reddit.com", "fallback_used": "none" },
-    { "source": "theverge_rss", "reason": "Claude Code unable to fetch from theverge.com", "fallback_used": "none" },
-    { "source": "wired_rss", "reason": "Claude Code unable to fetch from wired.com", "fallback_used": "none" },
-    { "source": "arstechnica_ai", "reason": "Claude Code unable to fetch from arstechnica.com", "fallback_used": "none" },
-    { "source": "importai_substack", "reason": "HTTP 403 Forbidden", "fallback_used": "none" },
-    { "source": "synced_review", "reason": "RSS feed returned outdated content (Aug 2025)", "fallback_used": "none" },
-    { "source": "mercari_engineering", "reason": "HTTP 403 Forbidden", "fallback_used": "none" },
-    { "source": "mit_technology_review", "reason": "Article listing not in fetched content", "fallback_used": "WebSearch" }
+    {
+      "source": "reddit_r_localllama",
+      "reason": "Claude Code unable to fetch from reddit.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "reddit_r_machinelearning",
+      "reason": "Claude Code unable to fetch from reddit.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "theverge_rss",
+      "reason": "Claude Code unable to fetch from theverge.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "wired_rss",
+      "reason": "Claude Code unable to fetch from wired.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "arstechnica_ai",
+      "reason": "Claude Code unable to fetch from arstechnica.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "importai_substack",
+      "reason": "HTTP 403 Forbidden",
+      "fallback_used": "none"
+    },
+    {
+      "source": "synced_review",
+      "reason": "RSS feed returned outdated content (Aug 2025)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "mercari_engineering",
+      "reason": "HTTP 403 Forbidden",
+      "fallback_used": "none"
+    },
+    {
+      "source": "mit_technology_review",
+      "reason": "Article listing not in fetched content",
+      "fallback_used": "WebSearch"
+    }
   ]
 }

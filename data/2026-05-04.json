@@ -36,16 +36,27 @@
             "freshness": 2,
             "total": 17
           },
-          "tags": ["deepseek", "open-weights", "moe", "coding", "benchmark", "cost-efficiency"],
+          "tags": [
+            "deepseek",
+            "open-weights",
+            "moe",
+            "coding",
+            "benchmark",
+            "cost-efficiency"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "DeepSeek V4 Pro vs GPT-5.4",
-            "alt": "DeepSeek V4 Pro と GPT-5.4 の比較。Codeforces スコアは 3,206 vs 3,168 で DeepSeek が上回る。コンテキスト長は 1M vs 128K（7.8倍差）。入力コストは $0.145 vs $1.02/M tokens でDeepSeek が 7 倍安価。推論 FLOPs は DeepSeek-V3.2 比 27% に削減されており、総合的にコスト・性能比でオープンウェイトが閉鎖モデルを上回る結果となっている。",
             "data": {
               "headline": "DeepSeek V4 Pro：GPT-5.4 超のコーディング性能を 7 倍安価に提供",
-              "before": { "label": "GPT-5.4", "sublabel": "OpenAI クローズドモデル" },
-              "after": { "label": "DeepSeek V4 Pro", "sublabel": "Apache 2.0 オープンウェイト" },
+              "before": {
+                "label": "GPT-5.4",
+                "sublabel": "OpenAI クローズドモデル"
+              },
+              "after": {
+                "label": "DeepSeek V4 Pro",
+                "sublabel": "Apache 2.0 オープンウェイト"
+              },
               "metrics": [
                 {
                   "icon": "🏆",
@@ -94,7 +105,9 @@
               ],
               "narrative": "DeepSeek はオープンウェイトながら閉鎖フロンティアモデルと同等以上のコーディング性能を 7 分の 1 のコストで提供する。1M トークンのコンテキスト長と大幅な推論効率化により、長期エージェントタスクへの対応も強化されている。",
               "impact": "API コストを 7 分の 1 に圧縮しながらフロンティア水準の性能が得られるため、大規模コーディングエージェントや RAG システムを内製化する企業にとって乗り換えコストが大幅に低下する。"
-            }
+            },
+            "caption": "DeepSeek V4 Pro vs GPT-5.4",
+            "alt": "DeepSeek V4 Pro と GPT-5.4 の比較。Codeforces スコアは 3,206 vs 3,168 で DeepSeek が上回る。コンテキスト長は 1M vs 128K（7.8倍差）。入力コストは $0.145 vs $1.02/M tokens でDeepSeek が 7 倍安価。推論 FLOPs は DeepSeek-V3.2 比 27% に削減されており、総合的にコスト・性能比でオープンウェイトが閉鎖モデルを上回る結果となっている。"
           }
         },
         {
@@ -119,15 +132,23 @@
             "freshness": 4,
             "total": 16
           },
-          "tags": ["xiaomi", "mimo", "moe", "open-source", "long-context", "1T-params"],
+          "tags": [
+            "xiaomi",
+            "mimo",
+            "moe",
+            "open-source",
+            "long-context",
+            "1T-params"
+          ],
           "lang": "en",
           "figure": {
             "type": "metric-bars",
-            "caption": "MiMo V2.5-Pro ベンチマーク",
-            "alt": "Xiaomi MiMo V2.5-Pro の主要ベンチマーク結果。GSM8K（数学）99.6、MMLU（一般知識）89.4、HumanEval+（コード生成）75.6、SWE-Bench（ソフトウェアエンジニアリング）35.7。総パラメータ 1.02T、アクティブ 42B、コンテキスト 1M トークン。",
             "data": {
               "headline": "MiMo V2.5-Pro: 数学・コード・知識で高スコア、1M コンテキスト対応 1T MoE",
-              "scale": { "max_label": "スコア 100", "unit": "pt" },
+              "scale": {
+                "max_label": "スコア 100",
+                "unit": "pt"
+              },
               "bars": [
                 {
                   "icon": "🔢",
@@ -164,7 +185,9 @@
               ],
               "narrative": "Xiaomi の MiMo チームが 1T 超のオープンウェイトモデルを公開。数学・知識系では最高水準だが、実際の OSS コード修正（SWE-Bench）ではフロンティアクローズドモデルとの差がある。",
               "impact": "1M トークンコンテキストと SGLang / vLLM 対応で自己ホスト可能な 1T モデルが手に入る。長期的なドキュメント処理・大規模 RAG を内製化したいチームへの実用的な選択肢が増えた。"
-            }
+            },
+            "caption": "MiMo V2.5-Pro ベンチマーク",
+            "alt": "Xiaomi MiMo V2.5-Pro の主要ベンチマーク結果。GSM8K（数学）99.6、MMLU（一般知識）89.4、HumanEval+（コード生成）75.6、SWE-Bench（ソフトウェアエンジニアリング）35.7。総パラメータ 1.02T、アクティブ 42B、コンテキスト 1M トークン。"
           }
         }
       ]
@@ -196,7 +219,14 @@
             "freshness": 5,
             "total": 15
           },
-          "tags": ["trading", "multi-agent", "finance", "github", "trending", "python"],
+          "tags": [
+            "trading",
+            "multi-agent",
+            "finance",
+            "github",
+            "trending",
+            "python"
+          ],
           "lang": "en"
         }
       ]
@@ -228,16 +258,28 @@
             "freshness": 2,
             "total": 13
           },
-          "tags": ["healthcare", "medical-ai", "openai", "o1", "clinical-study", "harvard", "diagnosis"],
+          "tags": [
+            "healthcare",
+            "medical-ai",
+            "openai",
+            "o1",
+            "clinical-study",
+            "harvard",
+            "diagnosis"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "医師ペア vs OpenAI o1（ER 診断精度）",
-            "alt": "Harvard ER 試験における医師ペアと OpenAI o1 の診断精度比較。テキストのみ条件では医師ペア 50-55% に対し o1 が 67% を達成。追加情報あり条件では医師ペア 70-79% に対し o1 が 82% を記録（統計的有意差なし）。試験対象は Boston ER の 76 患者。",
             "data": {
               "headline": "OpenAI o1：テキスト ER 診断で医師ペアを上回る 67% 正診率を達成",
-              "before": { "label": "医師ペア", "sublabel": "ER 担当医 2 名" },
-              "after": { "label": "OpenAI o1", "sublabel": "推論モデル（テキストのみ）" },
+              "before": {
+                "label": "医師ペア",
+                "sublabel": "ER 担当医 2 名"
+              },
+              "after": {
+                "label": "OpenAI o1",
+                "sublabel": "推論モデル（テキストのみ）"
+              },
               "metrics": [
                 {
                   "icon": "📋",
@@ -275,7 +317,9 @@
               ],
               "narrative": "テキスト情報のみを使って AI が医師ペアを上回る診断精度を示したのは初めての大規模臨床試験。ただし実際の ER では音声・表情・画像など多様なモダリティが診断に寄与しており、テキスト外の情報統合が今後の課題となる。",
               "impact": "補助診断ツールとして AI を活用することで、特にテキスト情報が主となる夜間・遠隔医療での見落としリスクを低減できる可能性が示された。医療 AI の規制・実装議論が加速することが予想される。"
-            }
+            },
+            "caption": "医師ペア vs OpenAI o1（ER 診断精度）",
+            "alt": "Harvard ER 試験における医師ペアと OpenAI o1 の診断精度比較。テキストのみ条件では医師ペア 50-55% に対し o1 が 67% を達成。追加情報あり条件では医師ペア 70-79% に対し o1 が 82% を記録（統計的有意差なし）。試験対象は Boston ER の 76 患者。"
           }
         },
         {
@@ -300,7 +344,13 @@
             "freshness": 3,
             "total": 13
           },
-          "tags": ["evaluation", "benchmark", "compute", "efficiency", "huggingface"],
+          "tags": [
+            "evaluation",
+            "benchmark",
+            "compute",
+            "efficiency",
+            "huggingface"
+          ],
           "lang": "en"
         }
       ]
@@ -332,12 +382,19 @@
             "freshness": 5,
             "total": 17
           },
-          "tags": ["claude-code", "local-llm", "ollama", "cost-reduction", "qwen", "rtx3090", "japan", "qiita"],
+          "tags": [
+            "claude-code",
+            "local-llm",
+            "ollama",
+            "cost-reduction",
+            "qwen",
+            "rtx3090",
+            "japan",
+            "qiita"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "ローカル LLM で Claude Code",
-            "alt": "RTX 3090 上でローカル LLM による Claude Code 代替を実験。Qwen 3.6-35B MoE で 83 tok/s の推論速度を達成（VRAM キャッシュ後 34 tok/s、初回 17 tok/s）。Claude Code のエージェント機能は CLI ハーネス側に実装されており LLM 交換だけでは MCP 連携が失われる。VRAM の 90% 超を使うモデルは KV キャッシュ不足で実用不可、2-4GB バッファが必須。",
             "data": {
               "headline": "ローカル LLM で Claude Code を動かす限界：速度は出るが MCP 連携は失われる",
               "tldr": "RTX 3090 + Ollama で 83 tok/s の推論を確認したが、Claude Code の真価は CLI ハーネス側にある。MCP 連携・hooks・Skills はモデル交換では代替不可で、コスト削減効果は限定的。",
@@ -376,7 +433,9 @@
               ],
               "context": "Claude Code の月額費用が膨らむ中、ローカル推論による代替を真剣に検討する日本の開発者が増えている。本記事は実測値と制限の両方を丁寧に報告しており、再現性の高い実験記録として価値が高い。",
               "impact": "ローカル LLM で Claude Code のコストを完全に代替するのは現時点では困難。ただし MCP を使わない単純なコード補完・チャット用途であれば RTX 3090 クラスの GPU で実用的な速度が出ることは確認できた。"
-            }
+            },
+            "caption": "ローカル LLM で Claude Code",
+            "alt": "RTX 3090 上でローカル LLM による Claude Code 代替を実験。Qwen 3.6-35B MoE で 83 tok/s の推論速度を達成（VRAM キャッシュ後 34 tok/s、初回 17 tok/s）。Claude Code のエージェント機能は CLI ハーネス側に実装されており LLM 交換だけでは MCP 連携が失われる。VRAM の 90% 超を使うモデルは KV キャッシュ不足で実用不可、2-4GB バッファが必須。"
           }
         }
       ]

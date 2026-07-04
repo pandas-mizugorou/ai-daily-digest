@@ -88,15 +88,26 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["claude", "opus", "anthropic", "agentic", "dynamic-workflows", "coding"],
+          "tags": [
+            "claude",
+            "opus",
+            "anthropic",
+            "agentic",
+            "dynamic-workflows",
+            "coding"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Opus 4.7 vs 4.8",
-            "alt": "Claude Opus 4.7 と Opus 4.8 の比較。Online-Mind2Web: 79% → 84%（+5pt）、Legal Agent Benchmark: 8% → 10%以上（業界初クリア）、コード欠陥スルー率: 基準値 → 約75%削減、Fast Mode 価格: 3倍高 → 3倍安（$10/$50/M）の4指標で Opus 4.8 が全面更新。",
             "data": {
               "headline": "Claude Opus 4.8: 4 指標で Opus 4.7 を全面更新",
-              "before": {"label": "Opus 4.7", "sublabel": "2026年4月版"},
-              "after": {"label": "Opus 4.8", "sublabel": "2026年5月28日"},
+              "before": {
+                "label": "Opus 4.7",
+                "sublabel": "2026年4月版"
+              },
+              "after": {
+                "label": "Opus 4.8",
+                "sublabel": "2026年5月28日"
+              },
               "metrics": [
                 {
                   "label": "Online-Mind2Web",
@@ -141,7 +152,9 @@
               ],
               "narrative": "Anthropic は Opus 4.8 を「Opus 4.7 の信頼性と判断力を強化した」と位置づけ、同日公開の Dynamic Workflows と組み合わせることでコードベース規模の自律マイグレーションを実現する。",
               "impact": "Enterprise/Team/Max プランで即利用可能。Dynamic Workflows（研究プレビュー）でコードマイグレーション自動化が実用域に入った。"
-            }
+            },
+            "caption": "Opus 4.7 vs 4.8",
+            "alt": "Claude Opus 4.7 と Opus 4.8 の比較。Online-Mind2Web: 79% → 84%（+5pt）、Legal Agent Benchmark: 8% → 10%以上（業界初クリア）、コード欠陥スルー率: 基準値 → 約75%削減、Fast Mode 価格: 3倍高 → 3倍安（$10/$50/M）の4指標で Opus 4.8 が全面更新。"
           }
         },
         {
@@ -170,25 +183,55 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["nvidia", "visual-grounding", "multimodal", "robot", "3b"],
+          "tags": [
+            "nvidia",
+            "visual-grounding",
+            "multimodal",
+            "robot",
+            "3b"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "LocateAnything-3B",
-            "alt": "NVIDIA LocateAnything-3B の概要カード。モデルサイズ: 3B パラメータ、タスク: 視覚グラウンディング（Image-Text-to-Text）、入力: 画像+自然言語クエリ、出力: オブジェクト座標テキスト、公開日: 2026-05-28、HF Trending 入り翌日達成、ダウンロード 1,760+。",
             "data": {
               "headline": "NVIDIA LocateAnything-3B: 自然言語でオブジェクトを特定",
               "tldr": "画像と自然言語クエリを入力すると、指定オブジェクトの座標をテキスト出力する 3B 規模の視覚グラウンディングモデル。公開翌日に HF Trending 入り。",
               "points": [
-                {"label": "パラメータ", "value": "3B (約40億)", "tone": "primary"},
-                {"label": "タスク", "value": "視覚グラウンディング", "tone": "default"},
-                {"label": "入力", "value": "画像+テキスト", "tone": "default"},
-                {"label": "出力", "value": "座標テキスト", "tone": "default"},
-                {"label": "公開日", "value": "2026-05-28", "tone": "success"},
-                {"label": "DL数", "value": "1,760+", "tone": "info"}
+                {
+                  "label": "パラメータ",
+                  "value": "3B (約40億)",
+                  "tone": "primary"
+                },
+                {
+                  "label": "タスク",
+                  "value": "視覚グラウンディング",
+                  "tone": "default"
+                },
+                {
+                  "label": "入力",
+                  "value": "画像+テキスト",
+                  "tone": "default"
+                },
+                {
+                  "label": "出力",
+                  "value": "座標テキスト",
+                  "tone": "default"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026-05-28",
+                  "tone": "success"
+                },
+                {
+                  "label": "DL数",
+                  "value": "1,760+",
+                  "tone": "info"
+                }
               ],
               "context": "従来の物体検出では対応困難だった「任意テキストクエリによるオブジェクト接地」を実現。視覚エージェント・ロボット操作への応用が期待される。",
               "impact": "HF で即日利用可能。視覚エージェントや Robot Manipulation 研究の基盤モデルとして活用が見込まれる。"
-            }
+            },
+            "caption": "LocateAnything-3B",
+            "alt": "NVIDIA LocateAnything-3B の概要カード。モデルサイズ: 3B パラメータ、タスク: 視覚グラウンディング（Image-Text-to-Text）、入力: 画像+自然言語クエリ、出力: オブジェクト座標テキスト、公開日: 2026-05-28、HF Trending 入り翌日達成、ダウンロード 1,760+。"
           }
         }
       ]
@@ -226,11 +269,17 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["openai", "mcp", "tunnel", "enterprise", "chatgpt", "codex", "api"],
+          "tags": [
+            "openai",
+            "mcp",
+            "tunnel",
+            "enterprise",
+            "chatgpt",
+            "codex",
+            "api"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "MCP Tunnel の仕組み",
-            "alt": "OpenAI Secure MCP Tunnel の動作フロー。Step1: 企業内に MCP サーバをデプロイ（外部公開なし）→ Step2: tunnel-client が OpenAI ホスト型エンドポイントへ外向き HTTPS 接続 → Step3: ChatGPT/Codex/API からリクエスト → Step4: tunnel-client がローカル MCP サーバへ転送 → Step5: レスポンスをトンネル経由で返却。インバウンド開放ゼロ。",
             "data": {
               "headline": "Secure MCP Tunnel: ゼロ受信ポートで企業内ツールを OpenAI と接続",
               "events": [
@@ -272,7 +321,9 @@
               ],
               "narrative": "MCP の普及で「ローカルサーバを AI に安全につなぐ」需要が急増したことに応えた機能。",
               "impact": "ファイアウォール設定変更なしで ChatGPT に社内データベース・API を接続でき、エンタープライズ AI 統合の障壁が大幅に低減する。"
-            }
+            },
+            "caption": "MCP Tunnel の仕組み",
+            "alt": "OpenAI Secure MCP Tunnel の動作フロー。Step1: 企業内に MCP サーバをデプロイ（外部公開なし）→ Step2: tunnel-client が OpenAI ホスト型エンドポイントへ外向き HTTPS 接続 → Step3: ChatGPT/Codex/API からリクエスト → Step4: tunnel-client がローカル MCP サーバへ転送 → Step5: レスポンスをトンネル経由で返却。インバウンド開放ゼロ。"
           }
         },
         {
@@ -301,24 +352,51 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["mistral", "search", "rag", "toolkit", "enterprise", "pipeline"],
+          "tags": [
+            "mistral",
+            "search",
+            "rag",
+            "toolkit",
+            "enterprise",
+            "pipeline"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Search Toolkit",
-            "alt": "Mistral Search Toolkit の概要。コンセプト: production search pipelines anywhere、対応環境: クラウド/オンプレ/エッジ、用途: RAG パイプライン構築、連携: Mistral フロンティアモデル、公開日: 2026-05-28、同日公開: Vibe エージェント + Physics AI。",
             "data": {
               "headline": "Mistral Search Toolkit: 本番検索パイプラインをどこでも",
               "tldr": "クラウド・オンプレ・エッジを問わず本番品質の検索パイプラインを構築できるツールキット。Mistral モデルを組み合わせた RAG 構築に最適化されている。",
               "points": [
-                {"label": "コンセプト", "value": "anywhere pipeline", "tone": "primary"},
-                {"label": "対応環境", "value": "クラウド/オンプレ/エッジ", "tone": "default"},
-                {"label": "用途", "value": "RAG パイプライン", "tone": "default"},
-                {"label": "連携", "value": "Mistral 各モデル", "tone": "info"},
-                {"label": "公開日", "value": "2026-05-28", "tone": "success"}
+                {
+                  "label": "コンセプト",
+                  "value": "anywhere pipeline",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対応環境",
+                  "value": "クラウド/オンプレ/エッジ",
+                  "tone": "default"
+                },
+                {
+                  "label": "用途",
+                  "value": "RAG パイプライン",
+                  "tone": "default"
+                },
+                {
+                  "label": "連携",
+                  "value": "Mistral 各モデル",
+                  "tone": "info"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026-05-28",
+                  "tone": "success"
+                }
               ],
               "context": "Vibe エージェント・Physics AI と同日公開。Mistral が企業 AI インフラの全スタック（エージェント・検索・科学 AI）を 1 日で拡充。",
               "impact": "開発者はエンドポイント変更なしにローカルから本番へ移行でき、エンタープライズ検索 AI の開発サイクルが短縮される。"
-            }
+            },
+            "caption": "Search Toolkit",
+            "alt": "Mistral Search Toolkit の概要。コンセプト: production search pipelines anywhere、対応環境: クラウド/オンプレ/エッジ、用途: RAG パイプライン構築、連携: Mistral フロンティアモデル、公開日: 2026-05-28、同日公開: Vibe エージェント + Physics AI。"
           }
         },
         {
@@ -347,23 +425,45 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["docker", "ai-agent", "devops", "container", "gordon"],
+          "tags": [
+            "docker",
+            "ai-agent",
+            "devops",
+            "container",
+            "gordon"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Docker Gordon",
-            "alt": "Docker Gordon AI エージェントの概要。提供元: Docker、コスト: 登録ユーザー無料、専門領域: Docker 開発・管理、主な機能: Dockerfile 生成/コンテナデバッグ/compose 最適化、連携: Docker Desktop・Docker Hub、公開日: 2026-05-28。",
             "data": {
               "headline": "Docker Gordon: Docker 専門 AI エージェントが無料登場",
               "tldr": "Dockerfile 生成・コンテナトラブルシュート・compose 最適化を自律実行する Docker 専用 AI エージェント。登録ユーザーは無料で利用可能。",
               "points": [
-                {"label": "コスト", "value": "登録ユーザー無料", "tone": "success"},
-                {"label": "主機能", "value": "Dockerfile生成/デバッグ", "tone": "primary"},
-                {"label": "連携", "value": "Desktop/Hub", "tone": "default"},
-                {"label": "公開日", "value": "2026-05-28", "tone": "info"}
+                {
+                  "label": "コスト",
+                  "value": "登録ユーザー無料",
+                  "tone": "success"
+                },
+                {
+                  "label": "主機能",
+                  "value": "Dockerfile生成/デバッグ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "連携",
+                  "value": "Desktop/Hub",
+                  "tone": "default"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026-05-28",
+                  "tone": "info"
+                }
               ],
               "context": "コンテナ化の標準ツールである Docker が自社特化型 AI エージェントを提供することで、DevOps での AI 活用が本格化。",
               "impact": "Docker ユーザーは追加コストゼロで AI 支援を得られ、Dockerfile 作成やデバッグにかかる時間を削減できる。"
-            }
+            },
+            "caption": "Docker Gordon",
+            "alt": "Docker Gordon AI エージェントの概要。提供元: Docker、コスト: 登録ユーザー無料、専門領域: Docker 開発・管理、主な機能: Dockerfile 生成/コンテナデバッグ/compose 最適化、連携: Docker Desktop・Docker Hub、公開日: 2026-05-28。"
           }
         }
       ]
@@ -400,15 +500,26 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["mistral", "vibe", "agent", "vs-code", "coding-agent", "work-mode"],
+          "tags": [
+            "mistral",
+            "vibe",
+            "agent",
+            "vs-code",
+            "coding-agent",
+            "work-mode"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Work vs Code モード",
-            "alt": "Mistral Vibe の Work モードと Code モードの比較。動作場所: Le Chat vs VS Code 拡張、主な用途: 汎用多段タスク vs コーディング専用、ファイル操作: 限定的 vs 全ファイル読み書き、外部連携: Web検索 vs GitHub/GitLab/Jira/Linear、PR作成: 非対応 vs 対応、どちらも Mistral フロンティアモデルを基盤とする。",
             "data": {
               "headline": "Mistral Vibe: Work モードと Code モードで AI エージェントを全方位提供",
-              "before": {"label": "Work Mode", "sublabel": "Le Chat 上で動作"},
-              "after": {"label": "Code Mode", "sublabel": "VS Code 拡張で動作"},
+              "before": {
+                "label": "Work Mode",
+                "sublabel": "Le Chat 上で動作"
+              },
+              "after": {
+                "label": "Code Mode",
+                "sublabel": "VS Code 拡張で動作"
+              },
               "metrics": [
                 {
                   "label": "動作場所",
@@ -449,7 +560,9 @@
               ],
               "narrative": "汎用 Work モードと専用 Code モードの 2 本柱で、ビジネスタスクから開発タスクまでをカバー。Mistral が Claude Code・Codex の対抗馬を正式公開。",
               "impact": "VS Code ユーザーは拡張インストールのみで Mistral コーディングエージェントを IDE に統合でき、コードベース全体を文脈として活用した自律開発が可能になる。"
-            }
+            },
+            "caption": "Work vs Code モード",
+            "alt": "Mistral Vibe の Work モードと Code モードの比較。動作場所: Le Chat vs VS Code 拡張、主な用途: 汎用多段タスク vs コーディング専用、ファイル操作: 限定的 vs 全ファイル読み書き、外部連携: Web検索 vs GitHub/GitLab/Jira/Linear、PR作成: 非対応 vs 対応、どちらも Mistral フロンティアモデルを基盤とする。"
           }
         },
         {
@@ -480,15 +593,26 @@
             "source_type_bias": 1,
             "seen_penalty": -2
           },
-          "reaction_signal": {"kind": "semantic_scholar", "citation_count": 0},
-          "tags": ["agent", "skill-optimization", "llm", "benchmark", "microsoft", "arxiv"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
+          "tags": [
+            "agent",
+            "skill-optimization",
+            "llm",
+            "benchmark",
+            "microsoft",
+            "arxiv"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "SkillOpt 精度向上",
-            "alt": "SkillOpt によるエージェントスキル最適化の精度向上。GPT-5.5 直接チャット: +23.5pt（100%バー）、GPT-5.5 Codex ハーネス: +24.8pt（最高値）、GPT-5.5 Claude Code: +19.1pt、52 評価セル全制覇: 100%（6ベンチマーク×7モデル×3ハーネス）。",
             "data": {
               "headline": "SkillOpt: 全 52 評価セルで最高スコア・GPT-5.5 で +23.5pt 向上",
-              "scale": {"max_label": "最高改善幅 +24.8pt", "unit": "pt"},
+              "scale": {
+                "max_label": "最高改善幅 +24.8pt",
+                "unit": "pt"
+              },
               "bars": [
                 {
                   "label": "Codex ハーネス",
@@ -525,7 +649,9 @@
               ],
               "narrative": "Microsoft・上海交大らが開発。スキルをテキスト状態として最適化することでゼロ推論オーバーヘッドを実現。6 ベンチマーク×7 モデル×3 ハーネスで全勝。",
               "impact": "GitHub で実装公開済み。Codex・Claude Code のエージェントスキルをテキスト最適化で自動向上させる実用フレームワークとして即試せる。"
-            }
+            },
+            "caption": "SkillOpt 精度向上",
+            "alt": "SkillOpt によるエージェントスキル最適化の精度向上。GPT-5.5 直接チャット: +23.5pt（100%バー）、GPT-5.5 Codex ハーネス: +24.8pt（最高値）、GPT-5.5 Claude Code: +19.1pt、52 評価セル全制覇: 100%（6ベンチマーク×7モデル×3ハーネス）。"
           }
         }
       ]
@@ -562,15 +688,26 @@
             "source_type_bias": 0,
             "seen_penalty": -1
           },
-          "tags": ["multimodal", "video", "image", "bytedance", "lance", "unified-model"],
+          "tags": [
+            "multimodal",
+            "video",
+            "image",
+            "bytedance",
+            "lance",
+            "unified-model"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "分離型 vs Lance",
-            "alt": "従来の分離型マルチモーダルアーキテクチャと Lance の比較。従来: 理解・生成・編集をそれぞれ専用モデル（3モデル以上）で担当、パラメータ効率低、文脈共有なし。Lance: 単一統合モデル、デュアルストリーム、マルチタスク協調学習、タスク間相互強化（Multi-Task Synergy）、HF公開済み。",
             "data": {
               "headline": "Lance: 理解・生成・編集を1モデルで統合する Multi-Task Synergy",
-              "before": {"label": "従来分離型", "sublabel": "専用モデル×3以上"},
-              "after": {"label": "Lance", "sublabel": "単一統合モデル"},
+              "before": {
+                "label": "従来分離型",
+                "sublabel": "専用モデル×3以上"
+              },
+              "after": {
+                "label": "Lance",
+                "sublabel": "単一統合モデル"
+              },
               "metrics": [
                 {
                   "label": "モデル数",
@@ -614,7 +751,9 @@
               ],
               "narrative": "ByteDance Research が提案する Multi-Task Synergy は、異タスク間の知識共有で全タスクのパフォーマンスを底上げする設計思想。大規模マルチモーダル統合の新たな方向性を示す。",
               "impact": "HuggingFace から即時ダウンロード可能。動画理解・生成・テキスト誘導編集を単一モデルで試せる。"
-            }
+            },
+            "caption": "分離型 vs Lance",
+            "alt": "従来の分離型マルチモーダルアーキテクチャと Lance の比較。従来: 理解・生成・編集をそれぞれ専用モデル（3モデル以上）で担当、パラメータ効率低、文脈共有なし。Lance: 単一統合モデル、デュアルストリーム、マルチタスク協調学習、タスク間相互強化（Multi-Task Synergy）、HF公開済み。"
           }
         },
         {
@@ -643,24 +782,51 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["video-generation", "nvfp4", "parallel", "diffusion", "long-video", "arxiv"],
+          "tags": [
+            "video-generation",
+            "nvfp4",
+            "parallel",
+            "diffusion",
+            "long-video",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "LongLive-2.0",
-            "alt": "LongLive-2.0 の概要。技術: NVFP4 量子化 + シーケンス並列自己回帰学習 + Diffusion チューニング、解決課題: 長尺動画生成の GPU メモリ・通信コストボトルネック、対象GPU: NVIDIA Hopper/Blackwell、HF Trending: 111 upvotes、arXiv: 2605.18739。",
             "data": {
               "headline": "LongLive-2.0: NVFP4 並列インフラで長尺動画生成の壁を突破",
               "tldr": "NVFP4 量子化とシーケンス並列学習の組み合わせで、GPU メモリ・通信コストが壁だった長尺高品質動画の大規模生成を実現するフレームワーク。",
               "points": [
-                {"label": "量子化", "value": "NVFP4 (4-bit)", "tone": "primary"},
-                {"label": "学習手法", "value": "シーケンス並列 AR", "tone": "default"},
-                {"label": "対象GPU", "value": "Hopper/Blackwell", "tone": "info"},
-                {"label": "HF Trending", "value": "111 upvotes", "tone": "success"},
-                {"label": "arXiv", "value": "2605.18739", "tone": "default"}
+                {
+                  "label": "量子化",
+                  "value": "NVFP4 (4-bit)",
+                  "tone": "primary"
+                },
+                {
+                  "label": "学習手法",
+                  "value": "シーケンス並列 AR",
+                  "tone": "default"
+                },
+                {
+                  "label": "対象GPU",
+                  "value": "Hopper/Blackwell",
+                  "tone": "info"
+                },
+                {
+                  "label": "HF Trending",
+                  "value": "111 upvotes",
+                  "tone": "success"
+                },
+                {
+                  "label": "arXiv",
+                  "value": "2605.18739",
+                  "tone": "default"
+                }
               ],
               "context": "従来の長尺動画生成は GPU メモリと通信コストがボトルネック。LongLive-2.0 は NVFP4 で訓練・推論の両コストを削減し実用化を加速。",
               "impact": "Hopper/Blackwell GPU 環境での長尺動画生成コスト削減に直結。商用動画生成サービスへの応用が加速する可能性がある。"
-            }
+            },
+            "caption": "LongLive-2.0",
+            "alt": "LongLive-2.0 の概要。技術: NVFP4 量子化 + シーケンス並列自己回帰学習 + Diffusion チューニング、解決課題: 長尺動画生成の GPU メモリ・通信コストボトルネック、対象GPU: NVIDIA Hopper/Blackwell、HF Trending: 111 upvotes、arXiv: 2605.18739。"
           }
         }
       ]
@@ -696,24 +862,52 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["asr", "speech-recognition", "audio", "robustness", "acoustic", "arxiv"],
+          "tags": [
+            "asr",
+            "speech-recognition",
+            "audio",
+            "robustness",
+            "acoustic",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Mega-ASR",
-            "alt": "Mega-ASR の概要。研究対象: in-the-wild² 音声（騒音+残響+品質劣化の複合）、手法: Compound-Data Construction + Progressive Acoustic-to-Semantic Optimization、改善効果: 複合劣化環境での認識ロバスト性向上、HF Trending: 131 upvotes、arXiv: 2605.19833。",
             "data": {
               "headline": "Mega-ASR: 複合劣化環境の音声認識ロバスト性をシミュレーション拡大で改善",
               "tldr": "騒音・残響・録音品質劣化が重なる「in-the-wild²」条件での ASR 精度を、実世界音響シミュレーション拡大 + 複合データ構築 + 段階的最適化で引き上げる研究。",
               "points": [
-                {"label": "対象環境", "value": "in-the-wild²", "tone": "warning", "note": "騒音+残響+劣化の複合"},
-                {"label": "手法①", "value": "複合データ構築", "tone": "primary"},
-                {"label": "手法②", "value": "段階的最適化", "tone": "primary"},
-                {"label": "HF Trending", "value": "131 upvotes", "tone": "success"},
-                {"label": "arXiv", "value": "2605.19833", "tone": "default"}
+                {
+                  "label": "対象環境",
+                  "value": "in-the-wild²",
+                  "tone": "warning",
+                  "note": "騒音+残響+劣化の複合"
+                },
+                {
+                  "label": "手法①",
+                  "value": "複合データ構築",
+                  "tone": "primary"
+                },
+                {
+                  "label": "手法②",
+                  "value": "段階的最適化",
+                  "tone": "primary"
+                },
+                {
+                  "label": "HF Trending",
+                  "value": "131 upvotes",
+                  "tone": "success"
+                },
+                {
+                  "label": "arXiv",
+                  "value": "2605.19833",
+                  "tone": "default"
+                }
               ],
               "context": "クリーン音声で訓練された ASR は実世界の複合劣化に弱い。Mega-ASR は大規模音響シミュレーションで訓練データを拡充し、段階的最適化でロバスト性を確立。",
               "impact": "遠端会議・屋外取材・工場環境など劣化音声シナリオでの ASR システム精度が向上し、音声 AI の実用域が広がる。"
-            }
+            },
+            "caption": "Mega-ASR",
+            "alt": "Mega-ASR の概要。研究対象: in-the-wild² 音声（騒音+残響+品質劣化の複合）、手法: Compound-Data Construction + Progressive Acoustic-to-Semantic Optimization、改善効果: 複合劣化環境での認識ロバスト性向上、HF Trending: 131 upvotes、arXiv: 2605.19833。"
           }
         },
         {
@@ -742,24 +936,50 @@
             "source_type_bias": 1,
             "seen_penalty": -2
           },
-          "tags": ["autonomous-research", "multi-agent", "ai-scientist", "human-ai", "arxiv"],
+          "tags": [
+            "autonomous-research",
+            "multi-agent",
+            "ai-scientist",
+            "human-ai",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AutoResearchClaw",
-            "alt": "AutoResearchClaw の概要。5 機能: 構造化討論/自己修復実行/検証可能レポート/人間協調/進化的学習、目的: 科学的発見の自律的加速、HF Trending: 184 upvotes (2回目掲載)、arXiv: 2605.20025。",
             "data": {
               "headline": "AutoResearchClaw: 5 機能で信頼性の高い自律研究を実現",
               "tldr": "構造化討論・自己修復・検証可能レポート・人間協調・進化学習の 5 機能でマルチエージェントが科学的発見を自律的に加速するシステム。HF Trending 184 upvotes。",
               "points": [
-                {"label": "構造化討論", "value": "エージェント間議論", "tone": "primary"},
-                {"label": "自己修復", "value": "実行エラー自動回復", "tone": "success"},
-                {"label": "検証可能", "value": "レポート検証機能", "tone": "info"},
-                {"label": "人間協調", "value": "Human-AI Collab", "tone": "default"},
-                {"label": "HF Trending", "value": "184 upvotes", "tone": "success"}
+                {
+                  "label": "構造化討論",
+                  "value": "エージェント間議論",
+                  "tone": "primary"
+                },
+                {
+                  "label": "自己修復",
+                  "value": "実行エラー自動回復",
+                  "tone": "success"
+                },
+                {
+                  "label": "検証可能",
+                  "value": "レポート検証機能",
+                  "tone": "info"
+                },
+                {
+                  "label": "人間協調",
+                  "value": "Human-AI Collab",
+                  "tone": "default"
+                },
+                {
+                  "label": "HF Trending",
+                  "value": "184 upvotes",
+                  "tone": "success"
+                }
               ],
               "context": "AI による完全自動研究の信頼性問題を、構造化討論と検証可能レポートで解決するアプローチ。",
               "impact": "文献調査→仮説生成→実験設計→レポートを AI が一連で担う自律研究パートナーの実用化に向けた重要な前進。"
-            }
+            },
+            "caption": "AutoResearchClaw",
+            "alt": "AutoResearchClaw の概要。5 機能: 構造化討論/自己修復実行/検証可能レポート/人間協調/進化的学習、目的: 科学的発見の自律的加速、HF Trending: 184 upvotes (2回目掲載)、arXiv: 2605.20025。"
           }
         }
       ]
@@ -797,14 +1017,22 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["anthropic", "funding", "series-h", "valuation", "ipo", "investment"],
+          "tags": [
+            "anthropic",
+            "funding",
+            "series-h",
+            "valuation",
+            "ipo",
+            "investment"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Series H 概要",
-            "alt": "Anthropic Series H の主要指標。調達額: $65B（650億ドル）100%バー、評価額: $965B（9,650億ドル）、ランレート収益: $47B+、Amazon出資: $5B、Altimeter/Sequoia/Dragoneer/Greenoaks がリード。",
             "data": {
               "headline": "Anthropic Series H: $965B 評価額・$47B ランレートでほぼ 1 兆ドル企業へ",
-              "scale": {"max_label": "$65B（調達最大値）", "unit": "$B"},
+              "scale": {
+                "max_label": "$65B（調達最大値）",
+                "unit": "$B"
+              },
               "bars": [
                 {
                   "label": "調達額",
@@ -837,7 +1065,9 @@
               ],
               "narrative": "リード: Altimeter・Dragoneer・Greenoaks・Sequoia。参加: Amazon・Micron・Samsung・SK hynix・BlackRock・Fidelity・Temasek 等。IPO 前最後の大型ラウンドとの見方が有力。",
               "impact": "AI 産業への資本集中が加速。Anthropic の Claude 計算リソース確保・安全研究投資・グローバル展開のすべてが加速する。"
-            }
+            },
+            "caption": "Series H 概要",
+            "alt": "Anthropic Series H の主要指標。調達額: $65B（650億ドル）100%バー、評価額: $965B（9,650億ドル）、ランレート収益: $47B+、Amazon出資: $5B、Altimeter/Sequoia/Dragoneer/Greenoaks がリード。"
           }
         },
         {
@@ -866,24 +1096,51 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["snowflake", "aws", "ai-chips", "trainium", "nvidia", "enterprise"],
+          "tags": [
+            "snowflake",
+            "aws",
+            "ai-chips",
+            "trainium",
+            "nvidia",
+            "enterprise"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Snowflake × AWS 契約",
-            "alt": "Snowflake と AWS の AI チップ契約の概要。契約規模: $6B（60億ドル）、期間: 5年間、チップ: AWS AI専用CPU（Trainium/Inferentia系）、意義: Nvidia GPU からの大規模転換事例、業界への示唆: AI チップ多様化加速、発表日: 2026-05-27。",
             "data": {
               "headline": "Snowflake × AWS: $6B・5 年の AI チップ契約で Nvidia 依存を分散",
               "tldr": "Snowflake が AWS AI 専用チップを $6B・5 年で大量調達。Nvidia GPU 以外の選択肢への大規模移行を示す業界注目の契約。",
               "points": [
-                {"label": "契約規模", "value": "$6B（60億ドル）", "tone": "primary"},
-                {"label": "期間", "value": "5 年間", "tone": "default"},
-                {"label": "調達先", "value": "AWS（Trainium系）", "tone": "info"},
-                {"label": "背景", "value": "Nvidia 依存分散", "tone": "warning"},
-                {"label": "発表日", "value": "2026-05-27", "tone": "default"}
+                {
+                  "label": "契約規模",
+                  "value": "$6B（60億ドル）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "期間",
+                  "value": "5 年間",
+                  "tone": "default"
+                },
+                {
+                  "label": "調達先",
+                  "value": "AWS（Trainium系）",
+                  "tone": "info"
+                },
+                {
+                  "label": "背景",
+                  "value": "Nvidia 依存分散",
+                  "tone": "warning"
+                },
+                {
+                  "label": "発表日",
+                  "value": "2026-05-27",
+                  "tone": "default"
+                }
               ],
               "context": "AI チップ需要が急増する中、Snowflake は GPU 以外の選択肢として AWS Trainium/Inferentia を選択。コスト削減と調達リスク分散が主な動機とみられる。",
               "impact": "大手クラウドユーザーの AWS カスタムシリコン採用事例として、AI インフラ市場の Nvidia 一極集中が緩和に向かう可能性を示す重要事例。"
-            }
+            },
+            "caption": "Snowflake × AWS 契約",
+            "alt": "Snowflake と AWS の AI チップ契約の概要。契約規模: $6B（60億ドル）、期間: 5年間、チップ: AWS AI専用CPU（Trainium/Inferentia系）、意義: Nvidia GPU からの大規模転換事例、業界への示唆: AI チップ多様化加速、発表日: 2026-05-27。"
           }
         }
       ]
@@ -919,11 +1176,16 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["japan", "government-ai", "genai", "policy", "digital-government", "llm"],
+          "tags": [
+            "japan",
+            "government-ai",
+            "genai",
+            "policy",
+            "digital-government",
+            "llm"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Genai 展開計画",
-            "alt": "日本政府 AI Genai の展開タイムライン。2026年4月: 開発完了・試験運用、2026年5月28日: 全省庁パイロット開始（10万人）、2026年度内: 全面展開目標。",
             "data": {
               "headline": "日本政府 AI Genai: 全省庁パイロット→年度内全面展開",
               "events": [
@@ -951,7 +1213,9 @@
               ],
               "narrative": "民間 LLM を活用しつつも機密行政データを外部送信しないセキュア設計。日本政府のデジタル行政推進の象徴的取り組み。",
               "impact": "約 10 万人の公務員の業務 AI 活用が開始し、行政の生産性向上と AI 政策リテラシー向上が期待される。"
-            }
+            },
+            "caption": "Genai 展開計画",
+            "alt": "日本政府 AI Genai の展開タイムライン。2026年4月: 開発完了・試験運用、2026年5月28日: 全省庁パイロット開始（10万人）、2026年度内: 全面展開目標。"
           }
         }
       ]
@@ -994,26 +1258,61 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "users": 783},
-          "tags": ["claude-code", "claude-md", "skills", "beginner", "japan", "tutorial"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 783
+          },
+          "tags": [
+            "claude-code",
+            "claude-md",
+            "skills",
+            "beginner",
+            "japan",
+            "tutorial"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code 入門",
-            "alt": "Claude Code 超入門ガイドの概要。対象: 初心者、目標: 1日でCLAUDE.md+skills構築、3ステップ: CLAUDE.md作成/skills設計/エージェント指示、はてブ: 783ブクマ（今週最大）、出典: NewsPicks(2026/05/27)。",
             "data": {
               "headline": "はてブ 783 ブクマ: Claude Code の CLAUDE.md+skills を 1 日で構築する最短手順",
               "tldr": "初心者が CLAUDE.md とスキルファイルを 1 日で完成させるための段階的ガイド。日本の開発者コミュニティで今週最大の反響を記録した実用記事。",
               "points": [
-                {"label": "はてブ", "value": "783 ブクマ", "tone": "success", "note": "今週最大の反響"},
-                {"label": "ステップ①", "value": "CLAUDE.md 作成", "tone": "primary"},
-                {"label": "ステップ②", "value": "skills ディレクトリ", "tone": "primary"},
-                {"label": "ステップ③", "value": "エージェント指示法", "tone": "primary"},
-                {"label": "対象", "value": "初心者", "tone": "info"},
-                {"label": "目標", "value": "1日で完成", "tone": "success"}
+                {
+                  "label": "はてブ",
+                  "value": "783 ブクマ",
+                  "tone": "success",
+                  "note": "今週最大の反響"
+                },
+                {
+                  "label": "ステップ①",
+                  "value": "CLAUDE.md 作成",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ステップ②",
+                  "value": "skills ディレクトリ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ステップ③",
+                  "value": "エージェント指示法",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象",
+                  "value": "初心者",
+                  "tone": "info"
+                },
+                {
+                  "label": "目標",
+                  "value": "1日で完成",
+                  "tone": "success"
+                }
               ],
               "context": "Claude Code の設定ドキュメントが分散している現状で、「1 日で完成できる最短手順」にフォーカスした点が開発者に刺さった。",
               "impact": "日本の開発者コミュニティでエージェント活用が実践段階に移行していることを示す象徴的コンテンツ。"
-            }
+            },
+            "caption": "Claude Code 入門",
+            "alt": "Claude Code 超入門ガイドの概要。対象: 初心者、目標: 1日でCLAUDE.md+skills構築、3ステップ: CLAUDE.md作成/skills設計/エージェント指示、はてブ: 783ブクマ（今週最大）、出典: NewsPicks(2026/05/27)。"
           }
         },
         {
@@ -1042,24 +1341,51 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["lycorp", "lineyahoo", "agents", "meetup", "orchestration", "japan"],
+          "tags": [
+            "lycorp",
+            "lineyahoo",
+            "agents",
+            "meetup",
+            "orchestration",
+            "japan"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Agents Meetup #3",
-            "alt": "LINEヤフー Development with Agents Meetup #3 の概要。開催回数: 第3回、主要議題: オーケストレーション/AI エージェント開発実践、参加者: LINEヤフーおよび外部エンジニア、日付: 2026-05-27、関連記事: リスクベース×AIエージェントによる探索的テスト。",
             "data": {
               "headline": "LINEヤフー Agents Meetup #3: オーケストレーションとエージェント開発の知見を共有",
               "tldr": "第 3 回のエージェント開発 meetup。オーケストレーション・AI エージェント開発の実践知見を社内外エンジニアが共有し、日本エンタープライズのエージェント活用が組織的に深化していることを示す。",
               "points": [
-                {"label": "開催回数", "value": "第 3 回", "tone": "primary"},
-                {"label": "主議題", "value": "オーケストレーション", "tone": "default"},
-                {"label": "サブ議題", "value": "エージェント実装", "tone": "default"},
-                {"label": "開催日", "value": "2026-05-27", "tone": "info"},
-                {"label": "関連記事", "value": "探索的テスト実践", "tone": "success"}
+                {
+                  "label": "開催回数",
+                  "value": "第 3 回",
+                  "tone": "primary"
+                },
+                {
+                  "label": "主議題",
+                  "value": "オーケストレーション",
+                  "tone": "default"
+                },
+                {
+                  "label": "サブ議題",
+                  "value": "エージェント実装",
+                  "tone": "default"
+                },
+                {
+                  "label": "開催日",
+                  "value": "2026-05-27",
+                  "tone": "info"
+                },
+                {
+                  "label": "関連記事",
+                  "value": "探索的テスト実践",
+                  "tone": "success"
+                }
               ],
               "context": "LINEヤフーが継続的に Agents Meetup を開催することで、日本のエンタープライズにおける AI エージェント開発の知見交流が制度化されつつある。",
               "impact": "大手 IT 企業のエージェント活用が組織的に深化しており、日本企業における AI エージェント実装のベストプラクティスが蓄積されている。"
-            }
+            },
+            "caption": "Agents Meetup #3",
+            "alt": "LINEヤフー Development with Agents Meetup #3 の概要。開催回数: 第3回、主要議題: オーケストレーション/AI エージェント開発実践、参加者: LINEヤフーおよび外部エンジニア、日付: 2026-05-27、関連記事: リスクベース×AIエージェントによる探索的テスト。"
           }
         },
         {
@@ -1088,25 +1414,55 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "users": 240},
-          "tags": ["claude-code", "security", "vulnerability", "anthropic", "plugin", "japan"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 240
+          },
+          "tags": [
+            "claude-code",
+            "security",
+            "vulnerability",
+            "anthropic",
+            "plugin",
+            "japan"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "脆弱性自動修正",
-            "alt": "Claude Code 脆弱性自動修正プラグインの概要。機能: 脆弱性自動検出/修正提案/確認後パッチ適用、関連: Project Glasswing（Anthropic）、はてブ: 240ブクマ、効果: コードレビュー工数削減+見落としリスク低減、対象: Claude Code ユーザー。",
             "data": {
               "headline": "Claude Code 脆弱性自動修正プラグイン: 検出→提案→パッチ適用の 3 ステップで自動化",
               "tldr": "コードベースの脆弱性を自動検出し修正提案、開発者確認後に自動パッチ適用まで担う Claude Code 向けセキュリティプラグイン。はてブ 240 ブクマで注目。",
               "points": [
-                {"label": "はてブ", "value": "240 ブクマ", "tone": "success"},
-                {"label": "機能①", "value": "脆弱性自動検出", "tone": "primary"},
-                {"label": "機能②", "value": "修正提案", "tone": "primary"},
-                {"label": "機能③", "value": "確認後パッチ適用", "tone": "success"},
-                {"label": "関連", "value": "Project Glasswing", "tone": "info"}
+                {
+                  "label": "はてブ",
+                  "value": "240 ブクマ",
+                  "tone": "success"
+                },
+                {
+                  "label": "機能①",
+                  "value": "脆弱性自動検出",
+                  "tone": "primary"
+                },
+                {
+                  "label": "機能②",
+                  "value": "修正提案",
+                  "tone": "primary"
+                },
+                {
+                  "label": "機能③",
+                  "value": "確認後パッチ適用",
+                  "tone": "success"
+                },
+                {
+                  "label": "関連",
+                  "value": "Project Glasswing",
+                  "tone": "info"
+                }
               ],
               "context": "Anthropic の Project Glasswing（インフラ脆弱性保護イニシアチブ）と連携する形での Claude Code 機能拡張。AI セキュリティ自動化の実用化が加速。",
               "impact": "セキュリティエンジニアのコードレビュー工数を削減しつつ脆弱性見落としリスクを低減。Claude Code ユーザーが即日利用可能。"
-            }
+            },
+            "caption": "脆弱性自動修正",
+            "alt": "Claude Code 脆弱性自動修正プラグインの概要。機能: 脆弱性自動検出/修正提案/確認後パッチ適用、関連: Project Glasswing（Anthropic）、はてブ: 240ブクマ、効果: コードレビュー工数削減+見落としリスク低減、対象: Claude Code ユーザー。"
           }
         },
         {
@@ -1135,16 +1491,30 @@
             "source_type_bias": 0,
             "seen_penalty": -1
           },
-          "reaction_signal": {"kind": "hatena", "users": 107},
-          "tags": ["sqlite", "rag", "hybrid-search", "vector-search", "fts5", "japan"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 107
+          },
+          "tags": [
+            "sqlite",
+            "rag",
+            "hybrid-search",
+            "vector-search",
+            "fts5",
+            "japan"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "外部DB vs SQLite RAG",
-            "alt": "従来の外部ベクトル DB RAG と SQLite ハイブリッド RAG の比較。外部DB: pgvector/Weaviate 必要、追加インフラあり、コスト高、セットアップ複雑。SQLite RAG: DB不要、インフラゼロ、コスト最小、Python標準で動作、FTS5+ベクトル検索で高精度、GitHub公開済み。",
             "data": {
               "headline": "SQLite ハイブリッド RAG: 外部 DB 不要でベクトル+全文検索を同時実現",
-              "before": {"label": "外部ベクトル DB", "sublabel": "pgvector / Weaviate 等"},
-              "after": {"label": "SQLite RAG", "sublabel": "FTS5 + sqlite-vec"},
+              "before": {
+                "label": "外部ベクトル DB",
+                "sublabel": "pgvector / Weaviate 等"
+              },
+              "after": {
+                "label": "SQLite RAG",
+                "sublabel": "FTS5 + sqlite-vec"
+              },
               "metrics": [
                 {
                   "label": "外部インフラ",
@@ -1186,7 +1556,9 @@
               ],
               "narrative": "SQLite の FTS5 + sqlite-vec を組み合わせた日本語対応ハイブリッド検索 RAG の実装例。GitHub で公開済み。",
               "impact": "個人開発者や小規模チームが追加コストゼロでハイブリッド検索 RAG を試せる。pgvector 等の外部 DB を前提としていた RAG 開発の障壁が大幅に下がる。"
-            }
+            },
+            "caption": "外部DB vs SQLite RAG",
+            "alt": "従来の外部ベクトル DB RAG と SQLite ハイブリッド RAG の比較。外部DB: pgvector/Weaviate 必要、追加インフラあり、コスト高、セットアップ複雑。SQLite RAG: DB不要、インフラゼロ、コスト最小、Python標準で動作、FTS5+ベクトル検索で高精度、GitHub公開済み。"
           }
         },
         {
@@ -1215,26 +1587,60 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": {"kind": "hatena", "users": 187},
-          "tags": ["claude-code", "productivity", "japan", "slides", "engineering", "workflow"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 187
+          },
+          "tags": [
+            "claude-code",
+            "productivity",
+            "japan",
+            "slides",
+            "engineering",
+            "workflow"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "業務爆速化スライド",
-            "alt": "Claude Code で日常業務を爆速化するスライドの概要。はてブ: 187ブクマ、活用シーン: コード作成/ドキュメント生成/テスト自動化/PR作成/レビュー補助、形式: 実務体験談スライド、公開場所: SpeakerDeck、日付: 2026-05-28。",
             "data": {
               "headline": "はてブ 187 ブクマ: Claude Code 業務全般活用の実務体験談スライド",
               "tldr": "コード作成からドキュメント・テスト・PR・レビューまで業務全般の Claude Code 活用を実務ベースで紹介。「実際にどう使うか」の一次証言が刺さった。",
               "points": [
-                {"label": "はてブ", "value": "187 ブクマ", "tone": "success"},
-                {"label": "活用①", "value": "コード作成", "tone": "primary"},
-                {"label": "活用②", "value": "ドキュメント生成", "tone": "primary"},
-                {"label": "活用③", "value": "テスト自動化", "tone": "primary"},
-                {"label": "活用④", "value": "PR 作成・レビュー", "tone": "primary"},
-                {"label": "形式", "value": "実務体験談", "tone": "info"}
+                {
+                  "label": "はてブ",
+                  "value": "187 ブクマ",
+                  "tone": "success"
+                },
+                {
+                  "label": "活用①",
+                  "value": "コード作成",
+                  "tone": "primary"
+                },
+                {
+                  "label": "活用②",
+                  "value": "ドキュメント生成",
+                  "tone": "primary"
+                },
+                {
+                  "label": "活用③",
+                  "value": "テスト自動化",
+                  "tone": "primary"
+                },
+                {
+                  "label": "活用④",
+                  "value": "PR 作成・レビュー",
+                  "tone": "primary"
+                },
+                {
+                  "label": "形式",
+                  "value": "実務体験談",
+                  "tone": "info"
+                }
               ],
               "context": "2026/05/28 に複数の Claude Code 活用記事が高ブクマを同時記録。日本の開発者コミュニティでエージェント実践活用が急速に広がっていることが可視化された。",
               "impact": "日本のエンジニアが Claude Code を実務で活用し始めていることを示す一次資料。コーディング以外の業務全般への応用例が参考になる。"
-            }
+            },
+            "caption": "業務爆速化スライド",
+            "alt": "Claude Code で日常業務を爆速化するスライドの概要。はてブ: 187ブクマ、活用シーン: コード作成/ドキュメント生成/テスト自動化/PR作成/レビュー補助、形式: 実務体験談スライド、公開場所: SpeakerDeck、日付: 2026-05-28。"
           }
         }
       ]
@@ -1270,24 +1676,51 @@
             "source_type_bias": 0,
             "seen_penalty": -1
           },
-          "tags": ["kuaishou", "keye2", "dsa-attention", "multimodal", "reasoning", "china"],
+          "tags": [
+            "kuaishou",
+            "keye2",
+            "dsa-attention",
+            "multimodal",
+            "reasoning",
+            "china"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Keye2.0",
-            "alt": "快手 Keye2.0 の概要。開発元: 快手（Kuaishou）、新技術: DSA（Dynamic Sparse Attention）のマルチモーダル統合、目的: 強化推論のパラダイム転換、特徴: 計算効率+長文脈処理の両立、発表日: 2026-05-27。",
             "data": {
               "headline": "快手 Keye2.0: DSA アテンションでマルチモーダル強化推論の新パラダイム",
               "tldr": "中国大手動画企業・快手が独自の DSA（Dynamic Sparse Attention）アテンション機構をマルチモーダルモデルに統合し、複雑な推論能力の向上を実現した Keye2.0 を発表。",
               "points": [
-                {"label": "開発元", "value": "快手（Kuaishou）", "tone": "primary"},
-                {"label": "新技術", "value": "DSA アテンション", "tone": "info"},
-                {"label": "対象", "value": "マルチモーダル推論", "tone": "default"},
-                {"label": "特徴", "value": "効率+長文脈処理", "tone": "success"},
-                {"label": "発表日", "value": "2026-05-27", "tone": "default"}
+                {
+                  "label": "開発元",
+                  "value": "快手（Kuaishou）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "新技術",
+                  "value": "DSA アテンション",
+                  "tone": "info"
+                },
+                {
+                  "label": "対象",
+                  "value": "マルチモーダル推論",
+                  "tone": "default"
+                },
+                {
+                  "label": "特徴",
+                  "value": "効率+長文脈処理",
+                  "tone": "success"
+                },
+                {
+                  "label": "発表日",
+                  "value": "2026-05-27",
+                  "tone": "default"
+                }
               ],
               "context": "中国大手 IT 企業が独自アテンション機構を研究・実装する技術独自路線の事例。Keye2.0 は快手の AI 研究能力の成熟を示す。",
               "impact": "DSA アテンションのマルチモーダル応用という新アプローチが実証され、中国 AI 研究の技術的独自性が高まっている。"
-            }
+            },
+            "caption": "Keye2.0",
+            "alt": "快手 Keye2.0 の概要。開発元: 快手（Kuaishou）、新技術: DSA（Dynamic Sparse Attention）のマルチモーダル統合、目的: 強化推論のパラダイム転換、特徴: 計算効率+長文脈処理の両立、発表日: 2026-05-27。"
           }
         },
         {
@@ -1316,36 +1749,90 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["ai-coding", "software-industry", "china", "solo-developer", "productivity"],
+          "tags": [
+            "ai-coding",
+            "software-industry",
+            "china",
+            "solo-developer",
+            "productivity"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI×ソフトウェア変容",
-            "alt": "AI によるソフトウェア業界変容の事例。事例①: 8歳の子どもがOS開発、事例②: 1人会社が1,000万元（約2億円）の案件受注、背景: AI コーディングツール（Claude Code/Cursor系）の普及、示唆: 参入障壁の劇的低下・ソフトウェア業界の構造変化、出典: 量子位2026-05-28。",
             "data": {
               "headline": "AI がソフトウェア開発の参入障壁を解体——8 歳 OS 開発・1 人会社 2 億円受注",
               "tldr": "AI コーディングツールの普及で 8 歳の子が OS を開発し、1 人会社が 2 億円規模の案件を受注する時代に。中国でも同様の変化が急速に進行中。",
               "points": [
-                {"label": "事例①", "value": "8歳がOS開発", "tone": "primary"},
-                {"label": "事例②", "value": "1人会社2億円受注", "tone": "success"},
-                {"label": "背景", "value": "AI コーディング普及", "tone": "info"},
-                {"label": "地域", "value": "中国（量子位報道）", "tone": "default"},
-                {"label": "出典日", "value": "2026-05-28", "tone": "default"}
+                {
+                  "label": "事例①",
+                  "value": "8歳がOS開発",
+                  "tone": "primary"
+                },
+                {
+                  "label": "事例②",
+                  "value": "1人会社2億円受注",
+                  "tone": "success"
+                },
+                {
+                  "label": "背景",
+                  "value": "AI コーディング普及",
+                  "tone": "info"
+                },
+                {
+                  "label": "地域",
+                  "value": "中国（量子位報道）",
+                  "tone": "default"
+                },
+                {
+                  "label": "出典日",
+                  "value": "2026-05-28",
+                  "tone": "default"
+                }
               ],
               "context": "中国でも Claude Code・Cursor に相当する AI コーディングツールが急速に普及。ソフトウェア業界のビジネスモデルと人材市場が根本から変わりつつある。",
               "impact": "ソフトウェア開発の民主化が加速し、個人・小規模チームが大規模開発案件を担えるようになることで、業界の競争構造が大きく変化する。"
-            }
+            },
+            "caption": "AI×ソフトウェア変容",
+            "alt": "AI によるソフトウェア業界変容の事例。事例①: 8歳の子どもがOS開発、事例②: 1人会社が1,000万元（約2億円）の案件受注、背景: AI コーディングツール（Claude Code/Cursor系）の普及、示唆: 参入障壁の劇的低下・ソフトウェア業界の構造変化、出典: 量子位2026-05-28。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    {"source": "reddit.com (r/LocalLLaMA, r/MachineLearning, r/singularity, r/ClaudeAI, r/OpenAI)", "reason": "fetch blocked (connection error)", "fallback_used": "none"},
-    {"source": "theverge.com", "reason": "fetch blocked", "fallback_used": "none"},
-    {"source": "importai.substack.com", "reason": "403 Forbidden", "fallback_used": "none"},
-    {"source": "deeplearning.ai/the-batch", "reason": "404 Not Found", "fallback_used": "none"},
-    {"source": "arxiv.org Atom API", "reason": "429 Too Many Requests", "fallback_used": "huggingface.co/papers/trending"},
-    {"source": "venturebeat.com RSS", "reason": "feed stale (newest item May 19)", "fallback_used": "none"},
-    {"source": "latent.space", "reason": "not fetched", "fallback_used": "none"}
+    {
+      "source": "reddit.com (r/LocalLLaMA, r/MachineLearning, r/singularity, r/ClaudeAI, r/OpenAI)",
+      "reason": "fetch blocked (connection error)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "theverge.com",
+      "reason": "fetch blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "importai.substack.com",
+      "reason": "403 Forbidden",
+      "fallback_used": "none"
+    },
+    {
+      "source": "deeplearning.ai/the-batch",
+      "reason": "404 Not Found",
+      "fallback_used": "none"
+    },
+    {
+      "source": "arxiv.org Atom API",
+      "reason": "429 Too Many Requests",
+      "fallback_used": "huggingface.co/papers/trending"
+    },
+    {
+      "source": "venturebeat.com RSS",
+      "reason": "feed stale (newest item May 19)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "latent.space",
+      "reason": "not fetched",
+      "fallback_used": "none"
+    }
   ]
 }

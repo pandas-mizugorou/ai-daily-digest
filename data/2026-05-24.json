@@ -23,12 +23,36 @@
     }
   },
   "top_picks": [
-    {"id": "2026-05-24-003", "rank": 1, "reason": "must_read:source=anthropic+importance4+practicality5"},
-    {"id": "2026-05-24-012", "rank": 2, "reason": "must_read:importance4+depth4+practicality3=7"},
-    {"id": "2026-05-24-006", "rank": 3, "reason": "must_read:importance4+depth5+practicality2=7"},
-    {"id": "2026-05-24-018", "rank": 4, "reason": "must_read:hatena>=100+japan_guaranteed"},
-    {"id": "2026-05-24-015", "rank": 5, "reason": "diversity:community_buzz+github_trending_viral"},
-    {"id": "2026-05-24-009", "rank": 6, "reason": "diversity:research_papers+9erdos_problems"}
+    {
+      "id": "2026-05-24-003",
+      "rank": 1,
+      "reason": "must_read:source=anthropic+importance4+practicality5"
+    },
+    {
+      "id": "2026-05-24-012",
+      "rank": 2,
+      "reason": "must_read:importance4+depth4+practicality3=7"
+    },
+    {
+      "id": "2026-05-24-006",
+      "rank": 3,
+      "reason": "must_read:importance4+depth5+practicality2=7"
+    },
+    {
+      "id": "2026-05-24-018",
+      "rank": 4,
+      "reason": "must_read:hatena>=100+japan_guaranteed"
+    },
+    {
+      "id": "2026-05-24-015",
+      "rank": 5,
+      "reason": "diversity:community_buzz+github_trending_viral"
+    },
+    {
+      "id": "2026-05-24-009",
+      "rank": 6,
+      "reason": "diversity:research_papers+9erdos_problems"
+    }
   ],
   "categories": [
     {
@@ -62,24 +86,69 @@
             "source_type_bias": 0
           },
           "reaction_signal": null,
-          "tags": ["Cohere", "Command A+", "open-source", "enterprise", "126B", "LLM"],
+          "tags": [
+            "Cohere",
+            "Command A+",
+            "open-source",
+            "enterprise",
+            "126B",
+            "LLM"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Command A vs A+",
-            "alt": "Command A と Command A+ の比較図。パラメータ数は両者ともに大規模だが、Command A+ は RAG 精度・ツール使用・多言語対応・コンテキスト長すべてで向上している。オープンソース提供は A+ から継続。",
             "data": {
               "headline": "Command A → Command A+: 企業向け LLM の全面更新",
-              "before": {"label": "Command A", "sublabel": "前世代"},
-              "after": {"label": "Command A+", "sublabel": "126B・2026/05"},
+              "before": {
+                "label": "Command A",
+                "sublabel": "前世代"
+              },
+              "after": {
+                "label": "Command A+",
+                "sublabel": "126B・2026/05"
+              },
               "metrics": [
-                {"label": "RAG 精度", "before": "ベースライン", "after": "大幅向上", "before_pct": 60, "after_pct": 85, "delta": "↑", "delta_tone": "success"},
-                {"label": "ツール使用", "before": "対応", "after": "強化", "before_pct": 55, "after_pct": 80, "delta": "↑", "delta_tone": "success"},
-                {"label": "多言語", "before": "対応", "after": "精度向上", "before_pct": 60, "after_pct": 82, "delta": "↑", "delta_tone": "success"},
-                {"label": "OSS 公開", "before": "あり", "after": "あり", "before_pct": 100, "after_pct": 100, "delta": "維持", "delta_tone": "info"}
+                {
+                  "label": "RAG 精度",
+                  "before": "ベースライン",
+                  "after": "大幅向上",
+                  "before_pct": 60,
+                  "after_pct": 85,
+                  "delta": "↑",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "ツール使用",
+                  "before": "対応",
+                  "after": "強化",
+                  "before_pct": 55,
+                  "after_pct": 80,
+                  "delta": "↑",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "多言語",
+                  "before": "対応",
+                  "after": "精度向上",
+                  "before_pct": 60,
+                  "after_pct": 82,
+                  "delta": "↑",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "OSS 公開",
+                  "before": "あり",
+                  "after": "あり",
+                  "before_pct": 100,
+                  "after_pct": 100,
+                  "delta": "維持",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "Cohere は企業向け LLM 市場での競争力強化のため、126B パラメータを持つ Command A+ をオープンソースで公開した。",
               "impact": "自社インフラ展開を希望する企業にとって、Anthropic・OpenAI との差別化が明確になった選択肢が増える。"
-            }
+            },
+            "caption": "Command A vs A+",
+            "alt": "Command A と Command A+ の比較図。パラメータ数は両者ともに大規模だが、Command A+ は RAG 精度・ツール使用・多言語対応・コンテキスト長すべてで向上している。オープンソース提供は A+ から継続。"
           }
         },
         {
@@ -108,24 +177,59 @@
             "source_type_bias": 0
           },
           "reaction_signal": null,
-          "tags": ["MiniCPM", "vision-language", "1B", "edge-AI", "OpenBMB", "VLM"],
+          "tags": [
+            "MiniCPM",
+            "vision-language",
+            "1B",
+            "edge-AI",
+            "OpenBMB",
+            "VLM"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "MiniCPM-V-4.6",
-            "alt": "MiniCPM-V-4.6 の主要特徴まとめ。1B パラメータ・エッジデバイス対応・マルチモーダル処理・HF 247K いいね・トレンド 5 位という 5 つのポイントを構造化して示す。",
             "data": {
               "headline": "1B VLM「MiniCPM-V-4.6」が HF トレンド 5 位—超軽量マルチモーダル",
               "tldr": "OpenBMB が 1B パラメータの視覚言語モデルを公開。エッジデバイス推論を想定した超軽量設計で、画像・テキスト統合タスクの精度を v4.5 から改善した。HF で 247K いいねを獲得しトレンド上位入り。",
               "points": [
-                {"icon": "🏋️", "label": "パラメータ数", "value": "1B", "tone": "primary", "note": "超軽量エッジ向け設計"},
-                {"icon": "📊", "label": "HF いいね", "value": "247,000+", "tone": "success", "note": "HF トレンド 5 位"},
-                {"icon": "👁️", "label": "モデル種別", "value": "Image-Text-to-Text", "tone": "default"},
-                {"icon": "🔒", "label": "動作環境", "value": "ローカル推論可", "tone": "info", "note": "クラウド不要"},
-                {"icon": "📄", "label": "得意領域", "value": "文書解析・OCR", "tone": "default"}
+                {
+                  "icon": "🏋️",
+                  "label": "パラメータ数",
+                  "value": "1B",
+                  "tone": "primary",
+                  "note": "超軽量エッジ向け設計"
+                },
+                {
+                  "icon": "📊",
+                  "label": "HF いいね",
+                  "value": "247,000+",
+                  "tone": "success",
+                  "note": "HF トレンド 5 位"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "モデル種別",
+                  "value": "Image-Text-to-Text",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "動作環境",
+                  "value": "ローカル推論可",
+                  "tone": "info",
+                  "note": "クラウド不要"
+                },
+                {
+                  "icon": "📄",
+                  "label": "得意領域",
+                  "value": "文書解析・OCR",
+                  "tone": "default"
+                }
               ],
               "context": "MiniCPM シリーズは OpenBMB が継続開発する軽量 VLM ファミリー。スマートフォン・Raspberry Pi 等での動作実績あり。",
               "impact": "1B VLM の選択肢が広がることでエッジ AI アプリ開発のハードルが下がる。"
-            }
+            },
+            "caption": "MiniCPM-V-4.6",
+            "alt": "MiniCPM-V-4.6 の主要特徴まとめ。1B パラメータ・エッジデバイス対応・マルチモーダル処理・HF 247K いいね・トレンド 5 位という 5 つのポイントを構造化して示す。"
           }
         }
       ]
@@ -162,24 +266,61 @@
             "source_type_bias": 0
           },
           "reaction_signal": null,
-          "tags": ["Claude Code", "Anthropic", "developer-tools", "release", "MCP", "enterprise"],
+          "tags": [
+            "Claude Code",
+            "Anthropic",
+            "developer-tools",
+            "release",
+            "MCP",
+            "enterprise"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "v2.1.149 変更点",
-            "alt": "Claude Code 2.1.149 の主要変更点を示す構造化カード。/usage コマンド追加・diff スクロール改善・Markdown タスクリスト修正・Enterprise MCP 設定の 4 点が新機能として記載されている。",
             "data": {
               "headline": "Claude Code 2.1.149：使用量分析・diff・MCP の 3 軸を同時強化",
               "tldr": "5/23 リリースのメジャーフィーチャー版。/usage でトークン消費をカテゴリ別に可視化し、Enterprise MCP 一括許可設定を追加。UI・バグ修正も多数含む。",
               "points": [
-                {"icon": "📊", "label": "/usage", "value": "カテゴリ別使用量", "tone": "primary", "description": "モデル別・機能別トークン消費を /usage コマンドで可視化。コスト管理が容易に。"},
-                {"icon": "⌨️", "label": "diff 操作", "value": "キーボード改善", "tone": "success", "description": "diff スクロールがキーボードフレンドリーに。大量変更時の確認作業が高速化。"},
-                {"icon": "✅", "label": "Markdown", "value": "タスクリスト修正", "tone": "success", "description": "チェックボックス付きタスクリストが正しくレンダリングされるよう修正。"},
-                {"icon": "🔐", "label": "Enterprise", "value": "allowAllClaudeAiMcps", "tone": "info", "description": "全 Claude AI MCP サーバーへのアクセスをポリシーで一括許可できる新設定。"},
-                {"icon": "🐛", "label": "バグ修正", "value": "多領域", "tone": "default", "description": "パーミッション・UI・トランスクリプト・履歴・フィードバック等の多数のバグを解消。"}
+                {
+                  "icon": "📊",
+                  "label": "/usage",
+                  "value": "カテゴリ別使用量",
+                  "tone": "primary",
+                  "description": "モデル別・機能別トークン消費を /usage コマンドで可視化。コスト管理が容易に。"
+                },
+                {
+                  "icon": "⌨️",
+                  "label": "diff 操作",
+                  "value": "キーボード改善",
+                  "tone": "success",
+                  "description": "diff スクロールがキーボードフレンドリーに。大量変更時の確認作業が高速化。"
+                },
+                {
+                  "icon": "✅",
+                  "label": "Markdown",
+                  "value": "タスクリスト修正",
+                  "tone": "success",
+                  "description": "チェックボックス付きタスクリストが正しくレンダリングされるよう修正。"
+                },
+                {
+                  "icon": "🔐",
+                  "label": "Enterprise",
+                  "value": "allowAllClaudeAiMcps",
+                  "tone": "info",
+                  "description": "全 Claude AI MCP サーバーへのアクセスをポリシーで一括許可できる新設定。"
+                },
+                {
+                  "icon": "🐛",
+                  "label": "バグ修正",
+                  "value": "多領域",
+                  "tone": "default",
+                  "description": "パーミッション・UI・トランスクリプト・履歴・フィードバック等の多数のバグを解消。"
+                }
               ],
               "context": "Claude Code は Anthropic のターミナル型エージェントコーディングツール。2.1.149 は 2.1.150（インフラ更新のみ）とほぼ同日にリリースされた。",
               "impact": "/usage によるコスト可視化と MCP 一括設定が加わり、チームでの大規模 Claude Code 運用が容易になる。"
-            }
+            },
+            "caption": "v2.1.149 変更点",
+            "alt": "Claude Code 2.1.149 の主要変更点を示す構造化カード。/usage コマンド追加・diff スクロール改善・Markdown タスクリスト修正・Enterprise MCP 設定の 4 点が新機能として記載されている。"
           },
           "x_post": "Claude Code 2.1.149がリリースされた。/usageコマンドでモデル別・カテゴリ別のトークン使用量を可視化できるようになり、コスト管理が格段に容易になる。diffのキーボードスクロール改善とMarkdownタスクリスト描画修正も含む。Enterprise向けにはallowAllClaudeAiMcps設定も追加された。\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.149"
         },
@@ -209,24 +350,60 @@
             "source_type_bias": 0
           },
           "reaction_signal": null,
-          "tags": ["Claude Code", "Anthropic", "plugins", "ecosystem", "GitHub", "developer-tools"],
+          "tags": [
+            "Claude Code",
+            "Anthropic",
+            "plugins",
+            "ecosystem",
+            "GitHub",
+            "developer-tools"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "公式プラグインHub",
-            "alt": "claude-plugins-official の概要カード。26,284 スター・本日 2,172 増・Python 製・Anthropic 公式管理という 4 つの主要事実を構造化して表示。",
             "data": {
               "headline": "Claude Code 公式プラグインディレクトリ開設—26K★・本日 2,172 増",
               "tldr": "Anthropic が高品質な Claude Code プラグインを集めた公式ディレクトリを GitHub に公開。Python 製プラグインを Anthropic が審査・管理し、エコシステムの品質と安全性を担保する。",
               "points": [
-                {"icon": "⭐", "label": "スター数", "value": "26,284", "tone": "primary", "note": "本日 +2,172"},
-                {"icon": "🔒", "label": "管理者", "value": "Anthropic 公式", "tone": "success", "description": "品質・セキュリティ審査済み。コミュニティ製とは区別される公式ステータス。"},
-                {"icon": "🐍", "label": "言語", "value": "Python", "tone": "default"},
-                {"icon": "🔗", "label": "連携先", "value": "外部ツール・API", "tone": "info", "description": "Claude Code と外部サービスを標準化された方法で連携させるプラグイン群。"},
-                {"icon": "📈", "label": "GitHub", "value": "トレンド 2 位", "tone": "success", "note": "本日の急成長を反映"}
+                {
+                  "icon": "⭐",
+                  "label": "スター数",
+                  "value": "26,284",
+                  "tone": "primary",
+                  "note": "本日 +2,172"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "管理者",
+                  "value": "Anthropic 公式",
+                  "tone": "success",
+                  "description": "品質・セキュリティ審査済み。コミュニティ製とは区別される公式ステータス。"
+                },
+                {
+                  "icon": "🐍",
+                  "label": "言語",
+                  "value": "Python",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔗",
+                  "label": "連携先",
+                  "value": "外部ツール・API",
+                  "tone": "info",
+                  "description": "Claude Code と外部サービスを標準化された方法で連携させるプラグイン群。"
+                },
+                {
+                  "icon": "📈",
+                  "label": "GitHub",
+                  "value": "トレンド 2 位",
+                  "tone": "success",
+                  "note": "本日の急成長を反映"
+                }
               ],
               "context": "Claude Code プラグインエコシステムは急速に成長中。公式ディレクトリの開設はエコシステム成熟の重要マイルストーン。",
               "impact": "開発者は審査済みプラグインを安心して利用でき、Claude Code の機能を安全に拡張できる。"
-            }
+            },
+            "caption": "公式プラグインHub",
+            "alt": "claude-plugins-official の概要カード。26,284 スター・本日 2,172 増・Python 製・Anthropic 公式管理という 4 つの主要事実を構造化して表示。"
           }
         },
         {
@@ -255,24 +432,59 @@
             "source_type_bias": 0
           },
           "reaction_signal": null,
-          "tags": ["code-analysis", "knowledge-graph", "developer-tools", "TypeScript", "AI", "open-source"],
+          "tags": [
+            "code-analysis",
+            "knowledge-graph",
+            "developer-tools",
+            "TypeScript",
+            "AI",
+            "open-source"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "コード→知識グラフ",
-            "alt": "Understand-Anything の機能概要。コードを入力すると AI が解析しインタラクティブな知識グラフを生成。探索・検索・質問の 3 機能を持ち、GitHub トレンド 1 位・21K スターを獲得している。",
             "data": {
               "headline": "コードベースを知識グラフ化—Understand-Anything が GitHub トレンド 1 位",
               "tldr": "任意のコードリポジトリを AI が解析し、探索・検索・質問可能なインタラクティブな知識グラフに変換する OSS。本日 2,331 スター増で急浮上。TypeScript 製でAI コーディングツールとの連携を想定。",
               "points": [
-                {"icon": "📈", "label": "今日のスター", "value": "+2,331", "tone": "primary", "note": "累計 21,051"},
-                {"icon": "🗺️", "label": "出力形式", "value": "知識グラフ", "tone": "success", "description": "コード構造を視覚的なグラフで把握できる。探索・検索・質問の 3 操作に対応。"},
-                {"icon": "🔍", "label": "主な用途", "value": "レガシー理解", "tone": "info", "description": "大規模レガシーコードの全体把握・オンボーディング支援に有効。"},
-                {"icon": "🛠️", "label": "実装言語", "value": "TypeScript", "tone": "default"},
-                {"icon": "🤖", "label": "連携想定", "value": "Claude Code / Cursor", "tone": "info"}
+                {
+                  "icon": "📈",
+                  "label": "今日のスター",
+                  "value": "+2,331",
+                  "tone": "primary",
+                  "note": "累計 21,051"
+                },
+                {
+                  "icon": "🗺️",
+                  "label": "出力形式",
+                  "value": "知識グラフ",
+                  "tone": "success",
+                  "description": "コード構造を視覚的なグラフで把握できる。探索・検索・質問の 3 操作に対応。"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "主な用途",
+                  "value": "レガシー理解",
+                  "tone": "info",
+                  "description": "大規模レガシーコードの全体把握・オンボーディング支援に有効。"
+                },
+                {
+                  "icon": "🛠️",
+                  "label": "実装言語",
+                  "value": "TypeScript",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "連携想定",
+                  "value": "Claude Code / Cursor",
+                  "tone": "info"
+                }
               ],
               "context": "AI コーディングアシスタントの普及に伴い、コードベース理解ツールへの需要が高まっている。",
               "impact": "開発者はコードの全体像を素早く把握でき、AI アシスタントとの連携でコード理解コストを削減できる。"
-            }
+            },
+            "caption": "コード→知識グラフ",
+            "alt": "Understand-Anything の機能概要。コードを入力すると AI が解析しインタラクティブな知識グラフを生成。探索・検索・質問の 3 機能を持ち、GitHub トレンド 1 位・21K スターを獲得している。"
           }
         }
       ]
@@ -309,23 +521,61 @@
             "seen_penalty": 0
           },
           "reaction_signal": null,
-          "tags": ["autonomous-agents", "self-evolution", "SWE-bench", "source-rewriting", "academic"],
+          "tags": [
+            "autonomous-agents",
+            "self-evolution",
+            "SWE-bench",
+            "source-rewriting",
+            "academic"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "MOSS 自己進化効果",
-            "alt": "MOSS 適用前後の SWE-bench グレーダスコア比較。進化前スコア 0.25、1 サイクル後スコア 0.61。改善率は約 2.4 倍。テキスト変更のみの手法（DGM）と比較して、ソースコードレベル改変が大きな差をもたらすことを示す。",
             "data": {
               "headline": "MOSS: ソースコード自己書き換えで SWE-bench スコアが 2.4 倍に",
-              "before": {"label": "進化前", "sublabel": "ベースラインエージェント"},
-              "after": {"label": "1 サイクル後", "sublabel": "MOSS 適用"},
+              "before": {
+                "label": "進化前",
+                "sublabel": "ベースラインエージェント"
+              },
+              "after": {
+                "label": "1 サイクル後",
+                "sublabel": "MOSS 適用"
+              },
               "metrics": [
-                {"label": "SWE-bench", "before": "0.25", "after": "0.61", "before_pct": 25, "after_pct": 61, "delta": "+2.4×", "delta_tone": "success", "note": "グレーダスコア（タスク 4 件平均）"},
-                {"label": "進化手法", "before": "テキスト変更", "after": "ソースコード改変", "before_pct": 40, "after_pct": 100, "delta": "↑", "delta_tone": "success", "note": "Turing 完全・決定論的"},
-                {"label": "監督コスト", "before": "人間介入あり", "after": "無監督", "before_pct": 50, "after_pct": 100, "delta": "自律化", "delta_tone": "success"}
+                {
+                  "label": "SWE-bench",
+                  "before": "0.25",
+                  "after": "0.61",
+                  "before_pct": 25,
+                  "after_pct": 61,
+                  "delta": "+2.4×",
+                  "delta_tone": "success",
+                  "note": "グレーダスコア（タスク 4 件平均）"
+                },
+                {
+                  "label": "進化手法",
+                  "before": "テキスト変更",
+                  "after": "ソースコード改変",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "delta": "↑",
+                  "delta_tone": "success",
+                  "note": "Turing 完全・決定論的"
+                },
+                {
+                  "label": "監督コスト",
+                  "before": "人間介入あり",
+                  "after": "無監督",
+                  "before_pct": 50,
+                  "after_pct": 100,
+                  "delta": "自律化",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "先行研究（DGM・SICA・HyperAgents）は小さなスキャフォールドで成立していたが、MOSS は本番環境の大規模コードベースへの適用を実証した。",
               "impact": "エージェントの自律的自己改善が本番スケールで現実的になり、ソフトウェアエンジニアリングの自動化が加速する可能性がある。"
-            }
+            },
+            "caption": "MOSS 自己進化効果",
+            "alt": "MOSS 適用前後の SWE-bench グレーダスコア比較。進化前スコア 0.25、1 サイクル後スコア 0.61。改善率は約 2.4 倍。テキスト変更のみの手法（DGM）と比較して、ソースコードレベル改変が大きな差をもたらすことを示す。"
           },
           "x_post": "MOSSがエージェントのソースコードレベル自己進化を実証した。無監督の1サイクルでSWE-benchグレーダスコアが0.25から0.61へ2.4倍に向上している。テキスト変更に留まる先行手法と異なり、ソースコードを直接改変するため決定論的で長文ドリフトにも強い。エージェントの自律的自己改善が本番スケールで現実的になりつつあると私は見ている。\n\nhttps://arxiv.org/abs/2605.22794"
         },
@@ -355,22 +605,52 @@
             "source_type_bias": 1
           },
           "reaction_signal": null,
-          "tags": ["agent-sandbox", "checkpoint", "rollback", "stateful-agents", "OS-level", "infrastructure"],
+          "tags": [
+            "agent-sandbox",
+            "checkpoint",
+            "rollback",
+            "stateful-agents",
+            "OS-level",
+            "infrastructure"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "DeltaBox レイテンシ",
-            "alt": "DeltaBox のパフォーマンス指標を横棒グラフで表示。チェックポイント取得 14ms・ロールバック 5ms。比較として一般的なスナップショット方式の数秒（2000ms 以上）と対比されている。",
             "data": {
               "headline": "DeltaBox：エージェント状態管理のレイテンシを ms レベルに",
-              "scale": {"unit": "ms（低いほど良い）"},
+              "scale": {
+                "unit": "ms（低いほど良い）"
+              },
               "bars": [
-                {"icon": "💾", "label": "チェックポイント", "value": "14ms", "pct": 1, "note": "OS デルタ差分方式", "tone": "success"},
-                {"icon": "⏪", "label": "ロールバック", "value": "5ms", "pct": 0.5, "note": "即時巻き戻し", "tone": "success"},
-                {"icon": "📸", "label": "従来スナップショット", "value": "2,000ms+", "pct": 100, "note": "フルコピー方式（比較基準）", "tone": "danger"}
+                {
+                  "icon": "💾",
+                  "label": "チェックポイント",
+                  "value": "14ms",
+                  "pct": 1,
+                  "note": "OS デルタ差分方式",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⏪",
+                  "label": "ロールバック",
+                  "value": "5ms",
+                  "pct": 0.5,
+                  "note": "即時巻き戻し",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📸",
+                  "label": "従来スナップショット",
+                  "value": "2,000ms+",
+                  "pct": 100,
+                  "note": "フルコピー方式（比較基準）",
+                  "tone": "danger"
+                }
               ],
               "narrative": "従来の VM スナップショット方式と比較すると、チェックポイントは 100 倍以上高速。エージェントの探索ループで頻繁に状態保存が必要な場面で特に効果的。",
               "impact": "エージェントが失敗してもミリ秒で回復できるため、複雑な長時間タスクへの信頼性が飛躍的に向上する。"
-            }
+            },
+            "caption": "DeltaBox レイテンシ",
+            "alt": "DeltaBox のパフォーマンス指標を横棒グラフで表示。チェックポイント取得 14ms・ロールバック 5ms。比較として一般的なスナップショット方式の数秒（2000ms 以上）と対比されている。"
           }
         }
       ]
@@ -406,24 +686,58 @@
             "source_type_bias": 0
           },
           "reaction_signal": null,
-          "tags": ["text-to-video", "9B", "open-source", "video-generation", "SulphurAI"],
+          "tags": [
+            "text-to-video",
+            "9B",
+            "open-source",
+            "video-generation",
+            "SulphurAI"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Sulphur-2-base",
-            "alt": "Sulphur-2-base の主要仕様まとめ。9B パラメータ・テキスト→動画生成・HF トレンド 8 位・130 万いいね・Spaces デモ公開という 5 つのポイントを構造化して示す。",
             "data": {
               "headline": "9B オープンウェイト動画生成モデル—HF 130 万いいねで急浮上",
               "tldr": "SulphurAI が 9B パラメータのテキスト→動画生成モデルを公開。HF で 130 万いいねを獲得しトレンド 8 位。ローカル GPU での推論も現実的なサイズで、オープンソース動画生成の新選択肢。",
               "points": [
-                {"icon": "🎬", "label": "モデル種別", "value": "Text-to-Video", "tone": "primary"},
-                {"icon": "🏋️", "label": "パラメータ数", "value": "9B", "tone": "default", "note": "ローカル GPU 対応サイズ"},
-                {"icon": "❤️", "label": "HF いいね", "value": "1,290,000", "tone": "success", "note": "トレンド 8 位"},
-                {"icon": "🔓", "label": "ライセンス", "value": "オープンウェイト", "tone": "success", "description": "自由な利用・改変が可能なオープンモデル。"},
-                {"icon": "🎮", "label": "デモ", "value": "HF Spaces で公開", "tone": "info"}
+                {
+                  "icon": "🎬",
+                  "label": "モデル種別",
+                  "value": "Text-to-Video",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏋️",
+                  "label": "パラメータ数",
+                  "value": "9B",
+                  "tone": "default",
+                  "note": "ローカル GPU 対応サイズ"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "HF いいね",
+                  "value": "1,290,000",
+                  "tone": "success",
+                  "note": "トレンド 8 位"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "ライセンス",
+                  "value": "オープンウェイト",
+                  "tone": "success",
+                  "description": "自由な利用・改変が可能なオープンモデル。"
+                },
+                {
+                  "icon": "🎮",
+                  "label": "デモ",
+                  "value": "HF Spaces で公開",
+                  "tone": "info"
+                }
               ],
               "context": "動画生成モデルは Veo（Google）・Sora（OpenAI）などの商用モデルが先行するが、オープンウェイト版の整備が進んでいる。",
               "impact": "ローカルでの動画生成が現実的になり、プライバシー重視のビデオコンテンツ制作や研究用途での利用が広がる。"
-            }
+            },
+            "caption": "Sulphur-2-base",
+            "alt": "Sulphur-2-base の主要仕様まとめ。9B パラメータ・テキスト→動画生成・HF トレンド 8 位・130 万いいね・Spaces デモ公開という 5 つのポイントを構造化して示す。"
           }
         }
       ]
@@ -459,22 +773,53 @@
             "source_type_bias": 1
           },
           "reaction_signal": null,
-          "tags": ["formal-proof", "Lean", "mathematics", "Erdős", "theorem-proving", "LLM-agents"],
+          "tags": [
+            "formal-proof",
+            "Lean",
+            "mathematics",
+            "Erdős",
+            "theorem-proving",
+            "LLM-agents"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "数学証明 AI の実績",
-            "alt": "数学 AI の証明実績を横棒グラフで表示。Erdős 未解決問題 353 件中 9 件（2.5%）解決、OEIS 予想 492 件中 44 件（8.9%）証明。全件 Lean 形式検証済み。",
             "data": {
               "headline": "AI が Lean で Erdős 問題 9 件・OEIS 予想 44 件を正式証明",
-              "scale": {"unit": "件数", "max_label": "挑戦した問題数"},
+              "scale": {
+                "unit": "件数",
+                "max_label": "挑戦した問題数"
+              },
               "bars": [
-                {"icon": "🔢", "label": "Erdős 問題解決", "value": "9 / 353 件", "pct": 3, "note": "未解決問題の 2.5%", "tone": "success"},
-                {"icon": "🔢", "label": "OEIS 予想証明", "value": "44 / 492 件", "pct": 9, "note": "挑戦予想の 8.9%", "tone": "success"},
-                {"icon": "✅", "label": "形式検証率", "value": "100%", "pct": 100, "note": "Lean による機械検証", "tone": "primary"}
+                {
+                  "icon": "🔢",
+                  "label": "Erdős 問題解決",
+                  "value": "9 / 353 件",
+                  "pct": 3,
+                  "note": "未解決問題の 2.5%",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔢",
+                  "label": "OEIS 予想証明",
+                  "value": "44 / 492 件",
+                  "pct": 9,
+                  "note": "挑戦予想の 8.9%",
+                  "tone": "success"
+                },
+                {
+                  "icon": "✅",
+                  "label": "形式検証率",
+                  "value": "100%",
+                  "pct": 100,
+                  "note": "Lean による機械検証",
+                  "tone": "primary"
+                }
               ],
               "narrative": "AI が数学証明を生成するだけでなく、形式証明システム Lean で機械検証まで完了する手法。従来の ATP より広範な問題領域に対応。",
               "impact": "純粋数学研究への AI 実用化が具体的な成果を見せ、数学・計算機科学の境界が融合する新時代が始まりつつある。"
-            }
+            },
+            "caption": "数学証明 AI の実績",
+            "alt": "数学 AI の証明実績を横棒グラフで表示。Erdős 未解決問題 353 件中 9 件（2.5%）解決、OEIS 予想 492 件中 44 件（8.9%）証明。全件 Lean 形式検証済み。"
           },
           "x_post": "LLMエージェントが形式証明システムLeanでErdős未解決問題353件中9件とOEIS予想492件中44件を証明したとarXivに報告された。全証明がLeanによる機械検証済みであり、AIが「それらしい答え」ではなく検証可能な証明を生成する点が重要だ。純粋数学への大規模適用として研究コミュニティでも注目されている。\n\nhttps://arxiv.org/abs/2605.22763"
         },
@@ -504,23 +849,61 @@
             "source_type_bias": 1
           },
           "reaction_signal": null,
-          "tags": ["linear-attention", "Mamba", "long-context", "RULER", "NVIDIA", "architecture"],
+          "tags": [
+            "linear-attention",
+            "Mamba",
+            "long-context",
+            "RULER",
+            "NVIDIA",
+            "architecture"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "DeltaNet-2 vs Mamba",
-            "alt": "Gated DeltaNet-2 と Mamba 系モデルの比較。RULER ベンチマークでは DeltaNet-2 が Mamba 系最高スコアを記録。消去ゲートと書き込みゲートを分離した新設計が長文性能の鍵。",
             "data": {
               "headline": "Gated DeltaNet-2 が RULER で Mamba 系バリアント最高スコア",
-              "before": {"label": "従来 DeltaNet / Mamba", "sublabel": "消去・書き込み統合"},
-              "after": {"label": "Gated DeltaNet-2", "sublabel": "消去・書き込み分離"},
+              "before": {
+                "label": "従来 DeltaNet / Mamba",
+                "sublabel": "消去・書き込み統合"
+              },
+              "after": {
+                "label": "Gated DeltaNet-2",
+                "sublabel": "消去・書き込み分離"
+              },
               "metrics": [
-                {"label": "RULER スコア", "before": "ベースライン", "after": "最高スコア", "before_pct": 60, "after_pct": 85, "delta": "SoTA", "delta_tone": "success", "note": "Mamba 系モデル内で最高"},
-                {"label": "長文対応", "before": "制限あり", "after": "強化", "before_pct": 55, "after_pct": 82, "delta": "↑", "delta_tone": "success"},
-                {"label": "コード公開", "before": "なし", "after": "あり", "before_pct": 0, "after_pct": 100, "delta": "公開", "delta_tone": "success"}
+                {
+                  "label": "RULER スコア",
+                  "before": "ベースライン",
+                  "after": "最高スコア",
+                  "before_pct": 60,
+                  "after_pct": 85,
+                  "delta": "SoTA",
+                  "delta_tone": "success",
+                  "note": "Mamba 系モデル内で最高"
+                },
+                {
+                  "label": "長文対応",
+                  "before": "制限あり",
+                  "after": "強化",
+                  "before_pct": 55,
+                  "after_pct": 82,
+                  "delta": "↑",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コード公開",
+                  "before": "なし",
+                  "after": "あり",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "公開",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "トランスフォーマーの O(n²) コストを O(n) で代替しつつ長文性能を維持するアーキテクチャ研究の最前線。",
               "impact": "長文コンテキスト処理の効率化が進み、大規模エージェントや RAG システムへの応用で推論コスト削減が期待される。"
-            }
+            },
+            "caption": "DeltaNet-2 vs Mamba",
+            "alt": "Gated DeltaNet-2 と Mamba 系モデルの比較。RULER ベンチマークでは DeltaNet-2 が Mamba 系最高スコアを記録。消去ゲートと書き込みゲートを分離した新設計が長文性能の鍵。"
           }
         },
         {
@@ -549,23 +932,53 @@
             "source_type_bias": 1
           },
           "reaction_signal": null,
-          "tags": ["multi-agent", "adversarial-collaboration", "research-automation", "AI4Science", "open-source"],
+          "tags": [
+            "multi-agent",
+            "adversarial-collaboration",
+            "research-automation",
+            "AI4Science",
+            "open-source"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ARIS アーキテクチャ",
-            "alt": "ARIS の 3 層アーキテクチャ概要。実行層・オーケストレーション層・保証層の 3 段構造。複数エージェントが Adversarial Collaboration で批判し合い、研究の信頼性を担保する仕組み。",
             "data": {
               "headline": "ARIS：エージェント対立が研究品質を高める 3 層 AI リサーチハーネス",
               "tldr": "複数 AI エージェントが意図的に対立・批判し合う Adversarial Collaboration で長期研究タスクの信頼性を向上。実行・オーケストレーション・保証の 3 層で自律研究を管理するオープンソース実装。",
               "points": [
-                {"icon": "⚔️", "label": "設計原理", "value": "Adversarial協調", "tone": "primary", "description": "エージェントが互いを批判することで確証バイアスを排除し、研究の客観性を高める。"},
-                {"icon": "🏗️", "label": "アーキテクチャ", "value": "3 層構造", "tone": "default", "description": "実行（Execution）・オーケストレーション（Orchestration）・保証（Assurance）の 3 層で自律研究プロセスを管理。"},
-                {"icon": "🔀", "label": "モデル構成", "value": "クロスモデル", "tone": "info", "description": "異なるモデルを批判役に採用し、単一モデルのバイアスを中和する。"},
-                {"icon": "🔓", "label": "公開状況", "value": "OSS 公開済み", "tone": "success", "note": "HF 注目論文ランキング入り"}
+                {
+                  "icon": "⚔️",
+                  "label": "設計原理",
+                  "value": "Adversarial協調",
+                  "tone": "primary",
+                  "description": "エージェントが互いを批判することで確証バイアスを排除し、研究の客観性を高める。"
+                },
+                {
+                  "icon": "🏗️",
+                  "label": "アーキテクチャ",
+                  "value": "3 層構造",
+                  "tone": "default",
+                  "description": "実行（Execution）・オーケストレーション（Orchestration）・保証（Assurance）の 3 層で自律研究プロセスを管理。"
+                },
+                {
+                  "icon": "🔀",
+                  "label": "モデル構成",
+                  "value": "クロスモデル",
+                  "tone": "info",
+                  "description": "異なるモデルを批判役に採用し、単一モデルのバイアスを中和する。"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開状況",
+                  "value": "OSS 公開済み",
+                  "tone": "success",
+                  "note": "HF 注目論文ランキング入り"
+                }
               ],
               "context": "AI4Science 分野では Co-Scientist・ARIS などの研究自動化フレームワークが次々と登場。信頼性の担保が共通課題。",
               "impact": "研究自動化の信頼性向上手法として、AI エージェントを科学研究に実用投入する際の設計参考になる。"
-            }
+            },
+            "caption": "ARIS アーキテクチャ",
+            "alt": "ARIS の 3 層アーキテクチャ概要。実行層・オーケストレーション層・保証層の 3 段構造。複数エージェントが Adversarial Collaboration で批判し合い、研究の信頼性を担保する仕組み。"
           }
         }
       ]
@@ -586,7 +999,14 @@
           "published_at": "2026-05-23T00:00:00Z",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["agents", "openai", "anthropic", "google", "mcp", "industry"],
+          "tags": [
+            "agents",
+            "openai",
+            "anthropic",
+            "google",
+            "mcp",
+            "industry"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -604,22 +1024,52 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "モデルラボ→エージェントラボ転換の主要動向",
-            "alt": "各AIラボのエージェントラボ転換状況を一覧化。OpenAI: Codex+appshots統合、Anthropic: autoモードPro拡大、Google: Gemini Spark導入、DeepSeek: 永続75%割引 ~$0.18/M、MCP 2026 RC: ステートレスプロトコル、Glasswing: 脆弱性1万件超発見。",
             "data": {
               "headline": "全モデルラボがエージェントラボへ——Latent Space分析",
               "tldr": "モデル単体競争からエージェントハーネス＋製品体験統合へのシフトが各社同時進行。DeepSeekの価格破壊とMCPのステートレス化が構造変化を加速。",
               "points": [
-                {"icon": "🤖", "label": "OpenAI", "value": "Codex + appshots統合", "tone": "primary"},
-                {"icon": "🤖", "label": "Anthropic", "value": "autoモードをPro拡大", "tone": "primary"},
-                {"icon": "🤖", "label": "Google", "value": "Gemini Spark導入", "tone": "primary"},
-                {"icon": "💰", "label": "DeepSeek", "value": "永続75%割引 ~$0.18/M", "tone": "warning"},
-                {"icon": "🔌", "label": "MCP 2026 RC", "value": "ステートレスプロトコル", "tone": "info"},
-                {"icon": "🔒", "label": "Glasswing", "value": "脆弱性1万件超発見", "tone": "success"}
+                {
+                  "icon": "🤖",
+                  "label": "OpenAI",
+                  "value": "Codex + appshots統合",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "Anthropic",
+                  "value": "autoモードをPro拡大",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "Google",
+                  "value": "Gemini Spark導入",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💰",
+                  "label": "DeepSeek",
+                  "value": "永続75%割引 ~$0.18/M",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "MCP 2026 RC",
+                  "value": "ステートレスプロトコル",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "Glasswing",
+                  "value": "脆弱性1万件超発見",
+                  "tone": "success"
+                }
               ],
               "context": "Latent Spaceは毎週のAIニュース分析で知られる。今回の分析はOpenAI・Anthropic・Google・Meta全社が同一週に「エージェント化」を強調した点を捉えている。",
               "impact": "モデル性能ランキングよりもエージェントエコシステムの構築力が競争優位を決める時代が来たと私は考える。"
-            }
+            },
+            "caption": "モデルラボ→エージェントラボ転換の主要動向",
+            "alt": "各AIラボのエージェントラボ転換状況を一覧化。OpenAI: Codex+appshots統合、Anthropic: autoモードPro拡大、Google: Gemini Spark導入、DeepSeek: 永続75%割引 ~$0.18/M、MCP 2026 RC: ステートレスプロトコル、Glasswing: 脆弱性1万件超発見。"
           },
           "x_post": "Latent Spaceが「全モデルラボはエージェントラボに転換した」と論じた。OpenAIはCodex+appshots、AnthropicはautoモードをPro拡大、GoogleはGemini Sparkを導入——各社同時進行。DeepSeekが永続75%割引（~$0.18/M）を実施し、MCP 2026 RCがステートレス化。私はこの転換を業界の構造変化と捉えている。\n\nhttps://www.latent.space/p/ainews-all-model-labs-are-now-agent"
         },
@@ -634,7 +1084,14 @@
           "published_at": "2026-05-22T00:00:00Z",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["infrastructure", "funding", "modal", "exa", "turbopuffer", "vc"],
+          "tags": [
+            "infrastructure",
+            "funding",
+            "modal",
+            "exa",
+            "turbopuffer",
+            "vc"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -652,19 +1109,43 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "AIインフラ新ユニコーン 資金調達・バリュエーション",
-            "alt": "Modal: 調達$355M・評価額$4.7B（9月比5倍）、Exa: 調達$250M・評価額$2.2B、TurboPuffer: ARR $100M（黒字）を横棒グラフで比較。",
             "data": {
               "headline": "AIインフラ3社が大型資金調達——エージェント普及がインフラ需要を急拡大",
-              "scale": {"unit": "億ドル", "max": 5},
+              "scale": {
+                "unit": "億ドル",
+                "max": 5
+              },
               "bars": [
-                {"icon": "💰", "label": "Modal 調達額", "value": 3.55, "pct": 71, "note": "評価額$4.7B（9月比5倍）", "tone": "primary"},
-                {"icon": "💰", "label": "Exa 調達額", "value": 2.5, "pct": 50, "note": "評価額$2.2B・AI検索API", "tone": "primary"},
-                {"icon": "📊", "label": "TurboPuffer ARR", "value": 1.0, "pct": 20, "note": "黒字・ベクトルDB", "tone": "success"}
+                {
+                  "icon": "💰",
+                  "label": "Modal 調達額",
+                  "value": 3.55,
+                  "pct": 71,
+                  "note": "評価額$4.7B（9月比5倍）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💰",
+                  "label": "Exa 調達額",
+                  "value": 2.5,
+                  "pct": 50,
+                  "note": "評価額$2.2B・AI検索API",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "TurboPuffer ARR",
+                  "value": 1,
+                  "pct": 20,
+                  "note": "黒字・ベクトルDB",
+                  "tone": "success"
+                }
               ],
               "narrative": "モデル層の競争激化でモデルAPIのコモディティ化が進む一方、実行環境・検索・ベクトルDBへの投資シフトが顕著。",
               "impact": "エージェントが本格展開されるにつれ、推論環境・データ検索・状態管理のインフラ需要がさらに拡大すると私は予測する。"
-            }
+            },
+            "caption": "AIインフラ新ユニコーン 資金調達・バリュエーション",
+            "alt": "Modal: 調達$355M・評価額$4.7B（9月比5倍）、Exa: 調達$250M・評価額$2.2B、TurboPuffer: ARR $100M（黒字）を横棒グラフで比較。"
           }
         }
       ]
@@ -684,8 +1165,18 @@
           "url": "https://www.nikkei.com/article/DGXZQOGN230660T20C26A5000000/",
           "published_at": "2026-05-23T00:00:00Z",
           "lang": "ja",
-          "reaction_signal": {"kind": "hatena", "users": 26},
-          "tags": ["security", "Glasswing", "anthropic", "vulnerability", "OSS", "japan"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 26
+          },
+          "tags": [
+            "security",
+            "Glasswing",
+            "anthropic",
+            "vulnerability",
+            "OSS",
+            "japan"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -702,20 +1193,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Project Glasswing 初期報告概要",
-            "alt": "Anthropic Project Glasswingの初期報告まとめ。対象: 国内基幹系OSS、発見脆弱性: 1万件超（高・致命的重大度）、参加組織: Anthropic・AWS・Apple・Google他12社。",
             "data": {
               "headline": "Glasswing：国内基幹OSSで高・致命的脆弱性1万件超を発見",
               "tldr": "AnthropicのProject Glasswingが国内基幹系OSSへの適用で高・致命的重大度脆弱性を1万件超発見。AI自動スキャンが大規模実証成果を示す。",
               "points": [
-                {"icon": "🔒", "label": "プロジェクト", "value": "Project Glasswing", "tone": "primary"},
-                {"icon": "🇯🇵", "label": "対象", "value": "国内基幹系OSS", "tone": "default"},
-                {"icon": "⚠️", "label": "発見脆弱性", "value": "1万件超（高・致命的）", "tone": "warning"},
-                {"icon": "🤝", "label": "参加組織", "value": "Anthropic・AWS・Apple・Google他", "tone": "info"}
+                {
+                  "icon": "🔒",
+                  "label": "プロジェクト",
+                  "value": "Project Glasswing",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "対象",
+                  "value": "国内基幹系OSS",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "発見脆弱性",
+                  "value": "1万件超（高・致命的）",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "参加組織",
+                  "value": "Anthropic・AWS・Apple・Google他",
+                  "tone": "info"
+                }
               ],
               "context": "Project GlasswingはAnthropicが5月9日に発表した12社連合のOSS防御プログラム。国内適用の初期結果として今回数字が公開された。",
               "impact": "AIエージェントによる大規模脆弱性スキャンが実用フェーズに入ったことを示す。国内の基幹系OSS利用組織は対応状況の確認が必要。"
-            }
+            },
+            "caption": "Project Glasswing 初期報告概要",
+            "alt": "Anthropic Project Glasswingの初期報告まとめ。対象: 国内基幹系OSS、発見脆弱性: 1万件超（高・致命的重大度）、参加組織: Anthropic・AWS・Apple・Google他12社。"
           }
         }
       ]
@@ -735,8 +1246,18 @@
           "url": "https://github.com/forrestchang/andrej-karpathy-skills",
           "published_at": "2026-05-24T00:00:00Z",
           "lang": "en",
-          "reaction_signal": {"kind": "github_stars", "stars": 149000, "stars_today": 3372},
-          "tags": ["claude-code", "karpathy", "github-trending", "developer-tools", "community"],
+          "reaction_signal": {
+            "kind": "github_stars",
+            "stars": 149000,
+            "stars_today": 3372
+          },
+          "tags": [
+            "claude-code",
+            "karpathy",
+            "github-trending",
+            "developer-tools",
+            "community"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -753,20 +1274,42 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "andrej-karpathy-skills GitHubバイラル",
-            "alt": "GitHubトレンド首位のandrej-karpathy-skillsリポジトリ。スター数14.9万・1日3,372スターという急上昇。内容はKarpathyのClaude Code設定ファイル集。",
             "data": {
               "headline": "Karpathyの Claude Code設定がGitHubトレンド首位——14.9万スター",
               "tldr": "Andrej KarpathyのClaude Code実設定ファイルをまとめたリポジトリが1日3,372スターで急上昇。開発者がKarpathyのワークフローを直接参照・活用できると人気爆発。",
               "points": [
-                {"icon": "⭐", "label": "累計スター", "value": "149,000", "tone": "success"},
-                {"icon": "📈", "label": "1日スター増加", "value": "+3,372", "tone": "success", "note": "GitHubトレンド首位"},
-                {"icon": "📁", "label": "内容", "value": "Claude Code スキル・CLAUDE.md設定", "tone": "primary"},
-                {"icon": "👤", "label": "元ソース", "value": "Andrej Karpathy氏", "tone": "info", "description": "OpenAI共同創業者、現Anthropic参加"}
+                {
+                  "icon": "⭐",
+                  "label": "累計スター",
+                  "value": "149,000",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "1日スター増加",
+                  "value": "+3,372",
+                  "tone": "success",
+                  "note": "GitHubトレンド首位"
+                },
+                {
+                  "icon": "📁",
+                  "label": "内容",
+                  "value": "Claude Code スキル・CLAUDE.md設定",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👤",
+                  "label": "元ソース",
+                  "value": "Andrej Karpathy氏",
+                  "tone": "info",
+                  "description": "OpenAI共同創業者、現Anthropic参加"
+                }
               ],
               "context": "KarpathyのAnthropicへの参加が先週報道され、彼のClaude Codeワークフローへの関心が急増していた。",
               "impact": "Claude Codeのカスタマイズ・スキル設定の参考事例として即実用可能。Karpathyの設定を出発点にすることで開発体験を大幅に改善できる可能性がある。"
-            }
+            },
+            "caption": "andrej-karpathy-skills GitHubバイラル",
+            "alt": "GitHubトレンド首位のandrej-karpathy-skillsリポジトリ。スター数14.9万・1日3,372スターという急上昇。内容はKarpathyのClaude Code設定ファイル集。"
           },
           "x_post": "KarpathyのClaude Code設定ファイルをまとめたリポジトリがGitHubトレンド首位になった。累計14.9万スター・1日3,372スターで急上昇している。CLAUDE.mdやスキル設定など実際のワークフロー構成をそのまま参照できる。私はこれをClaude Codeカスタマイズの出発点として試している。\n\nhttps://github.com/forrestchang/andrej-karpathy-skills"
         }
@@ -788,7 +1331,14 @@
           "published_at": "2026-05-21T00:00:00Z",
           "lang": "ja",
           "reaction_signal": null,
-          "tags": ["testing", "QA", "agents", "LINEYahoo", "automation", "japan"],
+          "tags": [
+            "testing",
+            "QA",
+            "agents",
+            "LINEYahoo",
+            "automation",
+            "japan"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -805,20 +1355,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "AIエージェント探索的テスト——LINEヤフー実践事例",
-            "alt": "LINEヤフーのAIエージェントによる探索的テスト自動化事例まとめ。手法: UIを直接操作するエージェント、成果: 手動では見落としがちなバグを自律発見、可視化: アクション履歴・意思決定ロジックを公開。",
             "data": {
               "headline": "AIエージェントが探索的テストを自律実行——LINEヤフー事例",
               "tldr": "熟練QAエンジニアの「経験と直感」を要する探索的テストをAIエージェントが自動化。LINEヤフーが実運用事例として手法・成果・課題を公開。",
               "points": [
-                {"icon": "🤖", "label": "手法", "value": "エージェントがUIを直接操作", "tone": "primary"},
-                {"icon": "🔍", "label": "目的", "value": "探索的テストの自律化", "tone": "default"},
-                {"icon": "👁️", "label": "可視化", "value": "アクション履歴・意思決定ロジック", "tone": "info"},
-                {"icon": "✅", "label": "成果", "value": "偽陽性率を抑制しつつバグ検出", "tone": "success"}
+                {
+                  "icon": "🤖",
+                  "label": "手法",
+                  "value": "エージェントがUIを直接操作",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "目的",
+                  "value": "探索的テストの自律化",
+                  "tone": "default"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "可視化",
+                  "value": "アクション履歴・意思決定ロジック",
+                  "tone": "info"
+                },
+                {
+                  "icon": "✅",
+                  "label": "成果",
+                  "value": "偽陽性率を抑制しつつバグ検出",
+                  "tone": "success"
+                }
               ],
               "context": "探索的テストは従来スクリプト化が困難とされてきた。エージェントAIの実用化でQA領域にも変革が波及している。",
               "impact": "大規模サービスのQA工数削減と品質向上の両立が実証された。国内他社での応用が期待される。"
-            }
+            },
+            "caption": "AIエージェント探索的テスト——LINEヤフー実践事例",
+            "alt": "LINEヤフーのAIエージェントによる探索的テスト自動化事例まとめ。手法: UIを直接操作するエージェント、成果: 手動では見落としがちなバグを自律発見、可視化: アクション履歴・意思決定ロジックを公開。"
           }
         },
         {
@@ -832,7 +1402,14 @@
           "published_at": "2026-05-18T00:00:00Z",
           "lang": "ja",
           "reaction_signal": null,
-          "tags": ["coding-agent", "codex", "openai", "LINEYahoo", "developer-tools", "japan"],
+          "tags": [
+            "coding-agent",
+            "codex",
+            "openai",
+            "LINEYahoo",
+            "developer-tools",
+            "japan"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -849,20 +1426,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Coding Agent・Codex GUI 実践ワークフロー",
-            "alt": "LINEヤフーのCoding Agent実践活用フローまとめ。タスク定義→コンテキスト注入→エージェント実行→人間レビュー→マージという5段階フロー。",
             "data": {
               "headline": "Coding Agent実践ワークフロー——LINEヤフー開発現場",
               "tldr": "OpenAI Coding AgentとCodex GUIを大規模モノレポで活用した実践事例。文脈提供・人間レビュー挿入点・ハルシネーション対策など現場知見を公開。",
               "points": [
-                {"icon": "📋", "label": "タスク定義", "value": "既存コードへの文脈注入", "tone": "primary"},
-                {"icon": "🤖", "label": "エージェント実行", "value": "Coding Agent + Codex GUI", "tone": "default"},
-                {"icon": "👤", "label": "人間レビュー", "value": "ハルシネーション対策の挿入点", "tone": "warning"},
-                {"icon": "🔀", "label": "環境", "value": "大規模モノレポ対応", "tone": "info"}
+                {
+                  "icon": "📋",
+                  "label": "タスク定義",
+                  "value": "既存コードへの文脈注入",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "エージェント実行",
+                  "value": "Coding Agent + Codex GUI",
+                  "tone": "default"
+                },
+                {
+                  "icon": "👤",
+                  "label": "人間レビュー",
+                  "value": "ハルシネーション対策の挿入点",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔀",
+                  "label": "環境",
+                  "value": "大規模モノレポ対応",
+                  "tone": "info"
+                }
               ],
               "context": "Coding Agentはエンタープライズ開発現場での活用が本格化している。日本企業の実践事例として希少な詳細レポート。",
               "impact": "モノレポ環境でのCoding Agent導入ハードルを下げる具体的な知見。エンタープライズ開発チームがそのまま参考にできる。"
-            }
+            },
+            "caption": "Coding Agent・Codex GUI 実践ワークフロー",
+            "alt": "LINEヤフーのCoding Agent実践活用フローまとめ。タスク定義→コンテキスト注入→エージェント実行→人間レビュー→マージという5段階フロー。"
           }
         },
         {
@@ -875,8 +1472,18 @@
           "url": "https://keisuke69.hatenablog.com/entry/2026/05/22/ai-tool-democratization-skepticism",
           "published_at": "2026-05-22T00:00:00Z",
           "lang": "ja",
-          "reaction_signal": {"kind": "hatena", "users": 520},
-          "tags": ["AI-democratization", "community", "skepticism", "tools", "japan", "hatena"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 520
+          },
+          "tags": [
+            "AI-democratization",
+            "community",
+            "skepticism",
+            "tools",
+            "japan",
+            "hatena"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -893,21 +1500,47 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI民主化懐疑論——はてブ520件の要点",
-            "alt": "はてブ520件を集めたAIツール民主化懐疑論の要点。「技術的ハードル↓」vs「問題設定力・要件言語化力は依然必要」という対比。",
             "data": {
               "headline": "「AIで誰でも作れる」の盲点——問題設定力は下がらない",
               "tldr": "技術的実装のハードルがAIで下がっても、何を作るかを決める問題設定力・要件言語化力・運用統合力は依然として人間に必要。むしろそちらが差別化要因になるという論考。はてブ520件。",
               "points": [
-                {"icon": "⬇️", "label": "技術的ハードル", "value": "AIで大幅に低下", "tone": "success"},
-                {"icon": "⚠️", "label": "問題設定力", "value": "依然として人間が必要", "tone": "warning"},
-                {"icon": "⚠️", "label": "要件言語化力", "value": "むしろ重要性が増す", "tone": "warning"},
-                {"icon": "⚠️", "label": "運用・統合力", "value": "技術的実装より難しい", "tone": "warning"},
-                {"icon": "❤️", "label": "はてブ", "value": "520件", "tone": "primary", "note": "コミュニティで広く共感"}
+                {
+                  "icon": "⬇️",
+                  "label": "技術的ハードル",
+                  "value": "AIで大幅に低下",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "問題設定力",
+                  "value": "依然として人間が必要",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "要件言語化力",
+                  "value": "むしろ重要性が増す",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "運用・統合力",
+                  "value": "技術的実装より難しい",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "はてブ",
+                  "value": "520件",
+                  "tone": "primary",
+                  "note": "コミュニティで広く共感"
+                }
               ],
               "context": "AI開発民主化の楽観論が広まる中、実際の利用体験から「問題はそこじゃない」という反論が各所で出ている。",
               "impact": "開発者・PMがAI活用の優先度を見直す視点として有用。「作れる」と「価値を生む」の違いを意識した設計が重要。"
-            }
+            },
+            "caption": "AI民主化懐疑論——はてブ520件の要点",
+            "alt": "はてブ520件を集めたAIツール民主化懐疑論の要点。「技術的ハードル↓」vs「問題設定力・要件言語化力は依然必要」という対比。"
           },
           "x_post": "「AIで誰もがツールを作れる時代」に対する懐疑論がはてブ520件を集めた。技術的ハードルは下がっても「何を作るかの問題設定力」や「要件言語化力」は依然として人間に必要であり、むしろそちらが差別化要因になるという論点は鋭いと私は感じる。\n\nhttps://keisuke69.hatenablog.com/entry/2026/05/22/ai-tool-democratization-skepticism"
         },
@@ -921,8 +1554,18 @@
           "url": "https://zenn.dev/remitaid/articles/4f9dc787b6c191",
           "published_at": "2026-05-22T00:00:00Z",
           "lang": "ja",
-          "reaction_signal": {"kind": "hatena", "users": 431},
-          "tags": ["claude-code", "skills", "slash-commands", "developer-tools", "japan", "zenn"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 431
+          },
+          "tags": [
+            "claude-code",
+            "skills",
+            "slash-commands",
+            "developer-tools",
+            "japan",
+            "zenn"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -939,21 +1582,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Codeスキル機能——実務活用ポイント",
-            "alt": "Claude Codeスキル機能の実務活用まとめ。配置場所: .claude/skills/、定義方法: Markdownファイル、機能: カスタムスラッシュコマンド・引数・多段ワークフロー。はてブ431件。",
             "data": {
               "headline": "Claude Codeスキル機能——カスタムコマンドで開発ワークフローを自動化",
               "tldr": ".claude/skills/にMarkdownを配置してカスタムスラッシュコマンドを定義。引数・多段ワークフロー・チーム共有まで実践ノウハウを網羅。はてブ431件の人気記事。",
               "points": [
-                {"icon": "📁", "label": "配置場所", "value": ".claude/skills/", "tone": "primary"},
-                {"icon": "📝", "label": "定義方法", "value": "Markdownファイル", "tone": "default"},
-                {"icon": "⚡", "label": "機能", "value": "カスタムスラッシュコマンド", "tone": "success"},
-                {"icon": "🔀", "label": "応用", "value": "多段ワークフロー自動化", "tone": "info"},
-                {"icon": "❤️", "label": "はてブ", "value": "431件", "tone": "primary"}
+                {
+                  "icon": "📁",
+                  "label": "配置場所",
+                  "value": ".claude/skills/",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📝",
+                  "label": "定義方法",
+                  "value": "Markdownファイル",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "機能",
+                  "value": "カスタムスラッシュコマンド",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔀",
+                  "label": "応用",
+                  "value": "多段ワークフロー自動化",
+                  "tone": "info"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "はてブ",
+                  "value": "431件",
+                  "tone": "primary"
+                }
               ],
               "context": "Claude Codeのスキル機能は公式ドキュメントでの扱いが薄く、実践的なノウハウは開発者コミュニティに分散している。",
               "impact": "チームのClaude Code活用を標準化・自動化する最短ルートとして参考になる。Git管理での共有方法も実用的。"
-            }
+            },
+            "caption": "Claude Codeスキル機能——実務活用ポイント",
+            "alt": "Claude Codeスキル機能の実務活用まとめ。配置場所: .claude/skills/、定義方法: Markdownファイル、機能: カスタムスラッシュコマンド・引数・多段ワークフロー。はてブ431件。"
           }
         },
         {
@@ -967,7 +1635,15 @@
           "published_at": "2026-05-22T00:00:00Z",
           "lang": "ja",
           "reaction_signal": null,
-          "tags": ["cursor", "composer", "kimi-k2.5", "coding", "SWE-bench", "cost", "japan"],
+          "tags": [
+            "cursor",
+            "composer",
+            "kimi-k2.5",
+            "coding",
+            "SWE-bench",
+            "cost",
+            "japan"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -984,18 +1660,18 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "Cursor Composer 2.5 vs 主要コーディングアシスタント",
-            "alt": "Cursor Composer 2.5（Kimi K2.5基盤）とClaude Code・GitHub Copilotのコスト・SWE-Benchスコアを比較。Composer 2.5はコスト面で大幅優位。",
             "data": {
               "headline": "Cursor Composer 2.5——低コスト×高スコアのバランス型",
-              "columns": ["モデル", "SWE-Bench", "コスト概算"],
-              "rows": [
-                {"label": "Composer 2.5 (Kimi K2.5)", "values": ["79.8%", "~$0.50/1M"]},
-                {"label": "Claude Code (Sonnet 4)", "values": ["参考値", "~$3/1M"]},
-                {"label": "GitHub Copilot", "values": "定額課金", "values": ["-", "定額$10/月"]}
-              ],
-              "note": "SWE-Bench Multilingual。コストは公開情報の概算。"
-            }
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "caption": "Cursor Composer 2.5 vs 主要コーディングアシスタント",
+            "alt": "Cursor Composer 2.5（Kimi K2.5基盤）とClaude Code・GitHub Copilotのコスト・SWE-Benchスコアを比較。Composer 2.5はコスト面で大幅優位。"
           }
         }
       ]
@@ -1016,7 +1692,13 @@
           "published_at": "2026-05-22T00:00:00Z",
           "lang": "zh",
           "reaction_signal": null,
-          "tags": ["deepseek", "pricing", "api", "china", "cost-reduction"],
+          "tags": [
+            "deepseek",
+            "pricing",
+            "api",
+            "china",
+            "cost-reduction"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -1033,19 +1715,43 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "LLM API コスト比較（2026年5月時点）",
-            "alt": "主要LLMのAPIコスト比較。DeepSeek V4-Pro: $0.18/1M（永続75%引き）、GPT-4o: $5/1M、Claude Sonnet 4: $3/1M。DeepSeekの低価格が際立つ。",
             "data": {
               "headline": "DeepSeek V4-Pro 永続75%割引——混合$0.18/1Mで価格競争を激化",
-              "scale": {"unit": "$/1Mトークン（混合）", "max": 6},
+              "scale": {
+                "unit": "$/1Mトークン（混合）",
+                "max": 6
+              },
               "bars": [
-                {"icon": "💰", "label": "DeepSeek V4-Pro", "value": 0.18, "pct": 3, "note": "永続75%引き", "tone": "success"},
-                {"icon": "💰", "label": "Claude Sonnet 4", "value": 3.0, "pct": 50, "note": "参考値", "tone": "default"},
-                {"icon": "💰", "label": "GPT-4o", "value": 5.0, "pct": 83, "note": "参考値", "tone": "default"}
+                {
+                  "icon": "💰",
+                  "label": "DeepSeek V4-Pro",
+                  "value": 0.18,
+                  "pct": 3,
+                  "note": "永続75%引き",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💰",
+                  "label": "Claude Sonnet 4",
+                  "value": 3,
+                  "pct": 50,
+                  "note": "参考値",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💰",
+                  "label": "GPT-4o",
+                  "value": 5,
+                  "pct": 83,
+                  "note": "参考値",
+                  "tone": "default"
+                }
               ],
               "narrative": "DeepSeekの価格破壊はエンタープライズAPIユーザーにとって直接のコスト削減機会。エージェント大量呼び出し用途で特に効果大。",
               "impact": "AI推論コストの急低下がエージェント活用の経済的ハードルをさらに下げる。業界価格水準の底上げ圧力として機能。"
-            }
+            },
+            "caption": "LLM API コスト比較（2026年5月時点）",
+            "alt": "主要LLMのAPIコスト比較。DeepSeek V4-Pro: $0.18/1M（永続75%引き）、GPT-4o: $5/1M、Claude Sonnet 4: $3/1M。DeepSeekの低価格が際立つ。"
           }
         },
         {
@@ -1059,7 +1765,13 @@
           "published_at": "2026-05-22T00:00:00Z",
           "lang": "zh",
           "reaction_signal": null,
-          "tags": ["qwen", "alibaba", "china", "reasoning", "new-model"],
+          "tags": [
+            "qwen",
+            "alibaba",
+            "china",
+            "reasoning",
+            "new-model"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1076,38 +1788,111 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Qwen 3.7-Max 主要仕様",
-            "alt": "Qwen 3.7-Max（Alibaba）の主要仕様まとめ。Qwen 3.7ベースの強化版。推論能力・長文コンテキスト改善。HuggingFace・公式API対応。",
             "data": {
               "headline": "Qwen 3.7-Max——Alibaba推論モデルの最新強化版",
               "tldr": "Alibabaがqwen 3.7をベースに推論能力・長文コンテキスト処理を強化したQwen 3.7-Maxを公開。HF・公式APIでアクセス可能。日本語対応継続改善中。",
               "points": [
-                {"icon": "🧠", "label": "ベース", "value": "Qwen 3.7強化版", "tone": "primary"},
-                {"icon": "📐", "label": "強化点", "value": "推論（数学・コーディング・科学）", "tone": "default"},
-                {"icon": "📜", "label": "コンテキスト", "value": "長文処理を最適化", "tone": "info"},
-                {"icon": "🌐", "label": "アクセス", "value": "HuggingFace・公式API", "tone": "success"},
-                {"icon": "🇯🇵", "label": "日本語", "value": "対応継続改善中", "tone": "default"}
+                {
+                  "icon": "🧠",
+                  "label": "ベース",
+                  "value": "Qwen 3.7強化版",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📐",
+                  "label": "強化点",
+                  "value": "推論（数学・コーディング・科学）",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📜",
+                  "label": "コンテキスト",
+                  "value": "長文処理を最適化",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "アクセス",
+                  "value": "HuggingFace・公式API",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "日本語",
+                  "value": "対応継続改善中",
+                  "tone": "default"
+                }
               ],
               "context": "Qwen系モデルは中国発で国際的なシェアを拡大中。DeepSeekとともに低コスト・高性能推論モデルの双璧を形成している。",
               "impact": "グローバルの推論モデル競争に中国勢が本格参入。日本語対応も含め、選択肢の多様化が開発者に恩恵をもたらす。"
-            }
+            },
+            "caption": "Qwen 3.7-Max 主要仕様",
+            "alt": "Qwen 3.7-Max（Alibaba）の主要仕様まとめ。Qwen 3.7ベースの強化版。推論能力・長文コンテキスト改善。HuggingFace・公式API対応。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    {"source": "openai_blog", "reason": "HTTP 403", "fallback_used": "WebSearch site:openai.com/blog"},
-    {"source": "x_ai_news", "reason": "HTTP 403", "fallback_used": "WebSearch site:x.ai"},
-    {"source": "reddit_rss", "reason": "WebFetch blocked", "fallback_used": "WebSearch r/LocalLLaMA r/MachineLearning"},
-    {"source": "wired_ai_rss", "reason": "WebFetch blocked", "fallback_used": "skipped"},
-    {"source": "import_ai_substack", "reason": "HTTP 403", "fallback_used": "skipped"},
-    {"source": "the_batch_deeplearningai", "reason": "HTTP 404", "fallback_used": "skipped"},
-    {"source": "synced_review_rss", "reason": "outdated content only", "fallback_used": "WebSearch China AI"},
-    {"source": "techcrunch_ai", "reason": "24h window: May 23 articles not AI-specific enough", "fallback_used": "partial"},
-    {"source": "cyberagent_ai_lab", "reason": "no recent AI posts within 168h", "fallback_used": "skipped"},
-    {"source": "stockmark_techblog", "reason": "no recent posts within 168h", "fallback_used": "skipped"},
-    {"source": "mercari_engineering", "reason": "HTTP 403", "fallback_used": "skipped"},
-    {"source": "sansan_buildersbox", "reason": "no recent AI posts within 168h", "fallback_used": "skipped"}
+    {
+      "source": "openai_blog",
+      "reason": "HTTP 403",
+      "fallback_used": "WebSearch site:openai.com/blog"
+    },
+    {
+      "source": "x_ai_news",
+      "reason": "HTTP 403",
+      "fallback_used": "WebSearch site:x.ai"
+    },
+    {
+      "source": "reddit_rss",
+      "reason": "WebFetch blocked",
+      "fallback_used": "WebSearch r/LocalLLaMA r/MachineLearning"
+    },
+    {
+      "source": "wired_ai_rss",
+      "reason": "WebFetch blocked",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "import_ai_substack",
+      "reason": "HTTP 403",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "the_batch_deeplearningai",
+      "reason": "HTTP 404",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "synced_review_rss",
+      "reason": "outdated content only",
+      "fallback_used": "WebSearch China AI"
+    },
+    {
+      "source": "techcrunch_ai",
+      "reason": "24h window: May 23 articles not AI-specific enough",
+      "fallback_used": "partial"
+    },
+    {
+      "source": "cyberagent_ai_lab",
+      "reason": "no recent AI posts within 168h",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "stockmark_techblog",
+      "reason": "no recent posts within 168h",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "mercari_engineering",
+      "reason": "HTTP 403",
+      "fallback_used": "skipped"
+    },
+    {
+      "source": "sansan_buildersbox",
+      "reason": "no recent AI posts within 168h",
+      "fallback_used": "skipped"
+    }
   ]
 }

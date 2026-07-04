@@ -21,12 +21,36 @@
     }
   },
   "top_picks": [
-    { "id": "jp_ai_security_2026_001", "rank": 1, "reason": "Qiita公開初日59いいね・AIセキュリティ脅威の全景を体系化した実践ガイド。LLM本番運用エンジニアに必読の一本。" },
-    { "id": "jp_mercari_governance_001", "rank": 2, "reason": "日本大手ECがBlast Radius制御・ガードレール・監視体制の三層でエージェントAIガバナンスを実装した実践知見。公開即日124はてブ。" },
-    { "id": "rp_llm_sleep_consolidation_001", "rank": 3, "reason": "オフライン睡眠フェーズで文脈を高速重みに変換し推論レイテンシ増加なしに長期記憶を実現する新アーキテクチャ。HN165pt獲得。" },
-    { "id": "mm_borealis_audio_llm_001", "rank": 4, "reason": "データ・コード・重みを完全公開した音声LLM学習レシピ。独占されてきた音声AI開発を個人・研究者レベルに開放する里程標。" },
-    { "id": "ag_all_labs_agent_001", "rank": 5, "reason": "Latent SpaceがOpenAI・DeepSeek等全主要AIラボのエージェントラボへの転換を宣言。業界パラダイム転換の決定的な論考。" },
-    { "id": "cb_localai_economics_001", "rank": 6, "reason": "HN213ptのアウトソーシング＋ローカルLLM経済合理性論考。フロンティアAPI依存見直しの業界議論を先導する視点。" }
+    {
+      "id": "jp_ai_security_2026_001",
+      "rank": 1,
+      "reason": "Qiita公開初日59いいね・AIセキュリティ脅威の全景を体系化した実践ガイド。LLM本番運用エンジニアに必読の一本。"
+    },
+    {
+      "id": "jp_mercari_governance_001",
+      "rank": 2,
+      "reason": "日本大手ECがBlast Radius制御・ガードレール・監視体制の三層でエージェントAIガバナンスを実装した実践知見。公開即日124はてブ。"
+    },
+    {
+      "id": "rp_llm_sleep_consolidation_001",
+      "rank": 3,
+      "reason": "オフライン睡眠フェーズで文脈を高速重みに変換し推論レイテンシ増加なしに長期記憶を実現する新アーキテクチャ。HN165pt獲得。"
+    },
+    {
+      "id": "mm_borealis_audio_llm_001",
+      "rank": 4,
+      "reason": "データ・コード・重みを完全公開した音声LLM学習レシピ。独占されてきた音声AI開発を個人・研究者レベルに開放する里程標。"
+    },
+    {
+      "id": "ag_all_labs_agent_001",
+      "rank": 5,
+      "reason": "Latent SpaceがOpenAI・DeepSeek等全主要AIラボのエージェントラボへの転換を宣言。業界パラダイム転換の決定的な論考。"
+    },
+    {
+      "id": "cb_localai_economics_001",
+      "rank": 6,
+      "reason": "HN213ptのアウトソーシング＋ローカルLLM経済合理性論考。フロンティアAPI依存見直しの業界議論を先導する視点。"
+    }
   ],
   "categories": [
     {
@@ -52,17 +76,42 @@
             "デモンストレーションからの模倣学習（Imitation Learning）をサポート",
             "Hugging Face LeRobotフレームワークと統合しコミュニティ開発を促進"
           ],
-          "tags": ["robotics", "open-source", "imitation-learning", "3d-printing", "humanoid"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 3, "freshness": 3, "total": 12 },
+          "tags": [
+            "robotics",
+            "open-source",
+            "imitation-learning",
+            "3d-printing",
+            "humanoid"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 3,
+            "total": 12
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "LeRobot Humanoid 概要",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "コスト：3Dプリント製で低コスト実現",
-                "公開内容：設計図 / コード / 学習重み",
-                "学習方式：デモからの模倣学習",
-                "用途：ロボット学習研究・教育・趣味"
+                {
+                  "label": "",
+                  "value": "コスト：3Dプリント製で低コスト実現"
+                },
+                {
+                  "label": "",
+                  "value": "公開内容：設計図 / コード / 学習重み"
+                },
+                {
+                  "label": "",
+                  "value": "学習方式：デモからの模倣学習"
+                },
+                {
+                  "label": "",
+                  "value": "用途：ロボット学習研究・教育・趣味"
+                }
               ]
             }
           }
@@ -92,17 +141,42 @@
             "Hugging Faceとの統合でモデル・データセット・論文を横断探索可能に",
             "再現性重視の研究文化を支援するツールエコシステムを強化"
           ],
-          "tags": ["paperswithcode", "research-tools", "huggingface", "open-source", "benchmarks"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 4, "freshness": 4, "total": 14 },
+          "tags": [
+            "paperswithcode",
+            "research-tools",
+            "huggingface",
+            "open-source",
+            "benchmarks"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 14
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "PapersWithCode リニューアル主要変更点",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "論文検索UI：高速化・精度向上",
-                "SoTAトラッキング：自動更新機能強化",
-                "コードリンク：検証済み実装を優先表示",
-                "HF統合：モデル/データセット/論文を横断"
+                {
+                  "label": "",
+                  "value": "論文検索UI：高速化・精度向上"
+                },
+                {
+                  "label": "",
+                  "value": "SoTAトラッキング：自動更新機能強化"
+                },
+                {
+                  "label": "",
+                  "value": "コードリンク：検証済み実装を優先表示"
+                },
+                {
+                  "label": "",
+                  "value": "HF統合：モデル/データセット/論文を横断"
+                }
               ]
             }
           }
@@ -125,18 +199,47 @@
             "Python RPAスクリプトを自動生成・実行する仕組みを提供",
             "YCombinator P26採択：デスクトップ自動化のAI化を推進"
           ],
-          "tags": ["MCP", "desktop-automation", "RPA", "windows", "claude", "YC"],
-          "reaction_signal": { "kind": "hn", "points": 62 },
-          "scores": { "importance": 2, "depth": 3, "practicality": 4, "freshness": 5, "total": 14 },
+          "tags": [
+            "MCP",
+            "desktop-automation",
+            "RPA",
+            "windows",
+            "claude",
+            "YC"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 62
+          },
+          "scores": {
+            "importance": 2,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 14
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Minicor 仕組み",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "入力：Claude + MCPツール呼び出し",
-                "実行：VM上でWindowsを操作",
-                "出力：Python RPAスクリプト生成",
-                "対象：APIなしのレガシーデスクトップアプリ"
+                {
+                  "label": "",
+                  "value": "入力：Claude + MCPツール呼び出し"
+                },
+                {
+                  "label": "",
+                  "value": "実行：VM上でWindowsを操作"
+                },
+                {
+                  "label": "",
+                  "value": "出力：Python RPAスクリプト生成"
+                },
+                {
+                  "label": "",
+                  "value": "対象：APIなしのレガシーデスクトップアプリ"
+                }
               ]
             }
           }
@@ -166,19 +269,31 @@
             "Claude Code・Codex・Agent Spaceなど実製品でも転換が可視化",
             "AIラボの組織構造と採用戦略が根本的に変化しつつある"
           ],
-          "tags": ["agents", "AI-strategy", "openai", "deepseek", "paradigm-shift"],
-          "scores": { "importance": 5, "depth": 4, "practicality": 3, "freshness": 4, "total": 16 },
+          "tags": [
+            "agents",
+            "AI-strategy",
+            "openai",
+            "deepseek",
+            "paradigm-shift"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 16
+          },
           "figure": {
             "type": "comparison",
             "data": {
-              "left_label": "旧：モデルラボ",
-              "right_label": "新：エージェントラボ",
-              "rows": [
-                { "label": "主目標", "left": "モデルベンチマーク向上", "right": "エージェントタスク完遂率" },
-                { "label": "組織", "left": "研究中心", "right": "エージェントインフラチーム新設" },
-                { "label": "製品", "left": "APIモデル", "right": "Codex/Claude Code/Agent Space" },
-                { "label": "競争軸", "left": "MMLU/HumanEval", "right": "SWE-bench/実業務完遂率" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           },
           "x_post": "Latent SpaceがOpenAI・DeepSeek等の全主要AIラボのエージェントラボへの転換を宣言した。専任チームの設置やClaude Code・Codexの本格展開が証拠とされており、競争軸がモデルベンチマークからエージェントタスク完遂率へ移行したという論考である。\n\nhttps://www.latent.space/p/ainews-all-model-labs-are-now-agent"
@@ -201,19 +316,31 @@
             "トレースベースのメモリでエージェントの長期的自己改善を実現",
             "smolagentsフレームワークで実装例を公開"
           ],
-          "tags": ["agents", "memory", "trace", "smolagents", "architecture"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 4, "freshness": 2, "total": 14 },
+          "tags": [
+            "agents",
+            "memory",
+            "trace",
+            "smolagents",
+            "architecture"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 2,
+            "total": 14
+          },
           "figure": {
             "type": "comparison",
             "data": {
-              "left_label": "従来：状態なしAI",
-              "right_label": "新：トレース記憶型エージェント",
-              "rows": [
-                { "label": "記憶方式", "left": "セッション毎にリセット", "right": "過去の実行トレースを参照" },
-                { "label": "メモリ媒体", "left": "RAG/ベクトルDB", "right": "実行ログ（トレース）" },
-                { "label": "自己改善", "left": "不可", "right": "過去の失敗から学習可能" },
-                { "label": "実装コスト", "left": "追加インフラ必要", "right": "トレース保存のみ" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         }
@@ -242,17 +369,42 @@
             "独占されてきた音声AI開発を個人・研究者レベルに民主化",
             "Hugging Faceコミュニティとの協働で継続的改善を想定"
           ],
-          "tags": ["audio-LLM", "speech", "open-source", "TTS", "training-recipe"],
-          "scores": { "importance": 4, "depth": 4, "practicality": 4, "freshness": 5, "total": 17 },
+          "tags": [
+            "audio-LLM",
+            "speech",
+            "open-source",
+            "TTS",
+            "training-recipe"
+          ],
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 17
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Borealis 構成要素",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "データ：音声学習データセット（完全公開）",
-                "コード：学習・推論スクリプト（Apache2ライセンス）",
-                "重み：事前学習済みモデルチェックポイント",
-                "用途：TTS / 音声認識 / 音声対話LLM構築"
+                {
+                  "label": "",
+                  "value": "データ：音声学習データセット（完全公開）"
+                },
+                {
+                  "label": "",
+                  "value": "コード：学習・推論スクリプト（Apache2ライセンス）"
+                },
+                {
+                  "label": "",
+                  "value": "重み：事前学習済みモデルチェックポイント"
+                },
+                {
+                  "label": "",
+                  "value": "用途：TTS / 音声認識 / 音声対話LLM構築"
+                }
               ]
             }
           },
@@ -276,20 +428,35 @@
             "手元PCで動作可能な軽量アーキテクチャを採用",
             "画像生成AIのローカル化トレンドを反映した注目モデル"
           ],
-          "tags": ["anime", "image-generation", "local-AI", "SDXL", "offline"],
-          "reaction_signal": { "kind": "hatena", "users": 177 },
-          "scores": { "importance": 5, "depth": 3, "practicality": 4, "freshness": 5, "total": 17 },
+          "tags": [
+            "anime",
+            "image-generation",
+            "local-AI",
+            "SDXL",
+            "offline"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 177
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 17
+          },
           "figure": {
             "type": "comparison",
             "data": {
-              "left_label": "SDXL",
-              "right_label": "Anima Base v1.0",
-              "rows": [
-                { "label": "アニメ品質", "left": "汎用（アニメ苦手）", "right": "アニメ特化で高品質" },
-                { "label": "動作環境", "left": "クラウド/ローカル", "right": "完全ローカル" },
-                { "label": "モデル特性", "left": "汎用・大型", "right": "アニメ特化・軽量" },
-                { "label": "用途", "left": "汎用画像生成", "right": "アニメスタイル限定" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         }
@@ -318,17 +485,29 @@
             "HN 165pt：実用性の高い新アーキテクチャとして業界から高評価",
             "LoRA/Adapters等の既存軽量化技術との組み合わせ可能性を示唆"
           ],
-          "tags": ["LLM", "memory", "consolidation", "long-context", "architecture"],
-          "reaction_signal": { "kind": "hn", "points": 165 },
-          "scores": { "importance": 5, "depth": 5, "practicality": 2, "freshness": 5, "total": 17 },
+          "tags": [
+            "LLM",
+            "memory",
+            "consolidation",
+            "long-context",
+            "architecture"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 165
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 5,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 17
+          },
           "figure": {
             "type": "timeline",
             "data": {
-              "steps": [
-                { "label": "推論フェーズ", "description": "通常の文脈窓でテキスト生成（既存と同じ）" },
-                { "label": "睡眠フェーズ（新規）", "description": "文脈を高速重みに統合・変換（オフライン処理）" },
-                { "label": "次の推論フェーズ", "description": "高速重みにより長期記憶を参照しながら生成" }
-              ]
+              "headline": "",
+              "events": []
             }
           },
           "x_post": "「LLMには睡眠が必要だ」とするarXiv論文がHNで165ptを獲得した。オフラインの睡眠フェーズで文脈を高速重みに変換する機構を提案し、推論レイテンシを増やさずに長期記憶を実現するアプローチである。文脈窓の本質的限界への新解として私は注目している。\n\nhttps://arxiv.org/abs/2605.26099"
@@ -351,17 +530,42 @@
             "CheetahClaws参照実装を公開（オープンソース）",
             "SWE-bench等の実タスクでのエージェント性能改善を実証"
           ],
-          "tags": ["agents", "system-design", "scaling", "architecture", "harness"],
-          "scores": { "importance": 5, "depth": 4, "practicality": 3, "freshness": 5, "total": 17 },
+          "tags": [
+            "agents",
+            "system-design",
+            "scaling",
+            "architecture",
+            "harness"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 17
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "ハーネス・スケーリング 3要素",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "文脈ガバナンス：長期タスクでの情報選択・優先度管理",
-                "メモリ管理：短期/長期/エピソード記憶の統合",
-                "スキルルーティング：タスクに最適なツール/モデルの動的選択",
-                "参照実装：CheetahClaws（オープン公開）"
+                {
+                  "label": "",
+                  "value": "文脈ガバナンス：長期タスクでの情報選択・優先度管理"
+                },
+                {
+                  "label": "",
+                  "value": "メモリ管理：短期/長期/エピソード記憶の統合"
+                },
+                {
+                  "label": "",
+                  "value": "スキルルーティング：タスクに最適なツール/モデルの動的選択"
+                },
+                {
+                  "label": "",
+                  "value": "参照実装：CheetahClaws（オープン公開）"
+                }
               ]
             }
           }
@@ -384,17 +588,50 @@
             "誤アノテーション・データ漏洩・評価メトリクス不整合を自動検出",
             "現在のベンチマーク結果の信頼性に疑問を呈する重要な研究"
           ],
-          "tags": ["benchmark", "evaluation", "agents", "LLM", "auditing"],
-          "scores": { "importance": 5, "depth": 4, "practicality": 3, "freshness": 5, "total": 17 },
+          "tags": [
+            "benchmark",
+            "evaluation",
+            "agents",
+            "LLM",
+            "auditing"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 17
+          },
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "AI ベンチマーク監査結果",
+              "headline": "",
+              "scale": {},
               "bars": [
-                { "label": "重大な欠陥あり", "value": 25.7, "unit": "%" },
-                { "label": "健全なタスク", "value": 74.3, "unit": "%" },
-                { "label": "監査対象ベンチマーク", "value": 168, "unit": "件" },
-                { "label": "対象分野数", "value": 9, "unit": "領域" }
+                {
+                  "label": "重大な欠陥あり",
+                  "value": "25.7",
+                  "pct": 15,
+                  "tone": "primary"
+                },
+                {
+                  "label": "健全なタスク",
+                  "value": "74.3",
+                  "pct": 44,
+                  "tone": "primary"
+                },
+                {
+                  "label": "監査対象ベンチマーク",
+                  "value": "168",
+                  "pct": 100,
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象分野数",
+                  "value": "9",
+                  "pct": 5,
+                  "tone": "primary"
+                }
               ]
             }
           }
@@ -424,16 +661,44 @@
             "使用量6ヵ月で5倍拡大：AIルーティング市場の実需を証明",
             "複数LLMをコスト・性能で動的切替するユースケースが主戦場"
           ],
-          "tags": ["openrouter", "series-B", "AI-routing", "funding", "LLM-market"],
-          "scores": { "importance": 3, "depth": 2, "practicality": 3, "freshness": 5, "total": 13 },
+          "tags": [
+            "openrouter",
+            "series-B",
+            "AI-routing",
+            "funding",
+            "LLM-market"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 2,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 13
+          },
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "OpenRouter 成長指標",
+              "headline": "",
+              "scale": {},
               "bars": [
-                { "label": "評価額", "value": 1.3, "unit": "B USD" },
-                { "label": "調達額（シリーズB）", "value": 113, "unit": "M USD" },
-                { "label": "使用量成長（6ヵ月）", "value": 5, "unit": "倍" }
+                {
+                  "label": "評価額",
+                  "value": "1.3",
+                  "pct": 1,
+                  "tone": "primary"
+                },
+                {
+                  "label": "調達額（シリーズB）",
+                  "value": "113",
+                  "pct": 100,
+                  "tone": "primary"
+                },
+                {
+                  "label": "使用量成長（6ヵ月）",
+                  "value": "5",
+                  "pct": 4,
+                  "tone": "primary"
+                }
               ]
             }
           }
@@ -456,18 +721,57 @@
             "Modal：$355M調達・評価額$4.7B、エージェント向けサーバーレスGPU",
             "エージェントインフラへの集中投資は第2次AIインフラ投資サイクルを示す"
           ],
-          "tags": ["AI-infra", "funding", "TurboPuffer", "Exa", "Modal", "agents"],
-          "scores": { "importance": 5, "depth": 3, "practicality": 3, "freshness": 4, "total": 15 },
+          "tags": [
+            "AI-infra",
+            "funding",
+            "TurboPuffer",
+            "Exa",
+            "Modal",
+            "agents"
+          ],
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 15
+          },
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "AIインフラ3社 資金調達状況（2026-05）",
+              "headline": "",
+              "scale": {},
               "bars": [
-                { "label": "Modal 評価額", "value": 4.7, "unit": "B USD" },
-                { "label": "Exa 評価額", "value": 2.2, "unit": "B USD" },
-                { "label": "TurboPuffer ARR", "value": 100, "unit": "M USD" },
-                { "label": "Modal 調達額", "value": 355, "unit": "M USD" },
-                { "label": "Exa 調達額", "value": 250, "unit": "M USD" }
+                {
+                  "label": "Modal 評価額",
+                  "value": "4.7",
+                  "pct": 1,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Exa 評価額",
+                  "value": "2.2",
+                  "pct": 1,
+                  "tone": "primary"
+                },
+                {
+                  "label": "TurboPuffer ARR",
+                  "value": "100",
+                  "pct": 28,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Modal 調達額",
+                  "value": "355",
+                  "pct": 100,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Exa 調達額",
+                  "value": "250",
+                  "pct": 70,
+                  "tone": "primary"
+                }
               ]
             }
           }
@@ -497,17 +801,42 @@
             "Chris Olah（Anthropic Co-Founder）が公式に見解を寄稿",
             "カトリック教会のAI倫理への正式参入として歴史的意義がある"
           ],
-          "tags": ["AI-ethics", "regulation", "society", "anthropic", "philosophy"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 1, "freshness": 5, "total": 12 },
+          "tags": [
+            "AI-ethics",
+            "regulation",
+            "society",
+            "anthropic",
+            "philosophy"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 1,
+            "freshness": 5,
+            "total": 12
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "AI回勅「Magnifica Humanitas」概要",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "発行：ローマ教皇レオ14世（2026年5月）",
-                "主題：AIと権力集中・民主主義への影響",
-                "Anthropic応答：Chris OlahがAnthropicとして公式寄稿",
-                "意義：宗教・技術界の対話という前例のない枠組み"
+                {
+                  "label": "",
+                  "value": "発行：ローマ教皇レオ14世（2026年5月）"
+                },
+                {
+                  "label": "",
+                  "value": "主題：AIと権力集中・民主主義への影響"
+                },
+                {
+                  "label": "",
+                  "value": "Anthropic応答：Chris OlahがAnthropicとして公式寄稿"
+                },
+                {
+                  "label": "",
+                  "value": "意義：宗教・技術界の対話という前例のない枠組み"
+                }
               ]
             }
           }
@@ -537,20 +866,35 @@
             "HN 213pt：AIエンジニアコミュニティで広く共感を得た視点",
             "フロンティアAPIへの依存見直しトレンドの先触れとして注目"
           ],
-          "tags": ["local-AI", "cost", "outsourcing", "frontier-labs", "open-source"],
-          "reaction_signal": { "kind": "hn", "points": 213 },
-          "scores": { "importance": 4, "depth": 3, "practicality": 3, "freshness": 5, "total": 15 },
+          "tags": [
+            "local-AI",
+            "cost",
+            "outsourcing",
+            "frontier-labs",
+            "open-source"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 213
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 15
+          },
           "figure": {
             "type": "comparison",
             "data": {
-              "left_label": "フロンティアAPI依存",
-              "right_label": "アウトソース＋ローカルLLM",
-              "rows": [
-                { "label": "コスト構造", "left": "API従量課金（高単価）", "right": "ローカル推論＋人件費" },
-                { "label": "品質", "left": "最高水準", "right": "タスク特化で同等に近い" },
-                { "label": "制御性", "left": "ベンダー依存", "right": "自社管理・カスタマイズ自在" },
-                { "label": "スケール", "left": "コスト線形増加", "right": "モデル固定費化でスケール有利" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           },
           "x_post": "アウトソーシング＋ローカルLLMの組み合わせがフロンティアAPIより経済合理的になると論じたブログがHNで213ptを獲得した。Llama等の品質向上が経済計算を変えつつあり、フロンティアAPI依存を再考する議論として注目される。\n\nhttps://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/"
@@ -573,18 +917,46 @@
             "HN 120pt：AI時代の技術知識共有文化の変容として広く共感",
             "Claude Code・Copilot・ChatGPT等が開発者Q&Aの代替として機能"
           ],
-          "tags": ["stackoverflow", "community", "AI-impact", "coding", "developer-culture"],
-          "reaction_signal": { "kind": "hn", "points": 120 },
-          "scores": { "importance": 3, "depth": 2, "practicality": 1, "freshness": 5, "total": 11 },
+          "tags": [
+            "stackoverflow",
+            "community",
+            "AI-impact",
+            "coding",
+            "developer-culture"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 120
+          },
+          "scores": {
+            "importance": 3,
+            "depth": 2,
+            "practicality": 1,
+            "freshness": 5,
+            "total": 11
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Stack Overflow現状",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "フォーラム：AI台頭でQ&A投稿数が激減",
-                "生存策：エンタープライズ製品（SOT等）に軸足",
-                "代替品：Claude Code / Copilot / ChatGPT",
-                "意義：AIが開発者知識共有文化を変えた象徴的事例"
+                {
+                  "label": "",
+                  "value": "フォーラム：AI台頭でQ&A投稿数が激減"
+                },
+                {
+                  "label": "",
+                  "value": "生存策：エンタープライズ製品（SOT等）に軸足"
+                },
+                {
+                  "label": "",
+                  "value": "代替品：Claude Code / Copilot / ChatGPT"
+                },
+                {
+                  "label": "",
+                  "value": "意義：AIが開発者知識共有文化を変えた象徴的事例"
+                }
               ]
             }
           }
@@ -614,18 +986,47 @@
             "LLM本番運用エンジニア向けの実践的セキュリティガイドライン",
             "公開初日59いいね：実務的需要の高さを反映した反響"
           ],
-          "tags": ["AI-security", "LLM-security", "CVE", "prompt-injection", "defense"],
-          "reaction_signal": { "kind": "qiita", "likes": 59, "stocks": 0 },
-          "scores": { "importance": 5, "depth": 4, "practicality": 4, "freshness": 5, "total": 18 },
+          "tags": [
+            "AI-security",
+            "LLM-security",
+            "CVE",
+            "prompt-injection",
+            "defense"
+          ],
+          "reaction_signal": {
+            "kind": "qiita",
+            "likes": 59,
+            "stocks": 0
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 18
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "AIセキュリティ脅威分類（2026年版）",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "プロンプトインジェクション：直接/間接型の新手法",
-                "モデル汚染攻撃（Poisoning）：学習データへの混入",
-                "サプライチェーン攻撃：依存ライブラリ経由の侵害",
-                "防御策：入力検証・サンドボックス・監視体制の整備"
+                {
+                  "label": "",
+                  "value": "プロンプトインジェクション：直接/間接型の新手法"
+                },
+                {
+                  "label": "",
+                  "value": "モデル汚染攻撃（Poisoning）：学習データへの混入"
+                },
+                {
+                  "label": "",
+                  "value": "サプライチェーン攻撃：依存ライブラリ経由の侵害"
+                },
+                {
+                  "label": "",
+                  "value": "防御策：入力検証・サンドボックス・監視体制の整備"
+                }
               ]
             }
           },
@@ -649,18 +1050,46 @@
             "監視体制：エージェントの全行動ログ・人間のレビュープロセス構築",
             "日本の大手EC企業による本番エージェント運用の実践知見"
           ],
-          "tags": ["AI-governance", "guardrails", "mercari", "agents", "enterprise-AI"],
-          "reaction_signal": { "kind": "hatena", "users": 124 },
-          "scores": { "importance": 5, "depth": 4, "practicality": 4, "freshness": 5, "total": 18 },
+          "tags": [
+            "AI-governance",
+            "guardrails",
+            "mercari",
+            "agents",
+            "enterprise-AI"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 124
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "total": 18
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "メルカリ エージェントガバナンス 3層構造",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "Blast Radius制御：影響範囲の事前制限",
-                "ガードレール：逸脱検知と自動停止機構",
-                "可観測性：全行動ログ・人間レビュー体制",
-                "ポリシー：エージェント権限の最小化原則"
+                {
+                  "label": "",
+                  "value": "Blast Radius制御：影響範囲の事前制限"
+                },
+                {
+                  "label": "",
+                  "value": "ガードレール：逸脱検知と自動停止機構"
+                },
+                {
+                  "label": "",
+                  "value": "可観測性：全行動ログ・人間レビュー体制"
+                },
+                {
+                  "label": "",
+                  "value": "ポリシー：エージェント権限の最小化原則"
+                }
               ]
             }
           },
@@ -684,20 +1113,35 @@
             "Claudeを中心としたAIコーディングツールが1年で開発文化を変えた",
             "はてブ316件：日本の技術者コミュニティへの最大反響を記録"
           ],
-          "tags": ["claude", "AI-coding", "software-development", "developer-culture", "japan"],
-          "reaction_signal": { "kind": "hatena", "users": 316 },
-          "scores": { "importance": 5, "depth": 3, "practicality": 3, "freshness": 5, "total": 16 },
+          "tags": [
+            "claude",
+            "AI-coding",
+            "software-development",
+            "developer-culture",
+            "japan"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 316
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "total": 16
+          },
           "figure": {
             "type": "comparison",
             "data": {
-              "left_label": "1年前（2025）",
-              "right_label": "現在（2026）",
-              "rows": [
-                { "label": "コード生成", "left": "エンジニアが実装・AIが補助", "right": "AIが実装・エンジニアがレビュー" },
-                { "label": "リリースプロセス", "left": "全コードを人間がレビュー", "right": "AI生成コードをノーレビューでリリースも" },
-                { "label": "主要ツール", "left": "Copilot（補完中心）", "right": "Claude Code（自律実装）" },
-                { "label": "職種変化", "left": "「書けるエンジニア」優位", "right": "「設計・レビュー力」が差別化" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         },
@@ -719,18 +1163,46 @@
             "Red Teaming・ベンチマークによる評価・テスト手法を紹介",
             "はてブ198件：日本のAI安全性学習需要の高まりを反映"
           ],
-          "tags": ["AI-safety", "book", "japan", "alignment", "risk-assessment"],
-          "reaction_signal": { "kind": "hatena", "users": 198 },
-          "scores": { "importance": 5, "depth": 4, "practicality": 3, "freshness": 4, "total": 16 },
+          "tags": [
+            "AI-safety",
+            "book",
+            "japan",
+            "alignment",
+            "risk-assessment"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 198
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 16
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "『生成AIの安全性入門』目次概要",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "第1部：リスク分類（バイアス・有害出力・幻覚・脆弱性）",
-                "第2部：安全性向上手法（RLHF・Constitutional AI）",
-                "第3部：評価・テスト（Red Teaming・ベンチマーク）",
-                "第4部：規制・ガバナンス（EU AI Act・国内動向）"
+                {
+                  "label": "",
+                  "value": "第1部：リスク分類（バイアス・有害出力・幻覚・脆弱性）"
+                },
+                {
+                  "label": "",
+                  "value": "第2部：安全性向上手法（RLHF・Constitutional AI）"
+                },
+                {
+                  "label": "",
+                  "value": "第3部：評価・テスト（Red Teaming・ベンチマーク）"
+                },
+                {
+                  "label": "",
+                  "value": "第4部：規制・ガバナンス（EU AI Act・国内動向）"
+                }
               ]
             }
           }
@@ -753,18 +1225,46 @@
             "非エンジニアがAIでツール開発する際の具体的な障壁を分析",
             "はてブ524件：日本AI界の楽観論に対する広範な共感を示す"
           ],
-          "tags": ["AI-democratization", "tools", "skill-gap", "japan", "non-technical"],
-          "reaction_signal": { "kind": "hatena", "users": 524 },
-          "scores": { "importance": 5, "depth": 3, "practicality": 2, "freshness": 4, "total": 14 },
+          "tags": [
+            "AI-democratization",
+            "tools",
+            "skill-gap",
+            "japan",
+            "non-technical"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 524
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 14
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "「AI民主化」が進まない理由（著者の分析）",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "プロンプト設計にも専門知識が必要",
-                "エラーのデバッグができない非技術者",
-                "出力の品質判断ができない（品質盲点）",
-                "AI生成コードの保守・拡張問題"
+                {
+                  "label": "",
+                  "value": "プロンプト設計にも専門知識が必要"
+                },
+                {
+                  "label": "",
+                  "value": "エラーのデバッグができない非技術者"
+                },
+                {
+                  "label": "",
+                  "value": "出力の品質判断ができない（品質盲点）"
+                },
+                {
+                  "label": "",
+                  "value": "AI生成コードの保守・拡張問題"
+                }
               ]
             }
           }
@@ -794,16 +1294,40 @@
             "35時間・1000+ツール呼び出しを想定したエージェント設計",
             "GPT-4o・Gemini 1.5 Proと同等水準に到達"
           ],
-          "tags": ["qwen", "alibaba", "chinese-models", "agent", "benchmarks"],
-          "scores": { "importance": 3, "depth": 3, "practicality": 3, "freshness": 3, "total": 12 },
+          "tags": [
+            "qwen",
+            "alibaba",
+            "chinese-models",
+            "agent",
+            "benchmarks"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 3,
+            "total": 12
+          },
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "Qwen3.7-Max グローバルランキング（Artificial Analysis）",
-              "unit": "スコア",
+              "headline": "",
+              "scale": {},
               "bars": [
-                { "label": "Qwen3.7-Max", "value": 56.6, "note": "中国1位・世界5位" },
-                { "label": "前世代モデル", "value": 51.8, "note": "4.8ポイント差" }
+                {
+                  "label": "Qwen3.7-Max",
+                  "value": "56.6",
+                  "pct": 56.6,
+                  "tone": "primary",
+                  "note": "中国1位・世界5位"
+                },
+                {
+                  "label": "前世代モデル",
+                  "value": "51.8",
+                  "pct": 51.8,
+                  "tone": "primary",
+                  "note": "4.8ポイント差"
+                }
               ]
             }
           }
@@ -826,17 +1350,42 @@
             "北京大学＋Alibaba DAMO Academyの産学共同研究",
             "エネルギー政策・気候変動対策の基礎データとして活用可能"
           ],
-          "tags": ["renewable-energy", "satellite-imagery", "deep-learning", "china", "nature-paper"],
-          "scores": { "importance": 3, "depth": 4, "practicality": 2, "freshness": 3, "total": 12 },
+          "tags": [
+            "renewable-energy",
+            "satellite-imagery",
+            "deep-learning",
+            "china",
+            "nature-paper"
+          ],
+          "scores": {
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "total": 12
+          },
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "AI×衛星画像：中国再エネ普查プロジェクト",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "対象：中国全土の太陽光・風力発電設備",
-                "手法：衛星画像 + 深層学習による自動検出",
-                "成果：位置・容量の高精度マッピングを初めて実現",
-                "掲載誌：Nature（北京大学・DAMO Academy共著）"
+                {
+                  "label": "",
+                  "value": "対象：中国全土の太陽光・風力発電設備"
+                },
+                {
+                  "label": "",
+                  "value": "手法：衛星画像 + 深層学習による自動検出"
+                },
+                {
+                  "label": "",
+                  "value": "成果：位置・容量の高精度マッピングを初めて実現"
+                },
+                {
+                  "label": "",
+                  "value": "掲載誌：Nature（北京大学・DAMO Academy共著）"
+                }
               ]
             }
           }
@@ -845,11 +1394,29 @@
     }
   ],
   "skipped_sources": [
-    { "source": "reddit.com", "reason": "403 Forbidden - all subreddits blocked in this environment" },
-    { "source": "engineering.mercari.com", "reason": "403 Forbidden" },
-    { "source": "syncedreview.com/feed", "reason": "RSS stale (last built Aug 2025)" },
-    { "source": "www.theverge.com/rss", "reason": "WebFetch blocked" },
-    { "source": "importai.substack.com/feed", "reason": "403 Forbidden" },
-    { "source": "x.ai/news", "reason": "Skipped due to rate limits" }
+    {
+      "source": "reddit.com",
+      "reason": "403 Forbidden - all subreddits blocked in this environment"
+    },
+    {
+      "source": "engineering.mercari.com",
+      "reason": "403 Forbidden"
+    },
+    {
+      "source": "syncedreview.com/feed",
+      "reason": "RSS stale (last built Aug 2025)"
+    },
+    {
+      "source": "www.theverge.com/rss",
+      "reason": "WebFetch blocked"
+    },
+    {
+      "source": "importai.substack.com/feed",
+      "reason": "403 Forbidden"
+    },
+    {
+      "source": "x.ai/news",
+      "reason": "Skipped due to rate limits"
+    }
   ]
 }

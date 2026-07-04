@@ -23,12 +23,36 @@
     }
   },
   "top_picks": [
-    {"id": "nm-001", "rank": 1, "reason": "Google I/O 2026最重要モデル。エージェント・コーディング向け全指標SoTA更新・即日グローバル提供・料金半額以下の三拍子"},
-    {"id": "ta-001", "rank": 2, "reason": "HN 641pt。8Bモデルを53%→99%に引き上げるガードレールFW。ローカルLLMでのエージェント実用化を実証"},
-    {"id": "ag-002", "rank": 3, "reason": "HF日次論文1.2万件リアクション。AI自律科学研究の自己強化ループという画期的コンセプトへの業界の強い関心"},
-    {"id": "rp-001", "rank": 4, "reason": "80年来未解決のErdős予想を著名数学者3名検証付きで反証。AIの数学的推論の歴史的マイルストーン"},
-    {"id": "ib-001", "rank": 5, "reason": "月12.5億ドル・総額400億ドル超という前例のない競合間コンピュート調達契約。AI産業インフラ構造の変化を示す"},
-    {"id": "jp-002", "rank": 6, "reason": "はてブ243件。GPT-5刷新後のM365 Copilot評価逆転と法人導入根拠。国内企業の採用加速を示す最大反響"}
+    {
+      "id": "nm-001",
+      "rank": 1,
+      "reason": "Google I/O 2026最重要モデル。エージェント・コーディング向け全指標SoTA更新・即日グローバル提供・料金半額以下の三拍子"
+    },
+    {
+      "id": "ta-001",
+      "rank": 2,
+      "reason": "HN 641pt。8Bモデルを53%→99%に引き上げるガードレールFW。ローカルLLMでのエージェント実用化を実証"
+    },
+    {
+      "id": "ag-002",
+      "rank": 3,
+      "reason": "HF日次論文1.2万件リアクション。AI自律科学研究の自己強化ループという画期的コンセプトへの業界の強い関心"
+    },
+    {
+      "id": "rp-001",
+      "rank": 4,
+      "reason": "80年来未解決のErdős予想を著名数学者3名検証付きで反証。AIの数学的推論の歴史的マイルストーン"
+    },
+    {
+      "id": "ib-001",
+      "rank": 5,
+      "reason": "月12.5億ドル・総額400億ドル超という前例のない競合間コンピュート調達契約。AI産業インフラ構造の変化を示す"
+    },
+    {
+      "id": "jp-002",
+      "rank": 6,
+      "reason": "はてブ243件。GPT-5刷新後のM365 Copilot評価逆転と法人導入根拠。国内企業の採用加速を示す最大反響"
+    }
   ],
   "categories": [
     {
@@ -60,17 +84,19 @@
             "Google AI Studioで即日グローバル提供開始",
             "前世代Gemini 3.1 Proを全ベンチマークで上回る"
           ],
-          "tags": ["gemini", "google", "frontier-model", "coding", "agents"],
+          "tags": [
+            "gemini",
+            "google",
+            "frontier-model",
+            "coding",
+            "agents"
+          ],
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "Gemini 3.5 Flash ベンチマーク",
-              "unit": "%",
-              "items": [
-                {"label": "Terminal-Bench 2.1", "value": 76.2, "baseline": null},
-                {"label": "MCP Atlas", "value": 83.6, "baseline": null},
-                {"label": "CharXiv", "value": 84.2, "baseline": null}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           },
           "reaction_signal": null,
@@ -107,17 +133,35 @@
             "リアルタイム翻訳・感情認識が単一推論で完結",
             "Google AI StudioとGemini Advancedで段階的提供開始"
           ],
-          "tags": ["gemini", "google", "multimodal", "real-time", "vision"],
+          "tags": [
+            "gemini",
+            "google",
+            "multimodal",
+            "real-time",
+            "vision"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Gemini Omni",
-              "subtitle": "リアルタイムマルチモーダル統合",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "テキスト・画像・音声・動画をネイティブ統合",
-                "Live API：カメラ映像＋音声会話",
-                "リアルタイム翻訳・感情認識を単一モデルで実現",
-                "Google AI Studio / Gemini Advanced で提供開始"
+                {
+                  "label": "",
+                  "value": "テキスト・画像・音声・動画をネイティブ統合"
+                },
+                {
+                  "label": "",
+                  "value": "Live API：カメラ映像＋音声会話"
+                },
+                {
+                  "label": "",
+                  "value": "リアルタイム翻訳・感情認識を単一モデルで実現"
+                },
+                {
+                  "label": "",
+                  "value": "Google AI Studio / Gemini Advanced で提供開始"
+                }
               ]
             }
           },
@@ -147,17 +191,34 @@
             "API＋商用ライセンスを同時提供",
             "ゲーム・映像・広告制作のプロユース向け"
           ],
-          "tags": ["stability-ai", "audio-generation", "music", "generative-ai"],
+          "tags": [
+            "stability-ai",
+            "audio-generation",
+            "music",
+            "generative-ai"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Stability Audio 3.0",
-              "subtitle": "プロ品質音声生成モデル",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "最大3分の楽曲・効果音をテキストから生成",
-                "リズム整合性・音色再現・ステレオ分離が前世代比で大幅改善",
-                "API＋商用ライセンス同時提供",
-                "ゲーム・映像・広告のプロユース対応"
+                {
+                  "label": "",
+                  "value": "最大3分の楽曲・効果音をテキストから生成"
+                },
+                {
+                  "label": "",
+                  "value": "リズム整合性・音色再現・ステレオ分離が前世代比で大幅改善"
+                },
+                {
+                  "label": "",
+                  "value": "API＋商用ライセンス同時提供"
+                },
+                {
+                  "label": "",
+                  "value": "ゲーム・映像・広告のプロユース対応"
+                }
               ]
             }
           },
@@ -194,17 +255,35 @@
             "フロンティアAPIなしでローカルLLMエージェントが本番稼働可能",
             "Apache 2.0ライセンスでエンタープライズ利用可能"
           ],
-          "tags": ["agents", "guardrails", "local-llm", "oss", "hacker-news"],
+          "tags": [
+            "agents",
+            "guardrails",
+            "local-llm",
+            "oss",
+            "hacker-news"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "Forge導入前後のエージェント成功率",
-              "before": {"label": "導入前（8B素モデル）", "value": 53, "unit": "%"},
-              "after": {"label": "導入後（Forge 5層）", "value": 99, "unit": "%"},
-              "delta": "+46pp"
+              "headline": "",
+              "before": {
+                "label": "導入前（8B素モデル）",
+                "value": 53,
+                "unit": "%"
+              },
+              "after": {
+                "label": "導入後（Forge 5層）",
+                "value": 99,
+                "unit": "%"
+              },
+              "metrics": []
             }
           },
-          "reaction_signal": {"platform": "HN", "score": 641, "label": "641pt"},
+          "reaction_signal": {
+            "platform": "HN",
+            "score": 641,
+            "label": "641pt"
+          },
           "x_post": "ガードレール5層を追加することで8Bの自己ホストモデルのエージェントタスク成功率が53%から99%に向上するというOSSフレームワーク「Forge」がHNで641ポイントを獲得した。多段階ワークフローの複利失敗問題を解決し、フロンティアAPIに頼らずローカルで本番エージェントを動かせる可能性を示す。\n\nhttps://github.com/antoinezambelli/forge"
         },
         {
@@ -231,15 +310,36 @@
             "Chrome 125以降で標準サポート開始",
             "エンタープライズ向けSandboxモードを追加"
           ],
-          "tags": ["google", "webassembly", "browser", "wasm", "google-io"],
+          "tags": [
+            "google",
+            "webassembly",
+            "browser",
+            "wasm",
+            "google-io"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "Antigravity リリース経緯",
+              "headline": "",
               "events": [
-                {"date": "2025-05", "label": "Antigravity 1.0 公開"},
-                {"date": "2026-05-20", "label": "Antigravity 2.0 @ Google I/O — Doom対応・Chrome 125標準化"},
-                {"date": "2026-06", "label": "グローバル展開完了予定"}
+                {
+                  "when": "2025-05",
+                  "label": "Antigravity 1.0 公開",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-05-20",
+                  "label": "Antigravity 2.0 @ Google I/O — Doom対応・Chrome 125標準化",
+                  "description": "",
+                  "status": "now"
+                },
+                {
+                  "when": "2026-06",
+                  "label": "グローバル展開完了予定",
+                  "description": "",
+                  "status": "upcoming"
+                }
               ]
             }
           },
@@ -269,17 +369,34 @@
             "Figma Enterprise向けに段階展開・追加課金なし",
             "デザイン→開発のブリッジを自動化"
           ],
-          "tags": ["figma", "design-tools", "ai-assistant", "ux"],
+          "tags": [
+            "figma",
+            "design-tools",
+            "ai-assistant",
+            "ux"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Figma AI アシスタント",
-              "subtitle": "デザインツールへのネイティブAI統合",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "コンポーネント提案・自動レイアウト調整",
-                "アクセシビリティ注釈を自動生成",
-                "Figma Enterprise向け段階展開（追加課金なし）",
-                "デザイン→開発ハンドオフ時間を大幅削減"
+                {
+                  "label": "",
+                  "value": "コンポーネント提案・自動レイアウト調整"
+                },
+                {
+                  "label": "",
+                  "value": "アクセシビリティ注釈を自動生成"
+                },
+                {
+                  "label": "",
+                  "value": "Figma Enterprise向け段階展開（追加課金なし）"
+                },
+                {
+                  "label": "",
+                  "value": "デザイン→開発ハンドオフ時間を大幅削減"
+                }
               ]
             }
           },
@@ -316,21 +433,43 @@
             "完全オープンモデル＋ツールセットで再現可能",
             "Operator/Claude Computer Useの代替候補として注目"
           ],
-          "tags": ["computer-use", "agents", "oss", "osworld", "gui"],
+          "tags": [
+            "computer-use",
+            "agents",
+            "oss",
+            "osworld",
+            "gui"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "OpenComputer",
-              "subtitle": "OSSコンピュータ操作エージェント",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "OSWorldで約30%達成（GPT-4o並み）",
-                "GUI操作・スクリーン読み取り・マルチアプリ連携",
-                "完全OSSモデル＋ツールセット",
-                "HF Papers公開直後に50件以上アップボート"
+                {
+                  "label": "",
+                  "value": "OSWorldで約30%達成（GPT-4o並み）"
+                },
+                {
+                  "label": "",
+                  "value": "GUI操作・スクリーン読み取り・マルチアプリ連携"
+                },
+                {
+                  "label": "",
+                  "value": "完全OSSモデル＋ツールセット"
+                },
+                {
+                  "label": "",
+                  "value": "HF Papers公開直後に50件以上アップボート"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "HuggingFace", "score": 50, "label": "50 upvotes"}
+          "reaction_signal": {
+            "platform": "HuggingFace",
+            "score": 50,
+            "label": "50 upvotes"
+          }
         },
         {
           "id": "ag-002",
@@ -356,20 +495,50 @@
             "AI自律科学研究の自己強化ループという画期的コンセプト",
             "現時点では実験的段階だが将来への影響大"
           ],
-          "tags": ["ai-research", "autonomous-agents", "science", "huggingface", "self-reinforcing"],
+          "tags": [
+            "ai-research",
+            "autonomous-agents",
+            "science",
+            "huggingface",
+            "self-reinforcing"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "AutoResearchClaw 研究サイクル",
+              "headline": "",
               "events": [
-                {"date": "Step 1", "label": "人間が初期仮説を入力"},
-                {"date": "Step 2", "label": "LLMが実験設計→自動実行"},
-                {"date": "Step 3", "label": "結果を解析し次仮説を生成"},
-                {"date": "Step N", "label": "自己強化ループで継続→研究加速"}
+                {
+                  "when": "Step 1",
+                  "label": "人間が初期仮説を入力",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "LLMが実験設計→自動実行",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "結果を解析し次仮説を生成",
+                  "description": "",
+                  "status": "now"
+                },
+                {
+                  "when": "Step N",
+                  "label": "自己強化ループで継続→研究加速",
+                  "description": "",
+                  "status": "past"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "HuggingFace", "score": 12400, "label": "12,400 reactions"},
+          "reaction_signal": {
+            "platform": "HuggingFace",
+            "score": 12400,
+            "label": "12,400 reactions"
+          },
           "x_post": "「AutoResearchClaw」はLLMエージェントが仮説生成・実験・検証を自律的に繰り返す自己強化型の科学研究システムだ。Hugging Face日次論文でトップの1万2400件のリアクションを集め、AI自律研究への関心の高さを示す。人間とAIが共同で科学的発見を加速する時代の到来を告げる論文として注目されている。\n\nhttps://huggingface.co/papers/2605.20025"
         }
       ]
@@ -403,15 +572,36 @@
             "AIが著名未解決数学問題を自律解決した初事例の可能性",
             "専門家査読を伴う発表でAI×数学の新マイルストーン"
           ],
-          "tags": ["openai", "mathematics", "reasoning", "erdos", "conjecture"],
+          "tags": [
+            "openai",
+            "mathematics",
+            "reasoning",
+            "erdos",
+            "conjecture"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "Erdős予想反証の経緯",
+              "headline": "",
               "events": [
-                {"date": "1946", "label": "Erdős が幾何学予想を提唱（正方格子最良説）"},
-                {"date": "2026-05-20", "label": "OpenAI推論モデルが新構造を発見し反証"},
-                {"date": "2026-05-20", "label": "数学者3名（Alon・Woodら）が独立検証完了"}
+                {
+                  "when": "1946",
+                  "label": "Erdős が幾何学予想を提唱（正方格子最良説）",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-05-20",
+                  "label": "OpenAI推論モデルが新構造を発見し反証",
+                  "description": "",
+                  "status": "now"
+                },
+                {
+                  "when": "2026-05-20",
+                  "label": "数学者3名（Alon・Woodら）が独立検証完了",
+                  "description": "",
+                  "status": "past"
+                }
               ]
             }
           },
@@ -442,21 +632,43 @@
             "MATH・AMC・AIMEで新SoTAを記録",
             "HF Papers 51件アップボート"
           ],
-          "tags": ["reinforcement-learning", "reasoning", "long-context", "scaling", "arxiv"],
+          "tags": [
+            "reinforcement-learning",
+            "reasoning",
+            "long-context",
+            "scaling",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "GoLongRL",
-              "subtitle": "RLによる長文推論スケーリング",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "32,000トークン超の推論チェーンを安定実現",
-                "カリキュラム設計＋報酬整形で不安定性を解消",
-                "MATH・AMC・AIMEで新SoTA達成",
-                "HF Papers 51件アップボート"
+                {
+                  "label": "",
+                  "value": "32,000トークン超の推論チェーンを安定実現"
+                },
+                {
+                  "label": "",
+                  "value": "カリキュラム設計＋報酬整形で不安定性を解消"
+                },
+                {
+                  "label": "",
+                  "value": "MATH・AMC・AIMEで新SoTA達成"
+                },
+                {
+                  "label": "",
+                  "value": "HF Papers 51件アップボート"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "HuggingFace", "score": 51, "label": "51 upvotes"}
+          "reaction_signal": {
+            "platform": "HuggingFace",
+            "score": 51,
+            "label": "51 upvotes"
+          }
         },
         {
           "id": "rp-003",
@@ -482,14 +694,28 @@
             "視覚認識は高精度だが因果推論で顕著に性能低下する共通弱点を発見",
             "VLM開発の次の研究課題を明確化"
           ],
-          "tags": ["vlm", "causal-reasoning", "benchmark", "vision-language", "arxiv"],
+          "tags": [
+            "vlm",
+            "causal-reasoning",
+            "benchmark",
+            "vision-language",
+            "arxiv"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "VLM：視覚認識 vs 因果推論",
-              "before": {"label": "視覚認識スコア（平均）", "value": 82, "unit": "%"},
-              "after": {"label": "因果推論スコア（平均）", "value": 47, "unit": "%"},
-              "delta": "−35pp の性能低下"
+              "headline": "",
+              "before": {
+                "label": "視覚認識スコア（平均）",
+                "value": 82,
+                "unit": "%"
+              },
+              "after": {
+                "label": "因果推論スコア（平均）",
+                "value": 47,
+                "unit": "%"
+              },
+              "metrics": []
             }
           },
           "reaction_signal": null
@@ -525,17 +751,35 @@
             "xAIはIPO前の余剰Colossus 1容量をネオクラウドとして収益化",
             "競合AI企業間のインフラ依存という産業構造の新パターン"
           ],
-          "tags": ["anthropic", "xai", "compute", "infrastructure", "colossus"],
+          "tags": [
+            "anthropic",
+            "xai",
+            "compute",
+            "infrastructure",
+            "colossus"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Anthropic-xAI コンピュート契約",
-              "subtitle": "前例のない競合間インフラ調達",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "月12.5億ドル（3年間・総額400億ドル超）",
-                "xAI Colossus 1スーパークラスターのGPU容量を使用",
-                "SpaceXのSEC書類から判明（非公表だった）",
-                "xAI：IPO前の余剰容量をネオクラウドとして収益化"
+                {
+                  "label": "",
+                  "value": "月12.5億ドル（3年間・総額400億ドル超）"
+                },
+                {
+                  "label": "",
+                  "value": "xAI Colossus 1スーパークラスターのGPU容量を使用"
+                },
+                {
+                  "label": "",
+                  "value": "SpaceXのSEC書類から判明（非公表だった）"
+                },
+                {
+                  "label": "",
+                  "value": "xAI：IPO前の余剰容量をネオクラウドとして収益化"
+                }
               ]
             }
           },
@@ -566,15 +810,36 @@
             "独自インフラ投資とクラウド依存のバランスが課題",
             "IPO資金調達で競合との差を広げる戦略"
           ],
-          "tags": ["openai", "ipo", "microsoft", "business", "fundraising"],
+          "tags": [
+            "openai",
+            "ipo",
+            "microsoft",
+            "business",
+            "fundraising"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "OpenAI IPO への道筋",
+              "headline": "",
               "events": [
-                {"date": "2025", "label": "ARR 100億ドル突破"},
-                {"date": "2026-05", "label": "IPOタイムライン加速・Microsoft契約再交渉"},
-                {"date": "2026 H2", "label": "IPO上場予定"}
+                {
+                  "when": "2025",
+                  "label": "ARR 100億ドル突破",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-05",
+                  "label": "IPOタイムライン加速・Microsoft契約再交渉",
+                  "description": "",
+                  "status": "now"
+                },
+                {
+                  "when": "2026 H2",
+                  "label": "IPO上場予定",
+                  "description": "",
+                  "status": "past"
+                }
               ]
             }
           },
@@ -611,17 +876,35 @@
             "OpenAI×Google DeepMindの競合間安全技術共有という異例のコラボ",
             "AI生成テキストの識別標準化に向けた業界動向"
           ],
-          "tags": ["openai", "synthid", "watermarking", "ai-safety", "eu-ai-act"],
+          "tags": [
+            "openai",
+            "synthid",
+            "watermarking",
+            "ai-safety",
+            "eu-ai-act"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "SynthID × GPT-5 統合",
-              "subtitle": "AI生成コンテンツ識別の標準化",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "GPT-5出力に人間不可知覚の透かしを埋め込み",
-                "EU AI Actのコンテンツ開示要件への対応",
-                "競合他社技術（DeepMind SynthID）の採用という異例の協力",
-                "AI生成テキスト識別の業界標準化を促進"
+                {
+                  "label": "",
+                  "value": "GPT-5出力に人間不可知覚の透かしを埋め込み"
+                },
+                {
+                  "label": "",
+                  "value": "EU AI Actのコンテンツ開示要件への対応"
+                },
+                {
+                  "label": "",
+                  "value": "競合他社技術（DeepMind SynthID）の採用という異例の協力"
+                },
+                {
+                  "label": "",
+                  "value": "AI生成テキスト識別の業界標準化を促進"
+                }
               ]
             }
           },
@@ -658,14 +941,28 @@
             "AI概要品質向上の一方でWeb流入激減を懸念する声が多数",
             "従来型Webトラフィック経済の終焉を巡る論争が続く"
           ],
-          "tags": ["google-search", "ai-mode", "seo", "community", "hacker-news"],
+          "tags": [
+            "google-search",
+            "ai-mode",
+            "seo",
+            "community",
+            "hacker-news"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "Google Search AI Mode 影響",
-              "before": {"label": "従来型検索（リンク列挙）", "value": 100, "unit": "（基準）"},
-              "after": {"label": "AI Mode（AI概要優先）", "value": 40, "unit": "（Web流入推定残存率%）"},
-              "delta": "−60% Webトラフィック流入減（推定）"
+              "headline": "",
+              "before": {
+                "label": "従来型検索（リンク列挙）",
+                "value": 100,
+                "unit": "（基準）"
+              },
+              "after": {
+                "label": "AI Mode（AI概要優先）",
+                "value": 40,
+                "unit": "（Web流入推定残存率%）"
+              },
+              "metrics": []
             }
           },
           "reaction_signal": null
@@ -694,21 +991,43 @@
             "24時間自律放送を実現—人間スタッフはゼロ",
             "メディア産業へのAI自動化の実例として注目"
           ],
-          "tags": ["ai-media", "radio", "automation", "community", "gigazine"],
+          "tags": [
+            "ai-media",
+            "radio",
+            "automation",
+            "community",
+            "gigazine"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "AI完全運営ラジオ局",
-              "subtitle": "4局に拡大・24時間自律放送",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "楽曲選定・トークスクリプト・音声合成・配信をすべてAIが担当",
-                "人間DJ・プロデューサーなしで24時間放送",
-                "世界4局に拡大（2026年5月時点）",
-                "メディア産業の自動化の実例として注目"
+                {
+                  "label": "",
+                  "value": "楽曲選定・トークスクリプト・音声合成・配信をすべてAIが担当"
+                },
+                {
+                  "label": "",
+                  "value": "人間DJ・プロデューサーなしで24時間放送"
+                },
+                {
+                  "label": "",
+                  "value": "世界4局に拡大（2026年5月時点）"
+                },
+                {
+                  "label": "",
+                  "value": "メディア産業の自動化の実例として注目"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "hatena", "score": 33, "label": "はてブ33件"}
+          "reaction_signal": {
+            "platform": "hatena",
+            "score": 33,
+            "label": "はてブ33件"
+          }
         }
       ]
     },
@@ -741,21 +1060,44 @@
             "Google I/O 2026発表をいち早く日本語で解説したPublickey",
             "WebAssembly時代のLinuxバイナリ移植の手軽さを実証"
           ],
-          "tags": ["antigravity", "webassembly", "google", "doom", "publickey", "hatena"],
+          "tags": [
+            "antigravity",
+            "webassembly",
+            "google",
+            "doom",
+            "publickey",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Publickey: Google Antigravity 2.0",
-              "subtitle": "はてブ213件の注目記事",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "DoomがブラウザWebAssemblyでネイティブ動作",
-                "LinuxバイナリのWebAssembly移植が数分で完了",
-                "Chrome 125以降で標準サポート",
-                "はてブ213件—国内技術者に最大反響"
+                {
+                  "label": "",
+                  "value": "DoomがブラウザWebAssemblyでネイティブ動作"
+                },
+                {
+                  "label": "",
+                  "value": "LinuxバイナリのWebAssembly移植が数分で完了"
+                },
+                {
+                  "label": "",
+                  "value": "Chrome 125以降で標準サポート"
+                },
+                {
+                  "label": "",
+                  "value": "はてブ213件—国内技術者に最大反響"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "hatena", "score": 213, "label": "はてブ213件"}
+          "reaction_signal": {
+            "platform": "hatena",
+            "score": 213,
+            "label": "はてブ213件"
+          }
         },
         {
           "id": "jp-002",
@@ -781,21 +1123,44 @@
             "GPT-5刷新後に「評価が逆転した」と実務目線で分析",
             "法人導入を今すべき根拠を具体数値で整理"
           ],
-          "tags": ["microsoft-365", "copilot", "gpt-5", "enterprise", "qiita", "hatena"],
+          "tags": [
+            "microsoft-365",
+            "copilot",
+            "gpt-5",
+            "enterprise",
+            "qiita",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "M365 Copilot 法人導入解説",
-              "subtitle": "はてブ243件・ROI試算付き",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "Teams会議要約・Excel分析・PPT生成を実務ROIで試算",
-                "GPT-5刷新後に評価が逆転—今すぐ導入すべき理由",
-                "法人導入の根拠を具体数値で整理",
-                "はてブ243件—国内Copilot記事の最高反響"
+                {
+                  "label": "",
+                  "value": "Teams会議要約・Excel分析・PPT生成を実務ROIで試算"
+                },
+                {
+                  "label": "",
+                  "value": "GPT-5刷新後に評価が逆転—今すぐ導入すべき理由"
+                },
+                {
+                  "label": "",
+                  "value": "法人導入の根拠を具体数値で整理"
+                },
+                {
+                  "label": "",
+                  "value": "はてブ243件—国内Copilot記事の最高反響"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "hatena", "score": 243, "label": "はてブ243件"},
+          "reaction_signal": {
+            "platform": "hatena",
+            "score": 243,
+            "label": "はてブ243件"
+          },
           "x_post": "GPT-5ベースへの刷新でM365 Copilotの評価が逆転したというQiita記事がはてブ243件を記録した。Teams会議要約・Excel分析・PowerPoint自動生成の実務効果をROIで試算し、法人導入を今すべき根拠を整理している。国内企業のCopilot本格導入検討が急増していることを示す強い反響だ。\n\nhttps://qiita.com/Takashi_Masumori/items/2ace83e1d37c13f01190"
         },
         {
@@ -822,21 +1187,43 @@
             "クラウドに個人情報を送信しないプライバシー保護設計",
             "Apple M系チップで快適動作"
           ],
-          "tags": ["local-ai", "privacy", "personal-assistant", "offline", "hatena"],
+          "tags": [
+            "local-ai",
+            "privacy",
+            "personal-assistant",
+            "offline",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Anima ローカルAI個人秘書",
-              "subtitle": "完全オフライン・プライバシー保護",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "デバイス上LLMで完全オフライン動作",
-                "スケジュール・メモ・リマインダーをローカル処理",
-                "個人情報をクラウドに送信しない設計",
-                "Apple M系チップで快適動作・はてブ107件"
+                {
+                  "label": "",
+                  "value": "デバイス上LLMで完全オフライン動作"
+                },
+                {
+                  "label": "",
+                  "value": "スケジュール・メモ・リマインダーをローカル処理"
+                },
+                {
+                  "label": "",
+                  "value": "個人情報をクラウドに送信しない設計"
+                },
+                {
+                  "label": "",
+                  "value": "Apple M系チップで快適動作・はてブ107件"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "hatena", "score": 107, "label": "はてブ107件"}
+          "reaction_signal": {
+            "platform": "hatena",
+            "score": 107,
+            "label": "はてブ107件"
+          }
         },
         {
           "id": "jp-004",
@@ -862,21 +1249,44 @@
             "従来SEOからLLMO・AIOへの移行方法を実践的に整理",
             "マーケター・コンテンツ制作者向けの具体的アドバイス"
           ],
-          "tags": ["llmo", "aio", "seo", "google-ai-mode", "marketing", "hatena"],
+          "tags": [
+            "llmo",
+            "aio",
+            "seo",
+            "google-ai-mode",
+            "marketing",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "LLMO/AIO 完全ガイド",
-              "subtitle": "AI時代の検索最適化入門",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "LLMO（LLM最適化）とAIO（AIオーバービュー最適化）を解説",
-                "Google AIモード全面展開後の対応戦略",
-                "従来SEOからの移行方法を実践的に整理",
-                "はてブ97件—国内マーケター・エンジニアに注目"
+                {
+                  "label": "",
+                  "value": "LLMO（LLM最適化）とAIO（AIオーバービュー最適化）を解説"
+                },
+                {
+                  "label": "",
+                  "value": "Google AIモード全面展開後の対応戦略"
+                },
+                {
+                  "label": "",
+                  "value": "従来SEOからの移行方法を実践的に整理"
+                },
+                {
+                  "label": "",
+                  "value": "はてブ97件—国内マーケター・エンジニアに注目"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "hatena", "score": 97, "label": "はてブ97件"}
+          "reaction_signal": {
+            "platform": "hatena",
+            "score": 97,
+            "label": "はてブ97件"
+          }
         },
         {
           "id": "jp-005",
@@ -902,17 +1312,35 @@
             "セキュリティクリアランス対応のオンプレミス構成で運用",
             "官公庁AI導入として国内最大規模—行政DXの加速を示す"
           ],
-          "tags": ["government", "japan", "gennai", "digital-agency", "public-sector"],
+          "tags": [
+            "government",
+            "japan",
+            "gennai",
+            "digital-agency",
+            "public-sector"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "政府Gennai 18万人展開",
-              "subtitle": "デジタル庁・官公庁最大規模のAI導入",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "霞が関全省庁約18万人職員向けに段階展開",
-                "文書作成・議事録生成・データ分析に活用",
-                "セキュリティクリアランス対応・オンプレミス運用",
-                "官公庁AI導入として国内最大規模"
+                {
+                  "label": "",
+                  "value": "霞が関全省庁約18万人職員向けに段階展開"
+                },
+                {
+                  "label": "",
+                  "value": "文書作成・議事録生成・データ分析に活用"
+                },
+                {
+                  "label": "",
+                  "value": "セキュリティクリアランス対応・オンプレミス運用"
+                },
+                {
+                  "label": "",
+                  "value": "官公庁AI導入として国内最大規模"
+                }
               ]
             }
           },
@@ -949,21 +1377,43 @@
             "ByteDance Research 開発・HF Papers 67件アップボート",
             "LLM訓練インフラの実用的最適化として注目"
           ],
-          "tags": ["bytedance", "data-format", "llm-training", "multimodal", "columnar"],
+          "tags": [
+            "bytedance",
+            "data-format",
+            "llm-training",
+            "multimodal",
+            "columnar"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Lance データフォーマット",
-              "subtitle": "ByteDance製・LLM訓練高速化",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "Parquet比で最大3倍のデータロード速度",
-                "画像・テキスト・動画の混合訓練データに対応",
-                "ByteDance Research開発のOSSカラム型フォーマット",
-                "HF Papers 67件アップボート"
+                {
+                  "label": "",
+                  "value": "Parquet比で最大3倍のデータロード速度"
+                },
+                {
+                  "label": "",
+                  "value": "画像・テキスト・動画の混合訓練データに対応"
+                },
+                {
+                  "label": "",
+                  "value": "ByteDance Research開発のOSSカラム型フォーマット"
+                },
+                {
+                  "label": "",
+                  "value": "HF Papers 67件アップボート"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "HuggingFace", "score": 67, "label": "67 upvotes"}
+          "reaction_signal": {
+            "platform": "HuggingFace",
+            "score": 67,
+            "label": "67 upvotes"
+          }
         },
         {
           "id": "cn-002",
@@ -989,35 +1439,97 @@
             "小紅書（Xiaohongshu）AI部門rednote-hilab発の基礎研究",
             "HF Papers 61件アップボート"
           ],
-          "tags": ["continual-learning", "knowledge-distillation", "xiaohongshu", "llm", "forgetting"],
+          "tags": [
+            "continual-learning",
+            "knowledge-distillation",
+            "xiaohongshu",
+            "llm",
+            "forgetting"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Anti-Self-Distillation",
-              "subtitle": "継続学習での知識崩壊防止",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "自己蒸留による知識崩壊を抑制する新手法",
-                "カタストロフィック・フォーゲッティングを軽減",
-                "小紅書AI研究部門rednote-hilab発表",
-                "HF Papers 61件アップボート"
+                {
+                  "label": "",
+                  "value": "自己蒸留による知識崩壊を抑制する新手法"
+                },
+                {
+                  "label": "",
+                  "value": "カタストロフィック・フォーゲッティングを軽減"
+                },
+                {
+                  "label": "",
+                  "value": "小紅書AI研究部門rednote-hilab発表"
+                },
+                {
+                  "label": "",
+                  "value": "HF Papers 61件アップボート"
+                }
               ]
             }
           },
-          "reaction_signal": {"platform": "HuggingFace", "score": 61, "label": "61 upvotes"}
+          "reaction_signal": {
+            "platform": "HuggingFace",
+            "score": 61,
+            "label": "61 upvotes"
+          }
         }
       ]
     }
   ],
   "skipped_sources": [
-    {"source": "Reddit r/LocalLLaMA, r/MachineLearning, r/ClaudeAI, r/OpenAI, r/singularity RSS", "reason": "Claude Code unable to fetch reddit.com", "fallback_used": "HN Algolia API, WebSearch"},
-    {"source": "The Verge AI RSS", "reason": "Connection blocked", "fallback_used": "WebSearch"},
-    {"source": "Wired AI RSS, Ars Technica AI RSS", "reason": "Connection blocked", "fallback_used": "none"},
-    {"source": "Import AI (importai.substack.com)", "reason": "HTTP 403", "fallback_used": "none"},
-    {"source": "The Batch (deeplearning.ai/the-batch/feed/)", "reason": "HTTP 404", "fallback_used": "WebSearch"},
-    {"source": "ChinAI Newsletter (chinai.substack.com)", "reason": "HTTP 403", "fallback_used": "WebSearch for China news"},
-    {"source": "OpenAI blog (openai.com/blog)", "reason": "HTTP 403", "fallback_used": "WebSearch site:openai.com"},
-    {"source": "xAI news (x.ai/news)", "reason": "HTTP 403", "fallback_used": "Secondary media sources"},
-    {"source": "Synced Review RSS (syncedreview.com)", "reason": "Only one outdated article (Aug 2025) in feed", "fallback_used": "HuggingFace Papers for China-affiliated research"},
-    {"source": "Mercari Engineering blog (engineering.mercari.com)", "reason": "HTTP 403", "fallback_used": "none"}
+    {
+      "source": "Reddit r/LocalLLaMA, r/MachineLearning, r/ClaudeAI, r/OpenAI, r/singularity RSS",
+      "reason": "Claude Code unable to fetch reddit.com",
+      "fallback_used": "HN Algolia API, WebSearch"
+    },
+    {
+      "source": "The Verge AI RSS",
+      "reason": "Connection blocked",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Wired AI RSS, Ars Technica AI RSS",
+      "reason": "Connection blocked",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Import AI (importai.substack.com)",
+      "reason": "HTTP 403",
+      "fallback_used": "none"
+    },
+    {
+      "source": "The Batch (deeplearning.ai/the-batch/feed/)",
+      "reason": "HTTP 404",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "ChinAI Newsletter (chinai.substack.com)",
+      "reason": "HTTP 403",
+      "fallback_used": "WebSearch for China news"
+    },
+    {
+      "source": "OpenAI blog (openai.com/blog)",
+      "reason": "HTTP 403",
+      "fallback_used": "WebSearch site:openai.com"
+    },
+    {
+      "source": "xAI news (x.ai/news)",
+      "reason": "HTTP 403",
+      "fallback_used": "Secondary media sources"
+    },
+    {
+      "source": "Synced Review RSS (syncedreview.com)",
+      "reason": "Only one outdated article (Aug 2025) in feed",
+      "fallback_used": "HuggingFace Papers for China-affiliated research"
+    },
+    {
+      "source": "Mercari Engineering blog (engineering.mercari.com)",
+      "reason": "HTTP 403",
+      "fallback_used": "none"
+    }
   ]
 }

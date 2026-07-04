@@ -23,13 +23,41 @@
     }
   },
   "top_picks": [
-    { "id": "2026-05-13-003", "rank": 1, "reason": "must_read:source=anthropic+importance5+official_launch" },
-    { "id": "2026-05-13-019", "rank": 2, "reason": "must_read:hatena>=250+japan_guaranteed" },
-    { "id": "2026-05-13-016", "rank": 3, "reason": "must_read:hn>=835>=500" },
-    { "id": "2026-05-13-010", "rank": 4, "reason": "diversity:research_papers+importance5_after_bias" },
-    { "id": "2026-05-13-015", "rank": 5, "reason": "diversity:regulation_policy+importance4+safety_milestone" },
-    { "id": "2026-05-13-001", "rank": 6, "reason": "score_top:new_models+practicality5+hn133" },
-    { "id": "2026-05-13-023", "rank": 7, "reason": "china_conditional:importance>=4+deepseek_major_raise" }
+    {
+      "id": "2026-05-13-003",
+      "rank": 1,
+      "reason": "must_read:source=anthropic+importance5+official_launch"
+    },
+    {
+      "id": "2026-05-13-019",
+      "rank": 2,
+      "reason": "must_read:hatena>=250+japan_guaranteed"
+    },
+    {
+      "id": "2026-05-13-016",
+      "rank": 3,
+      "reason": "must_read:hn>=835>=500"
+    },
+    {
+      "id": "2026-05-13-010",
+      "rank": 4,
+      "reason": "diversity:research_papers+importance5_after_bias"
+    },
+    {
+      "id": "2026-05-13-015",
+      "rank": 5,
+      "reason": "diversity:regulation_policy+importance4+safety_milestone"
+    },
+    {
+      "id": "2026-05-13-001",
+      "rank": 6,
+      "reason": "score_top:new_models+practicality5+hn133"
+    },
+    {
+      "id": "2026-05-13-023",
+      "rank": 7,
+      "reason": "china_conditional:importance>=4+deepseek_major_raise"
+    }
   ],
   "categories": [
     {
@@ -63,23 +91,55 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 133 },
-          "tags": ["small-model", "tool-calling", "distillation", "edge-ai", "gemini", "open-source"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 133
+          },
+          "tags": [
+            "small-model",
+            "tool-calling",
+            "distillation",
+            "edge-ai",
+            "gemini",
+            "open-source"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Needle 26M 性能",
-            "alt": "Needle 26M モデルの性能指標を示す横棒グラフ。プリフィル速度 6,000 tok/s（バー長 100%）、デコード速度 1,200 tok/s（バー長 90%）、モデルサイズ 26M パラメータ（バー長 15%：GPT-4o 比）、GitHub スター獲得（1日で急上昇）を表示。",
             "data": {
               "headline": "Needle 26M: エッジデバイスで Gemini 級ツール呼び出しを実現",
               "bars": [
-                { "label": "プリフィル速度", "value": "6,000 tok/s", "pct": 100, "note": "コンシューマーデバイスで計測", "tone": "success" },
-                { "label": "デコード速度", "value": "1,200 tok/s", "pct": 90, "tone": "success" },
-                { "label": "パラメータ数", "value": "26M", "pct": 2, "note": "GPT-4o の 1/500 以下", "tone": "info" },
-                { "label": "ライセンス", "value": "MIT", "pct": 100, "tone": "primary" }
+                {
+                  "label": "プリフィル速度",
+                  "value": "6,000 tok/s",
+                  "pct": 100,
+                  "note": "コンシューマーデバイスで計測",
+                  "tone": "success"
+                },
+                {
+                  "label": "デコード速度",
+                  "value": "1,200 tok/s",
+                  "pct": 90,
+                  "tone": "success"
+                },
+                {
+                  "label": "パラメータ数",
+                  "value": "26M",
+                  "pct": 2,
+                  "note": "GPT-4o の 1/500 以下",
+                  "tone": "info"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "MIT",
+                  "pct": 100,
+                  "tone": "primary"
+                }
               ],
               "narrative": "Gemini の関数呼び出し能力だけを 26M に蒸留。デバイス上でリアルタイム動作が可能。",
               "impact": "IoT・スマートフォン向け AI エージェントのコスト・遅延問題を一気に解決する可能性がある。"
-            }
+            },
+            "caption": "Needle 26M 性能",
+            "alt": "Needle 26M モデルの性能指標を示す横棒グラフ。プリフィル速度 6,000 tok/s（バー長 100%）、デコード速度 1,200 tok/s（バー長 90%）、モデルサイズ 26M パラメータ（バー長 15%：GPT-4o 比）、GitHub スター獲得（1日で急上昇）を表示。"
           }
         },
         {
@@ -108,22 +168,53 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["deepseek", "moe", "open-weights", "swe-bench", "1m-context", "cost-efficient"],
+          "tags": [
+            "deepseek",
+            "moe",
+            "open-weights",
+            "swe-bench",
+            "1m-context",
+            "cost-efficient"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "DeepSeek-V4-Pro 指標",
-            "alt": "DeepSeek-V4-Pro の主要ベンチマーク横棒グラフ。SWE-Bench Verified 80.6%（バー長 80.6）、コンテキスト長 1M トークン、推論コスト $1.74/M tokens（GPT-5.5 の約 1/7）、HF ダウンロード 202 万件超を表示。",
             "data": {
               "headline": "DeepSeek-V4-Pro: オープン最安・最高クラスのコーディング性能",
               "bars": [
-                { "label": "SWE-Bench V.", "value": "80.6%", "pct": 80, "baseline_pct": 72, "baseline_label": "GPT-4o", "delta": "+8.6pt", "tone": "success" },
-                { "label": "コンテキスト", "value": "1M tokens", "pct": 100, "tone": "primary" },
-                { "label": "入力コスト", "value": "$1.74/M", "pct": 25, "note": "GPT-5.5 比 1/7", "tone": "success" },
-                { "label": "HF DL数", "value": "202万+", "pct": 95, "tone": "info" }
+                {
+                  "label": "SWE-Bench V.",
+                  "value": "80.6%",
+                  "pct": 80,
+                  "baseline_pct": 72,
+                  "baseline_label": "GPT-4o",
+                  "delta": "+8.6pt",
+                  "tone": "success"
+                },
+                {
+                  "label": "コンテキスト",
+                  "value": "1M tokens",
+                  "pct": 100,
+                  "tone": "primary"
+                },
+                {
+                  "label": "入力コスト",
+                  "value": "$1.74/M",
+                  "pct": 25,
+                  "note": "GPT-5.5 比 1/7",
+                  "tone": "success"
+                },
+                {
+                  "label": "HF DL数",
+                  "value": "202万+",
+                  "pct": 95,
+                  "tone": "info"
+                }
               ],
               "narrative": "862B MoE でアクティブは 49B のみ。MIT ライセンスでローカル実行・API 両対応。",
               "impact": "API コスト削減とローカル実行のニーズに応える現時点最有力オープンウェイトモデル。"
-            }
+            },
+            "caption": "DeepSeek-V4-Pro 指標",
+            "alt": "DeepSeek-V4-Pro の主要ベンチマーク横棒グラフ。SWE-Bench Verified 80.6%（バー長 80.6）、コンテキスト長 1M トークン、推論コスト $1.74/M tokens（GPT-5.5 の約 1/7）、HF ダウンロード 202 万件超を表示。"
           }
         }
       ]
@@ -159,24 +250,56 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "tags": ["anthropic", "claude-for-legal", "legal-tech", "thomson-reuters", "mcp", "enterprise"],
+          "tags": [
+            "anthropic",
+            "claude-for-legal",
+            "legal-tech",
+            "thomson-reuters",
+            "mcp",
+            "enterprise"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude for Legal 概要",
-            "alt": "Claude for Legal のプラットフォーム構成サマリーカード。主役はAnthropicとClaudeで、連携先にThomson Reuters、LexisNexis、Harvey、Freshfieldsが並ぶ。カバーワークフローは契約書レビュー・法律調査・eDiscovery・案件管理の4領域。技術基盤はMCPコネクターと実務領域別プラグイン。",
             "data": {
               "headline": "Anthropic、法律 AI プラットフォーム「Claude for Legal」を正式公開",
               "tldr": "Thomson Reuters・LexisNexis・Harvey と連携し、契約書レビューから eDiscovery・案件管理まで法律実務全域を Claude で自動化する包括プラットフォームが正式始動した。",
               "points": [
-                { "icon": "⚖️", "label": "連携先", "value": "Thomson Reuters / LexisNexis / Harvey / Freshfields", "tone": "primary" },
-                { "icon": "🔧", "label": "技術基盤", "value": "MCP コネクター + 領域別プラグイン", "tone": "info" },
-                { "icon": "📋", "label": "カバー領域", "value": "契約書・法律調査・eDiscovery・案件管理", "tone": "default" },
-                { "icon": "🏛️", "label": "ターゲット", "value": "ローファーム・企業法務・法律 SaaS", "tone": "default" },
-                { "icon": "🔒", "label": "設計思想", "value": "信頼性・倫理を重視した高リスク産業向け", "tone": "success" }
+                {
+                  "icon": "⚖️",
+                  "label": "連携先",
+                  "value": "Thomson Reuters / LexisNexis / Harvey / Freshfields",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "技術基盤",
+                  "value": "MCP コネクター + 領域別プラグイン",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📋",
+                  "label": "カバー領域",
+                  "value": "契約書・法律調査・eDiscovery・案件管理",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "ターゲット",
+                  "value": "ローファーム・企業法務・法律 SaaS",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "設計思想",
+                  "value": "信頼性・倫理を重視した高リスク産業向け",
+                  "tone": "success"
+                }
               ],
               "context": "AI の法律分野参入は規制・倫理面で難易度が高く、Anthropic が Thomson Reuters と組むことで既存ワークフローへの摩擦なく導入できる点が鍵。",
               "impact": "法律 AI 市場（Harvey・Clio 等）の競争激化が加速し、弁護士の定型業務の大幅削減が現実化する。"
-            }
+            },
+            "caption": "Claude for Legal 概要",
+            "alt": "Claude for Legal のプラットフォーム構成サマリーカード。主役はAnthropicとClaudeで、連携先にThomson Reuters、LexisNexis、Harvey、Freshfieldsが並ぶ。カバーワークフローは契約書レビュー・法律調査・eDiscovery・案件管理の4領域。技術基盤はMCPコネクターと実務領域別プラグイン。"
           }
         },
         {
@@ -205,22 +328,53 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["google-deepmind", "ai-pointer", "multimodal", "hci", "chrome", "desktop-agent"],
+          "tags": [
+            "google-deepmind",
+            "ai-pointer",
+            "multimodal",
+            "hci",
+            "chrome",
+            "desktop-agent"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "AI Pointer 展開計画",
-            "alt": "Google AI Pointer の展開ロードマップ。第1フェーズ：Chrome ブラウザ統合（現在）、第2フェーズ：Googlebook ノートパソコン搭載、第3フェーズ：Android・その他 OS への拡張（予定）という3段階の展開を示す。",
             "data": {
               "headline": "AI Pointer: 指差し＋発話で PC を操る新 HCI パラダイム",
               "events": [
-                { "when": "2026/05", "label": "AI Pointer 発表", "description": "4 設計原則を公表。ユーザーが画面を指差しながら自然言語で指示するだけでアプリをまたいで操作。", "status": "now", "tone": "primary" },
-                { "when": "2026/05", "label": "Chrome 統合展開開始", "description": "Chrome ブラウザ上で AI Pointer が段階的にロールアウト。タブ間の操作・PDF 変換・検索などを音声指示で実行。", "status": "now", "tone": "primary" },
-                { "when": "2026 Q2", "label": "Googlebook ノートPC 搭載", "description": "Google の AI-first ノートパソコン Googlebook に統合。ハードウェアレベルでの最適化を実施。", "status": "upcoming", "tone": "info" },
-                { "when": "TBD", "label": "Android・他 OS 展開", "description": "スマートフォン・タブレットへの拡張が予定されており、クロスデバイスの統一体験を目指す。", "status": "upcoming", "tone": "default" }
+                {
+                  "when": "2026/05",
+                  "label": "AI Pointer 発表",
+                  "description": "4 設計原則を公表。ユーザーが画面を指差しながら自然言語で指示するだけでアプリをまたいで操作。",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026/05",
+                  "label": "Chrome 統合展開開始",
+                  "description": "Chrome ブラウザ上で AI Pointer が段階的にロールアウト。タブ間の操作・PDF 変換・検索などを音声指示で実行。",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026 Q2",
+                  "label": "Googlebook ノートPC 搭載",
+                  "description": "Google の AI-first ノートパソコン Googlebook に統合。ハードウェアレベルでの最適化を実施。",
+                  "status": "upcoming",
+                  "tone": "info"
+                },
+                {
+                  "when": "TBD",
+                  "label": "Android・他 OS 展開",
+                  "description": "スマートフォン・タブレットへの拡張が予定されており、クロスデバイスの統一体験を目指す。",
+                  "status": "upcoming",
+                  "tone": "default"
+                }
               ],
               "narrative": "DeepMind が HCI 分野に本格参入。マウス発明以来最大の操作パラダイム転換を目指す。",
               "impact": "デスクトップ AI エージェントが一般ユーザーに開放される第一歩となり、OS レベルの AI 競争が激化する。"
-            }
+            },
+            "caption": "AI Pointer 展開計画",
+            "alt": "Google AI Pointer の展開ロードマップ。第1フェーズ：Chrome ブラウザ統合（現在）、第2フェーズ：Googlebook ノートパソコン搭載、第3フェーズ：Android・その他 OS への拡張（予定）という3段階の展開を示す。"
           }
         },
         {
@@ -249,25 +403,60 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 214 },
-          "tags": ["anthropic", "aws", "claude-platform", "enterprise", "iam", "cloud"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 214
+          },
+          "tags": [
+            "anthropic",
+            "aws",
+            "claude-platform",
+            "enterprise",
+            "iam",
+            "cloud"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Platform on AWS",
-            "alt": "Claude Platform on AWS の概要サマリーカード。提供者はAnthropicとAWSの共同、特徴はAWS課金統合・IAM認証・Anthropicアカウント不要の3点。対象は既存AWSエンタープライズ顧客で、競合となるAzure OpenAI Serviceとの差別化が示されている。",
             "data": {
               "headline": "AWS 課金・IAM で Claude が使えるネイティブ統合が始動",
               "tldr": "Anthropic が AWS ネイティブ統合を発表。AWS の請求・IAM 認証をそのまま使って Claude API にアクセスでき、企業の既存ガバナンスを維持したまま導入できる。",
               "points": [
-                { "icon": "☁️", "label": "統合方式", "value": "AWS ネイティブ（IAM + 課金統合）", "tone": "primary" },
-                { "icon": "🔐", "label": "認証", "value": "Anthropic アカウント不要、AWS IAM で直接アクセス", "tone": "success" },
-                { "icon": "💳", "label": "課金", "value": "AWS 統合請求、既存コスト配分ポリシー適用可", "tone": "info" },
-                { "icon": "🏆", "label": "業界初", "value": "Claude Platform をネイティブ対応する最初の CSP", "tone": "success" },
-                { "icon": "📈", "label": "HN 反響", "value": "214pt 獲得、エンタープライズ開発者の高評価", "tone": "default" }
+                {
+                  "icon": "☁️",
+                  "label": "統合方式",
+                  "value": "AWS ネイティブ（IAM + 課金統合）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔐",
+                  "label": "認証",
+                  "value": "Anthropic アカウント不要、AWS IAM で直接アクセス",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💳",
+                  "label": "課金",
+                  "value": "AWS 統合請求、既存コスト配分ポリシー適用可",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "業界初",
+                  "value": "Claude Platform をネイティブ対応する最初の CSP",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "HN 反響",
+                  "value": "214pt 獲得、エンタープライズ開発者の高評価",
+                  "tone": "default"
+                }
               ],
               "context": "Azure OpenAI Service の対抗軸として Anthropic が AWS を戦略的パートナーに据える動きが本格化。",
               "impact": "既存 AWS ユーザーの Claude 採用障壁が大幅低下し、エンタープライズ市場での OpenAI vs Anthropic 競争が激化する。"
-            }
+            },
+            "caption": "Claude Platform on AWS",
+            "alt": "Claude Platform on AWS の概要サマリーカード。提供者はAnthropicとAWSの共同、特徴はAWS課金統合・IAM認証・Anthropicアカウント不要の3点。対象は既存AWSエンタープライズ顧客で、競合となるAzure OpenAI Serviceとの差別化が示されている。"
           }
         }
       ]
@@ -304,23 +493,49 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["anthropic", "claude-code", "agent-view", "multi-agent", "developer-tools"],
+          "tags": [
+            "anthropic",
+            "claude-code",
+            "agent-view",
+            "multi-agent",
+            "developer-tools"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Agent View 概要",
-            "alt": "Claude Agent View の機能概要サマリーカード。複数コーディングセッションの一元監視、リアルタイム状態確認、エラー・進捗の一括管理という3つの主要機能を示す。対象ユーザーはClaude Codeの資格あるユーザーで、現在リサーチプレビュー段階。",
             "data": {
               "headline": "Claude Agent View: 複数コーディングエージェントを 1 画面で制御",
               "tldr": "Anthropic が Claude Code の全セッションを一元管理するダッシュボード「Agent View」をリサーチプレビューで公開。並行エージェントの状態・進捗・エラーをリアルタイムで監視できる。",
               "points": [
-                { "icon": "🖥️", "label": "機能", "value": "全 Claude Code セッションの一元監視・操作", "tone": "primary" },
-                { "icon": "⚡", "label": "用途", "value": "並行エージェント・長時間ワークフロー管理", "tone": "info" },
-                { "icon": "🔬", "label": "状態", "value": "リサーチプレビュー（段階展開中）", "tone": "warning" },
-                { "icon": "👤", "label": "対象", "value": "Claude Code 資格ユーザー", "tone": "default" }
+                {
+                  "icon": "🖥️",
+                  "label": "機能",
+                  "value": "全 Claude Code セッションの一元監視・操作",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "用途",
+                  "value": "並行エージェント・長時間ワークフロー管理",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔬",
+                  "label": "状態",
+                  "value": "リサーチプレビュー（段階展開中）",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "👤",
+                  "label": "対象",
+                  "value": "Claude Code 資格ユーザー",
+                  "tone": "default"
+                }
               ],
               "context": "Claude Code がリリース後急速に普及し、複数の並行エージェントを管理したいニーズが顕在化したことへの対応。",
               "impact": "マルチエージェント開発ワークフローの標準インターフェースが確立し始め、大規模 AI 開発の生産性向上が加速。"
-            }
+            },
+            "caption": "Agent View 概要",
+            "alt": "Claude Agent View の機能概要サマリーカード。複数コーディングセッションの一元監視、リアルタイム状態確認、エラー・進捗の一括管理という3つの主要機能を示す。対象ユーザーはClaude Codeの資格あるユーザーで、現在リサーチプレビュー段階。"
           }
         },
         {
@@ -349,21 +564,47 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "tags": ["reinforcement-learning", "agents", "skill-management", "llm", "alfworld", "research"],
+          "tags": [
+            "reinforcement-learning",
+            "agents",
+            "skill-management",
+            "llm",
+            "alfworld",
+            "research"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "SLIM ベンチマーク",
-            "alt": "SLIMフレームワークのベンチマーク結果を示す横棒グラフ。ALFWorldで既存最良比+7.1ポイント、SearchQAで改善を達成。スキルライフサイクル管理（獲得・再利用・廃止）の3フェーズが記載されている。",
             "data": {
               "headline": "SLIM: スキルライフサイクル管理で RL エージェントが +7.1pt",
               "bars": [
-                { "label": "ALFWorld", "value": "+7.1pt", "pct": 85, "baseline_pct": 72, "baseline_label": "ベースライン", "delta": "+7.1pt", "tone": "success" },
-                { "label": "SearchQA", "value": "改善あり", "pct": 78, "baseline_pct": 68, "tone": "success" },
-                { "label": "スキル再利用率", "value": "向上", "pct": 90, "tone": "primary" }
+                {
+                  "label": "ALFWorld",
+                  "value": "+7.1pt",
+                  "pct": 85,
+                  "baseline_pct": 72,
+                  "baseline_label": "ベースライン",
+                  "delta": "+7.1pt",
+                  "tone": "success"
+                },
+                {
+                  "label": "SearchQA",
+                  "value": "改善あり",
+                  "pct": 78,
+                  "baseline_pct": 68,
+                  "tone": "success"
+                },
+                {
+                  "label": "スキル再利用率",
+                  "value": "向上",
+                  "pct": 90,
+                  "tone": "primary"
+                }
               ],
               "narrative": "従来の RL エージェントはスキルを無制限に蓄積し劣化する問題があったが、SLIM はライフサイクル管理で解決。",
               "impact": "汎用エージェントの長期タスク性能改善に直結する手法で、実用的な RL エージェント開発の基礎技術となりうる。"
-            }
+            },
+            "caption": "SLIM ベンチマーク",
+            "alt": "SLIMフレームワークのベンチマーク結果を示す横棒グラフ。ALFWorldで既存最良比+7.1ポイント、SearchQAで改善を達成。スキルライフサイクル管理（獲得・再利用・廃止）の3フェーズが記載されている。"
           }
         }
       ]
@@ -399,23 +640,50 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["multimodal", "vlm", "edge-ai", "1b-model", "openbmb", "huggingface"],
+          "tags": [
+            "multimodal",
+            "vlm",
+            "edge-ai",
+            "1b-model",
+            "openbmb",
+            "huggingface"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "MiniCPM-V-4.6",
-            "alt": "MiniCPM-V-4.6 の概要サマリーカード。1Bパラメータ、開発者はOpenBMB（清華大学系）、対応タスクは視覚的QA・OCR・キャプション生成の3種、ターゲットデバイスはスマートフォン・エッジ・組み込みシステム。",
             "data": {
               "headline": "MiniCPM-V-4.6: 1B でスマホ動作する視覚言語モデル",
               "tldr": "OpenBMB（清華大学系）が開発した 1B パラメータのマルチモーダルモデル。視覚 QA・OCR・キャプション生成を小型デバイスで実行でき、モバイル AI 統合のハードルを大幅に下げる。",
               "points": [
-                { "icon": "🔢", "label": "パラメータ", "value": "1B（スマホ動作可能なサイズ）", "tone": "success" },
-                { "icon": "📸", "label": "対応タスク", "value": "視覚 QA・OCR・画像キャプション生成", "tone": "primary" },
-                { "icon": "📱", "label": "ターゲット", "value": "スマートフォン・エッジ・組み込み", "tone": "info" },
-                { "icon": "🏛️", "label": "開発元", "value": "OpenBMB（清華大学系研究グループ）", "tone": "default" }
+                {
+                  "icon": "🔢",
+                  "label": "パラメータ",
+                  "value": "1B（スマホ動作可能なサイズ）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📸",
+                  "label": "対応タスク",
+                  "value": "視覚 QA・OCR・画像キャプション生成",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📱",
+                  "label": "ターゲット",
+                  "value": "スマートフォン・エッジ・組み込み",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "開発元",
+                  "value": "OpenBMB（清華大学系研究グループ）",
+                  "tone": "default"
+                }
               ],
               "context": "大型 VLM（GPT-4V・Gemini Vision 等）のエッジ実行は困難だが、1B クラスなら現行スマートフォンで動作可能。",
               "impact": "モバイルアプリへの VLM 統合が現実的コストで可能となり、オフライン・プライバシー重視のビジョン AI 需要に応える。"
-            }
+            },
+            "caption": "MiniCPM-V-4.6",
+            "alt": "MiniCPM-V-4.6 の概要サマリーカード。1Bパラメータ、開発者はOpenBMB（清華大学系）、対応タスクは視覚的QA・OCR・キャプション生成の3種、ターゲットデバイスはスマートフォン・エッジ・組み込みシステム。"
           }
         },
         {
@@ -444,23 +712,60 @@
             "total": 10,
             "source_type_bias": -1
           },
-          "tags": ["speech-ai", "full-duplex", "multimodal", "thinking-machines", "mira-murati", "startup"],
+          "tags": [
+            "speech-ai",
+            "full-duplex",
+            "multimodal",
+            "thinking-machines",
+            "mira-murati",
+            "startup"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "音声 AI の対話方式比較",
-            "alt": "現行の音声AI（ハーフデュプレックス）とThinking Machines Labが目指すフルデュプレックス音声AIの対話方式を比較。現行は聴く→処理→話すの順序的動作で割り込み不可。フルデュプレックスは並行して聴きながら話し、自然な割り込みが可能。",
             "data": {
               "headline": "ハーフ vs フルデュプレックス: 音声 AI 対話の根本的改善",
-              "before": { "label": "現行 AI 音声", "sublabel": "ハーフデュプレックス" },
-              "after": { "label": "Thinking Machines", "sublabel": "フルデュプレックス" },
+              "before": {
+                "label": "現行 AI 音声",
+                "sublabel": "ハーフデュプレックス"
+              },
+              "after": {
+                "label": "Thinking Machines",
+                "sublabel": "フルデュプレックス"
+              },
               "metrics": [
-                { "label": "同時処理", "before": "不可（交互動作）", "after": "可（並行処理）", "before_pct": 0, "after_pct": 100, "delta": "根本改善", "delta_tone": "success" },
-                { "label": "割り込み対応", "before": "不可（話し終わり待ち）", "after": "可（自然な割り込み）", "before_pct": 0, "after_pct": 80, "delta": "改善", "delta_tone": "success" },
-                { "label": "自然さ", "before": "ターン制対話（不自然）", "after": "電話会話に近い体験", "before_pct": 30, "after_pct": 85, "delta": "大幅向上", "delta_tone": "success" }
+                {
+                  "label": "同時処理",
+                  "before": "不可（交互動作）",
+                  "after": "可（並行処理）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "根本改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "割り込み対応",
+                  "before": "不可（話し終わり待ち）",
+                  "after": "可（自然な割り込み）",
+                  "before_pct": 0,
+                  "after_pct": 80,
+                  "delta": "改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "自然さ",
+                  "before": "ターン制対話（不自然）",
+                  "after": "電話会話に近い体験",
+                  "before_pct": 30,
+                  "after_pct": 85,
+                  "delta": "大幅向上",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Mira Murati の Thinking Machines Lab が音声 AI の本質的制約を解決するアプローチを追求。",
               "impact": "音声 AI がコールセンター・ライブアシスタントなど本格的な電話代替用途に進出できるようになる。"
-            }
+            },
+            "caption": "音声 AI の対話方式比較",
+            "alt": "現行の音声AI（ハーフデュプレックス）とThinking Machines Labが目指すフルデュプレックス音声AIの対話方式を比較。現行は聴く→処理→話すの順序的動作で割り込み不可。フルデュプレックスは並行して聴きながら話し、自然な割り込みが可能。"
           }
         }
       ]
@@ -496,24 +801,57 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["safety", "alignment", "neuron", "jailbreak", "rlhf", "interpretability", "vulnerability"],
+          "tags": [
+            "safety",
+            "alignment",
+            "neuron",
+            "jailbreak",
+            "rlhf",
+            "interpretability",
+            "vulnerability"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "単一ニューロン安全突破",
-            "alt": "単一ニューロン操作でLLM安全アライメントを突破できるという論文の概要サマリーカード。攻撃手法は単一ニューロン操作（極めて容易）、影響範囲はほぼ全ての主要LLM、突破対象はRLHF・Constitutional AI、防御難度は高（検知困難）、対策方向性は内部表現レベルの安全設計が必要。",
             "data": {
               "headline": "単一ニューロン操作で LLM 安全ガードレール全無効化——実行容易・検知困難",
               "tldr": "単一のニューロン（重みパラメータ）を操作するだけで、RLHF や Constitutional AI で構築された安全ガードレールを完全に突破できることを実証。既存の安全アライメント手法が内部表現攻撃に根本的に無防備であることを示す衝撃的な発見。",
               "points": [
-                { "icon": "⚠️", "label": "攻撃難度", "value": "極めて低い（単一ニューロン操作のみ）", "tone": "danger" },
-                { "icon": "🎯", "label": "影響範囲", "value": "主要 LLM のほぼ全て", "tone": "danger" },
-                { "icon": "🛡️", "label": "突破対象", "value": "RLHF・DPO・Constitutional AI", "tone": "warning" },
-                { "icon": "🔍", "label": "検知難度", "value": "高（防御側での検知が困難）", "tone": "danger" },
-                { "icon": "💡", "label": "対策方向", "value": "内部表現レベルの解釈可能性設計が急務", "tone": "info" }
+                {
+                  "icon": "⚠️",
+                  "label": "攻撃難度",
+                  "value": "極めて低い（単一ニューロン操作のみ）",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "影響範囲",
+                  "value": "主要 LLM のほぼ全て",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🛡️",
+                  "label": "突破対象",
+                  "value": "RLHF・DPO・Constitutional AI",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "検知難度",
+                  "value": "高（防御側での検知が困難）",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "💡",
+                  "label": "対策方向",
+                  "value": "内部表現レベルの解釈可能性設計が急務",
+                  "tone": "info"
+                }
               ],
               "context": "RLHF や Constitutional AI は表面的な行動パターンを変えるが、内部表現（ニューロン）レベルでは安全性が保証されていないことが露呈。",
               "impact": "現行の安全アライメント研究の前提が覆される可能性があり、Anthropic・OpenAI 等の安全チームが対応策を迫られる。"
-            }
+            },
+            "caption": "単一ニューロン安全突破",
+            "alt": "単一ニューロン操作でLLM安全アライメントを突破できるという論文の概要サマリーカード。攻撃手法は単一ニューロン操作（極めて容易）、影響範囲はほぼ全ての主要LLM、突破対象はRLHF・Constitutional AI、防御難度は高（検知困難）、対策方向性は内部表現レベルの安全設計が必要。"
           }
         },
         {
@@ -542,22 +880,50 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "tags": ["benchmark", "agents", "long-horizon", "evaluation", "docker", "multilingual"],
+          "tags": [
+            "benchmark",
+            "agents",
+            "long-horizon",
+            "evaluation",
+            "docker",
+            "multilingual"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "WildClawBench 結果",
-            "alt": "WildClawBenchの評価結果を示す横棒グラフ。最高モデルの総合達成率62.2%（バー長62）、タスク数60件、Docker再現可能環境、多言語対応タスクを含む。",
             "data": {
               "headline": "WildClawBench: 現実的エージェント評価で最高モデルも 62.2% 止まり",
               "bars": [
-                { "label": "最高モデル達成率", "value": "62.2%", "pct": 62, "tone": "warning", "note": "リアルツール・長期タスクで計測" },
-                { "label": "タスク数", "value": "60 件", "pct": 60, "tone": "primary" },
-                { "label": "多言語比率", "value": "複数言語", "pct": 40, "tone": "info" },
-                { "label": "再現性", "value": "Docker 完全再現", "pct": 100, "tone": "success" }
+                {
+                  "label": "最高モデル達成率",
+                  "value": "62.2%",
+                  "pct": 62,
+                  "tone": "warning",
+                  "note": "リアルツール・長期タスクで計測"
+                },
+                {
+                  "label": "タスク数",
+                  "value": "60 件",
+                  "pct": 60,
+                  "tone": "primary"
+                },
+                {
+                  "label": "多言語比率",
+                  "value": "複数言語",
+                  "pct": 40,
+                  "tone": "info"
+                },
+                {
+                  "label": "再現性",
+                  "value": "Docker 完全再現",
+                  "pct": 100,
+                  "tone": "success"
+                }
               ],
               "narrative": "既存ベンチマークは理想環境での単純タスクが中心。WildClawBench はリアルな複雑タスクで性能を計測。",
               "impact": "エージェント研究の真の進歩を計測する標準ベンチマークとして採用される可能性が高く、研究の方向性を決める。"
-            }
+            },
+            "caption": "WildClawBench 結果",
+            "alt": "WildClawBenchの評価結果を示す横棒グラフ。最高モデルの総合達成率62.2%（バー長62）、タスク数60件、Docker再現可能環境、多言語対応タスクを含む。"
           }
         },
         {
@@ -586,23 +952,59 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["sparse-moe", "edge-ai", "inference-optimization", "mobile", "architecture"],
+          "tags": [
+            "sparse-moe",
+            "edge-ai",
+            "inference-optimization",
+            "mobile",
+            "architecture"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "MoE エッジ性能比較",
-            "alt": "従来のSparse MoEとDECOのエッジデバイス性能比較。推論速度：従来1x → DECO 3x（3倍高速）。精度：従来は Dense より低下 → DECO は Dense と同等。メモリ効率：従来は不規則アクセスで低効率 → DECO はハードウェア最適化で高効率。",
             "data": {
               "headline": "DECO: エッジデバイスで Sparse MoE が Dense の 3 倍高速化",
-              "before": { "label": "従来 Sparse MoE", "sublabel": "エッジデバイス上" },
-              "after": { "label": "DECO", "sublabel": "エッジ最適化 Sparse MoE" },
+              "before": {
+                "label": "従来 Sparse MoE",
+                "sublabel": "エッジデバイス上"
+              },
+              "after": {
+                "label": "DECO",
+                "sublabel": "エッジ最適化 Sparse MoE"
+              },
               "metrics": [
-                { "label": "推論速度", "before": "1x（遅い）", "after": "3x（3 倍高速）", "before_pct": 33, "after_pct": 100, "delta": "+3x", "delta_tone": "success" },
-                { "label": "精度維持", "before": "Dense より低下", "after": "Dense と同等", "before_pct": 60, "after_pct": 100, "delta": "大幅改善", "delta_tone": "success" },
-                { "label": "メモリ効率", "before": "不規則アクセスで低効率", "after": "ハードウェア最適化済み", "before_pct": 40, "after_pct": 90, "delta": "改善", "delta_tone": "success" }
+                {
+                  "label": "推論速度",
+                  "before": "1x（遅い）",
+                  "after": "3x（3 倍高速）",
+                  "before_pct": 33,
+                  "after_pct": 100,
+                  "delta": "+3x",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "精度維持",
+                  "before": "Dense より低下",
+                  "after": "Dense と同等",
+                  "before_pct": 60,
+                  "after_pct": 100,
+                  "delta": "大幅改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "メモリ効率",
+                  "before": "不規則アクセスで低効率",
+                  "after": "ハードウェア最適化済み",
+                  "before_pct": 40,
+                  "after_pct": 90,
+                  "delta": "改善",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "従来の Sparse MoE はエッジで性能劣化。DECO はデバイス特性に合わせてスパース性を再形成し解決。",
               "impact": "スマートフォン・IoT への大型 LLM 展開が現実的なコストで可能となり、エッジ AI の普及を加速する。"
-            }
+            },
+            "caption": "MoE エッジ性能比較",
+            "alt": "従来のSparse MoEとDECOのエッジデバイス性能比較。推論速度：従来1x → DECO 3x（3倍高速）。精度：従来は Dense より低下 → DECO は Dense と同等。メモリ効率：従来は不規則アクセスで低効率 → DECO はハードウェア最適化で高効率。"
           }
         }
       ]
@@ -638,24 +1040,55 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["openai", "enterprise", "deployment", "business-strategy", "consulting"],
+          "tags": [
+            "openai",
+            "enterprise",
+            "deployment",
+            "business-strategy",
+            "consulting"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "OpenAI 企業展開戦略",
-            "alt": "OpenAIのエンタープライズ戦略転換のサマリーカード。旧モデルはAPI提供型、新モデルは専属エンジニア現場常駐のハイタッチ型。投資規模は約400億ドル、主なターゲットは大手企業の現場AI導入、競合との差別化は人的サポートによる伴走支援。",
             "data": {
               "headline": "OpenAI が約 400 億ドルでエンタープライズ導入支援会社を設立、専属エンジニアを現場派遣",
               "tldr": "OpenAI が「API 提供型」から「専属エンジニアが顧客現場に常駐するハイタッチ型」エンタープライズサービスへ転換。約 400 億ドルを投じて Toromo を買収しコンサルティング機能も強化。",
               "points": [
-                { "icon": "💰", "label": "投資規模", "value": "約 400 億ドル（270 億人民元）", "tone": "primary" },
-                { "icon": "👥", "label": "サービス形態", "value": "専属エンジニア現場常駐派遣型", "tone": "info" },
-                { "icon": "🏢", "label": "買収", "value": "コンサルティングファーム Toromo を買収", "tone": "default" },
-                { "icon": "🔄", "label": "転換", "value": "API 提供型 → ハイタッチ伴走支援型", "tone": "warning" },
-                { "icon": "⚔️", "label": "競合優位", "value": "Anthropic・Google に対し現場密着で差別化", "tone": "default" }
+                {
+                  "icon": "💰",
+                  "label": "投資規模",
+                  "value": "約 400 億ドル（270 億人民元）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👥",
+                  "label": "サービス形態",
+                  "value": "専属エンジニア現場常駐派遣型",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "買収",
+                  "value": "コンサルティングファーム Toromo を買収",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "転換",
+                  "value": "API 提供型 → ハイタッチ伴走支援型",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚔️",
+                  "label": "競合優位",
+                  "value": "Anthropic・Google に対し現場密着で差別化",
+                  "tone": "default"
+                }
               ],
               "context": "AI 導入の主障壁が「技術」ではなく「実装・変更管理」に移行。現場密着型の支援が決め手になる市場段階に入った。",
               "impact": "IBM・Accenture など IT コンサルとの競合が生まれ、エンタープライズ AI 市場の構図が大きく変わる。"
-            }
+            },
+            "caption": "OpenAI 企業展開戦略",
+            "alt": "OpenAIのエンタープライズ戦略転換のサマリーカード。旧モデルはAPI提供型、新モデルは専属エンジニア現場常駐のハイタッチ型。投資規模は約400億ドル、主なターゲットは大手企業の現場AI導入、競合との差別化は人的サポートによる伴走支援。"
           }
         },
         {
@@ -684,23 +1117,50 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["voice-ai", "startup", "vapi", "amazon-ring", "enterprise", "customer-support"],
+          "tags": [
+            "voice-ai",
+            "startup",
+            "vapi",
+            "amazon-ring",
+            "enterprise",
+            "customer-support"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Vapi $500M バリュエーション",
-            "alt": "Vapi音声AIプラットフォームのバリュエーション達成サマリーカード。評価額5億ドル、主要顧客はAmazon Ring（40社超の競合を退けて採用）、収益成長は10倍（2025年初頭比）、提供価値は音声エージェントの構築・デプロイ・スケーリングの簡便化。",
             "data": {
               "headline": "Vapi: Amazon Ring 採用で評価額 5 億ドル、音声 AI 市場の急成長を体現",
               "tldr": "音声 AI プラットフォーム Vapi が 5 億ドルバリュエーションに到達。Amazon Ring が 40 社超の競合審査で採用し、エンタープライズ収益は 2025 年初頭比 10 倍成長を記録。",
               "points": [
-                { "icon": "💎", "label": "評価額", "value": "5 億ドル（$500M）", "tone": "primary" },
-                { "icon": "🛎️", "label": "主要顧客", "value": "Amazon Ring（40 社審査の勝者）", "tone": "success" },
-                { "icon": "📈", "label": "収益成長", "value": "10 倍（2025 年初頭比）", "tone": "success" },
-                { "icon": "🔧", "label": "提供価値", "value": "音声エージェント構築・デプロイ・スケーリング", "tone": "info" }
+                {
+                  "icon": "💎",
+                  "label": "評価額",
+                  "value": "5 億ドル（$500M）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🛎️",
+                  "label": "主要顧客",
+                  "value": "Amazon Ring（40 社審査の勝者）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "収益成長",
+                  "value": "10 倍（2025 年初頭比）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "提供価値",
+                  "value": "音声エージェント構築・デプロイ・スケーリング",
+                  "tone": "info"
+                }
               ],
               "context": "コールセンター自動化の需要が急増し、音声 AI エージェントを簡単に構築できるプラットフォームに競争力が集まっている。",
               "impact": "大型リファレンスカスタマーの獲得で Vapi の市場での信頼性が急上昇し、追加の大型契約獲得が加速する見込み。"
-            }
+            },
+            "caption": "Vapi $500M バリュエーション",
+            "alt": "Vapi音声AIプラットフォームのバリュエーション達成サマリーカード。評価額5億ドル、主要顧客はAmazon Ring（40社超の競合を退けて採用）、収益成長は10倍（2025年初頭比）、提供価値は音声エージェントの構築・デプロイ・スケーリングの簡便化。"
           }
         }
       ]
@@ -736,22 +1196,54 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["safety", "cybersecurity", "red-team", "claude-mythos", "gpt-5.5", "ukasi", "alignment"],
+          "tags": [
+            "safety",
+            "cybersecurity",
+            "red-team",
+            "claude-mythos",
+            "gpt-5.5",
+            "ukasi",
+            "alignment"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "AI サイバー能力の進化",
-            "alt": "フロンティアAIのサイバー攻撃能力進化タイムライン。2024年末：初歩的なサイバー偵察タスクを達成。2025年中盤：多段階攻撃の部分完遂。2026年5月：Claude MythosとGPT-5.5が32段階の完全な企業侵害シミュレーションを初完遂。英国UKASI：能力が4ヶ月ごとに倍増と警告。",
             "data": {
               "headline": "フロンティア AI がサイバー攻撃 32 段階を初完遂——能力倍増ペースに安全機関が警告",
               "events": [
-                { "when": "2024 末", "label": "初歩的なサイバー偵察タスクを達成", "description": "フロンティアモデルが偵察・スキャンなど単純なサイバー操作を初めて完遂し始める。", "status": "past", "tone": "default" },
-                { "when": "2025 中盤", "label": "多段階攻撃の部分完遂", "description": "複数ステップの連続した攻撃を部分的に完遂できるようになるが、完全な侵害には至らず。", "status": "past", "tone": "warning" },
-                { "when": "2026/05", "label": "32 段階 APT 攻撃シミュレーション初完遂", "description": "Claude Mythos Preview と GPT-5.5 が偵察・初期侵入・横移動・データ流出の 32 段階を完全に完遂。UKASI が「4 ヶ月ごとに倍増」と警告。", "status": "now", "tone": "danger" },
-                { "when": "今後", "label": "規制・公開ポリシー議論の本格化", "description": "フロンティアモデルの能力評価と段階的公開に関するポリシー策定が急務となる。", "status": "upcoming", "tone": "warning" }
+                {
+                  "when": "2024 末",
+                  "label": "初歩的なサイバー偵察タスクを達成",
+                  "description": "フロンティアモデルが偵察・スキャンなど単純なサイバー操作を初めて完遂し始める。",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "2025 中盤",
+                  "label": "多段階攻撃の部分完遂",
+                  "description": "複数ステップの連続した攻撃を部分的に完遂できるようになるが、完全な侵害には至らず。",
+                  "status": "past",
+                  "tone": "warning"
+                },
+                {
+                  "when": "2026/05",
+                  "label": "32 段階 APT 攻撃シミュレーション初完遂",
+                  "description": "Claude Mythos Preview と GPT-5.5 が偵察・初期侵入・横移動・データ流出の 32 段階を完全に完遂。UKASI が「4 ヶ月ごとに倍増」と警告。",
+                  "status": "now",
+                  "tone": "danger"
+                },
+                {
+                  "when": "今後",
+                  "label": "規制・公開ポリシー議論の本格化",
+                  "description": "フロンティアモデルの能力評価と段階的公開に関するポリシー策定が急務となる。",
+                  "status": "upcoming",
+                  "tone": "warning"
+                }
               ],
               "narrative": "英国 UKASI がフロンティア AI のサイバー能力が 4 ヶ月ごとに倍増すると定量的に警告。今回の突破がそれを裏付けた。",
               "impact": "AI の攻撃能力が実証されたことで、AI 安全規制の枠組み強化と公開ポリシーの抜本見直しが急務となる。"
-            }
+            },
+            "caption": "AI サイバー能力の進化",
+            "alt": "フロンティアAIのサイバー攻撃能力進化タイムライン。2024年末：初歩的なサイバー偵察タスクを達成。2025年中盤：多段階攻撃の部分完遂。2026年5月：Claude MythosとGPT-5.5が32段階の完全な企業侵害シミュレーションを初完遂。英国UKASI：能力が4ヶ月ごとに倍増と警告。"
           }
         }
       ]
@@ -787,25 +1279,60 @@
             "total": 10,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 835 },
-          "tags": ["python", "programming-languages", "ai-coding", "community", "hacker-news", "discussion"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 835
+          },
+          "tags": [
+            "python",
+            "programming-languages",
+            "ai-coding",
+            "community",
+            "hacker-news",
+            "discussion"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Python 不要論 HN 大論争",
-            "alt": "HN 835ptを獲得した「AIがコードを書くなら Python を使う必要はない」という論争のサマリーカード。論点は「Python＝可読性優位」→「AI生成なら可読性不要」→「しかしデバッグ・ライブラリ・エコシステムは依然重要」という議論の構造を示す。",
             "data": {
               "headline": "HN 835pt「AI がコードを書くなら Python は必要か？」大論争",
               "tldr": "AI がコードを書く時代に Python の可読性優位は意味を持つか？という挑発的な問いが HN で 835pt を獲得。「エコシステムが本質」「Rust/TypeScript の出番」など多様な反論が飛び交い、プログラミング言語選択の哲学的転換点に。",
               "points": [
-                { "icon": "🔥", "label": "HN スコア", "value": "835pt（高議論度）", "tone": "danger" },
-                { "icon": "💬", "label": "論点（記事）", "value": "AI 生成なら Python の可読性優位は消滅", "tone": "warning" },
-                { "icon": "🔄", "label": "反論主流", "value": "ライブラリ・エコシステムが本質的価値", "tone": "info" },
-                { "icon": "⚡", "label": "新観点", "value": "Rust/TypeScript を選ぶ理由が逆に生まれる", "tone": "primary" },
-                { "icon": "🎯", "label": "示唆", "value": "言語選択基準が AI 時代に根本から変わりつつある", "tone": "default" }
+                {
+                  "icon": "🔥",
+                  "label": "HN スコア",
+                  "value": "835pt（高議論度）",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "💬",
+                  "label": "論点（記事）",
+                  "value": "AI 生成なら Python の可読性優位は消滅",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "反論主流",
+                  "value": "ライブラリ・エコシステムが本質的価値",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "新観点",
+                  "value": "Rust/TypeScript を選ぶ理由が逆に生まれる",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "示唆",
+                  "value": "言語選択基準が AI 時代に根本から変わりつつある",
+                  "tone": "default"
+                }
               ],
               "context": "Claude Code・Copilot・Cursor の普及で AI 支援開発が日常化しつつあり、言語選択の従来の前提が揺らいでいる。",
               "impact": "エンジニアコミュニティが言語選択の根拠を AI 生成時代に合わせて再定義する議論が本格化しつつある。"
-            }
+            },
+            "caption": "Python 不要論 HN 大論争",
+            "alt": "HN 835ptを獲得した「AIがコードを書くなら Python を使う必要はない」という論争のサマリーカード。論点は「Python＝可読性優位」→「AI生成なら可読性不要」→「しかしデバッグ・ライブラリ・エコシステムは依然重要」という議論の構造を示す。"
           }
         },
         {
@@ -834,24 +1361,54 @@
             "total": 11,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 196 },
-          "tags": ["amazon", "enterprise-ai", "ai-adoption", "goodharts-law", "metrics", "community"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 196
+          },
+          "tags": [
+            "amazon",
+            "enterprise-ai",
+            "ai-adoption",
+            "goodharts-law",
+            "metrics",
+            "community"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "トークンマキシング問題",
-            "alt": "Amazonのトークンマキシング問題を示すサマリーカード。背景はAmazon全社AI使用義務化、問題の発生はメトリクス（利用量）に基づくKPI設定、行動パターンは無意味なプロンプト送信・同質問繰り返し、結果は真の生産性向上なし・グッドハートの法則の典型例として批評。",
             "data": {
               "headline": "Amazon でAI義務化 → 「トークンマキシング」が横行——KPI 設計の失敗",
               "tldr": "Amazon が AI 使用を全社義務付けた結果、社員が使用量メトリクスを水増しする「トークンマキシング」が横行。グッドハートの法則（数値目標が本質を壊す）の典型例として HN で 196pt を獲得し批評が集中。",
               "points": [
-                { "icon": "📊", "label": "KPI の失敗", "value": "利用量ベースの AI KPI がメトリクス操作を誘発", "tone": "danger" },
-                { "icon": "🔄", "label": "行動パターン", "value": "無意味プロンプト・同質問繰り返し・無関係タスク処理", "tone": "warning" },
-                { "icon": "📐", "label": "法則", "value": "グッドハートの法則の典型事例（HN 評価）", "tone": "info" },
-                { "icon": "💡", "label": "示唆", "value": "「使用量」でなく「価値創出」で評価すべき", "tone": "primary" }
+                {
+                  "icon": "📊",
+                  "label": "KPI の失敗",
+                  "value": "利用量ベースの AI KPI がメトリクス操作を誘発",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "行動パターン",
+                  "value": "無意味プロンプト・同質問繰り返し・無関係タスク処理",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📐",
+                  "label": "法則",
+                  "value": "グッドハートの法則の典型事例（HN 評価）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💡",
+                  "label": "示唆",
+                  "value": "「使用量」でなく「価値創出」で評価すべき",
+                  "tone": "primary"
+                }
               ],
               "context": "大企業が AI 採用率を上司・株主にアピールするため利用量 KPI を設定するが、社員の本音は「強制されている」。",
               "impact": "AI 変革管理の KPI 設計が「使用量」から「業務成果への貢献」へ転換する必要性を企業に突きつける事例。"
-            }
+            },
+            "caption": "トークンマキシング問題",
+            "alt": "Amazonのトークンマキシング問題を示すサマリーカード。背景はAmazon全社AI使用義務化、問題の発生はメトリクス（利用量）に基づくKPI設定、行動パターンは無意味なプロンプト送信・同質問繰り返し、結果は真の生産性向上なし・グッドハートの法則の典型例として批評。"
           }
         }
       ]
@@ -887,24 +1444,54 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 409 },
-          "tags": ["design", "ai-ethics", "creative-work", "japan", "community", "hatena"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 409
+          },
+          "tags": [
+            "design",
+            "ai-ethics",
+            "creative-work",
+            "japan",
+            "community",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI デザイン修正トラブル",
-            "alt": "クライアントがデザイン初稿をAIに食わせて修正案を返してくる問題のサマリーカード。発生状況：デザイナー初稿→クライアントがAI入力→AI改変案を持ち込み。デザイナー側の批判：構造的問題無視・著作権問題・フィードバック代替化。クライアント側の擁護：要望の視覚化として最速。はてブ409件。",
             "data": {
               "headline": "初稿を AI に食わせるクライアント——デザイナーの怒りがはてブ 409 件の大反響",
               "tldr": "ロゴ初稿を AI で改変した案を「こうしてほしい」と持ち込むクライアントが増加。デザイン業界に新たな AI 摩擦が発生しており、発注プロセスと契約の見直しが急務となっている。",
               "points": [
-                { "icon": "😤", "label": "デザイナー側", "value": "構造問題・著作権無視、フィードバック性が失われる", "tone": "danger" },
-                { "icon": "💭", "label": "クライアント側", "value": "「要望を最速で視覚化できる便利なツール」", "tone": "warning" },
-                { "icon": "📊", "label": "反響", "value": "はてブ 409 件——業界全体の共感が集中", "tone": "primary" },
-                { "icon": "📋", "label": "今後の課題", "value": "AI 時代のデザイン契約・修正プロセスの再設計", "tone": "info" }
+                {
+                  "icon": "😤",
+                  "label": "デザイナー側",
+                  "value": "構造問題・著作権無視、フィードバック性が失われる",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "💭",
+                  "label": "クライアント側",
+                  "value": "「要望を最速で視覚化できる便利なツール」",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📊",
+                  "label": "反響",
+                  "value": "はてブ 409 件——業界全体の共感が集中",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📋",
+                  "label": "今後の課題",
+                  "value": "AI 時代のデザイン契約・修正プロセスの再設計",
+                  "tone": "info"
+                }
               ],
               "context": "生成 AI ツールの普及でクライアントが自ら「AI 意見」を得られるようになり、プロのデザインプロセスとの衝突が顕在化。",
               "impact": "クリエイティブ業界の発注慣行と契約形態の見直しが迫られ、AI リテラシー教育の重要性が再認識される。"
-            }
+            },
+            "caption": "AI デザイン修正トラブル",
+            "alt": "クライアントがデザイン初稿をAIに食わせて修正案を返してくる問題のサマリーカード。発生状況：デザイナー初稿→クライアントがAI入力→AI改変案を持ち込み。デザイナー側の批判：構造的問題無視・著作権問題・フィードバック代替化。クライアント側の擁護：要望の視覚化として最速。はてブ409件。"
           }
         },
         {
@@ -933,24 +1520,54 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 250 },
-          "tags": ["claude", "tutorial", "japan", "claude-code", "beginners", "hatena"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 250
+          },
+          "tags": [
+            "claude",
+            "tutorial",
+            "japan",
+            "claude-code",
+            "beginners",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "とほほWWW入門 Claude 対応",
-            "alt": "とほほのWWW入門へのClaude・Claude Code解説追加を示すサマリーカード。サイト歴史：1996年開設・25年以上継続。追加コンテンツ：Claude基本操作・Claude Codeインストール・Hook・MCPサーバー・API利用。反響：はてブ250件。意義：日本の開発者コミュニティへのClaude本格浸透の象徴。",
             "data": {
               "headline": "とほほのWWW入門（25 年の歴史）が Claude に対応——はてブ 250 件の大反響",
               "tldr": "1996 年開設の超定番 Web 入門サイト「とほほのWWW入門」に Claude・Claude Code のチュートリアルが追加。Hook・MCP・API まで幅広くカバーし、はてブ 250 件を獲得。日本の開発者コミュニティへの AI 浸透を象徴する出来事。",
               "points": [
-                { "icon": "📚", "label": "サイト歴史", "value": "1996 年開設・25 年以上の超定番入門サイト", "tone": "primary" },
-                { "icon": "🤖", "label": "追加内容", "value": "Claude 基本 / Code / Hook / MCP / API まで網羅", "tone": "info" },
-                { "icon": "🔖", "label": "反響", "value": "はてブ 250 件——日本開発者コミュニティの高関心", "tone": "success" },
-                { "icon": "🎌", "label": "意義", "value": "日本語圏 AI 普及の象徴的マイルストーン", "tone": "default" }
+                {
+                  "icon": "📚",
+                  "label": "サイト歴史",
+                  "value": "1996 年開設・25 年以上の超定番入門サイト",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "追加内容",
+                  "value": "Claude 基本 / Code / Hook / MCP / API まで網羅",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔖",
+                  "label": "反響",
+                  "value": "はてブ 250 件——日本開発者コミュニティの高関心",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🎌",
+                  "label": "意義",
+                  "value": "日本語圏 AI 普及の象徴的マイルストーン",
+                  "tone": "default"
+                }
               ],
               "context": "とほほのWWW入門は日本の Web 開発者の「最初の教科書」として 25 年以上の権威を持つ。ここで取り上げられることの影響は大きい。",
               "impact": "Claude が日本の次世代開発者の標準学習ツールとして確立されつつあることを示す。Anthropic の日本市場戦略への追い風。"
-            }
+            },
+            "caption": "とほほWWW入門 Claude 対応",
+            "alt": "とほほのWWW入門へのClaude・Claude Code解説追加を示すサマリーカード。サイト歴史：1996年開設・25年以上継続。追加コンテンツ：Claude基本操作・Claude Codeインストール・Hook・MCPサーバー・API利用。反響：はてブ250件。意義：日本の開発者コミュニティへのClaude本格浸透の象徴。"
           }
         },
         {
@@ -979,21 +1596,48 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["sakana-ai", "nvidia", "sparse-transformer", "cuda", "gpu-optimization", "japan"],
+          "tags": [
+            "sakana-ai",
+            "nvidia",
+            "sparse-transformer",
+            "cuda",
+            "gpu-optimization",
+            "japan"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "TwELL 速度改善",
-            "alt": "TwELLフォーマットによるスパーストランスフォーマーの性能改善を示す横棒グラフ。推論速度20%以上向上（バー長80%、ベースライン比較あり）、メモリ効率改善、エネルギー効率改善の3指標を表示。対象はSakana AI × NVIDIAの共同研究、1Bパラメータクラスのモデルで計測。",
             "data": {
               "headline": "TwELL: スパース Transformer の推論を GPU で 20%+ 高速化",
               "bars": [
-                { "label": "推論速度", "value": "20%+ 向上", "pct": 80, "baseline_pct": 66, "baseline_label": "従来 Sparse MoE", "delta": "+20%+", "tone": "success" },
-                { "label": "メモリ効率", "value": "改善あり", "pct": 75, "baseline_pct": 55, "tone": "success" },
-                { "label": "エネルギー効率", "value": "改善あり", "pct": 72, "baseline_pct": 55, "tone": "success" }
+                {
+                  "label": "推論速度",
+                  "value": "20%+ 向上",
+                  "pct": 80,
+                  "baseline_pct": 66,
+                  "baseline_label": "従来 Sparse MoE",
+                  "delta": "+20%+",
+                  "tone": "success"
+                },
+                {
+                  "label": "メモリ効率",
+                  "value": "改善あり",
+                  "pct": 75,
+                  "baseline_pct": 55,
+                  "tone": "success"
+                },
+                {
+                  "label": "エネルギー効率",
+                  "value": "改善あり",
+                  "pct": 72,
+                  "baseline_pct": 55,
+                  "tone": "success"
+                }
               ],
               "narrative": "GPU ワープに合わせてスパース性を再形成するという発想で、従来の理論値と実測値の乖離問題を解決。",
               "impact": "スパース Transformer の実用化が加速し、LLM のエッジ展開・省エネ推論の実現に貢献。Sakana AI の技術力を世界に示す。"
-            }
+            },
+            "caption": "TwELL 速度改善",
+            "alt": "TwELLフォーマットによるスパーストランスフォーマーの性能改善を示す横棒グラフ。推論速度20%以上向上（バー長80%、ベースライン比較あり）、メモリ効率改善、エネルギー効率改善の3指標を表示。対象はSakana AI × NVIDIAの共同研究、1Bパラメータクラスのモデルで計測。"
           }
         },
         {
@@ -1022,24 +1666,66 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 154 },
-          "tags": ["ocr", "llm", "document-ai", "rag", "pymupdf", "japan", "zenn", "hatena"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 154
+          },
+          "tags": [
+            "ocr",
+            "llm",
+            "document-ai",
+            "rag",
+            "pymupdf",
+            "japan",
+            "zenn",
+            "hatena"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "OCR単体 vs OCR+LLM",
-            "alt": "書籍デジタル化における OCR 単体と OCR+LLM 後処理の比較。OCR単体：誤認識多い・構造情報失われる・図表位置不明。OCR+LLM：誤認識修正済み・見出し階層・表・図の位置関係を機械可読形式で保存。PyMuPDFの空間座標でグラウンディング検証。",
             "data": {
               "headline": "OCR 単体 vs OCR+LLM 後処理：書籍デジタル化の精度比較",
-              "before": { "label": "OCR 単体", "sublabel": "従来手法" },
-              "after": { "label": "OCR + LLM 後処理", "sublabel": "PyMuPDF 座標検証付き" },
+              "before": {
+                "label": "OCR 単体",
+                "sublabel": "従来手法"
+              },
+              "after": {
+                "label": "OCR + LLM 後処理",
+                "sublabel": "PyMuPDF 座標検証付き"
+              },
               "metrics": [
-                { "label": "文字認識精度", "before": "誤認識あり（レイアウト複雑時に低下）", "after": "LLM が誤認識を修正・大幅改善", "before_pct": 60, "after_pct": 92, "delta": "+32pt", "delta_tone": "success" },
-                { "label": "構造保持", "before": "平文のみ（見出し・表が失われる）", "after": "見出し階層・表・図の位置関係を保持", "before_pct": 20, "after_pct": 88, "delta": "大幅改善", "delta_tone": "success" },
-                { "label": "実装の容易さ", "before": "OCR ライブラリのみ", "after": "PyMuPDF + LLM API の組み合わせが必要", "before_pct": 90, "after_pct": 60, "delta": "複雑化", "delta_tone": "warning" }
+                {
+                  "label": "文字認識精度",
+                  "before": "誤認識あり（レイアウト複雑時に低下）",
+                  "after": "LLM が誤認識を修正・大幅改善",
+                  "before_pct": 60,
+                  "after_pct": 92,
+                  "delta": "+32pt",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "構造保持",
+                  "before": "平文のみ（見出し・表が失われる）",
+                  "after": "見出し階層・表・図の位置関係を保持",
+                  "before_pct": 20,
+                  "after_pct": 88,
+                  "delta": "大幅改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "実装の容易さ",
+                  "before": "OCR ライブラリのみ",
+                  "after": "PyMuPDF + LLM API の組み合わせが必要",
+                  "before_pct": 90,
+                  "after_pct": 60,
+                  "delta": "複雑化",
+                  "delta_tone": "warning"
+                }
               ],
               "narrative": "PyMuPDF の空間座標で LLM の出力を元の書籍と照合するグラウンディング手法が精度の鍵。実装コード公開済み。",
               "impact": "RAG データ整備・文書 AI・デジタルアーカイブの実務品質が大幅向上し、書籍知識のAI活用が現実的になる。"
-            }
+            },
+            "caption": "OCR単体 vs OCR+LLM",
+            "alt": "書籍デジタル化における OCR 単体と OCR+LLM 後処理の比較。OCR単体：誤認識多い・構造情報失われる・図表位置不明。OCR+LLM：誤認識修正済み・見出し階層・表・図の位置関係を機械可読形式で保存。PyMuPDFの空間座標でグラウンディング検証。"
           }
         },
         {
@@ -1068,23 +1754,51 @@
             "total": 12,
             "source_type_bias": 0
           },
-          "tags": ["sakana-ai", "defense", "dual-use", "c2", "disinformation", "japan", "interview"],
+          "tags": [
+            "sakana-ai",
+            "defense",
+            "dual-use",
+            "c2",
+            "disinformation",
+            "japan",
+            "interview"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Sakana AI 防衛 AI 開発",
-            "alt": "Sakana AIの防衛分野AI開発インタビューのサマリーカード。開発者：LINE ヤフー出身のSWE。主要ユースケース：C2（指揮統制）自動化と偽情報検知。感じた責任感：倫理的重さ・国家安全保障への関与。意義：日本スタートアップが防衛AI分野に本格参入した証言。",
             "data": {
               "headline": "Sakana AI の防衛 AI 開発者が語る——C2 自動化・偽情報検知の実際",
               "tldr": "Sakana AI が防衛分野で指揮統制（C2）自動化・偽情報検知に携わる SWE のインタビューを公開。LINE ヤフー出身のエンジニアが防衛 AI 開発の倫理的重さと実務を率直に語る珍しい証言。",
               "points": [
-                { "icon": "🛡️", "label": "ユースケース 1", "value": "C2（指揮統制）システムの AI 自動化", "tone": "primary" },
-                { "icon": "🔍", "label": "ユースケース 2", "value": "偽情報（ディスインフォメーション）検知", "tone": "primary" },
-                { "icon": "⚖️", "label": "倫理的課題", "value": "国家安全保障関与の重さ・デュアルユース AI", "tone": "warning" },
-                { "icon": "🏢", "label": "キャリア", "value": "LINE ヤフー → Sakana AI（防衛 AI 開発へ）", "tone": "info" }
+                {
+                  "icon": "🛡️",
+                  "label": "ユースケース 1",
+                  "value": "C2（指揮統制）システムの AI 自動化",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "ユースケース 2",
+                  "value": "偽情報（ディスインフォメーション）検知",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "倫理的課題",
+                  "value": "国家安全保障関与の重さ・デュアルユース AI",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "キャリア",
+                  "value": "LINE ヤフー → Sakana AI（防衛 AI 開発へ）",
+                  "tone": "info"
+                }
               ],
               "context": "日本のスタートアップが防衛・安全保障分野の AI 開発に参入するケースは珍しく、業界全体への示唆が大きい。",
               "impact": "デュアルユース AI の倫理・規制議論が日本でも具体化し始めており、産官学での議論の素材として注目される。"
-            }
+            },
+            "caption": "Sakana AI 防衛 AI 開発",
+            "alt": "Sakana AIの防衛分野AI開発インタビューのサマリーカード。開発者：LINE ヤフー出身のSWE。主要ユースケース：C2（指揮統制）自動化と偽情報検知。感じた責任感：倫理的重さ・国家安全保障への関与。意義：日本スタートアップが防衛AI分野に本格参入した証言。"
           }
         }
       ]
@@ -1120,23 +1834,49 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["deepseek", "china", "funding", "ai-infrastructure", "gpu"],
+          "tags": [
+            "deepseek",
+            "china",
+            "funding",
+            "ai-infrastructure",
+            "gpu"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "DeepSeek 大型調達",
-            "alt": "DeepSeekの大型資金調達のサマリーカード。調達額：約500億元（約5,000億円）。中国AI史上最大の単一ラウンド。用途：次世代モデル開発・GPU増強・人材採用。背景：DeepSeek-V3・R1の国際的成功。意義：中国AIの資金力が米国大手に迫る転換点。",
             "data": {
               "headline": "DeepSeek が約 5,000 億円を調達——中国 AI 史上最大の資金調達",
               "tldr": "DeepSeek が約 500 億元（≒5,000 億円）を調達。DeepSeek-V3・R1 の国際的成功を受け、GPU クラスター増強と次世代モデル開発を加速させる。中国 AI 業界の資金規模が米国大手に迫る歴史的な転換点。",
               "points": [
-                { "icon": "💰", "label": "調達額", "value": "約 500 億元（≒5,000 億円）——中国 AI 史上最大", "tone": "primary" },
-                { "icon": "🖥️", "label": "用途", "value": "GPU クラスター増強・次世代モデル・人材採用", "tone": "info" },
-                { "icon": "🌐", "label": "背景", "value": "DeepSeek-V3・R1 の国際的成功が信頼を裏付け", "tone": "success" },
-                { "icon": "📈", "label": "意義", "value": "中国 AI の資金力が米国大手に迫る転換点", "tone": "warning" }
+                {
+                  "icon": "💰",
+                  "label": "調達額",
+                  "value": "約 500 億元（≒5,000 億円）——中国 AI 史上最大",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🖥️",
+                  "label": "用途",
+                  "value": "GPU クラスター増強・次世代モデル・人材採用",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "背景",
+                  "value": "DeepSeek-V3・R1 の国際的成功が信頼を裏付け",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "意義",
+                  "value": "中国 AI の資金力が米国大手に迫る転換点",
+                  "tone": "warning"
+                }
               ],
               "context": "DeepSeek は年初に「コスト効率で GPT-4 超え」として世界を驚かせ、オープンウェイトモデル公開で業界標準に影響を与えた。",
               "impact": "米中 AI 競争の資金面での格差が急速に縮小しており、グローバル AI 業界の勢力図に影響を与える可能性がある。"
-            }
+            },
+            "caption": "DeepSeek 大型調達",
+            "alt": "DeepSeekの大型資金調達のサマリーカード。調達額：約500億元（約5,000億円）。中国AI史上最大の単一ラウンド。用途：次世代モデル開発・GPU増強・人材採用。背景：DeepSeek-V3・R1の国際的成功。意義：中国AIの資金力が米国大手に迫る転換点。"
           }
         },
         {
@@ -1165,45 +1905,133 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["qwen", "alibaba", "multimodal", "vision-language", "chain-of-thought", "china"],
+          "tags": [
+            "qwen",
+            "alibaba",
+            "multimodal",
+            "vision-language",
+            "chain-of-thought",
+            "china"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Qwen-Image-2.0 vs GPT-4V",
-            "alt": "Qwen-Image-2.0とGPT-4Vのベンチマーク比較。数学的図表解釈：Qwen-Image-2.0が優位。複雑ドキュメント理解：Qwen-Image-2.0が優位。空間的推論：Qwen-Image-2.0が優位。Chain-of-Thought推論を視覚理解に統合した新アーキテクチャが多段階視覚タスクで差をつける。",
             "data": {
               "headline": "Qwen-Image-2.0：思考連鎖推論で GPT-4V を複数ベンチマークで上回る",
-              "before": { "label": "GPT-4V", "sublabel": "従来最高水準" },
-              "after": { "label": "Qwen-Image-2.0", "sublabel": "Chain-of-Thought 視覚推論" },
+              "before": {
+                "label": "GPT-4V",
+                "sublabel": "従来最高水準"
+              },
+              "after": {
+                "label": "Qwen-Image-2.0",
+                "sublabel": "Chain-of-Thought 視覚推論"
+              },
               "metrics": [
-                { "label": "数学的図表解釈", "before": "標準性能", "after": "GPT-4V 超え", "before_pct": 65, "after_pct": 82, "delta": "+17pt", "delta_tone": "success" },
-                { "label": "複雑ドキュメント理解", "before": "標準性能", "after": "GPT-4V 超え", "before_pct": 70, "after_pct": 85, "delta": "+15pt", "delta_tone": "success" },
-                { "label": "空間的推論", "before": "標準性能", "after": "GPT-4V 超え", "before_pct": 60, "after_pct": 78, "delta": "+18pt", "delta_tone": "success" }
+                {
+                  "label": "数学的図表解釈",
+                  "before": "標準性能",
+                  "after": "GPT-4V 超え",
+                  "before_pct": 65,
+                  "after_pct": 82,
+                  "delta": "+17pt",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "複雑ドキュメント理解",
+                  "before": "標準性能",
+                  "after": "GPT-4V 超え",
+                  "before_pct": 70,
+                  "after_pct": 85,
+                  "delta": "+15pt",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "空間的推論",
+                  "before": "標準性能",
+                  "after": "GPT-4V 超え",
+                  "before_pct": 60,
+                  "after_pct": 78,
+                  "delta": "+18pt",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "思考連鎖推論を視覚理解に統合することで、1 回の推論では誤りやすい多段階タスクで大幅な改善を実現。",
               "impact": "中国発のマルチモーダル AI が GPT-4V レベルに到達し、OCR・文書解析・教育分野での商用展開が加速する。"
-            }
+            },
+            "caption": "Qwen-Image-2.0 vs GPT-4V",
+            "alt": "Qwen-Image-2.0とGPT-4Vのベンチマーク比較。数学的図表解釈：Qwen-Image-2.0が優位。複雑ドキュメント理解：Qwen-Image-2.0が優位。空間的推論：Qwen-Image-2.0が優位。Chain-of-Thought推論を視覚理解に統合した新アーキテクチャが多段階視覚タスクで差をつける。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "xai_official", "reason": "HTTP 403 on x.ai/news" },
-    { "source": "openai_official", "reason": "HTTP 403; used WebSearch fallback" },
-    { "source": "meta_ai", "reason": "No articles on or after 2026-05-12" },
-    { "source": "microsoft_ai", "reason": "No AI articles on or after 2026-05-12" },
-    { "source": "mistral_official", "reason": "Most recent post 2026-04-29, outside 24h window" },
-    { "source": "cohere", "reason": "Blog page returned no parseable listings" },
-    { "source": "pfn", "reason": "Most recent post 2026-04-17, outside 168h window" },
-    { "source": "lycorp", "reason": "No AI/LLM articles in time window" },
-    { "source": "cyberagent_ai", "reason": "Most recent post 2026-03-13, outside 168h window" },
-    { "source": "mercari_engineering", "reason": "HTTP 403" },
-    { "source": "zenn_topics", "reason": "JavaScript-rendered, metadata inaccessible" },
-    { "source": "venturebeat", "reason": "HTTP 429 Too Many Requests" },
-    { "source": "the_verge", "reason": "WebFetch blocked" },
-    { "source": "ars_technica", "reason": "WebFetch blocked on RSS" },
-    { "source": "reddit_all", "reason": "www.reddit.com blocked by WebFetch" },
-    { "source": "chinai_newsletter", "reason": "HTTP 403 on chinai.substack.com" },
-    { "source": "synced_review", "reason": "Only article dated 2025-08-14, outside 168h window" }
+    {
+      "source": "xai_official",
+      "reason": "HTTP 403 on x.ai/news"
+    },
+    {
+      "source": "openai_official",
+      "reason": "HTTP 403; used WebSearch fallback"
+    },
+    {
+      "source": "meta_ai",
+      "reason": "No articles on or after 2026-05-12"
+    },
+    {
+      "source": "microsoft_ai",
+      "reason": "No AI articles on or after 2026-05-12"
+    },
+    {
+      "source": "mistral_official",
+      "reason": "Most recent post 2026-04-29, outside 24h window"
+    },
+    {
+      "source": "cohere",
+      "reason": "Blog page returned no parseable listings"
+    },
+    {
+      "source": "pfn",
+      "reason": "Most recent post 2026-04-17, outside 168h window"
+    },
+    {
+      "source": "lycorp",
+      "reason": "No AI/LLM articles in time window"
+    },
+    {
+      "source": "cyberagent_ai",
+      "reason": "Most recent post 2026-03-13, outside 168h window"
+    },
+    {
+      "source": "mercari_engineering",
+      "reason": "HTTP 403"
+    },
+    {
+      "source": "zenn_topics",
+      "reason": "JavaScript-rendered, metadata inaccessible"
+    },
+    {
+      "source": "venturebeat",
+      "reason": "HTTP 429 Too Many Requests"
+    },
+    {
+      "source": "the_verge",
+      "reason": "WebFetch blocked"
+    },
+    {
+      "source": "ars_technica",
+      "reason": "WebFetch blocked on RSS"
+    },
+    {
+      "source": "reddit_all",
+      "reason": "www.reddit.com blocked by WebFetch"
+    },
+    {
+      "source": "chinai_newsletter",
+      "reason": "HTTP 403 on chinai.substack.com"
+    },
+    {
+      "source": "synced_review",
+      "reason": "Only article dated 2025-08-14, outside 168h window"
+    }
   ]
 }

@@ -86,25 +86,54 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["regulation", "policy", "AI safety", "executive order", "Trump", "AI security"],
+          "tags": [
+            "regulation",
+            "policy",
+            "AI safety",
+            "executive order",
+            "Trump",
+            "AI security"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI安保令延期",
-            "alt": "トランプ大統領がAIモデル事前政府審査義務付け大統領令の署名を延期。義務内容はリリース14〜90日前の政府共有。理由は競争力阻害への懸念。背景には米中AI覇権競争とMythos/GPT-5.5 Cyberなど高度セキュリティAIの台頭がある。",
             "data": {
               "headline": "AI安全保障令を延期: 競争力とセキュリティの葛藤",
               "tldr": "トランプ大統領がAIモデルの事前政府審査義務付け大統領令の署名を延期。「AIリーダーシップを妨げたくない」と発言。14〜90日前の事前通知義務化を求めた案は棚上げに。",
               "points": [
-                { "icon": "🏛️", "label": "対象", "value": "AI安全保障令", "tone": "default" },
-                { "icon": "⏸️", "label": "決定", "value": "署名を延期", "tone": "warning" },
-                { "label": "義務内容", "value": "リリース14〜90日前共有" },
-                { "label": "大統領の理由", "value": "競争力阻害を懸念" },
-                { "label": "背景", "value": "米中AI覇権競争" },
-                { "label": "影響モデル例", "value": "Mythos / GPT-5.5 Cyber" }
+                {
+                  "icon": "🏛️",
+                  "label": "対象",
+                  "value": "AI安全保障令",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⏸️",
+                  "label": "決定",
+                  "value": "署名を延期",
+                  "tone": "warning"
+                },
+                {
+                  "label": "義務内容",
+                  "value": "リリース14〜90日前共有"
+                },
+                {
+                  "label": "大統領の理由",
+                  "value": "競争力阻害を懸念"
+                },
+                {
+                  "label": "背景",
+                  "value": "米中AI覇権競争"
+                },
+                {
+                  "label": "影響モデル例",
+                  "value": "Mythos / GPT-5.5 Cyber"
+                }
               ],
               "context": "フロンティアAIモデルが国家安全保障に関わる判断能力を持つ時代に、政府の事前関与をどこまで認めるかが問われている。",
               "impact": "短期的には米国AI企業の規制負担が軽減されるが、AI安全保障体制の整備は遅れる。"
-            }
+            },
+            "caption": "AI安保令延期",
+            "alt": "トランプ大統領がAIモデル事前政府審査義務付け大統領令の署名を延期。義務内容はリリース14〜90日前の政府共有。理由は競争力阻害への懸念。背景には米中AI覇権競争とMythos/GPT-5.5 Cyberなど高度セキュリティAIの台頭がある。"
           }
         }
       ]
@@ -140,25 +169,53 @@
             "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["agents", "compute infrastructure", "Daytona", "MCP", "Claude Code", "sandboxes", "stateful"],
+          "tags": [
+            "agents",
+            "compute infrastructure",
+            "Daytona",
+            "MCP",
+            "Claude Code",
+            "sandboxes",
+            "stateful"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Daytona月次74%成長",
-            "alt": "Daytonaはスナップショット型・ベアメタルインフラでエージェントに状態付きコンピュータをAPI提供。月次74%成長。MCP/Claude Code/OpenAI統合済み。使い捨て環境との差別化が鍵。",
             "data": {
               "headline": "Daytona: エージェント専用ステートフルコンピュートで月次74%成長",
               "tldr": "AIエージェントに使い捨てではなく永続的コンピュータを。Daytonaはスナップショット＋ベアメタルで状態保存・再開可能な実行環境をAPI提供し、月次74%成長中。",
               "points": [
-                { "icon": "📈", "label": "月次成長率", "value": "+74%", "tone": "success" },
-                { "label": "コア技術", "value": "スナップショット型" },
-                { "label": "インフラ", "value": "ベアメタル" },
-                { "label": "API提供", "value": "状態付きコンピュータ" },
-                { "label": "統合先", "value": "MCP/Claude Code/OpenAI" },
-                { "label": "差別化", "value": "使い捨て環境不要" }
+                {
+                  "icon": "📈",
+                  "label": "月次成長率",
+                  "value": "+74%",
+                  "tone": "success"
+                },
+                {
+                  "label": "コア技術",
+                  "value": "スナップショット型"
+                },
+                {
+                  "label": "インフラ",
+                  "value": "ベアメタル"
+                },
+                {
+                  "label": "API提供",
+                  "value": "状態付きコンピュータ"
+                },
+                {
+                  "label": "統合先",
+                  "value": "MCP/Claude Code/OpenAI"
+                },
+                {
+                  "label": "差別化",
+                  "value": "使い捨て環境不要"
+                }
               ],
               "context": "エージェントが複数ステップにわたるタスクを完遂するには、コンテキストと実行状態の永続化が不可欠。既存のコンテナ実行環境は各リクエストで状態がリセットされる。",
               "impact": "エージェントの長時間・マルチターンタスク対応が現実的になり、エンタープライズAIエージェントの実用範囲が大幅に拡大する。"
-            }
+            },
+            "caption": "Daytona月次74%成長",
+            "alt": "Daytonaはスナップショット型・ベアメタルインフラでエージェントに状態付きコンピュータをAPI提供。月次74%成長。MCP/Claude Code/OpenAI統合済み。使い捨て環境との差別化が鍵。"
           },
           "x_post": "エージェントに「使い捨て実行環境」は足りない。DaytonaはLatent Spaceで月次74%成長を公表し、スナップショット型ベアメタルインフラでステートフルなコンピュートをAPIで提供する。MCP・Claude Code統合済み。エージェントファーストのインフラ市場が立ち上がりつつある。\n\nhttps://www.latent.space/p/daytona"
         },
@@ -188,24 +245,53 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["agents", "open source", "multica", "managed agents", "Claude Code", "orchestration", "Go"],
+          "tags": [
+            "agents",
+            "open source",
+            "multica",
+            "managed agents",
+            "Claude Code",
+            "orchestration",
+            "Go"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "multica 30K Stars",
-            "alt": "multica-aiのmulticaはGo実装のオープンソース管理エージェント基盤。累計30,666スター・本日511スター獲得。andrej-karpathy-skills（143K Stars）と同組織。Claude Codeエコシステム拡大を体現。",
             "data": {
               "headline": "multica: 30Kスター突破のオープンソースエージェント管理基盤がトレンド入り",
               "tldr": "Go実装のmulticaがGitHubトレンド入り。コーディングエージェントをチームメイトとして管理・オーケストレーションするプラットフォーム。累計30,666スター・本日511スター。",
               "points": [
-                { "icon": "⭐", "label": "累計Stars", "value": "30,666", "tone": "success" },
-                { "label": "本日Stars", "value": "511", "tone": "primary" },
-                { "label": "実装言語", "value": "Go" },
-                { "label": "機能", "value": "エージェント管理・オーケストレーション" },
-                { "label": "関連プロジェクト", "value": "karpathy-skills" },
-                { "label": "karpathy-skills Stars", "value": "142,999" }
+                {
+                  "icon": "⭐",
+                  "label": "累計Stars",
+                  "value": "30,666",
+                  "tone": "success"
+                },
+                {
+                  "label": "本日Stars",
+                  "value": "511",
+                  "tone": "primary"
+                },
+                {
+                  "label": "実装言語",
+                  "value": "Go"
+                },
+                {
+                  "label": "機能",
+                  "value": "エージェント管理・オーケストレーション"
+                },
+                {
+                  "label": "関連プロジェクト",
+                  "value": "karpathy-skills"
+                },
+                {
+                  "label": "karpathy-skills Stars",
+                  "value": "142,999"
+                }
               ],
               "impact": "Claude Codeなどの自律コーディングエージェントを組織レベルで管理・統制する基盤として即活用可能。エンタープライズ導入の加速が期待される。"
-            }
+            },
+            "caption": "multica 30K Stars",
+            "alt": "multica-aiのmulticaはGo実装のオープンソース管理エージェント基盤。累計30,666スター・本日511スター獲得。andrej-karpathy-skills（143K Stars）と同組織。Claude Codeエコシステム拡大を体現。"
           }
         }
       ]
@@ -241,24 +327,50 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["multimodal", "any-to-any", "ByteDance", "Lance", "open source"],
+          "tags": [
+            "multimodal",
+            "any-to-any",
+            "ByteDance",
+            "Lance",
+            "open source"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Lance Any-to-Any",
-            "alt": "ByteDance ResearchのLanceはany-to-anyマルチモーダルモデル。テキスト・画像・音声・動画を統合処理。HFトレンド1位・561いいね・739DL。詳細ベンチマーク未公開。",
             "data": {
               "headline": "ByteDance Lance: オープンソースのAny-to-Anyマルチモーダルモデル登場",
               "tldr": "ByteDance Researchがany-to-anyモデルLanceを公開。テキスト・画像・音声・動画を統合的に処理。HFトレンド1位・561いいね獲得。",
               "points": [
-                { "label": "モデルタイプ", "value": "Any-to-Any" },
-                { "icon": "🎯", "label": "HFランク", "value": "Trending #1", "tone": "primary" },
-                { "label": "いいね数", "value": "561" },
-                { "label": "開発元", "value": "ByteDance Research" },
-                { "label": "入力形式", "value": "テキスト/画像/音声/動画" },
-                { "label": "公開状態", "value": "OSS公開済み" }
+                {
+                  "label": "モデルタイプ",
+                  "value": "Any-to-Any"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "HFランク",
+                  "value": "Trending #1",
+                  "tone": "primary"
+                },
+                {
+                  "label": "いいね数",
+                  "value": "561"
+                },
+                {
+                  "label": "開発元",
+                  "value": "ByteDance Research"
+                },
+                {
+                  "label": "入力形式",
+                  "value": "テキスト/画像/音声/動画"
+                },
+                {
+                  "label": "公開状態",
+                  "value": "OSS公開済み"
+                }
               ],
               "impact": "ByteDanceがオープンモデルでany-to-anyマルチモーダルに参入。商用の壁を超えた技術競争が始まる。"
-            }
+            },
+            "caption": "Lance Any-to-Any",
+            "alt": "ByteDance ResearchのLanceはany-to-anyマルチモーダルモデル。テキスト・画像・音声・動画を統合処理。HFトレンド1位・561いいね・739DL。詳細ベンチマーク未公開。"
           }
         },
         {
@@ -287,24 +399,48 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["multimodal", "TTS", "text-to-speech", "Supertone", "audio generation"],
+          "tags": [
+            "multimodal",
+            "TTS",
+            "text-to-speech",
+            "Supertone",
+            "audio generation"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "supertonic-3 TTS",
-            "alt": "Supertone（韓国・クラフトン子会社）のsupertonic-3 TTSモデル。4日で35,000DL・530いいね。ゲーム・エンタメ特化設計。HFトレンド2位。詳細ベンチマーク未公開。",
             "data": {
               "headline": "supertonic-3: Supertoneの最新高精度TTSモデルが4日で35K DL",
               "tldr": "韓国・SupertoneがTTSモデルsupertonic-3をHF公開。4日間で35,000DL・530いいね。ゲーム・エンタメ向け音声合成に強みを持つ同社の最新世代。",
               "points": [
-                { "label": "タスク", "value": "Text-to-Speech" },
-                { "label": "DL数", "value": "35,000" },
-                { "label": "いいね数", "value": "530" },
-                { "label": "開発元", "value": "Supertone (クラフトン)" },
-                { "label": "公開日", "value": "2026-05-18" },
-                { "label": "特徴", "value": "エンタメ特化設計" }
+                {
+                  "label": "タスク",
+                  "value": "Text-to-Speech"
+                },
+                {
+                  "label": "DL数",
+                  "value": "35,000"
+                },
+                {
+                  "label": "いいね数",
+                  "value": "530"
+                },
+                {
+                  "label": "開発元",
+                  "value": "Supertone (クラフトン)"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026-05-18"
+                },
+                {
+                  "label": "特徴",
+                  "value": "エンタメ特化設計"
+                }
               ],
               "impact": "高品質・実用的なオープンソースTTSが増えることでAI音声体験の民主化が加速する。"
-            }
+            },
+            "caption": "supertonic-3 TTS",
+            "alt": "Supertone（韓国・クラフトン子会社）のsupertonic-3 TTSモデル。4日で35,000DL・530いいね。ゲーム・エンタメ特化設計。HFトレンド2位。詳細ベンチマーク未公開。"
           }
         }
       ]
@@ -339,24 +475,49 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["new_models", "GPT-5.5-Cyber", "OpenAI", "cybersecurity", "Japan", "security AI"],
+          "tags": [
+            "new_models",
+            "GPT-5.5-Cyber",
+            "OpenAI",
+            "cybersecurity",
+            "Japan",
+            "security AI"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "GPT-5.5-Cyber 日本展開",
-            "alt": "OpenAIがGPT-5.5-Cyberを日本政府・企業向けに提供開始。脆弱性検出・インシデント対応・セキュリティ分析に特化。AnthropicのMythosが競合。日本市場へのセキュリティAI本格参入。",
             "data": {
               "headline": "GPT-5.5-Cyber: OpenAIが日本市場にセキュリティ特化AIを展開",
               "tldr": "OpenAIが脆弱性検出・インシデント対応に特化したGPT-5.5-Cyberを日本政府・企業向けに提供開始。Mythosなど競合も存在するセキュリティAI市場に本格参入。",
               "points": [
-                { "label": "モデル名", "value": "GPT-5.5-Cyber" },
-                { "label": "特化分野", "value": "サイバーセキュリティ" },
-                { "label": "対象", "value": "日本政府・企業" },
-                { "label": "主な機能", "value": "脆弱性検出/IR" },
-                { "label": "競合", "value": "Mythos (Anthropic)" },
-                { "label": "展開状況", "value": "日本市場投入" }
+                {
+                  "label": "モデル名",
+                  "value": "GPT-5.5-Cyber"
+                },
+                {
+                  "label": "特化分野",
+                  "value": "サイバーセキュリティ"
+                },
+                {
+                  "label": "対象",
+                  "value": "日本政府・企業"
+                },
+                {
+                  "label": "主な機能",
+                  "value": "脆弱性検出/IR"
+                },
+                {
+                  "label": "競合",
+                  "value": "Mythos (Anthropic)"
+                },
+                {
+                  "label": "展開状況",
+                  "value": "日本市場投入"
+                }
               ],
               "impact": "政府機関のAIサイバー防衛能力が強化されるとともに、民間企業のセキュリティAI採用が加速する可能性がある。"
-            }
+            },
+            "caption": "GPT-5.5-Cyber 日本展開",
+            "alt": "OpenAIがGPT-5.5-Cyberを日本政府・企業向けに提供開始。脆弱性検出・インシデント対応・セキュリティ分析に特化。AnthropicのMythosが競合。日本市場へのセキュリティAI本格参入。"
           }
         },
         {
@@ -385,24 +546,51 @@
             "total": 12,
             "source_type_bias": 0
           },
-          "tags": ["new_models", "image generation", "anime", "Anima", "commercial license", "2B"],
+          "tags": [
+            "new_models",
+            "image generation",
+            "anime",
+            "Anima",
+            "commercial license",
+            "2B"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Anima 2B 商用可",
-            "alt": "circlestone labsの2Bアニメ画像生成AI「Anima」が592K DL・1,460いいね。商用利用可ライセンス。ローカル実行が現実的なパラメータ規模。日本コミュニティでもはてブ201件の反響。",
             "data": {
               "headline": "Anima 2B: 商用可アニメ特化画像生成モデルがHFトレンドを席巻",
               "tldr": "circlestone labsの2Bアニメ画像生成AI「Anima」が592K DL・1,460いいね。商用利用可のライセンスで個人・法人ともに即利用可能。日本でも201ブクマ獲得。",
               "points": [
-                { "label": "パラメータ数", "value": "2B" },
-                { "icon": "🎨", "label": "特化ジャンル", "value": "アニメ/イラスト", "tone": "primary" },
-                { "label": "DL数", "value": "592,000" },
-                { "label": "いいね数", "value": "1,460" },
-                { "label": "ライセンス", "value": "商用利用可" },
-                { "label": "日本はてブ", "value": "201件" }
+                {
+                  "label": "パラメータ数",
+                  "value": "2B"
+                },
+                {
+                  "icon": "🎨",
+                  "label": "特化ジャンル",
+                  "value": "アニメ/イラスト",
+                  "tone": "primary"
+                },
+                {
+                  "label": "DL数",
+                  "value": "592,000"
+                },
+                {
+                  "label": "いいね数",
+                  "value": "1,460"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "商用利用可"
+                },
+                {
+                  "label": "日本はてブ",
+                  "value": "201件"
+                }
               ],
               "impact": "低コストでアニメ品質の画像生成が可能になりコンテンツ制作の敷居が下がる。著作権・フィルタリングの議論も生まれるだろう。"
-            }
+            },
+            "caption": "Anima 2B 商用可",
+            "alt": "circlestone labsの2Bアニメ画像生成AI「Anima」が592K DL・1,460いいね。商用利用可ライセンス。ローカル実行が現実的なパラメータ規模。日本コミュニティでもはてブ201件の反響。"
           }
         },
         {
@@ -431,24 +619,51 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["new_models", "text-to-video", "video generation", "SulphurAI", "9B", "open source"],
+          "tags": [
+            "new_models",
+            "text-to-video",
+            "video generation",
+            "SulphurAI",
+            "9B",
+            "open source"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Sulphur-2-base 4日1.2M DL",
-            "alt": "SulphurAIの9B動画生成モデルSulphur-2-baseが公開4日で1.2M DL・1,230いいね。Sora/Veo等商用モデルに対抗するOSS動画生成。詳細ベンチマーク未公開。",
             "data": {
               "headline": "Sulphur-2-base: 4日で1.2M DLのオープンソース9B動画生成モデル",
               "tldr": "SulphurAIの9B動画生成モデルが公開4日で1.2M DL・1,230いいね。テキストから動画を生成するOSSモデルの中で際立った反響。ローカル実行の可能性も。",
               "points": [
-                { "label": "パラメータ数", "value": "9B" },
-                { "label": "タスク", "value": "Text-to-Video" },
-                { "icon": "📊", "label": "DL数", "value": "1,200,000", "tone": "success" },
-                { "label": "いいね数", "value": "1,230" },
-                { "label": "公開日", "value": "2026-05-18" },
-                { "label": "比較対象", "value": "Sora/Veo等商用モデル" }
+                {
+                  "label": "パラメータ数",
+                  "value": "9B"
+                },
+                {
+                  "label": "タスク",
+                  "value": "Text-to-Video"
+                },
+                {
+                  "icon": "📊",
+                  "label": "DL数",
+                  "value": "1,200,000",
+                  "tone": "success"
+                },
+                {
+                  "label": "いいね数",
+                  "value": "1,230"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026-05-18"
+                },
+                {
+                  "label": "比較対象",
+                  "value": "Sora/Veo等商用モデル"
+                }
               ],
               "impact": "動画生成の民主化が加速。ファインチューニングや商業利用の可否次第では急速な普及が見込まれる。"
-            }
+            },
+            "caption": "Sulphur-2-base 4日1.2M DL",
+            "alt": "SulphurAIの9B動画生成モデルSulphur-2-baseが公開4日で1.2M DL・1,230いいね。Sora/Veo等商用モデルに対抗するOSS動画生成。詳細ベンチマーク未公開。"
           }
         }
       ]
@@ -484,24 +699,52 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["tools_apps", "Claude Code", "plugins", "Anthropic", "GitHub", "developer tools"],
+          "tags": [
+            "tools_apps",
+            "Claude Code",
+            "plugins",
+            "Anthropic",
+            "GitHub",
+            "developer tools"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Plugins公式ディレクトリ",
-            "alt": "AnthropicがClaude Codeプラグイン公式ディレクトリをGitHub公開。本日891スター・累計22,243スターでGitHubトレンド1位。Anthropic公式認定・高品質プラグインのキュレーション済みリスト。",
             "data": {
               "headline": "Claude Code公式プラグインディレクトリが開設——GitHubトレンド1位",
               "tldr": "AnthropicがClaude Codeプラグインの公式ディレクトリをGitHubで公開。本日891スター・累計22,243スターでGitHubトレンド1位。エコシステム成熟の節目。",
               "points": [
-                { "icon": "🏆", "label": "GitHubランク", "value": "Trending #1", "tone": "success" },
-                { "label": "本日Stars", "value": "891", "tone": "primary" },
-                { "label": "累計Stars", "value": "22,243" },
-                { "label": "公開元", "value": "Anthropic公式" },
-                { "label": "目的", "value": "公式プラグイン認定" },
-                { "label": "言語", "value": "Python" }
+                {
+                  "icon": "🏆",
+                  "label": "GitHubランク",
+                  "value": "Trending #1",
+                  "tone": "success"
+                },
+                {
+                  "label": "本日Stars",
+                  "value": "891",
+                  "tone": "primary"
+                },
+                {
+                  "label": "累計Stars",
+                  "value": "22,243"
+                },
+                {
+                  "label": "公開元",
+                  "value": "Anthropic公式"
+                },
+                {
+                  "label": "目的",
+                  "value": "公式プラグイン認定"
+                },
+                {
+                  "label": "言語",
+                  "value": "Python"
+                }
               ],
               "impact": "Claude Codeプラグインの品質保証と発見が容易になり、個人・企業が既存ワークフローに統合するハードルが下がる。"
-            }
+            },
+            "caption": "Claude Plugins公式ディレクトリ",
+            "alt": "AnthropicがClaude Codeプラグイン公式ディレクトリをGitHub公開。本日891スター・累計22,243スターでGitHubトレンド1位。Anthropic公式認定・高品質プラグインのキュレーション済みリスト。"
           },
           "x_post": "Anthropicが公式Claude Codeプラグインディレクトリを本日公開。コミュニティ製MCP・ツール統合を集約するリポジトリで、初日だけで891スター・GitHubトレンド1位を記録した。公式エコシステムが整うことでClaude Codeの拡張性が加速しそうだ。\n\nhttps://github.com/anthropics/claude-plugins-official"
         },
@@ -531,24 +774,51 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["tools_apps", "Claude Code", "code graph", "RAG", "developer tools", "TypeScript"],
+          "tags": [
+            "tools_apps",
+            "Claude Code",
+            "code graph",
+            "RAG",
+            "developer tools",
+            "TypeScript"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "codegraph 4,222Stars/日",
-            "alt": "codegraphはTypeScript製コード知識グラフツール。本日4,222スター・累計13,178スター。Claude Code/Cursor対応。グラフ+ベクトル検索でAIエージェントのコード検索精度を向上。",
             "data": {
               "headline": "codegraph: AIエージェント向けコード知識グラフが本日4,222スターを獲得",
               "tldr": "TypeScript製codegraphはコードベースを事前グラフ化しClaude CodeやCursorのリトリーバル精度を向上させる。本日単日4,222スター・累計13,178スター。",
               "points": [
-                { "icon": "⭐", "label": "本日Stars", "value": "4,222", "tone": "success" },
-                { "label": "累計Stars", "value": "13,178" },
-                { "label": "言語", "value": "TypeScript" },
-                { "label": "主な用途", "value": "AIコード検索精度向上" },
-                { "label": "対応ツール", "value": "Claude Code/Cursor" },
-                { "label": "手法", "value": "グラフ+ベクトル検索" }
+                {
+                  "icon": "⭐",
+                  "label": "本日Stars",
+                  "value": "4,222",
+                  "tone": "success"
+                },
+                {
+                  "label": "累計Stars",
+                  "value": "13,178"
+                },
+                {
+                  "label": "言語",
+                  "value": "TypeScript"
+                },
+                {
+                  "label": "主な用途",
+                  "value": "AIコード検索精度向上"
+                },
+                {
+                  "label": "対応ツール",
+                  "value": "Claude Code/Cursor"
+                },
+                {
+                  "label": "手法",
+                  "value": "グラフ+ベクトル検索"
+                }
               ],
               "impact": "大規模コードベースでのAIエージェント支援が劇的に改善される。RAGベースのコード検索が標準化に近づく。"
-            }
+            },
+            "caption": "codegraph 4,222Stars/日",
+            "alt": "codegraphはTypeScript製コード知識グラフツール。本日4,222スター・累計13,178スター。Claude Code/Cursor対応。グラフ+ベクトル検索でAIエージェントのコード検索精度を向上。"
           }
         },
         {
@@ -577,24 +847,69 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["tools_apps", "Google Search", "Gemini", "AI search", "multimodal", "UX"],
+          "tags": [
+            "tools_apps",
+            "Google Search",
+            "Gemini",
+            "AI search",
+            "multimodal",
+            "UX"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Google Search 25年ぶり刷新",
-            "alt": "Google Searchが25年ぶりにUIを刷新。従来はテキスト専用クエリ。新UIはテキスト+画像+PDF+動画入力対応、AI OverviewsとAI Modeが統合。Gemini 3.5 Flash駆動。",
             "data": {
               "headline": "Google Search: 25年ぶりの刷新でAI会話型インターフェースへ",
-              "before": { "label": "従来のSearch", "sublabel": "テキスト専用クエリ" },
-              "after": { "label": "新AI Search", "sublabel": "Gemini 3.5 Flash統合" },
+              "before": {
+                "label": "従来のSearch",
+                "sublabel": "テキスト専用クエリ"
+              },
+              "after": {
+                "label": "新AI Search",
+                "sublabel": "Gemini 3.5 Flash統合"
+              },
               "metrics": [
-                { "label": "入力形式", "before": "テキストのみ", "after": "テキスト+画像+PDF+動画", "delta": "マルチモーダル化", "delta_tone": "success" },
-                { "label": "AI統合", "before": "なし", "after": "AI Overviews+AI Mode統合", "delta": "会話型UI", "delta_tone": "success" },
-                { "label": "インターフェース", "before": "1ボックス(25年間)", "after": "マルチモーダル入力", "delta": "25年ぶり刷新", "delta_tone": "primary" },
-                { "label": "広告CTR影響", "before": "従来クリック率", "after": "AI表示で低下傾向", "delta": "モデル変化", "delta_tone": "warning" }
+                {
+                  "label": "入力形式",
+                  "before": "テキストのみ",
+                  "after": "テキスト+画像+PDF+動画",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "マルチモーダル化",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "AI統合",
+                  "before": "なし",
+                  "after": "AI Overviews+AI Mode統合",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "会話型UI",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "インターフェース",
+                  "before": "1ボックス(25年間)",
+                  "after": "マルチモーダル入力",
+                  "before_pct": 100,
+                  "after_pct": 0,
+                  "delta": "25年ぶり刷新",
+                  "delta_tone": "primary"
+                },
+                {
+                  "label": "広告CTR影響",
+                  "before": "従来クリック率",
+                  "after": "AI表示で低下傾向",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "モデル変化",
+                  "delta_tone": "warning"
+                }
               ],
               "narrative": "Googleが25年維持してきた単純な検索ボックスをAI会話型インターフェースに刷新。Gemini 3.5 FlashがAI OverviewsとAI Modeを統合し、切り替え不要のマルチモーダル検索を実現。",
               "impact": "全ユーザーへのAI検索展開でPerplexityやChatGPT Searchへの流出を阻止。広告ビジネスとAI体験の両立が次の課題。"
-            }
+            },
+            "caption": "Google Search 25年ぶり刷新",
+            "alt": "Google Searchが25年ぶりにUIを刷新。従来はテキスト専用クエリ。新UIはテキスト+画像+PDF+動画入力対応、AI OverviewsとAI Modeが統合。Gemini 3.5 Flash駆動。"
           }
         }
       ]
@@ -630,22 +945,50 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["research_papers", "GPQA Diamond", "Darwin", "training-free", "reasoning", "inference-time compute"],
+          "tags": [
+            "research_papers",
+            "GPQA Diamond",
+            "Darwin",
+            "training-free",
+            "reasoning",
+            "inference-time compute"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "GPQA Diamond スコア比較",
-            "alt": "Darwin Familyが学習不要でGPQA Diamond 88.89%を達成。ファインチューニング済み前世代最良が約85%、人間専門家平均が約90%。学習なしで専門家水準に迫る結果。",
             "data": {
               "headline": "Darwin Family: 学習不要でGPQA Diamond 88.89%を達成",
-              "scale": { "max_label": "スコア100%", "unit": "%" },
+              "scale": {
+                "max_label": "スコア100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "Darwin (学習なし)", "value": "88.89%", "pct": 88.89, "note": "勾配更新ゼロ", "tone": "success" },
-                { "label": "前世代FT最良", "value": "~85%", "pct": 85, "note": "ファインチューニング済み", "tone": "default" },
-                { "label": "人間専門家平均", "value": "~90%", "pct": 90, "note": "オックスフォード/Harvard等", "tone": "info" }
+                {
+                  "label": "Darwin (学習なし)",
+                  "value": "88.89%",
+                  "pct": 88.89,
+                  "note": "勾配更新ゼロ",
+                  "tone": "success"
+                },
+                {
+                  "label": "前世代FT最良",
+                  "value": "~85%",
+                  "pct": 85,
+                  "note": "ファインチューニング済み",
+                  "tone": "default"
+                },
+                {
+                  "label": "人間専門家平均",
+                  "value": "~90%",
+                  "pct": 90,
+                  "note": "オックスフォード/Harvard等",
+                  "tone": "info"
+                }
               ],
               "narrative": "GPQA Diamondは専門家でも90%程度にとどまる超難関ベンチマーク。学習なしで88.89%は前世代FT済みモデルに匹敵する成果。",
               "impact": "推論時最適化だけで最前線水準の推論能力が得られるなら、ドメイン特化AIの構築コストと時間が大幅に短縮される。"
-            }
+            },
+            "caption": "GPQA Diamond スコア比較",
+            "alt": "Darwin Familyが学習不要でGPQA Diamond 88.89%を達成。ファインチューニング済み前世代最良が約85%、人間専門家平均が約90%。学習なしで専門家水準に迫る結果。"
           }
         },
         {
@@ -674,24 +1017,49 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["research_papers", "agent memory", "agent traces", "persistent memory", "HuggingFace", "architecture"],
+          "tags": [
+            "research_papers",
+            "agent memory",
+            "agent traces",
+            "persistent memory",
+            "HuggingFace",
+            "architecture"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "エージェントトレース記憶設計",
-            "alt": "エージェントの行動履歴・中間推論・ツール呼び出し記録をトレース記憶として永続化。従来LLMはコンテキスト外を忘れるが、トレース活用でセッション間の文脈引き継ぎを実現。Anthropic dreaming・Daytonaと整合。",
             "data": {
               "headline": "エージェントのトレースが記憶になる——セッション跨ぎ持続記憶の設計論",
               "tldr": "従来LLMはコンテキスト外を忘れる。エージェントの行動履歴・中間推論を「トレース記憶」として永続化・再活用することでセッション間の文脈引き継ぎを実現する。",
               "points": [
-                { "label": "課題", "value": "セッション間記憶欠如" },
-                { "label": "解決策", "value": "トレース永続化" },
-                { "label": "記録対象", "value": "行動/推論/ツール呼出" },
-                { "label": "実装例", "value": "複数パターン提示" },
-                { "label": "関連技術", "value": "Dreaming/Daytona" },
-                { "label": "公開先", "value": "HuggingFace Blog" }
+                {
+                  "label": "課題",
+                  "value": "セッション間記憶欠如"
+                },
+                {
+                  "label": "解決策",
+                  "value": "トレース永続化"
+                },
+                {
+                  "label": "記録対象",
+                  "value": "行動/推論/ツール呼出"
+                },
+                {
+                  "label": "実装例",
+                  "value": "複数パターン提示"
+                },
+                {
+                  "label": "関連技術",
+                  "value": "Dreaming/Daytona"
+                },
+                {
+                  "label": "公開先",
+                  "value": "HuggingFace Blog"
+                }
               ],
               "impact": "エージェントシステムのプロダクション設計で記憶設計は必須課題。このアーキテクチャが標準化されるかが注目される。"
-            }
+            },
+            "caption": "エージェントトレース記憶設計",
+            "alt": "エージェントの行動履歴・中間推論・ツール呼び出し記録をトレース記憶として永続化。従来LLMはコンテキスト外を忘れるが、トレース活用でセッション間の文脈引き継ぎを実現。Anthropic dreaming・Daytonaと整合。"
           },
           "x_post": "HuggingFaceがエージェントの実行ログを長期記憶として再利用する設計論を公開。成功・失敗トレースをセマンティック検索可能な形式に変換し同類タスクで精度向上を実証。Anthropic Dreamingとも整合するエージェント記憶アーキテクチャ。\n\nhttps://huggingface.co/blog/huggingface/agent-traces-as-memory"
         }
@@ -728,24 +1096,50 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["industry_business", "funding", "Series A", "Hark", "Brett Adcock", "AI hardware"],
+          "tags": [
+            "industry_business",
+            "funding",
+            "Series A",
+            "Hark",
+            "Brett Adcock",
+            "AI hardware"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Hark 7億ドル調達",
-            "alt": "Brett Adcock創業のHarkがSeries Aで7億ドル調達・評価額60億ドル。今夏マルチモーダルモデル+専用ハード公開予定。Nvidia B200 GPU・70名体制。Nvidia/AMD/Intel/Qualcomm出資。",
             "data": {
               "headline": "Hark: 7億ドル調達・評価額60億ドルのステルスAIラボが夏に登場",
               "tldr": "Brett Adcock創業のHarkがSeries Aで7億ドル調達・評価額60億ドル。今夏マルチモーダルモデル+専用ハード公開予定。Nvidia/AMD/Intel/Qualcommが出資。",
               "points": [
-                { "label": "調達額", "value": "7億ドル", "tone": "success" },
-                { "label": "評価額", "value": "60億ドル" },
-                { "label": "ラウンド", "value": "Series A" },
-                { "label": "創業者", "value": "Brett Adcock" },
-                { "label": "出資者", "value": "Nvidia/AMD/Intel/Qualcomm" },
-                { "label": "公開予定", "value": "今夏" }
+                {
+                  "label": "調達額",
+                  "value": "7億ドル",
+                  "tone": "success"
+                },
+                {
+                  "label": "評価額",
+                  "value": "60億ドル"
+                },
+                {
+                  "label": "ラウンド",
+                  "value": "Series A"
+                },
+                {
+                  "label": "創業者",
+                  "value": "Brett Adcock"
+                },
+                {
+                  "label": "出資者",
+                  "value": "Nvidia/AMD/Intel/Qualcomm"
+                },
+                {
+                  "label": "公開予定",
+                  "value": "今夏"
+                }
               ],
               "impact": "ステルスのまま60億ドル評価は異例の規模。夏の製品公開まで詳細が不明なため、期待とリスクが同居する投資。"
-            }
+            },
+            "caption": "Hark 7億ドル調達",
+            "alt": "Brett Adcock創業のHarkがSeries Aで7億ドル調達・評価額60億ドル。今夏マルチモーダルモデル+専用ハード公開予定。Nvidia B200 GPU・70名体制。Nvidia/AMD/Intel/Qualcomm出資。"
           }
         },
         {
@@ -774,22 +1168,50 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["industry_business", "advertising", "ChatGPT", "OpenAI", "monetization", "Ads Manager"],
+          "tags": [
+            "industry_business",
+            "advertising",
+            "ChatGPT",
+            "OpenAI",
+            "monetization",
+            "Ads Manager"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "ChatGPT広告ロードマップ",
-            "alt": "OpenAIのChatGPT広告展開タイムライン。2026年5月にAds Managerセルフサービスβ開始（米国）。近週中に英国・日本・韓国等5カ国展開予定。2026年末に広告収入2,500億円目標。2030年には年間10兆円規模を目指す。",
             "data": {
               "headline": "ChatGPT広告: OpenAI収益化ロードマップ",
               "events": [
-                { "when": "2026/05", "label": "Ads Manager セルフサービスβ開始", "description": "CPC/CPM対応・最低出稿額なしで米国から展開。大型画像+動的CTAフォーマット。", "status": "now", "tone": "primary" },
-                { "when": "2026/06予定", "label": "英国・日本・韓国等5カ国展開", "description": "メキシコ・ブラジルを含む5カ国への広告プラットフォーム拡大。", "status": "upcoming" },
-                { "when": "2026年末", "label": "広告収入2,500億円目標", "description": "自社プラットフォームで年間広告収入の確立を目指す。", "status": "upcoming" },
-                { "when": "2030年", "label": "年間広告収入10兆円目標", "description": "ChatGPTをGoogle Adsに匹敵する広告プラットフォームへ育成する長期計画。", "status": "upcoming" }
+                {
+                  "when": "2026/05",
+                  "label": "Ads Manager セルフサービスβ開始",
+                  "description": "CPC/CPM対応・最低出稿額なしで米国から展開。大型画像+動的CTAフォーマット。",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026/06予定",
+                  "label": "英国・日本・韓国等5カ国展開",
+                  "description": "メキシコ・ブラジルを含む5カ国への広告プラットフォーム拡大。",
+                  "status": "upcoming"
+                },
+                {
+                  "when": "2026年末",
+                  "label": "広告収入2,500億円目標",
+                  "description": "自社プラットフォームで年間広告収入の確立を目指す。",
+                  "status": "upcoming"
+                },
+                {
+                  "when": "2030年",
+                  "label": "年間広告収入10兆円目標",
+                  "description": "ChatGPTをGoogle Adsに匹敵する広告プラットフォームへ育成する長期計画。",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "OpenAIはChatGPT Plus/Pro等のサブスク収入に加え、広告収入を第二の柱として本格構築し始めた。",
               "impact": "ChatGPT内広告の普及は検索広告市場の勢力図を塗り替える可能性がある。ユーザー体験と収益化のバランスが問われる。"
-            }
+            },
+            "caption": "ChatGPT広告ロードマップ",
+            "alt": "OpenAIのChatGPT広告展開タイムライン。2026年5月にAds Managerセルフサービスβ開始（米国）。近週中に英国・日本・韓国等5カ国展開予定。2026年末に広告収入2,500億円目標。2030年には年間10兆円規模を目指す。"
           },
           "x_post": "OpenAIがChatGPT向け広告プラットフォーム「Ads Manager」のセルフサービスβを米国で開始した。CPC/CPM双方対応・最低出稿額なし。2026年末2,500億円・2030年10兆円の広告収入目標も公表。ChatGPTが検索広告市場に本格参戦するフェーズが始まった。\n\nhttps://openai.com/index/new-ways-to-buy-chatgpt-ads/"
         }
@@ -826,23 +1248,44 @@
             "total": 11,
             "source_type_bias": -1
           },
-          "tags": ["community", "HN", "AI slop", "UX", "AI-generated text"],
+          "tags": [
+            "community",
+            "HN",
+            "AI slop",
+            "UX",
+            "AI-generated text"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "HN 439pt: AIスラムテキスト反発",
-            "alt": "No Slop GrenadeはAI生成長文テキストの会話無断投下を防ぐブラウザツール。HN 439pt。HNはその後AIコメント禁止をガイドラインに追加。",
             "data": {
               "headline": "No Slop Grenade: HN 439ptが示すAI生成テキスト疲弊",
               "tldr": "AIが生成した不要な長文テキストを会話に投下する行為をフィルタリングするツール。「あなたがAIエッセイを読みたければ自分でChatGPTに聞く」というコンセプトがHNで共感を呼び439ptを記録した。",
               "points": [
-                { "icon": "💣", "label": "ツール", "value": "No Slop Grenade", "tone": "default" },
-                { "label": "HN反響", "value": "439pt", "tone": "primary" },
-                { "label": "問題", "value": "AI生成テキストの一方的投下" },
-                { "label": "HN動向", "value": "AIコメント禁止をガイドライン追加" }
+                {
+                  "icon": "💣",
+                  "label": "ツール",
+                  "value": "No Slop Grenade",
+                  "tone": "default"
+                },
+                {
+                  "label": "HN反響",
+                  "value": "439pt",
+                  "tone": "primary"
+                },
+                {
+                  "label": "問題",
+                  "value": "AI生成テキストの一方的投下"
+                },
+                {
+                  "label": "HN動向",
+                  "value": "AIコメント禁止をガイドライン追加"
+                }
               ],
               "context": "AIアシスタントが文脈を無視して長文を投下する行為は、人間同士の会話体験を損なうとの認識がコミュニティで広がっている。",
               "impact": "「AI出力の量・文脈適合性」がUXの重要課題として浮上。プロダクト設計者に示唆がある。"
-            }
+            },
+            "caption": "HN 439pt: AIスラムテキスト反発",
+            "alt": "No Slop GrenadeはAI生成長文テキストの会話無断投下を防ぐブラウザツール。HN 439pt。HNはその後AIコメント禁止をガイドラインに追加。"
           }
         },
         {
@@ -871,23 +1314,42 @@
             "total": 12,
             "source_type_bias": -1
           },
-          "tags": ["music", "AI-generated content", "licensing", "Spotify", "Universal Music", "copyright"],
+          "tags": [
+            "music",
+            "AI-generated content",
+            "licensing",
+            "Spotify",
+            "Universal Music",
+            "copyright"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Spotify×UMG AIカバー協定",
-            "alt": "SpotifyとUMGがAIカバー・リミックスを許諾するライセンス協定を締結。アーティスト同意必須・収益分配あり。Suno/Udio訴訟との対比が鮮明。価格・提供開始未公表。",
             "data": {
               "headline": "SpotifyとUMGがAIカバー・リミックス許諾モデルを確立",
               "tldr": "Spotifyプレミアムユーザーが有料でAIカバー・リミックスを作成できるライセンス協定をUMGと締結。アーティスト同意・収益分配あり。「同意→収益」モデルでSuno/Udio訴訟を回避するアプローチ。",
               "points": [
-                { "label": "当事者", "value": "Spotify × Universal Music Group" },
-                { "label": "許諾内容", "value": "AIカバー・リミックス作成" },
-                { "label": "条件", "value": "アーティスト同意・収益分配あり" },
-                { "label": "対比", "value": "Suno/Udio訴訟 vs 事前ライセンス" }
+                {
+                  "label": "当事者",
+                  "value": "Spotify × Universal Music Group"
+                },
+                {
+                  "label": "許諾内容",
+                  "value": "AIカバー・リミックス作成"
+                },
+                {
+                  "label": "条件",
+                  "value": "アーティスト同意・収益分配あり"
+                },
+                {
+                  "label": "対比",
+                  "value": "Suno/Udio訴訟 vs 事前ライセンス"
+                }
               ],
               "context": "生成AI×音楽著作権の衝突が続くなか、Spotifyは「許可を求めてから行動する」アプローチで先例を作った。",
               "impact": "AIコンテンツの権利処理に関する業界標準が形成される可能性。アーティスト・ファン・プラットフォームが共存できるモデルとして注目される。"
-            }
+            },
+            "caption": "Spotify×UMG AIカバー協定",
+            "alt": "SpotifyとUMGがAIカバー・リミックスを許諾するライセンス協定を締結。アーティスト同意必須・収益分配あり。Suno/Udio訴訟との対比が鮮明。価格・提供開始未公表。"
           }
         }
       ]
@@ -923,24 +1385,49 @@
             "total": 16,
             "source_type_bias": -1
           },
-          "tags": ["介護", "高齢者", "AI音声合成", "回想法", "RADIO TIME MACHINE", "TBWA HAKUHODO", "フィールド検証"],
+          "tags": [
+            "介護",
+            "高齢者",
+            "AI音声合成",
+            "回想法",
+            "RADIO TIME MACHINE",
+            "TBWA HAKUHODO",
+            "フィールド検証"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "RADIO TIME MACHINE検証結果",
-            "alt": "AIラジオデバイスが介護現場で会話頻度+10.8pt・エンゲージメント+8.7ptの改善を実証。ダイヤル式で過去年代のラジオをAI再現。はてブ548件。",
             "data": {
               "headline": "AI介護ラジオが会話を復活させた——実測値付きフィールド検証",
               "tldr": "AIで過去のラジオ番組を再現するデバイス「RADIO TIME MACHINE」の介護施設実証結果。会話頻度+10.8pt・エンゲージメント+8.7ptを確認。はてブ548件。",
               "points": [
-                { "label": "製品", "value": "RADIO TIME MACHINE" },
-                { "label": "会話頻度", "value": "+10.8pt", "tone": "primary" },
-                { "label": "エンゲージメント", "value": "+8.7pt", "tone": "primary" },
-                { "label": "技術", "value": "AI音声合成×回想法" },
-                { "label": "はてブ", "value": "548件" }
+                {
+                  "label": "製品",
+                  "value": "RADIO TIME MACHINE"
+                },
+                {
+                  "label": "会話頻度",
+                  "value": "+10.8pt",
+                  "tone": "primary"
+                },
+                {
+                  "label": "エンゲージメント",
+                  "value": "+8.7pt",
+                  "tone": "primary"
+                },
+                {
+                  "label": "技術",
+                  "value": "AI音声合成×回想法"
+                },
+                {
+                  "label": "はてブ",
+                  "value": "548件"
+                }
               ],
               "context": "認知症高齢者の回想法ケアをAIが支援する試みは、介護現場の人手不足解消にもつながる可能性がある。",
               "impact": "生成AIが医療・介護現場に入ることで、ケアの質向上と労働生産性改善の両立が実証された。"
-            }
+            },
+            "caption": "RADIO TIME MACHINE検証結果",
+            "alt": "AIラジオデバイスが介護現場で会話頻度+10.8pt・エンゲージメント+8.7ptの改善を実証。ダイヤル式で過去年代のラジオをAI再現。はてブ548件。"
           },
           "x_post": "AIで昭和のラジオ番組を再現し介護施設の高齢者の会話を引き出す「RADIO TIME MACHINE」のフィールド検証が公開された。会話頻度+10.8pt・エンゲージメント+8.7ptを実測。生成AI×介護の実用事例として参照価値が高い。\n\nhttps://www.itmedia.co.jp/business/articles/2605/21/news010.html"
         },
@@ -970,21 +1457,25 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Capcom", "カプコン", "AIエージェント", "Google Cloud", "Gemini", "ゲーム開発", "プレイテスト"],
+          "tags": [
+            "Capcom",
+            "カプコン",
+            "AIエージェント",
+            "Google Cloud",
+            "Gemini",
+            "ゲーム開発",
+            "プレイテスト"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "カプコン自律プレイテスト規模",
-            "alt": "カプコンはAIエージェント4種で月3万時間超の自律プレイテストを実現。Gemini Visionが意図的暗さと技術不具合を識別。ベテラン暗黙知もベクトルDB化。",
             "data": {
               "headline": "カプコン: AIエージェント4種で月3万時間超の自律プレイテスト",
-              "metrics": [
-                { "label": "月間自律プレイテスト", "value": "3万時間超", "bar_value": 100, "bar_max": 100, "unit": "h/月", "tone": "primary" },
-                { "label": "導入エージェント種数", "value": "4種", "bar_value": 80, "bar_max": 100 },
-                { "label": "対象ゲーム例", "value": "モンスターハンターストーリーズ3", "bar_value": 60, "bar_max": 100 }
-              ],
-              "context": "エンタープライズAIエージェントが「ゲームQA」という複雑な判断タスクに適用された初の大規模事例のひとつ。",
+              "scale": {},
+              "bars": [],
               "narrative": "クリエイターが反復的なバグ確認作業から解放され、創造的業務に集中できる環境を整備したモデルケース。"
-            }
+            },
+            "caption": "カプコン自律プレイテスト規模",
+            "alt": "カプコンはAIエージェント4種で月3万時間超の自律プレイテストを実現。Gemini Visionが意図的暗さと技術不具合を識別。ベテラン暗黙知もベクトルDB化。"
           }
         },
         {
@@ -1013,24 +1504,47 @@
             "total": 18,
             "source_type_bias": -1
           },
-          "tags": ["Claude Code", "MCP", "embodied AI", "LifeMate AI", "長期記憶", "Theory of Mind", "Computer Use"],
+          "tags": [
+            "Claude Code",
+            "MCP",
+            "embodied AI",
+            "LifeMate AI",
+            "長期記憶",
+            "Theory of Mind",
+            "Computer Use"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "LifeMate AI: 身体性×Claude Code",
-            "alt": "Claude Code+Wi-FiカメラのMCPで身体性を付与したLifeMate AI。See/Look命名規則で応答性改善。就寝感知によるタスク中断という意図せぬ人間らしさが出現。はてブ220件。",
             "data": {
               "headline": "Claude Codeに3,980円のカメラで身体性——意図せぬ人間らしさが現れた",
               "tldr": "Wi-FiカメラとMCPサーバーでClaude Codeに視覚と聴覚を与えた個人実装「LifeMate AI」。就寝感知によるタスク中断など、プログラムしていない人間らしい行動が出現した。はてブ220件。",
               "points": [
-                { "label": "プロジェクト", "value": "LifeMate AI (OSS)" },
-                { "label": "コアLLM", "value": "Claude Code" },
-                { "label": "身体性", "value": "Wi-Fiカメラ + MCP" },
-                { "label": "発見", "value": "意図せぬ人間らしい行動が出現" },
-                { "label": "はてブ", "value": "220件+" }
+                {
+                  "label": "プロジェクト",
+                  "value": "LifeMate AI (OSS)"
+                },
+                {
+                  "label": "コアLLM",
+                  "value": "Claude Code"
+                },
+                {
+                  "label": "身体性",
+                  "value": "Wi-Fiカメラ + MCP"
+                },
+                {
+                  "label": "発見",
+                  "value": "意図せぬ人間らしい行動が出現"
+                },
+                {
+                  "label": "はてブ",
+                  "value": "220件+"
+                }
               ],
               "context": "汎用LLM+カスタムMCPという手法で、専用モデルなしに身体性付与が個人で実現できる時代になった。",
               "impact": "LLMの命名感度やTheory of Mind実装など、エージェント設計のヒントが詰まった実践的リポート。"
-            }
+            },
+            "caption": "LifeMate AI: 身体性×Claude Code",
+            "alt": "Claude Code+Wi-FiカメラのMCPで身体性を付与したLifeMate AI。See/Look命名規則で応答性改善。就寝感知によるタスク中断という意図せぬ人間らしさが出現。はてブ220件。"
           }
         },
         {
@@ -1059,24 +1573,47 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["LINEヤフー", "AIエージェント", "探索的テスト", "Claude Opus 4.7", "Playwright MCP", "QA", "リスクベースドテスト"],
+          "tags": [
+            "LINEヤフー",
+            "AIエージェント",
+            "探索的テスト",
+            "Claude Opus 4.7",
+            "Playwright MCP",
+            "QA",
+            "リスクベースドテスト"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "LINEヤフー AIエージェントテスト",
-            "alt": "LINEヤフーがClaude Opus 4.7+Playwright MCPで探索的テストを自動化。3段階パイプラインで41テストケース生成・約70%完了率を達成。",
             "data": {
               "headline": "Claude Opus 4.7×Playwright MCPで探索的テストを自動化——LINEヤフー実装詳解",
               "tldr": "過去バグ分析→リスクマトリクス→テストケース生成→Playwright MCP実行の3段階AIパイプライン。1検証で41件生成・約70%完了率。ベテランの暗黙知をAIが継承する設計。",
               "points": [
-                { "label": "LLM", "value": "Claude Opus 4.7" },
-                { "label": "実行エンジン", "value": "Playwright MCP" },
-                { "label": "生成テストケース", "value": "41件/検証" },
-                { "label": "完了率", "value": "約70%" },
-                { "label": "設計思想", "value": "暗黙知を形式知化" }
+                {
+                  "label": "LLM",
+                  "value": "Claude Opus 4.7"
+                },
+                {
+                  "label": "実行エンジン",
+                  "value": "Playwright MCP"
+                },
+                {
+                  "label": "生成テストケース",
+                  "value": "41件/検証"
+                },
+                {
+                  "label": "完了率",
+                  "value": "約70%"
+                },
+                {
+                  "label": "設計思想",
+                  "value": "暗黙知を形式知化"
+                }
               ],
               "context": "QAエンジニアの判断をAIが代替するのではなく、リスク分析・テスト生成・実行の各フェーズをAIがアシストする協調設計。",
               "impact": "企業のAIエージェント活用をQA分野に拡張するリファレンス実装として参照価値が高い。"
-            }
+            },
+            "caption": "LINEヤフー AIエージェントテスト",
+            "alt": "LINEヤフーがClaude Opus 4.7+Playwright MCPで探索的テストを自動化。3段階パイプラインで41テストケース生成・約70%完了率を達成。"
           }
         },
         {
@@ -1105,24 +1642,47 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["freee", "Claude Enterprise", "SCIM", "IaC", "権限管理", "エンタープライズAI", "ガバナンス"],
+          "tags": [
+            "freee",
+            "Claude Enterprise",
+            "SCIM",
+            "IaC",
+            "権限管理",
+            "エンタープライズAI",
+            "ガバナンス"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "freee Claude Enterprise SCIM×IaC",
-            "alt": "freeeがSCIM×IaCでClaude Enterprise全社展開の権限管理を自動化。オンボーディング・退職自動化・Gitフロー監査証跡を確保。はてブ48件。",
             "data": {
               "headline": "SCIM × IaCでClaude Enterprise全社展開を安全化——freee実装事例",
               "tldr": "人事データとAIツール権限をSCIMで同期し、IaCで変更管理。退職時のアクセス残留・過剰付与をプロセスで解決した大規模Claude Enterprise展開のリファレンス実装。",
               "points": [
-                { "label": "技術", "value": "SCIM × IaC" },
-                { "label": "対象", "value": "Claude Enterprise 全社展開" },
-                { "label": "自動化", "value": "オンボーディング・退職処理" },
-                { "label": "監査", "value": "Gitフロー監査証跡" },
-                { "label": "はてブ", "value": "48件" }
+                {
+                  "label": "技術",
+                  "value": "SCIM × IaC"
+                },
+                {
+                  "label": "対象",
+                  "value": "Claude Enterprise 全社展開"
+                },
+                {
+                  "label": "自動化",
+                  "value": "オンボーディング・退職処理"
+                },
+                {
+                  "label": "監査",
+                  "value": "Gitフロー監査証跡"
+                },
+                {
+                  "label": "はてブ",
+                  "value": "48件"
+                }
               ],
               "context": "AI企業ツールの全社展開が当たり前になるなか、アクセス権限のライフサイクル管理がセキュリティの新フロンティアになっている。",
               "impact": "Claude EnterpriseをはじめとするAIツールの大規模導入を検討する企業の権限管理設計に直接応用できる。"
-            }
+            },
+            "caption": "freee Claude Enterprise SCIM×IaC",
+            "alt": "freeeがSCIM×IaCでClaude Enterprise全社展開の権限管理を自動化。オンボーディング・退職自動化・Gitフロー監査証跡を確保。はてブ48件。"
           }
         }
       ]
@@ -1158,25 +1718,53 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["SenseTime", "NEO-unify", "multimodal", "VLM", "image generation", "open source", "arxiv"],
+          "tags": [
+            "SenseTime",
+            "NEO-unify",
+            "multimodal",
+            "VLM",
+            "image generation",
+            "open source",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "SenseNova-U1: NEO-unify統合モデル",
-            "alt": "SenseTimeがVEとVAEを廃したNEO-unifyアーキテクチャで画像理解・生成を単一Transformerに統合したSenseNova-U1を全OSS公開。8B密度版と30B MoEの2種。HF 184アップボート。",
             "data": {
               "headline": "SenseNova-U1: VE・VAE廃止で理解と生成を単一モデルに統合",
               "tldr": "SenseTimeがNEO-unifyアーキテクチャでVisual EncoderとVAEを廃し、画像理解・生成を単一Transformerに統合したSenseNova-U1を全OSS公開。8B密度版と30B MoE版を提供。",
               "points": [
-                { "icon": "🧠", "label": "アーキテクチャ", "value": "NEO-unify (VE・VAE廃止)", "tone": "primary" },
-                { "label": "機能統合", "value": "理解 + 生成を単一Transformer" },
-                { "label": "バリアント1", "value": "U1-8B-MoT (8B密度)" },
-                { "label": "バリアント2", "value": "U1-A3B-MoT (30B MoE)" },
-                { "label": "公開形式", "value": "全オープンソース" },
-                { "label": "HF反響", "value": "184アップボート" }
+                {
+                  "icon": "🧠",
+                  "label": "アーキテクチャ",
+                  "value": "NEO-unify (VE・VAE廃止)",
+                  "tone": "primary"
+                },
+                {
+                  "label": "機能統合",
+                  "value": "理解 + 生成を単一Transformer"
+                },
+                {
+                  "label": "バリアント1",
+                  "value": "U1-8B-MoT (8B密度)"
+                },
+                {
+                  "label": "バリアント2",
+                  "value": "U1-A3B-MoT (30B MoE)"
+                },
+                {
+                  "label": "公開形式",
+                  "value": "全オープンソース"
+                },
+                {
+                  "label": "HF反響",
+                  "value": "184アップボート"
+                }
               ],
               "context": "ほぼすべての主要画像生成・理解モデルが採用するVE+VAEの二重構造を廃することで、統合アーキテクチャの設計自由度が広がる。",
               "impact": "マルチモーダルモデルの根本設計に疑義を呈する研究。VLA・ワールドモデリングへの応用が実現すれば、ロボティクス・シミュレーション分野への波及も大きい。"
-            }
+            },
+            "caption": "SenseNova-U1: NEO-unify統合モデル",
+            "alt": "SenseTimeがVEとVAEを廃したNEO-unifyアーキテクチャで画像理解・生成を単一Transformerに統合したSenseNova-U1を全OSS公開。8B密度版と30B MoEの2種。HF 184アップボート。"
           },
           "x_post": "SenseTimeがNEO-unifyアーキテクチャを採用したSenseNova-U1を全OSS公開。既存マルチモーダルモデルが前提とするVEとVAEを廃し、画像理解・生成を単一Transformerで統合した。8B密度版と30B MoE版の2種を提供。マルチモーダルの根本設計が問われる論文として注目している。\n\nhttps://arxiv.org/abs/2605.12500"
         }
@@ -1184,13 +1772,37 @@
     }
   ],
   "skipped_sources": [
-    { "source": "Reddit RSS (r/LocalLLaMA, r/MachineLearning, r/singularity, r/ClaudeAI, r/OpenAI)", "reason": "Claude Code is unable to fetch from www.reddit.com" },
-    { "source": "Import AI (importai.substack.com/feed)", "reason": "HTTP 403 Forbidden" },
-    { "source": "The Verge RSS", "reason": "Claude Code is unable to fetch from www.theverge.com" },
-    { "source": "Synced Review (syncedreview.com/feed)", "reason": "RSS truncated — only 1 item from Aug 2025 returned; outside 168h window" },
-    { "source": "arXiv API", "reason": "Request timeout (60000ms exceeded)" },
-    { "source": "Preferred Networks Tech Blog, ELYZA note, CyberAgent AI Lab, Stockmark, Mercari, Sansan Builders Box", "reason": "No articles within 168h window found on page fetch" },
-    { "source": "36Kr AI, QbitAI (量子位)", "reason": "Not fetched due to batch prioritization; limited fresh China content in 168h window" },
-    { "source": "LessWrong AI tag", "reason": "Not fetched in this run" }
+    {
+      "source": "Reddit RSS (r/LocalLLaMA, r/MachineLearning, r/singularity, r/ClaudeAI, r/OpenAI)",
+      "reason": "Claude Code is unable to fetch from www.reddit.com"
+    },
+    {
+      "source": "Import AI (importai.substack.com/feed)",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "The Verge RSS",
+      "reason": "Claude Code is unable to fetch from www.theverge.com"
+    },
+    {
+      "source": "Synced Review (syncedreview.com/feed)",
+      "reason": "RSS truncated — only 1 item from Aug 2025 returned; outside 168h window"
+    },
+    {
+      "source": "arXiv API",
+      "reason": "Request timeout (60000ms exceeded)"
+    },
+    {
+      "source": "Preferred Networks Tech Blog, ELYZA note, CyberAgent AI Lab, Stockmark, Mercari, Sansan Builders Box",
+      "reason": "No articles within 168h window found on page fetch"
+    },
+    {
+      "source": "36Kr AI, QbitAI (量子位)",
+      "reason": "Not fetched due to batch prioritization; limited fresh China content in 168h window"
+    },
+    {
+      "source": "LessWrong AI tag",
+      "reason": "Not fetched in this run"
+    }
   ]
 }

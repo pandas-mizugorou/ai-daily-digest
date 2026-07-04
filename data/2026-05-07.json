@@ -36,12 +36,19 @@
             "freshness": 5,
             "total": 19
           },
-          "tags": ["anthropic", "claude", "spacex", "compute", "rate-limits", "claude-code", "infrastructure", "enterprise"],
+          "tags": [
+            "anthropic",
+            "claude",
+            "spacex",
+            "compute",
+            "rate-limits",
+            "claude-code",
+            "infrastructure",
+            "enterprise"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Anthropic × SpaceX 計算契約",
-            "alt": "Anthropic SpaceX 計算資源契約の概要。SpaceX Colossus 1 から 300MW 超・NVIDIA GPU 22 万枚超を 1 ヶ月以内に確保。即日施策として Claude Code 制限 2 倍化（Pro/Max/Team/Enterprise）・ピーク時間帯制限撤廃・Claude Opus API レート引き上げを実施。他インフラ契約：Amazon 最大 5GW・Google/Broadcom 5GW・Microsoft Azure 300 億ドル・Fluidstack 500 億ドル。将来計画として複数 GW の軌道上 AI 計算能力を検討中。",
             "data": {
               "headline": "Anthropic×SpaceX: 300MW・22万GPU確保、Claude Code制限を即日2倍化",
               "tldr": "Anthropic が SpaceX の Colossus 1 データセンター（300MW・GPU 22 万枚超）と計算資源契約を締結。即日 Claude Code レート制限 2 倍化・ピーク制限撤廃・Opus API 引き上げを実施。",
@@ -84,7 +91,9 @@
               ],
               "context": "Anthropic は複数の大型インフラ契約を並行して締結し、需要急増に対応する計算資源の多様化を進めている。SpaceX との接点は計算資源に留まらず、将来的な軌道上 AI 計算まで視野に入れた戦略的パートナーシップ。",
               "impact": "Claude Code ユーザーは即日レート制限 2 倍の恩恵を受ける。大型エージェント開発・バッチ推論パイプラインの本番運用が格段に進めやすくなる。"
-            }
+            },
+            "caption": "Anthropic × SpaceX 計算契約",
+            "alt": "Anthropic SpaceX 計算資源契約の概要。SpaceX Colossus 1 から 300MW 超・NVIDIA GPU 22 万枚超を 1 ヶ月以内に確保。即日施策として Claude Code 制限 2 倍化（Pro/Max/Team/Enterprise）・ピーク時間帯制限撤廃・Claude Opus API レート引き上げを実施。他インフラ契約：Amazon 最大 5GW・Google/Broadcom 5GW・Microsoft Azure 300 億ドル・Fluidstack 500 億ドル。将来計画として複数 GW の軌道上 AI 計算能力を検討中。"
           }
         }
       ]
@@ -116,12 +125,18 @@
             "freshness": 5,
             "total": 17
           },
-          "tags": ["vllm", "reinforcement-learning", "training", "inference", "open-source", "serviceNow", "llm-training"],
+          "tags": [
+            "vllm",
+            "reinforcement-learning",
+            "training",
+            "inference",
+            "open-source",
+            "serviceNow",
+            "llm-training"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "vLLM V0 vs V1 設計",
-            "alt": "vLLM V0 と V1 の設計比較。V0 の問題：誤出力にも RL 報酬が付与される（報酬の誤帰属）、トークンレベル検証なし、不正確なショートカット学習リスクあり。V1 の改善：推論ステップごとのトークンレベル検証レイヤー追加、誤報酬シグナル削減、コード生成・数学推論・エージェントタスクで精度向上。設計原則：Correctness Before Corrections。",
             "data": {
               "headline": "vLLM V1: 誤報酬シグナルを根絶するトークン検証レイヤーで RL 精度を底上げ",
               "before": {
@@ -180,7 +195,9 @@
               ],
               "narrative": "「正確性を担保してから補正を加える（Correctness Before Corrections）」という設計原則により、RL トレーニングパイプライン全体の品質保証の考え方が刷新された。",
               "impact": "vLLM を RL トレーニングに使うエンジニアは V1 への移行と設計レビューが急務。本番の RL パイプラインの品質が大幅に改善できる可能性がある。"
-            }
+            },
+            "caption": "vLLM V0 vs V1 設計",
+            "alt": "vLLM V0 と V1 の設計比較。V0 の問題：誤出力にも RL 報酬が付与される（報酬の誤帰属）、トークンレベル検証なし、不正確なショートカット学習リスクあり。V1 の改善：推論ステップごとのトークンレベル検証レイヤー追加、誤報酬シグナル削減、コード生成・数学推論・エージェントタスクで精度向上。設計原則：Correctness Before Corrections。"
           }
         }
       ]
@@ -212,12 +229,19 @@
             "freshness": 4,
             "total": 18
           },
-          "tags": ["ai-agents", "credentials", "security", "1password", "iam", "claude-code", "japan", "hatena-187"],
+          "tags": [
+            "ai-agents",
+            "credentials",
+            "security",
+            "1password",
+            "iam",
+            "claude-code",
+            "japan",
+            "hatena-187"
+          ],
           "lang": "ja",
           "figure": {
             "type": "timeline",
-            "caption": "AI エージェント認証 4 Tier",
-            "alt": "AI エージェントへの認証情報の渡し方 4 段階。Tier①：.env 直読み（最大リスク・git 混入危険）。Tier②：ホスト上の平文 .env（リスク中）。Tier③：1Password + op run（Touch ID 認可・Secret Reference で平文不要。有人監視タスクに適、無人バッチ・短命クレデンシャルには不可）。Tier④：IAM ロール・OIDC 一時クレデンシャル（最適解・自律エージェント向け）。判断軸：人間監視の有無×クレデンシャル寿命。",
             "data": {
               "headline": "AI エージェント認証 4 Tier：.env 直読みから IAM ロールまでの実証ガイド",
               "events": [
@@ -252,7 +276,9 @@
               ],
               "narrative": "「人間が監視できるかどうか」と「クレデンシャルの寿命」の 2 軸でツールを選択するフレームワークを提示。Claude Code・Codex 等の本番エージェント化が進む中で、必読の設計指針となる。",
               "impact": "AI エージェントを本番環境に展開するエンジニアは、まず Tier③ の 1Password 方式を評価し、無人・長時間運用が必要なら Tier④ の IAM/OIDC 移行を計画すること。"
-            }
+            },
+            "caption": "AI エージェント認証 4 Tier",
+            "alt": "AI エージェントへの認証情報の渡し方 4 段階。Tier①：.env 直読み（最大リスク・git 混入危険）。Tier②：ホスト上の平文 .env（リスク中）。Tier③：1Password + op run（Touch ID 認可・Secret Reference で平文不要。有人監視タスクに適、無人バッチ・短命クレデンシャルには不可）。Tier④：IAM ロール・OIDC 一時クレデンシャル（最適解・自律エージェント向け）。判断軸：人間監視の有無×クレデンシャル寿命。"
           }
         },
         {
@@ -277,12 +303,20 @@
             "freshness": 4,
             "total": 17
           },
-          "tags": ["mcp", "local-llm", "ollama", "ai-agents", "free", "privacy", "gizmodo-japan", "japan", "hatena-186"],
+          "tags": [
+            "mcp",
+            "local-llm",
+            "ollama",
+            "ai-agents",
+            "free",
+            "privacy",
+            "gizmodo-japan",
+            "japan",
+            "hatena-186"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "MCP × ローカル LLM 構成",
-            "alt": "MCP サーバーとローカル LLM を組み合わせた無料 AI エージェント構成の概要。コスト：API費用ゼロ（Ollama + ローカル LLM）。できること：ファイル読み書き（Filesystem MCP）・Web スクレイピング・政府オープンデータ取得（地理空間 MCP）。設定難易度：JSON ファイル記述のみ（コマンドライン操作必要）。注意点：悪意ある MCP サーバーのコード混入リスクあり。推奨：公式・実績のある開発者の MCP のみ使用。",
             "data": {
               "headline": "MCP×Ollama: ローカルLLMを無料AIエージェントに変える実践構成",
               "tldr": "MCP サーバーを Ollama のローカル LLM と組み合わせることで、ChatGPT/Claude API コストなしでファイル操作・スクレイピング・データ分析が可能なエージェント環境が構築できる。JSON 設定のみで導入可能だが MCP サーバーの信頼性確認が必須。",
@@ -325,7 +359,9 @@
               ],
               "context": "MCP は Claude が提唱した標準プロトコルとして急速に普及が進んでおり、ローカル LLM とのエコシステムも整備されつつある。商用 AI のコスト・プライバシーを懸念するユーザー層に広く訴求している。",
               "impact": "API コストを抑えたい個人開発者・プライバシーを重視する企業内展開・オフライン環境でのエージェント利用など、多様なシナリオで MCP＋ローカル LLM は現実的な選択肢となる。"
-            }
+            },
+            "caption": "MCP × ローカル LLM 構成",
+            "alt": "MCP サーバーとローカル LLM を組み合わせた無料 AI エージェント構成の概要。コスト：API費用ゼロ（Ollama + ローカル LLM）。できること：ファイル読み書き（Filesystem MCP）・Web スクレイピング・政府オープンデータ取得（地理空間 MCP）。設定難易度：JSON ファイル記述のみ（コマンドライン操作必要）。注意点：悪意ある MCP サーバーのコード混入リスクあり。推奨：公式・実績のある開発者の MCP のみ使用。"
           }
         },
         {
@@ -350,12 +386,19 @@
             "freshness": 3,
             "total": 16
           },
-          "tags": ["claude-code", "codex", "openai", "comparison", "migration", "zenn", "japan", "hatena-131"],
+          "tags": [
+            "claude-code",
+            "codex",
+            "openai",
+            "comparison",
+            "migration",
+            "zenn",
+            "japan",
+            "hatena-131"
+          ],
           "lang": "ja",
           "figure": {
             "type": "comparison",
-            "caption": "Claude Code vs Codex",
-            "alt": "Claude Code と Codex App の主要比較。基盤モデル：Claude Opus/Sonnet vs GPT-5.5。設定ファイル：settings.local.json vs .codex/config.toml + .rules（2ファイル）。承認設定：詳細カスタム vs 3プリセット統合。モバイル：CC Pocket 等対応 vs 公式未対応（サードパーティあり）。料金：Pro $20 vs Plus ¥3,000・Pro ¥16,800〜¥30,000（乗数 5〜20x）。",
             "data": {
               "headline": "Claude Code vs Codex: Claude Code ユーザー向け移行差異マップ",
               "before": {
@@ -425,7 +468,9 @@
               ],
               "narrative": "GPT-5.5 の性能向上を背景に Claude Code ユーザーの一部が Codex への移行を検討している。設定概念の差異を把握すれば移行コストは現実的。",
               "impact": "Claude Code から Codex へ移行を検討する場合、settings.local.json 相当の廃止と 2 ファイル体制への適応が最大のハードル。プリセット承認設定の制約を事前に把握すること。"
-            }
+            },
+            "caption": "Claude Code vs Codex",
+            "alt": "Claude Code と Codex App の主要比較。基盤モデル：Claude Opus/Sonnet vs GPT-5.5。設定ファイル：settings.local.json vs .codex/config.toml + .rules（2ファイル）。承認設定：詳細カスタム vs 3プリセット統合。モバイル：CC Pocket 等対応 vs 公式未対応（サードパーティあり）。料金：Pro $20 vs Plus ¥3,000・Pro ¥16,800〜¥30,000（乗数 5〜20x）。"
           }
         },
         {
@@ -450,12 +495,18 @@
             "freshness": 4,
             "total": 15
           },
-          "tags": ["ai-productivity", "evaluation", "workflow", "organizational-design", "claude-code", "japan", "hatena-274"],
+          "tags": [
+            "ai-productivity",
+            "evaluation",
+            "workflow",
+            "organizational-design",
+            "claude-code",
+            "japan",
+            "hatena-274"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "AI時代の競争優位：評価力",
-            "alt": "AI 時代の競争優位に関するサマリー。コアスキル: 生成する力→評価して回す力へシフト。高パフォーマンスユーザーの共通点: CI/CD・リンター・CLAUDE.md の自動ガードレール事前構築・初回出力を探索的草稿として扱う。スキル再定義: コード不要でもテスト設計可・デザイン不要でも評価軸保有可。ワークフロー進化: 人間作成→人間評価 → AI作成→人間評価 → AI作成→AI評価→人間最終判断。はてブ 274 件獲得。",
             "data": {
               "headline": "AI時代の競争優位は「評価して回す力」——高パフォーマンスユーザーの構造的秘密",
               "tldr": "AI を活用できるユーザーの共通点は「評価基準の明確さ」と「自動ガードレールの事前設計」。生成する力ではなく評価して改善サイクルを回す力が AI 時代の本質的な競争優位となる。",
@@ -498,7 +549,9 @@
               ],
               "context": "AI ツール普及が加速する中で、活用できる人とできない人の格差が拡大している。その差の根本原因を「評価基準の有無」と分析した本論考は、組織の AI 展開戦略にも直結する視点を提供する。",
               "impact": "エンジニア・マネージャーともに「どう評価するか」を設計するスキルへの投資が急務。CLAUDE.md 等のガードレール設計から始めることで評価ループの自動化が実現できる。"
-            }
+            },
+            "caption": "AI時代の競争優位：評価力",
+            "alt": "AI 時代の競争優位に関するサマリー。コアスキル: 生成する力→評価して回す力へシフト。高パフォーマンスユーザーの共通点: CI/CD・リンター・CLAUDE.md の自動ガードレール事前構築・初回出力を探索的草稿として扱う。スキル再定義: コード不要でもテスト設計可・デザイン不要でも評価軸保有可。ワークフロー進化: 人間作成→人間評価 → AI作成→人間評価 → AI作成→AI評価→人間最終判断。はてブ 274 件獲得。"
           }
         },
         {
@@ -523,12 +576,18 @@
             "freshness": 2,
             "total": 12
           },
-          "tags": ["claude-code", "boris-cherny", "anthropic", "career", "interview", "japan", "hatena-731"],
+          "tags": [
+            "claude-code",
+            "boris-cherny",
+            "anthropic",
+            "career",
+            "interview",
+            "japan",
+            "hatena-731"
+          ],
           "lang": "ja",
           "figure": {
             "type": "timeline",
-            "caption": "Boris Cherny のキャリア",
-            "alt": "Boris Cherny のキャリア年表。ウクライナ出身・5歳でアメリカ移住・祖父がソ連時代のプログラマー。UC サンディエゴ経済学専攻（CS 学位なし）→複数スタートアップ→Meta IC8/Principal Engineer（6年）→日本農村移住（コーディング集中）→2022年末 ChatGPT 衝撃→Anthropic 転職→Claude Code ゼロから設計→2025年3月 Sonnet/Opus 4 で実用化→現在 日常コードの 80〜90% を CC で書くエンジニアが出現。",
             "data": {
               "headline": "Boris Cherny キャリア年表: 農村日本での衝撃から Claude Code 誕生まで",
               "events": [
@@ -570,7 +629,9 @@
               ],
               "narrative": "CS 学位なし・経済学専攻・農村日本在住というバックグラウンドから Claude Code を一から設計した Boris Cherny の物語は、AI ツールの普及と個人の可能性について深く考えさせる。",
               "impact": "はてブ 731 件という圧倒的な反響は、技術コミュニティが単なる機能発表以上の「人間のストーリー」に強く共鳴することを示している。Claude Code のユーザーにとって設計者の意図を理解する一次資料にもなる。"
-            }
+            },
+            "caption": "Boris Cherny のキャリア",
+            "alt": "Boris Cherny のキャリア年表。ウクライナ出身・5歳でアメリカ移住・祖父がソ連時代のプログラマー。UC サンディエゴ経済学専攻（CS 学位なし）→複数スタートアップ→Meta IC8/Principal Engineer（6年）→日本農村移住（コーディング集中）→2022年末 ChatGPT 衝撃→Anthropic 転職→Claude Code ゼロから設計→2025年3月 Sonnet/Opus 4 で実用化→現在 日常コードの 80〜90% を CC で書くエンジニアが出現。"
           }
         }
       ]

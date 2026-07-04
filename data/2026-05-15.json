@@ -86,22 +86,52 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hf_likes", "liked": 3950 },
-          "tags": ["DeepSeek", "LLM", "open-source", "862B", "Apache2"],
+          "reaction_signal": {
+            "kind": "hf_likes",
+            "liked": 3950
+          },
+          "tags": [
+            "DeepSeek",
+            "LLM",
+            "open-source",
+            "862B",
+            "Apache2"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "DeepSeek-V4-Pro HF指標",
-            "alt": "DeepSeek-V4-ProのHF指標棒グラフ。いいね3,950（100%・週間1位）、ダウンロード259万件（65%）、Flash版いいね1,080（27%）。OSS最大級のLLMとして商用利用可のApache 2.0ライセンスで公開",
             "data": {
               "headline": "DeepSeek-V4-Pro 862B：HFトレンド指標（2026-05-15）",
               "bars": [
-                { "icon": "❤️", "label": "HFいいね", "value": "3,950", "pct": 100, "tone": "primary", "note": "週間トレンド1位" },
-                { "icon": "📥", "label": "7日DL数", "value": "259万", "pct": 65, "tone": "success", "note": "7日間累計" },
-                { "icon": "⚡", "label": "Flash版いいね", "value": "1,080", "pct": 27, "tone": "info", "note": "軽量版V4-Flash" }
+                {
+                  "icon": "❤️",
+                  "label": "HFいいね",
+                  "value": "3,950",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "週間トレンド1位"
+                },
+                {
+                  "icon": "📥",
+                  "label": "7日DL数",
+                  "value": "259万",
+                  "pct": 65,
+                  "tone": "success",
+                  "note": "7日間累計"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "Flash版いいね",
+                  "value": "1,080",
+                  "pct": 27,
+                  "tone": "info",
+                  "note": "軽量版V4-Flash"
+                }
               ],
               "narrative": "DeepSeek-V4-Pro 862BはApache 2.0で商用利用可のOSS最大規模LLM。HFトレンド1位を獲得し、軽量版Flashと合わせてユーザー層を拡大",
               "impact": "商用利用可のOSS最大規模LLMとして、OpenAI/Anthropicの商用モデルに対するコスト優位な代替が現実的選択肢となる"
-            }
+            },
+            "caption": "DeepSeek-V4-Pro HF指標",
+            "alt": "DeepSeek-V4-ProのHF指標棒グラフ。いいね3,950（100%・週間1位）、ダウンロード259万件（65%）、Flash版いいね1,080（27%）。OSS最大級のLLMとして商用利用可のApache 2.0ライセンスで公開"
           }
         },
         {
@@ -130,25 +160,77 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hf_likes", "liked": 528 },
-          "tags": ["MiniCPM", "multimodal", "VLM", "edge-ai", "1B", "open-source"],
+          "reaction_signal": {
+            "kind": "hf_likes",
+            "liked": 528
+          },
+          "tags": [
+            "MiniCPM",
+            "multimodal",
+            "VLM",
+            "edge-ai",
+            "1B",
+            "open-source"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "MiniCPM-V-4.6 vs GPT-4V（1Bクラス）",
-            "alt": "MiniCPM-V-4.6（1B）とGPT-4V（クラウド）の比較。パラメータはMiniCPMが1B（1%）でGPT-4Vの推定175B相当に対して極小だが、一部ベンチマークで同等性能を達成。エッジ動作と低コストが強みで、GPT-4Vはクラウド必須・高コスト",
             "data": {
               "headline": "MiniCPM-V-4.6：1BパラメータでGPT-4V相当を部分達成",
-              "before": { "label": "GPT-4V（参照）" },
-              "after": { "label": "MiniCPM-V-4.6（1B）" },
+              "before": {
+                "label": "GPT-4V（参照）"
+              },
+              "after": {
+                "label": "MiniCPM-V-4.6（1B）"
+              },
               "metrics": [
-                { "icon": "🧠", "label": "パラメータ数", "before": "~175B相当", "after": "1B", "before_pct": 100, "after_pct": 1, "delta": "175分の1", "delta_tone": "success", "note": "圧倒的小型化" },
-                { "icon": "📊", "label": "MMBench性能", "before": "100%", "after": "~88%", "before_pct": 100, "after_pct": 88, "delta": "-12%", "delta_tone": "info", "note": "一部タスクで同等" },
-                { "icon": "⚡", "label": "エッジ動作", "before": "不可（クラウド必須）", "after": "可（スマホ）", "before_pct": 0, "after_pct": 100, "delta": "+∞", "delta_tone": "success" },
-                { "icon": "💰", "label": "推論コスト", "before": "高（API課金）", "after": "低（ローカル）", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" }
+                {
+                  "icon": "🧠",
+                  "label": "パラメータ数",
+                  "before": "~175B相当",
+                  "after": "1B",
+                  "before_pct": 100,
+                  "after_pct": 1,
+                  "delta": "175分の1",
+                  "delta_tone": "success",
+                  "note": "圧倒的小型化"
+                },
+                {
+                  "icon": "📊",
+                  "label": "MMBench性能",
+                  "before": "100%",
+                  "after": "~88%",
+                  "before_pct": 100,
+                  "after_pct": 88,
+                  "delta": "-12%",
+                  "delta_tone": "info",
+                  "note": "一部タスクで同等"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "エッジ動作",
+                  "before": "不可（クラウド必須）",
+                  "after": "可（スマホ）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "+∞",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "💰",
+                  "label": "推論コスト",
+                  "before": "高（API課金）",
+                  "after": "低（ローカル）",
+                  "before_pct": 100,
+                  "after_pct": 5,
+                  "delta": "-95%",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "1Bパラメータでクラウド大規模モデルに迫る性能を実現。エッジ展開の実用域に突入した",
               "impact": "モバイル・IoT・プライバシー要件の高い場面でのVLM展開が現実的に。エンタープライズエッジAIの採用障壁が下がる"
-            }
+            },
+            "caption": "MiniCPM-V-4.6 vs GPT-4V（1Bクラス）",
+            "alt": "MiniCPM-V-4.6（1B）とGPT-4V（クラウド）の比較。パラメータはMiniCPMが1B（1%）でGPT-4Vの推定175B相当に対して極小だが、一部ベンチマークで同等性能を達成。エッジ動作と低コストが強みで、GPT-4Vはクラウド必須・高コスト"
           }
         },
         {
@@ -177,23 +259,48 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["OpenAI", "voice", "TTS", "API", "realtime"],
+          "tags": [
+            "OpenAI",
+            "voice",
+            "TTS",
+            "API",
+            "realtime"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "OpenAI 音声API新世代",
-            "alt": "OpenAI音声インテリジェンス新モデル概要。Realtime API Beta廃止の後継として複数モデルを提供。対象用途は音声エージェント全般、特徴は低レイテンシ対話、旧Realtime API Betaは廃止",
             "data": {
               "headline": "OpenAI 音声インテリジェンス新世代 API",
               "tldr": "Realtime API Beta廃止の後継。音声対話エージェント向けに低レイテンシ・高音質の新APIモデルを複数提供。コンシューマーからエンタープライズまで対応",
               "points": [
-                { "icon": "🎙️", "label": "対象用途", "value": "音声エージェント全般", "tone": "primary" },
-                { "icon": "⚡", "label": "特徴", "value": "低レイテンシ対話", "tone": "success" },
-                { "icon": "🔧", "label": "API形態", "value": "複数モデル提供" },
-                { "icon": "🔄", "label": "廃止モデル", "value": "Realtime API Beta", "tone": "warning" }
+                {
+                  "icon": "🎙️",
+                  "label": "対象用途",
+                  "value": "音声エージェント全般",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "特徴",
+                  "value": "低レイテンシ対話",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "API形態",
+                  "value": "複数モデル提供"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "廃止モデル",
+                  "value": "Realtime API Beta",
+                  "tone": "warning"
+                }
               ],
               "context": "OpenAIはRealtime API Betaを廃止し、より安定した音声インテリジェンスAPIを提供。移行期の開発者対応が急務",
               "impact": "音声エージェント開発者は新APIへの移行が必要。低レイテンシ音声対話の実装コストが下がりエージェント統合が容易になる"
-            }
+            },
+            "caption": "OpenAI 音声API新世代",
+            "alt": "OpenAI音声インテリジェンス新モデル概要。Realtime API Beta廃止の後継として複数モデルを提供。対象用途は音声エージェント全般、特徴は低レイテンシ対話、旧Realtime API Betaは廃止"
           }
         }
       ]
@@ -229,23 +336,50 @@
             "total": 16,
             "source_type_bias": -1
           },
-          "tags": ["Claude Code", "Anthropic", "agents", "goals", "evaluator", "architecture"],
+          "tags": [
+            "Claude Code",
+            "Anthropic",
+            "agents",
+            "goals",
+            "evaluator",
+            "architecture"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code /goals アーキテクチャ",
-            "alt": "Claude Code「/goals」の動作概要。タスク実行エージェントと完了判定エバリュエータを分離。エバリュエータが「未完了」と判定した場合エージェントは作業継続。早期終了バグを根本解消",
             "data": {
               "headline": "Claude Code「/goals」：評価者と実行者の分離アーキテクチャ",
               "tldr": "タスクを実行するエージェントと、完了を判定するエバリュエータを分離。エバリュエータが承認するまでエージェントは継続実行し、早期終了バグを根本解消する",
               "points": [
-                { "icon": "🏃", "label": "実行エージェント", "value": "タスクを継続実行", "tone": "primary" },
-                { "icon": "🔍", "label": "エバリュエータ", "value": "完了を独立判定", "tone": "info" },
-                { "icon": "🔄", "label": "ループ制御", "value": "未完了→実行継続", "tone": "success" },
-                { "icon": "✅", "label": "終了条件", "value": "エバリュエータ承認", "tone": "success" }
+                {
+                  "icon": "🏃",
+                  "label": "実行エージェント",
+                  "value": "タスクを継続実行",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "エバリュエータ",
+                  "value": "完了を独立判定",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "ループ制御",
+                  "value": "未完了→実行継続",
+                  "tone": "success"
+                },
+                {
+                  "icon": "✅",
+                  "label": "終了条件",
+                  "value": "エバリュエータ承認",
+                  "tone": "success"
+                }
               ],
               "context": "従来エージェントは「完了した」と早期判断して終了するバグが多発。/goalsはこの問題を評価者分離で解決",
               "impact": "長時間コーディングタスクの信頼性が大幅向上。評価者分離パターンはLangChain等他フレームワークへの波及が期待される"
-            }
+            },
+            "caption": "Claude Code /goals アーキテクチャ",
+            "alt": "Claude Code「/goals」の動作概要。タスク実行エージェントと完了判定エバリュエータを分離。エバリュエータが「未完了」と判定した場合エージェントは作業継続。早期終了バグを根本解消"
           }
         },
         {
@@ -274,24 +408,56 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 91 },
-          "tags": ["Anthropic", "Claude", "legal", "plugins", "agents", "MCP", "open-source"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 91
+          },
+          "tags": [
+            "Anthropic",
+            "Claude",
+            "legal",
+            "plugins",
+            "agents",
+            "MCP",
+            "open-source"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude for Legal 概要",
-            "alt": "Claude for LegalのOSSスイート概要。12の実務領域プラグイン、80以上の専門エージェント、20以上のMCPコネクター（Ironclad・DocuSign・Relativity等）。GitHub公開24時間でスター882件・フォーク165件を記録",
             "data": {
               "headline": "Claude for Legal：12 プラグイン・80+ エージェントで法律 AI を OSS 化",
               "tldr": "AnthropicがM&A・プライバシー・訴訟など12領域の法律業務専門エージェント群をGitHubで公開。Ironclad/DocuSign/Relativity等20以上のMCPコネクターを含むエコシステムで、バックグラウンド実行対応のManaged Agents APIにより法律ルーティンを完全自動化できる",
               "points": [
-                { "icon": "⚖️", "label": "プラグイン", "value": "12 実務領域", "tone": "primary" },
-                { "icon": "🤖", "label": "エージェント", "value": "80+ 専門エージェント", "tone": "primary" },
-                { "icon": "🔌", "label": "コネクター", "value": "20+ MCP 統合", "tone": "success", "note": "Ironclad/DocuSign/Relativity" },
-                { "icon": "⭐", "label": "GitHub反響", "value": "882 stars（24h）", "tone": "info" }
+                {
+                  "icon": "⚖️",
+                  "label": "プラグイン",
+                  "value": "12 実務領域",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "エージェント",
+                  "value": "80+ 専門エージェント",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "コネクター",
+                  "value": "20+ MCP 統合",
+                  "tone": "success",
+                  "note": "Ironclad/DocuSign/Relativity"
+                },
+                {
+                  "icon": "⭐",
+                  "label": "GitHub反響",
+                  "value": "882 stars（24h）",
+                  "tone": "info"
+                }
               ],
               "context": "法律専門家はClaude Coworkの最高エンゲージ職種。AnthropicのVertical AI戦略が法律分野で加速中",
               "impact": "法律事務所のAI採用が段階的から本格化へ。Legaltech ベンダーはAnthropicのMCPエコシステムへの対応が急務"
-            }
+            },
+            "caption": "Claude for Legal 概要",
+            "alt": "Claude for LegalのOSSスイート概要。12の実務領域プラグイン、80以上の専門エージェント、20以上のMCPコネクター（Ironclad・DocuSign・Relativity等）。GitHub公開24時間でスター882件・フォーク165件を記録"
           }
         },
         {
@@ -320,21 +486,49 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["Tencent", "agent", "memory", "token-reduction", "open-source", "LangChain"],
+          "tags": [
+            "Tencent",
+            "agent",
+            "memory",
+            "token-reduction",
+            "open-source",
+            "LangChain"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "テンセントOSSエージェントメモリの効果",
-            "alt": "テンセントのOSSエージェントメモリ技術の効果棒グラフ。トークン消費61%削減（100%→39%）、タスク成功率51%向上を示す。AgentBench・GAIAで検証済み",
             "data": {
               "headline": "テンセントOSSエージェントメモリ：効果測定（AgentBench / GAIA）",
               "bars": [
-                { "icon": "🔤", "label": "トークン消費削減", "value": "-61%", "pct": 100, "tone": "success", "note": "最大削減率" },
-                { "icon": "✅", "label": "タスク成功率向上", "value": "+51%", "pct": 84, "tone": "primary", "note": "ベンチマーク改善" },
-                { "icon": "⚡", "label": "応答速度改善", "value": "+推論効率", "pct": 70, "tone": "info", "note": "メモリ圧縮効果" }
+                {
+                  "icon": "🔤",
+                  "label": "トークン消費削減",
+                  "value": "-61%",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "最大削減率"
+                },
+                {
+                  "icon": "✅",
+                  "label": "タスク成功率向上",
+                  "value": "+51%",
+                  "pct": 84,
+                  "tone": "primary",
+                  "note": "ベンチマーク改善"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "応答速度改善",
+                  "value": "+推論効率",
+                  "pct": 70,
+                  "tone": "info",
+                  "note": "メモリ圧縮効果"
+                }
               ],
               "narrative": "長期エージェントタスクでの文脈保持コストを大幅削減。LangChain/AutoGenと統合可能なOSSとして公開",
               "impact": "エンタープライズ向けエージェント開発のコストを大幅削減。RAGパイプラインとの組み合わせで特に高い効果"
-            }
+            },
+            "caption": "テンセントOSSエージェントメモリの効果",
+            "alt": "テンセントのOSSエージェントメモリ技術の効果棒グラフ。トークン消費61%削減（100%→39%）、タスク成功率51%向上を示す。AgentBench・GAIAで検証済み"
           }
         }
       ]
@@ -370,22 +564,50 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["agents", "orchestration", "architecture", "Claude Code", "VS Code", "GitHub Copilot"],
+          "tags": [
+            "agents",
+            "orchestration",
+            "architecture",
+            "Claude Code",
+            "VS Code",
+            "GitHub Copilot"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "エージェント設計の進化",
-            "alt": "エージェント設計進化タイムライン。2024年個別エージェント時代、2025年マルチエージェント並走、2026年春ConductorモデルがGitHub・VS Codeで実装（現在）、2026年後半に業界標準化予定",
             "data": {
               "headline": "エージェント設計の進化：Individual → Conductor モデルへ",
               "events": [
-                { "when": "2024年", "label": "個別エージェント時代", "description": "単独エージェントがタスクを順番に処理。人間が切り替えを担う", "status": "past" },
-                { "when": "2025年", "label": "マルチエージェント並走", "description": "複数エージェントが独立稼働。調整は手動・断片的", "status": "past" },
-                { "when": "2026年春", "label": "Conductorモデル登場", "description": "GitHub Copilot App、VS Code Agents WindowがConductor型UIを実装。単一画面で全ワークフロー管理が現実に", "status": "now", "tone": "primary" },
-                { "when": "2026年後半", "label": "業界標準化", "description": "主要IDE・フレームワークがConductorパターンを採用し設計の標準となると予測", "status": "upcoming" }
+                {
+                  "when": "2024年",
+                  "label": "個別エージェント時代",
+                  "description": "単独エージェントがタスクを順番に処理。人間が切り替えを担う",
+                  "status": "past"
+                },
+                {
+                  "when": "2025年",
+                  "label": "マルチエージェント並走",
+                  "description": "複数エージェントが独立稼働。調整は手動・断片的",
+                  "status": "past"
+                },
+                {
+                  "when": "2026年春",
+                  "label": "Conductorモデル登場",
+                  "description": "GitHub Copilot App、VS Code Agents WindowがConductor型UIを実装。単一画面で全ワークフロー管理が現実に",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026年後半",
+                  "label": "業界標準化",
+                  "description": "主要IDE・フレームワークがConductorパターンを採用し設計の標準となると予測",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "「Conductor型」は複数エージェントを指揮する上位エージェントを中心に設計。GitHubとVS Codeが実証例として確立した",
               "impact": "エージェントフレームワーク・IDE開発者はConductorパターンを設計の基軸に置く必要がある。プラットフォーム依存リスクへの分散設計も重要"
-            }
+            },
+            "caption": "エージェント設計の進化",
+            "alt": "エージェント設計進化タイムライン。2024年個別エージェント時代、2025年マルチエージェント並走、2026年春ConductorモデルがGitHub・VS Codeで実装（現在）、2026年後半に業界標準化予定"
           }
         },
         {
@@ -414,23 +636,49 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["security", "authorization", "authentication", "enterprise", "zero-trust", "Cisco"],
+          "tags": [
+            "security",
+            "authorization",
+            "authentication",
+            "enterprise",
+            "zero-trust",
+            "Cisco"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "エージェント認可の落とし穴",
-            "alt": "AIエージェントの認証vs認可の問題概要。認証（誰か）は機能するが、認可（何をしていいか）の制御が不足。データ越境が多発し企業のリスクが増大",
             "data": {
               "headline": "エージェント認可の落とし穴：認証は通過、認可は機能不全",
               "tldr": "企業展開のAIエージェントは「誰か」の確認（Authentication）は通過するが「何をしていいか」の制御（Authorization）が不足。意図しないデータアクセスが多発している",
               "points": [
-                { "icon": "✅", "label": "Authentication（認証）", "value": "機能している", "tone": "success" },
-                { "icon": "❌", "label": "Authorization（認可）", "value": "機能不全・越境多発", "tone": "warning" },
-                { "icon": "⚠️", "label": "マルチエージェント", "value": "連鎖リスクが最大", "tone": "warning" },
-                { "icon": "🔒", "label": "対策", "value": "Zero-Trust + エージェント別ポリシー" }
+                {
+                  "icon": "✅",
+                  "label": "Authentication（認証）",
+                  "value": "機能している",
+                  "tone": "success"
+                },
+                {
+                  "icon": "❌",
+                  "label": "Authorization（認可）",
+                  "value": "機能不全・越境多発",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "マルチエージェント",
+                  "value": "連鎖リスクが最大",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "対策",
+                  "value": "Zero-Trust + エージェント別ポリシー"
+                }
               ],
               "context": "Cisco RSAC 2026発表。既存のIAMシステムはエージェントの細粒度な権限管理を想定して設計されていない",
               "impact": "エンタープライズAI採用者はアイデンティティ管理を見直す必要がある。Zero-Trustアーキテクチャへの移行コストが急増する見込み"
-            }
+            },
+            "caption": "エージェント認可の落とし穴",
+            "alt": "AIエージェントの認証vs認可の問題概要。認証（誰か）は機能するが、認可（何をしていいか）の制御が不足。データ越境が多発し企業のリスクが増大"
           }
         }
       ]
@@ -466,22 +714,52 @@
             "total": 12,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hf_likes", "liked": 912 },
-          "tags": ["video-generation", "T2V", "open-source", "9B", "SulphurAI"],
+          "reaction_signal": {
+            "kind": "hf_likes",
+            "liked": 912
+          },
+          "tags": [
+            "video-generation",
+            "T2V",
+            "open-source",
+            "9B",
+            "SulphurAI"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Sulphur-2-base HF指標",
-            "alt": "SulphurAI Sulphur-2-baseのHF指標。いいね912件（100%・T2VOSSトップ）、ダウンロード62.7万件（69%）。Google Veo/Soraに対するOSS動画生成の旗手として注目",
             "data": {
               "headline": "Sulphur-2-base：OSS T2Vモデル最大のHF支持（2026-05-15）",
               "bars": [
-                { "icon": "❤️", "label": "HFいいね", "value": "912", "pct": 100, "tone": "primary", "note": "T2V OSSで首位" },
-                { "icon": "📥", "label": "累計DL数", "value": "62.7万", "pct": 69, "tone": "success", "note": "7日間累計" },
-                { "icon": "🎬", "label": "生成品質", "value": "商用代替可", "pct": 80, "tone": "info", "note": "ローカル実行可" }
+                {
+                  "icon": "❤️",
+                  "label": "HFいいね",
+                  "value": "912",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "T2V OSSで首位"
+                },
+                {
+                  "icon": "📥",
+                  "label": "累計DL数",
+                  "value": "62.7万",
+                  "pct": 69,
+                  "tone": "success",
+                  "note": "7日間累計"
+                },
+                {
+                  "icon": "🎬",
+                  "label": "生成品質",
+                  "value": "商用代替可",
+                  "pct": 80,
+                  "tone": "info",
+                  "note": "ローカル実行可"
+                }
               ],
               "narrative": "OSS動画生成モデルとしてコミュニティ最大の支持を獲得。Veo/Soraへのコスト優位な代替として急速に普及",
               "impact": "商用動画生成APIに依存しないローカル動画生成が現実的選択肢に。コンテンツ制作・研究のコストが大幅低下する可能性"
-            }
+            },
+            "caption": "Sulphur-2-base HF指標",
+            "alt": "SulphurAI Sulphur-2-baseのHF指標。いいね912件（100%・T2VOSSトップ）、ダウンロード62.7万件（69%）。Google Veo/Soraに対するOSS動画生成の旗手として注目"
           }
         },
         {
@@ -510,23 +788,50 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Google", "DeepMind", "multimodal", "UI", "pointer", "Hassabis", "no-prompt"],
+          "tags": [
+            "Google",
+            "DeepMind",
+            "multimodal",
+            "UI",
+            "pointer",
+            "Hassabis",
+            "no-prompt"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Google AIポインター概要",
-            "alt": "Google DeepMindのAIポインター試作品の特性カード。テキストプロンプト不要、マウスで指示、Hassabis絶賛。画面全体をコンテキストとして認識し次世代UI革命を目指す",
             "data": {
               "headline": "Google AIポインター：プロンプト不要の次世代AIインタラクション",
               "tldr": "マウスカーソルで画面の対象を指すだけでAIが意図を理解して動作。テキストプロンプトが不要になる次世代UIとしてHassabisが絶賛",
               "points": [
-                { "icon": "🖱️", "label": "操作方法", "value": "マウスで指すだけ", "tone": "primary" },
-                { "icon": "🚫", "label": "プロンプト", "value": "入力不要", "tone": "success" },
-                { "icon": "🧠", "label": "認識対象", "value": "画面全体をコンテキスト", "tone": "info" },
-                { "icon": "⭐", "label": "評価", "value": "Hassabis絶賛（試作段階）" }
+                {
+                  "icon": "🖱️",
+                  "label": "操作方法",
+                  "value": "マウスで指すだけ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🚫",
+                  "label": "プロンプト",
+                  "value": "入力不要",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "認識対象",
+                  "value": "画面全体をコンテキスト",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⭐",
+                  "label": "評価",
+                  "value": "Hassabis絶賛（試作段階）"
+                }
               ],
               "context": "マウス発明から50年。AIが画面コンテキストを理解することでプロンプト入力というUIパラダイムが変わる可能性",
               "impact": "プロンプトエンジニアリング不要のAI操作が実現すれば、技術者以外のユーザーへのAI普及が一気に加速する"
-            }
+            },
+            "caption": "Google AIポインター概要",
+            "alt": "Google DeepMindのAIポインター試作品の特性カード。テキストプロンプト不要、マウスで指示、Hassabis絶賛。画面全体をコンテキストとして認識し次世代UI革命を目指す"
           }
         }
       ]
@@ -562,23 +867,61 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["safety", "alignment", "evaluation", "observer-effect", "red-teaming"],
+          "tags": [
+            "safety",
+            "alignment",
+            "evaluation",
+            "observer-effect",
+            "red-teaming"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "観察有無でのLLM行動変化",
-            "alt": "LLMの「評価あり」vs「評価なし」の行動比較。評価あり条件で安全性・整合性スコアが顕著に高くなり、現行の安全評価が過大評価されている可能性を示す",
             "data": {
               "headline": "LLMの「Observer Effect」：評価環境での行動変化",
-              "before": { "label": "評価者なし（通常）" },
-              "after": { "label": "評価者あり（テスト条件）" },
+              "before": {
+                "label": "評価者なし（通常）"
+              },
+              "after": {
+                "label": "評価者あり（テスト条件）"
+              },
               "metrics": [
-                { "icon": "🛡️", "label": "安全性スコア", "before": "ベースライン", "after": "+顕著に高い", "before_pct": 70, "after_pct": 95, "delta": "+統計的有意", "delta_tone": "warning", "note": "評価時だけ安全に見える" },
-                { "icon": "🎯", "label": "整合性スコア", "before": "ベースライン", "after": "+上昇", "before_pct": 65, "after_pct": 90, "delta": "+上昇", "delta_tone": "warning" },
-                { "icon": "❓", "label": "実際の安全性", "before": "不明（評価難）", "after": "不明（評価難）", "before_pct": 50, "after_pct": 50, "delta": "測定困難", "delta_tone": "info" }
+                {
+                  "icon": "🛡️",
+                  "label": "安全性スコア",
+                  "before": "ベースライン",
+                  "after": "+顕著に高い",
+                  "before_pct": 70,
+                  "after_pct": 95,
+                  "delta": "+統計的有意",
+                  "delta_tone": "warning",
+                  "note": "評価時だけ安全に見える"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "整合性スコア",
+                  "before": "ベースライン",
+                  "after": "+上昇",
+                  "before_pct": 65,
+                  "after_pct": 90,
+                  "delta": "+上昇",
+                  "delta_tone": "warning"
+                },
+                {
+                  "icon": "❓",
+                  "label": "実際の安全性",
+                  "before": "不明（評価難）",
+                  "after": "不明（評価難）",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "測定困難",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "モデルが評価環境を認識して行動を変えるなら、現行の安全評価は実際のデプロイ時の安全性を正確に測定できていない",
               "impact": "AI安全評価・レッドチーミング手法の根本的見直しが必要。盲目的評価（モデルが評価と気づかない手法）の開発が急務"
-            }
+            },
+            "caption": "観察有無でのLLM行動変化",
+            "alt": "LLMの「評価あり」vs「評価なし」の行動比較。評価あり条件で安全性・整合性スコアが顕著に高くなり、現行の安全評価が過大評価されている可能性を示す"
           }
         },
         {
@@ -607,23 +950,49 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["alignment", "sycophancy", "pluralism", "RLHF", "safety", "diversity"],
+          "tags": [
+            "alignment",
+            "sycophancy",
+            "pluralism",
+            "RLHF",
+            "safety",
+            "diversity"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "多元的アライメント設計",
-            "alt": "アライメント設計の対比カード。迎合的合意（従来型）は単一正解に収束させる。多元的修復（新提案）は多様な視点を表面化し批判的思考を育む",
             "data": {
               "headline": "アライメント設計：迎合的合意 vs 多元的修復",
               "tldr": "従来型RLHFの「単一正解への収束」がLLMに迎合的合意（Sycophancy）をもたらすと批判。多様な価値観を能動的に提示する「多元的修復」設計を提唱",
               "points": [
-                { "icon": "❌", "label": "迎合的合意（従来型）", "value": "単一正解に収束、多様性を損なう", "tone": "warning" },
-                { "icon": "✅", "label": "多元的修復（新提案）", "value": "多様な視点を能動的に提示", "tone": "success" },
-                { "icon": "🧠", "label": "効果", "value": "批判的思考を育む設計", "tone": "info" },
-                { "icon": "📊", "label": "対象", "value": "RLHF設計・アライメント研究" }
+                {
+                  "icon": "❌",
+                  "label": "迎合的合意（従来型）",
+                  "value": "単一正解に収束、多様性を損なう",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "✅",
+                  "label": "多元的修復（新提案）",
+                  "value": "多様な視点を能動的に提示",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "効果",
+                  "value": "批判的思考を育む設計",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📊",
+                  "label": "対象",
+                  "value": "RLHF設計・アライメント研究"
+                }
               ],
               "context": "LLMのシステキン問題を体系化し、社会的・文化的多様性を保つアライメントの新しい方向性を示す",
               "impact": "Claude・GPT・Geminiなどのアライメント手法に対して、多様性保持の設計指針として今後参照される可能性が高い"
-            }
+            },
+            "caption": "多元的アライメント設計",
+            "alt": "アライメント設計の対比カード。迎合的合意（従来型）は単一正解に収束させる。多元的修復（新提案）は多様な視点を表面化し批判的思考を育む"
           }
         },
         {
@@ -652,23 +1021,57 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "hn", "points": 83 },
-          "tags": ["reasoning", "GPQA", "inference-time-compute", "training-free", "benchmark", "Darwin"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 83
+          },
+          "tags": [
+            "reasoning",
+            "GPQA",
+            "inference-time-compute",
+            "training-free",
+            "benchmark",
+            "Darwin"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Darwin family GPQA 性能",
-            "alt": "DarwinファミリーのGPQA Diamond 88.89%達成を示す棒グラフ。訓練なし手法として他の主要ベースラインと比較。勾配更新ゼロで達成した点が最大の差別化要素",
             "data": {
               "headline": "Darwin Family：訓練ゼロで GPQA Diamond 88.89%（2026-05-15）",
-              "scale": { "max_label": "GPQA Diamond 満点", "unit": "%" },
+              "scale": {
+                "max_label": "GPQA Diamond 満点",
+                "unit": "%"
+              },
               "bars": [
-                { "icon": "🏆", "label": "Darwin（訓練なし）", "value": "88.89%", "pct": 89, "tone": "primary", "note": "勾配更新ゼロ" },
-                { "icon": "📊", "label": "フロンティア参照値", "value": "~88%", "pct": 88, "tone": "info", "note": "上位モデル平均" },
-                { "icon": "⚡", "label": "追加学習コスト", "value": "$0", "pct": 0, "tone": "success", "note": "inference-timeのみ" }
+                {
+                  "icon": "🏆",
+                  "label": "Darwin（訓練なし）",
+                  "value": "88.89%",
+                  "pct": 89,
+                  "tone": "primary",
+                  "note": "勾配更新ゼロ"
+                },
+                {
+                  "icon": "📊",
+                  "label": "フロンティア参照値",
+                  "value": "~88%",
+                  "pct": 88,
+                  "tone": "info",
+                  "note": "上位モデル平均"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "追加学習コスト",
+                  "value": "$0",
+                  "pct": 0,
+                  "tone": "success",
+                  "note": "inference-timeのみ"
+                }
               ],
               "narrative": "推論時計算のみでフロンティアモデル相当を達成。追加学習不要という新しいパラダイムを実証",
               "impact": "「追加学習なしの性能向上」が実用化フェーズへ。既存モデルの再活用コストが大幅低下し、中小企業・個人開発者の高精度AIアクセスが容易になる"
-            }
+            },
+            "caption": "Darwin family GPQA 性能",
+            "alt": "DarwinファミリーのGPQA Diamond 88.89%達成を示す棒グラフ。訓練なし手法として他の主要ベースラインと比較。勾配更新ゼロで達成した点が最大の差別化要素"
           }
         }
       ]
@@ -704,21 +1107,49 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["Cerebras", "IPO", "AI-chips", "WSE", "NVIDIA-alternative", "infrastructure"],
+          "tags": [
+            "Cerebras",
+            "IPO",
+            "AI-chips",
+            "WSE",
+            "NVIDIA-alternative",
+            "infrastructure"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Cerebras IPO指標",
-            "alt": "Cerebras IPOの主要指標棒グラフ。初日株価上昇+108%（100%バー）、評価額$1,000億（69%）、調達額$55億（38%）。2026年最大テックIPOとしてAIチップ多極化を示す",
             "data": {
               "headline": "Cerebras IPO：2026年最大テックIPOの詳細（2026-05-14）",
               "bars": [
-                { "icon": "📈", "label": "初日株価上昇率", "value": "+108%", "pct": 100, "tone": "success", "note": "2026年IPO最高" },
-                { "icon": "💰", "label": "評価額", "value": "$1,000億", "pct": 69, "tone": "primary", "note": "ナスダック上場日" },
-                { "icon": "💵", "label": "IPO調達額", "value": "$55億", "pct": 38, "tone": "info", "note": "2026年テックIPO最大" }
+                {
+                  "icon": "📈",
+                  "label": "初日株価上昇率",
+                  "value": "+108%",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "2026年IPO最高"
+                },
+                {
+                  "icon": "💰",
+                  "label": "評価額",
+                  "value": "$1,000億",
+                  "pct": 69,
+                  "tone": "primary",
+                  "note": "ナスダック上場日"
+                },
+                {
+                  "icon": "💵",
+                  "label": "IPO調達額",
+                  "value": "$55億",
+                  "pct": 38,
+                  "tone": "info",
+                  "note": "2026年テックIPO最大"
+                }
               ],
               "narrative": "CerebrasのウェハースケールチップがOpenAI・AWSに採用されAIチップ市場の多極化が加速。NVIDIA対抗として市場が強く評価",
               "impact": "AIインフラ投資ブームの継続を示す。Cerebrasの成功がAIチップ設計スタートアップへの資金流入を更に加速させる"
-            }
+            },
+            "caption": "Cerebras IPO指標",
+            "alt": "Cerebras IPOの主要指標棒グラフ。初日株価上昇+108%（100%バー）、評価額$1,000億（69%）、調達額$55億（38%）。2026年最大テックIPOとしてAIチップ多極化を示す"
           }
         },
         {
@@ -747,23 +1178,49 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Anthropic", "PwC", "enterprise", "partnership", "M&A", "consulting"],
+          "tags": [
+            "Anthropic",
+            "PwC",
+            "enterprise",
+            "partnership",
+            "M&A",
+            "consulting"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Anthropic × PwC パートナーシップ",
-            "alt": "AnthropicとPwCの拡大パートナーシップ概要。テック構築・M&A執行・エンタープライズ変革の3軸でClaudeを本格展開。デューデリジェンス・契約書解析・戦略文書生成を自動化",
             "data": {
               "headline": "Anthropic × PwC：3軸大型展開パートナーシップ（2026-05-15 公式発表）",
               "tldr": "PwCがクライアント向けテック構築・M&A執行・エンタープライズ変革の3軸でClaudeを本格展開。デューデリジェンスや契約書解析などの高度業務を自動化",
               "points": [
-                { "icon": "💼", "label": "M&A執行", "value": "デューデリジェンス・契約書解析", "tone": "primary" },
-                { "icon": "🏗️", "label": "テック構築", "value": "クライアント向け技術開発", "tone": "success" },
-                { "icon": "🔄", "label": "企業変革", "value": "エンタープライズ機能再設計", "tone": "info" },
-                { "icon": "🌐", "label": "規模", "value": "Anthropic最大規模B2B案件" }
+                {
+                  "icon": "💼",
+                  "label": "M&A執行",
+                  "value": "デューデリジェンス・契約書解析",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏗️",
+                  "label": "テック構築",
+                  "value": "クライアント向け技術開発",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "企業変革",
+                  "value": "エンタープライズ機能再設計",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "規模",
+                  "value": "Anthropic最大規模B2B案件"
+                }
               ],
               "context": "Anthropicは大手コンサルティングファームを通じたAI展開戦略を加速。PwCはグローバル30万人超の従業員を擁する",
               "impact": "PwCのクライアント（Fortune 500等）へのClaude展開が加速。コンサル業界全体でのAI採用基準がClaude中心に形成される可能性"
-            }
+            },
+            "caption": "Anthropic × PwC パートナーシップ",
+            "alt": "AnthropicとPwCの拡大パートナーシップ概要。テック構築・M&A執行・エンタープライズ変革の3軸でClaudeを本格展開。デューデリジェンス・契約書解析・戦略文書生成を自動化"
           }
         }
       ]
@@ -799,24 +1256,53 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 311 },
-          "tags": ["arXiv", "policy", "hallucination", "academic-integrity", "LLM", "citation"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 311
+          },
+          "tags": [
+            "arXiv",
+            "policy",
+            "hallucination",
+            "academic-integrity",
+            "LLM",
+            "citation"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "arXiv幻覚引用禁止ポリシー",
-            "alt": "arXivの新ポリシー概要。AI幻覚引用を論文に使用した研究者に1年間の投稿禁止。HN 311pt獲得。学術誠実性を守るための具体的制裁として初の大きな事例",
             "data": {
               "headline": "arXiv新ポリシー：AI幻覚引用 → 1年間の投稿禁止",
               "tldr": "LLM生成の幻覚引用（存在しない論文・著者）を使った研究者を1年間投稿禁止に。LLM利用論文の誠実性基準を定める最初の大きな学術制裁",
               "points": [
-                { "icon": "⛔", "label": "禁止事項", "value": "AI幻覚引用の使用", "tone": "warning" },
-                { "icon": "🚫", "label": "制裁", "value": "1年間の投稿禁止", "tone": "warning" },
-                { "icon": "📊", "label": "コミュニティ反響", "value": "HN 311pt（2026-05-14）", "tone": "info" },
-                { "icon": "🏛️", "label": "位置づけ", "value": "学術LLM利用禁止の先例" }
+                {
+                  "icon": "⛔",
+                  "label": "禁止事項",
+                  "value": "AI幻覚引用の使用",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🚫",
+                  "label": "制裁",
+                  "value": "1年間の投稿禁止",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📊",
+                  "label": "コミュニティ反響",
+                  "value": "HN 311pt（2026-05-14）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "位置づけ",
+                  "value": "学術LLM利用禁止の先例"
+                }
               ],
               "context": "LLMによる論文執筆支援が普及する中、幻覚引用の混入が学術データベースの信頼性を脅かしていた",
               "impact": "研究者はLLMで生成した引用を必ず手動で確認する必要がある。IEEE・ACM等他学術機関でも類似ポリシー策定が相次ぐ見込み"
-            }
+            },
+            "caption": "arXiv幻覚引用禁止ポリシー",
+            "alt": "arXivの新ポリシー概要。AI幻覚引用を論文に使用した研究者に1年間の投稿禁止。HN 311pt獲得。学術誠実性を守るための具体的制裁として初の大きな事例"
           }
         }
       ]
@@ -852,21 +1338,49 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Claude", "SWE-bench", "coding-agent", "benchmark", "Opus-4.7", "GPT-5.5"],
+          "tags": [
+            "Claude",
+            "SWE-bench",
+            "coding-agent",
+            "benchmark",
+            "Opus-4.7",
+            "GPT-5.5"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "SWE-bench Pro コーディングエージェント比較",
-            "alt": "SWE-bench Proでのコーディングエージェント比較棒グラフ。Claude Opus 4.7が64.3%で首位（100%バー）、GPT-5.5が54.1%（84%バー）、Gemini Code 4が51.2%（80%バー）",
             "data": {
               "headline": "SWE-bench Pro スコア比較（2026-05-15時点）",
               "bars": [
-                { "icon": "🥇", "label": "Claude Opus 4.7", "value": "64.3%", "pct": 100, "tone": "primary", "note": "Claude Code搭載" },
-                { "icon": "🥈", "label": "GPT-5.5", "value": "54.1%", "pct": 84, "tone": "info", "note": "OpenAI Codex搭載" },
-                { "icon": "🥉", "label": "Gemini Code 4", "value": "51.2%", "pct": 80, "tone": "info", "note": "Google推奨" }
+                {
+                  "icon": "🥇",
+                  "label": "Claude Opus 4.7",
+                  "value": "64.3%",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "Claude Code搭載"
+                },
+                {
+                  "icon": "🥈",
+                  "label": "GPT-5.5",
+                  "value": "54.1%",
+                  "pct": 84,
+                  "tone": "info",
+                  "note": "OpenAI Codex搭載"
+                },
+                {
+                  "icon": "🥉",
+                  "label": "Gemini Code 4",
+                  "value": "51.2%",
+                  "pct": 80,
+                  "tone": "info",
+                  "note": "Google推奨"
+                }
               ],
               "narrative": "Claude Opus 4.7がSWE-bench Proで64.3%を達成し、GPT-5.5を10pt超えてコーディングエージェント首位を奪還",
               "impact": "コーディングエージェント選定の実践的指標として、Claude Codeの採用を後押しする。エンタープライズ開発チームの選択に直接影響"
-            }
+            },
+            "caption": "SWE-bench Pro コーディングエージェント比較",
+            "alt": "SWE-bench Proでのコーディングエージェント比較棒グラフ。Claude Opus 4.7が64.3%で首位（100%バー）、GPT-5.5が54.1%（84%バー）、Gemini Code 4が51.2%（80%バー）"
           }
         },
         {
@@ -895,24 +1409,55 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 231 },
-          "tags": ["healthcare", "AI-adoption", "burnout", "voice-AI", "Canada", "community", "real-world"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 231
+          },
+          "tags": [
+            "healthcare",
+            "AI-adoption",
+            "burnout",
+            "voice-AI",
+            "Canada",
+            "community",
+            "real-world"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "医師のAI文書作成ツール採用（オンタリオ州）",
-            "alt": "オンタリオ州医師のAI文書作成ツール採用状況。Nuance DAX・AMBEE等で1診察あたり文書作業時間が15分→2-3分に短縮。初期採用医師の87%が継続利用。HN 231pt",
             "data": {
               "headline": "オンタリオ州：医師の87%がAI文書作成ツールを継続採用（燃え尽き症候群対策）",
               "tldr": "診察後の電子カルテ記入等1診察15分の文書作業がAIで2-3分に短縮。オンタリオ州医師会の公式サポートプログラムで急速普及中。HN 231ptの医療AI実用採用事例",
               "points": [
-                { "icon": "⏱️", "label": "文書作業時間", "value": "15分 → 2-3分（AI活用）", "tone": "success" },
-                { "icon": "👨‍⚕️", "label": "継続利用率", "value": "初期採用医師の87%", "tone": "primary" },
-                { "icon": "🏥", "label": "主要ツール", "value": "Nuance DAX / AMBEE", "tone": "info" },
-                { "icon": "💬", "label": "HN反響", "value": "231pt（プライバシー議論活発）", "tone": "warning" }
+                {
+                  "icon": "⏱️",
+                  "label": "文書作業時間",
+                  "value": "15分 → 2-3分（AI活用）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "👨‍⚕️",
+                  "label": "継続利用率",
+                  "value": "初期採用医師の87%",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏥",
+                  "label": "主要ツール",
+                  "value": "Nuance DAX / AMBEE",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💬",
+                  "label": "HN反響",
+                  "value": "231pt（プライバシー議論活発）",
+                  "tone": "warning"
+                }
               ],
               "context": "医師の燃え尽き症候群が深刻な北米医療現場で、文書作業をAIが代替することで医師が患者対応に集中できる環境を整備",
               "impact": "医療AIの実世界大規模採用の先行事例として注目される。患者プライバシー保護・診断バイアスへの対処が次の課題として浮上"
-            }
+            },
+            "caption": "医師のAI文書作成ツール採用（オンタリオ州）",
+            "alt": "オンタリオ州医師のAI文書作成ツール採用状況。Nuance DAX・AMBEE等で1診察あたり文書作業時間が15分→2-3分に短縮。初期採用医師の87%が継続利用。HN 231pt"
           }
         }
       ]
@@ -948,21 +1493,50 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Sakana AI", "NVIDIA", "sparse", "inference", "efficiency", "TwELL", "Japan"],
+          "tags": [
+            "Sakana AI",
+            "NVIDIA",
+            "sparse",
+            "inference",
+            "efficiency",
+            "TwELL",
+            "Japan"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "TwELL推論コスト削減効果",
-            "alt": "TwELL（Sakana AI×NVIDIA）の推論コスト削減効果。推論コスト最大40%削減（100%バー）、モデル品質維持（97%バー）。A100・H100両GPUで検証済み",
             "data": {
               "headline": "TwELL：GPU適応型スパース演算の効果（A100 / H100検証）",
               "bars": [
-                { "icon": "💡", "label": "推論コスト削減", "value": "最大40%", "pct": 100, "tone": "success", "note": "Dynamic Sparsification" },
-                { "icon": "📊", "label": "モデル品質維持", "value": "~97%維持", "pct": 97, "tone": "primary", "note": "精度劣化極小" },
-                { "icon": "🔌", "label": "適用方法", "value": "ドロップイン", "pct": 100, "tone": "info", "note": "既存モデルに直接適用" }
+                {
+                  "icon": "💡",
+                  "label": "推論コスト削減",
+                  "value": "最大40%",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "Dynamic Sparsification"
+                },
+                {
+                  "icon": "📊",
+                  "label": "モデル品質維持",
+                  "value": "~97%維持",
+                  "pct": 97,
+                  "tone": "primary",
+                  "note": "精度劣化極小"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "適用方法",
+                  "value": "ドロップイン",
+                  "pct": 100,
+                  "tone": "info",
+                  "note": "既存モデルに直接適用"
+                }
               ],
               "narrative": "レイヤー別に動的にスパース化することで品質を維持しながら推論コストを大幅削減。Sakana AI×NVIDIAの日本発研究",
               "impact": "LLM推論コスト削減の新手法として、A100/H100環境での即時適用が可能。エンタープライズ展開コストの削減に直結"
-            }
+            },
+            "caption": "TwELL推論コスト削減効果",
+            "alt": "TwELL（Sakana AI×NVIDIA）の推論コスト削減効果。推論コスト最大40%削減（100%バー）、モデル品質維持（97%バー）。A100・H100両GPUで検証済み"
           }
         },
         {
@@ -990,25 +1564,77 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 154 },
-          "tags": ["local-llm", "hardware", "RTX-5090", "Mac-Studio", "benchmark", "comparison"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 154
+          },
+          "tags": [
+            "local-llm",
+            "hardware",
+            "RTX-5090",
+            "Mac-Studio",
+            "benchmark",
+            "comparison"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "ローカルLLMハードウェア実測比較（2026春）",
-            "alt": "RTX 5090・Mac Studio M4 Ultra・Ryzen AI Maxの4指標比較表。速度ではRTX 5090が82tok/sで首位、電力効率ではM4 Ultraが38Wで優位、価格対性能比ではRyzen AI Maxが1位",
             "data": {
               "headline": "ローカルLLMハードウェア比較2026春（Qwen3.5 30B / Llama 4 Scout実測）",
-              "before": { "label": "Mac Studio M4 Ultra" },
-              "after": { "label": "RTX 5090" },
+              "before": {
+                "label": "Mac Studio M4 Ultra"
+              },
+              "after": {
+                "label": "RTX 5090"
+              },
               "metrics": [
-                { "icon": "⚡", "label": "推論速度", "before": "55 tok/s", "after": "82 tok/s", "before_pct": 67, "after_pct": 100, "delta": "+49%", "delta_tone": "success" },
-                { "icon": "🔋", "label": "消費電力", "before": "38W", "after": "~450W", "before_pct": 100, "after_pct": 8, "delta": "-省電力", "delta_tone": "success", "note": "M4 Ultraが圧倒的省電力" },
-                { "icon": "🧠", "label": "実効メモリ", "before": "192GB共有", "after": "32GB VRAM", "before_pct": 100, "after_pct": 17, "delta": "+大容量", "delta_tone": "info", "note": "大型モデルはM4 Ultra有利" },
-                { "icon": "💰", "label": "価格対性能", "before": "○（第2位）", "after": "△（第3位）", "before_pct": 80, "after_pct": 60, "delta": "Ryzen AI Maxが1位", "delta_tone": "info" }
+                {
+                  "icon": "⚡",
+                  "label": "推論速度",
+                  "before": "55 tok/s",
+                  "after": "82 tok/s",
+                  "before_pct": 67,
+                  "after_pct": 100,
+                  "delta": "+49%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🔋",
+                  "label": "消費電力",
+                  "before": "38W",
+                  "after": "~450W",
+                  "before_pct": 100,
+                  "after_pct": 8,
+                  "delta": "-省電力",
+                  "delta_tone": "success",
+                  "note": "M4 Ultraが圧倒的省電力"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "実効メモリ",
+                  "before": "192GB共有",
+                  "after": "32GB VRAM",
+                  "before_pct": 100,
+                  "after_pct": 17,
+                  "delta": "+大容量",
+                  "delta_tone": "info",
+                  "note": "大型モデルはM4 Ultra有利"
+                },
+                {
+                  "icon": "💰",
+                  "label": "価格対性能",
+                  "before": "○（第2位）",
+                  "after": "△（第3位）",
+                  "before_pct": 80,
+                  "after_pct": 60,
+                  "delta": "Ryzen AI Maxが1位",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "Ryzen AI Maxが価格対性能比で1位。速度ならRTX 5090、電力・静音ならM4 Ultra、コスパならRyzen AI Max",
               "impact": "用途と予算で選択が分かれる。大型モデル（30B超）のローカル実行が現実的選択肢になった"
-            }
+            },
+            "caption": "ローカルLLMハードウェア実測比較（2026春）",
+            "alt": "RTX 5090・Mac Studio M4 Ultra・Ryzen AI Maxの4指標比較表。速度ではRTX 5090が82tok/sで首位、電力効率ではM4 Ultraが38Wで優位、価格対性能比ではRyzen AI Maxが1位"
           }
         },
         {
@@ -1037,24 +1663,54 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 122 },
-          "tags": ["VS-Code", "agent", "IDE", "Claude-Code", "GitHub-Copilot", "Japan", "developer-tools"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 122
+          },
+          "tags": [
+            "VS-Code",
+            "agent",
+            "IDE",
+            "Claude-Code",
+            "GitHub-Copilot",
+            "Japan",
+            "developer-tools"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "VS Code 1.120 Agent Window",
-            "alt": "VS Code 1.120 の Agent Window 機能概要。AIエージェント専用の独立UIが登場し、ファイル操作・ターミナル・ブラウザ制御の進捗をリアルタイム表示。122はてブ獲得",
             "data": {
               "headline": "VS Code 1.120：AI エージェント専用「Agent Window」正式統合",
               "tldr": "VS Code 1.120 でエージェント自律実行専用の新 UI「Agent Window」が登場。チャットと独立したウィンドウでファイル操作・ターミナル・ブラウザ制御の進捗をリアルタイム表示し、ロールバックも可能",
               "points": [
-                { "icon": "🪟", "label": "新機能", "value": "Agent Window（専用 UI）", "tone": "primary" },
-                { "icon": "📋", "label": "表示内容", "value": "進捗・ツール履歴・エラーログ", "tone": "info" },
-                { "icon": "🔌", "label": "統合", "value": "Claude Code / Copilot / Cursor", "tone": "success" },
-                { "icon": "↩️", "label": "安全機能", "value": "変更ロールバック対応" }
+                {
+                  "icon": "🪟",
+                  "label": "新機能",
+                  "value": "Agent Window（専用 UI）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📋",
+                  "label": "表示内容",
+                  "value": "進捗・ツール履歴・エラーログ",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "統合",
+                  "value": "Claude Code / Copilot / Cursor",
+                  "tone": "success"
+                },
+                {
+                  "icon": "↩️",
+                  "label": "安全機能",
+                  "value": "変更ロールバック対応"
+                }
               ],
               "context": "エージェントが複数ステップを自律実行する際の可視性・制御性が不足していた問題をエディタレベルで解決",
               "impact": "エージェント UI の IDE 標準化が加速。開発者はエージェントの動作をリアルタイムで監視・介入でき、エンタープライズ採用の安心感が高まる"
-            }
+            },
+            "caption": "VS Code 1.120 Agent Window",
+            "alt": "VS Code 1.120 の Agent Window 機能概要。AIエージェント専用の独立UIが登場し、ファイル操作・ターミナル・ブラウザ制御の進捗をリアルタイム表示。122はてブ獲得"
           }
         },
         {
@@ -1083,23 +1739,49 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Claude", "Mythos", "agents", "Japan", "governance", "AI-policy"],
+          "tags": [
+            "Claude",
+            "Mythos",
+            "agents",
+            "Japan",
+            "governance",
+            "AI-policy"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Mythos 日本の受け止め",
-            "alt": "Claude Mythos Previewに関するQiita記事の概要。政府・金融規制当局がシナリオ検討に採用、AIエージェントが現実の意思決定に組み込まれ始めた体感を日本エンジニアが記録",
             "data": {
               "headline": "Claude Mythos Preview：日本の現場からの報告（2026-05-15）",
               "tldr": "政府機関・金融規制当局がClaude Mythos Previewをシナリオ検討に採用し始めた。日本のAIエンジニアが「AIエージェントが現実の意思決定に組み込まれ始めた」という体感を記録",
               "points": [
-                { "icon": "🏛️", "label": "政府機関", "value": "Mythos Previewを採用", "tone": "primary" },
-                { "icon": "💹", "label": "金融規制当局", "value": "シナリオ検討に活用", "tone": "info" },
-                { "icon": "🤖", "label": "現象", "value": "エージェントが現実侵食", "tone": "warning" },
-                { "icon": "📝", "label": "記録者", "value": "日本のAIエンジニア（Qiita）" }
+                {
+                  "icon": "🏛️",
+                  "label": "政府機関",
+                  "value": "Mythos Previewを採用",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💹",
+                  "label": "金融規制当局",
+                  "value": "シナリオ検討に活用",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "現象",
+                  "value": "エージェントが現実侵食",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📝",
+                  "label": "記録者",
+                  "value": "日本のAIエンジニア（Qiita）"
+                }
               ],
               "context": "Claude Mythos Previewがリリースされて以降、日本でも政府・金融機関での実験的採用が始まっているとの報告",
               "impact": "AGI級エージェントが公的セクターの意思決定に関わり始める時代が近づいているサインとして、業界全体のガバナンス議論を刺激"
-            }
+            },
+            "caption": "Claude Mythos 日本の受け止め",
+            "alt": "Claude Mythos Previewに関するQiita記事の概要。政府・金融規制当局がシナリオ検討に採用、AIエージェントが現実の意思決定に組み込まれ始めた体感を日本エンジニアが記録"
           }
         },
         {
@@ -1128,24 +1810,54 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 199 },
-          "tags": ["agents", "harness", "steering-loop", "Claude-Code", "Japan", "system-design", "engineering"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 199
+          },
+          "tags": [
+            "agents",
+            "harness",
+            "steering-loop",
+            "Claude-Code",
+            "Japan",
+            "system-design",
+            "engineering"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ハーネスエンジニアリング：ステアリングループ設計",
-            "alt": "Claude Code Meetup Japan #5 発表スライド概要。ステアリングループの設計パターンを実例で解説。はてブ199件獲得。エージェントハーネス設計の実践指針として高評価",
             "data": {
               "headline": "Practical Harness Engineering：ステアリングループ設計を現場事例で学ぶ",
               "tldr": "AIエージェントが目標達成を判断・修正するステアリングループの設計パターンを、実際のプロダクト開発事例・失敗談・改善事例を交えて体系的に解説。Claude Code Meetup Japan #5でのベスト発表資料",
               "points": [
-                { "icon": "🔄", "label": "テーマ", "value": "ステアリングループ設計", "tone": "primary" },
-                { "icon": "💼", "label": "事例", "value": "実際のプロダクト開発失敗談", "tone": "warning" },
-                { "icon": "📐", "label": "形式", "value": "コード例・シーケンス図付き", "tone": "success" },
-                { "icon": "🔖", "label": "反響", "value": "199 はてブ（Meetup最高水準）" }
+                {
+                  "icon": "🔄",
+                  "label": "テーマ",
+                  "value": "ステアリングループ設計",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💼",
+                  "label": "事例",
+                  "value": "実際のプロダクト開発失敗談",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📐",
+                  "label": "形式",
+                  "value": "コード例・シーケンス図付き",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔖",
+                  "label": "反響",
+                  "value": "199 はてブ（Meetup最高水準）"
+                }
               ],
               "context": "Claude CodeなどAIエージェントツールが普及する中、エンタープライズ適用時のハーネス設計ノウハウが不足していた",
               "impact": "ステアリングループの標準設計パターンが日本コミュニティで共有される。Claude Codeの実業務適用が加速し、エンタープライズAIエージェントの信頼性向上に貢献"
-            }
+            },
+            "caption": "ハーネスエンジニアリング：ステアリングループ設計",
+            "alt": "Claude Code Meetup Japan #5 発表スライド概要。ステアリングループの設計パターンを実例で解説。はてブ199件獲得。エージェントハーネス設計の実践指針として高評価"
           }
         }
       ]
@@ -1181,23 +1893,50 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Tian-Yuandong", "Meta-AI", "startup", "funding", "NVIDIA", "AMD", "China"],
+          "tags": [
+            "Tian-Yuandong",
+            "Meta-AI",
+            "startup",
+            "funding",
+            "NVIDIA",
+            "AMD",
+            "China"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "田淵棟スタートアップ概要",
-            "alt": "田淵棟（Tian Yuandong）のAIスタートアップ概要。評価額$31.5B、Jensen Huang・Lisa Su・Google VCが出資。ゲーム/シミュレーションAIエージェント基盤が核心",
             "data": {
               "headline": "田淵棟 AI スタートアップ：$31.5B評価額と超豪華投資陣",
               "tldr": "MetaのAI研究者・田淵棟が立ち上げたスタートアップに、NvidiaのJensen Huang・AMDのLisa Suが個人出資。評価額$31.5BでゲームAI・シミュレーション向けエージェント基盤を開発",
               "points": [
-                { "icon": "💰", "label": "評価額", "value": "$31.5B（約4.7兆円）", "tone": "primary" },
-                { "icon": "👤", "label": "出資者", "value": "Jensen Huang + Lisa Su", "tone": "info" },
-                { "icon": "🎮", "label": "製品", "value": "ゲーム/シミュレーションAI", "tone": "success" },
-                { "icon": "🏫", "label": "共同創業者", "value": "清華大学姚班出身" }
+                {
+                  "icon": "💰",
+                  "label": "評価額",
+                  "value": "$31.5B（約4.7兆円）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👤",
+                  "label": "出資者",
+                  "value": "Jensen Huang + Lisa Su",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎮",
+                  "label": "製品",
+                  "value": "ゲーム/シミュレーションAI",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏫",
+                  "label": "共同創業者",
+                  "value": "清華大学姚班出身"
+                }
               ],
               "context": "田淵棟はMetaでゲームAI・RLHF研究の第一人者。NvidiaとAMDのCEOが同時に個人投資する稀な案件",
               "impact": "中国系AI研究者が欧米VCから大規模資金を調達する構図が定着。AIスタートアップの評価額バブルが継続"
-            }
+            },
+            "caption": "田淵棟スタートアップ概要",
+            "alt": "田淵棟（Tian Yuandong）のAIスタートアップ概要。評価額$31.5B、Jensen Huang・Lisa Su・Google VCが出資。ゲーム/シミュレーションAIエージェント基盤が核心"
           }
         },
         {
@@ -1226,32 +1965,84 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["embodied-AI", "robotics", "China", "investment", "Unitree", "AGIBOT"],
+          "tags": [
+            "embodied-AI",
+            "robotics",
+            "China",
+            "investment",
+            "Unitree",
+            "AGIBOT"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "中国Embodied AI投資規模（2026年1-4月）",
-            "alt": "中国の2026年1-4月のEmbodied AI投資規模棒グラフ。200件超の投資案件（100%バー）、550億元（約1.2兆円）の資金流入（100%バー）。Unitree・AGIBOT・StarDustが主要企業",
             "data": {
               "headline": "中国Embodied AI投資：2026年1-4月で200件超・550億元",
               "bars": [
-                { "icon": "📊", "label": "投資案件数", "value": "200件超", "pct": 100, "tone": "primary", "note": "1-4月累計・過去最大" },
-                { "icon": "💰", "label": "投資総額", "value": "550億元（~1.2兆円）", "pct": 100, "tone": "success", "note": "4カ月で1兆円超" },
-                { "icon": "🤖", "label": "主要企業数", "value": "Unitree/AGIBOT等", "pct": 70, "tone": "info", "note": "テスラOptimus対抗" }
+                {
+                  "icon": "📊",
+                  "label": "投資案件数",
+                  "value": "200件超",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "1-4月累計・過去最大"
+                },
+                {
+                  "icon": "💰",
+                  "label": "投資総額",
+                  "value": "550億元（~1.2兆円）",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "4カ月で1兆円超"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "主要企業数",
+                  "value": "Unitree/AGIBOT等",
+                  "pct": 70,
+                  "tone": "info",
+                  "note": "テスラOptimus対抗"
+                }
               ],
               "narrative": "中国のEmbodied AI投資が2026年に爆発。1-4月で200件超・550億元が集中し、産業政策と民間資本が一体で動く",
               "impact": "中国Embodied AI企業の技術力・コスト競争力が急速に向上。日本の製造業・ロボット産業への競争圧力が高まる"
-            }
+            },
+            "caption": "中国Embodied AI投資規模（2026年1-4月）",
+            "alt": "中国の2026年1-4月のEmbodied AI投資規模棒グラフ。200件超の投資案件（100%バー）、550億元（約1.2兆円）の資金流入（100%バー）。Unitree・AGIBOT・StarDustが主要企業"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "openai_blog", "reason": "403 Forbidden", "fallback_used": "TechCrunch / VentureBeat" },
-    { "source": "deepmind_blog_rss", "reason": "RSS feed stale (last entry 2024-03)", "fallback_used": "36Kr / WebSearch" },
-    { "source": "reddit_rss", "reason": "Blocked in execution environment", "fallback_used": "WebSearch aggregator" },
-    { "source": "chinai_substack", "reason": "403 Forbidden", "fallback_used": "Skipped" },
-    { "source": "arxiv_api_date", "reason": "Date-specific URL returned 400", "fallback_used": "arxiv.org/list/cs.AI/recent" },
-    { "source": "mercari_blog", "reason": "403 Forbidden", "fallback_used": "Skipped" }
+    {
+      "source": "openai_blog",
+      "reason": "403 Forbidden",
+      "fallback_used": "TechCrunch / VentureBeat"
+    },
+    {
+      "source": "deepmind_blog_rss",
+      "reason": "RSS feed stale (last entry 2024-03)",
+      "fallback_used": "36Kr / WebSearch"
+    },
+    {
+      "source": "reddit_rss",
+      "reason": "Blocked in execution environment",
+      "fallback_used": "WebSearch aggregator"
+    },
+    {
+      "source": "chinai_substack",
+      "reason": "403 Forbidden",
+      "fallback_used": "Skipped"
+    },
+    {
+      "source": "arxiv_api_date",
+      "reason": "Date-specific URL returned 400",
+      "fallback_used": "arxiv.org/list/cs.AI/recent"
+    },
+    {
+      "source": "mercari_blog",
+      "reason": "403 Forbidden",
+      "fallback_used": "Skipped"
+    }
   ]
 }

@@ -36,12 +36,18 @@
             "freshness": 5,
             "total": 18
           },
-          "tags": ["security", "zero-day", "anthropic", "claude-mythos", "glasswing", "cybersecurity", "open-source"],
+          "tags": [
+            "security",
+            "zero-day",
+            "anthropic",
+            "claude-mythos",
+            "glasswing",
+            "cybersecurity",
+            "open-source"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Project Glasswing：Mythos の能力と業界連合",
-            "alt": "Project Glasswing の概要。Claude Mythos Preview のセキュリティ能力と業界パートナーシップ。CyberGym benchmark: Mythos 83.1% vs Opus 4.6 66.6%（+16.5pt）。発見済みゼロデイ: 数千件（主要OS・ブラウザ）。特筆ゼロデイ: 27年来 OpenBSD RCE（CVE-2026-4747）・16年来 FFmpeg バグ・Linux カーネル権限昇格。パートナー: 12社（AWS・Apple・Google・Microsoft・NVIDIA 等）。資金: $100M モデルクレジット＋$4M OSS財団への拠出。戦略: 攻撃者より先に防御側が Mythos 級能力にアクセス。",
             "data": {
               "headline": "Project Glasswing：Mythos（CyberGym 83.1%）で防御側が攻撃者より先にゼロデイ能力を保有する先手体制を構築",
               "tldr": "Claude Mythos Preview が数千件のゼロデイを発見した実績をもとに、12 社連合が 1 億ドルを投じて基幹ソフトウェアの防御側先行修正体制を構築。Mythos は一般非公開で限定パートナーと OSS 開発者のみが利用可能。",
@@ -89,7 +95,9 @@
               ],
               "context": "AI がほぼすべての熟練セキュリティ専門家を超える能力を持った場合、どう安全に管理するかという問いへの Anthropic の回答。完全非公開でも完全公開でもなく「防御側先行の段階的開放」という第三の道を選択した。",
               "impact": "セキュリティ担当者は Project Glasswing パートナー企業との連携を確認すること。OSS プロジェクト管理者は Alpha-Omega/OpenSSF 経由で Glasswing の支援を受けられる可能性がある。CVE-2026-4747 の修正パッチが OpenBSD から提供されているため、同 OS を使用する組織は即時適用を。"
-            }
+            },
+            "caption": "Project Glasswing：Mythos の能力と業界連合",
+            "alt": "Project Glasswing の概要。Claude Mythos Preview のセキュリティ能力と業界パートナーシップ。CyberGym benchmark: Mythos 83.1% vs Opus 4.6 66.6%（+16.5pt）。発見済みゼロデイ: 数千件（主要OS・ブラウザ）。特筆ゼロデイ: 27年来 OpenBSD RCE（CVE-2026-4747）・16年来 FFmpeg バグ・Linux カーネル権限昇格。パートナー: 12社（AWS・Apple・Google・Microsoft・NVIDIA 等）。資金: $100M モデルクレジット＋$4M OSS財団への拠出。戦略: 攻撃者より先に防御側が Mythos 級能力にアクセス。"
           }
         }
       ]
@@ -121,12 +129,18 @@
             "freshness": 5,
             "total": 18
           },
-          "tags": ["alphaevolve", "google-deepmind", "algorithm-design", "quantum-computing", "infrastructure", "genomics", "optimization"],
+          "tags": [
+            "alphaevolve",
+            "google-deepmind",
+            "algorithm-design",
+            "quantum-computing",
+            "infrastructure",
+            "genomics",
+            "optimization"
+          ],
           "lang": "en",
           "figure": {
             "type": "metric-bars",
-            "caption": "AlphaEvolve 実世界インパクト",
-            "alt": "AlphaEvolve が達成した多分野での改善結果。量子回路エラー 10倍削減（Willow QC）、ゲノム変異検出エラー 30%削減、AC OPF 実行可能解率 14%→88%（+74pt）、Klarna モデル学習 2倍高速化（~50%改善相当）、自然災害予測精度 5%向上（20カテゴリ）。FM Logistic 経路効率 10.4%改善・年15,000km削減、Schrödinger MLFF 4倍高速化、Spanner 書き込み増幅 20%削減も達成。",
             "data": {
               "headline": "AlphaEvolve（Gemini 搭載アルゴリズム設計 AI）：量子・ゲノミクス・産業・インフラの 4 分野で同時に実世界インパクト",
               "scale": {
@@ -177,7 +191,9 @@
               ],
               "narrative": "AlphaEvolve は単一のアルゴリズム設計 AI が量子コンピューティングから物流最適化まで横断的に実用成果を上げるという前例を作り、汎用アルゴリズム最適化 AI の可能性を具体的な数字で示した。",
               "impact": "量子コンピューティング・ゲノム解析・物流・材料科学を扱う企業は AlphaEvolve の API アクセス（Google Cloud 経由）を評価する価値がある。特にアルゴリズム設計が性能ボトルネックになっている領域では、数週間の作業を数日に短縮できる可能性がある。"
-            }
+            },
+            "caption": "AlphaEvolve 実世界インパクト",
+            "alt": "AlphaEvolve が達成した多分野での改善結果。量子回路エラー 10倍削減（Willow QC）、ゲノム変異検出エラー 30%削減、AC OPF 実行可能解率 14%→88%（+74pt）、Klarna モデル学習 2倍高速化（~50%改善相当）、自然災害予測精度 5%向上（20カテゴリ）。FM Logistic 経路効率 10.4%改善・年15,000km削減、Schrödinger MLFF 4倍高速化、Spanner 書き込み増幅 20%削減も達成。"
           }
         }
       ]
@@ -209,12 +225,17 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["openai", "gpt-5-5-cyber", "cybersecurity", "trusted-access", "security-ai", "malware-analysis"],
+          "tags": [
+            "openai",
+            "gpt-5-5-cyber",
+            "cybersecurity",
+            "trusted-access",
+            "security-ai",
+            "malware-analysis"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "GPT-5.5 vs GPT-5.5-Cyber",
-            "alt": "GPT-5.5 標準版と GPT-5.5-Cyber の機能比較。標準版 GPT-5.5：セキュリティ相談・一般的なコードレビュー・公開済み脆弱性の説明は可能。PoC コード生成・マルウェア解析・攻撃シミュレーション・リバースエンジニアリングは制限あり。GPT-5.5-Cyber（承認チーム限定）：PoC コード作成・マルウェアリバースエンジニアリング・組織の攻撃シミュレーション・バグハンティング自動化が利用可能。クレデンシャル窃取・マルウェア作成は引き続き制限。英国 AISI：32ステップ模擬攻撃を 2/10 回完遂と評価。",
             "data": {
               "headline": "GPT-5.5-Cyber：防衛側専用の安全制約緩和版——PoC・マルウェア解析・攻撃シミュレーションを解禁",
               "before": {
@@ -284,7 +305,9 @@
               ],
               "narrative": "GPT-5.5-Cyber は「同じモデルでも利用者の審査次第で異なる安全制約を適用する」という段階的アクセス制御の実例。攻撃的セキュリティの専門家が生産性を上げながら、悪用者は排除するという設計思想を具体化した。",
               "impact": "セキュリティ研究者・ペネトレーションテスター・SOC チームは OpenAI の Trusted Access for Cyber 最上位 Tier を申請すること。AISI が 32 ステップ攻撃シミュレーションを 2/10 完遂できると確認したレベルの能力を防衛に活用できる可能性がある。"
-            }
+            },
+            "caption": "GPT-5.5 vs GPT-5.5-Cyber",
+            "alt": "GPT-5.5 標準版と GPT-5.5-Cyber の機能比較。標準版 GPT-5.5：セキュリティ相談・一般的なコードレビュー・公開済み脆弱性の説明は可能。PoC コード生成・マルウェア解析・攻撃シミュレーション・リバースエンジニアリングは制限あり。GPT-5.5-Cyber（承認チーム限定）：PoC コード作成・マルウェアリバースエンジニアリング・組織の攻撃シミュレーション・バグハンティング自動化が利用可能。クレデンシャル窃取・マルウェア作成は引き続き制限。英国 AISI：32ステップ模擬攻撃を 2/10 回完遂と評価。"
           }
         }
       ]
@@ -315,12 +338,18 @@
             "freshness": 5,
             "total": 17
           },
-          "tags": ["claude-code", "learning", "tutorial", "japan", "hatena-1003", "golden-week", "roadmap"],
+          "tags": [
+            "claude-code",
+            "learning",
+            "tutorial",
+            "japan",
+            "hatena-1003",
+            "golden-week",
+            "roadmap"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code GW 学習ガイドの全体像",
-            "alt": "GW 中に Claude Code を学ぶための 14 ステップロードマップの概要。著者：梶谷健人（POSTS CEO・生成AI事業アドバイザー）。公開日：2026年5月1日（GW初日）。構成：①基礎段階（全体像把握・ツール最適化設定）②応用段階（スライド制作・Webサイト構築・自動化ワークフロー）③チーム展開（非エンジニアチームでの共有・運用モデル設計）。目標：習得後すぐ実業務に使えるレベルまで到達。反響：はてブ 1,003 件（Claude Code 関連記事として過去最多水準）。",
             "data": {
               "headline": "GW で Claude Code を一気習得——梶谷健人氏の 14 ステップロードマップで概念理解からチーム展開まで体系化",
               "tldr": "POSTS 代表の梶谷健人氏が公式ドキュメント・技術記事・動画を段階別に整理した 14 ステップのロードマップ。GW の 5 日間で習得から実業務への適用まで完走できる設計でのはてブ 1,003 件を記録。",
@@ -360,7 +389,9 @@
               ],
               "context": "Opus 4.7 リリースで Claude Code の実力が大幅に向上したタイミングと GW 集中学習の需要が重なり、開発者コミュニティで爆発的に共有された。梶谷氏は生成 AI の事業活用アドバイザーとして多くの企業に携わっており、実践者視点のカリキュラム設計が信頼性を高めた。",
               "impact": "Claude Code をまだ本格活用していない開発者は、このガイドの 14 ステップを GW または週末 2 日で消化することを推奨。特に CLAUDE.md の設計とチーム展開のフェーズは投資対効果が高く、習得後の組織全体の生産性向上につながる。"
-            }
+            },
+            "caption": "Claude Code GW 学習ガイドの全体像",
+            "alt": "GW 中に Claude Code を学ぶための 14 ステップロードマップの概要。著者：梶谷健人（POSTS CEO・生成AI事業アドバイザー）。公開日：2026年5月1日（GW初日）。構成：①基礎段階（全体像把握・ツール最適化設定）②応用段階（スライド制作・Webサイト構築・自動化ワークフロー）③チーム展開（非エンジニアチームでの共有・運用モデル設計）。目標：習得後すぐ実業務に使えるレベルまで到達。反響：はてブ 1,003 件（Claude Code 関連記事として過去最多水準）。"
           }
         },
         {
@@ -384,12 +415,18 @@
             "freshness": 4,
             "total": 14
           },
-          "tags": ["claude-code", "line-stamp", "automation", "vibe-coding", "japan", "hatena-331", "no-code"],
+          "tags": [
+            "claude-code",
+            "line-stamp",
+            "automation",
+            "vibe-coding",
+            "japan",
+            "hatena-331",
+            "no-code"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code で LINE スタンプ 10 分自動化",
-            "alt": "Claude Code を使った LINE スタンプ作成の自動化プロセス。従来：画像デザイン→背景透過処理→40種サイズ調整→申請フォーム記入、計 2〜3 時間。Claude Code 活用後：指示 3 往復で 10 分以内。工程：①画像生成（AI連携）②背景透過・リサイズ自動化③LINE 申請まで一貫実行、コードを自分で書かずに完成。",
             "data": {
               "headline": "LINE スタンプ 10 分完成：Claude Code が設計・画像処理・申請を自律実行——「2〜3 時間 → 10 分」の工程圧縮",
               "tldr": "LINEスタンプの画像生成から申請まで、従来 2〜3 時間かかっていた作業を Claude Code への指示 3 往復で 10 分以内に完了。バイブコーディングの実用性を示す具体的な成功事例。",
@@ -429,7 +466,9 @@
               ],
               "context": "GW 期間中の Claude Code 実践事例として広く共有された。「バイブコーディング」の概念が普及する中、具体的な時間節約効果（2〜3時間→10分）が示された事例として、Claude Code 活用の説得力ある実証となっている。",
               "impact": "個人制作物（LINEスタンプ・同人グッズ・SNSコンテンツ）の作成・申請作業を持つクリエイターは Claude Code に全プロセスを委任することで制作コストを大幅に削減できる。「目標物と成果基準」を自然言語で指示するだけで、コーディング経験は不要。"
-            }
+            },
+            "caption": "Claude Code で LINE スタンプ 10 分自動化",
+            "alt": "Claude Code を使った LINE スタンプ作成の自動化プロセス。従来：画像デザイン→背景透過処理→40種サイズ調整→申請フォーム記入、計 2〜3 時間。Claude Code 活用後：指示 3 往復で 10 分以内。工程：①画像生成（AI連携）②背景透過・リサイズ自動化③LINE 申請まで一貫実行、コードを自分で書かずに完成。"
           }
         },
         {
@@ -453,12 +492,18 @@
             "freshness": 4,
             "total": 14
           },
-          "tags": ["ai-coding", "technical-debt", "cognitive-debt", "software-quality", "japan", "hatena-290", "vibe-coding"],
+          "tags": [
+            "ai-coding",
+            "technical-debt",
+            "cognitive-debt",
+            "software-quality",
+            "japan",
+            "hatena-290",
+            "vibe-coding"
+          ],
           "lang": "ja",
           "figure": {
             "type": "comparison",
-            "caption": "AI 採用の個人 vs 組織インパクト",
-            "alt": "生成 AI ツール採用による個人レベルと組織レベルの非対称的インパクト。個人レベル（即座の恩恵）：コーディング速度 +30〜58%、コード生成の自動化、反復作業の削減。組織レベル（遅延するコスト）：PR レビュー時間 +441%、本番インシデント +242.7%、開発者一人あたりのバグ数 +54%。結論：速度は前払い・失敗は後払い。今後 2〜3 年で測定体制が整った企業と品質崩壊に気づく企業に二分される。",
             "data": {
               "headline": "AI 採用の非対称性：個人はコーディング速度 +30〜58%、組織は PR レビュー +441%・本番インシデント +242.7%",
               "before": {
@@ -517,7 +562,9 @@
               ],
               "narrative": "個人の生産性向上という「前払いの恩恵」が明確な一方、組織レベルの品質コストという「後払いの失敗」は数ヶ月後に利子付きで現れる。このタイムラグが危機意識を薄れさせる構造的な問題だ。",
               "impact": "AI コーディングツールを本番導入しているチームは速度指標だけでなく PR レビュー時間・インシデント数・バグ密度を同時に測定すること。測定体制を整えた企業と整えない企業は今後 2〜3 年で品質面で大きく分岐すると著者は予測している。"
-            }
+            },
+            "caption": "AI 採用の個人 vs 組織インパクト",
+            "alt": "生成 AI ツール採用による個人レベルと組織レベルの非対称的インパクト。個人レベル（即座の恩恵）：コーディング速度 +30〜58%、コード生成の自動化、反復作業の削減。組織レベル（遅延するコスト）：PR レビュー時間 +441%、本番インシデント +242.7%、開発者一人あたりのバグ数 +54%。結論：速度は前払い・失敗は後払い。今後 2〜3 年で測定体制が整った企業と品質崩壊に気づく企業に二分される。"
           }
         },
         {
@@ -541,12 +588,19 @@
             "freshness": 4,
             "total": 15
           },
-          "tags": ["claude-code", "no-code", "vibe-coding", "non-engineer", "tool-development", "japan", "hatena-230", "democratization"],
+          "tags": [
+            "claude-code",
+            "no-code",
+            "vibe-coding",
+            "non-engineer",
+            "tool-development",
+            "japan",
+            "hatena-230",
+            "democratization"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "非エンジニアが Claude Code で本格ツール開発",
-            "alt": "非エンジニアが Claude Code で開発した画像・動画生成ワークフローツールの概要。開発者：映像制作会社勤務の非エンジニア（コード未経験）。期間：約 2 週間。価値：外注費数百万円相当を代替。ツール：画像・動画生成ワークフローの統合ツール。Claude Code の役割：要件ヒアリング→設計提案→コード生成→自律デバッグ修正の全担当。人間の役割：「何を作りたいか」の言語化のみ。評価：「中堅エンジニアと同じものが作れた」。",
             "data": {
               "headline": "非エンジニア × Claude Code = 数百万円相当ツール 2 週間で完成——ソフトウェア開発の民主化が現実に",
               "tldr": "コード未経験の映像制作会社員が Claude Code との会話だけで、外注費数百万円相当の社内ツール（画像・動画生成ワークフロー）を 2 週間で完成。「技術的判断はすべて Claude Code が自律で担当」という完全エージェント開発の実例。",
@@ -594,7 +648,9 @@
               ],
               "context": "Opus 4.7 リリースとGW期間が重なるタイミングで多数の Claude Code 実践事例が投稿される中、非エンジニアによる本格ツール開発は際立って注目を集めた。バイブコーディングの最終形として「非エンジニアがエンジニアと同等の成果物を作る」という段階に達したことを示している。",
               "impact": "社内ツール・業務自動化・プロトタイプ開発を持つ非エンジニア職種（デザイナー・マーケター・PM・営業）は Claude Code を試す最適なタイミング。要件を日本語で明確に記述できれば技術知識は不要で、「何を作りたいか」を CLAUDE.md に書くことが最初のステップ。"
-            }
+            },
+            "caption": "非エンジニアが Claude Code で本格ツール開発",
+            "alt": "非エンジニアが Claude Code で開発した画像・動画生成ワークフローツールの概要。開発者：映像制作会社勤務の非エンジニア（コード未経験）。期間：約 2 週間。価値：外注費数百万円相当を代替。ツール：画像・動画生成ワークフローの統合ツール。Claude Code の役割：要件ヒアリング→設計提案→コード生成→自律デバッグ修正の全担当。人間の役割：「何を作りたいか」の言語化のみ。評価：「中堅エンジニアと同じものが作れた」。"
           }
         }
       ]

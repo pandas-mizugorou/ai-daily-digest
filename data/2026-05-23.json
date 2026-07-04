@@ -92,24 +92,60 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["cybersecurity", "anthropic", "claude-mythos", "vulnerability", "project-glasswing"],
+          "tags": [
+            "cybersecurity",
+            "anthropic",
+            "claude-mythos",
+            "vulnerability",
+            "project-glasswing"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Project Glasswing",
-            "alt": "Project Glasswingの初期成果サマリー。参加組織50社超（IBM・Cloudflare・Microsoft・Apple等）、発見脆弱性1万件超（高重大度・致命的）、Anthropic提供リソース：クレジット最大$100M＋OSS寄付$400万ドル、対象範囲：主要OS・ブラウザ・重要インフラソフトウェア。ボトルネックは人間の検証・修正処理速度にあると指摘。",
             "data": {
               "headline": "Glasswing：50社超が結集、1万件超の重大脆弱性を先回り発見",
               "tldr": "AnthropicがClaude Mythosを使って主要ソフトウェアの重大脆弱性を大規模発見するProject Glasswingの初期報告を公表。IBM・Cloudflareら50社超が参加し、攻撃より先に脆弱性を潰す「先回り防御」を実証した。",
               "points": [
-                { "icon": "🔍", "label": "発見件数", "value": "10,000件超", "note": "高重大度・致命的の脆弱性", "tone": "danger" },
-                { "icon": "🤝", "label": "参加組織", "value": "50社超", "note": "IBM・Cloudflare・Microsoft・Apple等", "tone": "primary" },
-                { "icon": "💰", "label": "Anthropic提供", "value": "$100M+$4M", "note": "クレジット＋OSS直接寄付", "tone": "success" },
-                { "icon": "🛡️", "label": "対象範囲", "value": "全主要OS・ブラウザ", "note": "重要インフラソフトウェア", "tone": "warning" },
-                { "icon": "⏱️", "label": "ボトルネック", "value": "人間の処理速度", "note": "検証・開示・修正が追いつかない", "tone": "default" }
+                {
+                  "icon": "🔍",
+                  "label": "発見件数",
+                  "value": "10,000件超",
+                  "note": "高重大度・致命的の脆弱性",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "参加組織",
+                  "value": "50社超",
+                  "note": "IBM・Cloudflare・Microsoft・Apple等",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💰",
+                  "label": "Anthropic提供",
+                  "value": "$100M+$4M",
+                  "note": "クレジット＋OSS直接寄付",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🛡️",
+                  "label": "対象範囲",
+                  "value": "全主要OS・ブラウザ",
+                  "note": "重要インフラソフトウェア",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⏱️",
+                  "label": "ボトルネック",
+                  "value": "人間の処理速度",
+                  "note": "検証・開示・修正が追いつかない",
+                  "tone": "default"
+                }
               ],
               "context": "Claude Mythosは前世代を大幅に超えるサイバー攻撃能力を持つため、Anthropicは非公開で限定提供している。その能力を攻撃でなく防衛に転用するのがGlasswingの狙い。",
               "impact": "AIが先回り防御に使えることを1万件超の実績で証明。フロンティアモデルの「攻守両用」性が政策・投資・企業セキュリティ戦略に直接影響する。"
-            }
+            },
+            "caption": "Project Glasswing",
+            "alt": "Project Glasswingの初期成果サマリー。参加組織50社超（IBM・Cloudflare・Microsoft・Apple等）、発見脆弱性1万件超（高重大度・致命的）、Anthropic提供リソース：クレジット最大$100M＋OSS寄付$400万ドル、対象範囲：主要OS・ブラウザ・重要インフラソフトウェア。ボトルネックは人間の検証・修正処理速度にあると指摘。"
           }
         }
       ]
@@ -145,24 +181,60 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["agents", "self-evolving", "source-code-rewriting", "arxiv", "autonomous"],
+          "tags": [
+            "agents",
+            "self-evolving",
+            "source-code-rewriting",
+            "arxiv",
+            "autonomous"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "MOSS自己進化ループ",
-            "alt": "MOSSのエージェント自己進化サイクル。本番障害を検知→失敗パターンを分析→ソースコードを書き換え→再実行→OpenClawベンチマークで性能向上を確認。従来は「ツール呼び出しを変える」だったが、MOSSは「コード自体を書き換える」点が新規性の核心。",
             "data": {
               "headline": "MOSS：エージェントが自身のコードを書き換えて自己改善",
               "tldr": "AIエージェントが本番障害を起点に自分のPythonソースコードを修正する。ツール設定の変更ではなくコード自体を進化させ、OpenClawで大幅な性能向上を達成した。",
               "points": [
-                { "icon": "🔄", "label": "進化の媒体", "value": "ソースコード", "note": "設定やプロンプトでなくコード自体", "tone": "primary" },
-                { "icon": "🎯", "label": "起点", "value": "本番障害", "note": "失敗から学び即座に修正", "tone": "warning" },
-                { "icon": "📊", "label": "評価", "value": "OpenClaw BM", "note": "既存手法を大幅に上回る性能向上", "tone": "success" },
-                { "icon": "⚠️", "label": "リスク", "value": "意図しない動作", "note": "自己書き換えによる安全性課題", "tone": "danger" },
-                { "icon": "🔬", "label": "位置付け", "value": "自己改善系研究", "note": "Darwin GM等と同じ潮流", "tone": "default" }
+                {
+                  "icon": "🔄",
+                  "label": "進化の媒体",
+                  "value": "ソースコード",
+                  "note": "設定やプロンプトでなくコード自体",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "起点",
+                  "value": "本番障害",
+                  "note": "失敗から学び即座に修正",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📊",
+                  "label": "評価",
+                  "value": "OpenClaw BM",
+                  "note": "既存手法を大幅に上回る性能向上",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "リスク",
+                  "value": "意図しない動作",
+                  "note": "自己書き換えによる安全性課題",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔬",
+                  "label": "位置付け",
+                  "value": "自己改善系研究",
+                  "note": "Darwin GM等と同じ潮流",
+                  "tone": "default"
+                }
               ],
               "context": "EvoAgentX・Darwin Gödel Machine等、エージェントの自己改善研究が活発化している2026年の文脈で登場。",
               "impact": "エージェントが自らを「改造」できるならば、人手によるプロンプト最適化やファインチューニングの役割が大幅に変わる可能性がある。"
-            }
+            },
+            "caption": "MOSS自己進化ループ",
+            "alt": "MOSSのエージェント自己進化サイクル。本番障害を検知→失敗パターンを分析→ソースコードを書き換え→再実行→OpenClawベンチマークで性能向上を確認。従来は「ツール呼び出しを変える」だったが、MOSSは「コード自体を書き換える」点が新規性の核心。"
           }
         },
         {
@@ -191,24 +263,58 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 59 },
-          "tags": ["agents", "ide", "parallel", "claude-code", "yc", "git-worktree"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 59
+          },
+          "tags": [
+            "agents",
+            "ide",
+            "parallel",
+            "claude-code",
+            "yc",
+            "git-worktree"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Superset アーキテクチャ",
-            "alt": "SupersetのGitワークツリー並列実行モデル。1つのリポジトリに対して複数のGitワークツリーを作成し、各エージェント（Claude Code、Codex等）が独立したブランチ上で作業。完了したブランチはマージキューに入る。32GB RAMで78エージェント並列稼働を確認済み。",
             "data": {
               "headline": "Superset：Gitワークツリーで100+エージェントを安全に並列化",
               "tldr": "複数のAIコーディングエージェントを独立したGitワークツリーで分離し、並列実行を可能にする専用IDE。YC P26企業で、78エージェント同時起動の実績あり。",
               "points": [
-                { "icon": "🌲", "label": "隔離方式", "value": "Gitワークツリー", "note": "同一Git履歴を共有しつつ独立", "tone": "primary" },
-                { "icon": "⚡", "label": "実績", "value": "78エージェント同時", "note": "Dell XPS 32GB RAMで確認", "tone": "success" },
-                { "icon": "🤖", "label": "対応エージェント", "value": "Claude Code / Codex", "note": "複数フレームワーク対応", "tone": "default" },
-                { "icon": "📦", "label": "バックグラウンド", "value": "YC P26", "note": "元YCスタートアップCTO×3創業", "tone": "info" }
+                {
+                  "icon": "🌲",
+                  "label": "隔離方式",
+                  "value": "Gitワークツリー",
+                  "note": "同一Git履歴を共有しつつ独立",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "実績",
+                  "value": "78エージェント同時",
+                  "note": "Dell XPS 32GB RAMで確認",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "対応エージェント",
+                  "value": "Claude Code / Codex",
+                  "note": "複数フレームワーク対応",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📦",
+                  "label": "バックグラウンド",
+                  "value": "YC P26",
+                  "note": "元YCスタートアップCTO×3創業",
+                  "tone": "info"
+                }
               ],
               "context": "Daytona・E2Bなどのエージェント向けサンドボックスと異なり、Supersetはローカルマシン上でのオーケストレーションに特化している。",
               "impact": "AIコーディングエージェントを直列から並列へ転換することで、ソフトウェア開発サイクルを大幅に短縮できる可能性がある。"
-            }
+            },
+            "caption": "Superset アーキテクチャ",
+            "alt": "SupersetのGitワークツリー並列実行モデル。1つのリポジトリに対して複数のGitワークツリーを作成し、各エージェント（Claude Code、Codex等）が独立したブランチ上で作業。完了したブランチはマージキューに入る。32GB RAMで78エージェント並列稼働を確認済み。"
           }
         }
       ]
@@ -244,24 +350,61 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["multimodal", "bytedance", "open-source", "video-generation", "image-editing", "moe"],
+          "tags": [
+            "multimodal",
+            "bytedance",
+            "open-source",
+            "video-generation",
+            "image-editing",
+            "moe"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Lance 統合アーキテクチャ",
-            "alt": "ByteDance Lanceの能力マップ。3Bアクティブパラメータ、デュアルストリームMoEアーキテクチャ、6タスク統合（画像/動画の理解・生成・編集）、学習コスト128×A100フルスクラッチ、ライセンスApache 2.0。従来の専用モデル（理解系・生成系別々）と異なり単一モデルで全タスクを処理する。",
             "data": {
               "headline": "Lance 3B：理解・生成・編集を1モデルで統合、Apache 2.0公開",
               "tldr": "ByteDanceが画像・動画の6タスクを3Bパラメータで統合するLanceをオープンソース公開。デュアルストリームMoEと128×A100フルスクラッチ学習による効率的な統合マルチモーダルモデル。",
               "points": [
-                { "icon": "🎯", "label": "統合タスク", "value": "6タスク", "note": "画像/動画×理解/生成/編集", "tone": "primary" },
-                { "icon": "⚙️", "label": "アーキテクチャ", "value": "Dual-Stream MoE", "note": "理解・生成を分離しつつ共同学習", "tone": "default" },
-                { "icon": "💻", "label": "学習コスト", "value": "128×A100", "note": "フルスクラッチ、効率的", "tone": "success" },
-                { "icon": "📦", "label": "ライセンス", "value": "Apache 2.0", "note": "商用利用可", "tone": "success" },
-                { "icon": "📈", "label": "HF反響", "value": "1000+ Likes", "note": "公開直後にトレンド入り", "tone": "info" }
+                {
+                  "icon": "🎯",
+                  "label": "統合タスク",
+                  "value": "6タスク",
+                  "note": "画像/動画×理解/生成/編集",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "アーキテクチャ",
+                  "value": "Dual-Stream MoE",
+                  "note": "理解・生成を分離しつつ共同学習",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💻",
+                  "label": "学習コスト",
+                  "value": "128×A100",
+                  "note": "フルスクラッチ、効率的",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📦",
+                  "label": "ライセンス",
+                  "value": "Apache 2.0",
+                  "note": "商用利用可",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "HF反響",
+                  "value": "1000+ Likes",
+                  "note": "公開直後にトレンド入り",
+                  "tone": "info"
+                }
               ],
               "context": "SenseNova-U1（2026-05-22）と同様にVE/VAEレスの統合設計を採用。ByteDance版の独自実装として別途登場した。",
               "impact": "単一3Bモデルで画像・動画の生成・編集が可能になることで、エッジデバイスや低コスト環境でのマルチモーダルAI活用が現実的になる。"
-            }
+            },
+            "caption": "Lance 統合アーキテクチャ",
+            "alt": "ByteDance Lanceの能力マップ。3Bアクティブパラメータ、デュアルストリームMoEアーキテクチャ、6タスク統合（画像/動画の理解・生成・編集）、学習コスト128×A100フルスクラッチ、ライセンスApache 2.0。従来の専用モデル（理解系・生成系別々）と異なり単一モデルで全タスクを処理する。"
           }
         },
         {
@@ -290,21 +433,46 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["google", "android-xr", "smart-glasses", "gemini", "wearable", "multimodal"],
+          "tags": [
+            "google",
+            "android-xr",
+            "smart-glasses",
+            "gemini",
+            "wearable",
+            "multimodal"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Android XR眼鏡ロードマップ",
-            "alt": "GoogleのAndroid XRスマートグラスロードマップ。2026年5月：Google I/O 2026でプロトタイプ発表。2026年秋：音声アシスタント型グラス発売（Samsung/Gentle Monster/Warby Parkerと共同）。今後：ARディスプレイ型のTrusted Testerプログラム拡大。将来：Android XRプラットフォームでの第3世代製品展開。",
             "data": {
               "headline": "Android XRスマートグラス：音声型は2026年秋、AR型はTrusted Tester段階",
               "events": [
-                { "when": "2026年5月", "label": "Google I/O 2026発表", "description": "音声アシスタント型とARディスプレイ型プロトタイプを公開。Samsung・Gentle Monster・Warby Parkerとのパートナーシップを発表", "status": "now", "tone": "primary" },
-                { "when": "2026年秋", "label": "音声型グラス発売", "description": "Hey GoogleまたはフレームタップでGeminiにアクセス。通話管理・テキスト送信・Gemini要約をハンズフリーで。iOS対応", "status": "upcoming", "tone": "success" },
-                { "when": "今後", "label": "AR型Trusted Tester拡大", "description": "翻訳・ナビ・情報オーバーレイをFOVに直接表示するARディスプレイ型のテストプログラムを拡大", "status": "upcoming", "tone": "default" }
+                {
+                  "when": "2026年5月",
+                  "label": "Google I/O 2026発表",
+                  "description": "音声アシスタント型とARディスプレイ型プロトタイプを公開。Samsung・Gentle Monster・Warby Parkerとのパートナーシップを発表",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026年秋",
+                  "label": "音声型グラス発売",
+                  "description": "Hey GoogleまたはフレームタップでGeminiにアクセス。通話管理・テキスト送信・Gemini要約をハンズフリーで。iOS対応",
+                  "status": "upcoming",
+                  "tone": "success"
+                },
+                {
+                  "when": "今後",
+                  "label": "AR型Trusted Tester拡大",
+                  "description": "翻訳・ナビ・情報オーバーレイをFOVに直接表示するARディスプレイ型のテストプログラムを拡大",
+                  "status": "upcoming",
+                  "tone": "default"
+                }
               ],
               "narrative": "MetaのRay-Bans AIグラスとの正面競合。Gemini 3.5等の能力向上に連動してウェアラブルAIの用途が急速に拡大している。",
               "impact": "AI眼鏡がマス市場に普及すると、スマートフォン起点のAI操作体験が大きく変わる。iOS対応で端末を問わず利用可能な点も差別化要因。"
-            }
+            },
+            "caption": "Android XR眼鏡ロードマップ",
+            "alt": "GoogleのAndroid XRスマートグラスロードマップ。2026年5月：Google I/O 2026でプロトタイプ発表。2026年秋：音声アシスタント型グラス発売（Samsung/Gentle Monster/Warby Parkerと共同）。今後：ARディスプレイ型のTrusted Testerプログラム拡大。将来：Android XRプラットフォームでの第3世代製品展開。"
           }
         }
       ]
@@ -340,23 +508,54 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["small-model", "multimodal", "edge-ai", "openBMB", "huggingface", "1B"],
+          "tags": [
+            "small-model",
+            "multimodal",
+            "edge-ai",
+            "openBMB",
+            "huggingface",
+            "1B"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "MiniCPM-V-4.6",
-            "alt": "MiniCPM-V-4.6のスペックサマリー。パラメータ数1B、対応タスク：OCR・図表理解・マルチイメージ推論・VQA、展開先：スマートフォン・エッジデバイス、ライセンス：Apache 2.0、HuggingFace Likes：22万超（トレンド入り）。",
             "data": {
               "headline": "MiniCPM-V-4.6：1BでOCR・図表理解・マルチイメージ推論を実現",
               "tldr": "OpenBMBが1Bパラメータのマルチモーダルモデルを公開。エッジデバイス向けに最適化され、OCRや図表理解で大型モデルに匹敵する性能を示す。HFで22万超のLikesを記録した。",
               "points": [
-                { "icon": "🔢", "label": "パラメータ数", "value": "1B", "note": "エッジ・スマートフォン向け", "tone": "primary" },
-                { "icon": "🎯", "label": "得意タスク", "value": "OCR・図表・VQA", "note": "マルチイメージ推論も対応", "tone": "success" },
-                { "icon": "📱", "label": "展開先", "value": "エッジデバイス", "note": "量子化・低メモリ最適化済み", "tone": "default" },
-                { "icon": "❤️", "label": "HF反響", "value": "22万+ Likes", "note": "軽量モデルとして例外的な支持", "tone": "info" }
+                {
+                  "icon": "🔢",
+                  "label": "パラメータ数",
+                  "value": "1B",
+                  "note": "エッジ・スマートフォン向け",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "得意タスク",
+                  "value": "OCR・図表・VQA",
+                  "note": "マルチイメージ推論も対応",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📱",
+                  "label": "展開先",
+                  "value": "エッジデバイス",
+                  "note": "量子化・低メモリ最適化済み",
+                  "tone": "default"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "HF反響",
+                  "value": "22万+ Likes",
+                  "note": "軽量モデルとして例外的な支持",
+                  "tone": "info"
+                }
               ],
               "context": "Qwen2.5-VL-2B・SmolVLM等と同じ「小さいがパワフルなVLM」カテゴリ。2026年はエッジVLMの競争が加速している。",
               "impact": "スマートフォン上でのオンデバイスマルチモーダルAIが現実的な選択肢になりつつある。API依存を減らしたいデベロッパーの有力な選択肢。"
-            }
+            },
+            "caption": "MiniCPM-V-4.6",
+            "alt": "MiniCPM-V-4.6のスペックサマリー。パラメータ数1B、対応タスク：OCR・図表理解・マルチイメージ推論・VQA、展開先：スマートフォン・エッジデバイス、ライセンス：Apache 2.0、HuggingFace Likes：22万超（トレンド入り）。"
           }
         }
       ]
@@ -392,24 +591,61 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 89 },
-          "tags": ["claude-code", "mcp", "knowledge-graph", "token-reduction", "github-trending", "tree-sitter"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 89
+          },
+          "tags": [
+            "claude-code",
+            "mcp",
+            "knowledge-graph",
+            "token-reduction",
+            "github-trending",
+            "tree-sitter"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "CodeGraph 改善指標",
-            "alt": "CodeGraphの改善指標グラフ。トークン削減率94%（最大値）、ツール呼び出し削減率70%、処理速度向上49%、コスト削減率35%（平均）。従来のAIエージェントがファイルを繰り返し読むのに対し、CodeGraphは事前構築グラフを一度クエリするだけで済む。",
             "data": {
               "headline": "CodeGraph：Claude Codeのトークン消費を最大94%削減",
-              "scale": { "max_label": "従来比改善率 100%", "unit": "%" },
+              "scale": {
+                "max_label": "従来比改善率 100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "トークン削減", "value": "94%", "pct": 94, "tone": "success", "note": "コスト直接削減" },
-                { "label": "ツール呼び出し減", "value": "70%", "pct": 70, "tone": "primary", "note": "API呼び出し回数" },
-                { "label": "処理速度向上", "value": "49%", "pct": 49, "tone": "info", "note": "完了時間の短縮" },
-                { "label": "コスト削減（平均）", "value": "35%", "pct": 35, "tone": "success", "note": "総合的なコスト改善" }
+                {
+                  "label": "トークン削減",
+                  "value": "94%",
+                  "pct": 94,
+                  "tone": "success",
+                  "note": "コスト直接削減"
+                },
+                {
+                  "label": "ツール呼び出し減",
+                  "value": "70%",
+                  "pct": 70,
+                  "tone": "primary",
+                  "note": "API呼び出し回数"
+                },
+                {
+                  "label": "処理速度向上",
+                  "value": "49%",
+                  "pct": 49,
+                  "tone": "info",
+                  "note": "完了時間の短縮"
+                },
+                {
+                  "label": "コスト削減（平均）",
+                  "value": "35%",
+                  "pct": 35,
+                  "tone": "success",
+                  "note": "総合的なコスト改善"
+                }
               ],
               "narrative": "Claude Code利用料がMax契約で月$200に達する中、実使用コストを大幅圧縮できるローカルMCPサーバーとして注目が集中。",
               "impact": "Claude Codeのコスト問題を解決する現実的な手段として、個人開発者・企業ともに即日試せる。プライバシーも100%ローカルで担保。"
-            }
+            },
+            "caption": "CodeGraph 改善指標",
+            "alt": "CodeGraphの改善指標グラフ。トークン削減率94%（最大値）、ツール呼び出し削減率70%、処理速度向上49%、コスト削減率35%（平均）。従来のAIエージェントがファイルを繰り返し読むのに対し、CodeGraphは事前構築グラフを一度クエリするだけで済む。"
           }
         },
         {
@@ -438,23 +674,59 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["image-editing", "flux", "black-forest-labs", "object-removal", "generative-ai"],
+          "tags": [
+            "image-editing",
+            "flux",
+            "black-forest-labs",
+            "object-removal",
+            "generative-ai"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "FLUX Erase Before/After",
-            "alt": "FLUX Eraseの比較図。Before（左）：画像内に不要な物体・影・反射が存在。After（右）：マスクした範囲の物体が完全除去され、背景がシームレスに再構成。マスク外ピクセルは変更なし。精度・自然さともに高い出力品質を実現。",
             "data": {
               "headline": "FLUX Erase：不要物を除去し背景を自動再構成",
-              "before": { "label": "処理前", "sublabel": "不要な物体/影/反射あり" },
-              "after": { "label": "FLUX Erase処理後", "sublabel": "背景をシームレスに再構成" },
+              "before": {
+                "label": "処理前",
+                "sublabel": "不要な物体/影/反射あり"
+              },
+              "after": {
+                "label": "FLUX Erase処理後",
+                "sublabel": "背景をシームレスに再構成"
+              },
               "metrics": [
-                { "label": "除去対象", "before": "物体のみ", "after": "物体・影・反射", "before_pct": 33, "after_pct": 100, "delta": "+3x対象拡大", "delta_tone": "success" },
-                { "label": "マスク外保護", "before": "限定的", "after": "完全保護", "before_pct": 40, "after_pct": 100, "delta": "精度向上", "delta_tone": "success" },
-                { "label": "使いやすさ", "before": "専用ソフト要", "after": "無料デモ公開", "before_pct": 20, "after_pct": 90, "delta": "即時試用可", "delta_tone": "success" }
+                {
+                  "label": "除去対象",
+                  "before": "物体のみ",
+                  "after": "物体・影・反射",
+                  "before_pct": 33,
+                  "after_pct": 100,
+                  "delta": "+3x対象拡大",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "マスク外保護",
+                  "before": "限定的",
+                  "after": "完全保護",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "delta": "精度向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "使いやすさ",
+                  "before": "専用ソフト要",
+                  "after": "無料デモ公開",
+                  "before_pct": 20,
+                  "after_pct": 90,
+                  "delta": "即時試用可",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Adobe Photoshopのコンテンツに応じた塗りつぶし等と競合する機能をFLUX品質で提供。BFLのエコシステム拡大を示す。",
               "impact": "背景除去・オブジェクト削除が単一APIで完結するため、EC商品写真加工・映像制作のワークフロー簡略化に直結する。"
-            }
+            },
+            "caption": "FLUX Erase Before/After",
+            "alt": "FLUX Eraseの比較図。Before（左）：画像内に不要な物体・影・反射が存在。After（右）：マスクした範囲の物体が完全除去され、背景がシームレスに再構成。マスク外ピクセルは変更なし。精度・自然さともに高い出力品質を実現。"
           }
         },
         {
@@ -483,21 +755,47 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["anthropic", "claude", "enterprise", "compliance", "managed-agents", "pricing", "sdk"],
+          "tags": [
+            "anthropic",
+            "claude",
+            "enterprise",
+            "compliance",
+            "managed-agents",
+            "pricing",
+            "sdk"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Anthropic Enterprise強化ロードマップ",
-            "alt": "Anthropicエンタープライズ強化のタイムライン。2026年5月22日：Compliance API統合追加、Managed Agents自社ホストサンドボックス対応。2026年6月15日：Agent SDK等のプログラマティック利用を月次クレジット制に分離（APIレート相当）。",
             "data": {
               "headline": "AnthropicがエンタープライズClaude強化——6/15に従量課金分離",
               "events": [
-                { "when": "2026/05/22", "label": "自社ホストサンドボックス追加", "description": "機密データを自社インフラに留めながらManaged Agentsを実行。MCPトンネルでプライベートサービスにもアクセス可能", "status": "now", "tone": "primary" },
-                { "when": "2026/05/22", "label": "Compliance API統合", "description": "既存のIT・セキュリティツールでClaudeを他アプリと同様にガバナンス管理できるように", "status": "now", "tone": "success" },
-                { "when": "2026/06/15", "label": "従量課金分離", "description": "Agent SDK・GitHub Actions等のプログラマティック利用が月次クレジット制へ。チャットサブスクリプション枠から独立", "status": "upcoming", "tone": "warning" }
+                {
+                  "when": "2026/05/22",
+                  "label": "自社ホストサンドボックス追加",
+                  "description": "機密データを自社インフラに留めながらManaged Agentsを実行。MCPトンネルでプライベートサービスにもアクセス可能",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026/05/22",
+                  "label": "Compliance API統合",
+                  "description": "既存のIT・セキュリティツールでClaudeを他アプリと同様にガバナンス管理できるように",
+                  "status": "now",
+                  "tone": "success"
+                },
+                {
+                  "when": "2026/06/15",
+                  "label": "従量課金分離",
+                  "description": "Agent SDK・GitHub Actions等のプログラマティック利用が月次クレジット制へ。チャットサブスクリプション枠から独立",
+                  "status": "upcoming",
+                  "tone": "warning"
+                }
               ],
               "narrative": "MicrosoftのClaude Codeライセンス返上と同日に企業向け強化を発表。エンタープライズ市場でのAnthropicの競争力を維持する戦略。",
               "impact": "6月15日の課金変更は既存ユーザーのコスト構造に直接影響する。エージェント活用が多いチームは事前に利用状況を確認する必要がある。"
-            }
+            },
+            "caption": "Anthropic Enterprise強化ロードマップ",
+            "alt": "Anthropicエンタープライズ強化のタイムライン。2026年5月22日：Compliance API統合追加、Managed Agents自社ホストサンドボックス対応。2026年6月15日：Agent SDK等のプログラマティック利用を月次クレジット制に分離（APIレート相当）。"
           }
         }
       ]
@@ -533,24 +831,69 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["agents", "sandbox", "checkpoint", "test-time-search", "arxiv", "infrastructure"],
+          "tags": [
+            "agents",
+            "sandbox",
+            "checkpoint",
+            "test-time-search",
+            "arxiv",
+            "infrastructure"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "DeltaBox vs 従来サンドボックス",
-            "alt": "DeltaBoxと従来サンドボックスの比較。チェックポイント速度：従来数秒→DeltaBoxミリ秒単位。ロールバック速度：従来数秒→DeltaBoxミリ秒単位。スナップショットコスト：従来全ディスクコピー→DeltaBox変更差分のみ。並列探索能力：従来限定的→DeltaBox高い（複数パスを効率的に探索）。",
             "data": {
               "headline": "DeltaBox：サンドボックスのCP/Rollbackをミリ秒単位に短縮",
-              "before": { "label": "従来サンドボックス", "sublabel": "秒単位のCP/RB" },
-              "after": { "label": "DeltaBox", "sublabel": "ミリ秒単位のCP/RB" },
+              "before": {
+                "label": "従来サンドボックス",
+                "sublabel": "秒単位のCP/RB"
+              },
+              "after": {
+                "label": "DeltaBox",
+                "sublabel": "ミリ秒単位のCP/RB"
+              },
               "metrics": [
-                { "label": "チェックポイント速度", "before": "数秒", "after": "数ms", "before_pct": 10, "after_pct": 99, "delta": "100x以上高速", "delta_tone": "success" },
-                { "label": "ロールバック速度", "before": "数秒", "after": "数ms", "before_pct": 10, "after_pct": 99, "delta": "100x以上高速", "delta_tone": "success" },
-                { "label": "スナップショットコスト", "before": "全ディスク", "after": "差分のみ(COW)", "before_pct": 100, "after_pct": 15, "delta": "大幅削減", "delta_tone": "success" },
-                { "label": "並列探索能力", "before": "限定的", "after": "高い", "before_pct": 20, "after_pct": 90, "delta": "分岐探索が現実的に", "delta_tone": "success" }
+                {
+                  "label": "チェックポイント速度",
+                  "before": "数秒",
+                  "after": "数ms",
+                  "before_pct": 10,
+                  "after_pct": 99,
+                  "delta": "100x以上高速",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "ロールバック速度",
+                  "before": "数秒",
+                  "after": "数ms",
+                  "before_pct": 10,
+                  "after_pct": 99,
+                  "delta": "100x以上高速",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "スナップショットコスト",
+                  "before": "全ディスク",
+                  "after": "差分のみ(COW)",
+                  "before_pct": 100,
+                  "after_pct": 15,
+                  "delta": "大幅削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "並列探索能力",
+                  "before": "限定的",
+                  "after": "高い",
+                  "before_pct": 20,
+                  "after_pct": 90,
+                  "delta": "分岐探索が現実的に",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "Daytona・Fly.io等のエージェントサンドボックス製品がスナップショット機能を競合軸に据える中、学術的に裏付けられた手法が登場。",
               "impact": "Test-Time Computeが注目される2026年において、推論時の並列探索を安価にできるインフラは推論品質と効率の両方を向上させる。"
-            }
+            },
+            "caption": "DeltaBox vs 従来サンドボックス",
+            "alt": "DeltaBoxと従来サンドボックスの比較。チェックポイント速度：従来数秒→DeltaBoxミリ秒単位。ロールバック速度：従来数秒→DeltaBoxミリ秒単位。スナップショットコスト：従来全ディスクコピー→DeltaBox変更差分のみ。並列探索能力：従来限定的→DeltaBox高い（複数パスを効率的に探索）。"
           }
         },
         {
@@ -579,22 +922,51 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["math", "formal-proof", "lean", "llm-agents", "erdos", "arxiv", "research"],
+          "tags": [
+            "math",
+            "formal-proof",
+            "lean",
+            "llm-agents",
+            "erdos",
+            "arxiv",
+            "research"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "AI×数学証明の実績",
-            "alt": "AI支援数学証明の実績棒グラフ。Erdős問題解決数：9件（うち完全自律2件以上）。OEIS予想解決数：44件。使用形式証明言語：Lean（機械的検証）。参加モデル：Gemini Deep Think・ChatGPT等フロンティアモデル。参照：2026年5月時点でAIが解決に貢献したErdős問題は計100件超。",
             "data": {
               "headline": "AIがErdős問題9件・OEIS予想44件をLeanで証明",
-              "scale": { "max_label": "解決件数（累計）", "unit": "件" },
+              "scale": {
+                "max_label": "解決件数（累計）",
+                "unit": "件"
+              },
               "bars": [
-                { "label": "Erdős問題解決", "value": "9件", "pct": 90, "tone": "primary", "note": "うち2件以上が完全自律" },
-                { "label": "OEIS予想解決", "value": "44件", "pct": 80, "tone": "success", "note": "既存定理組み合わせが中心" },
-                { "label": "Lean検証成功率", "value": "機械的確認", "pct": 100, "tone": "info", "note": "形式的証明で正確性を保証" }
+                {
+                  "label": "Erdős問題解決",
+                  "value": "9件",
+                  "pct": 90,
+                  "tone": "primary",
+                  "note": "うち2件以上が完全自律"
+                },
+                {
+                  "label": "OEIS予想解決",
+                  "value": "44件",
+                  "pct": 80,
+                  "tone": "success",
+                  "note": "既存定理組み合わせが中心"
+                },
+                {
+                  "label": "Lean検証成功率",
+                  "value": "機械的確認",
+                  "pct": 100,
+                  "tone": "info",
+                  "note": "形式的証明で正確性を保証"
+                }
               ],
               "narrative": "2025年10月以降、AIが「解決済み」に転換に貢献したErdős問題は計100件超に上る。Aristotelesや他のエージェントも同様の研究に取り組んでいる。",
               "impact": "数学研究の民主化につながる可能性。Leanとフロンティアモデルの組み合わせが、専門家のみが扱えた証明作業を広げる。"
-            }
+            },
+            "caption": "AI×数学証明の実績",
+            "alt": "AI支援数学証明の実績棒グラフ。Erdős問題解決数：9件（うち完全自律2件以上）。OEIS予想解決数：44件。使用形式証明言語：Lean（機械的検証）。参加モデル：Gemini Deep Think・ChatGPT等フロンティアモデル。参照：2026年5月時点でAIが解決に貢献したErdős問題は計100件超。"
           }
         },
         {
@@ -623,23 +995,54 @@
             "total": 14,
             "source_type_bias": 1
           },
-          "tags": ["reinforcement-learning", "llm", "diversity", "test-time-search", "arxiv", "reasoning"],
+          "tags": [
+            "reinforcement-learning",
+            "llm",
+            "diversity",
+            "test-time-search",
+            "arxiv",
+            "reasoning"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "VPO vs スカラーRL",
-            "alt": "VPO（Vector Policy Optimization）とスカラーRLの比較。スカラーRL：単一報酬を最大化、最適解1つに収束しやすい、Test-Time Searchで探索の幅が狭い。VPO：ベクトル値報酬で多様な解を保持、複数の戦略を維持、Test-Time Searchでpass@kが向上。",
             "data": {
               "headline": "VPO：多様性を学習させることでTest-Time Searchが改善",
               "tldr": "複数の報酬関数でLLMを学習させ、解の多様性を保持するVPOが推論時の探索効率を向上。スカラーRLより多くの正解経路を維持することでpass@kを改善する。",
               "points": [
-                { "icon": "🎯", "label": "報酬タイプ", "value": "ベクトル値", "note": "vs スカラーRL（単一報酬）", "tone": "primary" },
-                { "icon": "🌿", "label": "多様性", "value": "明示的最適化", "note": "単一解への収束を防ぐ", "tone": "success" },
-                { "icon": "🔍", "label": "Test-Time効果", "value": "pass@k向上", "note": "数学・コーディングで実証", "tone": "info" },
-                { "icon": "⚡", "label": "有効タスク", "value": "数学・推論・コード", "note": "複数正解が存在する問題", "tone": "default" }
+                {
+                  "icon": "🎯",
+                  "label": "報酬タイプ",
+                  "value": "ベクトル値",
+                  "note": "vs スカラーRL（単一報酬）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🌿",
+                  "label": "多様性",
+                  "value": "明示的最適化",
+                  "note": "単一解への収束を防ぐ",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "Test-Time効果",
+                  "value": "pass@k向上",
+                  "note": "数学・コーディングで実証",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "有効タスク",
+                  "value": "数学・推論・コード",
+                  "note": "複数正解が存在する問題",
+                  "tone": "default"
+                }
               ],
               "context": "DeepSeek-R1等のRLチューニング手法やTest-Time Compute研究が盛んな中、「多様性」という別軸からアプローチした点が新規性。",
               "impact": "推論モデルの事後強化において、多様な解経路を保持することがパフォーマンスの天井を上げる可能性を示す。"
-            }
+            },
+            "caption": "VPO vs スカラーRL",
+            "alt": "VPO（Vector Policy Optimization）とスカラーRLの比較。スカラーRL：単一報酬を最大化、最適解1つに収束しやすい、Test-Time Searchで探索の幅が狭い。VPO：ベクトル値報酬で多様な解を保持、複数の戦略を維持、Test-Time Searchでpass@kが向上。"
           }
         }
       ]
@@ -675,25 +1078,64 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 127 },
-          "tags": ["microsoft", "claude-code", "github-copilot", "enterprise", "industry"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 127
+          },
+          "tags": [
+            "microsoft",
+            "claude-code",
+            "github-copilot",
+            "enterprise",
+            "industry"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "MS Claude Code撤退の構図",
-            "alt": "MicrosoftのClaude Code撤退サマリー。対象チーム：Experiences+Devices（Windows/M365/Teams/Surface）、導入期間：2025年12月〜2026年6月（6か月）、撤退完了：2026年6月30日（FY末）、移行先：GitHub Copilot CLI、継続利用：Azure Foundry経由（Opus 4.6/4.7）。理由：FY末コスト最適化＋自社ツールへの誘導。",
             "data": {
               "headline": "MicrosoftがClaude Codeライセンスを返上——FY末コスト最適化で移行",
               "tldr": "Windows・M365等を担当するExperiences+DevicesチームがClaude Codeを6か月使用後、FY末コスト削減を理由にGitHub Copilot CLIへ移行。技術評価ではなく商業判断がツール選定を左右した事例。",
               "points": [
-                { "icon": "📅", "label": "導入期間", "value": "6か月", "note": "2025年12月〜2026年6月", "tone": "default" },
-                { "icon": "💸", "label": "撤退理由", "value": "FY末コスト最適化", "note": "2026年6月30日に向けた施策", "tone": "warning" },
-                { "icon": "🔄", "label": "移行先", "value": "GitHub Copilot CLI", "note": "Microsoft自社ツール", "tone": "primary" },
-                { "icon": "✅", "label": "継続利用", "value": "Azure Foundry", "note": "Opus 4.6/4.7は引き続き利用可", "tone": "success" },
-                { "icon": "💬", "label": "HN反響", "value": "127pt", "note": "開発者から「良ツールだった」の声", "tone": "info" }
+                {
+                  "icon": "📅",
+                  "label": "導入期間",
+                  "value": "6か月",
+                  "note": "2025年12月〜2026年6月",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💸",
+                  "label": "撤退理由",
+                  "value": "FY末コスト最適化",
+                  "note": "2026年6月30日に向けた施策",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "移行先",
+                  "value": "GitHub Copilot CLI",
+                  "note": "Microsoft自社ツール",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "✅",
+                  "label": "継続利用",
+                  "value": "Azure Foundry",
+                  "note": "Opus 4.6/4.7は引き続き利用可",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💬",
+                  "label": "HN反響",
+                  "value": "127pt",
+                  "note": "開発者から「良ツールだった」の声",
+                  "tone": "info"
+                }
               ],
               "context": "AI開発ツール市場の競争が激化する中、商業的パートナーシップがツール選定を左右するケースが増えている。",
               "impact": "Claude Codeを採用している他社も「ベンダーロックインリスク」を意識し始める可能性がある。マルチエージェント戦略の重要性が増す。"
-            }
+            },
+            "caption": "MS Claude Code撤退の構図",
+            "alt": "MicrosoftのClaude Code撤退サマリー。対象チーム：Experiences+Devices（Windows/M365/Teams/Surface）、導入期間：2025年12月〜2026年6月（6か月）、撤退完了：2026年6月30日（FY末）、移行先：GitHub Copilot CLI、継続利用：Azure Foundry経由（Opus 4.6/4.7）。理由：FY末コスト最適化＋自社ツールへの誘導。"
           }
         },
         {
@@ -722,22 +1164,51 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["funding", "ai-infra", "turbopuffer", "exa", "modal", "vector-db", "unicorn"],
+          "tags": [
+            "funding",
+            "ai-infra",
+            "turbopuffer",
+            "exa",
+            "modal",
+            "vector-db",
+            "unicorn"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "AI インフラ新ユニコーン比較",
-            "alt": "AIインフラ3社の規模比較。TurboPuffer：$100M ARR（黒字）、ベクトルDB。Exa：調達$250M・評価額$2.2B、AI検索API。Modal：調達$355M・評価額$4.7B、クラウドGPU・サーバーレス計算。いずれもモデルではなくインフラ層での急成長。",
             "data": {
               "headline": "AIインフラ層で3社が同日ユニコーン到達——TurboPuffer・Exa・Modal",
-              "scale": { "max_label": "評価額・ARR（相対スケール）", "unit": "億ドル" },
+              "scale": {
+                "max_label": "評価額・ARR（相対スケール）",
+                "unit": "億ドル"
+              },
               "bars": [
-                { "label": "Modal 評価額", "value": "$4.7B", "pct": 94, "tone": "primary", "note": "クラウドGPU・サーバーレス" },
-                { "label": "Exa 評価額", "value": "$2.2B", "pct": 44, "tone": "success", "note": "AI検索API（$250M調達）" },
-                { "label": "TurboPuffer ARR", "value": "$100M", "pct": 20, "tone": "info", "note": "ベクトルDB、黒字達成" }
+                {
+                  "label": "Modal 評価額",
+                  "value": "$4.7B",
+                  "pct": 94,
+                  "tone": "primary",
+                  "note": "クラウドGPU・サーバーレス"
+                },
+                {
+                  "label": "Exa 評価額",
+                  "value": "$2.2B",
+                  "pct": 44,
+                  "tone": "success",
+                  "note": "AI検索API（$250M調達）"
+                },
+                {
+                  "label": "TurboPuffer ARR",
+                  "value": "$100M",
+                  "pct": 20,
+                  "tone": "info",
+                  "note": "ベクトルDB、黒字達成"
+                }
               ],
               "narrative": "エージェントとAIアプリの急増が「パイプ」インフラへの需要を押し上げている。モデルだけでなくインフラ企業の評価が急騰する2026年の構造変化。",
               "impact": "AIスタックへの投資がモデル層からインフラ層にシフトしつつある。エージェント開発者にとってはサービスの安定性・コスト・速度が選定基準に。"
-            }
+            },
+            "caption": "AI インフラ新ユニコーン比較",
+            "alt": "AIインフラ3社の規模比較。TurboPuffer：$100M ARR（黒字）、ベクトルDB。Exa：調達$250M・評価額$2.2B、AI検索API。Modal：調達$355M・評価額$4.7B、クラウドGPU・サーバーレス計算。いずれもモデルではなくインフラ層での急成長。"
           }
         }
       ]
@@ -773,24 +1244,58 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 655 },
-          "tags": ["llms-txt", "web", "seo", "llmo", "community", "hacker-news"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 655
+          },
+          "tags": [
+            "llms-txt",
+            "web",
+            "seo",
+            "llmo",
+            "community",
+            "hacker-news"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "llms.txt とウェブの変化",
-            "alt": "llms.txtをめぐるHN議論のサマリー。HN獲得ポイント655pt（本日2位）。論点：LLMをウェブの読者とした場合のコンテンツ設計はどうあるべきか。llms.txtはウェブサイトがAIシステムへの参照方針を明示する新規フォーマット。Google AI Overviewsの台頭がこの議論を後押しした。",
             "data": {
               "headline": "llms.txt議論がHN 655pt——「LLMのためのウェブ最適化」が焦点に",
               "tldr": "Anna's ArchiveがLLMに直接語りかける形式でllms.txtを解説した記事がHNで655ptを獲得。AIクローラー・参照システムに向けてコンテンツをどう設計・開示するかという新しい問いを提起した。",
               "points": [
-                { "icon": "📊", "label": "HN反響", "value": "655pt", "note": "フロントページ本日上位", "tone": "primary" },
-                { "icon": "📄", "label": "llms.txt", "value": "AI向け自己開示", "note": "ウェブサイトがAI参照方針を明示", "tone": "info" },
-                { "icon": "🔍", "label": "背景", "value": "LLMO台頭", "note": "SEO→LLMO（LLM Optimization）へ", "tone": "warning" },
-                { "icon": "🌐", "label": "構造変化", "value": "ウェブの意味論", "note": "LLMが読むウェブの設計が問われる", "tone": "default" }
+                {
+                  "icon": "📊",
+                  "label": "HN反響",
+                  "value": "655pt",
+                  "note": "フロントページ本日上位",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📄",
+                  "label": "llms.txt",
+                  "value": "AI向け自己開示",
+                  "note": "ウェブサイトがAI参照方針を明示",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "背景",
+                  "value": "LLMO台頭",
+                  "note": "SEO→LLMO（LLM Optimization）へ",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "構造変化",
+                  "value": "ウェブの意味論",
+                  "note": "LLMが読むウェブの設計が問われる",
+                  "tone": "default"
+                }
               ],
               "context": "Google検索のAI Overviews強化やPerplexity等のLLM検索の台頭を背景に、「LLMにどう読まれるか」がウェブ設計の新しい軸になりつつある。",
               "impact": "コンテンツ作成者・メディア・ウェブ開発者にとってllms.txtへの対応が実務的な検討課題になる可能性がある。"
-            }
+            },
+            "caption": "llms.txt とウェブの変化",
+            "alt": "llms.txtをめぐるHN議論のサマリー。HN獲得ポイント655pt（本日2位）。論点：LLMをウェブの読者とした場合のコンテンツ設計はどうあるべきか。llms.txtはウェブサイトがAIシステムへの参照方針を明示する新規フォーマット。Google AI Overviewsの台頭がこの議論を後押しした。"
           }
         },
         {
@@ -819,24 +1324,57 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 245 },
-          "tags": ["ai-skills", "developers", "productivity", "community", "hacker-news"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 245
+          },
+          "tags": [
+            "ai-skills",
+            "developers",
+            "productivity",
+            "community",
+            "hacker-news"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AIの乗数効果",
-            "alt": "AIスキル乗数効果の論考サマリー。HN 245pt。主張：AIは技術スキルの「乗数」として機能する。高スキルエンジニア：AIで生産性が大幅向上。低スキルエンジニア：AIの限界に早くぶつかり、同様の成果は出せない。「誰でもできるようになる」というAI楽観論への実体験に基づく反論。",
             "data": {
               "headline": "AIはスキルの乗数——技術力の差を縮めるのではなく広げる",
               "tldr": "Josh ComeauがAIコーディングツールの体験から「AIは乗数」という概念を提示。技術力の高い人が最も恩恵を受け、初心者とのギャップが拡大するという反直感的な主張がHN 245ptを集めた。",
               "points": [
-                { "icon": "📊", "label": "HN反響", "value": "245pt", "note": "フロントページ本日上位", "tone": "primary" },
-                { "icon": "✖️", "label": "効果の型", "value": "乗数効果", "note": "既存スキルを増幅する（底上げでない）", "tone": "warning" },
-                { "icon": "📈", "label": "高スキル者", "value": "大幅生産性向上", "note": "AIを有効活用できる", "tone": "success" },
-                { "icon": "📉", "label": "低スキル者", "value": "AIの限界に直面", "note": "同質の成果は出しにくい", "tone": "danger" }
+                {
+                  "icon": "📊",
+                  "label": "HN反響",
+                  "value": "245pt",
+                  "note": "フロントページ本日上位",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "✖️",
+                  "label": "効果の型",
+                  "value": "乗数効果",
+                  "note": "既存スキルを増幅する（底上げでない）",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📈",
+                  "label": "高スキル者",
+                  "value": "大幅生産性向上",
+                  "note": "AIを有効活用できる",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📉",
+                  "label": "低スキル者",
+                  "value": "AIの限界に直面",
+                  "note": "同質の成果は出しにくい",
+                  "tone": "danger"
+                }
               ],
               "context": "Claude Code・Copilot等のAIコーディングツールが普及する中、「スキル不要論」「プロンプトだけでアプリが作れる」という言説への現場からの反論。",
               "impact": "AIツールへの投資と同時に基礎技術力の向上が重要という結論は、個人の学習戦略と企業の人材育成方針に影響する。"
-            }
+            },
+            "caption": "AIの乗数効果",
+            "alt": "AIスキル乗数効果の論考サマリー。HN 245pt。主張：AIは技術スキルの「乗数」として機能する。高スキルエンジニア：AIで生産性が大幅向上。低スキルエンジニア：AIの限界に早くぶつかり、同様の成果は出せない。「誰でもできるようになる」というAI楽観論への実体験に基づく反論。"
           }
         }
       ]
@@ -872,24 +1410,57 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 506 },
-          "tags": ["ai-skills", "vibe-coding", "japan", "hatena", "developers"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 506
+          },
+          "tags": [
+            "ai-skills",
+            "vibe-coding",
+            "japan",
+            "hatena",
+            "developers"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AIツール作成時代は来るか",
-            "alt": "「AIで誰もがツールを作る時代」論への反論サマリー。はてブ506件。AIが代替する部分：コードを書く作業。AIが代替しない部分：何を作るかの言語化・要件定義・デバッグ・プロダクトセンス。結論：ツールを作れる人は増えるが、良いものを作れる人は増えない。",
             "data": {
               "headline": "506ブクマ：AIで誰もがツールを作れる時代は来ないという実感論",
               "tldr": "AIがコードを書く作業を代替しても、「何を作るか」を決め・言語化し・デバッグできる能力は依然として必要。「バイブコーディングで誰でも作れる」という楽観論への現場からの懐疑。",
               "points": [
-                { "icon": "❤️", "label": "はてブ", "value": "506件", "note": "2026年5月22日時点", "tone": "primary" },
-                { "icon": "✅", "label": "AIが代替", "value": "コードを書く作業", "note": "GitHub Copilot・Claude Code等", "tone": "success" },
-                { "icon": "❌", "label": "AIが代替しない", "value": "要件定義・デバッグ", "note": "何を作るかの言語化能力", "tone": "danger" },
-                { "icon": "💡", "label": "結論", "value": "量は増えても質は難", "note": "「良いもの」を作る能力は別問題", "tone": "warning" }
+                {
+                  "icon": "❤️",
+                  "label": "はてブ",
+                  "value": "506件",
+                  "note": "2026年5月22日時点",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "✅",
+                  "label": "AIが代替",
+                  "value": "コードを書く作業",
+                  "note": "GitHub Copilot・Claude Code等",
+                  "tone": "success"
+                },
+                {
+                  "icon": "❌",
+                  "label": "AIが代替しない",
+                  "value": "要件定義・デバッグ",
+                  "note": "何を作るかの言語化能力",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "💡",
+                  "label": "結論",
+                  "value": "量は増えても質は難",
+                  "note": "「良いもの」を作る能力は別問題",
+                  "tone": "warning"
+                }
               ],
               "context": "HNで同日人気の「AIはスキルの乗数」論（Josh Comeau, 245pt）と呼応。英語圏・日本語圏で同じ問いが同日に盛り上がった偶然の一致。",
               "impact": "AI時代の人材育成・スキル習得戦略を再考する契機に。「AIに任せれば良い」という考えへの具体的な反論として説得力がある。"
-            }
+            },
+            "caption": "AIツール作成時代は来るか",
+            "alt": "「AIで誰もがツールを作る時代」論への反論サマリー。はてブ506件。AIが代替する部分：コードを書く作業。AIが代替しない部分：何を作るかの言語化・要件定義・デバッグ・プロダクトセンス。結論：ツールを作れる人は増えるが、良いものを作れる人は増えない。"
           }
         },
         {
@@ -918,25 +1489,65 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 140 },
-          "tags": ["local-llm", "hardware", "quantization", "japan", "atmarkit", "hatena"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 140
+          },
+          "tags": [
+            "local-llm",
+            "hardware",
+            "quantization",
+            "japan",
+            "atmarkit",
+            "hatena"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ローカルLLM ハード別動作目安",
-            "alt": "ローカルLLMの動作要件サマリー（2026年春）。RTX 4090（24GB VRAM）：70Bモデル（Q4量子化）が動作。Mac Studio M3 Ultra（192GB）：70Bモデルが快適動作。MacBook Pro M4（36GB）：34Bまで。スマートフォン（Android/iOS）：1B〜3Bの超小型モデルのみ。クラウドAPIとのトレードオフ：コスト削減・プライバシー確保 vs セットアップコスト・速度。",
             "data": {
               "headline": "2026年春のローカルLLM現実：ハード別動作可能モデルサイズ",
               "tldr": "＠ITが2026年春版ローカルLLM実践ガイドを公開（140ブクマ）。VRAM要件・量子化の選び方・代表モデルの比較を整理し、手元のハードで何が動くかを具体的に提示した。",
               "points": [
-                { "icon": "❤️", "label": "はてブ", "value": "140件", "note": "2026年5月22日時点", "tone": "primary" },
-                { "icon": "🖥️", "label": "RTX 4090", "value": "70B(Q4)動作", "note": "24GB VRAMが現実的な上限", "tone": "success" },
-                { "icon": "🍎", "label": "MacBook M4", "value": "34Bまで", "note": "36GB統合メモリ", "tone": "info" },
-                { "icon": "📱", "label": "スマートフォン", "value": "1B〜3Bのみ", "note": "Gemma・MiniCPM等の超小型モデル", "tone": "warning" },
-                { "icon": "⚖️", "label": "API vs ローカル", "value": "トレードオフ", "note": "コスト・速度・プライバシーで判断", "tone": "default" }
+                {
+                  "icon": "❤️",
+                  "label": "はてブ",
+                  "value": "140件",
+                  "note": "2026年5月22日時点",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🖥️",
+                  "label": "RTX 4090",
+                  "value": "70B(Q4)動作",
+                  "note": "24GB VRAMが現実的な上限",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🍎",
+                  "label": "MacBook M4",
+                  "value": "34Bまで",
+                  "note": "36GB統合メモリ",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📱",
+                  "label": "スマートフォン",
+                  "value": "1B〜3Bのみ",
+                  "note": "Gemma・MiniCPM等の超小型モデル",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "API vs ローカル",
+                  "value": "トレードオフ",
+                  "note": "コスト・速度・プライバシーで判断",
+                  "tone": "default"
+                }
               ],
               "context": "Qwen2.5・LLaMA 4・Gemma3など2026年春のOSSモデルが量質ともに向上し、ローカル運用の敷居が大幅に下がった。",
               "impact": "API依存コストを削減しつつプライバシーを確保したい企業・個人開発者にとって、今が実用的なローカルLLM移行の検討タイミング。"
-            }
+            },
+            "caption": "ローカルLLM ハード別動作目安",
+            "alt": "ローカルLLMの動作要件サマリー（2026年春）。RTX 4090（24GB VRAM）：70Bモデル（Q4量子化）が動作。Mac Studio M3 Ultra（192GB）：70Bモデルが快適動作。MacBook Pro M4（36GB）：34Bまで。スマートフォン（Android/iOS）：1B〜3Bの超小型モデルのみ。クラウドAPIとのトレードオフ：コスト削減・プライバシー確保 vs セットアップコスト・速度。"
           }
         },
         {
@@ -965,24 +1576,64 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 41 },
-          "tags": ["vibe-coding", "design", "figma", "prototype", "japan", "ux"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 41
+          },
+          "tags": [
+            "vibe-coding",
+            "design",
+            "figma",
+            "prototype",
+            "japan",
+            "ux"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "デザインワークフロー変化",
-            "alt": "Goodpatchデザイナーのワークフロー比較。Before：自然言語→Figmaワイヤーフレーム（静的）→エンジニアに実装依頼→フィードバック取得。After：自然言語→AIバイブコーディング（動くプロトタイプ）→即フィードバック→要件固定→実装。フィードバックサイクルが大幅に短縮。",
             "data": {
               "headline": "FigmaからAIバイブコーディングへ——デザインプロセスが変わった",
-              "before": { "label": "Figma中心の従来フロー", "sublabel": "静的ワイヤーフレーム" },
-              "after": { "label": "AIバイブコーディング活用後", "sublabel": "動くプロトタイプで即確認" },
+              "before": {
+                "label": "Figma中心の従来フロー",
+                "sublabel": "静的ワイヤーフレーム"
+              },
+              "after": {
+                "label": "AIバイブコーディング活用後",
+                "sublabel": "動くプロトタイプで即確認"
+              },
               "metrics": [
-                { "label": "プロト作成時間", "before": "日〜週単位", "after": "時間単位", "before_pct": 20, "after_pct": 85, "delta": "大幅短縮", "delta_tone": "success" },
-                { "label": "フィードバック質", "before": "静的画面", "after": "動作確認済み", "before_pct": 40, "after_pct": 90, "delta": "精度向上", "delta_tone": "success" },
-                { "label": "コード知識要件", "before": "不要（Figma）", "after": "ほぼ不要（AI指示）", "before_pct": 90, "after_pct": 85, "delta": "同等", "delta_tone": "info" }
+                {
+                  "label": "プロト作成時間",
+                  "before": "日〜週単位",
+                  "after": "時間単位",
+                  "before_pct": 20,
+                  "after_pct": 85,
+                  "delta": "大幅短縮",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "フィードバック質",
+                  "before": "静的画面",
+                  "after": "動作確認済み",
+                  "before_pct": 40,
+                  "after_pct": 90,
+                  "delta": "精度向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コード知識要件",
+                  "before": "不要（Figma）",
+                  "after": "ほぼ不要（AI指示）",
+                  "before_pct": 90,
+                  "after_pct": 85,
+                  "delta": "同等",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "Goodpatchは日本のデザイン企業の中でも先進的な実践事例。デザイナーがコーディングの障壁なしに動くプロトタイプを作れるようになった。",
               "impact": "デザインとエンジニアリングの境界が曖昧になる中、「動くもので考える」プロセスが標準化されると、製品開発サイクル全体が短縮される。"
-            }
+            },
+            "caption": "デザインワークフロー変化",
+            "alt": "Goodpatchデザイナーのワークフロー比較。Before：自然言語→Figmaワイヤーフレーム（静的）→エンジニアに実装依頼→フィードバック取得。After：自然言語→AIバイブコーディング（動くプロトタイプ）→即フィードバック→要件固定→実装。フィードバックサイクルが大幅に短縮。"
           }
         },
         {
@@ -1011,23 +1662,57 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 46 },
-          "tags": ["code-review", "ai-tools", "japan", "zenn", "copilot", "engineering"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 46
+          },
+          "tags": [
+            "code-review",
+            "ai-tools",
+            "japan",
+            "zenn",
+            "copilot",
+            "engineering"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "コードレビュー6段階分業",
-            "alt": "コードレビュー6段階の担当分業。Step1：構文・フォーマット（AI担当）。Step2：テスト漏れ・カバレッジ（AI担当）。Step3：セキュリティパターン・脆弱性（AI担当）。Step4：可読性・命名・設計パターン（人間＋AI補助）。Step5：アーキテクチャ整合性（人間担当）。Step6：ビジネスロジック・要件整合性（人間のみ）。",
             "data": {
               "headline": "コードレビュー6段階：Step1-3はAI、Step4-6は人間",
               "events": [
-                { "when": "Step 1-2", "label": "AI自動化領域", "description": "構文・フォーマット・テスト漏れ・カバレッジ確認。GitHub Copilot・CodeRabbitが自動化可能", "status": "past", "tone": "success" },
-                { "when": "Step 3", "label": "AIが得意な安全性確認", "description": "既知のセキュリティパターン・インジェクション等の脆弱性チェック。ルールベースに強いAIが活躍", "status": "past", "tone": "info" },
-                { "when": "Step 4", "label": "人間＋AI補助", "description": "可読性・命名・設計パターン。AIはサジェストできるが文脈判断は人間が最終確認", "status": "now", "tone": "warning" },
-                { "when": "Step 5-6", "label": "人間担当領域", "description": "アーキテクチャ整合性・ビジネスロジック・要件との整合性。ビジネス文脈の理解が必須でAIは判断できない", "status": "upcoming", "tone": "danger" }
+                {
+                  "when": "Step 1-2",
+                  "label": "AI自動化領域",
+                  "description": "構文・フォーマット・テスト漏れ・カバレッジ確認。GitHub Copilot・CodeRabbitが自動化可能",
+                  "status": "past",
+                  "tone": "success"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "AIが得意な安全性確認",
+                  "description": "既知のセキュリティパターン・インジェクション等の脆弱性チェック。ルールベースに強いAIが活躍",
+                  "status": "past",
+                  "tone": "info"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "人間＋AI補助",
+                  "description": "可読性・命名・設計パターン。AIはサジェストできるが文脈判断は人間が最終確認",
+                  "status": "now",
+                  "tone": "warning"
+                },
+                {
+                  "when": "Step 5-6",
+                  "label": "人間担当領域",
+                  "description": "アーキテクチャ整合性・ビジネスロジック・要件との整合性。ビジネス文脈の理解が必須でAIは判断できない",
+                  "status": "upcoming",
+                  "tone": "danger"
+                }
               ],
               "narrative": "AIコードレビューツールが普及する中、「どこまでAIに任せ、どこから人間が見るか」を整理したフレームワークとして実践的。",
               "impact": "チームへのAIレビューツール導入計画を立てる際の出発点として活用できる。「AIは速いが文脈は弱い」という設計原則の具体的適用例。"
-            }
+            },
+            "caption": "コードレビュー6段階分業",
+            "alt": "コードレビュー6段階の担当分業。Step1：構文・フォーマット（AI担当）。Step2：テスト漏れ・カバレッジ（AI担当）。Step3：セキュリティパターン・脆弱性（AI担当）。Step4：可読性・命名・設計パターン（人間＋AI補助）。Step5：アーキテクチャ整合性（人間担当）。Step6：ビジネスロジック・要件整合性（人間のみ）。"
           }
         },
         {
@@ -1056,23 +1741,54 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["cursor", "ai-coding", "model", "japan", "itmedia", "cost-efficiency"],
+          "tags": [
+            "cursor",
+            "ai-coding",
+            "model",
+            "japan",
+            "itmedia",
+            "cost-efficiency"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Cursor 独自モデル発表",
-            "alt": "Cursor独自AIモデルのサマリー。コスト：従来最先端モデルの1/10。性能：最先端モデル並み（第三者機関が評価）。用途：AIコーディングツール。競合：Claude Code・GitHub Copilot・Windsurf。差別化：独自モデルによるコスト・性能最適化。",
             "data": {
               "headline": "Cursor独自モデル：最先端モデル並みをコスト1/10で実現",
               "tldr": "CursorがAIコーディング特化の独自モデルを発表。コストを1/10に抑えながら最先端モデルと同等性能を第三者評価で確認。AI開発ツール市場の価格・性能競争を象徴する一手。",
               "points": [
-                { "icon": "💰", "label": "コスト", "value": "従来の1/10", "note": "最先端モデル比", "tone": "success" },
-                { "icon": "⚡", "label": "性能", "value": "最先端モデル並み", "note": "第三者機関の評価で確認", "tone": "primary" },
-                { "icon": "🏆", "label": "競合", "value": "Claude Code他", "note": "市場シェア争いが激化", "tone": "warning" },
-                { "icon": "🔒", "label": "公開情報", "value": "アーキテクチャ非公開", "note": "ベンチマーク結果のみ開示", "tone": "default" }
+                {
+                  "icon": "💰",
+                  "label": "コスト",
+                  "value": "従来の1/10",
+                  "note": "最先端モデル比",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "性能",
+                  "value": "最先端モデル並み",
+                  "note": "第三者機関の評価で確認",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "競合",
+                  "value": "Claude Code他",
+                  "note": "市場シェア争いが激化",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "公開情報",
+                  "value": "アーキテクチャ非公開",
+                  "note": "ベンチマーク結果のみ開示",
+                  "tone": "default"
+                }
               ],
               "context": "Claude Max（月$200）の価格が話題になる中、コスト効率の良いAIコーディングツールへの需要が高まっている。",
               "impact": "Cursorが独自モデルを持つことで、特定ベンダー（Anthropic・OpenAI）への依存を減らしながら価格競争力を高める可能性がある。"
-            }
+            },
+            "caption": "Cursor 独自モデル発表",
+            "alt": "Cursor独自AIモデルのサマリー。コスト：従来最先端モデルの1/10。性能：最先端モデル並み（第三者機関が評価）。用途：AIコーディングツール。競合：Claude Code・GitHub Copilot・Windsurf。差別化：独自モデルによるコスト・性能最適化。"
           }
         }
       ]
@@ -1111,15 +1827,24 @@
             "kind": "hn",
             "points": 197
           },
-          "tags": ["DeepSeek", "LLM", "pricing", "API"],
+          "tags": [
+            "DeepSeek",
+            "LLM",
+            "pricing",
+            "API"
+          ],
           "figure": {
             "type": "comparison",
-            "title": "DeepSeek V4 Pro 価格比較",
-            "items": [
-              { "label": "旧入力価格", "value": "$0.28/Mトークン" },
-              { "label": "新入力価格", "value": "$0.07/Mトークン" },
-              { "label": "削減率", "value": "約75%削減（1/4の価格）" }
-            ]
+            "data": {
+              "headline": "DeepSeek V4 Pro 価格比較",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -1147,33 +1872,85 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "tags": ["Tencent", "translation", "multilingual", "open-source", "LLM"],
+          "tags": [
+            "Tencent",
+            "translation",
+            "multilingual",
+            "open-source",
+            "LLM"
+          ],
           "figure": {
             "type": "metric-bars",
-            "title": "Hy-MT2-1.8B vs 商用翻訳API（FLORES-200 spBLEU）",
-            "items": [
-              { "label": "Hy-MT2-1.8B", "value": 100, "note": "基準（最高スコア）" },
-              { "label": "DeepL", "value": 94 },
-              { "label": "Google Translate", "value": 91 },
-              { "label": "Microsoft Translator", "value": 89 }
-            ]
+            "data": {
+              "headline": "Hy-MT2-1.8B vs 商用翻訳API（FLORES-200 spBLEU）",
+              "scale": {},
+              "bars": []
+            }
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "reddit_all_subreddits", "reason": "Claude Code is unable to fetch from www.reddit.com", "fallback_used": "WebSearch community signals" },
-    { "source": "the_verge_rss", "reason": "Claude Code is unable to fetch from www.theverge.com", "fallback_used": "WebSearch for The Verge articles" },
-    { "source": "importai_substack", "reason": "HTTP 403 Forbidden", "fallback_used": "none" },
-    { "source": "the_batch_deeplearning_ai", "reason": "HTTP 404 Not Found", "fallback_used": "none" },
-    { "source": "cohere_blog", "reason": "No article content extracted from page", "fallback_used": "none" },
-    { "source": "nvidia_blog_deep_learning", "reason": "No articles within time window (latest: January 2026)", "fallback_used": "none" },
-    { "source": "mistral_news", "reason": "Latest article is April 2026, outside 24h window", "fallback_used": "none" },
-    { "source": "meta_ai_blog", "reason": "Latest articles are April 2026, outside 24h window", "fallback_used": "none" },
-    { "source": "synced_review_rss", "reason": "Only returned August 2025 article", "fallback_used": "none" },
-    { "source": "semantic_scholar_api", "reason": "Not fetched (rate limit concern)", "fallback_used": "arXiv API for academic content" },
-    { "source": "36kr_ai", "reason": "Not fetched in this batch", "fallback_used": "WebSearch for Chinese AI news" },
-    { "source": "qbitai", "reason": "Not fetched in this batch", "fallback_used": "WebSearch for Chinese AI news" }
+    {
+      "source": "reddit_all_subreddits",
+      "reason": "Claude Code is unable to fetch from www.reddit.com",
+      "fallback_used": "WebSearch community signals"
+    },
+    {
+      "source": "the_verge_rss",
+      "reason": "Claude Code is unable to fetch from www.theverge.com",
+      "fallback_used": "WebSearch for The Verge articles"
+    },
+    {
+      "source": "importai_substack",
+      "reason": "HTTP 403 Forbidden",
+      "fallback_used": "none"
+    },
+    {
+      "source": "the_batch_deeplearning_ai",
+      "reason": "HTTP 404 Not Found",
+      "fallback_used": "none"
+    },
+    {
+      "source": "cohere_blog",
+      "reason": "No article content extracted from page",
+      "fallback_used": "none"
+    },
+    {
+      "source": "nvidia_blog_deep_learning",
+      "reason": "No articles within time window (latest: January 2026)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "mistral_news",
+      "reason": "Latest article is April 2026, outside 24h window",
+      "fallback_used": "none"
+    },
+    {
+      "source": "meta_ai_blog",
+      "reason": "Latest articles are April 2026, outside 24h window",
+      "fallback_used": "none"
+    },
+    {
+      "source": "synced_review_rss",
+      "reason": "Only returned August 2025 article",
+      "fallback_used": "none"
+    },
+    {
+      "source": "semantic_scholar_api",
+      "reason": "Not fetched (rate limit concern)",
+      "fallback_used": "arXiv API for academic content"
+    },
+    {
+      "source": "36kr_ai",
+      "reason": "Not fetched in this batch",
+      "fallback_used": "WebSearch for Chinese AI news"
+    },
+    {
+      "source": "qbitai",
+      "reason": "Not fetched in this batch",
+      "fallback_used": "WebSearch for Chinese AI news"
+    }
   ]
 }

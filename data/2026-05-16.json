@@ -86,22 +86,52 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 312 },
-          "tags": ["subquadratic", "non-transformer", "architecture", "12M-context", "LLM"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 312
+          },
+          "tags": [
+            "subquadratic",
+            "non-transformer",
+            "architecture",
+            "12M-context",
+            "LLM"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "SubQ 1M-Preview：コンテキスト長比較",
-            "alt": "SubQ 1M-PreviewとGPT-4o・Claude Opus 4.7のコンテキスト長比較。SubQが12Mトークンで断トツ1位。GPT-4oは200K（2%）、Claude Opus 4.7は1M（8%）と比較してSubQが12M（100%）を達成。メモリ増加がquadratic→線形未満に改善",
             "data": {
               "headline": "SubQ 1M-Preview：コンテキスト長と計算量スケーリング比較",
               "bars": [
-                { "icon": "🚀", "label": "SubQ 1M-Preview", "value": "12M tokens", "pct": 100, "tone": "primary", "note": "準線形スケーリング" },
-                { "icon": "🤖", "label": "Claude Opus 4.7", "value": "1M tokens", "pct": 8, "tone": "info", "note": "Transformer" },
-                { "icon": "💬", "label": "GPT-4o", "value": "200K tokens", "pct": 2, "tone": "success", "note": "Transformer" }
+                {
+                  "icon": "🚀",
+                  "label": "SubQ 1M-Preview",
+                  "value": "12M tokens",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "準線形スケーリング"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "Claude Opus 4.7",
+                  "value": "1M tokens",
+                  "pct": 8,
+                  "tone": "info",
+                  "note": "Transformer"
+                },
+                {
+                  "icon": "💬",
+                  "label": "GPT-4o",
+                  "value": "200K tokens",
+                  "pct": 2,
+                  "tone": "success",
+                  "note": "Transformer"
+                }
               ],
               "narrative": "準線形アーキテクチャにより、12Mトークンをquadraticコストなしで処理。長期エージェント記憶の実用化が射程に入る",
               "impact": "コードベース全体・長期プロジェクト・超長文書処理で圧倒的優位。エージェントの長期記憶問題を根本解決する可能性"
-            }
+            },
+            "caption": "SubQ 1M-Preview：コンテキスト長比較",
+            "alt": "SubQ 1M-PreviewとGPT-4o・Claude Opus 4.7のコンテキスト長比較。SubQが12Mトークンで断トツ1位。GPT-4oは200K（2%）、Claude Opus 4.7は1M（8%）と比較してSubQが12M（100%）を達成。メモリ増加がquadratic→線形未満に改善"
           }
         },
         {
@@ -130,24 +160,73 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["Microsoft", "Phi-4", "multimodal", "reasoning", "15B", "open-weight"],
+          "tags": [
+            "Microsoft",
+            "Phi-4",
+            "multimodal",
+            "reasoning",
+            "15B",
+            "open-weight"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Phi-4-reasoning-vision-15B vs 主要マルチモーダルモデル",
-            "alt": "Phi-4-reasoning-vision-15BとGPT-4o・Gemini 3.1 Proのマルチモーダル推論比較。パラメータはPhi-4が15B（圧倒的小型）で、MMMU-Pro性能は大型モデル相当を達成。デプロイコストは大型モデルの5%以下",
             "data": {
               "headline": "Phi-4-reasoning-vision-15B：サイズ対性能の優位性",
-              "before": { "label": "大型クローズドモデル（GPT-4o等）" },
-              "after": { "label": "Phi-4-reasoning-vision-15B" },
+              "before": {
+                "label": "大型クローズドモデル（GPT-4o等）"
+              },
+              "after": {
+                "label": "Phi-4-reasoning-vision-15B"
+              },
               "metrics": [
-                { "icon": "🧠", "label": "パラメータ数", "before": "~200B+", "after": "15B", "before_pct": 100, "after_pct": 7, "delta": "93%削減", "delta_tone": "success", "note": "オープンウェイト" },
-                { "icon": "📊", "label": "MMMU-Pro", "before": "100%", "after": "~92%", "before_pct": 100, "after_pct": 92, "delta": "-8%", "delta_tone": "info", "note": "匹敵水準" },
-                { "icon": "💰", "label": "デプロイコスト", "before": "高（クラウド必須）", "after": "低（ローカル可）", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" },
-                { "icon": "🔓", "label": "ライセンス", "before": "クローズド", "after": "オープンウェイト", "before_pct": 0, "after_pct": 100, "delta": "完全公開", "delta_tone": "success" }
+                {
+                  "icon": "🧠",
+                  "label": "パラメータ数",
+                  "before": "~200B+",
+                  "after": "15B",
+                  "before_pct": 100,
+                  "after_pct": 7,
+                  "delta": "93%削減",
+                  "delta_tone": "success",
+                  "note": "オープンウェイト"
+                },
+                {
+                  "icon": "📊",
+                  "label": "MMMU-Pro",
+                  "before": "100%",
+                  "after": "~92%",
+                  "before_pct": 100,
+                  "after_pct": 92,
+                  "delta": "-8%",
+                  "delta_tone": "info",
+                  "note": "匹敵水準"
+                },
+                {
+                  "icon": "💰",
+                  "label": "デプロイコスト",
+                  "before": "高（クラウド必須）",
+                  "after": "低（ローカル可）",
+                  "before_pct": 100,
+                  "after_pct": 5,
+                  "delta": "-95%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "ライセンス",
+                  "before": "クローズド",
+                  "after": "オープンウェイト",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "完全公開",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "15Bという小型規模でマルチモーダル推論をクローズド大型モデルに近い水準で実現",
               "impact": "エンタープライズのオンプレ・エッジ展開が現実的に。コンプライアンス要件の高い医療・製造でのビジョン推論が普及加速"
-            }
+            },
+            "caption": "Phi-4-reasoning-vision-15B vs 主要マルチモーダルモデル",
+            "alt": "Phi-4-reasoning-vision-15BとGPT-4o・Gemini 3.1 Proのマルチモーダル推論比較。パラメータはPhi-4が15B（圧倒的小型）で、MMMU-Pro性能は大型モデル相当を達成。デプロイコストは大型モデルの5%以下"
           }
         },
         {
@@ -176,24 +255,54 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hf_likes", "liked": 141000 },
-          "tags": ["Zyphra", "ZAYA1", "MoE", "AMD", "Apache2", "ROCm"],
+          "reaction_signal": {
+            "kind": "hf_likes",
+            "liked": 141000
+          },
+          "tags": [
+            "Zyphra",
+            "ZAYA1",
+            "MoE",
+            "AMD",
+            "Apache2",
+            "ROCm"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ZAYA1-8B：AMD専用学習MoEモデルの概要",
-            "alt": "ZAYA1-8BのHF概要。8B MoE・Apache 2.0・AMD ROCmのみで学習・HFトレンド4位・141kいいねを達成。NVIDIAなしでトップクラスのモデル学習が可能になったことを示す重要事例",
             "data": {
               "headline": "ZAYA1-8B：AMD専用学習×Apache 2.0 MoEモデル",
               "tldr": "NVIDIAを使わずAMD ROCmだけで学習した8B MoEモデルが商用利用可のApache 2.0で公開。HFトレンド4位・141kいいね達成",
               "points": [
-                { "icon": "🔴", "label": "学習インフラ", "value": "AMD GPU（ROCm）のみ", "tone": "primary" },
-                { "icon": "🧠", "label": "アーキテクチャ", "value": "8B MoE", "tone": "info" },
-                { "icon": "📜", "label": "ライセンス", "value": "Apache 2.0（商用可）", "tone": "success" },
-                { "icon": "❤️", "label": "HFトレンド", "value": "4位・141kいいね", "tone": "success" }
+                {
+                  "icon": "🔴",
+                  "label": "学習インフラ",
+                  "value": "AMD GPU（ROCm）のみ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "アーキテクチャ",
+                  "value": "8B MoE",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📜",
+                  "label": "ライセンス",
+                  "value": "Apache 2.0（商用可）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "HFトレンド",
+                  "value": "4位・141kいいね",
+                  "tone": "success"
+                }
               ],
               "context": "AIトレーニングインフラのNVIDIA依存が問題視されるなか、ROCmでのフルスクラッチ学習が実証された",
               "impact": "NVIDIA以外のGPUサプライヤーでもフロンティア寄りのモデル学習が可能なことを示し、AI産業の地政学的リスク分散に貢献"
-            }
+            },
+            "caption": "ZAYA1-8B：AMD専用学習MoEモデルの概要",
+            "alt": "ZAYA1-8BのHF概要。8B MoE・Apache 2.0・AMD ROCmのみで学習・HFトレンド4位・141kいいねを達成。NVIDIAなしでトップクラスのモデル学習が可能になったことを示す重要事例"
           }
         }
       ]
@@ -229,23 +338,50 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "tags": ["OpenAI", "ChatGPT", "personal-finance", "Plaid", "banking", "Pro"],
+          "tags": [
+            "OpenAI",
+            "ChatGPT",
+            "personal-finance",
+            "Plaid",
+            "banking",
+            "Pro"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ChatGPT Personal Finance：機能概要",
-            "alt": "ChatGPT個人財務機能の概要。Plaid経由12,000以上の機関と連携。サイドバーの「Finances」から口座連携。口座残高・取引・投資・定期支出のダッシュボードを提供。閲覧のみ（送金不可）",
             "data": {
               "headline": "ChatGPT Personal Finance：Plaid連携で12,000機関に対応",
               "tldr": "OpenAIがPlaid経由で銀行・証券口座と連携するChatGPT個人財務機能を公開。支出分析・投資追跡・予算アドバイスをProユーザーに提供（閲覧のみ）",
               "points": [
-                { "icon": "🏦", "label": "対応機関", "value": "12,000以上（Plaid経由）", "tone": "primary" },
-                { "icon": "📊", "label": "提供機能", "value": "残高・支出・投資ダッシュボード", "tone": "info" },
-                { "icon": "🔒", "label": "セキュリティ", "value": "閲覧のみ（送金・操作不可）", "tone": "success" },
-                { "icon": "🇺🇸", "label": "対象", "value": "米国 Proユーザー（iOS/Web）", "tone": "warning" }
+                {
+                  "icon": "🏦",
+                  "label": "対応機関",
+                  "value": "12,000以上（Plaid経由）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "提供機能",
+                  "value": "残高・支出・投資ダッシュボード",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "セキュリティ",
+                  "value": "閲覧のみ（送金・操作不可）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🇺🇸",
+                  "label": "対象",
+                  "value": "米国 Proユーザー（iOS/Web）",
+                  "tone": "warning"
+                }
               ],
               "context": "Mint終了後の個人財務管理ツール市場に空白が生まれており、OpenAIがAI財務アドバイザーとして参入",
               "impact": "消費者AIが「個人財務管理」という日常的ユースケースに本格参入。既存フィンテックアプリとの競合が激化する"
-            }
+            },
+            "caption": "ChatGPT Personal Finance：機能概要",
+            "alt": "ChatGPT個人財務機能の概要。Plaid経由12,000以上の機関と連携。サイドバーの「Finances」から口座連携。口座残高・取引・投資・定期支出のダッシュボードを提供。閲覧のみ（送金不可）"
           }
         },
         {
@@ -274,22 +410,24 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["OpenAI", "Daybreak", "cybersecurity", "Codex", "SDLC", "vulnerability"],
+          "tags": [
+            "OpenAI",
+            "Daybreak",
+            "cybersecurity",
+            "Codex",
+            "SDLC",
+            "vulnerability"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "OpenAI Daybreak：脆弱性対応パイプライン",
-            "alt": "OpenAI Daybreakの脆弱性対応フロー。コード入力→AI脆弱性スキャン→検証→パッチ生成→再検証の4ステップ。従来の手動対応（数日〜数週間）をAIが数時間以内に短縮",
             "data": {
               "headline": "OpenAI Daybreak：AI駆動のセキュリティパイプライン",
-              "steps": [
-                { "icon": "📂", "label": "コードベース解析", "desc": "既知・未知コードをAIがスキャン", "tone": "primary" },
-                { "icon": "🔍", "label": "脆弱性発見", "desc": "隠れた欠陥をCodex Securityが検出", "tone": "warning" },
-                { "icon": "🛠️", "label": "パッチ生成", "desc": "修正候補を自動生成・評価", "tone": "info" },
-                { "icon": "✅", "label": "検証完了", "desc": "パッチ適用後の安全性を再検証", "tone": "success" }
-              ],
+              "events": [],
               "narrative": "発見→修正サイクルが従来の数日から数時間に短縮。セキュリティの事後対応を予防的自動化へ転換",
               "impact": "エンタープライズのSDLC全体にセキュリティ自動化が組み込まれ、脆弱性対応コストの構造的削減が可能に"
-            }
+            },
+            "caption": "OpenAI Daybreak：脆弱性対応パイプライン",
+            "alt": "OpenAI Daybreakの脆弱性対応フロー。コード入力→AI脆弱性スキャン→検証→パッチ生成→再検証の4ステップ。従来の手動対応（数日〜数週間）をAIが数時間以内に短縮"
           }
         },
         {
@@ -318,23 +456,49 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["Adaption", "AutoScientist", "self-improvement", "fine-tuning", "synthetic-data"],
+          "tags": [
+            "Adaption",
+            "AutoScientist",
+            "self-improvement",
+            "fine-tuning",
+            "synthetic-data"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AutoScientist：AI自己改善サイクル",
-            "alt": "AutoScientistの動作概要。AIが弱点特定→合成データ生成→ファインチューニング→再評価の自律ループを回す。人間介在なし",
             "data": {
               "headline": "AutoScientist：モデル自律自己改善のループ",
               "tldr": "AIモデルが弱点を自己診断し合成訓練データを生成してファインチューニングを実行。人間のアノテーター不要の自己改善サイクルを実現",
               "points": [
-                { "icon": "🔍", "label": "弱点特定", "value": "性能ギャップをAIが自動診断", "tone": "warning" },
-                { "icon": "🔬", "label": "データ生成", "value": "合成訓練データを自律生成", "tone": "primary" },
-                { "icon": "🎓", "label": "学習実行", "value": "弱点補強のファインチューニング", "tone": "info" },
-                { "icon": "📈", "label": "改善効果", "value": "人間介在なしで継続的向上", "tone": "success" }
+                {
+                  "icon": "🔍",
+                  "label": "弱点特定",
+                  "value": "性能ギャップをAIが自動診断",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔬",
+                  "label": "データ生成",
+                  "value": "合成訓練データを自律生成",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎓",
+                  "label": "学習実行",
+                  "value": "弱点補強のファインチューニング",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📈",
+                  "label": "改善効果",
+                  "value": "人間介在なしで継続的向上",
+                  "tone": "success"
+                }
               ],
               "context": "AI開発の最大コストの一つであるデータアノテーション・ファインチューニング工程を自動化する野心的な試み",
               "impact": "継続的モデル改善コストが大幅削減。AI自己改善の実用化が近づき、将来的には人間の監督コスト低下につながる可能性"
-            }
+            },
+            "caption": "AutoScientist：AI自己改善サイクル",
+            "alt": "AutoScientistの動作概要。AIが弱点特定→合成データ生成→ファインチューニング→再評価の自律ループを回す。人間介在なし"
           }
         }
       ]
@@ -370,23 +534,50 @@
             "total": 16,
             "source_type_bias": -1
           },
-          "tags": ["Notion", "Developer Platform", "agents", "Workers", "External Agent API", "Claude Code"],
+          "tags": [
+            "Notion",
+            "Developer Platform",
+            "agents",
+            "Workers",
+            "External Agent API",
+            "Claude Code"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Notion Developer Platform：4つの核心要素",
-            "alt": "Notion Developer Platformの4コンポーネント。Workers（ホスト型コード実行）・External Agent API（外部AIエージェント操作）・データベース同期・Notion CLI。Claude Code・Cursor・Codexなどが外部エージェントとして動作可能",
             "data": {
               "headline": "Notion Developer Platform：エージェントエコシステムの中枢へ",
               "tldr": "NotionがWorkers・External Agent API・DBシンク・CLIを公開し、Claude Code・Cursor等の外部AIエージェントがNotionを直接操作できるエコシステムを実現。100万エージェント構築実績",
               "points": [
-                { "icon": "⚙️", "label": "Workers", "value": "ホスト型コード実行（無料ベータ）", "tone": "primary" },
-                { "icon": "🤖", "label": "External Agent API", "value": "Claude Code・Cursor・Codex対応", "tone": "info" },
-                { "icon": "🔄", "label": "DB Sync", "value": "外部データをリアルタイム同期", "tone": "success" },
-                { "icon": "💻", "label": "Notion CLI", "value": "開発者・エージェントの操作窓口", "tone": "success" }
+                {
+                  "icon": "⚙️",
+                  "label": "Workers",
+                  "value": "ホスト型コード実行（無料ベータ）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "External Agent API",
+                  "value": "Claude Code・Cursor・Codex対応",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "DB Sync",
+                  "value": "外部データをリアルタイム同期",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💻",
+                  "label": "Notion CLI",
+                  "value": "開発者・エージェントの操作窓口",
+                  "tone": "success"
+                }
               ],
               "context": "2月のCustom Agentsリリース以来100万エージェントが構築済み。エージェント統合ハブとして競合他社との差別化を図る",
               "impact": "エージェントがドキュメント・プロジェクト・タスクを自律的に管理する基盤が整備。エンタープライズのエージェント化を加速"
-            }
+            },
+            "caption": "Notion Developer Platform：4つの核心要素",
+            "alt": "Notion Developer Platformの4コンポーネント。Workers（ホスト型コード実行）・External Agent API（外部AIエージェント操作）・データベース同期・Notion CLI。Claude Code・Cursor・Codexなどが外部エージェントとして動作可能"
           }
         },
         {
@@ -415,24 +606,71 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["Writer", "agents", "enterprise", "autonomous", "prompt-free", "workflow"],
+          "tags": [
+            "Writer",
+            "agents",
+            "enterprise",
+            "autonomous",
+            "prompt-free",
+            "workflow"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "従来型AIアシスタント vs Writer自律エージェント",
-            "alt": "従来チャットボット型（プロンプト待ち・受動）とWriter自律エージェント（自律実行・能動）の比較。自律エージェントはスケジュール・ルール駆動でCRM更新・レポート生成・メール作成を自動実行",
             "data": {
               "headline": "Writer自律エージェント：プロンプト待ちからの脱却",
-              "before": { "label": "従来型AIアシスタント" },
-              "after": { "label": "Writer自律エージェント" },
+              "before": {
+                "label": "従来型AIアシスタント"
+              },
+              "after": {
+                "label": "Writer自律エージェント"
+              },
               "metrics": [
-                { "icon": "⏰", "label": "実行トリガー", "before": "ユーザープロンプト", "after": "スケジュール・ルール", "before_pct": 0, "after_pct": 100, "delta": "完全自律化", "delta_tone": "success" },
-                { "icon": "🔄", "label": "タスク実行", "before": "指示を待って応答", "after": "能動的に先行実行", "before_pct": 30, "after_pct": 100, "delta": "+70%", "delta_tone": "success" },
-                { "icon": "👤", "label": "人間の関与", "before": "常時プロンプト必要", "after": "事前設定のみ", "before_pct": 100, "after_pct": 20, "delta": "-80%", "delta_tone": "success" },
-                { "icon": "🏢", "label": "統合範囲", "before": "チャットのみ", "after": "CRM・メール・ドキュメント", "before_pct": 10, "after_pct": 80, "delta": "8x拡大", "delta_tone": "primary" }
+                {
+                  "icon": "⏰",
+                  "label": "実行トリガー",
+                  "before": "ユーザープロンプト",
+                  "after": "スケジュール・ルール",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "完全自律化",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "タスク実行",
+                  "before": "指示を待って応答",
+                  "after": "能動的に先行実行",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "+70%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "👤",
+                  "label": "人間の関与",
+                  "before": "常時プロンプト必要",
+                  "after": "事前設定のみ",
+                  "before_pct": 100,
+                  "after_pct": 20,
+                  "delta": "-80%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "統合範囲",
+                  "before": "チャットのみ",
+                  "after": "CRM・メール・ドキュメント",
+                  "before_pct": 10,
+                  "after_pct": 80,
+                  "delta": "8x拡大",
+                  "delta_tone": "primary"
+                }
               ],
               "narrative": "AIが「指示待ち」から「能動的実行」に移行。AIコワーカーとしての実用化が本格化",
               "impact": "エンタープライズAI市場でのAgentforce・Copilot Agents対抗が激化。2026年の主要競争軸はプロンプト不要の自律度へ"
-            }
+            },
+            "caption": "従来型AIアシスタント vs Writer自律エージェント",
+            "alt": "従来チャットボット型（プロンプト待ち・受動）とWriter自律エージェント（自律実行・能動）の比較。自律エージェントはスケジュール・ルール駆動でCRM更新・レポート生成・メール作成を自動実行"
           }
         }
       ]
@@ -468,21 +706,48 @@
             "total": 16,
             "source_type_bias": -1
           },
-          "tags": ["Runway", "Gen-4.5", "video-generation", "world-model", "leaderboard"],
+          "tags": [
+            "Runway",
+            "Gen-4.5",
+            "video-generation",
+            "world-model",
+            "leaderboard"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Video Arena Leaderboard 上位比較（Elo）",
-            "alt": "Video Arena LeaderboardのEloスコア比較。RunwayGen-4.5が1,247点でトップ。Google Veo 3.1は約1,190点（2位）、OpenAI Sora 2.0は約1,150点（3位）と推定。独立系AIスタートアップが大手テックを上回る",
             "data": {
               "headline": "Video Arena Leaderboard：Runway Gen-4.5 が首位（Elo比較）",
               "bars": [
-                { "icon": "🎬", "label": "Runway Gen-4.5", "value": "Elo 1,247", "pct": 100, "tone": "primary", "note": "1位" },
-                { "icon": "🔵", "label": "Google Veo 3.1", "value": "Elo ~1,190", "pct": 92, "tone": "info", "note": "2位（推定）" },
-                { "icon": "🤖", "label": "OpenAI Sora 2.0", "value": "Elo ~1,150", "pct": 88, "tone": "success", "note": "3位（推定）" }
+                {
+                  "icon": "🎬",
+                  "label": "Runway Gen-4.5",
+                  "value": "Elo 1,247",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "1位"
+                },
+                {
+                  "icon": "🔵",
+                  "label": "Google Veo 3.1",
+                  "value": "Elo ~1,190",
+                  "pct": 92,
+                  "tone": "info",
+                  "note": "2位（推定）"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "OpenAI Sora 2.0",
+                  "value": "Elo ~1,150",
+                  "pct": 88,
+                  "tone": "success",
+                  "note": "3位（推定）"
+                }
               ],
               "narrative": "独立系スタートアップのRunwayがGAFA傘下モデルを抑えてビデオ生成のトップに立ち、世界モデルへの投資を加速",
               "impact": "プロの映像制作ツールとしてRunwayの採用が加速。GoogleのI/O 2026でのVeo 4発表が最大のカウンターパンチとして注目される"
-            }
+            },
+            "caption": "Video Arena Leaderboard 上位比較（Elo）",
+            "alt": "Video Arena LeaderboardのEloスコア比較。RunwayGen-4.5が1,247点でトップ。Google Veo 3.1は約1,190点（2位）、OpenAI Sora 2.0は約1,150点（3位）と推定。独立系AIスタートアップが大手テックを上回る"
           }
         },
         {
@@ -511,25 +776,77 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 72 },
-          "tags": ["Tsinghua", "diffusion", "video-generation", "distillation", "real-time", "interactive"],
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 72
+          },
+          "tags": [
+            "Tsinghua",
+            "diffusion",
+            "video-generation",
+            "distillation",
+            "real-time",
+            "interactive"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Causal Forcing++ vs 従来拡散モデル（推論ステップ比較）",
-            "alt": "Causal Forcing++と従来の動画拡散モデルの推論ステップ数比較。従来モデルは50〜200ステップで数秒〜数分かかるが、Causal Forcing++は少ステップ蒸留でリアルタイム生成を達成。品質は同等を維持",
             "data": {
               "headline": "Causal Forcing++：蒸留で推論コストを大幅削減",
-              "before": { "label": "従来の動画拡散モデル" },
-              "after": { "label": "Causal Forcing++（蒸留済み）" },
+              "before": {
+                "label": "従来の動画拡散モデル"
+              },
+              "after": {
+                "label": "Causal Forcing++（蒸留済み）"
+              },
               "metrics": [
-                { "icon": "🔢", "label": "推論ステップ数", "before": "50〜200ステップ", "after": "数ステップ", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success", "note": "蒸留効果" },
-                { "icon": "⚡", "label": "生成速度", "before": "数秒〜数分", "after": "リアルタイム", "before_pct": 5, "after_pct": 100, "delta": "20x高速", "delta_tone": "success" },
-                { "icon": "🎨", "label": "画質・品質", "before": "高品質", "after": "同等品質を維持", "before_pct": 100, "after_pct": 92, "delta": "-8%", "delta_tone": "info", "note": "実用域を維持" },
-                { "icon": "🎮", "label": "インタラクティブ性", "before": "不可（遅延大）", "after": "可（リアルタイム）", "before_pct": 0, "after_pct": 100, "delta": "∞", "delta_tone": "success" }
+                {
+                  "icon": "🔢",
+                  "label": "推論ステップ数",
+                  "before": "50〜200ステップ",
+                  "after": "数ステップ",
+                  "before_pct": 100,
+                  "after_pct": 5,
+                  "delta": "-95%",
+                  "delta_tone": "success",
+                  "note": "蒸留効果"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "生成速度",
+                  "before": "数秒〜数分",
+                  "after": "リアルタイム",
+                  "before_pct": 5,
+                  "after_pct": 100,
+                  "delta": "20x高速",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🎨",
+                  "label": "画質・品質",
+                  "before": "高品質",
+                  "after": "同等品質を維持",
+                  "before_pct": 100,
+                  "after_pct": 92,
+                  "delta": "-8%",
+                  "delta_tone": "info",
+                  "note": "実用域を維持"
+                },
+                {
+                  "icon": "🎮",
+                  "label": "インタラクティブ性",
+                  "before": "不可（遅延大）",
+                  "after": "可（リアルタイム）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "∞",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "拡散モデルの遅さを蒸留で克服。ゲームやVR等のインタラクティブ動画生成への道を開く",
               "impact": "リアルタイム動画生成が現実的になりゲーム・メタバース・教育VRなどの動画AIコンテンツ市場が急拡大する可能性"
-            }
+            },
+            "caption": "Causal Forcing++ vs 従来拡散モデル（推論ステップ比較）",
+            "alt": "Causal Forcing++と従来の動画拡散モデルの推論ステップ数比較。従来モデルは50〜200ステップで数秒〜数分かかるが、Causal Forcing++は少ステップ蒸留でリアルタイム生成を達成。品質は同等を維持"
           }
         }
       ]
@@ -565,22 +882,53 @@
             "total": 18,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 125 },
-          "tags": ["math-reasoning", "scaling", "olympiad", "AMC", "AIME", "LLM"],
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 125
+          },
+          "tags": [
+            "math-reasoning",
+            "scaling",
+            "olympiad",
+            "AMC",
+            "AIME",
+            "LLM"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "数学オリンピック推論：スケーリングによる性能向上",
-            "alt": "オリンピック数学ベンチマーク達成水準の比較。AMC（競技数学入門）・AIME（高校数学上位）・数学オリンピック（国際）の各レベルで金メダル水準を達成。専用ファインチューニングなしのスケーリングのみで到達",
             "data": {
               "headline": "Simple Scalingでオリンピック金メダル水準を達成",
               "bars": [
-                { "icon": "🥇", "label": "数学オリンピック（国際）", "value": "金メダル水準", "pct": 95, "tone": "primary", "note": "スケーリングのみ" },
-                { "icon": "📐", "label": "AIME（高校数学上位）", "value": "金メダル水準", "pct": 98, "tone": "success", "note": "専用学習不要" },
-                { "icon": "📊", "label": "AMC（競技数学入門）", "value": "満点相当", "pct": 100, "tone": "info", "note": "完全制覇" }
+                {
+                  "icon": "🥇",
+                  "label": "数学オリンピック（国際）",
+                  "value": "金メダル水準",
+                  "pct": 95,
+                  "tone": "primary",
+                  "note": "スケーリングのみ"
+                },
+                {
+                  "icon": "📐",
+                  "label": "AIME（高校数学上位）",
+                  "value": "金メダル水準",
+                  "pct": 98,
+                  "tone": "success",
+                  "note": "専用学習不要"
+                },
+                {
+                  "icon": "📊",
+                  "label": "AMC（競技数学入門）",
+                  "value": "満点相当",
+                  "pct": 100,
+                  "tone": "info",
+                  "note": "完全制覇"
+                }
               ],
               "narrative": "専用ファインチューニングなしのスケーリングだけで、人間のトップ数学者（金メダリスト）水準の推論に到達した",
               "impact": "数学的推論向上の主流がスケーリングに移行する可能性。専門的ファインチューニングのリソース配分が見直される"
-            }
+            },
+            "caption": "数学オリンピック推論：スケーリングによる性能向上",
+            "alt": "オリンピック数学ベンチマーク達成水準の比較。AMC（競技数学入門）・AIME（高校数学上位）・数学オリンピック（国際）の各レベルで金メダル水準を達成。専用ファインチューニングなしのスケーリングのみで到達"
           }
         },
         {
@@ -609,25 +957,74 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 66 },
-          "tags": ["reinforcement-learning", "agents", "self-distillation", "agentic-RL", "data-efficiency"],
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 66
+          },
+          "tags": [
+            "reinforcement-learning",
+            "agents",
+            "self-distillation",
+            "agentic-RL",
+            "data-efficiency"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Self-Distilled Agentic RL vs 従来のエージェントRL",
-            "alt": "従来のエージェント強化学習（外部教師・人間デモ・報酬設計必要）とSelf-Distilled Agentic RL（自己蒸留で自律改善）の比較。自己蒸留版は人的コストを大幅削減しながら同等以上の性能改善を達成",
             "data": {
               "headline": "Self-Distilled Agentic RL：自己蒸留でエージェント学習コストを削減",
-              "before": { "label": "従来のエージェントRL" },
-              "after": { "label": "Self-Distilled Agentic RL" },
+              "before": {
+                "label": "従来のエージェントRL"
+              },
+              "after": {
+                "label": "Self-Distilled Agentic RL"
+              },
               "metrics": [
-                { "icon": "👤", "label": "人間の関与", "before": "デモ収集・報酬設計が必要", "after": "不要（自己蒸留）", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" },
-                { "icon": "📊", "label": "性能改善速度", "before": "外部データ依存", "after": "自律的に漸進", "before_pct": 60, "after_pct": 90, "delta": "+50%", "delta_tone": "success" },
-                { "icon": "💰", "label": "訓練コスト", "before": "高（外部リソース）", "after": "低（自己完結）", "before_pct": 100, "after_pct": 20, "delta": "-80%", "delta_tone": "success" },
-                { "icon": "📈", "label": "長期改善可能性", "before": "デモ上限に縛られる", "after": "自律的に超えられる", "before_pct": 50, "after_pct": 95, "delta": "+90%", "delta_tone": "primary" }
+                {
+                  "icon": "👤",
+                  "label": "人間の関与",
+                  "before": "デモ収集・報酬設計が必要",
+                  "after": "不要（自己蒸留）",
+                  "before_pct": 100,
+                  "after_pct": 5,
+                  "delta": "-95%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "📊",
+                  "label": "性能改善速度",
+                  "before": "外部データ依存",
+                  "after": "自律的に漸進",
+                  "before_pct": 60,
+                  "after_pct": 90,
+                  "delta": "+50%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "💰",
+                  "label": "訓練コスト",
+                  "before": "高（外部リソース）",
+                  "after": "低（自己完結）",
+                  "before_pct": 100,
+                  "after_pct": 20,
+                  "delta": "-80%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "長期改善可能性",
+                  "before": "デモ上限に縛られる",
+                  "after": "自律的に超えられる",
+                  "before_pct": 50,
+                  "after_pct": 95,
+                  "delta": "+90%",
+                  "delta_tone": "primary"
+                }
               ],
               "narrative": "エージェント自身を蒸留教師にすることで外部リソース不要の自律学習を実現",
               "impact": "エージェントの自律的な能力向上が現実的に。AI自己改善の実用化を研究面で支える重要な基盤論文"
-            }
+            },
+            "caption": "Self-Distilled Agentic RL vs 従来のエージェントRL",
+            "alt": "従来のエージェント強化学習（外部教師・人間デモ・報酬設計必要）とSelf-Distilled Agentic RL（自己蒸留で自律改善）の比較。自己蒸留版は人的コストを大幅削減しながら同等以上の性能改善を達成"
           }
         },
         {
@@ -656,22 +1053,52 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "hf_upvotes", "upvotes": 36 },
-          "tags": ["benchmark", "agents", "long-horizon", "evaluation", "WildClawBench"],
+          "reaction_signal": {
+            "kind": "hf_upvotes",
+            "upvotes": 36
+          },
+          "tags": [
+            "benchmark",
+            "agents",
+            "long-horizon",
+            "evaluation",
+            "WildClawBench"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "WildClawBench：現行エージェントの長期ホライズン性能",
-            "alt": "WildClawBenchでの現行エージェント性能比較。短期タスクでは90%以上の性能を示すエージェントが、長期ホライズンでは40%程度まで性能低下することを示す棒グラフ",
             "data": {
               "headline": "WildClawBench：長期ホライズンで露わになるエージェントの弱点",
               "bars": [
-                { "icon": "✅", "label": "短期・単純タスク", "value": "~90%達成率", "pct": 90, "tone": "success", "note": "従来ベンチ水準" },
-                { "icon": "⚠️", "label": "中期マルチステップ", "value": "~65%達成率", "pct": 65, "tone": "warning", "note": "性能低下開始" },
-                { "icon": "❌", "label": "長期ホライズンタスク", "value": "~38%達成率", "pct": 38, "tone": "error", "note": "大幅性能低下" }
+                {
+                  "icon": "✅",
+                  "label": "短期・単純タスク",
+                  "value": "~90%達成率",
+                  "pct": 90,
+                  "tone": "success",
+                  "note": "従来ベンチ水準"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "中期マルチステップ",
+                  "value": "~65%達成率",
+                  "pct": 65,
+                  "tone": "warning",
+                  "note": "性能低下開始"
+                },
+                {
+                  "icon": "❌",
+                  "label": "長期ホライズンタスク",
+                  "value": "~38%達成率",
+                  "pct": 38,
+                  "tone": "error",
+                  "note": "大幅性能低下"
+                }
               ],
               "narrative": "先進エージェントも長期ホライズンでは50%以下の達成率に落ちる。現行LLMエージェントの根本的な弱点を定量化",
               "impact": "エージェント研究の次の主戦場が「長期ホライズン能力」であることを示す。WildClawBenchが業界標準評価ツールになる可能性"
-            }
+            },
+            "caption": "WildClawBench：現行エージェントの長期ホライズン性能",
+            "alt": "WildClawBenchでの現行エージェント性能比較。短期タスクでは90%以上の性能を示すエージェントが、長期ホライズンでは40%程度まで性能低下することを示す棒グラフ"
           }
         }
       ]
@@ -707,23 +1134,50 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["Recursive Superintelligence", "Richard Socher", "Peter Norvig", "$650M", "AGI", "self-improving"],
+          "tags": [
+            "Recursive Superintelligence",
+            "Richard Socher",
+            "Peter Norvig",
+            "$650M",
+            "AGI",
+            "self-improving"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Recursive Superintelligence：チームと資金調達",
-            "alt": "Recursive Superintelligenceの創業チームと資金調達概要。Richard Socher（CEO）、Peter Norvig（アドバイザー）、$650M調達・評価額$4.65B。GV・Greycroft・AMD・NVIDIAが出資",
             "data": {
               "headline": "Recursive Superintelligence：AI自己改善の頂点を目指す$4.65Bスタートアップ",
               "tldr": "Richard Socher創業・Peter Norvig参画の再帰的自己改善AI開発スタートアップがステルスから$650M調達で登場。評価額$4.65B、GV・NVIDIA等が出資",
               "points": [
-                { "icon": "👤", "label": "創業者", "value": "Richard Socher（元Salesforce研究部長）", "tone": "primary" },
-                { "icon": "🎓", "label": "アドバイザー", "value": "Peter Norvig（AI教科書共著者）", "tone": "info" },
-                { "icon": "💰", "label": "調達額", "value": "$650M（評価額$4.65B）", "tone": "success" },
-                { "icon": "🎯", "label": "目標", "value": "再帰的自己改善AI（2026年中盤公開）", "tone": "warning" }
+                {
+                  "icon": "👤",
+                  "label": "創業者",
+                  "value": "Richard Socher（元Salesforce研究部長）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎓",
+                  "label": "アドバイザー",
+                  "value": "Peter Norvig（AI教科書共著者）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💰",
+                  "label": "調達額",
+                  "value": "$650M（評価額$4.65B）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "目標",
+                  "value": "再帰的自己改善AI（2026年中盤公開）",
+                  "tone": "warning"
+                }
               ],
               "context": "AGI研究の第一人者が集結した独立スタートアップ。OpenAI・Anthropicに対抗する第三勢力として注目される",
               "impact": "AI自己改善の商用化競争が加速。ChatGPT-5等の次世代モデルにも自己改善が組み込まれる可能性を示唆"
-            }
+            },
+            "caption": "Recursive Superintelligence：チームと資金調達",
+            "alt": "Recursive Superintelligenceの創業チームと資金調達概要。Richard Socher（CEO）、Peter Norvig（アドバイザー）、$650M調達・評価額$4.65B。GV・Greycroft・AMD・NVIDIAが出資"
           }
         },
         {
@@ -752,23 +1206,50 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Anthropic", "Gates Foundation", "partnership", "social-impact", "global-health", "$200M"],
+          "tags": [
+            "Anthropic",
+            "Gates Foundation",
+            "partnership",
+            "social-impact",
+            "global-health",
+            "$200M"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Anthropic×ゲイツ財団：$200Mパートナーシップの概要",
-            "alt": "Anthropic×ゲイツ財団$200Mパートナーシップ概要。公共衛生・教育・貧困対策の3領域でClaude APIを活用。途上国の課題解決に焦点",
             "data": {
               "headline": "Anthropic×ゲイツ財団：$200M AIソーシャルインパクトパートナーシップ",
               "tldr": "Anthropicとゲイツ財団が$200Mのパートナーシップ締結。Claudeを公共衛生・教育・貧困対策に活用し、低・中所得国の課題解決を目指す",
               "points": [
-                { "icon": "🏥", "label": "公共衛生", "value": "感染症対策・医療アクセス改善", "tone": "primary" },
-                { "icon": "📚", "label": "教育", "value": "途上国向けパーソナライズ学習", "tone": "info" },
-                { "icon": "🌾", "label": "貧困対策", "value": "農業支援・金融アクセス拡大", "tone": "success" },
-                { "icon": "💵", "label": "規模", "value": "$200M（約290億円）", "tone": "warning" }
+                {
+                  "icon": "🏥",
+                  "label": "公共衛生",
+                  "value": "感染症対策・医療アクセス改善",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📚",
+                  "label": "教育",
+                  "value": "途上国向けパーソナライズ学習",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🌾",
+                  "label": "貧困対策",
+                  "value": "農業支援・金融アクセス拡大",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💵",
+                  "label": "規模",
+                  "value": "$200M（約290億円）",
+                  "tone": "warning"
+                }
               ],
               "context": "PwCとの大型展開発表（同日）とあわせ、Anthropicは商業的成長と社会的インパクトを両立するパートナーシップ戦略を鮮明化",
               "impact": "AI企業の社会責任投資が本格化。公共セクターへのAI普及モデルとして他社も追随する可能性"
-            }
+            },
+            "caption": "Anthropic×ゲイツ財団：$200Mパートナーシップの概要",
+            "alt": "Anthropic×ゲイツ財団$200Mパートナーシップ概要。公共衛生・教育・貧困対策の3領域でClaude APIを活用。途上国の課題解決に焦点"
           }
         }
       ]
@@ -804,23 +1285,50 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "AI governance", "IAEA", "global policy", "China", "regulation"],
+          "tags": [
+            "OpenAI",
+            "AI governance",
+            "IAEA",
+            "global policy",
+            "China",
+            "regulation"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "OpenAI提唱：IAEA型グローバルAIガバナンス枠組み",
-            "alt": "OpenAIが提唱するIAEA型グローバルAIガバナンスの概要。米国主導・中国含む多国間体制・国際AI安全基準設定機関・IAEA模倣設計。既存のEU AI Actや各国個別規制への代替となる多国間アプローチ",
             "data": {
               "headline": "OpenAI提唱：中国を含むIAEA型グローバルAIガバナンス",
               "tldr": "OpenAIのLehane VPがIAEA型の米国主導グローバルAI安全ガバナンス枠組みを提唱。中国の参加を明示的に支持し、米中対立下での多国間AI安全体制を推進",
               "points": [
-                { "icon": "🌍", "label": "モデル", "value": "IAEA型国際安全基準機関", "tone": "primary" },
-                { "icon": "🇺🇸", "label": "主導", "value": "米国主導（中国参加を歓迎）", "tone": "info" },
-                { "icon": "📋", "label": "目的", "value": "各国バラバラ規制の解消", "tone": "success" },
-                { "icon": "🤝", "label": "提唱者", "value": "Chris Lehane（OpenAI グローバルVP）", "tone": "warning" }
+                {
+                  "icon": "🌍",
+                  "label": "モデル",
+                  "value": "IAEA型国際安全基準機関",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🇺🇸",
+                  "label": "主導",
+                  "value": "米国主導（中国参加を歓迎）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📋",
+                  "label": "目的",
+                  "value": "各国バラバラ規制の解消",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "提唱者",
+                  "value": "Chris Lehane（OpenAI グローバルVP）",
+                  "tone": "warning"
+                }
               ],
               "context": "EU AI Actや各国の個別規制が乱立するなか、統一国際基準の必要性が高まっている。IAEAモデルが一つの解答として浮上",
               "impact": "主要AI企業が中国包摂を明示的に支持したことで、国際AI規制交渉の新たなフレームワークが生まれる可能性。地政学的AIガバナンスの転換点"
-            }
+            },
+            "caption": "OpenAI提唱：IAEA型グローバルAIガバナンス枠組み",
+            "alt": "OpenAIが提唱するIAEA型グローバルAIガバナンスの概要。米国主導・中国含む多国間体制・国際AI安全基準設定機関・IAEA模倣設計。既存のEU AI Actや各国個別規制への代替となる多国間アプローチ"
           }
         }
       ]
@@ -856,22 +1364,24 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "Apple", "legal", "ChatGPT", "partnership", "supply-chain"],
+          "tags": [
+            "OpenAI",
+            "Apple",
+            "legal",
+            "ChatGPT",
+            "partnership",
+            "supply-chain"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "OpenAI-Apple パートナーシップの崩壊タイムライン",
-            "alt": "OpenAI-AppleのChatGPT統合パートナーシップ崩壊の経緯。2024年6月発表→Apple IntelligenceでのChatGPT露出制限→2026年5月法的措置準備",
             "data": {
               "headline": "OpenAI vs Apple：2年間のパートナーシップが決裂寸前",
-              "steps": [
-                { "icon": "🤝", "label": "2024年6月", "desc": "WWDC2024でApple-OpenAI統合を発表", "tone": "success" },
-                { "icon": "📱", "label": "2025年秋", "desc": "Apple IntelligenceがChatGPTの露出を制限", "tone": "warning" },
-                { "icon": "⚠️", "label": "2026年5月11日", "desc": "TanStack供給チェーン攻撃でMacアプリ影響", "tone": "error" },
-                { "icon": "⚖️", "label": "2026年5月14日", "desc": "OpenAIが法的措置の準備に入ったとBloomberg報道", "tone": "error" }
-              ],
+              "events": [],
               "narrative": "Appleへの期待（加入者・露出）が実現せずOpenAIが法的手段を検討。大手テックとのパートナーシップリスクが表面化",
               "impact": "ビッグテックとのAI統合パートナーシップの交渉力とリスクが問われる転換点。他のAI企業も同様のリスクを抱える可能性"
-            }
+            },
+            "caption": "OpenAI-Apple パートナーシップの崩壊タイムライン",
+            "alt": "OpenAI-AppleのChatGPT統合パートナーシップ崩壊の経緯。2024年6月発表→Apple IntelligenceでのChatGPT露出制限→2026年5月法的措置準備"
           }
         },
         {
@@ -900,22 +1410,24 @@
             "total": 14,
             "source_type_bias": -1
           },
-          "tags": ["Google", "I/O 2026", "Gemini 4", "Android 17", "Veo 4", "community"],
+          "tags": [
+            "Google",
+            "I/O 2026",
+            "Gemini 4",
+            "Android 17",
+            "Veo 4",
+            "community"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Google I/O 2026：期待される発表タイムライン",
-            "alt": "Google I/O 2026の期待される発表。5月19日キーノートでGemini 4（10Mコンテキスト）・Veo 4（動画）・Lyria 2（音楽）・Android 17・Aluminium OS。AI競争の最大転換点",
             "data": {
               "headline": "Google I/O 2026（5/19〜20）：期待される主要発表",
-              "steps": [
-                { "icon": "🤖", "label": "Gemini 4", "desc": "10Mコンテキスト・ネイティブマルチモーダル・強化エージェント", "tone": "primary" },
-                { "icon": "🎬", "label": "Veo 4", "desc": "次世代動画生成。Runway Gen-4.5へのカウンターパンチ", "tone": "success" },
-                { "icon": "🎵", "label": "Lyria 2", "desc": "次世代音楽生成AIのアップデート", "tone": "info" },
-                { "icon": "📱", "label": "Android 17 + Aluminium OS", "desc": "Android/ChromeOS統合+深いGemini統合", "tone": "warning" }
-              ],
+              "events": [],
               "narrative": "I/O 2026はGoogleの「AI everywhere」戦略の集大成。1週間後の発表でAI競争の地図が塗り変わる可能性",
               "impact": "Gemini 4が期待通りならOpenAI GPT-5.5・Claude Opus 4.7との差が縮まる。Android AIエコシステムへの統合でGoogle端末ユーザー30億人が影響を受ける"
-            }
+            },
+            "caption": "Google I/O 2026：期待される発表タイムライン",
+            "alt": "Google I/O 2026の期待される発表。5月19日キーノートでGemini 4（10Mコンテキスト）・Veo 4（動画）・Lyria 2（音楽）・Android 17・Aluminium OS。AI競争の最大転換点"
           }
         }
       ]
@@ -951,25 +1463,76 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 85 },
-          "tags": ["ローカルLLM", "Qwen", "LM Studio", "Ollama", "無料", "Apple Silicon"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 85
+          },
+          "tags": [
+            "ローカルLLM",
+            "Qwen",
+            "LM Studio",
+            "Ollama",
+            "無料",
+            "Apple Silicon"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "ローカルLLM vs クラウドLLM：2026年の使い分け",
-            "alt": "2026年時点のローカルLLMとクラウドLLMの比較。コスト・プライバシー・オフライン動作はローカルが優位。最新モデル・性能上限・セットアップ簡便さはクラウドが優位",
             "data": {
               "headline": "2026年：ローカルLLM vs クラウドLLM 使い分けガイド",
-              "before": { "label": "クラウドLLM（ChatGPT/Claude）" },
-              "after": { "label": "ローカルLLM（Qwen/Llama/Gemma）" },
+              "before": {
+                "label": "クラウドLLM（ChatGPT/Claude）"
+              },
+              "after": {
+                "label": "ローカルLLM（Qwen/Llama/Gemma）"
+              },
               "metrics": [
-                { "icon": "💰", "label": "コスト", "before": "有料（月$20〜）", "after": "無料", "before_pct": 20, "after_pct": 100, "delta": "完全無料化", "delta_tone": "success" },
-                { "icon": "🔒", "label": "プライバシー", "before": "クラウド送信", "after": "完全ローカル", "before_pct": 20, "after_pct": 100, "delta": "100%プライベート", "delta_tone": "success" },
-                { "icon": "🌐", "label": "オフライン動作", "before": "不可", "after": "可", "before_pct": 0, "after_pct": 100, "delta": "∞", "delta_tone": "success" },
-                { "icon": "🧠", "label": "性能（最高水準）", "before": "GPT-5.5/Claude Opus", "after": "Qwen3.5-9B相当", "before_pct": 100, "after_pct": 70, "delta": "-30%", "delta_tone": "warning", "note": "実用十分" }
+                {
+                  "icon": "💰",
+                  "label": "コスト",
+                  "before": "有料（月$20〜）",
+                  "after": "無料",
+                  "before_pct": 20,
+                  "after_pct": 100,
+                  "delta": "完全無料化",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "プライバシー",
+                  "before": "クラウド送信",
+                  "after": "完全ローカル",
+                  "before_pct": 20,
+                  "after_pct": 100,
+                  "delta": "100%プライベート",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "オフライン動作",
+                  "before": "不可",
+                  "after": "可",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "∞",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "性能（最高水準）",
+                  "before": "GPT-5.5/Claude Opus",
+                  "after": "Qwen3.5-9B相当",
+                  "before_pct": 100,
+                  "after_pct": 70,
+                  "delta": "-30%",
+                  "delta_tone": "warning",
+                  "note": "実用十分"
+                }
               ],
               "narrative": "2026年でローカルLLMが実用域に入った。用途別の使い分けが重要",
               "impact": "個人・中小企業のAI活用コストがほぼゼロになる。プライバシー配慮が必要な業務でのAI活用障壁が消える"
-            }
+            },
+            "caption": "ローカルLLM vs クラウドLLM：2026年の使い分け",
+            "alt": "2026年時点のローカルLLMとクラウドLLMの比較。コスト・プライバシー・オフライン動作はローカルが優位。最新モデル・性能上限・セットアップ簡便さはクラウドが優位"
           }
         },
         {
@@ -998,23 +1561,50 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["ローカルLLM", "Ollama", "LM Studio", "エンタープライズ", "Classmethod", "DevelopersIO"],
+          "tags": [
+            "ローカルLLM",
+            "Ollama",
+            "LM Studio",
+            "エンタープライズ",
+            "Classmethod",
+            "DevelopersIO"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "2026年ローカルLLM選定ガイド（DevelopersIO）",
-            "alt": "DevelopersIOの2026年ローカルLLMガイドの概要。主要ツール（Ollama/LM Studio）、推奨モデル（Qwen3.5/Llama4）、推奨ハード（Mac Studio M4/RTX 5090）、実務ユースケース（RAG/コーディング）をカバー",
             "data": {
               "headline": "DevelopersIO 2026年版：ローカルLLM完全選定ガイド",
               "tldr": "クラスメソッドが2026年版ローカルLLM導入ガイドを公開。ツール成熟度・モデル選定・ハード推奨・実務ユースケース別ガイドを網羅",
               "points": [
-                { "icon": "🔧", "label": "推奨ツール", "value": "Ollama（本番）・LM Studio（試験）", "tone": "primary" },
-                { "icon": "🧠", "label": "推奨モデル", "value": "Qwen3.5・Llama 4・Gemma 4", "tone": "info" },
-                { "icon": "💻", "label": "推奨ハード", "value": "Mac Studio M4 / RTX 5090", "tone": "success" },
-                { "icon": "🏢", "label": "主要用途", "value": "文書要約・RAG・コーディング補助", "tone": "warning" }
+                {
+                  "icon": "🔧",
+                  "label": "推奨ツール",
+                  "value": "Ollama（本番）・LM Studio（試験）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "推奨モデル",
+                  "value": "Qwen3.5・Llama 4・Gemma 4",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💻",
+                  "label": "推奨ハード",
+                  "value": "Mac Studio M4 / RTX 5090",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "主要用途",
+                  "value": "文書要約・RAG・コーディング補助",
+                  "tone": "warning"
+                }
               ],
               "context": "2026年はローカルLLMが「試験導入」から「本番実運用」フェーズに移行した年。企業での本格活用が現実的に",
               "impact": "エンタープライズでのローカルLLM採用加速。特に医療・法務・金融など機密データを扱う業界での活用障壁が消える"
-            }
+            },
+            "caption": "2026年ローカルLLM選定ガイド（DevelopersIO）",
+            "alt": "DevelopersIOの2026年ローカルLLMガイドの概要。主要ツール（Ollama/LM Studio）、推奨モデル（Qwen3.5/Llama4）、推奨ハード（Mac Studio M4/RTX 5090）、実務ユースケース（RAG/コーディング）をカバー"
           }
         },
         {
@@ -1043,22 +1633,53 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "zenn", "liked": 312 },
-          "tags": ["Qwen3.6", "LM Studio", "Claude Code代替", "コーディングエージェント", "ローカルLLM", "無料"],
+          "reaction_signal": {
+            "kind": "zenn",
+            "liked": 312
+          },
+          "tags": [
+            "Qwen3.6",
+            "LM Studio",
+            "Claude Code代替",
+            "コーディングエージェント",
+            "ローカルLLM",
+            "無料"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Qwen3.6 ローカル vs Claude Code：コスト・性能比較",
-            "alt": "Qwen3.6（ローカル）とClaude Code（有料）の比較棒グラフ。コストはQwen3.6が0円（100%優位）、Claude Codeは月2,800円以上。SWE-bench性能はClaude Codeが80%（基準）、Qwen3.6が72%（90%相当）",
             "data": {
               "headline": "Qwen3.6 ローカル vs Claude Code：コスト対効果",
               "bars": [
-                { "icon": "💴", "label": "月額コスト削減", "value": "月¥2,800+→¥0", "pct": 100, "tone": "primary", "note": "完全無料化" },
-                { "icon": "🧪", "label": "SWE-bench性能比", "value": "Qwen3.6: 72% / Claude: 80%", "pct": 90, "tone": "info", "note": "90%の性能比" },
-                { "icon": "🔒", "label": "プライバシー", "value": "完全ローカル（データ送信なし）", "pct": 100, "tone": "success", "note": "機密コードも安全" }
+                {
+                  "icon": "💴",
+                  "label": "月額コスト削減",
+                  "value": "月¥2,800+→¥0",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "完全無料化"
+                },
+                {
+                  "icon": "🧪",
+                  "label": "SWE-bench性能比",
+                  "value": "Qwen3.6: 72% / Claude: 80%",
+                  "pct": 90,
+                  "tone": "info",
+                  "note": "90%の性能比"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "プライバシー",
+                  "value": "完全ローカル（データ送信なし）",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "機密コードも安全"
+                }
               ],
               "narrative": "Qwen3.6+LM Studioで月額費用ゼロ・プライバシー完全・90%の性能を実現。実用域に十分到達",
               "impact": "個人開発者・スタートアップでのAIコーディングツールコストがほぼゼロになる。有料コーディングAI市場に構造的な圧力"
-            }
+            },
+            "caption": "Qwen3.6 ローカル vs Claude Code：コスト・性能比較",
+            "alt": "Qwen3.6（ローカル）とClaude Code（有料）の比較棒グラフ。コストはQwen3.6が0円（100%優位）、Claude Codeは月2,800円以上。SWE-bench性能はClaude Codeが80%（基準）、Qwen3.6が72%（90%相当）"
           }
         },
         {
@@ -1087,24 +1708,71 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["NEC", "特化LLM", "日本語AI", "デジタル庁", "源内", "企業AI戦略"],
+          "tags": [
+            "NEC",
+            "特化LLM",
+            "日本語AI",
+            "デジタル庁",
+            "源内",
+            "企業AI戦略"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "汎用LLM vs NEC特化LLM：日本企業用途での比較",
-            "alt": "汎用LLM（ChatGPT/Claude）とNEC特化LLMの比較。汎用性・多言語・最新知識はChatGPT/Claudeが優位。日本語特化・行政文書・医療記録・製造データではNEC特化モデルが優位",
             "data": {
               "headline": "汎用LLM vs NEC特化LLM：日本ビジネスでの使い分け",
-              "before": { "label": "汎用LLM（ChatGPT/Claude）" },
-              "after": { "label": "NEC特化LLM" },
+              "before": {
+                "label": "汎用LLM（ChatGPT/Claude）"
+              },
+              "after": {
+                "label": "NEC特化LLM"
+              },
               "metrics": [
-                { "icon": "🌐", "label": "汎用性・多言語", "before": "優位（世界最高水準）", "after": "限定的", "before_pct": 100, "after_pct": 40, "delta": "汎用LLM有利", "delta_tone": "info" },
-                { "icon": "🏛️", "label": "日本語行政文書", "before": "普通", "after": "高精度（特化学習済み）", "before_pct": 50, "after_pct": 95, "delta": "+90%", "delta_tone": "success" },
-                { "icon": "🏭", "label": "製造・医療データ", "before": "汎用知識のみ", "after": "ドメイン特化対応", "before_pct": 30, "after_pct": 90, "delta": "+200%", "delta_tone": "success" },
-                { "icon": "🔒", "label": "オンプレ/セキュリティ", "before": "クラウド依存", "after": "オンプレ可（政府向け）", "before_pct": 30, "after_pct": 100, "delta": "大幅有利", "delta_tone": "success" }
+                {
+                  "icon": "🌐",
+                  "label": "汎用性・多言語",
+                  "before": "優位（世界最高水準）",
+                  "after": "限定的",
+                  "before_pct": 100,
+                  "after_pct": 40,
+                  "delta": "汎用LLM有利",
+                  "delta_tone": "info"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "日本語行政文書",
+                  "before": "普通",
+                  "after": "高精度（特化学習済み）",
+                  "before_pct": 50,
+                  "after_pct": 95,
+                  "delta": "+90%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🏭",
+                  "label": "製造・医療データ",
+                  "before": "汎用知識のみ",
+                  "after": "ドメイン特化対応",
+                  "before_pct": 30,
+                  "after_pct": 90,
+                  "delta": "+200%",
+                  "delta_tone": "success"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "オンプレ/セキュリティ",
+                  "before": "クラウド依存",
+                  "after": "オンプレ可（政府向け）",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "大幅有利",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "NECは「日本語特化×オンプレ×ドメイン知識」で汎用LLMが苦手な領域を狙う",
               "impact": "日本の行政・製造・医療でのAI採用が加速。NECモデルがデファクト標準になれば日本独自のAIエコシステムが形成"
-            }
+            },
+            "caption": "汎用LLM vs NEC特化LLM：日本企業用途での比較",
+            "alt": "汎用LLM（ChatGPT/Claude）とNEC特化LLMの比較。汎用性・多言語・最新知識はChatGPT/Claudeが優位。日本語特化・行政文書・医療記録・製造データではNEC特化モデルが優位"
           }
         },
         {
@@ -1133,22 +1801,57 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["AI業界", "市場規模", "LLM競争", "日本AI市場", "MCP", "2026年概観"],
+          "tags": [
+            "AI業界",
+            "市場規模",
+            "LLM競争",
+            "日本AI市場",
+            "MCP",
+            "2026年概観"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "2026年 AI市場規模：世界 vs 日本",
-            "alt": "2026年のAI市場規模比較。世界全体は$2.5兆（100%基準）、日本は$94億（0.38%相当）。日本市場は小さいが製造・金融・医療への本格導入フェーズで急成長中",
             "data": {
               "headline": "2026年 AI市場規模：世界$2.5兆 vs 日本$94億",
               "bars": [
-                { "icon": "🌍", "label": "世界AI市場", "value": "$2.5兆", "pct": 100, "tone": "primary", "note": "年率30%成長" },
-                { "icon": "🇺🇸", "label": "米国AI市場", "value": "$1.0兆（推定）", "pct": 40, "tone": "info", "note": "シェア最大" },
-                { "icon": "🇨🇳", "label": "中国AI市場", "value": "$4,500億（推定）", "pct": 18, "tone": "warning", "note": "急成長中" },
-                { "icon": "🇯🇵", "label": "日本AI市場", "value": "$94億", "pct": 4, "tone": "success", "note": "本格導入フェーズ" }
+                {
+                  "icon": "🌍",
+                  "label": "世界AI市場",
+                  "value": "$2.5兆",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "年率30%成長"
+                },
+                {
+                  "icon": "🇺🇸",
+                  "label": "米国AI市場",
+                  "value": "$1.0兆（推定）",
+                  "pct": 40,
+                  "tone": "info",
+                  "note": "シェア最大"
+                },
+                {
+                  "icon": "🇨🇳",
+                  "label": "中国AI市場",
+                  "value": "$4,500億（推定）",
+                  "pct": 18,
+                  "tone": "warning",
+                  "note": "急成長中"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "日本AI市場",
+                  "value": "$94億",
+                  "pct": 4,
+                  "tone": "success",
+                  "note": "本格導入フェーズ"
+                }
               ],
               "narrative": "日本市場は世界比で小さいが、製造・金融・医療での本格導入フェーズへの移行で急拡大中",
               "impact": "日本企業のAI投資が加速し、特に製造業の生産性向上でAIが差別化要因になる。2026〜2028年が転換点"
-            }
+            },
+            "caption": "2026年 AI市場規模：世界 vs 日本",
+            "alt": "2026年のAI市場規模比較。世界全体は$2.5兆（100%基準）、日本は$94億（0.38%相当）。日本市場は小さいが製造・金融・医療への本格導入フェーズで急成長中"
           }
         }
       ]
@@ -1184,24 +1887,73 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["百度", "ERNIE5.1", "文心", "China LLM", "Agent", "効率学習"],
+          "tags": [
+            "百度",
+            "ERNIE5.1",
+            "文心",
+            "China LLM",
+            "Agent",
+            "効率学習"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "文心5.1 vs DeepSeek-V4-Pro：中国AIモデル比較",
-            "alt": "百度文心5.1とDeepSeek-V4-Proの主要指標比較。Agent能力は文心5.1が優位（上回る）。学習コストは文心5.1が業界比6%で圧倒的に低い。創造的文章生成では同等水準",
             "data": {
               "headline": "文心5.1 vs DeepSeek-V4-Pro：中国AI最前線",
-              "before": { "label": "DeepSeek-V4-Pro（参照）" },
-              "after": { "label": "百度 文心5.1" },
+              "before": {
+                "label": "DeepSeek-V4-Pro（参照）"
+              },
+              "after": {
+                "label": "百度 文心5.1"
+              },
               "metrics": [
-                { "icon": "🤖", "label": "Agent能力", "before": "高（業界トップ水準）", "after": "高・上回る（主張）", "before_pct": 90, "after_pct": 95, "delta": "+5%超", "delta_tone": "success", "note": "百度主張" },
-                { "icon": "💰", "label": "学習コスト", "before": "業界平均（100%基準）", "after": "業界比6%", "before_pct": 100, "after_pct": 6, "delta": "-94%", "delta_tone": "success", "note": "圧倒的効率" },
-                { "icon": "✍️", "label": "創造的文章生成", "before": "高性能（OSS最高水準）", "after": "Gemini 3.1 Pro相当", "before_pct": 85, "after_pct": 88, "delta": "+3%", "delta_tone": "info" },
-                { "icon": "🔍", "label": "国内検索ランキング", "before": "上位", "after": "LMArena国内1位", "before_pct": 80, "after_pct": 100, "delta": "首位奪還", "delta_tone": "primary" }
+                {
+                  "icon": "🤖",
+                  "label": "Agent能力",
+                  "before": "高（業界トップ水準）",
+                  "after": "高・上回る（主張）",
+                  "before_pct": 90,
+                  "after_pct": 95,
+                  "delta": "+5%超",
+                  "delta_tone": "success",
+                  "note": "百度主張"
+                },
+                {
+                  "icon": "💰",
+                  "label": "学習コスト",
+                  "before": "業界平均（100%基準）",
+                  "after": "業界比6%",
+                  "before_pct": 100,
+                  "after_pct": 6,
+                  "delta": "-94%",
+                  "delta_tone": "success",
+                  "note": "圧倒的効率"
+                },
+                {
+                  "icon": "✍️",
+                  "label": "創造的文章生成",
+                  "before": "高性能（OSS最高水準）",
+                  "after": "Gemini 3.1 Pro相当",
+                  "before_pct": 85,
+                  "after_pct": 88,
+                  "delta": "+3%",
+                  "delta_tone": "info"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "国内検索ランキング",
+                  "before": "上位",
+                  "after": "LMArena国内1位",
+                  "before_pct": 80,
+                  "after_pct": 100,
+                  "delta": "首位奪還",
+                  "delta_tone": "primary"
+                }
               ],
               "narrative": "百度が効率的な事前学習技術でDeepSeekを超えるAgent能力を主張。中国AI競争の多極化が進む",
               "impact": "中国AI市場でのDeepSeek独占が終わり、複数の強力なモデルが競争する構造に。日本企業が中国LLMを選択する場合の選択肢が拡大"
-            }
+            },
+            "caption": "文心5.1 vs DeepSeek-V4-Pro：中国AIモデル比較",
+            "alt": "百度文心5.1とDeepSeek-V4-Proの主要指標比較。Agent能力は文心5.1が優位（上回る）。学習コストは文心5.1が業界比6%で圧倒的に低い。創造的文章生成では同等水準"
           }
         },
         {
@@ -1230,31 +1982,75 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hf_likes", "liked": 22500 },
-          "tags": ["MiniCPM", "OpenBMB", "Tsinghua", "VLM", "mobile-AI", "1.3B", "Apache2"],
+          "reaction_signal": {
+            "kind": "hf_likes",
+            "liked": 22500
+          },
+          "tags": [
+            "MiniCPM",
+            "OpenBMB",
+            "Tsinghua",
+            "VLM",
+            "mobile-AI",
+            "1.3B",
+            "Apache2"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "MiniCPM-V 4.6：2B未満VLMとしての性能優位",
-            "alt": "MiniCPM-V 4.6の2B未満モデルでの性能比較。MMNU-Pro（視覚推論）38%で2B未満最高スコア。HFいいね22.5kで週間トレンド1位。262kコンテキストで1.3Bという小型規模を実証",
             "data": {
               "headline": "MiniCPM-V 4.6：1.3BでモバイルAI最高水準を実現",
               "bars": [
-                { "icon": "❤️", "label": "HFいいね数", "value": "22,500", "pct": 100, "tone": "primary", "note": "週間トレンド1位" },
-                { "icon": "👁️", "label": "MMNU-Pro（視覚推論）", "value": "38%（2B未満最高）", "pct": 95, "tone": "success", "note": "2B未満世界1位" },
-                { "icon": "📏", "label": "コンテキスト長", "value": "262Kトークン", "pct": 80, "tone": "info", "note": "1.3B規模で達成" }
+                {
+                  "icon": "❤️",
+                  "label": "HFいいね数",
+                  "value": "22,500",
+                  "pct": 100,
+                  "tone": "primary",
+                  "note": "週間トレンド1位"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "MMNU-Pro（視覚推論）",
+                  "value": "38%（2B未満最高）",
+                  "pct": 95,
+                  "tone": "success",
+                  "note": "2B未満世界1位"
+                },
+                {
+                  "icon": "📏",
+                  "label": "コンテキスト長",
+                  "value": "262Kトークン",
+                  "pct": 80,
+                  "tone": "info",
+                  "note": "1.3B規模で達成"
+                }
               ],
               "narrative": "1.3Bという超軽量規模でモバイルAI最高水準を実現。中国発OSSがモバイルVLMの世界標準を主導",
               "impact": "スマートフォン・IoT向けの高精度ビジョンAI展開が現実的に。プライバシー・コスト・オフライン要件を同時解決する実用ソリューション"
-            }
+            },
+            "caption": "MiniCPM-V 4.6：2B未満VLMとしての性能優位",
+            "alt": "MiniCPM-V 4.6の2B未満モデルでの性能比較。MMNU-Pro（視覚推論）38%で2B未満最高スコア。HFいいね22.5kで週間トレンド1位。262kコンテキストで1.3Bという小型規模を実証"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "reddit_localllama_rss", "reason": "fetch_blocked" },
-    { "source": "reddit_machinelearning_rss", "reason": "fetch_blocked" },
-    { "source": "openai_news_page", "reason": "http_403" },
-    { "source": "stratechery", "reason": "paywall" }
+    {
+      "source": "reddit_localllama_rss",
+      "reason": "fetch_blocked"
+    },
+    {
+      "source": "reddit_machinelearning_rss",
+      "reason": "fetch_blocked"
+    },
+    {
+      "source": "openai_news_page",
+      "reason": "http_403"
+    },
+    {
+      "source": "stratechery",
+      "reason": "paywall"
+    }
   ]
 }

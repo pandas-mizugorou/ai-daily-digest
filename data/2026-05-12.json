@@ -23,12 +23,36 @@
     }
   },
   "top_picks": [
-    { "id": "jp_chrome_devtools_mcp", "rank": 1, "reason": "はてブ467件・importance=5・practicality=5。AIがChromeを直接操作できる実装が日本開発者コミュニティで最大の反響を呼んだ" },
-    { "id": "research_autotts", "rank": 2, "reason": "Google発・importance=4・depth=5・d+p=8。LLMが自律的に推論最適化戦略を発見するAutoTTSは推論コスト問題への新解法" },
-    { "id": "tools_uniprefill", "rank": 3, "reason": "importance=4・depth=4・practicality=4。vLLM直接統合で長文脈Prefillを全アーキテクチャ対応で即日適用可能" },
-    { "id": "agents_aris_2605", "rank": 4, "reason": "importance=4・depth=5・d+p=7。オープンソース(GitHub 8,800★)の自律研究マルチエージェントシステムとして実用性高い" },
-    { "id": "industry_openai_deploy", "rank": 5, "reason": "importance=5・公式ソース。$40億超・19社パートナー・Tomoro買収でOpenAIの企業AI実装市場参入が確定" },
-    { "id": "mm_meanmode_1000layer", "rank": 6, "reason": "importance=4・depth=5・d+p=7。1000層拡散Transformerを可能にする平均・分散分離残差法は生成AI画質向上の技術的ブレークスルー" }
+    {
+      "id": "jp_chrome_devtools_mcp",
+      "rank": 1,
+      "reason": "はてブ467件・importance=5・practicality=5。AIがChromeを直接操作できる実装が日本開発者コミュニティで最大の反響を呼んだ"
+    },
+    {
+      "id": "research_autotts",
+      "rank": 2,
+      "reason": "Google発・importance=4・depth=5・d+p=8。LLMが自律的に推論最適化戦略を発見するAutoTTSは推論コスト問題への新解法"
+    },
+    {
+      "id": "tools_uniprefill",
+      "rank": 3,
+      "reason": "importance=4・depth=4・practicality=4。vLLM直接統合で長文脈Prefillを全アーキテクチャ対応で即日適用可能"
+    },
+    {
+      "id": "agents_aris_2605",
+      "rank": 4,
+      "reason": "importance=4・depth=5・d+p=7。オープンソース(GitHub 8,800★)の自律研究マルチエージェントシステムとして実用性高い"
+    },
+    {
+      "id": "industry_openai_deploy",
+      "rank": 5,
+      "reason": "importance=5・公式ソース。$40億超・19社パートナー・Tomoro買収でOpenAIの企業AI実装市場参入が確定"
+    },
+    {
+      "id": "mm_meanmode_1000layer",
+      "rank": 6,
+      "reason": "importance=4・depth=5・d+p=7。1000層拡散Transformerを可能にする平均・分散分離残差法は生成AI画質向上の技術的ブレークスルー"
+    }
   ],
   "categories": [
     {
@@ -61,23 +85,61 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["regulation", "cybersecurity", "GPT-5.5-Cyber", "EU", "Anthropic", "Mythos", "policy"],
+          "tags": [
+            "regulation",
+            "cybersecurity",
+            "GPT-5.5-Cyber",
+            "EU",
+            "Anthropic",
+            "Mythos",
+            "policy"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "EU サイバーAI アクセス比較",
-            "alt": "OpenAIとAnthropicのEUサイバーモデルアクセス方針の比較。OpenAIはGPT-5.5-CyberをEU認定チームに限定公開済み（状態：公開）。AnthropicはMythosをEU向けに保留中（状態：保留）。OpenAIの戦略：EU規制当局との関係強化優先。Anthropicの戦略：米欧交渉の進展を待ち条件整備後に開放予定。",
             "data": {
               "headline": "EU サイバーAI アクセス：OpenAI 先行、Anthropic 保留",
-              "before": { "label": "OpenAI", "sublabel": "GPT-5.5-Cyber" },
-              "after": { "label": "Anthropic", "sublabel": "Mythos (CyberGym 83.1%)" },
+              "before": {
+                "label": "OpenAI",
+                "sublabel": "GPT-5.5-Cyber"
+              },
+              "after": {
+                "label": "Anthropic",
+                "sublabel": "Mythos (CyberGym 83.1%)"
+              },
               "metrics": [
-                { "label": "EU アクセス", "before": "限定公開済み", "after": "保留中", "before_pct": 100, "after_pct": 0, "delta": "先行", "delta_tone": "info" },
-                { "label": "公開範囲", "before": "認定サイバーチーム", "after": "未定", "before_pct": 40, "after_pct": 0, "delta": "—", "delta_tone": "default" },
-                { "label": "ベンチマーク", "before": "非公表", "after": "83.1%", "before_pct": 50, "after_pct": 83, "delta": "+?pt", "delta_tone": "default" }
+                {
+                  "label": "EU アクセス",
+                  "before": "限定公開済み",
+                  "after": "保留中",
+                  "before_pct": 100,
+                  "after_pct": 0,
+                  "delta": "先行",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "公開範囲",
+                  "before": "認定サイバーチーム",
+                  "after": "未定",
+                  "before_pct": 40,
+                  "after_pct": 0,
+                  "delta": "—",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "ベンチマーク",
+                  "before": "非公表",
+                  "after": "83.1%",
+                  "before_pct": 50,
+                  "after_pct": 83,
+                  "delta": "+?pt",
+                  "delta_tone": "default"
+                }
               ],
               "narrative": "OpenAIがEU規制当局との関係強化を優先し先手を打った形。AnthropicはMythosの能力値（CyberGym 83.1%）を既に公表しているが開放タイミングを戦略的に遅らせている。",
               "impact": "AIサイバーセキュリティモデルの政府向けアクセスが規制交渉の新たな切り札となる可能性がある。"
-            }
+            },
+            "caption": "EU サイバーAI アクセス比較",
+            "alt": "OpenAIとAnthropicのEUサイバーモデルアクセス方針の比較。OpenAIはGPT-5.5-CyberをEU認定チームに限定公開済み（状態：公開）。AnthropicはMythosをEU向けに保留中（状態：保留）。OpenAIの戦略：EU規制当局との関係強化優先。Anthropicの戦略：米欧交渉の進展を待ち条件整備後に開放予定。"
           }
         }
       ]
@@ -112,24 +174,54 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "reaction_signal": { "kind": "semantic_scholar", "citation_count": 0 },
-          "tags": ["multi-agent", "autonomous-research", "ARIS", "Shanghai-Jiao-Tong", "open-source", "adversarial"],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 0
+          },
+          "tags": [
+            "multi-agent",
+            "autonomous-research",
+            "ARIS",
+            "Shanghai-Jiao-Tong",
+            "open-source",
+            "adversarial"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ARIS マルチエージェント構造",
-            "alt": "ARISの3レイヤーアーキテクチャを示すサマリーカード。レイヤー1:オーケストレーション（研究タスクの分解・割り当て）、レイヤー2:実行（実際の調査・生成）、レイヤー3:保証（批判エージェントによる欠陥検出）。特徴:敵対的協調、クロスモデル対応、GitHub 8,800スター。",
             "data": {
               "headline": "ARIS：3レイヤー敵対的マルチエージェントで自律研究を実現",
               "tldr": "複数AIエージェントが「提案→批判→改善」のループで長期研究タスクを自律完遂。上海交通大学発のオープンソースフレームワークがGitHub 8,800スターで注目を集めた。",
               "points": [
-                { "icon": "🎭", "label": "設計思想", "value": "敵対的協調", "description": "批判エージェントが実行エージェントの出力の欠陥を指摘し品質を担保する" },
-                { "icon": "📐", "label": "レイヤー数", "value": "3層構造", "description": "オーケストレーション・実行・保証の分離で複雑タスクを分担" },
-                { "icon": "⭐", "label": "GitHub星数", "value": "8,800+", "description": "公開初日に急速拡散。研究自動化需要の高さを反映" },
-                { "icon": "🔓", "label": "公開形態", "value": "オープンソース", "description": "複数モデルに対応するクロスモデル設計で導入の柔軟性が高い" }
+                {
+                  "icon": "🎭",
+                  "label": "設計思想",
+                  "value": "敵対的協調",
+                  "description": "批判エージェントが実行エージェントの出力の欠陥を指摘し品質を担保する"
+                },
+                {
+                  "icon": "📐",
+                  "label": "レイヤー数",
+                  "value": "3層構造",
+                  "description": "オーケストレーション・実行・保証の分離で複雑タスクを分担"
+                },
+                {
+                  "icon": "⭐",
+                  "label": "GitHub星数",
+                  "value": "8,800+",
+                  "description": "公開初日に急速拡散。研究自動化需要の高さを反映"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開形態",
+                  "value": "オープンソース",
+                  "description": "複数モデルに対応するクロスモデル設計で導入の柔軟性が高い"
+                }
               ],
               "context": "単一LLMの推論限界を超えるため、複数エージェントの専門分業が研究自動化の主流アプローチになりつつある",
               "impact": "科学論文執筆・実験設計の自動化ツールとして即応用可能。AI研究者・エンジニアへの影響は大きい。"
-            }
+            },
+            "caption": "ARIS マルチエージェント構造",
+            "alt": "ARISの3レイヤーアーキテクチャを示すサマリーカード。レイヤー1:オーケストレーション（研究タスクの分解・割り当て）、レイヤー2:実行（実際の調査・生成）、レイヤー3:保証（批判エージェントによる欠陥検出）。特徴:敵対的協調、クロスモデル対応、GitHub 8,800スター。"
           }
         },
         {
@@ -157,22 +249,53 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["multi-agent", "multimodal-search", "reinforcement-learning", "HyperEyes", "Xiaohongshu", "efficiency"],
+          "tags": [
+            "multi-agent",
+            "multimodal-search",
+            "reinforcement-learning",
+            "HyperEyes",
+            "Xiaohongshu",
+            "efficiency"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "HyperEyes 評価軸",
-            "alt": "HyperEyes の性能特性を示す横棒グラフ。並列検索効率（高）、精度維持（高）、推論コスト削減（高）、単一モーダル比較（中）の4指標でフレームワークの特長を視覚化。",
             "data": {
               "headline": "HyperEyes：精度・効率を同時最適化するマルチモーダル検索エージェント",
               "bars": [
-                { "label": "並列検索効率", "value": "高", "pct": 88, "tone": "success", "note": "複数クエリ同時処理で遅延削減" },
-                { "label": "精度維持", "value": "高", "pct": 82, "tone": "primary", "note": "デュアルグレインRLによる精度保護" },
-                { "label": "推論コスト削減", "value": "高", "pct": 78, "tone": "success", "note": "効率報酬で不要計算を抑制" },
-                { "label": "ベンチマーク提案", "value": "新規", "pct": 70, "tone": "info", "note": "精度×効率の二軸評価セット" }
+                {
+                  "label": "並列検索効率",
+                  "value": "高",
+                  "pct": 88,
+                  "tone": "success",
+                  "note": "複数クエリ同時処理で遅延削減"
+                },
+                {
+                  "label": "精度維持",
+                  "value": "高",
+                  "pct": 82,
+                  "tone": "primary",
+                  "note": "デュアルグレインRLによる精度保護"
+                },
+                {
+                  "label": "推論コスト削減",
+                  "value": "高",
+                  "pct": 78,
+                  "tone": "success",
+                  "note": "効率報酬で不要計算を抑制"
+                },
+                {
+                  "label": "ベンチマーク提案",
+                  "value": "新規",
+                  "pct": 70,
+                  "tone": "info",
+                  "note": "精度×効率の二軸評価セット"
+                }
               ],
               "narrative": "Xiaohongshuのような視覚コンテンツ主体プラットフォームでの実用を想定した設計で、マルチモーダル検索エージェントの実装基準を引き上げる",
               "impact": "EC・SNS・検索エンジンのマルチモーダル検索に応用可能。RLベース効率化の先行事例として注目。"
-            }
+            },
+            "caption": "HyperEyes 評価軸",
+            "alt": "HyperEyes の性能特性を示す横棒グラフ。並列検索効率（高）、精度維持（高）、推論コスト削減（高）、単一モーダル比較（中）の4指標でフレームワークの特長を視覚化。"
           }
         }
       ]
@@ -207,23 +330,50 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["diffusion-transformer", "DiT", "deep-learning", "training-stability", "MVSR", "image-generation"],
+          "tags": [
+            "diffusion-transformer",
+            "DiT",
+            "deep-learning",
+            "training-stability",
+            "MVSR",
+            "image-generation"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "MVSR 技術のポイント",
-            "alt": "Mean Mode Screaming（MVSR）の技術概要カード。問題:1000層超DiTの訓練不安定。解決法:残差を平均成分と分散成分に分離して別経路で処理。効果:深層での勾配安定化→超深層DiT実現。スケール:97M〜1Bパラメータで検証。HF投票97件。",
             "data": {
               "headline": "超深層拡散Transformerを可能にする残差分離法 MVSR",
               "tldr": "拡散Transformerを1000層以上に積み重ねるための技術的ブレークスルー。残差を平均と分散に分離することで深層での訓練不安定を解消し、次世代画像・動画生成の基盤となる。",
               "points": [
-                { "icon": "📐", "label": "対象アーキ", "value": "拡散 DiT", "description": "Stable Diffusion / DALL-E 系の最新モデルに使われる Transformer ベース拡散モデル" },
-                { "icon": "🔧", "label": "手法", "value": "MVSR", "description": "Mean-Variance Split Residuals：残差の平均成分と分散成分を分離して処理" },
-                { "icon": "📏", "label": "訓練安定層数", "value": "1000 層超", "description": "従来手法では不安定化する深さで安定訓練を達成" },
-                { "icon": "📊", "label": "検証規模", "value": "97M〜1B param", "description": "複数スケールで一貫した画質向上を確認" }
+                {
+                  "icon": "📐",
+                  "label": "対象アーキ",
+                  "value": "拡散 DiT",
+                  "description": "Stable Diffusion / DALL-E 系の最新モデルに使われる Transformer ベース拡散モデル"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "手法",
+                  "value": "MVSR",
+                  "description": "Mean-Variance Split Residuals：残差の平均成分と分散成分を分離して処理"
+                },
+                {
+                  "icon": "📏",
+                  "label": "訓練安定層数",
+                  "value": "1000 層超",
+                  "description": "従来手法では不安定化する深さで安定訓練を達成"
+                },
+                {
+                  "icon": "📊",
+                  "label": "検証規模",
+                  "value": "97M〜1B param",
+                  "description": "複数スケールで一貫した画質向上を確認"
+                }
               ],
               "context": "生成画像の品質は主にモデル容量（パラメータ数と深さ）に依存するが、深層化が難しかった。MVSRはその技術的制約を解消する",
               "impact": "超深層DiTが実用化されれば次世代の高解像度・高忠実度画像/動画生成モデルの性能が大幅に向上する可能性がある。"
-            }
+            },
+            "caption": "MVSR 技術のポイント",
+            "alt": "Mean Mode Screaming（MVSR）の技術概要カード。問題:1000層超DiTの訓練不安定。解決法:残差を平均成分と分散成分に分離して別経路で処理。効果:深層での勾配安定化→超深層DiT実現。スケール:97M〜1Bパラメータで検証。HF投票97件。"
           }
         },
         {
@@ -251,23 +401,60 @@
             "total": 16,
             "source_type_bias": 1
           },
-          "tags": ["flow-matching", "distillation", "text-to-image", "alignment", "on-policy", "diffusion"],
+          "tags": [
+            "flow-matching",
+            "distillation",
+            "text-to-image",
+            "alignment",
+            "on-policy",
+            "diffusion"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Flow-OPD vs ベースライン",
-            "alt": "Flow-OPD（オンポリシー蒸留適用後）とベースラインフローマッチングモデルの比較。テキスト忠実度（アライメント）・画像品質・サンプリング速度の3指標でFlow-OPDが優位。",
             "data": {
               "headline": "Flow-OPD でフローマッチング画質・アライメントを同時改善",
-              "before": { "label": "ベースライン FM", "sublabel": "従来のフローマッチング" },
-              "after": { "label": "Flow-OPD", "sublabel": "オンポリシー蒸留適用後" },
+              "before": {
+                "label": "ベースライン FM",
+                "sublabel": "従来のフローマッチング"
+              },
+              "after": {
+                "label": "Flow-OPD",
+                "sublabel": "オンポリシー蒸留適用後"
+              },
               "metrics": [
-                { "label": "テキスト忠実度", "before": "中程度", "after": "大幅改善", "before_pct": 55, "after_pct": 80, "delta": "↑大幅", "delta_tone": "success" },
-                { "label": "画像品質", "before": "中程度", "after": "顕著改善", "before_pct": 60, "after_pct": 82, "delta": "↑改善", "delta_tone": "success" },
-                { "label": "サンプリング速度", "before": "高速", "after": "高速維持", "before_pct": 90, "after_pct": 88, "delta": "据え置き", "delta_tone": "info" }
+                {
+                  "label": "テキスト忠実度",
+                  "before": "中程度",
+                  "after": "大幅改善",
+                  "before_pct": 55,
+                  "after_pct": 80,
+                  "delta": "↑大幅",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "画像品質",
+                  "before": "中程度",
+                  "after": "顕著改善",
+                  "before_pct": 60,
+                  "after_pct": 82,
+                  "delta": "↑改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "サンプリング速度",
+                  "before": "高速",
+                  "after": "高速維持",
+                  "before_pct": 90,
+                  "after_pct": 88,
+                  "delta": "据え置き",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "高速サンプリングというフローマッチングの強みを損なわずにアライメントと品質を改善できるのが最大の価値",
               "impact": "Stable Diffusion 3 / FLUX 系モデルへの直接適用が見込まれ、画像生成サービスの品質向上に寄与する可能性がある。"
-            }
+            },
+            "caption": "Flow-OPD vs ベースライン",
+            "alt": "Flow-OPD（オンポリシー蒸留適用後）とベースラインフローマッチングモデルの比較。テキスト忠実度（アライメント）・画像品質・サンプリング速度の3指標でFlow-OPDが優位。"
           }
         }
       ]
@@ -302,25 +489,72 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 74 },
-          "tags": ["architecture", "hybrid-model", "DNN", "LLM", "OCR", "developer-tools", "YCombinator"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 74
+          },
+          "tags": [
+            "architecture",
+            "hybrid-model",
+            "DNN",
+            "LLM",
+            "OCR",
+            "developer-tools",
+            "YCombinator"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Interfaze-Beta ベンチマーク",
-            "alt": "Interfaze-Betaのベンチマーク結果横棒グラフ。MMLU 91.4%、MMLU-Pro 83.6%、GPQA-Diamond 81.3%、AIME-2025 90.0%、MMMU(val) 77.3%、AI2D 91.5%を示す。全指標で高水準を達成。",
             "data": {
               "headline": "Interfaze-Beta：主要ベンチマーク 6 指標でフロンティア水準を達成",
               "bars": [
-                { "label": "MMLU", "value": "91.4%", "pct": 91, "tone": "success", "note": "一般知識・多分野" },
-                { "label": "MMLU-Pro", "value": "83.6%", "pct": 84, "tone": "primary", "note": "専門知識深掘り" },
-                { "label": "GPQA-Diamond", "value": "81.3%", "pct": 81, "tone": "primary", "note": "大学院レベル推論" },
-                { "label": "AIME-2025", "value": "90.0%", "pct": 90, "tone": "success", "note": "数学競技問題" },
-                { "label": "AI2D", "value": "91.5%", "pct": 92, "tone": "success", "note": "図解理解（マルチモーダル）" },
-                { "label": "MMMU (val)", "value": "77.3%", "pct": 77, "tone": "primary", "note": "マルチモーダル総合" }
+                {
+                  "label": "MMLU",
+                  "value": "91.4%",
+                  "pct": 91,
+                  "tone": "success",
+                  "note": "一般知識・多分野"
+                },
+                {
+                  "label": "MMLU-Pro",
+                  "value": "83.6%",
+                  "pct": 84,
+                  "tone": "primary",
+                  "note": "専門知識深掘り"
+                },
+                {
+                  "label": "GPQA-Diamond",
+                  "value": "81.3%",
+                  "pct": 81,
+                  "tone": "primary",
+                  "note": "大学院レベル推論"
+                },
+                {
+                  "label": "AIME-2025",
+                  "value": "90.0%",
+                  "pct": 90,
+                  "tone": "success",
+                  "note": "数学競技問題"
+                },
+                {
+                  "label": "AI2D",
+                  "value": "91.5%",
+                  "pct": 92,
+                  "tone": "success",
+                  "note": "図解理解（マルチモーダル）"
+                },
+                {
+                  "label": "MMMU (val)",
+                  "value": "77.3%",
+                  "pct": 77,
+                  "tone": "primary",
+                  "note": "マルチモーダル総合"
+                }
               ],
               "narrative": "コスト効率重視のハイブリッドアーキテクチャながら、汎用・専門・マルチモーダル全領域でフロンティアモデルと競合する水準を達成",
               "impact": "開発者向け決定論的タスクでのコスト削減と高精度を両立。OCR・スクレイピング・分類などを扱うサービスへの即時適用が見込まれる。"
-            }
+            },
+            "caption": "Interfaze-Beta ベンチマーク",
+            "alt": "Interfaze-Betaのベンチマーク結果横棒グラフ。MMLU 91.4%、MMLU-Pro 83.6%、GPQA-Diamond 81.3%、AIME-2025 90.0%、MMMU(val) 77.3%、AI2D 91.5%を示す。全指標で高水準を達成。"
           }
         },
         {
@@ -348,22 +582,54 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["Baidu", "Wenxin", "Chinese-AI", "LLM", "pretraining", "benchmark", "Arena"],
+          "tags": [
+            "Baidu",
+            "Wenxin",
+            "Chinese-AI",
+            "LLM",
+            "pretraining",
+            "benchmark",
+            "Arena"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "文心5.1 Arena ランキング",
-            "alt": "文心5.1のLMArena検索リーダーボードランキング。中国国内1位（1223pt）、世界4位。比較対象：DeepSeek-V4-Pro（国内2位相当）、Qwen（国内3位相当）。事前学習コスト業界比6%の効率性も表示。",
             "data": {
               "headline": "文心5.1：Arena 世界4位・国内1位を業界比6%コストで達成",
               "bars": [
-                { "label": "Arena スコア", "value": "1223 pt", "pct": 90, "tone": "success", "note": "LMArena 検索リーダーボード" },
-                { "label": "国内順位", "value": "#1", "pct": 100, "tone": "success", "note": "中国語検索タスク" },
-                { "label": "世界順位", "value": "#4", "pct": 80, "tone": "primary", "note": "全言語・全モデル比較" },
-                { "label": "事前学習コスト", "value": "業界比 6%", "pct": 6, "tone": "warning", "note": "多次元弾性事前学習で実現（低いほど効率的）" }
+                {
+                  "label": "Arena スコア",
+                  "value": "1223 pt",
+                  "pct": 90,
+                  "tone": "success",
+                  "note": "LMArena 検索リーダーボード"
+                },
+                {
+                  "label": "国内順位",
+                  "value": "#1",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "中国語検索タスク"
+                },
+                {
+                  "label": "世界順位",
+                  "value": "#4",
+                  "pct": 80,
+                  "tone": "primary",
+                  "note": "全言語・全モデル比較"
+                },
+                {
+                  "label": "事前学習コスト",
+                  "value": "業界比 6%",
+                  "pct": 6,
+                  "tone": "warning",
+                  "note": "多次元弾性事前学習で実現（低いほど効率的）"
+                }
               ],
               "narrative": "DeepSeek・Kimi等の急成長ライバルに押されていた百度が、検索特化タスクで返り咲きを果たした。コスト効率の革新が他社との差別化ポイント",
               "impact": "業界比6%のコストで最高水準モデルを訓練できるなら、他社の開発コスト・商業モデルに影響を与える可能性がある。"
-            }
+            },
+            "caption": "文心5.1 Arena ランキング",
+            "alt": "文心5.1のLMArena検索リーダーボードランキング。中国国内1位（1223pt）、世界4位。比較対象：DeepSeek-V4-Pro（国内2位相当）、Qwen（国内3位相当）。事前学習コスト業界比6%の効率性も表示。"
           }
         }
       ]
@@ -398,23 +664,51 @@
             "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["vLLM", "long-context", "prefill", "sparsification", "inference-optimization", "Tencent", "open-source"],
+          "tags": [
+            "vLLM",
+            "long-context",
+            "prefill",
+            "sparsification",
+            "inference-optimization",
+            "Tencent",
+            "open-source"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "UniPrefill の仕組み",
-            "alt": "UniPrefillの動作を示すサマリーカード。問題:長文脈Prefillの計算コストが高い。解決:ブロック単位動的スパース化で低スコアブロックをスキップ。適用範囲:LLaMA・Mistral・Qwen対応。統合先:vLLM直接統合。",
             "data": {
               "headline": "UniPrefill：長文脈 Prefill を vLLM で即日高速化",
               "tldr": "注意スコアの低いブロックを動的にスキップし長文脈推論を高速化。vLLMへの直接統合でプロダクション導入が容易。LLaMA・Mistral・Qwen等で動作確認済み。",
               "points": [
-                { "icon": "⚡", "label": "高速化対象", "value": "Prefill フェーズ", "description": "長文コンテキスト処理時の初期計算フェーズを最適化" },
-                { "icon": "🔧", "label": "手法", "value": "ブロック動的スパース", "description": "注意スコアの低いブロックを動的にスキップして計算削減" },
-                { "icon": "🤝", "label": "vLLM 統合", "value": "直接統合可能", "description": "プロダクション最大手LLMサービングフレームワークに対応" },
-                { "icon": "🔓", "label": "モデル対応", "value": "LLaMA/Mistral/Qwen", "description": "主要オープンモデルファミリーで動作確認済み" }
+                {
+                  "icon": "⚡",
+                  "label": "高速化対象",
+                  "value": "Prefill フェーズ",
+                  "description": "長文コンテキスト処理時の初期計算フェーズを最適化"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "手法",
+                  "value": "ブロック動的スパース",
+                  "description": "注意スコアの低いブロックを動的にスキップして計算削減"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "vLLM 統合",
+                  "value": "直接統合可能",
+                  "description": "プロダクション最大手LLMサービングフレームワークに対応"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "モデル対応",
+                  "value": "LLaMA/Mistral/Qwen",
+                  "description": "主要オープンモデルファミリーで動作確認済み"
+                }
               ],
               "context": "RAG・長文書要約・長コードアシストなど長文脈LLMサービスのレイテンシ問題は実運用でのボトルネック",
               "impact": "vLLMを使った長文脈LLMサービスのレイテンシを改善できる即戦力ツール。プロダクションエンジニアへの実用価値が高い。"
-            }
+            },
+            "caption": "UniPrefill の仕組み",
+            "alt": "UniPrefillの動作を示すサマリーカード。問題:長文脈Prefillの計算コストが高い。解決:ブロック単位動的スパース化で低スコアブロックをスキップ。適用範囲:LLaMA・Mistral・Qwen対応。統合先:vLLM直接統合。"
           }
         }
       ]
@@ -449,23 +743,50 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["test-time-scaling", "AutoTTS", "Google", "LLM-self-improvement", "inference-optimization", "agentic"],
+          "tags": [
+            "test-time-scaling",
+            "AutoTTS",
+            "Google",
+            "LLM-self-improvement",
+            "inference-optimization",
+            "agentic"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AutoTTS の動作原理",
-            "alt": "AutoTTSのエージェント的TTS発見プロセス。入力:推論タスク、LLMが複数TTS候補（Best-of-N/ツリー探索/長CoT）を生成→プローブシグナルで中間評価→最適戦略を選択→推論実行。出力:最適コスト-精度トレードオフ達成。",
             "data": {
               "headline": "AutoTTS：LLM が自律的にテスト時スケーリング戦略を最適化",
               "tldr": "人間が手動設計していたTTS戦略（サンプリング方法・探索深度・CoT長さ）をLLM自身がコントローラー合成で自動発見。計算コストを増やさずに精度-コストトレードオフを改善する。",
               "points": [
-                { "icon": "🤖", "label": "提案者", "value": "Google Research", "description": "大規模LLMの推論コスト最適化研究の第一線" },
-                { "icon": "🔍", "label": "問題設定", "value": "TTS 自動化", "description": "テスト時スケーリング戦略の人手設計をLLM自身に委任" },
-                { "icon": "🎯", "label": "アプローチ", "value": "コントローラー合成", "description": "推論軌跡とプローブシグナルから最適戦略を動的に選択" },
-                { "icon": "📈", "label": "効果", "value": "精度-コスト改善", "description": "わずかなオーバーヘッドで精度とコストのトレードオフを向上" }
+                {
+                  "icon": "🤖",
+                  "label": "提案者",
+                  "value": "Google Research",
+                  "description": "大規模LLMの推論コスト最適化研究の第一線"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "問題設定",
+                  "value": "TTS 自動化",
+                  "description": "テスト時スケーリング戦略の人手設計をLLM自身に委任"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "アプローチ",
+                  "value": "コントローラー合成",
+                  "description": "推論軌跡とプローブシグナルから最適戦略を動的に選択"
+                },
+                {
+                  "icon": "📈",
+                  "label": "効果",
+                  "value": "精度-コスト改善",
+                  "description": "わずかなオーバーヘッドで精度とコストのトレードオフを向上"
+                }
               ],
               "context": "o1/o3/Deepseek R1のようなテスト時コンピュートの活用が主流化するなか、各タスクへの最適TTS戦略選択が新たな研究課題に",
               "impact": "既存LLMの改変なしにTTS戦略を自動最適化できるため、推論コスト削減のプラクティカルツールとして普及する可能性がある。"
-            }
+            },
+            "caption": "AutoTTS の動作原理",
+            "alt": "AutoTTSのエージェント的TTS発見プロセス。入力:推論タスク、LLMが複数TTS候補（Best-of-N/ツリー探索/長CoT）を生成→プローブシグナルで中間評価→最適戦略を選択→推論実行。出力:最適コスト-精度トレードオフ達成。"
           }
         },
         {
@@ -493,23 +814,50 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["MoE", "mixture-of-experts", "modularity", "AllenAI", "interpretability", "pretraining"],
+          "tags": [
+            "MoE",
+            "mixture-of-experts",
+            "modularity",
+            "AllenAI",
+            "interpretability",
+            "pretraining"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "EMO：MoE モジュール性",
-            "alt": "EMOの創発的モジュール性の概念を示すサマリーカード。通常のMoE:専門家分担が曖昧で崩れやすい。EMO設計:特定の訓練損失で専門家が機能特化（言語専門家・トピック専門家・スタイル専門家など）。効果:解釈可能性・知識編集の向上。",
             "data": {
               "headline": "EMO：MoE の各専門家が機能特化する「創発的モジュール性」を誘起",
               "tldr": "適切な訓練設計でMoEの各専門家が言語・トピック・スタイルごとに自然分担することをAllenAIが実証。解釈可能性と知識編集の向上への道を開く。",
               "points": [
-                { "icon": "🧩", "label": "研究機関", "value": "AllenAI", "description": "非営利AI研究機関。オープン研究・解釈可能性で知られる" },
-                { "icon": "🔬", "label": "発見", "value": "創発的モジュール性", "description": "特定の訓練設計でMoEの専門家が機能特化することを体系実証" },
-                { "icon": "🎛️", "label": "制御要因", "value": "ルーティング損失設計", "description": "バランス制約と適切な損失関数が専門家の安定特化を誘起" },
-                { "icon": "🔍", "label": "応用", "value": "解釈可能性向上", "description": "モジュール性が高いほどピンポイントな知識編集・不要知識除去が可能" }
+                {
+                  "icon": "🧩",
+                  "label": "研究機関",
+                  "value": "AllenAI",
+                  "description": "非営利AI研究機関。オープン研究・解釈可能性で知られる"
+                },
+                {
+                  "icon": "🔬",
+                  "label": "発見",
+                  "value": "創発的モジュール性",
+                  "description": "特定の訓練設計でMoEの専門家が機能特化することを体系実証"
+                },
+                {
+                  "icon": "🎛️",
+                  "label": "制御要因",
+                  "value": "ルーティング損失設計",
+                  "description": "バランス制約と適切な損失関数が専門家の安定特化を誘起"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "応用",
+                  "value": "解釈可能性向上",
+                  "description": "モジュール性が高いほどピンポイントな知識編集・不要知識除去が可能"
+                }
               ],
               "context": "MoEはGPT-4・Mixtral等のフロンティアモデルで採用されているが、専門家分担の不安定さが課題だった",
               "impact": "解釈可能性向上でAI安全性研究への応用が期待。知識編集ニーズの高い企業向けLLMの品質向上にも繋がりうる。"
-            }
+            },
+            "caption": "EMO：MoE モジュール性",
+            "alt": "EMOの創発的モジュール性の概念を示すサマリーカード。通常のMoE:専門家分担が曖昧で崩れやすい。EMO設計:特定の訓練損失で専門家が機能特化（言語専門家・トピック専門家・スタイル専門家など）。効果:解釈可能性・知識編集の向上。"
           }
         },
         {
@@ -537,23 +885,50 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["embodied-intelligence", "video-learning", "robotics", "VLA", "egocentric", "dataset"],
+          "tags": [
+            "embodied-intelligence",
+            "video-learning",
+            "robotics",
+            "VLA",
+            "egocentric",
+            "dataset"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "HumanNet の学習パラダイム",
-            "alt": "HumanNetのデータパイプライン図。入力:人間中心動画100万時間（調理・工具操作・移動等の自己視点映像）→特徴抽出・行動アノテーション→視覚-言語-行動(VLA)モデル訓練→ロボット行動政策に転移。従来はロボット実機データが必要だったが不要に。",
             "data": {
               "headline": "HumanNet：100 万時間の人間動画でロボット学習コストを削減",
               "tldr": "人間の日常動作を撮影した自己視点動画100万時間超を使い、ロボット実機データなしにVLAモデルを訓練できることを実証。ロボット学習の高コスト・低スケール問題への現実解。",
               "points": [
-                { "icon": "📹", "label": "データ規模", "value": "100 万時間超", "description": "人間中心の自己視点動画。調理・工具操作・移動等の行動を網羅" },
-                { "icon": "🤖", "label": "目標タスク", "value": "VLA モデル訓練", "description": "視覚-言語-行動モデルをロボット政策として活用" },
-                { "icon": "🔄", "label": "代替効果", "value": "ロボット実機不要", "description": "人間動画のみでロボット操作能力を転移できることを実証" },
-                { "icon": "🌍", "label": "インパクト", "value": "研究民主化", "description": "高価なロボット実機なしに身体知能研究が可能に" }
+                {
+                  "icon": "📹",
+                  "label": "データ規模",
+                  "value": "100 万時間超",
+                  "description": "人間中心の自己視点動画。調理・工具操作・移動等の行動を網羅"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "目標タスク",
+                  "value": "VLA モデル訓練",
+                  "description": "視覚-言語-行動モデルをロボット政策として活用"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "代替効果",
+                  "value": "ロボット実機不要",
+                  "description": "人間動画のみでロボット操作能力を転移できることを実証"
+                },
+                {
+                  "icon": "🌍",
+                  "label": "インパクト",
+                  "value": "研究民主化",
+                  "description": "高価なロボット実機なしに身体知能研究が可能に"
+                }
               ],
               "context": "ロボット学習は実機データの収集コストと危険性がボトルネックだった。人間動画での代替は研究の民主化を促す",
               "impact": "ロボット実機コストの削減でアカデミア・スタートアップも身体知能研究に参入しやすくなる。家庭用ロボット開発の加速も期待。"
-            }
+            },
+            "caption": "HumanNet の学習パラダイム",
+            "alt": "HumanNetのデータパイプライン図。入力:人間中心動画100万時間（調理・工具操作・移動等の自己視点映像）→特徴抽出・行動アノテーション→視覚-言語-行動(VLA)モデル訓練→ロボット行動政策に転移。従来はロボット実機データが必要だったが不要に。"
           }
         }
       ]
@@ -588,23 +963,55 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["OpenAI", "enterprise-AI", "deployment", "consulting", "Tomoro", "TPG", "investment"],
+          "tags": [
+            "OpenAI",
+            "enterprise-AI",
+            "deployment",
+            "consulting",
+            "Tomoro",
+            "TPG",
+            "investment"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "OpenAI Deployment Co. 全貌",
-            "alt": "OpenAI Deployment Companyの全体像カード。設立日:2026年5月11日。資本:40億ドル超。パートナー19社(TPG/Bain Capital/Brookfield/Goldman Sachs/SoftBank Corp/McKinsey/Bain&Company/Capgeminiほか)。Tomoro買収:150名の実装エンジニア。ミッション:AI機会特定→フロー再設計→成果システム化。",
             "data": {
               "headline": "OpenAI Deployment Company：$40億超・19社で企業AI変革サービスを開始",
               "tldr": "OpenAIが純粋な研究・製品開発からコンサルティングサービス業に本格参入。Tomoroを買収し150名の実装エンジニアを即日確保。Anthropicとの競合が企業AI変革市場で激化。",
               "points": [
-                { "icon": "💰", "label": "資本規模", "value": "$40 億超", "description": "19社の投資ファンド・コンサル・SIが創業パートナーとして参画", "tone": "primary" },
-                { "icon": "🤝", "label": "主要パートナー", "value": "19 社", "description": "TPG・McKinsey・Bain&Company・Capgemini・Goldman Sachs・SoftBankほか", "tone": "default" },
-                { "icon": "🔧", "label": "Tomoro 買収", "value": "Day 1 即戦力", "description": "約150名のForward Deployed Engineerを取得しDay 1から現場展開", "tone": "success" },
-                { "icon": "🎯", "label": "サービス範囲", "value": "3 ステップ", "description": "AI機会特定→組織フロー再設計→成果のシステム化", "tone": "default" }
+                {
+                  "icon": "💰",
+                  "label": "資本規模",
+                  "value": "$40 億超",
+                  "description": "19社の投資ファンド・コンサル・SIが創業パートナーとして参画",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "主要パートナー",
+                  "value": "19 社",
+                  "description": "TPG・McKinsey・Bain&Company・Capgemini・Goldman Sachs・SoftBankほか",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "Tomoro 買収",
+                  "value": "Day 1 即戦力",
+                  "description": "約150名のForward Deployed Engineerを取得しDay 1から現場展開",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "サービス範囲",
+                  "value": "3 ステップ",
+                  "description": "AI機会特定→組織フロー再設計→成果のシステム化",
+                  "tone": "default"
+                }
               ],
               "context": "AnthropicもBlackstone・HF・Goldman Sachsと同時期に合弁設立。フロンティアラボの「企業AI実装サービス業参入」が2026年5月に一斉に本格化した",
               "impact": "McKinsey・Bain・Capgeminiなど既存コンサルとの競合が激化。企業のAI変革予算がこの新しい「AIコンサル市場」に流入する可能性が高い。"
-            }
+            },
+            "caption": "OpenAI Deployment Co. 全貌",
+            "alt": "OpenAI Deployment Companyの全体像カード。設立日:2026年5月11日。資本:40億ドル超。パートナー19社(TPG/Bain Capital/Brookfield/Goldman Sachs/SoftBank Corp/McKinsey/Bain&Company/Capgeminiほか)。Tomoro買収:150名の実装エンジニア。ミッション:AI機会特定→フロー再設計→成果システム化。"
           }
         }
       ]
@@ -639,24 +1046,60 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 188 },
-          "tags": ["Swift", "Apple-Silicon", "LLM-training", "matrix-multiplication", "Metal", "on-device-AI", "HN"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 188
+          },
+          "tags": [
+            "Swift",
+            "Apple-Silicon",
+            "LLM-training",
+            "matrix-multiplication",
+            "Metal",
+            "on-device-AI",
+            "HN"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Swift LLM 訓練：最適化ステップ",
-            "alt": "Swift LLM訓練の最適化段階タイムライン。ステップ1:ナイーブ実装(Gflop/sレベル)→ステップ2:Metal Performance Shaders活用→ステップ3:タイル分割共有メモリ→ステップ4:SIMD命令統合→ステップ5:Tflop/sレベル達成。",
             "data": {
               "headline": "Swift + Apple Metal で行列積 1000 倍高速化への旅",
               "events": [
-                { "when": "Step 1", "label": "ナイーブ実装", "description": "シンプルなSwift実装でGflop/sレベルの性能から開始", "status": "past" },
-                { "when": "Step 2", "label": "Metal Performance Shaders", "description": "Apple の GPU 最適化ライブラリを活用して大幅な速度向上", "status": "past" },
-                { "when": "Step 3", "label": "タイル分割共有メモリ", "description": "行列をタイルに分割し共有メモリで帯域幅ボトルネックを解消", "status": "past" },
-                { "when": "Step 4", "label": "SIMD 命令統合", "description": "Apple Silicon の SIMD ユニットを直接活用してスループット最大化", "status": "past" },
-                { "when": "Step 5", "label": "Tflop/s 達成", "description": "累積最適化でGflop/sから1000倍以上の高速化を実現", "status": "now" }
+                {
+                  "when": "Step 1",
+                  "label": "ナイーブ実装",
+                  "description": "シンプルなSwift実装でGflop/sレベルの性能から開始",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "Metal Performance Shaders",
+                  "description": "Apple の GPU 最適化ライブラリを活用して大幅な速度向上",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "タイル分割共有メモリ",
+                  "description": "行列をタイルに分割し共有メモリで帯域幅ボトルネックを解消",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "SIMD 命令統合",
+                  "description": "Apple Silicon の SIMD ユニットを直接活用してスループット最大化",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 5",
+                  "label": "Tflop/s 達成",
+                  "description": "累積最適化でGflop/sから1000倍以上の高速化を実現",
+                  "status": "now"
+                }
               ],
               "narrative": "PyTorch/CUDA を使わず純 Swift で LLM 訓練インフラを構築するユニークなアプローチ。Apple Silicon の真の性能を引き出す",
               "impact": "オンデバイス LLM 訓練・プライバシー重視 AI への道を開く技術。iOS/macOS 開発者への実践的インパクトが大きい。"
-            }
+            },
+            "caption": "Swift LLM 訓練：最適化ステップ",
+            "alt": "Swift LLM訓練の最適化段階タイムライン。ステップ1:ナイーブ実装(Gflop/sレベル)→ステップ2:Metal Performance Shaders活用→ステップ3:タイル分割共有メモリ→ステップ4:SIMD命令統合→ステップ5:Tflop/sレベル達成。"
           }
         },
         {
@@ -685,24 +1128,59 @@
             "source_type_bias": -1,
             "seen_penalty": -1
           },
-          "reaction_signal": { "kind": "hn", "points": 1722 },
-          "tags": ["local-AI", "privacy", "data-sovereignty", "ollama", "llama.cpp", "self-hosting", "HN"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 1722
+          },
+          "tags": [
+            "local-AI",
+            "privacy",
+            "data-sovereignty",
+            "ollama",
+            "llama.cpp",
+            "self-hosting",
+            "HN"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ローカル AI の 3 大利点",
-            "alt": "ローカルAIを標準とすべき3つの理由を示すサマリーカード。1.プライバシー:データをデバイス外に送らない。2.サービス継続性:プロバイダー依存なしに動作継続。3.データ主権:国家・企業のデータ支配からの独立。HN 1,722pts。",
             "data": {
               "headline": "ローカル AI 標準化論：HN 1,722pt が示す強い共感",
               "tldr": "クラウドAI依存のリスク（プライバシー・サービス停止・データ主権）を論じた記事がHNで1,722点。ollama等の成熟で「今すぐ移行できる」環境が整ったとの主張が共感を集めた。",
               "points": [
-                { "icon": "🔒", "label": "プライバシー", "value": "データ非送信", "description": "クラウド送信によるデータ漏洩・学習利用リスクをゼロに", "tone": "success" },
-                { "icon": "🔄", "label": "継続性", "value": "プロバイダー非依存", "description": "料金改定・サービス停止・規制でも動作継続できる安心感", "tone": "success" },
-                { "icon": "🌐", "label": "データ主権", "value": "自己管理", "description": "国家・企業によるデータ支配への対抗。GDPR対応にも有効", "tone": "info" },
-                { "icon": "🛠️", "label": "実現手段", "value": "ollama / LM Studio", "description": "ローカルLLM実行環境が成熟し今すぐ移行可能な選択肢が揃った", "tone": "default" }
+                {
+                  "icon": "🔒",
+                  "label": "プライバシー",
+                  "value": "データ非送信",
+                  "description": "クラウド送信によるデータ漏洩・学習利用リスクをゼロに",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "継続性",
+                  "value": "プロバイダー非依存",
+                  "description": "料金改定・サービス停止・規制でも動作継続できる安心感",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "データ主権",
+                  "value": "自己管理",
+                  "description": "国家・企業によるデータ支配への対抗。GDPR対応にも有効",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🛠️",
+                  "label": "実現手段",
+                  "value": "ollama / LM Studio",
+                  "description": "ローカルLLM実行環境が成熟し今すぐ移行可能な選択肢が揃った",
+                  "tone": "default"
+                }
               ],
               "context": "GPT-5系モデルの性能向上でクラウドAI依存が進む一方、プライバシー・コスト・サービス継続性への懸念も高まっている",
               "impact": "個人・中小企業のローカルLLM移行を後押しする論考として引き続き参照される可能性が高い。"
-            }
+            },
+            "caption": "ローカル AI の 3 大利点",
+            "alt": "ローカルAIを標準とすべき3つの理由を示すサマリーカード。1.プライバシー:データをデバイス外に送らない。2.サービス継続性:プロバイダー依存なしに動作継続。3.データ主権:国家・企業のデータ支配からの独立。HN 1,722pts。"
           }
         }
       ]
@@ -737,24 +1215,56 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 467 },
-          "tags": ["Chrome-DevTools", "MCP", "browser-automation", "AI-agent", "E2E-testing", "日本語"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 467
+          },
+          "tags": [
+            "Chrome-DevTools",
+            "MCP",
+            "browser-automation",
+            "AI-agent",
+            "E2E-testing",
+            "日本語"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Chrome DevTools MCP の仕組み",
-            "alt": "Chrome DevTools MCPの動作フロー図。AIアシスタント（Claude/GPT等）がMCPサーバー経由でChromeDevToolsリモートデバッグAPIに接続。操作可能な機能：DOM操作・JavaScript実行・フォーム入力・クリック・スクリーンショット・ネットワーク監視。応用：E2Eテスト自動化・スクレイピング・UI確認。はてブ467件。",
             "data": {
               "headline": "Chrome DevTools MCP：AI が Chrome を直接操作できる新インターフェース",
               "tldr": "MCPサーバーを通じてAIエージェントがChromeを直接操作可能に。E2Eテスト自動化・スクレイピング・デバッグ支援に即応用できる実践的ブレークスルー。はてブ467件の大反響。",
               "points": [
-                { "icon": "🌐", "label": "接続先", "value": "Chrome DevTools API", "description": "DevToolsのリモートデバッグAPIをMCP経由でAIアシスタントに公開" },
-                { "icon": "🤖", "label": "対応AI", "value": "Claude / GPT 等", "description": "MCP対応のAIアシスタントであれば利用可能" },
-                { "icon": "⚙️", "label": "操作範囲", "value": "DOM/JS/フォーム他", "description": "DOM操作・JS実行・フォーム入力・クリック・スクリーンショットなど全操作", "tone": "success" },
-                { "icon": "📊", "label": "反響", "value": "はてブ 467 件", "description": "日本開発者コミュニティで最大規模の反響", "tone": "primary" }
+                {
+                  "icon": "🌐",
+                  "label": "接続先",
+                  "value": "Chrome DevTools API",
+                  "description": "DevToolsのリモートデバッグAPIをMCP経由でAIアシスタントに公開"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "対応AI",
+                  "value": "Claude / GPT 等",
+                  "description": "MCP対応のAIアシスタントであれば利用可能"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "操作範囲",
+                  "value": "DOM/JS/フォーム他",
+                  "description": "DOM操作・JS実行・フォーム入力・クリック・スクリーンショットなど全操作",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📊",
+                  "label": "反響",
+                  "value": "はてブ 467 件",
+                  "description": "日本開発者コミュニティで最大規模の反響",
+                  "tone": "primary"
+                }
               ],
               "context": "Playwright/Selenium等の従来ブラウザ自動化ツールの代替としてAIエージェントがブラウザを扱う時代の始まりを示す",
               "impact": "テスト・スクレイピング・RPA 系タスクをAIエージェントが自然言語で完遂できる。エンジニアの作業効率に直結。"
-            }
+            },
+            "caption": "Chrome DevTools MCP の仕組み",
+            "alt": "Chrome DevTools MCPの動作フロー図。AIアシスタント（Claude/GPT等）がMCPサーバー経由でChromeDevToolsリモートデバッグAPIに接続。操作可能な機能：DOM操作・JavaScript実行・フォーム入力・クリック・スクリーンショット・ネットワーク監視。応用：E2Eテスト自動化・スクレイピング・UI確認。はてブ467件。"
           }
         },
         {
@@ -782,24 +1292,55 @@
             "total": 18,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 120 },
-          "tags": ["OCR", "LLM", "文書処理", "PDF", "テキスト抽出", "構造化", "日本語"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 120
+          },
+          "tags": [
+            "OCR",
+            "LLM",
+            "文書処理",
+            "PDF",
+            "テキスト抽出",
+            "構造化",
+            "日本語"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "LLM + OCR の処理フロー",
-            "alt": "LLM+OCRによる文書構造保持テキスト抽出のフロー。入力:PDF/画像文書（表・カラム・見出し含む）→OCR層:基本テキスト抽出→LLM層:構造解釈（表のセル結合・カラム位置・見出し識別）→出力:構造化JSON（表・段落・見出しが保持）。はてブ120件。",
             "data": {
               "headline": "LLM + OCR で文書構造を保持したテキスト抽出を実現",
               "tldr": "従来OCRが苦手とする表・カラム・セル結合をLLMが解釈し、構造化JSONとして出力する実装手法を詳解。請求書・契約書・帳票デジタル化に即応用できる。",
               "points": [
-                { "icon": "📄", "label": "対象文書", "value": "PDF / 画像", "description": "請求書・契約書・帳票など構造が複雑なビジネス文書" },
-                { "icon": "👁️", "label": "OCR 役割", "value": "基本テキスト抽出", "description": "位置情報付きのテキストを文書から取り出す基礎層" },
-                { "icon": "🧠", "label": "LLM 役割", "value": "構造解釈", "description": "表・セル結合・カラム配置をLLMが理解し意味的構造に変換" },
-                { "icon": "📊", "label": "出力形式", "value": "構造化 JSON", "description": "表・段落・見出しのネスト構造を保持したJSONで出力" }
+                {
+                  "icon": "📄",
+                  "label": "対象文書",
+                  "value": "PDF / 画像",
+                  "description": "請求書・契約書・帳票など構造が複雑なビジネス文書"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "OCR 役割",
+                  "value": "基本テキスト抽出",
+                  "description": "位置情報付きのテキストを文書から取り出す基礎層"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "LLM 役割",
+                  "value": "構造解釈",
+                  "description": "表・セル結合・カラム配置をLLMが理解し意味的構造に変換"
+                },
+                {
+                  "icon": "📊",
+                  "label": "出力形式",
+                  "value": "構造化 JSON",
+                  "description": "表・段落・見出しのネスト構造を保持したJSONで出力"
+                }
               ],
               "context": "PDFからの情報抽出はRPAや業務自動化の大きな課題。LLMの読解力を活用することで従来の規則ベース処理を超えられる",
               "impact": "請求書・帳票・契約書の自動デジタル化に直接応用可能。業務システム開発者・データエンジニアの生産性を大幅に向上させる。"
-            }
+            },
+            "caption": "LLM + OCR の処理フロー",
+            "alt": "LLM+OCRによる文書構造保持テキスト抽出のフロー。入力:PDF/画像文書（表・カラム・見出し含む）→OCR層:基本テキスト抽出→LLM層:構造解釈（表のセル結合・カラム位置・見出し識別）→出力:構造化JSON（表・段落・見出しが保持）。はてブ120件。"
           }
         },
         {
@@ -827,23 +1368,49 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Sakana-AI", "防衛AI", "日本語", "安全保障", "SWE-interview"],
+          "tags": [
+            "Sakana-AI",
+            "防衛AI",
+            "日本語",
+            "安全保障",
+            "SWE-interview"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Sakana AI 防衛分野参入",
-            "alt": "Sakana AI防衛分野参入の概要カード。企業:Sakana AI（日本)。参入分野:防衛AI・安全保障技術。強みとなる技術:Sparser/Faster/Lighter Transformer（Twell）。特徴:倫理的検討を公開。背景:日本政府の防衛AI活用推進。",
             "data": {
               "headline": "Sakana AI、防衛分野への参入を示唆――日本のAIスタートアップが安全保障領域に",
               "tldr": "高効率Transformerで実績を積んだSakana AIが防衛AI開発に参入。日本政府の安全保障技術強化の流れと連動し、民間AIスタートアップの防衛領域参入が具体化した。",
               "points": [
-                { "icon": "🛡️", "label": "参入領域", "value": "防衛 AI", "description": "安全保障・国防分野のAIシステム開発" },
-                { "icon": "⚙️", "label": "強み技術", "value": "Twell モデル", "description": "Sparser/Faster/Lighter Transformerの効率化技術" },
-                { "icon": "🤔", "label": "倫理への対応", "value": "公開議論", "description": "インタビューで倫理的検討事項を率直に開示" },
-                { "icon": "🇯🇵", "label": "背景", "value": "日本政府方針", "description": "防衛省・安保省庁のAI活用推進と連動した民間参入" }
+                {
+                  "icon": "🛡️",
+                  "label": "参入領域",
+                  "value": "防衛 AI",
+                  "description": "安全保障・国防分野のAIシステム開発"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "強み技術",
+                  "value": "Twell モデル",
+                  "description": "Sparser/Faster/Lighter Transformerの効率化技術"
+                },
+                {
+                  "icon": "🤔",
+                  "label": "倫理への対応",
+                  "value": "公開議論",
+                  "description": "インタビューで倫理的検討事項を率直に開示"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "背景",
+                  "value": "日本政府方針",
+                  "description": "防衛省・安保省庁のAI活用推進と連動した民間参入"
+                }
               ],
               "context": "日本では防衛省のAI戦略と民間技術の連携が進んでおり、国内AIスタートアップの安全保障分野参入が相次いでいる",
               "impact": "日本のAIエコシステムにおいて防衛・安全保障が新たな産業領域として台頭しつつある動向を示す指標となる。"
-            }
+            },
+            "caption": "Sakana AI 防衛分野参入",
+            "alt": "Sakana AI防衛分野参入の概要カード。企業:Sakana AI（日本)。参入分野:防衛AI・安全保障技術。強みとなる技術:Sparser/Faster/Lighter Transformer（Twell）。特徴:倫理的検討を公開。背景:日本政府の防衛AI活用推進。"
           }
         },
         {
@@ -871,24 +1438,55 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 119 },
-          "tags": ["ソロプレナー", "1人社長", "AI活用", "起業", "日本語", "Claude", "ChatGPT"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 119
+          },
+          "tags": [
+            "ソロプレナー",
+            "1人社長",
+            "AI活用",
+            "起業",
+            "日本語",
+            "Claude",
+            "ChatGPT"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "1人社長×AIの事業モデル",
-            "alt": "1人社長×AIの事業モデル概念図。業務分担:マーケティング(AI担当)・顧客対応(AI担当)・コンテンツ(AI担当)・財務分析(AI担当)・意思決定(人間担当)。課題:孤独な意思決定・スケール限界・信用構築。対処:AI意思決定支援・自動化拡張・ブランド構築AI支援。",
             "data": {
               "headline": "1 人社長 × AI：チームを代替し大企業に伍せる新事業モデル",
               "tldr": "AIがチーム機能の多くを代替できる2026年、個人起業家が大企業並みのオペレーションを実現できる時代が到来。マーケ・顧客対応・財務分析・コンテンツを1人+AIで完結。",
               "points": [
-                { "icon": "🧑‍💼", "label": "主役", "value": "ソロプレナー", "description": "1人で事業を運営する個人起業家。AIがチームの代替として機能" },
-                { "icon": "🤖", "label": "AI の役割", "value": "チーム代替", "description": "マーケ・顧客対応・財務分析・コンテンツ制作を担当" },
-                { "icon": "⚔️", "label": "1人社長の課題", "value": "孤独・スケール", "description": "意思決定の孤独・スケール限界・信用構築がボトルネック" },
-                { "icon": "💡", "label": "AI 対処法", "value": "具体解説", "description": "意思決定支援・業務自動化・ブランド構築でのAI活用戦略を詳述" }
+                {
+                  "icon": "🧑‍💼",
+                  "label": "主役",
+                  "value": "ソロプレナー",
+                  "description": "1人で事業を運営する個人起業家。AIがチームの代替として機能"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "AI の役割",
+                  "value": "チーム代替",
+                  "description": "マーケ・顧客対応・財務分析・コンテンツ制作を担当"
+                },
+                {
+                  "icon": "⚔️",
+                  "label": "1人社長の課題",
+                  "value": "孤独・スケール",
+                  "description": "意思決定の孤独・スケール限界・信用構築がボトルネック"
+                },
+                {
+                  "icon": "💡",
+                  "label": "AI 対処法",
+                  "value": "具体解説",
+                  "description": "意思決定支援・業務自動化・ブランド構築でのAI活用戦略を詳述"
+                }
               ],
               "context": "2026年には高性能AIが月数千円で使える時代。個人が大組織に対抗できる技術条件が初めて揃った",
               "impact": "日本でも起業・フリーランス・副業市場でAI活用による事業効率化が加速する可能性がある。中小企業経営にも波及。"
-            }
+            },
+            "caption": "1人社長×AIの事業モデル",
+            "alt": "1人社長×AIの事業モデル概念図。業務分担:マーケティング(AI担当)・顧客対応(AI担当)・コンテンツ(AI担当)・財務分析(AI担当)・意思決定(人間担当)。課題:孤独な意思決定・スケール限界・信用構築。対処:AI意思決定支援・自動化拡張・ブランド構築AI支援。"
           }
         },
         {
@@ -916,25 +1514,73 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 564 },
-          "tags": ["マネジメント", "リーダーシップ", "生成AI", "上司", "日本語", "組織変革"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 564
+          },
+          "tags": [
+            "マネジメント",
+            "リーダーシップ",
+            "生成AI",
+            "上司",
+            "日本語",
+            "組織変革"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "AI vs 人間のリーダー役割",
-            "alt": "AI時代のマネジメント役割分担比較表。AI担当領域:定型進捗管理・情報集約・文書作成・データ分析。人間リーダー担当領域:文脈理解・人間関係調整・育成・動機付け・判断責任。",
             "data": {
               "headline": "AI 時代のマネジメント：AI が補完する領域と人間にしかできない役割",
-              "before": { "label": "AI が担当", "sublabel": "効率化・自動化" },
-              "after": { "label": "人間リーダーが担当", "sublabel": "不代替の価値" },
+              "before": {
+                "label": "AI が担当",
+                "sublabel": "効率化・自動化"
+              },
+              "after": {
+                "label": "人間リーダーが担当",
+                "sublabel": "不代替の価値"
+              },
               "metrics": [
-                { "label": "進捗管理", "before": "AI 補完可", "after": "戦略判断", "before_pct": 80, "after_pct": 20, "delta": "AI優位", "delta_tone": "info" },
-                { "label": "文書作成", "before": "AI 補完可", "after": "方向性決定", "before_pct": 85, "after_pct": 15, "delta": "AI優位", "delta_tone": "info" },
-                { "label": "関係調整", "before": "困難", "after": "人間が担う", "before_pct": 10, "after_pct": 90, "delta": "人間優位", "delta_tone": "success" },
-                { "label": "育成・動機付け", "before": "困難", "after": "人間が担う", "before_pct": 15, "after_pct": 85, "delta": "人間優位", "delta_tone": "success" }
+                {
+                  "label": "進捗管理",
+                  "before": "AI 補完可",
+                  "after": "戦略判断",
+                  "before_pct": 80,
+                  "after_pct": 20,
+                  "delta": "AI優位",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "文書作成",
+                  "before": "AI 補完可",
+                  "after": "方向性決定",
+                  "before_pct": 85,
+                  "after_pct": 15,
+                  "delta": "AI優位",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "関係調整",
+                  "before": "困難",
+                  "after": "人間が担う",
+                  "before_pct": 10,
+                  "after_pct": 90,
+                  "delta": "人間優位",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "育成・動機付け",
+                  "before": "困難",
+                  "after": "人間が担う",
+                  "before_pct": 15,
+                  "after_pct": 85,
+                  "delta": "人間優位",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "AI が定型業務を代替する時代、人間リーダーは「文脈・関係・責任・育成」というAIが苦手な領域に注力することが求められる",
               "impact": "日本の管理職・リーダー層がAI活用を前提とした役割再定義を迫られる。組織のAI導入設計にも影響。"
-            }
+            },
+            "caption": "AI vs 人間のリーダー役割",
+            "alt": "AI時代のマネジメント役割分担比較表。AI担当領域:定型進捗管理・情報集約・文書作成・データ分析。人間リーダー担当領域:文脈理解・人間関係調整・育成・動機付け・判断責任。"
           }
         }
       ]
@@ -947,12 +1593,40 @@
     }
   ],
   "skipped_sources": [
-    { "source": "Reddit r/LocalLLaMA", "reason": "WebFetch blocked for reddit.com", "fallback_used": "HN Algolia API" },
-    { "source": "Reddit r/MachineLearning", "reason": "WebFetch blocked for reddit.com", "fallback_used": "HN Algolia API" },
-    { "source": "The Verge RSS", "reason": "WebFetch blocked for theverge.com", "fallback_used": "WebSearch" },
-    { "source": "Import AI Substack", "reason": "HTTP 403 Forbidden", "fallback_used": "None" },
-    { "source": "Synced Review RSS", "reason": "Feed content from Aug 2025 (stale)", "fallback_used": "WebSearch china" },
-    { "source": "VentureBeat RSS", "reason": "Feed returned Jan 2026 content only", "fallback_used": "None" },
-    { "source": "DeepLearning.AI The Batch", "reason": "HTTP 404 Not Found", "fallback_used": "None" }
+    {
+      "source": "Reddit r/LocalLLaMA",
+      "reason": "WebFetch blocked for reddit.com",
+      "fallback_used": "HN Algolia API"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "reason": "WebFetch blocked for reddit.com",
+      "fallback_used": "HN Algolia API"
+    },
+    {
+      "source": "The Verge RSS",
+      "reason": "WebFetch blocked for theverge.com",
+      "fallback_used": "WebSearch"
+    },
+    {
+      "source": "Import AI Substack",
+      "reason": "HTTP 403 Forbidden",
+      "fallback_used": "None"
+    },
+    {
+      "source": "Synced Review RSS",
+      "reason": "Feed content from Aug 2025 (stale)",
+      "fallback_used": "WebSearch china"
+    },
+    {
+      "source": "VentureBeat RSS",
+      "reason": "Feed returned Jan 2026 content only",
+      "fallback_used": "None"
+    },
+    {
+      "source": "DeepLearning.AI The Batch",
+      "reason": "HTTP 404 Not Found",
+      "fallback_used": "None"
+    }
   ]
 }

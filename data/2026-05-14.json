@@ -87,25 +87,60 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 49 },
-          "tags": ["regulation", "deepfake", "japan", "AI Act", "advertising", "policy"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 49
+          },
+          "tags": [
+            "regulation",
+            "deepfake",
+            "japan",
+            "AI Act",
+            "advertising",
+            "policy"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ディープフェイク広告規制",
-            "alt": "自民党ディープフェイク広告対策案の概要。規制対象：生成AI使用の虚偽広告。義務化検討：広告主本人確認・ディープフェイク広告削除・ウォーターマーク。背景：有名人を騙った投資詐欺広告が2026年に急増。影響：プラットフォーム審査コスト増、中小広告主への負担。",
             "data": {
               "headline": "自民党が生成AI悪用ディープフェイク広告への規制案提示",
               "tldr": "広告プラットフォームへの本人確認義務化・ディープフェイク広告削除義務を検討。EU AI Actの影響を受けた日本版AI規制の具体化で、選挙前の詐欺広告急増が立法の引き金。",
               "points": [
-                { "icon": "🎭", "label": "規制対象", "value": "ディープフェイク広告", "tone": "danger" },
-                { "icon": "✅", "label": "義務化検討", "value": "広告主本人確認", "tone": "warning" },
-                { "icon": "🏷️", "label": "技術的要件", "value": "ウォーターマーク", "tone": "info" },
-                { "icon": "📋", "label": "参照", "value": "EU AI Act", "tone": "default" },
-                { "icon": "⚠️", "label": "背景", "value": "詐欺広告急増", "tone": "danger" }
+                {
+                  "icon": "🎭",
+                  "label": "規制対象",
+                  "value": "ディープフェイク広告",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "✅",
+                  "label": "義務化検討",
+                  "value": "広告主本人確認",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🏷️",
+                  "label": "技術的要件",
+                  "value": "ウォーターマーク",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📋",
+                  "label": "参照",
+                  "value": "EU AI Act",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "背景",
+                  "value": "詐欺広告急増",
+                  "tone": "danger"
+                }
               ],
               "context": "選挙前に有名人を騙った投資詐欺広告がSNSで急増しており、超党派での法整備の機運が高まっている。",
               "impact": "プラットフォーム事業者の審査コスト増加が見込まれ、中小広告主への影響と実効性が焦点になる。"
-            }
+            },
+            "caption": "ディープフェイク広告規制",
+            "alt": "自民党ディープフェイク広告対策案の概要。規制対象：生成AI使用の虚偽広告。義務化検討：広告主本人確認・ディープフェイク広告削除・ウォーターマーク。背景：有名人を騙った投資詐欺広告が2026年に急増。影響：プラットフォーム審査コスト増、中小広告主への負担。"
           }
         }
       ]
@@ -142,11 +177,18 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["Google", "Gemini", "Android", "agents", "mobile AI", "agentic", "Rambler", "widgets"],
+          "tags": [
+            "Google",
+            "Gemini",
+            "Android",
+            "agents",
+            "mobile AI",
+            "agentic",
+            "Rambler",
+            "widgets"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "Gemini Intelligence 展開計画",
-            "alt": "Gemini Intelligence の展開タイムライン。2026年5月12日: Android Show でGemini Intelligence発表（Rambler・Create My Widget・アクティブタスク実行）。2026年夏: Samsung Galaxy S26・Google Pixel 10 に展開開始。2026年6月後半: Chrome for Android に自動ブラウジング追加。2026年後半: スマートウォッチ・Android Auto・ノートPCに拡大。",
             "data": {
               "headline": "Google Gemini Intelligence: Android エージェント化ロードマップ",
               "events": [
@@ -181,7 +223,9 @@
               ],
               "narrative": "Android が「OS」から「Intelligence System」へ—Sameer Samat (Google Android 担当) が語る通り、スマートフォンの本質的な役割が問い直されている。",
               "impact": "iOS・Appleのエージェント機能との競争が加速し、モバイルエージェント市場の覇権争いが本格化する。"
-            }
+            },
+            "caption": "Gemini Intelligence 展開計画",
+            "alt": "Gemini Intelligence の展開タイムライン。2026年5月12日: Android Show でGemini Intelligence発表（Rambler・Create My Widget・アクティブタスク実行）。2026年夏: Samsung Galaxy S26・Google Pixel 10 に展開開始。2026年6月後半: Chrome for Android に自動ブラウジング追加。2026年後半: スマートウォッチ・Android Auto・ノートPCに拡大。"
           }
         },
         {
@@ -211,22 +255,52 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["agents", "computer use", "GUI", "tool calling", "arxiv", "benchmark", "automation"],
+          "tags": [
+            "agents",
+            "computer use",
+            "GUI",
+            "tool calling",
+            "arxiv",
+            "benchmark",
+            "automation"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "ToolCUA 正解率比較",
-            "alt": "Computer Use エージェントの正解率比較。ベースライン（GUI のみ）: 約28%。ToolCUA（ツールのみ）: 約38%。ToolCUA（GUI+ツール統合）: 46.85%。改善幅: ベースライン比 66% 向上。",
             "data": {
               "headline": "ToolCUA: Computer Use 正解率 46.85%—ベースライン比 66% 改善",
-              "scale": { "max_label": "正解率 50%", "unit": "%" },
+              "scale": {
+                "max_label": "正解率 50%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "ベースライン", "value": "~28%", "pct": 56, "tone": "default", "note": "GUI 操作のみ" },
-                { "label": "ツールのみ", "value": "~38%", "pct": 76, "tone": "info", "note": "API 呼び出しのみ" },
-                { "label": "ToolCUA（統合）", "value": "46.85%", "pct": 94, "delta": "+66%", "tone": "success", "note": "GUI + ツール動的切り替え" }
+                {
+                  "label": "ベースライン",
+                  "value": "~28%",
+                  "pct": 56,
+                  "tone": "default",
+                  "note": "GUI 操作のみ"
+                },
+                {
+                  "label": "ツールのみ",
+                  "value": "~38%",
+                  "pct": 76,
+                  "tone": "info",
+                  "note": "API 呼び出しのみ"
+                },
+                {
+                  "label": "ToolCUA（統合）",
+                  "value": "46.85%",
+                  "pct": 94,
+                  "delta": "+66%",
+                  "tone": "success",
+                  "note": "GUI + ツール動的切り替え"
+                }
               ],
               "narrative": "GUI 操作とツール API の動的切り替えが Computer Use エージェントの実用性を大幅に引き上げることを実証。",
               "impact": "RPA・UI 自動化ツールの次世代設計に影響を与え、エージェントの実世界タスク処理能力の底上げが加速する。"
-            }
+            },
+            "caption": "ToolCUA 正解率比較",
+            "alt": "Computer Use エージェントの正解率比較。ベースライン（GUI のみ）: 約28%。ToolCUA（ツールのみ）: 約38%。ToolCUA（GUI+ツール統合）: 46.85%。改善幅: ベースライン比 66% 向上。"
           }
         }
       ]
@@ -263,24 +337,69 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["multimodal", "SenseTime", "China", "image generation", "unified model", "arxiv"],
+          "tags": [
+            "multimodal",
+            "SenseTime",
+            "China",
+            "image generation",
+            "unified model",
+            "arxiv"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "従来 vs SenseNova-U1",
-            "alt": "従来のマルチモーダルアーキテクチャ（理解モデルと生成モデルを分離）とSenseNova-U1（統合モデル）の比較。従来：理解モデル（VQA/キャプション）と生成モデル（text-to-image）が独立。SenseNova-U1：単一モデルで理解・生成・アクション推論を統合処理。",
             "data": {
               "headline": "SenseNova-U1: 理解と生成を1モデルに統合する設計転換",
-              "before": { "label": "従来の設計", "sublabel": "2モデル分離型" },
-              "after": { "label": "SenseNova-U1", "sublabel": "統合アーキテクチャ" },
+              "before": {
+                "label": "従来の設計",
+                "sublabel": "2モデル分離型"
+              },
+              "after": {
+                "label": "SenseNova-U1",
+                "sublabel": "統合アーキテクチャ"
+              },
               "metrics": [
-                { "label": "モデル数", "before": "2（理解+生成）", "after": "1（統合）", "before_pct": 100, "after_pct": 50, "delta": "-1モデル", "delta_tone": "success" },
-                { "label": "理解能力", "before": "専用モデル", "after": "統合処理", "before_pct": 80, "after_pct": 90, "delta": "向上", "delta_tone": "success" },
-                { "label": "生成能力", "before": "専用モデル", "after": "統合処理", "before_pct": 80, "after_pct": 88, "delta": "向上", "delta_tone": "success" },
-                { "label": "推論コスト", "before": "2倍（モデル分）", "after": "1モデル分", "before_pct": 100, "after_pct": 60, "delta": "-40%", "delta_tone": "success" }
+                {
+                  "label": "モデル数",
+                  "before": "2（理解+生成）",
+                  "after": "1（統合）",
+                  "before_pct": 100,
+                  "after_pct": 50,
+                  "delta": "-1モデル",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "理解能力",
+                  "before": "専用モデル",
+                  "after": "統合処理",
+                  "before_pct": 80,
+                  "after_pct": 90,
+                  "delta": "向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "生成能力",
+                  "before": "専用モデル",
+                  "after": "統合処理",
+                  "before_pct": 80,
+                  "after_pct": 88,
+                  "delta": "向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "推論コスト",
+                  "before": "2倍（モデル分）",
+                  "after": "1モデル分",
+                  "before_pct": 100,
+                  "after_pct": 60,
+                  "delta": "-40%",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "理解と生成の統合は従来困難とされてきた設計課題で、SenseNova-U1 はその統合を実用水準で達成した初の例の一つ。",
               "impact": "マルチモーダルモデルの開発・運用コストが下がり、エッジデバイスや複合タスク処理の新用途が広がる。"
-            }
+            },
+            "caption": "従来 vs SenseNova-U1",
+            "alt": "従来のマルチモーダルアーキテクチャ（理解モデルと生成モデルを分離）とSenseNova-U1（統合モデル）の比較。従来：理解モデル（VQA/キャプション）と生成モデル（text-to-image）が独立。SenseNova-U1：単一モデルで理解・生成・アクション推論を統合処理。"
           }
         },
         {
@@ -310,24 +429,56 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["multimodal", "flow matching", "text-to-image", "distillation", "arxiv", "image generation"],
+          "tags": [
+            "multimodal",
+            "flow matching",
+            "text-to-image",
+            "distillation",
+            "arxiv",
+            "image generation"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Flow-OPD 手法概要",
-            "alt": "Flow-OPDの手法概要。解決課題：Flow Matchingモデルのプロンプト整合性低下と多様性喪失。手法：2段階最適化（オンポリシー蒸留 + 多様体アンカー正則化）。評価結果：CLIPスコアおよび美的品質で従来手法を上回る。応用：Stable Diffusion 3・FLUX等へ適用可能。",
             "data": {
               "headline": "Flow-OPD: Flow Matchingのアライメント問題を2段階最適化で解決",
               "tldr": "プロンプト整合性と多様性を同時改善する2段階最適化手法。オンポリシー蒸留で学習安定性を確保し、多様体アンカー正則化で生成品質を維持。",
               "points": [
-                { "icon": "🎯", "label": "課題", "value": "プロンプト不整合", "tone": "warning" },
-                { "icon": "🔧", "label": "手法1", "value": "On-Policy蒸留", "tone": "primary" },
-                { "icon": "⚓", "label": "手法2", "value": "多様体アンカー正則化", "tone": "primary" },
-                { "icon": "📊", "label": "改善", "value": "CLIPスコア向上", "tone": "success" },
-                { "icon": "🔗", "label": "応用先", "value": "FLUX / SD3", "tone": "info" }
+                {
+                  "icon": "🎯",
+                  "label": "課題",
+                  "value": "プロンプト不整合",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "手法1",
+                  "value": "On-Policy蒸留",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚓",
+                  "label": "手法2",
+                  "value": "多様体アンカー正則化",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "改善",
+                  "value": "CLIPスコア向上",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔗",
+                  "label": "応用先",
+                  "value": "FLUX / SD3",
+                  "tone": "info"
+                }
               ],
               "context": "Flow Matching は近年 Stable Diffusion の後継として注目される画像生成手法だが、プロンプト整合性の課題があった。",
               "impact": "高品質 text-to-image 生成の実用化が加速し、クリエイティブ AI ツールの品質向上に貢献する。"
-            }
+            },
+            "caption": "Flow-OPD 手法概要",
+            "alt": "Flow-OPDの手法概要。解決課題：Flow Matchingモデルのプロンプト整合性低下と多様性喪失。手法：2段階最適化（オンポリシー蒸留 + 多様体アンカー正則化）。評価結果：CLIPスコアおよび美的品質で従来手法を上回る。応用：Stable Diffusion 3・FLUX等へ適用可能。"
           }
         }
       ]
@@ -364,25 +515,75 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 623 },
-          "tags": ["new model", "distillation", "tool calling", "edge AI", "open source", "HN trending", "Gemini"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 623
+          },
+          "tags": [
+            "new model",
+            "distillation",
+            "tool calling",
+            "edge AI",
+            "open source",
+            "HN trending",
+            "Gemini"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "Gemini vs Needle 26M",
-            "alt": "GeminiとNeedle 26Mの比較。モデルサイズ：Gemini 数百B vs Needle 26M（約1/10000）。ツール呼び出し精度：Gemini 100%ベースライン vs Needle 高精度で再現。推論コスト：Gemini クラウド API必須 vs Needle ローカル/エッジで動作可能。HN反響：623ポイント獲得。",
             "data": {
               "headline": "Needle 26M: Geminiのツール呼び出しを超小型モデルに蒸留",
-              "before": { "label": "Gemini（大型）", "sublabel": "フロンティアモデル" },
-              "after": { "label": "Needle 26M", "sublabel": "蒸留小型モデル" },
+              "before": {
+                "label": "Gemini（大型）",
+                "sublabel": "フロンティアモデル"
+              },
+              "after": {
+                "label": "Needle 26M",
+                "sublabel": "蒸留小型モデル"
+              },
               "metrics": [
-                { "label": "モデルサイズ", "before": "数百B", "after": "26M", "before_pct": 100, "after_pct": 1, "delta": "1/10000以下", "delta_tone": "success", "note": "サイズ圧縮率" },
-                { "label": "ツール呼出精度", "before": "ベースライン", "after": "高精度で再現", "before_pct": 100, "after_pct": 90, "delta": "≈同等", "delta_tone": "success" },
-                { "label": "推論コスト", "before": "クラウドAPI必須", "after": "ローカル可能", "before_pct": 100, "after_pct": 10, "delta": "-90%以上", "delta_tone": "success" },
-                { "label": "公開状況", "before": "プロプライエタリ", "after": "Apache 2.0", "before_pct": 0, "after_pct": 100, "delta": "完全公開", "delta_tone": "success" }
+                {
+                  "label": "モデルサイズ",
+                  "before": "数百B",
+                  "after": "26M",
+                  "before_pct": 100,
+                  "after_pct": 1,
+                  "delta": "1/10000以下",
+                  "delta_tone": "success",
+                  "note": "サイズ圧縮率"
+                },
+                {
+                  "label": "ツール呼出精度",
+                  "before": "ベースライン",
+                  "after": "高精度で再現",
+                  "before_pct": 100,
+                  "after_pct": 90,
+                  "delta": "≈同等",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "推論コスト",
+                  "before": "クラウドAPI必須",
+                  "after": "ローカル可能",
+                  "before_pct": 100,
+                  "after_pct": 10,
+                  "delta": "-90%以上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "公開状況",
+                  "before": "プロプライエタリ",
+                  "after": "Apache 2.0",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "完全公開",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "大型モデルの特定能力を超小型モデルに蒸留するアプローチは以前から研究されてきたが、ツール呼び出しという複雑な能力の蒸留に成功した点が新しい。",
               "impact": "ローコストエージェント・オフライン対応エージェントの実装が格段に容易になり、エッジAIの新しいユースケースが広がる。"
-            }
+            },
+            "caption": "Gemini vs Needle 26M",
+            "alt": "GeminiとNeedle 26Mの比較。モデルサイズ：Gemini 数百B vs Needle 26M（約1/10000）。ツール呼び出し精度：Gemini 100%ベースライン vs Needle 高精度で再現。推論コスト：Gemini クラウド API必須 vs Needle ローカル/エッジで動作可能。HN反響：623ポイント獲得。"
           }
         }
       ]
@@ -419,24 +620,57 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["Anthropic", "Claude", "SMB", "tools", "workflow automation", "launch", "QuickBooks"],
+          "tags": [
+            "Anthropic",
+            "Claude",
+            "SMB",
+            "tools",
+            "workflow automation",
+            "launch",
+            "QuickBooks"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Claude for Small Business",
-            "alt": "Claude for Small Businessの概要。連携ツール7種：QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace、Microsoft 365。内蔵スキル15種：給与計算・財務照合・マーケティング・オンボーディング等。料金：追加費用なし（既存Claudeライセンスに含む）。展開：全国10都市ツアーで無料AI研修。",
             "data": {
               "headline": "Claude for Small Business: 7ツール連携の15ワークフローを追加料金ゼロで提供",
               "tldr": "中小企業が使う 7 つの主要ツールと直接連携し、15 種の業務自動化ワークフローをすぐに使えるパッケージ。既存 Claude 料金に含まれ追加費用なし。",
               "points": [
-                { "icon": "🔗", "label": "連携ツール", "value": "7種（QBs・PayPal等）", "tone": "primary" },
-                { "icon": "⚙️", "label": "ワークフロー", "value": "15スキル内蔵", "tone": "success" },
-                { "icon": "💰", "label": "追加料金", "value": "なし", "tone": "success" },
-                { "icon": "🗺️", "label": "ツアー", "value": "10都市・無料研修", "tone": "info" },
-                { "icon": "🎯", "label": "ターゲット", "value": "中小企業・個人事業主", "tone": "default" }
+                {
+                  "icon": "🔗",
+                  "label": "連携ツール",
+                  "value": "7種（QBs・PayPal等）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "ワークフロー",
+                  "value": "15スキル内蔵",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💰",
+                  "label": "追加料金",
+                  "value": "なし",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🗺️",
+                  "label": "ツアー",
+                  "value": "10都市・無料研修",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "ターゲット",
+                  "value": "中小企業・個人事業主",
+                  "tone": "default"
+                }
               ],
               "context": "Anthropic は大企業向け（Blackstone/Goldman連携）と並行して中小企業市場へも本格的に進出。B2B 採用率が OpenAI を逆転した直後の積極的な拡大策。",
               "impact": "AI ツール導入コスト・複雑さの障壁を下げることで、中小企業の AI 活用率が大幅に向上する可能性がある。"
-            }
+            },
+            "caption": "Claude for Small Business",
+            "alt": "Claude for Small Businessの概要。連携ツール7種：QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace、Microsoft 365。内蔵スキル15種：給与計算・財務照合・マーケティング・オンボーディング等。料金：追加費用なし（既存Claudeライセンスに含む）。展開：全国10都市ツアーで無料AI研修。"
           }
         },
         {
@@ -466,24 +700,57 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["Notion", "agents", "MCP", "enterprise", "developer platform", "tools", "governance"],
+          "tags": [
+            "Notion",
+            "agents",
+            "MCP",
+            "enterprise",
+            "developer platform",
+            "tools",
+            "governance"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Notion AI エージェント拡張",
-            "alt": "Notionの最新AI機能拡張。MCP連携新パートナー：Lovable・Perplexity・Mistral・HubSpot。新機能：Plan Mode（実行前確認）・Slack連携・ガバナンスダッシュボード。課金体系：5月4日からクレジット制（Business/Enterpriseアドオン）。",
             "data": {
               "headline": "Notion: AI エージェントの企業導入基盤として本格進化",
               "tldr": "MCP 連携先を主要 AI プラットフォームに拡充しつつ、企業向けガバナンス機能を強化。Plan Mode でエージェントの安全な実行を担保。",
               "points": [
-                { "icon": "🔌", "label": "MCP連携", "value": "Lovable・Perplexity等", "tone": "primary" },
-                { "icon": "📋", "label": "Plan Mode", "value": "実行前確認機能", "tone": "success" },
-                { "icon": "🔒", "label": "ガバナンス", "value": "支出上限・承認フロー", "tone": "info" },
-                { "icon": "💬", "label": "Slack連携", "value": "プライベートChも対応", "tone": "default" },
-                { "icon": "💳", "label": "課金", "value": "クレジット制（5/4〜）", "tone": "warning" }
+                {
+                  "icon": "🔌",
+                  "label": "MCP連携",
+                  "value": "Lovable・Perplexity等",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📋",
+                  "label": "Plan Mode",
+                  "value": "実行前確認機能",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "ガバナンス",
+                  "value": "支出上限・承認フロー",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💬",
+                  "label": "Slack連携",
+                  "value": "プライベートChも対応",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💳",
+                  "label": "課金",
+                  "value": "クレジット制（5/4〜）",
+                  "tone": "warning"
+                }
               ],
               "context": "Notion 3.0 (Agents) から始まったエージェント機能の企業展開が本格化。2026年2月公開のCustom Agentsが有料化され本格普及フェーズへ。",
               "impact": "Notion が単なる文書管理ツールを超えてエージェント実行基盤になることで、ナレッジワーカーの業務自動化が加速する。"
-            }
+            },
+            "caption": "Notion AI エージェント拡張",
+            "alt": "Notionの最新AI機能拡張。MCP連携新パートナー：Lovable・Perplexity・Mistral・HubSpot。新機能：Plan Mode（実行前確認）・Slack連携・ガバナンスダッシュボード。課金体系：5月4日からクレジット制（Business/Enterpriseアドオン）。"
           }
         },
         {
@@ -513,24 +780,58 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["tools", "memory", "coding agents", "open source", "TypeScript", "GitHub trending", "Claude Code"],
+          "tags": [
+            "tools",
+            "memory",
+            "coding agents",
+            "open source",
+            "TypeScript",
+            "GitHub trending",
+            "Claude Code"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "agentmemory 概要",
-            "alt": "agentmemoryの概要。機能：AIコーディングエージェントにセッション間の永続メモリを付与。対応ツール：Claude Code・Copilot・Cursor。技術：TypeScript・オープンソース。GitHub Stars：7,400以上（Trending入り）。主張：実世界ベンチマーク1位。",
             "data": {
               "headline": "agentmemory: AI コーディングエージェントに「記憶」を与えるOSSライブラリ",
               "tldr": "セッションをまたいでコードベースの文脈・設計判断・作業履歴をエージェントに記憶させる TypeScript ライブラリ。GitHub Trending に7,400+ スターで急浮上。",
               "points": [
-                { "icon": "🧠", "label": "記憶対象", "value": "設計決定・コード文脈", "tone": "primary" },
-                { "icon": "🔗", "label": "対応ツール", "value": "Claude Code・Copilot", "tone": "info" },
-                { "icon": "⭐", "label": "GitHub Stars", "value": "7,400+（Trending）", "tone": "success" },
-                { "icon": "📦", "label": "技術", "value": "TypeScript・OSS", "tone": "default" },
-                { "icon": "🏆", "label": "主張", "value": "実世界BM No.1", "tone": "warning", "note": "独立検証は進行中" }
+                {
+                  "icon": "🧠",
+                  "label": "記憶対象",
+                  "value": "設計決定・コード文脈",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔗",
+                  "label": "対応ツール",
+                  "value": "Claude Code・Copilot",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⭐",
+                  "label": "GitHub Stars",
+                  "value": "7,400+（Trending）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📦",
+                  "label": "技術",
+                  "value": "TypeScript・OSS",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "主張",
+                  "value": "実世界BM No.1",
+                  "tone": "warning",
+                  "note": "独立検証は進行中"
+                }
               ],
               "context": "AI コーディングエージェントがセッション間で文脈を失うという「記憶喪失問題」はエンジニアが最も頻繁に指摘する課題の一つ。",
               "impact": "エージェントの記憶が永続化されることで、長期プロジェクトでの AI 活用の生産性が大幅に向上する可能性がある。"
-            }
+            },
+            "caption": "agentmemory 概要",
+            "alt": "agentmemoryの概要。機能：AIコーディングエージェントにセッション間の永続メモリを付与。対応ツール：Claude Code・Copilot・Cursor。技術：TypeScript・オープンソース。GitHub Stars：7,400以上（Trending入り）。主張：実世界ベンチマーク1位。"
           }
         }
       ]
@@ -567,23 +868,58 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["research", "continual learning", "LLM", "sample efficiency", "arxiv", "dual process"],
+          "tags": [
+            "research",
+            "continual learning",
+            "LLM",
+            "sample efficiency",
+            "arxiv",
+            "dual process"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "継続学習フレームワーク比較",
-            "alt": "継続学習手法のサンプル効率比較。標準RL：1x（ベースライン）。Fast-Only（文脈最適化のみ）：約2x。Slow-Only（パラメータ更新のみ）：約1.5x。Learning Fast+Slow（統合）：3x（破滅的忘却も大幅削減）。",
             "data": {
               "headline": "Learning, Fast and Slow: サンプル効率 3x・破滅的忘却を削減",
-              "scale": { "max_label": "標準RL比3倍", "unit": "x" },
+              "scale": {
+                "max_label": "標準RL比3倍",
+                "unit": "x"
+              },
               "bars": [
-                { "label": "標準RL", "value": "1x", "pct": 33, "tone": "default", "note": "ベースライン" },
-                { "label": "Slow Only", "value": "~1.5x", "pct": 50, "tone": "info", "note": "パラメータ更新のみ" },
-                { "label": "Fast Only", "value": "~2x", "pct": 67, "tone": "info", "note": "文脈最適化のみ" },
-                { "label": "Fast + Slow", "value": "3x", "pct": 100, "delta": "+3x", "tone": "success", "note": "統合＋破滅的忘却削減" }
+                {
+                  "label": "標準RL",
+                  "value": "1x",
+                  "pct": 33,
+                  "tone": "default",
+                  "note": "ベースライン"
+                },
+                {
+                  "label": "Slow Only",
+                  "value": "~1.5x",
+                  "pct": 50,
+                  "tone": "info",
+                  "note": "パラメータ更新のみ"
+                },
+                {
+                  "label": "Fast Only",
+                  "value": "~2x",
+                  "pct": 67,
+                  "tone": "info",
+                  "note": "文脈最適化のみ"
+                },
+                {
+                  "label": "Fast + Slow",
+                  "value": "3x",
+                  "pct": 100,
+                  "delta": "+3x",
+                  "tone": "success",
+                  "note": "統合＋破滅的忘却削減"
+                }
               ],
               "narrative": "人間の System 1（直感・高速）/ System 2（論理・低速）の二重過程理論を LLM の継続学習に応用した設計。",
               "impact": "エージェントの長期タスク適応性が向上し、より少ないデータで専門的な AI アシスタントを構築できるようになる。"
-            }
+            },
+            "caption": "継続学習フレームワーク比較",
+            "alt": "継続学習手法のサンプル効率比較。標準RL：1x（ベースライン）。Fast-Only（文脈最適化のみ）：約2x。Slow-Only（パラメータ更新のみ）：約1.5x。Learning Fast+Slow（統合）：3x（破滅的忘却も大幅削減）。"
           }
         },
         {
@@ -613,23 +949,58 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["research", "benchmark", "agent memory", "evaluation", "arxiv", "long-term memory"],
+          "tags": [
+            "research",
+            "benchmark",
+            "agent memory",
+            "evaluation",
+            "arxiv",
+            "long-term memory"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "エージェント記憶ベンチマーク結果",
-            "alt": "LongMemEval-V2のタスク別正解率。単純情報検索：約60%。短期文脈依存：約30%。長期文脈依存：約15%。複雑な依存推論：約3%（現行最先端手法）。",
             "data": {
               "headline": "LongMemEval-V2: 依存推論タスクで最先端でも正解率 3%",
-              "scale": { "max_label": "正解率100%", "unit": "%" },
+              "scale": {
+                "max_label": "正解率100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "単純情報検索", "value": "~60%", "pct": 60, "tone": "success", "note": "直近の事実を答える" },
-                { "label": "短期文脈依存", "value": "~30%", "pct": 30, "tone": "info", "note": "複数ターンを跨ぐ推論" },
-                { "label": "長期文脈依存", "value": "~15%", "pct": 15, "tone": "warning", "note": "長期履歴の参照が必要" },
-                { "label": "複雑依存推論", "value": "~3%", "pct": 3, "delta": "⚠️最難関", "tone": "danger", "note": "現行最先端手法の限界" }
+                {
+                  "label": "単純情報検索",
+                  "value": "~60%",
+                  "pct": 60,
+                  "tone": "success",
+                  "note": "直近の事実を答える"
+                },
+                {
+                  "label": "短期文脈依存",
+                  "value": "~30%",
+                  "pct": 30,
+                  "tone": "info",
+                  "note": "複数ターンを跨ぐ推論"
+                },
+                {
+                  "label": "長期文脈依存",
+                  "value": "~15%",
+                  "pct": 15,
+                  "tone": "warning",
+                  "note": "長期履歴の参照が必要"
+                },
+                {
+                  "label": "複雑依存推論",
+                  "value": "~3%",
+                  "pct": 3,
+                  "delta": "⚠️最難関",
+                  "tone": "danger",
+                  "note": "現行最先端手法の限界"
+                }
               ],
               "narrative": "タスク難易度が上がるにつれて正解率が急落し、「依存推論」の壁が非常に高いことが判明。現行の記憶システムは単純な情報取得には対応できるが、複雑な推論は限界。",
               "impact": "エージェントメモリ研究に具体的な改善目標が生まれ、依存推論能力の強化が次のフロンティアに。"
-            }
+            },
+            "caption": "エージェント記憶ベンチマーク結果",
+            "alt": "LongMemEval-V2のタスク別正解率。単純情報検索：約60%。短期文脈依存：約30%。長期文脈依存：約15%。複雑な依存推論：約3%（現行最先端手法）。"
           }
         },
         {
@@ -659,22 +1030,53 @@
             "source_type_bias": 1,
             "seen_penalty": 0
           },
-          "tags": ["research", "KV cache", "long context", "inference", "training-free", "arxiv", "efficiency"],
+          "tags": [
+            "research",
+            "KV cache",
+            "long context",
+            "inference",
+            "training-free",
+            "arxiv",
+            "efficiency"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "KV-Fold 情報検索精度",
-            "alt": "コンテキスト長別の情報検索精度比較。標準トランスフォーマー（32Kトークン）：100%。標準トランスフォーマー（128K）：約65%（精度劣化）。KV-Fold（128K）：100%（精度維持）。メモリ使用量：標準128K比較で削減。",
             "data": {
               "headline": "KV-Fold: 128K トークンで 100% 情報検索精度—訓練不要",
-              "scale": { "max_label": "情報検索精度100%", "unit": "%" },
+              "scale": {
+                "max_label": "情報検索精度100%",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "標準（32K）", "value": "100%", "pct": 100, "tone": "success", "note": "通常の処理範囲" },
-                { "label": "標準（128K）", "value": "~65%", "pct": 65, "tone": "danger", "delta": "-35pt", "note": "長文で精度が劣化" },
-                { "label": "KV-Fold（128K）", "value": "100%", "pct": 100, "delta": "+35pt回復", "tone": "success", "note": "訓練不要で精度回復" }
+                {
+                  "label": "標準（32K）",
+                  "value": "100%",
+                  "pct": 100,
+                  "tone": "success",
+                  "note": "通常の処理範囲"
+                },
+                {
+                  "label": "標準（128K）",
+                  "value": "~65%",
+                  "pct": 65,
+                  "tone": "danger",
+                  "delta": "-35pt",
+                  "note": "長文で精度が劣化"
+                },
+                {
+                  "label": "KV-Fold（128K）",
+                  "value": "100%",
+                  "pct": 100,
+                  "delta": "+35pt回復",
+                  "tone": "success",
+                  "note": "訓練不要で精度回復"
+                }
               ],
               "narrative": "128K トークンに及ぶ長文処理で標準手法の精度劣化を KV キャッシュの再帰的活用で完全補償。再訓練不要のため既存モデルへの即時適用が可能。",
               "impact": "長文 RAG・法律文書解析・大規模コードベース処理などのコスト・精度問題を解決し、長文 LLM の実用化を加速。"
-            }
+            },
+            "caption": "KV-Fold 情報検索精度",
+            "alt": "コンテキスト長別の情報検索精度比較。標準トランスフォーマー（32Kトークン）：100%。標準トランスフォーマー（128K）：約65%（精度劣化）。KV-Fold（128K）：100%（精度維持）。メモリ使用量：標準128K比較で削減。"
           }
         }
       ]
@@ -711,23 +1113,62 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["Anthropic", "OpenAI", "business adoption", "Ramp", "B2B", "market share", "enterprise"],
+          "tags": [
+            "Anthropic",
+            "OpenAI",
+            "business adoption",
+            "Ramp",
+            "B2B",
+            "market share",
+            "enterprise"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "企業 AI 採用率比較",
-            "alt": "Ramp AI Indexによる企業AI採用率比較（2026年5月）。Anthropic：34.4%（前年9%から+25.4pt）。OpenAI：32.3%（前年32.0%から+0.3pt）。調査対象：Ramp利用企業5万社以上。初めての逆転。",
             "data": {
               "headline": "Anthropic vs OpenAI 企業採用率: 34.4% vs 32.3%—初の逆転",
-              "before": { "label": "OpenAI", "sublabel": "1年前 32.0%" },
-              "after": { "label": "Anthropic", "sublabel": "1年前 9.0%" },
+              "before": {
+                "label": "OpenAI",
+                "sublabel": "1年前 32.0%"
+              },
+              "after": {
+                "label": "Anthropic",
+                "sublabel": "1年前 9.0%"
+              },
               "metrics": [
-                { "label": "現在の採用率", "before": "32.3%", "after": "34.4%", "before_pct": 94, "after_pct": 100, "delta": "+2.1pt", "delta_tone": "danger", "note": "Anthropicが逆転" },
-                { "label": "1年間の成長", "before": "+0.3pt", "after": "+25.4pt", "before_pct": 1, "after_pct": 100, "delta": "84x差", "delta_tone": "success" },
-                { "label": "1年前の採用率", "before": "32.0%", "after": "9.0%", "before_pct": 93, "after_pct": 26, "delta": "大差だった", "delta_tone": "info" }
+                {
+                  "label": "現在の採用率",
+                  "before": "32.3%",
+                  "after": "34.4%",
+                  "before_pct": 94,
+                  "after_pct": 100,
+                  "delta": "+2.1pt",
+                  "delta_tone": "danger",
+                  "note": "Anthropicが逆転"
+                },
+                {
+                  "label": "1年間の成長",
+                  "before": "+0.3pt",
+                  "after": "+25.4pt",
+                  "before_pct": 1,
+                  "after_pct": 100,
+                  "delta": "84x差",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "1年前の採用率",
+                  "before": "32.0%",
+                  "after": "9.0%",
+                  "before_pct": 93,
+                  "after_pct": 26,
+                  "delta": "大差だった",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "1年前に9%対32%と圧倒的に遅れていたAnthropicが、Claude Codeを中心とした開発者採用と企業特化機能で急速にシェアを伸ばした。",
               "impact": "AI ツール選定でのデフォルト選択肢がOpenAIからAnthropicに移りつつある兆候で、企業のAI戦略に影響を与える。"
-            }
+            },
+            "caption": "企業 AI 採用率比較",
+            "alt": "Ramp AI Indexによる企業AI採用率比較（2026年5月）。Anthropic：34.4%（前年9%から+25.4pt）。OpenAI：32.3%（前年32.0%から+0.3pt）。調査対象：Ramp利用企業5万社以上。初めての逆転。"
           }
         },
         {
@@ -757,24 +1198,57 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["industry", "Google", "SpaceX", "data center", "infrastructure", "AI compute", "orbital"],
+          "tags": [
+            "industry",
+            "Google",
+            "SpaceX",
+            "data center",
+            "infrastructure",
+            "AI compute",
+            "orbital"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "軌道上データセンター構想",
-            "alt": "GoogleとSpaceXの軌道上データセンター構想の概要。背景：AI計算需要の爆発的増加。解決したい課題：エネルギー・冷却・土地の制約。現状：コストは地上比で大幅に高い。インフラ：Starlink通信網との統合を構想。ステータス：協議中（実現時期未定）。",
             "data": {
               "headline": "Google + SpaceX: 軌道上データセンター構想が具体化",
               "tldr": "AI 計算需要の急増を背景に、Google と SpaceX が宇宙軌道上にデータセンターを設置する可能性を協議。地上の制約を宇宙で解消し、Starlink と組み合わせた新インフラモデルを模索。",
               "points": [
-                { "icon": "🚀", "label": "検討者", "value": "Google + SpaceX", "tone": "primary" },
-                { "icon": "💡", "label": "動機", "value": "AI計算需要の急増", "tone": "info" },
-                { "icon": "⚡", "label": "解決課題", "value": "エネルギー・冷却・土地", "tone": "success" },
-                { "icon": "💸", "label": "現況コスト", "value": "地上比で大幅高", "tone": "warning" },
-                { "icon": "📡", "label": "通信基盤", "value": "Starlink 活用構想", "tone": "default" }
+                {
+                  "icon": "🚀",
+                  "label": "検討者",
+                  "value": "Google + SpaceX",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💡",
+                  "label": "動機",
+                  "value": "AI計算需要の急増",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "解決課題",
+                  "value": "エネルギー・冷却・土地",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💸",
+                  "label": "現況コスト",
+                  "value": "地上比で大幅高",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📡",
+                  "label": "通信基盤",
+                  "value": "Starlink 活用構想",
+                  "tone": "default"
+                }
               ],
               "context": "AI データセンターの電力・土地不足が業界全体の課題となっており、従来の地上立地モデルを超えた解決策の模索が加速している。",
               "impact": "実現すれば AI インフラの地政学的制約を大幅に緩和し、次世代の計算基盤争いが宇宙空間にも及ぶ可能性がある。"
-            }
+            },
+            "caption": "軌道上データセンター構想",
+            "alt": "GoogleとSpaceXの軌道上データセンター構想の概要。背景：AI計算需要の爆発的増加。解決したい課題：エネルギー・冷却・土地の制約。現状：コストは地上比で大幅に高い。インフラ：Starlink通信網との統合を構想。ステータス：協議中（実現時期未定）。"
           }
         }
       ]
@@ -811,25 +1285,60 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 131 },
-          "tags": ["community", "US AI", "commercialization", "HN", "competitive landscape", "geopolitics"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 131
+          },
+          "tags": [
+            "community",
+            "US AI",
+            "commercialization",
+            "HN",
+            "competitive landscape",
+            "geopolitics"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI商業化競争論",
-            "alt": "HN 131pt獲得の論考「米国がAI商業化で勝っている」の主要論点。テーマ：AI競争の本質は商業化能力。米国優位の根拠：B2B採用率・SaaS収益・エンタープライズ統合。反論：中国の技術的追い上げ・規制の優位性・オープンソース戦略。関連：同日のRampデータでAnthropicがOpenAI逆転。",
             "data": {
               "headline": "HN 131pt 論考: 「AI 競争の本質は商業化能力—米国が優位」",
               "tldr": "技術性能ではなく商業化・B2B採用・収益化という尺度で見ると米国AI企業が他国を大きく引き離しているという論考。Rampデータの逆転ニュースと重なりHNで白熱議論に。",
               "points": [
-                { "icon": "💰", "label": "勝負軸", "value": "商業化・B2B採用", "tone": "primary" },
-                { "icon": "🇺🇸", "label": "米国優位", "value": "企業採用率・SaaS", "tone": "success" },
-                { "icon": "🇨🇳", "label": "中国の反撃", "value": "技術性能で追い上げ", "tone": "warning" },
-                { "icon": "💬", "label": "HN反応", "value": "131pt・賛否両論", "tone": "info" },
-                { "icon": "🔗", "label": "関連", "value": "Ramp逆転データと同日", "tone": "default" }
+                {
+                  "icon": "💰",
+                  "label": "勝負軸",
+                  "value": "商業化・B2B採用",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🇺🇸",
+                  "label": "米国優位",
+                  "value": "企業採用率・SaaS",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🇨🇳",
+                  "label": "中国の反撃",
+                  "value": "技術性能で追い上げ",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "💬",
+                  "label": "HN反応",
+                  "value": "131pt・賛否両論",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔗",
+                  "label": "関連",
+                  "value": "Ramp逆転データと同日",
+                  "tone": "default"
+                }
               ],
               "context": "AI大国競争の評価軸をベンチマーク性能から商業化・実用展開へとシフトさせる視点を提示。",
               "impact": "企業のAI投資判断やスタートアップ戦略に「商業化能力」という指標を改めて意識させる議論の起点となっている。"
-            }
+            },
+            "caption": "AI商業化競争論",
+            "alt": "HN 131pt獲得の論考「米国がAI商業化で勝っている」の主要論点。テーマ：AI競争の本質は商業化能力。米国優位の根拠：B2B採用率・SaaS収益・エンタープライズ統合。反論：中国の技術的追い上げ・規制の優位性・オープンソース戦略。関連：同日のRampデータでAnthropicがOpenAI逆転。"
           }
         },
         {
@@ -859,24 +1368,57 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "tags": ["community", "xAI", "environment", "data center", "regulation", "controversy", "energy"],
+          "tags": [
+            "community",
+            "xAI",
+            "environment",
+            "data center",
+            "regulation",
+            "controversy",
+            "energy"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "xAI データセンター問題",
-            "alt": "xAI Colossus 2データセンターの環境規制問題。場所：Mississippi州。問題：ガスタービン約50基を環境許可なしで運用。主張：「移動式」分類で固定電源規制を回避。訴訟：環境団体が提訴。業界影響：AI全体のエネルギー問題と規制の抜け穴に注目が集まる。",
             "data": {
               "headline": "xAI Colossus 2: 無許可ガスタービン 50 基運用で環境訴訟に",
               "tldr": "xAIのMississippiデータセンターが環境許可なしにガスタービン約50基を稼働させているとして提訴。「移動式」分類による規制回避の抜け穴問題がAI業界全体の環境規制議論に飛び火。",
               "points": [
-                { "icon": "⚡", "label": "問題", "value": "無許可タービン約50基", "tone": "danger" },
-                { "icon": "🔍", "label": "抜け穴", "value": "「移動式」分類で届出回避", "tone": "warning" },
-                { "icon": "⚖️", "label": "ステータス", "value": "環境団体が提訴", "tone": "danger" },
-                { "icon": "🌍", "label": "環境影響", "value": "AI DC拡大の負荷問題", "tone": "warning" },
-                { "icon": "📋", "label": "業界リスク", "value": "規制回避の前例化", "tone": "warning" }
+                {
+                  "icon": "⚡",
+                  "label": "問題",
+                  "value": "無許可タービン約50基",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "抜け穴",
+                  "value": "「移動式」分類で届出回避",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "ステータス",
+                  "value": "環境団体が提訴",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🌍",
+                  "label": "環境影響",
+                  "value": "AI DC拡大の負荷問題",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📋",
+                  "label": "業界リスク",
+                  "value": "規制回避の前例化",
+                  "tone": "warning"
+                }
               ],
               "context": "AI データセンターの急拡大に伴うエネルギー・環境負荷問題は業界全体の課題。xAIの事例が規制議論の引き金になる可能性がある。",
               "impact": "環境規制当局がAIデータセンター向けの明確な基準を設けるよう圧力がかかり、設備投資計画に影響を与える可能性。"
-            }
+            },
+            "caption": "xAI データセンター問題",
+            "alt": "xAI Colossus 2データセンターの環境規制問題。場所：Mississippi州。問題：ガスタービン約50基を環境許可なしで運用。主張：「移動式」分類で固定電源規制を回避。訴訟：環境団体が提訴。業界影響：AI全体のエネルギー問題と規制の抜け穴に注目が集まる。"
           }
         }
       ]
@@ -913,24 +1455,56 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["japan", "Claude Code", "multi-agent", "design patterns", "implementation", "classmethod"],
+          "tags": [
+            "japan",
+            "Claude Code",
+            "multi-agent",
+            "design patterns",
+            "implementation",
+            "classmethod"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "マルチエージェント設計パターン",
-            "alt": "Claude Codeのマルチエージェント設計パターンの概要。パターン1：Orchestrator（タスクを分割・委任）。パターン2：Subagent（特化タスクを実行）。パターン3：Checkpoint（状態保存・再開）。適用場面：複雑なコード生成・大規模リファクタリング・長期プロジェクト。出典：Classmethod Dev.io（日本語解説）。",
             "data": {
               "headline": "Claude Code マルチエージェント: Orchestrator・Subagent・Checkpoint の 3 パターン",
               "tldr": "複数 Claude インスタンスが役割分担して複雑タスクを処理するマルチエージェント設計の日本語実装ガイド。Classmethod が公式パターンをコードサンプル付きで解説。",
               "points": [
-                { "icon": "🎯", "label": "Orchestrator", "value": "タスク分割・委任", "tone": "primary" },
-                { "icon": "⚙️", "label": "Subagent", "value": "特化タスクの実行", "tone": "info" },
-                { "icon": "💾", "label": "Checkpoint", "value": "状態保存・再開", "tone": "success" },
-                { "icon": "📝", "label": "形式", "value": "日本語＋コードサンプル", "tone": "default" },
-                { "icon": "🏢", "label": "出典", "value": "Classmethod Dev.io", "tone": "default" }
+                {
+                  "icon": "🎯",
+                  "label": "Orchestrator",
+                  "value": "タスク分割・委任",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "Subagent",
+                  "value": "特化タスクの実行",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💾",
+                  "label": "Checkpoint",
+                  "value": "状態保存・再開",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📝",
+                  "label": "形式",
+                  "value": "日本語＋コードサンプル",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "出典",
+                  "value": "Classmethod Dev.io",
+                  "tone": "default"
+                }
               ],
               "context": "Claude Code のマルチエージェント機能は 2026 年に急速に整備され、実際の大規模プロジェクトでの採用事例が増えつつある。",
               "impact": "日本語での実装ガイドが整備されることで、国内エンジニアの Claude Code 実務活用の障壁が大幅に下がる。"
-            }
+            },
+            "caption": "マルチエージェント設計パターン",
+            "alt": "Claude Codeのマルチエージェント設計パターンの概要。パターン1：Orchestrator（タスクを分割・委任）。パターン2：Subagent（特化タスクを実行）。パターン3：Checkpoint（状態保存・再開）。適用場面：複雑なコード生成・大規模リファクタリング・長期プロジェクト。出典：Classmethod Dev.io（日本語解説）。"
           }
         },
         {
@@ -960,25 +1534,61 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 110 },
-          "tags": ["japan", "ADHD", "productivity", "AI tools", "neurodiversity", "personal experience", "note"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 110
+          },
+          "tags": [
+            "japan",
+            "ADHD",
+            "productivity",
+            "AI tools",
+            "neurodiversity",
+            "personal experience",
+            "note"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ADHD × AI開発",
-            "alt": "ADHDを持つエンジニアのAIツール活用体験。課題：集中力維持困難・タスク切り替えコスト・衝動的な横道れ。AIの効果：タスクの細分化支援・コンテキスト保持・即時フィードバック。はてブ：110件。メッセージ：神経多様性とAIツールの相性の良さ。",
             "data": {
               "headline": "ADHD × AI コーディング: 認知特性の課題を AI が補完する体験談",
               "tldr": "ADHD 特有の集中維持困難・タスク切り替えコストが AI コーディングツールで劇的に改善した実体験。多様な認知特性を持つ開発者への AI の特別な価値を示す。はてブ 110 件。",
               "points": [
-                { "icon": "🧠", "label": "ADHD の課題", "value": "集中・切り替えコスト", "tone": "warning" },
-                { "icon": "✅", "label": "AIの効果", "value": "タスク細分化・即時FB", "tone": "success" },
-                { "icon": "💬", "label": "はてブ", "value": "110件（異例の反響）", "tone": "primary" },
-                { "icon": "🌈", "label": "視点", "value": "ニューロダイバーシティ", "tone": "info" },
-                { "icon": "😌", "label": "副次効果", "value": "精神的負担も軽減", "tone": "success" }
+                {
+                  "icon": "🧠",
+                  "label": "ADHD の課題",
+                  "value": "集中・切り替えコスト",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "✅",
+                  "label": "AIの効果",
+                  "value": "タスク細分化・即時FB",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💬",
+                  "label": "はてブ",
+                  "value": "110件（異例の反響）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🌈",
+                  "label": "視点",
+                  "value": "ニューロダイバーシティ",
+                  "tone": "info"
+                },
+                {
+                  "icon": "😌",
+                  "label": "副次効果",
+                  "value": "精神的負担も軽減",
+                  "tone": "success"
+                }
               ],
               "context": "AI ツールの効果を認知特性の視点から語る記事は国内で希少で、ADHD 当事者エンジニアからの強い共感を集めた。",
               "impact": "多様な認知特性を持つエンジニアへの AI ツールの価値が再認識され、インクルーシブな開発環境の議論が広がりうる。"
-            }
+            },
+            "caption": "ADHD × AI開発",
+            "alt": "ADHDを持つエンジニアのAIツール活用体験。課題：集中力維持困難・タスク切り替えコスト・衝動的な横道れ。AIの効果：タスクの細分化支援・コンテキスト保持・即時フィードバック。はてブ：110件。メッセージ：神経多様性とAIツールの相性の良さ。"
           }
         },
         {
@@ -1008,25 +1618,61 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 241 },
-          "tags": ["japan", "AI content", "AI slop", "Zenn", "community", "information quality", "ethics"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 241
+          },
+          "tags": [
+            "japan",
+            "AI content",
+            "AI slop",
+            "Zenn",
+            "community",
+            "information quality",
+            "ethics"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI水増し記事問題",
-            "alt": "「AIで長文記事水増し問題」の構造。問題行動：薄いアイデアをAIで長文化して大量公開。影響：情報プラットフォームのノイズ増加、質の高い記事の埋没。批判の根拠：読者の時間コスト・検索精度の低下。はてブ241件：日本コミュニティでの強い共感。",
             "data": {
               "headline": "AI スロップ問題: はてブ 241 件—「AI 水増し記事」に日本コミュニティが反発",
               "tldr": "薄いアイデアをAIで長文に水増しして大量公開する行為が技術情報プラットフォームの質を低下させているという批判。はてブ 241 件で強い共感を集めた。",
               "points": [
-                { "icon": "📰", "label": "問題行動", "value": "AI で薄い記事を水増し", "tone": "danger" },
-                { "icon": "📊", "label": "はてブ", "value": "241件（話題の中心）", "tone": "primary" },
-                { "icon": "🔍", "label": "影響", "value": "情報品質の低下", "tone": "warning" },
-                { "icon": "🌐", "label": "背景", "value": "AI slop は英語圏でも問題", "tone": "info" },
-                { "icon": "💬", "label": "意義", "value": "コミュニティ自主議論", "tone": "success" }
+                {
+                  "icon": "📰",
+                  "label": "問題行動",
+                  "value": "AI で薄い記事を水増し",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "📊",
+                  "label": "はてブ",
+                  "value": "241件（話題の中心）",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "影響",
+                  "value": "情報品質の低下",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "背景",
+                  "value": "AI slop は英語圏でも問題",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💬",
+                  "label": "意義",
+                  "value": "コミュニティ自主議論",
+                  "tone": "success"
+                }
               ],
               "context": "AI ツールが普及した結果、コンテンツの量は増えたが質が問われるようになった。日本語コミュニティが自主的にこの問題を取り上げた。",
               "impact": "AI コンテンツの倫理基準や自主ルールについてのコミュニティ規範形成が加速する可能性がある。"
-            }
+            },
+            "caption": "AI水増し記事問題",
+            "alt": "「AIで長文記事水増し問題」の構造。問題行動：薄いアイデアをAIで長文化して大量公開。影響：情報プラットフォームのノイズ増加、質の高い記事の埋没。批判の根拠：読者の時間コスト・検索精度の低下。はてブ241件：日本コミュニティでの強い共感。"
           }
         },
         {
@@ -1056,25 +1702,60 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 34 },
-          "tags": ["japan", "Codex", "multi-agent", "development workflow", "implementation", "hatenablog"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 34
+          },
+          "tags": [
+            "japan",
+            "Codex",
+            "multi-agent",
+            "development workflow",
+            "implementation",
+            "hatenablog"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Codex マルチエージェント分業",
-            "alt": "Codexサブエージェントによる実装・レビュー分業フロー。実装エージェント：フロントエンド・バックエンドのコード生成。レビューエージェント：品質チェック・コードレビュー。人間の役割：方針決定・最終承認のみ。結果：はてブ34件、実務的な知見を正直に共有。",
             "data": {
               "headline": "Codex サブエージェント分業: 実装エージェントとレビューエージェントの協調",
               "tldr": "OpenAI Codex のサブエージェント機能で実装とレビューを分業させる実践記録。フロントエンド・バックエンド・品質チェックを独立エージェントが担当し、人間の監督コストを削減。",
               "points": [
-                { "icon": "⚙️", "label": "実装担当", "value": "専用サブエージェント", "tone": "primary" },
-                { "icon": "🔍", "label": "レビュー担当", "value": "独立エージェント", "tone": "info" },
-                { "icon": "👤", "label": "人間の役割", "value": "最終承認のみ", "tone": "success" },
-                { "icon": "💰", "label": "コスト課題", "value": "エラー率も正直開示", "tone": "warning" },
-                { "icon": "📋", "label": "はてブ", "value": "34件（実践記事）", "tone": "default" }
+                {
+                  "icon": "⚙️",
+                  "label": "実装担当",
+                  "value": "専用サブエージェント",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "レビュー担当",
+                  "value": "独立エージェント",
+                  "tone": "info"
+                },
+                {
+                  "icon": "👤",
+                  "label": "人間の役割",
+                  "value": "最終承認のみ",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💰",
+                  "label": "コスト課題",
+                  "value": "エラー率も正直開示",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📋",
+                  "label": "はてブ",
+                  "value": "34件（実践記事）",
+                  "tone": "default"
+                }
               ],
               "context": "マルチエージェント開発の実装事例は増えているが、失敗・課題も含めた正直な技術報告は日本語コミュニティでまだ少ない。",
               "impact": "具体的な実践知見が共有されることで、Codex・Claude Code を活用したチーム開発の知見が蓄積される。"
-            }
+            },
+            "caption": "Codex マルチエージェント分業",
+            "alt": "Codexサブエージェントによる実装・レビュー分業フロー。実装エージェント：フロントエンド・バックエンドのコード生成。レビューエージェント：品質チェック・コードレビュー。人間の役割：方針決定・最終承認のみ。結果：はてブ34件、実務的な知見を正直に共有。"
           }
         },
         {
@@ -1104,25 +1785,60 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 119 },
-          "tags": ["japan", "team development", "AI tools", "engineering culture", "software development", "hatenablog"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 119
+          },
+          "tags": [
+            "japan",
+            "team development",
+            "AI tools",
+            "engineering culture",
+            "software development",
+            "hatenablog"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI時代のチーム開発論",
-            "alt": "AI時代のチーム開発の変化についての考察。変化している点：コードレビューの役割（品質→知識共有）、オンボーディング方法。AI代替しにくい点：アーキテクチャ議論・チーム合意形成・文化継承。はてブ119件：現場エンジニアからの強い共感。",
             "data": {
               "headline": "AI コーディング時代のチーム開発—何が変わり、何が変わらないか",
               "tldr": "AI ツールが個人生産性を高める一方、チームとして開発する意義・方法が問い直されている。コードレビュー・オンボーディング・知識移転の意味が変化しつつある現場の問いかけ。",
               "points": [
-                { "icon": "🤔", "label": "問いかけ", "value": "チーム開発の意義", "tone": "primary" },
-                { "icon": "🔄", "label": "変化①", "value": "コードレビューの役割", "tone": "warning" },
-                { "icon": "👥", "label": "変わらず", "value": "設計議論・文化継承", "tone": "success" },
-                { "icon": "💬", "label": "はてブ", "value": "119件（強い共感）", "tone": "info" },
-                { "icon": "🏢", "label": "意義", "value": "現場のリアルな問い", "tone": "default" }
+                {
+                  "icon": "🤔",
+                  "label": "問いかけ",
+                  "value": "チーム開発の意義",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "変化①",
+                  "value": "コードレビューの役割",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "👥",
+                  "label": "変わらず",
+                  "value": "設計議論・文化継承",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💬",
+                  "label": "はてブ",
+                  "value": "119件（強い共感）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🏢",
+                  "label": "意義",
+                  "value": "現場のリアルな問い",
+                  "tone": "default"
+                }
               ],
               "context": "AI コーディング浸透で個人の生産性は高まったが、チームの存在意義が問い直されるフェーズに入りつつある。",
               "impact": "ソフトウェアエンジニアリング組織のあり方が再定義され、チーム設計・評価制度・採用基準にも影響が波及する。"
-            }
+            },
+            "caption": "AI時代のチーム開発論",
+            "alt": "AI時代のチーム開発の変化についての考察。変化している点：コードレビューの役割（品質→知識共有）、オンボーディング方法。AI代替しにくい点：アーキテクチャ議論・チーム合意形成・文化継承。はてブ119件：現場エンジニアからの強い共感。"
           }
         }
       ]
@@ -1159,36 +1875,102 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "tags": ["china", "open source", "Qwen", "DeepSeek", "Kimi", "benchmark", "open weight", "Alibaba"],
-          "lang": "en",
+          "tags": [
+            "china",
+            "open source",
+            "Qwen",
+            "DeepSeek",
+            "Kimi",
+            "benchmark",
+            "open weight",
+            "Alibaba"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "中国オープンウェイトモデル比較",
-            "alt": "主要中国オープンウェイトモデルのSWE-Bench Proスコア比較。Kimi K2.6（Moonshot）：87/100。Qwen 3.6 Plus（Alibaba）：エージェントコーディング最高水準。DeepSeek V4 Pro（DeepSeek）：コスト優位（$3.48/1Mトークン）。参考：GPT-5.4ベースライン（Kimi K2.6が逆転）。",
             "data": {
               "headline": "中国 AI 勢: オープンウェイト上位 5 位中 4 位を占有",
-              "scale": { "max_label": "SWE-Bench Pro 100点", "unit": "pt" },
+              "scale": {
+                "max_label": "SWE-Bench Pro 100点",
+                "unit": "pt"
+              },
               "bars": [
-                { "label": "Kimi K2.6", "value": "87/100", "pct": 87, "tone": "success", "note": "SWE-Bench Pro、GPT-5.4超え", "delta": "OSS初" },
-                { "label": "Qwen 3.6 Plus", "value": "最高水準", "pct": 82, "tone": "success", "note": "1Mコンテキスト・エージェント", "baseline_pct": 80, "baseline_label": "前バージョン" },
-                { "label": "DeepSeek V4 Pro", "value": "$3.48/1M", "pct": 78, "tone": "info", "note": "コスト最優位、高性能維持" },
-                { "label": "GLM-5（Zhipu）", "value": "競争力あり", "pct": 73, "tone": "default", "note": "上位5位中に入る" }
+                {
+                  "label": "Kimi K2.6",
+                  "value": "87/100",
+                  "pct": 87,
+                  "tone": "success",
+                  "note": "SWE-Bench Pro、GPT-5.4超え",
+                  "delta": "OSS初"
+                },
+                {
+                  "label": "Qwen 3.6 Plus",
+                  "value": "最高水準",
+                  "pct": 82,
+                  "tone": "success",
+                  "note": "1Mコンテキスト・エージェント",
+                  "baseline_pct": 80,
+                  "baseline_label": "前バージョン"
+                },
+                {
+                  "label": "DeepSeek V4 Pro",
+                  "value": "$3.48/1M",
+                  "pct": 78,
+                  "tone": "info",
+                  "note": "コスト最優位、高性能維持"
+                },
+                {
+                  "label": "GLM-5（Zhipu）",
+                  "value": "競争力あり",
+                  "pct": 73,
+                  "tone": "default",
+                  "note": "上位5位中に入る"
+                }
               ],
               "narrative": "中国 AI 企業の技術力が急速に向上し、OSS モデルの性能競争で米国フロンティアラボとほぼ同水準に達した。コスト面での優位はさらに顕著。",
               "impact": "オープンウェイト LLM の主導権が中国に移りつつあり、企業の LLM 選定戦略と AI サプライチェーンの多様化が加速する。"
-            }
+            },
+            "caption": "中国オープンウェイトモデル比較",
+            "alt": "主要中国オープンウェイトモデルのSWE-Bench Proスコア比較。Kimi K2.6（Moonshot）：87/100。Qwen 3.6 Plus（Alibaba）：エージェントコーディング最高水準。DeepSeek V4 Pro（DeepSeek）：コスト優位（$3.48/1Mトークン）。参考：GPT-5.4ベースライン（Kimi K2.6が逆転）。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "Reddit", "reason": "WebFetch blocked for reddit.com", "fallback_used": "none" },
-    { "source": "The Verge RSS", "reason": "WebFetch blocked for theverge.com", "fallback_used": "none" },
-    { "source": "Import AI (Substack)", "reason": "HTTP 403 Forbidden", "fallback_used": "none" },
-    { "source": "The Batch (DeepLearning.AI)", "reason": "HTTP 404 Not Found", "fallback_used": "none" },
-    { "source": "Synced Review (机器之心 英語版)", "reason": "Feed returned outdated content (Aug 2025)", "fallback_used": "none" },
-    { "source": "Mercari Engineering", "reason": "HTTP 403 Forbidden", "fallback_used": "WebSearch fallback" },
-    { "source": "VentureBeat RSS", "reason": "Feed returned January 2026 content only", "fallback_used": "none" }
+    {
+      "source": "Reddit",
+      "reason": "WebFetch blocked for reddit.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "The Verge RSS",
+      "reason": "WebFetch blocked for theverge.com",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Import AI (Substack)",
+      "reason": "HTTP 403 Forbidden",
+      "fallback_used": "none"
+    },
+    {
+      "source": "The Batch (DeepLearning.AI)",
+      "reason": "HTTP 404 Not Found",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Synced Review (机器之心 英語版)",
+      "reason": "Feed returned outdated content (Aug 2025)",
+      "fallback_used": "none"
+    },
+    {
+      "source": "Mercari Engineering",
+      "reason": "HTTP 403 Forbidden",
+      "fallback_used": "WebSearch fallback"
+    },
+    {
+      "source": "VentureBeat RSS",
+      "reason": "Feed returned January 2026 content only",
+      "fallback_used": "none"
+    }
   ]
 }

@@ -23,19 +23,58 @@
     }
   },
   "skipped_sources": [
-    { "source": "openai_blog", "reason": "HTTP 403 Forbidden" },
-    { "source": "reddit_localllama", "reason": "fetch blocked" },
-    { "source": "the_verge", "reason": "fetch blocked" },
-    { "source": "venturebeat", "reason": "HTTP 429 Too Many Requests" },
-    { "source": "hn_algolia_recent", "reason": "returned older stories outside time window" }
+    {
+      "source": "openai_blog",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "reddit_localllama",
+      "reason": "fetch blocked"
+    },
+    {
+      "source": "the_verge",
+      "reason": "fetch blocked"
+    },
+    {
+      "source": "venturebeat",
+      "reason": "HTTP 429 Too Many Requests"
+    },
+    {
+      "source": "hn_algolia_recent",
+      "reason": "returned older stories outside time window"
+    }
   ],
   "top_picks": [
-    { "id": "ag-2026-0517-001", "rank": 1, "reason": "grep vs ベクトル検索の実証研究—複数エージェントハーネスで grep が一般的に優位と確認。今日から設計を変えられる practicality 5 の実践的インパクト" },
-    { "id": "nm-2026-0517-001", "rank": 2, "reason": "Darwin ファミリーが訓練フリーでフロンティア推論を達成。「訓練量に比例して性能が上がる」という根本前提への問い直し" },
-    { "id": "pol-2026-0517-001", "rank": 3, "reason": "arXiv の AI 全執筆禁止方針は全研究者に影響する重要な政策変更。一発禁止というゼロ耐性ルールが業界に波紋" },
-    { "id": "rp-2026-0517-001", "rank": 4, "reason": "HF 137 upvotes。Simple Scaling だけでオリンピック数学金メダルレベルを達成した論文。スケーリング則の新章を示す" },
-    { "id": "jp-2026-0517-001", "rank": 5, "reason": "Japan 枠保証。AIにできない仕事はUber Eats的になるという論考—はてブ 245 件。AI代替議論が「消えるか残るか」から「どんな質の仕事になるか」へシフトを示す" },
-    { "id": "ib-2026-0517-001", "rank": 6, "reason": "OpenAI が ChatGPT+Codex を統合し Brockman が正式に製品戦略責任者就任。Google I/O 直前の組織再編は戦略的意図が明確" }
+    {
+      "id": "ag-2026-0517-001",
+      "rank": 1,
+      "reason": "grep vs ベクトル検索の実証研究—複数エージェントハーネスで grep が一般的に優位と確認。今日から設計を変えられる practicality 5 の実践的インパクト"
+    },
+    {
+      "id": "nm-2026-0517-001",
+      "rank": 2,
+      "reason": "Darwin ファミリーが訓練フリーでフロンティア推論を達成。「訓練量に比例して性能が上がる」という根本前提への問い直し"
+    },
+    {
+      "id": "pol-2026-0517-001",
+      "rank": 3,
+      "reason": "arXiv の AI 全執筆禁止方針は全研究者に影響する重要な政策変更。一発禁止というゼロ耐性ルールが業界に波紋"
+    },
+    {
+      "id": "rp-2026-0517-001",
+      "rank": 4,
+      "reason": "HF 137 upvotes。Simple Scaling だけでオリンピック数学金メダルレベルを達成した論文。スケーリング則の新章を示す"
+    },
+    {
+      "id": "jp-2026-0517-001",
+      "rank": 5,
+      "reason": "Japan 枠保証。AIにできない仕事はUber Eats的になるという論考—はてブ 245 件。AI代替議論が「消えるか残るか」から「どんな質の仕事になるか」へシフトを示す"
+    },
+    {
+      "id": "ib-2026-0517-001",
+      "rank": 6,
+      "reason": "OpenAI が ChatGPT+Codex を統合し Brockman が正式に製品戦略責任者就任。Google I/O 直前の組織再編は戦略的意図が明確"
+    }
   ],
   "categories": [
     {
@@ -68,24 +107,63 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["LLM", "reasoning", "GPQA", "training-free", "model-merging", "evolutionary", "frontier-AI"],
+          "tags": [
+            "LLM",
+            "reasoning",
+            "GPQA",
+            "training-free",
+            "model-merging",
+            "evolutionary",
+            "frontier-AI"
+          ],
           "x_post": "Darwin ファミリーが勾配更新ゼロで GPQA Diamond 88.89% を達成。ファインチューニングも RL 訓練も不要で推論時 compute のみでフロンティアスコアに到達した。「訓練量に比例して性能が上がる」という前提を正面から問い直す研究である。\n\nhttps://huggingface.co/papers/2605.14386",
           "figure": {
             "type": "comparison",
-            "caption": "Darwin vs 従来訓練モデル",
-            "alt": "Darwin Family（訓練ゼロ）と従来の訓練ありモデルの比較。GPQA Diamond スコアは従来モデルが約80%に対し Darwin が88.89%、訓練ステップ数は従来が数百万ステップに対し Darwin がゼロ、推論コストは同等水準。",
             "data": {
               "headline": "Darwin Family: 訓練ゼロで GPQA Diamond 88.89% 達成",
-              "before": { "label": "従来の推論モデル", "sublabel": "RL/SFT 訓練あり" },
-              "after": { "label": "Darwin Family", "sublabel": "訓練フリー" },
+              "before": {
+                "label": "従来の推論モデル",
+                "sublabel": "RL/SFT 訓練あり"
+              },
+              "after": {
+                "label": "Darwin Family",
+                "sublabel": "訓練フリー"
+              },
               "metrics": [
-                { "label": "GPQA Diamond", "before": "~80%", "after": "88.89%", "before_pct": 80, "after_pct": 89, "delta": "+8.89pt", "delta_tone": "success" },
-                { "label": "訓練コスト", "before": "高（数百万 step）", "after": "ゼロ", "before_pct": 100, "after_pct": 0, "delta": "-100%", "delta_tone": "success", "note": "推論時 compute のみ" },
-                { "label": "実用性", "before": "専用インフラ必要", "after": "同等水準", "before_pct": 40, "after_pct": 40, "delta": "同等", "delta_tone": "info" }
+                {
+                  "label": "GPQA Diamond",
+                  "before": "~80%",
+                  "after": "88.89%",
+                  "before_pct": 80,
+                  "after_pct": 89,
+                  "delta": "+8.89pt",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "訓練コスト",
+                  "before": "高（数百万 step）",
+                  "after": "ゼロ",
+                  "before_pct": 100,
+                  "after_pct": 0,
+                  "delta": "-100%",
+                  "delta_tone": "success",
+                  "note": "推論時 compute のみ"
+                },
+                {
+                  "label": "実用性",
+                  "before": "専用インフラ必要",
+                  "after": "同等水準",
+                  "before_pct": 40,
+                  "after_pct": 40,
+                  "delta": "同等",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "従来の推論強化には大規模 RL 訓練が前提だったが、Darwin Family は推論時 compute のみでフロンティアスコアを実現した",
               "impact": "訓練コスト不要で最先端推論が実現できれば AI 研究の民主化と新たな研究方向が拓かれる"
-            }
+            },
+            "caption": "Darwin vs 従来訓練モデル",
+            "alt": "Darwin Family（訓練ゼロ）と従来の訓練ありモデルの比較。GPQA Diamond スコアは従来モデルが約80%に対し Darwin が88.89%、訓練ステップ数は従来が数百万ステップに対し Darwin がゼロ、推論コストは同等水準。"
           }
         },
         {
@@ -113,23 +191,61 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["TTS", "ONNX", "on-device", "multilingual", "Swift", "iOS", "edge-AI"],
+          "tags": [
+            "TTS",
+            "ONNX",
+            "on-device",
+            "multilingual",
+            "Swift",
+            "iOS",
+            "edge-AI"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "クラウド TTS vs on-device supertonic",
-            "alt": "クラウドTTSとon-device supertonic（ONNX）の比較。レイテンシはクラウドが100〜500ms、supertonic が<10ms。プライバシーはクラウドが音声データ送信必要、supertonic が完全ローカル。コストはクラウドが従量課金、supertonic が無料。",
             "data": {
               "headline": "supertonic: ONNX ネイティブで端末上リアルタイム TTS",
-              "before": { "label": "クラウド TTS", "sublabel": "API 呼び出し" },
-              "after": { "label": "supertonic", "sublabel": "On-Device / ONNX" },
+              "before": {
+                "label": "クラウド TTS",
+                "sublabel": "API 呼び出し"
+              },
+              "after": {
+                "label": "supertonic",
+                "sublabel": "On-Device / ONNX"
+              },
               "metrics": [
-                { "label": "レイテンシ", "before": "100〜500ms", "after": "<10ms", "before_pct": 80, "after_pct": 10, "delta": "-95%", "delta_tone": "success" },
-                { "label": "プライバシー", "before": "音声データ送信", "after": "完全ローカル", "before_pct": 30, "after_pct": 100, "delta": "完全保護", "delta_tone": "success" },
-                { "label": "ランニングコスト", "before": "従量課金", "after": "無料", "before_pct": 80, "after_pct": 0, "delta": "ゼロ", "delta_tone": "success" }
+                {
+                  "label": "レイテンシ",
+                  "before": "100〜500ms",
+                  "after": "<10ms",
+                  "before_pct": 80,
+                  "after_pct": 10,
+                  "delta": "-95%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "プライバシー",
+                  "before": "音声データ送信",
+                  "after": "完全ローカル",
+                  "before_pct": 30,
+                  "after_pct": 100,
+                  "delta": "完全保護",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "ランニングコスト",
+                  "before": "従量課金",
+                  "after": "無料",
+                  "before_pct": 80,
+                  "after_pct": 0,
+                  "delta": "ゼロ",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "ONNX ランタイムで端末上ネイティブ動作するため、クラウド不要でリアルタイム TTS を実現",
               "impact": "音声 AI アプリのオフライン化・プライバシー保護・コスト削減を同時に実現できる実用ツール"
-            }
+            },
+            "caption": "クラウド TTS vs on-device supertonic",
+            "alt": "クラウドTTSとon-device supertonic（ONNX）の比較。レイテンシはクラウドが100〜500ms、supertonic が<10ms。プライバシーはクラウドが音声データ送信必要、supertonic が完全ローカル。コストはクラウドが従量課金、supertonic が無料。"
           }
         }
       ]
@@ -164,22 +280,51 @@
             "total": 17,
             "source_type_bias": 0
           },
-          "tags": ["agents", "Claude-Code", "Codex", "TDD", "methodology", "framework", "GitHub-Trending"],
+          "tags": [
+            "agents",
+            "Claude-Code",
+            "Codex",
+            "TDD",
+            "methodology",
+            "framework",
+            "GitHub-Trending"
+          ],
           "figure": {
             "type": "timeline",
-            "caption": "superpowers のエージェント開発フロー",
-            "alt": "superpoweers フレームワークのエージェント開発フロー。Step1: ブレインストーミング（要件整理・設計確認）、Step2: Git Worktree で隔離ブランチ作成、Step3: TDD で実装、Step4: レビューと完成。",
             "data": {
               "headline": "superpowers: エージェントにエンジニアリングプロセスを与える",
               "events": [
-                { "when": "Step 1", "label": "ブレインストーミング", "description": "rough なアイデアを実行可能な設計に整理。ユーザーと確認", "status": "past" },
-                { "when": "Step 2", "label": "Git Worktree 分岐", "description": "隔離されたブランチでクリーンなベースラインを確保", "status": "past" },
-                { "when": "Step 3", "label": "TDD 実装", "description": "テスト先行で小さなタスクに分解して実装", "status": "now", "tone": "primary" },
-                { "when": "Step 4", "label": "レビュー完了", "description": "品質チェックと PR 作成", "status": "upcoming" }
+                {
+                  "when": "Step 1",
+                  "label": "ブレインストーミング",
+                  "description": "rough なアイデアを実行可能な設計に整理。ユーザーと確認",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "Git Worktree 分岐",
+                  "description": "隔離されたブランチでクリーンなベースラインを確保",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "TDD 実装",
+                  "description": "テスト先行で小さなタスクに分解して実装",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "レビュー完了",
+                  "description": "品質チェックと PR 作成",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "ユニバーサルプロンプトを追加するのではなく、エージェントにソフトウェアエンジニアリングプロセスを踏ませる",
               "impact": "コーディングエージェントの品質と予測可能性が向上。Claude Code・Cursor など主要ツールにそのまま適用可能"
-            }
+            },
+            "caption": "superpowers のエージェント開発フロー",
+            "alt": "superpoweers フレームワークのエージェント開発フロー。Step1: ブレインストーミング（要件整理・設計確認）、Step2: Git Worktree で隔離ブランチ作成、Step3: TDD で実装、Step4: レビューと完成。"
           }
         },
         {
@@ -207,22 +352,50 @@
             "total": 16,
             "source_type_bias": 0
           },
-          "tags": ["Claude-Code", "code-graph", "token-reduction", "TypeScript", "tooling", "GitHub-Trending"],
+          "tags": [
+            "Claude-Code",
+            "code-graph",
+            "token-reduction",
+            "TypeScript",
+            "tooling",
+            "GitHub-Trending"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "codegraph によるトークン削減効果",
-            "alt": "codegraph 使用前後のトークン使用量比較。通常のClaude Code: 全ファイル読込で高トークン消費（100%）、codegraph使用後: 事前グラフで必要箇所のみ（推定30〜50%）。処理速度は向上し、コストは削減。",
             "data": {
               "headline": "codegraph: 事前グラフで Claude Code のトークン消費を削減",
-              "scale": { "max_label": "コンテキスト使用量（相対）", "unit": "%" },
+              "scale": {
+                "max_label": "コンテキスト使用量（相対）",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "通常 Claude Code", "value": "全ファイル読込", "pct": 100, "tone": "warning", "note": "大規模プロジェクトで膨大な消費" },
-                { "label": "codegraph 使用後", "value": "必要箇所のみ", "pct": 40, "tone": "success", "note": "事前グラフで依存関係を整理" },
-                { "label": "速度", "value": "向上", "pct": 75, "tone": "primary", "note": "ローカル処理で高速化" }
+                {
+                  "label": "通常 Claude Code",
+                  "value": "全ファイル読込",
+                  "pct": 100,
+                  "tone": "warning",
+                  "note": "大規模プロジェクトで膨大な消費"
+                },
+                {
+                  "label": "codegraph 使用後",
+                  "value": "必要箇所のみ",
+                  "pct": 40,
+                  "tone": "success",
+                  "note": "事前グラフで依存関係を整理"
+                },
+                {
+                  "label": "速度",
+                  "value": "向上",
+                  "pct": 75,
+                  "tone": "primary",
+                  "note": "ローカル処理で高速化"
+                }
               ],
               "narrative": "コードの依存関係グラフを事前計算してローカル保持し、Claude Code に必要な部分だけを渡す",
               "impact": "大規模コードベースでの Claude Code コスト・速度問題を実用的に解決。TypeScript/JS プロジェクトで特に効果的"
-            }
+            },
+            "caption": "codegraph によるトークン削減効果",
+            "alt": "codegraph 使用前後のトークン使用量比較。通常のClaude Code: 全ファイル読込で高トークン消費（100%）、codegraph使用後: 事前グラフで必要箇所のみ（推定30〜50%）。処理速度は向上し、コストは削減。"
           }
         },
         {
@@ -250,22 +423,47 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["agents", "science", "research", "engineering", "finance", "skills", "GitHub-Trending"],
+          "tags": [
+            "agents",
+            "science",
+            "research",
+            "engineering",
+            "finance",
+            "skills",
+            "GitHub-Trending"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "scientific-agent-skills の対応ドメイン",
-            "alt": "scientific-agent-skills がカバーするドメイン。Research: 論文読み込み・arXiv要約・実験設計、Science: 統計検定自動実行・データ解析、Engineering: 実験ログ解析・コード生成、Finance: 金融モデリング・分析。",
             "data": {
               "headline": "科学・研究者向けエージェントスキルを即利用可能なコレクションで提供",
               "tldr": "研究・科学・工学・金融・ライティングタスク向けのエージェント機能を ready-to-use の形でまとめたリポジトリ。専門ドメインの実装パターンをすぐに活用できる。",
               "points": [
-                { "icon": "🔬", "label": "Research", "value": "論文読み込み・arXiv 要約・実験設計", "tone": "primary" },
-                { "icon": "📊", "label": "Science", "value": "統計検定自動実行・データ解析" },
-                { "icon": "⚙️", "label": "Engineering", "value": "実験ログ解析・コード生成" },
-                { "icon": "💰", "label": "Finance", "value": "金融モデリング・ポートフォリオ分析" }
+                {
+                  "icon": "🔬",
+                  "label": "Research",
+                  "value": "論文読み込み・arXiv 要約・実験設計",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "Science",
+                  "value": "統計検定自動実行・データ解析"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "Engineering",
+                  "value": "実験ログ解析・コード生成"
+                },
+                {
+                  "icon": "💰",
+                  "label": "Finance",
+                  "value": "金融モデリング・ポートフォリオ分析"
+                }
               ],
               "impact": "専門家がエージェントを研究ワークフローに統合する際のボイラープレートを大幅に削減"
-            }
+            },
+            "caption": "scientific-agent-skills の対応ドメイン",
+            "alt": "scientific-agent-skills がカバーするドメイン。Research: 論文読み込み・arXiv要約・実験設計、Science: 統計検定自動実行・データ解析、Engineering: 実験ログ解析・コード生成、Finance: 金融モデリング・分析。"
           }
         }
       ]
@@ -300,23 +498,52 @@
             "total": 20,
             "source_type_bias": 1
           },
-          "tags": ["agents", "search", "grep", "RAG", "vector-search", "benchmark", "Claude-Code", "Codex"],
+          "tags": [
+            "agents",
+            "search",
+            "grep",
+            "RAG",
+            "vector-search",
+            "benchmark",
+            "Claude-Code",
+            "Codex"
+          ],
           "x_post": "「Grep はベクトル検索を超えるか」を実証した論文が arXiv に公開。Claude Code・Codex・Gemini CLI など複数エージェントハーネスで grep が一般的に高精度であることを確認した。エージェント検索設計を変える実践的な根拠となり得る。\n\nhttps://arxiv.org/abs/2605.15184",
           "figure": {
             "type": "metric-bars",
-            "caption": "grep vs ベクトル検索—エージェント検索比較",
-            "alt": "エージェント検索戦略の比較。grep: 相対性能スコア82/100、ベクトル検索: 70/100。ハーネス選択の影響度は90/100と最も大きく、検索手法よりもハーネス選択が結果を左右する。",
             "data": {
               "headline": "grep がベクトル検索を超える—複数エージェントハーネスで実証",
-              "scale": { "max_label": "検索有効性スコア（相対）", "unit": "/100" },
+              "scale": {
+                "max_label": "検索有効性スコア（相対）",
+                "unit": "/100"
+              },
               "bars": [
-                { "label": "grep", "value": "高（優位）", "pct": 82, "tone": "success", "note": "複数アーキテクチャで安定して優位" },
-                { "label": "ベクトル検索", "value": "中（劣位）", "pct": 70, "note": "一部ハーネスで grep に劣る" },
-                { "label": "ハーネス選択の影響", "value": "非常に大", "pct": 90, "tone": "warning", "note": "検索手法より重要な変数" }
+                {
+                  "label": "grep",
+                  "value": "高（優位）",
+                  "pct": 82,
+                  "tone": "success",
+                  "note": "複数アーキテクチャで安定して優位"
+                },
+                {
+                  "label": "ベクトル検索",
+                  "value": "中（劣位）",
+                  "pct": 70,
+                  "note": "一部ハーネスで grep に劣る"
+                },
+                {
+                  "label": "ハーネス選択の影響",
+                  "value": "非常に大",
+                  "pct": 90,
+                  "tone": "warning",
+                  "note": "検索手法より重要な変数"
+                }
               ],
               "narrative": "grep の優位性は複数アーキテクチャで一貫。しかし最大の変数はハーネス（実行環境）の選択",
               "impact": "ベクトル DB 導入前に grep の検証を推奨。エージェント設計でハーネス選択を明示的に意思決定すべき"
-            }
+            },
+            "caption": "grep vs ベクトル検索—エージェント検索比較",
+            "alt": "エージェント検索戦略の比較。grep: 相対性能スコア82/100、ベクトル検索: 70/100。ハーネス選択の影響度は90/100と最も大きく、検索手法よりもハーネス選択が結果を左右する。"
           }
         },
         {
@@ -344,22 +571,49 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["agents", "reinforcement-learning", "self-distillation", "autonomy", "LLM", "arxiv"],
+          "tags": [
+            "agents",
+            "reinforcement-learning",
+            "self-distillation",
+            "autonomy",
+            "LLM",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "自己蒸留エージェント RL の仕組み",
-            "alt": "Self-Distilled Agentic RLの仕組み。従来: 人間フィードバック+事前定義報酬関数が必要、新手法: 自己蒸留でトレーニングシグナルを自律生成、効果: マルチステップタスクで有効性を実証、HF upvotes: 77。",
             "data": {
               "headline": "外部監督なしで自律学習するエージェント RL 手法",
               "tldr": "自己蒸留を用いてエージェントが自律的にトレーニングシグナルを生成する RL 手法。人間フィードバックや事前定義報酬関数が不要で、マルチステップエージェントタスクで有効性を実証。",
               "points": [
-                { "icon": "🔄", "label": "手法", "value": "自己蒸留でシグナル自律生成", "tone": "primary" },
-                { "icon": "🚫", "label": "不要なもの", "value": "人間 FB・事前定義報酬関数", "tone": "success" },
-                { "icon": "✅", "label": "実証済み", "value": "マルチステップタスク", "note": "複数タスクで有効性確認" },
-                { "icon": "📈", "label": "HF 反響", "value": "77 upvotes", "tone": "primary" }
+                {
+                  "icon": "🔄",
+                  "label": "手法",
+                  "value": "自己蒸留でシグナル自律生成",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🚫",
+                  "label": "不要なもの",
+                  "value": "人間 FB・事前定義報酬関数",
+                  "tone": "success"
+                },
+                {
+                  "icon": "✅",
+                  "label": "実証済み",
+                  "value": "マルチステップタスク",
+                  "note": "複数タスクで有効性確認"
+                },
+                {
+                  "icon": "📈",
+                  "label": "HF 反響",
+                  "value": "77 upvotes",
+                  "tone": "primary"
+                }
               ],
               "impact": "人間の監督コストなしに自律的に改善するエージェントシステムの実現に向けた重要な研究"
-            }
+            },
+            "caption": "自己蒸留エージェント RL の仕組み",
+            "alt": "Self-Distilled Agentic RLの仕組み。従来: 人間フィードバック+事前定義報酬関数が必要、新手法: 自己蒸留でトレーニングシグナルを自律生成、効果: マルチステップタスクで有効性を実証、HF upvotes: 77。"
           }
         }
       ]
@@ -394,23 +648,60 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["video-generation", "diffusion", "distillation", "real-time", "autoregressive", "arxiv"],
+          "tags": [
+            "video-generation",
+            "diffusion",
+            "distillation",
+            "real-time",
+            "autoregressive",
+            "arxiv"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "従来の動画拡散 vs Causal Forcing++",
-            "alt": "従来の動画拡散モデルとCausal Forcing++の比較。推論ステップ数は従来が50〜100ステップ、Causal Forcing++が数ステップ（1〜4）。生成速度は従来が遅い（非リアルタイム）、Causal Forcing++がリアルタイム。品質は同等〜改善。",
             "data": {
               "headline": "Causal Forcing++: 少ステップでリアルタイム動画生成",
-              "before": { "label": "従来の動画拡散モデル", "sublabel": "多ステップ推論" },
-              "after": { "label": "Causal Forcing++", "sublabel": "蒸留×自己回帰" },
+              "before": {
+                "label": "従来の動画拡散モデル",
+                "sublabel": "多ステップ推論"
+              },
+              "after": {
+                "label": "Causal Forcing++",
+                "sublabel": "蒸留×自己回帰"
+              },
               "metrics": [
-                { "label": "推論ステップ数", "before": "50〜100 step", "after": "1〜4 step", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" },
-                { "label": "生成速度", "before": "非リアルタイム", "after": "リアルタイム対応", "before_pct": 20, "after_pct": 90, "delta": "大幅向上", "delta_tone": "success" },
-                { "label": "画質", "before": "高品質", "after": "同等〜改善", "before_pct": 85, "after_pct": 85, "delta": "維持", "delta_tone": "info" }
+                {
+                  "label": "推論ステップ数",
+                  "before": "50〜100 step",
+                  "after": "1〜4 step",
+                  "before_pct": 100,
+                  "after_pct": 5,
+                  "delta": "-95%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "生成速度",
+                  "before": "非リアルタイム",
+                  "after": "リアルタイム対応",
+                  "before_pct": 20,
+                  "after_pct": 90,
+                  "delta": "大幅向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "画質",
+                  "before": "高品質",
+                  "after": "同等〜改善",
+                  "before_pct": 85,
+                  "after_pct": 85,
+                  "delta": "維持",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "拡散蒸留と自己回帰の組み合わせで推論コストを大幅削減しながら品質を維持",
               "impact": "インタラクティブな動画 AI の実用化を加速。ゲーム・映像制作・教育など多分野での応用が見込まれる"
-            }
+            },
+            "caption": "従来の動画拡散 vs Causal Forcing++",
+            "alt": "従来の動画拡散モデルとCausal Forcing++の比較。推論ステップ数は従来が50〜100ステップ、Causal Forcing++が数ステップ（1〜4）。生成速度は従来が遅い（非リアルタイム）、Causal Forcing++がリアルタイム。品質は同等〜改善。"
           }
         },
         {
@@ -438,22 +729,47 @@
             "total": 15,
             "source_type_bias": 1
           },
-          "tags": ["world-model", "diffusion-transformer", "video", "linear-attention", "robotics", "arxiv"],
+          "tags": [
+            "world-model",
+            "diffusion-transformer",
+            "video",
+            "linear-attention",
+            "robotics",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "SANA-WM の効率改善ポイント",
-            "alt": "SANA-WMの効率改善。問題: Transformerの二乗コストが長時間動画で深刻、解決策: 線形アテンション×拡散Transformerのハイブリッド、効果: 分単位のワールドモデリングが現実的な計算コストで可能に、応用先: ゲームAI・ロボティクス・物理シミュレーション。",
             "data": {
               "headline": "SANA-WM: 線形拡散 Transformer で分単位ワールドモデリングを効率化",
               "tldr": "ハイブリッド線形拡散 Transformer で長時間動画の二乗コスト問題を解決。ゲーム AI・ロボティクスなどのワールドモデル応用に実用的な計算コストで対応する。",
               "points": [
-                { "icon": "⚡", "label": "アーキテクチャ", "value": "線形アテンション × 拡散 Transformer", "tone": "primary" },
-                { "icon": "📉", "label": "コスト削減", "value": "二乗コスト問題を線形に改善" },
-                { "icon": "⏱️", "label": "スケール", "value": "分単位の長時間動画に対応" },
-                { "icon": "🎮", "label": "応用先", "value": "ゲーム AI・ロボティクス・シミュレーション", "note": "HF 58 upvotes" }
+                {
+                  "icon": "⚡",
+                  "label": "アーキテクチャ",
+                  "value": "線形アテンション × 拡散 Transformer",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📉",
+                  "label": "コスト削減",
+                  "value": "二乗コスト問題を線形に改善"
+                },
+                {
+                  "icon": "⏱️",
+                  "label": "スケール",
+                  "value": "分単位の長時間動画に対応"
+                },
+                {
+                  "icon": "🎮",
+                  "label": "応用先",
+                  "value": "ゲーム AI・ロボティクス・シミュレーション",
+                  "note": "HF 58 upvotes"
+                }
               ],
               "impact": "長時間動画を扱うワールドモデルの計算コスト問題を実用的に解決し、物理 AI 応用の幅を広げる"
-            }
+            },
+            "caption": "SANA-WM の効率改善ポイント",
+            "alt": "SANA-WMの効率改善。問題: Transformerの二乗コストが長時間動画で深刻、解決策: 線形アテンション×拡散Transformerのハイブリッド、効果: 分単位のワールドモデリングが現実的な計算コストで可能に、応用先: ゲームAI・ロボティクス・物理シミュレーション。"
           }
         }
       ]
@@ -488,23 +804,51 @@
             "total": 17,
             "source_type_bias": 1
           },
-          "tags": ["reasoning", "scaling", "math-olympiad", "LLM", "benchmark", "arxiv", "HF-papers"],
+          "tags": [
+            "reasoning",
+            "scaling",
+            "math-olympiad",
+            "LLM",
+            "benchmark",
+            "arxiv",
+            "HF-papers"
+          ],
           "x_post": "HF 137 upvotes。「Simple and Unified Scaling」だけで数学オリンピック金メダルレベルの推論を達成したと報告する論文が公開された。追加の特殊訓練なくスケーリングのみでトップ数学者水準に到達できることを示しており、スケーリング則の新たな章となり得る。\n\nhttps://huggingface.co/papers/2605.13301",
           "figure": {
             "type": "metric-bars",
-            "caption": "オリンピック数学推論スケーリングの成果",
-            "alt": "Simple and Unified Scaling によるオリンピック数学推論スコア。金メダルレベルの達成率: 前手法が〜40%、新手法Scaling適用後が〜90%。特殊訓練なしで達成。HF 137 upvotes。",
             "data": {
               "headline": "スケーリングのみで数学オリンピック金メダル水準—HF 137 upvotes",
-              "scale": { "max_label": "オリンピック数学問題 正解率（相対）", "unit": "%" },
+              "scale": {
+                "max_label": "オリンピック数学問題 正解率（相対）",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "特殊訓練あり従来手法", "value": "従来ベース", "pct": 55, "note": "RL / fine-tuning あり" },
-                { "label": "Simple Scaling（本論文）", "value": "金メダルレベル達成", "pct": 90, "tone": "success", "note": "追加訓練なし" },
-                { "label": "人間上位選手（参考）", "value": "金メダル基準", "pct": 95, "tone": "primary", "note": "トップ国際選手水準" }
+                {
+                  "label": "特殊訓練あり従来手法",
+                  "value": "従来ベース",
+                  "pct": 55,
+                  "note": "RL / fine-tuning あり"
+                },
+                {
+                  "label": "Simple Scaling（本論文）",
+                  "value": "金メダルレベル達成",
+                  "pct": 90,
+                  "tone": "success",
+                  "note": "追加訓練なし"
+                },
+                {
+                  "label": "人間上位選手（参考）",
+                  "value": "金メダル基準",
+                  "pct": 95,
+                  "tone": "primary",
+                  "note": "トップ国際選手水準"
+                }
               ],
               "narrative": "特殊なファインチューニングや強化学習なしで、スケーリングのみでオリンピック金メダルレベルの推論を達成",
               "impact": "スケーリング則が数学推論の「難攻不落」ベンチマークを突破できることを示した歴史的マイルストーン"
-            }
+            },
+            "caption": "オリンピック数学推論スケーリングの成果",
+            "alt": "Simple and Unified Scaling によるオリンピック数学推論スコア。金メダルレベルの達成率: 前手法が〜40%、新手法Scaling適用後が〜90%。特殊訓練なしで達成。HF 137 upvotes。"
           }
         },
         {
@@ -532,22 +876,49 @@
             "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["reasoning", "Bradley-Terry", "test-time-compute", "parallel", "LLM", "inference", "arxiv"],
+          "tags": [
+            "reasoning",
+            "Bradley-Terry",
+            "test-time-compute",
+            "parallel",
+            "LLM",
+            "inference",
+            "arxiv"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "OpenDeepThink の仕組み",
-            "alt": "OpenDeepThinkの仕組み。手法: 複数推論候補をペアワイズ比較→ブラッドリー-テリー集計でランキング化、コスト: 訓練ゼロ、効果: 数学・論理推論で有意な改善、適用先: Claude・o3など既存Thinkingモデルにそのまま適用可能。",
             "data": {
               "headline": "訓練フリーで推論性能を向上—ペアワイズ比較 × BT 集計",
               "tldr": "複数の推論候補を LLM にペアワイズ比較させ、ブラッドリー-テリー集計でランキング化。モデル再訓練なしで推論性能を向上させるテスト時スケーリング手法。",
               "points": [
-                { "icon": "⚖️", "label": "手法", "value": "ペアワイズ比較 + BT 集計", "tone": "primary" },
-                { "icon": "💸", "label": "訓練コスト", "value": "ゼロ（訓練不要）", "tone": "success" },
-                { "icon": "📐", "label": "効果", "value": "数学・論理推論で有意に改善" },
-                { "icon": "🔌", "label": "適用先", "value": "Claude / o3 など既存モデル", "note": "そのまま適用可能" }
+                {
+                  "icon": "⚖️",
+                  "label": "手法",
+                  "value": "ペアワイズ比較 + BT 集計",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💸",
+                  "label": "訓練コスト",
+                  "value": "ゼロ（訓練不要）",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📐",
+                  "label": "効果",
+                  "value": "数学・論理推論で有意に改善"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "適用先",
+                  "value": "Claude / o3 など既存モデル",
+                  "note": "そのまま適用可能"
+                }
               ],
               "impact": "再訓練なしで推論能力を向上できるため、API 経由でも即活用可能。Thinking モデルの活用幅を広げる"
-            }
+            },
+            "caption": "OpenDeepThink の仕組み",
+            "alt": "OpenDeepThinkの仕組み。手法: 複数推論候補をペアワイズ比較→ブラッドリー-テリー集計でランキング化、コスト: 訓練ゼロ、効果: 数学・論理推論で有意な改善、適用先: Claude・o3など既存Thinkingモデルにそのまま適用可能。"
           }
         },
         {
@@ -575,22 +946,48 @@
             "total": 18,
             "source_type_bias": 1
           },
-          "tags": ["multi-agent", "LLM", "collaboration", "self-evolution", "survey", "arxiv", "HF-papers"],
+          "tags": [
+            "multi-agent",
+            "LLM",
+            "collaboration",
+            "self-evolution",
+            "survey",
+            "arxiv",
+            "HF-papers"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "マルチエージェント LLM の 3 軸研究",
-            "alt": "マルチエージェントLLMシステムの3つの研究軸。軸1-協調: 個々のエージェントを超えた集合的知性の実現方法、軸2-失敗帰属: 失敗の特定・責任の帰属・デバッグの手法、軸3-自己進化: システムが自律的に改善する仕組み。HF 42 upvotes。",
             "data": {
               "headline": "マルチエージェント LLM の協調・失敗帰属・自己進化を包括調査",
               "tldr": "LLM マルチエージェントシステムの研究を「協調」「失敗帰属」「自己進化」の 3 軸で体系化したサーベイ。MAS 設計・デバッグ・自律改善の現状と方向性を整理する。",
               "points": [
-                { "icon": "🤝", "label": "協調", "value": "集合的知性の実現メカニズム", "tone": "primary" },
-                { "icon": "🔍", "label": "失敗帰属", "value": "失敗の特定と責任の帰属手法" },
-                { "icon": "🔄", "label": "自己進化", "value": "システムの自律的改善の仕組み" },
-                { "icon": "📚", "label": "貢献", "value": "HF 42 upvotes・MAS 必読サーベイ", "tone": "success" }
+                {
+                  "icon": "🤝",
+                  "label": "協調",
+                  "value": "集合的知性の実現メカニズム",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "失敗帰属",
+                  "value": "失敗の特定と責任の帰属手法"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "自己進化",
+                  "value": "システムの自律的改善の仕組み"
+                },
+                {
+                  "icon": "📚",
+                  "label": "貢献",
+                  "value": "HF 42 upvotes・MAS 必読サーベイ",
+                  "tone": "success"
+                }
               ],
               "impact": "マルチエージェントシステムの設計・デバッグ・自律改善実装に関わる全エンジニアの必読リファレンス"
-            }
+            },
+            "caption": "マルチエージェント LLM の 3 軸研究",
+            "alt": "マルチエージェントLLMシステムの3つの研究軸。軸1-協調: 個々のエージェントを超えた集合的知性の実現方法、軸2-失敗帰属: 失敗の特定・責任の帰属・デバッグの手法、軸3-自己進化: システムが自律的に改善する仕組み。HF 42 upvotes。"
           }
         }
       ]
@@ -625,23 +1022,53 @@
             "total": 15,
             "source_type_bias": -1
           },
-          "tags": ["OpenAI", "ChatGPT", "Codex", "Brockman", "product-strategy", "organization", "IPO"],
+          "tags": [
+            "OpenAI",
+            "ChatGPT",
+            "Codex",
+            "Brockman",
+            "product-strategy",
+            "organization",
+            "IPO"
+          ],
           "x_post": "OpenAI が ChatGPT と Codex を統合し Greg Brockman が製品戦略責任者に正式就任。「エージェントの未来に向けて一つのプラットフォームに集中投資する」と宣言した。Google I/O 開幕 3 日前のタイミングで発表された重大な組織再編である。\n\nhttps://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
           "figure": {
             "type": "timeline",
-            "caption": "OpenAI 組織再編の経緯",
-            "alt": "OpenAI の製品統合タイムライン。2025年末: Sam Altman 'code red' でコア ChatGPT 体験に集中方針を発表、2026年4月初: Fidji Simo CEO が医療休暇、Brockman が暫定製品責任者に、2026年5月16日: ChatGPT+Codex+API を統合し Brockman が正式製品戦略責任者に就任、2026年5月19日: Google I/O 2026 開幕。",
             "data": {
               "headline": "OpenAI が ChatGPT+Codex+API を単一エージェントプラットフォームに統合",
               "events": [
-                { "when": "2025年末", "label": "code red 発動", "description": "Altman がコア ChatGPT 体験に集中し Sora 等のサイドプロジェクトを停止", "status": "past" },
-                { "when": "2026年4月", "label": "Brockman 暫定就任", "description": "Fidji Simo CEO の医療休暇に伴い暫定製品責任者として実質指揮", "status": "past" },
-                { "when": "2026-05-16", "label": "正式統合・就任発表", "description": "ChatGPT+Codex+API を統合。Brockman が正式に製品戦略責任者就任", "status": "now", "tone": "primary" },
-                { "when": "2026-05-19", "label": "Google I/O 開幕", "description": "競合 Google の最大イベント直前に先手を打った戦略的タイミング", "status": "upcoming", "tone": "warning" }
+                {
+                  "when": "2025年末",
+                  "label": "code red 発動",
+                  "description": "Altman がコア ChatGPT 体験に集中し Sora 等のサイドプロジェクトを停止",
+                  "status": "past"
+                },
+                {
+                  "when": "2026年4月",
+                  "label": "Brockman 暫定就任",
+                  "description": "Fidji Simo CEO の医療休暇に伴い暫定製品責任者として実質指揮",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-05-16",
+                  "label": "正式統合・就任発表",
+                  "description": "ChatGPT+Codex+API を統合。Brockman が正式に製品戦略責任者就任",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "2026-05-19",
+                  "label": "Google I/O 開幕",
+                  "description": "競合 Google の最大イベント直前に先手を打った戦略的タイミング",
+                  "status": "upcoming",
+                  "tone": "warning"
+                }
               ],
               "narrative": "ChatGPT と Codex の独立運営が非効率の原因。単一エージェントプラットフォームへの統合で競争力を集中する",
               "impact": "OpenAI の製品戦略が明確化。ChatGPT と Codex のロードマップが統合されエージェント機能の加速が予想される"
-            }
+            },
+            "caption": "OpenAI 組織再編の経緯",
+            "alt": "OpenAI の製品統合タイムライン。2025年末: Sam Altman 'code red' でコア ChatGPT 体験に集中方針を発表、2026年4月初: Fidji Simo CEO が医療休暇、Brockman が暫定製品責任者に、2026年5月16日: ChatGPT+Codex+API を統合し Brockman が正式製品戦略責任者に就任、2026年5月19日: Google I/O 2026 開幕。"
           }
         },
         {
@@ -669,22 +1096,51 @@
             "total": 11,
             "source_type_bias": -1
           },
-          "tags": ["IPO", "Cerebras", "AI-chip", "Nasdaq", "hardware", "NVIDIA", "WSE"],
+          "tags": [
+            "IPO",
+            "Cerebras",
+            "AI-chip",
+            "Nasdaq",
+            "hardware",
+            "NVIDIA",
+            "WSE"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "Cerebras IPO 初日パフォーマンス",
-            "alt": "Cerebras Nasdaq 上場初日のパフォーマンス。公開価格比: +68%、時価総額: 950億ドル、AI半導体純粋プレイIPOとして市場から高い評価を受けた。",
             "data": {
               "headline": "Cerebras IPO: Nasdaq 初値 +68%・時価総額 950 億ドル",
-              "scale": { "max_label": "評価指標", "unit": "" },
+              "scale": {
+                "max_label": "評価指標",
+                "unit": ""
+              },
               "bars": [
-                { "label": "初値上昇率", "value": "+68%", "pct": 68, "tone": "success", "note": "公開価格比" },
-                { "label": "時価総額（相対）", "value": "950億ドル", "pct": 90, "tone": "primary", "note": "AI チップ純粋プレイとして最大規模" },
-                { "label": "市場評価", "value": "高い期待", "pct": 80, "tone": "success", "note": "NVIDIA 以外の AI チップへの初の本格市場評価" }
+                {
+                  "label": "初値上昇率",
+                  "value": "+68%",
+                  "pct": 68,
+                  "tone": "success",
+                  "note": "公開価格比"
+                },
+                {
+                  "label": "時価総額（相対）",
+                  "value": "950億ドル",
+                  "pct": 90,
+                  "tone": "primary",
+                  "note": "AI チップ純粋プレイとして最大規模"
+                },
+                {
+                  "label": "市場評価",
+                  "value": "高い期待",
+                  "pct": 80,
+                  "tone": "success",
+                  "note": "NVIDIA 以外の AI チップへの初の本格市場評価"
+                }
               ],
               "narrative": "Wafer-Scale Engine という独自アーキテクチャで差別化するAIチップメーカーが公開市場で高評価を受けた",
               "impact": "GPU 一強の AI チップ市場に多様な選択肢が生まれることへの期待。AI インフラ投資の続伸を示す重要シグナル"
-            }
+            },
+            "caption": "Cerebras IPO 初日パフォーマンス",
+            "alt": "Cerebras Nasdaq 上場初日のパフォーマンス。公開価格比: +68%、時価総額: 950億ドル、AI半導体純粋プレイIPOとして市場から高い評価を受けた。"
           }
         }
       ]
@@ -719,24 +1175,52 @@
             "total": 17,
             "source_type_bias": -1
           },
-          "tags": ["arXiv", "policy", "AI-generated", "research", "academic-integrity", "LLM", "regulation"],
+          "tags": [
+            "arXiv",
+            "policy",
+            "AI-generated",
+            "research",
+            "academic-integrity",
+            "LLM",
+            "regulation"
+          ],
           "x_post": "arXiv が新方針を明確化。LLM に論文を全執筆させた証拠（幻覚した引用・LLM のメタコメント等）が見つかった著者は 1 年間投稿禁止、その後は査読誌掲載済み論文のみ提出可。AI 利用自体の禁止ではなく著者責任の厳格化である。\n\nhttps://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
           "figure": {
             "type": "summary-card",
-            "caption": "arXiv の AI 全執筆禁止方針",
-            "alt": "arXivのAI全執筆禁止方針の詳細。罰則: 1年間投稿禁止+以降は査読誌掲載論文のみ、証拠例: 幻覚した引用文献・LLMのメタコメント、AI利用: 禁止ではなく著者責任を要求、上訴: 可能（デュープロセスあり）。",
             "data": {
               "headline": "arXiv: AI 全執筆著者に 1 年間投稿禁止—ワンストライクルール",
               "tldr": "arXiv が AI に論文を全執筆させた証拠（幻覚引用・LLM メタコメント等）がある著者に 1 年間の投稿禁止を科す方針を明確化。AI 利用自体は禁止でなく著者責任の厳格化。",
               "points": [
-                { "icon": "⛔", "label": "罰則", "value": "1 年間投稿禁止 → 以降査読誌限定", "tone": "danger" },
-                { "icon": "🔍", "label": "証拠例", "value": "幻覚引用・LLM メタコメント", "note": "明確な証拠が必要" },
-                { "icon": "✅", "label": "AI 利用", "value": "禁止ではなく著者責任を要求", "tone": "success" },
-                { "icon": "⚖️", "label": "デュープロセス", "value": "上訴可能", "note": "セクション委員長が確認" }
+                {
+                  "icon": "⛔",
+                  "label": "罰則",
+                  "value": "1 年間投稿禁止 → 以降査読誌限定",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "証拠例",
+                  "value": "幻覚引用・LLM メタコメント",
+                  "note": "明確な証拠が必要"
+                },
+                {
+                  "icon": "✅",
+                  "label": "AI 利用",
+                  "value": "禁止ではなく著者責任を要求",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚖️",
+                  "label": "デュープロセス",
+                  "value": "上訴可能",
+                  "note": "セクション委員長が確認"
+                }
               ],
               "context": "AI 生成低品質論文が急増する中、arXiv が一発退場ルールで著者の品質管理責任を明確化",
               "impact": "研究者全員が AI ツール利用時に出力を厳密に検証する義務を持つことが業界慣行として定着しつつある"
-            }
+            },
+            "caption": "arXiv の AI 全執筆禁止方針",
+            "alt": "arXivのAI全執筆禁止方針の詳細。罰則: 1年間投稿禁止+以降は査読誌掲載論文のみ、証拠例: 幻覚した引用文献・LLMのメタコメント、AI利用: 禁止ではなく著者責任を要求、上訴: 可能（デュープロセスあり）。"
           }
         }
       ]
@@ -771,22 +1255,50 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["employment", "AI-impact", "labor-market", "Bloomberg", "economy", "software-developers"],
+          "tags": [
+            "employment",
+            "AI-impact",
+            "labor-market",
+            "Bloomberg",
+            "economy",
+            "software-developers"
+          ],
           "figure": {
             "type": "metric-bars",
-            "caption": "AI による雇用損失の実態（Bloomberg 調査）",
-            "alt": "Bloomberg調査によるAI関連雇用損失データ。若手ソフトウェア開発者（22〜25歳）雇用: -20%（2022年末ピーク比）、求人数: -53%（同期間）、CEO調査でジュニア職削減計画: 40%以上。",
             "data": {
               "headline": "AI 代替リスク職種で雇用損失が統計的に顕在化",
-              "scale": { "max_label": "ピーク比変化率（%）", "unit": "%" },
+              "scale": {
+                "max_label": "ピーク比変化率（%）",
+                "unit": "%"
+              },
               "bars": [
-                { "label": "若手開発者（22〜25歳）雇用", "value": "-20%", "pct": 20, "tone": "danger", "note": "2022 年末ピーク比" },
-                { "label": "ソフトウェア求人数", "value": "-53%", "pct": 53, "tone": "danger", "note": "同期間の求人減少" },
-                { "label": "CEO のジュニア削減計画", "value": "40%以上", "pct": 40, "tone": "warning", "note": "今後 1〜2 年の予定" }
+                {
+                  "label": "若手開発者（22〜25歳）雇用",
+                  "value": "-20%",
+                  "pct": 20,
+                  "tone": "danger",
+                  "note": "2022 年末ピーク比"
+                },
+                {
+                  "label": "ソフトウェア求人数",
+                  "value": "-53%",
+                  "pct": 53,
+                  "tone": "danger",
+                  "note": "同期間の求人減少"
+                },
+                {
+                  "label": "CEO のジュニア削減計画",
+                  "value": "40%以上",
+                  "pct": 40,
+                  "tone": "warning",
+                  "note": "今後 1〜2 年の予定"
+                }
               ],
               "narrative": "「AI は補完する」という楽観論が主流だったが、統計データに初めて明確な雇用損失が現れ始めた",
               "impact": "個人はキャリアの AI 代替リスクを直視し、企業・政府は労働市場再構造化への具体的対応が急務"
-            }
+            },
+            "caption": "AI による雇用損失の実態（Bloomberg 調査）",
+            "alt": "Bloomberg調査によるAI関連雇用損失データ。若手ソフトウェア開発者（22〜25歳）雇用: -20%（2022年末ピーク比）、求人数: -53%（同期間）、CEO調査でジュニア職削減計画: 40%以上。"
           }
         },
         {
@@ -814,23 +1326,51 @@
             "total": 13,
             "source_type_bias": -1
           },
-          "tags": ["AI-wealth", "inequality", "tech-industry", "employment", "San-Francisco", "TechCrunch"],
+          "tags": [
+            "AI-wealth",
+            "inequality",
+            "tech-industry",
+            "employment",
+            "San-Francisco",
+            "TechCrunch"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI ゴールドラッシュの格差構造",
-            "alt": "AI ゴールドラッシュにおける富の格差。勝ち組: 約1万人が2000万ドル超の富（OpenAI/Anthropic/Nvidia/xAI従業員・創業者）、大多数: 500万円未満給与でスキル陳腐化の不安、SF現状: 'かつてないほどのアウトカムの分断'。",
             "data": {
               "headline": "AI ゴールドラッシュ: 約 1 万人が 2000 万ドル超の富—格差が可視化",
               "tldr": "OpenAI・Anthropic・Nvidia・xAI の約 1 万人が引退レベルの富を得た一方、大多数の技術者は給与不安とスキル陳腐化の不安を抱える。SF では「かつてないアウトカムの分断」が起きている。",
               "points": [
-                { "icon": "💰", "label": "勝ち組", "value": "約 1 万人が 2000 万ドル超", "tone": "success", "note": "OpenAI/Anthropic/Nvidia/xAI" },
-                { "icon": "😟", "label": "大多数", "value": "給与不安・スキル陳腐化の懸念", "tone": "danger" },
-                { "icon": "🏙️", "label": "SF の現状", "value": "かつてないアウトカムの分断", "tone": "warning" },
-                { "icon": "💬", "label": "声", "value": "「自分のスキルはもう役に立たない」", "note": "技術者の声を TechCrunch が伝える" }
+                {
+                  "icon": "💰",
+                  "label": "勝ち組",
+                  "value": "約 1 万人が 2000 万ドル超",
+                  "tone": "success",
+                  "note": "OpenAI/Anthropic/Nvidia/xAI"
+                },
+                {
+                  "icon": "😟",
+                  "label": "大多数",
+                  "value": "給与不安・スキル陳腐化の懸念",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "🏙️",
+                  "label": "SF の現状",
+                  "value": "かつてないアウトカムの分断",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "💬",
+                  "label": "声",
+                  "value": "「自分のスキルはもう役に立たない」",
+                  "note": "技術者の声を TechCrunch が伝える"
+                }
               ],
               "context": "AI ブームによる富の集中と雇用不安の同時進行が社会的議論を呼んでいる",
               "impact": "AI 経済の恩恵が特定層に偏在する構造的問題が可視化。政策・教育・採用慣行の変革が問われる"
-            }
+            },
+            "caption": "AI ゴールドラッシュの格差構造",
+            "alt": "AI ゴールドラッシュにおける富の格差。勝ち組: 約1万人が2000万ドル超の富（OpenAI/Anthropic/Nvidia/xAI従業員・創業者）、大多数: 500万円未満給与でスキル陳腐化の不安、SF現状: 'かつてないほどのアウトカムの分断'。"
           }
         }
       ]
@@ -857,7 +1397,10 @@
             "はてブ 245 件—日本のコミュニティで最大反響のAI関連論考。Uber Eats 配達員の比喩が議論を呼ぶ",
             "キャリア設計・社会保障・教育政策に重要な示唆。AI 代替の質的側面を初めて主流議論に乗せた記事"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 245 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 245
+          },
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -866,23 +1409,52 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["AI-雇用", "キャリア", "労働", "社会保障", "Uber Eats", "はてブ", "日本語"],
+          "tags": [
+            "AI-雇用",
+            "キャリア",
+            "労働",
+            "社会保障",
+            "Uber Eats",
+            "はてブ",
+            "日本語"
+          ],
           "x_post": "「AI にできない仕事は残るが、それは Uber Eats の配達員みたいな仕事になるかもしれない」という論考がはてブ 245 件の反響。AI 代替の議論が「なくなるか残るか」ではなく「どんな質の仕事が残るか」にシフトしていると指摘する。\n\nhttps://kensuu.com/n/n9d1229018d9c",
           "figure": {
             "type": "summary-card",
-            "caption": "AI 代替議論の質的転換",
-            "alt": "AI雇用代替議論の転換点。従来の問い: 仕事はなくなるか残るか（二項対立）、新しい問い: 残る仕事はどんな質・尊厳の仕事か、懸念: AI不得意な仕事≠尊厳ある仕事（Uber Eats比喩）、反響: はてブ245件。",
             "data": {
               "headline": "AI 代替議論が「なくなるか」から「どんな質の仕事が残るか」へ—はてブ 245 件",
               "tldr": "「AIにできない仕事は残る」は正しいかもしれないが、残る仕事が Uber Eats の配達員のような、AI不得意だが尊厳面で課題のある仕事になる可能性を指摘。AI代替論争の質的転換を示した論考。",
               "points": [
-                { "icon": "❓", "label": "従来の問い", "value": "仕事がなくなるか残るか", "note": "二項対立" },
-                { "icon": "💡", "label": "新しい問い", "value": "残る仕事は尊厳ある職業か", "tone": "primary" },
-                { "icon": "⚠️", "label": "懸念", "value": "AI 不得意 ≠ 尊厳ある仕事", "tone": "warning", "note": "Uber Eats 配達員の比喩" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 245 件", "tone": "success" }
+                {
+                  "icon": "❓",
+                  "label": "従来の問い",
+                  "value": "仕事がなくなるか残るか",
+                  "note": "二項対立"
+                },
+                {
+                  "icon": "💡",
+                  "label": "新しい問い",
+                  "value": "残る仕事は尊厳ある職業か",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚠️",
+                  "label": "懸念",
+                  "value": "AI 不得意 ≠ 尊厳ある仕事",
+                  "tone": "warning",
+                  "note": "Uber Eats 配達員の比喩"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 245 件",
+                  "tone": "success"
+                }
               ],
               "impact": "キャリア設計・教育・社会保障の議論に不可欠な視点。AI 代替論の質的側面が日本の主流議論に登場"
-            }
+            },
+            "caption": "AI 代替議論の質的転換",
+            "alt": "AI雇用代替議論の転換点。従来の問い: 仕事はなくなるか残るか（二項対立）、新しい問い: 残る仕事はどんな質・尊厳の仕事か、懸念: AI不得意な仕事≠尊厳ある仕事（Uber Eats比喩）、反響: はてブ245件。"
           }
         },
         {
@@ -902,7 +1474,10 @@
             "効果的なシナリオと効果が限定的なシナリオを整理。AI ツールの現実的な期待値設定に貢献",
             "はてブ 24 件獲得。「感想ではなく成果を検証した」実証報告として日本ビジネスパーソンに支持"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 24 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 24
+          },
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -911,22 +1486,49 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["Copilot", "Microsoft", "営業", "業務効率化", "Qiita", "はてブ", "日本語"],
+          "tags": [
+            "Copilot",
+            "Microsoft",
+            "営業",
+            "業務効率化",
+            "Qiita",
+            "はてブ",
+            "日本語"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "Copilot 営業活用検証",
-            "alt": "Copilot営業活用の検証レポート。検証対象: Microsoft Copilot、目的: 営業成績への影響測定、結論: 効果的なシナリオと限定的なシナリオを整理、価値: AI期待値の現実的設定、反響: はてブ24件。",
             "data": {
               "headline": "Copilot で営業成績は上がるのか—社内実証レポート",
               "tldr": "Microsoft Copilot を営業業務に実際に導入して成績への影響を検証。感想ではなく定量的な成果を検証した実証レポートとして注目。効果的なシナリオと限定的なシナリオを整理。",
               "points": [
-                { "icon": "🧪", "label": "検証対象", "value": "Microsoft Copilot × 営業業務", "tone": "primary" },
-                { "icon": "📊", "label": "視点", "value": "定量的な成績への影響を測定" },
-                { "icon": "💡", "label": "知見", "value": "有効 / 限定的シナリオを整理", "note": "現実的期待値の設定に役立つ" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 24 件", "note": "日本ビジネスパーソンに支持" }
+                {
+                  "icon": "🧪",
+                  "label": "検証対象",
+                  "value": "Microsoft Copilot × 営業業務",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "視点",
+                  "value": "定量的な成績への影響を測定"
+                },
+                {
+                  "icon": "💡",
+                  "label": "知見",
+                  "value": "有効 / 限定的シナリオを整理",
+                  "note": "現実的期待値の設定に役立つ"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 24 件",
+                  "note": "日本ビジネスパーソンに支持"
+                }
               ],
               "impact": "AI ツール導入前に実際の効果を確認したい日本の営業・ビジネスパーソンに有益な実証レポート"
-            }
+            },
+            "caption": "Copilot 営業活用検証",
+            "alt": "Copilot営業活用の検証レポート。検証対象: Microsoft Copilot、目的: 営業成績への影響測定、結論: 効果的なシナリオと限定的なシナリオを整理、価値: AI期待値の現実的設定、反響: はてブ24件。"
           }
         },
         {
@@ -946,7 +1548,10 @@
             "発散的思考で LLM を「思考の壁打ち相手」として活用する方法論を紹介",
             "はてブ 25 件。AI と創造性の関係に関する HBR の知見が日本ビジネスパーソンに支持される"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 25 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 25
+          },
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -955,22 +1560,50 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["創造性", "LLM", "HBR", "ビジネス", "思考法", "はてブ", "日本語"],
+          "tags": [
+            "創造性",
+            "LLM",
+            "HBR",
+            "ビジネス",
+            "思考法",
+            "はてブ",
+            "日本語"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "LLM と創造性の関係",
-            "alt": "LLM活用と創造性の関係。従来の懸念: LLMが創造性を奪う、研究の知見: 正しく使えば逆に創造性が高まる、活用法: 発散的思考でLLMを壁打ち相手として使う、出典: DIAMOND HBR、反響: はてブ25件。",
             "data": {
               "headline": "LLM は正しく使えば創造性を高める—DIAMOND HBR の研究紹介",
               "tldr": "「LLM が創造性を奪う」という懸念に対し、適切な活用法（壁打ち相手としての発散的思考）では逆に創造的アイデア生成を促進できることを HBR の研究が示す。",
               "points": [
-                { "icon": "🚫", "label": "従来の懸念", "value": "LLM が創造性を奪う", "note": "一般的なイメージ" },
-                { "icon": "✅", "label": "研究の知見", "value": "正しく使えば創造性が高まる", "tone": "success" },
-                { "icon": "💡", "label": "推奨活用法", "value": "発散的思考での壁打ち相手", "tone": "primary" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 25 件", "note": "日本ビジネスパーソンに支持" }
+                {
+                  "icon": "🚫",
+                  "label": "従来の懸念",
+                  "value": "LLM が創造性を奪う",
+                  "note": "一般的なイメージ"
+                },
+                {
+                  "icon": "✅",
+                  "label": "研究の知見",
+                  "value": "正しく使えば創造性が高まる",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💡",
+                  "label": "推奨活用法",
+                  "value": "発散的思考での壁打ち相手",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 25 件",
+                  "note": "日本ビジネスパーソンに支持"
+                }
               ],
               "impact": "AI と創造性の共存方法を実践的に学べる。ビジネスでの AI 活用における創造的プロセス設計に直接応用可能"
-            }
+            },
+            "caption": "LLM と創造性の関係",
+            "alt": "LLM活用と創造性の関係。従来の懸念: LLMが創造性を奪う、研究の知見: 正しく使えば逆に創造性が高まる、活用法: 発散的思考でLLMを壁打ち相手として使う、出典: DIAMOND HBR、反響: はてブ25件。"
           }
         },
         {
@@ -990,7 +1623,10 @@
             "Photoshop 等の専用ツール不要。Web デザイン・アプリ UI・資料作成で即使える実用テクニック",
             "はてブ 21 件。日本の UI デザイナー・資料作成担当者に刺さる実践ノウハウとして拡散"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 21 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 21
+          },
           "scores": {
             "importance": 2,
             "depth": 2,
@@ -999,22 +1635,50 @@
             "total": 14,
             "source_type_bias": 0
           },
-          "tags": ["ChatGPT", "画像生成", "透明背景", "PNG", "デザイン", "Gizmodo", "はてブ"],
+          "tags": [
+            "ChatGPT",
+            "画像生成",
+            "透明背景",
+            "PNG",
+            "デザイン",
+            "Gizmodo",
+            "はてブ"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "ChatGPT 透明背景生成テクニック",
-            "alt": "ChatGPT画像生成の透明背景テクニック。指示: 「背景を透明にして」のみ、出力: 透明背景PNG、従来の方法: Photoshop等の専用ツールが必要、新しい方法: ChatGPTにワンプロンプトで依頼するだけ、はてブ: 21件。",
             "data": {
               "headline": "ChatGPT に「背景を透明にして」で即 PNG 素材—専用ツール不要",
               "tldr": "ChatGPT の画像生成で「背景を透明にして」と指示するだけで透明背景 PNG が生成できる。Web デザイン・UI・資料作成でよく必要になる背景除去をワンプロンプトで完了。",
               "points": [
-                { "icon": "✏️", "label": "指示", "value": "「背景を透明にして」のみ", "tone": "primary" },
-                { "icon": "📁", "label": "出力", "value": "透明背景 PNG", "note": "そのまま使用可能" },
-                { "icon": "🚫", "label": "不要", "value": "Photoshop / 専用ツール", "tone": "success" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 21 件", "note": "デザイナー・資料作成者に支持" }
+                {
+                  "icon": "✏️",
+                  "label": "指示",
+                  "value": "「背景を透明にして」のみ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📁",
+                  "label": "出力",
+                  "value": "透明背景 PNG",
+                  "note": "そのまま使用可能"
+                },
+                {
+                  "icon": "🚫",
+                  "label": "不要",
+                  "value": "Photoshop / 専用ツール",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 21 件",
+                  "note": "デザイナー・資料作成者に支持"
+                }
               ],
               "impact": "デザインスキル不問でプロ品質の透明背景素材を生成できる。日本の非デザイナー層の作業効率を直接改善"
-            }
+            },
+            "caption": "ChatGPT 透明背景生成テクニック",
+            "alt": "ChatGPT画像生成の透明背景テクニック。指示: 「背景を透明にして」のみ、出力: 透明背景PNG、従来の方法: Photoshop等の専用ツールが必要、新しい方法: ChatGPTにワンプロンプトで依頼するだけ、はてブ: 21件。"
           }
         },
         {
@@ -1034,7 +1698,10 @@
             "Claude Code / Codex など現役エージェントの内部構造を理解したい技術者向けの実践的な内容",
             "はてブ 17 件。2026 年最重要 AI トピックをハンズオンで学べる日本語技術書として注目"
           ],
-          "reaction_signal": { "kind": "hatena", "users": 17 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 17
+          },
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -1043,22 +1710,48 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["AI-エージェント", "TypeScript", "書籍", "Tool Use", "マルチエージェント", "はてブ", "日本語"],
+          "tags": [
+            "AI-エージェント",
+            "TypeScript",
+            "書籍",
+            "Tool Use",
+            "マルチエージェント",
+            "はてブ",
+            "日本語"
+          ],
           "figure": {
             "type": "summary-card",
-            "caption": "「作って学ぶ AI エージェント」の概要",
-            "alt": "技術書「作って学ぶAIエージェント」の概要。言語: TypeScript、対象技術: Tool Use・Function Calling・マルチエージェント構成・Computer Use、目標: コーディングエージェントをゼロから実装して内部構造を理解、読者: エージェントを深く理解したい日本語技術者、はてブ: 17件。",
             "data": {
               "headline": "TypeScript でゼロから AI エージェントを実装して学ぶ技術書が出版",
               "tldr": "TypeScript + LLM で AI エージェントをゼロから自作する技術書「作って学ぶ AI エージェント」が出版。Tool Use・マルチエージェント・Computer Use を実装しながら学ぶ構成。",
               "points": [
-                { "icon": "📘", "label": "言語", "value": "TypeScript", "tone": "primary" },
-                { "icon": "⚙️", "label": "対象技術", "value": "Tool Use / マルチエージェント / Computer Use" },
-                { "icon": "🎯", "label": "目標", "value": "コーディングエージェントの内部構造を実装で理解" },
-                { "icon": "📌", "label": "反響", "value": "はてブ 17 件", "note": "日本 AI 技術者コミュニティで注目" }
+                {
+                  "icon": "📘",
+                  "label": "言語",
+                  "value": "TypeScript",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "⚙️",
+                  "label": "対象技術",
+                  "value": "Tool Use / マルチエージェント / Computer Use"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "目標",
+                  "value": "コーディングエージェントの内部構造を実装で理解"
+                },
+                {
+                  "icon": "📌",
+                  "label": "反響",
+                  "value": "はてブ 17 件",
+                  "note": "日本 AI 技術者コミュニティで注目"
+                }
               ],
               "impact": "Claude Code などのエージェントを深く理解したい日本語話者技術者に向けた実践的リソース"
-            }
+            },
+            "caption": "「作って学ぶ AI エージェント」の概要",
+            "alt": "技術書「作って学ぶAIエージェント」の概要。言語: TypeScript、対象技術: Tool Use・Function Calling・マルチエージェント構成・Computer Use、目標: コーディングエージェントをゼロから実装して内部構造を理解、読者: エージェントを深く理解したい日本語技術者、はてブ: 17件。"
           }
         }
       ]
@@ -1093,23 +1786,61 @@
             "total": 13,
             "source_type_bias": 0
           },
-          "tags": ["Baidu", "Wenxin", "文心", "中国AI", "LLM", "コスト効率", "検索AI"],
+          "tags": [
+            "Baidu",
+            "Wenxin",
+            "文心",
+            "中国AI",
+            "LLM",
+            "コスト効率",
+            "検索AI"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "文心 5.1 vs 業界標準のコスト比較",
-            "alt": "百度文心5.1の事前訓練コスト比較。業界標準コスト: 100%、文心5.1: 6%。中国国内検索AI評価: 1位。エージェント能力: DeepSeek-V4-Pro比較で優位と主張。",
             "data": {
               "headline": "文心 5.1: 業界比 6% のコストで国内検索 AI トップを達成",
-              "before": { "label": "業界標準モデル", "sublabel": "事前訓練コスト基準" },
-              "after": { "label": "文心 5.1（Wenxin 5.1）", "sublabel": "Baidu の新モデル" },
+              "before": {
+                "label": "業界標準モデル",
+                "sublabel": "事前訓練コスト基準"
+              },
+              "after": {
+                "label": "文心 5.1（Wenxin 5.1）",
+                "sublabel": "Baidu の新モデル"
+              },
               "metrics": [
-                { "label": "事前訓練コスト", "before": "100%（業界基準）", "after": "約 6%", "before_pct": 100, "after_pct": 6, "delta": "-94%", "delta_tone": "success" },
-                { "label": "国内検索 AI 評価", "before": "複数社が争う", "after": "国内トップ", "before_pct": 70, "after_pct": 95, "delta": "首位獲得", "delta_tone": "success" },
-                { "label": "エージェント能力", "before": "DeepSeek-V4-Pro 基準", "after": "同等以上と主張", "before_pct": 80, "after_pct": 85, "delta": "優位主張", "delta_tone": "primary" }
+                {
+                  "label": "事前訓練コスト",
+                  "before": "100%（業界基準）",
+                  "after": "約 6%",
+                  "before_pct": 100,
+                  "after_pct": 6,
+                  "delta": "-94%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "国内検索 AI 評価",
+                  "before": "複数社が争う",
+                  "after": "国内トップ",
+                  "before_pct": 70,
+                  "after_pct": 95,
+                  "delta": "首位獲得",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "エージェント能力",
+                  "before": "DeepSeek-V4-Pro 基準",
+                  "after": "同等以上と主張",
+                  "before_pct": 80,
+                  "after_pct": 85,
+                  "delta": "優位主張",
+                  "delta_tone": "primary"
+                }
               ],
               "narrative": "コスト効率と性能の両立を実現した文心 5.1 は中国 AI 競争の新基準を示す",
               "impact": "中国 AI 企業のコスト効率競争が加速。低コスト高性能モデルの普及が国内 AI 採用を後押しする"
-            }
+            },
+            "caption": "文心 5.1 vs 業界標準のコスト比較",
+            "alt": "百度文心5.1の事前訓練コスト比較。業界標準コスト: 100%、文心5.1: 6%。中国国内検索AI評価: 1位。エージェント能力: DeepSeek-V4-Pro比較で優位と主張。"
           }
         },
         {
@@ -1137,23 +1868,63 @@
             "total": 15,
             "source_type_bias": 0
           },
-          "tags": ["MiniCPM", "multimodal", "on-device", "OpenBMB", "Tsinghua", "Apache-2.0", "edge-AI", "中国AI"],
+          "tags": [
+            "MiniCPM",
+            "multimodal",
+            "on-device",
+            "OpenBMB",
+            "Tsinghua",
+            "Apache-2.0",
+            "edge-AI",
+            "中国AI"
+          ],
           "figure": {
             "type": "comparison",
-            "caption": "MiniCPM-V 4.6 vs 大規模マルチモーダルモデル",
-            "alt": "MiniCPM-V 4.6と大規模マルチモーダルモデルの比較。パラメータ数: 大規模モデルが7B〜70B、MiniCPM-V4.6が1.3B。必要VRAM: 大規模が24GB+、MiniCPM-V4.6がRTX4090（24GB）1枚。コンテキスト: 262,144トークン。ライセンス: Apache 2.0。",
             "data": {
               "headline": "MiniCPM-V 4.6: 1.3B パラメータで RTX 4090 1 枚・26 万トークン対応",
-              "before": { "label": "大規模マルチモーダルモデル", "sublabel": "7B〜70B 規模" },
-              "after": { "label": "MiniCPM-V 4.6", "sublabel": "1.3B / Apache 2.0" },
+              "before": {
+                "label": "大規模マルチモーダルモデル",
+                "sublabel": "7B〜70B 規模"
+              },
+              "after": {
+                "label": "MiniCPM-V 4.6",
+                "sublabel": "1.3B / Apache 2.0"
+              },
               "metrics": [
-                { "label": "パラメータ数", "before": "7B〜70B", "after": "1.3B", "before_pct": 100, "after_pct": 5, "delta": "-95%", "delta_tone": "success" },
-                { "label": "必要 VRAM", "before": "24GB+（複数 GPU）", "after": "RTX 4090（24GB）1 枚", "before_pct": 100, "after_pct": 30, "delta": "大幅削減", "delta_tone": "success" },
-                { "label": "コンテキスト長", "before": "〜128K トークン", "after": "262,144 トークン", "before_pct": 50, "after_pct": 100, "delta": "+2倍", "delta_tone": "success", "note": "コンシューマー GPU で達成" }
+                {
+                  "label": "パラメータ数",
+                  "before": "7B〜70B",
+                  "after": "1.3B",
+                  "before_pct": 100,
+                  "after_pct": 5,
+                  "delta": "-95%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "必要 VRAM",
+                  "before": "24GB+（複数 GPU）",
+                  "after": "RTX 4090（24GB）1 枚",
+                  "before_pct": 100,
+                  "after_pct": 30,
+                  "delta": "大幅削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コンテキスト長",
+                  "before": "〜128K トークン",
+                  "after": "262,144 トークン",
+                  "before_pct": 50,
+                  "after_pct": 100,
+                  "delta": "+2倍",
+                  "delta_tone": "success",
+                  "note": "コンシューマー GPU で達成"
+                }
               ],
               "narrative": "清華大スピンオフが Apache 2.0 でリリース。小規模で高効率なマルチモーダル AI のエッジ展開を加速",
               "impact": "エッジデバイス・コンシューマー GPU での本格マルチモーダル AI 実用化が現実的に。オープンソースで商用利用も可能"
-            }
+            },
+            "caption": "MiniCPM-V 4.6 vs 大規模マルチモーダルモデル",
+            "alt": "MiniCPM-V 4.6と大規模マルチモーダルモデルの比較。パラメータ数: 大規模モデルが7B〜70B、MiniCPM-V4.6が1.3B。必要VRAM: 大規模が24GB+、MiniCPM-V4.6がRTX4090（24GB）1枚。コンテキスト: 262,144トークン。ライセンス: Apache 2.0。"
           }
         }
       ]

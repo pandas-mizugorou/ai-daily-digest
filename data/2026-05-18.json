@@ -85,12 +85,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "Gemini 3.0 Ultra vs Gemini 3.5 Pro (Cappuccino)",
-            "rows": [
-              { "label": "最大コンテキスト長", "before": "1M トークン", "after": "2M トークン" },
-              { "label": "AIME 2025", "before": "ベースライン", "after": "+8 pt 改善" },
-              { "label": "API 公開", "before": "一般公開済", "after": "パートナー限定" }
-            ]
+            "data": {
+              "headline": "Gemini 3.0 Ultra vs Gemini 3.5 Pro (Cappuccino)",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -118,13 +122,32 @@
           },
           "figure": {
             "type": "metric-bars",
-            "title": "HiDream-O1-Image vs ベースライン（GenEval スコア）",
-            "unit": "スコア",
-            "bars": [
-              { "label": "HiDream-O1-Image", "value": 0.86 },
-              { "label": "Flux.1-dev", "value": 0.79 },
-              { "label": "SD 3.5 Large", "value": 0.74 }
-            ]
+            "data": {
+              "headline": "HiDream-O1-Image vs ベースライン（GenEval スコア）",
+              "scale": {
+                "unit": "スコア"
+              },
+              "bars": [
+                {
+                  "label": "HiDream-O1-Image",
+                  "value": "0.86",
+                  "pct": 0.86,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Flux.1-dev",
+                  "value": "0.79",
+                  "pct": 0.79,
+                  "tone": "primary"
+                },
+                {
+                  "label": "SD 3.5 Large",
+                  "value": "0.74",
+                  "pct": 0.74,
+                  "tone": "primary"
+                }
+              ]
+            }
           }
         }
       ]
@@ -159,13 +182,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "openhuman 概要",
-            "sections": {
-              "headline": "ブラウザ完結・リアルタイム3Dアバター",
-              "tldr": "WebGL+WebAssemblyでサーバー不要の骨格推定→アバター描画",
-              "points": ["30fps以上のリアルタイム描画", "カメラ→骨格→アバターをクライアント完結", "GitHub 12k★ トレンド入り"],
-              "context": "Three.js + WebAssembly骨格推定モデル",
-              "impact": "ビデオ会議・ゲームUI・バーチャルプレゼンへの即時応用"
+            "data": {
+              "headline": "openhuman 概要",
+              "tldr": "",
+              "points": []
             }
           }
         },
@@ -194,13 +214,35 @@
           },
           "figure": {
             "type": "timeline",
-            "title": "Codex Mobile 非同期ワークフロー",
-            "events": [
-              { "time": "Step 1", "label": "モバイルアプリでタスク依頼", "note": "GitHubリポジトリを選択して指示を入力" },
-              { "time": "Step 2", "label": "Codexエージェントがバックグラウンド実行", "note": "コード生成・テスト・PR作成" },
-              { "time": "Step 3", "label": "完了通知がスマホに届く", "note": "iOS/Androidプッシュ通知" },
-              { "time": "Step 4", "label": "PRドラフトを確認・承認", "note": "アプリ内でdiff確認してマージ" }
-            ]
+            "data": {
+              "headline": "Codex Mobile 非同期ワークフロー",
+              "events": [
+                {
+                  "when": "Step 1",
+                  "label": "モバイルアプリでタスク依頼",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "Codexエージェントがバックグラウンド実行",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "完了通知がスマホに届く",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "PRドラフトを確認・承認",
+                  "description": "",
+                  "status": "now"
+                }
+              ]
+            }
           }
         },
         {
@@ -228,13 +270,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "agents-towards-production カバー範囲",
-            "sections": {
-              "headline": "本番エージェント設計パターン集",
-              "tldr": "5分野の設計パターン + 4フレームワークのコードサンプル",
-              "points": ["エラー回復・サーキットブレーカー", "ツール冪等性・状態管理", "オブザーバビリティ・コスト最適化"],
-              "context": "LangChain / LlamaIndex / AutoGen / Claude Agents対応",
-              "impact": "GitHub 19k★、エージェント本番化の参照リソースとして定着"
+            "data": {
+              "headline": "agents-towards-production カバー範囲",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -270,12 +309,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "WAM vs 従来アーキテクチャ（パフォーマンス比較）",
-            "rows": [
-              { "label": "アーキテクチャ", "before": "ワールドモデル + アクションモデル（別々）", "after": "単一 Transformer に統合" },
-              { "label": "Atari 100k 平均スコア", "before": "ベースライン", "after": "+23% 改善" },
-              { "label": "MiniWorld 目標達成率", "before": "ベースライン", "after": "+18% 改善" }
-            ]
+            "data": {
+              "headline": "WAM vs 従来アーキテクチャ（パフォーマンス比較）",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -304,13 +347,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "CLI-Anything の仕組み",
-            "sections": {
-              "headline": "任意CLIをエージェントネイティブ化",
-              "tldr": "--helpを自動解析してMCPサーバーを生成し、エージェントが自律呼び出し",
-              "points": ["CLIの--help出力から操作インターフェースを自動生成", "GitHub / DB / クラウドCLI等に対応", "Claude・GPT-4o・Geminiなど主要フレームワーク対応"],
-              "context": "香港大学HKUDS研究室が開発",
-              "impact": "GitHub 35k★、MCP拡張手段としてエージェント統合コストを大幅削減"
+            "data": {
+              "headline": "CLI-Anything の仕組み",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -347,14 +387,38 @@
           },
           "figure": {
             "type": "metric-bars",
-            "title": "GenEval ベンチマーク比較（オープンソースモデル）",
-            "unit": "スコア",
-            "bars": [
-              { "label": "SenseNova-U1", "value": 0.91 },
-              { "label": "Qwen-Image", "value": 0.87 },
-              { "label": "Janus-Pro-7B", "value": 0.80 },
-              { "label": "Show-o", "value": 0.74 }
-            ]
+            "data": {
+              "headline": "GenEval ベンチマーク比較（オープンソースモデル）",
+              "scale": {
+                "unit": "スコア"
+              },
+              "bars": [
+                {
+                  "label": "SenseNova-U1",
+                  "value": "0.91",
+                  "pct": 0.91,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Qwen-Image",
+                  "value": "0.87",
+                  "pct": 0.87,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Janus-Pro-7B",
+                  "value": "0.8",
+                  "pct": 0.8,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Show-o",
+                  "value": "0.74",
+                  "pct": 0.74,
+                  "tone": "primary"
+                }
+              ]
+            }
           }
         },
         {
@@ -382,13 +446,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "AnyFlow の制御フロー",
-            "sections": {
-              "headline": "訓練なしでビデオ生成を任意条件で制御",
-              "tldr": "拡散モデルのフロー中間特徴に条件テンソルをインジェクション",
-              "points": ["エッジ・光流・深度・骨格など任意の条件入力に対応", "追加訓練・ファインチューニング不要", "CogVideoX・Wan・Animateで動作確認済み"],
-              "context": "映像制作・カメラ軌跡制御・人体動作制御への応用",
-              "impact": "既存ビデオ生成モデルの制御精度を大幅改善——映像クリエイターが即活用可能"
+            "data": {
+              "headline": "AnyFlow の制御フロー",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -425,13 +486,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "grep vs ベクトル検索（SWE-bench Verified 修正率）",
-            "rows": [
-              { "label": "Claude Code", "before": "ベクトル検索（RAG）", "after": "grep: +4.2pt" },
-              { "label": "Codex", "before": "ベクトル検索（RAG）", "after": "grep: 同等以上" },
-              { "label": "Gemini CLI", "before": "ベクトル検索（RAG）", "after": "grep: 同等以上" },
-              { "label": "SWE-agent", "before": "ベクトル検索（RAG）", "after": "grep: 同等以上" }
-            ]
+            "data": {
+              "headline": "grep vs ベクトル検索（SWE-bench Verified 修正率）",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -460,15 +524,44 @@
           },
           "figure": {
             "type": "metric-bars",
-            "title": "OpenDeepThink：候補数N別 Codeforces Elo 改善量",
-            "unit": "Elo ポイント",
-            "bars": [
-              { "label": "Gemini 3.1 Pro ベースライン", "value": 0 },
-              { "label": "N=2（majority voting）", "value": 95 },
-              { "label": "N=4（Bradley-Terry）", "value": 248 },
-              { "label": "N=8（Bradley-Terry）", "value": 405 },
-              { "label": "N=16（Bradley-Terry）", "value": 412 }
-            ]
+            "data": {
+              "headline": "OpenDeepThink：候補数N別 Codeforces Elo 改善量",
+              "scale": {
+                "unit": "Elo ポイント"
+              },
+              "bars": [
+                {
+                  "label": "Gemini 3.1 Pro ベースライン",
+                  "value": "0",
+                  "pct": 0,
+                  "tone": "primary"
+                },
+                {
+                  "label": "N=2（majority voting）",
+                  "value": "95",
+                  "pct": 23,
+                  "tone": "primary"
+                },
+                {
+                  "label": "N=4（Bradley-Terry）",
+                  "value": "248",
+                  "pct": 60,
+                  "tone": "primary"
+                },
+                {
+                  "label": "N=8（Bradley-Terry）",
+                  "value": "405",
+                  "pct": 98,
+                  "tone": "primary"
+                },
+                {
+                  "label": "N=16（Bradley-Terry）",
+                  "value": "412",
+                  "pct": 100,
+                  "tone": "primary"
+                }
+              ]
+            }
           }
         },
         {
@@ -496,13 +589,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "FutureSim フレームワーク",
-            "sections": {
-              "headline": "ビデオ生成モデルでエージェント計画を強化",
-              "tldr": "行動前に複数未来シナリオを動画生成→評価→最適行動選択",
-              "points": ["追加訓練なしで既存ビデオ生成モデルをシミュレータ転用", "ロボティクス・Minecraftで成功率+17%", "Embodied AI・ロボティクス計画への応用を想定"],
-              "context": "CogVideoX等の汎用ビデオ生成モデルを活用",
-              "impact": "ビデオ生成モデルの新たな活用方向としてEmbodied AIとの融合を提示"
+            "data": {
+              "headline": "FutureSim フレームワーク",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -538,12 +628,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "Anthropic 評価額の推移",
-            "rows": [
-              { "label": "2025年初頭", "before": "〜180億ドル", "after": "" },
-              { "label": "2026年初頭", "before": "〜600億ドル", "after": "" },
-              { "label": "2026年5月（今回）", "before": "", "after": "750億ドル（+25%）" }
-            ]
+            "data": {
+              "headline": "Anthropic 評価額の推移",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -571,13 +665,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "Altman AIチップ企業 概要",
-            "sections": {
-              "headline": "LLM推論特化チップでNvidiaに挑戦",
-              "tldr": "Sam Altman共同創業、評価額200億ドルのIPO準備中",
-              "points": ["TSMC 3nm製造プロセス採用", "Nvidia H200比 電力効率+40%（自社主張）", "Anthropic・Meta と提携交渉中"],
-              "context": "2026年後半のIPOを目指す",
-              "impact": "AI推論チップ市場にNvidia以外の競合プレイヤーが台頭する動向"
+            "data": {
+              "headline": "Altman AIチップ企業 概要",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -614,13 +705,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "MetaBackdoor vs 従来バックドア攻撃",
-            "rows": [
-              { "label": "トリガー手法", "before": "テキスト内に特定ワードを挿入", "after": "位置エンコーディングパターンを注入" },
-              { "label": "テキスト変更", "before": "あり（検出可能）", "after": "なし（コンテンツ同一）" },
-              { "label": "コンテンツフィルタ対策", "before": "検出可能", "after": "完全に無効" },
-              { "label": "システムプロンプト漏洩", "before": "困難", "after": "実証済み" }
-            ]
+            "data": {
+              "headline": "MetaBackdoor vs 従来バックドア攻撃",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         }
       ]
@@ -655,13 +749,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "Musk vs OpenAI 裁判の争点",
-            "sections": {
-              "headline": "非営利→営利転換の合法性が法廷で問われる",
-              "tldr": "判事が差し止め請求を本格審理に移行——「原告主張に十分な根拠」",
-              "points": ["争点①：非営利ミッション（人類のためのAGI）からの逸脱", "争点②：非営利財団資産の営利転換時の適正評価", "OpenAI側は転換の合法性・使命整合性を主張"],
-              "context": "2026年5月17日、連邦判事の決定",
-              "impact": "OpenAIのガバナンス構造と非営利AI開発の将来に影響"
+            "data": {
+              "headline": "Musk vs OpenAI 裁判の争点",
+              "tldr": "",
+              "points": []
             }
           }
         },
@@ -690,13 +781,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "web-to-cli の仕組み",
-            "sections": {
-              "headline": "WebサイトをCLIに自動変換——API未公開でもエージェントが操作可能",
-              "tldr": "Playwright解析→UI要素抽出→Python CLI自動生成のパイプライン",
-              "points": ["フォーム・ボタン・入力フィールドを自動抽出", "Python CLIとして自動生成", "エージェントのツール呼び出しブリッジとして活用"],
-              "context": "QbitAI紹介→48時間10万PV・WeChat拡散",
-              "impact": "API非公開サービスをエージェントが操作する手法として開発者コミュニティで注目"
+            "data": {
+              "headline": "web-to-cli の仕組み",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -717,7 +805,10 @@
           "source_type": "japan_community",
           "lang": "ja",
           "published_at": "2026-05-17T09:00:00+09:00",
-          "reaction_signal": { "kind": "hatena", "users": 41 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 41
+          },
           "summary_ja": "Claude Codeをエンタープライズ環境に展開する際に最低限設定すべきガードレールを5項目に整理した実践記事。①認証情報の保護（.envと~/.claudeを.gitignoreに追加）、②権限の最小化（Bashツールのallowlist設定）、③CI/CD連携のハードニング（プルリクエスト自動承認の無効化）、④監査ログの有効化（API呼び出し記録）、⑤コスト上限の設定（Organization-levelの使用量制限）を具体的なコードとClaude Code設定ファイルの例とともに解説している。はてブ41件と国内エンジニアから高い支持を得ている。",
           "key_points_ja": [
             "5項目のガードレール：①認証情報保護 ②権限最小化 ③CI/CDハードニング ④監査ログ ⑤コスト上限",
@@ -734,13 +825,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "Claude Code 組織導入ガードレール 5 項目",
-            "sections": {
-              "headline": "エンタープライズClaude Code展開の最低限セキュリティ",
-              "tldr": "5つのガードレールで認証・権限・CI/CD・監査・コストを保護",
-              "points": ["①認証情報保護：.env/.claudeを.gitignoreに", "②権限最小化：Bashツールallowlist設定", "③CI/CDハードニング：PR自動承認無効化", "④監査ログ有効化", "⑤コスト上限：Organization-level制限"],
-              "context": "はてブ41件、国内エンジニアに実践的価値が高い評価",
-              "impact": "Claude Code組織展開の標準ガードレールとして参照される実践ガイド"
+            "data": {
+              "headline": "Claude Code 組織導入ガードレール 5 項目",
+              "tldr": "",
+              "points": []
             }
           }
         },
@@ -753,7 +841,10 @@
           "source_type": "japan_community",
           "lang": "ja",
           "published_at": "2026-05-16T20:00:00+09:00",
-          "reaction_signal": { "kind": "hatena", "users": 97 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 97
+          },
           "summary_ja": "AIエンジニアとして2026年に読むべき技術書を10冊厳選したキュレーション記事がはてブ97件を集めている。LLMアーキテクチャの理論から実装まで網羅する「Building LLM Applications」（O'Reilly 2025）、エージェントシステム設計の「Designing Autonomous AI Systems」（Manning 2025）、日本語の「大規模言語モデルの実装と応用」（技術評論社 2026）などが紹介されている。各書籍に対する読者からのブックマークコメントが充実しており、現場エンジニアの生の評価が参考になる。",
           "key_points_ja": [
             "2026年版AIエンジニア必読書10冊——理論・実装・エージェント設計を網羅したキュレーション",
@@ -770,13 +861,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "2026年版 AIエンジニア必読書セレクション",
-            "sections": {
-              "headline": "2026年に読むべきAI技術書10冊",
-              "tldr": "LLM理論・実装・エージェント設計を網羅、はてブ97件の支持",
-              "points": ["英語：Building LLM Applications（O'Reilly）", "英語：Designing Autonomous AI Systems（Manning）", "日本語：大規模言語モデルの実装と応用（技術評論社）"],
-              "context": "はてブ97件、現場エンジニアの書評コメントが充実",
-              "impact": "2026年のAI学習ロードマップとして国内エンジニアに参照される"
+            "data": {
+              "headline": "2026年版 AIエンジニア必読書セレクション",
+              "tldr": "",
+              "points": []
             }
           }
         },
@@ -789,7 +877,10 @@
           "source_type": "japan_corp",
           "lang": "ja",
           "published_at": "2026-05-15T10:00:00+09:00",
-          "reaction_signal": { "kind": "hatena", "users": 12 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 12
+          },
           "summary_ja": "LINEヤフーがCVPR 2026（コンピュータビジョン最高峰学会）への採択論文2本の技術解説をテックブログで公開した。1本目は動画コンテンツの時系列理解を改善するTransformerアーキテクチャの改良研究、2本目は少ないファインチューニングデータで高品質な画像生成が可能な手法の提案。いずれもLINEヤフーのサービス（ショートムービー・Yahoo!ショッピング商品画像等）への応用を見据えた実用志向の研究となっている。",
           "key_points_ja": [
             "CVPR 2026採択論文2本：動画時系列理解の改良アーキテクチャ + 少量データでの高品質画像生成手法",
@@ -806,13 +897,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "LINEヤフー CVPR 2026 採択論文",
-            "sections": {
-              "headline": "CVPR 2026採択：動画理解と画像生成の2本",
-              "tldr": "社内研究成果を学術最高峰で発表——実サービス応用を見据えた実用研究",
-              "points": ["論文①：動画時系列理解のTransformerアーキテクチャ改良", "論文②：少量ファインチューニングデータでの高品質画像生成", "ショートムービー・EC商品画像への応用想定"],
-              "context": "LINEヤフー Tech Blog での技術解説公開",
-              "impact": "国内プラットフォーム企業の研究力をCVPR採択で示す"
+            "data": {
+              "headline": "LINEヤフー CVPR 2026 採択論文",
+              "tldr": "",
+              "points": []
             }
           }
         },
@@ -825,7 +913,10 @@
           "source_type": "japan_corp",
           "lang": "ja",
           "published_at": "2026-05-12T10:00:00+09:00",
-          "reaction_signal": { "kind": "hatena", "users": 8 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 8
+          },
           "summary_ja": "Sakana AIが「防衛SWEインタビュー2026」と題して、AI企業がソフトウェアエンジニアを採用する際の面接プロセスと評価軸の変化を解説した記事を公開した。従来のアルゴリズム問題中心のLeetCodeスタイルから、LLM統合設計・プロンプトエンジニアリング・エージェントシステムのデバッグ能力を問う新しい評価基準へのシフトを詳述。Sakana AI自身の採用プロセスの実例を交えており、AI企業へのキャリアパスを検討するエンジニアへの実践的な参考情報となっている。",
           "key_points_ja": [
             "AI企業の採用面接がLeetCode型アルゴリズムからLLM統合設計・エージェントデバッグ能力評価へシフト",
@@ -842,12 +933,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "AI企業採用面接の評価軸の変化",
-            "rows": [
-              { "label": "主なテスト形式", "before": "LeetCode型アルゴリズム問題", "after": "LLM統合設計・エージェントデバッグ" },
-              { "label": "重視されるスキル", "before": "データ構造・計算量の最適化", "after": "プロンプトエンジニアリング・ツール連携設計" },
-              { "label": "実装課題", "before": "コーディングパズル", "after": "エージェントシステムのデバッグ・改善" }
-            ]
+            "data": {
+              "headline": "AI企業採用面接の評価軸の変化",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -859,7 +954,10 @@
           "source_type": "japan_community",
           "lang": "ja",
           "published_at": "2026-05-17T11:00:00+09:00",
-          "reaction_signal": { "kind": "hatena", "users": 28 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 28
+          },
           "summary_ja": "GigazineがAIエージェントがWebブラウザを自律操作するOSSライブラリ「Browser-Use」を日本語で詳しく解説した記事を公開した。はてブ28件を集めて国内コミュニティでも注目されている。Browser-UseはPlaywrightをベースにLLMがブラウザ操作を自律実行できる仕組みを提供し、スクリーンショット取得・要素クリック・フォーム入力をLLMのツール呼び出しで制御する。記事ではGigazineスタッフが実際にClaude 3.7 SonnetとGPT-4oで試したデモと、上手くいかなかったケースの正直なレポートが含まれており実用性の参考になる。",
           "key_points_ja": [
             "Browser-UseをGigazineが実際にClaude 3.7 Sonnet・GPT-4oで試したレポート——成功・失敗事例を正直に掲載",
@@ -876,13 +974,10 @@
           },
           "figure": {
             "type": "summary-card",
-            "title": "Browser-Use 実力評価（Gigazineレポート）",
-            "sections": {
-              "headline": "AIブラウザ自律操作OSSを実際に試してみた",
-              "tldr": "Claude 3.7 Sonnet・GPT-4oで動作確認——成功・失敗事例を正直レポート",
-              "points": ["Playwright基盤でLLMがブラウザを自律操作", "スクリーンショット取得・クリック・フォーム入力をツール呼び出しで制御", "複雑なログイン・CAPTCHA・動的コンテンツは課題あり"],
-              "context": "はてブ28件、国内コミュニティで注目",
-              "impact": "AIブラウザ操作OSSの実用水準と限界を日本語で把握できる実践レポート"
+            "data": {
+              "headline": "Browser-Use 実力評価（Gigazineレポート）",
+              "tldr": "",
+              "points": []
             }
           }
         }
@@ -918,12 +1013,16 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "Nvidia H100 vs 国産チップ（Cambricon MLU370）比較",
-            "rows": [
-              { "label": "推論遅延", "before": "Nvidia H100: ベースライン", "after": "MLU370: +1.3倍" },
-              { "label": "コスト", "before": "Nvidia H100: ベースライン", "after": "MLU370: -60%" },
-              { "label": "入手性", "before": "米国輸出規制で困難", "after": "国産チップで安定調達可能" }
-            ]
+            "data": {
+              "headline": "Nvidia H100 vs 国産チップ（Cambricon MLU370）比較",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         },
         {
@@ -951,27 +1050,61 @@
           },
           "figure": {
             "type": "comparison",
-            "title": "SFT あり vs SFT なし（RL開始後の訓練安定性）",
-            "rows": [
-              { "label": "RL開始時の初期挙動", "before": "SFTなし：不安定、報酬ハッキング誘発", "after": "SFTあり：安定した応答フォーマット" },
-              { "label": "10000ステップ後", "before": "SFTなし：出力崩壊（高確率）", "after": "SFTあり：崩壊リスク大幅低減" },
-              { "label": "最終性能", "before": "SFTなし：多くの場合失敗", "after": "SFTあり：RL効果を正常に獲得" }
-            ]
+            "data": {
+              "headline": "SFT あり vs SFT なし（RL開始後の訓練安定性）",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            }
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "Reddit r/LocalLLaMA", "reason": "WebFetch blocked (403 Forbidden)" },
-    { "source": "Reddit r/MachineLearning", "reason": "WebFetch blocked (403 Forbidden)" },
-    { "source": "The Verge AI RSS", "reason": "WebFetch blocked" },
-    { "source": "VentureBeat AI RSS", "reason": "RSS feed returned January 2026 stale content (429 on HTML)" },
-    { "source": "Synced Review (机器之心英語版)", "reason": "RSS content dated August 2025, no May 2026 articles" },
-    { "source": "Import AI (Jack Clark)", "reason": "HTTP 403 Forbidden" },
-    { "source": "HN Algolia API", "reason": "Zero hits with front_page+points>=50 filter for AI/LLM queries" },
-    { "source": "Zenn topics/llm", "reason": "Dynamic rendering, article list unavailable via WebFetch" },
-    { "source": "CyberAgent AI Lab", "reason": "No May 2026 AI content (latest March 2026)" },
-    { "source": "Qiita API 生成AI tag", "reason": "Returned only 2 articles with meaningful likes; supplemented via hatena search" }
+    {
+      "source": "Reddit r/LocalLLaMA",
+      "reason": "WebFetch blocked (403 Forbidden)"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "reason": "WebFetch blocked (403 Forbidden)"
+    },
+    {
+      "source": "The Verge AI RSS",
+      "reason": "WebFetch blocked"
+    },
+    {
+      "source": "VentureBeat AI RSS",
+      "reason": "RSS feed returned January 2026 stale content (429 on HTML)"
+    },
+    {
+      "source": "Synced Review (机器之心英語版)",
+      "reason": "RSS content dated August 2025, no May 2026 articles"
+    },
+    {
+      "source": "Import AI (Jack Clark)",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "HN Algolia API",
+      "reason": "Zero hits with front_page+points>=50 filter for AI/LLM queries"
+    },
+    {
+      "source": "Zenn topics/llm",
+      "reason": "Dynamic rendering, article list unavailable via WebFetch"
+    },
+    {
+      "source": "CyberAgent AI Lab",
+      "reason": "No May 2026 AI content (latest March 2026)"
+    },
+    {
+      "source": "Qiita API 生成AI tag",
+      "reason": "Returned only 2 articles with meaningful likes; supplemented via hatena search"
+    }
   ]
 }

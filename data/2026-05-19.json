@@ -71,7 +71,13 @@
           "category": "new_models",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["DeepSeek", "LLM", "open-weight", "862B", "China"],
+          "tags": [
+            "DeepSeek",
+            "LLM",
+            "open-weight",
+            "862B",
+            "China"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -89,21 +95,59 @@
           "x_post": "DeepSeekが862Bパラメータの新モデル「DeepSeek V4 Pro」をHugging Faceで公開した。同時に高速版のDeepSeek V4 Flash（158B）も登場。オープンウェイト最前線がまた更新された。\n\nhttps://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
           "figure": {
             "type": "comparison",
-            "caption": "V3 vs V4 Pro比較",
-            "alt": "DeepSeek V3と V4 Proの比較。パラメータ数はV3の671B（MoE）からV4 Proの862Bへ増加。高速版はV4 Flash（158B）として提供。HFトレンド順位はV4 ProがHF公開初日に1位を記録。公開形態は両者ともオープンウェイト。",
             "data": {
               "headline": "DeepSeek V3 vs V4 Pro：新フラッグシップの主要指標比較",
-              "before": {"label": "DeepSeek V3", "sublabel": "671B MoE"},
-              "after": {"label": "DeepSeek V4 Pro", "sublabel": "862B"},
+              "before": {
+                "label": "DeepSeek V3",
+                "sublabel": "671B MoE"
+              },
+              "after": {
+                "label": "DeepSeek V4 Pro",
+                "sublabel": "862B"
+              },
               "metrics": [
-                {"label": "パラメータ数", "before": "671B (MoE)", "after": "862B", "before_pct": 78, "after_pct": 100, "delta": "+28%", "delta_tone": "success"},
-                {"label": "高速版", "before": "V3-Flash", "after": "V4-Flash 158B", "before_pct": 50, "after_pct": 50, "delta": "同規模", "delta_tone": "info"},
-                {"label": "公開形態", "before": "オープンウェイト", "after": "オープンウェイト", "before_pct": 100, "after_pct": 100, "delta": "継続", "delta_tone": "info"},
-                {"label": "HFトレンド", "before": "非掲載", "after": "1位", "before_pct": 0, "after_pct": 100, "delta": "急上昇", "delta_tone": "success"}
+                {
+                  "label": "パラメータ数",
+                  "before": "671B (MoE)",
+                  "after": "862B",
+                  "before_pct": 78,
+                  "after_pct": 100,
+                  "delta": "+28%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "高速版",
+                  "before": "V3-Flash",
+                  "after": "V4-Flash 158B",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "同規模",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "公開形態",
+                  "before": "オープンウェイト",
+                  "after": "オープンウェイト",
+                  "before_pct": 100,
+                  "after_pct": 100,
+                  "delta": "継続",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "HFトレンド",
+                  "before": "非掲載",
+                  "after": "1位",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "急上昇",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "DeepSeekはV3から V4 Proへの世代交代で 862B パラメータを実現。高速版V4 Flashと並行提供し用途別の選択肢を確保した。",
               "impact": "オープンウェイト最前線が更新され、ファインチューニング・研究用途への活用が広がる。"
-            }
+            },
+            "caption": "V3 vs V4 Pro比較",
+            "alt": "DeepSeek V3と V4 Proの比較。パラメータ数はV3の671B（MoE）からV4 Proの862Bへ増加。高速版はV4 Flash（158B）として提供。HFトレンド順位はV4 ProがHF公開初日に1位を記録。公開形態は両者ともオープンウェイト。"
           }
         },
         {
@@ -117,7 +161,13 @@
           "category": "new_models",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["Qwen", "Alibaba", "multimodal", "MoE", "open-weight"],
+          "tags": [
+            "Qwen",
+            "Alibaba",
+            "multimodal",
+            "MoE",
+            "open-weight"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -134,21 +184,48 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Qwen3.6シリーズ",
-            "alt": "Qwen3.6シリーズの概要。35B-A3BはMoE構成で総36Bパラメータ・アクティブ3B。27Bは28Bフルモデル。両者ともマルチモーダル（テキスト＋画像）対応。HF Trending上位に同日登場。",
             "data": {
               "headline": "Qwen3.6シリーズ：MoEと Full-size の2モデル同時公開",
               "tldr": "AlibabaがQwen3.6-35B-A3B（MoE）とQwen3.6-27B（フル）を同日公開。マルチモーダル対応・オープンウェイトで即利用可能。",
               "points": [
-                {"icon": "🧩", "label": "35B-A3B", "value": "MoE / Active 3B", "note": "推論コスト効率重視", "tone": "primary"},
-                {"icon": "💡", "label": "27B", "value": "28B フルモデル", "note": "バランス型", "tone": "default"},
-                {"icon": "🖼️", "label": "モダリティ", "value": "テキスト＋画像", "tone": "info"},
-                {"icon": "🔓", "label": "公開形態", "value": "オープンウェイト", "tone": "success"},
-                {"icon": "📈", "label": "HFトレンド", "value": "同日2モデル上位", "tone": "success"}
+                {
+                  "icon": "🧩",
+                  "label": "35B-A3B",
+                  "value": "MoE / Active 3B",
+                  "note": "推論コスト効率重視",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💡",
+                  "label": "27B",
+                  "value": "28B フルモデル",
+                  "note": "バランス型",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🖼️",
+                  "label": "モダリティ",
+                  "value": "テキスト＋画像",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開形態",
+                  "value": "オープンウェイト",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "HFトレンド",
+                  "value": "同日2モデル上位",
+                  "tone": "success"
+                }
               ],
               "context": "QwenシリーズはAlibabaが継続投入するオープンウェイトファミリー。世界的な利用率が高くコミュニティの支持が厚い。",
               "impact": "MoE構成により低コスト推論が可能になり、個人・中小企業でのマルチモーダル活用が広がる。"
-            }
+            },
+            "caption": "Qwen3.6シリーズ",
+            "alt": "Qwen3.6シリーズの概要。35B-A3BはMoE構成で総36Bパラメータ・アクティブ3B。27Bは28Bフルモデル。両者ともマルチモーダル（テキスト＋画像）対応。HF Trending上位に同日登場。"
           }
         },
         {
@@ -162,7 +239,12 @@
           "category": "new_models",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["1T", "open-weight", "large-scale", "inclusionAI"],
+          "tags": [
+            "1T",
+            "open-weight",
+            "large-scale",
+            "inclusionAI"
+          ],
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -179,21 +261,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Ring-2.6-1T概要",
-            "alt": "Ring-2.6-1Tの概要。1兆パラメータのオープンウェイトテキスト生成モデル。inclsuionAIが公開。個人利用には大規模GPUクラスタが必要。主用途はスケーリング研究。HFトレンド入り。",
             "data": {
               "headline": "Ring-2.6-1T：1兆パラメータのオープンウェイトモデル公開",
               "tldr": "inclusionAIが1兆パラメータのテキスト生成モデルをHFで公開。オープンウェイト1T規模は希少で研究機関向けのスケーリング実験が主な用途。",
               "points": [
-                {"icon": "📊", "label": "規模", "value": "1兆（1T）パラメータ", "tone": "primary"},
-                {"icon": "🔓", "label": "公開形態", "value": "オープンウェイト", "tone": "success"},
-                {"icon": "🏗️", "label": "主用途", "value": "スケーリング研究・評価", "tone": "default"},
-                {"icon": "💻", "label": "動作環境", "value": "大規模GPUクラスタ必須", "tone": "warning"},
-                {"icon": "📍", "label": "開発元", "value": "inclusionAI（中国系）", "tone": "info"}
+                {
+                  "icon": "📊",
+                  "label": "規模",
+                  "value": "1兆（1T）パラメータ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開形態",
+                  "value": "オープンウェイト",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏗️",
+                  "label": "主用途",
+                  "value": "スケーリング研究・評価",
+                  "tone": "default"
+                },
+                {
+                  "icon": "💻",
+                  "label": "動作環境",
+                  "value": "大規模GPUクラスタ必須",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📍",
+                  "label": "開発元",
+                  "value": "inclusionAI（中国系）",
+                  "tone": "info"
+                }
               ],
               "context": "1兆パラメータのオープンウェイトモデルは世界でも数少なく、公開自体がスケーリング研究に貢献する。",
               "impact": "1T規模のオープンウェイトモデルが入手可能になり、大規模言語モデルのスケーリング研究が加速する。"
-            }
+            },
+            "caption": "Ring-2.6-1T概要",
+            "alt": "Ring-2.6-1Tの概要。1兆パラメータのオープンウェイトテキスト生成モデル。inclsuionAIが公開。個人利用には大規模GPUクラスタが必要。主用途はスケーリング研究。HFトレンド入り。"
           }
         }
       ]
@@ -214,7 +321,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["LangSmith", "LangChain", "agent", "debugging", "observability"],
+          "tags": [
+            "LangSmith",
+            "LangChain",
+            "agent",
+            "debugging",
+            "observability"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -231,19 +344,43 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "デバッグ自動化フロー",
-            "alt": "LangSmith Engineのエージェントデバッグ自動化フロー。Step1: エージェント実行・トレース収集、Step2: 自動的な問題ステップ特定、Step3: 修正案の提示、Step4: 再実行・検証の4段階。",
             "data": {
               "headline": "LangSmith Engine：エージェントデバッグを4ステップで自動化",
               "events": [
-                {"when": "Step 1", "label": "実行・トレース収集", "description": "エージェントパイプラインを実行し、全ステップのトレースを自動収集", "status": "past", "tone": "default"},
-                {"when": "Step 2", "label": "問題ステップ特定", "description": "LangSmith Engineがトレースを解析し、失敗・劣化が発生したステップを自動特定", "status": "now", "tone": "primary"},
-                {"when": "Step 3", "label": "修正案の提示", "description": "特定した問題に対してプロンプト改善・ツール調整の修正案を提示", "status": "upcoming", "tone": "info"},
-                {"when": "Step 4", "label": "再実行・検証", "description": "修正を適用して再実行し、問題が解消されたか自動検証", "status": "upcoming", "tone": "success"}
+                {
+                  "when": "Step 1",
+                  "label": "実行・トレース収集",
+                  "description": "エージェントパイプラインを実行し、全ステップのトレースを自動収集",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "問題ステップ特定",
+                  "description": "LangSmith Engineがトレースを解析し、失敗・劣化が発生したステップを自動特定",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "修正案の提示",
+                  "description": "特定した問題に対してプロンプト改善・ツール調整の修正案を提示",
+                  "status": "upcoming",
+                  "tone": "info"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "再実行・検証",
+                  "description": "修正を適用して再実行し、問題が解消されたか自動検証",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "従来の手動デバッグに比べ、問題特定→修正→検証のサイクルが大幅に短縮される。",
               "impact": "エージェント開発の反復速度が向上し、本番導入までの時間を短縮できる。"
-            }
+            },
+            "caption": "デバッグ自動化フロー",
+            "alt": "LangSmith Engineのエージェントデバッグ自動化フロー。Step1: エージェント実行・トレース収集、Step2: 自動的な問題ステップ特定、Step3: 修正案の提示、Step4: 再実行・検証の4段階。"
           }
         },
         {
@@ -257,7 +394,14 @@
           "category": "tools_apps",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["local-AI", "LLM", "voice", "agent", "image-generation", "OSS"],
+          "tags": [
+            "local-AI",
+            "LLM",
+            "voice",
+            "agent",
+            "image-generation",
+            "OSS"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -274,21 +418,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "DreamServer機能一覧",
-            "alt": "DreamServerの主要機能。LLMチャット・音声エージェント・ワークフロー自動化・画像生成を統合。完全ローカル動作でクラウド不要。プライバシー保護設計。OSSでGitHub Trendingに登場。",
             "data": {
               "headline": "DreamServer：5機能を1プラットフォームで完全ローカル提供",
               "tldr": "LLM・音声・エージェント・ワークフロー・画像生成をオールインワンでローカル動作させるOSSプラットフォーム。クラウド依存ゼロ。",
               "points": [
-                {"icon": "💬", "label": "LLMチャット", "value": "ローカル推論", "tone": "primary"},
-                {"icon": "🎤", "label": "音声エージェント", "value": "TTS/STT統合", "tone": "default"},
-                {"icon": "🔄", "label": "ワークフロー", "value": "自動化対応", "tone": "default"},
-                {"icon": "🖼️", "label": "画像生成", "value": "Diffusion統合", "tone": "default"},
-                {"icon": "🔒", "label": "プライバシー", "value": "完全ローカル動作", "tone": "success"}
+                {
+                  "icon": "💬",
+                  "label": "LLMチャット",
+                  "value": "ローカル推論",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎤",
+                  "label": "音声エージェント",
+                  "value": "TTS/STT統合",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "ワークフロー",
+                  "value": "自動化対応",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🖼️",
+                  "label": "画像生成",
+                  "value": "Diffusion統合",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🔒",
+                  "label": "プライバシー",
+                  "value": "完全ローカル動作",
+                  "tone": "success"
+                }
               ],
               "context": "既存ローカルAIツールは単機能が多い中、DreamServerは多機能統合で差別化を図る。",
               "impact": "複数のAIツールの管理負荷を減らし、プライバシー重視ユーザーの選択肢を広げる。"
-            }
+            },
+            "caption": "DreamServer機能一覧",
+            "alt": "DreamServerの主要機能。LLMチャット・音声エージェント・ワークフロー自動化・画像生成を統合。完全ローカル動作でクラウド不要。プライバシー保護設計。OSSでGitHub Trendingに登場。"
           }
         },
         {
@@ -302,7 +471,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["RAG", "storage", "local-deployment", "MLsys2026", "vector-search"],
+          "tags": [
+            "RAG",
+            "storage",
+            "local-deployment",
+            "MLsys2026",
+            "vector-search"
+          ],
           "scores": {
             "importance": 3,
             "depth": 5,
@@ -319,19 +494,40 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "caption": "RAGストレージ削減",
-            "alt": "LEANNによるRAGストレージ削減効果。従来のRAGベクトルDBは100%（基準）とすると、LEANNは3%（97%削減）。GitHubスター数11,433。MLsys2026採択論文。",
             "data": {
               "headline": "LEANN：RAGのストレージを97%削減するMLsys2026採択実装",
-              "scale": {"unit": "%", "max_label": "従来RAGのストレージ量（100%基準）"},
+              "scale": {
+                "unit": "%",
+                "max_label": "従来RAGのストレージ量（100%基準）"
+              },
               "bars": [
-                {"label": "従来RAG", "value": "100%（基準）", "pct": 100, "tone": "warning", "note": "ベクトルDBが数百GB規模に"},
-                {"label": "LEANN", "value": "3%（97%削減）", "pct": 3, "tone": "success", "note": "個人PCでも大規模RAGが可能"},
-                {"label": "GitHubスター", "value": "11,433", "pct": 80, "tone": "primary", "note": "Trendingで急上昇"}
+                {
+                  "label": "従来RAG",
+                  "value": "100%（基準）",
+                  "pct": 100,
+                  "tone": "warning",
+                  "note": "ベクトルDBが数百GB規模に"
+                },
+                {
+                  "label": "LEANN",
+                  "value": "3%（97%削減）",
+                  "pct": 3,
+                  "tone": "success",
+                  "note": "個人PCでも大規模RAGが可能"
+                },
+                {
+                  "label": "GitHubスター",
+                  "value": "11,433",
+                  "pct": 80,
+                  "tone": "primary",
+                  "note": "Trendingで急上昇"
+                }
               ],
               "narrative": "RAGのストレージボトルネックを97%圧縮し、プライベートローカルデプロイを現実的なコストで実現する。",
               "impact": "個人・中小企業でも大規模RAGシステムをローカルで運用できる選択肢が生まれる。"
-            }
+            },
+            "caption": "RAGストレージ削減",
+            "alt": "LEANNによるRAGストレージ削減効果。従来のRAGベクトルDBは100%（基準）とすると、LEANNは3%（97%削減）。GitHubスター数11,433。MLsys2026採択論文。"
           }
         }
       ]
@@ -352,7 +548,13 @@
           "category": "agents",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["agent", "CLI", "automation", "legacy", "HKUDS"],
+          "tags": [
+            "agent",
+            "CLI",
+            "automation",
+            "legacy",
+            "HKUDS"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -369,21 +571,46 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "CLI-Anythingの仕組み",
-            "alt": "CLI-Anythingの仕組み。既存ソフトウェアのCLIコマンドをエージェントが呼び出せるようにラップする。レガシーツール・CLIツール→CLI-Anything→AIエージェントの流れ。GitHubスター36,539。",
             "data": {
               "headline": "CLI-Anything：レガシーツールをエージェントネイティブ化する変換層",
               "tldr": "既存ソフトウェアのCLI操作をAIエージェントが呼び出せる形に変換するプラットフォーム。専用APIなしでもエージェント統合を実現。",
               "points": [
-                {"icon": "🔧", "label": "対象", "value": "既存・レガシーCLIツール", "tone": "default"},
-                {"icon": "🤖", "label": "機能", "value": "エージェントネイティブ化", "tone": "primary"},
-                {"icon": "🏫", "label": "開発元", "value": "HKUDS（香港大学）", "tone": "info"},
-                {"icon": "⭐", "label": "GitHub", "value": "36,539スター", "tone": "success"},
-                {"icon": "📈", "label": "当日増加", "value": "+1,047スター", "tone": "success"}
+                {
+                  "icon": "🔧",
+                  "label": "対象",
+                  "value": "既存・レガシーCLIツール",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "機能",
+                  "value": "エージェントネイティブ化",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏫",
+                  "label": "開発元",
+                  "value": "HKUDS（香港大学）",
+                  "tone": "info"
+                },
+                {
+                  "icon": "⭐",
+                  "label": "GitHub",
+                  "value": "36,539スター",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📈",
+                  "label": "当日増加",
+                  "value": "+1,047スター",
+                  "tone": "success"
+                }
               ],
               "context": "エンタープライズではレガシーCLIツールが多数残存しており、エージェント化の需要は大きい。",
               "impact": "既存ツールの書き換えなしにAIエージェント統合が可能になり、移行コストを削減できる。"
-            }
+            },
+            "caption": "CLI-Anythingの仕組み",
+            "alt": "CLI-Anythingの仕組み。既存ソフトウェアのCLIコマンドをエージェントが呼び出せるようにラップする。レガシーツール・CLIツール→CLI-Anything→AIエージェントの流れ。GitHubスター36,539。"
           }
         },
         {
@@ -397,7 +624,13 @@
           "category": "agents",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["multi-agent", "autonomous-research", "adversarial", "LLM", "academic"],
+          "tags": [
+            "multi-agent",
+            "autonomous-research",
+            "adversarial",
+            "LLM",
+            "academic"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -414,19 +647,43 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "ARIS自律研究フロー",
-            "alt": "ARISの自律研究フロー。Phase1: データ収集（エージェントAが収集、エージェントBが検証）、Phase2: 仮説生成（複数エージェントが提案・批判）、Phase3: 実験・検証（クロスモデルで相互確認）、Phase4: 論文執筆（統合・最終検証）。",
             "data": {
               "headline": "ARIS：4フェーズの敵対的マルチエージェント研究自動化",
               "events": [
-                {"when": "Phase 1", "label": "データ収集・検証", "description": "エージェントAが情報収集、エージェントBが独立検証し、幻覚・誤情報を排除", "status": "past", "tone": "default"},
-                {"when": "Phase 2", "label": "仮説生成・批判", "description": "複数エージェントが仮説を提案し合い、相互批判で品質を高める", "status": "past", "tone": "default"},
-                {"when": "Phase 3", "label": "実験・クロス検証", "description": "異なるモデル（クロスモデル）で実験結果を相互確認、再現性を担保", "status": "now", "tone": "primary"},
-                {"when": "Phase 4", "label": "論文執筆・最終検証", "description": "結果を統合し論文化、全エージェントで最終確認後に出力", "status": "upcoming", "tone": "success"}
+                {
+                  "when": "Phase 1",
+                  "label": "データ収集・検証",
+                  "description": "エージェントAが情報収集、エージェントBが独立検証し、幻覚・誤情報を排除",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Phase 2",
+                  "label": "仮説生成・批判",
+                  "description": "複数エージェントが仮説を提案し合い、相互批判で品質を高める",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Phase 3",
+                  "label": "実験・クロス検証",
+                  "description": "異なるモデル（クロスモデル）で実験結果を相互確認、再現性を担保",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Phase 4",
+                  "label": "論文執筆・最終検証",
+                  "description": "結果を統合し論文化、全エージェントで最終確認後に出力",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "単一エージェントの幻覚リスクを複数エージェントの相互検証で解決する設計思想。",
               "impact": "長期・信頼性の高い自律研究が実現し、研究者の反復作業負荷が大幅に削減できる。"
-            }
+            },
+            "caption": "ARIS自律研究フロー",
+            "alt": "ARISの自律研究フロー。Phase1: データ収集（エージェントAが収集、エージェントBが検証）、Phase2: 仮説生成（複数エージェントが提案・批判）、Phase3: 実験・検証（クロスモデルで相互確認）、Phase4: 論文執筆（統合・最終検証）。"
           }
         }
       ]
@@ -447,8 +704,17 @@
           "category": "multimodal",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["multimodal", "SenseTime", "unified-model", "vision-language", "generation"],
-          "reaction_signal": {"kind": "semantic_scholar", "citation_count": 172},
+          "tags": [
+            "multimodal",
+            "SenseTime",
+            "unified-model",
+            "vision-language",
+            "generation"
+          ],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 172
+          },
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -466,21 +732,59 @@
           "x_post": "商湯科技がマルチモーダル理解と生成を統合したSenseNova-U1を発表。理解・生成を別モデルで扱ってきた従来設計に対し、統合アーキテクチャで相互強化を図る新アプローチだ。HuggingFace Daily Papersで172アップボートを記録した注目論文。\n\nhttps://arxiv.org/abs/2605.12500",
           "figure": {
             "type": "comparison",
-            "caption": "従来設計 vs SenseNova-U1",
-            "alt": "従来のマルチモーダルモデル設計（理解と生成が別モデル）とSenseNova-U1（統合モデル）の比較。理解モデルと生成モデルが別々だった従来に対し、SenseNova-U1は単一モデルで両タスクを処理。HF 172アップボート。",
             "data": {
               "headline": "従来設計 vs SenseNova-U1：マルチモーダルの統合アーキテクチャ",
-              "before": {"label": "従来設計", "sublabel": "理解・生成を別モデルで分離"},
-              "after": {"label": "SenseNova-U1", "sublabel": "理解と生成を単一モデルで統合"},
+              "before": {
+                "label": "従来設計",
+                "sublabel": "理解・生成を別モデルで分離"
+              },
+              "after": {
+                "label": "SenseNova-U1",
+                "sublabel": "理解と生成を単一モデルで統合"
+              },
               "metrics": [
-                {"label": "モデル数", "before": "2（理解+生成）", "after": "1（統合）", "before_pct": 100, "after_pct": 50, "delta": "1/2に削減", "delta_tone": "success"},
-                {"label": "相互強化", "before": "なし", "after": "あり（統合）", "before_pct": 0, "after_pct": 100, "delta": "+相互強化", "delta_tone": "success"},
-                {"label": "表現効率", "before": "別学習", "after": "共有表現", "before_pct": 50, "after_pct": 90, "delta": "向上", "delta_tone": "success"},
-                {"label": "HFアップボート", "before": "–", "after": "172", "before_pct": 0, "after_pct": 100, "delta": "注目度高", "delta_tone": "primary"}
+                {
+                  "label": "モデル数",
+                  "before": "2（理解+生成）",
+                  "after": "1（統合）",
+                  "before_pct": 100,
+                  "after_pct": 50,
+                  "delta": "1/2に削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "相互強化",
+                  "before": "なし",
+                  "after": "あり（統合）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "+相互強化",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "表現効率",
+                  "before": "別学習",
+                  "after": "共有表現",
+                  "before_pct": 50,
+                  "after_pct": 90,
+                  "delta": "向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "HFアップボート",
+                  "before": "–",
+                  "after": "172",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "注目度高",
+                  "delta_tone": "primary"
+                }
               ],
               "narrative": "理解と生成を単一モデルに統合することで、モデル管理の複雑さを減らしつつ相互強化を実現する。",
               "impact": "単一モデルでマルチモーダルの全タスクを扱えるようになり、デプロイとファインチューニングが簡素化される。"
-            }
+            },
+            "caption": "従来設計 vs SenseNova-U1",
+            "alt": "従来のマルチモーダルモデル設計（理解と生成が別モデル）とSenseNova-U1（統合モデル）の比較。理解モデルと生成モデルが別々だった従来に対し、SenseNova-U1は単一モデルで両タスクを処理。HF 172アップボート。"
           }
         },
         {
@@ -494,7 +798,13 @@
           "category": "multimodal",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["video-diffusion", "RLHF", "alignment", "GRPO", "fine-tuning"],
+          "tags": [
+            "video-diffusion",
+            "RLHF",
+            "alignment",
+            "GRPO",
+            "fine-tuning"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -511,21 +821,59 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "従来 vs Flash-GRPO",
-            "alt": "従来の動画拡散アライメント（多ステップサンプリング必要、高コスト）とFlash-GRPOの比較（1ステップ最適化、低コスト）。ステップ数と計算コストが大幅に削減される。",
             "data": {
               "headline": "従来アライメント vs Flash-GRPO：動画拡散の効率化比較",
-              "before": {"label": "従来手法", "sublabel": "多ステップ拡散+RLHF"},
-              "after": {"label": "Flash-GRPO", "sublabel": "1ステップポリシー最適化"},
+              "before": {
+                "label": "従来手法",
+                "sublabel": "多ステップ拡散+RLHF"
+              },
+              "after": {
+                "label": "Flash-GRPO",
+                "sublabel": "1ステップポリシー最適化"
+              },
               "metrics": [
-                {"label": "最適化ステップ", "before": "多ステップ（数十〜数百）", "after": "1ステップ", "before_pct": 100, "after_pct": 10, "delta": "大幅削減", "delta_tone": "success"},
-                {"label": "計算コスト", "before": "非常に高い", "after": "大幅削減", "before_pct": 100, "after_pct": 20, "delta": "-80%以上", "delta_tone": "success"},
-                {"label": "実用可能性", "before": "大規模GPU必須", "after": "中規模GPUで可", "before_pct": 30, "after_pct": 80, "delta": "大幅改善", "delta_tone": "success"},
-                {"label": "アライメント品質", "before": "高品質", "after": "同等維持", "before_pct": 90, "after_pct": 88, "delta": "ほぼ同等", "delta_tone": "info"}
+                {
+                  "label": "最適化ステップ",
+                  "before": "多ステップ（数十〜数百）",
+                  "after": "1ステップ",
+                  "before_pct": 100,
+                  "after_pct": 10,
+                  "delta": "大幅削減",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "計算コスト",
+                  "before": "非常に高い",
+                  "after": "大幅削減",
+                  "before_pct": 100,
+                  "after_pct": 20,
+                  "delta": "-80%以上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "実用可能性",
+                  "before": "大規模GPU必須",
+                  "after": "中規模GPUで可",
+                  "before_pct": 30,
+                  "after_pct": 80,
+                  "delta": "大幅改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "アライメント品質",
+                  "before": "高品質",
+                  "after": "同等維持",
+                  "before_pct": 90,
+                  "after_pct": 88,
+                  "delta": "ほぼ同等",
+                  "delta_tone": "info"
+                }
               ],
               "narrative": "計算コストを抑えつつアライメント品質を維持することで、動画AIファインチューニングの民主化につながる。",
               "impact": "動画生成モデルの人間好み適合調整が大規模GPUなしでも実施可能になる。"
-            }
+            },
+            "caption": "従来 vs Flash-GRPO",
+            "alt": "従来の動画拡散アライメント（多ステップサンプリング必要、高コスト）とFlash-GRPOの比較（1ステップ最適化、低コスト）。ステップ数と計算コストが大幅に削減される。"
           }
         }
       ]
@@ -546,7 +894,13 @@
           "category": "research_papers",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["reasoning", "GPQA", "training-free", "test-time-compute", "benchmark"],
+          "tags": [
+            "reasoning",
+            "GPQA",
+            "training-free",
+            "test-time-compute",
+            "benchmark"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -564,19 +918,40 @@
           "x_post": "訓練なし（勾配更新ゼロ）でGPQA Diamond 88.89%を達成したDarwinファミリーの研究がHuggingFace公式ブログに掲載された。テスト時計算のみで到達できるフロンティアスコアであり、「高性能には大量訓練が必要」という常識を覆す結果だ。\n\nhttps://huggingface.co/blog/FINAL-Bench/darwin-papers",
           "figure": {
             "type": "metric-bars",
-            "caption": "GPQA Diamond スコア比較",
-            "alt": "GPQA Diamondのスコア比較。Darwinファミリー（訓練フリー）は88.89%。Claude 3.5 Sonnet（参考）は約59%。GPT-4（参考）は約50%。訓練フリーでありながらフロンティアモデルを大幅に上回るスコアを達成。",
             "data": {
               "headline": "GPQA Diamond スコア：Darwinが訓練フリーで88.89%達成",
-              "scale": {"unit": "%", "max_label": "100%（満点）"},
+              "scale": {
+                "unit": "%",
+                "max_label": "100%（満点）"
+              },
               "bars": [
-                {"label": "Darwin（訓練フリー）", "value": "88.89%", "pct": 89, "tone": "success", "delta": "訓練フリー最高", "note": "勾配更新ゼロ"},
-                {"label": "Claude 3.5 Sonnet", "value": "~59%（参考）", "pct": 59, "tone": "primary", "baseline_label": "フロンティア基準"},
-                {"label": "GPT-4（参考）", "value": "~50%（参考）", "pct": 50, "tone": "info"}
+                {
+                  "label": "Darwin（訓練フリー）",
+                  "value": "88.89%",
+                  "pct": 89,
+                  "tone": "success",
+                  "delta": "訓練フリー最高",
+                  "note": "勾配更新ゼロ"
+                },
+                {
+                  "label": "Claude 3.5 Sonnet",
+                  "value": "~59%（参考）",
+                  "pct": 59,
+                  "tone": "primary",
+                  "baseline_label": "フロンティア基準"
+                },
+                {
+                  "label": "GPT-4（参考）",
+                  "value": "~50%（参考）",
+                  "pct": 50,
+                  "tone": "info"
+                }
               ],
               "narrative": "訓練フリーで88.89%というスコアは、本格訓練フロンティアモデルをも上回るレベル。テスト時計算の可能性を実証した。",
               "impact": "推論時工夫だけで高性能を引き出せることが判明し、訓練コストなしの高性能モデル活用の道が開ける。"
-            }
+            },
+            "caption": "GPQA Diamond スコア比較",
+            "alt": "GPQA Diamondのスコア比較。Darwinファミリー（訓練フリー）は88.89%。Claude 3.5 Sonnet（参考）は約59%。GPT-4（参考）は約50%。訓練フリーでありながらフロンティアモデルを大幅に上回るスコアを達成。"
           }
         },
         {
@@ -590,8 +965,17 @@
           "category": "research_papers",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["data-centric", "LLM", "data-pipeline", "automation", "reproducibility"],
-          "reaction_signal": {"kind": "semantic_scholar", "citation_count": 222},
+          "tags": [
+            "data-centric",
+            "LLM",
+            "data-pipeline",
+            "automation",
+            "reproducibility"
+          ],
+          "reaction_signal": {
+            "kind": "semantic_scholar",
+            "citation_count": 222
+          },
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -608,20 +992,50 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "DataFlowの自動化フロー",
-            "alt": "DataFlowの動作フロー。Step1: ユーザーがデータ要件を定義。Step2: LLMがパイプライン設計を自動生成。Step3: データ収集・洗浄・増強を自動実行。Step4: 品質検証・再現性確認。Step5: 訓練用データ出力。",
             "data": {
               "headline": "DataFlow：LLMがデータパイプライン設計を自動化する5ステップ",
               "events": [
-                {"when": "Step 1", "label": "要件定義", "description": "ユーザーがデータの目的・品質要件・ドメインを定義（自然言語で指定可能）", "status": "past", "tone": "default"},
-                {"when": "Step 2", "label": "パイプライン自動設計", "description": "LLMが要件を解析し、収集・洗浄・増強・検証のパイプラインを自動設計", "status": "now", "tone": "primary"},
-                {"when": "Step 3", "label": "データ処理実行", "description": "設計されたパイプラインに従い、データ収集・洗浄・増強処理を自動実行", "status": "upcoming", "tone": "default"},
-                {"when": "Step 4", "label": "品質検証", "description": "品質メトリクスを自動計算し、基準を満たさない場合はStep2に戻りパイプラインを修正", "status": "upcoming", "tone": "info"},
-                {"when": "Step 5", "label": "訓練データ出力", "description": "再現可能な形式で訓練用データセットを出力、パイプライン定義も保存", "status": "upcoming", "tone": "success"}
+                {
+                  "when": "Step 1",
+                  "label": "要件定義",
+                  "description": "ユーザーがデータの目的・品質要件・ドメインを定義（自然言語で指定可能）",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "パイプライン自動設計",
+                  "description": "LLMが要件を解析し、収集・洗浄・増強・検証のパイプラインを自動設計",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "データ処理実行",
+                  "description": "設計されたパイプラインに従い、データ収集・洗浄・増強処理を自動実行",
+                  "status": "upcoming",
+                  "tone": "default"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "品質検証",
+                  "description": "品質メトリクスを自動計算し、基準を満たさない場合はStep2に戻りパイプラインを修正",
+                  "status": "upcoming",
+                  "tone": "info"
+                },
+                {
+                  "when": "Step 5",
+                  "label": "訓練データ出力",
+                  "description": "再現可能な形式で訓練用データセットを出力、パイプライン定義も保存",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "データパイプライン設計の手動作業をLLMが担うことで、データエンジニアの工数を大幅削減。",
               "impact": "数百時間かかるデータパイプライン設計が自動化され、AIモデル開発サイクルが加速する。"
-            }
+            },
+            "caption": "DataFlowの自動化フロー",
+            "alt": "DataFlowの動作フロー。Step1: ユーザーがデータ要件を定義。Step2: LLMがパイプライン設計を自動生成。Step3: データ収集・洗浄・増強を自動実行。Step4: 品質検証・再現性確認。Step5: 訓練用データ出力。"
           }
         },
         {
@@ -635,7 +1049,13 @@
           "category": "research_papers",
           "published_at": "2026-05-16",
           "lang": "en",
-          "tags": ["LLM", "architecture", "attention", "KV-cache", "inference-efficiency"],
+          "tags": [
+            "LLM",
+            "architecture",
+            "attention",
+            "KV-cache",
+            "inference-efficiency"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -652,21 +1072,51 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "3つのアーキテクチャ改善",
-            "alt": "LLMアーキテクチャの3つの改善潮流。1: KV共有（複数ヘッドでKVキャッシュを共有しメモリ削減）、2: mHC（マルチヘッド圧縮で高速化）、3: 圧縮Attention（スパース化・低ランク近似で計算削減）。",
             "data": {
               "headline": "LLM推論コストを削減する3つのアーキテクチャ改善潮流",
               "tldr": "KV共有・mHC・圧縮Attentionの3技術を組み合わせることで、推論メモリと計算コストを同時に削減できる。",
               "points": [
-                {"icon": "🗃️", "label": "KV共有", "value": "メモリ大幅削減", "note": "複数ヘッドでキャッシュ共有", "tone": "primary"},
-                {"icon": "🗜️", "label": "mHC", "value": "推論高速化", "note": "マルチヘッド計算を圧縮", "tone": "primary"},
-                {"icon": "✂️", "label": "圧縮Attention", "value": "O(n²)コスト削減", "note": "スパース化・低ランク近似", "tone": "primary"},
-                {"icon": "🔧", "label": "実装難度", "value": "中程度", "note": "既存モデルに後付け可能", "tone": "info"},
-                {"icon": "📚", "label": "解説品質", "value": "実装レベル詳細", "note": "Sebastian Raschka", "tone": "success"}
+                {
+                  "icon": "🗃️",
+                  "label": "KV共有",
+                  "value": "メモリ大幅削減",
+                  "note": "複数ヘッドでキャッシュ共有",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🗜️",
+                  "label": "mHC",
+                  "value": "推論高速化",
+                  "note": "マルチヘッド計算を圧縮",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "✂️",
+                  "label": "圧縮Attention",
+                  "value": "O(n²)コスト削減",
+                  "note": "スパース化・低ランク近似",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "実装難度",
+                  "value": "中程度",
+                  "note": "既存モデルに後付け可能",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📚",
+                  "label": "解説品質",
+                  "value": "実装レベル詳細",
+                  "note": "Sebastian Raschka",
+                  "tone": "success"
+                }
               ],
               "context": "これらの技術はすでに主要LLMの実装に取り込まれており、標準的なアーキテクチャパターンになりつつある。",
               "impact": "推論コスト削減技術の普及により、大規模LLMのデプロイコストが継続的に低下する。"
-            }
+            },
+            "caption": "3つのアーキテクチャ改善",
+            "alt": "LLMアーキテクチャの3つの改善潮流。1: KV共有（複数ヘッドでKVキャッシュを共有しメモリ削減）、2: mHC（マルチヘッド圧縮で高速化）、3: 圧縮Attention（スパース化・低ランク近似で計算削減）。"
           }
         }
       ]
@@ -687,7 +1137,13 @@
           "category": "industry_business",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["Anthropic", "Stainless", "SDK", "acquisition", "developer-tools"],
+          "tags": [
+            "Anthropic",
+            "Stainless",
+            "SDK",
+            "acquisition",
+            "developer-tools"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -705,21 +1161,51 @@
           "x_post": "AnthropicがSDK自動生成スタートアップのStainlessを買収した。OpenAI・Google・CloudflareもSDK生成に利用していた企業を取得したことで、Claude APIの開発者エコシステム戦略に大きな変化が生じた。\n\nhttps://www.anthropic.com/news/anthropic-acquires-stainless",
           "figure": {
             "type": "summary-card",
-            "caption": "Stainless買収の概要",
-            "alt": "AnthropicによるStainless買収の概要。Stainlessは自動SDKジェネレーター。OpenAI・Google・CloudflareもStainlessを利用。Anthropicが買収することでClaude APIの開発者体験が改善される見込み。",
             "data": {
               "headline": "Anthropic × Stainless：SDK生成スタートアップ買収でエコシステム強化",
               "tldr": "AnthropicがOpenAI・Google・Cloudflareも利用するSDK自動生成ツールStainlessを買収。Claude APIの開発者体験向上と開発者エコシステムの戦略的強化が狙い。",
               "points": [
-                {"icon": "🏢", "label": "買収先", "value": "Stainless", "note": "SDK自動生成スタートアップ", "tone": "primary"},
-                {"icon": "👥", "label": "既存顧客", "value": "OpenAI・Google・Cloudflare", "note": "競合他社も利用", "tone": "warning"},
-                {"icon": "🛠️", "label": "技術", "value": "SDK自動生成・型定義", "note": "API変更に自動追従", "tone": "default"},
-                {"icon": "📈", "label": "狙い", "value": "開発者体験の向上", "note": "Claude API採用加速", "tone": "success"},
-                {"icon": "🌐", "label": "影響", "value": "エコシステム強化", "note": "結節点を掌握", "tone": "info"}
+                {
+                  "icon": "🏢",
+                  "label": "買収先",
+                  "value": "Stainless",
+                  "note": "SDK自動生成スタートアップ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👥",
+                  "label": "既存顧客",
+                  "value": "OpenAI・Google・Cloudflare",
+                  "note": "競合他社も利用",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🛠️",
+                  "label": "技術",
+                  "value": "SDK自動生成・型定義",
+                  "note": "API変更に自動追従",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📈",
+                  "label": "狙い",
+                  "value": "開発者体験の向上",
+                  "note": "Claude API採用加速",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🌐",
+                  "label": "影響",
+                  "value": "エコシステム強化",
+                  "note": "結節点を掌握",
+                  "tone": "info"
+                }
               ],
               "context": "競合他社が依存するインフラ企業の買収は前例が少なく、業界の地殻変動を示す動きとして注目される。",
               "impact": "AnthropicがSDKインフラの結節点を握ることで、Claude APIの開発者採用が加速する可能性がある。"
-            }
+            },
+            "caption": "Stainless買収の概要",
+            "alt": "AnthropicによるStainless買収の概要。Stainlessは自動SDKジェネレーター。OpenAI・Google・CloudflareもStainlessを利用。Anthropicが買収することでClaude APIの開発者体験が改善される見込み。"
           }
         },
         {
@@ -733,7 +1219,13 @@
           "category": "industry_business",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["OpenAI", "Musk", "lawsuit", "legal", "non-profit"],
+          "tags": [
+            "OpenAI",
+            "Musk",
+            "lawsuit",
+            "legal",
+            "non-profit"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -750,19 +1242,43 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "OpenAI vs マスク訴訟経緯",
-            "alt": "OpenAI対マスク訴訟の経緯。2022年: マスク氏OpenAIを離脱。2023年: xAIを設立。2024年: OpenAI非営利ミッション違反で提訴。2026年5月: 原告敗訴・訴訟終結。",
             "data": {
               "headline": "OpenAI vs Musk訴訟：法廷闘争の経緯と結末",
               "events": [
-                {"when": "2022年", "label": "マスク氏がOpenAIを離脱", "description": "共同創業者のマスク氏が取締役会を去り、OpenAIとの関係が断絶", "status": "past", "tone": "default"},
-                {"when": "2023年", "label": "xAI設立", "description": "マスク氏がxAIを設立しGrokを開発、OpenAIの直接競合となる", "status": "past", "tone": "default"},
-                {"when": "2024-2025年", "label": "非営利ミッション違反で提訴", "description": "OpenAIが非営利使命を裏切り商業化したとして提訴、長期にわたる法廷闘争へ", "status": "past", "tone": "warning"},
-                {"when": "2026-05", "label": "原告敗訴・訴訟終結", "description": "裁判所がマスク氏の訴えを退け、OpenAIの商業化を容認する判決を下し訴訟が終結", "status": "now", "tone": "success"}
+                {
+                  "when": "2022年",
+                  "label": "マスク氏がOpenAIを離脱",
+                  "description": "共同創業者のマスク氏が取締役会を去り、OpenAIとの関係が断絶",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "2023年",
+                  "label": "xAI設立",
+                  "description": "マスク氏がxAIを設立しGrokを開発、OpenAIの直接競合となる",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "2024-2025年",
+                  "label": "非営利ミッション違反で提訴",
+                  "description": "OpenAIが非営利使命を裏切り商業化したとして提訴、長期にわたる法廷闘争へ",
+                  "status": "past",
+                  "tone": "warning"
+                },
+                {
+                  "when": "2026-05",
+                  "label": "原告敗訴・訴訟終結",
+                  "description": "裁判所がマスク氏の訴えを退け、OpenAIの商業化を容認する判決を下し訴訟が終結",
+                  "status": "now",
+                  "tone": "success"
+                }
               ],
               "narrative": "2年以上続いた法廷闘争に終止符。OpenAIの商業展開・企業転換への法的障壁が除去された。",
               "impact": "OpenAIの企業形態転換と商業展開が加速し、AI業界の競争構図がさらに明確化される。"
-            }
+            },
+            "caption": "OpenAI vs マスク訴訟経緯",
+            "alt": "OpenAI対マスク訴訟の経緯。2022年: マスク氏OpenAIを離脱。2023年: xAIを設立。2024年: OpenAI非営利ミッション違反で提訴。2026年5月: 原告敗訴・訴訟終結。"
           }
         }
       ]
@@ -783,7 +1299,13 @@
           "category": "regulation_policy",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["supply-chain", "security", "AI-safety", "red-team", "infrastructure"],
+          "tags": [
+            "supply-chain",
+            "security",
+            "AI-safety",
+            "red-team",
+            "infrastructure"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -800,21 +1322,51 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "AI供給チェーン攻撃の盲点",
-            "alt": "AIセキュリティ評価の範囲とサプライチェーン攻撃の盲点。従来のレッドチームがカバーする範囲（モデル振る舞い・プロンプトインジェクション・脱獄）と、カバーしていない範囲（学習データ汚染・モデルウェイト改竄・デプロイインフラ）を対比。",
             "data": {
               "headline": "AIサプライチェーン攻撃：50日間4件——レッドチームの盲点が露呈",
               "tldr": "OpenAI・Anthropic・Metaのリリースパイプラインが50日間で4回攻撃を受けた。従来のAIレッドチームが対象とするモデル振る舞い評価ではこれらの攻撃は検知できない。",
               "points": [
-                {"icon": "🎯", "label": "攻撃件数", "value": "4件 / 50日間", "note": "主要3社が標的", "tone": "danger"},
-                {"icon": "✅", "label": "カバー済み", "value": "モデル振る舞い", "note": "プロンプトインジェクション等", "tone": "success"},
-                {"icon": "❌", "label": "盲点①", "value": "学習データ汚染", "note": "訓練データへの悪意挿入", "tone": "danger"},
-                {"icon": "❌", "label": "盲点②", "value": "モデルウェイト改竄", "note": "公開前の後門埋め込み", "tone": "danger"},
-                {"icon": "❌", "label": "盲点③", "value": "デプロイインフラ", "note": "依存ライブラリ・CI/CD攻撃", "tone": "danger"}
+                {
+                  "icon": "🎯",
+                  "label": "攻撃件数",
+                  "value": "4件 / 50日間",
+                  "note": "主要3社が標的",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "✅",
+                  "label": "カバー済み",
+                  "value": "モデル振る舞い",
+                  "note": "プロンプトインジェクション等",
+                  "tone": "success"
+                },
+                {
+                  "icon": "❌",
+                  "label": "盲点①",
+                  "value": "学習データ汚染",
+                  "note": "訓練データへの悪意挿入",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "❌",
+                  "label": "盲点②",
+                  "value": "モデルウェイト改竄",
+                  "note": "公開前の後門埋め込み",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "❌",
+                  "label": "盲点③",
+                  "value": "デプロイインフラ",
+                  "note": "依存ライブラリ・CI/CD攻撃",
+                  "tone": "danger"
+                }
               ],
               "context": "ソフトウェアではSBOM（Software Bill of Materials）管理が浸透しつつあるが、AIにはモデル固有のリスクが追加で存在する。",
               "impact": "AIセキュリティ評価フレームワークにサプライチェーン視点を加えることが業界標準化に向けた急務。"
-            }
+            },
+            "caption": "AI供給チェーン攻撃の盲点",
+            "alt": "AIセキュリティ評価の範囲とサプライチェーン攻撃の盲点。従来のレッドチームがカバーする範囲（モデル振る舞い・プロンプトインジェクション・脱獄）と、カバーしていない範囲（学習データ汚染・モデルウェイト改竄・デプロイインフラ）を対比。"
           }
         }
       ]
@@ -835,8 +1387,17 @@
           "category": "community_buzz",
           "published_at": "2026-05-18",
           "lang": "en",
-          "reaction_signal": {"kind": "hn", "points": 312},
-          "tags": ["local-LLM", "benchmark", "hardware", "community", "HN"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 312
+          },
+          "tags": [
+            "local-LLM",
+            "benchmark",
+            "hardware",
+            "community",
+            "HN"
+          ],
           "scores": {
             "importance": 2,
             "depth": 3,
@@ -853,21 +1414,50 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "ローカルLLM選択ツール",
-            "alt": "ローカルLLM選択ツールの機能概要。VRAM量（4GB/8GB/16GB/24GB等）を入力するとベンチマーク順にランキング表示。MMLU・HumanEval等のスコアと推論速度（tok/s）を比較。HNで312ポイント獲得。",
             "data": {
               "headline": "ローカルLLM最適選択ツール：HardwareスペックからBestモデルを即特定",
               "tldr": "GPU VRAM量を入力するだけで動作可能なモデルをベンチマーク順にランキング。推論速度・精度のトレードオフを一覧比較できるHN話題のツール。",
               "points": [
-                {"icon": "💾", "label": "入力条件", "value": "VRAM量を指定", "note": "4/8/16/24GB等", "tone": "primary"},
-                {"icon": "📊", "label": "ベンチマーク", "value": "MMLU・HumanEval等", "note": "主要指標を横断比較", "tone": "default"},
-                {"icon": "⚡", "label": "推論速度", "value": "tok/s で表示", "note": "モデル間で比較可能", "tone": "default"},
-                {"icon": "🏆", "label": "HNスコア", "value": "312ポイント", "note": "Show HNで急上昇", "tone": "success"},
-                {"icon": "🆓", "label": "利用", "value": "コミュニティ製・無料", "tone": "info"}
+                {
+                  "icon": "💾",
+                  "label": "入力条件",
+                  "value": "VRAM量を指定",
+                  "note": "4/8/16/24GB等",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📊",
+                  "label": "ベンチマーク",
+                  "value": "MMLU・HumanEval等",
+                  "note": "主要指標を横断比較",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "推論速度",
+                  "value": "tok/s で表示",
+                  "note": "モデル間で比較可能",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "HNスコア",
+                  "value": "312ポイント",
+                  "note": "Show HNで急上昇",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🆓",
+                  "label": "利用",
+                  "value": "コミュニティ製・無料",
+                  "tone": "info"
+                }
               ],
               "context": "ローカルLLMのモデル数が急増し、ハードウェア別の最適モデル選択が困難になっている現状への対応。",
               "impact": "GPU別のベストモデルを即座に特定できることで、ローカルAIの試行錯誤サイクルが短縮される。"
-            }
+            },
+            "caption": "ローカルLLM選択ツール",
+            "alt": "ローカルLLM選択ツールの機能概要。VRAM量（4GB/8GB/16GB/24GB等）を入力するとベンチマーク順にランキング表示。MMLU・HumanEval等のスコアと推論速度（tok/s）を比較。HNで312ポイント獲得。"
           }
         },
         {
@@ -881,7 +1471,13 @@
           "category": "community_buzz",
           "published_at": "2026-05-18",
           "lang": "en",
-          "tags": ["Import-AI", "AI-security", "alignment", "optimizer", "newsletter"],
+          "tags": [
+            "Import-AI",
+            "AI-security",
+            "alignment",
+            "optimizer",
+            "newsletter"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -898,21 +1494,51 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "Import AI #457の3トピック",
-            "alt": "Import AI第457号の3つの主要トピック。1: AIスタックスネット（精密計算を妨害するAI標的ウイルス）。2: 呪われたMuon最適化器（ニューロン死亡の副作用）。3: ポジティブアライメント（人間の繁栄を積極支援するAI設計）。",
             "data": {
               "headline": "Import AI #457：AIセキュリティ・訓練手法・アライメントの3大トピック",
               "tldr": "AIスタックスネットの現実化・Muon最適化器の副作用発見・ポジティブアライメントの概念提案。Jack Clarkが3つの重要論点を解説。",
               "points": [
-                {"icon": "🦠", "label": "AIスタクスネット", "value": "精密計算妨害型ウイルス", "note": "AIシステムへのサイバー攻撃が現実化", "tone": "danger"},
-                {"icon": "💀", "label": "Muon副作用", "value": "ニューロン死亡", "note": "訓練高速化の代償が発見", "tone": "warning"},
-                {"icon": "✨", "label": "ポジティブ整合", "value": "人間の繁栄を積極支援", "note": "有害防止を超えた設計思想", "tone": "success"},
-                {"icon": "✍️", "label": "著者", "value": "Jack Clark", "note": "Anthropic共同創業者", "tone": "info"},
-                {"icon": "📅", "label": "号数", "value": "#457", "note": "2026-05-18発行", "tone": "default"}
+                {
+                  "icon": "🦠",
+                  "label": "AIスタクスネット",
+                  "value": "精密計算妨害型ウイルス",
+                  "note": "AIシステムへのサイバー攻撃が現実化",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "💀",
+                  "label": "Muon副作用",
+                  "value": "ニューロン死亡",
+                  "note": "訓練高速化の代償が発見",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "✨",
+                  "label": "ポジティブ整合",
+                  "value": "人間の繁栄を積極支援",
+                  "note": "有害防止を超えた設計思想",
+                  "tone": "success"
+                },
+                {
+                  "icon": "✍️",
+                  "label": "著者",
+                  "value": "Jack Clark",
+                  "note": "Anthropic共同創業者",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📅",
+                  "label": "号数",
+                  "value": "#457",
+                  "note": "2026-05-18発行",
+                  "tone": "default"
+                }
               ],
               "context": "Import AIは創業者視点のAI週報として高い信頼性を持ち、業界の重要論点を毎週整理する。",
               "impact": "AIセキュリティとアライメント研究の両面で、実務者が知るべき最新の課題と方向性を示している。"
-            }
+            },
+            "caption": "Import AI #457の3トピック",
+            "alt": "Import AI第457号の3つの主要トピック。1: AIスタックスネット（精密計算を妨害するAI標的ウイルス）。2: 呪われたMuon最適化器（ニューロン死亡の副作用）。3: ポジティブアライメント（人間の繁栄を積極支援するAI設計）。"
           }
         }
       ]
@@ -933,8 +1559,17 @@
           "category": "japan",
           "published_at": "2026-05-18",
           "lang": "ja",
-          "reaction_signal": {"kind": "hatena", "users": 132},
-          "tags": ["Claude", "Proxmox", "Tailscale", "インフラ", "モバイル"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 132
+          },
+          "tags": [
+            "Claude",
+            "Proxmox",
+            "Tailscale",
+            "インフラ",
+            "モバイル"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -952,20 +1587,50 @@
           ],
           "figure": {
             "type": "timeline",
-            "caption": "モバイルからのサーバ復旧フロー",
-            "alt": "スマホからのサーバ復旧フロー。Step1: 帰り道にサーバ障害を検知（通知）。Step2: Tailscaleでスマホからリモート接続。Step3: Claudeに状況を説明しコマンドを提案してもらう。Step4: Proxmoxサービス/VMを再起動。Step5: 1時間後に復旧完了。",
             "data": {
               "headline": "スマホ × Claude Code × Tailscale でサーバ障害を1時間で復旧",
               "events": [
-                {"when": "帰り道", "label": "サーバ障害を検知", "description": "監視通知でProxmoxサーバがダウンしていることを外出中に発見", "status": "past", "tone": "danger"},
-                {"when": "+5分", "label": "Tailscaleで接続", "description": "スマホからTailscale VPN経由で自宅ネットワークにリモート接続を確立", "status": "past", "tone": "default"},
-                {"when": "+10分", "label": "Claudeに状況を説明", "description": "エラーメッセージ・ログをClaudeに貼り付け、対処コマンドを提案してもらう", "status": "now", "tone": "primary"},
-                {"when": "+30分", "label": "コマンドを実行・確認", "description": "ClaudeのサジェストをProxmox環境に合わせて実行しながら問題箇所を特定・修正", "status": "upcoming", "tone": "default"},
-                {"when": "+1時間", "label": "復旧完了", "description": "全VMが正常起動し、サービスが復旧。PCなし・外出中での完全解決を達成", "status": "upcoming", "tone": "success"}
+                {
+                  "when": "帰り道",
+                  "label": "サーバ障害を検知",
+                  "description": "監視通知でProxmoxサーバがダウンしていることを外出中に発見",
+                  "status": "past",
+                  "tone": "danger"
+                },
+                {
+                  "when": "+5分",
+                  "label": "Tailscaleで接続",
+                  "description": "スマホからTailscale VPN経由で自宅ネットワークにリモート接続を確立",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "+10分",
+                  "label": "Claudeに状況を説明",
+                  "description": "エラーメッセージ・ログをClaudeに貼り付け、対処コマンドを提案してもらう",
+                  "status": "now",
+                  "tone": "primary"
+                },
+                {
+                  "when": "+30分",
+                  "label": "コマンドを実行・確認",
+                  "description": "ClaudeのサジェストをProxmox環境に合わせて実行しながら問題箇所を特定・修正",
+                  "status": "upcoming",
+                  "tone": "default"
+                },
+                {
+                  "when": "+1時間",
+                  "label": "復旧完了",
+                  "description": "全VMが正常起動し、サービスが復旧。PCなし・外出中での完全解決を達成",
+                  "status": "upcoming",
+                  "tone": "success"
+                }
               ],
               "narrative": "PCを持ち歩かなくてもモバイル+Claude Codeでインフラ障害を解決できることを実証した体験談。",
               "impact": "ClaudeをモバイルのAIコペアプログラマーとして活用する新しいユースケースが広がる。"
-            }
+            },
+            "caption": "モバイルからのサーバ復旧フロー",
+            "alt": "スマホからのサーバ復旧フロー。Step1: 帰り道にサーバ障害を検知（通知）。Step2: Tailscaleでスマホからリモート接続。Step3: Claudeに状況を説明しコマンドを提案してもらう。Step4: Proxmoxサービス/VMを再起動。Step5: 1時間後に復旧完了。"
           }
         },
         {
@@ -979,8 +1644,17 @@
           "category": "japan",
           "published_at": "2026-05-18",
           "lang": "ja",
-          "reaction_signal": {"kind": "hatena", "users": 38},
-          "tags": ["セキュリティ", "Claude Code", "Cursor", "secret", "AIコーディング"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 38
+          },
+          "tags": [
+            "セキュリティ",
+            "Claude Code",
+            "Cursor",
+            "secret",
+            "AIコーディング"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -999,21 +1673,51 @@
           "x_post": "AIコーディングでsecretを漏らさないための4層防衛が詳解されている。Layer1: env管理、Layer2: AIへのコンテキスト制御、Layer3: シークレットスキャナー導入、Layer4: CIパイプライン検出。Claude CodeやCursorが普及した今、この設計は必須だと私は考える。\n\nhttps://zenn.dev/takna/articles/secret-leak-prevention-4-layer",
           "figure": {
             "type": "summary-card",
-            "caption": "シークレット漏洩防止4層防衛",
-            "alt": "AIコーディングでのシークレット漏洩防止の4層防衛。Layer1: .gitignore・env管理の徹底。Layer2: AIへのコンテキスト制御（secretを渡さない）。Layer3: シークレットスキャナー導入（git-secrets等）。Layer4: CIパイプラインでのSecret Scanning。",
             "data": {
               "headline": "AIコーディングのsecret漏洩を防ぐ4層防衛設計",
               "tldr": "Claude Code・Cursorなどのツール普及でsecret漏洩リスクが増大。env管理・コンテキスト制御・スキャナー・CI検出の4層で多重防衛する設計を解説。",
               "points": [
-                {"icon": "📁", "label": "Layer 1", "value": ".gitignore・env管理", "note": ".envの適切な除外設定", "tone": "primary"},
-                {"icon": "🤖", "label": "Layer 2", "value": "AIへのコンテキスト制御", "note": "secretファイルをAIに渡さない", "tone": "primary"},
-                {"icon": "🔍", "label": "Layer 3", "value": "シークレットスキャナー", "note": "git-secrets・Trivyで事前検出", "tone": "warning"},
-                {"icon": "🔄", "label": "Layer 4", "value": "CIパイプライン検出", "note": "GitHub Actions Secret Scanning", "tone": "warning"},
-                {"icon": "📈", "label": "はてブ", "value": "38件", "note": "2026-05-18公開、即日拡散", "tone": "success"}
+                {
+                  "icon": "📁",
+                  "label": "Layer 1",
+                  "value": ".gitignore・env管理",
+                  "note": ".envの適切な除外設定",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "Layer 2",
+                  "value": "AIへのコンテキスト制御",
+                  "note": "secretファイルをAIに渡さない",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔍",
+                  "label": "Layer 3",
+                  "value": "シークレットスキャナー",
+                  "note": "git-secrets・Trivyで事前検出",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🔄",
+                  "label": "Layer 4",
+                  "value": "CIパイプライン検出",
+                  "note": "GitHub Actions Secret Scanning",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "📈",
+                  "label": "はてブ",
+                  "value": "38件",
+                  "note": "2026-05-18公開、即日拡散",
+                  "tone": "success"
+                }
               ],
               "context": "AIコーディングツールはコンテキストとしてファイルを読み込む設計のため、誤ってsecretが含まれると漏洩リスクが高い。",
               "impact": "4層の多重防衛により、AIコーディング普及環境でのsecret漏洩リスクを体系的に低減できる。"
-            }
+            },
+            "caption": "シークレット漏洩防止4層防衛",
+            "alt": "AIコーディングでのシークレット漏洩防止の4層防衛。Layer1: .gitignore・env管理の徹底。Layer2: AIへのコンテキスト制御（secretを渡さない）。Layer3: シークレットスキャナー導入（git-secrets等）。Layer4: CIパイプラインでのSecret Scanning。"
           }
         },
         {
@@ -1027,7 +1731,13 @@
           "category": "japan",
           "published_at": "2026-05-18",
           "lang": "ja",
-          "tags": ["PFN", "ベンチマーク", "LLM", "pretrained", "評価"],
+          "tags": [
+            "PFN",
+            "ベンチマーク",
+            "LLM",
+            "pretrained",
+            "評価"
+          ],
           "scores": {
             "importance": 3,
             "depth": 5,
@@ -1044,21 +1754,57 @@
           ],
           "figure": {
             "type": "comparison",
-            "caption": "ベースモデル vs ファインチューニング済み評価",
-            "alt": "ベースモデルとファインチューニング済みモデルの評価指標の違い。ファインチューニング済みモデルはQA精度・指示追従・有害性判定で評価。ベースモデルはNTP精度・Few-shot能力・文補完精度・言語モデリングスコアで評価。",
             "data": {
               "headline": "ベースモデル評価 vs ファインチューニング済みモデル評価：指標の違い",
-              "before": {"label": "ファインチューニング済み評価", "sublabel": "一般的なLLMベンチマーク"},
-              "after": {"label": "ベースモデル専用評価", "sublabel": "PFNが構築"},
+              "before": {
+                "label": "ファインチューニング済み評価",
+                "sublabel": "一般的なLLMベンチマーク"
+              },
+              "after": {
+                "label": "ベースモデル専用評価",
+                "sublabel": "PFNが構築"
+              },
               "metrics": [
-                {"label": "主要指標", "before": "QA精度・MMLU", "after": "NTP精度・文補完", "before_pct": 80, "after_pct": 70},
-                {"label": "Few-shot", "before": "限定的", "after": "中心評価軸", "before_pct": 30, "after_pct": 80, "delta": "重要度増", "delta_tone": "success"},
-                {"label": "指示追従", "before": "主要評価", "after": "評価対象外", "before_pct": 90, "after_pct": 0, "delta": "除外", "delta_tone": "info"},
-                {"label": "言語モデリング", "before": "補助指標", "after": "中心指標", "before_pct": 20, "after_pct": 90, "delta": "重要度増", "delta_tone": "success"}
+                {
+                  "label": "主要指標",
+                  "before": "QA精度・MMLU",
+                  "after": "NTP精度・文補完",
+                  "before_pct": 80,
+                  "after_pct": 70
+                },
+                {
+                  "label": "Few-shot",
+                  "before": "限定的",
+                  "after": "中心評価軸",
+                  "before_pct": 30,
+                  "after_pct": 80,
+                  "delta": "重要度増",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "指示追従",
+                  "before": "主要評価",
+                  "after": "評価対象外",
+                  "before_pct": 90,
+                  "after_pct": 0,
+                  "delta": "除外",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "言語モデリング",
+                  "before": "補助指標",
+                  "after": "中心指標",
+                  "before_pct": 20,
+                  "after_pct": 90,
+                  "delta": "重要度増",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "ベースモデルはファインチューニング前の状態であり、評価設計も根本的に異なる必要がある。",
               "impact": "ベースモデル評価の標準化により、日本語LLMの事前学習品質を客観的に比較できるようになる。"
-            }
+            },
+            "caption": "ベースモデル vs ファインチューニング済み評価",
+            "alt": "ベースモデルとファインチューニング済みモデルの評価指標の違い。ファインチューニング済みモデルはQA精度・指示追従・有害性判定で評価。ベースモデルはNTP精度・Few-shot能力・文補完精度・言語モデリングスコアで評価。"
           }
         },
         {
@@ -1072,7 +1818,14 @@
           "category": "japan",
           "published_at": "2026-05-18",
           "lang": "ja",
-          "tags": ["LY Corporation", "Codex", "Electron", "AIエージェント", "GUI", "民主化"],
+          "tags": [
+            "LY Corporation",
+            "Codex",
+            "Electron",
+            "AIエージェント",
+            "GUI",
+            "民主化"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -1089,21 +1842,50 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "GUIエージェントの概要",
-            "alt": "LYC Codex×Electron GUIエージェントの概要。入力: 自然言語でのタスク指示。処理: CodexがGUIから操作可能な形でコード生成。対象ユーザー: エンジニア+非エンジニア（PM・デザイナー）。開発経緯: 個人開発→社内正式採用。",
             "data": {
               "headline": "Codex × Electron GUIエージェント：コーディングの民主化を社内実現",
               "tldr": "CLI依存のコーディングエージェントをGUI化し、非エンジニアも使えるツールに。個人開発から社内正式採用への発展事例。",
               "points": [
-                {"icon": "🏗️", "label": "技術スタック", "value": "Codex × Electron", "note": "CLIをGUIでラップ", "tone": "primary"},
-                {"icon": "👥", "label": "対象ユーザー", "value": "全職種", "note": "エンジニア+PM・デザイナー", "tone": "success"},
-                {"icon": "💬", "label": "操作方法", "value": "自然言語指示", "note": "コード知識不要", "tone": "default"},
-                {"icon": "📈", "label": "開発経緯", "value": "個人開発→社内採用", "note": "LY Corporation社内", "tone": "info"},
-                {"icon": "🎯", "label": "狙い", "value": "AIコーディング民主化", "tone": "success"}
+                {
+                  "icon": "🏗️",
+                  "label": "技術スタック",
+                  "value": "Codex × Electron",
+                  "note": "CLIをGUIでラップ",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "👥",
+                  "label": "対象ユーザー",
+                  "value": "全職種",
+                  "note": "エンジニア+PM・デザイナー",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💬",
+                  "label": "操作方法",
+                  "value": "自然言語指示",
+                  "note": "コード知識不要",
+                  "tone": "default"
+                },
+                {
+                  "icon": "📈",
+                  "label": "開発経緯",
+                  "value": "個人開発→社内採用",
+                  "note": "LY Corporation社内",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "狙い",
+                  "value": "AIコーディング民主化",
+                  "tone": "success"
+                }
               ],
               "context": "コーディングエージェントのGUI化により、AI活用の裾野が全職種に広がる可能性がある。",
               "impact": "エンジニア以外の職種でもAIコーディング活用が広がり、組織全体のAI活用度が向上する。"
-            }
+            },
+            "caption": "GUIエージェントの概要",
+            "alt": "LYC Codex×Electron GUIエージェントの概要。入力: 自然言語でのタスク指示。処理: CodexがGUIから操作可能な形でコード生成。対象ユーザー: エンジニア+非エンジニア（PM・デザイナー）。開発経緯: 個人開発→社内正式採用。"
           }
         },
         {
@@ -1117,7 +1899,13 @@
           "category": "japan",
           "published_at": "2026-05-14",
           "lang": "ja",
-          "tags": ["CVPR2026", "モーション生成", "動画AI", "LY Corporation", "コンピュータビジョン"],
+          "tags": [
+            "CVPR2026",
+            "モーション生成",
+            "動画AI",
+            "LY Corporation",
+            "コンピュータビジョン"
+          ],
           "scores": {
             "importance": 3,
             "depth": 5,
@@ -1134,21 +1922,51 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "CVPR2026 モーション生成3分野",
-            "alt": "CVPR 2026のモーション生成採択論文の3分野。1: ヒューマンモーション生成（人体動作生成AI）、2: 動画オブジェクト動作合成（映像内物体の動き合成）、3: リアルタイム動作予測（将来動作の予測）。LY CorporationのリサーチチームがCVPR採択論文を解説。",
             "data": {
               "headline": "CVPR 2026：モーション生成3分野の最先端動向をLYCが解説",
               "tldr": "CVPR 2026のモーション生成採択論文から最先端技術をLY Corporationが日本語で解説。ヒューマン・オブジェクト・リアルタイム予測の3分野をカバー。",
               "points": [
-                {"icon": "🚶", "label": "ヒューマン", "value": "人体動作生成AI", "note": "テキスト→モーション生成等", "tone": "primary"},
-                {"icon": "🎬", "label": "動画合成", "value": "オブジェクト動作", "note": "映像内物体の動き合成", "tone": "default"},
-                {"icon": "⚡", "label": "リアルタイム", "value": "動作予測", "note": "将来動作のリアルタイム推定", "tone": "default"},
-                {"icon": "🏫", "label": "学会", "value": "CVPR 2026", "note": "CV最高峰、2026年6月開催", "tone": "info"},
-                {"icon": "🇯🇵", "label": "解説", "value": "LY Corporationリサーチ", "note": "日本語での最先端解説", "tone": "success"}
+                {
+                  "icon": "🚶",
+                  "label": "ヒューマン",
+                  "value": "人体動作生成AI",
+                  "note": "テキスト→モーション生成等",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🎬",
+                  "label": "動画合成",
+                  "value": "オブジェクト動作",
+                  "note": "映像内物体の動き合成",
+                  "tone": "default"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "リアルタイム",
+                  "value": "動作予測",
+                  "note": "将来動作のリアルタイム推定",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🏫",
+                  "label": "学会",
+                  "value": "CVPR 2026",
+                  "note": "CV最高峰、2026年6月開催",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "解説",
+                  "value": "LY Corporationリサーチ",
+                  "note": "日本語での最先端解説",
+                  "tone": "success"
+                }
               ],
               "context": "CVPR 2026はコンピュータビジョン研究の最高峰であり、採択論文が翌年以降の業界標準になることが多い。",
               "impact": "最先端のモーション生成技術の日本語解説により、国内動画AI開発者の技術レベルが向上する。"
-            }
+            },
+            "caption": "CVPR2026 モーション生成3分野",
+            "alt": "CVPR 2026のモーション生成採択論文の3分野。1: ヒューマンモーション生成（人体動作生成AI）、2: 動画オブジェクト動作合成（映像内物体の動き合成）、3: リアルタイム動作予測（将来動作の予測）。LY CorporationのリサーチチームがCVPR採択論文を解説。"
           }
         }
       ]
@@ -1169,7 +1987,13 @@
           "category": "china",
           "published_at": "2026-05-15",
           "lang": "zh",
-          "tags": ["Alibaba", "Qoder", "coding-agent", "autonomous", "China"],
+          "tags": [
+            "Alibaba",
+            "Qoder",
+            "coding-agent",
+            "autonomous",
+            "China"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -1187,21 +2011,59 @@
           "x_post": "AlibabaのQoder 1.0がAI IDEからエージェント型開発ワークステーションへ進化した。要件定義のみでエージェントチームが実行・検証・デリバリーを自律処理。リリース後にコード保持率+11%・入力トークン-40%を達成したと報告している。\n\nhttps://www.qbitai.com/2026/05/418027.html",
           "figure": {
             "type": "comparison",
-            "caption": "Qoder旧版 vs 1.0",
-            "alt": "Qoder旧版（AIアシスタントIDE）とQoder 1.0（エージェント型ワークステーション）の比較。旧版はユーザーがコードを書きAIが提案。1.0はユーザーが要件定義するだけでエージェントチームが自律実行。コード保持率+11%、入力トークン-40%、対話回数-33%。",
             "data": {
               "headline": "Qoder 旧版 vs 1.0：AIアシスタントからエージェント型ワークステーションへ",
-              "before": {"label": "Qoder旧版", "sublabel": "AIアシスタントIDE"},
-              "after": {"label": "Qoder 1.0", "sublabel": "エージェント型ワークステーション"},
+              "before": {
+                "label": "Qoder旧版",
+                "sublabel": "AIアシスタントIDE"
+              },
+              "after": {
+                "label": "Qoder 1.0",
+                "sublabel": "エージェント型ワークステーション"
+              },
               "metrics": [
-                {"label": "操作スタイル", "before": "ユーザーがコード記述", "after": "要件定義のみ", "before_pct": 50, "after_pct": 95, "delta": "自律度大幅向上", "delta_tone": "success"},
-                {"label": "コード保持率", "before": "基準値", "after": "+11%", "before_pct": 70, "after_pct": 78, "delta": "+11%", "delta_tone": "success"},
-                {"label": "入力トークン", "before": "基準値（100%）", "after": "60%", "before_pct": 100, "after_pct": 60, "delta": "-40%", "delta_tone": "success"},
-                {"label": "対話回数", "before": "基準値（100%）", "after": "67%", "before_pct": 100, "after_pct": 67, "delta": "-33%", "delta_tone": "success"}
+                {
+                  "label": "操作スタイル",
+                  "before": "ユーザーがコード記述",
+                  "after": "要件定義のみ",
+                  "before_pct": 50,
+                  "after_pct": 95,
+                  "delta": "自律度大幅向上",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コード保持率",
+                  "before": "基準値",
+                  "after": "+11%",
+                  "before_pct": 70,
+                  "after_pct": 78,
+                  "delta": "+11%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "入力トークン",
+                  "before": "基準値（100%）",
+                  "after": "60%",
+                  "before_pct": 100,
+                  "after_pct": 60,
+                  "delta": "-40%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "対話回数",
+                  "before": "基準値（100%）",
+                  "after": "67%",
+                  "before_pct": 100,
+                  "after_pct": 67,
+                  "delta": "-33%",
+                  "delta_tone": "success"
+                }
               ],
               "narrative": "要件定義→エージェント自律実行の設計転換により、開発者の認知負荷が大幅に削減された。",
               "impact": "Alibabaが中国国内で500万人規模のユーザー基盤を持つコーディングエージェントを本格進化させ、グローバル競合が加速。"
-            }
+            },
+            "caption": "Qoder旧版 vs 1.0",
+            "alt": "Qoder旧版（AIアシスタントIDE）とQoder 1.0（エージェント型ワークステーション）の比較。旧版はユーザーがコードを書きAIが提案。1.0はユーザーが要件定義するだけでエージェントチームが自律実行。コード保持率+11%、入力トークン-40%、対話回数-33%。"
           }
         },
         {
@@ -1215,7 +2077,14 @@
           "category": "china",
           "published_at": "2026-05-13",
           "lang": "zh",
-          "tags": ["Baidu", "百度", "DAA", "エージェント", "Create2026", "中国"],
+          "tags": [
+            "Baidu",
+            "百度",
+            "DAA",
+            "エージェント",
+            "Create2026",
+            "中国"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1232,40 +2101,112 @@
           ],
           "figure": {
             "type": "summary-card",
-            "caption": "百度Create2026の概要",
-            "alt": "百度Create2026カンファレンスの主要発表。新指標「DAA（日次アクティブエージェント数）」2026年末100億超予測。DuMate（エージェントSOTA）、SecondAI（コードエージェント1000万ユーザー）、Bafu 2.0（意思決定支援）を発表。",
             "data": {
               "headline": "百度Create2026：DAAをエージェント時代の新KPIとして提唱",
               "tldr": "李彦宏CEOが「DAA（日次アクティブエージェント数）」をAIエージェント時代の主要指標として初提唱。2026年末100億超を予測し3製品を同時発表。",
               "points": [
-                {"icon": "📊", "label": "新指標DAA", "value": "100億超（2026年末予測）", "note": "Daily Active Agents", "tone": "primary"},
-                {"icon": "🏆", "label": "DuMate", "value": "エージェントSOTA達成", "note": "ベンチマーク最高水準", "tone": "success"},
-                {"icon": "💻", "label": "SecondAI", "value": "1000万ユーザー", "note": "コードエージェント", "tone": "default"},
-                {"icon": "🧠", "label": "Bafu 2.0", "value": "意思決定支援エージェント", "note": "企業向け", "tone": "default"},
-                {"icon": "🇨🇳", "label": "意義", "value": "中国最大企業がAgent宣言", "note": "業界方向性を示すシグナル", "tone": "info"}
+                {
+                  "icon": "📊",
+                  "label": "新指標DAA",
+                  "value": "100億超（2026年末予測）",
+                  "note": "Daily Active Agents",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "DuMate",
+                  "value": "エージェントSOTA達成",
+                  "note": "ベンチマーク最高水準",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💻",
+                  "label": "SecondAI",
+                  "value": "1000万ユーザー",
+                  "note": "コードエージェント",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🧠",
+                  "label": "Bafu 2.0",
+                  "value": "意思決定支援エージェント",
+                  "note": "企業向け",
+                  "tone": "default"
+                },
+                {
+                  "icon": "🇨🇳",
+                  "label": "意義",
+                  "value": "中国最大企業がAgent宣言",
+                  "note": "業界方向性を示すシグナル",
+                  "tone": "info"
+                }
               ],
               "context": "MAUからDAAへの指標転換は、AIがユーザーの代わりに行動するエージェント経済の到来を象徴している。",
               "impact": "中国AI産業全体がエージェント経済へシフトする方向性が確定し、国内外の競争構図が変わる。"
-            }
+            },
+            "caption": "百度Create2026の概要",
+            "alt": "百度Create2026カンファレンスの主要発表。新指標「DAA（日次アクティブエージェント数）」2026年末100億超予測。DuMate（エージェントSOTA）、SecondAI（コードエージェント1000万ユーザー）、Bafu 2.0（意思決定支援）を発表。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    {"source": "openai_blog", "reason": "HTTP 403 Forbidden"},
-    {"source": "xai_news", "reason": "HTTP 403 Forbidden"},
-    {"source": "the_verge", "reason": "HTTP 403 Forbidden"},
-    {"source": "wired", "reason": "HTTP 403 Forbidden"},
-    {"source": "ars_technica", "reason": "HTTP 403 Forbidden"},
-    {"source": "semantic_scholar_api", "reason": "HTTP 429 Rate Limited"},
-    {"source": "chinai_newsletter", "reason": "HTTP 403 Forbidden"},
-    {"source": "reddit_locallama", "reason": "Direct fetch blocked; search fallback returned no fresh posts"},
-    {"source": "cohere_blog", "reason": "No article listings rendered"},
-    {"source": "elyza_note", "reason": "Only generic page links returned"},
-    {"source": "stockmark_tech", "reason": "Blog appears inactive (last post 2024)"},
-    {"source": "mercari_engineering", "reason": "HTTP 403 Forbidden"},
-    {"source": "cyberagent_ai", "reason": "No posts within 7d window"},
-    {"source": "sakana_ai", "reason": "Posts from 2026-05-09/11 outside 168h window from 2026-05-19"}
+    {
+      "source": "openai_blog",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "xai_news",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "the_verge",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "wired",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "ars_technica",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "semantic_scholar_api",
+      "reason": "HTTP 429 Rate Limited"
+    },
+    {
+      "source": "chinai_newsletter",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "reddit_locallama",
+      "reason": "Direct fetch blocked; search fallback returned no fresh posts"
+    },
+    {
+      "source": "cohere_blog",
+      "reason": "No article listings rendered"
+    },
+    {
+      "source": "elyza_note",
+      "reason": "Only generic page links returned"
+    },
+    {
+      "source": "stockmark_tech",
+      "reason": "Blog appears inactive (last post 2024)"
+    },
+    {
+      "source": "mercari_engineering",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "cyberagent_ai",
+      "reason": "No posts within 7d window"
+    },
+    {
+      "source": "sakana_ai",
+      "reason": "Posts from 2026-05-09/11 outside 168h window from 2026-05-19"
+    }
   ]
 }

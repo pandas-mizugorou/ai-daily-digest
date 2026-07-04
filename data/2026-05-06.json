@@ -36,12 +36,17 @@
             "freshness": 5,
             "total": 19
           },
-          "tags": ["openai", "gpt-5.5", "chatgpt", "model-release", "benchmarks", "hallucination"],
+          "tags": [
+            "openai",
+            "gpt-5.5",
+            "chatgpt",
+            "model-release",
+            "benchmarks",
+            "hallucination"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "GPT-5.3 vs GPT-5.5 Instant",
-            "alt": "GPT-5.5 Instant と GPT-5.3 Instant の比較。AIME 2025 スコア: 65.4 → 81.2（+15.8pt）、MMMU-Pro マルチモーダル推論: 69.2 → 76.0（+6.8pt）に向上。レイテンシは Instant クラスを維持。",
             "data": {
               "headline": "GPT-5.5 Instant: 主要2ベンチマークで前世代を更新、速度は維持",
               "before": {
@@ -89,7 +94,9 @@
               ],
               "narrative": "GPT-5.5 Instant は GPT-5.3 Instant の速度を維持しながら数学・マルチモーダル推論を大幅改善。法律・医療・財務でのハルシネーション削減も明示的な目標として設定された。",
               "impact": "ChatGPT デフォルト変更により全ユーザーが即日恩恵を受ける。API 移行は 3 ヶ月の移行期間を経て GPT-5.3 が廃止となる。"
-            }
+            },
+            "caption": "GPT-5.3 vs GPT-5.5 Instant",
+            "alt": "GPT-5.5 Instant と GPT-5.3 Instant の比較。AIME 2025 スコア: 65.4 → 81.2（+15.8pt）、MMMU-Pro マルチモーダル推論: 69.2 → 76.0（+6.8pt）に向上。レイテンシは Instant クラスを維持。"
           }
         }
       ]
@@ -121,12 +128,18 @@
             "freshness": 5,
             "total": 17
           },
-          "tags": ["anthropic", "claude", "finance", "agents", "mcp", "microsoft-365", "enterprise"],
+          "tags": [
+            "anthropic",
+            "claude",
+            "finance",
+            "agents",
+            "mcp",
+            "microsoft-365",
+            "enterprise"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Anthropic Finance Agents",
-            "alt": "Anthropic Finance Agents の主要指標。Vals AI Finance ベンチマーク業界首位 64.37%（Claude Opus 4.7）、エージェントテンプレート 10 種（KYC・ピッチブック・月次決算等）、新規 MCP コネクタ 8 社（D&B・Moody's・Verisk 他）、採用企業 Citadel・BNY・Carlyle・Mizuho 他 7 社、Excel/PPT/Word アドイン提供中。",
             "data": {
               "headline": "Anthropic Finance Agents: 10テンプレート即日提供、Vals AI首位 64.37%",
               "tldr": "KYC・ピッチブック・決算分析など 10 種エージェントテンプレートと 8 社データコネクタを同時公開。Claude Opus 4.7 が Vals AI Finance ベンチマーク業界首位（64.37%）、Citadel・Mizuho 等 7 社が採用済み。",
@@ -169,7 +182,9 @@
               ],
               "context": "金融フロント・ミドル・バックオフィスを横断するエージェント基盤の整備。Blackstone 等との合弁企業発表（前日 5/4）と並行し、金融特化のサービスレイヤーを加速させている。",
               "impact": "金融機関の AI エージェント導入を Claude で一気通貫で実現できる環境が整った。Mizuho を含む日系金融機関の本番利用拡大が期待される。"
-            }
+            },
+            "caption": "Anthropic Finance Agents",
+            "alt": "Anthropic Finance Agents の主要指標。Vals AI Finance ベンチマーク業界首位 64.37%（Claude Opus 4.7）、エージェントテンプレート 10 種（KYC・ピッチブック・月次決算等）、新規 MCP コネクタ 8 社（D&B・Moody's・Verisk 他）、採用企業 Citadel・BNY・Carlyle・Mizuho 他 7 社、Excel/PPT/Word アドイン提供中。"
           }
         },
         {
@@ -193,12 +208,19 @@
             "freshness": 5,
             "total": 17
           },
-          "tags": ["google", "gemma-4", "inference", "speculative-decoding", "multi-token-prediction", "ollama", "vllm", "open-source"],
+          "tags": [
+            "google",
+            "gemma-4",
+            "inference",
+            "speculative-decoding",
+            "multi-token-prediction",
+            "ollama",
+            "vllm",
+            "open-source"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "Gemma 4 推論高速化",
-            "alt": "Gemma 4 マルチトークン予測ドラフター導入前後のスループット比較。最大高速化: 1.0x → 3.0x（+3倍）。NVIDIA A100 実測: 1.0x → 2.2x（+2.2倍）。出力品質は劣化なし（ターゲットモデルが最終検証するため）。Apache 2.0、Ollama・vLLM 等で即日利用可能。",
             "data": {
               "headline": "Gemma 4 MTP: 投機的デコーディングで最大3倍スループット向上",
               "before": {
@@ -246,7 +268,9 @@
               ],
               "narrative": "KV キャッシュ共有設計により推論コスト増加を最小化しながらスループットを大幅改善。Ollama など既存ローカル LLM 環境に設定追加のみで導入できる。",
               "impact": "Ollama・vLLM で Gemma 4 を運用中のユーザーは設定変更のみで 2〜3x のスピードアップが得られ、ローカル LLM 運用コストの実質削減に直結する。"
-            }
+            },
+            "caption": "Gemma 4 推論高速化",
+            "alt": "Gemma 4 マルチトークン予測ドラフター導入前後のスループット比較。最大高速化: 1.0x → 3.0x（+3倍）。NVIDIA A100 実測: 1.0x → 2.2x（+2.2倍）。出力品質は劣化なし（ターゲットモデルが最終検証するため）。Apache 2.0、Ollama・vLLM 等で即日利用可能。"
           }
         }
       ]
@@ -278,12 +302,18 @@
             "freshness": 5,
             "total": 14
           },
-          "tags": ["google", "chrome", "gemini-nano", "privacy", "gdpr", "on-device-ai", "eu-regulation"],
+          "tags": [
+            "google",
+            "chrome",
+            "gemini-nano",
+            "privacy",
+            "gdpr",
+            "on-device-ai",
+            "eu-regulation"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Chrome Gemini Nano 問題",
-            "alt": "Google Chrome Gemini Nano サイレントインストール問題のサマリー。モデル: Gemini Nano 約 4GB（ファイル: OptGuideOnDeviceModel/weights.bin）、HN ポイント: 1,171pt（大炎上）、推定対象: 1〜10 億台、CO2 排出試算: 6,000〜60,000 トン、回避方法: Chrome 詳細設定で AI 機能を無効化（削除しても自動復元されるため）。",
             "data": {
               "headline": "Chrome Gemini Nano: 4GB サイレントインストール、EU規制・環境コストに懸念",
               "tldr": "Google Chrome が同意なく Gemini Nano（4GB）をインストール。削除しても自動復元。HN 1,171pt の炎上に発展し、EU GDPR との整合性問題と大規模展開の CO2 コストが浮上。",
@@ -326,7 +356,9 @@
               ],
               "context": "on-device AI の普及に伴い同意フローとプライバシー設計が問われる先例。ブラウザベンダーがモデルをプリインストールする慣行が今後の規制論議を左右する可能性がある。",
               "impact": "Chrome ユーザーはストレージと通信帯域を消費する。企業の端末管理ポリシー（MDM）や EU 拠点のサービスでは法的リスクの確認が必要。"
-            }
+            },
+            "caption": "Chrome Gemini Nano 問題",
+            "alt": "Google Chrome Gemini Nano サイレントインストール問題のサマリー。モデル: Gemini Nano 約 4GB（ファイル: OptGuideOnDeviceModel/weights.bin）、HN ポイント: 1,171pt（大炎上）、推定対象: 1〜10 億台、CO2 排出試算: 6,000〜60,000 トン、回避方法: Chrome 詳細設定で AI 機能を無効化（削除しても自動復元されるため）。"
           }
         }
       ]
@@ -357,12 +389,17 @@
             "freshness": 2,
             "total": 15
           },
-          "tags": ["claude-code", "learning", "tutorial", "guide", "japan", "hatena-966"],
+          "tags": [
+            "claude-code",
+            "learning",
+            "tutorial",
+            "guide",
+            "japan",
+            "hatena-966"
+          ],
           "lang": "ja",
           "figure": {
             "type": "timeline",
-            "caption": "Claude Code 習得ロードマップ",
-            "alt": "Claude Code 習得ロードマップの 5 段階。Step 1-2: 動機・コンセプト理解（非エンジニア向け）、Step 3-5: セットアップと最適化（VS Code/Cursor 設定・ショートカット）、Step 6-9: 実践活用（自動化・Web サービス・スライド制作）、Step 10-12: AI トレーニング手法、Step 13-14: GitHub ワークフローを使ったチーム・組織展開。はてブ 966 件獲得のガイド記事。",
             "data": {
               "headline": "Claude Code 習得ロードマップ: 非エンジニア入門→チーム展開 14ステップ",
               "events": [
@@ -404,7 +441,9 @@
               ],
               "narrative": "GW に一気読みする想定で 14 ステップが構成。個人の入門から組織導入ガバナンスまでを 1 記事でカバーし、はてブ 966 件という圧倒的な反響を得た。",
               "impact": "Claude Code 初学者が段階的に進める際の共通フレームワークとなりつつある。非エンジニアへの普及加速と組織導入の参考事例として機能している。"
-            }
+            },
+            "caption": "Claude Code 習得ロードマップ",
+            "alt": "Claude Code 習得ロードマップの 5 段階。Step 1-2: 動機・コンセプト理解（非エンジニア向け）、Step 3-5: セットアップと最適化（VS Code/Cursor 設定・ショートカット）、Step 6-9: 実践活用（自動化・Web サービス・スライド制作）、Step 10-12: AI トレーニング手法、Step 13-14: GitHub ワークフローを使ったチーム・組織展開。はてブ 966 件獲得のガイド記事。"
           }
         },
         {
@@ -429,12 +468,17 @@
             "freshness": 4,
             "total": 17
           },
-          "tags": ["claude-code", "webfetch", "haiku", "technical-analysis", "japan", "hatena-170"],
+          "tags": [
+            "claude-code",
+            "webfetch",
+            "haiku",
+            "technical-analysis",
+            "japan",
+            "hatena-170"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "WebFetch 内部構造",
-            "alt": "Claude Code WebFetch の内部処理フロー。まず Claude Haiku がページを要約し（HTTP 上限 10MiB、Markdown 変換後 1MiB、Haiku 処理後 100,000 文字の 3 段階トランケーション）、その要約だけが主エージェント（Opus/Sonnet）に渡る。著作権保護で逐語引用は 125 文字に制限。スキップ条件は信頼済み 80+ ドメイン等 3 条件のみ。",
             "data": {
               "headline": "Claude Code WebFetch 内部構造: Haiku 要約レイヤーが情報を劣化させる",
               "tldr": "WebFetch は Claude Haiku がページを事前要約し、その結果のみが主エージェントに渡る。3 段階のトランケーションと 125 字の逐語引用制限があり、フルテキスト取得には不向き。",
@@ -484,7 +528,9 @@
               ],
               "context": "Claude Code ユーザーが期待する動作と実装の乖離を技術的に解明した記事。実装ログとソースコード調査をもとに内部構造を特定した。",
               "impact": "WebFetch でスクレイピングや全文取得を期待する実装は見直しが必要。Firecrawl 等の専用ツールや API 直呼び出しへの切り替えを検討すること。"
-            }
+            },
+            "caption": "WebFetch 内部構造",
+            "alt": "Claude Code WebFetch の内部処理フロー。まず Claude Haiku がページを要約し（HTTP 上限 10MiB、Markdown 変換後 1MiB、Haiku 処理後 100,000 文字の 3 段階トランケーション）、その要約だけが主エージェント（Opus/Sonnet）に渡る。著作権保護で逐語引用は 125 文字に制限。スキップ条件は信頼済み 80+ ドメイン等 3 条件のみ。"
           }
         },
         {
@@ -508,12 +554,18 @@
             "freshness": 4,
             "total": 16
           },
-          "tags": ["gemma-4", "google", "local-llm", "japanese", "ollama", "japan", "hatena-446"],
+          "tags": [
+            "gemma-4",
+            "google",
+            "local-llm",
+            "japanese",
+            "ollama",
+            "japan",
+            "hatena-446"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "Gemma 4 日本語評価",
-            "alt": "Gemma 4 日本語能力評価のサマリー。Gizmodo Japan はてブ 446 件獲得。日本語精度: ローカル LLM 最上位評価、コスト: 無料（Ollama 等で動作）、高速化オプション: MTP ドラフター導入で最大 3x（本日公開）、動作環境: コンシューマー GPU（4bit 量子化版）。無料のローカル日本語 AI として個人開発者から高評価。",
             "data": {
               "headline": "Gemma 4: 日本語うますぎ・無料・ローカル・Claude代替として急浮上",
               "tldr": "Google Gemma 4 がローカル実行可能な LLM として日本語能力と無料提供で注目。Gizmodo Japan のレビューがはてブ 446 件を獲得。MTP ドラフター（本日公開）との組合せで最大 3x 高速化も実現。",
@@ -556,7 +608,9 @@
               ],
               "context": "Google Gemma 4 は4月末にリリースされ、日本語コミュニティで急速に普及。本日発表の MTP 推論高速化と合わせ、無料ローカル LLM の選択肢として急浮上している。",
               "impact": "API コストを抑えつつ日本語 AI を活用したい個人開発者にとって最有力候補。企業のオンプレ AI 実装においても有力な選択肢となりうる。"
-            }
+            },
+            "caption": "Gemma 4 日本語評価",
+            "alt": "Gemma 4 日本語能力評価のサマリー。Gizmodo Japan はてブ 446 件獲得。日本語精度: ローカル LLM 最上位評価、コスト: 無料（Ollama 等で動作）、高速化オプション: MTP ドラフター導入で最大 3x（本日公開）、動作環境: コンシューマー GPU（4bit 量子化版）。無料のローカル日本語 AI として個人開発者から高評価。"
           }
         }
       ]

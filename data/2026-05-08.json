@@ -36,12 +36,18 @@
             "freshness": 4,
             "total": 17
           },
-          "tags": ["claude", "agents", "memory", "dreaming", "managed-agents", "anthropic", "self-improvement"],
+          "tags": [
+            "claude",
+            "agents",
+            "memory",
+            "dreaming",
+            "managed-agents",
+            "anthropic",
+            "self-improvement"
+          ],
           "lang": "en",
           "figure": {
             "type": "timeline",
-            "caption": "Claude Managed Agents 3機能",
-            "alt": "Claude Managed Agents の2026年5月6日発表で追加・昇格した3機能。Memory（既存GA）：エージェントが作業中に学んだことを記憶ストアに保存し次セッションで参照。Outcomes（公開ベータ昇格）：グレーダーエージェントが理想アウトプットと比較しタスク成功率を最大10ポイント向上。Multi-agent orchestration（公開ベータ昇格）：リードエージェントがサブエージェントに複雑タスクを委任し全プロセスを可視化。Dreams（リサーチプレビュー）：複数セッション・エージェントを横断して記憶を整理・最適化し自己改善を実現、アクセスリクエスト必要。",
             "data": {
               "headline": "Claude Managed Agents: Memory → Outcomes / Multi-agent → Dreams の自己改善ループ",
               "events": [
@@ -76,7 +82,9 @@
               ],
               "narrative": "Memory で各エージェントが文脈を保持し、Outcomes で品質を評価し、Dreams でセッション横断の改善ループを回す3層構造。エージェントシステムが「自己改善する組織」へと進化する設計思想が具体化した。",
               "impact": "複数エージェントで長期タスクを運用する開発者は Dreams の申請を優先すること。Outcomes と Multi-agent は今すぐ本番ベータで利用できる。"
-            }
+            },
+            "caption": "Claude Managed Agents 3機能",
+            "alt": "Claude Managed Agents の2026年5月6日発表で追加・昇格した3機能。Memory（既存GA）：エージェントが作業中に学んだことを記憶ストアに保存し次セッションで参照。Outcomes（公開ベータ昇格）：グレーダーエージェントが理想アウトプットと比較しタスク成功率を最大10ポイント向上。Multi-agent orchestration（公開ベータ昇格）：リードエージェントがサブエージェントに複雑タスクを委任し全プロセスを可視化。Dreams（リサーチプレビュー）：複数セッション・エージェントを横断して記憶を整理・最適化し自己改善を実現、アクセスリクエスト必要。"
           }
         }
       ]
@@ -108,12 +116,17 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["interpretability", "safety", "anthropic", "research", "mechanistic-interpretability", "alignment"],
+          "tags": [
+            "interpretability",
+            "safety",
+            "anthropic",
+            "research",
+            "mechanistic-interpretability",
+            "alignment"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "NLA なし vs あり：安全性監査精度",
-            "alt": "Natural Language Autoencoders（NLA）の有無による安全性監査精度の比較。NLA なし：隠れた目標の発見率 3% 未満、安全性疑念の検出不可能、モデルの内部状態は不透明なベクトルのまま。NLA あり：隠れた目標の発見率 12〜15%、ベンチマーク問題での安全性評価疑念を 26% で検出、活性化状態を人間が読めるテキストに変換して主題パターン分析が可能。ただし幻覚リスクと高計算コストの制約あり。",
             "data": {
               "headline": "Natural Language Autoencoders: NLA 監査で隠れた目標の発見率が 3% → 12-15% に向上",
               "before": {
@@ -172,7 +185,9 @@
               ],
               "narrative": "NLA は「モデルが発言しないことをモデルが知っている」状態を可視化する初めての実用的手法として、AI セーフティ研究に新しいアプローチをもたらした。",
               "impact": "AI セーフティ・コンプライアンス担当者は NLA アプローチを監査ツールとして注目すべき。汎用利用は計算コストの課題が残るが、高リスクシナリオでの適用価値は高い。"
-            }
+            },
+            "caption": "NLA なし vs あり：安全性監査精度",
+            "alt": "Natural Language Autoencoders（NLA）の有無による安全性監査精度の比較。NLA なし：隠れた目標の発見率 3% 未満、安全性疑念の検出不可能、モデルの内部状態は不透明なベクトルのまま。NLA あり：隠れた目標の発見率 12〜15%、ベンチマーク問題での安全性評価疑念を 26% で検出、活性化状態を人間が読めるテキストに変換して主題パターン分析が可能。ただし幻覚リスクと高計算コストの制約あり。"
           }
         }
       ]
@@ -204,12 +219,18 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["open-weight", "moe", "xiaomi", "swe-bench", "long-context", "model-release", "huggingface"],
+          "tags": [
+            "open-weight",
+            "moe",
+            "xiaomi",
+            "swe-bench",
+            "long-context",
+            "model-release",
+            "huggingface"
+          ],
           "lang": "en",
           "figure": {
             "type": "metric-bars",
-            "caption": "MiMo-V2.5-Pro ベンチマーク",
-            "alt": "XiaomiMiMo MiMo-V2.5-Pro の主要ベンチマーク結果。GSM8K（数学推論）99.6%、MMLU（知識・理解）89.4%、SWE-Bench Verified（ソフトウェアエンジニアリング）78.9%、HumanEval+（コード生成）75.6%。1.02T 総パラメータ・42B アクティブパラメータの MoE 構成、100 万トークンコンテキスト対応。",
             "data": {
               "headline": "MiMo-V2.5-Pro（1T MoE オープン）: GSM8K 99.6% / SWE-Bench 78.9% を記録",
               "scale": {
@@ -252,7 +273,9 @@
               ],
               "narrative": "1T 総パラメータ（アクティブ 42B）の MoE 設計と MTP による 3x 推論高速化が組み合わさり、オープンウェイトで SWE-Bench 78.9% という高い実用性能を実現している。",
               "impact": "SGLang/vLLM で動作するオープンウェイトモデルとして、ソフトウェアエンジニアリングタスクの自動化を検討するチームは早期に評価する価値がある。"
-            }
+            },
+            "caption": "MiMo-V2.5-Pro ベンチマーク",
+            "alt": "XiaomiMiMo MiMo-V2.5-Pro の主要ベンチマーク結果。GSM8K（数学推論）99.6%、MMLU（知識・理解）89.4%、SWE-Bench Verified（ソフトウェアエンジニアリング）78.9%、HumanEval+（コード生成）75.6%。1.02T 総パラメータ・42B アクティブパラメータの MoE 構成、100 万トークンコンテキスト対応。"
           }
         }
       ]
@@ -283,12 +306,17 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["cognitive-debt", "technical-debt", "ai-coding", "software-engineering", "japan", "hatena-546"],
+          "tags": [
+            "cognitive-debt",
+            "technical-debt",
+            "ai-coding",
+            "software-engineering",
+            "japan",
+            "hatena-546"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "AI コーディング 3 層の負債",
-            "alt": "AI 生成コードが生む 3 層の負債の構造。①技術的負債：コード品質の問題（従来から存在）。②認知負債：誰もシステム全体の設計意図や動作原理を説明できない状態（AI コーディングで急増）。③意図負債：なぜそう設計されたかの文脈が失われる状態（AI が理由を残さない）。核心問題：AI ツールで速く書けてもチームの理解がボトルネックになる逆説。はてブ 546 件、Margaret-Anne Storey らのフレームワークを kawasima 氏が整理。",
             "data": {
               "headline": "認知負債：AI 生成コードで「誰もシステムを説明できない」状態が蓄積する構造",
               "tldr": "AI コーディングが技術的負債・認知負債・意図負債の 3 層を同時蓄積する。速く書けるようになる一方でチームの理解がボトルネック化する逆説は、レガシーシステムの問題と構造的に同じだ。",
@@ -336,7 +364,9 @@
               ],
               "context": "Hacker News での盛り上がりを受けて kawasima 氏が整理・公開。はてブ 546 件という数字は、日本の開発者コミュニティでこの問題への関心と危機感が広く共有されていることを示している。",
               "impact": "AI コーディングツールを本番展開するチームはコードレビューのガイドラインに「説明責任の要求」を明示的に追加すること。CLAUDE.md や ADR（Architecture Decision Records）の整備が認知負債対策の実践的な第一歩となる。"
-            }
+            },
+            "caption": "AI コーディング 3 層の負債",
+            "alt": "AI 生成コードが生む 3 層の負債の構造。①技術的負債：コード品質の問題（従来から存在）。②認知負債：誰もシステム全体の設計意図や動作原理を説明できない状態（AI コーディングで急増）。③意図負債：なぜそう設計されたかの文脈が失われる状態（AI が理由を残さない）。核心問題：AI ツールで速く書けてもチームの理解がボトルネックになる逆説。はてブ 546 件、Margaret-Anne Storey らのフレームワークを kawasima 氏が整理。"
           }
         },
         {
@@ -361,12 +391,19 @@
             "freshness": 5,
             "total": 19
           },
-          "tags": ["aws", "mcp", "ai-agents", "claude-code", "iam", "enterprise", "japan", "hatena-107"],
+          "tags": [
+            "aws",
+            "mcp",
+            "ai-agents",
+            "claude-code",
+            "iam",
+            "enterprise",
+            "japan",
+            "hatena-107"
+          ],
           "lang": "ja",
           "figure": {
             "type": "comparison",
-            "caption": "AWS MCP Server: Preview → GA",
-            "alt": "AWS MCP Server のプレビューから GA への変更点比較。Preview: 2 つの分離したローカルサーバー構成、CLI ベースの API 実行、標準 IAM のみ、Python サンドボックスなし、限定リージョン。GA: 単一マネージドリモートエンドポイント、1.5 万件超の AWS API 操作対応（call_aws）、IAM コンテキストキーでエージェント/人間の操作を区別、ネットワーク分離 Python サンドボックス（run_script）、US East・EU Frankfurt で提供、追加料金なし。",
             "data": {
               "headline": "AWS MCP Server GA: 2サーバー分割 → 単一エンドポイント＋1.5万API＋IAMコンテキストキー",
               "before": {
@@ -436,7 +473,9 @@
               ],
               "narrative": "Preview から GA への移行で、エンタープライズ要件（監査証跡・細粒度権限・Python自動化）がすべて揃い、AI エージェント駆動の AWS 自動化が実用段階に入った。",
               "impact": "Claude Code 等でAWSを操作する開発者は今すぐ AWS MCP Server GA への移行を検討すること。IAMコンテキストキーを活用した最小権限ロールの設計が本番運用の最初の要件となる。"
-            }
+            },
+            "caption": "AWS MCP Server: Preview → GA",
+            "alt": "AWS MCP Server のプレビューから GA への変更点比較。Preview: 2 つの分離したローカルサーバー構成、CLI ベースの API 実行、標準 IAM のみ、Python サンドボックスなし、限定リージョン。GA: 単一マネージドリモートエンドポイント、1.5 万件超の AWS API 操作対応（call_aws）、IAM コンテキストキーでエージェント/人間の操作を区別、ネットワーク分離 Python サンドボックス（run_script）、US East・EU Frankfurt で提供、追加料金なし。"
           }
         },
         {
@@ -460,12 +499,20 @@
             "freshness": 4,
             "total": 16
           },
-          "tags": ["gemma4", "qwen", "local-llm", "fine-tuning", "lora", "colab", "japan", "hatena-58", "japanese-llm"],
+          "tags": [
+            "gemma4",
+            "qwen",
+            "local-llm",
+            "fine-tuning",
+            "lora",
+            "colab",
+            "japan",
+            "hatena-58",
+            "japanese-llm"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "Gemma 4 LoRA 実践まとめ",
-            "alt": "Gemma 4 E4B のローカル LoRA ファインチューニング実践結果。選定理由：Apache 2.0 ライセンス・Colab T4（無料）対応・Unsloth サポート・Qwen のウェイト非公開化への代替。日本語性能：JCommonsenseQA 96.51%（Qwen 3.5: 96.16% とほぼ同等）。LoRA 設定：パラメータ修正 0.23%・60ステップで損失 10.52→7.29・処理時間 15〜20分。使い分け：ファインチューニング（文体・応答パターン調整）vs RAG（動的知識）。",
             "data": {
               "headline": "Gemma 4 E4B LoRA: 0.23% のパラメータ変更で 15 分・無料 GPU でファインチューニング完結",
               "tldr": "Qwen のウェイト非公開化を契機に Gemma 4 へ切り替え。Colab T4（無料 16GB）と Unsloth で LoRA チューニングが 15〜20 分で完了し、日本語性能は Qwen と同等水準を確認。",
@@ -505,7 +552,9 @@
               ],
               "context": "Qwen の商用化シフトを背景にオープンウェイト LLM の選定基準が変わりつつある。Gemma 4 の Apache 2.0 ライセンスと Google の継続支援は、長期的な依存リスクを低減する観点で重要な選定条件となっている。",
               "impact": "ローカル LLM の fine-tuning を試したい開発者は Gemma 4 E4B + Unsloth + Colab T4 の組み合わせをまず試すこと。GPU なし・費用ゼロで 20 分以内に完了できる最も手軽な実践経路として確立しつつある。"
-            }
+            },
+            "caption": "Gemma 4 LoRA 実践まとめ",
+            "alt": "Gemma 4 E4B のローカル LoRA ファインチューニング実践結果。選定理由：Apache 2.0 ライセンス・Colab T4（無料）対応・Unsloth サポート・Qwen のウェイト非公開化への代替。日本語性能：JCommonsenseQA 96.51%（Qwen 3.5: 96.16% とほぼ同等）。LoRA 設定：パラメータ修正 0.23%・60ステップで損失 10.52→7.29・処理時間 15〜20分。使い分け：ファインチューニング（文体・応答パターン調整）vs RAG（動的知識）。"
           }
         },
         {
@@ -529,12 +578,19 @@
             "freshness": 4,
             "total": 12
           },
-          "tags": ["grok", "xai", "chatgpt", "claude", "market", "ai-industry", "japan", "hatena-91"],
+          "tags": [
+            "grok",
+            "xai",
+            "chatgpt",
+            "claude",
+            "market",
+            "ai-industry",
+            "japan",
+            "hatena-91"
+          ],
           "lang": "ja",
           "figure": {
             "type": "summary-card",
-            "caption": "AI チャットボット市場動向",
-            "alt": "AI チャットボット市場の2026年5月時点の勢力図。ChatGPT: 堅調成長継続・安定したエコシステム。Claude: 成長継続・API/エージェント実用性が高評価。Grok: 2025年末ピークから減少傾向・X統合は差別化として限定的。xAI 対応策: 5月15日に旧モデル廃止・grok-4.3（推論）とgrok-4.20（非推論）の2本柱に集約。",
             "data": {
               "headline": "AI チャットボット三者競争：ChatGPT・Claude 成長 vs Grok 減少——xAI は 5/15 旧モデル廃止で立て直し",
               "tldr": "ChatGPT と Claude が堅調成長を続ける中、Grok は 2025 年末からのユーザー数減少傾向が報告される。xAI は旧モデルを廃止し grok-4.3 と grok-4.20 の 2 本柱へ集約することで品質集中戦略を進める。",
@@ -577,7 +633,9 @@
               ],
               "context": "Grok は X の統合とリアルタイム情報取得を差別化として打ち出したが、ChatGPT のエコシステムと Claude のエンタープライズ実用性の前に市場浸透が鈍化している。xAI のモデル整理は品質集中化への戦略的転換を示す。",
               "impact": "xAI の API を利用している開発者は 5 月 15 日の旧モデル廃止前に grok-4.3（推論）または grok-4.20-non-reasoning への移行が必要。grok-4-1-fast 系を使用中のシステムは特に急ぎ対応を。"
-            }
+            },
+            "caption": "AI チャットボット市場動向",
+            "alt": "AI チャットボット市場の2026年5月時点の勢力図。ChatGPT: 堅調成長継続・安定したエコシステム。Claude: 成長継続・API/エージェント実用性が高評価。Grok: 2025年末ピークから減少傾向・X統合は差別化として限定的。xAI 対応策: 5月15日に旧モデル廃止・grok-4.3（推論）とgrok-4.20（非推論）の2本柱に集約。"
           }
         }
       ]

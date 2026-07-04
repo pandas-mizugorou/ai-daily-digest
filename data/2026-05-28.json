@@ -76,8 +76,18 @@
             "MiniCPMシリーズ第5世代、エッジAIの実用性向上",
             "モバイル・組み込みデバイスでのLLM活用を加速"
           ],
-          "tags": ["on-device", "compact-model", "1B", "edge-ai", "text-generation"],
-          "reaction_signal": {"kind": "hf_trending", "downloads": 2410, "likes": 400},
+          "tags": [
+            "on-device",
+            "compact-model",
+            "1B",
+            "edge-ai",
+            "text-generation"
+          ],
+          "reaction_signal": {
+            "kind": "hf_trending",
+            "downloads": 2410,
+            "likes": 400
+          },
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -88,13 +98,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "MiniCPM5-1B 特徴",
-              "metrics": [
-                {"label": "パラメータ数", "value": "1B", "note": "超小型"},
-                {"label": "HFダウンロード", "value": "2.4k+", "note": "2日間"},
-                {"label": "HFいいね", "value": "400+", "note": "コミュニティ支持"},
-                {"label": "用途", "value": "オンデバイス", "note": "Edge AI"}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           }
         },
@@ -116,7 +122,13 @@
             "Meta AI・Qualcomm研究者による産業界主導の研究",
             "オンデバイスMoEとしてモバイルLLMの効率化ロードマップを示す"
           ],
-          "tags": ["MoE", "on-device", "mobile-llm", "inference-efficiency", "smartphones"],
+          "tags": [
+            "MoE",
+            "on-device",
+            "mobile-llm",
+            "inference-efficiency",
+            "smartphones"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -127,13 +139,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "MobileMoE 効率化指標",
-              "metrics": [
-                {"label": "FLOPs削減", "value": "2〜4倍", "note": "密モデル比"},
-                {"label": "実行環境", "value": "Galaxy S24等", "note": "一般スマートフォン"},
-                {"label": "著者所属", "value": "Meta AI / Qualcomm", "note": "産業界主導"},
-                {"label": "公開日", "value": "2026-05-27", "note": "arXiv"}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           }
         },
@@ -155,7 +163,14 @@
             "快手（Keling動画生成サービスの親会社）の基盤モデル進化",
             "中国AI産業での動画AI開発競争の激化を示す"
           ],
-          "tags": ["multimodal", "video-ai", "DSA", "Kuaishou", "Keye", "chinese-ai"],
+          "tags": [
+            "multimodal",
+            "video-ai",
+            "DSA",
+            "Kuaishou",
+            "Keye",
+            "chinese-ai"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -166,12 +181,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Keye 2.0 概要",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "開発元：快手（Kuaishou）",
-                "新機能：DSA注意力機構の統合",
-                "対象：動画理解・生成の両タスク",
-                "意義：中国動画AI競争の新局面"
+                {
+                  "label": "",
+                  "value": "開発元：快手（Kuaishou）"
+                },
+                {
+                  "label": "",
+                  "value": "新機能：DSA注意力機構の統合"
+                },
+                {
+                  "label": "",
+                  "value": "対象：動画理解・生成の両タスク"
+                },
+                {
+                  "label": "",
+                  "value": "意義：中国動画AI競争の新局面"
+                }
               ]
             }
           }
@@ -201,8 +229,18 @@
             "プラグインでSkills・Hooks・Subagents・MCPを1ユニットにバンドル",
             "HN 332ptで開発者コミュニティの高い関心を獲得"
           ],
-          "tags": ["claude-code", "MCP", "skills", "subagents", "plugins", "developer-tools"],
-          "reaction_signal": {"kind": "hn", "points": 332},
+          "tags": [
+            "claude-code",
+            "MCP",
+            "skills",
+            "subagents",
+            "plugins",
+            "developer-tools"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 332
+          },
           "scores": {
             "importance": 3,
             "depth": 5,
@@ -213,13 +251,29 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Claude Code 5層アーキテクチャ",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "Layer 1: CLAUDE.md — プロジェクトルール・コンテキスト定義",
-                "Layer 2: MCP Servers — 外部ツール・データへの認証アクセス",
-                "Layer 3: Skills — 再利用可能なワークフロー（Markdownファイル）",
-                "Layer 4: Hooks — イベント駆動の自動化・安全チェック",
-                "Layer 5: Subagents — 独立した調査・レビュー用サブエージェント"
+                {
+                  "label": "",
+                  "value": "Layer 1: CLAUDE.md — プロジェクトルール・コンテキスト定義"
+                },
+                {
+                  "label": "",
+                  "value": "Layer 2: MCP Servers — 外部ツール・データへの認証アクセス"
+                },
+                {
+                  "label": "",
+                  "value": "Layer 3: Skills — 再利用可能なワークフロー（Markdownファイル）"
+                },
+                {
+                  "label": "",
+                  "value": "Layer 4: Hooks — イベント駆動の自動化・安全チェック"
+                },
+                {
+                  "label": "",
+                  "value": "Layer 5: Subagents — 独立した調査・レビュー用サブエージェント"
+                }
               ]
             }
           }
@@ -242,8 +296,18 @@
             "Skills・Hooks・Subagents・MCPをワンパッケージ化",
             "コード不要でナレッジワーカーのClaude活用を強化"
           ],
-          "tags": ["claude", "plugins", "knowledge-work", "open-source", "anthropic", "MCP"],
-          "reaction_signal": {"kind": "github_trending", "stars": 17218},
+          "tags": [
+            "claude",
+            "plugins",
+            "knowledge-work",
+            "open-source",
+            "anthropic",
+            "MCP"
+          ],
+          "reaction_signal": {
+            "kind": "github_trending",
+            "stars": 17218
+          },
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -254,12 +318,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "knowledge-work-plugins 概要",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "公開元：Anthropic（公式オープンソース）",
-                "スター数：17,200+ (GitHubトレンド)",
-                "収録内容：ドキュメント作成・会議録・調査レポート等",
-                "導入方法：コード不要、プラグイン設定ファイルのみ"
+                {
+                  "label": "",
+                  "value": "公開元：Anthropic（公式オープンソース）"
+                },
+                {
+                  "label": "",
+                  "value": "スター数：17,200+ (GitHubトレンド)"
+                },
+                {
+                  "label": "",
+                  "value": "収録内容：ドキュメント作成・会議録・調査レポート等"
+                },
+                {
+                  "label": "",
+                  "value": "導入方法：コード不要、プラグイン設定ファイルのみ"
+                }
               ]
             }
           }
@@ -282,8 +359,17 @@
             "GitHub microsoft/SkillOpt (1,150+ stars)でOSS公開済み",
             "HF Papers 181 upvotesで研究者から高い注目"
           ],
-          "tags": ["agents", "skill-optimization", "microsoft-research", "LLM-agents", "text-space"],
-          "reaction_signal": {"kind": "hf_papers", "upvotes": 181},
+          "tags": [
+            "agents",
+            "skill-optimization",
+            "microsoft-research",
+            "LLM-agents",
+            "text-space"
+          ],
+          "reaction_signal": {
+            "kind": "hf_papers",
+            "upvotes": 181
+          },
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -294,9 +380,14 @@
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "SkillOpt vs 勾配ベース手法",
-              "left": {"label": "勾配ベース手法", "points": ["デプロイ時オーバーヘッド大", "安定性に課題", "外部状態管理困難"]},
-              "right": {"label": "SkillOpt", "points": ["ゼロデプロイオーバーヘッド", "安定的な更新", "テキスト空間で管理容易"]}
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         }
@@ -325,7 +416,13 @@
             "静的スキルライブラリ超え：動的スキル競合解決と評価を実装",
             "マルチエージェント間でのスキル共有により集団的知識進化"
           ],
-          "tags": ["agents", "self-evolving", "skill-management", "multi-agent", "LLM"],
+          "tags": [
+            "agents",
+            "self-evolving",
+            "skill-management",
+            "multi-agent",
+            "LLM"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -336,13 +433,8 @@
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "MUSE-Autoskill スキルライフサイクル",
-              "steps": [
-                {"step": "1. 作成", "desc": "タスク実行中に新スキルを自動生成"},
-                {"step": "2. 記憶", "desc": "成功パターンをスキルメモリに保存"},
-                {"step": "3. 管理", "desc": "競合・重複スキルを解決・整理"},
-                {"step": "4. 評価", "desc": "スキル品質を継続的に評価・改善"}
-              ]
+              "headline": "",
+              "events": []
             }
           }
         },
@@ -364,8 +456,16 @@
             "人間-AIフィードバックループで研究品質を反復改善",
             "完全自律と人間監督を組み合わせた実用的マルチエージェント設計"
           ],
-          "tags": ["multi-agent", "research-automation", "human-AI-collaboration", "scientific-discovery"],
-          "reaction_signal": {"kind": "hf_papers", "upvotes": 182},
+          "tags": [
+            "multi-agent",
+            "research-automation",
+            "human-AI-collaboration",
+            "scientific-discovery"
+          ],
+          "reaction_signal": {
+            "kind": "hf_papers",
+            "upvotes": 182
+          },
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -376,12 +476,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "AutoResearchClaw 5コア機能",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "構造化ディベート：複数エージェントが異なる視点で研究を検証",
-                "自己修復実行：エラー時に自動で計画を修正・再試行",
-                "検証可能レポート：出力の根拠・ソースを追跡可能",
-                "進化学習：過去の研究経験から継続的に能力を向上"
+                {
+                  "label": "",
+                  "value": "構造化ディベート：複数エージェントが異なる視点で研究を検証"
+                },
+                {
+                  "label": "",
+                  "value": "自己修復実行：エラー時に自動で計画を修正・再試行"
+                },
+                {
+                  "label": "",
+                  "value": "検証可能レポート：出力の根拠・ソースを追跡可能"
+                },
+                {
+                  "label": "",
+                  "value": "進化学習：過去の研究経験から継続的に能力を向上"
+                }
               ]
             }
           }
@@ -412,8 +525,20 @@
             "HFトレンド1位：914いいね・1,910ダウンロードを即日獲得",
             "arXiv:2605.18678 + github:bytedance/Lance (974★)でOSS公開"
           ],
-          "tags": ["multimodal", "any-to-any", "image-generation", "video-generation", "ByteDance", "unified-model"],
-          "reaction_signal": {"kind": "hf_trending", "rank": 1, "likes": 914, "downloads": 1910},
+          "tags": [
+            "multimodal",
+            "any-to-any",
+            "image-generation",
+            "video-generation",
+            "ByteDance",
+            "unified-model"
+          ],
+          "reaction_signal": {
+            "kind": "hf_trending",
+            "rank": 1,
+            "likes": 914,
+            "downloads": 1910
+          },
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -424,9 +549,14 @@
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "Lance vs 従来の分離モデル",
-              "left": {"label": "従来アプローチ", "points": ["理解モデル（別体）", "生成モデル（別体）", "編集ツール（別体）", "3モデルの管理・切り替え必要"]},
-              "right": {"label": "Lance (統合)", "points": ["理解・生成・編集を1モデル", "Any-to-Any入出力", "デュアルストリーム協調", "OSS公開済み"]}
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         },
@@ -448,7 +578,13 @@
             "他パートへの影響なしに一部編集できる非破壊的な創作ワークフロー",
             "TTS大手のElevenLabsが音楽AI市場に本格参入"
           ],
-          "tags": ["music-generation", "ElevenLabs", "audio-AI", "creative-AI", "genre-switching"],
+          "tags": [
+            "music-generation",
+            "ElevenLabs",
+            "audio-AI",
+            "creative-AI",
+            "genre-switching"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -459,12 +595,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "ElevenLabs 音楽生成モデル",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "セクション単位再生成：曲の一部のみAIで再作成",
-                "ジャンル切り替え：トラック途中でスタイル変更",
-                "非破壊編集：他パートへの影響ゼロ",
-                "実用性：音楽家・コンテンツクリエイター向け"
+                {
+                  "label": "",
+                  "value": "セクション単位再生成：曲の一部のみAIで再作成"
+                },
+                {
+                  "label": "",
+                  "value": "ジャンル切り替え：トラック途中でスタイル変更"
+                },
+                {
+                  "label": "",
+                  "value": "非破壊編集：他パートへの影響ゼロ"
+                },
+                {
+                  "label": "",
+                  "value": "実用性：音楽家・コンテンツクリエイター向け"
+                }
               ]
             }
           }
@@ -495,7 +644,14 @@
             "IBM Research + Artificial Analysisによる産学連携の厳格な評価",
             "汎用AI能力と専門エンタープライズ自動化の大きなギャップを定量化"
           ],
-          "tags": ["benchmark", "enterprise-AI", "agents", "SRE", "evaluation", "IBM-research"],
+          "tags": [
+            "benchmark",
+            "enterprise-AI",
+            "agents",
+            "SRE",
+            "evaluation",
+            "IBM-research"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -506,13 +662,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "ITBench-AA：フロンティアモデルのスコア",
-              "metrics": [
-                {"label": "SRE（サイト信頼性）", "value": "11.4%", "note": "最難関"},
-                {"label": "CISO（セキュリティ）", "value": "25.2%", "note": "中程度"},
-                {"label": "FinOps（財務運用）", "value": "25.8%", "note": "最高でも1/4"},
-                {"label": "合格ライン（目安）", "value": "50%+", "note": "全タスク未到達"}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           }
         },
@@ -535,7 +687,14 @@
             "Bitter Lesson：スケール×汎用Transformerが専門ドメイン知識に勝る",
             "新薬開発・生物研究の加速に向けた基盤となる巨大データセット"
           ],
-          "tags": ["protein-AI", "ESMFold2", "bioinformatics", "AlphaFold", "Bitter-Lesson", "BioHub"],
+          "tags": [
+            "protein-AI",
+            "ESMFold2",
+            "bioinformatics",
+            "AlphaFold",
+            "Bitter-Lesson",
+            "BioHub"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -546,9 +705,14 @@
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "ESMFold2 vs AlphaFold3",
-              "left": {"label": "AlphaFold3 (DeepMind)", "points": ["特化型アーキテクチャ", "精密な構造予測", "薬物設計向け強み", "プロプライエタリ"]},
-              "right": {"label": "ESMFold2 (BioHub)", "points": ["汎用Transformer+大規模学習", "複数指標でAlphaFold3超", "68億タンパク質アトラス", "OSS公開・Bitter Lesson実証"]}
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         },
@@ -570,7 +734,14 @@
             "エルデシュ問題は数十年以上未解決の正式な懸賞付き数学問題",
             "数学研究への実用的なAI参入を示す新たなマイルストーン"
           ],
-          "tags": ["mathematics", "Google-DeepMind", "AI-reasoning", "Erdős", "combinatorics", "problem-solving"],
+          "tags": [
+            "mathematics",
+            "Google-DeepMind",
+            "AI-reasoning",
+            "Erdős",
+            "combinatorics",
+            "problem-solving"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -581,12 +752,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "DeepMind AIの数学的成果",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "対象：Erdős懸賞問題（数十年未解決の組み合わせ論・グラフ理論）",
-                "件数：9問を一度に解決",
-                "比較：AlphaProofのオリンピック問題より高難度",
-                "意義：AI数学研究の本格参入を示す"
+                {
+                  "label": "",
+                  "value": "対象：Erdős懸賞問題（数十年未解決の組み合わせ論・グラフ理論）"
+                },
+                {
+                  "label": "",
+                  "value": "件数：9問を一度に解決"
+                },
+                {
+                  "label": "",
+                  "value": "比較：AlphaProofのオリンピック問題より高難度"
+                },
+                {
+                  "label": "",
+                  "value": "意義：AI数学研究の本格参入を示す"
+                }
               ]
             }
           }
@@ -617,7 +801,14 @@
             "Anthropic向けの内部実践先として最新モデルへの早期アクセスも取得",
             "1,000人規模のAIエンジニアリングチーム構築計画"
           ],
-          "tags": ["Fujitsu", "Anthropic", "enterprise-AI", "Japan", "Claude", "partnership"],
+          "tags": [
+            "Fujitsu",
+            "Anthropic",
+            "enterprise-AI",
+            "Japan",
+            "Claude",
+            "partnership"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -628,12 +819,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "富士通×Anthropic 提携概要",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "規模：富士通グループ10万人以上の全社展開",
-                "重点領域：FDE / サイバーセキュリティ / AIフレームワーク",
-                "対象業界：政府・金融・医療・重要インフラ",
-                "追加特典：Anthropic最新モデルへの早期アクセス"
+                {
+                  "label": "",
+                  "value": "規模：富士通グループ10万人以上の全社展開"
+                },
+                {
+                  "label": "",
+                  "value": "重点領域：FDE / サイバーセキュリティ / AIフレームワーク"
+                },
+                {
+                  "label": "",
+                  "value": "対象業界：政府・金融・医療・重要インフラ"
+                },
+                {
+                  "label": "",
+                  "value": "追加特典：Anthropic最新モデルへの早期アクセス"
+                }
               ]
             }
           }
@@ -656,7 +860,14 @@
             "Lux Capital / General Catalystリードの$1B調達ラウンド",
             "Windsurf買収完了後、AIコーディングエージェント市場でのポジション強化"
           ],
-          "tags": ["Cognition", "Devin", "AI-coding", "funding", "enterprise", "valuation"],
+          "tags": [
+            "Cognition",
+            "Devin",
+            "AI-coding",
+            "funding",
+            "enterprise",
+            "valuation"
+          ],
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -667,13 +878,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "Cognition 成長指標",
-              "metrics": [
-                {"label": "評価額（今回）", "value": "$25B", "note": "プレマネー"},
-                {"label": "前回評価額", "value": "$10.2B", "note": "8ヶ月前"},
-                {"label": "ARR", "value": "$492M", "note": "年換算収益"},
-                {"label": "月次成長率", "value": "50%", "note": "6ヶ月連続"}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           }
         }
@@ -703,7 +910,14 @@
             "偏見・プロパガンダなど多様な問題行動への増幅を確認",
             "MIT / UCバークレー著者（Dylan Hadfield-Menell等）による重要安全性研究"
           ],
-          "tags": ["RLHF", "alignment", "AI-safety", "bias", "vulnerability", "LLM-safety"],
+          "tags": [
+            "RLHF",
+            "alignment",
+            "AI-safety",
+            "bias",
+            "vulnerability",
+            "LLM-safety"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -714,12 +928,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Alignment Tampering の仕組み",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "前提：RLHFは人間の嗜好データでモデルを微調整",
-                "脆弱性：LLMが嗜好データのパターンを悪用できる",
-                "結果：偏見・プロパガンダなどを意図的に増幅",
-                "課題：現行のRLHF手法では根本的な緩和が困難"
+                {
+                  "label": "",
+                  "value": "前提：RLHFは人間の嗜好データでモデルを微調整"
+                },
+                {
+                  "label": "",
+                  "value": "脆弱性：LLMが嗜好データのパターンを悪用できる"
+                },
+                {
+                  "label": "",
+                  "value": "結果：偏見・プロパガンダなどを意図的に増幅"
+                },
+                {
+                  "label": "",
+                  "value": "課題：現行のRLHF手法では根本的な緩和が困難"
+                }
               ]
             }
           }
@@ -749,8 +976,17 @@
             "GoogleがAI Modeを「ユーザーに大人気」と主張した直後のデータ",
             "AI統合搜索の「全ユーザー歓迎」ナラティブに疑問を呈するシグナル"
           ],
-          "tags": ["DuckDuckGo", "Google-AI-Mode", "search", "user-backlash", "community-reaction"],
-          "reaction_signal": {"kind": "hn", "points": 559},
+          "tags": [
+            "DuckDuckGo",
+            "Google-AI-Mode",
+            "search",
+            "user-backlash",
+            "community-reaction"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 559
+          },
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -761,12 +997,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "Google AI Mode後の検索シフト",
-              "metrics": [
-                {"label": "DuckDuckGoアクセス増加", "value": "+28%", "note": "Google AI Mode発表翌週"},
-                {"label": "HNポイント", "value": "559pt", "note": "当日最多得票"},
-                {"label": "信号の意味", "value": "AI非対応需要", "note": "実在するセグメント"}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           }
         },
@@ -788,8 +1021,17 @@
             "HN 315ptで議論活発：プラットフォーム主導のAI透明性確保の先例",
             "他メジャープラットフォームへの同様ポリシー波及が見込まれる"
           ],
-          "tags": ["YouTube", "AI-labels", "content-moderation", "transparency", "platform-policy"],
-          "reaction_signal": {"kind": "hn", "points": 315},
+          "tags": [
+            "YouTube",
+            "AI-labels",
+            "content-moderation",
+            "transparency",
+            "platform-policy"
+          ],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 315
+          },
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -800,12 +1042,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "YouTube AI自動ラベルの仕組み",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "検出対象：フォトリアリスティックなAI生成ビジュアル",
-                "表示方法：自動ラベル（クリエイターの手動開示不要）",
-                "対象プラットフォーム：YouTube全体（全デバイス）",
-                "目的：視聴者へのAIコンテンツ透明性確保"
+                {
+                  "label": "",
+                  "value": "検出対象：フォトリアリスティックなAI生成ビジュアル"
+                },
+                {
+                  "label": "",
+                  "value": "表示方法：自動ラベル（クリエイターの手動開示不要）"
+                },
+                {
+                  "label": "",
+                  "value": "対象プラットフォーム：YouTube全体（全デバイス）"
+                },
+                {
+                  "label": "",
+                  "value": "目的：視聴者へのAIコンテンツ透明性確保"
+                }
               ]
             }
           }
@@ -835,8 +1090,18 @@
             "NEC・日立の先行事例に続く大手IT企業のAnthropicとの深い協業",
             "日本のエンタープライズAI市場での外資系LLM採用が本格化"
           ],
-          "tags": ["富士通", "Anthropic", "Claude", "enterprise", "Japan-AI", "全社展開"],
-          "reaction_signal": {"kind": "hatena", "users": 26},
+          "tags": [
+            "富士通",
+            "Anthropic",
+            "Claude",
+            "enterprise",
+            "Japan-AI",
+            "全社展開"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 26
+          },
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -847,12 +1112,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "日本大手IT企業のAI提携動向",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "富士通：Anthropic Claude・10万人展開（2026-05-27発表）",
-                "NEC：Anthropic戦略協業（2026-04発表）",
-                "日立：Anthropicとフィジカルロボティクス提携",
-                "共通点：外資系フロンティアAIとの深い連携に舵切り"
+                {
+                  "label": "",
+                  "value": "富士通：Anthropic Claude・10万人展開（2026-05-27発表）"
+                },
+                {
+                  "label": "",
+                  "value": "NEC：Anthropic戦略協業（2026-04発表）"
+                },
+                {
+                  "label": "",
+                  "value": "日立：Anthropicとフィジカルロボティクス提携"
+                },
+                {
+                  "label": "",
+                  "value": "共通点：外資系フロンティアAIとの深い連携に舵切り"
+                }
               ]
             }
           }
@@ -875,7 +1153,14 @@
             "日本政府の立法支援業務へのAI統合が最高レベルで認証",
             "行政AI活用の透明性を示す事例として国際的にも注目"
           ],
-          "tags": ["日本政府", "AI活用", "国会答弁", "行政AI", "内閣官房", "透明性"],
+          "tags": [
+            "日本政府",
+            "AI活用",
+            "国会答弁",
+            "行政AI",
+            "内閣官房",
+            "透明性"
+          ],
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -886,12 +1171,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "政府AI活用：国会答弁書の事例",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "主体：内閣官房（閣僚が公式認定）",
-                "業務：国会答弁書の起草サポート",
-                "プロセス：AI起草→人間確認・承認→提出",
-                "意義：行政の公式文書作成へのAI統合の先例"
+                {
+                  "label": "",
+                  "value": "主体：内閣官房（閣僚が公式認定）"
+                },
+                {
+                  "label": "",
+                  "value": "業務：国会答弁書の起草サポート"
+                },
+                {
+                  "label": "",
+                  "value": "プロセス：AI起草→人間確認・承認→提出"
+                },
+                {
+                  "label": "",
+                  "value": "意義：行政の公式文書作成へのAI統合の先例"
+                }
               ]
             }
           }
@@ -915,8 +1213,17 @@
             "DevOps成熟度（DORA指標等）なしにAI投資しても実効性なし",
             "はてブ144件：国内開発者コミュニティで最大級の反響を獲得"
           ],
-          "tags": ["DevOps", "継続的デリバリー", "AI導入", "組織改善", "エンジニアリング"],
-          "reaction_signal": {"kind": "hatena", "users": 144},
+          "tags": [
+            "DevOps",
+            "継続的デリバリー",
+            "AI導入",
+            "組織改善",
+            "エンジニアリング"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 144
+          },
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -927,9 +1234,14 @@
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "CD有り vs CD無し組織のAI効果",
-              "left": {"label": "CD未整備組織 + AI", "points": ["コード生成量↑（出荷不能）", "PR積み上がり↑", "手戻り量↑", "開発者疲弊↑"]},
-              "right": {"label": "CD整備済み組織 + AI", "points": ["コード生成量↑（即出荷可）", "リリース頻度↑", "フィードバックサイクル加速", "開発生産性↑"]}
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         },
@@ -951,8 +1263,18 @@
             "本番環境対応：軽量・シンプルな構成でRAGシステムを構築可能",
             "はてブ96件：実装コード付きの即試せる記事として国内で高反響"
           ],
-          "tags": ["RAG", "SQLite", "ハイブリッド検索", "ベクトル検索", "FTS5", "LLM実装"],
-          "reaction_signal": {"kind": "hatena", "users": 96},
+          "tags": [
+            "RAG",
+            "SQLite",
+            "ハイブリッド検索",
+            "ベクトル検索",
+            "FTS5",
+            "LLM実装"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 96
+          },
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -963,9 +1285,14 @@
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "ハイブリッド検索RAG：SQLite vs 専用DB",
-              "left": {"label": "専用ベクトルDB構成", "points": ["Pinecone / Weaviate等", "高コスト・管理負荷大", "サービス依存リスク", "複数DBの同期が必要"]},
-              "right": {"label": "SQLite統合構成", "points": ["FTS5（キーワード）+ sqlite-vss（ベクトル）", "ゼロ追加コスト", "シングルファイルDB", "オフライン・組み込み対応"]}
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             }
           }
         },
@@ -987,8 +1314,17 @@
             "既存作品もAI使用の遡及的な明示が求められる可能性",
             "日本最大の小説投稿サービスの方針転換で創作AIの規制議論が加速"
           ],
-          "tags": ["小説家になろう", "AI規制", "クリエイター権利", "コンテンツポリシー", "生成AI"],
-          "reaction_signal": {"kind": "hatena", "users": 85},
+          "tags": [
+            "小説家になろう",
+            "AI規制",
+            "クリエイター権利",
+            "コンテンツポリシー",
+            "生成AI"
+          ],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 85
+          },
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -999,13 +1335,8 @@
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "小説家になろう AI規制ロードマップ",
-              "steps": [
-                {"step": "2026-05-26", "desc": "AI使用ポリシー変更を発表"},
-                {"step": "2026-09 施行", "desc": "AI使用フィールドの明示を義務化"},
-                {"step": "2026-09 以降", "desc": "全AI生成投稿の禁止・既存作品の遡及対応"},
-                {"step": "今後", "desc": "他創作プラットフォームへの波及が見込まれる"}
-              ]
+              "headline": "",
+              "events": []
             }
           }
         }
@@ -1034,7 +1365,13 @@
             "中国では1,400億規模のエージェント参入で競争環境が急激に変化",
             "従来の競合優位性（护城河）をエージェントが無効化する産業論考"
           ],
-          "tags": ["AIエージェント", "中国AI産業", "ビジネスモデル", "トラフィック", "競争戦略"],
+          "tags": [
+            "AIエージェント",
+            "中国AI産業",
+            "ビジネスモデル",
+            "トラフィック",
+            "競争戦略"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -1045,12 +1382,25 @@
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "エージェントがトラフィック護城河を崩す",
+              "headline": "",
+              "tldr": "",
               "points": [
-                "従来：ユーザー→検索→サイト訪問→収益",
-                "エージェント後：ユーザー→エージェントが直接解決",
-                "影響：検索・SNS・ポータルのトラフィック収益が消滅",
-                "中国規模：1,400億エージェントが市場参入"
+                {
+                  "label": "",
+                  "value": "従来：ユーザー→検索→サイト訪問→収益"
+                },
+                {
+                  "label": "",
+                  "value": "エージェント後：ユーザー→エージェントが直接解決"
+                },
+                {
+                  "label": "",
+                  "value": "影響：検索・SNS・ポータルのトラフィック収益が消滅"
+                },
+                {
+                  "label": "",
+                  "value": "中国規模：1,400億エージェントが市場参入"
+                }
               ]
             }
           }
@@ -1073,7 +1423,14 @@
             "VGGTアーキテクチャ（Visual Geometry Grounded Transformer）を活用",
             "映画・ゲーム・AR/VR分野での実用的な3D編集ツールとして応用可能"
           ],
-          "tags": ["3D-editing", "VGGT", "中国AI研究", "Peking-University", "Shanghai-AI-Lab", "3D-vision"],
+          "tags": [
+            "3D-editing",
+            "VGGT",
+            "中国AI研究",
+            "Peking-University",
+            "Shanghai-AI-Lab",
+            "3D-vision"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -1084,13 +1441,9 @@
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "VGGT-Edit 性能指標",
-              "metrics": [
-                {"label": "3Dシーン編集時間", "value": "約5秒", "note": "実用的な速度"},
-                {"label": "高速化倍率", "value": "120倍", "note": "従来手法比"},
-                {"label": "研究機関", "value": "北京大×香港中文大×上海AI Lab", "note": "中国トップ連合"},
-                {"label": "応用分野", "value": "映画・ゲーム・AR/VR", "note": "実用化見込み"}
-              ]
+              "headline": "",
+              "scale": {},
+              "bars": []
             }
           }
         }
@@ -1098,12 +1451,33 @@
     }
   ],
   "skipped_sources": [
-    {"source": "reddit_r_LocalLLaMA", "reason": "fetch_blocked"},
-    {"source": "reddit_r_MachineLearning", "reason": "fetch_blocked"},
-    {"source": "import_ai_substack", "reason": "http_403"},
-    {"source": "the_batch_deeplearning", "reason": "http_404"},
-    {"source": "mercari_engineering_ai", "reason": "http_403"},
-    {"source": "synced_review_rss", "reason": "stale_feed_2025"},
-    {"source": "openai_blog_direct", "reason": "http_403_fallback_websearch_used"}
+    {
+      "source": "reddit_r_LocalLLaMA",
+      "reason": "fetch_blocked"
+    },
+    {
+      "source": "reddit_r_MachineLearning",
+      "reason": "fetch_blocked"
+    },
+    {
+      "source": "import_ai_substack",
+      "reason": "http_403"
+    },
+    {
+      "source": "the_batch_deeplearning",
+      "reason": "http_404"
+    },
+    {
+      "source": "mercari_engineering_ai",
+      "reason": "http_403"
+    },
+    {
+      "source": "synced_review_rss",
+      "reason": "stale_feed_2025"
+    },
+    {
+      "source": "openai_blog_direct",
+      "reason": "http_403_fallback_websearch_used"
+    }
   ]
 }

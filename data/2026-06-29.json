@@ -85,10 +85,22 @@
               "headline": "社内AIエージェントのオフラインモニタリング——有効性と限界を評価",
               "tldr": "GovAI研究：別AIが会話ログをレビューするオフラインモニタリングが不整合モデルの問題行動をどこまで検出できるかを定量評価。安全性研究担当者向けの実装推奨事項を提示。",
               "points": [
-                "オフラインモニタリング：別のAIモデルが社内エージェントの会話ログを事後チェック",
-                "懸念シナリオ：不整合モデルがAI安全性研究を妨害・モデル訓練に干渉",
-                "GovAI冬季フェローシップ2026——検出能力と見逃し率を定量化",
-                "結論：有効性はあるが限界もある——実装の推奨事項を提示"
+                {
+                  "label": "",
+                  "value": "オフラインモニタリング：別のAIモデルが社内エージェントの会話ログを事後チェック"
+                },
+                {
+                  "label": "",
+                  "value": "懸念シナリオ：不整合モデルがAI安全性研究を妨害・モデル訓練に干渉"
+                },
+                {
+                  "label": "",
+                  "value": "GovAI冬季フェローシップ2026——検出能力と見逃し率を定量化"
+                },
+                {
+                  "label": "",
+                  "value": "結論：有効性はあるが限界もある——実装の推奨事項を提示"
+                }
               ]
             },
             "alt": "GovAI冬季フェローシップ2026の研究。フロンティアAI企業が社内AIエージェントのリスク管理に用いるオフラインモニタリング（別AIが会話ログをレビュー）の有効性と限界を定量評価し、実装推奨事項を提示"
@@ -132,10 +144,22 @@
               "headline": "PLaMo 3.0 Prime：256Kコンテキスト・高い日本語性能で正式公開",
               "tldr": "PFNが国産LLMのフラッグシップPLaMo 3.0 Primeを正式リリース。64K→256Kにコンテキスト拡張、GPT-5.4 Mini・Claude Haiku 4.5と同価格帯で日本語ベンチマークで競争力を示す。",
               "points": [
-                "256Kコンテキスト対応（β版64Kから4倍）",
-                "同価格帯クローズドモデル（GPT-5.4 Mini・Claude Haiku 4.5）より高い日本語性能（内部ベンチマーク）",
-                "推論モデル（高性能）＋非推論モデル（高速）の2ライン",
-                "Freeプランあり——PLaMo Chat/API経由で即日利用可能"
+                {
+                  "label": "",
+                  "value": "256Kコンテキスト対応（β版64Kから4倍）"
+                },
+                {
+                  "label": "",
+                  "value": "同価格帯クローズドモデル（GPT-5.4 Mini・Claude Haiku 4.5）より高い日本語性能（内部ベンチマーク）"
+                },
+                {
+                  "label": "",
+                  "value": "推論モデル（高性能）＋非推論モデル（高速）の2ライン"
+                },
+                {
+                  "label": "",
+                  "value": "Freeプランあり——PLaMo Chat/API経由で即日利用可能"
+                }
               ]
             },
             "alt": "PFNがPLaMo 3.0 Primeを正式リリース。コンテキスト長64Kから256Kに拡張、同価格帯のGPT-5.4 MiniやClaude Haiku 4.5を上回る日本語ベンチマーク性能を主張。推論モデルと非推論モデルの2ラインを展開"
@@ -184,10 +208,22 @@
               "headline": "Claude Codeセッションがローカルモデルの訓練データに変わる",
               "tldr": "r/LocalLLaMA発のOSS。~/.claude/projects/*.jsonlをTRL/Axolotl/LLaMA-Factoryが読めるmessages形式に変換。手元のClaude Codeセッションが即座にファインチューニングデータになる。",
               "points": [
-                "対象：~/.claude/projects/*.jsonlに保存されたClaude Codeセッション全件",
-                "変換先：apply_chat_template()互換のmessages形式、sharegpt形式",
-                "対応FW：TRL/SFTTrainer・Axolotl・LLaMA-Factory",
-                "clean_messages()によるデータ品質向上機能付属"
+                {
+                  "label": "",
+                  "value": "対象：~/.claude/projects/*.jsonlに保存されたClaude Codeセッション全件"
+                },
+                {
+                  "label": "",
+                  "value": "変換先：apply_chat_template()互換のmessages形式、sharegpt形式"
+                },
+                {
+                  "label": "",
+                  "value": "対応FW：TRL/SFTTrainer・Axolotl・LLaMA-Factory"
+                },
+                {
+                  "label": "",
+                  "value": "clean_messages()によるデータ品質向上機能付属"
+                }
               ]
             },
             "alt": "r/LocalLLaMA発のOSS「claude_converter」。Claude Codeの.jsonlセッションファイルをTRL・Axolotl・LLaMA-Factoryが直接利用できるmessages形式に変換し、自分のClaude Codeデータでローカルモデルをファインチューニングできる"
@@ -230,10 +266,22 @@
               "headline": "DanceOPD：T2I・局所編集・大域編集を単一モデルに干渉なく統合",
               "tldr": "arXiv論文。フローマッチングモデル向けのオンポリシー生成場蒸留フレームワークDanceOPD。T2I・局所・大域編集の3能力が互いに干渉する問題を動的ルーティングで解決し、単一モデルへの統合を実現。",
               "points": [
-                "課題：T2I・局所編集・大域編集は自然に干渉し合う",
-                "解決：オンポリシー生成場蒸留で各サンプルを最適な蒸留元にルーティング",
-                "フローマッチングモデル向けの設計",
-                "単一モデルに3能力を統合——相互干渉なし"
+                {
+                  "label": "",
+                  "value": "課題：T2I・局所編集・大域編集は自然に干渉し合う"
+                },
+                {
+                  "label": "",
+                  "value": "解決：オンポリシー生成場蒸留で各サンプルを最適な蒸留元にルーティング"
+                },
+                {
+                  "label": "",
+                  "value": "フローマッチングモデル向けの設計"
+                },
+                {
+                  "label": "",
+                  "value": "単一モデルに3能力を統合——相互干渉なし"
+                }
               ]
             },
             "alt": "arXiv論文DanceOPD：フローマッチングモデル向けのオンポリシー生成場蒸留フレームワーク。T2I・局所編集・大域編集の3つの画像生成能力が干渉し合う問題を動的ルーティングで解決し、単一モデルへの干渉なし統合を実現"
@@ -277,10 +325,22 @@
               "headline": "LLMジャッジの同族バイアスを22,254判定で統計的に実証",
               "tldr": "55モデル×11ファミリーのN×N盲目採点研究。Qwenは同族に+0.91点、Mistralは自社に−1.0点。8ファミリー全てでp<0.05の有意な同族バイアスを確認。データ・コードはMIT公開。",
               "points": [
-                "設計：N×Nの相互盲目採点（自己採点除く）、単一特権ジャッジなし",
-                "Qwen→Qwen: +0.91点、xAI→xAI: +0.75点（加点バイアス）",
-                "Mistral→Mistral: 約−1.0点（逆バイアス・自社ペナルティ）",
-                "データ充足8ファミリー全てでp<0.05（7/8はBonferroni補正後も有意）"
+                {
+                  "label": "",
+                  "value": "設計：N×Nの相互盲目採点（自己採点除く）、単一特権ジャッジなし"
+                },
+                {
+                  "label": "",
+                  "value": "Qwen→Qwen: +0.91点、xAI→xAI: +0.75点（加点バイアス）"
+                },
+                {
+                  "label": "",
+                  "value": "Mistral→Mistral: 約−1.0点（逆バイアス・自社ペナルティ）"
+                },
+                {
+                  "label": "",
+                  "value": "データ充足8ファミリー全てでp<0.05（7/8はBonferroni補正後も有意）"
+                }
               ]
             },
             "alt": "r/LocalLLaMAの研究：55個のLLMが互いを盲目採点した22,254判定の解析結果。同族モデルへの加点バイアスが8ファミリー全てで統計的に有意（p<0.05）。QwenとxAIは自社モデルを優遇、MistralはOdd-oneout的な逆バイアス"
@@ -319,10 +379,22 @@
               "headline": "RiVER：正解不要のRLVRでLLMを改善するフレームワーク",
               "tldr": "arXiv論文。正解が不要なスコアベースRLVRのRiVERを提案。スケール支配と非比較性の2課題を解決し、コーディング最適化など答えが未知のタスクへの強化学習適用を可能にする。",
               "points": [
-                "従来のRLVR：正解が必要——RiVERは決定論的実行フィードバックで代替",
-                "解決した課題1：スケール支配（未調整スコアで勾配が歪む）",
-                "解決した課題2：非比較性（タスク間スコアが直接比較不可）",
-                "コーディング最適化などground-truth未知タスクへのRL適用を実現"
+                {
+                  "label": "",
+                  "value": "従来のRLVR：正解が必要——RiVERは決定論的実行フィードバックで代替"
+                },
+                {
+                  "label": "",
+                  "value": "解決した課題1：スケール支配（未調整スコアで勾配が歪む）"
+                },
+                {
+                  "label": "",
+                  "value": "解決した課題2：非比較性（タスク間スコアが直接比較不可）"
+                },
+                {
+                  "label": "",
+                  "value": "コーディング最適化などground-truth未知タスクへのRL適用を実現"
+                }
               ]
             },
             "alt": "arXiv論文RiVER：ground-truth不要のスコアベースRLVRフレームワーク。スケール支配と非比較性の2課題を解決し、コーディング最適化タスクなど正解が不明なLLM最適化問題への強化学習適用を可能にする"
@@ -360,10 +432,22 @@
               "headline": "GPT-5.6 System Card分析：GPT-5.5超えもMythos未満",
               "tldr": "LessWrongのGPT-5.6 System Card読み込み分析。SolはGPT-5.5を大幅に上回るが総合でMythos未満。OpenAIカードはAnthropicより安全評価の詳細が少なく、Cyber Critical超えなしは両社で一致。",
               "points": [
-                "GPT-5.5→Sol：「ステップ関数的向上」（OpenAI声明、LessWrongが「正確」と評価）",
-                "Mythos未満——総合では依然Mythosに届かない",
-                "OpenAI System CardはAnthropicより安全評価の詳細が少ない（light read）",
-                "Cyber Critical閾値超えなし——両社が共通認識"
+                {
+                  "label": "",
+                  "value": "GPT-5.5→Sol：「ステップ関数的向上」（OpenAI声明、LessWrongが「正確」と評価）"
+                },
+                {
+                  "label": "",
+                  "value": "Mythos未満——総合では依然Mythosに届かない"
+                },
+                {
+                  "label": "",
+                  "value": "OpenAI System CardはAnthropicより安全評価の詳細が少ない（light read）"
+                },
+                {
+                  "label": "",
+                  "value": "Cyber Critical閾値超えなし——両社が共通認識"
+                }
               ]
             },
             "alt": "LessWrongによるGPT-5.6 System Card分析。SolはGPT-5.5のステップ関数的向上だが総合でMythos未満。OpenAIのSystem CardはAnthropicより安全評価の詳細が少なく、Cyber Critical閾値超えなしという評価は両社で一致"
@@ -470,10 +554,22 @@
               "headline": "SpaceX GPU貸出：3社合計で月$2.32B・年換算$28Bの規模",
               "tldr": "SpaceXがAnthropicとGoogleに続きReflection AIとの第3のGPU貸出契約を締結。3社合計で月$2.32B（年換算$28B）、Blackwellが$10/時間超の高レート。AIクラウドの新勢力として確立。",
               "points": [
-                "GPU貸出先：Anthropic、Google、Reflection AI（第3件目）",
-                "合計月額：$2.32B/月、年換算約$28B（Jamin Ball集計）",
-                "Blackwell GPU単価：>$10/時間",
-                "SpaceXがAIコンピューティング市場でAWS/Azure/GCPに次ぐ存在へ"
+                {
+                  "label": "",
+                  "value": "GPU貸出先：Anthropic、Google、Reflection AI（第3件目）"
+                },
+                {
+                  "label": "",
+                  "value": "合計月額：$2.32B/月、年換算約$28B（Jamin Ball集計）"
+                },
+                {
+                  "label": "",
+                  "value": "Blackwell GPU単価：>$10/時間"
+                },
+                {
+                  "label": "",
+                  "value": "SpaceXがAIコンピューティング市場でAWS/Azure/GCPに次ぐ存在へ"
+                }
               ]
             },
             "alt": "SpaceXのGPU貸出事業：Anthropic・Google・Reflection AIとの3件の契約で月$2.32B（年換算$28B）規模のニュークラウドに。Blackwellは$10/時間超の高レートでAIコンピューティング市場の主要供給者として台頭"
@@ -516,10 +612,22 @@
               "headline": "ChatGPT会話ログが刑事裁判の証拠に",
               "tldr": "パリセーズ山火事放火裁判で検察がChatGPTの会話ログを証拠採用。AIサービスの会話履歴が法廷証拠として使われた事例として、AIとプライバシーと法律の関係を問い直す。",
               "points": [
-                "事件：2025年1月1日のパリセーズ山火事（LA史上最大規模の被害）の放火事件",
-                "被告：Jonathan Rinderknecht、放火罪で起訴",
-                "証拠として採用：iPhoneの位置データ・防犯カメラ映像・目撃証言＋ChatGPT会話ログ",
-                "AIの会話ログが刑事裁判の証拠として使用された事例として議論を呼ぶ"
+                {
+                  "label": "",
+                  "value": "事件：2025年1月1日のパリセーズ山火事（LA史上最大規模の被害）の放火事件"
+                },
+                {
+                  "label": "",
+                  "value": "被告：Jonathan Rinderknecht、放火罪で起訴"
+                },
+                {
+                  "label": "",
+                  "value": "証拠として採用：iPhoneの位置データ・防犯カメラ映像・目撃証言＋ChatGPT会話ログ"
+                },
+                {
+                  "label": "",
+                  "value": "AIの会話ログが刑事裁判の証拠として使用された事例として議論を呼ぶ"
+                }
               ]
             },
             "alt": "パリセーズ山火事放火裁判（2025年元旦発生）でChatGPT会話ログが証拠採用。被告Jonathan Rinderknecht の起訴にあたり、位置データ・防犯カメラ・目撃証言に加えChatGPTのログを証拠として採用"
@@ -556,10 +664,22 @@
               "headline": "Ornith 35B：3Dゲームを3プロンプトで生成——Qwenを上回る",
               "tldr": "r/LocalLLaMAの体験レポート。Ornith 35BでClaude Codeハーネスを使い3Dゲームを3プロンプトで生成成功。Qwen3.5-35b-a3bは同タスクで複数プロンプトでも失敗した。",
               "points": [
-                "タスク：3Dゲームの生成（Claude Codeハーネス使用）",
-                "Ornith 35B：3プロンプトで成功",
-                "Qwen3.5-35b-a3b：複数プロンプトを試みても失敗し続けた",
-                "ローカルLLMコミュニティで新モデルOrnith 35Bへの関心が高まる"
+                {
+                  "label": "",
+                  "value": "タスク：3Dゲームの生成（Claude Codeハーネス使用）"
+                },
+                {
+                  "label": "",
+                  "value": "Ornith 35B：3プロンプトで成功"
+                },
+                {
+                  "label": "",
+                  "value": "Qwen3.5-35b-a3b：複数プロンプトを試みても失敗し続けた"
+                },
+                {
+                  "label": "",
+                  "value": "ローカルLLMコミュニティで新モデルOrnith 35Bへの関心が高まる"
+                }
               ]
             },
             "alt": "r/LocalLLaMAの体験レポート。新OSS「Ornith 35B」をClaude Codeハーネスで試したところ3プロンプトで3Dゲームを生成。Qwen3.5-35b-a3bは同タスクで複数回試みて失敗した比較報告"
@@ -603,10 +723,22 @@
               "headline": "Zed完全ガイド：RustネイティブエディタをAI・Git・協業まで1本で把握",
               "tldr": "はてブ190件。ZedはRustネイティブ・Electronなし・AI/Git/協業/リモート開発を標準搭載のOSSエディタ。「乗り換え手順ではなく機能を見渡すリファレンス」として導入〜設定〜ショートカットを網羅。",
               "points": [
-                "Rustネイティブ：Electronなしの高速動作",
-                "標準搭載：マルチバッファ・AI・Git・協業・リモート開発",
-                "この1本で導入から主要機能・設定・ショートカットまで把握可能",
-                "はてブ190件——Claude Codeユーザーの次エディタ候補として日本で注目"
+                {
+                  "label": "",
+                  "value": "Rustネイティブ：Electronなしの高速動作"
+                },
+                {
+                  "label": "",
+                  "value": "標準搭載：マルチバッファ・AI・Git・協業・リモート開発"
+                },
+                {
+                  "label": "",
+                  "value": "この1本で導入から主要機能・設定・ショートカットまで把握可能"
+                },
+                {
+                  "label": "",
+                  "value": "はてブ190件——Claude Codeユーザーの次エディタ候補として日本で注目"
+                }
               ]
             },
             "alt": "はてブ190件獲得のZed完全ガイド。ZedはRustネイティブのOSSエディタでElectronなし高速動作、マルチバッファ・AI・Git・協業・リモート開発を標準搭載。導入から設定・ショートカットまでこれ1本で把握できるリファレンス"
@@ -645,10 +777,22 @@
               "headline": "whichllm実測：「VRAMに入る最大」から「バランスで選ぶ」へ",
               "tldr": "はてブ71件。RTX 4060 Ti 16GBでwhichllmを実測し複数ローカルLLMを比較。VRAMに入る最大モデルを選ぶ従来基準を実データで見直し、速度・品質・コストバランスでの選定を提案。",
               "points": [
-                "使用GPU：RTX 4060 Ti 16GB（普及帯の代表的構成）",
-                "ベンチマーク：whichllmで速度・品質・コストを実測比較",
-                "従来基準「VRAMに入る最大モデル」を実測で見直し",
-                "はてブ71件——ローカルLLM選定の実践的判断材料として注目"
+                {
+                  "label": "",
+                  "value": "使用GPU：RTX 4060 Ti 16GB（普及帯の代表的構成）"
+                },
+                {
+                  "label": "",
+                  "value": "ベンチマーク：whichllmで速度・品質・コストを実測比較"
+                },
+                {
+                  "label": "",
+                  "value": "従来基準「VRAMに入る最大モデル」を実測で見直し"
+                },
+                {
+                  "label": "",
+                  "value": "はてブ71件——ローカルLLM選定の実践的判断材料として注目"
+                }
               ]
             },
             "alt": "はてブ71件のQiita記事。RTX 4060 Ti 16GBでwhichllmを使って複数ローカルLLMを実測比較。VRAMに入る最大モデルを選ぶ従来基準を実データで問い直し、速度・品質・コストバランスで選ぶ新基準を提案"
@@ -687,10 +831,22 @@
               "headline": "生成AIウィークリー#149：GLM-5.2・Gemma4-12B-Coder など5技術",
               "tldr": "はてブ32件。OpusにOpus 4.8に肉薄するGLM-5.2、VRAM 4.5GBのGemma4-12B-Coder、ゲーム世界生成AI DreamX-World 1.0 など今週の注目生成AI技術を日本語で解説。",
               "points": [
-                "GLM-5.2：Opus 4.8に肉薄するオープンソースモデル",
-                "Gemma4-12B-Coder：VRAM 4.5GBで動くコーディング特化AI",
-                "DreamX-World 1.0：テキスト・画像からゲーム世界を生成するAI",
-                "1Bパラメータで巨大モデルの一部を上回る小型モデルの成果"
+                {
+                  "label": "",
+                  "value": "GLM-5.2：Opus 4.8に肉薄するオープンソースモデル"
+                },
+                {
+                  "label": "",
+                  "value": "Gemma4-12B-Coder：VRAM 4.5GBで動くコーディング特化AI"
+                },
+                {
+                  "label": "",
+                  "value": "DreamX-World 1.0：テキスト・画像からゲーム世界を生成するAI"
+                },
+                {
+                  "label": "",
+                  "value": "1Bパラメータで巨大モデルの一部を上回る小型モデルの成果"
+                }
               ]
             },
             "alt": "TechnoEdge生成AIウィークリー第149回（はてブ32件）。GLM-5.2（Opus 4.8に肉薄するOSS）、Gemma4-12B-Coder（VRAM 4.5GB対応）、DreamX-World 1.0（ゲーム世界生成AI）など今週の注目AI技術5つを日本語で解説"
@@ -727,10 +883,22 @@
               "headline": "OWASP BenchmarkでClaude Code vs Codexのセキュリティ検出能力を比較",
               "tldr": "Zenn記事。OWASP BenchmarkでClaude CodeとCodexのセキュリティ脆弱性検出能力を実測比較。どのレビュー方式が最も見逃さないかという実務的問いに答える。",
               "points": [
-                "比較対象：Claude Code vs OpenAI Codex のレビュー機能",
-                "ベンチマーク：OWASP Benchmark（セキュリティ脆弱性検出の標準指標）",
-                "目的：「最も脆弱性を見逃さないレビュー方式」を実測で特定",
-                "AIコードレビューの実用精度を把握したいセキュリティ重視のエンジニア向け"
+                {
+                  "label": "",
+                  "value": "比較対象：Claude Code vs OpenAI Codex のレビュー機能"
+                },
+                {
+                  "label": "",
+                  "value": "ベンチマーク：OWASP Benchmark（セキュリティ脆弱性検出の標準指標）"
+                },
+                {
+                  "label": "",
+                  "value": "目的：「最も脆弱性を見逃さないレビュー方式」を実測で特定"
+                },
+                {
+                  "label": "",
+                  "value": "AIコードレビューの実用精度を把握したいセキュリティ重視のエンジニア向け"
+                }
               ]
             },
             "alt": "Zenn記事：OWASP BenchmarkでClaude CodeとOpenAI Codexのセキュリティ脆弱性検出能力を比較検証。「どのレビュー方式が最も見逃さないか」という実務的な問いへの実測による回答を提供"
@@ -768,10 +936,22 @@
               "headline": "Claude Agent SDK課金変更を施行当日に凍結——現状維持が継続",
               "tldr": "2026年6月15日施行予定だったClaude Agent SDKのサブスク枠切り離しをAnthropicが当日凍結。新施行日未発表。CIジョブやGitHub Actionsで自動Claudeを運用している開発者は現状維持が続く。",
               "points": [
-                "予定だった変更：Pro/Maxサブスク枠からAgent SDKを切り離し、別建て月額クレジットへ",
-                "2026年6月15日施行当日にAnthropicが凍結——理由・新施行日の発表なし",
-                "影響対象：claude -p（CLI）経由のCIジョブ、GitHub Actions上のClaude Code自動実行",
-                "現状：引き続きPro/Maxサブスク枠内での利用が可能（変更まで現状維持）"
+                {
+                  "label": "",
+                  "value": "予定だった変更：Pro/Maxサブスク枠からAgent SDKを切り離し、別建て月額クレジットへ"
+                },
+                {
+                  "label": "",
+                  "value": "2026年6月15日施行当日にAnthropicが凍結——理由・新施行日の発表なし"
+                },
+                {
+                  "label": "",
+                  "value": "影響対象：claude -p（CLI）経由のCIジョブ、GitHub Actions上のClaude Code自動実行"
+                },
+                {
+                  "label": "",
+                  "value": "現状：引き続きPro/Maxサブスク枠内での利用が可能（変更まで現状維持）"
+                }
               ]
             },
             "alt": "2026年6月15日施行予定だったAnthropicの「Claude Agent SDKをサブスク枠から切り離す課金変更」が施行当日に凍結。CIジョブやGitHub ActionsでClaude Codeを自動実行しているエンジニアへの影響と現状を解説"
@@ -815,10 +995,22 @@
               "headline": "DSpark：DeepSeek CEO署名の投機的デコーディングでV4推論速度85%向上",
               "tldr": "DeepSeek+北京大学がDSparkをOSS公開。DeepSeek-V4の本番環境でスループット維持のまま生成速度を最大85%高速化。CEOの梁文锋が直接署名したMITライセンスのフレームワーク。",
               "points": [
-                "DeepSeek+北京大学の共同研究——MITライセンスでOSS公開",
-                "本番実績：DeepSeek-V4でスループット維持のまま生成速度最大85%向上",
-                "本質：极强的系统工程（極めて強力なシステムエンジニアリング）",
-                "DeepSeek CEO梁文锋が直接署名した論文"
+                {
+                  "label": "",
+                  "value": "DeepSeek+北京大学の共同研究——MITライセンスでOSS公開"
+                },
+                {
+                  "label": "",
+                  "value": "本番実績：DeepSeek-V4でスループット維持のまま生成速度最大85%向上"
+                },
+                {
+                  "label": "",
+                  "value": "本質：极强的系统工程（極めて強力なシステムエンジニアリング）"
+                },
+                {
+                  "label": "",
+                  "value": "DeepSeek CEO梁文锋が直接署名した論文"
+                }
               ]
             },
             "alt": "量子位QbitAI紹介のDSpark：DeepSeek+北京大学による投機的デコーディングフレームワーク。MITライセンスでOSS公開、DeepSeek-V4本番でスループット維持のまま生成速度を最大85%向上。CEO梁文锋が署名"
@@ -857,10 +1049,22 @@
               "headline": "百度の新OSS OCR：一冊の本をまるごと処理、著者は元DeepSeek研究員か",
               "tldr": "百度が「一冊の本をまるごと処理できる」大規模文書OCRのOSSモデルを公開。著者が元DeepSeek研究員と目される人物で、中国AI人材の移動が示唆される事例。",
               "points": [
-                "百度発のOSSモデル——大規模文書を一括処理するOCR能力",
-                "「一次吃下一本书」——一冊の本をまるごと1回のOCRで処理",
-                "著者：元DeepSeek研究員と疑われる——百度がDeepSeek人材を活用か",
-                "量子位QbitAI報道——中国OSS AI開発の継続的な動向"
+                {
+                  "label": "",
+                  "value": "百度発のOSSモデル——大規模文書を一括処理するOCR能力"
+                },
+                {
+                  "label": "",
+                  "value": "「一次吃下一本书」——一冊の本をまるごと1回のOCRで処理"
+                },
+                {
+                  "label": "",
+                  "value": "著者：元DeepSeek研究員と疑われる——百度がDeepSeek人材を活用か"
+                },
+                {
+                  "label": "",
+                  "value": "量子位QbitAI報道——中国OSS AI開発の継続的な動向"
+                }
               ]
             },
             "alt": "量子位QbitAIが報道した百度の新オープンソースOCRモデル。「一冊の本をまるごと処理（一次吃下一本书）」できる大規模文書処理能力を持ち、著者が元DeepSeek研究員と目される人物であることが話題"

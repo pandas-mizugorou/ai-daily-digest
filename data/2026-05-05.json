@@ -36,12 +36,19 @@
             "freshness": 2,
             "total": 14
           },
-          "tags": ["nvidia", "multimodal", "omni-model", "video", "audio", "agents", "moe", "256k-context"],
+          "tags": [
+            "nvidia",
+            "multimodal",
+            "omni-model",
+            "video",
+            "audio",
+            "agents",
+            "moe",
+            "256k-context"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Nemotron 3 Nano Omni",
-            "alt": "NVIDIA Nemotron 3 Nano Omni の主要スペック。アーキテクチャは 30B-A3B ハイブリッド MoE、コンテキスト 256K トークン、対応入力モダリティはテキスト・画像・音声・動画・ドキュメント・グラフ・GUI の 7 種、スループットは他のオープンオムニモデル比で最大 9 倍、ドキュメントインテリジェンスと動画・音声理解の 6 リーダーボードで 1 位を獲得、25 以上のプラットフォームで即日提供。",
             "data": {
               "headline": "Nemotron 3 Nano Omni：全モダリティ統合・9 倍スループットのエージェント向けオムニモデル",
               "tldr": "30B-A3B MoE で 7 種の入力モダリティを統合処理し、他のオープンオムニモデル比で最大 9 倍のスループットを実現。6 リーダーボードでトップを獲得し、HuggingFace・NIM など 25 以上のプラットフォームで即日利用可能。",
@@ -84,7 +91,9 @@
               ],
               "context": "NVIDIA は Nemotron シリーズでオープンウェイトの高性能モデルエコシステムを構築しており、今回のオムニモデルはエージェント特化の戦略製品として位置づけられる。",
               "impact": "単一モデルで全モダリティを処理できることは企業のエージェント開発における専用モデルの乗り換えコストを削減し、マルチモーダルエージェントの開発を加速させる。"
-            }
+            },
+            "caption": "Nemotron 3 Nano Omni",
+            "alt": "NVIDIA Nemotron 3 Nano Omni の主要スペック。アーキテクチャは 30B-A3B ハイブリッド MoE、コンテキスト 256K トークン、対応入力モダリティはテキスト・画像・音声・動画・ドキュメント・グラフ・GUI の 7 種、スループットは他のオープンオムニモデル比で最大 9 倍、ドキュメントインテリジェンスと動画・音声理解の 6 リーダーボードで 1 位を獲得、25 以上のプラットフォームで即日提供。"
           }
         }
       ]
@@ -116,12 +125,18 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["microsoft", "agents", "enterprise", "security", "governance", "multi-cloud", "mcp"],
+          "tags": [
+            "microsoft",
+            "agents",
+            "enterprise",
+            "security",
+            "governance",
+            "multi-cloud",
+            "mcp"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Agent 365 GA",
-            "alt": "Microsoft Agent 365 の主要機能概要。コントロールプレーンとして可観測性・ガバナンス・セキュリティを統合。シャドーAI 発見（Defender/Intune）、マルチクラウド対応（AWS Bedrock・Google Cloud）、SaaS 統合（Genspark・Zendesk・n8n 等）、Claude Code・GitHub Copilot CLI 統合計画、月額 USD 15/ユーザー。",
             "data": {
               "headline": "Agent 365：企業エージェントのスプロールを統制する Microsoft の GA コントロールプレーン",
               "tldr": "独自認証で動くエージェントを一元管理するプラットフォームが GA。シャドーAI 発見・マルチクラウド対応・SaaS 統合・ネットワーク制御を月額 USD 15/ユーザーで提供。Claude Code 統合も計画中。",
@@ -167,7 +182,9 @@
               ],
               "context": "エージェントが企業 IT 環境に急速に普及する中、管理・統制の仕組みが整備されていなかった。Agent 365 はその空白を埋める本格的なプラットフォームとして位置づけられる。",
               "impact": "Claude Code・GitHub Copilot CLI との統合計画は、開発現場でのエージェント活用を IT ガバナンスの枠組みに収めるための実用的な手段となりうる。"
-            }
+            },
+            "caption": "Agent 365 GA",
+            "alt": "Microsoft Agent 365 の主要機能概要。コントロールプレーンとして可観測性・ガバナンス・セキュリティを統合。シャドーAI 発見（Defender/Intune）、マルチクラウド対応（AWS Bedrock・Google Cloud）、SaaS 統合（Genspark・Zendesk・n8n 等）、Claude Code・GitHub Copilot CLI 統合計画、月額 USD 15/ユーザー。"
           }
         },
         {
@@ -192,7 +209,16 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["claude", "agent-orchestration", "github", "trending", "typescript", "multi-agent", "swarm", "mcp"],
+          "tags": [
+            "claude",
+            "agent-orchestration",
+            "github",
+            "trending",
+            "typescript",
+            "multi-agent",
+            "swarm",
+            "mcp"
+          ],
           "lang": "en"
         }
       ]
@@ -224,7 +250,15 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["openai", "voice-ai", "latency", "infrastructure", "gpt-4o", "real-time", "scaling"],
+          "tags": [
+            "openai",
+            "voice-ai",
+            "latency",
+            "infrastructure",
+            "gpt-4o",
+            "real-time",
+            "scaling"
+          ],
           "lang": "en"
         }
       ]
@@ -256,16 +290,28 @@
             "freshness": 4,
             "total": 16
           },
-          "tags": ["sakana-ai", "smbc", "finance", "multi-agent", "enterprise", "japan", "banking"],
+          "tags": [
+            "sakana-ai",
+            "smbc",
+            "finance",
+            "multi-agent",
+            "enterprise",
+            "japan",
+            "banking"
+          ],
           "lang": "ja",
           "figure": {
             "type": "comparison",
-            "caption": "提案書作成：従来 vs AI",
-            "alt": "Sakana AI×SMBC の提案書自動生成による従来プロセスとの比較。作成時間は従来 1〜2 週間に対し AI システムでは数十分〜数時間（最大 100 倍短縮）。データ分析は従来の財務データのみから財務・非財務データへ拡充。エージェント数は従来 0 に対し情報収集・分析・仮説構築・ナラティブ・品質評価の 5 役が協調。",
             "data": {
               "headline": "Sakana AI×SMBC：金融提案書を 1〜2 週間から数十分〜数時間へ最大 100 倍短縮",
-              "before": { "label": "従来プロセス", "sublabel": "人手主体の提案書作成" },
-              "after": { "label": "マルチエージェント AI", "sublabel": "Sakana AI × SMBC 共同開発" },
+              "before": {
+                "label": "従来プロセス",
+                "sublabel": "人手主体の提案書作成"
+              },
+              "after": {
+                "label": "マルチエージェント AI",
+                "sublabel": "Sakana AI × SMBC 共同開発"
+              },
               "metrics": [
                 {
                   "icon": "⏱️",
@@ -303,7 +349,9 @@
               ],
               "narrative": "Sakana AI は Trinity・Fugu など独自のマルチエージェント研究を積み上げており、今回の SMBC との協業はその最初の大規模産業実装となる。金融提案書は専門知識と大量のデータ収集を要する典型的なナレッジワークであり、AI エージェントの得意領域との相性が高い。",
               "impact": "大手金融機関での本番実績は他業界への波及効果が大きく、マルチエージェント AI による「数週間→数時間」の業務圧縮が実現可能であることを示した先例として今後の意思決定を後押しする。"
-            }
+            },
+            "caption": "提案書作成：従来 vs AI",
+            "alt": "Sakana AI×SMBC の提案書自動生成による従来プロセスとの比較。作成時間は従来 1〜2 週間に対し AI システムでは数十分〜数時間（最大 100 倍短縮）。データ分析は従来の財務データのみから財務・非財務データへ拡充。エージェント数は従来 0 に対し情報収集・分析・仮説構築・ナラティブ・品質評価の 5 役が協調。"
           }
         },
         {
@@ -328,9 +376,20 @@
             "freshness": 5,
             "total": 18
           },
-          "tags": ["claude-code", "learning", "guide", "japan", "hatena", "tutorial", "golden-week"],
+          "tags": [
+            "claude-code",
+            "learning",
+            "guide",
+            "japan",
+            "hatena",
+            "tutorial",
+            "golden-week"
+          ],
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 956 }
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 956
+          }
         },
         {
           "id": "2026-05-05-007",
@@ -354,9 +413,21 @@
             "freshness": 3,
             "total": 17
           },
-          "tags": ["claude-code", "operations", "tips", "automation", "mcp", "japan", "hatena", "git-worktree"],
+          "tags": [
+            "claude-code",
+            "operations",
+            "tips",
+            "automation",
+            "mcp",
+            "japan",
+            "hatena",
+            "git-worktree"
+          ],
           "lang": "ja",
-          "reaction_signal": { "kind": "hatena", "users": 609 }
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 609
+          }
         }
       ]
     }

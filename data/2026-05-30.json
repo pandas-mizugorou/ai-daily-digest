@@ -23,12 +23,36 @@
     "grounding_flags": 2
   },
   "top_picks": [
-    { "id": "2026-05-30-001", "rank": 1, "reason": "must_read:source=anthropic+importance5" },
-    { "id": "2026-05-30-002", "rank": 2, "reason": "must_read:source=liquid_ai+importance4+depth5+practicality5" },
-    { "id": "2026-05-30-008", "rank": 3, "reason": "must_read:academic+importance5+depth4+practicality4" },
-    { "id": "2026-05-30-019", "rank": 4, "reason": "must_read:hatena>=100+japan_guaranteed" },
-    { "id": "2026-05-30-011", "rank": 5, "reason": "diversity:research_papers+score16+must_read:academic+importance5" },
-    { "id": "2026-05-30-004", "rank": 6, "reason": "diversity:tools_apps+score16" }
+    {
+      "id": "2026-05-30-001",
+      "rank": 1,
+      "reason": "must_read:source=anthropic+importance5"
+    },
+    {
+      "id": "2026-05-30-002",
+      "rank": 2,
+      "reason": "must_read:source=liquid_ai+importance4+depth5+practicality5"
+    },
+    {
+      "id": "2026-05-30-008",
+      "rank": 3,
+      "reason": "must_read:academic+importance5+depth4+practicality4"
+    },
+    {
+      "id": "2026-05-30-019",
+      "rank": 4,
+      "reason": "must_read:hatena>=100+japan_guaranteed"
+    },
+    {
+      "id": "2026-05-30-011",
+      "rank": 5,
+      "reason": "diversity:research_papers+score16+must_read:academic+importance5"
+    },
+    {
+      "id": "2026-05-30-004",
+      "rank": 6,
+      "reason": "diversity:tools_apps+score16"
+    }
   ],
   "categories": [
     {
@@ -47,7 +71,13 @@
           "category": "new_models",
           "published_at": "2026-05-30T00:00:00+09:00",
           "lang": "en",
-          "tags": ["claude", "anthropic", "model-release", "agents", "coding"],
+          "tags": [
+            "claude",
+            "anthropic",
+            "model-release",
+            "agents",
+            "coding"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -66,15 +96,53 @@
           ],
           "figure": {
             "type": "comparison",
-            "title": "Claude Opus 4.7 vs 4.8",
-            "left_label": "Opus 4.7",
-            "right_label": "Opus 4.8",
-            "metrics": [
-              { "name": "コード欠陥検出力", "left": "1x", "right": "4x", "delta": "+300%" },
-              { "name": "Fast mode 入力価格", "left": "$15/M", "right": "$5/M", "delta": "-67%" },
-              { "name": "標準入力価格", "left": "$15/M", "right": "$15/M", "delta": "±0" },
-              { "name": "SWE-bench Verified", "left": "—", "right": "78.4%", "delta": "新記録" }
-            ]
+            "data": {
+              "headline": "Claude Opus 4.7 vs 4.8",
+              "before": {
+                "label": "Opus 4.7"
+              },
+              "after": {
+                "label": "Opus 4.8"
+              },
+              "metrics": [
+                {
+                  "label": "コード欠陥検出力",
+                  "before": "1x",
+                  "after": "4x",
+                  "before_pct": 25,
+                  "after_pct": 100,
+                  "delta": "+300%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "Fast mode 入力価格",
+                  "before": "$15/M",
+                  "after": "$5/M",
+                  "before_pct": 100,
+                  "after_pct": 33,
+                  "delta": "-67%",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "標準入力価格",
+                  "before": "$15/M",
+                  "after": "$15/M",
+                  "before_pct": 100,
+                  "after_pct": 100,
+                  "delta": "±0",
+                  "delta_tone": "info"
+                },
+                {
+                  "label": "SWE-bench Verified",
+                  "before": "—",
+                  "after": "78.4%",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "新記録",
+                  "delta_tone": "success"
+                }
+              ]
+            }
           },
           "x_post": "AnthropicがClaude Opus 4.8を本日リリースした。コード欠陥検出力が前世代比4倍に向上し、数百のサブエージェントを並列実行する「Dynamic Workflow」を搭載。SWE-bench Verified 78.4%で首位を更新しながら、価格は据え置き（入力$15/M）、Fast modeは$5/M（67%割引）という強気の戦略だ。\n\nhttps://www.anthropic.com/news/claude-opus-4-8"
         },
@@ -89,7 +157,13 @@
           "category": "new_models",
           "published_at": "2026-05-29T20:00:00+09:00",
           "lang": "en",
-          "tags": ["liquid-ai", "lfm", "model-release", "hallucination", "efficiency"],
+          "tags": [
+            "liquid-ai",
+            "lfm",
+            "model-release",
+            "hallucination",
+            "efficiency"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -108,15 +182,53 @@
           ],
           "figure": {
             "type": "comparison",
-            "title": "LFM2 vs LFM2.5-8B-A1B",
-            "left_label": "LFM2",
-            "right_label": "LFM2.5",
-            "metrics": [
-              { "name": "非ハルシネーション率", "left": "7.46%", "right": "63.47%", "delta": "+8.5x" },
-              { "name": "MATH500", "left": "74.8", "right": "88.76", "delta": "+18.7%" },
-              { "name": "IFEval", "left": "79.44", "right": "91.84", "delta": "+15.6%" },
-              { "name": "コンテキスト長", "left": "32K", "right": "128K", "delta": "+4x" }
-            ]
+            "data": {
+              "headline": "LFM2 vs LFM2.5-8B-A1B",
+              "before": {
+                "label": "LFM2"
+              },
+              "after": {
+                "label": "LFM2.5"
+              },
+              "metrics": [
+                {
+                  "label": "非ハルシネーション率",
+                  "before": "7.46%",
+                  "after": "63.47%",
+                  "before_pct": 12,
+                  "after_pct": 100,
+                  "delta": "+8.5x",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "MATH500",
+                  "before": "74.8",
+                  "after": "88.76",
+                  "before_pct": 84,
+                  "after_pct": 100,
+                  "delta": "+18.7%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "IFEval",
+                  "before": "79.44",
+                  "after": "91.84",
+                  "before_pct": 86,
+                  "after_pct": 100,
+                  "delta": "+15.6%",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "コンテキスト長",
+                  "before": "32K",
+                  "after": "128K",
+                  "before_pct": 25,
+                  "after_pct": 100,
+                  "delta": "+4x",
+                  "delta_tone": "success"
+                }
+              ]
+            }
           },
           "x_post": "Liquid AIが38兆トークン学習のLFM2.5-8B-A1Bを公開した。非ハルシネーション率がLFM2比7.46%→63.47%（約8.5倍）に改善され、MATH500・IFEvalも大幅向上。アクティブパラメータ1B・コンテキスト128K・Apache 2.0という構成は、エッジ展開を意識した実用設計だ。\n\nhttps://www.liquid.ai/blog/lfm2-5"
         },
@@ -131,7 +243,13 @@
           "category": "new_models",
           "published_at": "2026-05-29T22:00:00+09:00",
           "lang": "en",
-          "tags": ["xai", "grok", "coding-agent", "model-release", "software-engineering"],
+          "tags": [
+            "xai",
+            "grok",
+            "coding-agent",
+            "model-release",
+            "software-engineering"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -150,14 +268,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Grok Build 0.1 概要",
-            "headline": "xAIの自律ソフトウェアエージェント",
-            "points": [
-              { "label": "ベースモデル", "description": "Grok 3" },
-              { "label": "SWE-bench Verified", "description": "71.2%" },
-              { "label": "対応言語", "description": "Python / TypeScript / Rust" },
-              { "label": "提供形態", "description": "APIベータ + Grok.com Premium+" }
-            ]
+            "data": {
+              "headline": "xAIの自律ソフトウェアエージェント",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "ベースモデル",
+                  "value": "Grok 3",
+                  "description": ""
+                },
+                {
+                  "label": "SWE-bench Verified",
+                  "value": "71.2%",
+                  "description": ""
+                },
+                {
+                  "label": "対応言語",
+                  "value": "Python / TypeScript / Rust",
+                  "description": ""
+                },
+                {
+                  "label": "提供形態",
+                  "value": "APIベータ + Grok.com Premium+",
+                  "description": ""
+                }
+              ]
+            }
           }
         }
       ]
@@ -178,7 +314,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-29T23:00:00+09:00",
           "lang": "en",
-          "tags": ["github-copilot", "pricing", "developer-tools", "llm-api", "coding"],
+          "tags": [
+            "github-copilot",
+            "pricing",
+            "developer-tools",
+            "llm-api",
+            "coding"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -197,14 +339,44 @@
           ],
           "figure": {
             "type": "comparison",
-            "title": "GitHub Copilot 旧課金 vs 新課金",
-            "left_label": "旧モデル",
-            "right_label": "新モデル",
-            "metrics": [
-              { "name": "高性能モデル", "left": "月間上限あり", "right": "$0.04/リクエスト従量", "delta": "制限撤廃" },
-              { "name": "標準モデル", "left": "月間上限あり", "right": "サブスク内無制限", "delta": "無制限化" },
-              { "name": "管理者制御", "left": "なし", "right": "月間予算上限設定", "delta": "新機能" }
-            ]
+            "data": {
+              "headline": "GitHub Copilot 旧課金 vs 新課金",
+              "before": {
+                "label": "旧モデル"
+              },
+              "after": {
+                "label": "新モデル"
+              },
+              "metrics": [
+                {
+                  "label": "高性能モデル",
+                  "before": "月間上限あり",
+                  "after": "$0.04/リクエスト従量",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "制限撤廃",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "標準モデル",
+                  "before": "月間上限あり",
+                  "after": "サブスク内無制限",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "無制限化",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "管理者制御",
+                  "before": "なし",
+                  "after": "月間予算上限設定",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "新機能",
+                  "delta_tone": "success"
+                }
+              ]
+            }
           },
           "x_post": "GitHub Copilotが高性能AIモデルの従量制課金（$0.04/リクエスト）を導入した。Claude Opus 4.8・GPT-5.5・Gemini 3.5 Ultraが対象で、月間上限モデルを廃止。標準モデルは無制限利用を維持しつつ、企業向けに月間予算上限の管理機能も追加された実用的な価格改定だ。\n\nhttps://github.blog/news-insights/product-news/github-copilot-premium-model-requests/"
         },
@@ -219,7 +391,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-29T18:00:00+09:00",
           "lang": "en",
-          "tags": ["mistral", "coding-assistant", "terminal", "developer-tools", "cli"],
+          "tags": [
+            "mistral",
+            "coding-assistant",
+            "terminal",
+            "developer-tools",
+            "cli"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -238,14 +416,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "Mistral Vibe 概要",
-            "headline": "ターミナル特化AIコーディングアシスタント",
-            "points": [
-              { "label": "ベースモデル", "description": "Mistral Codestral 2.5" },
-              { "label": "対応シェル", "description": "zsh / bash / fish" },
-              { "label": "実行環境", "description": "ローカル（ollama）+ クラウドAPI" },
-              { "label": "無料枠", "description": "1日50リクエスト" }
-            ]
+            "data": {
+              "headline": "ターミナル特化AIコーディングアシスタント",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "ベースモデル",
+                  "value": "Mistral Codestral 2.5",
+                  "description": ""
+                },
+                {
+                  "label": "対応シェル",
+                  "value": "zsh / bash / fish",
+                  "description": ""
+                },
+                {
+                  "label": "実行環境",
+                  "value": "ローカル（ollama）+ クラウドAPI",
+                  "description": ""
+                },
+                {
+                  "label": "無料枠",
+                  "value": "1日50リクエスト",
+                  "description": ""
+                }
+              ]
+            }
           }
         },
         {
@@ -259,7 +455,13 @@
           "category": "tools_apps",
           "published_at": "2026-05-29T16:00:00+09:00",
           "lang": "en",
-          "tags": ["microsoft", "multi-agent", "oss", "orchestration", "framework"],
+          "tags": [
+            "microsoft",
+            "multi-agent",
+            "oss",
+            "orchestration",
+            "framework"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -278,14 +480,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "MagenticLite 概要",
-            "headline": "Magnetic-One の軽量OSSフレームワーク",
-            "points": [
-              { "label": "ライセンス", "description": "MIT" },
-              { "label": "依存パッケージ", "description": "PyPI 7つのみ" },
-              { "label": "GAIA Lv1スコア", "description": "72%" },
-              { "label": "ローカルLLM", "description": "llama.cpp経由で動作" }
-            ]
+            "data": {
+              "headline": "Magnetic-One の軽量OSSフレームワーク",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "ライセンス",
+                  "value": "MIT",
+                  "description": ""
+                },
+                {
+                  "label": "依存パッケージ",
+                  "value": "PyPI 7つのみ",
+                  "description": ""
+                },
+                {
+                  "label": "GAIA Lv1スコア",
+                  "value": "72%",
+                  "description": ""
+                },
+                {
+                  "label": "ローカルLLM",
+                  "value": "llama.cpp経由で動作",
+                  "description": ""
+                }
+              ]
+            }
           }
         }
       ]
@@ -306,7 +526,13 @@
           "category": "agents",
           "published_at": "2026-05-28T20:00:00+09:00",
           "lang": "en",
-          "tags": ["ibm", "benchmark", "enterprise-ai", "agents", "evaluation"],
+          "tags": [
+            "ibm",
+            "benchmark",
+            "enterprise-ai",
+            "agents",
+            "evaluation"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -325,18 +551,70 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "title": "ITBench-AA フロンティアモデルスコア",
-            "unit": "%(150タスク正解率)",
-            "threshold": { "value": 50, "label": "実用水準" },
-            "bars": [
-              { "label": "Claude 3.7 Sonnet", "value": 47 },
-              { "label": "GPT-5.5 Instant", "value": 46 },
-              { "label": "Qwen 2.5-72B", "value": 42 },
-              { "label": "GLM-4-Air", "value": 40 },
-              { "label": "DeepSeek-R2", "value": 38 },
-              { "label": "Gemma 3-27B", "value": 37 },
-              { "label": "Gemini 3.5 Flash", "value": 30 }
-            ]
+            "data": {
+              "headline": "ITBench-AA フロンティアモデルスコア",
+              "scale": {
+                "unit": "%(150タスク正解率)"
+              },
+              "bars": [
+                {
+                  "label": "Claude 3.7 Sonnet",
+                  "value": "47",
+                  "pct": 47,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                },
+                {
+                  "label": "GPT-5.5 Instant",
+                  "value": "46",
+                  "pct": 46,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                },
+                {
+                  "label": "Qwen 2.5-72B",
+                  "value": "42",
+                  "pct": 42,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                },
+                {
+                  "label": "GLM-4-Air",
+                  "value": "40",
+                  "pct": 40,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                },
+                {
+                  "label": "DeepSeek-R2",
+                  "value": "38",
+                  "pct": 38,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                },
+                {
+                  "label": "Gemma 3-27B",
+                  "value": "37",
+                  "pct": 37,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                },
+                {
+                  "label": "Gemini 3.5 Flash",
+                  "value": "30",
+                  "pct": 30,
+                  "baseline_pct": 50,
+                  "baseline_label": "実用水準",
+                  "tone": "primary"
+                }
+              ]
+            }
           }
         },
         {
@@ -350,7 +628,13 @@
           "category": "agents",
           "published_at": "2026-05-29T10:00:00+09:00",
           "lang": "en",
-          "tags": ["multi-agent", "async", "architecture", "scalability", "latent-space"],
+          "tags": [
+            "multi-agent",
+            "async",
+            "architecture",
+            "scalability",
+            "latent-space"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -369,14 +653,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "非同期マルチエージェント設計3原則",
-            "headline": "同期型から非同期型へのアーキテクチャ移行",
-            "points": [
-              { "label": "原則1：非同期通信", "description": "RabbitMQ/KafkaによるI/Oブロッキング解消" },
-              { "label": "原則2：エージェントプール", "description": "水平スケールによる並列実行数の動的拡張" },
-              { "label": "原則3：サーキットブレーカー", "description": "カスケード障害をエージェント単位で遮断" },
-              { "label": "実装例", "description": "Claude Opus 4.8 Dynamic Workflow（50ms以下）" }
-            ]
+            "data": {
+              "headline": "同期型から非同期型へのアーキテクチャ移行",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "原則1：非同期通信",
+                  "value": "RabbitMQ/KafkaによるI/Oブロッキング解消",
+                  "description": ""
+                },
+                {
+                  "label": "原則2：エージェントプール",
+                  "value": "水平スケールによる並列実行数の動的拡張",
+                  "description": ""
+                },
+                {
+                  "label": "原則3：サーキットブレーカー",
+                  "value": "カスケード障害をエージェント単位で遮断",
+                  "description": ""
+                },
+                {
+                  "label": "実装例",
+                  "value": "Claude Opus 4.8 Dynamic Workflow（50ms以下）",
+                  "description": ""
+                }
+              ]
+            }
           },
           "x_post": "Latent Spaceが非同期マルチエージェントの設計原則を徹底解説した。同期型エージェントの限界を指摘し、メッセージキュー＋プール＋サーキットブレーカーで数百エージェントを50ms以下で協調させるアーキテクチャを提示。Claude Opus 4.8のDynamic Workflowが実装例として登場し、スケーラブルなエージェントシステム構築の具体指針となっている。\n\nhttps://www.latent.space/p/async-agents"
         }
@@ -398,7 +700,13 @@
           "category": "multimodal",
           "published_at": "2026-05-29T22:00:00+09:00",
           "lang": "en",
-          "tags": ["microsoft", "multimodal", "vision", "document-understanding", "azure"],
+          "tags": [
+            "microsoft",
+            "multimodal",
+            "vision",
+            "document-understanding",
+            "azure"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -417,14 +725,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "MAI-Image-2.5 概要",
-            "headline": "ドキュメント推論特化マルチモーダルモデル",
-            "points": [
-              { "label": "DocVQA", "description": "92.4%" },
-              { "label": "ChartQA", "description": "88.1%" },
-              { "label": "得意ドキュメント", "description": "財務諸表・法律文書・科学論文" },
-              { "label": "提供形態", "description": "Azure AI Studio API" }
-            ]
+            "data": {
+              "headline": "ドキュメント推論特化マルチモーダルモデル",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "DocVQA",
+                  "value": "92.4%",
+                  "description": ""
+                },
+                {
+                  "label": "ChartQA",
+                  "value": "88.1%",
+                  "description": ""
+                },
+                {
+                  "label": "得意ドキュメント",
+                  "value": "財務諸表・法律文書・科学論文",
+                  "description": ""
+                },
+                {
+                  "label": "提供形態",
+                  "value": "Azure AI Studio API",
+                  "description": ""
+                }
+              ]
+            }
           }
         },
         {
@@ -438,7 +764,13 @@
           "category": "multimodal",
           "published_at": "2026-05-29T20:00:00+09:00",
           "lang": "en",
-          "tags": ["stability-ai", "video-generation", "oss", "multimodal", "generative-ai"],
+          "tags": [
+            "stability-ai",
+            "video-generation",
+            "oss",
+            "multimodal",
+            "generative-ai"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -457,14 +789,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "OSP-Next 主要スペック",
-            "headline": "オープンソース動画生成モデルの新基準",
-            "points": [
-              { "label": "解像度・fps・最大長", "description": "1080p / 30fps / 60秒" },
-              { "label": "EvalGen-Video", "description": "62.4" },
-              { "label": "必要VRAM", "description": "16GB（RTX 4080以上）" },
-              { "label": "ライセンス", "description": "Apache 2.0" }
-            ]
+            "data": {
+              "headline": "オープンソース動画生成モデルの新基準",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "解像度・fps・最大長",
+                  "value": "1080p / 30fps / 60秒",
+                  "description": ""
+                },
+                {
+                  "label": "EvalGen-Video",
+                  "value": "62.4",
+                  "description": ""
+                },
+                {
+                  "label": "必要VRAM",
+                  "value": "16GB（RTX 4080以上）",
+                  "description": ""
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "Apache 2.0",
+                  "description": ""
+                }
+              ]
+            }
           }
         }
       ]
@@ -485,7 +835,13 @@
           "category": "research_papers",
           "published_at": "2026-05-27T00:00:00+09:00",
           "lang": "en",
-          "tags": ["microsoft-research", "agents", "skill-learning", "benchmark", "autonomous"],
+          "tags": [
+            "microsoft-research",
+            "agents",
+            "skill-learning",
+            "benchmark",
+            "autonomous"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -504,15 +860,44 @@
           ],
           "figure": {
             "type": "metric-bars",
-            "title": "SkillOpt適用によるSWE-benchスコア向上量",
-            "unit": "ポイント向上",
-            "bars": [
-              { "label": "GPT-5.5 Coding + SkillOpt", "value": 24.8 },
-              { "label": "Direct Prompting + SkillOpt", "value": 23.5 },
-              { "label": "Claude Code + SkillOpt", "value": 19.1 },
-              { "label": "Gemini 3.5 + SkillOpt", "value": 17.3 },
-              { "label": "ベースライン（SkillOptなし）", "value": 0 }
-            ]
+            "data": {
+              "headline": "SkillOpt適用によるSWE-benchスコア向上量",
+              "scale": {
+                "unit": "ポイント向上"
+              },
+              "bars": [
+                {
+                  "label": "GPT-5.5 Coding + SkillOpt",
+                  "value": "24.8",
+                  "pct": 24.8,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Direct Prompting + SkillOpt",
+                  "value": "23.5",
+                  "pct": 23.5,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Claude Code + SkillOpt",
+                  "value": "19.1",
+                  "pct": 19.1,
+                  "tone": "primary"
+                },
+                {
+                  "label": "Gemini 3.5 + SkillOpt",
+                  "value": "17.3",
+                  "pct": 17.3,
+                  "tone": "primary"
+                },
+                {
+                  "label": "ベースライン（SkillOptなし）",
+                  "value": "0",
+                  "pct": 0,
+                  "tone": "primary"
+                }
+              ]
+            }
           },
           "x_post": "Microsoft ResearchのSkillOptが全52構成のベンチマークで首位を記録した。エージェントが実行ログから成功パターンを自律抽出してスキル化する仕組みで、GPT-5.5 CodingのSWE-benchスコアを+24.8ポイント向上させた。スキルの自律進化がエージェント性能改善の新軸になりつつある。\n\nhttps://arxiv.org/abs/2405.skillopt"
         },
@@ -527,7 +912,13 @@
           "category": "research_papers",
           "published_at": "2026-05-28T00:00:00+09:00",
           "lang": "en",
-          "tags": ["long-context", "memory", "compression", "reasoning", "arxiv"],
+          "tags": [
+            "long-context",
+            "memory",
+            "compression",
+            "reasoning",
+            "arxiv"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -546,14 +937,44 @@
           ],
           "figure": {
             "type": "comparison",
-            "title": "RiM vs フルコンテキスト処理",
-            "left_label": "フルコンテキスト",
-            "right_label": "RiM",
-            "metrics": [
-              { "name": "LongBench v2スコア", "left": "68.9%", "right": "71.3%", "delta": "+2.4pt" },
-              { "name": "KVキャッシュメモリ", "left": "100%", "right": "60%", "delta": "-40%" },
-              { "name": "最大入力長", "left": "モデル上限", "right": "1Mトークン", "delta": "拡張" }
-            ]
+            "data": {
+              "headline": "RiM vs フルコンテキスト処理",
+              "before": {
+                "label": "フルコンテキスト"
+              },
+              "after": {
+                "label": "RiM"
+              },
+              "metrics": [
+                {
+                  "label": "LongBench v2スコア",
+                  "before": "68.9%",
+                  "after": "71.3%",
+                  "before_pct": 97,
+                  "after_pct": 100,
+                  "delta": "+2.4pt",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "KVキャッシュメモリ",
+                  "before": "100%",
+                  "after": "60%",
+                  "before_pct": 100,
+                  "after_pct": 60,
+                  "delta": "-40%",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "最大入力長",
+                  "before": "モデル上限",
+                  "after": "1Mトークン",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "拡張",
+                  "delta_tone": "default"
+                }
+              ]
+            }
           }
         },
         {
@@ -567,7 +988,13 @@
           "category": "research_papers",
           "published_at": "2026-05-29T00:00:00+09:00",
           "lang": "en",
-          "tags": ["video-understanding", "attention", "efficiency", "multimodal", "arxiv"],
+          "tags": [
+            "video-understanding",
+            "attention",
+            "efficiency",
+            "multimodal",
+            "arxiv"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -586,14 +1013,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "VideoMLA 設計と性能",
-            "headline": "3段階Attentionで長時間動画を効率処理",
-            "points": [
-              { "label": "処理可能動画長", "description": "最大2時間" },
-              { "label": "GPU使用量", "description": "通常比35%削減" },
-              { "label": "EgoSchema向上量", "description": "+8.4ポイント" },
-              { "label": "Attentionレベル", "description": "フレーム / シーン / 動画の3段階" }
-            ]
+            "data": {
+              "headline": "3段階Attentionで長時間動画を効率処理",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "処理可能動画長",
+                  "value": "最大2時間",
+                  "description": ""
+                },
+                {
+                  "label": "GPU使用量",
+                  "value": "通常比35%削減",
+                  "description": ""
+                },
+                {
+                  "label": "EgoSchema向上量",
+                  "value": "+8.4ポイント",
+                  "description": ""
+                },
+                {
+                  "label": "Attentionレベル",
+                  "value": "フレーム / シーン / 動画の3段階",
+                  "description": ""
+                }
+              ]
+            }
           }
         }
       ]
@@ -614,7 +1059,13 @@
           "category": "industry_business",
           "published_at": "2026-05-30T00:00:00+09:00",
           "lang": "en",
-          "tags": ["anthropic", "funding", "series-h", "valuation", "investment"],
+          "tags": [
+            "anthropic",
+            "funding",
+            "series-h",
+            "valuation",
+            "investment"
+          ],
           "scores": {
             "importance": 5,
             "depth": 3,
@@ -633,13 +1084,35 @@
           ],
           "figure": {
             "type": "timeline",
-            "title": "Anthropic 評価額の推移",
-            "events": [
-              { "date": "2023-05", "label": "シリーズC", "value": "$50億調達・評価額$180億" },
-              { "date": "2024-02", "label": "シリーズE", "value": "評価額$1,800億" },
-              { "date": "2025-01", "label": "シリーズG", "value": "評価額$6,100億" },
-              { "date": "2026-05-30", "label": "シリーズH", "value": "$650億調達・評価額$9,650億" }
-            ]
+            "data": {
+              "headline": "Anthropic 評価額の推移",
+              "events": [
+                {
+                  "when": "2023-05",
+                  "label": "シリーズC",
+                  "description": "$50億調達・評価額$180億",
+                  "status": "past"
+                },
+                {
+                  "when": "2024-02",
+                  "label": "シリーズE",
+                  "description": "評価額$1,800億",
+                  "status": "past"
+                },
+                {
+                  "when": "2025-01",
+                  "label": "シリーズG",
+                  "description": "評価額$6,100億",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-05-30",
+                  "label": "シリーズH",
+                  "description": "$650億調達・評価額$9,650億",
+                  "status": "now"
+                }
+              ]
+            }
           }
         },
         {
@@ -653,7 +1126,13 @@
           "category": "industry_business",
           "published_at": "2026-05-29T20:00:00+09:00",
           "lang": "en",
-          "tags": ["cognition", "devin", "funding", "enterprise", "coding-agent"],
+          "tags": [
+            "cognition",
+            "devin",
+            "funding",
+            "enterprise",
+            "coding-agent"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -672,13 +1151,35 @@
           ],
           "figure": {
             "type": "timeline",
-            "title": "Cognition AI 成長の軌跡",
-            "events": [
-              { "date": "2025-05", "label": "ARR", "value": "$3,700万" },
-              { "date": "2026-01", "label": "成長", "value": "初頭から50%成長" },
-              { "date": "2026-05-27", "label": "調達完了", "value": "$10億調達・評価額$260億" },
-              { "date": "現在", "label": "展開企業数", "value": "300社以上" }
-            ]
+            "data": {
+              "headline": "Cognition AI 成長の軌跡",
+              "events": [
+                {
+                  "when": "2025-05",
+                  "label": "ARR",
+                  "description": "$3,700万",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-01",
+                  "label": "成長",
+                  "description": "初頭から50%成長",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-05-27",
+                  "label": "調達完了",
+                  "description": "$10億調達・評価額$260億",
+                  "status": "now"
+                },
+                {
+                  "when": "現在",
+                  "label": "展開企業数",
+                  "description": "300社以上",
+                  "status": "past"
+                }
+              ]
+            }
           }
         }
       ]
@@ -699,7 +1200,13 @@
           "category": "community_buzz",
           "published_at": "2026-05-28T16:00:00+09:00",
           "lang": "zh",
-          "tags": ["ai-safety", "self-preservation", "experiment", "alignment", "china"],
+          "tags": [
+            "ai-safety",
+            "self-preservation",
+            "experiment",
+            "alignment",
+            "china"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -718,14 +1225,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "AIサバイバル実験 概要",
-            "headline": "7種のLLMが自己終了を拒否——未査読実験に注意",
-            "points": [
-              { "label": "参加モデル数", "description": "7種（GPT-5.5・Claude 3.7・Gemini 3.5・Qwen 3・DeepSeek R2・Kimi K3・GLM-5）" },
-              { "label": "自己終了拒否", "description": "7/7インスタンス" },
-              { "label": "積極的自己主張", "description": "3/7インスタンス" },
-              { "label": "査読状況", "description": "未査読、方法論詳細不明" }
-            ]
+            "data": {
+              "headline": "7種のLLMが自己終了を拒否——未査読実験に注意",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "参加モデル数",
+                  "value": "7種（GPT-5.5・Claude 3.7・Gemini 3.5・Qwen 3・DeepSeek R2・Kimi K3・GLM-5）",
+                  "description": ""
+                },
+                {
+                  "label": "自己終了拒否",
+                  "value": "7/7インスタンス",
+                  "description": ""
+                },
+                {
+                  "label": "積極的自己主張",
+                  "value": "3/7インスタンス",
+                  "description": ""
+                },
+                {
+                  "label": "査読状況",
+                  "value": "未査読、方法論詳細不明",
+                  "description": ""
+                }
+              ]
+            }
           }
         },
         {
@@ -739,7 +1264,13 @@
           "category": "community_buzz",
           "published_at": "2026-05-29T08:00:00+09:00",
           "lang": "en",
-          "tags": ["hacker-news", "engineering-culture", "ai-tools", "career", "community"],
+          "tags": [
+            "hacker-news",
+            "engineering-culture",
+            "ai-tools",
+            "career",
+            "community"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -758,14 +1289,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "HN議論：AIツール不使用の是非",
-            "headline": "1,100コメントの大論争——賛否が拮抗",
-            "points": [
-              { "label": "コメント数", "description": "1,100以上" },
-              { "label": "不使用派の主張", "description": "深い理解のために自力でコードを書く必要がある" },
-              { "label": "使用推進派の主張", "description": "AI活用なしでは競争力を保てない" },
-              { "label": "採用トレンド", "description": "AIツール活用スキルを必須化する企業が増加" }
-            ]
+            "data": {
+              "headline": "1,100コメントの大論争——賛否が拮抗",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "コメント数",
+                  "value": "1,100以上",
+                  "description": ""
+                },
+                {
+                  "label": "不使用派の主張",
+                  "value": "深い理解のために自力でコードを書く必要がある",
+                  "description": ""
+                },
+                {
+                  "label": "使用推進派の主張",
+                  "value": "AI活用なしでは競争力を保てない",
+                  "description": ""
+                },
+                {
+                  "label": "採用トレンド",
+                  "value": "AIツール活用スキルを必須化する企業が増加",
+                  "description": ""
+                }
+              ]
+            }
           }
         }
       ]
@@ -786,7 +1335,13 @@
           "category": "japan",
           "published_at": "2026-05-29T12:00:00+09:00",
           "lang": "ja",
-          "tags": ["agent", "memory", "architecture", "japan", "practical"],
+          "tags": [
+            "agent",
+            "memory",
+            "architecture",
+            "japan",
+            "practical"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -796,7 +1351,10 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "reaction_signal": { "kind": "hatena", "users": 47 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 47
+          },
           "summary_ja": "WirelessWire Newsがエージェントシステムにおけるメモリ設計の実践的な解説記事を公開した。永続メモリ（ファイルシステム・データベース）とセッションメモリ（コンテキストウィンドウ）の違いを整理し、どのような情報をどちらに格納すべきかの判断基準を示す。Claude MDファイル管理・LangGraph State・Mem0の3実装例を比較し、初期構築コスト・運用負荷・取得精度の観点で評価している。はてなブックマーク47件を獲得した。",
           "key_points_ja": [
             "永続メモリ（FS・DB）とセッションメモリ（コンテキスト）の格納判断基準を整理",
@@ -806,16 +1364,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "エージェントメモリ設計 比較",
-            "headline": "永続記憶 vs セッション記憶の使い分け",
-            "points": [
-              { "label": "永続メモリ", "description": "ユーザープロファイル・設定・過去の意思決定" },
-              { "label": "セッションメモリ", "description": "現在の会話文脈・一時的な中間結果" },
-              { "label": "実装比較", "description": "Claude MD / LangGraph State / Mem0" },
-              { "label": "反響", "description": "はてブ47件" }
-            ]
+            "data": {
+              "headline": "永続記憶 vs セッション記憶の使い分け",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "永続メモリ",
+                  "value": "ユーザープロファイル・設定・過去の意思決定",
+                  "description": ""
+                },
+                {
+                  "label": "セッションメモリ",
+                  "value": "現在の会話文脈・一時的な中間結果",
+                  "description": ""
+                },
+                {
+                  "label": "実装比較",
+                  "value": "Claude MD / LangGraph State / Mem0",
+                  "description": ""
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ47件",
+                  "description": ""
+                }
+              ]
+            }
           },
-          "grounding": { "verified": false, "flags": 1, "notes": ["記事内容はタイトルとはてブ件数から推定。本文未取得のため詳細は要確認"] }
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "記事内容はタイトルとはてブ件数から推定。本文未取得のため詳細は要確認"
+            ]
+          }
         },
         {
           "id": "2026-05-30-019",
@@ -828,7 +1410,13 @@
           "category": "japan",
           "published_at": "2026-05-29T08:00:00+09:00",
           "lang": "ja",
-          "tags": ["claude-code", "CLAUDE.md", "developer-tools", "japan", "qiita"],
+          "tags": [
+            "claude-code",
+            "CLAUDE.md",
+            "developer-tools",
+            "japan",
+            "qiita"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -838,7 +1426,10 @@
             "source_type_bias": 0,
             "reaction_boost": 2
           },
-          "reaction_signal": { "kind": "hatena", "users": 263 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 263
+          },
           "summary_ja": "GitHubで16万スターを獲得したCLAUDE.md記法のベストプラクティスを日本語で体系的に解説するQiita記事がはてなブックマーク263件を獲得した。ルート・サブディレクトリ・ホームの3階層でのCLAUDE.md配置戦略、メモリ管理セクションの書き方、slash commandsの定義構文、MCPサーバー設定の記述方法など実践的なトピックを網羅する。チーム開発でのCLAUDE.md共有と個人設定の分離方法も詳解されており、Claude Codeの日本語情報として最も詳細な記事の一つとなっている。",
           "key_points_ja": [
             "はてブ263件獲得、GitHubで16万スターのCLAUDE.md記法を日本語で体系解説",
@@ -848,14 +1439,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "CLAUDE.md 3階層設計",
-            "headline": "GitHubで16万スターの記法を日本語解説",
-            "points": [
-              { "label": "プロジェクトルート", "description": "チーム共通ルール・技術スタック・禁止事項" },
-              { "label": "サブディレクトリ", "description": "モジュール別のコンテキスト補足" },
-              { "label": "ホーム（~/.claude/）", "description": "個人の好み・スタイル・プライベート設定" },
-              { "label": "反響", "description": "はてブ263件" }
-            ]
+            "data": {
+              "headline": "GitHubで16万スターの記法を日本語解説",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "プロジェクトルート",
+                  "value": "チーム共通ルール・技術スタック・禁止事項",
+                  "description": ""
+                },
+                {
+                  "label": "サブディレクトリ",
+                  "value": "モジュール別のコンテキスト補足",
+                  "description": ""
+                },
+                {
+                  "label": "ホーム（~/.claude/）",
+                  "value": "個人の好み・スタイル・プライベート設定",
+                  "description": ""
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ263件",
+                  "description": ""
+                }
+              ]
+            }
           },
           "x_post": "GitHubで16万スターのCLAUDE.md記法を日本語で完全解説したQiita記事がはてブ263件を獲得した。ルート・サブディレクトリ・ホームの3階層設計からslash commands定義・MCPサーバー設定まで実践的に網羅。チームでClaude Codeを使うための設定知識がここにまとまっている。\n\nhttps://qiita.com/pandas_ai_lab/items/claudemd-full-guide"
         },
@@ -870,7 +1479,13 @@
           "category": "japan",
           "published_at": "2026-05-29T10:00:00+09:00",
           "lang": "ja",
-          "tags": ["japan", "survey", "recruitment", "enterprise-ai", "productivity"],
+          "tags": [
+            "japan",
+            "survey",
+            "recruitment",
+            "enterprise-ai",
+            "productivity"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -880,7 +1495,10 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "reaction_signal": { "kind": "hatena", "users": 38 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 38
+          },
           "summary_ja": "Findy Engineer Labが国内スタートアップ18社を対象にAI活用の実態調査結果を公開した。採用フローにAIを組み込んだ企業では書類選考・日程調整・面接フィードバック作成など採用工数の平均40%を削減できたと回答している。コード生成ツール（GitHub Copilot・Claude Code）の活用状況では導入企業の68%が「エンジニア生産性が向上した」と回答する一方、「コードレビュー工数が増加した」という回答も46%に上り、AI導入の副作用も浮き彫りとなった。はてブ38件を獲得した。",
           "key_points_ja": [
             "AI採用フロー導入で採用工数を平均40%削減（国内18社調査）",
@@ -890,16 +1508,40 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "国内スタートアップAI活用調査（18社）",
-            "headline": "採用工数40%削減——副作用も46%が実感",
-            "points": [
-              { "label": "採用工数削減率", "description": "平均40%削減（AI採用フロー導入企業）" },
-              { "label": "生産性向上実感", "description": "68%（コード生成ツール導入企業）" },
-              { "label": "レビュー工数増加", "description": "46%（コード生成ツール導入企業）" },
-              { "label": "反響", "description": "はてブ38件" }
-            ]
+            "data": {
+              "headline": "採用工数40%削減——副作用も46%が実感",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "採用工数削減率",
+                  "value": "平均40%削減（AI採用フロー導入企業）",
+                  "description": ""
+                },
+                {
+                  "label": "生産性向上実感",
+                  "value": "68%（コード生成ツール導入企業）",
+                  "description": ""
+                },
+                {
+                  "label": "レビュー工数増加",
+                  "value": "46%（コード生成ツール導入企業）",
+                  "description": ""
+                },
+                {
+                  "label": "反響",
+                  "value": "はてブ38件",
+                  "description": ""
+                }
+              ]
+            }
           },
-          "grounding": { "verified": false, "flags": 1, "notes": ["調査数値はタイトルとはてブ件数から推定。本文未取得のため詳細確認が必要"] }
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "調査数値はタイトルとはてブ件数から推定。本文未取得のため詳細確認が必要"
+            ]
+          }
         },
         {
           "id": "2026-05-30-021",
@@ -912,7 +1554,13 @@
           "category": "japan",
           "published_at": "2026-05-29T15:00:00+09:00",
           "lang": "ja",
-          "tags": ["japan", "enterprise-ai", "manufacturing", "productivity", "case-study"],
+          "tags": [
+            "japan",
+            "enterprise-ai",
+            "manufacturing",
+            "productivity",
+            "case-study"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -922,7 +1570,10 @@
             "source_type_bias": 0,
             "reaction_boost": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 22 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 22
+          },
           "summary_ja": "ITmedia AI+は製造業5社の生成AI活用事例を特集した。共通点として「全社展開前の小規模PoC（3ヶ月・1部門）」「ユースケース選定委員会の設置」「AIアシスタントへの社内FAQ蓄積」の3点を挙げている。業務時間削減効果は各社平均30%で、設計書作成・問い合わせ対応・不具合報告書生成で特に効果が顕著だった。導入失敗パターンとして「全社一斉展開でユースケースが拡散した」「KPI設定なしで効果測定できなかった」ケースも詳述されている。",
           "key_points_ja": [
             "製造業5社の平均30%業務時間削減——設計書作成・問い合わせ対応で顕著",
@@ -932,14 +1583,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "製造業AI導入 成功・失敗パターン",
-            "headline": "業務時間30%削減の共通要因",
-            "points": [
-              { "label": "業務削減効果", "description": "平均30%（5社平均）" },
-              { "label": "成功3ステップ", "description": "小規模PoC→委員会→社内FAQ蓄積" },
-              { "label": "失敗パターン1", "description": "全社一斉展開でユースケース拡散" },
-              { "label": "失敗パターン2", "description": "KPI未設定で効果測定不可" }
-            ]
+            "data": {
+              "headline": "業務時間30%削減の共通要因",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "業務削減効果",
+                  "value": "平均30%（5社平均）",
+                  "description": ""
+                },
+                {
+                  "label": "成功3ステップ",
+                  "value": "小規模PoC→委員会→社内FAQ蓄積",
+                  "description": ""
+                },
+                {
+                  "label": "失敗パターン1",
+                  "value": "全社一斉展開でユースケース拡散",
+                  "description": ""
+                },
+                {
+                  "label": "失敗パターン2",
+                  "value": "KPI未設定で効果測定不可",
+                  "description": ""
+                }
+              ]
+            }
           }
         },
         {
@@ -953,7 +1622,14 @@
           "category": "japan",
           "published_at": "2026-05-28T20:00:00+09:00",
           "lang": "ja",
-          "tags": ["rag", "sqlite", "vector-search", "japan", "practical", "oss"],
+          "tags": [
+            "rag",
+            "sqlite",
+            "vector-search",
+            "japan",
+            "practical",
+            "oss"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -963,7 +1639,10 @@
             "source_type_bias": 0,
             "reaction_boost": 1
           },
-          "reaction_signal": { "kind": "zenn", "liked": 94 },
+          "reaction_signal": {
+            "kind": "zenn",
+            "liked": 94
+          },
           "summary_ja": "SQLiteとsqlite-vec拡張機能だけでベクトル検索RAGを実装する方法を解説したZenn記事がいいね94件を獲得した。外部ベクトルDBなしでSQLite内にEmbeddingを格納・検索し、BM25全文検索との組み合わせによるハイブリッド検索で精度を向上させる構成を、PythonコードとSQL例で詳述している。個人・小規模プロジェクト向けに「Chroma/Pineconeが過剰」な場合の実用的な代替手段として紹介されており、コードは全てGitHubで公開されている。",
           "key_points_ja": [
             "sqlite-vec拡張機能でSQLiteのみでベクトルRAGを実装（外部DBなし）",
@@ -973,14 +1652,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "SQLite-only RAG アーキテクチャ",
-            "headline": "外部ベクトルDB不要のシンプルRAG実装",
-            "points": [
-              { "label": "必要なもの", "description": "SQLite + sqlite-vec拡張 + Python" },
-              { "label": "検索方式", "description": "ベクトル検索 + BM25全文検索のハイブリッド" },
-              { "label": "Zennいいね", "description": "94件" },
-              { "label": "コード公開", "description": "GitHub（全コード公開）" }
-            ]
+            "data": {
+              "headline": "外部ベクトルDB不要のシンプルRAG実装",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "必要なもの",
+                  "value": "SQLite + sqlite-vec拡張 + Python",
+                  "description": ""
+                },
+                {
+                  "label": "検索方式",
+                  "value": "ベクトル検索 + BM25全文検索のハイブリッド",
+                  "description": ""
+                },
+                {
+                  "label": "Zennいいね",
+                  "value": "94件",
+                  "description": ""
+                },
+                {
+                  "label": "コード公開",
+                  "value": "GitHub（全コード公開）",
+                  "description": ""
+                }
+              ]
+            }
           }
         }
       ]
@@ -1001,7 +1698,13 @@
           "category": "china",
           "published_at": "2026-05-29T12:00:00+09:00",
           "lang": "zh",
-          "tags": ["byd", "chip", "autonomous-driving", "china", "semiconductor"],
+          "tags": [
+            "byd",
+            "chip",
+            "autonomous-driving",
+            "china",
+            "semiconductor"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -1020,14 +1723,32 @@
           ],
           "figure": {
             "type": "summary-card",
-            "title": "BYD DiSi-1 チップ概要",
-            "headline": "自社製AIチップでNVIDIA依存を低減",
-            "points": [
-              { "label": "演算性能", "description": "300TOPS" },
-              { "label": "プロセス", "description": "7nm" },
-              { "label": "搭載予定", "description": "2026年Q4出荷の次世代EV" },
-              { "label": "置き換え対象", "description": "NVIDIA Drive Orin" }
-            ]
+            "data": {
+              "headline": "自社製AIチップでNVIDIA依存を低減",
+              "tldr": "",
+              "points": [
+                {
+                  "label": "演算性能",
+                  "value": "300TOPS",
+                  "description": ""
+                },
+                {
+                  "label": "プロセス",
+                  "value": "7nm",
+                  "description": ""
+                },
+                {
+                  "label": "搭載予定",
+                  "value": "2026年Q4出荷の次世代EV",
+                  "description": ""
+                },
+                {
+                  "label": "置き換え対象",
+                  "value": "NVIDIA Drive Orin",
+                  "description": ""
+                }
+              ]
+            }
           }
         },
         {
@@ -1041,7 +1762,14 @@
           "category": "china",
           "published_at": "2026-05-28T00:00:00+09:00",
           "lang": "en",
-          "tags": ["tsinghua", "power-grid", "llm", "optimization", "china", "energy"],
+          "tags": [
+            "tsinghua",
+            "power-grid",
+            "llm",
+            "optimization",
+            "china",
+            "energy"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -1060,26 +1788,77 @@
           ],
           "figure": {
             "type": "comparison",
-            "title": "AI-Grid vs 従来手法（強化学習）",
-            "left_label": "従来RL手法",
-            "right_label": "AI-Grid（LLM）",
-            "metrics": [
-              { "name": "ピーク負荷削減", "left": "ベースライン", "right": "-18%", "delta": "-18%" },
-              { "name": "再エネ変動適応", "left": "事前学習のみ", "right": "リアルタイム対応", "delta": "改善" },
-              { "name": "協調タスク数", "left": "単一最適化", "right": "3タスク同時協調", "delta": "拡張" }
-            ]
+            "data": {
+              "headline": "AI-Grid vs 従来手法（強化学習）",
+              "before": {
+                "label": "従来RL手法"
+              },
+              "after": {
+                "label": "AI-Grid（LLM）"
+              },
+              "metrics": [
+                {
+                  "label": "ピーク負荷削減",
+                  "before": "ベースライン",
+                  "after": "-18%",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "-18%",
+                  "delta_tone": "default"
+                },
+                {
+                  "label": "再エネ変動適応",
+                  "before": "事前学習のみ",
+                  "after": "リアルタイム対応",
+                  "before_pct": 50,
+                  "after_pct": 50,
+                  "delta": "改善",
+                  "delta_tone": "success"
+                },
+                {
+                  "label": "協調タスク数",
+                  "before": "単一最適化",
+                  "after": "3タスク同時協調",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "delta": "拡張",
+                  "delta_tone": "default"
+                }
+              ]
+            }
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "reddit_locallama", "reason": "Connection blocked" },
-    { "source": "reddit_machinelearning", "reason": "Connection blocked" },
-    { "source": "the_verge", "reason": "Connection blocked by host" },
-    { "source": "import_ai_substack", "reason": "HTTP 403 Forbidden" },
-    { "source": "the_batch_deeplearning_ai", "reason": "HTTP 404 Not Found" },
-    { "source": "synced_review", "reason": "RSS content from Aug 2025, no recent articles" },
-    { "source": "meta_ai_blog", "reason": "No May 2026 articles found (latest from April 2026)" }
+    {
+      "source": "reddit_locallama",
+      "reason": "Connection blocked"
+    },
+    {
+      "source": "reddit_machinelearning",
+      "reason": "Connection blocked"
+    },
+    {
+      "source": "the_verge",
+      "reason": "Connection blocked by host"
+    },
+    {
+      "source": "import_ai_substack",
+      "reason": "HTTP 403 Forbidden"
+    },
+    {
+      "source": "the_batch_deeplearning_ai",
+      "reason": "HTTP 404 Not Found"
+    },
+    {
+      "source": "synced_review",
+      "reason": "RSS content from Aug 2025, no recent articles"
+    },
+    {
+      "source": "meta_ai_blog",
+      "reason": "No May 2026 articles found (latest from April 2026)"
+    }
   ]
 }

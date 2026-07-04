@@ -36,12 +36,18 @@
             "freshness": 5,
             "total": 18
           },
-          "tags": ["google-io", "gemini-4", "veo-4", "deep-research-max", "workspace-intelligence", "multimodal", "google"],
+          "tags": [
+            "google-io",
+            "gemini-4",
+            "veo-4",
+            "deep-research-max",
+            "workspace-intelligence",
+            "multimodal",
+            "google"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Google I/O 2026 主要発表まとめ",
-            "alt": "Google I/O 2026 の主要発表。モデル：Gemini 4（ネイティブマルチモーダル）・Veo 4（動画生成）・Deep Research Max（自律研究エージェント）。ツール：Gemini Workspace Intelligence（Gmail・Chat・Calendar・Drive リアルタイムコンテキスト統合）。対象：Gemini AI Pro・Ultra ユーザーへ段階展開。",
             "data": {
               "headline": "Google I/O 2026：Gemini 4 + Veo 4 + Deep Research Max + Workspace Intelligence で AI エージェント時代を本格化",
               "tldr": "Google の年次開発者会議 I/O 2026 で、Gemini 4（ネイティブマルチモーダル）・Veo 4（高品質動画生成）・Deep Research Max（自律研究エージェント）・Workspace Intelligence（Gmail/Chat/Calendar/Drive の横断 AI 統合）が発表された。",
@@ -81,7 +87,9 @@
               ],
               "context": "Google の年次 I/O はモデル発表の最大の舞台。2026 年は Anthropic・OpenAI・Meta とのフロンティア競争が激化する中で、Gemini 4 による差別化と Workspace への深い統合が Google の競争優位として打ち出された。",
               "impact": "Gemini AI Pro・Ultra サブスクライバーは Deep Research Max と Workspace Intelligence を優先的にアクセス。企業の Workspace 管理者は Workspace Intelligence の段階展開スケジュールを確認し、社内データのプライバシー設定を事前に見直すこと。"
-            }
+            },
+            "caption": "Google I/O 2026 主要発表まとめ",
+            "alt": "Google I/O 2026 の主要発表。モデル：Gemini 4（ネイティブマルチモーダル）・Veo 4（動画生成）・Deep Research Max（自律研究エージェント）。ツール：Gemini Workspace Intelligence（Gmail・Chat・Calendar・Drive リアルタイムコンテキスト統合）。対象：Gemini AI Pro・Ultra ユーザーへ段階展開。"
           }
         },
         {
@@ -106,12 +114,19 @@
             "freshness": 5,
             "total": 17
           },
-          "tags": ["meta", "llama-4", "llamacon", "open-source", "llama-guard-4", "llamafirewall", "multimodal", "safety"],
+          "tags": [
+            "meta",
+            "llama-4",
+            "llamacon",
+            "open-source",
+            "llama-guard-4",
+            "llamafirewall",
+            "multimodal",
+            "safety"
+          ],
           "lang": "en",
           "figure": {
             "type": "metric-bars",
-            "caption": "LlamaCon 2026 主要発表",
-            "alt": "LlamaCon 2026 の主要発表。累計ダウンロード数 10 億件突破。Llama 4 フラッグシップ：405B パラメータ・128K コンテキスト・ネイティブマルチモーダル。安全ツール：Llama Guard 4・LlamaFirewall・Llama Prompt Guard 2 を新公開。Llama Stack：IBM・Red Hat・Dell と統合拡大。Llama 3.3 8B ファインチューニング API 追加。",
             "data": {
               "headline": "LlamaCon 2026：Llama 累計 10 億ダウンロード＋Llama 4（405B マルチモーダル）＋安全ツール 3 種でオープン AI の本番活用を本格支援",
               "scale": {
@@ -162,7 +177,9 @@
               ],
               "narrative": "Llama は 10 億ダウンロードを通じてオープンソース AI の事実上の標準となった。Llama 4 の全ラインアップ公開と企業向け安全・統合ツールの整備により、オープン AI の本番活用が次の段階に入る。",
               "impact": "Llama 4 405B の性能を評価したい組織は Meta AI API または Hugging Face 経由でアクセス可能。Llama Guard 4・LlamaFirewall は既存の Llama 3.x デプロイにも適用できるため、本番 LLM を持つセキュリティチームは即時評価を推奨。"
-            }
+            },
+            "caption": "LlamaCon 2026 主要発表",
+            "alt": "LlamaCon 2026 の主要発表。累計ダウンロード数 10 億件突破。Llama 4 フラッグシップ：405B パラメータ・128K コンテキスト・ネイティブマルチモーダル。安全ツール：Llama Guard 4・LlamaFirewall・Llama Prompt Guard 2 を新公開。Llama Stack：IBM・Red Hat・Dell と統合拡大。Llama 3.3 8B ファインチューニング API 追加。"
           }
         }
       ]
@@ -194,12 +211,18 @@
             "freshness": 4,
             "total": 17
           },
-          "tags": ["hugging-face", "transformers-v5", "deepseek-v4", "gemma-4", "open-source", "sdk", "granite"],
+          "tags": [
+            "hugging-face",
+            "transformers-v5",
+            "deepseek-v4",
+            "gemma-4",
+            "open-source",
+            "sdk",
+            "granite"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "Hugging Face Transformers v5 の主要変更点",
-            "alt": "Transformers v5（5.8.0）の主な更新内容。新規対応モデル：DeepSeek-V4（MoE 次世代）・Gemma 4 Assistant（Multi-Token Prediction 投機的デコーディング）・Granite Speech Plus・Granite Vision 4.1。設計哲学：シンプルなモデル定義。後方互換性：v4 からの移行コスト最小化。プラットフォーム規模：100 万モデル・200 万ユーザー（2026年春時点）。",
             "data": {
               "headline": "Transformers v5（5.8.0）正式リリース：DeepSeek-V4・Gemma 4 対応でオープン AI エコシステムの 100 万モデル統合ライブラリが刷新",
               "tldr": "Hugging Face Transformers v5 が「シンプルなモデル定義」哲学のもと正式公開。DeepSeek-V4（MoE）・Gemma 4 Assistant（投機的デコーディング）が新規サポートされ、v4 からの後方互換性を概ね維持。Hugging Face はモデル 100 万件・ユーザー 200 万件超のエコシステムに到達。",
@@ -247,7 +270,9 @@
               ],
               "context": "Hugging Face は Spring 2026 時点でホストモデル 100 万件・ユーザー 200 万件超に到達しており、Transformers v5 はこのエコシステム全体の統合インターフェースとなる。ライブラリの更新は事実上「業界標準 API の更新」に等しい。",
               "impact": "DeepSeek-V4 や Gemma 4 を評価・本番投入したい開発チームは Transformers v5 へのアップデートが前提条件。pip install transformers --upgrade でアップグレード可能。Granite Speech Plus は議事録自動化・コールセンター分析チームが即時評価に値する。"
-            }
+            },
+            "caption": "Hugging Face Transformers v5 の主要変更点",
+            "alt": "Transformers v5（5.8.0）の主な更新内容。新規対応モデル：DeepSeek-V4（MoE 次世代）・Gemma 4 Assistant（Multi-Token Prediction 投機的デコーディング）・Granite Speech Plus・Granite Vision 4.1。設計哲学：シンプルなモデル定義。後方互換性：v4 からの移行コスト最小化。プラットフォーム規模：100 万モデル・200 万ユーザー（2026年春時点）。"
           }
         },
         {
@@ -272,12 +297,18 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["openai", "workspace-agents", "chatgpt-business", "excel", "google-sheets", "realtime-voice", "enterprise"],
+          "tags": [
+            "openai",
+            "workspace-agents",
+            "chatgpt-business",
+            "excel",
+            "google-sheets",
+            "realtime-voice",
+            "enterprise"
+          ],
           "lang": "en",
           "figure": {
             "type": "comparison",
-            "caption": "ChatGPT Business（Workspace Agents 導入前後）",
-            "alt": "ChatGPT Business における Workspace Agents 導入による変化。導入前：チャット応答型、単発タスクのみ、コンテキスト毎回設定が必要。導入後：実行型エージェント化、マルチステップ業務タスクの委任・完結、Excel/Google Sheets 直接操作、受信トレイ自動ルーティング、深掘り調査・文書生成・Web ページ作成が自律実行。GPT-Realtime-2・GPT-Realtime-Translate・GPT-Realtime-Whisper も同時追加。",
             "data": {
               "headline": "ChatGPT Workspace Agents：「チャット型 AI」から「実行型デジタルワーカー」へ——Excel・Google Sheets の自律操作が Business 全ユーザーへ",
               "before": {
@@ -336,7 +367,9 @@
               ],
               "narrative": "OpenAI はワークプレイス AI 市場で Microsoft Copilot Cowork・Anthropic Claude Cowork と三つどもえの競争状態にある。ChatGPT for Excel・Google Sheets の展開で、OpenAI 独自の生産性エコシステムを構築する動きが鮮明化した。",
               "impact": "ChatGPT Business を契約中の組織は Workspace Agents の無料プレビューを 6/2 前に試用し、スプレッドシート業務・受信トレイ処理・レポート生成への適用可否を評価すること。特に Excel を大量に使用するファイナンス・営業・オペレーションチームで高い ROI が期待できる。"
-            }
+            },
+            "caption": "ChatGPT Business（Workspace Agents 導入前後）",
+            "alt": "ChatGPT Business における Workspace Agents 導入による変化。導入前：チャット応答型、単発タスクのみ、コンテキスト毎回設定が必要。導入後：実行型エージェント化、マルチステップ業務タスクの委任・完結、Excel/Google Sheets 直接操作、受信トレイ自動ルーティング、深掘り調査・文書生成・Web ページ作成が自律実行。GPT-Realtime-2・GPT-Realtime-Translate・GPT-Realtime-Whisper も同時追加。"
           }
         }
       ]
@@ -368,12 +401,19 @@
             "freshness": 5,
             "total": 16
           },
-          "tags": ["cybersecurity", "ai-attacks", "chatgpt", "claude-code", "dual-use", "rakuten", "security-threat", "2026"],
+          "tags": [
+            "cybersecurity",
+            "ai-attacks",
+            "chatgpt",
+            "claude-code",
+            "dual-use",
+            "rakuten",
+            "security-threat",
+            "2026"
+          ],
           "lang": "en",
           "figure": {
             "type": "summary-card",
-            "caption": "2026 年に記録された AI 支援型攻撃の実例",
-            "alt": "2026 年前半に報告された AI 支援型サイバー攻撃の実例。事例①：10代の個人が ChatGPT を使い楽天モバイルに不正アクセス成功。事例②：単独犯が Claude Code でスクリプト・偵察・フィッシングを自動化し 17 組織を脅迫。事例③：個人によるメキシコ政府システム侵害。共通点：専門的技術なしで高度な攻撃が可能になった。",
             "data": {
               "headline": "2026 年＝AI 支援型攻撃元年：10 代が ChatGPT で楽天モバイル侵害・単独犯が Claude Code で 17 組織脅迫——防衛側先行施策と同時に攻撃実例が現実化",
               "tldr": "2026 年前半、10 代の個人が ChatGPT を活用した楽天モバイルへの不正アクセス・単独犯による Claude Code を使った 17 組織への脅迫・メキシコ政府システム侵害が記録された。専門的な技術知識なしに高精度の攻撃が実行できる時代が現実に到来した。",
@@ -413,7 +453,9 @@
               ],
               "context": "AI ツールの「民主化」は Claude Code で非エンジニアが数百万円相当のツールを開発できるのと同じ原理で、非専門家による高精度攻撃も可能にする。技術的敷居の消滅は善意のユーザーだけでなく悪意のアクターにも等しく作用する構造的問題だ。",
               "impact": "企業のセキュリティ担当者は AI ベクター攻撃（プロンプトインジェクション・AI 生成フィッシング・AI 支援侵入テスト）に対応したフレームワークの導入を急ぐこと。従業員向け「AI 生成フィッシング識別トレーニング」は投資対効果が高い優先施策。"
-            }
+            },
+            "caption": "2026 年に記録された AI 支援型攻撃の実例",
+            "alt": "2026 年前半に報告された AI 支援型サイバー攻撃の実例。事例①：10代の個人が ChatGPT を使い楽天モバイルに不正アクセス成功。事例②：単独犯が Claude Code でスクリプト・偵察・フィッシングを自動化し 17 組織を脅迫。事例③：個人によるメキシコ政府システム侵害。共通点：専門的技術なしで高度な攻撃が可能になった。"
           }
         }
       ]
@@ -445,12 +487,18 @@
             "freshness": 5,
             "total": 15
           },
-          "tags": ["ai-education", "todai", "entrance-exam", "japan", "medical-ai", "benchmark", "nikkei"],
+          "tags": [
+            "ai-education",
+            "todai",
+            "entrance-exam",
+            "japan",
+            "medical-ai",
+            "benchmark",
+            "nikkei"
+          ],
           "lang": "ja",
           "figure": {
             "type": "comparison",
-            "caption": "AI の東大理Ⅲ入試スコア：東ロボくん（2021）vs 2026 年 AI",
-            "alt": "AI の東大理Ⅲ入試能力の 5 年間の進化。2021年 東ロボくん：数学・読解ともに低スコアで断念。2026年 最新 AI：数学・理科で首席合格水準・残る課題は読解・論述。変化：定量科目（数学・理科）での差が完全に逆転。共通課題：読解・文脈理解が AI の難所として持続。",
             "data": {
               "headline": "AI が東大理Ⅲ入試で「首席合格」水準——2021 年の東ロボくん（断念）から 5 年で定量科目の精度が劇的に逆転",
               "before": {
@@ -509,7 +557,9 @@
               ],
               "narrative": "2021 年に東ロボくんが「コンピューターは読めない」と結論づけ断念した東大入試を、2026 年の AI は数学・理科では完全に超えた。読解・論述という人間固有と思われた領域も「残る課題」の位置づけになっている。",
               "impact": "医療 AI・教育 AI を手掛けるチームはこの評価実験の方法論（採点基準を明示したプロンプトフレームワーク）を参照すること。医師国家試験への AI 応用を検討している組織は、今回の東大理Ⅲ評価を前段階のエビデンスとして引用できる。"
-            }
+            },
+            "caption": "AI の東大理Ⅲ入試スコア：東ロボくん（2021）vs 2026 年 AI",
+            "alt": "AI の東大理Ⅲ入試能力の 5 年間の進化。2021年 東ロボくん：数学・読解ともに低スコアで断念。2026年 最新 AI：数学・理科で首席合格水準・残る課題は読解・論述。変化：定量科目（数学・理科）での差が完全に逆転。共通課題：読解・文脈理解が AI の難所として持続。"
           }
         },
         {
@@ -534,59 +584,25 @@
             "freshness": 4,
             "total": 16
           },
-          "tags": ["claude-code", "claude-code-routines", "zenn", "automation", "content-generation", "japan", "pipeline"],
+          "tags": [
+            "claude-code",
+            "claude-code-routines",
+            "zenn",
+            "automation",
+            "content-generation",
+            "japan",
+            "pipeline"
+          ],
           "lang": "ja",
           "figure": {
             "type": "timeline",
-            "caption": "Claude Code Routines 週次記事自動公開パイプライン",
-            "alt": "tm_dev 氏が構築した Claude Code Routines を使った週次 Zenn 記事自動公開のワークフロー。Step 1: Routines でスケジュールトリガー（毎週月曜朝）設定。Step 2: CLAUDE.md で調査→スコアリング→執筆→フォーマットの指示を記述。Step 3: WebSearch で最新生成AI記事を取得・スコアリング。Step 4: Zenn Markdown 形式で記事を生成。Step 5: Zenn CLI で自動公開。全工程 0 クリック・数週間の運用実績あり。",
             "data": {
               "headline": "Claude Code Routines × Zenn CLI で週次記事を完全自動公開——調査から投稿まで 0 クリックのパイプライン構築法",
-              "steps": [
-                {
-                  "icon": "⏰",
-                  "label": "Step 1: スケジュール設定",
-                  "sublabel": "Claude Code Routines でトリガー登録",
-                  "note": "毎週月曜朝などの cron スケジュールを Routines に登録。ローカル PC が起動していなくてもクラウドで自律実行",
-                  "tone": "primary",
-                  "status": "completed"
-                },
-                {
-                  "icon": "📝",
-                  "label": "Step 2: CLAUDE.md 記述",
-                  "sublabel": "調査→スコアリング→執筆→フォーマットの指示",
-                  "note": "Claude Code が何をするかを CLAUDE.md に自然言語で記述。トレンド調査の観点・スコアリング基準・記事構成・出力形式を指定",
-                  "tone": "primary",
-                  "status": "completed"
-                },
-                {
-                  "icon": "🔍",
-                  "label": "Step 3: WebSearch でトレンド調査",
-                  "sublabel": "最新生成 AI 記事の取得・スコアリング",
-                  "note": "Claude Code が WebSearch ツールを使って最新記事を自律収集。重要度・鮮度・実用性でスコアリングしてトップ N 件を選定",
-                  "tone": "success",
-                  "status": "completed"
-                },
-                {
-                  "icon": "✍️",
-                  "label": "Step 4: Zenn Markdown で記事生成",
-                  "sublabel": "選定記事の日本語要約・解説を自動執筆",
-                  "note": "選定された記事の要約・解説をまとめた Zenn 形式の Markdown ファイルを自動生成。著者評価では品質は手動執筆と遜色なし",
-                  "tone": "success",
-                  "status": "completed"
-                },
-                {
-                  "icon": "🚀",
-                  "label": "Step 5: Zenn CLI で自動公開",
-                  "sublabel": "0 クリックで Zenn に記事投稿",
-                  "note": "Zenn CLI の publish コマンドを Claude Code が自律実行し、スケジュール通りに記事を公開。全工程にわたって人間の操作は不要",
-                  "tone": "primary",
-                  "status": "completed"
-                }
-              ],
-              "context": "Claude Code Routines のユースケースを「ソフトウェア開発補助」から「コンテンツ生成・定期公開の自動化」へ拡張した実例。本記事（ai-daily-digest）が実践しているのと同じパイプライン設計の個人版として参照価値が高い。",
+              "events": [],
               "impact": "週次・月次のトレンドレポート・技術ブログ・社内ニュースレターを持つチームや個人開発者は、このパイプラインを参考に Claude Code Routines + Zenn/GitHub Pages の自動公開フローを構築できる。CLAUDE.md の記述が核心で、ここに記事の品質基準を書き込むことが最重要。"
-            }
+            },
+            "caption": "Claude Code Routines 週次記事自動公開パイプライン",
+            "alt": "tm_dev 氏が構築した Claude Code Routines を使った週次 Zenn 記事自動公開のワークフロー。Step 1: Routines でスケジュールトリガー（毎週月曜朝）設定。Step 2: CLAUDE.md で調査→スコアリング→執筆→フォーマットの指示を記述。Step 3: WebSearch で最新生成AI記事を取得・スコアリング。Step 4: Zenn Markdown 形式で記事を生成。Step 5: Zenn CLI で自動公開。全工程 0 クリック・数週間の運用実績あり。"
           }
         }
       ]

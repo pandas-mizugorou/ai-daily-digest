@@ -24,12 +24,36 @@
     "grounding_flags": 1
   },
   "top_picks": [
-    { "id": "synced-deepseek-v4", "rank": 1, "reason": "必読フラグ(importance=5,depth+practicality=9)。本日最大ニュース: DeepSeek-V4 OSS LLM公開" },
-    { "id": "hatena-ai-agent-2026", "rank": 2, "reason": "必読フラグ+はてブ143users。実務向けAIエージェント設計パターン5種" },
-    { "id": "zenn-claude-mcp-2026", "rank": 3, "reason": "必読フラグ+Zenn87likes。Claude MCP自作ノウハウ" },
-    { "id": "qiita-rag-fine-tune-2026", "rank": 4, "reason": "必読フラグ+Qiita52likes+38stocks。RAG×Fine-tuning実装事例" },
-    { "id": "hn-deepseek-v4", "rank": 5, "reason": "HN523pt+必読フラグ。DeepSeek-V4コミュニティ反応" },
-    { "id": "papers-with-code-neuraips", "rank": 6, "reason": "必読フラグ(importance=5,depth=5)。RLVR: 検証可能報酬RL新手法" }
+    {
+      "id": "synced-deepseek-v4",
+      "rank": 1,
+      "reason": "必読フラグ(importance=5,depth+practicality=9)。本日最大ニュース: DeepSeek-V4 OSS LLM公開"
+    },
+    {
+      "id": "hatena-ai-agent-2026",
+      "rank": 2,
+      "reason": "必読フラグ+はてブ143users。実務向けAIエージェント設計パターン5種"
+    },
+    {
+      "id": "zenn-claude-mcp-2026",
+      "rank": 3,
+      "reason": "必読フラグ+Zenn87likes。Claude MCP自作ノウハウ"
+    },
+    {
+      "id": "qiita-rag-fine-tune-2026",
+      "rank": 4,
+      "reason": "必読フラグ+Qiita52likes+38stocks。RAG×Fine-tuning実装事例"
+    },
+    {
+      "id": "hn-deepseek-v4",
+      "rank": 5,
+      "reason": "HN523pt+必読フラグ。DeepSeek-V4コミュニティ反応"
+    },
+    {
+      "id": "papers-with-code-neuraips",
+      "rank": 6,
+      "reason": "必読フラグ(importance=5,depth=5)。RLVR: 検証可能報酬RL新手法"
+    }
   ],
   "categories": [
     {
@@ -54,7 +78,12 @@
             "完全オープンソース公開。フロンティアモデルに迫る性能を、ライセンスコスト不要でダウンロード・利用できる。",
             "複数の信頼できるベンチマークで V3 比で大幅な性能向上が確認されており、OSS LLM の新ベースラインとなる可能性がある。"
           ],
-          "tags": ["deepseek", "open-source-llm", "benchmark", "llm"],
+          "tags": [
+            "deepseek",
+            "open-source-llm",
+            "benchmark",
+            "llm"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -66,23 +95,53 @@
           },
           "reaction_signal": null,
           "x_post": "DeepSeek-V4が公開された。数学・コーディング・推論の各ベンチマークで前世代のDeepSeek-V3を全面的に上回り、フロンティアモデルに迫る性能をオープンソースで実現したと報告されている。OSS LLMの競争が再加速する可能性があり、私も注目している。\n\nhttps://syncedreview.com/2026/06/07/deepseek-v4-benchmarks/",
-          "grounding": { "verified": false, "flags": 1, "notes": ["初稿のx_postにあったMoEアーキテクチャへの言及は本ソース(Synced)のraw_excerptに根拠なし（qbitai記事の情報）のため削除"] },
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "初稿のx_postにあったMoEアーキテクチャへの言及は本ソース(Synced)のraw_excerptに根拠なし（qbitai記事の情報）のため削除"
+            ]
+          },
           "figure": {
             "type": "summary-card",
-            "caption": "DeepSeek-V4 概要",
-            "alt": "DeepSeek-V4のリリース概要。前世代V3比で数学・コーディング・推論の各ベンチマークが向上したオープンソースLLM。フロンティアモデルに迫る性能を無償で利用できる。",
             "data": {
               "headline": "DeepSeek-V4：V3全指標を超えるOSS LLM公開",
               "tldr": "DeepSeekがDeepSeek-V4を公開。数学・コーディング・推論でV3を超え、フロンティアモデル水準をオープンソースで実現した。",
               "points": [
-                { "icon": "📊", "label": "ベンチマーク", "value": "V3全指標を超える", "description": "数学・コーディング・複雑な推論の各評価でDeepSeek-V3を全面的に上回る結果を示した。", "tone": "success" },
-                { "icon": "🎯", "label": "目標水準", "value": "フロンティアモデル相当", "description": "クローズドな商用フロンティアモデルに迫る性能を、オープンソースで達成したと報告されている。", "tone": "primary" },
-                { "icon": "🔓", "label": "公開形態", "value": "完全オープンソース", "description": "フロンティアモデルに迫る性能を、ライセンスコスト不要でダウンロード・利用できる。", "tone": "success" },
-                { "icon": "📰", "label": "報道元", "value": "Synced（機器之心英語版）", "description": "中国最大のAI専門メディアの英語版がベンチマーク結果を含む詳報を掲載。", "tone": "info" }
+                {
+                  "icon": "📊",
+                  "label": "ベンチマーク",
+                  "value": "V3全指標を超える",
+                  "description": "数学・コーディング・複雑な推論の各評価でDeepSeek-V3を全面的に上回る結果を示した。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "目標水準",
+                  "value": "フロンティアモデル相当",
+                  "description": "クローズドな商用フロンティアモデルに迫る性能を、オープンソースで達成したと報告されている。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開形態",
+                  "value": "完全オープンソース",
+                  "description": "フロンティアモデルに迫る性能を、ライセンスコスト不要でダウンロード・利用できる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📰",
+                  "label": "報道元",
+                  "value": "Synced（機器之心英語版）",
+                  "description": "中国最大のAI専門メディアの英語版がベンチマーク結果を含む詳報を掲載。",
+                  "tone": "info"
+                }
               ],
               "context": "DeepSeekは2024年末のV3公開以来、急速に存在感を増してきた中国発OSSプロジェクト。V4は同社の最新フラッグシップとなる。",
               "impact": "個人開発者・研究者がAPIコスト不要で最新水準のLLMを利用できるようになり、OSS LLMエコシステムの底上げが加速する。"
-            }
+            },
+            "caption": "DeepSeek-V4 概要",
+            "alt": "DeepSeek-V4のリリース概要。前世代V3比で数学・コーディング・推論の各ベンチマークが向上したオープンソースLLM。フロンティアモデルに迫る性能を無償で利用できる。"
           }
         }
       ]
@@ -109,7 +168,12 @@
             "Claude Code は複雑なマルチファイルのプログラミングタスクを高い自律度で実行できるという特徴を持つ。",
             "HN ディスカッションでは実際の使用感やユースケースが共有され、AIを活用した開発フローへの関心の高まりを示している。"
           ],
-          "tags": ["claude-code", "agentic-coding", "developer-tools", "anthropic"],
+          "tags": [
+            "claude-code",
+            "agentic-coding",
+            "developer-tools",
+            "anthropic"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -119,22 +183,43 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 342 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 342
+          },
           "figure": {
             "type": "summary-card",
-            "caption": "Claude Code HN 議論",
-            "alt": "Claude CodeのHacker News議論概要。HNで342ポイントを獲得した自律型コーディングアシスタントの議論。Anthropicが開発した複雑なマルチファイルタスクを高い自律度で実行するツール。",
             "data": {
               "headline": "Claude Code がHNで342pt獲得——自律型コーディングへの注目加速",
               "tldr": "Anthropicの自律型コーディングアシスタントClaude CodeをめぐるHNスレッドが342ポイントを獲得。複雑なマルチファイルコーディングを高い自律度で実行できる点が議論されている。",
               "points": [
-                { "icon": "🔥", "label": "HN反響", "value": "342ポイント", "description": "Hacker News で342ポイントを獲得。開発者コミュニティでの関心の高さを示している。", "tone": "primary" },
-                { "icon": "🤖", "label": "特徴", "value": "高自律度コーディング", "description": "複雑なマルチファイルのプログラミングタスクを、人間の介入を最小限に実行できる。", "tone": "success" },
-                { "icon": "💻", "label": "開発元", "value": "Anthropic", "description": "AnthropicのClaude LLMをベースにした、エージェント型のコーディングアシスタント。", "tone": "info" }
+                {
+                  "icon": "🔥",
+                  "label": "HN反響",
+                  "value": "342ポイント",
+                  "description": "Hacker News で342ポイントを獲得。開発者コミュニティでの関心の高さを示している。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "特徴",
+                  "value": "高自律度コーディング",
+                  "description": "複雑なマルチファイルのプログラミングタスクを、人間の介入を最小限に実行できる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💻",
+                  "label": "開発元",
+                  "value": "Anthropic",
+                  "description": "AnthropicのClaude LLMをベースにした、エージェント型のコーディングアシスタント。",
+                  "tone": "info"
+                }
               ],
               "context": "AIコーディングアシスタントの競争が激化する中、エージェント型ツールへの関心が高まっている。",
               "impact": "開発者が複雑なコーディングタスクをAIに任せるワークフローが現実的になりつつある。"
-            }
+            },
+            "caption": "Claude Code HN 議論",
+            "alt": "Claude CodeのHacker News議論概要。HNで342ポイントを獲得した自律型コーディングアシスタントの議論。Anthropicが開発した複雑なマルチファイルタスクを高い自律度で実行するツール。"
           }
         }
       ]
@@ -161,7 +246,12 @@
             "ウェブブラウジング・フォーム入力・複雑なブラウザ自動化タスクをLLMエージェントが実行できる。",
             "複数のAIプロバイダに対応しており、シンプルなインターフェースで導入コストが低い。"
           ],
-          "tags": ["browser-automation", "ai-agent", "open-source", "computer-use"],
+          "tags": [
+            "browser-automation",
+            "ai-agent",
+            "open-source",
+            "computer-use"
+          ],
           "scores": {
             "importance": 3,
             "depth": 2,
@@ -174,19 +264,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "browser-use 概要",
-            "alt": "GitHub Trendingに登場したbrowser-useライブラリの概要。LLMとブラウザ自動化を接続するOSSで、ウェブブラウジング・フォーム入力などを複数のAIプロバイダに対応しつつシンプルなインターフェースで提供する。",
             "data": {
               "headline": "browser-use：LLMエージェントにブラウザを操作させるOSSライブラリ",
               "tldr": "GitHub Trendingに登場したbrowser-use。LLMエージェントがウェブブラウジング・フォーム入力・複雑なブラウザ自動化タスクを実行できるオープンソースライブラリ。",
               "points": [
-                { "icon": "🌐", "label": "主機能", "value": "ブラウザ自動操作", "description": "LLMがウェブブラウジング・フォーム入力・複雑なブラウザ自動化タスクを実行できる。", "tone": "primary" },
-                { "icon": "🔌", "label": "対応AI", "value": "複数プロバイダ対応", "description": "複数のAIプロバイダに対応したシンプルなインターフェースを提供する。", "tone": "success" },
-                { "icon": "📦", "label": "公開形態", "value": "OSSライブラリ", "description": "GitHubで公開されており、GitHub Trendingに登場するほどの注目を集めている。", "tone": "info" }
+                {
+                  "icon": "🌐",
+                  "label": "主機能",
+                  "value": "ブラウザ自動操作",
+                  "description": "LLMがウェブブラウジング・フォーム入力・複雑なブラウザ自動化タスクを実行できる。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔌",
+                  "label": "対応AI",
+                  "value": "複数プロバイダ対応",
+                  "description": "複数のAIプロバイダに対応したシンプルなインターフェースを提供する。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "📦",
+                  "label": "公開形態",
+                  "value": "OSSライブラリ",
+                  "description": "GitHubで公開されており、GitHub Trendingに登場するほどの注目を集めている。",
+                  "tone": "info"
+                }
               ],
               "context": "Computer Use的な自律ブラウザ操作への関心が高まる中、実用的なOSSツールとして注目されている。",
               "impact": "開発者はbrowser-useを使ってLLMエージェントのブラウザ操作機能を最小限の実装コストで追加できる。"
-            }
+            },
+            "caption": "browser-use 概要",
+            "alt": "GitHub Trendingに登場したbrowser-useライブラリの概要。LLMとブラウザ自動化を接続するOSSで、ウェブブラウジング・フォーム入力などを複数のAIプロバイダに対応しつつシンプルなインターフェースで提供する。"
           }
         },
         {
@@ -206,7 +314,12 @@
             "OS操作・ウェブショッピング・コード実行・ファイル管理など8種類の異なる環境でLLMを評価する。",
             "各モデルのエージェント能力を比較・標準化できる指標として、自律型AI開発に活用できる。"
           ],
-          "tags": ["agent-evaluation", "benchmark", "llm-agents", "hacker-news"],
+          "tags": [
+            "agent-evaluation",
+            "benchmark",
+            "llm-agents",
+            "hacker-news"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -216,22 +329,43 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 287 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 287
+          },
           "figure": {
             "type": "summary-card",
-            "caption": "AgentBench 概要",
-            "alt": "AgentBenchベンチマークの概要。LLMをエージェントとして評価するための8環境体系的ベンチマーク。OS操作・ウェブショッピング・コード実行・ファイル管理などの実世界タスクを含む。",
             "data": {
               "headline": "AgentBench：LLMエージェント能力を8環境で評価するベンチマーク",
               "tldr": "OS操作からウェブショッピングまで8種の実環境でLLMのエージェント能力を測定するAgentBench。HNで287ポイントを獲得し、エージェント評価の標準化への関心が高まっている。",
               "points": [
-                { "icon": "🔬", "label": "評価環境数", "value": "8種の実環境", "description": "OS操作・ウェブブラウジング・コード実行・ファイル管理・ウェブショッピングなどの実世界タスクを含む。", "tone": "primary" },
-                { "icon": "📈", "label": "HN反響", "value": "287ポイント", "description": "Hacker Newsで287ポイントを獲得。エージェント評価の重要性についての議論が活発に行われた。", "tone": "info" },
-                { "icon": "🎯", "label": "評価目的", "value": "LLMエージェント能力比較", "description": "どのLLMが自律的なエージェントとして実世界タスクをどの程度実行できるかを系統的に比較する。", "tone": "success" }
+                {
+                  "icon": "🔬",
+                  "label": "評価環境数",
+                  "value": "8種の実環境",
+                  "description": "OS操作・ウェブブラウジング・コード実行・ファイル管理・ウェブショッピングなどの実世界タスクを含む。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📈",
+                  "label": "HN反響",
+                  "value": "287ポイント",
+                  "description": "Hacker Newsで287ポイントを獲得。エージェント評価の重要性についての議論が活発に行われた。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "評価目的",
+                  "value": "LLMエージェント能力比較",
+                  "description": "どのLLMが自律的なエージェントとして実世界タスクをどの程度実行できるかを系統的に比較する。",
+                  "tone": "success"
+                }
               ],
               "context": "自律型AIエージェントの開発が加速する中、標準的な評価基盤の整備が業界全体の課題となっている。",
               "impact": "AgentBenchを用いることで、異なるLLMのエージェント能力を客観的に比較・選定できるようになる。"
-            }
+            },
+            "caption": "AgentBench 概要",
+            "alt": "AgentBenchベンチマークの概要。LLMをエージェントとして評価するための8環境体系的ベンチマーク。OS操作・ウェブショッピング・コード実行・ファイル管理などの実世界タスクを含む。"
           }
         }
       ]
@@ -258,7 +392,12 @@
             "Qwen2.5-VLは各種マルチモーダルベンチマークでSoTA（最先端）性能を達成したとされる。",
             "画像・動画・文書を理解できるマルチモーダル能力を持ち、Hugging Faceから直接利用できる。"
           ],
-          "tags": ["qwen", "multimodal", "vision-language", "hugging-face"],
+          "tags": [
+            "qwen",
+            "multimodal",
+            "vision-language",
+            "hugging-face"
+          ],
           "scores": {
             "importance": 4,
             "depth": 2,
@@ -271,19 +410,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "Qwen2.5-VL-72B",
-            "alt": "Qwen2.5-VL-72B-InstructのHugging Faceトレンド入り概要。Alibaba Cloud製72Bパラメータのビジョン言語モデル。各種マルチモーダルベンチマークでSoTA達成、画像・動画・文書を理解できる。",
             "data": {
               "headline": "Qwen2.5-VL-72B：Alibaba製OSSマルチモーダルがHFトレンド入り",
               "tldr": "Alibaba CloudのQwen2.5-VL-72BがHFトレンドに登場。マルチモーダルベンチマークでSoTAを達成した72Bの画像・動画・文書理解モデル。",
               "points": [
-                { "icon": "🧠", "label": "パラメータ数", "value": "72B", "description": "72Bパラメータを持つ大規模ビジョン言語モデル。Alibaba CloudのQwenモデルファミリーの最新版。", "tone": "primary" },
-                { "icon": "🏆", "label": "ベンチマーク", "value": "マルチモーダルSoTA", "description": "各種マルチモーダルベンチマークで最先端性能（SoTA）を達成したとされる。", "tone": "success" },
-                { "icon": "👁️", "label": "対応モダリティ", "value": "画像・動画・文書", "description": "画像・動画・文書の理解能力を持つマルチモーダルモデル。", "tone": "info" }
+                {
+                  "icon": "🧠",
+                  "label": "パラメータ数",
+                  "value": "72B",
+                  "description": "72Bパラメータを持つ大規模ビジョン言語モデル。Alibaba CloudのQwenモデルファミリーの最新版。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🏆",
+                  "label": "ベンチマーク",
+                  "value": "マルチモーダルSoTA",
+                  "description": "各種マルチモーダルベンチマークで最先端性能（SoTA）を達成したとされる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "👁️",
+                  "label": "対応モダリティ",
+                  "value": "画像・動画・文書",
+                  "description": "画像・動画・文書の理解能力を持つマルチモーダルモデル。",
+                  "tone": "info"
+                }
               ],
               "context": "Qwenモデルシリーズはオープンソースの大規模マルチモーダルモデルとして継続的な進化を遂げている。",
               "impact": "Hugging Faceから直接ダウンロードでき、研究・開発での利用にAPIコストがかからない。"
-            }
+            },
+            "caption": "Qwen2.5-VL-72B",
+            "alt": "Qwen2.5-VL-72B-InstructのHugging Faceトレンド入り概要。Alibaba Cloud製72Bパラメータのビジョン言語モデル。各種マルチモーダルベンチマークでSoTA達成、画像・動画・文書を理解できる。"
           }
         }
       ]
@@ -310,7 +467,12 @@
             "数学的推論ベンチマークで大幅な向上を達成したと報告されている。",
             "検証可能な問題（数学・コーディング・論理推論など）に適用でき、スケーラブルなLLM訓練の代替手法として注目される。"
           ],
-          "tags": ["rlvr", "reinforcement-learning", "llm-training", "reasoning"],
+          "tags": [
+            "rlvr",
+            "reinforcement-learning",
+            "llm-training",
+            "reasoning"
+          ],
           "scores": {
             "importance": 5,
             "depth": 5,
@@ -324,20 +486,44 @@
           "x_post": "検証可能な報酬でLLMを強化学習するRLVRが発表された。数学・推論系タスクで人間フィードバック（RLHF）を不要にするアプローチで、数学推論ベンチマークで大幅な向上を達成したと報告されている。スケーラブルな訓練手法として私も注目している。\n\nhttps://paperswithcode.com/paper/rlvr-reinforcement-learning-from-verifiable",
           "figure": {
             "type": "summary-card",
-            "caption": "RLVR",
-            "alt": "RLVRフレームワークの概要。検証可能な報酬シグナルでLLMを強化学習する手法で、多くの推論タスクでRLHFを不要にする。数学的推論ベンチマークで大幅な向上を達成。",
             "data": {
               "headline": "RLVR：検証可能報酬によるLLM強化学習——RLHF不要の新手法",
               "tldr": "自動検証可能な報酬でLLMを強化学習するRLVR。数学・コーディング等の推論タスクでRLHFを不要にし、数学推論ベンチマークで大幅向上を達成した。",
               "points": [
-                { "icon": "🎓", "label": "手法の核心", "value": "検証可能報酬でRL", "description": "自動検証可能な報酬シグナルによる強化学習。人間によるフィードバックを多くの推論タスクで不要にする。", "tone": "primary" },
-                { "icon": "📐", "label": "適用範囲", "value": "数学・コード・推論", "description": "答えが自動検証できる問題（数学・コーディング・論理推論等）に適用できる。", "tone": "info" },
-                { "icon": "📈", "label": "ベンチマーク結果", "value": "数学推論で大幅向上", "description": "数学的推論ベンチマークで大幅な向上を達成したと報告されている。", "tone": "success" },
-                { "icon": "⚡", "label": "スケーラビリティ", "value": "RLHFより効率的", "description": "人間のフィードバックが不要なため、大規模なLLMの訓練でスケーラブルに適用できる。", "tone": "success" }
+                {
+                  "icon": "🎓",
+                  "label": "手法の核心",
+                  "value": "検証可能報酬でRL",
+                  "description": "自動検証可能な報酬シグナルによる強化学習。人間によるフィードバックを多くの推論タスクで不要にする。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📐",
+                  "label": "適用範囲",
+                  "value": "数学・コード・推論",
+                  "description": "答えが自動検証できる問題（数学・コーディング・論理推論等）に適用できる。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📈",
+                  "label": "ベンチマーク結果",
+                  "value": "数学推論で大幅向上",
+                  "description": "数学的推論ベンチマークで大幅な向上を達成したと報告されている。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "⚡",
+                  "label": "スケーラビリティ",
+                  "value": "RLHFより効率的",
+                  "description": "人間のフィードバックが不要なため、大規模なLLMの訓練でスケーラブルに適用できる。",
+                  "tone": "success"
+                }
               ],
               "context": "RLHF（人間フィードバックからの強化学習）の限界を超えるスケーラブルな訓練手法として注目されている。",
               "impact": "RLVRを活用することで、特に推論・数学・コーディング能力に特化したモデルの訓練コストを削減できる可能性がある。"
-            }
+            },
+            "caption": "RLVR",
+            "alt": "RLVRフレームワークの概要。検証可能な報酬シグナルでLLMを強化学習する手法で、多くの推論タスクでRLHFを不要にする。数学的推論ベンチマークで大幅な向上を達成。"
           }
         },
         {
@@ -357,7 +543,12 @@
             "2026年のAIエンジニアの役割の変化と、エージェントフレームワークの台頭を中心に取り上げている。",
             "価値が高まっているスキルセットと、AIエンジニアとしてのキャリアに関する洞察を提供している。"
           ],
-          "tags": ["ai-engineering", "industry-analysis", "agent-frameworks", "latent-space"],
+          "tags": [
+            "ai-engineering",
+            "industry-analysis",
+            "agent-frameworks",
+            "latent-space"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -370,20 +561,44 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "AI Engineering 2026",
-            "alt": "State of AI Engineering 2026レポートの概要。Latent SpaceのSwyxとAlessioによる年次分析。モデル展開トレンド・エージェントフレームワーク台頭・AIエンジニアの役割変化・求められるスキルセットを分析。",
             "data": {
               "headline": "State of AI Engineering 2026：エージェントFWの台頭とAIエンジニアの役割変化",
               "tldr": "Latent SpaceがAIエンジニアリング年次レポートを公開。モデル展開トレンド・エージェントフレームワークの台頭・AIエンジニアの役割変化・求められるスキルを網羅的に分析。",
               "points": [
-                { "icon": "🚀", "label": "主要トレンド1", "value": "エージェントFW台頭", "description": "エージェントフレームワークの台頭がAIエンジニアリングの主要トレンドとして取り上げられている。", "tone": "primary" },
-                { "icon": "📦", "label": "主要トレンド2", "value": "モデル展開の変化", "description": "2026年のモデル展開における主要トレンドを分析している。", "tone": "info" },
-                { "icon": "👩‍💻", "label": "職種変化", "value": "AIエンジニアの役割進化", "description": "2026年にかけてAIエンジニアの役割がどのように変化してきたかを検討している。", "tone": "info" },
-                { "icon": "🎯", "label": "スキル動向", "value": "高まる価値スキル", "description": "AI分野で価値が高まっているスキルセットを分析・整理している。", "tone": "success" }
+                {
+                  "icon": "🚀",
+                  "label": "主要トレンド1",
+                  "value": "エージェントFW台頭",
+                  "description": "エージェントフレームワークの台頭がAIエンジニアリングの主要トレンドとして取り上げられている。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📦",
+                  "label": "主要トレンド2",
+                  "value": "モデル展開の変化",
+                  "description": "2026年のモデル展開における主要トレンドを分析している。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "👩‍💻",
+                  "label": "職種変化",
+                  "value": "AIエンジニアの役割進化",
+                  "description": "2026年にかけてAIエンジニアの役割がどのように変化してきたかを検討している。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🎯",
+                  "label": "スキル動向",
+                  "value": "高まる価値スキル",
+                  "description": "AI分野で価値が高まっているスキルセットを分析・整理している。",
+                  "tone": "success"
+                }
               ],
               "context": "Latent SpaceはSwyx（Shawn Wang）とAlessioが運営するPodcast・ニュースレターで、AI業界で広く参照されるオピニオンリーダー。",
               "impact": "AI開発者がキャリア・技術選定・学習優先順位を決める際の業界地図として活用できる。"
-            }
+            },
+            "caption": "AI Engineering 2026",
+            "alt": "State of AI Engineering 2026レポートの概要。Latent SpaceのSwyxとAlessioによる年次分析。モデル展開トレンド・エージェントフレームワーク台頭・AIエンジニアの役割変化・求められるスキルセットを分析。"
           }
         },
         {
@@ -403,7 +618,12 @@
             "単一文書と複数文書タスクを含む多ドメイン構成で、非常に長い文脈内での情報発見と推論を測定する。",
             "長文脈処理能力の標準評価基盤として、長文脈モデルの開発・選定に活用できる。"
           ],
-          "tags": ["long-context", "benchmark", "llm-evaluation", "arxiv"],
+          "tags": [
+            "long-context",
+            "benchmark",
+            "llm-evaluation",
+            "arxiv"
+          ],
           "scores": {
             "importance": 4,
             "depth": 5,
@@ -416,19 +636,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "LongBench v2",
-            "alt": "LongBench v2の概要。503問の多ドメイン難問でLLMの長文脈理解・推論能力を評価するベンチマーク。単一文書・複数文書タスクを含む。",
             "data": {
               "headline": "LongBench v2：503問で長文脈LLMの理解・推論を深く評価",
               "tldr": "503の難問を含む多ドメインベンチマークLongBench v2。非常に長い文脈内で関連情報を見つけ推論する能力を測定し、長文脈モデル評価の新標準を提案する。",
               "points": [
-                { "icon": "📊", "label": "問題数", "value": "503問", "description": "多様なドメインにわたる503の難易度の高い質問を含む包括的なベンチマーク。", "tone": "primary" },
-                { "icon": "📄", "label": "タスク種別", "value": "単一・複数文書", "description": "単一文書タスクと複数文書タスクを含む多ドメイン構成。", "tone": "info" },
-                { "icon": "🔎", "label": "評価能力", "value": "長文脈の情報発見+推論", "description": "非常に長い文脈の中から関連情報を見つけ出して推論する能力を測定する。", "tone": "info" }
+                {
+                  "icon": "📊",
+                  "label": "問題数",
+                  "value": "503問",
+                  "description": "多様なドメインにわたる503の難易度の高い質問を含む包括的なベンチマーク。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📄",
+                  "label": "タスク種別",
+                  "value": "単一・複数文書",
+                  "description": "単一文書タスクと複数文書タスクを含む多ドメイン構成。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔎",
+                  "label": "評価能力",
+                  "value": "長文脈の情報発見+推論",
+                  "description": "非常に長い文脈の中から関連情報を見つけ出して推論する能力を測定する。",
+                  "tone": "info"
+                }
               ],
               "context": "長文脈LLMの競争が激化する中、実用的な評価基準の不足が課題とされていた。",
               "impact": "LongBench v2を用いることで、長文脈処理能力のモデル比較・選定が客観的に行えるようになる。"
-            }
+            },
+            "caption": "LongBench v2",
+            "alt": "LongBench v2の概要。503問の多ドメイン難問でLLMの長文脈理解・推論能力を評価するベンチマーク。単一文書・複数文書タスクを含む。"
           }
         }
       ]
@@ -455,7 +693,12 @@
             "追加のデータプライバシー管理機能も提供予定。コンプライアンス重視企業での採用拡大を目指す。",
             "医療・金融・法律など厳格な規制要件を持つ業界でのChatGPT Enterprise導入障壁が下がる。"
           ],
-          "tags": ["openai", "enterprise", "compliance", "hipaa"],
+          "tags": [
+            "openai",
+            "enterprise",
+            "compliance",
+            "hipaa"
+          ],
           "scores": {
             "importance": 2,
             "depth": 2,
@@ -468,19 +711,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "OpenAI エンタープライズ拡充",
-            "alt": "OpenAIのエンタープライズ機能拡充概要。SOC 2 Type II認証とHIPAA BAA対応を追加し、医療・金融・法律などコンプライアンス要件の厳しい業界への展開を強化する。",
             "data": {
               "headline": "OpenAI エンタープライズにSOC 2 Type II・HIPAA対応を追加",
               "tldr": "OpenAIがエンタープライズ向けにSOC 2 Type II認証とHIPAA BAA対応を追加。医療機関向けを含む厳格なコンプライアンス要件を持つ企業での採用を推進する。",
               "points": [
-                { "icon": "🔒", "label": "新認証", "value": "SOC 2 Type II", "description": "SOC 2 Type II認証を取得。セキュリティ要件の高い企業向けに信頼性を高める。", "tone": "success" },
-                { "icon": "🏥", "label": "医療対応", "value": "HIPAA BAA追加", "description": "医療機関向けにHIPAA Business Associate Agreementsをサポート。ヘルスケア分野での展開が可能に。", "tone": "primary" },
-                { "icon": "🛡️", "label": "プライバシー", "value": "データ管理機能強化", "description": "企業顧客向けに追加のデータプライバシー管理機能を提供予定。", "tone": "info" }
+                {
+                  "icon": "🔒",
+                  "label": "新認証",
+                  "value": "SOC 2 Type II",
+                  "description": "SOC 2 Type II認証を取得。セキュリティ要件の高い企業向けに信頼性を高める。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏥",
+                  "label": "医療対応",
+                  "value": "HIPAA BAA追加",
+                  "description": "医療機関向けにHIPAA Business Associate Agreementsをサポート。ヘルスケア分野での展開が可能に。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🛡️",
+                  "label": "プライバシー",
+                  "value": "データ管理機能強化",
+                  "description": "企業顧客向けに追加のデータプライバシー管理機能を提供予定。",
+                  "tone": "info"
+                }
               ],
               "context": "企業向けAI導入における最大の障壁の一つがコンプライアンス対応。OpenAIの認証取得は法人展開の加速を意図している。",
               "impact": "医療・金融・法律など規制要件の厳しい業界でのChatGPT Enterprise導入障壁が下がる。"
-            }
+            },
+            "caption": "OpenAI エンタープライズ拡充",
+            "alt": "OpenAIのエンタープライズ機能拡充概要。SOC 2 Type II認証とHIPAA BAA対応を追加し、医療・金融・法律などコンプライアンス要件の厳しい業界への展開を強化する。"
           }
         },
         {
@@ -500,7 +761,12 @@
             "自律型コーディングアシスタントから複雑な対話ができるカスタマーサービスボットまで、エージェントが知識労働を代替し始めている。",
             "各社の具体的な活用事例から、AIエージェントが働き方を根本的に変えつつある現状を分析している。"
           ],
-          "tags": ["ai-agents", "future-of-work", "knowledge-work", "wired"],
+          "tags": [
+            "ai-agents",
+            "future-of-work",
+            "knowledge-work",
+            "wired"
+          ],
           "scores": {
             "importance": 2,
             "depth": 2,
@@ -513,19 +779,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "AIエージェントと仕事の未来",
-            "alt": "Wired特集「AIエージェントが変える仕事の未来」の概要。コーディング・カスタマーサービス・調査・クリエイティブなど各業界での事例と、知識労働への影響を分析。",
             "data": {
               "headline": "AIエージェントによる知識労働の変革——Wiredが多業界の事例を分析",
               "tldr": "WiredがAIエージェントによる職場変革を特集。自律型コーディングから複雑なカスタマーサービスまで、エージェントが知識労働を代替し始めている実態を各業界の事例で紹介。",
               "points": [
-                { "icon": "💻", "label": "コーディング", "value": "自律型コーディングAI", "description": "自律型コーディングアシスタントが複雑なプログラミングタスクを代替し始めている。", "tone": "primary" },
-                { "icon": "💬", "label": "カスタマーサービス", "value": "複雑対話ボット", "description": "複雑なやりとりが可能なカスタマーサービスボットが知識労働を担いつつある。", "tone": "info" },
-                { "icon": "🔬", "label": "研究・クリエイティブ", "value": "調査・創作への活用", "description": "調査・クリエイティブタスクにも企業がAIエージェントを活用する事例が増えている。", "tone": "info" }
+                {
+                  "icon": "💻",
+                  "label": "コーディング",
+                  "value": "自律型コーディングAI",
+                  "description": "自律型コーディングアシスタントが複雑なプログラミングタスクを代替し始めている。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "💬",
+                  "label": "カスタマーサービス",
+                  "value": "複雑対話ボット",
+                  "description": "複雑なやりとりが可能なカスタマーサービスボットが知識労働を担いつつある。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔬",
+                  "label": "研究・クリエイティブ",
+                  "value": "調査・創作への活用",
+                  "description": "調査・クリエイティブタスクにも企業がAIエージェントを活用する事例が増えている。",
+                  "tone": "info"
+                }
               ],
               "context": "AIエージェントの実用化が加速し、従来は人間だけが担えた知識集約型業務への適用が広がっている。",
               "impact": "AIエージェントを活用した業務変革は多くの産業で避けられない潮流になりつつある。"
-            }
+            },
+            "caption": "AIエージェントと仕事の未来",
+            "alt": "Wired特集「AIエージェントが変える仕事の未来」の概要。コーディング・カスタマーサービス・調査・クリエイティブなど各業界での事例と、知識労働への影響を分析。"
           }
         }
       ]
@@ -552,7 +836,12 @@
             "EU域内で事業を行う企業は、高リスクシステムに対して厳格な要件を満たすことが法的に求められる。",
             "違反企業への制裁が可能となり、医療・雇用・教育・重要インフラなどに関わるAI展開が直接影響を受ける。"
           ],
-          "tags": ["eu-ai-act", "regulation", "compliance", "high-risk-ai"],
+          "tags": [
+            "eu-ai-act",
+            "regulation",
+            "compliance",
+            "high-risk-ai"
+          ],
           "scores": {
             "importance": 3,
             "depth": 3,
@@ -565,19 +854,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "EU AI Act執行開始",
-            "alt": "EU AI Actの高リスクAIシステム執行フェーズ開始の概要。透明性・文書化・人間による監視が義務化され、コンプライアンス違反への制裁が可能となった。",
             "data": {
               "headline": "EU AI Act：高リスクAI執行フェーズ開始——透明性・文書化・人間監視が義務化",
               "tldr": "EU AI Actが高リスクAIシステムへの執行フェーズに入った。透明性・文書化・人間監視の厳格な要件が義務化され、違反企業への制裁が可能となった。",
               "points": [
-                { "icon": "⚖️", "label": "執行対象", "value": "高リスクAIシステム", "description": "医療・雇用・教育・重要インフラなど高リスクカテゴリに分類されたAIシステムが対象。", "tone": "danger" },
-                { "icon": "📋", "label": "義務内容", "value": "透明性・文書化・人間監視", "description": "透明性の確保・文書化・人間による監視に関する厳格な要件を満たすことが義務化された。", "tone": "warning" },
-                { "icon": "🏛️", "label": "執行権限", "value": "制裁可能", "description": "コンプライアンス違反に対し規制当局による制裁が可能となり、法的拘束力を持つ。", "tone": "danger" }
+                {
+                  "icon": "⚖️",
+                  "label": "執行対象",
+                  "value": "高リスクAIシステム",
+                  "description": "医療・雇用・教育・重要インフラなど高リスクカテゴリに分類されたAIシステムが対象。",
+                  "tone": "danger"
+                },
+                {
+                  "icon": "📋",
+                  "label": "義務内容",
+                  "value": "透明性・文書化・人間監視",
+                  "description": "透明性の確保・文書化・人間による監視に関する厳格な要件を満たすことが義務化された。",
+                  "tone": "warning"
+                },
+                {
+                  "icon": "🏛️",
+                  "label": "執行権限",
+                  "value": "制裁可能",
+                  "description": "コンプライアンス違反に対し規制当局による制裁が可能となり、法的拘束力を持つ。",
+                  "tone": "danger"
+                }
               ],
               "context": "EU AI Actは2024年に成立した世界初の包括的AI規制法。段階的に適用範囲が拡大しており、高リスクシステムへの執行は大きな節目。",
               "impact": "EU市場でAIシステムを展開する企業は対応が急務。特に医療・雇用・教育分野への影響が大きい。"
-            }
+            },
+            "caption": "EU AI Act執行開始",
+            "alt": "EU AI Actの高リスクAIシステム執行フェーズ開始の概要。透明性・文書化・人間による監視が義務化され、コンプライアンス違反への制裁が可能となった。"
           }
         }
       ]
@@ -604,7 +911,12 @@
             "DeepSeekの最新フラッグシップモデルとして、OSS LLMの新たなベースラインとしてコミュニティの注目を集めている。",
             "HNコミュニティで実際のユースケースでの比較検証が進んでいる。フロンティアラボとの性能差についての議論も活発。"
           ],
-          "tags": ["deepseek", "hacker-news", "community", "open-source-llm"],
+          "tags": [
+            "deepseek",
+            "hacker-news",
+            "community",
+            "open-source-llm"
+          ],
           "scores": {
             "importance": 4,
             "depth": 3,
@@ -614,23 +926,44 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hn", "points": 523 },
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 523
+          },
           "x_post": "DeepSeek-V4がリリースされた。初期ユーザーからは数学・コーディングのベンチマークで前世代DeepSeek-V3を大幅に上回るとの報告が相次いでおり、HNで523ポイントを獲得している。オープンソースLLMの性能水準が再び引き上げられた可能性があり、私も注目している。\n\nhttps://news.ycombinator.com/item?id=43810987",
           "figure": {
             "type": "summary-card",
-            "caption": "DeepSeek-V4 HN反響",
-            "alt": "DeepSeek-V4リリースのHNスレッド概要。523ポイントを獲得し、数学・コーディングベンチマークでV3を大幅に超えるとの初期ユーザー報告が多数寄せられている。",
             "data": {
               "headline": "DeepSeek-V4リリース：HNで523pt——V3を大幅超えとの初期報告が相次ぐ",
               "tldr": "DeepSeek-V4のHNスレッドが523ポイントを獲得。数学・コーディングでV3を大幅に上回るとの初期ユーザー報告が相次ぎ、OSS LLMの新ベースラインとして注目されている。",
               "points": [
-                { "icon": "🔥", "label": "HN反響", "value": "523ポイント", "description": "Hacker Newsで523ポイントを獲得。今日最も注目されたAI関連スレッドとなっている。", "tone": "primary" },
-                { "icon": "📐", "label": "初期評価", "value": "数学・コードでV3超", "description": "初期ユーザーから数学・コーディングのベンチマークでDeepSeek-V3を大幅に上回るとの報告が相次いでいる。", "tone": "success" },
-                { "icon": "💡", "label": "注目点", "value": "OSS新ベースライン候補", "description": "フロンティアモデルに迫る性能をOSSで実現している可能性について、HNコミュニティで活発な議論が行われている。", "tone": "info" }
+                {
+                  "icon": "🔥",
+                  "label": "HN反響",
+                  "value": "523ポイント",
+                  "description": "Hacker Newsで523ポイントを獲得。今日最も注目されたAI関連スレッドとなっている。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📐",
+                  "label": "初期評価",
+                  "value": "数学・コードでV3超",
+                  "description": "初期ユーザーから数学・コーディングのベンチマークでDeepSeek-V3を大幅に上回るとの報告が相次いでいる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💡",
+                  "label": "注目点",
+                  "value": "OSS新ベースライン候補",
+                  "description": "フロンティアモデルに迫る性能をOSSで実現している可能性について、HNコミュニティで活発な議論が行われている。",
+                  "tone": "info"
+                }
               ],
               "context": "DeepSeek-V3は登場時にOSS LLMの性能水準を大きく引き上げた。V4はその後継として業界全体から注目されている。",
               "impact": "オープンソースLLMの活用コストがさらに下がり、AI開発者・企業の選択肢が広がる可能性がある。"
-            }
+            },
+            "caption": "DeepSeek-V4 HN反響",
+            "alt": "DeepSeek-V4リリースのHNスレッド概要。523ポイントを獲得し、数学・コーディングベンチマークでV3を大幅に超えるとの初期ユーザー報告が多数寄せられている。"
           }
         },
         {
@@ -650,7 +983,12 @@
             "RLVRは検証可能な結果を持つタスクで安定した訓練を実現するが、主観的な品質評価ではRLHFが依然として優れているという観察が共有されている。",
             "実務者視点からの知見交換が行われており、両手法の使い分けについての実践的な議論が展開されている。"
           ],
-          "tags": ["rlvr", "rlhf", "reddit", "training-dynamics"],
+          "tags": [
+            "rlvr",
+            "rlhf",
+            "reddit",
+            "training-dynamics"
+          ],
           "scores": {
             "importance": 2,
             "depth": 3,
@@ -660,22 +998,43 @@
             "source_type_bias": -1,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
           "figure": {
             "type": "summary-card",
-            "caption": "RLVR vs RLHF議論",
-            "alt": "r/MachineLearningでのRLVR vs RLHF技術的議論の概要。RLVRは検証可能タスクで安定した訓練を実現する一方、主観的品質評価ではRLHFが依然として優れているという観察が共有されている。",
             "data": {
               "headline": "RLVR vs RLHF：タスク種別で優劣が分かれる——r/MLで技術的議論が活発",
               "tldr": "r/MachineLearningでRLVR vs RLHFの比較議論が活発化。RLVRは検証可能タスクで安定、RLHFは主観的品質評価で優位という使い分けへの理解が深まっている。",
               "points": [
-                { "icon": "✅", "label": "RLVRが優位", "value": "検証可能タスク", "description": "検証可能な結果を持つタスク（数学・コーディング等）でRLVRは安定した訓練を実現する。", "tone": "success" },
-                { "icon": "🗣️", "label": "RLHFが優位", "value": "主観的品質評価", "description": "自然な文章生成や創作など主観的な品質評価が重要なタスクではRLHFが依然として優れている。", "tone": "info" },
-                { "icon": "💬", "label": "議論の深さ", "value": "実務者による比較", "description": "訓練安定性・スケーラビリティ・適用タスク種別についての実務者視点での知見が交換されている。", "tone": "primary" }
+                {
+                  "icon": "✅",
+                  "label": "RLVRが優位",
+                  "value": "検証可能タスク",
+                  "description": "検証可能な結果を持つタスク（数学・コーディング等）でRLVRは安定した訓練を実現する。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🗣️",
+                  "label": "RLHFが優位",
+                  "value": "主観的品質評価",
+                  "description": "自然な文章生成や創作など主観的な品質評価が重要なタスクではRLHFが依然として優れている。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "💬",
+                  "label": "議論の深さ",
+                  "value": "実務者による比較",
+                  "description": "訓練安定性・スケーラビリティ・適用タスク種別についての実務者視点での知見が交換されている。",
+                  "tone": "primary"
+                }
               ],
               "context": "RLVR論文の登場を受け、コミュニティでRLHFとの比較議論が活発化している。適用場面の整理が進んでいる。",
               "impact": "用途に応じた手法選択（推論・数学ならRLVR、自然な対話品質が必要ならRLHF）という実践的な判断軸が形成されつつある。"
-            }
+            },
+            "caption": "RLVR vs RLHF議論",
+            "alt": "r/MachineLearningでのRLVR vs RLHF技術的議論の概要。RLVRは検証可能タスクで安定した訓練を実現する一方、主観的品質評価ではRLHFが依然として優れているという観察が共有されている。"
           }
         }
       ]
@@ -702,7 +1061,12 @@
             "はてなブックマークで143ユーザーが保存。日本語エンジニアコミュニティでAIエージェント設計への関心の高さを示す。",
             "各パターンに実装のポイントが付記されており、エージェント開発の実践的なリファレンスとして活用できる。"
           ],
-          "tags": ["ai-agent", "design-pattern", "react", "multi-agent"],
+          "tags": [
+            "ai-agent",
+            "design-pattern",
+            "react",
+            "multi-agent"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -712,25 +1076,58 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "hatena", "users": 143 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 143
+          },
           "x_post": "AIエージェントの設計パターン5種（ReAct・Plan-and-Execute・マルチエージェント・ツール使用・リフレクション）を実装のポイントとともに解説した記事が、はてなブックマークで143ユーザーを獲得した。エージェント開発を実務で進めるためのリファレンスとして私も重宝しそうだ。\n\nhttps://qiita.com/ai_architect/items/abc123",
           "figure": {
             "type": "summary-card",
-            "caption": "5つのエージェント設計パターン",
-            "alt": "実務で使えるAIエージェント設計パターン5種の概要。ReAct・Plan-and-Execute・マルチエージェント・ツール使用・リフレクションの各アーキテクチャを解説。はてなブックマーク143ユーザー獲得。",
             "data": {
               "headline": "AIエージェント設計パターン5選——ReActからリフレクションまで実装付き解説",
               "tldr": "実務向けAIエージェント設計パターン5種（ReAct・Plan-and-Execute・マルチエージェント・ツール使用・リフレクション）を実装のポイントとともに解説。はてなブックマーク143ユーザー獲得。",
               "points": [
-                { "icon": "🔄", "label": "ReAct", "value": "推論+行動の繰り返し", "description": "思考と行動を交互に繰り返すReActパターン。ツール呼び出しと推論を組み合わせる基本パターン。", "tone": "primary" },
-                { "icon": "📋", "label": "Plan & Execute", "value": "計画→実行の分離", "description": "タスクを計画フェーズと実行フェーズに分離し、複雑なタスクを構造化するパターン。", "tone": "info" },
-                { "icon": "🤝", "label": "マルチエージェント", "value": "複数エージェント協調", "description": "複数のエージェントが役割分担して協調するマルチエージェントパターン。", "tone": "info" },
-                { "icon": "🔧", "label": "ツール使用", "value": "外部ツール連携", "description": "LLMが外部APIやツールを呼び出して能力を拡張するツール使用パターン。", "tone": "info" },
-                { "icon": "🪞", "label": "リフレクション", "value": "自己評価・修正", "description": "エージェントが自身の出力を評価・修正することで品質を向上させるリフレクションパターン。", "tone": "success" }
+                {
+                  "icon": "🔄",
+                  "label": "ReAct",
+                  "value": "推論+行動の繰り返し",
+                  "description": "思考と行動を交互に繰り返すReActパターン。ツール呼び出しと推論を組み合わせる基本パターン。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "📋",
+                  "label": "Plan & Execute",
+                  "value": "計画→実行の分離",
+                  "description": "タスクを計画フェーズと実行フェーズに分離し、複雑なタスクを構造化するパターン。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🤝",
+                  "label": "マルチエージェント",
+                  "value": "複数エージェント協調",
+                  "description": "複数のエージェントが役割分担して協調するマルチエージェントパターン。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🔧",
+                  "label": "ツール使用",
+                  "value": "外部ツール連携",
+                  "description": "LLMが外部APIやツールを呼び出して能力を拡張するツール使用パターン。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "🪞",
+                  "label": "リフレクション",
+                  "value": "自己評価・修正",
+                  "description": "エージェントが自身の出力を評価・修正することで品質を向上させるリフレクションパターン。",
+                  "tone": "success"
+                }
               ],
               "context": "AIエージェント開発への関心が高まる中、実装可能な設計パターンの体系化への需要が高い。",
               "impact": "5パターンを理解することで、ユースケースに合ったエージェントアーキテクチャを選択・実装できるようになる。"
-            }
+            },
+            "caption": "5つのエージェント設計パターン",
+            "alt": "実務で使えるAIエージェント設計パターン5種の概要。ReAct・Plan-and-Execute・マルチエージェント・ツール使用・リフレクションの各アーキテクチャを解説。はてなブックマーク143ユーザー獲得。"
           }
         },
         {
@@ -750,7 +1147,12 @@
             "MCP仕様の理解→コード実装→テスト→npm公開という流れを体系的に紹介。実装コードを含む実践的な内容。",
             "Claudeを独自のツールやデータソースに接続したいエンジニア向けの、MCP拡張開発のノウハウを提供している。"
           ],
-          "tags": ["claude", "mcp", "server-development", "npm"],
+          "tags": [
+            "claude",
+            "mcp",
+            "server-development",
+            "npm"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -760,23 +1162,50 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "zenn", "liked": 87 },
+          "reaction_signal": {
+            "kind": "zenn",
+            "liked": 87
+          },
           "x_post": "Claude MCPサーバーをゼロから実装してnpmに公開するまでの手順を解説したZennの記事が87いいねを獲得している。MCP仕様の理解→コード実装→テスト→npm公開という流れを体系的に紹介しており、Claudeを独自ツールに接続したい開発者にとって参照しやすい内容だ。\n\nhttps://zenn.dev/user123/articles/claude-mcp-server-guide",
           "figure": {
             "type": "timeline",
-            "caption": "MCPサーバー開発の流れ",
-            "alt": "Claude MCPサーバー自作から公開までのステップ。MCP仕様の理解→コード実装→テスト→npm公開という4段階のフローを解説した記事。Zennで87いいね獲得。",
             "data": {
               "headline": "Claude MCPサーバー開発：仕様理解からnpm公開まで4ステップ",
               "events": [
-                { "when": "Step 1", "label": "MCP仕様の理解", "description": "Model Context Protocol の仕様を読み込み、サーバーの構造と必要なエンドポイントを理解する。", "status": "past", "tone": "default" },
-                { "when": "Step 2", "label": "コード実装", "description": "MCP仕様に従ってサーバーのコードを実際に記述する。テスト可能な実装を目指す。", "status": "past", "tone": "default" },
-                { "when": "Step 3", "label": "テスト", "description": "実装したMCPサーバーをローカル環境でテストし、Claudeとの連携を検証する。", "status": "past", "tone": "default" },
-                { "when": "Step 4", "label": "npm公開", "description": "テスト済みのMCPサーバーをnpmパッケージとして公開し、他の開発者も利用できるようにする。", "status": "now", "tone": "success" }
+                {
+                  "when": "Step 1",
+                  "label": "MCP仕様の理解",
+                  "description": "Model Context Protocol の仕様を読み込み、サーバーの構造と必要なエンドポイントを理解する。",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "コード実装",
+                  "description": "MCP仕様に従ってサーバーのコードを実際に記述する。テスト可能な実装を目指す。",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "テスト",
+                  "description": "実装したMCPサーバーをローカル環境でテストし、Claudeとの連携を検証する。",
+                  "status": "past",
+                  "tone": "default"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "npm公開",
+                  "description": "テスト済みのMCPサーバーをnpmパッケージとして公開し、他の開発者も利用できるようにする。",
+                  "status": "now",
+                  "tone": "success"
+                }
               ],
               "narrative": "記事ではMCPの仕様を理解した上で、コードを書いてテストし、最終的にnpmに公開するまでの流れを詳しく解説している。Zennで87いいねを獲得した実践的な内容。",
               "impact": "自分専用のMCPサーバーを開発・公開したいエンジニアが、全体のフローを把握できるリファレンスとして活用できる。"
-            }
+            },
+            "caption": "MCPサーバー開発の流れ",
+            "alt": "Claude MCPサーバー自作から公開までのステップ。MCP仕様の理解→コード実装→テスト→npm公開という4段階のフローを解説した記事。Zennで87いいね獲得。"
           }
         },
         {
@@ -796,7 +1225,12 @@
             "実際のコードとベンチマーク結果を含む詳細な実装手順が提供されており、手元で再現・応用できる。",
             "RAG単体・Fine-tuning単体では不十分なケースに対し、両者の組み合わせで精度を大幅に改善するアプローチを示している。"
           ],
-          "tags": ["rag", "fine-tuning", "japanese-nlp", "llm"],
+          "tags": [
+            "rag",
+            "fine-tuning",
+            "japanese-nlp",
+            "llm"
+          ],
           "scores": {
             "importance": 5,
             "depth": 4,
@@ -806,24 +1240,52 @@
             "source_type_bias": 0,
             "seen_penalty": 0
           },
-          "reaction_signal": { "kind": "qiita", "likes": 52, "stocks": 38 },
+          "reaction_signal": {
+            "kind": "qiita",
+            "likes": 52,
+            "stocks": 38
+          },
           "x_post": "RAGとFine-tuningを組み合わせて日本語QAタスクの精度を大幅に改善した実装事例をQiitaで解説した記事が52いいね・38ストックを獲得している。実際のコードとベンチマーク結果を含む詳細な手順で、RAG単体では不十分なケースへの対処法を示している。私の日本語LLM構築でも参考にしたい。\n\nhttps://qiita.com/ml_engineer_2026/items/def456",
           "figure": {
             "type": "summary-card",
-            "caption": "RAG+Fine-tuning組み合わせ",
-            "alt": "RAGとFine-tuningを組み合わせた日本語QA精度改善のQiita記事概要。52いいね38ストック獲得。実際のコードとベンチマーク結果付きで日本語QAタスクの精度を大幅に改善した事例を解説。",
             "data": {
               "headline": "RAG×Fine-tuning で日本語QA精度を大幅改善——コード・ベンチマーク付き実装解説",
               "tldr": "RAGとFine-tuningの組み合わせで日本語QAタスクの精度を大幅に改善した事例をQiitaで解説。52いいね・38ストックを獲得した、コードとベンチマーク結果付きの実践的な記事。",
               "points": [
-                { "icon": "🔧", "label": "手法", "value": "RAG+Fine-tuning組み合わせ", "description": "RAG単体やFine-tuning単体では不十分なケースに対し、両者を組み合わせて精度を向上させるアプローチ。", "tone": "primary" },
-                { "icon": "🇯🇵", "label": "対象タスク", "value": "日本語QA", "description": "日本語質問応答（QA）タスクに特化した精度改善手法として提案されている。", "tone": "info" },
-                { "icon": "📊", "label": "コンテンツ", "value": "コード+ベンチマーク付き", "description": "実際のコードとベンチマーク結果を含む詳細な実装手順が提供されており、手元で再現できる。", "tone": "success" },
-                { "icon": "❤️", "label": "反響", "value": "52いいね・38ストック", "description": "Qiitaで52いいね・38ストックを獲得した人気記事。", "tone": "info" }
+                {
+                  "icon": "🔧",
+                  "label": "手法",
+                  "value": "RAG+Fine-tuning組み合わせ",
+                  "description": "RAG単体やFine-tuning単体では不十分なケースに対し、両者を組み合わせて精度を向上させるアプローチ。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "対象タスク",
+                  "value": "日本語QA",
+                  "description": "日本語質問応答（QA）タスクに特化した精度改善手法として提案されている。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📊",
+                  "label": "コンテンツ",
+                  "value": "コード+ベンチマーク付き",
+                  "description": "実際のコードとベンチマーク結果を含む詳細な実装手順が提供されており、手元で再現できる。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "❤️",
+                  "label": "反響",
+                  "value": "52いいね・38ストック",
+                  "description": "Qiitaで52いいね・38ストックを獲得した人気記事。",
+                  "tone": "info"
+                }
               ],
               "context": "RAGとFine-tuningはLLM精度向上の代表的な手法だが、組み合わせ方の実装事例が少なく、特に日本語特化の知見は希少。",
               "impact": "日本語QAシステムの構築・改善を検討するエンジニアが実装の参考にできる具体的な知見。"
-            }
+            },
+            "caption": "RAG+Fine-tuning組み合わせ",
+            "alt": "RAGとFine-tuningを組み合わせた日本語QA精度改善のQiita記事概要。52いいね38ストック獲得。実際のコードとベンチマーク結果付きで日本語QAタスクの精度を大幅に改善した事例を解説。"
           }
         },
         {
@@ -843,7 +1305,12 @@
             "人間が書いたテキストとAI生成テキストを区別するためにコントラスト学習を活用した手法を採用。",
             "日本語に特化したAI生成テキスト検出という希少な研究分野で、実用的な検出ツール開発への貢献が期待される。"
           ],
-          "tags": ["ai-detection", "contrastive-learning", "japanese-nlp", "cyberagent"],
+          "tags": [
+            "ai-detection",
+            "contrastive-learning",
+            "japanese-nlp",
+            "cyberagent"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -856,19 +1323,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "AI生成テキスト検出",
-            "alt": "CyberAgent AI Labによる日本語AI生成コンテンツ検出の新手法概要。コントラスト学習で人間と機械のテキストを区別するモデルを構築し、従来手法比で大幅な精度向上を達成。",
             "data": {
               "headline": "CyberAgent AI Lab：日本語AI生成テキスト検出——コントラスト学習で従来比大幅向上",
               "tldr": "CyberAgent AI Labが日本語特化のAI生成テキスト検出モデルを発表。コントラスト学習により従来手法と比較して大幅に精度が向上したと報告している。",
               "points": [
-                { "icon": "🔍", "label": "手法", "value": "コントラスト学習", "description": "人間が書いたテキストとAI生成テキストを区別するためにコントラスト学習を活用した手法。", "tone": "primary" },
-                { "icon": "🇯🇵", "label": "言語特化", "value": "日本語特化モデル", "description": "英語中心のAI生成テキスト検出研究と異なり、日本語テキストに特化した検出モデルを構築。", "tone": "info" },
-                { "icon": "📈", "label": "精度向上", "value": "従来手法比大幅向上", "description": "日本語AI生成テキスト検出において従来手法と比較して大幅に精度が向上したと報告されている。", "tone": "success" }
+                {
+                  "icon": "🔍",
+                  "label": "手法",
+                  "value": "コントラスト学習",
+                  "description": "人間が書いたテキストとAI生成テキストを区別するためにコントラスト学習を活用した手法。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🇯🇵",
+                  "label": "言語特化",
+                  "value": "日本語特化モデル",
+                  "description": "英語中心のAI生成テキスト検出研究と異なり、日本語テキストに特化した検出モデルを構築。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📈",
+                  "label": "精度向上",
+                  "value": "従来手法比大幅向上",
+                  "description": "日本語AI生成テキスト検出において従来手法と比較して大幅に精度が向上したと報告されている。",
+                  "tone": "success"
+                }
               ],
               "context": "AI生成コンテンツの識別が社会的課題となる中、日本語特化の検出研究は希少で実用価値が高い。",
               "impact": "AI生成コンテンツのフィルタリング・信頼性評価システムの構築に活用できる実践的な研究成果。"
-            }
+            },
+            "caption": "AI生成テキスト検出",
+            "alt": "CyberAgent AI Labによる日本語AI生成コンテンツ検出の新手法概要。コントラスト学習で人間と機械のテキストを区別するモデルを構築し、従来手法比で大幅な精度向上を達成。"
           }
         },
         {
@@ -888,7 +1373,12 @@
             "LLMを化学反応データでファインチューニングして精度向上を実現したとされる。",
             "自然科学へのLLM応用という観点で、化学インフォマティクスと生成AIの接点を示す事例。"
           ],
-          "tags": ["llm", "chemistry", "fine-tuning", "preferred-networks"],
+          "tags": [
+            "llm",
+            "chemistry",
+            "fine-tuning",
+            "preferred-networks"
+          ],
           "scores": {
             "importance": 3,
             "depth": 4,
@@ -901,19 +1391,37 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "PFN：LLMで化学反応予測",
-            "alt": "Preferred NetworksによるLLMを用いた化学反応予測研究の概要。LLMを化学反応データでFine-tuningし、既存のデータ駆動型手法との比較評価を実施。精度向上を実現したと報告。",
             "data": {
               "headline": "Preferred Networks：LLMを化学反応予測に適用——データ駆動型手法と比較",
               "tldr": "PFNがLLMを化学反応予測タスクに適用した研究成果を公開。化学反応データでFine-tuningしたLLMが既存のデータ駆動型手法との比較で精度向上を実現したと報告している。",
               "points": [
-                { "icon": "🧪", "label": "応用ドメイン", "value": "化学反応予測", "description": "LLMを化学反応予測タスクに適用。自然科学分野へのLLM応用の事例。", "tone": "primary" },
-                { "icon": "🤖", "label": "手法", "value": "LLMのFine-tuning", "description": "化学反応データを用いてLLMをFine-tuningし、専門タスクへの適応を実現。", "tone": "info" },
-                { "icon": "📊", "label": "比較評価", "value": "データ駆動型手法と比較", "description": "既存のデータ駆動型手法と精度を比較評価し、LLM適用の有効性を検証。", "tone": "success" }
+                {
+                  "icon": "🧪",
+                  "label": "応用ドメイン",
+                  "value": "化学反応予測",
+                  "description": "LLMを化学反応予測タスクに適用。自然科学分野へのLLM応用の事例。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🤖",
+                  "label": "手法",
+                  "value": "LLMのFine-tuning",
+                  "description": "化学反応データを用いてLLMをFine-tuningし、専門タスクへの適応を実現。",
+                  "tone": "info"
+                },
+                {
+                  "icon": "📊",
+                  "label": "比較評価",
+                  "value": "データ駆動型手法と比較",
+                  "description": "既存のデータ駆動型手法と精度を比較評価し、LLM適用の有効性を検証。",
+                  "tone": "success"
+                }
               ],
               "context": "Preferred NetworksはDeep Learning研究で著名な日本のAI企業。自然科学へのLLM応用という先端的な取り組みを公開している。",
               "impact": "LLMが化学・材料科学などの自然科学分野でも有効なことを示す事例として、科学AIの応用範囲拡大に貢献する。"
-            }
+            },
+            "caption": "PFN：LLMで化学反応予測",
+            "alt": "Preferred NetworksによるLLMを用いた化学反応予測研究の概要。LLMを化学反応データでFine-tuningし、既存のデータ駆動型手法との比較評価を実施。精度向上を実現したと報告。"
           }
         }
       ]
@@ -940,7 +1448,12 @@
             "改良MoE（Mixture of Experts）アーキテクチャを採用。オープンソースを維持しつつ性能を大幅に向上させた。",
             "中国発のオープンソースLLMエコシステムの進化を示す事例。量子位が中国語メディアとして詳報している。"
           ],
-          "tags": ["deepseek", "moe-architecture", "open-source", "china-ai"],
+          "tags": [
+            "deepseek",
+            "moe-architecture",
+            "open-source",
+            "china-ai"
+          ],
           "scores": {
             "importance": 4,
             "depth": 4,
@@ -953,46 +1466,133 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "caption": "DeepSeek-V4（量子位）",
-            "alt": "DeepSeek-V4の量子位による中国語報道概要。数学推論・コード生成・知識QAでV3を全面超え。改良MoEアーキテクチャを採用しながらオープンソースを維持。",
             "data": {
               "headline": "DeepSeek-V4：数学推論・コード・知識QAでV3を全面超え、改良MoE採用",
               "tldr": "DeepSeek-V4が本日公開。数学推論・コード生成・知識QAのベンチマークでV3を全面超え。改良MoEアーキテクチャを採用しながらオープンソースを維持。量子位が中国語で詳報。",
               "points": [
-                { "icon": "📐", "label": "数学推論", "value": "V3を超える性能", "description": "数学推論ベンチマークでDeepSeek-V3を全面的に上回る性能を達成。", "tone": "success" },
-                { "icon": "💻", "label": "コード生成", "value": "V3を超える性能", "description": "コード生成ベンチマークでもDeepSeek-V3を超える結果を示した。", "tone": "success" },
-                { "icon": "🏗️", "label": "アーキテクチャ", "value": "改良MoE", "description": "改良されたMixture of Expertsアーキテクチャを採用。オープンソースを維持しながら性能向上を実現。", "tone": "primary" },
-                { "icon": "🔓", "label": "公開形態", "value": "オープンソース", "description": "前世代と同様にオープンソースで公開。中国発のOSS AIエコシステムのさらなる進化を示す。", "tone": "info" }
+                {
+                  "icon": "📐",
+                  "label": "数学推論",
+                  "value": "V3を超える性能",
+                  "description": "数学推論ベンチマークでDeepSeek-V3を全面的に上回る性能を達成。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "💻",
+                  "label": "コード生成",
+                  "value": "V3を超える性能",
+                  "description": "コード生成ベンチマークでもDeepSeek-V3を超える結果を示した。",
+                  "tone": "success"
+                },
+                {
+                  "icon": "🏗️",
+                  "label": "アーキテクチャ",
+                  "value": "改良MoE",
+                  "description": "改良されたMixture of Expertsアーキテクチャを採用。オープンソースを維持しながら性能向上を実現。",
+                  "tone": "primary"
+                },
+                {
+                  "icon": "🔓",
+                  "label": "公開形態",
+                  "value": "オープンソース",
+                  "description": "前世代と同様にオープンソースで公開。中国発のOSS AIエコシステムのさらなる進化を示す。",
+                  "tone": "info"
+                }
               ],
               "context": "量子位（QbitAI）は中国最大のAI専門メディアの一つ。DeepSeek-V4の中国語圏での反応と位置付けを伝えている。",
               "impact": "中国発OSS LLMの性能向上が継続しており、グローバルなLLM競争における中国勢の存在感が高まっている。"
-            }
+            },
+            "caption": "DeepSeek-V4（量子位）",
+            "alt": "DeepSeek-V4の量子位による中国語報道概要。数学推論・コード生成・知識QAでV3を全面超え。改良MoEアーキテクチャを採用しながらオープンソースを維持。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "xAI News", "reason": "公式ニュースページからの直接情報取得が限定的。利用可能なデータのみ使用" },
-    { "source": "Nvidia Deep Learning Blog", "reason": "特定のディープラーニングカテゴリページにアクセスできず、一般AIコンテンツのみ取得" },
-    { "source": "Stockmark Tech Blog", "reason": "過去168時間以内のAI/LLM記事が見つからなかった" },
-    { "source": "Sansan Builders Box AI", "reason": "指定時間窓内の該当記事が見つからなかった" },
-    { "source": "ELYZA note", "reason": "note.com/elyzaへのアクセス不可。WebSearchでも最新記事が確認できなかった" },
-    { "source": "LINEヤフー Tech Blog", "reason": "過去168時間以内のAI/LLM記事が見つからなかった" },
-    { "source": "Semantic Scholar API", "reason": "APIリクエストがタイムアウト。複数回試行後にスキップ" },
-    { "source": "OpenReview NeurIPS 2026", "reason": "NeurIPS 2026の査読ポータルからアクセスできるコンテンツが限定的" },
-    { "source": "The Information", "reason": "有料記事中心。WebSearchで48h窓内の関連AIニュースが確認できなかった" },
-    { "source": "Stratechery", "reason": "最新記事は有料壁。RSSから取得できる無料コンテンツなし" },
-    { "source": "Sebastian Raschka Magazine", "reason": "336h窓内に新号の発行がなかった" },
-    { "source": "ChinAI Newsletter", "reason": "最新号が168h窓外" },
-    { "source": "ITmedia AI+", "reason": "取得コンテンツに指定時間窓内のAI特有の記事が含まれなかった" },
-    { "source": "Reddit r/singularity", "reason": "RSSフェッチが空またはタイムアウト" },
-    { "source": "Reddit r/ClaudeAI", "reason": "RSSフェッチが空またはタイムアウト" },
-    { "source": "Reddit r/OpenAI", "reason": "RSSフェッチが空またはタイムアウト" },
-    { "source": "LessWrong AI tag", "reason": "168h窓内に関連AIポストが見つからなかった" },
-    { "source": "X公開トレンド", "reason": "WebSearchで明確な最新AIトレンド議論が確認できなかった" },
-    { "source": "36Kr AI", "reason": "時間窓内でAI特有の記事が限定的" },
-    { "source": "Zhihu AIトピック", "reason": "WebSearchで時間窓外の結果が多く、有効なコンテンツが取得できなかった" },
-    { "source": "HF daily-papers 中華系著者抽出", "reason": "フルAPIアクセスなしに著者所属の判定が困難" }
+    {
+      "source": "xAI News",
+      "reason": "公式ニュースページからの直接情報取得が限定的。利用可能なデータのみ使用"
+    },
+    {
+      "source": "Nvidia Deep Learning Blog",
+      "reason": "特定のディープラーニングカテゴリページにアクセスできず、一般AIコンテンツのみ取得"
+    },
+    {
+      "source": "Stockmark Tech Blog",
+      "reason": "過去168時間以内のAI/LLM記事が見つからなかった"
+    },
+    {
+      "source": "Sansan Builders Box AI",
+      "reason": "指定時間窓内の該当記事が見つからなかった"
+    },
+    {
+      "source": "ELYZA note",
+      "reason": "note.com/elyzaへのアクセス不可。WebSearchでも最新記事が確認できなかった"
+    },
+    {
+      "source": "LINEヤフー Tech Blog",
+      "reason": "過去168時間以内のAI/LLM記事が見つからなかった"
+    },
+    {
+      "source": "Semantic Scholar API",
+      "reason": "APIリクエストがタイムアウト。複数回試行後にスキップ"
+    },
+    {
+      "source": "OpenReview NeurIPS 2026",
+      "reason": "NeurIPS 2026の査読ポータルからアクセスできるコンテンツが限定的"
+    },
+    {
+      "source": "The Information",
+      "reason": "有料記事中心。WebSearchで48h窓内の関連AIニュースが確認できなかった"
+    },
+    {
+      "source": "Stratechery",
+      "reason": "最新記事は有料壁。RSSから取得できる無料コンテンツなし"
+    },
+    {
+      "source": "Sebastian Raschka Magazine",
+      "reason": "336h窓内に新号の発行がなかった"
+    },
+    {
+      "source": "ChinAI Newsletter",
+      "reason": "最新号が168h窓外"
+    },
+    {
+      "source": "ITmedia AI+",
+      "reason": "取得コンテンツに指定時間窓内のAI特有の記事が含まれなかった"
+    },
+    {
+      "source": "Reddit r/singularity",
+      "reason": "RSSフェッチが空またはタイムアウト"
+    },
+    {
+      "source": "Reddit r/ClaudeAI",
+      "reason": "RSSフェッチが空またはタイムアウト"
+    },
+    {
+      "source": "Reddit r/OpenAI",
+      "reason": "RSSフェッチが空またはタイムアウト"
+    },
+    {
+      "source": "LessWrong AI tag",
+      "reason": "168h窓内に関連AIポストが見つからなかった"
+    },
+    {
+      "source": "X公開トレンド",
+      "reason": "WebSearchで明確な最新AIトレンド議論が確認できなかった"
+    },
+    {
+      "source": "36Kr AI",
+      "reason": "時間窓内でAI特有の記事が限定的"
+    },
+    {
+      "source": "Zhihu AIトピック",
+      "reason": "WebSearchで時間窓外の結果が多く、有効なコンテンツが取得できなかった"
+    },
+    {
+      "source": "HF daily-papers 中華系著者抽出",
+      "reason": "フルAPIアクセスなしに著者所属の判定が困難"
+    }
   ]
 }
