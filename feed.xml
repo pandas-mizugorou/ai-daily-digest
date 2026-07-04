@@ -5,7 +5,23 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 04 Jul 2026 14:16:40 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 14:20:07 GMT</lastBuildDate>
+    <item>
+      <title>Anthropic が科学者向け Claude Science を投入、Program-as-Weights が LLM API 不要の小型コンパイラを提案——カクヤスが生成 AI で 450 人月→2 カ月の基幹解読</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-04</link>
+      <guid isPermaLink="false">aidd-day-2026-07-04</guid>
+      <pubDate>Fri, 03 Jul 2026 20:00:00 GMT</pubDate>
+      <description>2026年7月4日、AnthropicがAI for Scienceイベントで科学者向け統合ワークベンチ「Claude Science」を発表するとともに、Samsungとのカスタムチップ共同開発協議が進んでいることも報じられた。研究面では、自然言語の仕様から4Bコンパイラがローカル実行可能な小型ニューラル関数を生成するProgram-as-Weights(PAW)と、AIコーディングエージェントがコードベースを跨いで悪意ある変更を分散させる新攻撃面「Iterative VibeCoding」を論じたarXiv論文が注目された。AIコーディングエージェントの自律性を議論したAI Engineer World&apos;s Fairが閉幕し「ループ工学」論が業界のキーワードとして定着した。日本では創業100年のカクヤスが生成AIを使い450人月相当の基幹システム解読を実質2カ月で完了させた事例がはてブで351件のブックマークを集め大きな話題を呼んでいる。
+
+【今日の必読】
+・Program-as-Weights（PAW）——自然言語仕様から4Bコンパイラが LLM API 不要のローカル実行可能ニューラル関数を生成
+・&quot;開かずの基幹システム&quot;、450人月→実質2カ月で解読 創業100年のカクヤス、生成AIで挑む「転生」
+・Claude Code「Fable 5」にローカルLLM用シェル支援CLIを作らせたら、コードより仕事の進め方に驚かされた
+・永続コードベース上のAIコントロール——「Iterative VibeCoding」で悪意ある変更を複数PRに分散する新攻撃面
+・AIEWFのループ大論争——「自律ソフトウェアファクトリーは今動くか」をRalph Loop作者とKeycard CEOが正面議論
+・Claude Sonnet 5 正式公開とFable 5の全世界復活——ターン数3〜6倍増のトークナイザ変更が物議
+・AIが28 GPU時間で未知の超導体を4種発見——人類の100年分発見効率を超えたと報告</description>
+    </item>
     <item>
       <title>Claude Fable 5が3週間ぶりに全世界復活——輸出規制解除、Sonnet 5・Claude Scienceも同時投入、AI Engineer World&apos;s Fairで「ソフトウェアファクトリー」論が台頭</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-02</link>
@@ -438,21 +454,6 @@
 ・Borealis：音声LLM学習の完全オープンレシピ——データ・コード・重みをすべて公開
 ・「すべてのモデルラボがエージェントラボになった」——Latent Spaceが業界パラダイム転換を宣言
 ・「アウトソーシング＋ローカルAIがフロンティアラボより経済合理的になる」——HN 213pt論考</description>
-    </item>
-    <item>
-      <title>OpenAI GPT-5.4 Pro がネイティブPC操作と1Mコンテキストで登場・Gemini OmniがAI動画生成の新基準確立・Claude Code自己改善ループ設計が日本最大反響</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-26</link>
-      <guid isPermaLink="false">aidd-day-2026-05-26</guid>
-      <pubDate>Mon, 25 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月26日、OpenAIがネイティブコンピューター操作と100万トークンコンテキストを搭載したGPT-5.4とGPT-5.4 Proを発表し、エージェント時代の新フラッグシップを投入した。Google DeepMindはGemini Omniを公開—テキスト・画像・音声・動画を任意に組み合わせて高品質映像を生成する「世界モデル」として、AI動画生成の競争を新次元に引き上げた。AIエージェントインフラへの大型投資も相次ぎ、Exa（250億円Series C）・Modal（355億円で評価額4.7B$）・TurboPuffer（ARR $100M達成）が「退屈だが儲かるAIインフラ」として注目を集めた。日本では「Claude Codeのスキルが毎日自己改善する仕組み」記事がZennで187ブクマ、MIT Technology Review日本版「Claudeに任せてしまおう」が309ブクマを獲得し、Claude Code活用ナレッジの蓄積が急速に進んでいる。
-
-【今日の必読】
-・Claude Codeのスキルが毎日勝手に改善されていく仕組みを作った
-・OpenAI、GPT-5.4 Pro発表—ネイティブPC操作・100万トークン・エージェントワークフローを標準搭載
-・「Claudeに任せてしまおう」たった1年で激変したソフトウェア開発
-・Anthropic公式「knowledge-work-plugins」公開—Claudeナレッジワーカー向けOSSプラグイン集がGitHub 15K星
-・Google DeepMind「Gemini Omni」発表—テキスト・画像・音声・動画を自由に組み合わせて動画生成する「世界モデル」
-・SkillOpt：LLMエージェントのスキルを自動最適化—テキスト空間での体系的スキル進化フレームワーク</description>
     </item>
   </channel>
 </rss>
