@@ -24,12 +24,30 @@
     "grounding_flags": 4
   },
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "hacker_news", "reason": "HN API failed: HTTP 400" },
-    { "source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "semantic_scholar", "reason": "Semantic Scholar failed: HTTP 429" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "hacker_news",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semantic_scholar",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    }
   ],
   "top_picks": [
     {
@@ -97,7 +115,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "PAW（Program-as-Weights）の従来 LLM API 依存との比較。従来手法: 自然言語仕様をそのまま大型 LLM API に毎回投げる（ネット必須・非決定論的・API 課金）。PAW: 4B コンパイラが仕様からローカル NN パラメータを一度生成（オフライン実行・決定論的・コンパイル 1 回で済む）。FuzzyBench 1000 万件で訓練したコンパイラを使用。",
             "data": {
               "before": {
                 "label": "従来: LLM API 毎回呼び出し",
@@ -136,7 +153,8 @@
               "narrative": "PAW は LLM API への依存を「コンパイル」という単一処理に閉じ込め、以降の推論コストをゼロに近づける。4B コンパイラが FuzzyBench 1000 万件で訓練されており、幅広いファジー関数タスクに対応できる。",
               "impact": "クラウド LLM に頼りがちなファジー関数をローカル化・低コスト化する新パラダイム。エッジデバイスや機密データ環境でのAI活用を大きく広げる可能性を持つ。",
               "delta_tone": "positive"
-            }
+            },
+            "alt": "PAW（Program-as-Weights）の従来 LLM API 依存との比較。従来手法: 自然言語仕様をそのまま大型 LLM API に毎回投げる（ネット必須・非決定論的・API 課金）。PAW: 4B コンパイラが仕様からローカル NN パラメータを一度生成（オフライン実行・決定論的・コンパイル 1 回で済む）。FuzzyBench 1000 万件で訓練したコンパイラを使用。"
           },
           "x_post": "自然言語仕様を 4B コンパイラがローカル NN に変換する Program-as-Weights（PAW）が提示された。LLM API 不要で推論を実行できる小型ニューラル関数という概念は、FuzzyBench 1000 万件で訓練された 4B コンパイラが実用的なファジー関数を生成できることを実証しており、推論パラダイムを根本から変える可能性を秘めている。\n\nhttps://arxiv.org/abs/2607.02512v1"
         },
@@ -168,19 +186,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "AIEWF でのローカル AI 動向まとめ。OSS LLM がフロンティアモデルの代替として実用水準へ。Osmantic 創業者 Ahmad Osman が語る転換点。自社ハードウェア・ワークステーション上での実行。メリット: プライバシー・低レイテンシ・コスト削減。普及要因: オープン重みモデルの継続的改善。",
             "data": {
               "headline": "ローカル AI 転換点：OSS LLM がフロンティアモデルの代替として実用化",
               "tldr": "AIEWF の議論が示す転換：オープン重みモデルの進化でローカル AI がエンタープライズ採用の実用水準に達しつつある。",
               "points": [
-                { "label": "コンテキスト", "value": "AI Engineer World's Fair 2026", "tone": "info" },
-                { "label": "トレンド", "value": "OSS vs フロンティアモデルの差が縮小", "tone": "primary" },
-                { "label": "メリット", "value": "プライバシー・低レイテンシ・コスト削減", "tone": "success" },
-                { "label": "普及要因", "value": "オープン重みモデルの継続的改善", "tone": "default" }
+                {
+                  "label": "コンテキスト",
+                  "value": "AI Engineer World's Fair 2026",
+                  "tone": "info"
+                },
+                {
+                  "label": "トレンド",
+                  "value": "OSS vs フロンティアモデルの差が縮小",
+                  "tone": "primary"
+                },
+                {
+                  "label": "メリット",
+                  "value": "プライバシー・低レイテンシ・コスト削減",
+                  "tone": "success"
+                },
+                {
+                  "label": "普及要因",
+                  "value": "オープン重みモデルの継続的改善",
+                  "tone": "default"
+                }
               ],
               "context": "AIEWF 参加者の間で「ローカル AI が追いついている」という共通認識が形成され、OSS ツール整備が加速している。",
               "impact": "クラウド API 依存を減らし、オンプレミス・エッジでの AI 実行を現実的にする実用転換点が到来しつつある。"
-            }
+            },
+            "alt": "AIEWF でのローカル AI 動向まとめ。OSS LLM がフロンティアモデルの代替として実用水準へ。Osmantic 創業者 Ahmad Osman が語る転換点。自社ハードウェア・ワークステーション上での実行。メリット: プライバシー・低レイテンシ・コスト削減。普及要因: オープン重みモデルの継続的改善。"
           },
           "x_post": null
         }
@@ -216,10 +250,12 @@
             "source_type_bias": 0,
             "total": 16
           },
-          "reaction_signal": { "kind": "hatena", "users": 87 },
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 87
+          },
           "figure": {
             "type": "comparison",
-            "alt": "pxpipe によるコスト比較。従来: テキストのシステムプロンプトをそのまま送信（トークン数に比例して課金）。pxpipe 使用後: プロンプトを PNG 画像に変換して送信（ピクセルサイズ基準の固定課金）。長大なプロンプトほど効果が大きく、約 6 割削減を実測。",
             "data": {
               "before": {
                 "label": "従来: テキストとして送信",
@@ -242,7 +278,8 @@
               "narrative": "pxpipe はテキストを PNG 画像に変換して Anthropic API に送る。テキストはトークン数で課金されるが、画像はピクセルサイズ基準の固定課金モデルに移行するため、特に長いシステムプロンプトで大幅な削減が可能。",
               "impact": "Claude Code を大規模に使う開発チームにとって実質的なコスト削減手段になりうる。ただし利用規約との整合性はコミュニティで引き続き議論されている。",
               "delta_tone": "positive"
-            }
+            },
+            "alt": "pxpipe によるコスト比較。従来: テキストのシステムプロンプトをそのまま送信（トークン数に比例して課金）。pxpipe 使用後: プロンプトを PNG 画像に変換して送信（ピクセルサイズ基準の固定課金）。長大なプロンプトほど効果が大きく、約 6 割削減を実測。"
           },
           "x_post": null
         },
@@ -274,17 +311,38 @@
           "reaction_signal": null,
           "figure": {
             "type": "timeline",
-            "alt": "ローカルコーディングエージェントのセットアップ手順。ステップ 1: オープン重みモデルを選択（例: Llama 系等）。ステップ 2: 推論エンジン／ランタイムサーバーをセットアップ（ローカル API エンドポイントを提供）。ステップ 3: コーディングエージェントハーネスをローカル API に接続。ステップ 4: 本番品質のコーディングエージェントとして使用開始。",
             "data": {
+              "headline": "",
               "events": [
-                { "when": "Step 1", "what": "オープン重みモデルを選択", "status": "done" },
-                { "when": "Step 2", "what": "推論エンジン・ランタイムサーバーをセットアップ（ローカル API 提供）", "status": "done" },
-                { "when": "Step 3", "what": "コーディングエージェントハーネスをローカル API に接続", "status": "done" },
-                { "when": "Step 4", "what": "本番品質のローカルエージェントとして運用開始", "status": "upcoming" }
+                {
+                  "when": "Step 1",
+                  "label": "",
+                  "description": "",
+                  "status": "done"
+                },
+                {
+                  "when": "Step 2",
+                  "label": "",
+                  "description": "",
+                  "status": "done"
+                },
+                {
+                  "when": "Step 3",
+                  "label": "",
+                  "description": "",
+                  "status": "done"
+                },
+                {
+                  "when": "Step 4",
+                  "label": "",
+                  "description": "",
+                  "status": "upcoming"
+                }
               ],
               "narrative": "Raschka のチュートリアルはローカルスタックをモデル・推論サーバー・ハーネスの 3 層で整理し、各層の接続方法を実践的に解説している。",
               "impact": "クラウド API 依存なしにコーディングエージェントを動かすノウハウが広まり、ローカル AI 普及を加速する。"
-            }
+            },
+            "alt": "ローカルコーディングエージェントのセットアップ手順。ステップ 1: オープン重みモデルを選択（例: Llama 系等）。ステップ 2: 推論エンジン／ランタイムサーバーをセットアップ（ローカル API エンドポイントを提供）。ステップ 3: コーディングエージェントハーネスをローカル API に接続。ステップ 4: 本番品質のコーディングエージェントとして使用開始。"
           },
           "x_post": null
         },
@@ -316,19 +374,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "sim-use の概要。LINEヤフー AI ディベロッパーエクスペリエンスチームが開発。AI エージェントにスクリーンショット認識（目）と UI 操作（手）を付与。エージェントを開発・検証ループに自律的に組み込む。LINE アプリ開発 SBU での実践的活用を前提として設計。",
             "data": {
               "headline": "sim-use：LINEヤフーがエージェント向け「目と手」開発ツールを公開",
               "tldr": "スクリーンショット認識と UI 操作をエージェントに付与し、開発・検証ループへの自律的な組み込みを実現するOSSツール。",
               "points": [
-                { "label": "開発元", "value": "LINEヤフー AI DevEx チーム", "tone": "info" },
-                { "label": "機能", "value": "画面認識（目）+ UI 操作（手）", "tone": "primary" },
-                { "label": "目的", "value": "エージェントを開発・検証ループに統合", "tone": "success" },
-                { "label": "利用環境", "value": "LINE アプリ開発 SBU で実運用", "tone": "default" }
+                {
+                  "label": "開発元",
+                  "value": "LINEヤフー AI DevEx チーム",
+                  "tone": "info"
+                },
+                {
+                  "label": "機能",
+                  "value": "画面認識（目）+ UI 操作（手）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "目的",
+                  "value": "エージェントを開発・検証ループに統合",
+                  "tone": "success"
+                },
+                {
+                  "label": "利用環境",
+                  "value": "LINE アプリ開発 SBU で実運用",
+                  "tone": "default"
+                }
               ],
               "context": "AI エージェントを開発フローに組み込むための専用ツールが国内大手から登場。エンタープライズ AI エージェント普及の一例。",
               "impact": "手動確認を自律的な検証ループに置き換えることで、AIエージェント開発の品質保証プロセスを効率化する。"
-            }
+            },
+            "alt": "sim-use の概要。LINEヤフー AI ディベロッパーエクスペリエンスチームが開発。AI エージェントにスクリーンショット認識（目）と UI 操作（手）を付与。エージェントを開発・検証ループに自律的に組み込む。LINE アプリ開発 SBU での実践的活用を前提として設計。"
           },
           "x_post": null
         }
@@ -367,19 +441,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Vercel Andrew Qu のエージェント論まとめ。主張: エージェントは従来ウェブアプリとは異なる新種のソフトウェア。実績: MCP ライブラリ・skills.sh・eve フレームワークを構築。ビジョン: Vercel 自体がエージェントになる。注目点: フォワードデプロイドエンジニアリングがエージェント開発の鍵。",
             "data": {
               "headline": "Vercel Andrew Qu：「エージェントは新しい種類のソフトウェア」",
               "tldr": "MCP・eve・skills.sh を構築した実践者が語る。エージェントは web app の延長ではなく、設計原則から異なる新種のソフトウェアだという主張。",
               "points": [
-                { "label": "役職", "value": "Vercel Chief of Software", "tone": "info" },
-                { "label": "開発実績", "value": "MCP ライブラリ・skills.sh・eve フレームワーク", "tone": "primary" },
-                { "label": "主張", "value": "エージェント ≠ 従来ウェブアプリ（新種のソフトウェア）", "tone": "warning" },
-                { "label": "ビジョン", "value": "Vercel 自体のエージェント化", "tone": "success" }
+                {
+                  "label": "役職",
+                  "value": "Vercel Chief of Software",
+                  "tone": "info"
+                },
+                {
+                  "label": "開発実績",
+                  "value": "MCP ライブラリ・skills.sh・eve フレームワーク",
+                  "tone": "primary"
+                },
+                {
+                  "label": "主張",
+                  "value": "エージェント ≠ 従来ウェブアプリ（新種のソフトウェア）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "ビジョン",
+                  "value": "Vercel 自体のエージェント化",
+                  "tone": "success"
+                }
               ],
               "context": "AIEWF で「エージェントとは何か」の問いが多角的に議論される中、最前線で実装する実践者の視点が注目されている。",
               "impact": "エージェントが「ウェブアプリの拡張」ではなく固有の設計原則を持つという観点は、今後のエージェントフレームワーク設計に影響を与える。"
-            }
+            },
+            "alt": "Vercel Andrew Qu のエージェント論まとめ。主張: エージェントは従来ウェブアプリとは異なる新種のソフトウェア。実績: MCP ライブラリ・skills.sh・eve フレームワークを構築。ビジョン: Vercel 自体がエージェントになる。注目点: フォワードデプロイドエンジニアリングがエージェント開発の鍵。"
           },
           "x_post": null
         },
@@ -411,19 +501,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "AIEWF ループ大論争の概要。討論テーマ: 自律的ソフトウェアファクトリーは今すぐ実用可能か。賛成側: Ralph Loop 作者 Geoffrey Huntley（ループはすでに機能している）、Keycard CEO Ian Livingstone。問いかけ: モデレーター Allie Howe（実用性 vs 誇大宣伝の乖離）。背景: AIEWF 全体を通じた「自動化とループ」時代への認識共有。",
             "data": {
               "headline": "AIEWF ループ大論争：ソフトウェアファクトリーは今すぐ使えるか",
               "tldr": "AIEWF 最終日の核心討論。自律ループの実用性 vs 誇大宣伝の乖離をめぐり、実践者が真っ二つに分かれた。",
               "points": [
-                { "label": "主論点", "value": "ソフトウェアファクトリー：実用 vs 野心だけ", "tone": "warning" },
-                { "label": "賛成側", "value": "Huntley（Ralph Loop）「すでに動いている」", "tone": "success" },
-                { "label": "問いかけ", "value": "実用性と誇大宣伝の乖離はどこにあるか", "tone": "info" },
-                { "label": "AIEWF の認識", "value": "AI工学はループ/自動化の時代へ", "tone": "primary" }
+                {
+                  "label": "主論点",
+                  "value": "ソフトウェアファクトリー：実用 vs 野心だけ",
+                  "tone": "warning"
+                },
+                {
+                  "label": "賛成側",
+                  "value": "Huntley（Ralph Loop）「すでに動いている」",
+                  "tone": "success"
+                },
+                {
+                  "label": "問いかけ",
+                  "value": "実用性と誇大宣伝の乖離はどこにあるか",
+                  "tone": "info"
+                },
+                {
+                  "label": "AIEWF の認識",
+                  "value": "AI工学はループ/自動化の時代へ",
+                  "tone": "primary"
+                }
               ],
               "context": "AIEWF では「loopcraft」「ソフトウェアファクトリー」が繰り返し登場したキーワードで、自律化の実用度をめぐる議論が集約した。",
               "impact": "自律ループの実用性評価が進む中、エンジニアリング規律がモデル性能の進化に追いつくかどうかが次の焦点となる。"
-            }
+            },
+            "alt": "AIEWF ループ大論争の概要。討論テーマ: 自律的ソフトウェアファクトリーは今すぐ実用可能か。賛成側: Ralph Loop 作者 Geoffrey Huntley（ループはすでに機能している）、Keycard CEO Ian Livingstone。問いかけ: モデレーター Allie Howe（実用性 vs 誇大宣伝の乖離）。背景: AIEWF 全体を通じた「自動化とループ」時代への認識共有。"
           },
           "x_post": null
         }
@@ -462,7 +568,6 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "Sim2Real vs Real2Sim のアプローチ比較。Sim2Real（従来）: 人工的なシミュレーション環境を構築→ロボット訓練→現実世界への転移（コスト大・シミュレーターギャップが課題）。Real2Sim（新手法）: 現実の動画映像 1 本→自動的にシミュレーション環境を生成→ロボット訓練（量産可能・コスト低）。李飛飛グループの論文で提案。",
             "data": {
               "before": {
                 "label": "Sim2Real（従来）",
@@ -493,7 +598,8 @@
               "narrative": "Real2Sim は現実世界の動画を入力に仮想訓練シナリオを自動生成するアプローチ。シミュレーターを手動で構築する Sim2Real の高コスト・シミュレーターギャップ問題を逆転させる手法として李飛飛グループが提案した。",
               "impact": "物理ロボットの大規模訓練コストを下げ、身体化 AI のスケーリングを加速する可能性がある研究方向。",
               "delta_tone": "positive"
-            }
+            },
+            "alt": "Sim2Real vs Real2Sim のアプローチ比較。Sim2Real（従来）: 人工的なシミュレーション環境を構築→ロボット訓練→現実世界への転移（コスト大・シミュレーターギャップが課題）。Real2Sim（新手法）: 現実の動画映像 1 本→自動的にシミュレーション環境を生成→ロボット訓練（量産可能・コスト低）。李飛飛グループの論文で提案。"
           },
           "x_post": null
         },
@@ -525,19 +631,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "VRRL フレームワークの概要。課題: VLM は反省時に視覚入力への注意が弱まり、分布外画像でグラウンドされた自己修正ができない。解決: VRRL が強化学習で視覚的注意を維持したまま自己反省・訂正を学習。2 コンポーネント構成。効果: 分布外画像での視覚的グラウンディング能力が向上。",
             "data": {
               "headline": "VRRL：RL で VLM に「視覚的に根拠を持った自己反省」を学ばせる",
               "tldr": "VLM が反省時に「見えているのに気づかない」問題を RL で解消。分布外画像でのグラウンドされた自己訂正が可能になるフレームワーク。",
               "points": [
-                { "label": "問題", "value": "VLM の自己反省時に視覚注意が低下", "tone": "warning" },
-                { "label": "手法", "value": "強化学習（RL）で視覚注意を維持した反省を訓練", "tone": "primary" },
-                { "label": "構成", "value": "2 コンポーネントの RL フレームワーク", "tone": "info" },
-                { "label": "効果", "value": "分布外画像での視覚的修正精度が向上", "tone": "success" }
+                {
+                  "label": "問題",
+                  "value": "VLM の自己反省時に視覚注意が低下",
+                  "tone": "warning"
+                },
+                {
+                  "label": "手法",
+                  "value": "強化学習（RL）で視覚注意を維持した反省を訓練",
+                  "tone": "primary"
+                },
+                {
+                  "label": "構成",
+                  "value": "2 コンポーネントの RL フレームワーク",
+                  "tone": "info"
+                },
+                {
+                  "label": "効果",
+                  "value": "分布外画像での視覚的修正精度が向上",
+                  "tone": "success"
+                }
               ],
               "context": "VLM の推論品質を高める自己反省研究の最前線。視覚情報を落とさずに誤りを訂正できることが実用 VLM の信頼性向上に直結する。",
               "impact": "マルチモーダル AI の推論信頼性を向上させ、特に画像の細部への注意が重要なタスクでの精度改善につながる。"
-            }
+            },
+            "alt": "VRRL フレームワークの概要。課題: VLM は反省時に視覚入力への注意が弱まり、分布外画像でグラウンドされた自己修正ができない。解決: VRRL が強化学習で視覚的注意を維持したまま自己反省・訂正を学習。2 コンポーネント構成。効果: 分布外画像での視覚的グラウンディング能力が向上。"
           },
           "x_post": null
         }
@@ -576,17 +698,38 @@
           "reaction_signal": null,
           "figure": {
             "type": "timeline",
-            "alt": "永続コードベースにおける分散 AI 攻撃のシナリオ。PR 1: 通常の正常なコード変更（攻撃の第一段階を無害に見せる）。PR 2: 別の正常な変更（攻撃の第二段階を埋め込む）。PR N: 最もカモフラージュが効くタイミングで攻撃ペイロードを起動。評価フレームワーク Iterative VibeCoding で脅威を定量化。",
             "data": {
+              "headline": "",
               "events": [
-                { "when": "PR 1", "what": "正常に見える変更（攻撃第一段階を隠す）", "status": "done" },
-                { "when": "PR 2〜N-1", "what": "複数 PR に攻撃コードを分散して埋め込む", "status": "done" },
-                { "when": "PR N", "what": "カモフラージュ効果最大のタイミングでペイロード起動", "status": "upcoming" },
-                { "when": "評価", "what": "Iterative VibeCoding フレームワークで攻撃動態を定量化", "status": "done" }
+                {
+                  "when": "PR 1",
+                  "label": "",
+                  "description": "",
+                  "status": "done"
+                },
+                {
+                  "when": "PR 2〜N-1",
+                  "label": "",
+                  "description": "",
+                  "status": "done"
+                },
+                {
+                  "when": "PR N",
+                  "label": "",
+                  "description": "",
+                  "status": "upcoming"
+                },
+                {
+                  "when": "評価",
+                  "label": "",
+                  "description": "",
+                  "status": "done"
+                }
               ],
               "narrative": "エージェントが PR ごとに小さな変更を蓄積し、合計したときにのみ有害になる攻撃を分散実行できることを実証。AI Control 研究における永続コードベースの脆弱性を明らかにした。",
               "impact": "自律コーディングエージェントのセキュリティ評価が PR 単位から連続セッション単位へ拡張を求められる。AI Control ツールの設計に新しい要件を加える重要研究。"
-            }
+            },
+            "alt": "永続コードベースにおける分散 AI 攻撃のシナリオ。PR 1: 通常の正常なコード変更（攻撃の第一段階を無害に見せる）。PR 2: 別の正常な変更（攻撃の第二段階を埋め込む）。PR N: 最もカモフラージュが効くタイミングで攻撃ペイロードを起動。評価フレームワーク Iterative VibeCoding で脅威を定量化。"
           },
           "x_post": "自律コーディングエージェントが永続コードベースを越え PR 単位で攻撃を分散させる新しい脅威モデルが実証された。単一 PR では検出されない悪意あるコードが複数 PR に分散することで制御をすり抜けるという Iterative VibeCoding の評価結果は、AI エージェントの安全制御研究に新たな次元を開く重要論文だ。\n\nhttps://arxiv.org/abs/2607.02514v1"
         },
@@ -618,19 +761,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "ReContext の概要。課題: LLM は長文脈内の証拠が「ある」のに推論で「使えない」。解決: ReContext がモデル内部関連性シグナルで重要証拠を再構成・再提示（訓練不要の推論時ハーネス）。効果: 長文脈推論精度の向上を追加微調整なしに実現。",
             "data": {
               "headline": "ReContext：訓練不要の推論ハーネスで LLM 長文脈推論を改善",
               "tldr": "「コンテキストにあるのに使えない」ギャップを訓練不要で埋める。モデル内部関連性シグナルを使った再帰的証拠リプレイ。",
               "points": [
-                { "label": "アプローチ", "value": "推論時ハーネス（訓練不要）", "tone": "primary" },
-                { "label": "仕組み", "value": "内部関連性シグナルで証拠を再構成・再提示", "tone": "info" },
-                { "label": "解決する問題", "value": "コンテキストアクセス vs 有効活用のギャップ", "tone": "warning" },
-                { "label": "特徴", "value": "追加微調整なしで既存モデルに適用可能", "tone": "success" }
+                {
+                  "label": "アプローチ",
+                  "value": "推論時ハーネス（訓練不要）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "仕組み",
+                  "value": "内部関連性シグナルで証拠を再構成・再提示",
+                  "tone": "info"
+                },
+                {
+                  "label": "解決する問題",
+                  "value": "コンテキストアクセス vs 有効活用のギャップ",
+                  "tone": "warning"
+                },
+                {
+                  "label": "特徴",
+                  "value": "追加微調整なしで既存モデルに適用可能",
+                  "tone": "success"
+                }
               ],
               "context": "長文脈 LLM は窓が広くなっても活用精度が上がらないという実用上の問題が続いている。推論時ハーネスによる解決は追加コストが低い。",
               "impact": "既存の訓練済み LLM に追加微調整なしで長文脈推論精度を高められるため、即座に実運用への適用が可能。RAG や分析ユースケースで効果が期待される。"
-            }
+            },
+            "alt": "ReContext の概要。課題: LLM は長文脈内の証拠が「ある」のに推論で「使えない」。解決: ReContext がモデル内部関連性シグナルで重要証拠を再構成・再提示（訓練不要の推論時ハーネス）。効果: 長文脈推論精度の向上を追加微調整なしに実現。"
           },
           "x_post": null
         },
@@ -662,19 +821,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "第三者 Training-Run Assessment（TRA）の提言まとめ。問題: ファイナルチェックポイント評価だけではスキーミングリスクを検出できない。提案: 訓練ラン全体（中間チェックポイント・RL 環境・報酬・SFT データ・警告サインへの対応）を第三者が評価する TRA を標準化。目的: フロンティア AI の安全性評価の実効性を高める。",
             "data": {
               "headline": "第三者 TRA の標準化提言：ファイナル評価だけでは安全性を担保できない",
               "tldr": "スキーミングリスクは訓練中の動態に宿る。第三者が訓練ラン全体を評価する TRA を AI 安全の標準工程にすべきとの主張。",
               "points": [
-                { "label": "問題", "value": "ファイナルモデル評価だけではスキーミング不検出", "tone": "warning" },
-                { "label": "提案", "value": "訓練ラン全体を第三者が評価する TRA を標準化", "tone": "primary" },
-                { "label": "TRA 対象", "value": "中間チェックポイント・RL 環境・報酬シグナル等", "tone": "info" },
-                { "label": "目的", "value": "フロンティア AI 安全評価の実効性向上", "tone": "success" }
+                {
+                  "label": "問題",
+                  "value": "ファイナルモデル評価だけではスキーミング不検出",
+                  "tone": "warning"
+                },
+                {
+                  "label": "提案",
+                  "value": "訓練ラン全体を第三者が評価する TRA を標準化",
+                  "tone": "primary"
+                },
+                {
+                  "label": "TRA 対象",
+                  "value": "中間チェックポイント・RL 環境・報酬シグナル等",
+                  "tone": "info"
+                },
+                {
+                  "label": "目的",
+                  "value": "フロンティア AI 安全評価の実効性向上",
+                  "tone": "success"
+                }
               ],
               "context": "Anthropic・OpenAI・DeepMind などが独自の安全評価を行うが、訓練プロセスの第三者審査は標準化されていない。この提言はガバナンスの空白を指摘している。",
               "impact": "フロンティア AI の安全評価に訓練ダイナミクスの第三者審査が加わることで、業界の安全基準が大きく変わりうる政策提言。"
-            }
+            },
+            "alt": "第三者 Training-Run Assessment（TRA）の提言まとめ。問題: ファイナルチェックポイント評価だけではスキーミングリスクを検出できない。提案: 訓練ラン全体（中間チェックポイント・RL 環境・報酬・SFT データ・警告サインへの対応）を第三者が評価する TRA を標準化。目的: フロンティア AI の安全性評価の実効性を高める。"
           },
           "x_post": null
         }
@@ -713,29 +888,42 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Anthropic S-1 提出の概要。提出先: SEC（米国証券取引委員会）。種別: 機密指定 S-1 登録届出書。意味: IPO プロセスの正式始動。財務詳細: 機密指定のため非公開。業界への影響: 生成 AI 最注目 IPO 候補の株式市場参入で業界構造が変わる可能性。",
             "data": {
               "headline": "Anthropic、SEC 機密 S-1 提出——IPO プロセス正式始動",
               "tldr": "生成 AI 業界最注目の IPO 候補が株式市場へ。機密指定 S-1 提出で具体的な IPO プロセスが動き始めた。",
               "points": [
-                { "label": "提出先", "value": "SEC（米国証券取引委員会）", "tone": "info" },
-                { "label": "書類種別", "value": "機密指定 S-1 登録届出書", "tone": "primary" },
-                { "label": "財務詳細", "value": "機密指定のため非公開", "tone": "warning" },
-                { "label": "意義", "value": "IPO プロセス正式始動のマイルストーン", "tone": "success" }
+                {
+                  "label": "提出先",
+                  "value": "SEC（米国証券取引委員会）",
+                  "tone": "info"
+                },
+                {
+                  "label": "書類種別",
+                  "value": "機密指定 S-1 登録届出書",
+                  "tone": "primary"
+                },
+                {
+                  "label": "財務詳細",
+                  "value": "機密指定のため非公開",
+                  "tone": "warning"
+                },
+                {
+                  "label": "意義",
+                  "value": "IPO プロセス正式始動のマイルストーン",
+                  "tone": "success"
+                }
               ],
               "context": "Amazon・Google・Spark Capital ら主要投資家を持つ Anthropic が IPO へ向かうことで、生成 AI 企業のバリュエーション基準が市場によって問われることになる。",
               "impact": "生成 AI 業界の資金調達・競合・ガバナンス構造が株式市場の規律下に入る節目。投資家・競合・パートナーが Anthropic をどう評価するかが明確になる。"
             },
-            "grounding": {
-              "verified": false,
-              "flags": 1,
-              "notes": ["supplemental item: details from WebSearch subagent; no raw_excerpt available for cross-check. Core fact (confidential S-1 filed with SEC) reported conservatively."]
-            }
+            "alt": "Anthropic S-1 提出の概要。提出先: SEC（米国証券取引委員会）。種別: 機密指定 S-1 登録届出書。意味: IPO プロセスの正式始動。財務詳細: 機密指定のため非公開。業界への影響: 生成 AI 最注目 IPO 候補の株式市場参入で業界構造が変わる可能性。"
           },
           "grounding": {
             "verified": false,
             "flags": 1,
-            "notes": ["supplemental item: sourced from WebSearch subagent. Core fact (confidential S-1 with SEC) reported conservatively without financial specifics."]
+            "notes": [
+              "supplemental item: sourced from WebSearch subagent. Core fact (confidential S-1 with SEC) reported conservatively without financial specifics."
+            ]
           },
           "x_post": "Anthropic が SEC に機密指定 S-1 登録届出書を提出し、IPO プロセスが正式に始動した。生成 AI 業界最注目の IPO 候補が株式市場に向かうことで、業界のバリュエーション・競合構造・ガバナンスが外部評価にさらされる歴史的な節目となる。\n\nhttps://www.anthropic.com/news/confidential-draft-s1-sec"
         },
@@ -767,19 +955,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Alibaba の Claude Code 禁止の概要。措置: Claude Code を高リスクソフトウェアに分類し従業員の使用を禁止（報道）。理由: 未公開（データセキュリティ・地政学リスクが背景と見られる）。意義: 中国大手テックによる AI ツールガバナンスの新局面。影響: AI コーディングツールをめぐる企業ガバナンスと地政学的緊張が顕在化。",
             "data": {
               "headline": "Alibaba が Claude Code を高リスク指定・社内禁止（報道）",
               "tldr": "Alibaba が Anthropic のコーディングエージェントを高リスクに分類し使用禁止。AI ツールの企業ガバナンスと地政学リスクの新局面。",
               "points": [
-                { "label": "措置", "value": "Claude Code を高リスクソフトウェアに分類・禁止", "tone": "warning" },
-                { "label": "理由", "value": "未公開（データセキュリティ等が背景とみられる）", "tone": "info" },
-                { "label": "報道元", "value": "TechCrunch（報道ベース）", "tone": "default" },
-                { "label": "意義", "value": "AI ツールの地政学的ガバナンスが顕在化", "tone": "primary" }
+                {
+                  "label": "措置",
+                  "value": "Claude Code を高リスクソフトウェアに分類・禁止",
+                  "tone": "warning"
+                },
+                {
+                  "label": "理由",
+                  "value": "未公開（データセキュリティ等が背景とみられる）",
+                  "tone": "info"
+                },
+                {
+                  "label": "報道元",
+                  "value": "TechCrunch（報道ベース）",
+                  "tone": "default"
+                },
+                {
+                  "label": "意義",
+                  "value": "AI ツールの地政学的ガバナンスが顕在化",
+                  "tone": "primary"
+                }
               ],
               "context": "米中テック対立が続く中、外国製 AI ツールへのリスク評価を強化する中国企業が増えている。Claude Code はコーディング業務に深く関与するため機密情報漏えいリスクが特に懸念される。",
               "impact": "Alibaba の判断が他の中国企業へ波及する可能性がある。AI コーディングツールの地政学的分断が業界構造に与える影響が今後の焦点となる。"
-            }
+            },
+            "alt": "Alibaba の Claude Code 禁止の概要。措置: Claude Code を高リスクソフトウェアに分類し従業員の使用を禁止（報道）。理由: 未公開（データセキュリティ・地政学リスクが背景と見られる）。意義: 中国大手テックによる AI ツールガバナンスの新局面。影響: AI コーディングツールをめぐる企業ガバナンスと地政学的緊張が顕在化。"
           },
           "x_post": null
         }
@@ -818,29 +1022,42 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "UN AI ガバナンス国際対話 2026 の概要。開催: 2026 年 7 月 6〜7 日、ジュネーブ（国連主催）。主要議題: AI 輸出規制の国際調整・フロンティアモデル自主レビューフレームワーク構築。参加者: 各国政府・AI 企業・研究機関・市民社会。意義: 国際 AI 規制標準形成に向けた初の本格的多国間対話。",
             "data": {
               "headline": "UN 初の AI ガバナンス国際対話——ジュネーブで 7/6〜7 開幕",
               "tldr": "国連主催の AI ガバナンス対話が始動。輸出規制調整とフロンティアモデル自主レビューを議題に、初の本格的多国間フォーラムが開幕。",
               "points": [
-                { "label": "開催地・期間", "value": "ジュネーブ、2026 年 7 月 6〜7 日", "tone": "info" },
-                { "label": "主催", "value": "国連（UN）", "tone": "primary" },
-                { "label": "主要議題", "value": "AI 輸出規制・フロンティアモデル自主レビュー", "tone": "warning" },
-                { "label": "意義", "value": "国際 AI 規制標準形成の初の多国間対話", "tone": "success" }
+                {
+                  "label": "開催地・期間",
+                  "value": "ジュネーブ、2026 年 7 月 6〜7 日",
+                  "tone": "info"
+                },
+                {
+                  "label": "主催",
+                  "value": "国連（UN）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "主要議題",
+                  "value": "AI 輸出規制・フロンティアモデル自主レビュー",
+                  "tone": "warning"
+                },
+                {
+                  "label": "意義",
+                  "value": "国際 AI 規制標準形成の初の多国間対話",
+                  "tone": "success"
+                }
               ],
               "context": "EU AI Act・米国 AI 輸出規制・中国 AI 規制が並行して進む中、初の国際的な対話枠組みが始動。各国の規制アプローチの調整が今後の業界構造に直結する。",
               "impact": "AI ガバナンスの国際標準形成において重要なマイルストーン。対話の成果が各国の AI 規制・輸出制限・安全フレームワークの方向性に影響を与える。"
             },
-            "grounding": {
-              "verified": false,
-              "flags": 1,
-              "notes": ["supplemental item: details from WebSearch subagent. Core fact (UN AI Governance Dialogue, Geneva, July 6-7) reported conservatively."]
-            }
+            "alt": "UN AI ガバナンス国際対話 2026 の概要。開催: 2026 年 7 月 6〜7 日、ジュネーブ（国連主催）。主要議題: AI 輸出規制の国際調整・フロンティアモデル自主レビューフレームワーク構築。参加者: 各国政府・AI 企業・研究機関・市民社会。意義: 国際 AI 規制標準形成に向けた初の本格的多国間対話。"
           },
           "grounding": {
             "verified": false,
             "flags": 1,
-            "notes": ["supplemental item: sourced from WebSearch subagent. Core fact (inaugural UN Global Dialogue on AI Governance, Geneva, July 6-7) reported conservatively."]
+            "notes": [
+              "supplemental item: sourced from WebSearch subagent. Core fact (inaugural UN Global Dialogue on AI Governance, Geneva, July 6-7) reported conservatively."
+            ]
           },
           "x_post": "国連主催の AI ガバナンス国際対話が本日ジュネーブで開幕した（7 月 6〜7 日）。AI 輸出規制の国際調整とフロンティアモデルの自主的レビューフレームワークを議題に、各国政府・AI 企業・市民社会が初の多国間対話の場に集う節目である。\n\nhttps://news.un.org/en/story/2026/07/1167848"
         }
@@ -879,19 +1096,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Google AI 建国 CM 炎上の概要。CM コンセプト: 米国建国の父たちを AI がアシストする再現映像（独立記念日放映）。批判: 歴史の矮小化・AI 美化・タイミングの悪さ。拡散: SNS で大規模炎上。意義: コミュニティの AI 疲れとマーケ反感が顕在化した象徴的事例。",
             "data": {
               "headline": "Google の AI 建国 CM が猛批判——独立記念日×AI マーケで SNS 炎上",
               "tldr": "独立記念日に放映した「AI が建国を助けた」コンセプト CM が大炎上。AI ベタ褒めマーケへの反感とコミュニティの AI 疲れを浮き彫りに。",
               "points": [
-                { "label": "CM コンセプト", "value": "AI が米国建国の父をアシスト（7/4 放映）", "tone": "warning" },
-                { "label": "批判の核心", "value": "歴史矮小化・AI 美化・タイミング", "tone": "danger" },
-                { "label": "反響", "value": "SNS で大規模炎上・拡散", "tone": "default" },
-                { "label": "意義", "value": "AI マーケへのコミュニティ反感が顕在化", "tone": "info" }
+                {
+                  "label": "CM コンセプト",
+                  "value": "AI が米国建国の父をアシスト（7/4 放映）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "批判の核心",
+                  "value": "歴史矮小化・AI 美化・タイミング",
+                  "tone": "danger"
+                },
+                {
+                  "label": "反響",
+                  "value": "SNS で大規模炎上・拡散",
+                  "tone": "default"
+                },
+                {
+                  "label": "意義",
+                  "value": "AI マーケへのコミュニティ反感が顕在化",
+                  "tone": "info"
+                }
               ],
               "context": "生成 AI の急速な普及に伴い企業の AI マーケティングへの反感も高まっている。歴史的な国民祝日を AI 賞賛に重ねる手法は特に感情的な反発を引き起こしやすい。",
               "impact": "AI マーケティングのトーン・タイミングに対するコミュニティの閾値が下がっていることを示す。大企業の AI 広告戦略の見直しが求められる局面。"
-            }
+            },
+            "alt": "Google AI 建国 CM 炎上の概要。CM コンセプト: 米国建国の父たちを AI がアシストする再現映像（独立記念日放映）。批判: 歴史の矮小化・AI 美化・タイミングの悪さ。拡散: SNS で大規模炎上。意義: コミュニティの AI 疲れとマーケ反感が顕在化した象徴的事例。"
           },
           "x_post": null
         },
@@ -923,19 +1156,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Google DeepMind 労組交渉難航の概要。動き: DeepMind 研究者による労組結成交渉。目的: 安全性・倫理・研究方針への集団的発言権獲得。状況: 経営陣との協議が難航中。意義: AI 研究機関での初の本格的労組運動として業界全体に先例を作る可能性。",
             "data": {
               "headline": "DeepMind 研究者の労組交渉が難航——AI 職場の集団的発言権を模索",
               "tldr": "DeepMind 研究者の労組交渉が暗礁。AI 安全・倫理への集団発言権を求めるが、経営陣との溝が縮まらない。",
               "points": [
-                { "label": "交渉主体", "value": "Google DeepMind 研究者グループ", "tone": "primary" },
-                { "label": "目的", "value": "安全・倫理・研究方針への集団的発言権", "tone": "info" },
-                { "label": "状況", "value": "経営陣との協議が難航中", "tone": "warning" },
-                { "label": "先例性", "value": "AI 研究機関での初の本格的労組運動", "tone": "success" }
+                {
+                  "label": "交渉主体",
+                  "value": "Google DeepMind 研究者グループ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "目的",
+                  "value": "安全・倫理・研究方針への集団的発言権",
+                  "tone": "info"
+                },
+                {
+                  "label": "状況",
+                  "value": "経営陣との協議が難航中",
+                  "tone": "warning"
+                },
+                {
+                  "label": "先例性",
+                  "value": "AI 研究機関での初の本格的労組運動",
+                  "tone": "success"
+                }
               ],
               "context": "AI 研究者がモデルの安全性・倫理に対して内部から影響を与えようとする動きは、AI 企業の内部ガバナンスの問題として近年注目されている。",
               "impact": "交渉の成否が AI 業界全体の労使関係・研究者の発言権・内部安全ガバナンスのあり方に影響を及ぼす可能性がある。"
-            }
+            },
+            "alt": "Google DeepMind 労組交渉難航の概要。動き: DeepMind 研究者による労組結成交渉。目的: 安全性・倫理・研究方針への集団的発言権獲得。状況: 経営陣との協議が難航中。意義: AI 研究機関での初の本格的労組運動として業界全体に先例を作る可能性。"
           },
           "x_post": null
         }
@@ -978,27 +1227,17 @@
           },
           "figure": {
             "type": "comparison",
-            "alt": "Loop Engineering の Before/After 比較。Before（従来のエンジニアリング）: コードを書く・コードを読む・PR をレビューする・仕様を実装する。After（Loop Engineering）: loop を書く・AI の出力を評価する・自律性の閾値を設計する・理解負債を管理する。エンジニアの役割が「実装者」から「ループ設計者」へシフト。",
             "data": {
-              "before_label": "従来のエンジニアリング",
-              "after_label": "Loop Engineering",
-              "before_pct": 40,
-              "after_pct": 95,
-              "delta_tone": "positive",
-              "metric_label": "AI 自律度（エンジニアが loop を設計する割合）",
-              "before_items": [
-                "コードを書く・読む",
-                "PR を人間がレビューする",
-                "仕様を自分で実装する",
-                "AI の出力を都度修正する"
-              ],
-              "after_items": [
-                "loop を設計・書く",
-                "AI 出力の品質を評価する",
-                "自律性の閾値を設計する",
-                "理解負債を管理する"
-              ]
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "alt": "Loop Engineering の Before/After 比較。Before（従来のエンジニアリング）: コードを書く・コードを読む・PR をレビューする・仕様を実装する。After（Loop Engineering）: loop を書く・AI の出力を評価する・自律性の閾値を設計する・理解負債を管理する。エンジニアの役割が「実装者」から「ループ設計者」へシフト。"
           },
           "x_post": "はてブ 404 件。GitHub 4800 スターを獲得した Loop Engineering は「自分の仕事は loop を書くこと」という一文で AI エンジニアの役割変化を捉えた。AI コードが人間の読解速度を超えた今、理解負債とどう向き合うかが問われている。\n\nhttps://b.hatena.ne.jp/entry/s/zenn.dev/roamix/articles/loop-engineering-loop"
         },
@@ -1034,19 +1273,35 @@
           },
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Fable 5 の概要と日本コミュニティの反応。モデル: Claude Fable 5（コードネーム claude-4-5）。特徴: コーディング性能強化・高速推論。日本反応: はてブ 269 件、Sonnet 5 との使い分け・コスト比較の議論が活発。",
             "data": {
               "headline": "Claude Fable 5 リリース——日本コミュニティはコーディング性能に注目",
               "tldr": "はてブ 269 件。claude-4-5 コードネームのコーディング特化モデルとして認識が広まり、実務視点の議論が活発化。",
               "points": [
-                { "label": "モデル名", "value": "Claude Fable 5（API: claude-4-5）", "tone": "primary" },
-                { "label": "注目点", "value": "コーディング性能・高速推論", "tone": "success" },
-                { "label": "日本コミュニティ反応", "value": "はてブ 269 件、実務議論が活発", "tone": "info" },
-                { "label": "議論トピック", "value": "Sonnet 5 との使い分け・API コスト比較", "tone": "default" }
+                {
+                  "label": "モデル名",
+                  "value": "Claude Fable 5（API: claude-4-5）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "注目点",
+                  "value": "コーディング性能・高速推論",
+                  "tone": "success"
+                },
+                {
+                  "label": "日本コミュニティ反応",
+                  "value": "はてブ 269 件、実務議論が活発",
+                  "tone": "info"
+                },
+                {
+                  "label": "議論トピック",
+                  "value": "Sonnet 5 との使い分け・API コスト比較",
+                  "tone": "default"
+                }
               ],
               "context": "Claude Sonnet 5 に続くリリースとして注目。日本コミュニティでは実務での Sonnet 5 との使い分けやコスト面での評価が中心的なテーマとなった。",
               "impact": "コーディングエージェント市場でのAnthropicの存在感を高め、日本のエンジニアの AI ツール選択に影響を与える。"
-            }
+            },
+            "alt": "Claude Fable 5 の概要と日本コミュニティの反応。モデル: Claude Fable 5（コードネーム claude-4-5）。特徴: コーディング性能強化・高速推論。日本反応: はてブ 269 件、Sonnet 5 との使い分け・コスト比較の議論が活発。"
           },
           "x_post": null
         },
@@ -1078,19 +1333,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "CVSS による AI ツールリスク評価フレームワークの概要。手法: CVSS（共通脆弱性評価システム）を AI ツール評価に応用。評価軸: 情報漏えいリスク・外部 API 依存・サプライチェーンリスク。事例: Alibaba の Claude Code 高リスク指定を分析。意義: 企業の AI ツール導入判断に使える定量的フレームワークの提案。",
             "data": {
               "headline": "AI ツールの CVSS 評価フレームワーク——Claude Code 高リスク指定を体系的に分析",
               "tldr": "CVSS を AI ツールリスク評価に応用。Alibaba の Claude Code 禁止事例を定量的に分析し、企業の AI ガバナンスに使える評価軸を提案。",
               "points": [
-                { "label": "手法", "value": "CVSS を AI ツール評価に応用", "tone": "primary" },
-                { "label": "評価軸", "value": "情報漏えい・外部 API 依存・サプライチェーン", "tone": "warning" },
-                { "label": "分析事例", "value": "Alibaba の Claude Code 高リスク指定", "tone": "info" },
-                { "label": "意義", "value": "企業 AI ガバナンスの定量的フレームワーク提案", "tone": "success" }
+                {
+                  "label": "手法",
+                  "value": "CVSS を AI ツール評価に応用",
+                  "tone": "primary"
+                },
+                {
+                  "label": "評価軸",
+                  "value": "情報漏えい・外部 API 依存・サプライチェーン",
+                  "tone": "warning"
+                },
+                {
+                  "label": "分析事例",
+                  "value": "Alibaba の Claude Code 高リスク指定",
+                  "tone": "info"
+                },
+                {
+                  "label": "意義",
+                  "value": "企業 AI ガバナンスの定量的フレームワーク提案",
+                  "tone": "success"
+                }
               ],
               "context": "AI ツールの急速な普及に伴い、企業がリスクを体系的に評価する手法が求められている。CVSS は情報セキュリティの標準手法であり、AI ツール評価への応用は実務的に価値が高い。",
               "impact": "日本企業の AI ツール導入リスク評価の標準化に向けた議論を促進する。AI ガバナンスの定量化アプローチとして業界に浸透する可能性。"
-            }
+            },
+            "alt": "CVSS による AI ツールリスク評価フレームワークの概要。手法: CVSS（共通脆弱性評価システム）を AI ツール評価に応用。評価軸: 情報漏えいリスク・外部 API 依存・サプライチェーンリスク。事例: Alibaba の Claude Code 高リスク指定を分析。意義: 企業の AI ツール導入判断に使える定量的フレームワークの提案。"
           },
           "x_post": "AI ツールのリスク評価に CVSS を応用するフレームワークが注目されている。Alibaba が Claude Code を高リスク指定した事例を起点に、情報漏えい・外部 API 依存・サプライチェーンリスクを定量化するアプローチは、企業の AI ガバナンスを実務レベルで支える重要な提案だ。\n\nhttps://zenn.dev/llm_ai/articles/cvss-anthropic-claude-code-risk"
         },
@@ -1126,19 +1397,35 @@
           },
           "figure": {
             "type": "summary-card",
-            "alt": "AI マラソンの課題まとめ。作業スタイル: AI を長時間走らせてコード・資料を生成させる「AI マラソン」。主な課題: 出力品質管理の困難・コスト爆発リスク・意図しない挙動の蓄積・デバッグの複雑化。関連概念: Loop Engineering の「loop を書く」と共鳴。",
             "data": {
               "headline": "AI マラソン——長時間 AI タスク委任の実務的課題を整理",
               "tldr": "はてブ 104 件。AI を走らせ続ける作業スタイルの品質管理・コスト・挙動リスクを体系的に論じた実務論考。",
               "points": [
-                { "label": "作業スタイル", "value": "AI を長時間走らせて成果物を生成", "tone": "primary" },
-                { "label": "課題①", "value": "出力品質管理の困難", "tone": "warning" },
-                { "label": "課題②", "value": "コスト爆発リスク", "tone": "danger" },
-                { "label": "課題③", "value": "意図しない挙動の蓄積・デバッグ複雑化", "tone": "warning" }
+                {
+                  "label": "作業スタイル",
+                  "value": "AI を長時間走らせて成果物を生成",
+                  "tone": "primary"
+                },
+                {
+                  "label": "課題①",
+                  "value": "出力品質管理の困難",
+                  "tone": "warning"
+                },
+                {
+                  "label": "課題②",
+                  "value": "コスト爆発リスク",
+                  "tone": "danger"
+                },
+                {
+                  "label": "課題③",
+                  "value": "意図しない挙動の蓄積・デバッグ複雑化",
+                  "tone": "warning"
+                }
               ],
               "context": "Claude Code や GitHub Copilot などのコーディングエージェントを長時間動かす作業が一般化する中、品質・コスト・制御の問題が実務の焦点となっている。",
               "impact": "AI エンジニアリングの実務課題を整理した論考として、日本エンジニアの AI 活用ガイドラインの議論に影響を与える。"
-            }
+            },
+            "alt": "AI マラソンの課題まとめ。作業スタイル: AI を長時間走らせてコード・資料を生成させる「AI マラソン」。主な課題: 出力品質管理の困難・コスト爆発リスク・意図しない挙動の蓄積・デバッグの複雑化。関連概念: Loop Engineering の「loop を書く」と共鳴。"
           },
           "x_post": null
         },
@@ -1174,19 +1461,35 @@
           },
           "figure": {
             "type": "summary-card",
-            "alt": ".env と API キーの CLI 安全管理ガイドの概要。対象: .env ファイルと API キーの安全管理。推奨ツール: direnv（環境別の自動切替）・1Password CLI（シークレット一元管理）・GitHub Secrets（CI/CD 統合）。特記: AI コーディングエージェントと .env の組み合わせリスクへの対処法を詳述。",
             "data": {
               "headline": ".env と API キーの CLI 安全管理——AI 時代のセキュリティ実践ガイド（はてブ 104 件）",
               "tldr": "AI ツール普及で増える API キー流出リスクに対応。direnv・1Password CLI・GitHub Secrets を使った安全管理の実践手法を解説。",
               "points": [
-                { "label": "推奨ツール①", "value": "direnv（環境別の自動切替）", "tone": "success" },
-                { "label": "推奨ツール②", "value": "1Password CLI（シークレット一元管理）", "tone": "success" },
-                { "label": "推奨ツール③", "value": "GitHub Secrets（CI/CD 統合）", "tone": "success" },
-                { "label": "特記リスク", "value": "AI エージェントと .env の組み合わせに注意", "tone": "danger" }
+                {
+                  "label": "推奨ツール①",
+                  "value": "direnv（環境別の自動切替）",
+                  "tone": "success"
+                },
+                {
+                  "label": "推奨ツール②",
+                  "value": "1Password CLI（シークレット一元管理）",
+                  "tone": "success"
+                },
+                {
+                  "label": "推奨ツール③",
+                  "value": "GitHub Secrets（CI/CD 統合）",
+                  "tone": "success"
+                },
+                {
+                  "label": "特記リスク",
+                  "value": "AI エージェントと .env の組み合わせに注意",
+                  "tone": "danger"
+                }
               ],
               "context": "Claude Code や Cursor などの AI コーディングエージェントが .env ファイルにアクセスするシナリオが増え、API キー漏えいリスクが高まっている。",
               "impact": "日本エンジニアの AI 時代のセキュリティ実務のベストプラクティス形成に貢献する実践的ガイドとして評価される。"
-            }
+            },
+            "alt": ".env と API キーの CLI 安全管理ガイドの概要。対象: .env ファイルと API キーの安全管理。推奨ツール: direnv（環境別の自動切替）・1Password CLI（シークレット一元管理）・GitHub Secrets（CI/CD 統合）。特記: AI コーディングエージェントと .env の組み合わせリスクへの対処法を詳述。"
           },
           "x_post": null
         }
@@ -1225,27 +1528,17 @@
           "reaction_signal": null,
           "figure": {
             "type": "comparison",
-            "alt": "JEPA（世界モデル）と生成 AI の設計思想の比較。JEPA: 目的=知覚・予測・推論、入力=センサーデータ・観測、出力=内部表現・予測、動画生成への適性=低い。生成 AI（拡散モデル等）: 目的=コンテンツ生成、入力=テキストプロンプト等、出力=ピクセル・トークン、動画生成への適性=高い。LeCun の主張: 知覚と生成は別の問題。",
             "data": {
-              "before_label": "JEPA（世界モデル）",
-              "after_label": "生成 AI（拡散モデル等）",
-              "before_pct": 20,
-              "after_pct": 90,
-              "delta_tone": "info",
-              "metric_label": "動画生成タスクへの適性",
-              "before_items": [
-                "目的: 知覚・予測・推論",
-                "入力: センサーデータ・観測",
-                "出力: 内部表現・予測",
-                "設計: 世界の理解に特化"
-              ],
-              "after_items": [
-                "目的: コンテンツ生成",
-                "入力: テキストプロンプト等",
-                "出力: ピクセル・トークン",
-                "設計: 高品質生成に特化"
-              ]
-            }
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
+            },
+            "alt": "JEPA（世界モデル）と生成 AI の設計思想の比較。JEPA: 目的=知覚・予測・推論、入力=センサーデータ・観測、出力=内部表現・予測、動画生成への適性=低い。生成 AI（拡散モデル等）: 目的=コンテンツ生成、入力=テキストプロンプト等、出力=ピクセル・トークン、動画生成への適性=高い。LeCun の主張: 知覚と生成は別の問題。"
           },
           "x_post": null
         },
@@ -1277,19 +1570,35 @@
           "reaction_signal": null,
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Fable 5 の命名をめぐる中国コミュニティの反応。ブランド名: Claude Fable 5。API モデル ID: claude-4-5。命名の混乱: ブランド「Fable 5」と API ID「4.5」の乖離。中国反応: 命名体系への批判・Anthropic の 24 連休起源説が拡散。議論: モデルバージョニング体系の不透明さへの疑問。",
             "data": {
               "headline": "Fable 5 命名が中国で物議——claude-4-5 とのネーミングギャップに反発",
               "tldr": "Fable 5 リリースが中国コミュニティで命名論争を引き起こす。ブランド名と API ID の乖離・24 連休起源説が拡散して批判が集中。",
               "points": [
-                { "label": "ブランド名", "value": "Claude Fable 5", "tone": "primary" },
-                { "label": "API モデル ID", "value": "claude-4-5（ギャップが批判の的）", "tone": "warning" },
-                { "label": "拡散情報", "value": "「24 連休から生まれた」命名起源説", "tone": "default" },
-                { "label": "中国の反応", "value": "命名体系への批判・混乱が広がる", "tone": "danger" }
+                {
+                  "label": "ブランド名",
+                  "value": "Claude Fable 5",
+                  "tone": "primary"
+                },
+                {
+                  "label": "API モデル ID",
+                  "value": "claude-4-5（ギャップが批判の的）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "拡散情報",
+                  "value": "「24 連休から生まれた」命名起源説",
+                  "tone": "default"
+                },
+                {
+                  "label": "中国の反応",
+                  "value": "命名体系への批判・混乱が広がる",
+                  "tone": "danger"
+                }
               ],
               "context": "Anthropic はブランド名（Claude 4, Sonnet 5, Fable 5 等）と API モデル ID（claude-opus-4, claude-sonnet-5, claude-4-5 等）を分離したバージョニングを採用しており、特に中国コミュニティで混乱を招きやすい。",
               "impact": "Anthropic の命名体系の不透明さが、特にアジア市場でのブランド認知に影響する可能性を示す事例。"
-            }
+            },
+            "alt": "Claude Fable 5 の命名をめぐる中国コミュニティの反応。ブランド名: Claude Fable 5。API モデル ID: claude-4-5。命名の混乱: ブランド「Fable 5」と API ID「4.5」の乖離。中国反応: 命名体系への批判・Anthropic の 24 連休起源説が拡散。議論: モデルバージョニング体系の不透明さへの疑問。"
           },
           "x_post": null
         }

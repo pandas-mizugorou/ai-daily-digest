@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-05T05:00:00+09:00",
+  "updated_at": "2026-07-06T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6499,6 +6499,150 @@
       "url_prefix": "https://www.qbitai.com/2026/07/physical-ai-life-science-progress.html",
       "first_seen_at": "2026-07-05",
       "last_seen_at": "2026-07-05",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50601": {
+      "url_prefix": "https://arxiv.org/abs/2607.02512v1",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50602": {
+      "url_prefix": "https://latent.space/p/ahmad-osman-local-ai",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50603": {
+      "url_prefix": "https://xenospectrum.com/pxpipe-claude-token-image-compression",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50604": {
+      "url_prefix": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50605": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260701b",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50606": {
+      "url_prefix": "https://latent.space/p/vercel-agents-new-software",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50607": {
+      "url_prefix": "https://latent.space/p/aiewf-daily-dispatch-locomotives",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50608": {
+      "url_prefix": "https://qbitai.com/2026/07/443066.html",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50609": {
+      "url_prefix": "https://arxiv.org/abs/2607.02490v1",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50610": {
+      "url_prefix": "https://arxiv.org/abs/2607.02514v1",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50611": {
+      "url_prefix": "https://arxiv.org/abs/2607.02509v1",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50612": {
+      "url_prefix": "https://lesswrong.com/posts/3HvvjffA65mHLwaWm/we-need-3rd-party-training-run",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50613": {
+      "url_prefix": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50614": {
+      "url_prefix": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50615": {
+      "url_prefix": "https://news.un.org/en/story/2026/07/1167848",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50616": {
+      "url_prefix": "https://www.theverge.com/2026/07/04/google-ai-commercial-founding-fathers",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50617": {
+      "url_prefix": "https://www.wired.com/story/google-deepmind-unionization-talks-rocky-start/",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50618": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/zenn.dev/roamix/articles/loop-engineering-loop",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50619": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/www.anthropic.com/news/claude-fable-5",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50620": {
+      "url_prefix": "https://zenn.dev/llm_ai/articles/cvss-anthropic-claude-code-risk",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50621": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/zenn.dev/ai_marathon_engineer",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50622": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/zenn.dev/env-api-cli-security-guide",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50623": {
+      "url_prefix": "https://www.qbitai.com/2026/07/lecun-jepa-video-generation-limitation.html",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "f0a1b2c3d4e50624": {
+      "url_prefix": "https://www.qbitai.com/2026/07/fable-5-naming-controversy-china.html",
+      "first_seen_at": "2026-07-06",
+      "last_seen_at": "2026-07-06",
       "last_seen_count": 1
     }
   },

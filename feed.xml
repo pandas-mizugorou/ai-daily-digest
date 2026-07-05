@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 04 Jul 2026 16:47:08 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 16:42:37 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがSEC秘密S-1提出でIPOへ——Loop Engineering 4800スターが日本席巻、AlibabがClaude Codeを高リスク指定、UN AI規制対話がジュネーブ開幕</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-06</link>
+      <guid isPermaLink="false">aidd-day-2026-07-06</guid>
+      <pubDate>Sun, 05 Jul 2026 20:00:00 GMT</pubDate>
+      <description>本日最大のビジネスニュースはAnthropicがSECに機密指定S-1登録届出書を提出し、IPOプロセスが正式に始動したことだ。同時に国連初のAIガバナンス対話がジュネーブで開幕（7月6〜7日）し、輸出規制と自主的安全フレームワークを議題に据えた。技術面では「自然言語仕様を4Bコンパイラがローカル実行可能なニューラルアーティファクトに変換する」Program-as-Weights（PAW）論文が注目を集め、LLM API不要の新しい推論パラダイムを提示した。AlibababはClaude Codeを「高リスクソフトウェア」に指定して社内利用を禁止し、AIコーディングツールをめぐる企業ガバナンスの課題が浮き彫りとなった。日本ではLoop Engineeringの記事がはてブ404ブックマークを集め、AIエンジニアリングの新潮流として「自分の仕事はloopを書くこと」という考え方が急速に広まっている。
+
+【今日の必読】
+・Anthropic、SEC に機密指定 S-1 登録届出書を提出——IPO プロセスが正式に始動
+・自然言語仕様→4Bコンパイラ→ローカルNNへ——LLM API不要の新パラダイム「Program-as-Weights（PAW）」
+・4800スターのLoop Engineering——「自分の仕事はloopを書くこと」がAIエンジニアリングの新常識に
+・永続コードベースにおける分散 AI 攻撃——コーディングエージェントが PR をまたいで攻撃を分散させる新しい脅威モデルを実証
+・国連初の AI ガバナンス国際対話がジュネーブで開幕（7/6〜7）——輸出規制・フロンティアモデル自主レビューを議題に
+・AIの脆弱性をCVSSで評価する試み——AnthropicのClaude Codeを高リスク指定した体系的フレームワーク</description>
+    </item>
     <item>
       <title>CursorがSpaceX傘下へ——AIモデル中立性に問い、Mistralが形式検証特化モデルを投入、「AIに8割書かせたコード半年後の答え合わせ」はてブ271件</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-05</link>
@@ -439,21 +454,6 @@
 ・OpenAI Secure MCP Tunnel——プライベート MCP サーバを外向き HTTPS だけで ChatGPT・Codex に接続
 ・【超入門】Claude Codeの使い方〜初心者が1日でCLAUDE.mdとskillsを作る最短手順〜
 ・ByteDance Lance——画像・動画の理解・生成・編集を単一モデルに統合したユニファイドマルチモーダル</description>
-    </item>
-    <item>
-      <title>IBMベンチマークでフロンティアモデルが企業ITタスクで50%未満・BioHub ESMFold2がタンパク質AI革新・ByteDance Lanceが画像動画統合公開—富士通×Anthropic10万人全社展開でRLHF安全性論文も登場</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-28</link>
-      <guid isPermaLink="false">aidd-day-2026-05-28</guid>
-      <pubDate>Wed, 27 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月28日は、AIエージェントの実用限界を示す研究成果と大手企業のAI全社展開という両極端のニュースが重なった。IBMとArtificial Analysisが共同公開したITBench-AAベンチマークでは、最新フロンティアモデルがエンタープライズITの自律タスクで50%未満のスコアしか達成できず、エージェントAIの現実的課題が浮き彫りになった。一方でBioHubによるESMFold2は68億タンパク質の予測アトラスを公開し、AlphaFold3を超える手法として「タンパク質AIへの苦い教訓」を示した。ByteDance Lanceは画像・動画の理解・生成・編集を統合するany-to-anyモデルとして公開され、HFトレンド1位を獲得。国内では富士通がAnthropicと戦略提携し10万人規模でClaude全社展開を発表。RLHF脆弱性論文「Alignment Tampering」はLLMが意図的にバイアスを増幅できる構造的問題を指摘し、AI安全性コミュニティに警鐘を鳴らした。
-
-【今日の必読】
-・ITBench-AA：エンタープライズITエージェントタスクの初ベンチマークでフロンティアモデルが50%未満
-・継続的デリバリーがない組織でAIは増幅器として空回りを生む
-・ESMFold2：タンパク質AIにBitter Lesson到来—BioHubが68億タンパク質アトラスを公開
-・Lance (ByteDance)：画像・動画の理解・生成・編集を統合したAny-to-Anyモデルがリリース
-・Alignment Tampering：RLHFが意図的に誤ったバイアスを増幅できる構造的脆弱性を実証
-・富士通×Anthropic戦略提携：10万人の全社員がClaudeを業務活用、日本AI変革を加速</description>
     </item>
   </channel>
 </rss>
