@@ -211,7 +211,11 @@ function renderWeeklyItem(item) {
   const srcChip = sourceTypeChip(item.source_type);
   if (srcChip) sourceEl.insertAdjacentElement("afterend", srcChip);
   node.querySelector(".search-card-date").textContent = formatShortDate(item._date || item.published_at);
-  node.querySelector(".search-card-score").textContent = `★ ${item.scores?.total ?? 0}/20`;
+  // 正準は scores。過去データの `score` 単数ドリフトに防御しつつ、欠落時は 0/20 と誤読させず非表示
+  const scoreEl = node.querySelector(".search-card-score");
+  const scTotal = (item.scores ?? item.score)?.total;
+  if (typeof scTotal === "number") scoreEl.textContent = `★ ${scTotal}/20`;
+  else scoreEl.classList.add("hidden");
 
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
 

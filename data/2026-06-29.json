@@ -63,15 +63,6 @@
           "url": "https://lesswrong.com/posts/yrbyyvFvuaGfRAtB7/evaluating-offline-monitoring-of-internal-ai-agents-2",
           "published_at": "2026-06-28",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "GovAI（ガバメントAI）の2026年冬季フェローシップで実施された研究が、LessWrongに全文公開された。フロンティアAI企業は社内AIエージェントのリスク管理として「モニター」と呼ばれる別のAIモデルが会話ログを事後レビューするオフラインモニタリングを採用している。企業が懸念するのは、不整合なモデルがAI安全性研究の妨害やモデル訓練への干渉を試みる可能性だ。研究はこの監視手法の有効性と限界を定量的に評価し、検出能力と見逃し率を測定した。",
           "key_points_ja": [
             "フロンティアAI企業が社内エージェントのリスク管理に「オフラインモニタリング」採用——別AIが会話ログを事後レビュー",
@@ -104,6 +95,15 @@
               ]
             },
             "alt": "GovAI冬季フェローシップ2026の研究。フロンティアAI企業が社内AIエージェントのリスク管理に用いるオフラインモニタリング（別AIが会話ログをレビュー）の有効性と限界を定量評価し、実装推奨事項を提示"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -122,15 +122,6 @@
           "url": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release",
           "published_at": "2026-06-22",
           "lang": "ja",
-          "score": {
-            "total": 14,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 2,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "Preferred Networks（PFN）は国産生成AI基盤モデルPLaMo ︎の新フラッグシップ「PLaMo 3.0 Prime」を正式公開した。β版からのフィードバックを反映して推論能力をさらに強化するとともに、高速応答が求められるユースケース向けに非推論モデルも新規開発した。最大の改善はコンテキスト長の64Kから256Kへの4倍拡張だ。PFNの内部日本語ベンチマークスイートでは、同性能帯のOSSモデル（gpt-oss-120b・Qwen3.6-27b）と、同価格帯のクローズドモデル（GPT-5.4 Mini・Claude Haiku 4.5）に対して高い競争力を示している。",
           "key_points_ja": [
             "コンテキスト長を64K→256Kに4倍拡張——長文書・長対話への対応力が大幅向上",
@@ -163,6 +154,15 @@
               ]
             },
             "alt": "PFNがPLaMo 3.0 Primeを正式リリース。コンテキスト長64Kから256Kに拡張、同価格帯のGPT-5.4 MiniやClaude Haiku 4.5を上回る日本語ベンチマーク性能を主張。推論モデルと非推論モデルの2ラインを展開"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 2,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -186,15 +186,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uhfg05/i_built_a_tool_to_turn_your_claude_code_sessions",
           "published_at": "2026-06-28",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 2,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "r/LocalLLaMAのユーザーが「claude_converter」を公開した。Claude Codeの全セッションは~/.claude/projects/配下に.jsonlファイルとして自動保存されており、マルチターン編集・ツール呼び出し・推論トレースを含む実際のコーディング対話データが手元に存在する。claude_converterはこの形式をapply_chat_template()が直接消費できるmessages形式に変換し、TRL/SFTTrainer・Axolotl・LLaMA-Factory（sharegpt形式）と互換性を持つ出力を生成する。Claude Codeを日常的に使う開発者が、自分自身のやり取りパターンでローカルモデルをファインチューニングできる実用的なツールだ。",
           "key_points_ja": [
             "~/.claude/projects/*.jsonlのClaude Codeセッションをapply_chat_template()互換のmessages形式に変換",
@@ -227,6 +218,15 @@
               ]
             },
             "alt": "r/LocalLLaMA発のOSS「claude_converter」。Claude Codeの.jsonlセッションファイルをTRL・Axolotl・LLaMA-Factoryが直接利用できるmessages形式に変換し、自分のClaude Codeデータでローカルモデルをファインチューニングできる"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 2,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -245,15 +245,6 @@
           "url": "https://arxiv.org/abs/2606.27377v1",
           "published_at": "2026-06-26",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "現代の画像生成は、T2I・局所編集・大域編集を1モデルで統合することを求めているが、これらの能力は自然に干渉し合う——編集はT2I性能を低下させ、大域編集と局所編集は互いに相互干渉する。DanceOPDはフローマッチングモデル向けのオンポリシー生成場蒸留フレームワークで、各サンプルを最適な蒸留元（教師モデル）にルーティングするメカニズムを導入する。これにより、単一モデルが複数の生成能力を干渉なく統合できる構造を実現した。",
           "key_points_ja": [
             "T2I・局所編集・大域編集の3能力が干渉し合う問題を、オンポリシー生成場蒸留で解決",
@@ -285,6 +276,15 @@
               ]
             },
             "alt": "arXiv論文DanceOPD：フローマッチングモデル向けのオンポリシー生成場蒸留フレームワーク。T2I・局所編集・大域編集の3つの画像生成能力が干渉し合う問題を動的ルーティングで解決し、単一モデルへの干渉なし統合を実現"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -303,15 +303,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uhi81a/i_had_55_llms_blindgrade_each_other_22k_judgments",
           "published_at": "2026-06-28",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "r/LocalLLaMAで公開されたオープン評価研究が注目を集めた。N個のモデルが同じプロンプトに回答し互いを盲目採点するN×N行列（自己採点除く）を設計し、55モデル11ファミリーにわたる22,254件の有効判定を集計した。予想外の知見は、同族モデルへの採点バイアスがデータ充足全8ファミリーで統計的に有意だったこと（p<0.05、7/8はBonferroni補正後も有意）だ。0-10スケールで、Qwenは同族Qwenモデルに+0.91点の加点、xAIは+0.75点の加点、一方Mistralは自社モデルに約1.0点のペナルティという逆バイアスを示した。コード・データセット・プロンプトはすべてMITライセンス公開だ。",
           "key_points_ja": [
             "55モデル・22,254判定で、同族LLMジャッジバイアスを8ファミリー全てで統計的に確認（p<0.05、7/8はBonferroni補正後も有意）",
@@ -345,7 +336,16 @@
             },
             "alt": "r/LocalLLaMAの研究：55個のLLMが互いを盲目採点した22,254判定の解析結果。同族モデルへの加点バイアスが8ファミリー全てで統計的に有意（p<0.05）。QwenとxAIは自社モデルを優遇、MistralはOdd-oneout的な逆バイアス"
           },
-          "x_post": "55個のLLMが互いを盲目採点した2.2万件の判定を解析した研究が話題だ。同族モデルへの採点バイアスがQwen/xAI/Mistralなど8ファミリー全てで統計的に有意（p<0.05）と確認された。Qwenは自社モデルに+0.91点、Mistralは逆に−1.0点。LLMアズジャッジの信頼性に根本的な疑問が提起されている。データ・コードはMIT公開。\n\nhttps://reddit.com/r/LocalLLaMA/comments/1uhi81a/i_had_55_llms_blindgrade_each_other_22k_judgments"
+          "x_post": "55個のLLMが互いを盲目採点した2.2万件の判定を解析した研究が話題だ。同族モデルへの採点バイアスがQwen/xAI/Mistralなど8ファミリー全てで統計的に有意（p<0.05）と確認された。Qwenは自社モデルに+0.91点、Mistralは逆に−1.0点。LLMアズジャッジの信頼性に根本的な疑問が提起されている。データ・コードはMIT公開。\n\nhttps://reddit.com/r/LocalLLaMA/comments/1uhi81a/i_had_55_llms_blindgrade_each_other_22k_judgments",
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "arxiv-reinforcement-learning-without-ground-truth-solu",
@@ -357,15 +357,6 @@
           "url": "https://arxiv.org/abs/2606.27369v1",
           "published_at": "2026-06-26",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "強化学習withverifiable rewards（RLVR）はLLM訓練に広く使われるが、正解（ground-truth）が必要なため答えが未知のタスクには適用できない。RiVER（Ranking-induced VERifiable framework）はスコアベースの最適化タスクで正解なしに決定論的な実行フィードバックを連続値の教師信号として使い、LLMを訓練するフレームワークだ。グループ相対RLを連続報酬に適用する際の2つの課題——「スケール支配」（未調整スコアで勾配が歪む）と「非比較性」（タスク間スコアが直接比較不可）を特定し、それぞれの解決策を提示した。",
           "key_points_ja": [
             "RiVER：正解なしでスコアベースLLM最適化タスクを強化学習で訓練できるフレームワーク",
@@ -398,6 +389,15 @@
               ]
             },
             "alt": "arXiv論文RiVER：ground-truth不要のスコアベースRLVRフレームワーク。スケール支配と非比較性の2課題を解決し、コーディング最適化タスクなど正解が不明なLLM最適化問題への強化学習適用を可能にする"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -410,15 +410,6 @@
           "url": "https://lesswrong.com/posts/JFjNmPTbH8kL6xtp6/gpt-5-6-the-system-card",
           "published_at": "2026-06-28",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "GPT-5.6の一般公開を待ちながら、LessWrongのレビュアーがOpenAIのSystem Cardを詳細に分析した。OpenAIが「SolはGPT-5.5を大幅に上回るステップ関数的な向上」と自称する評価をレビュアーは「正確」と判断する。全体的な印象は「GPT-5.5を大幅に上回るが、依然としてMythosには届かない」だ。また、AnthropicのSystem Cardと比べてOpenAIのカードは「内容が薄い（light read）」であり、安全性評価の詳細さに大きな差があると指摘する。Cyber Critical閾値を超えないという結論は両社で一致している。",
           "key_points_ja": [
             "GPT-5.6 Sol：「GPT-5.5のステップ関数的向上」——OpenAIの自己評価をLessWrongが「正確」と判定",
@@ -451,6 +442,15 @@
               ]
             },
             "alt": "LessWrongによるGPT-5.6 System Card分析。SolはGPT-5.5のステップ関数的向上だが総合でMythos未満。OpenAIのSystem CardはAnthropicより安全評価の詳細が少なく、Cyber Critical閾値超えなしという評価は両社で一致"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -469,15 +469,6 @@
           "url": "https://latent.space/p/ainews-openai-reports-median-internal",
           "published_at": "2026-06-26",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "OpenAIの経済研究部門が、社内でのCodexトークン使用量の変化データを公開した。2025年8月時点では平均的なOpenAI社員のトークンの10%未満しかCodexに使われていなかったが、その後6か月で劇的に変化した。2026年6月の中央値はNovember 2025比でResearch部門56倍・CustomerSupport部門32倍・Engineering部門27倍・Legal部門13倍に急増した。コーディング以外の知識作業でも、AIによるトークン使用が爆発的に拡大していることを示す、フロンティアAI企業内部からの希少な一次データだ。",
           "key_points_ja": [
             "November 2025比：Research部門+56倍、CustomerSupport部門+32倍、Engineering部門+27倍、Legal部門+13倍のCodexトークン使用量（中央値）",
@@ -520,7 +511,16 @@
             },
             "alt": "OpenAI社内CodexトークンのNovember 2025比成長倍率（2026年6月）：Research 56倍・CustomerSupport 32倍・Engineering 27倍・Legal 13倍。AI知識労働活用が全部門で急拡大していることを示すOpenAI経済研究部門の一次データ"
           },
-          "x_post": "OpenAIが社内のCodexトークン使用量データを公開した。2025年11月比でResearch部門の中央値が56倍、CustomerSupport部門32倍、Engineering部門27倍、Legal部門13倍に急増した。コーディング以外の知識作業でもAI利用が爆発的に拡大している実証データである。\n\nhttps://latent.space/p/ainews-openai-reports-median-internal"
+          "x_post": "OpenAIが社内のCodexトークン使用量データを公開した。2025年11月比でResearch部門の中央値が56倍、CustomerSupport部門32倍、Engineering部門27倍、Legal部門13倍に急増した。コーディング以外の知識作業でもAI利用が爆発的に拡大している実証データである。\n\nhttps://latent.space/p/ainews-openai-reports-median-internal",
+          "scores": {
+            "total": 15,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "latent_space-ainews-spacex-is-already-a-28b-yr-neocloud",
@@ -532,15 +532,6 @@
           "url": "https://latent.space/p/ainews-spacex-is-already-a-28byr",
           "published_at": "2026-06-23",
           "lang": "en",
-          "score": {
-            "total": 12,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 2,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Latent SpaceのAINewsがまとめた分析によれば、SpaceXはAnthropicとGoogleとの既存のGPU貸出契約に加え、Reflection AIとの第3件目の契約を締結した。Jamin Ballの集計によれば3社合計の月額規模は2.32億ドル（年換算278億ドル）、Blackwell GPUが1時間10ドル超という高レートだ。これはAWS・Azure・GCPに次ぐ規模感であり、SpaceXがAIコンピューティングの主要供給者として台頭したことを示す。注目点として、誰がSpaceXの顧客リストに含まれていないか（明示されていないが）という点も業界の話題となっている。",
           "key_points_ja": [
             "SpaceXの第3のGPU貸出先がReflection AIと判明——Anthropic・Googleとの既存契約に追加",
@@ -573,6 +564,15 @@
               ]
             },
             "alt": "SpaceXのGPU貸出事業：Anthropic・Google・Reflection AIとの3件の契約で月$2.32B（年換算$28B）規模のニュークラウドに。Blackwellは$10/時間超の高レートでAIコンピューティング市場の主要供給者として台頭"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 2,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -591,15 +591,6 @@
           "url": "https://theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
           "published_at": "2026-06-28",
           "lang": "en",
-          "score": {
-            "total": 11,
-            "importance": 3,
-            "depth": 2,
-            "practicality": 1,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "ロサンゼルスのパリセーズ山火事（2025年元旦に発生、LA史上最大規模の死者を出した火災の一つ）の放火事件で、検察官がChatGPTの会話ログを証拠として提出した。被告Jonathan Rinderknecht の起訴にあたり、検察はiPhoneの位置データ・防犯カメラ映像・目撃証言に加え、ChatGPTのログを証拠として採用した。AIサービスの会話ログが刑事裁判の法廷証拠として使用された事例として、AI利用と法的記録に関する議論を呼んでいる。",
           "key_points_ja": [
             "被告Jonathan Rinderknecht：2025年1月1日のパリセーズ山火事放火容疑——LA史上最大規模の死者を出した火災の一つ",
@@ -631,6 +622,15 @@
               ]
             },
             "alt": "パリセーズ山火事放火裁判（2025年元旦発生）でChatGPT会話ログが証拠採用。被告Jonathan Rinderknecht の起訴にあたり、位置データ・防犯カメラ・目撃証言に加えChatGPTのログを証拠として採用"
+          },
+          "scores": {
+            "total": 11,
+            "importance": 3,
+            "depth": 2,
+            "practicality": 1,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -643,15 +643,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uh8von/ornith_35b_is_great_so_far",
           "published_at": "2026-06-28",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 2,
-            "depth": 2,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "r/LocalLLaMAのユーザーが、新しいオープンソースモデル「Ornith 35B」を試した体験レポートを投稿した。Claude Codeをハーネスとして使い、3Dゲームを3プロンプトで生成することに成功した。同じタスクをQwen3.5-35b-a3bで試みたが、複数プロンプトを試みても失敗し続けたという。ローカル開発者コミュニティの新モデル発掘と実用検証が活発だ。",
           "key_points_ja": [
             "Ornith 35B：新しいオープンソース35Bモデル、Claude Codeハーネスで3Dゲームを3プロンプトで生成に成功",
@@ -683,6 +674,15 @@
               ]
             },
             "alt": "r/LocalLLaMAの体験レポート。新OSS「Ornith 35B」をClaude Codeハーネスで試したところ3プロンプトで3Dゲームを生成。Qwen3.5-35b-a3bは同タスクで複数回試みて失敗した比較報告"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 2,
+            "depth": 2,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -701,15 +701,6 @@
           "url": "https://izanami.dev/post/903fe0a2-878a-4f4b-a02c-d8784d8ef731",
           "published_at": "2026-06-27",
           "lang": "ja",
-          "score": {
-            "total": 19,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "izanamiが公開したZed完全ガイドがはてブ190件を獲得した。ZedはRustネイティブのOSSエディタで、Electronを使わない高速動作を特徴とし、マルチバッファ・AI・Git・協業・リモート開発を標準搭載している。「乗り換え手順ではなく、Zedの機能をこれ1本で見渡すリファレンス」として、導入から主要機能・設定・ショートカットまでを網羅している。Claude CodeなどAIエージェントとの連携も標準機能としてカバーされており、Claude Codeユーザーがエディタ環境を見直す際の最初の参考資料として機能している。",
           "key_points_ja": [
             "Zedの特徴：Rustネイティブ・Electronなしの高速動作、マルチバッファ・AI・Git・協業・リモート開発を標準搭載",
@@ -743,7 +734,16 @@
             },
             "alt": "はてブ190件獲得のZed完全ガイド。ZedはRustネイティブのOSSエディタでElectronなし高速動作、マルチバッファ・AI・Git・協業・リモート開発を標準搭載。導入から設定・ショートカットまでこれ1本で把握できるリファレンス"
           },
-          "x_post": "ZedはRustネイティブのOSSエディタ。Electronなしで速く、マルチバッファ・AI・Git・協業・リモート開発を標準搭載している。この完全ガイドがはてブ190件を獲得した。Claude Codeを使う開発者の間でエディタ環境を見直す動きが加速している。\n\nhttps://izanami.dev/post/903fe0a2-878a-4f4b-a02c-d8784d8ef731"
+          "x_post": "ZedはRustネイティブのOSSエディタ。Electronなしで速く、マルチバッファ・AI・Git・協業・リモート開発を標準搭載している。この完全ガイドがはてブ190件を獲得した。Claude Codeを使う開発者の間でエディタ環境を見直す動きが加速している。\n\nhttps://izanami.dev/post/903fe0a2-878a-4f4b-a02c-d8784d8ef731",
+          "scores": {
+            "total": 19,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "hatena_it-llm-vram-whichllm-rtx-4060-ti-16gb-qiita",
@@ -755,15 +755,6 @@
           "url": "https://qiita.com/aktsmm/items/6b2ef723c2e660c93731",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 18,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "「VRAMに入る一番デカいやつ」というローカルLLM選定の従来基準を、実測データで見直すQiita記事がはてブ71件を獲得した。RTX 4060 Ti 16GBという普及帯のGPUで、whichllmベンチマークを使って複数モデルの速度・品質・コストのバランスを実測した。単純なモデルサイズ最大化ではなく、ユースケースに応じたバランスで選ぶという新しい視点を日本の開発者コミュニティに提示している。",
           "key_points_ja": [
             "RTX 4060 Ti 16GBでwhichllmベンチマークを実測——複数ローカルLLMの速度・品質・コストを比較",
@@ -797,7 +788,16 @@
             },
             "alt": "はてブ71件のQiita記事。RTX 4060 Ti 16GBでwhichllmを使って複数ローカルLLMを実測比較。VRAMに入る最大モデルを選ぶ従来基準を実データで問い直し、速度・品質・コストバランスで選ぶ新基準を提案"
           },
-          "x_post": "RTX 4060 Ti 16GBでwhichllmベンチマークを実測した記事がはてブ71件。VRAMに収まる最大モデルを選ぶ時代から、速度・品質・コストのバランスで選ぶ時代へ。ローカルLLM選定の基準が変わりつつあることを示す実践的なデータである。\n\nhttps://qiita.com/aktsmm/items/6b2ef723c2e660c93731"
+          "x_post": "RTX 4060 Ti 16GBでwhichllmベンチマークを実測した記事がはてブ71件。VRAMに収まる最大モデルを選ぶ時代から、速度・品質・コストのバランスで選ぶ時代へ。ローカルLLM選定の基準が変わりつつあることを示す実践的なデータである。\n\nhttps://qiita.com/aktsmm/items/6b2ef723c2e660c93731",
+          "scores": {
+            "total": 18,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
+          }
         },
         {
           "id": "hatena_it-opus-4-8-glm-5-2-vram4-5gb-ai-gemma4-12b-coder-a",
@@ -809,15 +809,6 @@
           "url": "https://techno-edge.net/article/2026/06/28/5232.html",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "TechnoEdgeの「生成AIウィークリー」第149回がはてブ32件を獲得した。今週の注目技術として、AnthropicのOpus 4.8に肉薄するオープンソースモデル「GLM-5.2」と、VRAM 4.5GBで動作するコーディング特化AI「Gemma4-12B-Coder」を取り上げている。さらに、テキストや画像から動き回れるゲーム世界を生成するAI「DreamX-World 1.0」と、1Bパラメータで巨大モデルの一部を上回るという小型モデルの成果も紹介している。日本語で週次のAI技術動向を効率的にキャッチアップできるまとめ記事だ。",
           "key_points_ja": [
             "GLM-5.2：AnthropicのOpus 4.8に肉薄するパフォーマンスのオープンソースモデル",
@@ -850,6 +841,15 @@
               ]
             },
             "alt": "TechnoEdge生成AIウィークリー第149回（はてブ32件）。GLM-5.2（Opus 4.8に肉薄するOSS）、Gemma4-12B-Coder（VRAM 4.5GB対応）、DreamX-World 1.0（ゲーム世界生成AI）など今週の注目AI技術5つを日本語で解説"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -862,15 +862,6 @@
           "url": "https://zenn.dev/yukkie1114/articles/3d927e8c28e085",
           "published_at": "2026-06-27",
           "lang": "ja",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "AIコードレビューの実用性に疑問を持ちながら活用しているエンジニアが、OWASP Benchmarkを使ってClaude CodeとOpenAI Codexのレビュー機能を比較検証したZenn記事だ。「どのレビュー方式が最も脆弱性を見逃さないか」という実務的な問いへの答えを実測で示す。Claude Codeのレビュー機能の具体的な活用手順とOWASPベンチマーク上での結果を比較することで、セキュリティ重視の開発環境でのAIコードレビュー選定に役立つ情報を提供する。",
           "key_points_ja": [
             "OWASP Benchmarkを使ってClaude CodeとCodexのセキュリティレビュー能力を比較検証",
@@ -902,6 +893,15 @@
               ]
             },
             "alt": "Zenn記事：OWASP BenchmarkでClaude CodeとOpenAI Codexのセキュリティ脆弱性検出能力を比較検証。「どのレビュー方式が最も見逃さないか」という実務的な問いへの実測による回答を提供"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         },
         {
@@ -914,15 +914,6 @@
           "url": "https://zenn.dev/okssusucha/articles/20260628-anthropic-agent-sdk-credit-pause-june-202",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "CIジョブや GitHub Actions でClaude Codeを自動実行しているエンジニアにとって、2026年6月15日は重要な日付だった。その日からClaude Agent SDK経由の利用がPro/Maxのサブスク枠から切り離され、別建ての月額クレジット体系に移行する予定だったからだ。ところが施行当日、Anthropicはこの変更を凍結した。クレジットも配布されず、新しい施行日も示されないまま現状維持が続いている。Zennのこの記事は、「人が画面の前にいないClaude」を運用している開発者への影響と、今後の対応を整理している。",
           "key_points_ja": [
             "2026年6月15日施行予定だった変更：Claude Agent SDKをPro/Maxサブスク枠から切り離し、別建て月額クレジット体系へ移行",
@@ -955,6 +946,15 @@
               ]
             },
             "alt": "2026年6月15日施行予定だったAnthropicの「Claude Agent SDKをサブスク枠から切り離す課金変更」が施行当日に凍結。CIジョブやGitHub ActionsでClaude Codeを自動実行しているエンジニアへの影響と現状を解説"
+          },
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -973,15 +973,6 @@
           "url": "https://qbitai.com/2026/06/439548.html",
           "published_at": "2026-06-28",
           "lang": "zh",
-          "score": {
-            "total": 16,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "DeepSeekと北京大学の研究チームが、LLM推論を高速化する投機的デコーディングフレームワーク「DSpark」をオープンソースで公開した。DeepSeek CEOの梁文锋（Liang Wenfeng）が署名した本論文は「精髓在于极强的系统工程（本質は極めて強力なシステムエンジニアリングにある）」と主張する。DeepSeek-V4の本番運用では、スループットを維持したまま生成速度を最大85%高めたと報告されている。量子位（QbitAI）がこの論文を「10のポイント」に要約して紹介した。",
           "key_points_ja": [
             "DSpark：DeepSeek+北京大学による投機的デコーディングフレームワーク、MITライセンスでOSS公開",
@@ -1015,7 +1006,16 @@
             },
             "alt": "量子位QbitAI紹介のDSpark：DeepSeek+北京大学による投機的デコーディングフレームワーク。MITライセンスでOSS公開、DeepSeek-V4本番でスループット維持のまま生成速度を最大85%向上。CEO梁文锋が署名"
           },
-          "x_post": "DeepSeek CEO梁文锋が署名したDSparkをDeepSeekと北京大学が公開した。投機的デコーディングフレームワークで、DeepSeek-V4の本番環境でスループットを維持したまま推論速度を最大85%向上させた実績を持つ。MITライセンスでOSS公開されている。\n\nhttps://qbitai.com/2026/06/439548.html"
+          "x_post": "DeepSeek CEO梁文锋が署名したDSparkをDeepSeekと北京大学が公開した。投機的デコーディングフレームワークで、DeepSeek-V4の本番環境でスループットを維持したまま推論速度を最大85%向上させた実績を持つ。MITライセンスでOSS公開されている。\n\nhttps://qbitai.com/2026/06/439548.html",
+          "scores": {
+            "total": 16,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "qbitai-ocr-deepseek",
@@ -1027,15 +1027,6 @@
           "url": "https://qbitai.com/2026/06/439464.html",
           "published_at": "2026-06-28",
           "lang": "zh",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "百度（Baidu）が新しいオープンソースOCRモデルを公開した。量子位（QbitAI）によれば、このモデルは「一度に一冊の本をまるごと処理できる（一次吃下一本书）」と称されており、大規模な文書を一括でOCR処理する能力が売りだ。注目点として、このモデルの著者が元DeepSeek研究員と目される人物であることが報告されている。百度がDeepSeek出身の研究者を取り込んでOCR技術を強化したとすれば、中国のAI人材移動の実態を示す興味深い事例だ。",
           "key_points_ja": [
             "百度が大規模文書を一括処理できるオープンソースOCRモデルを公開",
@@ -1068,6 +1059,15 @@
               ]
             },
             "alt": "量子位QbitAIが報道した百度の新オープンソースOCRモデル。「一冊の本をまるごと処理（一次吃下一本书）」できる大規模文書処理能力を持ち、著者が元DeepSeek研究員と目される人物であることが話題"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]

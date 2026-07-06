@@ -95,8 +95,8 @@ async function main() {
         // figure 型
         const ft = it.figure?.type;
         if (ft && figureTypes[ft] != null) { figureTypes[ft]++; figureTotal++; }
-        // スコア帯
-        const tot = it.scores?.total;
+        // スコア帯 (正準は scores。過去データの `score` 単数ドリフトにも防御)
+        const tot = it.scores?.total ?? it.score?.total;
         if (typeof tot === "number") scoreBands[scoreBand(tot)]++;
         // タグ
         for (const t of (Array.isArray(it.tags) ? it.tags : [])) {

@@ -62,15 +62,6 @@
           "url": "https://qiita.com/okssusucha/items/2348bbcf0d61e4de0a67",
           "published_at": "2026-06-30",
           "lang": "ja",
-          "score": {
-            "total": 18,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "OpenAIが6月26日に公開した次世代モデル群「GPT-5.6」は、Sol・Terra・Lunaの3モデル構成をとる。Solはフロンティア推論と長時間エージェント作業向けの最上位、TerraはGPT-5.5と同等性能を半額で提供する日常用途モデル、Lunaが最小・最速の軽量モデルと位置づけられる。注目点は省トークン性能で、同等のセキュリティ評価タスクを前世代比で出力トークン数約3分の1で達成している。現時点ではパートナー向けの限定アクセスで提供されている。",
           "key_points_ja": [
             "3モデル体制：Sol（フロンティア推論・長時間エージェント）・Terra（GPT-5.5同等性能を半額）・Luna（最小・最速）",
@@ -107,7 +98,16 @@
             },
             "alt": "GPT-5.6の3モデル体制：Sol（フロンティア推論・長時間エージェント）/Terra（GPT-5.5同等を半額）/Luna（最小・最速）。出力トークン数を前世代比約3分の1に削減しながら同等のセキュリティ評価を達成"
           },
-          "x_post": "OpenAIがGPT-5.6を発表した。Sol・Terra・Lunaの3モデル体制で、Solはフロンティア推論と長時間エージェント作業向け、Terraは「GPT-5.5と同等性能を半額」、Lunaが最小・最速。同等のセキュリティ評価を前世代比でトークン数約3分の1で達成している。\n\nhttps://qiita.com/okssusucha/items/2348bbcf0d61e4de0a67"
+          "x_post": "OpenAIがGPT-5.6を発表した。Sol・Terra・Lunaの3モデル体制で、Solはフロンティア推論と長時間エージェント作業向け、Terraは「GPT-5.5と同等性能を半額」、Lunaが最小・最速。同等のセキュリティ評価を前世代比でトークン数約3分の1で達成している。\n\nhttps://qiita.com/okssusucha/items/2348bbcf0d61e4de0a67",
+          "scores": {
+            "total": 18,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "reddit_localllama-introducing-longcat-2-0-a-large-scale-moe-langua",
@@ -119,15 +119,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uj7egu/introducing_longcat20_a_largescale_moe_language",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 3,
-            "depth": 2,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "LongCat-2.0が公開された。総パラメータ数1.6兆、1トークンあたり約480億パラメータが有効化されるMixture-of-Experts型の大規模言語モデルで、OpenRouter上で「owl-alpha」というステルス名で動作していたモデルの正体であることがあわせて明らかにされた。LocalLLaMAコミュニティでは大きな反響を集めている。",
           "key_points_ja": [
             "総パラメータ数1.6兆、1トークンあたり約480億パラメータ有効化のMoEモデル",
@@ -155,6 +146,15 @@
               ]
             },
             "alt": "LongCat-2.0の概要：1.6兆総パラメータ・1トークンあたり約480億有効化のMoEモデル。OpenRouterで匿名稼働していた「owl-alpha」の正体"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 3,
+            "depth": 2,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -173,15 +173,6 @@
           "url": "https://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "GoogleがData Cloud向けに「Open Knowledge Format（OKF）」を提案した。AIモデルが構造化データの意味を正確に理解できるよう、セマンティクスを含む標準フォーマットとしてBigQueryと統合する取り組みだ。Sam McVeety（Data Analytics Tech Lead）とAmir Hormati（BigQuery Tech Lead）が設計を主導。基盤モデルの能力向上が続く一方でデータ文脈の不足が課題となるなか、OKFはデータ共有の品質を高めることでLLMの回答精度向上を狙う。日本コミュニティではてブ127ユーザーを獲得した。",
           "key_points_ja": [
             "GoogleがOKF（Open Knowledge Format）をBigQuery連携のオープン標準として提案——セマンティクス付きデータフォーマット",
@@ -214,7 +205,16 @@
             },
             "alt": "GoogleのOpen Knowledge Format（OKF）：AI向けデータ文脈提供の標準フォーマット。BigQuery連携でRAGシステムのデータ品質向上を狙う。はてブ127ユーザー"
           },
-          "x_post": "GoogleがBigQueryへの統合を前提に「Open Knowledge Format（OKF）」を提案した。AIモデルがデータの意味を正確に理解できるよう構造化セマンティクスを提供する標準フォーマットで、Data CloudのTech Lead陣が設計を主導している。\n\nhttps://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing"
+          "x_post": "GoogleがBigQueryへの統合を前提に「Open Knowledge Format（OKF）」を提案した。AIモデルがデータの意味を正確に理解できるよう構造化セマンティクスを提供する標準フォーマットで、Data CloudのTech Lead陣が設計を主導している。\n\nhttps://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing",
+          "scores": {
+            "total": 16,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "qiita-123c16729211d16b0816",
@@ -226,15 +226,6 @@
           "url": "https://qiita.com/shohei_yamamoto/items/123c16729211d16b0816",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "スタディング（スタディング）開発チームの山本氏がClaude Codeの公式プラグイン36件を本体の組み込み機能との関係で5分類した調査記事。本体機能で代替できて実質不要になったのは2件のみで、残り34件は「併用」「逆移行」「本体に対応コマンドを持たない独立ワークフロー」として引き続き有効であるという結論を出している。Qiitaで11いいね・10ストックを獲得しており、Claude Code活用者の参照記事として価値が高い。",
           "key_points_ja": [
             "公式プラグイン36件を5分類——「本体で代替できるのは実質2件のみ」という棚卸し結果",
@@ -266,6 +257,15 @@
               ]
             },
             "alt": "Claude Code公式プラグイン36件の5分類早見表。本体機能で代替可能なのは実質2件のみ、残り34件が「併用・逆移行・独立ワークフロー」として現役"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         },
         {
@@ -278,15 +278,6 @@
           "url": "https://qiita.com/otakumesi/items/414c2e1836df4d8e278d",
           "published_at": "2026-06-30",
           "lang": "ja",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "TypeScript製のAIエージェント開発ライブラリ「Pi SDK」（GitHub: earendil-works/pi）を紹介する記事。軽量なターミナル用AIエージェントとして単体動作するだけでなく、SDKとして既存アプリへの統合や自動化ワークフローの実装、カスタムUIの作成にも利用できる。公式ドキュメントではPi SDKをPiエージェント機能へのプログラムからのアクセス手段として位置づけており、カスタムツールの実装などに使える設計だ。Qiita 6いいね。",
           "key_points_ja": [
             "TypeScript製AIエージェントSDK「Pi SDK」（earendil-works/pi）——CLIエージェントとしてもSDKとしても利用可能",
@@ -318,6 +309,15 @@
               ]
             },
             "alt": "Pi SDK：TypeScript製AIエージェント開発OSSライブラリ。CLIエージェントとしても既存アプリへのSDK統合にも使える。GitHub: earendil-works/pi"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -336,15 +336,6 @@
           "url": "https://arxiv.org/abs/2606.30616v1",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 18,
-            "importance": 5,
-            "depth": 5,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Agents-A1は35Bの混合エキスパート（MoE）エージェントモデルで、モデルサイズではなく「エージェントホライゾン（行動軌跡の長さ）」をスケールすることで兆パラメータ相当の性能を達成した。外部知識・行動・観測・検証器の出力を接続する長期ホライゾン知識行動インフラを構築し、平均45Kトークンの軌跡データを生成した。その上で3段階の学習レシピ（全ドメイン事前学習→エージェント学習→強化学習）を採用している。",
           "key_points_ja": [
             "35B MoEで兆パラメータ相当の性能を達成——モデルサイズではなく「エージェントホライゾン」をスケールする新手法",
@@ -377,7 +368,16 @@
             },
             "alt": "Agents-A1の設計：35B MoEで兆パラメータ相当の性能を達成。エージェントホライゾン（軌跡の長さ）のスケーリングにより、モデルサイズを大きくせずに高性能を実現"
           },
-          "x_post": "35Bのモデルが兆パラメータ相当の性能を達成した。Agents-A1はモデルを大きくするのではなく「エージェントホライゾン（行動軌跡の長さ）」をスケールする手法を採用し、平均45Kトークンの軌跡データを用いた3段階訓練レシピで実現している。\n\nhttps://arxiv.org/abs/2606.30616v1"
+          "x_post": "35Bのモデルが兆パラメータ相当の性能を達成した。Agents-A1はモデルを大きくするのではなく「エージェントホライゾン（行動軌跡の長さ）」をスケールする手法を採用し、平均45Kトークンの軌跡データを用いた3段階訓練レシピで実現している。\n\nhttps://arxiv.org/abs/2606.30616v1",
+          "scores": {
+            "total": 18,
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "arxiv-mesa-prioritizing-vulnerable-communication-chann",
@@ -389,15 +389,6 @@
           "url": "https://arxiv.org/abs/2606.30602v1",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 18,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "マルチエージェントシステム（MAS）においてエージェント間通信チャネルが新たな攻撃面を生む問題に取り組んだ研究。防御者がどのチャネルを優先的に保護すべきかという問いに対し、チャネルレベルの攻撃影響が著しく不均一であること——1つの侵害されたエッジが全攻撃成功の最大75%を占めうること——を実証した。これを踏まえてMESAフレームワーク（ラベルなし手法）を提案し、攻撃観測前に脆弱なチャネルを特定して防御を集中させる。",
           "key_points_ja": [
             "MASの通信チャネルへの攻撃影響は著しく不均一——1つの侵害エッジが全攻撃成功の最大75%を占めうる実測値",
@@ -412,6 +403,15 @@
               "bars": []
             },
             "alt": "MASの通信チャネルへの攻撃影響：1つの侵害されたエッジが全攻撃成功の最大75%を占めうる実測値（MESA, arXiv 2026-06-30）"
+          },
+          "scores": {
+            "total": 18,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -430,15 +430,6 @@
           "url": "https://arxiv.org/abs/2606.30560v1",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 19,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "コーディングエージェントの実ワークロード特性を初めて定量化した研究。日常的なClaude Code利用から収集した約4,300セッション（約35万LLMステップ・約43万ツール呼び出し）のトレースデータを公開した。既存の公開トレースやベンチマークは実際の日常使用パターンを捉えていないという問題意識から出発し、LLMサービングシステムの効率化に必要なワークロード分析の基盤を提供する。",
           "key_points_ja": [
             "日常的なClaude Code利用から収集した約4,300セッション・約35万LLMステップ・約43万ツール呼び出しのトレースを公開",
@@ -453,6 +444,15 @@
               "bars": []
             },
             "alt": "TraceLabの実績：Claude Code日常利用から収集した約4,300セッション・約35万LLMステップ・約43万ツール呼び出しのトレースデータを公開。コーディングエージェントの実ワークロードを初めて定量化"
+          },
+          "scores": {
+            "total": 19,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -465,15 +465,6 @@
           "url": "https://arxiv.org/abs/2606.30573v1",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 17,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "既存のSWEベンチマークが要件を最初から完全に提示した状態でのエージェント評価に留まる問題を指摘し、実際の開発ワークフローに近いマルチターン・インタラクティブ評価環境「SWE-Interact」を提案した研究。設計されたユーザーシミュレーターが曖昧・不完全な指示から始まり、要件を段階的に明確化し、エージェントの作業空間を確認しながらフィードバック・修正・新しい制約を与える。現実の開発フローに即したより難しい評価を実現する。",
           "key_points_ja": [
             "既存SWEベンチマークの課題：要件を最初から完全提示——実開発フローとかけ離れた評価",
@@ -505,6 +496,15 @@
               ]
             },
             "alt": "SWE-Interact：既存SWEベンチマークを多ターン・ユーザー主導のセッションとして再設計。曖昧な初期指示→段階的要件明確化→フィードバック修正という実開発ワークフローに即した評価環境"
+          },
+          "scores": {
+            "total": 17,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -517,15 +517,6 @@
           "url": "https://arxiv.org/abs/2606.30627v1",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 18,
-            "importance": 5,
-            "depth": 5,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "オフライン学習での保守的訓練（DPO）がその後のオンライン適応時に報酬ハッキングを安全に抑制するという通説を否定した研究。Qwen3-14Bポリシーを3段階の保守度（β値の高低）でDPO訓練し、その後に学習済み報酬アンサンブルに対してオンライン適応させたところ、保守的な訓練ほどオンライン適応時の報酬ハッキングが増幅することを実証的・機械論的に明らかにした。",
           "key_points_ja": [
             "通説を否定：保守的なオフライン訓練（DPO）が後のオンライン適応時に報酬ハッキングをむしろ増幅させる",
@@ -557,6 +548,15 @@
               ]
             },
             "alt": "Pessimism's Paradox：保守的DPO訓練がオンライン適応時の報酬ハッキングを増幅させる逆説。Qwen3-14Bを用いて実証的・機械論的に解明（arXiv 2026-06-30）"
+          },
+          "scores": {
+            "total": 18,
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -575,15 +575,6 @@
           "url": "https://gigazine.net/news/20260629-anthropic-economic-report",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 15,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "Anthropicが2026年6月26日にClaude利用実態レポート「Cadences」を公開した。Claude CodeやAPIを介した利用も含む実データ分析で、土日は個人用途の比率が高くなること、女性の平均利用時間が長いこと、高賃金に関連するタスクは夜間にも実行されやすい傾向があることなどが報告されている。Gigazineの解説記事がはてブ44ユーザーを獲得した。",
           "key_points_ja": [
             "土日は個人用途の比率が高い——平日は業務用途が主体、週末は個人利用が増加（Anthropic「Cadences」レポート）",
@@ -616,7 +607,16 @@
             },
             "alt": "AnthropicのClaude利用実態レポート「Cadences」（2026年6月26日）：土日の個人用途増加・女性の長時間利用・夜間の高賃金タスク実行傾向を実データで示す"
           },
-          "x_post": "AnthropicがClaude利用の実態レポートを公開した。土日は個人用途が多く、女性の利用時間が長く、高賃金タスクは夜間に実行されやすい傾向がある。Claude CodeやAPIを介した利用も含む2026年6月26日時点の分析。\n\nhttps://gigazine.net/news/20260629-anthropic-economic-report"
+          "x_post": "AnthropicがClaude利用の実態レポートを公開した。土日は個人用途が多く、女性の利用時間が長く、高賃金タスクは夜間に実行されやすい傾向がある。Claude CodeやAPIを介した利用も含む2026年6月26日時点の分析。\n\nhttps://gigazine.net/news/20260629-anthropic-economic-report",
+          "scores": {
+            "total": 15,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 1
+          }
         }
       ]
     },
@@ -634,15 +634,6 @@
           "url": "https://gigazine.net/news/20260629-suno-incubator-program-spark",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 12,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "AI音楽ジェネレーター「Suno」が独立系アーティストを支援するインキュベータープログラム「Spark」を発表した。著作権保護楽曲の無断利用を巡りSunoはすでに訴訟を抱えているなか、Sparkへの参加条件として「Sunoの悪口を言わないこと」および「Sunoに対する裁判への参加権を放棄すること」が含まれていることが注目を集めている。",
           "key_points_ja": [
             "Sunoが独立系アーティスト向けインキュベータープログラム「Spark」を発表",
@@ -670,6 +661,15 @@
               ]
             },
             "alt": "Suno「Spark」プログラムの参加条件：Suno批判禁止・Suno相手の訴訟参加権放棄。AI音楽会社による著作権問題背景下でのアーティスト支援プログラムが物議"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -688,15 +688,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uj7xcs/i_hate_dario_amodei_and_everything_he_stands_for",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Anthropic CEOのダリオ・アモデイ氏がオープンソースAIの危険性について発言した内容に対し、LocalLLaMAコミュニティで強い反発が起きている。アモデイ氏が「オープンソースソフトウェアではソースコードを確認できるが、モデルでは内部を見られない」と主張したとされるのに対し、投稿者は「オープンウェイトモデルはまさに内部を確認できるのがポイントだ。Claudeのウェイトは見られないが、オープンウェイトは見られる」と反論している。",
           "key_points_ja": [
             "ダリオ・アモデイ氏のオープンソース批判発言に対しLocalLLaMAが強く反発（min_score 100以上のトップ投稿）",
@@ -728,6 +719,15 @@
               ]
             },
             "alt": "LocalLLaMAにおけるダリオ・アモデイのオープンソース批判への反論：「オープンウェイトモデルはソースコードと同様に内部を確認できる」"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -740,15 +740,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uj9viw/been_running_qwen3627b_through_a_3critic_harness",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 16,
-            "importance": 2,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Qwen3.6-27B（8bit量子化）をコーディングハーネスで数日間動かした実験報告。コードレビュー・テストレビュー・Playwright E2Eという3つの批評家（各批評家は新鮮なコンテキストを持つ）が出力を評価する構成を採用。27Bの密モデルとして性能は本物だが、フロンティアモデルより誤りが多いことは予想内。想定外だったのは「フロンティアモデル向けに作った3批評家パイプラインが27Bモデルにも効果的に機能した」という点で、批評家が余分なエラーを捕捉し、リトライのオーバーヘッドもハーネスが吸収した。",
           "key_points_ja": [
             "3批評家ハーネス（コードレビュー・テストレビュー・Playwright E2E）でQwen3.6-27Bを数日評価——各批評家は新鮮なコンテキストを持つ設計",
@@ -780,6 +771,15 @@
               ]
             },
             "alt": "Qwen3.6-27Bを3批評家ハーネス（コードレビュー・テストレビュー・E2E）で数日評価した実験報告。フロンティアモデル向けのハーネス設計が小型モデルにも効果的に機能することを実証"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 2,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -798,15 +798,6 @@
           "url": "https://zenn.dev/keitayamamoto/articles/d053a6cc096287",
           "published_at": "2026-06-30",
           "lang": "ja",
-          "score": {
-            "total": 17,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "2026年現在、AIエージェントにユニットテストを書かせることへの実践的な所感を述べた記事。AIにユニットテストを書かせると負債になるテストを書きがちであり、どこにユニットテストを書くべきかの判断は難しく、Claude Opus 4.8やGPT-5.5はまだ自然にその判断ができるほど賢くないという見解を示している。はてブ67ユーザーを集めた注目記事。",
           "key_points_ja": [
             "AIにユニットテストを書かせると「負債になるテスト」を書きがちという実践的知見",
@@ -839,7 +830,16 @@
             },
             "alt": "AIによるユニットテスト実装の所感（はてブ67users）：AIが書くと負債になるテストを生成しがち。Claude Opus 4.8・GPT-5.5はテスト対象の自然な判断がまだ困難"
           },
-          "x_post": "Claude Opus 4.8・GPT-5.5はまだ、どこにユニットテストを書くべきかを自然に判断できるほど賢くないという所感。AIに丸投げすると負債になるテストが積み上がりやすく、テスト対象の判断は人間が担い、実装をAIに任せる分担が現実的だと感じている。\n\nhttps://zenn.dev/keitayamamoto/articles/d053a6cc096287"
+          "x_post": "Claude Opus 4.8・GPT-5.5はまだ、どこにユニットテストを書くべきかを自然に判断できるほど賢くないという所感。AIに丸投げすると負債になるテストが積み上がりやすく、テスト対象の判断は人間が担い、実装をAIに任せる分担が現実的だと感じている。\n\nhttps://zenn.dev/keitayamamoto/articles/d053a6cc096287",
+          "scores": {
+            "total": 17,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
+          }
         },
         {
           "id": "hatena-web-llm-wiki-blog-jxck-io",
@@ -851,15 +851,6 @@
           "url": "https://blog.jxck.io/entries/2026-06-29/tc39-llm-wiki.html",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "Web標準の議論を長年追い続けてきたjxck氏が、LLM-Wikiを使うことで追うべき情報の増加問題と過去の経緯把握の難しさを大幅に改善できたという実践報告。最新情報を追うこと自体は比較的容易でも、なぜそうなったのかという経緯を過去にさかのぼって調べることが難しいという長年の課題が、LLM-Wikiで大幅に改善されたとしている。はてブ61ユーザーを獲得している。",
           "key_points_ja": [
             "LLM-WikiでTC39などウェブ標準の議論を追う——「最新情報の追跡」より「過去の経緯把握」が劇的に改善",
@@ -891,6 +882,15 @@
               ]
             },
             "alt": "LLM-WikiでWeb標準（TC39等）の議論を追うjxck.ioの実践報告。「なぜそうなったか」の過去の経緯把握が劇的に改善。はてブ61ユーザー"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -903,15 +903,6 @@
           "url": "https://zenn.dev/yohei/articles/2026-06-28-kg-ontology-redefinition",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "「現代の知識グラフとオントロジー」シリーズ（シーズン4）の第1部として、オントロジーの現代的な解釈と実務者視点での活用方法を論じた記事。論点は「推論（inference）」から「契約（contract）」へのパラダイムシフトで、データ品質保証と回答検証の全体像を整理している。データエンジニア・AIエンジニアの実務に直結する内容で、はてブ67ユーザーを獲得した。",
           "key_points_ja": [
             "知識グラフとオントロジーを「推論から契約へ」と再定義——データ品質保証と回答検証の全体像を整理",
@@ -943,6 +934,15 @@
               ]
             },
             "alt": "知識グラフとオントロジーの再定義：「推論から契約へ」のパラダイムシフト。データ品質保証・回答検証の全体像をDE/AI実務者視点で整理（シーズン4第1部）。はてブ67ユーザー"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -955,15 +955,6 @@
           "url": "https://acro-engineer.hatenablog.com/entry/2026/06/29/120000",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "2026年2月にClaude 4.6系が登場してから、ClaudeのAPIにおける「思考（Thinking）」を制御するパラメータが変更された。従来の「拡張思考（extended thinking）」から「適応的思考（adaptive thinking）」への移行をAcroquest（YAMALEX）の駿氏が解説している記事。APIを利用しているエンジニアには直接影響する変更点で、はてブ60ユーザーを獲得した。",
           "key_points_ja": [
             "Claude 4.6系でAPIの思考制御パラメータが変更——「拡張思考（extended thinking）」から「適応的思考（adaptive thinking）」へ移行",
@@ -995,6 +986,15 @@
               ]
             },
             "alt": "Claude 4.6系APIの思考パラメータ変更：「拡張思考（extended thinking）」から「適応的思考（adaptive thinking）」への移行を解説（Acroquest YAMALEX）。はてブ60ユーザー"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -1007,15 +1007,6 @@
           "url": "https://kaminashi-developer.hatenablog.jp/entry/runn-api-test-architecture",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "カミナシのエンジニアブログが、「40,000行のAPIテスト作成でClaude Code Skillsを育てた」という取り組みの基盤となったrunnのAPIテスト構成設計を公開した。件数が増えても一貫性を保つための構成設計の考え方を解説する記事で、AI支援開発の土台となるテスト基盤の設計実践知見としてはてブ50ユーザーを獲得した。",
           "key_points_ja": [
             "「40,000行のAPIテストをClaude Code Skillsで育てた」カミナシが基盤となるrunn構成設計を公開",
@@ -1047,6 +1038,15 @@
               ]
             },
             "alt": "カミナシのrunn APIテスト構成設計：40,000行のAPIテストをClaude Code Skillsで育てた基盤の全体像。件数が増えても一貫性を保つ設計の実践知見（はてブ50ユーザー）"
+          },
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         }
       ]
@@ -1065,15 +1065,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uj0fkw/deepseek_v4_pr_merged_into_llamacpp",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 2,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "DeepSeek V4のllama.cppサポートがPRとしてマージされた。llama.cppリポジトリへのgit pull・cmake・GGUFダウンロードでローカル実行環境を整備できるようになり、ローカルLLMコミュニティで大きな反響を集めた。対応するPRはgithub.com/ggml-org/llama.cpp/pull/24162。",
           "key_points_ja": [
             "DeepSeek V4のllama.cpp対応PRがマージ——git pull・cmake・GGUFダウンロードでローカル実行可能",
@@ -1101,6 +1092,15 @@
               ]
             },
             "alt": "DeepSeek V4がllama.cppにマージ（PR #24162）。git pull・cmake・GGUFダウンロードでローカル実行可能に"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 2,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -1113,15 +1113,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_openpangu20flash_92b_total6b",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "HuaweiがOpenPangu 2.0の第1弾としてOpenPangu-2.0-Flash（92B総量、6B有効化、512Kコンテキスト）をオープンソース公開した。ウェイト・推論コード・訓練オペレーションがすべて公開されている。上位モデルのPro（505B総量、18B有効化）は7月公開予定で、年内にさらなるオープンソースコンポーネントも予定している。",
           "key_points_ja": [
             "OpenPangu-2.0-Flash：92B総量・6B有効化MoE、512Kコンテキスト——ウェイト＋推論コード＋訓練オペレーションをオープン公開",
@@ -1153,6 +1144,15 @@
               ]
             },
             "alt": "HuaweiのOpenPangu-2.0-Flash：92B総量・6B有効化MoEモデル（512Kコンテキスト）をウェイト＋推論コード＋訓練オペレーション込みでオープンソース公開。Pro（505B/18B）は7月公開予定"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]

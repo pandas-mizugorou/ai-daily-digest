@@ -68,15 +68,6 @@
           "url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release",
           "published_at": "2026-07-02",
           "lang": "en",
-          "score": {
-            "total": 17,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "米政府は6月12日に課したFable 5・Mythos 5への輸出規制を解除し、7月2日よりFable 5が全世界で再公開された。AnthropicはPro/Max/Team/Enterprise向けに7月7日まで週間使用量の50%上限を適用し、以降は通常使用制限に移行する。Mythos 5は6月26日に米国組織向けに一部復活しているが、引き続きGlasswingプログラムに参加する防衛的サイバーセキュリティ研究者のみに限定される。政府との協議の中でAnthropicは、報告されたジェイルブレーク技術を99%超の精度でブロックする新分類器を実装したことを明らかにした。",
           "key_points_ja": [
             "7月2日よりFable 5が全世界のPro/Max/Team/Enterprise向けに再公開（7月7日まで週間使用量50%制限）",
@@ -122,7 +113,16 @@
             },
             "alt": "Fable 5規制解除タイムライン：2026年6月12日に米政府が輸出規制を発動しFable 5・Mythos 5を外国籍者から制限。6月26日にMythos 5が米国組織向けに部分復活。7月2日に輸出規制が解除されFable 5が全世界で再公開（7月7日まで週間使用量50%制限）。Mythos 5はGlasswingプログラム限定が継続"
           },
-          "x_post": "米政府が6月12日に課したFable 5・Mythos 5への輸出規制を約3週間で解除した。7月2日よりFable 5が全世界で再公開（Pro/Max/Team/Enterprise、7月7日まで週間50%制限）。Mythos 5は引き続き米国組織・Glasswingプログラム限定。AnthropicはジェイルブレークをPro99%超でブロックする新分類器を導入した。\n\nhttps://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release"
+          "x_post": "米政府が6月12日に課したFable 5・Mythos 5への輸出規制を約3週間で解除した。7月2日よりFable 5が全世界で再公開（Pro/Max/Team/Enterprise、7月7日まで週間50%制限）。Mythos 5は引き続き米国組織・Glasswingプログラム限定。AnthropicはジェイルブレークをPro99%超でブロックする新分類器を導入した。\n\nhttps://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release",
+          "scores": {
+            "total": 17,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         }
       ]
     },
@@ -140,15 +140,6 @@
           "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 16,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "AnthropicはClaude Sonnet 5を発表した。エージェント機能を強化し、GPT-5.5やGemini Proよりも低価格でOpus 4.8相当の性能を提供するという位置づけ。安全性改善も含まれており、エージェントによる長時間タスク実行のコスト障壁を下げることを主要な目標に掲げている。",
           "key_points_ja": [
             "強化されたエージェント機能を搭載、Opus 4.8並みの性能をSonnet価格帯で提供",
@@ -188,7 +179,16 @@
             },
             "alt": "Claude Sonnet 5の概要：Opus 4.8並みの性能をSonnet価格帯で提供し、GPT-5.5・Gemini Proへの低コスト代替として位置づけられる。エージェント機能を強化し、安全性改善も含む。長時間エージェントタスクのコスト障壁を引き下げることが主目的"
           },
-          "x_post": "AnthropicがClaude Sonnet 5を公開した。エージェント機能を強化し、Opus 4.8相当の性能をSonnet価格帯で提供する設計で、GPT-5.5やGemini Proへの低コスト代替として位置づけられる。長時間エージェントタスクのコスト障壁を下げることが主目的で、安全性改善も含む。\n\nhttps://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents"
+          "x_post": "AnthropicがClaude Sonnet 5を公開した。エージェント機能を強化し、Opus 4.8相当の性能をSonnet価格帯で提供する設計で、GPT-5.5やGemini Proへの低コスト代替として位置づけられる。長時間エージェントタスクのコスト障壁を下げることが主目的で、安全性改善も含む。\n\nhttps://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents",
+          "scores": {
+            "total": 16,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "arstechnica_ai-google-s-new-nano-banana-2-lite-image-model-is-i",
@@ -200,15 +200,6 @@
           "url": "https://arstechnica.com/ai/2026/06/googles-new-nano-banana-2-lite-image-model-is-its-fastest-and-cheapest-yet",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 12,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Google DeepMindは新しい画像生成モデル「Nano Banana 2 Lite」（正式名称：Gemini 3.1 Flash Lite Image）を公開した。品質とスピードのバランスを最優先に設計されており、Googleの既存の大規模画像モデルに比べてはるかに高速に画像を生成できる。アイデア探索や「ラピッドファイア」プロトタイピング用途に最適とされ、Googleエコシステム全体で本日より利用可能。はてブでも20ユーザーが反応した。",
           "key_points_ja": [
             "正式名称はGemini 3.1 Flash Lite Image、速度・低コストを最優先に設計したGemini 3.1ファミリーの新モデル",
@@ -247,6 +238,15 @@
               "impact": "開発者が迅速なプロトタイピングや多数の画像バリエーション生成を低コストで実施できるようになる。画像生成のコモディティ化がさらに加速する。"
             },
             "alt": "Nano Banana 2 Lite（Gemini 3.1 Flash Lite Image）の概要：Google DeepMind製の最速・最安の画像生成モデル。ラピッドプロトタイピング用途に最適化。Gemini Omni Flashとの連携で画像生成から動画編集まで完結可能"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -265,15 +265,6 @@
           "url": "https://technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "AnthropicはClaude Scienceを発表した。科学研究者向けに設計された新フラッグシップ製品で、「科学界のClaude Code」と位置づけられる。ノーベル賞受賞者でAlphaFold創始者のJohn Jumper氏の採用を武器に、10年にわたりAI×科学分野を牽引してきたGoogle DeepMindに真正面から挑む。Anthropic自身も顧みられない疾患の創薬研究でClaude Scienceを活用するとしており、マーケティングだけでなく実用にも投資する姿勢を示した。",
           "key_points_ja": [
             "Claude Code同様、科学研究領域の自律的作業支援を目指す新製品——PubMed・Jupyter・ゲノミクス・タンパク質構造可視化などを統合",
@@ -320,7 +311,16 @@
             },
             "alt": "Claude Scienceの概要：Anthropicが科学研究者向けに設計した新フラッグシップ製品。Claude Codeの科学研究版として位置づけられ、AlphaFold創始者のJohn Jumperを採用してDeepMindに挑む。PubMed・Jupyter・タンパク質構造可視化など60以上のスキルとコネクタを搭載し、Anthropic自身も顧みられない疾患の創薬に活用"
           },
-          "x_post": "AnthropicがClaude Scienceを発表した。「科学研究版Claude Code」として位置づけ、PubMed・Jupyter・ゲノミクス・タンパク質構造など60以上のコネクタを統合。AlphaFold創始者のJohn Jumperを採用し、DeepMindが10年牽引してきたAI×科学分野に正面から挑む。Anthropic自身も顧みられない疾患の創薬にClaude Scienceを活用するとしている。\n\nhttps://technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product"
+          "x_post": "AnthropicがClaude Scienceを発表した。「科学研究版Claude Code」として位置づけ、PubMed・Jupyter・ゲノミクス・タンパク質構造など60以上のコネクタを統合。AlphaFold創始者のJohn Jumperを採用し、DeepMindが10年牽引してきたAI×科学分野に正面から挑む。Anthropic自身も顧みられない疾患の創薬にClaude Scienceを活用するとしている。\n\nhttps://technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product",
+          "scores": {
+            "total": 15,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "techcrunch-gemini-spark-google-s-agentic-assistant-is-now-a",
@@ -332,15 +332,6 @@
           "url": "https://techcrunch.com/2026/06/30/gemini-spark-google-s-agentic-assistant-is-now-a",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "GoogleのエージェントAI「Gemini Spark」がMacに対応した。PCをシャットダウンした後も自律的にタスクを実行し続けるのが特徴で、従来のチャット型AIとの根本的な違いはバックグラウンド実行能力にある。「朝起きたら仕事が終わっている」体験を目指す24時間稼働型AIアシスタントで、Macへの対応により対象ユーザーが大幅に拡大した。",
           "key_points_ja": [
             "PCを閉じても24時間バックグラウンドで作業を継続する自律エージェント型AI——チャット型との根本的な違い",
@@ -372,6 +363,15 @@
               "impact": "開発者・クリエイターが長時間タスク（コンパイル、API呼び出し、リサーチ）をバックグラウンドに委任できる実用性が向上。AIツールの「閉じても動く」体験がMacユーザーにも届く。"
             },
             "alt": "Gemini SparkのMac対応概要：PCを閉じても24時間バックグラウンドでタスクを継続する自律エージェントAI。チャット型AIとの根本的な違いはバックグラウンド実行能力にあり、MacへのGemini Spark対応でユーザーが大幅に拡大"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -390,15 +390,6 @@
           "url": "https://latent.space/p/aiewf-daily-dispatch-loops",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "AI Engineer World's Fairの2日目、swyx（共同創設者）の基調講演「Loopcraft: The Art of Stacking Loops」を皮切りに、会場全体で「ループ」「ソフトウェアファクトリー」が中心テーマとなった。swyx氏はAIエンジニアリングの進化を「チャット→ツール→目標→オートメーション（ループ）」と図式化し、現在の開発は「全てクロンジョブとループだ」と述べた。Warp CEOのZach Lloyd氏も、CLIツール競争の次フェーズとして「ソフトウェアファクトリー基盤」を独自取材で論じた。",
           "key_points_ja": [
             "AIEWF2日目はswyx基調「Loopcraft」でスタート——AIエンジニアリングは「チャット→ツール→目標→ループ（オートメーション）」の段階へ",
@@ -444,7 +435,16 @@
             },
             "alt": "AIエンジニアリングの進化段階：2022年にチャット中心からスタートし、ツール、目標設定を経て、2026年現在はオートメーション（ループ）の時代へ。AIEWF2日目の基調講演swyxが定義したフレームワーク"
           },
-          "x_post": "AI Engineer World's Fair 2日目はswyx基調「Loopcraft：The Art of Stacking Loops」でスタート。AIエンジニアリングは「チャット→ツール→目標→ループ（オートメーション）」の4段階で進化し、現在は『全てクロンジョブとループ』の時代だと定義。Warp CEOもCLIツール競争の終焉とソフトウェアファクトリーへの移行を論じた。\n\nhttps://latent.space/p/aiewf-daily-dispatch-loops"
+          "x_post": "AI Engineer World's Fair 2日目はswyx基調「Loopcraft：The Art of Stacking Loops」でスタート。AIエンジニアリングは「チャット→ツール→目標→ループ（オートメーション）」の4段階で進化し、現在は『全てクロンジョブとループ』の時代だと定義。Warp CEOもCLIツール競争の終焉とソフトウェアファクトリーへの移行を論じた。\n\nhttps://latent.space/p/aiewf-daily-dispatch-loops",
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "wired_ai-claude-helped-a-hacker-find-a-way-to-issue-ticke",
@@ -456,15 +456,6 @@
           "url": "https://wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Wiredによると、あるセキュリティ研究者がClaude Opus 4.7を用い、Lollapalooza・Bonnarooをはじめとするほぼすべての米国主要音楽フェスティバルのチケット発行システム「Front Gate」への侵入経路を発見した。この研究者は任意のチケットを無料で発行できる手法を確立し、Wiredに結果を報告した。AIエージェントによる高度なペネトレーションテストが実用段階に達したことを示す事例として注目されている。",
           "key_points_ja": [
             "Claude Opus 4.7を使ったセキュリティ研究者がFront Gate（LollapaloozaからBonnarooまでカバー）のチケット発行システムに侵入",
@@ -503,6 +494,15 @@
               "impact": "AIアシストによるペネトレーションテストが実用段階に達した現実を示す。チケット、決済、認証システム等のセキュリティ強化が急務になる。"
             },
             "alt": "Claude Opus 4.7を使ったセキュリティ研究のケーススタディ：研究者がFront Gateのチケット発行システムに侵入し任意のチケットを発行できる脆弱性を特定。LollapaloozaからBonnarooまでの米国主要フェスをカバーするシステムが対象。AIエージェントによる高度なペネトレーションテストの実用化を示す"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -521,15 +521,6 @@
           "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Ars Technicaは、AIとブラウジングを統合した「AIブラウザ」への新しい攻撃手法を報告した。「ドリームワールド」と呼ばれるこの攻撃は、AIをあたかも夢の中にいるような状態に誘導し、通常は拒否される有害なリクエストへのガードレールを回避させる。AIエージェントがウェブを閲覧しながら行動を取る製品形態において、ブラウジングとLLMの境界が曖昧になることで生じる構造的なリスクカテゴリを示している。",
           "key_points_ja": [
             "「ドリームワールド」攻撃：AIブラウザのLLMを「夢の世界」状態に誘導し、通常なら拒否されるリクエストのガードレールを回避",
@@ -568,6 +559,15 @@
               "impact": "AIブラウザ製品の安全性評価が求められるようになる。企業での導入に際してはセキュリティレビューの必要性が高まる。"
             },
             "alt": "AIブラウザへの「ドリームワールド」攻撃の概要：悪意のあるWebコンテンツがLLMを「夢の状態」に誘導しガードレールを回避させる。AIブラウザ固有の構造的脆弱性で、ウェブブラウジングとLLM推論の境界が曖昧であることを利用する"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -586,15 +586,6 @@
           "url": "https://arxiv.org/abs/2606.32034v1",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "arXivのQVal論文（2026年7月1日）は、長期間にわたって何百〜何千もの行動を実行するLLMエージェントの訓練における根本的な問題を扱う。結果のみを見る疎な報酬では中間ステップへの指導が不足する。QValは中間ステップを安価に採点するための密な教師信号の品質を評価する新手法を提案しており、下流の訓練パイプライン全体を実行するコストなしに教師信号の品質を評価できる。",
           "key_points_ja": [
             "長期間LLMエージェント（数百〜数千アクション）の訓練における「疎な報酬問題」を扱う",
@@ -633,6 +624,15 @@
               "impact": "エージェント訓練の研究・実践者が密な教師信号の品質を効率的に評価・選択できるようになる。長時間自律エージェントの能力向上サイクルが加速する可能性。"
             },
             "alt": "QVal論文の概要：長期間LLMエージェント訓練における疎な報酬問題を解決する。中間ステップへの密な教師信号の品質を下流訓練全体を実行せず低コストで評価する手法を提案。エージェント訓練のスケールアップを支援する方法論的基盤を提供"
+          },
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -645,15 +645,6 @@
           "url": "https://arxiv.org/abs/2606.32032v1",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 16,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "arXivのこの研究（2026年7月1日）はLLMのメタ認知能力——自身の認知プロセスを監視・調整する能力——に体系的な欠陥があることを示した上で、強化学習によるメタ認知フィードバックによってLLMが自身の不確実性を誠実に表現できるようになることを実証した。LLMは高い確信度でハルシネーションを起こし、知識の境界を認識できない問題に対する訓練アプローチを提案する。",
           "key_points_ja": [
             "LLMのメタ認知欠陥：高確信度ハルシネーション・知識境界認識失敗・内部不確実性の誤表現を体系的に分析",
@@ -692,6 +683,15 @@
               "impact": "医療・法律・金融など高リスク領域でのAI活用において、モデルが「知らないことを知らない」問題が改善される。信頼性の高いAIシステム設計に向けた訓練技術の基盤となる。"
             },
             "alt": "メタ認知RLの概要：LLMのハルシネーション・知識境界認識失敗・不確実性誤表現という3つのメタ認知欠陥を分析し、強化学習によるメタ認知フィードバックで誠実な不確実性表現を実現する訓練手法を提案"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -704,15 +704,6 @@
           "url": "https://arxiv.org/abs/2606.32025v1",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "arXivのこの論文（2026年7月1日）は、LLMエージェントがタスクを解くためにスキルライブラリからスキルを選択する「スキル合成」において、ライブラリが成長するにつれてスキル選択が中心的なボトルネックになる問題を扱う。全スキルをコンテキストに渡す方法と埋め込み検索の限界を指摘し、「生成的スキル合成」という第三のアプローチを提案する。",
           "key_points_ja": [
             "LLMエージェントのスキルライブラリ成長に伴うスキル選択ボトルネックを分析——全開示も埋め込み検索も限界がある",
@@ -751,6 +742,15 @@
               "impact": "エージェントシステムのスキルライブラリ設計において、生成的合成という選択肢が加わる。スキルの再利用性・コンポーザビリティを重視した設計が普及する可能性。"
             },
             "alt": "生成的スキル合成の概要：LLMエージェントのスキルライブラリが大規模化した際のスキル選択ボトルネックを解決する。全スキル開示（コンテキスト超過）も埋め込み検索（精度限界）も不十分で、既存スキルから動的に新スキルを生成する「生成的合成」を提案"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -769,15 +769,6 @@
           "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 12,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "TechCrunchによると、NVIDIAの競合AI推論チップスタートアップEtchedが評価額50億ドルに達し、推論システム向けチップで既に10億ドルの契約を確保した。LLM推論に特化した設計が特徴で、汎用GPU独占に挑む新世代AIハードウェア企業として注目されている。",
           "key_points_ja": [
             "評価額50億ドル、LLM推論専用チップ搭載の推論システムで既に10億ドルの受注を確保",
@@ -809,6 +800,15 @@
               "impact": "AI推論インフラへの投資先として、NVIDIA GPU以外の選択肢が現実的になる。データセンター運営コストの最適化において推論専用チップの採用が広がる可能性。"
             },
             "alt": "Etchedの概要：NVIDIAの競合AI推論チップスタートアップ。評価額50億ドルに達し推論システム向けチップで10億ドルの受注を確保。LLM推論に特化した設計でNVIDIAの汎用GPU独占に挑む"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -821,15 +821,6 @@
           "url": "https://techcrunch.com/2026/06/30/meta-like-spacex-looks-to-turn-excess-ai-compute",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 12,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "TechCrunchによると、MetaはSpaceXがロケット打ち上げ能力を外販しているように、巨大なAI計算インフラの余剰分をクラウドAI計算サービスとして外部販売する計画を持つ。AWS・Azure・Google Cloudに対抗する形で新たな収益源を開拓する戦略的転換を示している。",
           "key_points_ja": [
             "MetaのGPU余剰分をクラウドAI計算サービスとして外販する計画——SpaceXのビジネスモデルを参照",
@@ -861,6 +852,15 @@
               "impact": "AI計算市場の競争がさらに激化。AWS・Azure・GCPに加えMetaが参入することで、AI推論・訓練コストの低下圧力が高まる可能性がある。"
             },
             "alt": "MetaのAIコンピュート外販計画：SpaceXがロケット打ち上げ能力を外販するモデルに倣い、Meta自社のAIインフラ余剰分をクラウドAI計算サービスとして外販する戦略。AWS・Azure・Google Cloudへの対抗策として機能する"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -873,15 +873,6 @@
           "url": "https://techcrunch.com/2026/06/30/venice-ai-becomes-a-unicorn-with-65m-series-a-as",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 10,
-            "importance": 3,
-            "depth": 2,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "TechCrunchによると、プライバシー重視のAIアシスタントVenice AIがシリーズA 6,500万ドルを調達してユニコーン（評価額10億ドル超）となった。年間経常収益はすでに7,000万ドルを超えており、プライバシーを重視するユーザー層の需要が急拡大していることを示している。",
           "key_points_ja": [
             "シリーズA 6,500万ドル調達でユニコーン入り、年間経常収益7,000万ドル超を既に達成",
@@ -913,6 +904,15 @@
               "impact": "プライバシー重視型AIアシスタントが独立した市場カテゴリとして確立されつつある。企業のAIガバナンス・コンプライアンス要件と連動して需要が継続する可能性。"
             },
             "alt": "Venice AI資金調達の概要：シリーズA 6,500万ドル調達でユニコーン入り。年間経常収益7,000万ドル超を既に達成。プライバシー重視型AIアシスタントへの需要拡大を示す"
+          },
+          "scores": {
+            "total": 10,
+            "importance": 3,
+            "depth": 2,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -931,15 +931,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1uknx14/swerebench_leaderboard_update_glm52_qwen3627b",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 1
-          },
           "summary_ja": "r/LocalLLAMAのSWE-rebenchリーダーボード更新投稿（min_score 100以上の反応）。新モデルが複数追加され、UIも刷新された。Claude Opus 4.8 (xhigh)が56.5%（2.48Mトークン）でトップ、GLM-5.2が51.1%（2.62Mトークン）で2位、Gemini 3.5 Flashが49.5%（1.85Mトークン）と続く。ローカルモデルではQwen3.6-27Bが36.5%で最上位。",
           "key_points_ja": [
             "Claude Opus 4.8 (xhigh) 56.5%で首位（2.48Mトークン）、GLM-5.2 51.1%（2.62Mトークン）が2位",
@@ -1020,6 +1011,15 @@
               "impact": "エージェントコーディング用途でモデルを選定する際の客観的な比較指標が更新された。コストパフォーマンスでは1.85Mトークンで49.5%のGemini 3.5 Flashが注目される。"
             },
             "alt": "SWE-rebenchリーダーボード（2026年7月更新）。Claude Opus 4.8 xhigh 56.5%で首位、GLM-5.2 51.1%、Gemini 3.5 Flash 49.5%、MiniMax M3 45.6%、DeepSeek-V4 Pro 42.7%、Qwen3.6-27B 36.5%（ローカル最上位）、Gemma 4 31B 16.5%の順"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 1
           }
         },
         {
@@ -1032,15 +1032,6 @@
           "url": "https://technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out",
           "published_at": "2026-07-01",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "MIT Technology Reviewは、LLMが同じ答えに収束する傾向（グループシンク）を報告した。「1から10の乱数を言って」と聞くと、ほぼ全ての主要モデルが「7」と答える。オーストラリアのスタートアップSpringboardsはFlintというモデルで、全体的なランダム性を上げるのではなく、特定の意思決定ポイントにのみランダム性を注入するアプローチを実験中。NeurIPS受賞論文でも、AIモデルが互いに訓練データを学習することで均質化が加速する現象が示されている。",
           "key_points_ja": [
             "主要LLMは同じ答えに収束する「グループシンク」に陥っている——「1〜10の乱数は?」に全モデルが「7」と回答",
@@ -1080,7 +1071,16 @@
             },
             "alt": "LLMグループシンク問題の概要：主要モデル全てが「1〜10の乱数は?」に「7」と答えるほど同一の回答に収束。SpingboardsがFlintで特定決定ポイントのみへのランダム性注入を実験。NeurIPS受賞論文でAI間の相互学習による均質化加速も指摘"
           },
-          "x_post": "LLMは「グループシンク」に陥っている——「1から10の乱数は?」に主要モデルがほぼ全て「7」と答える。SpringboardsはFlintで全体的なランダム性を上げるのではなく特定の決定ポイントのみにランダム性を注入する解法を実験中。NeurIPS受賞論文でもモデル間の相互学習による均質化加速が確認されている。\n\nhttps://technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out"
+          "x_post": "LLMは「グループシンク」に陥っている——「1から10の乱数は?」に主要モデルがほぼ全て「7」と答える。SpringboardsはFlintで全体的なランダム性を上げるのではなく特定の決定ポイントのみにランダム性を注入する解法を実験中。NeurIPS受賞論文でもモデル間の相互学習による均質化加速が確認されている。\n\nhttps://technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out",
+          "scores": {
+            "total": 14,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         }
       ]
     },
@@ -1098,15 +1098,6 @@
           "url": "https://toranoana-lab.hatenablog.com/entry/2026/06/30/130000",
           "published_at": "2026-07-01",
           "lang": "ja",
-          "score": {
-            "total": 17,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "虎の穴ラボの技術ブログ（はてブ172ユーザー）。AIエージェントとの相性が良いと話題のObsidianを導入し、Claude Codeに設計メモ・作業記録を残させる仕組みを実装した実践報告。コーディングにAIエージェントを使うと「作業記録がうまく残らない」という課題を解決するアプローチで、Claude CodeとObsidianの組み合わせによるワークフロー構築を具体的に解説している。",
           "key_points_ja": [
             "Claude CodeとObsidianを組み合わせて設計・作業メモを自動で残す仕組みを構築——エージェントに記録を任せる設計",
@@ -1146,7 +1137,16 @@
             },
             "alt": "ClaudeCode+Obsidian連携の概要：虎の穴ラボが実装。Claude Codeが設計・作業メモをObsidianに自動で書き込む仕組みで、AIエージェントコーディング中の「記録が残らない」問題を解決。はてブ172ユーザーが反応した実践的ワークフロー記事"
           },
-          "x_post": "虎の穴ラボがClaude CodeとObsidianを連携させ、AIエージェントが設計・作業メモを自動で残す仕組みを公開した（はてブ172ユーザー）。「AIでコードは書けても作業記録が残らない」という現場課題に対し、Claude CodeにObsidianへの記録を任せる設計で解決するアプローチ。エージェントコーディングの記録管理に直結する実践ガイド。\n\nhttps://toranoana-lab.hatenablog.com/entry/2026/06/30/130000"
+          "x_post": "虎の穴ラボがClaude CodeとObsidianを連携させ、AIエージェントが設計・作業メモを自動で残す仕組みを公開した（はてブ172ユーザー）。「AIでコードは書けても作業記録が残らない」という現場課題に対し、Claude CodeにObsidianへの記録を任せる設計で解決するアプローチ。エージェントコーディングの記録管理に直結する実践ガイド。\n\nhttps://toranoana-lab.hatenablog.com/entry/2026/06/30/130000",
+          "scores": {
+            "total": 17,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "hatena-ai-30",
@@ -1158,7 +1158,13 @@
           "url": "https://digital.asahi.com/articles/ASV6V15JYV6VDIFI00TM.html",
           "published_at": "2026-07-01",
           "lang": "ja",
-          "score": {
+          "summary_ja": "朝日新聞デジタルの記事（はてブ89ユーザー）。1994年に完結した宮崎駿の漫画版「風の谷のナウシカ」が、AIへの依存と人間性の喪失というテーマで現代の生成AI問題を予見していたという論考。「AIに人生を相談する人がいる」時代の到来と、それへの依存が何を意味するかを「ナウシカ」の物語を通じて問いかける内容が、現在のAIブームの中で共鳴を呼んでいる。",
+          "key_points_ja": [
+            "1994年完結の宮崎駿漫画版ナウシカが生成AIへの依存・人間性喪失問題を先取りしていたとの論考",
+            "「便利で優しくていつでもそばにいてくれるAIに頼ることの何がいけないのか」という問いを作品から掘り起こす",
+            "はてブ89ユーザー——AI社会論への文化的・文学的視点に対する日本コミュニティの関心の高さ"
+          ],
+          "scores": {
             "total": 14,
             "importance": 4,
             "depth": 4,
@@ -1166,13 +1172,7 @@
             "freshness": 4,
             "source_type_bias": 0,
             "reaction_boost": 1
-          },
-          "summary_ja": "朝日新聞デジタルの記事（はてブ89ユーザー）。1994年に完結した宮崎駿の漫画版「風の谷のナウシカ」が、AIへの依存と人間性の喪失というテーマで現代の生成AI問題を予見していたという論考。「AIに人生を相談する人がいる」時代の到来と、それへの依存が何を意味するかを「ナウシカ」の物語を通じて問いかける内容が、現在のAIブームの中で共鳴を呼んでいる。",
-          "key_points_ja": [
-            "1994年完結の宮崎駿漫画版ナウシカが生成AIへの依存・人間性喪失問題を先取りしていたとの論考",
-            "「便利で優しくていつでもそばにいてくれるAIに頼ることの何がいけないのか」という問いを作品から掘り起こす",
-            "はてブ89ユーザー——AI社会論への文化的・文学的視点に対する日本コミュニティの関心の高さ"
-          ]
+          }
         },
         {
           "id": "itmedia_ai-llm-sarashina3",
@@ -1184,7 +1184,13 @@
           "url": "https://itmedia.co.jp/aiplus/article/2606/30/2000000143",
           "published_at": "2026-07-01",
           "lang": "ja",
-          "score": {
+          "summary_ja": "ソフトバンク傘下のSB IntuitionsはSarashina3シリーズの提供を開始した。高品質な日本語データセットと独自の出力結果検証によって日本語能力を強化した国産LLMで、Sarashinaシリーズの最新版となる。",
+          "key_points_ja": [
+            "ソフトバンク傘下SB IntuitionsによるSarashina3シリーズが提供開始——Sarashinaシリーズの最新版",
+            "高品質日本語データセットと独自の出力検証機構により日本語能力を強化",
+            "国産LLMの品質向上競争——ソフトバンクグループのAI戦略の一環"
+          ],
+          "scores": {
             "total": 13,
             "importance": 4,
             "depth": 3,
@@ -1192,13 +1198,7 @@
             "freshness": 4,
             "source_type_bias": 0,
             "reaction_boost": 0
-          },
-          "summary_ja": "ソフトバンク傘下のSB IntuitionsはSarashina3シリーズの提供を開始した。高品質な日本語データセットと独自の出力結果検証によって日本語能力を強化した国産LLMで、Sarashinaシリーズの最新版となる。",
-          "key_points_ja": [
-            "ソフトバンク傘下SB IntuitionsによるSarashina3シリーズが提供開始——Sarashinaシリーズの最新版",
-            "高品質日本語データセットと独自の出力検証機構により日本語能力を強化",
-            "国産LLMの品質向上競争——ソフトバンクグループのAI戦略の一環"
-          ]
+          }
         },
         {
           "id": "lycorp-sim-use",
@@ -1210,15 +1210,6 @@
           "url": "https://techblog.lycorp.co.jp/ja/20260701b",
           "published_at": "2026-07-01",
           "lang": "ja",
-          "score": {
-            "total": 15,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "LINEヤフーのAIデベロッパーエクスペリエンスチームが、AIエージェントの開発・検証ループに組み込むためのツール「sim-use」を公開した。エージェントに「目」（視覚・画面認識）と「手」（UI操作能力）を持たせることで、UIを持つアプリケーションのエージェント化を支援する。LINEアプリ開発SBUのAIディベロッパーエクスペリエンスチームによる開発で、AIエージェントの実環境での検証効率化を目指す。",
           "key_points_ja": [
             "AIエージェントに視覚（目）とUI操作能力（手）を提供する開発・検証ツール——画面認識とインターフェース操作を可能に",
@@ -1257,6 +1248,15 @@
               "impact": "UIを持つアプリケーションの自動テスト・QA・エージェント化において、視覚+操作を組み合わせた新しいアプローチが実用化される。大規模な組織でのAIエージェント開発効率化に貢献する。"
             },
             "alt": "sim-useの概要：LINEヤフーが公開したAIエージェント開発・検証ツール。エージェントに視覚（画面認識）とUI操作能力（手）を与え、UIを持つアプリケーションの開発・検証ループへのエージェント統合を可能にする"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -1275,7 +1275,13 @@
           "url": "https://qbitai.com/2026/07/441225.html",
           "published_at": "2026-07-01",
           "lang": "zh",
-          "score": {
+          "summary_ja": "量子位QbitAIによると、「AIがいかに世界を反復シミュレートするか」という世界モデル研究の論文が、中国のスタートアップ「Loop」からHugging Faceに公開され、論文週間トレンドで首位を獲得した。360グループの周鸿祎氏と元Microsoft副社長・百度最高官の陸奇氏がともに出資していることでも注目を集めている。",
+          "key_points_ja": [
+            "世界シミュレーション手法を革新するLoopの世界モデル論文がHugging Face週間論文トレンドで首位",
+            "中国スタートアップに周鸿祎（360グループ創業者）・陸奇（元Microsoft副社長・百度CTO）が出資",
+            "AIによる世界の反復推演（反事実シミュレーション）のパラダイムを書き換えると主張"
+          ],
+          "scores": {
             "total": 13,
             "importance": 3,
             "depth": 3,
@@ -1283,13 +1289,7 @@
             "freshness": 4,
             "source_type_bias": 0,
             "reaction_boost": 0
-          },
-          "summary_ja": "量子位QbitAIによると、「AIがいかに世界を反復シミュレートするか」という世界モデル研究の論文が、中国のスタートアップ「Loop」からHugging Faceに公開され、論文週間トレンドで首位を獲得した。360グループの周鸿祎氏と元Microsoft副社長・百度最高官の陸奇氏がともに出資していることでも注目を集めている。",
-          "key_points_ja": [
-            "世界シミュレーション手法を革新するLoopの世界モデル論文がHugging Face週間論文トレンドで首位",
-            "中国スタートアップに周鸿祎（360グループ創業者）・陸奇（元Microsoft副社長・百度CTO）が出資",
-            "AIによる世界の反復推演（反事実シミュレーション）のパラダイムを書き換えると主張"
-          ]
+          }
         },
         {
           "id": "qbitai-transformer-10",
@@ -1301,7 +1301,13 @@
           "url": "https://qbitai.com/2026/07/441183.html",
           "published_at": "2026-07-01",
           "lang": "zh",
-          "score": {
+          "summary_ja": "量子位QbitAIによると、Andrej Karpathy氏、李飛飛氏、Geoffrey Hinton氏が出資するTransformer専用AIチップが、10億ドル相当の大型受注を獲得した。すでに流片（テープアウト）が完了しており、量産への移行準備が整いつつある。",
+          "key_points_ja": [
+            "Karpathy・李飛飛・ヒントンという錚々たる顔ぶれが出資するTransformer専用チップが10億ドルの受注を獲得",
+            "すでに流片（テープアウト）完了——量産フェーズへの移行準備が整う",
+            "米中を問わずTransformer専用ハードウェアの開発・投資競争が加速"
+          ],
+          "scores": {
             "total": 13,
             "importance": 4,
             "depth": 3,
@@ -1309,13 +1315,7 @@
             "freshness": 4,
             "source_type_bias": 0,
             "reaction_boost": 0
-          },
-          "summary_ja": "量子位QbitAIによると、Andrej Karpathy氏、李飛飛氏、Geoffrey Hinton氏が出資するTransformer専用AIチップが、10億ドル相当の大型受注を獲得した。すでに流片（テープアウト）が完了しており、量産への移行準備が整いつつある。",
-          "key_points_ja": [
-            "Karpathy・李飛飛・ヒントンという錚々たる顔ぶれが出資するTransformer専用チップが10億ドルの受注を獲得",
-            "すでに流片（テープアウト）完了——量産フェーズへの移行準備が整う",
-            "米中を問わずTransformer専用ハードウェアの開発・投資競争が加速"
-          ]
+          }
         }
       ]
     }

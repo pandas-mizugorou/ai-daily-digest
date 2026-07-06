@@ -60,8 +60,11 @@ async function main() {
           source: it.source ?? "",
           source_label: it.source_label ?? it.source ?? "",
           category: cat.id ?? it.category ?? "",
+          source_type: it.source_type ?? "",
           lang: it.lang ?? "en",
-          score: it.scores?.total ?? 0,
+          // 正準は scores だが過去データの `score` 単数ドリフトにも防御 (normalize 失敗時の保険)。
+          // スコア欠落日 (例: 2026-06-26) は 0 と区別するため null にする (UI 側で非表示)
+          score: it.scores?.total ?? it.score?.total ?? null,
           // Top Picks のみ持つ X 投稿文 (無い item は付けない)
           ...(typeof it.x_post === "string" && it.x_post.trim()
             ? { x_post: it.x_post }
@@ -78,8 +81,8 @@ async function main() {
     return;
   }
 
-  // 新しい日付 → 古い日付、同日は score 降順
-  items.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : b.score - a.score));
+  // 新しい日付 → 古い日付、同日は score 降順 (score 欠落 null は最後尾)
+  items.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : (b.score ?? -1) - (a.score ?? -1)));
 
   const allTags = [...tagCount.entries()]
     .map(([tag, count]) => ({ tag, count }))

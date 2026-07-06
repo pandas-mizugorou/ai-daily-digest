@@ -21,6 +21,24 @@ import { normalizeFigure } from "../assets/figure-normalize.js";
 const DATA_DIR = "data";
 const DATE_RE = /^(\d{4}-\d{2}-\d{2})\.json$/;
 
+// item レベルのフィールド名ドリフトを正準化する。
+// LLM 出力が日によって `score` (単数) と `scores` (複数) で揺れた実績があり
+// (2026-06-18〜20, 06-28〜07-02 の 8 日間)、読み手 (app.js / build-search-index /
+// app-weekly) は全員 `scores` を読むため、単数側の日は UI 全体で 0/20 表示になる。
+// 正準名は `scores`。値は変更しない (名前の付け替えのみ・創作禁止)。
+function normalizeItemFields(item) {
+  let changed = 0;
+  if (
+    item.score && typeof item.score === "object" && !Array.isArray(item.score) &&
+    (item.scores == null || typeof item.scores !== "object")
+  ) {
+    item.scores = item.score;
+    delete item.score;
+    changed++;
+  }
+  return changed;
+}
+
 // obj 以下を再帰し、`figure` (object かつ string type を持つ) を見つけたら正規化して置換。
 // 変更があった件数を返す。
 function normalizeFiguresInPlace(root, refNow) {
@@ -68,10 +86,17 @@ async function processFile(file) {
   const refNow = data && typeof data.date === "string" && !isNaN(Date.parse(data.date))
     ? Date.parse(data.date)
     : undefined;
-  const changed = normalizeFiguresInPlace(data, refNow);
+  let changed = normalizeFiguresInPlace(data, refNow);
+  // item フィールドの正準化は figure の有無に依存させず、全 categories[].items[] を明示走査
+  // (figure を持たない item の score ドリフトを取りこぼさないため)
+  for (const cat of Array.isArray(data?.categories) ? data.categories : []) {
+    for (const item of Array.isArray(cat?.items) ? cat.items : []) {
+      if (item && typeof item === "object") changed += normalizeItemFields(item);
+    }
+  }
   if (changed > 0) {
     await writeFile(file, JSON.stringify(data, null, 2) + "\n", "utf8");
-    console.log(`[normalize] ${file}: ${changed} 件の figure を正準化`);
+    console.log(`[normalize] ${file}: ${changed} 件を正準化 (figure + item フィールド)`);
   } else {
     console.log(`[normalize] ${file}: 変更なし (既に正準 or figure なし)`);
   }
@@ -103,7 +128,7 @@ async function main() {
     const r = await processFile(f);
     total += r.changed;
   }
-  console.log(`[normalize] 完了: 合計 ${total} 件の figure を正準化 (${files.length} ファイル)`);
+  console.log(`[normalize] 完了: 合計 ${total} 件を正準化 (${files.length} ファイル)`);
 }
 
 main().catch((err) => {

@@ -68,15 +68,6 @@
           "url": "https://theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "米上院のエリザベス・ウォーレン議員（民主・マサチューセッツ州）と下院のメアリー・ゲイ・スキャンロン議員（民主・ペンシルベニア州）が数週間以内に「健康・位置情報保護法」の新版を公表する計画だ。同法案は健康情報・位置情報をデータブローカーに売却することを禁じるが、AIチャットボット（ChatGPT・Claudeなど）にユーザーが開示した情報も売却禁止の対象として明記する。",
           "key_points_ja": [
             "ウォーレン上院議員・スキャンロン下院議員が「健康・位置情報保護法」新版を数週間以内に公表予定",
@@ -108,6 +99,15 @@
               ]
             },
             "alt": "米「健康・位置情報保護法」新版の概要：Warren/Scanlonが準備するAIチャットボット健康情報保護法案。ChatGPT/Claude利用者がAIに開示した健康・位置情報のデータブローカーへの売却を禁止"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -120,15 +120,6 @@
           "url": "https://itmedia.co.jp/news/articles/2606/28/news019.html",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 14,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "米商務長官ハワード・ラトニック氏がAnthropicに宛てた6月26日付書簡に基づき、米政府がAnthropicの「Claude Mythos 5」について信頼できる一部パートナーへの提供を認めることを容認した。Anthropicが「対象モデルに関するリスクへの対応に取り組んできた」進展が評価されたという（米CNNなどの報道）。「Fable 5」については引き続き停止が継続する。",
           "key_points_ja": [
             "ラトニック商務長官の6月26日付書簡でMythosの信頼パートナー向け再開を容認（米CNNなどが報道）",
@@ -160,6 +151,15 @@
               ]
             },
             "alt": "米政府によるAnthropicのMythos輸出規制一部緩和の概要。ラトニック商務長官書簡でClaude Mythos 5の信頼パートナー向け再開容認、Fable 5は停止継続"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -178,15 +178,6 @@
           "url": "https://gigazine.net/news/20260629-ornith-agentic-coding-ai",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 15,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "AI研究組織DeepReinforceがコーディングAIモデルファミリー「Ornith-1.0」をオープンウェイトとして公開した。最上位モデルのOrnith-1.0-397Bは複数のベンチマークテストでClaude Opus 4.7を上回るスコアを報告している。「Self-Scaffolding LLMs for Agentic Coding」というアプローチで、エージェントコーディングに特化した設計だ。ローカル環境で動作可能な小型モデルもラインナップされており、DeepReinforceのブログで詳細が公開されている。",
           "key_points_ja": [
             "Ornith-1.0-397B：複数ベンチマークでClaude Opus 4.7を上回るスコアをDeepReinforceが報告",
@@ -219,7 +210,16 @@
             },
             "alt": "DeepReinforceのOrnith-1.0-397BはClaude Opus 4.7超えのオープンウェイトコーディングAIモデル。Self-Scaffolding LLMs for Agentic Codingアプローチでローカル動作可能な小型モデルも公開"
           },
-          "x_post": "AI研究組織DeepReinforceがコーディングAI「Ornith-1.0」をオープンウェイトで公開した。最上位の397Bモデルは複数のベンチマークでClaude Opus 4.7を上回ると報告されており、ローカル動作向けの小型モデルもラインナップされている。\n\nhttps://gigazine.net/news/20260629-ornith-agentic-coding-ai"
+          "x_post": "AI研究組織DeepReinforceがコーディングAI「Ornith-1.0」をオープンウェイトで公開した。最上位の397Bモデルは複数のベンチマークでClaude Opus 4.7を上回ると報告されており、ローカル動作向けの小型モデルもラインナップされている。\n\nhttps://gigazine.net/news/20260629-ornith-agentic-coding-ai",
+          "scores": {
+            "total": 15,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
+          }
         },
         {
           "id": "theverge-china-s-z-ai-claims-it-can-match-mythos-on-cyber",
@@ -231,15 +231,6 @@
           "url": "https://theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
           "published_at": "2026-06-29",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "中国のZhipu AI（Z.ai）がオープンウェイトモデル「GLM-5.2」を公開した。一部の研究者が、特定のバグ発見・サイバーセキュリティシナリオでGLM-5.2がClaude Mythosに匹敵するパフォーマンスを示すと報告している。一般的なタスクではAnthropicやOpenAIのモデルに差があるものの、特定ドメインでの能力差を中国が劇的に縮めているとThe Vergeは報じた。",
           "key_points_ja": [
             "Zhipu AI（Z.ai）がGLM-5.2をオープンウェイトで公開",
@@ -271,6 +262,15 @@
               ]
             },
             "alt": "Zhipu AIのGLM-5.2：特定のバグ発見・サイバーセキュリティタスクでClaude Mythosに匹敵すると研究者が報告。オープンウェイトで公開"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -289,15 +289,6 @@
           "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 4,
-            "depth": 2,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Cursorがコーディングエージェントをリモートで監視・誘導するためのモバイルアプリを公開した。外出先からCursorが実行するコーディングエージェントの進捗を確認し、指示を与えることができる。TechCrunchは「remote oversight over coding agents（コーディングエージェントのリモート監視）」のためのアプリと報じた。",
           "key_points_ja": [
             "Cursorがコーディングエージェントのリモート監視・誘導用モバイルアプリを公開",
@@ -320,6 +311,15 @@
               ]
             },
             "alt": "Cursorのモバイルアプリ公開：外出先からコーディングエージェントをリモート監視・誘導できる新機能（TechCrunch報道）"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 4,
+            "depth": 2,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -338,15 +338,6 @@
           "url": "https://arxiv.org/abs/2606.28270v1",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "自律エージェントが持続的メモリ・ツール使用プロトコル・マルチエージェント協調を持つようになり、AIの脅威ランドスケープが根本的に拡大した。境界セキュリティや学習時アライメントはエージェントの推論ループの外側に存在するため不十分であり、メモリポイズニング・ツールチェーン操作・マルチエージェントプロトコル攻撃に対しては完全なアライメントを持つエージェントでさえ脆弱だと本論文は指摘する。この課題に対処するためにANIS（Agent-Native Immune System）を導入し、アーキテクチャ・分類体系・エンジニアリング手法を提示した。",
           "key_points_ja": [
             "境界セキュリティとアライメントはランタイム攻撃（メモリポイズニング・ツールチェーン操作・マルチエージェントプロトコル攻撃）に対して不十分",
@@ -379,7 +370,16 @@
             },
             "alt": "arXiv論文ANIS：エージェント固有の免疫システム。メモリポイズニング・ツールチェーン操作・マルチエージェントプロトコル攻撃に対し境界セキュリティとアライメントは不十分であるとして推論ループ内ランタイム防御を提案"
           },
-          "x_post": "自律エージェント向けランタイム防御フレームワーク「ANIS」を提案したarXiv論文。境界セキュリティやアライメントは不十分であり、メモリポイズニング・ツールチェーン操作などのランタイム攻撃に対応する「免疫システム」が必要だと論じる。\n\nhttps://arxiv.org/abs/2606.28270v1"
+          "x_post": "自律エージェント向けランタイム防御フレームワーク「ANIS」を提案したarXiv論文。境界セキュリティやアライメントは不十分であり、メモリポイズニング・ツールチェーン操作などのランタイム攻撃に対応する「免疫システム」が必要だと論じる。\n\nhttps://arxiv.org/abs/2606.28270v1",
+          "scores": {
+            "total": 15,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "hatena-ai-flue",
@@ -391,15 +391,6 @@
           "url": "https://azukiazusa.dev/blog/ai-agent-framework-flue",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 18,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "FlueはAIエージェントを構築するためのTypeScriptフレームワークで、ハーネス駆動のアーキテクチャを採用している。記事ではSREエージェントを構築する例を通じてFlueの機能を解説しており、TypeScriptでAIエージェントを実装したい開発者に実用的な情報を提供している。はてブ137usersを獲得し、日本のAIエンジニアコミュニティで注目を集めた。",
           "key_points_ja": [
             "Flue：AIエージェント構築用TypeScriptフレームワーク、ハーネス駆動アーキテクチャを採用",
@@ -431,6 +422,15 @@
               ]
             },
             "alt": "Flue：AIエージェント構築用TypeScriptフレームワークの紹介記事。ハーネス駆動アーキテクチャでSREエージェントを構築する実装例を解説、はてブ137usersを獲得"
+          },
+          "scores": {
+            "total": 18,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 2
           }
         }
       ]
@@ -449,15 +449,6 @@
           "url": "https://arxiv.org/abs/2606.28249v1",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "LLMベースのTTSモデルは自然さが向上したが、SFT（教師あり微調整）は統計的に平均化された韻律に収束し感情表現が制限される。選好最適化には2つの構造的不一致がある：情報競合（コンテンツと感情が共有潜在空間で競合する勾配が発生し、報酬ハッキングと意味劣化を引き起こす）とスケールギャップ（文レベルの疎な報酬では単語単位の韻律誘導が困難）だ。HPROはこれらを階層的漸進報酬最適化で解決する。",
           "key_points_ja": [
             "SFTで感情TTSが平均的な韻律に収束する問題に選好最適化で対処",
@@ -489,6 +480,15 @@
               ]
             },
             "alt": "arXiv論文HPRO：感情音声合成のLLMベースTTSにおける選好最適化の課題（情報競合・スケールギャップ）を階層的漸進報酬最適化で解決するフレームワーク"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -501,15 +501,6 @@
           "url": "https://arxiv.org/abs/2606.28273v1",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "視覚言語モデル（VLM）は視覚情報と記憶した世界知識が矛盾した場合にどう振る舞うか。3つのVLMファミリーに対して活性化パッチングを3粒度（残差ストリーム・アテンションヘッド・MLPサブレイヤー）で適用した結果、デフォルトでは視覚情報でグラウンディングされるが、事前知識へのグラウンディングは「因果的に必要な少数のアテンションヘッド」に依存することが判明した。",
           "key_points_ja": [
             "VLMは視覚情報と事前知識が矛盾した場合、デフォルトでは視覚情報を優先——3VLMファミリー横断で確認",
@@ -541,6 +532,15 @@
               ]
             },
             "alt": "arXiv論文「視覚優先・事前知識優先」：VLMの知覚-世界知識競合を3VLMファミリー横断で活性化パッチング分析。デフォルト視覚優先、事前知識切替は少数アテンションヘッドが担うと判明"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -559,15 +559,6 @@
           "url": "https://arxiv.org/abs/2606.28235v1",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "自律コーディングエージェントが共有リポジトリでPRを大規模に開いてマージする時代になったが、評価はいまも「エージェント単体・隔離タスク」で行われている。各エージェントが個別テストを通過しても、リポジトリには単一の貢献では説明できない問題が蓄積する。本論文はこの問題がエージェント個体に帰属するか、リポジトリに帰属するかを問い、「integration friction（統合摩擦コスト）」——他の貢献者が並行変更中のコードベースへ貢献を統合するコスト——を測定指標として研究する。",
           "key_points_ja": [
             "自律エージェントのPR評価は「エージェント単体×隔離タスク」——リポジトリ全体の蓄積リスクを見落とす",
@@ -600,7 +591,16 @@
             },
             "alt": "arXiv論文「リポジトリを統治せよ」：自律コーディングエージェントのエコシステムレベルリスクをintegration friction（統合摩擦コスト）で測定。ガバナンス単位をエージェントからリポジトリへ転換することを提言"
           },
-          "x_post": "コーディングエージェントの評価を「エージェント単体」から「リポジトリ単位」へ転換することを提言したarXiv論文。個別テストを通過しても並行変更によって蓄積するリポジトリ全体の「統合摩擦コスト（integration friction）」を指標として提案した。\n\nhttps://arxiv.org/abs/2606.28235v1"
+          "x_post": "コーディングエージェントの評価を「エージェント単体」から「リポジトリ単位」へ転換することを提言したarXiv論文。個別テストを通過しても並行変更によって蓄積するリポジトリ全体の「統合摩擦コスト（integration friction）」を指標として提案した。\n\nhttps://arxiv.org/abs/2606.28235v1",
+          "scores": {
+            "total": 15,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "arxiv-agentic-hardware-design-as-repository-level-code",
@@ -612,15 +612,6 @@
           "url": "https://arxiv.org/abs/2606.28279v1",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "ハードウェア設計（RTL/Verilog）の自律化フレームワーク「HORIZON」が発表された。Markdownハーネスをプロジェクトパック（ドメイン知識・実行可能評価器・受入判定条件・git/ランタイムポリシー）にコンパイルし、ハンズフリーのエージェントループが孤立したgitワークツリーを進化させる。リポジトリ操作を状態管理・トレーシング・リプレイに使用する設計だ。ChipBench・RTLLM・Verilog-Evalなどのベンチマークで評価した。",
           "key_points_ja": [
             "HORIZON：ハードウェア設計をリポジトリ規模の自律コード進化として扱うエージェントフレームワーク",
@@ -652,6 +643,15 @@
               ]
             },
             "alt": "arXiv論文HORIZON：ハードウェア設計をリポジトリ規模の自律コード進化として解くエージェントフレームワーク。Markdownハーネスからプロジェクトパックを生成し、ChipBench等で評価"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -670,15 +670,6 @@
           "url": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 12,
-            "importance": 4,
-            "depth": 2,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "人気AIモデルリーダーボード「Arena」を運営するスタートアップが1億ドル規模のビジネスへと成長した。同スタートアップは人気の無料AIリーダーボードを運営しているが、昨年9月（2025年9月）に商用サービスを開始してから急成長している。",
           "key_points_ja": [
             "Arenaスタートアップが1億ドル規模のビジネスへ成長",
@@ -705,6 +696,15 @@
               ]
             },
             "alt": "ArenaスタートアップのAIリーダーボードビジネス成長：昨年9月の商用サービス開始から1億ドル規模のビジネスへ（TechCrunch報道）"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 4,
+            "depth": 2,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -717,15 +717,6 @@
           "url": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 11,
-            "importance": 3,
-            "depth": 2,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "音楽ストリーミングサービスTIDALがAI生成楽曲の収益化を停止する新ポリシーを発表した。TIDALの新ポリシーによりAI生成音楽がサービス上で収益を得ることができなくなる。",
           "key_points_ja": [
             "TIDALがAI生成楽曲の収益化を停止する新ポリシーを発表",
@@ -748,6 +739,15 @@
               ]
             },
             "alt": "TIDALがAI生成楽曲の収益化を停止する新ポリシーを発表。AI音楽はTIDAL上での収益化が不可能に（TechCrunch報道）"
+          },
+          "scores": {
+            "total": 11,
+            "importance": 3,
+            "depth": 2,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -766,15 +766,6 @@
           "url": "https://lesswrong.com/posts/bpBYm5jiS4tpyzuDS/wsj-article-claiming-china-has-matched-anthropic-is-obvious",
           "published_at": "2026-06-30",
           "lang": "en",
-          "score": {
-            "total": 12,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 1,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "LessWrongで注目を集めた投稿として、WSJの「中国がAnthropicのサイバーセキュリティ能力に匹敵した」という記事への反論が掲載された。投稿者は記事見出しを「明白なナンセンス（Obvious Nonsense）」と断じ、同記事がClaude Opus 4.8がClaude Mythosに「匹敵する」という「さらに明白に誤った（even more obviously false）」主張を明示的に含んでいることも批判した。Gell-Mann Amnesiaを引用し、AIに関する報道の信頼性を疑うよう警告した。",
           "key_points_ja": [
             "WSJ見出し「中国がAnthropicのサイバーセキュリティ能力に匹敵」は「明白なナンセンス」と反論（LessWrong）",
@@ -806,6 +797,15 @@
               ]
             },
             "alt": "LessWrongがWSJの「中国がAnthropicのサイバーセキュリティに匹敵」記事を明白なナンセンスと反論。Claude Opus 4.8がMythosに匹敵という誤主張も指摘し、Gell-Mann Amnesiaを引用してAI報道の信頼性に警鐘"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 1,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -824,15 +824,6 @@
           "url": "https://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 19,
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "ClaudeCodeに設計知識を渡す際にオントロジー（知識構造）を採用した実験記事がZennに投稿され、はてブ239usersを獲得した。著者のKomlock lab VPoE阿部氏は、これまで@でファイルを指定・CLAUDE.mdにルールを追記・.claudeを整備する方法でナレッジを渡してきたが、AIの調子でアウトプット精度にブレが出る課題があったという。オントロジーとして設計知識を構造化して渡すことで、同じナレッジをより安定して活用でき、コストが半分・速度が3倍になる可能性があると実証した。",
           "key_points_ja": [
             "ClaudeCodeへの設計知識渡しにオントロジー（知識構造）を採用——@指定・CLAUDE.mdと異なるアプローチ（Komlock lab VPoE阿部氏）",
@@ -865,7 +856,16 @@
             },
             "alt": "Zenn記事「Claudeにオントロジーを持たせたら、コスト半分・3倍速になるかも」（はてブ239users）：ClaudeCodeへのオントロジー渡しでAPIコスト削減と速度向上を実証"
           },
-          "x_post": "ClaudeCodeへの設計知識渡しに「オントロジー」を採用するとAPIコストが半分・速度が3倍になるかもという実証記事がはてブ239usersを獲得した。@でのファイル指定やCLAUDE.mdと異なるアプローチで出力精度のブレを大幅に軽減できるという。\n\nhttps://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring"
+          "x_post": "ClaudeCodeへの設計知識渡しに「オントロジー」を採用するとAPIコストが半分・速度が3倍になるかもという実証記事がはてブ239usersを獲得した。@でのファイル指定やCLAUDE.mdと異なるアプローチで出力精度のブレを大幅に軽減できるという。\n\nhttps://zenn.dev/takupeso/articles/claude-ontology-knowledge-structuring",
+          "scores": {
+            "total": 19,
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "hatena_it-pdf-1-ocr-unlimited-ocr-ai-technoedge",
@@ -877,15 +877,6 @@
           "url": "https://techno-edge.net/article/2026/06/29/5234.html",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "Baiduの研究チームが開発したエンドツーエンドのOCRモデル「Unlimited OCR」が無料で公開された。数十ページのPDFなど長文を一括処理できる特徴があり、商用利用も可能だ。テクノエッジの紹介記事がはてブ274usersを獲得した。",
           "key_points_ja": [
             "Baiduの研究チームがエンドツーエンドOCRモデル「Unlimited OCR」を無料公開",
@@ -918,7 +909,16 @@
             },
             "alt": "BaiduのUnlimited OCR無料公開：数十ページのPDF一括処理が可能なエンドツーエンドOCRモデル。商用利用可能、テクノエッジ紹介記事がはてブ274users獲得"
           },
-          "x_post": "BaiduがエンドツーエンドのローカルOCRモデル「Unlimited OCR」を無料公開した。数十ページのPDFを1回で処理でき、商用利用も可能だ。テクノエッジの紹介記事がはてブ274usersを獲得している。\n\nhttps://techno-edge.net/article/2026/06/29/5234.html"
+          "x_post": "BaiduがエンドツーエンドのローカルOCRモデル「Unlimited OCR」を無料公開した。数十ページのPDFを1回で処理でき、商用利用も可能だ。テクノエッジの紹介記事がはてブ274usersを獲得している。\n\nhttps://techno-edge.net/article/2026/06/29/5234.html",
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "hatena_it-claude-design",
@@ -930,15 +930,6 @@
           "url": "https://zenn.dev/branbran/articles/5730c47e1abac9",
           "published_at": "2026-06-29",
           "lang": "ja",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "Claude Designの実践的な活用方法を解説したZenn記事がはてブ197usersを獲得した。完成したデザインは.zip/PDF/PPTX/HTML形式でエクスポートでき、Canva・Adobe・Vercelなどへの連携にも対応している。共有リンクには「表示のみ/コメント/編集」のアクセス権を設定して発行できる。既存プロジェクトからデザインシステムを構築するプロトタイピングフローも紹介している。",
           "key_points_ja": [
             "Claude Designの成果物を.zip/PDF/PPTX/HTML形式でエクスポート可能",
@@ -971,7 +962,16 @@
             },
             "alt": "Claude Design実践活用法（はてブ197users）：.zip/PDF/PPTX/HTMLエクスポート、Canva・Adobe・Vercel連携、権限付き共有リンク発行、既存プロジェクトからのデザインシステム構築を解説"
           },
-          "x_post": "Claude Designの実践的な活用法がZennで公開され、はてブ197usersを集めた。完成品は.zip/PDF/PPTX/HTML形式でエクスポートでき、Canva・Adobe・Vercelへの連携や「表示のみ/コメント/編集」の権限付き共有リンク発行にも対応している。\n\nhttps://zenn.dev/branbran/articles/5730c47e1abac9"
+          "x_post": "Claude Designの実践的な活用法がZennで公開され、はてブ197usersを集めた。完成品は.zip/PDF/PPTX/HTML形式でエクスポートでき、Canva・Adobe・Vercelへの連携や「表示のみ/コメント/編集」の権限付き共有リンク発行にも対応している。\n\nhttps://zenn.dev/branbran/articles/5730c47e1abac9",
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "hatena-claude-code-ai-document-skills-pdf-excel-word-po",
@@ -983,15 +983,6 @@
           "url": "https://qiita.com/4q_sano/items/2c9d2686bdbc5e085191",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 18,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "Claude Codeの公式「document-skills」を活用してPDF・Excel・Word・PowerPointなどのドキュメントを自動生成する方法をQiitaに投稿した記事がはてブ128usersを獲得した。Claude Codeをコード生成ツールとしてだけでなく、ドキュメント自動化ツールとして活用するアプローチを紹介している。",
           "key_points_ja": [
             "Claude Code公式document-skillsでPDF・Excel・Word・PowerPointの自動生成が可能",
@@ -1019,6 +1010,15 @@
               ]
             },
             "alt": "Claude Code公式document-skillsの活用法（はてブ128users）：PDF・Excel・Word・PowerPoint自動生成でコード生成を超えたドキュメント業務自動化を実現"
+          },
+          "scores": {
+            "total": 18,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 2
           }
         },
         {
@@ -1031,15 +1031,6 @@
           "url": "https://github.com/hirokawaguchi/open-genai",
           "published_at": "2026-06-28",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "デジタル庁がオープンソースで公開したガバメントAI「源内（GENAI）」を完全ローカル環境・ローカルLLM（OpenAI互換API）で動かすための非公式フォークプロジェクト「open-genai」がGitHubで公開されはてブ89usersを集めた。SAML認証（Keycloak）・RAG（Qdrant）・文字起こし（Whisper）・画像生成（Stable Diffusion）・チーム単位ナレッジ管理をすべてローカルで完結させる。",
           "key_points_ja": [
             "デジタル庁「源内（GENAI）」のローカル動作用非公式フォーク「open-genai」をGitHubに公開",
@@ -1071,6 +1062,15 @@
               ]
             },
             "alt": "GitHub open-genaiプロジェクト（はてブ89users）：デジタル庁「源内(GENAI)」をSAML認証・RAG・Whisper・Stable Diffusionを含む完全ローカル環境で動かす非公式フォーク"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         }
       ]
@@ -1089,15 +1089,6 @@
           "url": "https://qbitai.com/2026/06/439863.html",
           "published_at": "2026-06-29",
           "lang": "zh",
-          "score": {
-            "total": 12,
-            "importance": 4,
-            "depth": 2,
-            "practicality": 1,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "中国AIメディア「量子位（QbitAI）」によると、DeepSeekの梁文峰（Liang Wenfeng）氏がClaude Mythosの存在が融資決断の決め手になったと語ったという。記事のraw_excerptには「DeepSeek不储备弹药根本没法打下去了（弾薬を蓄えなければ戦えない）」という表現が見られ、Mythosが中国AI業界の競争戦略に直接影響を与えていることを示すエピソードとして報じられた。",
           "key_points_ja": [
             "DeepSeek梁文峰氏：「Claude Mythosの存在が融資決断の決め手」と発言（QbitAI報道）",
@@ -1125,6 +1116,15 @@
               ]
             },
             "alt": "QbitAI報道：DeepSeek梁文峰氏がClaude Mythosの存在を融資決断の決め手と発言。「弾薬を蓄えなければ戦えない」という表現でMythosが中国AI業界の競争戦略に直接影響を与えていることを示すエピソード"
+          },
+          "scores": {
+            "total": 12,
+            "importance": 4,
+            "depth": 2,
+            "practicality": 1,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]

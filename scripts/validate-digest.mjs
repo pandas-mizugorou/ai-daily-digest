@@ -145,7 +145,26 @@ async function processFile(file) {
     r.errors.forEach((m) => errors.push({ id, type: figure.type, msg: m }));
     r.warnings.forEach((m) => warnings.push({ id, type: figure.type, msg: m }));
   }
+
+  // item レベルのフィールドドリフト検知 (score 単数化・tags 消失は実際に起きた回帰)。
+  // 機械修復できる残存 (score 単数) は error、欠落は生成側で直すべき品質 warning。
+  for (const cat of Array.isArray(data?.categories) ? data.categories : []) {
+    for (const it of Array.isArray(cat?.items) ? cat.items : []) {
+      if (!it || typeof it !== "object") continue;
+      const id = isStr(it.id) ? it.id : "(no id)";
+      if (it.score !== undefined) errors.push({ id, type: "item", msg: "score (単数) が残存 — 正準は scores。normalize-digest を通すこと" });
+      if (typeof (it.scores?.total) !== "number") warnings.push({ id, type: "item", msg: "scores.total 欠落 (スコアチップが表示されない)" });
+      if (!Array.isArray(it.tags) || it.tags.length === 0) warnings.push({ id, type: "item", msg: "tags 欠落 (タグ導線・検索タグ絞り込みに乗らない)" });
+    }
+  }
   const summaryCardShare = figs.length ? (byType["summary-card"] || 0) / figs.length : 0;
+  // 型ミックス制約 (figure-design.md): summary-card 偏重は図解の価値を失う (実測 57%→81% の悪化)
+  if (figs.length >= 5 && summaryCardShare > 0.6) {
+    warnings.push({
+      id: "(day)", type: "figure-mix",
+      msg: `summary-card 比率 ${Math.round(summaryCardShare * 100)}% が上限 60% 超 (視覚3型への振り直しを検討)`,
+    });
+  }
   const report = {
     file,
     checked_figures: figs.length,

@@ -63,15 +63,6 @@
           "url": "https://theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "AnthropicのClaude Mythos 5がトランプ政権との2週間に及ぶ交渉を経て、米国の一部組織向けに提供を再開した。The Vergeが確認した政府からAnthropicへの書簡によれば、アクセスが認められたのは100以上の米国企業および政府機関とされる。一方、一般公開されているパブリック版「Claude Fable 5」の提供再開は認められておらず、引き続き利用できない状態が続いている。OpenAIのGPT-5.6も同日に限定公開となり、米政府がフロンティアAIモデルへのアクセスを個別に管理するという新たな体制が事実上確立しつつある。",
           "key_points_ja": [
             "Mythos 5は6月12日から提供停止、2週間の交渉を経て6月26日に限定再提供",
@@ -105,7 +96,16 @@
             },
             "alt": "Anthropic Mythos 5提供再開の概要：2週間のトランプ政権との交渉を経て米国100以上の企業・機関向けに限定再開、Fable 5は非公開継続"
           },
-          "x_post": "AnthropicのMythos 5が2週間の交渉を経て一部の米国企業・機関向けに再提供された。The Vergeが政府書簡を確認。パブリック版のFable 5はまだ非公開。OpenAIのGPT-5.6も同日限定公開されており、米政府がフロンティアAIのアクセスを管理する新体制が確立しつつある。\n\nhttps://theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations"
+          "x_post": "AnthropicのMythos 5が2週間の交渉を経て一部の米国企業・機関向けに再提供された。The Vergeが政府書簡を確認。パブリック版のFable 5はまだ非公開。OpenAIのGPT-5.6も同日限定公開されており、米政府がフロンティアAIのアクセスを管理する新体制が確立しつつある。\n\nhttps://theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
+          "scores": {
+            "total": 15,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         }
       ]
     },
@@ -123,15 +123,6 @@
           "url": "https://latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 19,
-            "importance": 5,
-            "depth": 5,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "OpenAIはGPT-5.6シリーズとして旗艦の「Sol」、バランス型の「Terra」、高速・低価格の「Luna」の3モデルを発表し、信頼できる少数パートナー向けに限定プレビューを開始した。旗艦のSolはコーディングエージェントタスクのサブセットでMythosを上回る性能を示す一方、OpenAIはSolがサイバー攻撃における「Cyber Critical」の閾値を超えないことを強調した。ChromiumとFirefoxのバグを特定し攻撃の原型要素を特定できるが、自律的なエクスプロイトは生成しないという評価結果に基づく。米政府との調整を踏まえ数週間以内に一般公開する計画だが、当面は限定パートナーのみが利用できる。",
           "key_points_ja": [
             "GPT-5.6 Sol：Mythosを上回るコーディングエージェント性能（特定タスクのサブセット）",
@@ -165,7 +156,16 @@
             },
             "alt": "GPT-5.6シリーズ3モデルの概要：旗艦SolはMythosを超えるコーディング性能、Cyber Criticalは超えない設計。Terra（バランス型）・Luna（高速低コスト）で3ティア展開"
           },
-          "x_post": "OpenAIが「GPT-5.6 Sol / Terra / Luna」を限定公開。旗艦のSolはMythosを上回るコーディング性能を持ちながら、Cyber Criticalの閾値は超えない設計。米政府との調整を経て信頼できるパートナーのみへのアクセスで、数週間以内に一般公開予定。\n\nhttps://latent.space/p/ainews-openai-gpt-56-sol-terra-luna"
+          "x_post": "OpenAIが「GPT-5.6 Sol / Terra / Luna」を限定公開。旗艦のSolはMythosを上回るコーディング性能を持ちながら、Cyber Criticalの閾値は超えない設計。米政府との調整を経て信頼できるパートナーのみへのアクセスで、数週間以内に一般公開予定。\n\nhttps://latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
+          "scores": {
+            "total": 19,
+            "importance": 5,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "techcrunch-asian-ai-startups-launch-mythos-like-models-as-a",
@@ -177,15 +177,6 @@
           "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "AnthropicのMythos輸出規制が長引く中、アジアのAIスタートアップがMythos相当の能力を謳うモデルを次々とリリースしている。これらのモデルは輸出規制のリスクなく利用できるため、アジア市場での競争力が高まっている。TechCrunchは、米国のAIラボがこの巨大市場を二度と取り戻せない可能性があると指摘する。政府によるフロンティアAIのアクセス管理が長期化すれば、米国の技術覇権を自ら掘り崩すという逆説的な結果を招く懸念がある。",
           "key_points_ja": [
             "アジアのAIスタートアップがMythos相当能力のモデルをリリース——輸出規制の代替選択肢として注目",
@@ -213,6 +204,15 @@
               ]
             },
             "alt": "米Anthropic輸出規制が長引く中、アジアのAIスタートアップがMythos相当モデルをリリース。米国ラボのアジア市場喪失リスクを指摘するTechCrunch報道"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -231,15 +231,6 @@
           "url": "https://lesswrong.com/posts/jXLi3dhSpSMd7B6z8/just-a-wrapper-how-much-do-scaffolds-matter-1",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 5,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "MITのHans Gundlachら4名による研究が、AIモデルのスキャフォールド（デプロイ時のソフトウェア環境とコンテキスト文書）が性能に与える影響を系統的に定量化した。同一モデルであっても、スキャフォールドの選択によってベンチマーク上の推論効率が最大100倍変わることが判明した。さらに注目すべきは、データ内のコスパばらつきをモデルよりもスキャフォールドのほうが大きく説明するという点だ。同じスキャフォールドがモデルによって異なる効果を示すため、スキャフォールドとモデルの組み合わせ検証が実用上は不可欠となる。",
           "key_points_ja": [
             "スキャフォールドの違いで同一モデルの推論効率が最大100倍異なる（ベンチマーク上）",
@@ -273,7 +264,16 @@
             },
             "alt": "LessWrong掲載の研究によるスキャフォールド性能調査。同一モデルでスキャフォールドが異なると推論効率が最大100倍変わり、コスパのばらつきはモデルよりスキャフォールドが説明する"
           },
-          "x_post": "MIT等の研究でスキャフォールド（AIラッパー）の違いが同一モデルの性能を最大100倍変えることが判明。モデル選択よりスキャフォールドがコスパを左右する。同じスキャフォールドでもモデルによって効果が異なるため組み合わせ検証が必須である。\n\nhttps://lesswrong.com/posts/jXLi3dhSpSMd7B6z8/just-a-wrapper-how-much-do-scaffolds-matter-1"
+          "x_post": "MIT等の研究でスキャフォールド（AIラッパー）の違いが同一モデルの性能を最大100倍変えることが判明。モデル選択よりスキャフォールドがコスパを左右する。同じスキャフォールドでもモデルによって効果が異なるため組み合わせ検証が必須である。\n\nhttps://lesswrong.com/posts/jXLi3dhSpSMd7B6z8/just-a-wrapper-how-much-do-scaffolds-matter-1",
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 5,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "latent_space-ainews-it-s-meta-harness-summer",
@@ -285,15 +285,6 @@
           "url": "https://latent.space/p/ainews-its-meta-harness-summer",
           "published_at": "2026-06-25",
           "lang": "en",
-          "score": {
-            "total": 17,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "エージェントオーケストレーション層の「メタハーネス」が急速に増殖している。ConductorやZed's ACPに始まり、OpenInspect、Cloudflare Flue、Vercel Eve/HarnessAgent、Heypiへと進化した系譜の中で、DatabricksのCTO Matei ZahariaがOSSのOmnigentをリリースした。Omnigentはコーディングや知識作業の任意エージェントを標準化・セキュア・信頼性高・スケーラブルなシステムに接続できるプラガブルアーキテクチャを持つ。フロンティアエコシステムのオープン性を訴えるDatabricksの戦略的布石として注目される。",
           "key_points_ja": [
             "メタハーネスの系譜：Conductor/ACP → OpenInspect → Cloudflare Flue → Vercel Eve/HarnessAgent/Heypi → Omnigent",
@@ -335,6 +326,15 @@
               "impact": "エージェントオーケストレーション層の標準化争いが本格化。OSSのOmnigentが業界標準になるか注目される。"
             },
             "alt": "メタハーネスの進化の系譜：Conductor/ACP（初期）→OpenInspect/Cloudflare Flue（第2世代）→Vercel Eve/HarnessAgent/Heypi（第3世代）→DatabricksのOmnigent（現在）"
+          },
+          "scores": {
+            "total": 17,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -353,15 +353,6 @@
           "url": "https://gigazine.net/news/20260627-hister",
           "published_at": "2026-06-27",
           "lang": "ja",
-          "score": {
-            "total": 18,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "メタ検索エンジンsearxの作者が新たに開発した「Hister」は、ChromeやFirefoxで開いたウェブページをセルフホスト環境に自動保存してインデックスを作成する個人用検索エンジンだ。定期的な自動取得で情報を最新状態に保ち、MCPサーバーとして機能させることでAIとの連携やローカルファイル検索も可能にする。数カ月前に読んだ記事を曖昧なキーワードでも検索できるようになり、自分だけの「第二の記憶」として機能する。完全ローカルで動作し、外部クラウドにデータを送らない点が特徴だ。",
           "key_points_ja": [
             "searxの作者が開発した個人用セルフホスト検索エンジン——Chrome/Firefoxの閲覧履歴を自動保存・インデックス化",
@@ -394,6 +385,15 @@
               ]
             },
             "alt": "HisterはChrome/Firefoxの閲覧ページをセルフホスト環境に自動保存しインデックス化、MCPサーバー化でAI連携とローカルファイル検索を実現する個人用検索エンジン"
+          },
+          "scores": {
+            "total": 18,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -406,15 +406,6 @@
           "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 18,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Sebastian Raschkaが自身のローカルエージェントスタックを解説する実践チュートリアルを公開した。ローカルサーブされたLLMと、推論エンジン/ランタイムサーバー経由で動作するコーディングハーネスを組み合わせたスタックを本番対応レベルで構築する手順を詳解している。過去に多くのリクエストがあったローカルエージェント設定の全体像を図示しており、オープンソースツールとオープンウェイトLLMのみで完結するプライバシー重視の構成だ。API課金なしにコーディングエージェントを継続利用したい開発者に直接適用できる内容となっている。",
           "key_points_ja": [
             "本番対応のローカルコーディングエージェントスタック構築チュートリアル（Sebastian Raschka著）",
@@ -446,6 +437,15 @@
               ]
             },
             "alt": "Sebastian Raschkaによるローカルコーディングエージェント構築チュートリアル。ローカルLLM推論サーバーとコーディングハーネスを組み合わせた本番対応スタックの概要図と構築手順を解説"
+          },
+          "scores": {
+            "total": 18,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -464,15 +464,6 @@
           "url": "https://arxiv.org/abs/2606.27326v1",
           "published_at": "2026-06-26",
           "lang": "en",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "現代の生成ワールドモデルは映像的にリアルな将来のロールアウトを生成できるが、基礎となるダイナミクスから逸脱する「幻覚」が頻発する。本研究はこの幻覚が状態-行動空間のカバレッジが低い領域に集中するという仮説を立て、検証するためにMMBench2（427時間・210タスクの視覚的ワールドモデリングデータセット）と350Mパラメータのワールドモデルを開発した。3種類の異なる幻覚パターンを特定し、軽量なデータ中心のシグナルで検出と軽減が可能であることを示した。",
           "key_points_ja": [
             "ワールドモデルの幻覚は状態-行動空間の低カバレッジ領域に集中——予測可能なパターンを持つ",
@@ -504,6 +495,15 @@
               ]
             },
             "alt": "arXiv論文：生成ワールドモデルの幻覚は予測・防止可能。MMBench2（427時間・210タスク）と350Mパラメータモデルで3パターンの幻覚を特定し、軽量シグナルで検出・軽減できることを実証"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -516,15 +516,6 @@
           "url": "https://qbitai.com/2026/06/439236.html",
           "published_at": "2026-06-27",
           "lang": "zh",
-          "score": {
-            "total": 13,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "中国の杭州を拠点とするチームが、CVPR 2026で最注目とされる方向性においてエッジデバイス上でのストリーミング・マルチモーダルを世界で初めて実現したと発表した。量子位（QbitAI）の報道によれば、VLM-R1に続く同チームの成果であり、クラウド依存なしにエッジ側でリアルタイムのマルチモーダル処理が可能になる。CVPR 2026においてこの方向性がトレンドとして台頭しており、中国発の研究が最前線を走っている。",
           "key_points_ja": [
             "世界初：エッジデバイス（端側）でのストリーミング・マルチモーダル処理を実現",
@@ -552,6 +543,15 @@
               ]
             },
             "alt": "CVPR 2026最注目方向：杭州チームがエッジデバイス上での世界初ストリーミング・マルチモーダルを実現。VLM-R1に続く研究成果で、クラウド不要のリアルタイム処理を達成"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -570,15 +570,6 @@
           "url": "https://latent.space/p/gray-swan",
           "published_at": "2026-06-23",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 3,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "Latent Spaceが、AI安全性企業Gray SwanのZico Kolter（OpenAI取締役・安全保障委員会委員、CMU教授）とMatt Fredrikson（CMU教授）によるポッドキャストを公開した。米政府によるMythosとFableの輸出規制指令を契機に、ジェイルブレイクと間接プロンプトインジェクションが業界の最重要議題に浮上している。両者はHackAPromptなどの先行研究から現在のフロンティアモデルに対する攻撃手法の進化まで、AIセキュリティの現状と今後の方向性を解説する。",
           "key_points_ja": [
             "Mythos/Fable輸出規制を契機にジェイルブレイクと間接プロンプトインジェクションが最重要課題に浮上",
@@ -611,6 +602,15 @@
               ]
             },
             "alt": "Latent SpaceポッドキャストのGray Swan（Zico Kolter・Matt Fredrikson）インタビュー。Mythos/Fable輸出規制後のAIセキュリティ動向、ジェイルブレイクと間接プロンプトインジェクションの急増とGray Swanのアプローチを解説"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 3,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         },
         {
@@ -623,15 +623,6 @@
           "url": "https://arxiv.org/abs/2606.27359v1",
           "published_at": "2026-06-26",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "source_type_bias": 1,
-            "reaction_boost": 0
-          },
           "summary_ja": "ビームサーチやサンプリングなど多くのデコード手法はモデルの出力確率を最大化する方向に動くが、確率が高い出力が実際に正解かどうかを系統的に検証した研究は少ない。本論文はシーケンス確率と正解率の関係を、デコード手法間・ハイパーパラメータ間・モデル間・ベンチマーク間の4軸で定量化した。結果は確率と正解が整合する条件を明確化し、タスク特性に応じたデコード戦略選択の根拠を与える。",
           "key_points_ja": [
             "LLMのシーケンス確率と正解率の関係を4軸（デコード手法・ハイパーパラメータ・モデル・ベンチマーク）で定量化",
@@ -663,6 +654,15 @@
               ]
             },
             "alt": "arXiv論文：LLMのシーケンス確率と正解率の関係を4軸で定量分析。確率最大化（ビームサーチ等）が正解率最大化と一致しない条件を特定し、タスク別のデコード戦略選択に実践的指針を提供"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "source_type_bias": 1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -681,15 +681,6 @@
           "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "OpenAIは米政府の要請を受けてGPT-5.6の一般公開を制限したが、同時にこの政府アクセスプロセスを長期的なデフォルトにすべきでないという公式声明を発表した。OpenAIは「このプロセスは開発者・企業・サイバー防衛者・国際パートナーを含む、必要としているユーザーから最良のツールを奪う」と警告している。政府の要請に従いつつも異議を表明するという対応は、AIガバナンスにおける業界と政府の緊張関係を明確に示している。",
           "key_points_ja": [
             "OpenAIが政府要請に応じGPT-5.6を限定公開——しかし「これを長期デフォルトにすべきでない」と声明",
@@ -722,7 +713,16 @@
             },
             "alt": "OpenAIがGPT-5.6の政府要請による限定公開について「このアクセスプロセスを長期デフォルトにすべきでない」と公式声明。開発者・企業・サイバー防衛者・国際パートナーへの影響を指摘"
           },
-          "x_post": "OpenAIがGPT-5.6公開を政府の要請により制限した上で「この政府アクセスプロセスを長期デフォルトにすべきではない」と声明を出した。開発者・企業・サイバー防衛者・国際パートナーから最良のツールを奪うと指摘。AI規制の境界線を巡る戦いが始まっている。\n\nhttps://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm"
+          "x_post": "OpenAIがGPT-5.6公開を政府の要請により制限した上で「この政府アクセスプロセスを長期デフォルトにすべきではない」と声明を出した。開発者・企業・サイバー防衛者・国際パートナーから最良のツールを奪うと指摘。AI規制の境界線を巡る戦いが始まっている。\n\nhttps://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm",
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
+          }
         },
         {
           "id": "arstechnica_ai-nyt-slams-microsoft-for-building-copyright-infri",
@@ -734,15 +734,6 @@
           "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 4,
-            "practicality": 1,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "ニューヨーク・タイムズはOpenAIとMicrosoftへの著作権訴訟を補訴する申請を行い、Microsoftが世界最強クラスの専用スーパーコンピューターを建設してOpenAIがNYTの著作物を侵害するのを積極的に後押ししたと主張した。この申請は、米最高裁がCox Communicationsの音楽著作権侵害訴訟でSonyを退けた判決後に提出されており、寄与侵害の新基準のもとでMicrosoftの責任を問う戦略的な動きとみられる。",
           "key_points_ja": [
             "NYTがMicrosoftへの著作権訴訟を補訴——「専用スパコン建設でOpenAIの著作権侵害を促進」と主張",
@@ -774,6 +765,15 @@
               ]
             },
             "alt": "NYTがMicrosoftに対する著作権訴訟を補訴。世界最強クラスのスーパーコンピューター建設によってOpenAIのNYT著作権侵害を積極的に後押ししたと主張。最高裁Cox判決後の寄与侵害の新基準を活用"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 4,
+            "practicality": 1,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -792,15 +792,6 @@
           "url": "https://lesswrong.com/posts/MkwL4AcbE44yePEQx/white-house-will-ad-hoc-decide-who-can-individually-access",
           "published_at": "2026-06-26",
           "lang": "en",
-          "score": {
-            "total": 13,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 1,
-            "freshness": 4,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "ホワイトハウスがGPT-5.6へのアクセスを個別かつ不透明なアドホック方式で決定するという新たな事実上の標準が生まれたと、LessWrongの投稿が警告している。「誰がいつどのフロンティアAIモデルにアクセスできるかをホワイトハウスが個別に非公開で決める」という状況は良くないと筆者は断言する。透明で予測可能な手続きを構築するための地ならしを何年もかけてしてこなかった結果が今だと指摘し、AIと米国の将来に関わる重大な転換点と位置づけている。",
           "key_points_ja": [
             "ホワイトハウスがフロンティアAIへの個人・組織のアクセスをアドホックに決定する新体制が事実上成立",
@@ -832,6 +823,15 @@
               ]
             },
             "alt": "LessWrong論考：ホワイトハウスがフロンティアAIアクセスをアドホックに個別決定する新事実上の標準を警告。透明なルールなき意思決定体制は良くないと明言し、AIガバナンスの制度的空白を指摘"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 1,
+            "freshness": 4,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         },
         {
@@ -844,15 +844,6 @@
           "url": "https://reddit.com/r/LocalLLaMA/comments/1ugj1sf/nemotron3super120ba12b_hybrid_mambamoe_holds",
           "published_at": "2026-06-27",
           "lang": "en",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": -1,
-            "reaction_boost": 0
-          },
           "summary_ja": "r/LocalLLaMAのユーザーが、NVIDIAのNemotron-3-Super-120B-A12B（Mamba2+周期的アテンション+MoEのハイブリッドアーキテクチャ）をRTX3090×4枚（71GB）で動作させ、504Kトークンの完全なニードル検索（needle retrieval）を達成したと報告した。Mamba/SSMレイヤーが成長し続けるKVキャッシュの代わりに固定サイズの循環状態を維持するため、長大なコンテキストがほぼ無コストで処理できる。imatrix Q4_K_S量子化を使用し、コンシューマー向け4枚構成で半百万トークンのコンテキストを実現した点が注目される。",
           "key_points_ja": [
             "RTX3090×4枚（計71GB VRAM）でNemotron-3-Super-120Bを動作させ504Kトークンの完全ニードル検索を達成",
@@ -884,6 +875,15 @@
               ]
             },
             "alt": "r/LocalLLaMAのコミュニティ実証：NVIDIA Nemotron-3-Super-120B-A12B（Mamba+MoEハイブリッド）をRTX3090×4枚71GBで動作させ504Kトークンの完全ニードル検索を達成。KVキャッシュ不要のMamba SSM層が実現する長文脈処理"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": -1,
+            "reaction_boost": 0
           }
         }
       ]
@@ -902,15 +902,6 @@
           "url": "https://qiita.com/tehito/items/356e5f1dba112a075be1",
           "published_at": "2026-06-27",
           "lang": "ja",
-          "score": {
-            "total": 21,
-            "importance": 5,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "「CLAUDE.mdは憲法。Skillsは六法全書」という比喩で始まるこのQiita記事が、はてブIT部門で779件のブックマークを獲得して日本のAIエンジニアコミュニティで最大の話題となっている。Claude Codeを使う際に多くの人が犯しがちなミスとして、「特定の作業のときだけ要る知識」をCLAUDE.mdに常時読み込ませるのではなく、Agent Skills（.claude/skills/）に分離して「引かせる」設計が正しいと解説する。指示に複数の作業を詰め込む「全部盛り指示」や、コンテキスト管理の誤りについても具体的に批判している。",
           "key_points_ja": [
             "CLAUDE.md＝憲法（常時適用の原則）、Skills＝六法全書（必要時のみ参照）",
@@ -944,7 +935,16 @@
             },
             "alt": "はてブ779件獲得のQiita記事。CLAUDE.md（憲法）とAgent Skills（六法全書）の使い分けを核に、Claude Codeの正しい運用設計を解説。常時読み込みと引き型読み込みの区別が重要"
           },
-          "x_post": "「CLAUDE.mdは憲法。Skillsは六法全書。」日本のQiita記事がはてブ779件を超えた。Claude Codeを使う際、常時読み込むCLAUDE.mdには原則を、作業特化の知識はAgent Skills(.claude/skills/)に分離して「引かせる」設計が正しい運用である。\n\nhttps://qiita.com/tehito/items/356e5f1dba112a075be1"
+          "x_post": "「CLAUDE.mdは憲法。Skillsは六法全書。」日本のQiita記事がはてブ779件を超えた。Claude Codeを使う際、常時読み込むCLAUDE.mdには原則を、作業特化の知識はAgent Skills(.claude/skills/)に分離して「引かせる」設計が正しい運用である。\n\nhttps://qiita.com/tehito/items/356e5f1dba112a075be1",
+          "scores": {
+            "total": 21,
+            "importance": 5,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 2
+          }
         },
         {
           "id": "hatena_it-ai-pi-coding-agent",
@@ -956,15 +956,6 @@
           "url": "https://blog.lai.so/pi-coding-agent",
           "published_at": "2026-06-27",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "Mario Zechner氏が開発したOSSのターミナル型コーディングエージェント「Pi Coding Agent」を紹介し、不足している機能を自作で追加する方法を解説した記事がはてブ78件を獲得した。Claude Code・Codex・Cursor・OpenCode・Hermes AgentなどコーディングエージェントのOSSが増加する中、Pi Coding Agentはモデルに依存しない軽量なターミナル型として差別化されている。機能が足りなければ自作すればいいという「作って使う」思想が日本のエンジニアに響いている。",
           "key_points_ja": [
             "Pi Coding Agent：Mario Zechner氏開発のOSSターミナル型コーディングエージェント",
@@ -997,6 +988,15 @@
               ]
             },
             "alt": "はてブ78件のOSSコーディングエージェント解説。Pi Coding Agent（Mario Zechner開発）のターミナル型アーキテクチャと、足りない機能を自作で拡張する実践的アプローチを紹介"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -1009,15 +1009,6 @@
           "url": "https://tech.medpeer.co.jp/entry/2026/06/26/122446",
           "published_at": "2026-06-27",
           "lang": "ja",
-          "score": {
-            "total": 16,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 3,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 1
-          },
           "summary_ja": "医療情報サービスのメドピアが2026年6月にClaude Enterpriseの全社導入を完了し、正社員・契約社員あわせて約130名にアカウントを配布したと報告した。セキュリティエンジニア兼SREとコーポレートIT担当が協力して設計・構築を行い、「何を検討し何をやらなかったか」というデシジョン記録を公開している。導入にあたっての判断基準や見送ったアプローチを詳説しており、エンタープライズ向けLLM導入を検討する日本企業のエンジニアにとって参考になる事例だ。",
           "key_points_ja": [
             "メドピアがClaude Enterprise全社導入を2026年6月に完了——正社員・契約社員計130名にアカウント配布",
@@ -1049,6 +1040,15 @@
               ]
             },
             "alt": "メドピア（医療情報サービス）のClaude Enterprise全社導入事例。正社員・契約社員130名に展開。セキュリティエンジニアとコーポレートITの協力体制と何をやらなかったかのデシジョン記録を公開"
+          },
+          "scores": {
+            "total": 16,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 3,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 1
           }
         },
         {
@@ -1061,15 +1061,6 @@
           "url": "https://itmedia.co.jp/enterprise/articles/2606/25/news052.html",
           "published_at": "2026-06-26",
           "lang": "ja",
-          "score": {
-            "total": 15,
-            "importance": 4,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 2
-          },
           "summary_ja": "Gartnerは2026年に開始されたメインフレーム離脱プロジェクトの70%超が意図した利益を生み出せずに終わるという予測を発表した。原因として、生成AIツールの能力を過大に見積もる傾向を挙げている。複雑なレガシーコードの変換・移行において生成AIによる効率化を過剰に期待する市場の誤解が、プロジェクト失敗の主因とされる。この知見ははてブで118件のブックマークを獲得し、AI活用の現実と期待の乖離が日本の技術者コミュニティで広く共有された。",
           "key_points_ja": [
             "Gartner予測：2026年開始メインフレーム離脱プロジェクトの70%超が「意図した利益」未達で終了",
@@ -1093,6 +1084,15 @@
               "impact": "生成AIに過度な期待を置いた移行計画は7割超が失敗——現実的なAI活用計画の見直しが必要"
             },
             "alt": "Gartner予測：2026年開始のメインフレーム離脱プロジェクトのうち70%超が意図した利益を生み出せずに失敗。原因は生成AIの過大評価。はてブ118件を獲得した警告レポート"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 4,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 2
           }
         },
         {
@@ -1105,15 +1105,6 @@
           "url": "https://techblog.lycorp.co.jp/ja/techverse2026-219",
           "published_at": "2026-06-25",
           "lang": "ja",
-          "score": {
-            "total": 14,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "LINEヤフーの技術カンファレンス「Tech-Verse 2026」の公式記事として、マルチエージェント連携による開発プロセスの再設計を解説している。「AIでのコーディングで難しいのは、もはやコードを出すこと自体ではない——課題は意図を正確な仕様へと変換するプロセスにある」という問題提起から始まり、複数のAIエージェントに議論させることで仕様の曖昧さを解消する設計アプローチを紹介する。最大のボトルネックが「コーディング速度」から「意図の明確化と仕様化」に移行しつつあるという認識のもと、LINEヤフーの実践知見を共有する。",
           "key_points_ja": [
             "AIコーディングの最大ボトルネックは「コーディング速度」から「意図→仕様変換」へと移行",
@@ -1145,6 +1136,15 @@
               ]
             },
             "alt": "LINEヤフーTech-Verse 2026の発表。AIコーディングのボトルネックが速度から意図の明確化へ移行。複数AIエージェントに議論させて仕様曖昧さを解消するマルチエージェント協調設計を解説"
+          },
+          "scores": {
+            "total": 14,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]
@@ -1163,15 +1163,6 @@
           "url": "https://qbitai.com/2026/06/438895.html",
           "published_at": "2026-06-27",
           "lang": "zh",
-          "score": {
-            "total": 13,
-            "importance": 4,
-            "depth": 2,
-            "practicality": 2,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "中国の有力AIメディア「量子位 QbitAI」が、OpenAIによるGPT-5.6シリーズ3モデル同時リリースを速報した。見出しには「Fable5痛失最強基模王座（Fable 5が最強基盤モデルの座を失った）」とあり、AnthropicのフラッグシップモデルをGPT-5.6が上回ったという構図で報道している。「一口気端出三款GPT 5.6系列模型（一気に3種のGPT-5.6系列モデルを投入）」という表現で、Sol/Terra/Lunaの3バリアントを中国語圏のコミュニティに解説している。OpenAI対Anthropicの競争構図を中国メディアがどのようにフレーミングするかは、日米とは異なる視点として参考になる。",
           "key_points_ja": [
             "GPT-5.6 Sol/Terra/Lunaの3モデルを同時リリース——量子位QbitAIが速報",
@@ -1199,6 +1190,15 @@
               ]
             },
             "alt": "量子位QbitAIによるGPT-5.6速報。「Fable5が最強基盤モデルの座を失った」という見出しで、Sol/Terra/Luna3モデル同時投入を中国語圏に解説。OpenAI対Anthropicの競争を中国視点で報道"
+          },
+          "scores": {
+            "total": 13,
+            "importance": 4,
+            "depth": 2,
+            "practicality": 2,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         },
         {
@@ -1211,15 +1211,6 @@
           "url": "https://qbitai.com/2026/06/439393.html",
           "published_at": "2026-06-27",
           "lang": "zh",
-          "score": {
-            "total": 15,
-            "importance": 3,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 5,
-            "source_type_bias": 0,
-            "reaction_boost": 0
-          },
           "summary_ja": "量子位 QbitAIが「BrowserBC」を紹介した。BrowserBCは人間が一度ブラウザ操作を録画するだけで、その操作手順を全AIエージェントが再現できる能力に変換するツールだ。「人类一次录制，Agent就能模拟（人間が一度録画すれば、エージェントが模倣できる）」というキャッチコピーが示すように、エージェントのブラウザ操作能力を人間のデモンストレーションから直接学習させる手法を採用している。Webオートメーションにおいて、ユーザーが明示的なプログラミングなしにエージェントの能力を拡張できる仕組みとして注目されている。",
           "key_points_ja": [
             "BrowserBC：人間のブラウザ操作を1度録画→全AIエージェントが再現できる能力に変換",
@@ -1247,6 +1238,15 @@
               ]
             },
             "alt": "量子位QbitAI紹介のBrowserBC。人間が一度ブラウザ操作を録画するだけで全AIエージェントが同じ操作を再現できる。プログラミング不要でエージェントのWeb自動化能力を人間デモから直接学習"
+          },
+          "scores": {
+            "total": 15,
+            "importance": 3,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 5,
+            "source_type_bias": 0,
+            "reaction_boost": 0
           }
         }
       ]

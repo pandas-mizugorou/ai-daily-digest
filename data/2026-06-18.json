@@ -106,15 +106,15 @@
             },
             "alt": "ホワイトハウスがAnthropicのFable 5再公開条件として全ジェイルブレーク遮断を要求したが、Trump政権関係者のWIRED証言に対しセキュリティ専門家は技術的不可能と反論。規制当局とAIセーフティ実務の認識ギャップが深刻。"
           },
-          "score": {
+          "reaction_signal": null,
+          "x_post": "Trump政権がAnthropicに対し、Fable 5再公開の条件として「ガードレールが完全に迂回できないこと」を要求していることがWIREDの取材で判明した。セキュリティ専門家はジェイルブレークの完全防止は技術的に不可能であると述べており、規制と実務の間の認識ギャップが深刻であると私は見る。\n\nhttps://wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible",
+          "scores": {
             "importance": 4,
             "depth": 4,
             "practicality": 2,
             "freshness": 5,
             "total": 15
-          },
-          "reaction_signal": null,
-          "x_post": "Trump政権がAnthropicに対し、Fable 5再公開の条件として「ガードレールが完全に迂回できないこと」を要求していることがWIREDの取材で判明した。セキュリティ専門家はジェイルブレークの完全防止は技術的に不可能であると述べており、規制と実務の間の認識ギャップが深刻であると私は見る。\n\nhttps://wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible"
+          }
         }
       ]
     },
@@ -168,15 +168,15 @@
             },
             "alt": "Z.aiがGLM-5.2をHugging Face経由でオープンソース公開した。Long-Horizon Tasks最適化モデルとして、Fable 5が米国規制下にある中で中国発フロンティアモデルとして注目されている。"
           },
-          "score": {
+          "reaction_signal": null,
+          "x_post": "Z.aiがGLM-5.2をHugging Face経由でオープンソース公開した。Long-Horizon Tasks（長期タスク）への最適化を設計コンセプトとして掲げており、AnthropicのFable 5が米国規制下にある中での中国発フロンティアモデルの公開として私は注目している。\n\nhttps://huggingface.co/blog/zai-org/glm-52-blog",
+          "scores": {
             "importance": 5,
             "depth": 3,
             "practicality": 3,
             "freshness": 5,
             "total": 16
-          },
-          "reaction_signal": null,
-          "x_post": "Z.aiがGLM-5.2をHugging Face経由でオープンソース公開した。Long-Horizon Tasks（長期タスク）への最適化を設計コンセプトとして掲げており、AnthropicのFable 5が米国規制下にある中での中国発フロンティアモデルの公開として私は注目している。\n\nhttps://huggingface.co/blog/zai-org/glm-52-blog"
+          }
         },
         {
           "id": "hf_blog-molmomotion-language-guided-3d-motion-forecastin",
@@ -223,14 +223,14 @@
             },
             "alt": "AllenAIがHugging Face Blogで言語誘導型3D動作予測モデルMolmoMotionを発表した。テキスト指示と視覚入力を組み合わせて3D空間での動作を予測する設計で、ロボティクスへの応用が期待される。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 3,
             "depth": 3,
             "practicality": 3,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         }
       ]
     },
@@ -284,14 +284,14 @@
             },
             "alt": "深圳のIO-AI Tech社ではVRリグを装着した作業員がヒューマノイドロボットを遠隔操作し、その身体動作をAI訓練データとして収集している。中国で新種のデータ収集労働が生まれている。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "theverge-the-next-humanoid-robot-might-not-look-human-at-",
@@ -338,14 +338,14 @@
             },
             "alt": "フランスのスタートアップGenesis AIが発表したロボットEnoは頭部も脚部もなく、車輪ベースで折り畳み可能なデザインで、ヒューマノイドロボットが人型である必要はないという設計哲学を体現している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 3,
             "depth": 3,
             "practicality": 2,
             "freshness": 4,
             "total": 12
-          },
-          "reaction_signal": null
+          }
         }
       ]
     },
@@ -403,14 +403,14 @@
             },
             "alt": "AnthropicのClaude Agent SDK課金変更の経緯: 2026年5月13日に新課金体制を発表しヘビーユーザーのコスト増が懸念されたが、2026年6月17日の発効直前に一時停止が発表され、ユーザーは従来の使用制限で継続利用できる状態となった。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 5,
             "freshness": 4,
             "total": 16
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "techcrunch-google-bets-on-gemini-to-reinvent-the-smart-home",
@@ -457,14 +457,14 @@
             },
             "alt": "Googleの新型Google Home Speaker（99.99ドル）はGoogle AssistantからGemini会話型AIへの移行を体現したスマートスピーカーで、固定コマンドに代わる会話型インタラクションでスマートホームの再発明を目指している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 3,
             "freshness": 5,
             "total": 15
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "hf_blog-agentic-resource-discovery-let-agents-search",
@@ -511,15 +511,15 @@
             },
             "alt": "Hugging FaceがAgentic Resource Discovery機能を公開した。AIエージェントがHugging Face Hub上のモデルやデータセットを自律的に検索・発見できるため、開発者の介在なしにパイプラインを構築可能になる。"
           },
-          "score": {
+          "reaction_signal": null,
+          "x_post": "HuggingFaceがエージェントによるHub上のモデル・データセット自律検索機能「Agentic Resource Discovery」を公開した。エージェントが能動的にリソースを発見して活用できるため、開発者の介在なしにパイプラインを構築できる点が実用上の価値は高いと私は見る。\n\nhttps://huggingface.co/blog/agentic-resource-discovery-launch",
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 4,
             "freshness": 5,
             "total": 16
-          },
-          "reaction_signal": null,
-          "x_post": "HuggingFaceがエージェントによるHub上のモデル・データセット自律検索機能「Agentic Resource Discovery」を公開した。エージェントが能動的にリソースを発見して活用できるため、開発者の介在なしにパイプラインを構築できる点が実用上の価値は高いと私は見る。\n\nhttps://huggingface.co/blog/agentic-resource-discovery-launch"
+          }
         }
       ]
     },
@@ -573,14 +573,14 @@
             },
             "alt": "AmazonとHugging FaceがAmazon Strands AgentsとLeRobotライブラリの統合を発表した。Hugging Face Hub上のモデルをロボット実機へ直接展開できるシームレスなパイプラインを実現している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 3,
             "depth": 3,
             "practicality": 3,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "lesswrong-porting-machiavelli-to-inspect",
@@ -627,14 +627,14 @@
             },
             "alt": "MACHIAVELLIアライメントベンチマークをInspectフレームワークで再実装した。AIエージェントが目標追求中に非倫理的行動を取る頻度を測定するベンチマークで、新世代モデルへの継続適用が容易になった。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 3,
             "depth": 4,
             "practicality": 3,
             "freshness": 5,
             "total": 15
-          },
-          "reaction_signal": null
+          }
         }
       ]
     },
@@ -695,15 +695,15 @@
             },
             "alt": "AnthropicのFable 5・Opus 4.8への敵対的ロバスト性評価: 7826件の有害意図を10カテゴリ分類し、HackAgentフレームワークで4種のJB攻撃手法を適用して数十万件の攻撃を生成、3つのジャッジモデルの多数決で成功を判定した。"
           },
-          "score": {
+          "reaction_signal": null,
+          "x_post": "AnthropicのFable 5・Opus 4.8を対象にしたレッドチーム研究が公開された。7826件の有害意図を10カテゴリに分類し、HackAgentで4種のJB攻撃から数十万件の攻撃試行を生成、3モデルの多数決で判定している。規制議論と並行してモデルの客観的なロバスト性評価が進んでいると私は見る。\n\nhttps://arxiv.org/abs/2606.18193v1",
+          "scores": {
             "importance": 5,
             "depth": 5,
             "practicality": 3,
             "freshness": 5,
             "total": 18
-          },
-          "reaction_signal": null,
-          "x_post": "AnthropicのFable 5・Opus 4.8を対象にしたレッドチーム研究が公開された。7826件の有害意図を10カテゴリに分類し、HackAgentで4種のJB攻撃から数十万件の攻撃試行を生成、3モデルの多数決で判定している。規制議論と並行してモデルの客観的なロバスト性評価が進んでいると私は見る。\n\nhttps://arxiv.org/abs/2606.18193v1"
+          }
         },
         {
           "id": "arxiv-looped-world-models",
@@ -755,15 +755,15 @@
             },
             "alt": "Looped World Models（LoopWM）はパラメータ共有Transformerブロックのループ適用により従来比100倍のパラメータ効率を達成した世界モデルアーキテクチャで、世界モデルへの初のloopedアーキテクチャ適用として位置付けられている。"
           },
-          "score": {
+          "reaction_signal": null,
+          "x_post": "「Looped World Models」が公開された。パラメータ共有Transformerブロックをループ適用することで従来比最大100倍のパラメータ効率を達成するという。世界モデルへのloopedアーキテクチャ適用は論文が「初」と述べており、長期シミュレーションと展開コストのトレードオフを解消する設計として私は注目している。\n\nhttps://arxiv.org/abs/2606.18208v1",
+          "scores": {
             "importance": 5,
             "depth": 5,
             "practicality": 3,
             "freshness": 5,
             "total": 18
-          },
-          "reaction_signal": null,
-          "x_post": "「Looped World Models」が公開された。パラメータ共有Transformerブロックをループ適用することで従来比最大100倍のパラメータ効率を達成するという。世界モデルへのloopedアーキテクチャ適用は論文が「初」と述べており、長期シミュレーションと展開コストのトレードオフを解消する設計として私は注目している。\n\nhttps://arxiv.org/abs/2606.18208v1"
+          }
         },
         {
           "id": "lesswrong-several-frontier-models-are-substantially-prefil",
@@ -810,14 +810,14 @@
             },
             "alt": "arXiv:2606.12747はフロンティアモデルのプリフィル認識を保守的条件でも確認し、低リスク設定への拡張と概念基盤の強化を行った。複数のフロンティアモデルが保守的な引き出し条件下でもプリフィル認識を示すという発見を報告している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 3,
             "depth": 4,
             "practicality": 2,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         }
       ]
     },
@@ -871,14 +871,14 @@
             },
             "alt": "StratecheryのベンジャミントンプソンがFable 5規制の本質はAnthropicの責任と指摘し、ジェイルブレーク問題とCursor買収も含めた三大ニュースを総括分析した。有料媒体での詳細分析。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 4,
             "practicality": 3,
             "freshness": 4,
             "total": 15
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "techcrunch-world-model-maker-odyssey-nabs-1-45b-valuation-b",
@@ -926,14 +926,14 @@
             },
             "alt": "世界モデル開発スタートアップOdysseyがAmazonなどの支援を受けて14.5億ドルの評価額を達成した。TechCrunchはLLMを超えるAI次世代潮流として世界モデルを評価しており、Odysseyはその代表格として確立している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         }
       ]
     },
@@ -994,14 +994,14 @@
             },
             "alt": "Pew Research Centerの最新調査: 米国人の63%がAIは進化が速すぎると感じており、チャットボット利用率は2024年の33%から49%に増加、ChatGPT利用率は2023年から倍増して44%に達している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "lesswrong-the-once-and-future-fable-3-fix-this-code",
@@ -1052,14 +1052,14 @@
             },
             "alt": "LessWrongが報告するFable 5復活予測市場の確率: 7月1日までに55%、6月26日までに30%、6月19日までに12%。AnthropicのワシントンD.C.派遣から2日後時点での予測市場価格。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 3,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 13
-          },
-          "reaction_signal": null
+          }
         }
       ]
     },
@@ -1114,18 +1114,18 @@
             },
             "alt": "GitHubで5万スター近くを獲得しGitHub Trending 1位を達成したClaude Codeベストプラクティス集の解説記事がはてブで575ブクマを獲得した。設定テンプレートではなく知識リファレンスであるという本質を「2つだけ」に集約した説明が人気を呼んだ。"
           },
-          "score": {
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 575
+          },
+          "x_post": "GitHub Trending 1位・5万スターのClaude Codeベストプラクティス集「shanraisshan/claude-code-best-practice」の解説記事がはてブ575件を集めた。設定ファイルを配るのではなく「Claude Codeを上手く使う知識のリンク集」という本質を「2つだけ」に集約した整理が人気の理由であると私は見る。\n\nhttps://zenn.dev/acntechjp/articles/5409d8e2ad0767",
+          "scores": {
             "importance": 5,
             "depth": 4,
             "practicality": 5,
             "freshness": 4,
             "total": 18
-          },
-          "reaction_signal": {
-            "platform": "hatena",
-            "count": 575
-          },
-          "x_post": "GitHub Trending 1位・5万スターのClaude Codeベストプラクティス集「shanraisshan/claude-code-best-practice」の解説記事がはてブ575件を集めた。設定ファイルを配るのではなく「Claude Codeを上手く使う知識のリンク集」という本質を「2つだけ」に集約した整理が人気の理由であると私は見る。\n\nhttps://zenn.dev/acntechjp/articles/5409d8e2ad0767"
+          }
         },
         {
           "id": "hatena_it-pc-llm-whichllm-ai-technoedge",
@@ -1172,16 +1172,16 @@
             },
             "alt": "CLIツール「whichllm」は自分のPCで実際に測定したベンチマークに基づいてローカルLLMをランク付けし、そのハードウェアで最も賢く使えるモデルを提案する。テクノエッジの解説記事がはてブ233件を獲得した。"
           },
-          "score": {
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 233
+          },
+          "scores": {
             "importance": 5,
             "depth": 3,
             "practicality": 4,
             "freshness": 5,
             "total": 17
-          },
-          "reaction_signal": {
-            "platform": "hatena",
-            "count": 233
           }
         },
         {
@@ -1236,16 +1236,16 @@
             },
             "alt": "2026年時点のローカルLLM活用分析: ローカルLLMはガバナンス・タスク特化精度・レイテンシの3軸で優位だが、コスト面では「GPUを遊ばせると単価はAPIより高い」という損益分岐点の分析が210はてブを集めた。"
           },
-          "score": {
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 210
+          },
+          "scores": {
             "importance": 5,
             "depth": 4,
             "practicality": 4,
             "freshness": 4,
             "total": 17
-          },
-          "reaction_signal": {
-            "platform": "hatena",
-            "count": 210
           }
         },
         {
@@ -1293,16 +1293,16 @@
             },
             "alt": "Google CloudがOKF（Open Knowledge Format）v0.1を2026年6月12日にGitHubで公開した。Wiki・Notion・共有ドライブなど分散した社内ドキュメントをAIエージェントが活用しやすい形に構造化するフォーマットで、DevelopersIOの実用レビューがはてブ148件を獲得した。"
           },
-          "score": {
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 148
+          },
+          "scores": {
             "importance": 5,
             "depth": 3,
             "practicality": 4,
             "freshness": 4,
             "total": 16
-          },
-          "reaction_signal": {
-            "platform": "hatena",
-            "count": 148
           }
         },
         {
@@ -1345,16 +1345,16 @@
             },
             "alt": "AIキャラクター会話アプリ「Zeta」の日本市場実績: 2025年12月に日本国内月間売上1億2000万円超を達成し、2026年5月に国内ユーザー数200万人に到達。App Store・Google Playエンターテインメントランキングでも連日上位にランクインしている。"
           },
-          "score": {
+          "reaction_signal": {
+            "platform": "hatena",
+            "count": 112
+          },
+          "scores": {
             "importance": 5,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 15
-          },
-          "reaction_signal": {
-            "platform": "hatena",
-            "count": 112
           }
         }
       ]
@@ -1410,14 +1410,14 @@
             },
             "alt": "北京市が発表したAI工場構想: 目標として10万PFLOPS（10万P）の算力と日産10兆トークン（10万億Token）の処理能力を掲げ、1000倍の総合的コスト削減（計画1000倍綜合降本）を計画している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         },
         {
           "id": "qbitai-135",
@@ -1471,14 +1471,14 @@
             },
             "alt": "林俊旸の新会社「卜拉格（Brage）」が首輪評価額135億元で設立された。高榕創投と紅杉中国が各1億ドルをリード出資し、騰訊（テンセント）が2000万ドルを追加出資している。"
           },
-          "score": {
+          "reaction_signal": null,
+          "scores": {
             "importance": 4,
             "depth": 3,
             "practicality": 2,
             "freshness": 5,
             "total": 14
-          },
-          "reaction_signal": null
+          }
         }
       ]
     }

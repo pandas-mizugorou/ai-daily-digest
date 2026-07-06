@@ -76,13 +76,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "industry_business",
-          "score": {
-            "importance": 4,
-            "depth": 3,
-            "practicality": 1,
-            "freshness": 4,
-            "total": 12
-          },
           "summary_ja": "AnthropicはFable 5とMythos 5の配信を停止させられたが、Trump政権との摩擦により何が規制違反なのかを誰も明確に説明できていない。Wiredはホワイトハウスが「AIルールをリアルタイムで即興している」状況にあると指摘し、明文化されていない基準での規制がAIラボの製品計画や国際展開を根本から不安定化させると論じる。",
           "key_points_ja": [
             "AnthropicはFable 5・Mythos 5の配信停止を命じられたが、具体的な規制違反の根拠が公表されていない",
@@ -115,7 +108,14 @@
             },
             "alt": "AnthropicへのFable 5・Mythos 5停止命令の問題構造。米政府は規制根拠を非公表、何が違反か誰も説明できない状況。Wiredが「ルールのリアルタイム即興」と指摘し、業界全体の予見不能リスクが深刻化。"
           },
-          "x_post": "AnthropicはFable 5・Mythos 5の配信停止を命じられたが、何が違反なのか誰も明確に説明できていない。Wiredは「ホワイトハウスはAIルールをリアルタイムで即興している」と指摘。予見不可能な規制がAI企業の製品計画に与える影響は深刻だ。\n\nhttps://wired.com/story/anthropic-mythos-export-controls-ai-regulations"
+          "x_post": "AnthropicはFable 5・Mythos 5の配信停止を命じられたが、何が違反なのか誰も明確に説明できていない。Wiredは「ホワイトハウスはAIルールをリアルタイムで即興している」と指摘。予見不可能な規制がAI企業の製品計画に与える影響は深刻だ。\n\nhttps://wired.com/story/anthropic-mythos-export-controls-ai-regulations",
+          "scores": {
+            "importance": 4,
+            "depth": 3,
+            "practicality": 1,
+            "freshness": 4,
+            "total": 12
+          }
         }
       ]
     },
@@ -138,13 +138,6 @@
           "reaction_signal": null,
           "time_window_hours": 168,
           "category_hint": "new_models",
-          "score": {
-            "importance": 5,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 3,
-            "total": 16
-          },
           "summary_ja": "Z.ai（Zhipu AI）がFable 5停止後の空白を狙い、GLM-5.2をリリースした。GLM-5.1は小幅な更新に留まっていたが、5.2はOSSのデフォルトコーディングモデルを狙える仕上がりとLatent Spaceが評価する。フロントエンドコーディングのベンチマークでオープンウェイト最高水準を主張し、DeepSeek・Mistral・Cohere・Moonshot AIを主要評価で上回ると発表している。",
           "key_points_ja": [
             "Z.aiがFable ban直後の市場空白を利用しGLM-5.2をリリース",
@@ -177,7 +170,14 @@
             },
             "alt": "Z.aiのGLM-5.2はFable ban直後に投入されたOSSコーディングモデル。GLM-5.1から大幅強化でフロントエンドコーディングのオープンウェイト首位を宣言し、DeepSeek・Mistral・Cohere・Moonshot AIを主要評価で上回るとLatent Spaceが評価。"
           },
-          "x_post": "Z.aiがFable 5停止後の機会を突いてGLM-5.2をリリースした。フロントエンドコーディングOSSの首位を主張しDeepSeek・Mistral・Cohere・Moonshot AIを主要評価で上回ると報告。GLM-5.1から大幅に強化されたコーディングモデルだ。\n\nhttps://latent.space/p/ainews-glm-52-the-top-frontend-coding"
+          "x_post": "Z.aiがFable 5停止後の機会を突いてGLM-5.2をリリースした。フロントエンドコーディングOSSの首位を主張しDeepSeek・Mistral・Cohere・Moonshot AIを主要評価で上回ると報告。GLM-5.1から大幅に強化されたコーディングモデルだ。\n\nhttps://latent.space/p/ainews-glm-52-the-top-frontend-coding",
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 3,
+            "total": 16
+          }
         },
         {
           "id": "latent_space-ainews-glm-gpt-glm-5-2-passes-vibe-check-z-ai-fo",
@@ -194,13 +194,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "new_models",
-          "score": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "total": 16
-          },
           "summary_ja": "GLM-5.2がLatent Spaceの「バイブチェック」（ベンチマーク性能だけでなく実用でも通じるかの検証）を通過し、単なる「ベンチマーク最適化モデル（benchmaxxed）」ではないことが確認された。Z.aiはさらに、Fable 5に相当するオープンウェイト版モデルを2026年12月までにリリースすると予告しており、OSS陣営の反撃に注目が集まっている。",
           "key_points_ja": [
             "GLM-5.2がLatent Spaceの「バイブチェック」を通過——実用でも有効なOSSモデルと評価",
@@ -245,6 +238,13 @@
               ]
             },
             "alt": "GLM 5シリーズの進化とFable ban後のOSS市場競争。GLM-5.1（マイナー更新）→Fable 5 ban（2026年6月）→GLM-5.2（バイブチェック通過）→Open Fable相当予定（2026年12月）という時系列。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 16
           }
         }
       ]
@@ -271,13 +271,6 @@
           },
           "time_window_hours": 24,
           "category_hint": "tools_apps",
-          "score": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "total": 16
-          },
           "summary_ja": "OpenAIがCodexに新機能「Record & Replay」を追加した。ユーザーが画面操作を録画すると、Codexがその手順を学習し、新しいスレッドで指示するだけで同じ作業を自動実行する。ファイルのアップロード先や日付範囲など変動値はその都度渡せる。OpenAIは録画時の注意事項として、内容を短く完結させること・パスワードなどの機密情報を含めないことを明示している。",
           "key_points_ja": [
             "OpenAI CodexにRecord & Replay機能が追加——画面操作を録画してAIに自動再現させる",
@@ -316,6 +309,13 @@
               ]
             },
             "alt": "OpenAI Codex Record & Replayは3ステップで完結。①画面操作を録画、②新スレッドでCodexに手順利用を指示、③変動値（ファイル名・日付範囲等）を渡してAIが自動実行。機密情報を含めないよう注意が必要。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 16
           }
         },
         {
@@ -336,13 +336,6 @@
           },
           "time_window_hours": 24,
           "category_hint": "tools_apps",
-          "score": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 4,
-            "freshness": 4,
-            "total": 16
-          },
           "summary_ja": "AWSが新開発者向けツール「AWS Blocks」をリリースした。最大の特徴は「ローカルで即動く・AWS接続不要・そのままデプロイできる」の3点。実際にAIエージェントのデモアプリを作成した開発者から「思っていた以上に良い」という評価が出ており、ローカル開発からAWSへのデプロイまでの工程を大幅に短縮できる設計となっている。",
           "key_points_ja": [
             "AWS BlocksはAWS接続なしでローカル即起動できる新開発者向けツール",
@@ -370,6 +363,13 @@
               ]
             },
             "alt": "AWS Blocksは「ローカルで即動く・AWS接続不要・そのままデプロイできる」の3特徴を持つ新AIエージェント開発基盤。AWSアカウント不要でローカル開発→そのままAWSデプロイが可能で、開発サイクルを大幅短縮。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 4,
+            "freshness": 4,
+            "total": 16
           }
         },
         {
@@ -387,13 +387,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "tools_apps",
-          "score": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 4,
-            "total": 17
-          },
           "summary_ja": "2026年5月28日にAnthropicがClaude Code v2.1.154とClaude Opus 4.8を同時公開した際に導入されたDynamic Workflows（Research Preview）の包括的ガイド。「ultracode」と入力するだけでセッション内に最大1000のサブエージェントを起動できる自動オーケストレーションが実現する。Pro/Max/Team/Enterprise/API各プランで対応。",
           "key_points_ja": [
             "2026年5月28日、Claude Code v2.1.154でDynamic WorkflowsをResearch Previewとして公開",
@@ -430,7 +423,14 @@
             },
             "alt": "Claude Code v2.1.154（2026年5月28日）で導入されたDynamic Workflows。\"ultracode\"キーワードで最大1000サブエージェントが並列起動するResearch Preview機能。Claude Opus 4.8以降必須、Pro/Max/Team/Enterprise/APIプラン対応。"
           },
-          "x_post": "2026年5月28日公開のClaude Code Dynamic Workflowsの完全ガイドが公開された。「ultracode」と指示するだけで最大1000のサブエージェントを並列起動できる自動オーケストレーションが実現する。Claude Code v2.1.154以降が対象（Research Preview）。\n\nhttps://zenn.dev/mdtechknowledge/articles/claude-code-dynamic-workflows-guide-2"
+          "x_post": "2026年5月28日公開のClaude Code Dynamic Workflowsの完全ガイドが公開された。「ultracode」と指示するだけで最大1000のサブエージェントを並列起動できる自動オーケストレーションが実現する。Claude Code v2.1.154以降が対象（Research Preview）。\n\nhttps://zenn.dev/mdtechknowledge/articles/claude-code-dynamic-workflows-guide-2",
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 17
+          }
         }
       ]
     },
@@ -453,13 +453,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "agents",
-          "score": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "total": 15
-          },
           "summary_ja": "ServiceNowとHugging Faceが共同で「MosaicLeaks」を公開した。研究エージェントが知識ベースや内部データにアクセスする際に機密情報を意図せず漏洩しないかを評価するベンチマークである。エージェントの情報秘匿能力を定量化し、研究エージェントのセキュリティ特性評価の標準化を目指している。",
           "key_points_ja": [
             "ServiceNow・HuggingFaceが研究エージェントの情報秘匿能力を評価するMosaicLeaksを公開",
@@ -492,7 +485,14 @@
             },
             "alt": "ServiceNow・HFが公開したMosaicLeaks。研究エージェントが知識ベースアクセス時に機密情報を意図せず漏洩しないか評価するベンチマーク。エージェントセキュリティの定量評価フレームワークとして注目。"
           },
-          "x_post": "ServiceNowとHugging Faceが研究エージェントの情報漏洩を評価するベンチマーク「MosaicLeaks」を公開した。研究エージェントが知識ベースにアクセスする際に機密情報を意図せず漏洩しないかを定量評価する。エージェントセキュリティ評価フレームワークとして注目。\n\nhttps://huggingface.co/blog/ServiceNow/mosaicleaks"
+          "x_post": "ServiceNowとHugging Faceが研究エージェントの情報漏洩を評価するベンチマーク「MosaicLeaks」を公開した。研究エージェントが知識ベースにアクセスする際に機密情報を意図せず漏洩しないかを定量評価する。エージェントセキュリティ評価フレームワークとして注目。\n\nhttps://huggingface.co/blog/ServiceNow/mosaicleaks",
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 15
+          }
         },
         {
           "id": "arxiv-ledgeragent-structured-state-for-policy-adherent",
@@ -509,13 +509,6 @@
           "reaction_signal": null,
           "time_window_hours": 168,
           "category_hint": "agents",
-          "score": {
-            "importance": 4,
-            "depth": 5,
-            "practicality": 3,
-            "freshness": 4,
-            "total": 16
-          },
           "summary_ja": "カスタマーサービス領域でポリシーに準拠しながらツールを呼び出すエージェントのために、LedgerAgentが構造化状態管理フレームワークを提案する。従来のエージェントはタスク状態を会話履歴から毎ターン再構築する暗黙的な設計のため、2種類の一般的な失敗モードが生まれていた。LedgerAgentはタスク状態を会話履歴から明示的に分離して管理することでこれを解決する。",
           "key_points_ja": [
             "標準的なエージェントはタスク状態を会話履歴から暗黙的に再構築する設計で2種の失敗モードが発生",
@@ -535,6 +528,13 @@
               "metrics": []
             },
             "alt": "標準エージェントとLedgerAgentの状態管理比較。標準エージェントはタスク状態を会話履歴に混在させ暗黙的に再構築（失敗モードあり）。LedgerAgentはタスク状態を明示的に分離管理することで失敗モードを解消。"
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 5,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 16
           }
         }
       ]
@@ -558,13 +558,6 @@
           "reaction_signal": null,
           "time_window_hours": 168,
           "category_hint": "multimodal",
-          "score": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 14
-          },
           "summary_ja": "MidjourneyがMidjourney Medicalという新部門を設立し、「Midjourney Scanner」の開発を進めている。創業者のDavid Holz氏は現時点でScannerやSpaに直接的なAIは搭載されていないと明言したが、超音波CTイメージングへのAI統合は必然であり、BioHubのCryoEMのような大規模な下流応用を可能にする可能性があると指摘している。",
           "key_points_ja": [
             "Midjourney MedicalをMidjourneyが設立、「Midjourney Scanner」で臓器スキャンを開発中",
@@ -603,6 +596,13 @@
               ]
             },
             "alt": "MidjourneyのAI画像生成から医療スキャン分野への拡張。画像生成AI→Midjourney Medical設立→Midjourney Scanner開発（超音波CT）→AI統合による大規模下流応用（診断・創薬）という展開。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 14
           }
         },
         {
@@ -620,13 +620,6 @@
           "reaction_signal": null,
           "time_window_hours": 168,
           "category_hint": "multimodal",
-          "score": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 3,
-            "freshness": 4,
-            "total": 15
-          },
           "summary_ja": "FreeStyleはスタイル参照画像とコンテンツ参照画像を独立して指定できる画像生成フレームワークを提案する。コンテンツ参照の構造・意味論を保持しつつ、別のスタイル参照から視覚的特徴を適用することを目的とする。コミュニティLoRAを活用したスケーラブルな生成手法により、コンテンツ忠実度・スタイル整合性・命令追従の3要素を同時に最適化する。",
           "key_points_ja": [
             "コンテンツ参照（構造・意味論）とスタイル参照（視覚特徴）を独立して指定できるデュアル参照設計",
@@ -646,6 +639,13 @@
               "metrics": []
             },
             "alt": "FreeStyleは従来の画像生成手法と比較してスタイル・コンテンツの独立制御で大幅な改善を実現。コンテンツ構造の保持、スタイル適用精度、命令追従性の3軸でそれぞれ向上している。"
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 15
           }
         }
       ]
@@ -669,13 +669,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "research_papers",
-          "score": {
-            "importance": 3,
-            "depth": 5,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 14
-          },
           "summary_ja": "有益な特性を目標とした現実的シナリオへの強化学習（RL）が、アライメントと有益な行動を測定する複数ベンチマークで広範な改善をもたらすことを実証した研究。重要なのは、アライメントの向上が訓練ドメインを超えて汎化し、敵対的プレッシャー下でも持続することが確認された点である。医療・科学・教育・コーディングなど高度自律AIが活躍する実用領域での応用を視野に入れた研究。",
           "key_points_ja": [
             "有益な特性対象のRL訓練がアライメントベンチマーク群で広範な改善をもたらすことを実証",
@@ -711,6 +704,13 @@
               ]
             },
             "alt": "有益な特性を対象としたRL訓練が複数アライメントベンチマークで広範な改善をもたらす。訓練ドメイン外への汎化と敵対的プレッシャー下での持続性が確認された。医療・教育・コーディング等の自律AI実用化に向けた重要知見。"
+          },
+          "scores": {
+            "importance": 3,
+            "depth": 5,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 14
           }
         },
         {
@@ -728,13 +728,6 @@
           "reaction_signal": null,
           "time_window_hours": 168,
           "category_hint": "research_papers",
-          "score": {
-            "importance": 4,
-            "depth": 5,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 15
-          },
           "summary_ja": "GoogleのDiffusionGemmaは計算の大半を連続潜在空間で行うが、これによって推論の透明性が低下するのかを研究した論文。透明性を「変数透明性（中間スナップショットの理解可能性）」と「アルゴリズム透明性（計算プロセスの再構成可能性）」の2軸に分解して分析する。自己回帰型LLMと異なる計算構造が解釈可能性にどう影響するかを定量的に評価する。",
           "key_points_ja": [
             "DiffusionGemmaは計算の大部分を連続潜在空間で実行し、自己回帰型LLMと異なる推論構造を持つ",
@@ -754,6 +747,13 @@
               "metrics": []
             },
             "alt": "自己回帰型LLMとDiffusionGemmaの推論透明性を変数透明性・アルゴリズム透明性の2軸で比較。DiffusionGemmaは連続潜在空間での計算が多く、変数透明性に課題がある一方、全体の解釈可能性への影響を定量評価する研究。"
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 5,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 15
           }
         },
         {
@@ -771,13 +771,6 @@
           "reaction_signal": null,
           "time_window_hours": 336,
           "category_hint": "research_papers",
-          "score": {
-            "importance": 5,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 2,
-            "total": 15
-          },
           "summary_ja": "Sebastian Raschka氏が2026年1月〜5月にかけてブックマークしたLLM関連研究論文のキュレーションリストを公開した。毎年前半・後半の2本構成で提供しているシリーズの前半版。完全なリストではなく個人の視点でのセレクションだが、AI研究者・エンジニアが見落としがちな論文を一か所に集約しており、論文選定の参考として広く活用されている。",
           "key_points_ja": [
             "2026年1月〜5月のLLM研究論文を個人視点でキュレーション",
@@ -809,6 +802,13 @@
               ]
             },
             "alt": "Sebastian Raschkaによる2026年1月〜5月のLLM研究論文キュレーションリスト。年2回（前後半）のシリーズ前半版。個人視点でのセレクションで、AI研究者・エンジニアの論文選定の参考として活用されている。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 2,
+            "total": 15
           }
         }
       ]
@@ -832,13 +832,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "industry_business",
-          "score": {
-            "importance": 3,
-            "depth": 2,
-            "practicality": 1,
-            "freshness": 4,
-            "total": 10
-          },
           "summary_ja": "OpenAIがIPOを前に著名な人材を相次いで採用した。Transformer共同考案者であるノーム・シャジーア氏をGoogle DeepMindから獲得し、Trump政権でAI政策を担ったディーン・ボール氏も同週に入社した。TechCrunchによれば、IPO前の組織体制強化を目的とした採用とみられる。",
           "key_points_ja": [
             "Transformer共同考案者ノーム・シャジーア氏がGoogle DeepMindからOpenAIへ移籍",
@@ -870,6 +863,13 @@
               ]
             },
             "alt": "OpenAIがIPO前に著名人材2名を同週に採用。Transformer共同考案者ノーム・シャジーア氏（from Google DeepMind）と元Trump政権AI政策担当ディーン・ボール氏。IPO前の組織強化として注目。"
+          },
+          "scores": {
+            "importance": 3,
+            "depth": 2,
+            "practicality": 1,
+            "freshness": 4,
+            "total": 10
           }
         },
         {
@@ -887,13 +887,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "industry_business",
-          "score": {
-            "importance": 3,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 12
-          },
           "summary_ja": "AWSが自社AIチップを他社データセンターに販売する交渉を進めていると報告された。CEOのアンディ・ジャシー氏はこれを「500億ドルの機会」と表現しており、Nvidiaへの直接的な対抗軸として期待されている。これまで自社クラウド専用だったAWSのAIチップを外部に販売することで、AI推論インフラ市場での存在感拡大を狙う。",
           "key_points_ja": [
             "AWSが自社AIチップを外部データセンターへ販売する交渉を進めていると報告",
@@ -914,7 +907,14 @@
             },
             "alt": "AWS AIチップ戦略の転換。従来は自社クラウド専用（内部使用のみ）から、外部データセンターへの販売（$50B機会）へとビジネスモデルを拡張。Nvidiaのデータセンター向けGPU市場への直接対抗を意図。"
           },
-          "x_post": "AWSが自社AIチップを外部データセンターに販売する交渉を進めている。アンディ・ジャシーCEOはこれを「500億ドルの機会」と表現した。Nvidiaへの直接的な対抗軸として注目される動きで、AIインフラ競争の構図変化が近づいている。\n\nhttps://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips"
+          "x_post": "AWSが自社AIチップを外部データセンターに販売する交渉を進めている。アンディ・ジャシーCEOはこれを「500億ドルの機会」と表現した。Nvidiaへの直接的な対抗軸として注目される動きで、AIインフラ競争の構図変化が近づいている。\n\nhttps://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips",
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 12
+          }
         }
       ]
     },
@@ -937,13 +937,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "community_buzz",
-          "score": {
-            "importance": 3,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 12
-          },
           "summary_ja": "Claude Fable 5はリリースからわずか3日後、ジェイルブレーク発見を理由に米国政府がAnthropicに利用停止を命じた。LessWrongコミュニティでは「3日間でFableを深く愛用し、今は喪失感を覚えている」という投稿が多くの共感を集め、Fable 5とMythos 5の能力や体験を振り返る議論が活発化している。",
           "key_points_ja": [
             "Fable 5はリリースから3日間のみ利用可能で、米政府命令（ジェイルブレーク理由）により停止",
@@ -982,6 +975,13 @@
               ]
             },
             "alt": "Claude Fable 5はリリースから3日間のみ利用可能。米政府がジェイルブレーク発見を受けてAnthropicに停止命令を発令。LessWrongでは喪失感とFable能力への回顧が多く投稿された。"
+          },
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 12
           }
         },
         {
@@ -999,13 +999,6 @@
           "reaction_signal": null,
           "time_window_hours": 24,
           "category_hint": "community_buzz",
-          "score": {
-            "importance": 2,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 5,
-            "total": 13
-          },
           "summary_ja": "AIセーフティの取り組みが最終的にネット・ネガティブとなりうる方法を列挙したLessWrong投稿が注目を集めた。Open PhilanthropyのホールデンカーノフスキーAI安全への介入がポジティブな影響を与える確率は51/49よりも悪い可能性があるという発言も引用されており、AIセーフティコミュニティ内での有効性論争が活性化している。",
           "key_points_ja": [
             "ホールデン・カーノフスキー氏がAI安全取り組みのポジティブ影響確率が51/49を下回る可能性を示唆",
@@ -1037,6 +1030,13 @@
               ]
             },
             "alt": "LessWrongで議論を呼ぶ「AIセーフティ活動がネット・ネガティブになりうる方法リスト」。ホールデン・カーノフスキーの「51/49より悪い確率」発言も引用。AI安全研究の有効性を問い直すコミュニティ論争が活性化。"
+          },
+          "scores": {
+            "importance": 2,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 5,
+            "total": 13
           }
         }
       ]
@@ -1063,13 +1063,6 @@
           },
           "time_window_hours": 48,
           "category_hint": "japan",
-          "score": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "total": 17
-          },
           "summary_ja": "Claude Codeのセッションをまたいで同じ指摘が繰り返される問題に対し、AIエージェント自身が自律的に自己改善する「self-improvement」スキルが48時間で248ブクマを集めた。スキルを適用するとエージェントが自分のミスや改善点を検出し、CLAUDE.mdや設定ファイルに自動的に反映する仕組みとなっており、セッション間の記憶喪失問題を本質的に解決するアプローチとして注目されている。",
           "key_points_ja": [
             "Claude Code向けの「self-improvement」スキルを設計・実装、セッション間の記憶喪失問題を解決",
@@ -1108,6 +1101,13 @@
               ]
             },
             "alt": "Claude Code self-improvementスキルの3ステップフロー。①セッションまたぎで同じミスを検出、②エージェントが問題と改善策を分析、③CLAUDE.mdや設定ファイルに自動記録。次セッションでは改善済みの状態でスタート。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 17
           }
         },
         {
@@ -1128,13 +1128,6 @@
           },
           "time_window_hours": 24,
           "category_hint": "japan",
-          "score": {
-            "importance": 5,
-            "depth": 4,
-            "practicality": 5,
-            "freshness": 4,
-            "total": 18
-          },
           "summary_ja": "VS Code開発チームがGitHub Copilotのトークン消費を削減するための具体的な手法を解説した公式ガイド。OpenAI・Anthropic双方のAPI固有ポイントを公開しており、プロンプトキャッシュの活用や遅延読み込みによってコストとレイテンシを大幅削減できることを解説している。196ブクマを集めた日本開発者コミュニティの注目記事。",
           "key_points_ja": [
             "VS Code開発チームがGitHub CopilotのOpenAI・Anthropic向けトークン節約手法を公式解説",
@@ -1167,7 +1160,14 @@
             },
             "alt": "VS Code開発チーム公式のGitHub Copilotトークン節約ガイド。OpenAI・Anthropic双方のAPI固有ポイントを解説。プロンプトキャッシュ活用と遅延読み込みによるコスト・レイテンシ大幅削減が可能。"
           },
-          "x_post": "VS Code開発チームがGitHub Copilotのコスト・レイテンシ削減手法を解説した。OpenAI・Anthropicそれぞれ固有のポイントを公開しており、プロンプトキャッシュの活用や遅延読み込みが有効とのこと。公式チームによる具体的なガイドとして参考にしたい。\n\nhttps://forest.watch.impress.co.jp/docs/news/2118390.html"
+          "x_post": "VS Code開発チームがGitHub Copilotのコスト・レイテンシ削減手法を解説した。OpenAI・Anthropicそれぞれ固有のポイントを公開しており、プロンプトキャッシュの活用や遅延読み込みが有効とのこと。公式チームによる具体的なガイドとして参考にしたい。\n\nhttps://forest.watch.impress.co.jp/docs/news/2118390.html",
+          "scores": {
+            "importance": 5,
+            "depth": 4,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 18
+          }
         },
         {
           "id": "hatena-ai-layerx",
@@ -1187,13 +1187,6 @@
           },
           "time_window_hours": 48,
           "category_hint": "japan",
-          "score": {
-            "importance": 5,
-            "depth": 3,
-            "practicality": 5,
-            "freshness": 4,
-            "total": 17
-          },
           "summary_ja": "AIを使ったコーディングで「同じような指示を繰り返し書いている」という課題に対し、LayerXのエンジニアがAIとのやり取りを記録・棚卸しする仕組みを構築した実践報告。PRレビューコメントへの対応など繰り返しパターンを検出し、より効率的なAI活用ワークフローを実現する。175ブクマを集め日本開発者コミュニティで広く共有されている。",
           "key_points_ja": [
             "AIコーディングで繰り返す同様の指示を削減するためのログ記録・棚卸しシステムを構築",
@@ -1221,6 +1214,13 @@
               ]
             },
             "alt": "LayerXエンジニアがAIコーディングのやり取りを棚卸しするシステム。同じプロンプトを繰り返し書く問題を解決。PRレビュー対応などの繰り返しパターンを記録・再活用するワークフローを実装し175ブクマを獲得。"
+          },
+          "scores": {
+            "importance": 5,
+            "depth": 3,
+            "practicality": 5,
+            "freshness": 4,
+            "total": 17
           }
         },
         {
@@ -1241,13 +1241,6 @@
           },
           "time_window_hours": 48,
           "category_hint": "japan",
-          "score": {
-            "importance": 4,
-            "depth": 2,
-            "practicality": 3,
-            "freshness": 4,
-            "total": 13
-          },
           "summary_ja": "OpenAIが日本でChatGPTの広告配信を開始した。2026年2月に米国でテスト運用を開始し、5月に日本を含む5カ国への拡大を予告していた計画の実行。電通・博報堂が日本での広告仲介として参加し、ChatGPTの無料版と「Go」プランで広告が表示される。生成AIが検索代替として普及する中での広告展開として注目される。",
           "key_points_ja": [
             "OpenAIが日本でChatGPT広告表示を開始（2月の米国テストから5カ国展開予告の実行）",
@@ -1280,6 +1273,13 @@
               ]
             },
             "alt": "OpenAIのChatGPT広告展開タイムライン。2026年2月に米国でテスト開始、5月に日本など5カ国への拡大を予告、6月に日本で本格展開（電通・博報堂が仲介）。無料版とGoプランで表示。"
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 2,
+            "practicality": 3,
+            "freshness": 4,
+            "total": 13
           }
         },
         {
@@ -1297,13 +1297,6 @@
           "reaction_signal": null,
           "time_window_hours": 168,
           "category_hint": "japan",
-          "score": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 4,
-            "freshness": 3,
-            "total": 15
-          },
           "summary_ja": "Preferred Networksが2026年3月にリリースしたPLaMo 3.0 Prime βを、LLM開発チームの日々の業務に活用している実践報告を公開した。学習データ準備・評価・実験分析・CI整備・ドキュメント保守など多様なタスクにPLaMo自身を活用することで、工数削減と品質標準化を実現。開発チームがモデルを使いながら継続改善サイクルを構築しているという知見も共有している。",
           "key_points_ja": [
             "PFNが2026年3月リリースのPLaMo 3.0 Prime βを自社LLM開発の現場業務に活用",
@@ -1335,6 +1328,13 @@
               ]
             },
             "alt": "PFNがPLaMo 3.0 Prime βをLLM開発現場の業務全般に活用。学習データ準備・評価・実験分析・CI整備・ドキュメント保守など多岐にわたるタスクで自社モデルを使うことで開発効率と品質を向上。"
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 4,
+            "freshness": 3,
+            "total": 15
           }
         }
       ]
@@ -1358,13 +1358,6 @@
           "reaction_signal": null,
           "time_window_hours": 48,
           "category_hint": "china",
-          "score": {
-            "importance": 4,
-            "depth": 4,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 14
-          },
           "summary_ja": "中国のチームが世界初の人型ロボット向け汎用「小脳」モデルを発表した。世界最大規模となる2万時間の人間動作データで学習し、未訓練の動作に対するゼロショット汎化（そのまま実行）を実現する。量子位はこの発表を「人型ロボットがGPT時代に突入した」と評価しており、中国AI界で大きな注目を集めている。",
           "key_points_ja": [
             "世界初の人型ロボット向け汎用小脳モデルを中国チームが発表",
@@ -1388,6 +1381,13 @@
               ]
             },
             "alt": "世界初人型ロボット向け汎用小脳の訓練規模。2万時間の人間動作データ（世界最大規模）で学習し、ゼロショット汎化を達成。従来の専用モデルと比べて汎用性が飛躍的に向上。"
+          },
+          "scores": {
+            "importance": 4,
+            "depth": 4,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 14
           }
         },
         {
@@ -1405,13 +1405,6 @@
           "reaction_signal": null,
           "time_window_hours": 48,
           "category_hint": "china",
-          "score": {
-            "importance": 3,
-            "depth": 3,
-            "practicality": 2,
-            "freshness": 4,
-            "total": 12
-          },
           "summary_ja": "量子位（QbitAI）が、GPTが医薬品研究分野でオリジナルな成果を上げたと報告した。「AIによる薬物の全自動研究開発はどれほど遠いか」という問いを立て、AI創薬の進展状況を論じている。詳細は原記事（中文）を参照。",
           "key_points_ja": [
             "GPTが医薬品研究分野でオリジナルな成果を発表",
@@ -1439,6 +1432,13 @@
               ]
             },
             "alt": "量子位が報告するGPTの医薬品研究分野での独自成果。「AIによる薬物全自動研究開発はどれほど遠いか」という問いへの答えとして中国AI界で注目。詳細は原記事（中文）参照。"
+          },
+          "scores": {
+            "importance": 3,
+            "depth": 3,
+            "practicality": 2,
+            "freshness": 4,
+            "total": 12
           }
         }
       ]
