@@ -20,6 +20,35 @@ const els = {
   themeToggle: document.getElementById("theme-toggle"),
   resultTpl: document.getElementById("result-template"),
   tagChipTpl: document.getElementById("tag-chip-template"),
+  filterCategory: document.getElementById("filter-category"),
+  filterSourceType: document.getElementById("filter-source-type"),
+  filterScore: document.getElementById("filter-score"),
+  filterPeriod: document.getElementById("filter-period"),
+};
+
+// カテゴリ表示名 (app.js categoryFallbackLabel と同一対応。索引は ID しか持たないためここにも持つ)
+const CATEGORY_LABEL = {
+  new_models: "新モデル・新発表",
+  tools_apps: "ツール・アプリ・SDK", tools: "ツール・SDK",
+  agents: "エージェント・自律実行",
+  multimodal: "マルチモーダル・生成",
+  research_papers: "研究・論文", research: "研究・論文",
+  industry_business: "業界動向・ビジネス", industry: "業界動向",
+  regulation_policy: "規制・政策・安全",
+  community_buzz: "コミュニティ反響",
+  japan: "日本語ソース",
+  china: "中華圏",
+};
+// provenance.js の SOURCE_TYPE_LABEL と同一対応 (チップは aria-hidden の視覚専用のため別持ち)
+const SOURCE_TYPE_LABEL_LOCAL = {
+  official: "公式",
+  academic: "論文",
+  aggregator: "まとめ",
+  media: "メディア",
+  community: "コミュ",
+  japan_community: "日本コミュ",
+  japan_corp: "日本企業",
+  china: "中華圏",
 };
 
 // === Theme (weekly/app-weekly.js と同一挙動) ===
@@ -55,13 +84,92 @@ async function loadIndex() {
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     allItems = Array.isArray(data.items) ? data.items : [];
+    latestDate = data.date_to || (allItems[0]?.date ?? "");
     renderTagChips(Array.isArray(data.all_tags) ? data.all_tags : []);
+    buildFilterOptions();
+    applyUrlParams();
     hideStatus();
     applyFilter();
   } catch (err) {
     console.warn("loadIndex failed", err);
     showStatus("検索インデックスを読み込めませんでした。時間をおいて再度お試しください。", true);
   }
+}
+
+// === 絞り込みフィルタ (カテゴリ / 出典タイプ / スコア下限 / 期間) ===
+let latestDate = "";
+
+function fillSelect(sel, options, allLabel) {
+  sel.innerHTML = "";
+  const mk = (value, label) => {
+    const o = document.createElement("option");
+    o.value = value;
+    o.textContent = label;
+    return o;
+  };
+  sel.appendChild(mk("", allLabel));
+  for (const { value, label } of options) sel.appendChild(mk(value, label));
+}
+
+function buildFilterOptions() {
+  // カテゴリ / 出典タイプは索引に実在する値だけを件数付きで出す (空選択肢を並べない)
+  const catCount = new Map();
+  const typeCount = new Map();
+  for (const it of allItems) {
+    if (it.category) catCount.set(it.category, (catCount.get(it.category) ?? 0) + 1);
+    if (it.source_type) typeCount.set(it.source_type, (typeCount.get(it.source_type) ?? 0) + 1);
+  }
+  const catOrder = Object.keys(CATEGORY_LABEL);
+  const cats = [...catCount.entries()]
+    .sort((a, b) => {
+      const ai = catOrder.indexOf(a[0]); const bi = catOrder.indexOf(b[0]);
+      return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
+    })
+    .map(([id, n]) => ({ value: id, label: `${CATEGORY_LABEL[id] ?? id} (${n})` }));
+  const types = [...typeCount.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([id, n]) => ({ value: id, label: `${SOURCE_TYPE_LABEL_LOCAL[id] ?? id} (${n})` }));
+  fillSelect(els.filterCategory, cats, "カテゴリ: すべて");
+  fillSelect(els.filterSourceType, types, "出典: すべて");
+  fillSelect(els.filterScore, [
+    { value: "17", label: "★17 以上" },
+    { value: "15", label: "★15 以上" },
+    { value: "12", label: "★12 以上" },
+  ], "スコア: すべて");
+  fillSelect(els.filterPeriod, [
+    { value: "7", label: "直近 7 日" },
+    { value: "30", label: "直近 30 日" },
+    { value: "90", label: "直近 90 日" },
+  ], "期間: すべて");
+  for (const sel of [els.filterCategory, els.filterSourceType, els.filterScore, els.filterPeriod]) {
+    sel.addEventListener("change", applyFilter);
+  }
+}
+
+// 日次ページのタグリンク (?tag=) やキーワード付き共有 (?q=) を受ける
+function applyUrlParams() {
+  const params = new URLSearchParams(location.search);
+  const q = params.get("q");
+  if (q) els.searchInput.value = q;
+  const tag = params.get("tag");
+  if (tag) {
+    selectedTags.add(tag);
+    const chip = els.tagChips.querySelector(`[data-tag="${CSS.escape(tag)}"]`);
+    if (chip) {
+      chip.classList.add("is-active");
+      chip.setAttribute("aria-pressed", "true");
+    }
+  }
+}
+
+// 期間フィルタの基準日: 索引の最新日 (配信が止まっていても「直近7日」が空にならない)
+function periodCutoff(days) {
+  const anchor = latestDate ? new Date(latestDate + "T00:00:00") : new Date();
+  anchor.setDate(anchor.getDate() - (days - 1));
+  const y = anchor.getFullYear();
+  const m = String(anchor.getMonth() + 1).padStart(2, "0");
+  const d = String(anchor.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
 }
 
 function renderTagChips(allTags) {
@@ -105,7 +213,16 @@ function formatShortDate(value) {
 function applyFilter() {
   const raw = els.searchInput.value.trim().toLowerCase();
   const terms = raw ? raw.split(/\s+/) : [];
+  const fCat = els.filterCategory?.value || "";
+  const fType = els.filterSourceType?.value || "";
+  const fScore = Number(els.filterScore?.value || 0);
+  const fDays = Number(els.filterPeriod?.value || 0);
+  const cutoff = fDays > 0 ? periodCutoff(fDays) : "";
   let matched = allItems.filter((it) => {
+    if (fCat && it.category !== fCat) return false;
+    if (fType && it.source_type !== fType) return false;
+    if (fScore > 0 && !(typeof it.score === "number" && it.score >= fScore)) return false;
+    if (cutoff && it.date < cutoff) return false;
     if (selectedTags.size > 0) {
       const itTags = it.tags || [];
       if (![...selectedTags].some((t) => itTags.includes(t))) return false;
@@ -120,7 +237,7 @@ function applyFilter() {
     return true;
   });
   const total = matched.length;
-  const noQuery = terms.length === 0 && selectedTags.size === 0;
+  const noQuery = terms.length === 0 && selectedTags.size === 0 && !fCat && !fType && fScore === 0 && fDays === 0;
   if (noQuery) matched = matched.slice(0, DEFAULT_RESULTS);
   else if (matched.length > MAX_RESULTS) matched = matched.slice(0, MAX_RESULTS);
   renderResults(matched, total, noQuery);
@@ -186,7 +303,10 @@ function renderResultCard(item) {
   const srcChip = sourceTypeChip(item.source_type);
   if (srcChip) sourceEl.insertAdjacentElement("afterend", srcChip);
   node.querySelector(".search-card-date").textContent = formatShortDate(item.date);
-  node.querySelector(".search-card-score").textContent = `★ ${item.score ?? 0}/20`;
+  // score 欠落 (null) は「★ 0/20」と誤読させず非表示
+  const scoreEl = node.querySelector(".search-card-score");
+  if (typeof item.score === "number") scoreEl.textContent = `★ ${item.score}/20`;
+  else scoreEl.classList.add("hidden");
   node.querySelector(".search-card-text").textContent = item.summary_ja || "";
   // 本文 clamp + 「続きを読む」(figure と重複する長文を 2 行に、日次と統一)
   const sText = node.querySelector(".search-card-text");

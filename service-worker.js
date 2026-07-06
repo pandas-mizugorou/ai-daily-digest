@@ -7,7 +7,10 @@
 // v33: 図解バグ修正 — summary-card の points が文字列配列だと空箇条書きになる不具合を
 //      normalizeSummaryCard で必ず正準化して解消 (figure-normalize.js / figure.js)。
 //      timeline の time→when エイリアス追加。過去分は normalize-digest で一括修復済。
-const VERSION = "v33";
+// v34: 続報トラッキング (followups.json + カードの続報チップ/経緯リスト) /
+//      検索フィルタ (カテゴリ・出典・スコア・期間) / score→scores ドリフト修復と
+//      スコア欠落時の非表示化 / タグ→検索導線
+const VERSION = "v34";
 const STATIC_CACHE = `aidd-static-${VERSION}`;
 const DATA_CACHE = `aidd-data-${VERSION}`;
 
@@ -66,8 +69,8 @@ self.addEventListener("activate", (event) => {
 });
 
 function isLatestOrIndex(url) {
-  // search-index.json / stats.json は毎日更新されるので latest/index と同じ network-first
-  return /\/data\/(latest|index|search-index|stats)\.json(\?|$)/.test(url);
+  // search-index.json / stats.json / followups.json は毎日更新されるので latest/index と同じ network-first
+  return /\/data\/(latest|index|search-index|stats|followups)\.json(\?|$)/.test(url);
 }
 function isDayJson(url) {
   return /\/data\/\d{4}-\d{2}-\d{2}\.json(\?|$)/.test(url);

@@ -33,10 +33,10 @@ ai-daily-digest/
 │   ├── favicon.svg
 │   └── icons/              # 192 / 512 / maskable / apple-touch
 └── data/
-    ├── index.json          # 過去日付一覧
+    ├── index.json          # 過去日付一覧（全期間保持。90 日ロールオーバーは 2026-07-06 廃止）
     ├── latest.json         # 最新日（CDN キャッシュ回避用）
     ├── 2026-05-03.json     # 日次データ本体
-    └── archive/            # 90 日超のロールオーバー先
+    └── followups.json      # 続報チェーン（build-followups.mjs が毎朝生成）
 ```
 
 ## ローカル動作確認

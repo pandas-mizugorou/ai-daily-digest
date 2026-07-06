@@ -495,6 +495,60 @@ button { font: inherit; cursor: pointer; }
   background: var(--bg-soft);
   color: var(--fg-muted);
 }
+/* タグはリンク (検索ページへの導線)。下線は消しつつ hover で反応を返す */
+a.tag {
+  text-decoration: none;
+  transition: color 0.12s ease, background-color 0.12s ease;
+}
+a.tag:hover, a.tag:focus-visible {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-soft));
+}
+
+/* === 続報トラッキング (Phase 3-1) === */
+.followup-chip {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 999px;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  white-space: nowrap;
+}
+.followup-thread {
+  margin: 4px 0 12px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 5%, var(--bg-elevated));
+}
+.followup-thread-title {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--fg-muted);
+}
+.followup-thread-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.82rem;
+}
+.followup-thread-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.followup-thread-list a:hover, .followup-thread-list a:focus-visible {
+  text-decoration: underline;
+}
+.followup-thread-list .is-current {
+  color: var(--fg);
+  font-weight: 600;
+}
 
 .card-actions {
   display: flex;
@@ -1421,6 +1475,8 @@ button { font: inherit; cursor: pointer; }
   overflow-x: auto;
   padding: 0 4px 12px;
   scrollbar-width: thin;
+  /* スクロールバーは低コントラストに (デスクトップで太いグレー帯に見える問題の緩和) */
+  scrollbar-color: color-mix(in srgb, var(--border) 70%, transparent) transparent;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
@@ -1848,6 +1904,41 @@ button { font: inherit; cursor: pointer; }
 .search-input:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
+}
+/* 絞り込みフィルタ行 (カテゴリ / 出典 / スコア / 期間)。狭幅では 2 列に折り返す */
+.search-filters {
+  max-width: var(--maxw);
+  margin: 6px auto 2px;
+  padding: 0 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.filter-select {
+  flex: 1 1 calc(50% - 6px);
+  min-width: 0;
+  min-height: 36px;
+  padding: 4px 8px;
+  font-size: 0.82rem;
+  font-family: inherit;
+  color: var(--fg-muted);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  .filter-select { flex: 1 1 0; }
+}
+.filter-select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+/* 既定値以外を選択中のセレクトはアクティブ色 (何で絞っているか一目で分かる) */
+.filter-select:has(option:checked:not([value=""])) {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  font-weight: 600;
 }
 .search-meta {
   max-width: var(--maxw);

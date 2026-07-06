@@ -51,6 +51,12 @@
         aria-label="キーワード検索"
       />
     </div>
+    <div id="search-filters" class="search-filters" role="group" aria-label="条件で絞り込み">
+      <select id="filter-category" class="filter-select" aria-label="カテゴリで絞り込み"></select>
+      <select id="filter-source-type" class="filter-select" aria-label="出典タイプで絞り込み"></select>
+      <select id="filter-score" class="filter-select" aria-label="スコア下限で絞り込み"></select>
+      <select id="filter-period" class="filter-select" aria-label="期間で絞り込み"></select>
+    </div>
     <nav id="tag-chips" class="category-tabs" aria-label="タグで絞り込み"></nav>
   </header>
 
@@ -71,7 +77,7 @@
 
   <footer class="site-footer" role="contentinfo">
     <p>過去のダイジェスト全期間を全文検索 ・ <a href="../" id="back-link">日次ページ</a></p>
-    <p class="footer-note">キーワード（スペース区切りで AND）×タグ（複数で OR）で絞り込み。カードをタップで要約展開</p>
+    <p class="footer-note">キーワード（スペース区切りで AND）×タグ（複数で OR）×カテゴリ・出典・スコア・期間で絞り込み。カードをタップで要約展開</p>
   </footer>
 
   <template id="result-template">

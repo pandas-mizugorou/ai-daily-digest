@@ -320,6 +320,81 @@ function revealSummaryToggle(card) {
   });
 }
 
+// === 続報トラッキング (Phase 3-1) ===
+// data/followups.json (build-followups.mjs が毎朝生成) を 1 回読み、
+// (date, id) → 所属チェーンを O(1) で引いてカードに「続報」チップ + 経緯リストを注入する。
+let followups = null;
+
+async function loadFollowups() {
+  try {
+    const data = await fetchJSON(`${DATA_DIR}/followups.json`, { cache: "no-store" });
+    if (data && data.by_item && Array.isArray(data.chains)) {
+      followups = data;
+      // 既に描画済みのカードにも後追いで注入 (初回描画とfetchの競合を吸収)
+      document.querySelectorAll(".card[data-item-id]").forEach((n) => injectFollowup(n));
+    }
+  } catch {
+    /* 無くてもページは成立する (初期データ期・オフライン) */
+  }
+}
+
+function injectFollowup(node) {
+  if (!followups || node.dataset.followupDone === "1") return;
+  const date = node.dataset.date;
+  const id = node.dataset.itemId;
+  if (!date || !id) return;
+  const ref = followups.by_item[`${date}|${id}`];
+  if (!ref) return;
+  const chain = followups.chains[ref.chain];
+  if (!chain || !(chain.count >= 2)) return;
+  node.dataset.followupDone = "1";
+
+  // メタ行チップ: 折りたたみ状態でも「続いている話題」だと分かる
+  const meta = node.querySelector(".card-meta");
+  if (meta) {
+    const chip = document.createElement("span");
+    chip.className = "followup-chip";
+    chip.textContent = ref.nth >= 2 ? `続報 ${ref.nth}/${chain.count}` : "続報あり";
+    chip.title =
+      ref.nth >= 2
+        ? `この話題は計 ${chain.count} 回掲載 (これは ${ref.nth} 回目)。カードを開くと経緯を表示`
+        : `この話題は後日 ${chain.count - 1} 回再登場。カードを開くと経緯を表示`;
+    meta.appendChild(chip);
+  }
+
+  // 展開部: 経緯リスト (過去掲載へのディープリンク #YYYY-MM-DD/<id>)
+  const body = node.querySelector(".card-body");
+  const actions = node.querySelector(".card-actions");
+  if (body && actions) {
+    const wrap = document.createElement("div");
+    wrap.className = "followup-thread";
+    const title = document.createElement("p");
+    title.className = "followup-thread-title";
+    title.textContent = `この話題の経緯（全 ${chain.count} 回掲載）`;
+    wrap.appendChild(title);
+    const ol = document.createElement("ol");
+    ol.className = "followup-thread-list";
+    for (const oc of chain.occurrences) {
+      const li = document.createElement("li");
+      const isSelf = oc.date === date && oc.id === id;
+      const bits = [formatShortDate(oc.date), categoryFallbackLabel(oc.category)];
+      if (oc.rank != null) bits.push(`必読 #${oc.rank}`);
+      if (isSelf) {
+        li.className = "is-current";
+        li.textContent = `${bits.join(" ・ ")}（この記事）`;
+      } else {
+        const a = document.createElement("a");
+        a.href = `#${oc.date}/${encodeURIComponent(oc.id)}`;
+        a.textContent = bits.join(" ・ ");
+        li.appendChild(a);
+      }
+      ol.appendChild(li);
+    }
+    wrap.appendChild(ol);
+    body.insertBefore(wrap, actions);
+  }
+}
+
 function renderCard(item) {
   const node = els.cardTpl.content.firstElementChild.cloneNode(true);
   node.dataset.itemId = item.id || "";
@@ -367,12 +442,17 @@ function renderCard(item) {
   if (srcChip) sourceEl.insertAdjacentElement("afterend", srcChip);
   node.querySelector(".card-date").textContent = formatShortDate(item.published_at);
   const scoreEl = node.querySelector(".card-score");
-  const total = item.scores?.total ?? 0;
-  scoreEl.textContent = `★ ${total}/20`;
-  scoreEl.classList.add(scoreClass(total));
-  scoreEl.title = item.scores
-    ? `重要度${item.scores.importance ?? "?"} / 深度${item.scores.depth ?? "?"} / 実用性${item.scores.practicality ?? "?"} / 鮮度${item.scores.freshness ?? "?"}`
-    : "";
+  // 正準は scores だが、過去データの `score` (単数) ドリフトにも防御的に対応
+  const sc = item.scores ?? item.score;
+  const total = sc?.total;
+  if (typeof total === "number") {
+    scoreEl.textContent = `★ ${total}/20`;
+    scoreEl.classList.add(scoreClass(total));
+    scoreEl.title = `重要度${sc.importance ?? "?"} / 深度${sc.depth ?? "?"} / 実用性${sc.practicality ?? "?"} / 鮮度${sc.freshness ?? "?"}`;
+  } else {
+    // スコア欠落日 (例: 2026-06-26) は「★ 0/20」と誤読させず非表示にする
+    scoreEl.classList.add("hidden");
+  }
   // グラウンディング検証 (Step 8.6) で未検証主張が残った記事に ⚠ を出す
   if (item.grounding && item.grounding.verified === false) {
     const warn = document.createElement("span");
@@ -399,10 +479,13 @@ function renderCard(item) {
   const tags = node.querySelector(".card-tags");
   if (Array.isArray(item.tags)) {
     for (const tag of item.tags) {
-      const span = document.createElement("span");
-      span.className = "tag";
-      span.textContent = `#${tag}`;
-      tags.appendChild(span);
+      // タグは検索ページへの導線 (同タグの過去記事を横断で見られる)
+      const a = document.createElement("a");
+      a.className = "tag";
+      a.textContent = `#${tag}`;
+      a.href = `search/?tag=${encodeURIComponent(tag)}`;
+      a.title = `#${tag} の記事を検索`;
+      tags.appendChild(a);
     }
   }
 
@@ -469,6 +552,9 @@ function renderCard(item) {
 
   // 元記事リンクを踏んだら既読化
   link.addEventListener("click", () => { markRead(item.id); node.classList.add("is-read"); });
+
+  // 続報チェーンに属する記事ならチップ + 経緯リストを注入 (followups 読込済みの場合)
+  injectFollowup(node);
 
   return node;
 }
@@ -1187,6 +1273,7 @@ async function initPush(reg) {
 
 // === Boot ===
 (async function boot() {
+  loadFollowups(); // 非同期先行ロード (完了時に描画済みカードへ後追い注入)
   await loadIndex();
   await route();
   updateHeaderHeightVar();
