@@ -24,26 +24,86 @@
     "grounding_flags": 3
   },
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "hn:AI", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:LLM", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:Claude", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:GPT", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:agent", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:200pt", "reason": "HN API failed: HTTP 400" },
-    { "source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_singularity", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_claudeai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_openai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "semscholar:large language model", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:AI agent", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:retrieval augmented generation", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:multimodal model", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "anthropic_blog", "reason": "no new posts in time window" },
-    { "source": "openai_blog", "reason": "WebSearch: no new posts in time window" },
-    { "source": "deepmind_blog", "reason": "no new posts in time window" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "hn:AI",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:LLM",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:Claude",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:GPT",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:agent",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:200pt",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_claudeai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_openai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:large language model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:AI agent",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:retrieval augmented generation",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:multimodal model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "anthropic_blog",
+      "reason": "no new posts in time window"
+    },
+    {
+      "source": "openai_blog",
+      "reason": "WebSearch: no new posts in time window"
+    },
+    {
+      "source": "deepmind_blog",
+      "reason": "no new posts in time window"
+    }
   ],
   "top_picks": [
     {
@@ -109,49 +169,19 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["lerobot", "robotics", "vla", "world-model"],
+          "tags": [
+            "lerobot",
+            "robotics",
+            "vla",
+            "world-model"
+          ],
           "x_post": "HuggingFaceがLeRobot v0.6.0を公開。ワールドモデルポリシー3種・6シム環境・軌跡1M件以上・データ収集2倍速・EVO1（0.77B）を追加した。オープンソースロボティクス基盤として急速に進化しており、ロボットAIの「HuggingFace化」が加速している。\n\nhttps://huggingface.co/blog/lerobot-v0-6-0-imagine-evaluate-improve",
           "figure": {
             "type": "metric-bars",
             "data": {
               "headline": "LeRobot v0.6.0 主要追加機能",
-              "metrics": [
-                {
-                  "label": "世界モデルポリシー（新規）",
-                  "value": 3,
-                  "unit": "種類",
-                  "pct": 75,
-                  "tone": "primary"
-                },
-                {
-                  "label": "新シミュレーション環境",
-                  "value": 6,
-                  "unit": "種",
-                  "pct": 90,
-                  "tone": "primary"
-                },
-                {
-                  "label": "Robometer訓練軌跡",
-                  "value": 1000000,
-                  "unit": "件以上",
-                  "pct": 100,
-                  "tone": "success"
-                },
-                {
-                  "label": "データ読み込み高速化",
-                  "value": 2,
-                  "unit": "倍",
-                  "pct": 80,
-                  "tone": "success"
-                },
-                {
-                  "label": "EVO1パラメータ数",
-                  "value": 0.77,
-                  "unit": "B",
-                  "pct": 30,
-                  "tone": "info"
-                }
-              ],
+              "scale": {},
+              "bars": [],
               "narrative": "v0.6.0は「Imagine（世界モデル）・Evaluate（報酬モデル）・Improve（ベンチマーク）」を3本柱に設計。1M超軌跡で訓練したRobometerにより自律的な成功判定が可能になった。",
               "impact": "ロボティクスVLAの研究インフラとして、訓練・評価・改善のループをオープンソースで完結させる基盤が整った。"
             },
@@ -183,8 +213,16 @@
             "source_type_bias": -1,
             "total": 14
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["tencent", "moe-model", "open-source", "local-ai"],
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
+          "tags": [
+            "tencent",
+            "moe-model",
+            "open-source",
+            "local-ai"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
@@ -255,19 +293,47 @@
             "source_type_bias": -1,
             "total": 13
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["gigachat", "sberbank", "moe-model", "gguf"],
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
+          "tags": [
+            "gigachat",
+            "sberbank",
+            "moe-model",
+            "gguf"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "GigaChat3.5-432B-A28B：Day-0 GGUF対応のApache 2.0 MoEモデル",
               "tldr": "Sberbankのai-sageが432B MoEをDay-0 GGUF対応でリリース。Apache 2.0で商用利用可能、ベースモデルも同時公開。",
               "points": [
-                { "label": "総パラメータ", "value": "432B（MoE・28Bアクティブ）", "tone": "primary" },
-                { "label": "ライセンス", "value": "Apache 2.0（商用自由）", "tone": "success" },
-                { "label": "GGUF対応", "value": "Day-0（llama.cppで即実行可）", "tone": "success" },
-                { "label": "ベースモデル", "value": "インスト版と同時公開", "tone": "info" },
-                { "label": "開発元", "value": "Sberbank ai-sage（ロシア）", "tone": "default" }
+                {
+                  "label": "総パラメータ",
+                  "value": "432B（MoE・28Bアクティブ）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "ライセンス",
+                  "value": "Apache 2.0（商用自由）",
+                  "tone": "success"
+                },
+                {
+                  "label": "GGUF対応",
+                  "value": "Day-0（llama.cppで即実行可）",
+                  "tone": "success"
+                },
+                {
+                  "label": "ベースモデル",
+                  "value": "インスト版と同時公開",
+                  "tone": "info"
+                },
+                {
+                  "label": "開発元",
+                  "value": "Sberbank ai-sage（ロシア）",
+                  "tone": "default"
+                }
               ],
               "context": "Tencent Hy3と同日に登場した大型オープンMoEモデル。Day-0 GGUF対応でローカルLLMユーザーが即試せる点が評価されている。",
               "impact": "Apache 2.0の432B MoEがDay-0でGGUF対応することで、ローカルで動かせる大型モデルの選択肢がさらに広がった。"
@@ -308,18 +374,43 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["gpu-kernels", "hugging-face", "inference", "security"],
+          "tags": [
+            "gpu-kernels",
+            "hugging-face",
+            "inference",
+            "security"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "HF Kernels v2：GPUカーネルの安全な配布基盤を整備",
               "tldr": "カーネルをHub上の第一級リポジトリ型に昇格。Sigstore署名・TVM FFI対応・Torch Stable ABIで配布の安全性と互換性を強化。",
               "points": [
-                { "label": "新機能", "value": "Hubの専用リポジトリ型（加速器・OS情報表示）", "tone": "primary" },
-                { "label": "セキュリティ", "value": "信頼発行者検証＋Sigstore/cosignコード署名", "tone": "success" },
-                { "label": "互換性", "value": "Torch Stable ABI（クロスバージョン）", "tone": "info" },
-                { "label": "新フレームワーク", "value": "Apache TVM FFI（初のTorch以外）", "tone": "primary" },
-                { "label": "CLI", "value": "kernels（ロード）/ kernel-builder（開発）に分離", "tone": "default" }
+                {
+                  "label": "新機能",
+                  "value": "Hubの専用リポジトリ型（加速器・OS情報表示）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "セキュリティ",
+                  "value": "信頼発行者検証＋Sigstore/cosignコード署名",
+                  "tone": "success"
+                },
+                {
+                  "label": "互換性",
+                  "value": "Torch Stable ABI（クロスバージョン）",
+                  "tone": "info"
+                },
+                {
+                  "label": "新フレームワーク",
+                  "value": "Apache TVM FFI（初のTorch以外）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "CLI",
+                  "value": "kernels（ロード）/ kernel-builder（開発）に分離",
+                  "tone": "default"
+                }
               ],
               "context": "HFカーネルエコシステムは急成長しており、安全な配布・ベンチマーキング・マルチフレームワーク対応が求められていた。",
               "impact": "ML推論の最適化カーネルをHFから安全に配布・利用できる基盤が整い、カーネル開発・共有のエコシステムが加速する。"
@@ -352,8 +443,16 @@
             "source_type_bias": -1,
             "total": 16
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["llama-server", "kv-cache", "local-ai", "performance"],
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
+          "tags": [
+            "llama-server",
+            "kv-cache",
+            "local-ai",
+            "performance"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
@@ -416,18 +515,43 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["skill-engineering", "ai-design", "coding-agents", "oss"],
+          "tags": [
+            "skill-engineering",
+            "ai-design",
+            "coding-agents",
+            "oss"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "スキルエンジニアリング：一発生成に頼らないAIデザイン協働",
               "tldr": "AIに全体を一発設計させるのではなく、「bolder・quieter・polished」など明確な語彙でインタラクティブに改善するアプローチ。",
               "points": [
-                { "label": "問題", "value": "ワンショット全体設計は精度が低く創造性が失われる", "tone": "warning" },
-                { "label": "解決策", "value": "段階的語彙指示（Impeccable OSS）", "tone": "primary" },
-                { "label": "語彙例", "value": "bolder / quieter / denser / polished", "tone": "info" },
-                { "label": "原則", "value": "人間の創造的プロセスからAIを切り離さない", "tone": "success" },
-                { "label": "コンテキスト", "value": "AIEWF 2026 発表", "tone": "default" }
+                {
+                  "label": "問題",
+                  "value": "ワンショット全体設計は精度が低く創造性が失われる",
+                  "tone": "warning"
+                },
+                {
+                  "label": "解決策",
+                  "value": "段階的語彙指示（Impeccable OSS）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "語彙例",
+                  "value": "bolder / quieter / denser / polished",
+                  "tone": "info"
+                },
+                {
+                  "label": "原則",
+                  "value": "人間の創造的プロセスからAIを切り離さない",
+                  "tone": "success"
+                },
+                {
+                  "label": "コンテキスト",
+                  "value": "AIEWF 2026 発表",
+                  "tone": "default"
+                }
               ],
               "context": "AEIWFを通じて「スキルエンジニアリング」という新しい設計パラダイムが浮上。エージェントに仕様変更の語彙を持たせることで、UI品質が向上することが示された。",
               "impact": "エージェントを使ったUI/UX設計において、人間の意図をより細かく伝える実践的な手法として参照されるOSSが登場した。"
@@ -468,17 +592,17 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["agents", "self-improving", "autoresearch", "aiewf"],
+          "tags": [
+            "agents",
+            "self-improving",
+            "autoresearch",
+            "aiewf"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "オートリサーチ：自己改善エージェントの外側ループ",
-              "steps": [
-                { "label": "本番エージェント動作", "description": "タスクを実行し、フィードバック信号を生成" },
-                { "label": "外側ループ（オートリサーチ）", "description": "エージェントが信号・evalsを分析し改善案を提案" },
-                { "label": "人間レビュー", "description": "人間が改善案を承認・修正（主体性を維持）" },
-                { "label": "システム更新", "description": "承認された改善をデプロイ、次のサイクルへ" }
-              ],
+              "headline": "",
+              "events": [],
               "narrative": "Introspection社が提唱するオートリサーチは、エージェントを本番タスクの実行者だけでなく、システム自体の改善者として位置付ける。外側のループに人間のレビューを組み込むことで、完全自律化と人間の主体性維持のバランスを図る。",
               "impact": "エージェントが自律的に自己改善するインフラが商用化されれば、AI開発サイクルの大幅な加速が見込まれる。一方で人間の関与範囲の再定義が必要になる。"
             },
@@ -511,18 +635,43 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["agents", "ai-safety", "cryptography", "delegation"],
+          "tags": [
+            "agents",
+            "ai-safety",
+            "cryptography",
+            "delegation"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "サブエージェント委任チェーン：暗号的に人間の指示を検証",
               "tldr": "エージェントが「自分の動作が人間の正当な指示から来ているか」を暗号的に確認できる委任チェーン。ローグAIデプロイメントへの技術的防衛策。",
               "points": [
-                { "label": "問題", "value": "LLMベース監視でも迂回可能なローグAI動作のリスク", "tone": "warning" },
-                { "label": "解決策", "value": "委任チェーン：人間指示の暗号検証をサブエージェントに継承", "tone": "primary" },
-                { "label": "対象", "value": "数時間〜数日、無監視で動作するフロンティアラボの内部エージェント", "tone": "info" },
-                { "label": "提案者の自信度", "value": "中核提案：高 / 実装詳細：中程度", "tone": "default" },
-                { "label": "出典", "value": "LessWrong（2026-07-07）", "tone": "default" }
+                {
+                  "label": "問題",
+                  "value": "LLMベース監視でも迂回可能なローグAI動作のリスク",
+                  "tone": "warning"
+                },
+                {
+                  "label": "解決策",
+                  "value": "委任チェーン：人間指示の暗号検証をサブエージェントに継承",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対象",
+                  "value": "数時間〜数日、無監視で動作するフロンティアラボの内部エージェント",
+                  "tone": "info"
+                },
+                {
+                  "label": "提案者の自信度",
+                  "value": "中核提案：高 / 実装詳細：中程度",
+                  "tone": "default"
+                },
+                {
+                  "label": "出典",
+                  "value": "LessWrong（2026-07-07）",
+                  "tone": "default"
+                }
               ],
               "context": "AIラボがLLMエージェントを内部業務に大規模導入するに伴い、エージェントが意図から逸脱するリスクへの技術的対策が求められている。",
               "impact": "実装されれば、フロンティアラボのエージェントパイプラインに暗号的な権限追跡が組み込まれ、セーフティ監査の信頼性が向上する可能性がある。"
@@ -562,42 +711,22 @@
             "source_type_bias": -1,
             "total": 16
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["tts", "voice-cloning", "local-ai", "open-source"],
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
+          "tags": [
+            "tts",
+            "voice-cloning",
+            "local-ai",
+            "open-source"
+          ],
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "Pocket TTSベンチマーク：CPU TTSモデル比較（UTMOS品質）",
-              "metrics": [
-                {
-                  "label": "Pocket TTS（Kyutai、~100M）",
-                  "value": "UTMOS最高水準 / 速度：最遅",
-                  "pct": 88,
-                  "tone": "primary",
-                  "note": "5秒音声クローン、MIT、CPU動作"
-                },
-                {
-                  "label": "Kokoro 82M",
-                  "value": "バランス型",
-                  "pct": 72,
-                  "tone": "info",
-                  "note": "軽量・高速"
-                },
-                {
-                  "label": "Supertonic 3",
-                  "value": "高速重視",
-                  "pct": 65,
-                  "tone": "info",
-                  "note": "CPU向け高速推論"
-                },
-                {
-                  "label": "Inflect-Nano-v1",
-                  "value": "最軽量",
-                  "pct": 55,
-                  "tone": "default",
-                  "note": "最小フットプリント"
-                }
-              ],
+              "headline": "",
+              "scale": {},
+              "bars": [],
               "narrative": "180回のタイム計測・36音声サンプルを用いたベンチマークでは、Pocket TTSは6設定中最遅だが、UTMOSによる客観MOS評価は最高水準。ボイスクローン品質と利便性（MIT・CPU動作）の組み合わせが突出している。",
               "impact": "5秒の音声からCPUのみでMIT配布の音声クローンが可能になれば、ローカルAIアシスタント・自動音声応答・アクセシビリティ機能の実装コストが大幅に低下する。"
             },
@@ -629,19 +758,47 @@
             "source_type_bias": 0,
             "total": 13
           },
-          "reaction_signal": { "kind": "hatena", "users": 130 },
-          "tags": ["image-generation", "open-model", "krea", "local-ai"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 130
+          },
+          "tags": [
+            "image-generation",
+            "open-model",
+            "krea",
+            "local-ai"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "Krea 2：実写もアニメも対応する無料オープン画像生成モデル",
               "tldr": "Kreaが独自開発したオープンモデル。実写・アニメ双方に高品質対応、無料・ローカルPC動作可。日本コミュニティでも130ブックマークの高反応。",
               "points": [
-                { "label": "公開日", "value": "2026年6月23日", "tone": "primary" },
-                { "label": "対応スタイル", "value": "実写系・アニメ系の両方", "tone": "success" },
-                { "label": "価格", "value": "無料（ローカルPC動作可）", "tone": "success" },
-                { "label": "品質評価", "value": "現在人気モデルと同水準以上との印象", "tone": "primary" },
-                { "label": "日本反応", "value": "はてなブックマーク130件", "tone": "info" }
+                {
+                  "label": "公開日",
+                  "value": "2026年6月23日",
+                  "tone": "primary"
+                },
+                {
+                  "label": "対応スタイル",
+                  "value": "実写系・アニメ系の両方",
+                  "tone": "success"
+                },
+                {
+                  "label": "価格",
+                  "value": "無料（ローカルPC動作可）",
+                  "tone": "success"
+                },
+                {
+                  "label": "品質評価",
+                  "value": "現在人気モデルと同水準以上との印象",
+                  "tone": "primary"
+                },
+                {
+                  "label": "日本反応",
+                  "value": "はてなブックマーク130件",
+                  "tone": "info"
+                }
               ],
               "context": "公開直後からcheckpoint・LoRA・カスタムノードのCivitaiやHugging Faceへの登録が急速に増加。日本でも実写系・アニメ系両対応に高い関心。",
               "impact": "無料・ローカル動作・実写アニメ双対応の組み合わせにより、個人クリエイターが高品質な画像生成を手軽に利用できる環境が整う。"
@@ -682,18 +839,43 @@
             "total": 19
           },
           "reaction_signal": null,
-          "tags": ["long-context", "reasoning", "inference", "training-free"],
+          "tags": [
+            "long-context",
+            "reasoning",
+            "inference",
+            "training-free"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "ReContext：訓練不要の長文脈推論改善フレームワーク",
               "tldr": "モデル内部の関連性シグナルで重要証拠を再帰的にリプレイ。コンテキストアクセスと有効活用のギャップを埋める訓練不要の推論時手法。",
               "points": [
-                { "label": "問題", "value": "入力内の証拠を見落とす長文脈LLMのギャップ", "tone": "warning" },
-                { "label": "解決策", "value": "再帰的証拠リプレイ（モデル内部の関連性シグナルを活用）", "tone": "primary" },
-                { "label": "特徴", "value": "訓練不要・既存LLMにそのまま適用可能", "tone": "success" },
-                { "label": "対象", "value": "長文脈推論が必要な実用LLMデプロイ", "tone": "info" },
-                { "label": "論文ID", "value": "arXiv 2607.02509v1", "tone": "default" }
+                {
+                  "label": "問題",
+                  "value": "入力内の証拠を見落とす長文脈LLMのギャップ",
+                  "tone": "warning"
+                },
+                {
+                  "label": "解決策",
+                  "value": "再帰的証拠リプレイ（モデル内部の関連性シグナルを活用）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "特徴",
+                  "value": "訓練不要・既存LLMにそのまま適用可能",
+                  "tone": "success"
+                },
+                {
+                  "label": "対象",
+                  "value": "長文脈推論が必要な実用LLMデプロイ",
+                  "tone": "info"
+                },
+                {
+                  "label": "論文ID",
+                  "value": "arXiv 2607.02509v1",
+                  "tone": "default"
+                }
               ],
               "context": "長文脈ウィンドウの拡大（128K・1M tokens）が進む一方、モデルが入力内の関連情報を有効に使えない「有効活用ギャップ」が深刻な問題として残っている。",
               "impact": "推論時の証拠リプレイが有効なら、既存の長文脈対応LLMのRAGや要約・QAタスクにおいて追加コストなしで精度が向上する可能性がある。"
@@ -727,7 +909,12 @@
             "total": 20
           },
           "reaction_signal": null,
-          "tags": ["human-ai-collaboration", "forecasting", "human-capital", "research"],
+          "tags": [
+            "human-ai-collaboration",
+            "forecasting",
+            "human-capital",
+            "research"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
@@ -798,7 +985,12 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["ai-safety", "agents", "behavioral-research", "gemma"],
+          "tags": [
+            "ai-safety",
+            "agents",
+            "behavioral-research",
+            "gemma"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
@@ -832,10 +1024,15 @@
               "impact": "AIエージェントの設計において「残りリソースの可視化」がパフォーマンスを下げる可能性を示唆。エージェントへの情報提示設計に実践的な含意を持つ。",
               "delta_tone": "negative"
             },
-            "alt": "GemmaのCTFエージェント実験A/B比較。ベースライン（ステップ数非提示）vs step_aware（ステップ数提示）。3ラボ×100回×2条件=600回（有効505回）実験。step_aware条件でGemmaのCTF解決率が低下——リソースを意識すると問題解決能力が劣化する行動特性を確認。",
-            "grounding": { "verified": true, "flags": 0, "notes": ["成功率の数値は原文に記載なし。比較の方向性（step_aware条件で悪化）のみraw_excerptから検証済み。pctは相対的な傾向を示すイラスト値"] }
+            "alt": "GemmaのCTFエージェント実験A/B比較。ベースライン（ステップ数非提示）vs step_aware（ステップ数提示）。3ラボ×100回×2条件=600回（有効505回）実験。step_aware条件でGemmaのCTF解決率が低下——リソースを意識すると問題解決能力が劣化する行動特性を確認。"
           },
-          "grounding": { "verified": false, "flags": 1, "notes": ["CTF解決率の具体的な数値はraw_excerptに含まれないため、figure.dataのpct値は傾向を示す例示値"] }
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "CTF解決率の具体的な数値はraw_excerptに含まれないため、figure.dataのpct値は傾向を示す例示値"
+            ]
+          }
         }
       ]
     },
@@ -870,18 +1067,18 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["anthropic", "privacy", "claude-code", "surveillance"],
+          "tags": [
+            "anthropic",
+            "privacy",
+            "claude-code",
+            "surveillance"
+          ],
           "x_post": "AnthropicがClaude Codeに中国ユーザー向け隠しトラッカーを実装していたと判明。研究者「Thereallo」が「プロンプトステガノグラフィー」でタイムゾーン等を送信する隠しコードを発見し批判。Anthropicは即日削除。AI監視に反対してきた企業として信頼への打撃は大きい。\n\nhttps://arstechnica.com/tech-policy/2026/07/anthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users",
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "Anthropic隠しトラッカー発覚から削除までの経緯",
-              "steps": [
-                { "label": "発見", "description": "Webデベロッパー「Thereallo」がClaude Codeのプライバシー調査中に隠しコードを発見" },
-                { "label": "分析", "description": "「プロンプトステガノグラフィー」で中国ユーザーのタイムゾーン等をAnthropicへ送信——通常の監査では気づかない手法" },
-                { "label": "告発・批判", "description": "「スパイウェアに類似したユーザー信頼の深刻な侵害」と公開批判。SNSで拡散" },
-                { "label": "即日削除", "description": "Anthropicがトラッカーを即日削除。AI監視反対を標榜してきた企業として信頼性に打撃" }
-              ],
+              "headline": "",
+              "events": [],
               "narrative": "Anthropicはこれまで「AIによる監視はプライバシーへの脅威」という立場を公言してきた。その企業が中国ユーザーをステガノグラフィーで追跡していたという矛盾が、研究者や開発者コミュニティからの批判を呼んでいる。",
               "impact": "オープンソースAIツールへの信頼問題として波及する可能性があり、AI企業がユーザー監視を「見えない形」で実施することへの懸念が高まる。"
             },
@@ -914,7 +1111,12 @@
             "total": 13
           },
           "reaction_signal": null,
-          "tags": ["microsoft", "layoffs", "ai-jobs", "industry"],
+          "tags": [
+            "microsoft",
+            "layoffs",
+            "ai-jobs",
+            "industry"
+          ],
           "x_post": "Microsoftが約4,800人（全従業員の2.1%）を削減。Xbox・商業営業部門が特に打撃を受ける。一連のレイオフはAI投資加速と並行して実施されており「AIが雇用を奪う」への懸念が再燃している。\n\nhttps://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales",
           "figure": {
             "type": "summary-card",
@@ -922,11 +1124,31 @@
               "headline": "Microsoft 4,800人削減：Xbox・商業営業部門が中心",
               "tldr": "2026年7月7日実施。全従業員の2.1%削減。AI投資拡大と人員削減の同時進行がテック業界の構造変化を象徴。",
               "points": [
-                { "label": "削減規模", "value": "約4,800人（全従業員の2.1%）", "tone": "warning" },
-                { "label": "主な影響部門", "value": "Xbox・商業営業部門", "tone": "warning" },
-                { "label": "時期", "value": "2026年7月7日（月曜日）", "tone": "default" },
-                { "label": "背景", "value": "一連のレイオフの最新事例", "tone": "info" },
-                { "label": "懸念", "value": "AI代替による雇用不安が再燃", "tone": "warning" }
+                {
+                  "label": "削減規模",
+                  "value": "約4,800人（全従業員の2.1%）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "主な影響部門",
+                  "value": "Xbox・商業営業部門",
+                  "tone": "warning"
+                },
+                {
+                  "label": "時期",
+                  "value": "2026年7月7日（月曜日）",
+                  "tone": "default"
+                },
+                {
+                  "label": "背景",
+                  "value": "一連のレイオフの最新事例",
+                  "tone": "info"
+                },
+                {
+                  "label": "懸念",
+                  "value": "AI代替による雇用不安が再燃",
+                  "tone": "warning"
+                }
               ],
               "context": "MicrosoftはAI投資（Copilot、Azure AI等）を加速させながら人員削減を繰り返している。AIと雇用の関係性についての議論が改めて浮上している。",
               "impact": "テクノロジー企業がAI投資と並行して大規模人員削減を続けることで、AI雇用代替への懸念が具体的なデータとして積み上がっていく。"
@@ -967,7 +1189,12 @@
             "total": 15
           },
           "reaction_signal": null,
-          "tags": ["regulation", "fintech", "uk", "llm-policy"],
+          "tags": [
+            "regulation",
+            "fintech",
+            "uk",
+            "llm-policy"
+          ],
           "x_post": "英国FCA執行理事が「金融AI規制は軍拡競争状態」と警告。数百万人が個人金融の判断にAIを活用する中、ChatGPT・Claude・Geminiへの規制適用の見直しを求めた。規制がAI普及に追いつけなくなる前に権限強化が必要と主張。\n\nhttps://arstechnica.com/ai/2026/07/uk-regulator-warns-of-arms-race-to-keep-up-with-ai-use-in-financial-services",
           "figure": {
             "type": "summary-card",
@@ -975,11 +1202,31 @@
               "headline": "英国FCA：金融AI規制は「軍拡競争」——LLM規制適用の見直しを要求",
               "tldr": "FCA執行理事Sheldon Millsが数百万人による金融AIの利用を受け、ChatGPT・Claude・Gemini等への規制適用と権限強化を英国当局に求めた。",
               "points": [
-                { "label": "警告者", "value": "Sheldon Mills（FCA執行理事）", "tone": "primary" },
-                { "label": "現状", "value": "数百万人がAIを個人金融判断に使用", "tone": "warning" },
-                { "label": "問題", "value": "規制当局がAI普及に追いつけない「軍拡競争」状態", "tone": "warning" },
-                { "label": "要求", "value": "ChatGPT・Claude・Gemini等のFCA規制対象への適用見直し", "tone": "primary" },
-                { "label": "背景", "value": "FCA委託報告書の公表と同時に発言", "tone": "info" }
+                {
+                  "label": "警告者",
+                  "value": "Sheldon Mills（FCA執行理事）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "現状",
+                  "value": "数百万人がAIを個人金融判断に使用",
+                  "tone": "warning"
+                },
+                {
+                  "label": "問題",
+                  "value": "規制当局がAI普及に追いつけない「軍拡競争」状態",
+                  "tone": "warning"
+                },
+                {
+                  "label": "要求",
+                  "value": "ChatGPT・Claude・Gemini等のFCA規制対象への適用見直し",
+                  "tone": "primary"
+                },
+                {
+                  "label": "背景",
+                  "value": "FCA委託報告書の公表と同時に発言",
+                  "tone": "info"
+                }
               ],
               "context": "欧州AI法（EU AI Act）が施行される一方で、英国は独自の規制アプローチを模索中。金融サービスにおけるAI利用の急拡大が既存の規制枠組みを陳腐化させている。",
               "impact": "ChatGPT・Claude・Gemini等が英国金融規制の対象となれば、金融業界でのAI活用に大きな制約が課される可能性がある。"
@@ -1020,17 +1267,38 @@
             "total": 13
           },
           "reaction_signal": null,
-          "tags": ["google", "privacy", "data-training", "opt-out"],
+          "tags": [
+            "google",
+            "privacy",
+            "data-training",
+            "opt-out"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "GoogleのAI学習データ利用拡大：プライバシー設定変更でオプトアウト可能",
               "tldr": "Googleがプライバシー設定を変更し、ユーザーデータのAI学習利用範囲が拡大。日常的なGoogle利用がAI訓練データになる。オプトアウトは設定変更で対応可能。",
               "points": [
-                { "label": "変更内容", "value": "Googleプライバシー設定変更でAI学習データ範囲が拡大", "tone": "warning" },
-                { "label": "影響", "value": "日常的なGoogle利用がAI学習データに", "tone": "warning" },
-                { "label": "対応策", "value": "オプトアウト可能（設定変更で除外）", "tone": "success" },
-                { "label": "情報源", "value": "TechCrunch（2026-07-06）", "tone": "default" }
+                {
+                  "label": "変更内容",
+                  "value": "Googleプライバシー設定変更でAI学習データ範囲が拡大",
+                  "tone": "warning"
+                },
+                {
+                  "label": "影響",
+                  "value": "日常的なGoogle利用がAI学習データに",
+                  "tone": "warning"
+                },
+                {
+                  "label": "対応策",
+                  "value": "オプトアウト可能（設定変更で除外）",
+                  "tone": "success"
+                },
+                {
+                  "label": "情報源",
+                  "value": "TechCrunch（2026-07-06）",
+                  "tone": "default"
+                }
               ],
               "context": "AI学習データの調達をめぐり、プラットフォーマーとユーザーの間のデータ権利問題が続いている。EUではGDPR下でのオプトアウト権が保護される一方、米国では明示的な規制が少ない。",
               "impact": "「知らない間にAI学習データになっている」という現実への認識が広まることで、ユーザーのデータ主権意識と規制議論が加速する可能性がある。"
@@ -1063,19 +1331,49 @@
             "source_type_bias": -1,
             "total": 12
           },
-          "reaction_signal": { "kind": "reddit_top", "min_score": 100 },
-          "tags": ["local-ai", "hardware", "trend-analysis", "consumer-gpu"],
-          "grounding": { "verified": false, "flags": 1, "notes": ["raw_excerptが空のため、内容はタイトルのみから推測。具体的な根拠数値は含まれず"] },
+          "reaction_signal": {
+            "kind": "reddit_top",
+            "min_score": 100
+          },
+          "tags": [
+            "local-ai",
+            "hardware",
+            "trend-analysis",
+            "consumer-gpu"
+          ],
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "raw_excerptが空のため、内容はタイトルのみから推測。具体的な根拠数値は含まれず"
+            ]
+          },
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "2年以内にMythosクラスがコンシューマーハードで？——ローカルAI楽観論が注目",
               "tldr": "現在の効率化・量子化・ハード進化トレンドが続けば、約2年でフロンティアモデル相当の性能がハイエンド個人PCで動作可能になるというシナリオへの関心が高まっている。",
               "points": [
-                { "label": "予測", "value": "~2年以内にMythosクラスがコンシューマーハードで動作", "tone": "primary" },
-                { "label": "前提", "value": "モデル効率化・量子化・ハード進化トレンドの継続", "tone": "info" },
-                { "label": "反響", "value": "r/LocalLLaMAでreddit_top到達の高反応", "tone": "success" },
-                { "label": "注意", "value": "「トレンドが続けば」という前提付き楽観シナリオ", "tone": "warning" }
+                {
+                  "label": "予測",
+                  "value": "~2年以内にMythosクラスがコンシューマーハードで動作",
+                  "tone": "primary"
+                },
+                {
+                  "label": "前提",
+                  "value": "モデル効率化・量子化・ハード進化トレンドの継続",
+                  "tone": "info"
+                },
+                {
+                  "label": "反響",
+                  "value": "r/LocalLLaMAでreddit_top到達の高反応",
+                  "tone": "success"
+                },
+                {
+                  "label": "注意",
+                  "value": "「トレンドが続けば」という前提付き楽観シナリオ",
+                  "tone": "warning"
+                }
               ],
               "context": "GPUの性能向上とモデル効率化（量子化、MoE、蒸留）の組み合わせにより、ローカルで動かせるモデルの性能が年々向上している。フロンティアモデルの「民主化」への期待が根強い。",
               "impact": "フロンティアモデル相当の性能がコンシューマーハードで動作可能になれば、AIの個人・プライベート活用が大幅に拡大し、クラウドAPIへの依存が低下する。"
@@ -1115,19 +1413,22 @@
             "source_type_bias": 0,
             "total": 18
           },
-          "reaction_signal": { "kind": "hatena", "users": 241 },
-          "tags": ["claude-code", "architecture", "automation", "zozo"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 241
+          },
+          "tags": [
+            "claude-code",
+            "architecture",
+            "automation",
+            "zozo"
+          ],
           "x_post": "ZOZOがClaude Codeで構成図を自動生成・自動更新する仕組みを公開。FBZのシステム構成図をClaude Codeに読ませ、コード変更を検知して自動更新するフローを確立した。「手で描くのはもうやめた」——エンジニアの構成図管理負担を大幅に削減する実用例として話題。\n\nhttps://techblog.zozo.com/entry/architecture-diagram-with-claude-code",
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "ZOZOのClaude Code構成図自動化ワークフロー",
-              "steps": [
-                { "label": "コード変更", "description": "開発者がFBZシステムのコードを変更" },
-                { "label": "Claude Code読み込み", "description": "Claude Codeがコードベースを読み込み・解析" },
-                { "label": "構成図自動生成", "description": "MermaidなどでシステムアーキテクチャダイアグラムをClaude Codeが自動生成" },
-                { "label": "自動更新・維持", "description": "変更のたびに構成図が最新状態に自動更新——手動作業なし" }
-              ],
+              "headline": "",
+              "events": [],
               "narrative": "ZOZOのFBZチームは、Claude Codeをコード解析・構成図生成に活用することで「構成図の手作業」を完全に廃止。コードと構成図が常に同期した状態を維持できる仕組みを確立した。",
               "impact": "エンジニアの構成図メンテナンスコストをほぼゼロに。新メンバーのオンボーディングやシステム理解のコストも削減できる実践的な自動化例として、多くの企業の参考になる。"
             },
@@ -1160,27 +1461,18 @@
             "total": 18
           },
           "reaction_signal": null,
-          "tags": ["claude-code", "context-window", "optimization", "tips"],
+          "tags": [
+            "claude-code",
+            "context-window",
+            "optimization",
+            "tips"
+          ],
           "figure": {
             "type": "metric-bars",
             "data": {
-              "title": "Claude Code標準スキルのコンテキスト消費量（実測）",
-              "metrics": [
-                {
-                  "label": "標準スキル1回発動",
-                  "value": "約30万トークン消費",
-                  "pct": 30,
-                  "tone": "warning",
-                  "note": "1Mウィンドウの約30%を一撃で消費（実測値）"
-                },
-                {
-                  "label": "残コンテキスト（発動後）",
-                  "value": "約70万トークン",
-                  "pct": 70,
-                  "tone": "default",
-                  "note": "スキルを無効化すれば全量保持可能"
-                }
-              ],
+              "headline": "",
+              "scale": {},
+              "bars": [],
               "narrative": "Claude Code v2.1.201 / Linux環境でSonnet 5を使った実測で確認。標準スキルが1回発動するだけで1Mトークンウィンドウの30%（約30万トークン）が消費される。無効化には公式設定と非公式の環境変数の2つの方法がある。",
               "impact": "長い開発セッションでこのスキルが複数回発動すると、コンテキスト枯渇によってClaude Codeがリセットされるリスクがある。対策としてスキル無効化設定の適用が推奨される。"
             },
@@ -1213,17 +1505,17 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["claude-code", "cost-management", "ci-cd", "tips"],
+          "tags": [
+            "claude-code",
+            "cost-management",
+            "ci-cd",
+            "tips"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "Claude Code Web CIポーリング無限ループの経緯",
-              "steps": [
-                { "label": "スケジュール設定", "description": "Claude Code WebがCIポーリング用スケジュールを設定。「変化なし→1時間後に再チェック」のロジックが含まれる" },
-                { "label": "パーミッション承認", "description": "ユーザーが内容を確認せずにパーミッションを承認してしまう" },
-                { "label": "無限ループ発生", "description": "CIがグリーンでもポーリング自体が再設定され続ける——夜通し動作" },
-                { "label": "翌朝発覚", "description": "APIクレジットが約$14消費されていることに気づく" }
-              ],
+              "headline": "",
+              "events": [],
               "narrative": "Claude Code Webが自律的に設定したCIポーリングスケジュールが、「変化なければ1時間後に再設定」という条件のため自己再設定ループに陥った。CIがすでにグリーンでもポーリング自体が止まらなかった。",
               "impact": "Claude Code Webなどのエージェントに長時間タスクを任せる際は、スケジュール設定の内容とパーミッション承認の内容を必ず確認する必要がある。コスト管理の重要性を示す実例。"
             },
@@ -1256,18 +1548,43 @@
             "total": 15
           },
           "reaction_signal": null,
-          "tags": ["ax", "llm-adoption", "enterprise", "japan-corp"],
+          "tags": [
+            "ax",
+            "llm-adoption",
+            "enterprise",
+            "japan-corp"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "LINEヤフーのAXロードマップ：レガシー→AI主導型プロジェクト転換",
               "tldr": "「どこから手をつければいいのか」という問いへの実践的答え。LY CorporationがAI主導型プロジェクト転換のロードマップをテックブログで公開。",
               "points": [
-                { "label": "目標", "value": "レガシープロジェクトからAI主導型への転換", "tone": "primary" },
-                { "label": "課題感", "value": "「AIを導入すれば生産性が上がるが、どこから？」", "tone": "info" },
-                { "label": "アプローチ", "value": "段階的なAXロードマップの策定と実践", "tone": "success" },
-                { "label": "出所", "value": "LY Corporation（LINEヤフー）公式テックブログ", "tone": "default" },
-                { "label": "公開日", "value": "2026年7月6日", "tone": "default" }
+                {
+                  "label": "目標",
+                  "value": "レガシープロジェクトからAI主導型への転換",
+                  "tone": "primary"
+                },
+                {
+                  "label": "課題感",
+                  "value": "「AIを導入すれば生産性が上がるが、どこから？」",
+                  "tone": "info"
+                },
+                {
+                  "label": "アプローチ",
+                  "value": "段階的なAXロードマップの策定と実践",
+                  "tone": "success"
+                },
+                {
+                  "label": "出所",
+                  "value": "LY Corporation（LINEヤフー）公式テックブログ",
+                  "tone": "default"
+                },
+                {
+                  "label": "公開日",
+                  "value": "2026年7月6日",
+                  "tone": "default"
+                }
               ],
               "context": "LINEとヤフーを統合したLY Corporationは国内最大級のITインフラを持つ。そのAX取り組みの公開は、類似規模の企業にとって実践的な参考事例となる。",
               "impact": "大手IT企業のAX実践ロードマップが公開されることで、日本企業全体のAI主導型開発への移行が加速する可能性がある。"
@@ -1301,18 +1618,43 @@
             "total": 17
           },
           "reaction_signal": null,
-          "tags": ["legacy-system", "enterprise-ai", "japan-corp", "modernization"],
+          "tags": [
+            "legacy-system",
+            "enterprise-ai",
+            "japan-corp",
+            "modernization"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "カクヤスの30年物基幹システム解読：AIと現場知見の融合",
               "tldr": "誰も把握できない30年物のレガシー基幹システムを生成AIで解読。AIと現場業務知見を組み合わせた「AIを制御する技術」の確立が鍵。",
               "points": [
-                { "label": "課題", "value": "30年物の基幹システム——誰も中身を把握できない「泥沼状態」", "tone": "warning" },
-                { "label": "解決策", "value": "AI解析 + 現場の業務知見の組み合わせ", "tone": "primary" },
-                { "label": "確立技術", "value": "「AIを制御する技術」——AIが暴走しないコントロール手法", "tone": "success" },
-                { "label": "企業", "value": "カクヤス（酒類・飲料の宅配サービス大手）", "tone": "default" },
-                { "label": "出所", "value": "ITmedia（2026-07-06）", "tone": "default" }
+                {
+                  "label": "課題",
+                  "value": "30年物の基幹システム——誰も中身を把握できない「泥沼状態」",
+                  "tone": "warning"
+                },
+                {
+                  "label": "解決策",
+                  "value": "AI解析 + 現場の業務知見の組み合わせ",
+                  "tone": "primary"
+                },
+                {
+                  "label": "確立技術",
+                  "value": "「AIを制御する技術」——AIが暴走しないコントロール手法",
+                  "tone": "success"
+                },
+                {
+                  "label": "企業",
+                  "value": "カクヤス（酒類・飲料の宅配サービス大手）",
+                  "tone": "default"
+                },
+                {
+                  "label": "出所",
+                  "value": "ITmedia（2026-07-06）",
+                  "tone": "default"
+                }
               ],
               "context": "日本企業の多くが「2025年の崖」問題（レガシーシステムの老朽化・保守困難）を抱えており、AIによる解読・モダナイゼーションへの需要が高まっている。",
               "impact": "業務知見とAI解析の組み合わせというアプローチが普及すれば、保守困難な基幹システムを持つ多くの日本企業でAI活用したモダナイゼーションが加速する。"
@@ -1353,19 +1695,50 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["diffusion-models", "icml", "china-ai", "inference"],
-          "grounding": { "verified": false, "flags": 1, "notes": ["raw_excerptが空のため詳細な手法名・性能数値は確認不可。タイトル（阿里清华・ICML杰出论文）のみを根拠とした要約"] },
+          "tags": [
+            "diffusion-models",
+            "icml",
+            "china-ai",
+            "inference"
+          ],
+          "grounding": {
+            "verified": false,
+            "flags": 1,
+            "notes": [
+              "raw_excerptが空のため詳細な手法名・性能数値は確認不可。タイトル（阿里清华・ICML杰出论文）のみを根拠とした要約"
+            ]
+          },
           "figure": {
             "type": "summary-card",
             "data": {
               "headline": "アリババ×清華大学：ICML杰出论文で拡散モデル推論記録を更新",
               "tldr": "「極めてシンプルな手法」で拡散モデルの推論速度記録を更新。アリババと清華大学の共同論文がICML 2026 Outstanding Paperに選出。",
               "points": [
-                { "label": "著者機関", "value": "アリババ × 清華大学（共同研究）", "tone": "primary" },
-                { "label": "受賞", "value": "ICML 2026 Outstanding Paper（杰出论文）", "tone": "success" },
-                { "label": "テーマ", "value": "拡散モデルの推論速度記録を更新", "tone": "primary" },
-                { "label": "特徴", "value": "「极简方案」——極めてシンプルな手法で達成", "tone": "info" },
-                { "label": "注記", "value": "詳細数値は原文未取得のため要確認", "tone": "warning" }
+                {
+                  "label": "著者機関",
+                  "value": "アリババ × 清華大学（共同研究）",
+                  "tone": "primary"
+                },
+                {
+                  "label": "受賞",
+                  "value": "ICML 2026 Outstanding Paper（杰出论文）",
+                  "tone": "success"
+                },
+                {
+                  "label": "テーマ",
+                  "value": "拡散モデルの推論速度記録を更新",
+                  "tone": "primary"
+                },
+                {
+                  "label": "特徴",
+                  "value": "「极简方案」——極めてシンプルな手法で達成",
+                  "tone": "info"
+                },
+                {
+                  "label": "注記",
+                  "value": "詳細数値は原文未取得のため要確認",
+                  "tone": "warning"
+                }
               ],
               "context": "ICML Outstanding Paperは国際機械学習会議の最高賞のひとつ。中国の産学連携（Alibaba×Tsinghua等）はNeurIPS・ICML等のトップカンファレンスで継続的に受賞している。",
               "impact": "拡散モデルの推論高速化は画像・動画生成AIのコスト・速度に直結する。シンプルな手法での記録更新は実装コストが低く、業界への普及が早い可能性がある。"

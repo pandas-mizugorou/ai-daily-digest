@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-06T05:00:00+09:00",
+  "updated_at": "2026-07-07T05:00:00+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -4786,7 +4786,7 @@
       "last_seen_count": 1
     },
     "197eabf38de34dd5": {
-      "url_prefix": "https://www.reddit.com/r/LocalLLaMA/comments/glm52",
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uohsov/l",
       "first_seen_at": "2026-06-21",
       "last_seen_at": "2026-06-21",
       "last_seen_count": 1
@@ -6390,8 +6390,8 @@
     "11d4812cb46d61ae": {
       "url_prefix": "https://latent.space/p/autoresearch-introspection",
       "first_seen_at": "2026-07-05",
-      "last_seen_at": "2026-07-05",
-      "last_seen_count": 1
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 2
     },
     "c91ccd244cbbf87d": {
       "url_prefix": "https://techblog.lycorp.co.jp/ja/20260701b",
@@ -6564,8 +6564,8 @@
     "f0a1b2c3d4e50611": {
       "url_prefix": "https://arxiv.org/abs/2607.02509v1",
       "first_seen_at": "2026-07-06",
-      "last_seen_at": "2026-07-06",
-      "last_seen_count": 1
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 2
     },
     "f0a1b2c3d4e50612": {
       "url_prefix": "https://lesswrong.com/posts/3HvvjffA65mHLwaWm/we-need-3rd-party-training-run",
@@ -6643,6 +6643,138 @@
       "url_prefix": "https://www.qbitai.com/2026/07/fable-5-naming-controversy-china.html",
       "first_seen_at": "2026-07-06",
       "last_seen_at": "2026-07-06",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40701": {
+      "url_prefix": "https://huggingface.co/blog/lerobot-release-v060",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40702": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uoozt4/n",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40703": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uotkm7/n",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40704": {
+      "url_prefix": "https://huggingface.co/blog/revamped-kernels",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40705": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uohsov/l",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40706": {
+      "url_prefix": "https://latent.space/p/skill-engineering-design",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40707": {
+      "url_prefix": "https://lesswrong.com/posts/98GvRu78jTXJgz9gA/sub-",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40708": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1up07mk/k",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40709": {
+      "url_prefix": "https://ascii.jp/elem/000/004/416/4416343",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40710": {
+      "url_prefix": "https://arxiv.org/abs/2607.02467v1",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40711": {
+      "url_prefix": "https://lesswrong.com/posts/9Gj9anZi95RgHQPv6/when",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40712": {
+      "url_prefix": "https://arstechnica.com/tech-policy/2026/07/anthro",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40713": {
+      "url_prefix": "https://techcrunch.com/2026/07/06/microsoft-lays-o",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40714": {
+      "url_prefix": "https://arstechnica.com/ai/2026/07/uk-regulator-wa",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40715": {
+      "url_prefix": "https://techcrunch.com/2026/07/06/if-you-use-googl",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40716": {
+      "url_prefix": "https://reddit.com/r/LocalLLaMA/comments/1uoij3s/i",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40717": {
+      "url_prefix": "https://techblog.zozo.com/entry/architecture-diagr",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40718": {
+      "url_prefix": "https://zenn.dev/tksfjt1024/articles/3f3394117467a",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40719": {
+      "url_prefix": "https://zenn.dev/tomodo_ysys/articles/claude-code-",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40720": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260706b",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40721": {
+      "url_prefix": "https://kn.itmedia.co.jp/kn/articles/2607/06/news0",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "a9b8c7d6e5f40722": {
+      "url_prefix": "https://qbitai.com/2026/07/444721.html",
+      "first_seen_at": "2026-07-07",
+      "last_seen_at": "2026-07-07",
       "last_seen_count": 1
     }
   },

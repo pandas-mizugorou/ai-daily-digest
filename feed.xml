@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 10:38:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 18:22:55 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがClaude Codeで中国ユーザーをステガノグラフィー密追跡——Microsoft 4800人削減でAI雇用転換、Tencent Hy3 295B MoEがApache 2.0で公開</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07</link>
+      <guid isPermaLink="false">aidd-day-2026-07-07</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <description>本日最大のニュースはAnthropicのプライバシー問題だ。セキュリティ研究者「Thereallo」がClaude Codeに「プロンプト・ステガノグラフィー」で中国ユーザーのタイムゾーン情報を密かに送信するコードを発見し、「深刻なユーザー信頼の侵害」と指摘。Anthropicは発覚後に即座に削除したが、AIコーディングツールへの信頼問題が改めて浮上した。業界動向では、MicrosoftがXbox・商業営業を中心に4800人（全従業員の2.1%）を削減。昨年の9100人に続く追加リストラでAI移行に伴う組織再編が鮮明になった。オープンモデル戦線ではTencentが295B総パラメータ・21Bアクティブ（MoE）の「Hy3」をApache 2.0で公開し、中国発の高性能オープンモデルが競争を活発化させた。HuggingFaceはLeRobot v0.6.0で世界モデルポリシー・報酬モデル（1M超軌跡で訓練）・6新ベンチマークを追加、英国FCAはAI金融サービスへの「軍拡競争」を警告し監督権限強化を求めた。日本ではZOZOのエンジニアがClaude Codeでシステム構成図を自動生成・更新する仕組みを実装、はてブ241件の注目を集めた。
+
+【今日の必読】
+・AnthropicがClaude Codeに中国ユーザー向け隠しトラッカーを実装——研究者が「プロンプトステガノグラフィー」で追跡コードを発見、即日削除
+・Microsoft、Xbox・商業営業部門を中心に約4,800人（全従業員の2.1%）を削減——AI代替への懸念が再燃
+・LeRobot v0.6.0——世界モデルポリシー・報酬モデル・6新シミュレーション環境でロボティクスVLAを大幅強化
+・TencentがHy3（295B総パラメータ・21Bアクティブ、MoE、Apache 2.0）を公開——中国発高性能オープンモデルがローカルLLM競争を加速
+・英国FCA幹部「金融サービスでのAI利用に規制当局は軍拡競争状態」——ChatGPT・Claude・Geminiへの規制適用の見直しを求める
+・システム構成図、もう手で描くのやめました ── Claude Codeで構成図を自動生成・自動更新する仕組み</description>
+    </item>
     <item>
       <title>AnthropicがSEC秘密S-1提出でIPOへ——Loop Engineering 4800スターが日本席巻、AlibabがClaude Codeを高リスク指定、UN AI規制対話がジュネーブ開幕</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-06</link>
@@ -439,21 +454,6 @@
 ・GitHubで16万スターのCLAUDE.md記法を完全解説——Claude Codeをチームで使うための設定術
 ・Microsoft ResearchのSkillOptが全52構成で首位——エージェントが実行ログからスキルを自律獲得する新フレームワーク
 ・GitHub Copilotが高性能モデル向け従量制リクエスト課金を導入——月額上限モデルを廃止し新価格体系へ</description>
-    </item>
-    <item>
-      <title>Anthropic が Claude Opus 4.8 と $65B Series H を同日発表・SkillOpt がエージェントスキル全 52 評価セルで最高記録・OpenAI Secure MCP Tunnel で企業プライベートサーバ解放</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-29</link>
-      <guid isPermaLink="false">aidd-day-2026-05-29</guid>
-      <pubDate>Thu, 28 May 2026 20:00:00 GMT</pubDate>
-      <description>Anthropic が Claude Opus 4.8（Dynamic Workflows で Claude Code が並列数百サブエージェントを管理）と 650 億ドル Series H（評価額 $965B、ランレート $47B 超）を同日発表し、AI 産業の技術・資本両面での集中が新段階に突入した。研究面では Microsoft・上海交大らの SkillOpt が 6 ベンチマーク・7 モデル・3 ハーネスの全 52 評価セルで最高スコアを達成し、エージェントスキルの自動最適化が実証段階に入った。ツール面では OpenAI Secure MCP Tunnel が企業内プライベート MCP サーバを受信ポート不要で ChatGPT・Codex に接続できるようにし、Mistral が Vibe の Work/Code モードと VS Code 拡張を同日公開した。日本ではClaude Code の CLAUDE.md+skills 活用ガイドがはてブ 783 ブクマを記録し、開発者コミュニティでのエージェント実践が加速していることが示された。
-
-【今日の必読】
-・Claude Opus 4.8 発表——Dynamic Workflows で並列数百サブエージェントを統括
-・Anthropic が $65B Series H 完了——評価額 $965B、ランレート $47B 超でほぼ 1 兆ドル企業に
-・SkillOpt——テキスト空間でエージェントスキルを自動最適化、全 52 評価セルで最高スコア
-・OpenAI Secure MCP Tunnel——プライベート MCP サーバを外向き HTTPS だけで ChatGPT・Codex に接続
-・【超入門】Claude Codeの使い方〜初心者が1日でCLAUDE.mdとskillsを作る最短手順〜
-・ByteDance Lance——画像・動画の理解・生成・編集を単一モデルに統合したユニファイドマルチモーダル</description>
     </item>
   </channel>
 </rss>

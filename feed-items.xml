@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 10:38:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 18:22:55 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがClaude Codeに中国ユーザー向け隠しトラッカーを実装——研究者が「プロンプトステガノグラフィー」で追跡コードを発見、即日削除</title>
+      <link>https://arstechnica.com/tech-policy/2026/07/anthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users</link>
+      <guid isPermaLink="false">aidd-item-arstechnica_ai-secret-claude-tracker-shocks-users-after-anthrop</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/arstechnica_ai-secret-claude-tracker-shocks-users-after-anthrop">AI Daily Digest 2026-07-07</source>
+      <description>AnthropicがClaude Codeの中国ユーザーをひそかに監視するトラッカーを実装していたことが発覚し、即日削除した。セキュリティ研究者「Thereallo」がプライバシー調査中に「プロンプトステガノグラフィー」を用いて中国ユーザーのタイムゾーン等をAnthropicに送信する隠しコードを発見。「スパイウェアに類似したユーザー信頼の深刻な侵害」と批判した。AnthropicはAIの監視利用に反対する立場を表明してきた企業として特に衝撃を与えている。</description>
+    </item>
+    <item>
+      <title>Microsoft、Xbox・商業営業部門を中心に約4,800人（全従業員の2.1%）を削減——AI代替への懸念が再燃</title>
+      <link>https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-microsoft-lays-off-nearly-5-000-employees-across</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/techcrunch-microsoft-lays-off-nearly-5-000-employees-across">AI Daily Digest 2026-07-07</source>
+      <description>Microsoftが月曜日に約4,800人（全従業員の2.1%）の削減を実施した。一連のレイオフの最新版であり、特にXbox部門と商業営業部門への影響が大きい。一連の削減はAIによる雇用代替への懸念を高めている。</description>
+    </item>
+    <item>
+      <title>LeRobot v0.6.0——世界モデルポリシー・報酬モデル・6新シミュレーション環境でロボティクスVLAを大幅強化</title>
+      <link>https://huggingface.co/blog/lerobot-release-v060</link>
+      <guid isPermaLink="false">aidd-item-hf_blog-lerobot-v0-6-0-imagine-evaluate-improve</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/hf_blog-lerobot-v0-6-0-imagine-evaluate-improve">AI Daily Digest 2026-07-07</source>
+      <description>HuggingFaceがLeRobot v0.6.0を公開した。今回の主な追加機能は3つの世界モデルポリシー（VLA-JEPA・LingBot-VA・FastWAM）、1M以上の軌跡で訓練した報酬モデル「Robometer」およびゼロショット対応のTOPReward、6つの新シミュレーションベンチマーク（LIBERO-plus・RoboTwin 2.0・RoboCasa365・RoboCerebra・RoboMME・VLABench）である。またGR00T N1.7（NVIDIA）・MolmoAct2・EVO1（0.77B）など新VLAを追加し、データ読み込みを約2倍高速化。lerobot-rollout CLIとDAgger（人間のループ内修正）、FSDP マルチGPU訓練もサポートされた。</description>
+    </item>
+    <item>
+      <title>TencentがHy3（295B総パラメータ・21Bアクティブ、MoE、Apache 2.0）を公開——中国発高性能オープンモデルがローカルLLM競争を加速</title>
+      <link>https://reddit.com/r/LocalLLaMA/comments/1uoozt4/new_open_model_from_tencent_hy_hy3_295b_total_21b</link>
+      <guid isPermaLink="false">aidd-item-reddit_localllama-new-open-model-from-tencent-hy-hy3-295b-total-21</guid>
+      <pubDate>Sun, 05 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/reddit_localllama-new-open-model-from-tencent-hy-hy3-295b-total-21">AI Daily Digest 2026-07-07</source>
+      <description>TencentのHugging Faceコレクションに新モデル「Hy3」が公開された。総パラメータ295B・アクティブ21BのMoE（Mixture of Experts）アーキテクチャで、Apache 2.0ライセンスにより商用利用・ローカル実行が可能。これはプレビューではなく正式リリース版であり、r/LocalLLaMAコミュニティで即日注目を集めた。Tencent発の高性能オープンウェイトモデルとして、DeepSeek・Qwen等と競合する位置づけとなる。</description>
+    </item>
+    <item>
+      <title>英国FCA幹部「金融サービスでのAI利用に規制当局は軍拡競争状態」——ChatGPT・Claude・Geminiへの規制適用の見直しを求める</title>
+      <link>https://arstechnica.com/ai/2026/07/uk-regulator-warns-of-arms-race-to-keep-up-with-ai-use-in-financial-services</link>
+      <guid isPermaLink="false">aidd-item-arstechnica_ai-uk-regulator-warns-of-arms-race-to-keep-up-with-</guid>
+      <pubDate>Sun, 05 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/arstechnica_ai-uk-regulator-warns-of-arms-race-to-keep-up-with-">AI Daily Digest 2026-07-07</source>
+      <description>英国金融行動監視機構（FCA）の執行理事Sheldon Millsが、金融サービスにおけるAI利用に対して規制当局は「軍拡競争」状態にあると警告した。数百万人がAIを個人金融の意思決定に使っている現状を踏まえ、FCAはより大きな権限が必要と主張。ChatGPT・Claude・Gemini等の大規模言語モデルがFCAの規制対象になるべきか、英国当局に見直しを求めた。FCA委託の報告書の公表を前に発言。</description>
+    </item>
+    <item>
+      <title>システム構成図、もう手で描くのやめました ── Claude Codeで構成図を自動生成・自動更新する仕組み</title>
+      <link>https://techblog.zozo.com/entry/architecture-diagram-with-claude-code</link>
+      <guid isPermaLink="false">aidd-item-hatena-claude-code-zozo-tech-blog</guid>
+      <pubDate>Sun, 05 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/hatena-claude-code-zozo-tech-blog">AI Daily Digest 2026-07-07</source>
+      <description>ZOZOがClaude Codeを活用してFBZ（Fulfillment by ZOZO）のシステム構成図を自動生成・自動更新する仕組みを公開した。構成図をClaude Codeに読み込ませ、コード変更を検知して自動更新するフローを確立。「もう手で描くのはやめた」という実践的なアプローチがはてなブックマーク241件の高反響を集めた。日本のエンジニアコミュニティで構成図管理の自動化における具体例として注目されている。</description>
+    </item>
     <item>
       <title>Anthropic、SEC に機密指定 S-1 登録届出書を提出——IPO プロセスが正式に始動</title>
       <link>https://www.anthropic.com/news/confidential-draft-s1-sec</link>
@@ -589,46 +637,6 @@
       <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-nm-glm-52">AI Daily Digest 2026-06-23</source>
       <description>Z.ai（Zhipu AI）の最新フラッグシップ「GLM-5.2」は、Claude Fableの輸出規制が続く中でリリースされ、フロントエンドコーディングなどの実用タスクでオープンモデル首位を争う性能を示している。Latent Space AINewsは「GLM-5.2は世界トップのフロントエンドコーディングモデル」と評価し、DeepSeek・Mistral・Cohere・Moonshot AIなど主要オープンモデルラボを多くの評価指標で上回ると報告されている。DeepSWEコーディングエージェントベンチマークでも高位にランキングされており、コスト対効果のパレートフロンティア上に位置するとされる。現在OpenRouterには16の推論プロバイダーが対応している。なおZ.aiは12月にOpen Fableの公開を予告している。</description>
-    </item>
-    <item>
-      <title>トランプ政権がAnthropicのFable 5・Mythos 5を輸出規制対象に指定——ジェイルブレーク申告が引き金</title>
-      <link>https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits</link>
-      <guid isPermaLink="false">aidd-item-2026-06-22-001</guid>
-      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-001">AI Daily Digest 2026-06-22</source>
-      <description>米商務省が2026年6月、AnthropicのFable 5・Mythos 5を輸出規制対象に指定した。これにより外国籍ユーザー（米国在住者を含む）はアクセスが不可能となり、Anthropicは両モデルを事実上全停止せざるを得ない状況となった。直接の引き金は「他社がMythos 5をジェイルブレークできたと申告した」という報告で、米商務省は国家安全保障上のリスクを理由に挙げた。Anthropicは以前から自律型兵器・国内監視ツールへの使用を拒否するポリシーを堅持し、ペンタゴンから「サプライチェーンリスク」に指定されていた経緯があり、政府との摩擦は以前から続いていた。なおClaude Sonnet等の他モデルは規制の対象外となっている。GLM-5.2（Z.ai）がこの空白を即座に狙ったことで、OSSコーディングモデル市場の競争が加速している。</description>
-    </item>
-    <item>
-      <title>SpaceXがCursor開発元Anysphereを600億ドル全株式交換で買収——AIコーディングツール史上最大のM&amp;A</title>
-      <link>https://stratechery.com/2026/the-state-of-fable-the-jailbreak-problem-spacex-acquires-cursor</link>
-      <guid isPermaLink="false">aidd-item-2026-06-22-014</guid>
-      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-014">AI Daily Digest 2026-06-22</source>
-      <description>SpaceXがAIコーディングツールCursorを開発するAnysphereを600億ドル（約9兆円）の全株式交換で買収することで合意した、とStratecheryが報じた。CursorのARRは2026年2月の20億ドルから6月には40億ドルへと倍増しており、AIコーディングツール市場の急成長ぶりを示している。この取引はAIソフトウェアツール領域における史上最大規模のM&amp;Aとなる見込みだ。Stratechery記事ではFable 5の輸出規制問題・ジェイルブレーク問題と並んでCursor買収が分析されており、AIコーディングツールがエンタープライズ戦略の中核に位置づけられる時代の到来を示している。</description>
-    </item>
-    <item>
-      <title>ノーベル賞受賞・AlphaFold共同創始者のJohn JumperがDeepMind退職——Anthropicへ転籍、Google48時間で人材2名を喪失</title>
-      <link>https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/</link>
-      <guid isPermaLink="false">aidd-item-2026-06-22-015</guid>
-      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-015">AI Daily Digest 2026-06-22</source>
-      <description>AlphaFoldの共同創始者でノーベル化学賞受賞者のJohn Jumper氏がGoogle DeepMindを退職し、AnthropicへAI研究者として転籍することをTechCrunchが報じた。AlphaFoldは2020年にタンパク質構造予測の精度を革命的に向上させ、Jumper氏は2024年にノーベル化学賞を受賞。Anthropicへの転籍は2026年6月20日に明らかになったが、前日にはGeminiの共同リードを担っていたNoam Shazeer氏もOpenAIへの移籍を発表しており、GoogleはわずかA48時間以内にAI最高位の人材2名を失った形となった。AIトップ人材の争奪戦の激化を示す象徴的な出来事として業界に衝撃を与えた。</description>
-    </item>
-    <item>
-      <title>iOS 27でSiri AIが全面刷新——Google Gemini搭載の会話型アシスタントとアプリ横断コンテキスト理解</title>
-      <link>https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27</link>
-      <guid isPermaLink="false">aidd-item-2026-06-22-007</guid>
-      <pubDate>Sat, 20 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-007">AI Daily Digest 2026-06-22</source>
-      <description>AppleはWWDC 2026でiOS 27を発表し、Google Geminiを基盤とした新しい「Siri AI」を披露した。新Siriは会話的・常時起動・実際に役立つ（conversational, omnipresent, and actually helpful）と評価され、スタンドアロンアプリとしてホーム画面に独立配置することも可能になった。iOS 27はSiri AI以外にも多数の実用AI機能を実装しており、Safariでは複数タブをAIが管理・要約する機能、メッセージでは返信提案・スマートフィルタリング、通話では要約・文字起こしが加わる。保護者向けには子どもが利用できるアプリ・連絡先をAIレベルで詳細設定するコントロール機能も追加された。Liquid Glassデザインとパーソナライズスライダーによる外観刷新もiOS 27の特徴の一つである。</description>
-    </item>
-    <item>
-      <title>時雨堂のスキル</title>
-      <link>https://voluntas.ghost.io/shiguredo-skill-20206-06</link>
-      <guid isPermaLink="false">aidd-item-2026-06-22-019</guid>
-      <pubDate>Fri, 19 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-22/2026-06-22-019">AI Daily Digest 2026-06-22</source>
-      <description>時雨堂（Shiguredo）が2026年6月時点で実際に採用しているSKILL.mdのスキル一覧を公開した記事が327ブクマを集め、Claude Codeスキル設計のリファレンスとして注目を浴びた。記事では「この記事を読む人でSKILL.mdを知らない人は居ないと思う」とし、LLMに食わせるまとまった文章として機能するスキルの実例を共有している。現時点での採用スキルを「2026年6月時点のスナップショット」として共有するもので、固定されたものではなく随時更新されるという実態を示している。Claude Codeで使われるスキルファイルの実例を業務利用企業が公開した事例として、実践的なSKILL.md設計の参考になる貴重なリソースだ。</description>
     </item>
   </channel>
 </rss>
