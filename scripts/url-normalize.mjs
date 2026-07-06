@@ -11,6 +11,10 @@
 //   normalizeUrl("https://www.example.com/post/?utm_source=x#top") // → "https://example.com/post"
 
 // 除去するクエリパラメータ (トラッキング・解析・SNS 由来)。完全一致 + utm_ 前方一致。
+// 注意: 1 文字パラメータ `s` は Substack 等の CMS で「記事の識別トークン」に
+// 使われることがあり、除去すると別記事が同一 URL に潰れて誤連結しうる (続報チェーンの
+// 偽陽性)。トラッキング除去で得られる重複排除効果より、誤連結を避ける方を優先し、
+// `s` は除去対象から外す (残しても「別 URL として扱われる」= 安全側に倒れる)。
 const TRACKING_PARAMS = new Set([
   "fbclid", "gclid", "dclid", "gclsrc", "wbraid", "gbraid", "msclkid", "yclid",
   "igshid", "igsh", "ref", "ref_src", "ref_url", "referrer", "source", "src",
@@ -18,7 +22,7 @@ const TRACKING_PARAMS = new Set([
   "vero_id", "vero_conv", "oly_anon_id", "oly_enc_id", "__s", "ck_subscriber_id",
   "amp", "outputType", "guccounter", "guce_referrer", "guce_referrer_sig",
   "cmpid", "ncid", "sr_share", "taid", "tid", "trk", "trkCampaign", "at_medium",
-  "at_campaign", "smid", "smtyp", "feature", "ITO", "from", "share", "s",
+  "at_campaign", "smid", "smtyp", "feature", "ITO", "from", "share",
 ]);
 
 function isTrackingParam(key) {

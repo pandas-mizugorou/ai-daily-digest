@@ -76,10 +76,18 @@ async function main() {
 
   // 2 日以上に出現した URL のみチェーン化 (同日重複はチェーンにしない)
   const chains = [];
-  for (const [key, occ] of byUrl) {
-    const dates = new Set(occ.map((o) => o.date));
-    if (dates.size < 2) continue;
-    occ.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  for (const [key, rawOcc] of byUrl) {
+    // 続報 = 「複数日にまたがる同一 URL」。同じ URL が同じ日に複数カテゴリで
+    // 重複掲載されることがある (LLM が同記事を 2 カテゴリに入れた等) ため、
+    // occurrences は日付単位で一意化する (最初の 1 件を代表)。これで
+    //   - count が日数と一致する (出現数で過大計上しない)
+    //   - by_item のキー (date|id) 衝突で nth が上書きされる問題も起きない
+    const byDate = new Map();
+    for (const o of rawOcc) {
+      if (!byDate.has(o.date)) byDate.set(o.date, o);
+    }
+    if (byDate.size < 2) continue;
+    const occ = [...byDate.values()].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
     const last = occ[occ.length - 1];
     chains.push({
       key,

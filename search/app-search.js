@@ -26,14 +26,23 @@ const els = {
   filterPeriod: document.getElementById("filter-period"),
 };
 
+// 旧カテゴリID (schema 1.x) → 新ID (2.x)。索引には両方混在するため、フィルタでは
+// 新IDに畳んで集計・照合する (旧「研究・論文」が別行で重複する B8 の解消)。
+const CATEGORY_ALIAS = {
+  tools: "tools_apps",
+  research: "research_papers",
+  industry: "industry_business",
+};
+const canonCategory = (id) => CATEGORY_ALIAS[id] || id || "";
+
 // カテゴリ表示名 (app.js categoryFallbackLabel と同一対応。索引は ID しか持たないためここにも持つ)
 const CATEGORY_LABEL = {
   new_models: "新モデル・新発表",
-  tools_apps: "ツール・アプリ・SDK", tools: "ツール・SDK",
+  tools_apps: "ツール・アプリ・SDK",
   agents: "エージェント・自律実行",
   multimodal: "マルチモーダル・生成",
-  research_papers: "研究・論文", research: "研究・論文",
-  industry_business: "業界動向・ビジネス", industry: "業界動向",
+  research_papers: "研究・論文",
+  industry_business: "業界動向・ビジネス",
   regulation_policy: "規制・政策・安全",
   community_buzz: "コミュニティ反響",
   japan: "日本語ソース",
@@ -116,7 +125,8 @@ function buildFilterOptions() {
   const catCount = new Map();
   const typeCount = new Map();
   for (const it of allItems) {
-    if (it.category) catCount.set(it.category, (catCount.get(it.category) ?? 0) + 1);
+    const cid = canonCategory(it.category);
+    if (cid) catCount.set(cid, (catCount.get(cid) ?? 0) + 1);
     if (it.source_type) typeCount.set(it.source_type, (typeCount.get(it.source_type) ?? 0) + 1);
   }
   const catOrder = Object.keys(CATEGORY_LABEL);
@@ -146,6 +156,12 @@ function buildFilterOptions() {
   }
 }
 
+// data-tag セレクタ用のエスケープ (CSS.escape 欠落環境でも壊さない)
+function escapeAttr(v) {
+  if (typeof CSS !== "undefined" && typeof CSS.escape === "function") return CSS.escape(v);
+  return String(v).replace(/["\\]/g, "\\$&");
+}
+
 // 日次ページのタグリンク (?tag=) やキーワード付き共有 (?q=) を受ける
 function applyUrlParams() {
   const params = new URLSearchParams(location.search);
@@ -154,10 +170,17 @@ function applyUrlParams() {
   const tag = params.get("tag");
   if (tag) {
     selectedTags.add(tag);
-    const chip = els.tagChips.querySelector(`[data-tag="${CSS.escape(tag)}"]`);
+    let chip = null;
+    try {
+      chip = els.tagChips.querySelector(`[data-tag="${escapeAttr(tag)}"]`);
+    } catch { /* 不正セレクタでも落とさない */ }
     if (chip) {
       chip.classList.add("is-active");
       chip.setAttribute("aria-pressed", "true");
+    } else {
+      // 上位40チップに無いタグ (全タグの98%) でも、解除できる活性チップを先頭に出す
+      // (B6: これが無いと「解除UIの無い絞り込み」に陥る)
+      els.tagChips.insertBefore(makeTagChip(tag), els.tagChips.firstChild);
     }
   }
 }
@@ -172,25 +195,30 @@ function periodCutoff(days) {
   return `${y}-${m}-${d}`;
 }
 
+// タグチップを 1 個生成 (クリックでトグル)。count 未指定なら件数を出さない。
+function makeTagChip(tag, count) {
+  const btn = els.tagChipTpl.content.firstElementChild.cloneNode(true);
+  btn.textContent = count != null ? `#${tag} (${count})` : `#${tag}`;
+  btn.dataset.tag = tag;
+  const sync = () => {
+    const on = selectedTags.has(tag);
+    btn.classList.toggle("is-active", on);
+    btn.setAttribute("aria-pressed", String(on));
+  };
+  btn.addEventListener("click", () => {
+    if (selectedTags.has(tag)) selectedTags.delete(tag);
+    else selectedTags.add(tag);
+    sync();
+    applyFilter();
+  });
+  sync();
+  return btn;
+}
+
 function renderTagChips(allTags) {
   els.tagChips.innerHTML = "";
   for (const { tag, count } of allTags.slice(0, TOP_TAGS)) {
-    const btn = els.tagChipTpl.content.firstElementChild.cloneNode(true);
-    btn.textContent = `#${tag} (${count})`;
-    btn.dataset.tag = tag;
-    btn.addEventListener("click", () => {
-      if (selectedTags.has(tag)) {
-        selectedTags.delete(tag);
-        btn.classList.remove("is-active");
-        btn.setAttribute("aria-pressed", "false");
-      } else {
-        selectedTags.add(tag);
-        btn.classList.add("is-active");
-        btn.setAttribute("aria-pressed", "true");
-      }
-      applyFilter();
-    });
-    els.tagChips.appendChild(btn);
+    els.tagChips.appendChild(makeTagChip(tag, count));
   }
 }
 
@@ -219,7 +247,7 @@ function applyFilter() {
   const fDays = Number(els.filterPeriod?.value || 0);
   const cutoff = fDays > 0 ? periodCutoff(fDays) : "";
   let matched = allItems.filter((it) => {
-    if (fCat && it.category !== fCat) return false;
+    if (fCat && canonCategory(it.category) !== fCat) return false;
     if (fType && it.source_type !== fType) return false;
     if (fScore > 0 && !(typeof it.score === "number" && it.score >= fScore)) return false;
     if (cutoff && it.date < cutoff) return false;

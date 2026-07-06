@@ -37,23 +37,46 @@ function extractFrontmatter(text) {
 
 // 依存ゼロのフォールバック検査。YAML の完全再実装はしない。
 // 「key: 値 (クォートなし) の値の途中に ': ' が現れる」パターンだけを狙い撃つ。
+// js-yaml が入らなかった環境の保険。YAML の完全再実装はしないので、CI (js-yaml あり)
+// より検出力は落ちる。ここで狙い撃つのは誤検出ゼロで確実に判定できる破損クラスに限る:
+//   (1) クォートなしの値中コロン (7/3 事故の実型)
+//   (2) インデントへのタブ混入
+//   (3) 前が値付きキーなのに次行が深くインデントされた誤ネスト
+// それ以外の複雑な破損 (フロー記法の閉じ忘れ等) は js-yaml (CI 主経路) に委ねる。
+// lineNo は「開始 --- を除いた本文」相対なので +2 してファイル行 (--- が 1 行目) に合わせる。
 function heuristicCheck(fm) {
   const errors = [];
   const lines = fm.split(/\r?\n/);
+  const fileLine = (i) => i + 2; // fm 本文 i 行目 = ファイル (i+1)+1 行目 (--- 分)
   let inBlockScalar = false;
   let blockIndent = 0;
+  let prevKeyHadValue = false; // 直前のキー行が「値付き」だったか (値付きキーは子を持てない)
+  let prevIndent = 0;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (inBlockScalar) {
       if (line.trim() === "" || line.search(/\S/) > blockIndent) continue;
       inBlockScalar = false;
     }
+    if (line.trim() === "") continue;
+    // タブインデント: YAML はインデントにタブを禁止 (js-yaml もエラー)
+    if (/\t/.test(line.match(/^\s*/)[0])) {
+      errors.push(`${fileLine(i)} 行目: インデントにタブ文字が使われています (YAML はタブ禁止)`);
+      continue;
+    }
     const kv = line.match(/^(\s*)([A-Za-z0-9_-]+):\s*(.*)$/);
     if (!kv) continue;
     const [, indent, , rawVal] = kv;
+    // 値付きスカラーキーの直後に、より深いインデントのキーが来たら誤ネスト
+    // (例: `name: test` の次行が `  description: ...`)
+    if (prevKeyHadValue && indent.length > prevIndent) {
+      errors.push(`${fileLine(i)} 行目: 値を持つキーの下がインデントされています (マッピングの誤ネスト/インデント異常の疑い)`);
+    }
     const val = rawVal.trim();
     if (val === "" || val === "|" || val === ">" || /^[|>][+-]?$/.test(val)) {
-      // ブロックスカラー開始。中身はインデントが深い限り読み飛ばす
+      // 値なしキー or ブロックスカラー = 次行に内容が続くので「値なし」扱い (誤ネスト判定用)
+      prevKeyHadValue = false;
+      prevIndent = indent.length;
       if (/^[|>]/.test(val)) {
         inBlockScalar = true;
         blockIndent = indent.length;
@@ -63,9 +86,12 @@ function heuristicCheck(fm) {
     const quoted = /^["'].*["']$/.test(val);
     if (!quoted && /\S: /.test(val)) {
       errors.push(
-        `${i + 1} 行目: クォートなしの値の途中に ": " があります (YAML が壊れる典型パターン)。値をダブルクォートで囲んでください → ${val.slice(0, 60)}…`,
+        `${fileLine(i)} 行目: クォートなしの値の途中に ": " があります (YAML が壊れる典型パターン)。値をダブルクォートで囲んでください → ${val.slice(0, 60)}…`,
       );
     }
+    // 値付きスカラーキー: 次行が深インデントなら誤ネスト (上の判定で使う)
+    prevKeyHadValue = true;
+    prevIndent = indent.length;
   }
   return errors;
 }
@@ -80,10 +106,15 @@ async function lintFile(file) {
   const fm = extractFrontmatter(text);
   if (fm == null) return [`YAML frontmatter (--- ... ---) が見つかりません`];
 
-  // js-yaml が入っていれば厳密パース
+  // js-yaml が入っていれば厳密パース。
+  // js-yaml v4/v5 は純 ESM で default export を持たず named の `load` を出す。
+  // 一方 CJS 版や古い版は default 側に載る。両対応するため `.load` の在り処で判定する
+  // ((await import("js-yaml")).default だけ見ると v5 で undefined になり厳密パースが死ぬ)。
   let yaml = null;
   try {
-    yaml = (await import("js-yaml")).default;
+    const mod = await import("js-yaml");
+    if (typeof mod.load === "function") yaml = mod;
+    else if (typeof mod.default?.load === "function") yaml = mod.default;
   } catch {
     /* フォールバックへ */
   }

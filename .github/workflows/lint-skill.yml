@@ -23,9 +23,10 @@ jobs:
         with:
           fetch-depth: 1
 
-      # js-yaml で厳密パース (無い環境ではスクリプトがヒューリスティック検査に自動フォールバック)
-      - name: Install js-yaml (strict parse)
-        run: npm install --no-save js-yaml
-
-      - name: Lint frontmatter
-        run: node scripts/lint-skill-frontmatter.mjs
+      # js-yaml で厳密パース。install に失敗しても (registry 障害等)、スクリプトは
+      # 依存ゼロのヒューリスティック検査へ自動フォールバックするため、`|| true` で
+      # install の失敗を握りつぶし、lint 自体は必ず実行する (frontmatter 検知を止めない)。
+      - name: Lint frontmatter (js-yaml strict, fallback to heuristic)
+        run: |
+          npm install --no-save js-yaml || echo "js-yaml install 失敗 → ヒューリスティック検査にフォールバック"
+          node scripts/lint-skill-frontmatter.mjs

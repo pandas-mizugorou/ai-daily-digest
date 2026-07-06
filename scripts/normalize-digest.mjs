@@ -25,12 +25,16 @@ const DATE_RE = /^(\d{4}-\d{2}-\d{2})\.json$/;
 // LLM 出力が日によって `score` (単数) と `scores` (複数) で揺れた実績があり
 // (2026-06-18〜20, 06-28〜07-02 の 8 日間)、読み手 (app.js / build-search-index /
 // app-weekly) は全員 `scores` を読むため、単数側の日は UI 全体で 0/20 表示になる。
-// 正準名は `scores`。値は変更しない (名前の付け替えのみ・創作禁止)。
+// 正準名は `scores`。純粋な名前の付け替えのみ (創作禁止・既存値の破壊禁止)。
 function normalizeItemFields(item) {
   let changed = 0;
+  // score が object で、かつ scores が「まだ存在しない」ときだけリネームする。
+  // scores が既にある場合 (値が異常な数値/文字列であっても) は上書きしない。
+  // 上書きすると既存値を破壊する = 「名前の付け替えのみ」の原則に反するため。
+  // その場合 score は孤児として残り validate-digest がドリフトとして検出する。
   if (
     item.score && typeof item.score === "object" && !Array.isArray(item.score) &&
-    (item.scores == null || typeof item.scores !== "object")
+    item.scores === undefined
   ) {
     item.scores = item.score;
     delete item.score;

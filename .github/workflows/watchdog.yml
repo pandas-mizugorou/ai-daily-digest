@@ -103,16 +103,19 @@ jobs:
           # ---- 過去 7 日の欠損スキャン (watchdog 自身が落ちた日のフォロー) ----
           # 検知は「その日 1 回きり」だと watchdog 自身の失敗・遅延で穴が恒久化する
           # (2026-07-03 は検知 Issue #20 が立ったが、立たないケースへの備えが無かった)。
-          # 過去 7 日の欠損を毎日再検査し、その日付を title に含む Issue (open/closed 問わず)
+          # 過去 7 日の欠損を毎日再検査し、watchdog 自身が起票した Issue (open/closed 問わず)
           # が 1 つも無い場合のみ問題として報告する (既知の欠損 = 対応判断済みは再起票しない)。
+          # 照合は watchdog タイトル接頭辞 "watchdog: <date>" に限定する。単に日付だけで
+          # 検索すると、同じ日付を含む push-alert Issue ("AI Digest push: <date> 配信異常") に
+          # 誤ヒットし、digest 本体の欠損を「既知」と誤判定して見逃す (別種 Issue 衝突)。
           for i in 1 2 3 4 5 6 7; do
             D=$(TZ=Asia/Tokyo date -d "${TODAY} - ${i} days" +%Y-%m-%d)
             if [ ! -f "data/${D}.json" ]; then
-              KNOWN=$(gh issue list --state all --search "${D} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
+              KNOWN=$(gh issue list --state all --search "watchdog: ${D} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
               if [ "${KNOWN}" = "0" ]; then
                 PROBLEMS+=("🟠 過去日の未検知欠損: data/${D}.json が main にありません（バックフィルするか欠損として確定するか判断が必要）")
               else
-                echo "past gap ${D}: 既知 (issue あり) のためスキップ"
+                echo "past gap ${D}: 既知 (watchdog issue あり) のためスキップ"
               fi
             fi
           done
@@ -124,10 +127,11 @@ jobs:
           fi
           echo "検知した問題:"; printf '  - %s\n' "${PROBLEMS[@]}"
 
-          # 同日の open issue があれば二重作成しない
-          EXISTING=$(gh issue list --state open --search "${TODAY} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
+          # 同日の watchdog Issue があれば二重作成しない。ここも "watchdog:" 接頭辞に
+          # 限定する (push-alert Issue に誤ヒットして watchdog Issue の起票が抑止されるのを防ぐ)。
+          EXISTING=$(gh issue list --state open --search "watchdog: ${TODAY} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
           if [ "${EXISTING}" != "0" ]; then
-            echo "同日 (${TODAY}) の open issue が既にあるためスキップ。"
+            echo "同日 (${TODAY}) の watchdog open issue が既にあるためスキップ。"
             exit 0
           fi
 
