@@ -13,8 +13,7 @@
 ```
 data/<YYYY-MM-DD>.json     # 当日のニュース本体（既存なら上書き、schema_version: "2.0"）
 data/latest.json           # 当日の内容を複製
-data/index.json            # 直近 90 日のエントリ一覧を更新（top_picks_count も格納）
-data/archive/<year>.json   # 90 日超のロールオーバー先（必要時のみ）
+data/index.json            # 全期間のエントリ一覧を更新（top_picks_count も格納。トリムしない）
 data/_seen.json            # 直近 90 日に push した正規化 URL キー + last_seen_count（リポジトリ管理）
 data/weekly-YYYY-WW.json   # 週次サマリ（日曜のみ生成、Phase D）
 data/weekly-latest.json    # 週次最新（Phase D）
@@ -66,13 +65,13 @@ data/weekly-index.json     # 週次過去一覧（Phase D）
   "entries": [
     { "date": "2026-05-10", "headline": "...", "item_count": 22, "top_picks_count": 6 },
     { "date": "2026-05-09", "headline": "...", "item_count": 18, "top_picks_count": 5 }
-    // 直近 90 日まで
+    // 全期間保持（トリムしない）
   ]
 }
 ```
 
 - 当日エントリがあれば `headline` / `item_count` / `top_picks_count` を更新、なければ先頭に追加
-- 91 件目以降は `entries` から削除し、`data/archive/<year>.json` の `entries` に追記
+- **エントリは全期間保持しトリムしない**（旧仕様の「90 日超を `data/archive/<year>.json` へ移動」は 2026-07-06 に廃止。容量は年間 70KB 台で問題にならず、移動すると日付ナビから消える・検索索引と不整合になるデメリットのみ）
 - `top_picks_count` は schema_version=2.0 以降のみ。1.x データは未定義（フロントは optional 扱い）
 
 ## git push 手順
@@ -85,11 +84,12 @@ git pull --rebase origin main
 # (スキルが data/<date>.json を更新)
 
 # 派生アーティファクトを生成 (依存ゼロ・data/<date>.json から決定論生成)
-node scripts/normalize-digest.mjs "data/<date>.json"   # 図解スキーマ正準化
-node scripts/validate-digest.mjs "data/<date>.json"    # 図解検証 (公開は止めない)
+node scripts/normalize-digest.mjs "data/<date>.json"   # 図解スキーマ + item フィールド正準化 (score→scores 等)
+node scripts/validate-digest.mjs "data/<date>.json"    # 図解 + item 検証 (公開は止めない)
 node scripts/build-search-index.mjs                    # data/search-index.json
 node scripts/build-feed.mjs                            # feed.xml / feed-items.xml
 node scripts/build-stats.mjs                           # data/stats.json (トレンド/品質)
+node scripts/build-followups.mjs                       # data/followups.json (続報チェーン)
 
 git add data/ feed.xml feed-items.xml
 git commit -m "daily digest: 2026-05-03 (6 items)"

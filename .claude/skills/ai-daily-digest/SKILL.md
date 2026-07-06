@@ -251,8 +251,8 @@ Step 7.5 で選定した Top Picks（5-7 件）の item にだけ `x_post`（str
 
 - `data/<YYYY-MM-DD>.json` を書き込み（既存なら上書き）。`schema_version: "2.0"` / `top_picks[]` / `categories[]` / `stats.by_category` / `stats.top_picks_count` / `stats.grounding_flags`（Step 8.6 の修正総数）を含む
 - `data/latest.json` を同内容で上書き
-- `data/index.json` の `entries` 先頭に当日のエントリを追加（既存なら更新）。直近 90 日のみ保持。`top_picks_count` も格納
-- 90 日超のエントリは `data/archive/<year>.json` に追記
+- `data/index.json` の `entries` 先頭に当日のエントリを追加（既存なら更新）。**全期間保持（トリムしない）**。`top_picks_count` も格納
+  - 旧仕様の「90 日ロールオーバー → `data/archive/`」は 2026-07-06 に廃止。エントリは 1 件 200B 程度で年間 70KB 台にしかならず、分割はナビ欠落・検索不整合のリスクだけが残るため
 - `data/_seen.json` を更新（`last_seen_count` をインクリメント、新規 URL は `first_seen_at` に当日追加）
 - 全体ヘッドライン `headline` と `summary_ja`（日全体の総括）を生成
 
@@ -261,11 +261,12 @@ Step 7.5 で選定した Top Picks（5-7 件）の item にだけ `x_post`（str
 JSON 書き込み後、commit 前に**派生アーティファクトを再生成**する（依存ゼロ・決定論）:
 
 ```
-node scripts/normalize-digest.mjs "data/<YYYY-MM-DD>.json"   # 図解スキーマ正準化
-node scripts/validate-digest.mjs  "data/<YYYY-MM-DD>.json"   # 図解検証 (止めない)
+node scripts/normalize-digest.mjs "data/<YYYY-MM-DD>.json"   # 図解 + item フィールド正準化 (score→scores 等)
+node scripts/validate-digest.mjs  "data/<YYYY-MM-DD>.json"   # 図解 + item 検証 (止めない)
 node scripts/build-search-index.mjs                          # data/search-index.json
 node scripts/build-feed.mjs                                  # feed.xml / feed-items.xml
 node scripts/build-stats.mjs                                 # data/stats.json
+node scripts/build-followups.mjs                             # data/followups.json (続報チェーン)
 ```
 
 ```

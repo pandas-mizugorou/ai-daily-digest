@@ -178,13 +178,17 @@ jobs:
             7. 反響ブースト (はてブ・Qiita・Zenn・HN・Reddit・Semantic Scholar) を importance に加算
             8. **カテゴリ分け** (Step 7、10 カテゴリ): new_models 3 / tools_apps 3 / agents 2 / multimodal 2 / research_papers 3 / industry_business 2 / regulation_policy 1 / community_buzz 2 / japan 5 / china 2。**合計 18-25 件選定**
             9. **Top Picks 選定** (Step 7.5): `assets/prompt-templates/select-top-picks.md` に従い 5-7 件を id 参照で選定。必読フラグ + 多様性 + japan 最低 1 件 + china 条件付き保証
-            10. **日本語要約** (Step 8): 選定された 18-25 件に title_ja / summary_ja / key_points_ja / figure を生成。中文記事 (lang: "zh") は日本語化 (固有名詞は英語表記保持)
+            10. **日本語要約** (Step 8): 選定された 18-25 件に title_ja / summary_ja / key_points_ja / figure / **tags** を生成。中文記事 (lang: "zh") は日本語化 (固有名詞は英語表記保持)。
+                **item のフィールド名は `assets/prompt-templates/summarize-ja.md` のスキーマに厳密一致させること (フィールド名ドリフト禁止)**:
+                - スコアは **`scores` (複数形)** — `{importance, depth, practicality, freshness, source_type_bias, reaction_boost, total}`。`score` (単数) は禁止 (2026-06 に 8 日間ドリフトし UI 全体が 0/20 表示になった実績)
+                - **`tags` (英小文字ケバブ 2-4 個) は全 item 必須** — 検索のタグ絞り込み・トレンドのタグ momentum・週次 keyword_cloud がこのフィールドに依存する (2026-06-26 以降 tags が消失した実績)
+                - 図解の**型ミックス**: summary-card は 1 日全体の 60% 以下 (figure-design.md の型ミックス制約に従う)。数値・対比・時系列が取れる記事は視覚 3 型を優先
             10.5 **X 投稿文生成**: **Top Picks に選ばれた 5-7 件のみ**、その item に `x_post` (string) を 1 つ生成。`assets/prompt-templates/x-post.md` と `references/x-persona.md` に厳密に従う。「である」調 / 絵文字≤1 / ハッシュタグ 0 / 本文 120 字目安 + 空行 + 元記事 URL。**記事内の事実のみ (誇張・推測・記事に無い数字は禁止。figure と同じ厳格さ。X に直接投稿されるため事実誤りは致命的)**。Top Picks 以外の item には `x_post` を付けない
             10.6 **グラウンディング検証 (Step 8.6、必須)**: `assets/prompt-templates/verify-grounding.md` に従い、各 item の summary_ja / key_points_ja / figure.data / x_post の **全数値・割合・日付・ベンチ名・モデル名・企業名・断定** を、その記事の raw_excerpt / summary_en と照合する。**Edit で書き込む前にチェック**し、裏付けの無い主張は「書き直す / 落とす / figure を summary-card に降格」(再出力はしない)。**Top Picks と x_post は最厳・ゼロトレランス**、安全化できない x_post は付けない (空=正常)。修正/削除した item に `grounding {verified:false, flags, notes}` を付け、総数を `stats.grounding_flags` に記録
             11. 出力ファイル (新スキーマ schema_version: "2.0"):
                 - `data/${{ steps.date.outputs.value }}.json` を新規作成 / 上書き (top_picks[] / categories[] / stats.by_category / stats.top_picks_count / stats.grounding_flags を含む)
                 - `data/latest.json` を当日と同内容で上書き
-                - `data/index.json` の `entries` 先頭を当日エントリで更新 (top_picks_count も格納、既存なら置換、無ければ追加)。直近 90 件まで保持
+                - `data/index.json` の `entries` 先頭を当日エントリで更新 (top_picks_count も格納、既存なら置換、無ければ追加)。**エントリは全期間保持・トリム禁止** (90 日ロールオーバーは 2026-07-06 廃止)
                 - `data/_seen.json` を更新 (URL ハッシュ + first_seen_at + last_seen_at + last_seen_count、90 日保持)
             12. 一部 WebFetch / WebSearch が失敗しても 3 件以上選定できれば書き込みを続行 (失敗ソースは `skipped_sources` に記録)
             13. 0 件しか取れなかった場合は `data/_errors/${{ steps.date.outputs.value }}.json` にエラーレポートを出力して終了
@@ -235,6 +239,28 @@ jobs:
             --permission-mode bypassPermissions
             --allowed-tools Read,Write,Edit,Glob,Grep,Bash,WebFetch,WebSearch
 
+      # === 成果物ハードゲート (2026-07-03 事故の再発防止) ===
+      # SKILL.md の YAML frontmatter 破損で Claude が起動即エラー終了しても、
+      # claude-code-action は subtype:"success" だけ見て緑にする (is_error を見ない)。
+      # その結果「digest 未生成のまま派生物だけコミット ×4」が起きた (7/3 実測)。
+      # ここで当日ファイルの存在と最低件数を検証し、無ければ run を fail させる
+      # → retry-failed.yml (conclusion=failure で発火) と失敗通知メールに確実につながる。
+      - name: Verify digest artifact (hard gate)
+        if: steps.guard.outputs.done != 'true'
+        run: |
+          DATE="${{ steps.date.outputs.value }}"
+          if [ ! -f "data/${DATE}.json" ]; then
+            echo "::error::data/${DATE}.json が未生成 (Claude 実行が失敗した疑い。ログの result JSON を確認)"
+            exit 1
+          fi
+          COUNT=$(jq '[.categories[].items // [] | length] | add // 0' "data/${DATE}.json" 2>/dev/null || echo 0)
+          case "$COUNT" in ''|*[!0-9]*) COUNT=0;; esac
+          if [ "$COUNT" -lt 3 ]; then
+            echo "::error::data/${DATE}.json の items が ${COUNT} 件 (< 3)。生成不完全のため fail します"
+            exit 1
+          fi
+          echo "hard gate OK: data/${DATE}.json (${COUNT} items)"
+
       # === 図解スキーマ正規化＋検証 (Claude 出力後・search-index/commit 前。依存ゼロ) ===
       # 生成側がフラット旧スキーマで figure を出しても、ここで正準スキーマ ({type, data:{...}}) に
       # 決定論的に揃える (バー幅 _pct / before・after / timeline status を補完)。
@@ -248,15 +274,16 @@ jobs:
           node scripts/validate-digest.mjs "data/${{ steps.date.outputs.value }}.json"
 
       # === 派生アーティファクト生成 (Claude 出力後・commit 前。ランナー標準 node、依存ゼロ) ===
-      # 検索インデックス (Phase F-3) + RSS フィード (Phase 2-3) + 統計 (Phase 2-5/3-2/3-3)。
-      # いずれも data/<date>.json から決定論生成。失敗しても公開は止めない。
-      - name: Build derived artifacts (search index / feeds / stats)
+      # 検索インデックス (Phase F-3) + RSS フィード (Phase 2-3) + 統計 (Phase 2-5/3-2/3-3)
+      # + 続報チェーン (Phase 3-1)。いずれも data/<date>.json から決定論生成。失敗しても公開は止めない。
+      - name: Build derived artifacts (search index / feeds / stats / followups)
         if: steps.guard.outputs.done != 'true'
         continue-on-error: true
         run: |
           node scripts/build-search-index.mjs
           node scripts/build-feed.mjs
           node scripts/build-stats.mjs
+          node scripts/build-followups.mjs
 
       - name: Commit and push changes
         if: steps.guard.outputs.done != 'true'
@@ -275,12 +302,15 @@ jobs:
             exit 0
           fi
 
-          # Count selected items if today's file exists
+          # 当日 digest 本体が無いのに派生物 (stats/feed 等) だけコミットするのを禁止する
+          # (7/3 事故: 「daily digest: <date> (? items)」の空コミットが 4 つ生まれた)。
+          # ハードゲートで先に fail するはずだが、多層防御としてここでも検証する。
           DATE="${{ steps.date.outputs.value }}"
-          COUNT="?"
-          if [ -f "data/${DATE}.json" ]; then
-            COUNT=$(jq '[.categories[].items // [] | length] | add' "data/${DATE}.json" 2>/dev/null || echo "?")
+          if [ ! -f "data/${DATE}.json" ]; then
+            echo "::error::data/${DATE}.json が無いため commit しません (派生物のみの空コミットを禁止)"
+            exit 1
           fi
+          COUNT=$(jq '[.categories[].items // [] | length] | add // 0' "data/${DATE}.json" 2>/dev/null || echo 0)
 
           # data/ に加えてルートの RSS フィード (feed.xml / feed-items.xml) も対象
           git add data/ feed.xml feed-items.xml

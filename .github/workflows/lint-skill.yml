@@ -1,0 +1,31 @@
+# SKILL.md の YAML frontmatter を push 時に検証する (2026-07-03 事故の再発防止)。
+# frontmatter が壊れると Claude Code が起動即エラーになり日次 digest が生成されない。
+# 事故当時は翌日の watchdog まで気づけなかった → push から 1 分で気づける層を足す。
+name: Lint skill frontmatter
+
+on:
+  push:
+    paths:
+      - ".claude/skills/**"
+      - "scripts/lint-skill-frontmatter.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Validate SKILL.md YAML frontmatter
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      # js-yaml で厳密パース (無い環境ではスクリプトがヒューリスティック検査に自動フォールバック)
+      - name: Install js-yaml (strict parse)
+        run: npm install --no-save js-yaml
+
+      - name: Lint frontmatter
+        run: node scripts/lint-skill-frontmatter.mjs

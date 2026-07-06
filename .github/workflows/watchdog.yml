@@ -100,6 +100,23 @@ jobs:
             fi
           fi
 
+          # ---- 過去 7 日の欠損スキャン (watchdog 自身が落ちた日のフォロー) ----
+          # 検知は「その日 1 回きり」だと watchdog 自身の失敗・遅延で穴が恒久化する
+          # (2026-07-03 は検知 Issue #20 が立ったが、立たないケースへの備えが無かった)。
+          # 過去 7 日の欠損を毎日再検査し、その日付を title に含む Issue (open/closed 問わず)
+          # が 1 つも無い場合のみ問題として報告する (既知の欠損 = 対応判断済みは再起票しない)。
+          for i in 1 2 3 4 5 6 7; do
+            D=$(TZ=Asia/Tokyo date -d "${TODAY} - ${i} days" +%Y-%m-%d)
+            if [ ! -f "data/${D}.json" ]; then
+              KNOWN=$(gh issue list --state all --search "${D} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
+              if [ "${KNOWN}" = "0" ]; then
+                PROBLEMS+=("🟠 過去日の未検知欠損: data/${D}.json が main にありません（バックフィルするか欠損として確定するか判断が必要）")
+              else
+                echo "past gap ${D}: 既知 (issue あり) のためスキップ"
+              fi
+            fi
+          done
+
           # ---- 判定 ----
           if [ "${#PROBLEMS[@]}" -eq 0 ]; then
             echo "OK: ${TODAY} は異常なし。Issue は作りません。"
