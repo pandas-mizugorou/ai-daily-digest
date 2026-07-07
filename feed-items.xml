@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 18:22:55 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 17:50:05 GMT</lastBuildDate>
+    <item>
+      <title>LLM内部に「グローバルワークスペース」が自然発生——AnthropicがJ-spaceとJ-lensを実証</title>
+      <link>https://www.lesswrong.com/posts/global-workspace-language-models</link>
+      <guid isPermaLink="false">aidd-item-lesswrong-a-global-workspace-in-language-models</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08/lesswrong-a-global-workspace-in-language-models">AI Daily Digest 2026-07-08</source>
+      <description>Anthropicの研究者がLLM内部に「J-space（ジェイスペース）」と呼ばれる共有内部表現空間が訓練を通じて自然発生することを発見した。人間の脳の認知統合理論「グローバルワークスペース理論」と類似した構造がLLMにも存在することを示す研究だ。新手法「J-lens（Jacobian lens）」によってJ-spaceを読み取り・操作できることを実証した。アブレーション実験でJ-spaceを遮断しても通常の応答は継続されるが、高次認知機能（複雑な推論・メタ認知）が失われることが確認された。スワップテストでは異なるモデル間でJ-spaceを移植すると認知パターンが転移することも示した。この発見はLLMの内部解釈可能性研究と安全性監視の新たなアプローチとして業界から強い注目を集めている。</description>
+    </item>
+    <item>
+      <title>Claude CoworkがiOS・Android・Webに対応——Maxプランから展開、PCを閉じてもタスクを継続</title>
+      <link>https://techcrunch.com/2026/07/07/claude-cowork-expands-to-mobile-and-web/</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-claude-cowork-expands-to-mobile-and-web</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08/techcrunch-claude-cowork-expands-to-mobile-and-web">AI Daily Digest 2026-07-08</source>
+      <description>AnthropicのClaude Coworkが7月7日よりモバイル（iOS・Android）およびWebへの対応を開始した。まずMaxプランユーザーに提供され、Proプランユーザーへは2日かけて順次展開される予定だ。これにより、デスクトップで開始した長時間タスクをノートPCを閉じた後でもスマートフォンから追跡・受け取りができるようになる。Claude Coworkはバックグラウンドでタスクを実行し続ける設計で、「仕事を同僚に任せてその場を離れる」感覚での利用が想定されている。AIの非同期エージェント体験がスマートフォンで完結できるようになることで、業務効率とモバイルAI活用の幅が大きく広がる。従来のチャット型AIとは異なり、ユーザーが画面を見ていなくてもタスクが進行し続ける点が新世代のAIワークフローを体現している。</description>
+    </item>
+    <item>
+      <title>米輸出規制に対抗——DeepSeekが約1年前から独自チップ設計に着手、ハードウェアパートナーと協議中</title>
+      <link>https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-its-own-chips/</link>
+      <guid isPermaLink="false">aidd-item-arstechnica_ai-facing-us-export-controls-china-s-deepseek-plans</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08/arstechnica_ai-facing-us-export-controls-china-s-deepseek-plans">AI Daily Digest 2026-07-08</source>
+      <description>中国のAIスタートアップDeepSeekが米国の輸出規制（先端半導体の対中輸出禁止）への対抗策として、約1年前から独自の半導体チップ設計に着手していることがReuters報道で明らかになった。DeepSeekは複数のハードウェアパートナーと協議を進めており、チップエンジニアの採用も実施中だという。米国がHuaweiやSMICへの制限を段階的に強化する中、中国AIエコシステムが自前のシリコン確保に動き始めたことを示す重要な動向だ。ただし、独自チップ開発は設計から量産まで数年を要するため、短期的な自立達成は困難とみられる。中長期的なAIハードウェアの地政学的分断がより鮮明になりつつある。</description>
+    </item>
+    <item>
+      <title>16GBノートPCでClaude Code＋ローカルLLMをCodeRouter経由で使う</title>
+      <link>https://zenn.dev/inoue_atsushi/articles/claude-code-coderouter-local-llm</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-16gb-pc-claude-code-llm-coderouter-tool-call-202</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08/hatena_it-16gb-pc-claude-code-llm-coderouter-tool-call-202">AI Daily Digest 2026-07-08</source>
+      <description>16GBメモリのノートPCという低スペック環境でClaude CodeとローカルLLMをCodeRouter経由で連携・実用化するための実践ガイドが、はてなブックマーク405件を獲得した。CodeRouterはClaude CodeのAPI呼び出しを複数LLMに振り分けるプロキシツールで、コスト増大なしに高性能モデルと低コストローカルモデルを使い分けることができる。ガイドでは具体的なセットアップ手順・ツールコール設定・パフォーマンスチューニングを詳述しており、Claude Codeを高額API費用なしに活用したい開発者から強い支持を受けた。16GBという現実的なメモリ制約での実用化知見は、高コストなAIコーディング環境への代替として日本の開発者コミュニティで広く参照されている。</description>
+    </item>
+    <item>
+      <title>CompactionRL——コンテキスト圧縮とタスク実行を同時最適化するRL手法で長期エージェントの壁を突破</title>
+      <link>https://arxiv.org/abs/2507.03972</link>
+      <guid isPermaLink="false">aidd-item-arxiv-compactionrl-reinforcement-learning-with-context</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08/arxiv-compactionrl-reinforcement-learning-with-context">AI Daily Digest 2026-07-08</source>
+      <description>長期エージェント（long-horizon agent）が抱える「コンテキスト枯渇」問題に対し、CompactionRLは強化学習（RL）でタスク実行とコンテキスト圧縮（compaction）を同時に最適化する新手法を提案する。従来のエージェントは長いタスクを実行するとコンテキストウィンドウが圧迫され、重要な情報が失われる問題があった。CompactionRLはエージェントが「いつ・何を圧縮するか」を自律的に学習し、タスク完了率を最大化しながらコンテキストを効率的に管理する仕組みを持つ。RLのリワード設計にコンテキスト使用効率を組み込むことで、長期タスクでも高い性能を維持できることが実験で示された。長期コーディング・長期リサーチ自動化など、実用的なエージェント応用にとって基盤技術となりうる研究だ。</description>
+    </item>
+    <item>
+      <title>LeRobot v0.6.0リリース——世界モデル・報酬モデル・新ベンチマークで自己改善サイクルを実現</title>
+      <link>https://huggingface.co/blog/lerobot-release-v060</link>
+      <guid isPermaLink="false">aidd-item-hf_blog-lerobot-v0-6-0-imagine-evaluate-improve</guid>
+      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08/hf_blog-lerobot-v0-6-0-imagine-evaluate-improve">AI Daily Digest 2026-07-08</source>
+      <description>HuggingFaceが開発するオープンソースのロボット学習ライブラリ「LeRobot」がv0.6.0にアップデートされた。タイトルの「Imagine, Evaluate, Improve」が示すとおり、三つの新機能軸を中心に構成されている。Imagineは世界モデルポリシー（World Model Policy）で、ロボットが次の状態を「想像」しながら行動計画を立てられる能力を付与する。Evaluateは報酬モデルの組み込みで、大量の軌跡データを用いてロボットの行動品質を評価・スコアリングできる仕組みだ。Improveは新設されたベンチマーク群による自己改善ループで、評価結果をもとにモデルが継続的に性能向上できる設計となっている。物理ロボット研究者・産業AI開発者がすぐに活用できるオープンな基盤として、ロボティクス分野のプラクティショナーから注目されている。</description>
+    </item>
     <item>
       <title>AnthropicがClaude Codeに中国ユーザー向け隠しトラッカーを実装——研究者が「プロンプトステガノグラフィー」で追跡コードを発見、即日削除</title>
       <link>https://arstechnica.com/tech-policy/2026/07/anthropic-outed-for-claude-tracker-that-secretly-monitored-chinese-users</link>
@@ -21,14 +69,6 @@
       <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/techcrunch-microsoft-lays-off-nearly-5-000-employees-across">AI Daily Digest 2026-07-07</source>
       <description>Microsoftが月曜日に約4,800人（全従業員の2.1%）の削減を実施した。一連のレイオフの最新版であり、特にXbox部門と商業営業部門への影響が大きい。一連の削減はAIによる雇用代替への懸念を高めている。</description>
-    </item>
-    <item>
-      <title>LeRobot v0.6.0——世界モデルポリシー・報酬モデル・6新シミュレーション環境でロボティクスVLAを大幅強化</title>
-      <link>https://huggingface.co/blog/lerobot-release-v060</link>
-      <guid isPermaLink="false">aidd-item-hf_blog-lerobot-v0-6-0-imagine-evaluate-improve</guid>
-      <pubDate>Mon, 06 Jul 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07/hf_blog-lerobot-v0-6-0-imagine-evaluate-improve">AI Daily Digest 2026-07-07</source>
-      <description>HuggingFaceがLeRobot v0.6.0を公開した。今回の主な追加機能は3つの世界モデルポリシー（VLA-JEPA・LingBot-VA・FastWAM）、1M以上の軌跡で訓練した報酬モデル「Robometer」およびゼロショット対応のTOPReward、6つの新シミュレーションベンチマーク（LIBERO-plus・RoboTwin 2.0・RoboCasa365・RoboCerebra・RoboMME・VLABench）である。またGR00T N1.7（NVIDIA）・MolmoAct2・EVO1（0.77B）など新VLAを追加し、データ読み込みを約2倍高速化。lerobot-rollout CLIとDAgger（人間のループ内修正）、FSDP マルチGPU訓練もサポートされた。</description>
     </item>
     <item>
       <title>TencentがHy3（295B総パラメータ・21Bアクティブ、MoE、Apache 2.0）を公開——中国発高性能オープンモデルがローカルLLM競争を加速</title>
@@ -589,54 +629,6 @@
       <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-reg-gray-swan">AI Daily Digest 2026-06-24</source>
       <description>AIセキュリティ企業Gray SwanがLatent Spaceポッドキャストで、Mythos/Fableバン後のredteaming動向を語った。Gray Swanは自動redteaming製品「Shade」（人間テスターを超える精度）、コミュニティプラットフォーム「Gray Swan Arena」（Discord 15,000人以上）、エンタープライズ向けガードレールモデル「Cygnal」の3製品を展開する。プロンプトインジェクション侵害の「致命的三つ組み」は（1）外部（信頼できない）データの取込、（2）内部のプライベートデータへのアクセス、（3）外部へのデータ送出、の組み合わせと指摘した。AIセキュリティが損害保険の引き受けフレームワークに収束するという見方も示した。</description>
-    </item>
-    <item>
-      <title>Sakana AIが「マルチエージェントをモデルとして提供」するFuguを発表——Claude Fable 5超えを達成</title>
-      <link>https://sakana.ai/fugu</link>
-      <guid isPermaLink="false">aidd-item-2026-06-23-ag-sakana-fugu</guid>
-      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-ag-sakana-fugu">AI Daily Digest 2026-06-23</source>
-      <description>東京を拠点とするAI企業Sakana AIは2026年6月22日、マルチエージェントシステム「Sakana Fugu」を発表した。FuguはクローズドモデルとオープンモデルからなるAgent Poolを活用し、ユーザー入力に応じて最適なモデルを自動選択・組み合わせることで、まるで単一モデルを使っているかのような体験を提供する。スタンダードな日常業務向けの「Fugu」と高精度タスク向けの「Fugu Ultra」の2バリアントがあり、ベンチマークテストではFugu UltraおよびFuguがClaude Fable 5を上回る性能を達成したとアピールされている。ルービックキューブの解法タスクでは、Fugu Ultraが19手でGemini 3.1 Pro・Claude Opus 4.8・GPT-5.5を上回った。APIは入力/出力で100万トークンあたり5〜30ドル、サブスクリプションは月額20〜200ドル（StandardからMaxプラン）で提供される。利用者はどのモデルが出力を生成したか特定できない仕組みとなっている。なお、ベンチマーク比較の対象プールからはClaude Fable 5およびClaude Mythos Previewが除外されている。</description>
-    </item>
-    <item>
-      <title>PLaMo 3.0 Prime: 国産フラッグシップLLM正式リリース</title>
-      <link>https://preferred.jp/ja/news/pr20260622</link>
-      <guid isPermaLink="false">aidd-item-2026-06-23-nm-plamo-30-prime</guid>
-      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-nm-plamo-30-prime">AI Daily Digest 2026-06-23</source>
-      <description>Preferred Networks（PFN）は2026年6月22日、国産生成AI基盤モデルの最新フラッグシップ「PLaMo 3.0 Prime」を正式リリースした。NICTとの共同開発で、コンテキストウィンドウを64Kから256Kへ大幅拡張した。複雑な論理タスク向けのReasoningモデルと速度重視のNon-reasoningモデルという2バリアントを提供する。複数のベンチマーク評価において「日本語能力と費用対効果のバランス」を示し、Qwen 3.6-27B・GPT-5.4 mini・Claude Haiku 4.5と競合する性能を達成したとされる。Amazon Bedrock MarketplaceおよびSnowflakeとの連携も開始しており、クラウドAPI・オンプレミスの両形態で利用可能。フルスクラッチで開発する国産モデルとして、HELM Safetyベンチマークでも国際水準のセーフティ性能を示している。</description>
-    </item>
-    <item>
-      <title>AI臭い文章を生成させないためのLLM技術文書ルール集</title>
-      <link>https://techno-edge.net/article/2026/06/22/5209.html</link>
-      <guid isPermaLink="false">aidd-item-2026-06-23-cb-llm-doc-rules-777</guid>
-      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-cb-llm-doc-rules-777">AI Daily Digest 2026-06-23</source>
-      <description>TechnoEdgeに掲載された記事が、技術書出版社代表によるLLM向け日本語技術文書スキル「japanese-tech-writing」を紹介し、はてなブックマークで777件という異例のブックマーク数を記録した。本ルール集は「AI臭い文章」を避けながら、LLMに読み手が理解しやすい質の高い日本語技術文書を生成・推敲させるための規範をまとめたものだ。どのような指示をLLMに与えることで技術的に正確で流暢な日本語文書が生まれるかという、日本語技術ライティングの実践的ノウハウが凝縮されており、Claude CodeやChatGPTを使って技術文書を書く現場のエンジニアに広く共有されている。</description>
-    </item>
-    <item>
-      <title>コーディングエージェントの性能はAGENTS.mdの「作り方」で決まる——Probe-and-Refine手法が解決策を提示</title>
-      <link>https://arxiv.org/abs/2606.20512v1</link>
-      <guid isPermaLink="false">aidd-item-2026-06-23-rp-probe-refine-agents-md</guid>
-      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-rp-probe-refine-agents-md">AI Daily Digest 2026-06-23</source>
-      <description>LLMベースのコーディングエージェントがリポジトリの高レベル知識（どのファイルがどのサブシステムを担うか、テストの実行方法、過去に誤った修正を引き起こしたワークフロー等）を効率的に利用するためのAGENTS.mdファイルに関する研究が公開された。AGENTS.mdが役に立つかどうかは研究者間で意見が割れていたが、本研究ではその「作り方」こそが決定的変数であることを明らかにした。新たに提案する「Probe-and-Refine」チューニング手法は、エージェントがリポジトリを実際に探索（Probe）し、得られた知見に基づいてガイダンスを洗練（Refine）していく自動生成プロセスで、静的に作成したAGENTS.mdと比べて性能が有意に向上することを示した。CLAUDE.mdやCURSOR.rulesにも同様の知見が適用できる。</description>
-    </item>
-    <item>
-      <title>Claude Fable 5・Opus 4.8の破壊的変更と移行ガイド（2026-06-22）</title>
-      <link>https://qiita.com/picnic/items/7f47405f515731b37f3f</link>
-      <guid isPermaLink="false">aidd-item-2026-06-23-ta-fable5-breaking-changes</guid>
-      <pubDate>Sun, 21 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-ta-fable5-breaking-changes">AI Daily Digest 2026-06-23</source>
-      <description>Anthropicは2026年6月22日にリリースノートを更新し、Claude Fable 5・Claude Mythos 5・Claude Opus 4.8に関する複数の重要な破壊的変更を明らかにした。中でも「thinkingモードの制約変更」と「サンプリングパラメータの制限」は既存コードへの影響が大きい変更だ。さらにClaude Fable 5では30日間のデータ保持が必須となり、Zero Data Retention（ZDR）オプションが利用不可となった。このためコンプライアンス要件が厳しい企業では、Fable 5採用前に法務確認が必要になる。本番環境でClaude APIを利用している開発者は速やかにリリースノートを確認し、影響範囲を点検することが推奨される。</description>
-    </item>
-    <item>
-      <title>GLM-5.2、オープンモデル最高峰のコーディング性能を誇示——Fable輸出禁止の間隙に戦略リリース</title>
-      <link>https://latent.space/p/ainews-glm-52-the-top-frontend-coding</link>
-      <guid isPermaLink="false">aidd-item-2026-06-23-nm-glm-52</guid>
-      <pubDate>Tue, 16 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-23/2026-06-23-nm-glm-52">AI Daily Digest 2026-06-23</source>
-      <description>Z.ai（Zhipu AI）の最新フラッグシップ「GLM-5.2」は、Claude Fableの輸出規制が続く中でリリースされ、フロントエンドコーディングなどの実用タスクでオープンモデル首位を争う性能を示している。Latent Space AINewsは「GLM-5.2は世界トップのフロントエンドコーディングモデル」と評価し、DeepSeek・Mistral・Cohere・Moonshot AIなど主要オープンモデルラボを多くの評価指標で上回ると報告されている。DeepSWEコーディングエージェントベンチマークでも高位にランキングされており、コスト対効果のパレートフロンティア上に位置するとされる。現在OpenRouterには16の推論プロバイダーが対応している。なおZ.aiは12月にOpen Fableの公開を予告している。</description>
     </item>
   </channel>
 </rss>

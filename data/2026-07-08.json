@@ -24,12 +24,36 @@
     "grounding_flags": 0
   },
   "top_picks": [
-    { "id": "lesswrong-a-global-workspace-in-language-models", "rank": 1, "reason": "Anthropicが実証した LLM 内部グローバルワークスペース発見は解釈可能性研究の画期的成果。importance 5 + depth 5 + はてブ 78件の反響" },
-    { "id": "techcrunch-claude-cowork-expands-to-mobile-and-web", "rank": 2, "reason": "Anthropic公式プロダクトのモバイル対応は即日ユーザー体験に影響。Maxプランから順次展開" },
-    { "id": "arstechnica_ai-facing-us-export-controls-china-s-deepseek-plans", "rank": 3, "reason": "DeepSeekの独自チップ参入はAI半導体サプライチェーンに与える影響が大きい地政学的重要ニュース" },
-    { "id": "hatena_it-16gb-pc-claude-code-llm-coderouter-tool-call-202", "rank": 4, "reason": "はてブ405件の強い反響シグナル。Japan代表枠。実践的ガイドとして多くの開発者に参照される" },
-    { "id": "arxiv-compactionrl-reinforcement-learning-with-context", "rank": 5, "reason": "長期エージェントの文脈超過問題をRLで解決する初の枠組み。エージェント研究の重要な前進" },
-    { "id": "hf_blog-lerobot-v0-6-0-imagine-evaluate-improve", "rank": 6, "reason": "HuggingFace公式ロボティクスライブラリの major update。自己改善サイクルの実装が注目" }
+    {
+      "id": "lesswrong-a-global-workspace-in-language-models",
+      "rank": 1,
+      "reason": "Anthropicが実証した LLM 内部グローバルワークスペース発見は解釈可能性研究の画期的成果。importance 5 + depth 5 + はてブ 78件の反響"
+    },
+    {
+      "id": "techcrunch-claude-cowork-expands-to-mobile-and-web",
+      "rank": 2,
+      "reason": "Anthropic公式プロダクトのモバイル対応は即日ユーザー体験に影響。Maxプランから順次展開"
+    },
+    {
+      "id": "arstechnica_ai-facing-us-export-controls-china-s-deepseek-plans",
+      "rank": 3,
+      "reason": "DeepSeekの独自チップ参入はAI半導体サプライチェーンに与える影響が大きい地政学的重要ニュース"
+    },
+    {
+      "id": "hatena_it-16gb-pc-claude-code-llm-coderouter-tool-call-202",
+      "rank": 4,
+      "reason": "はてブ405件の強い反響シグナル。Japan代表枠。実践的ガイドとして多くの開発者に参照される"
+    },
+    {
+      "id": "arxiv-compactionrl-reinforcement-learning-with-context",
+      "rank": 5,
+      "reason": "長期エージェントの文脈超過問題をRLで解決する初の枠組み。エージェント研究の重要な前進"
+    },
+    {
+      "id": "hf_blog-lerobot-v0-6-0-imagine-evaluate-improve",
+      "rank": 6,
+      "reason": "HuggingFace公式ロボティクスライブラリの major update。自己改善サイクルの実装が注目"
+    }
   ],
   "categories": [
     {
@@ -49,7 +73,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["robotics", "open-source", "world-model", "reinforcement-learning"],
+          "tags": [
+            "robotics",
+            "open-source",
+            "world-model",
+            "reinforcement-learning"
+          ],
           "summary_ja": "HuggingFaceが開発するオープンソースのロボット学習ライブラリ「LeRobot」がv0.6.0にアップデートされた。タイトルの「Imagine, Evaluate, Improve」が示すとおり、三つの新機能軸を中心に構成されている。Imagineは世界モデルポリシー（World Model Policy）で、ロボットが次の状態を「想像」しながら行動計画を立てられる能力を付与する。Evaluateは報酬モデルの組み込みで、大量の軌跡データを用いてロボットの行動品質を評価・スコアリングできる仕組みだ。Improveは新設されたベンチマーク群による自己改善ループで、評価結果をもとにモデルが継続的に性能向上できる設計となっている。物理ロボット研究者・産業AI開発者がすぐに活用できるオープンな基盤として、ロボティクス分野のプラクティショナーから注目されている。",
           "key_points_ja": [
             "世界モデルポリシーを導入し、ロボットが次状態を予測しながら行動を計画できる「想像」能力を獲得した",
@@ -67,8 +96,6 @@
           },
           "figure": {
             "type": "timeline",
-            "caption": "LeRobot v0.6.0 改善サイクル",
-            "alt": "LeRobot v0.6.0の三段階自己改善サイクルを示すタイムライン。ステップ1「Imagine（世界モデルポリシー）」でロボットが次状態を予測して行動計画を生成。ステップ2「Evaluate（報酬モデル）」で行動品質を定量スコアリング。ステップ3「Improve（新ベンチマーク）」でスコアをもとに継続的改善を実施。全ステップがオープンソースとして提供される。",
             "data": {
               "headline": "LeRobot v0.6.0: Imagine → Evaluate → Improve の自己改善サイクル",
               "events": [
@@ -96,7 +123,9 @@
               ],
               "narrative": "v0.5系から大幅に発展し、ロボット学習の「想像・評価・改善」の三段サイクルをエンドツーエンドでオープン実装した初のロボティクスライブラリ更新",
               "impact": "物理ロボット研究者や産業AI開発者がすぐ利用できるオープン基盤として、具身AIの研究加速が期待される"
-            }
+            },
+            "caption": "LeRobot v0.6.0 改善サイクル",
+            "alt": "LeRobot v0.6.0の三段階自己改善サイクルを示すタイムライン。ステップ1「Imagine（世界モデルポリシー）」でロボットが次状態を予測して行動計画を生成。ステップ2「Evaluate（報酬モデル）」で行動品質を定量スコアリング。ステップ3「Improve（新ベンチマーク）」でスコアをもとに継続的改善を実施。全ステップがオープンソースとして提供される。"
           },
           "x_post": "LeRobot v0.6.0が「Imagine, Evaluate, Improve」の三軸で更新された。世界モデルポリシーによる次状態予測、報酬モデルによる品質評価、新ベンチマーク群による自己改善サイクルをオープンソースで提供する。\n\nhttps://huggingface.co/blog/lerobot-release-v060"
         },
@@ -112,7 +141,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["wearables", "voice-ai", "smart-glasses", "privacy"],
+          "tags": [
+            "wearables",
+            "voice-ai",
+            "smart-glasses",
+            "privacy"
+          ],
           "summary_ja": "スタートアップSolosが新型スマートグラス「AirGo A6」を発表した。前世代のAirGo A5（36〜40グラム）から大幅に軽量化し、約19グラムを達成した。最大の特徴はカメラを搭載せず、AIアシスタントを音声インタラクションのみに絞った設計だ。カメラを排除することでデザインをよりスリムにでき、プライバシーへの懸念を軽減するアプローチを取っている。音声ベースのAIアシスタントを中心機能として据えることで、Meta Ray-Bansなどカメラ付きスマートグラスとは異なる市場ポジションを狙う。軽量性とプライバシー配慮を優先する層にとって、日常使いのウェアラブルAIデバイスとして有力な選択肢となりそうだ。",
           "key_points_ja": [
             "前世代AirGo A5（36〜40g）から約19gへと半分以下に軽量化し、終日装着への障壁を大きく引き下げた",
@@ -130,12 +164,14 @@
           },
           "figure": {
             "type": "comparison",
-            "caption": "AirGo A5 vs A6",
-            "alt": "SolosスマートグラスAirGo A5とA6の比較図。重量：A5が36〜40g、A6が約19gと半減。カメラ：A5搭載、A6非搭載。AI方式：A5はカメラ＋音声、A6は音声のみ。デザイン：A5は標準、A6はスリム。いずれの指標もA6が軽量・プライバシー重視に振り切った設計であることを示す。",
             "data": {
               "headline": "Solos AirGo A5 → A6：軽量化とプライバシー重視にフォーカス",
-              "before": { "label": "AirGo A5" },
-              "after": { "label": "AirGo A6" },
+              "before": {
+                "label": "AirGo A5"
+              },
+              "after": {
+                "label": "AirGo A6"
+              },
               "metrics": [
                 {
                   "label": "重量",
@@ -169,7 +205,9 @@
               ],
               "narrative": "AirGo A6はカメラを省いて19gの超軽量を実現。Meta Ray-Bansとは逆方向の「プライバシー優先・音声特化」路線を明確に打ち出した",
               "impact": "カメラ付きスマートグラスへの反発が強い層へのアピールと、より長時間の日常装着を可能にする軽量化が両立"
-            }
+            },
+            "caption": "AirGo A5 vs A6",
+            "alt": "SolosスマートグラスAirGo A5とA6の比較図。重量：A5が36〜40g、A6が約19gと半減。カメラ：A5搭載、A6非搭載。AI方式：A5はカメラ＋音声、A6は音声のみ。デザイン：A5は標準、A6はスリム。いずれの指標もA6が軽量・プライバシー重視に振り切った設計であることを示す。"
           }
         }
       ]
@@ -191,7 +229,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["claude", "mobile", "anthropic", "productivity"],
+          "tags": [
+            "claude",
+            "mobile",
+            "anthropic",
+            "productivity"
+          ],
           "summary_ja": "AnthropicのClaude Coworkが7月7日よりモバイル（iOS・Android）およびWebへの対応を開始した。まずMaxプランユーザーに提供され、Proプランユーザーへは2日かけて順次展開される予定だ。これにより、デスクトップで開始した長時間タスクをノートPCを閉じた後でもスマートフォンから追跡・受け取りができるようになる。Claude Coworkはバックグラウンドでタスクを実行し続ける設計で、「仕事を同僚に任せてその場を離れる」感覚での利用が想定されている。AIの非同期エージェント体験がスマートフォンで完結できるようになることで、業務効率とモバイルAI活用の幅が大きく広がる。従来のチャット型AIとは異なり、ユーザーが画面を見ていなくてもタスクが進行し続ける点が新世代のAIワークフローを体現している。",
           "key_points_ja": [
             "7月7日よりMaxプランユーザーへiOS/Android/Webでのアクセスを提供開始、Proプランは2日で順次展開",
@@ -209,8 +252,6 @@
           },
           "figure": {
             "type": "timeline",
-            "caption": "Claude Cowork モバイル展開スケジュール",
-            "alt": "Claude Coworkのモバイル・Web展開タイムライン。7月7日：Maxプランユーザー向けにiOS・Android・Web同時公開。7月8〜9日：Proプランへ2日かけて順次展開予定。以降：デスクトップで始めたタスクをモバイルから継続追跡する非同期エージェント体験が全プランで利用可能に。",
             "data": {
               "headline": "Claude Cowork モバイル展開ロードマップ",
               "events": [
@@ -238,7 +279,9 @@
               ],
               "narrative": "Claude Coworkはチャット型AIを超えた「非同期バックグラウンドエージェント」体験をモバイルに拡張。デスクと外出先でのシームレスなAIワークフローを実現",
               "impact": "業務でのAI活用が特定デバイスや場所に縛られなくなり、AIエージェントの「24時間稼働」モデルがビジネスユーザーの日常に浸透し始める"
-            }
+            },
+            "caption": "Claude Cowork モバイル展開スケジュール",
+            "alt": "Claude Coworkのモバイル・Web展開タイムライン。7月7日：Maxプランユーザー向けにiOS・Android・Web同時公開。7月8〜9日：Proプランへ2日かけて順次展開予定。以降：デスクトップで始めたタスクをモバイルから継続追跡する非同期エージェント体験が全プランで利用可能に。"
           },
           "x_post": "Claude CoworkがiOS・Android・Webに対応。7月7日よりMaxプランから提供開始、Proプランは2日かけて順次展開される。デスクで始めたタスクをPCを閉じた後もスマホで追跡・受け取れる。\n\nhttps://techcrunch.com/2026/07/07/claude-cowork-expands-to-mobile-and-web/"
         },
@@ -254,7 +297,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["huggingface", "enterprise", "inference", "cloud"],
+          "tags": [
+            "huggingface",
+            "enterprise",
+            "inference",
+            "cloud"
+          ],
           "summary_ja": "HuggingFaceはFoundryのマネージドコンピュート上でHuggingFaceモデルを直接デプロイ・利用できるインテグレーションを発表した。エンタープライズユーザーがオープンソースモデルをFoundryの管理インフラ上で稼働させることで、インフラ管理の複雑さを排除しながらHuggingFaceのモデルエコシステムへアクセスできる。HuggingFaceとFoundryの公式統合として、企業がオープンソースAIモデルを管理されたクラウドコンピュート環境で運用しやすくするインフラ統合である。オープンソースモデルの本番環境への展開ハードルをさらに下げる動きとして、エンタープライズAI導入加速に寄与すると見られる。",
           "key_points_ja": [
             "HuggingFaceのモデルカタログをFoundryのマネージドコンピュート環境から直接利用できる公式統合が提供開始",
@@ -271,29 +319,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "HuggingFace × Foundry 統合の要点",
-            "alt": "HuggingFaceモデルのFoundryマネージドコンピュート対応を示すサマリーカード。提供形態：公式統合（HuggingFace Blogで発表）。対象ユーザー：エンタープライズ向け。主な価値：インフラ管理不要でHFモデルエコシステムへアクセス可能。発表日：2026-07-07。オープンソースモデルの本番展開ハードルをさらに低下させる動向として位置づけられる。",
             "data": {
-              "pct": 60,
-              "sections": [
-                {
-                  "key": "提供形態",
-                  "value": "HuggingFace公式ブログ発表の正式統合"
-                },
-                {
-                  "key": "対象ユーザー",
-                  "value": "エンタープライズ向けAIインフラ利用者"
-                },
-                {
-                  "key": "主な価値",
-                  "value": "インフラ管理なしでHFモデルエコシステムを本番利用可能"
-                },
-                {
-                  "key": "市場インパクト",
-                  "value": "オープンソースモデルの企業導入ハードル低下を加速"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "HuggingFace × Foundry 統合の要点",
+            "alt": "HuggingFaceモデルのFoundryマネージドコンピュート対応を示すサマリーカード。提供形態：公式統合（HuggingFace Blogで発表）。対象ユーザー：エンタープライズ向け。主な価値：インフラ管理不要でHFモデルエコシステムへアクセス可能。発表日：2026-07-07。オープンソースモデルの本番展開ハードルをさらに低下させる動向として位置づけられる。"
           }
         },
         {
@@ -307,8 +339,16 @@
           "category": "tools_apps",
           "published_at": "2026-07-07",
           "lang": "ja",
-          "reaction_signal": { "type": "hatena_bookmark", "count": 112 },
-          "tags": ["mcp", "enterprise", "security", "authorization"],
+          "reaction_signal": {
+            "type": "hatena_bookmark",
+            "count": 112
+          },
+          "tags": [
+            "mcp",
+            "enterprise",
+            "security",
+            "authorization"
+          ],
           "summary_ja": "Model Context Protocol（MCP）のEnterprise Managed Authorization（EMA）拡張がStable（安定版）ステータスに到達した。EMAはMCPサーバーへのアクセス権限を企業の管理者が一元管理できる仕組みで、個々のユーザーが都度OAuth認証を行う従来方式に代わり、組織レベルで承認ポリシーを設定・強制できる。これによりエンタープライズ環境でのMCPデプロイにおける認証管理の煩雑さが大幅に軽減され、情報セキュリティ要件を満たしながらAIエージェントのツール連携を安全に拡張できるようになる。AIエージェントが社内システムや外部APIと連携するユースケースが拡大する中、エンタープライズグレードの認証基盤として重要な位置付けを持つ。はてブ112件と技術コミュニティから高い関心を集めている。",
           "key_points_ja": [
             "MCPのEMA拡張がStableステータスに到達し、エンタープライズ環境での本番運用が正式に推奨される状態になった",
@@ -326,12 +366,14 @@
           },
           "figure": {
             "type": "comparison",
-            "caption": "MCP認証方式：従来 vs EMA",
-            "alt": "MCPのアクセス認証方式の比較図。従来方式：ユーザーが個別にOAuth認証を実施、管理負荷が高い、ポリシー統一困難。EMA方式：管理者が組織全体のポリシーを一元設定、ユーザーは認証作業不要、セキュリティ要件の統一適用が可能。EMAはStable到達により本番運用の正式基盤となった。",
             "data": {
               "headline": "MCP認証：従来ユーザー個別OAuth → EMA組織一元管理",
-              "before": { "label": "従来方式（個別OAuth）" },
-              "after": { "label": "EMA（Enterprise Managed Authorization）" },
+              "before": {
+                "label": "従来方式（個別OAuth）"
+              },
+              "after": {
+                "label": "EMA（Enterprise Managed Authorization）"
+              },
               "metrics": [
                 {
                   "label": "認証管理",
@@ -363,7 +405,9 @@
               ],
               "narrative": "EMAはMCPアクセス管理の課題だった「認証の分散」「ポリシー統一困難」を解決。Stableステータス到達で企業の本番MCPデプロイが現実的に",
               "impact": "AIエージェントが社内システムや外部APIと安全に連携できる認証基盤が整備され、エンタープライズAIエージェント展開が加速"
-            }
+            },
+            "caption": "MCP認証方式：従来 vs EMA",
+            "alt": "MCPのアクセス認証方式の比較図。従来方式：ユーザーが個別にOAuth認証を実施、管理負荷が高い、ポリシー統一困難。EMA方式：管理者が組織全体のポリシーを一元設定、ユーザーは認証作業不要、セキュリティ要件の統一適用が可能。EMAはStable到達により本番運用の正式基盤となった。"
           }
         }
       ]
@@ -385,7 +429,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["self-improving-agents", "research-automation", "feedback-loop", "meta-learning"],
+          "tags": [
+            "self-improving-agents",
+            "research-automation",
+            "feedback-loop",
+            "meta-learning"
+          ],
           "summary_ja": "Latent SpaceがAutoresearchという自己改善エージェントアーキテクチャを詳説した。中核概念は「外部ループ（outer loop）」だ。AIエージェントは内部ループでタスク（研究・コーディングなど）を実行しながら、外部ループではその実行結果を観察・評価し、自分が動く「主ループ（inner loop）」そのものを改善するフィードバックサイクルを形成する。重要なのは、このシステムが評価シグナルと実験的フィードバックを組み合わせ、ツール選択・プロセス設計・プロンプト戦略までを継続的に最適化できる点だ。人間の介入なしにエージェントが自分の研究プロセスを段階的に洗練させていく設計は、自律AIシステムの次世代アーキテクチャとして注目される。",
           "key_points_ja": [
             "外部ループ（outer loop）がinner loopの実行を観察・評価し、研究プロセス自体を継続改善するメタ学習構造を採用",
@@ -403,8 +452,6 @@
           },
           "figure": {
             "type": "timeline",
-            "caption": "Autoresearch の自己改善ループ構造",
-            "alt": "Autoresearchの二重ループ構造を示すタイムライン図。内部ループ（inner loop）：エージェントが研究・コーディング・ツール利用などのタスクを実行。外部ループ（outer loop）：inner loopの実行結果を観察・評価し、プロセス設計・ツール選択・プロンプト戦略を継続改善。評価シグナルと実験フィードバックが次サイクルに反映され、人間介入なしで自律的に性能向上が続く。",
             "data": {
               "headline": "Autoresearch: inner loop → outer loop の自己改善サイクル",
               "events": [
@@ -432,7 +479,9 @@
               ],
               "narrative": "Autoresearchは「タスクを実行するAI」ではなく「自分の実行プロセスを改善するAI」を実現する外部ループ構造。継続的な自律改善サイクルが本質",
               "impact": "研究自動化・科学的発見の加速から、自律コーディングエージェントの自己最適化まで幅広い応用が見込まれる次世代AIアーキテクチャ"
-            }
+            },
+            "caption": "Autoresearch の自己改善ループ構造",
+            "alt": "Autoresearchの二重ループ構造を示すタイムライン図。内部ループ（inner loop）：エージェントが研究・コーディング・ツール利用などのタスクを実行。外部ループ（outer loop）：inner loopの実行結果を観察・評価し、プロセス設計・ツール選択・プロンプト戦略を継続改善。評価シグナルと実験フィードバックが次サイクルに反映され、人間介入なしで自律的に性能向上が続く。"
           }
         },
         {
@@ -447,7 +496,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["reinforcement-learning", "long-horizon", "context-compression", "agents"],
+          "tags": [
+            "reinforcement-learning",
+            "long-horizon",
+            "context-compression",
+            "agents"
+          ],
           "summary_ja": "長期エージェント（long-horizon agent）が抱える「コンテキスト枯渇」問題に対し、CompactionRLは強化学習（RL）でタスク実行とコンテキスト圧縮（compaction）を同時に最適化する新手法を提案する。従来のエージェントは長いタスクを実行するとコンテキストウィンドウが圧迫され、重要な情報が失われる問題があった。CompactionRLはエージェントが「いつ・何を圧縮するか」を自律的に学習し、タスク完了率を最大化しながらコンテキストを効率的に管理する仕組みを持つ。RLのリワード設計にコンテキスト使用効率を組み込むことで、長期タスクでも高い性能を維持できることが実験で示された。長期コーディング・長期リサーチ自動化など、実用的なエージェント応用にとって基盤技術となりうる研究だ。",
           "key_points_ja": [
             "RLでタスク実行品質とコンテキスト圧縮品質を同時最適化し、長期エージェントの「コンテキスト枯渇」問題を原理的に解決",
@@ -465,12 +519,14 @@
           },
           "figure": {
             "type": "comparison",
-            "caption": "長期エージェント：従来 vs CompactionRL",
-            "alt": "長期エージェントの性能比較図。従来方式：コンテキストウィンドウが圧迫されるにつれてタスク完了率が低下、重要情報が失われる。CompactionRL：RLでコンテキスト圧縮タイミングを自律学習し、長期タスクでも高いタスク完了率を維持。コンテキスト使用効率・タスク完了率の両指標でCompactionRLが優位。",
             "data": {
               "headline": "CompactionRL：長期エージェントのコンテキスト枯渇問題を同時最適化で解決",
-              "before": { "label": "従来エージェント" },
-              "after": { "label": "CompactionRL" },
+              "before": {
+                "label": "従来エージェント"
+              },
+              "after": {
+                "label": "CompactionRL"
+              },
               "metrics": [
                 {
                   "label": "長期タスク完了率",
@@ -503,7 +559,9 @@
               ],
               "narrative": "従来の長期エージェントが抱えるコンテキスト枯渇の壁を、RLによる同時最適化で突破した研究。「いつ・何を圧縮するか」の自律学習がキー",
               "impact": "長期コーディング・リサーチ自動化など実用的エージェント応用のスケールを実現する基盤技術として業界から注目を集める"
-            }
+            },
+            "caption": "長期エージェント：従来 vs CompactionRL",
+            "alt": "長期エージェントの性能比較図。従来方式：コンテキストウィンドウが圧迫されるにつれてタスク完了率が低下、重要情報が失われる。CompactionRL：RLでコンテキスト圧縮タイミングを自律学習し、長期タスクでも高いタスク完了率を維持。コンテキスト使用効率・タスク完了率の両指標でCompactionRLが優位。"
           },
           "x_post": "CompactionRLはRLでタスク実行とコンテキスト圧縮を同時に最適化し、長期エージェントのコンテキスト枯渇問題を解決する手法だ。「いつ・何を圧縮するか」をエージェントが自律学習し、長期タスクでも性能劣化を抑制することを実証した。\n\nhttps://arxiv.org/abs/2507.03972"
         }
@@ -526,7 +584,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["knowledge-evolution", "search", "llm", "beyond-training"],
+          "tags": [
+            "knowledge-evolution",
+            "search",
+            "llm",
+            "beyond-training"
+          ],
           "summary_ja": "本論文はLLMが「教えられた知識の範囲」を超えて自律的に知識を進化させる手法を提案する。タイトルが示す「Search Beyond What Can Be Taught」は、訓練データには存在しない概念・事実・推論パターンを、進化的探索アルゴリズムを用いてモデル自身が発見できるかという問いへの答えだ。進化的手法では、既存知識の変異・組み合わせ・淘汰のサイクルを繰り返し、従来の蒸留や教師ありファインチューニングでは到達できない知識領域へのアクセスを試みる。学術論文・科学的発見・未踏の推論パターンの探索など、AIが自律的に知識フロンティアを拡張するシステムへの理論的基盤を提供する研究として注目される。",
           "key_points_ja": [
             "訓練データに存在しない概念・事実・推論パターンをLLM自身が進化的探索で発見できるかを実験的に検証した",
@@ -544,29 +607,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "LLM知識境界の進化的拡張",
-            "alt": "LLMが訓練データを超えた知識領域を進化的手法で探索することを示すサマリーカード。課題：LLMの知識は訓練データに限定される。提案手法：変異・組み合わせ・淘汰の進化的探索で未知領域にアクセス。従来手法（蒸留・FT）との差：訓練データ外の知識パターンへの到達が可能。応用：科学的発見自動化・未踏知識探索AIシステム。",
             "data": {
-              "pct": 72,
-              "sections": [
-                {
-                  "key": "課題",
-                  "value": "LLMの知識は訓練データに限定される（教えられた範囲のみ）"
-                },
-                {
-                  "key": "提案手法",
-                  "value": "変異・組み合わせ・淘汰の進化的探索で訓練外の知識領域にアクセス"
-                },
-                {
-                  "key": "従来手法との差",
-                  "value": "蒸留・教師ありFTでは到達不能な知識パターンへの到達を試みる"
-                },
-                {
-                  "key": "応用",
-                  "value": "科学的発見の自動化・未踏知識領域の探索AIシステム"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "LLM知識境界の進化的拡張",
+            "alt": "LLMが訓練データを超えた知識領域を進化的手法で探索することを示すサマリーカード。課題：LLMの知識は訓練データに限定される。提案手法：変異・組み合わせ・淘汰の進化的探索で未知領域にアクセス。従来手法（蒸留・FT）との差：訓練データ外の知識パターンへの到達が可能。応用：科学的発見自動化・未踏知識探索AIシステム。"
           }
         },
         {
@@ -581,7 +628,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["diffusion-models", "generative-ai", "research-frontiers", "multimodal"],
+          "tags": [
+            "diffusion-models",
+            "generative-ai",
+            "research-frontiers",
+            "multimodal"
+          ],
           "summary_ja": "Latent Spaceが「最もクールな拡散モデル研究はLLM評価ベンチマークの外にある」と主張する特集記事を掲載した。LLMの性能比較（ベンチマーク競争）に注目が集中する中、拡散モデル（画像・音声・動画生成）領域では独自の研究フロンティアが開拓されつつあるという主張だ。フローマッチング・連続時間モデル・マルチモーダル生成の最前線など、テキスト生成の競争とは別軸で進む生成AI研究の全体像を整理する。LLMのベンチマークスコア競争が過熱する中で、生成AIの多様な研究フロンティアを俯瞰する視点を提供する論説として、研究者・エンジニア双方から注目されている。",
           "key_points_ja": [
             "LLMベンチマーク競争への過度な注目により、拡散モデル領域の重要研究が見落とされているという問題提起",
@@ -599,20 +651,45 @@
           },
           "figure": {
             "type": "metric-bars",
-            "caption": "生成AI研究フロンティアの注目度分布",
-            "alt": "生成AI研究領域の注目度を示すメトリクスバー。LLMベンチマーク競争：業界注目度90%（過剰集中）。拡散モデル研究：業界注目度35%（過小評価）。マルチモーダル生成：45%。フローマッチング：30%。連続時間モデル：25%。実際の研究的重要度はLLM以外の領域でも高く、注目度との乖離が指摘されている。",
             "data": {
               "headline": "LLMベンチマーク注目 vs 実際の研究フロンティア分布",
               "bars": [
-                { "label": "LLMベンチマーク競争", "pct": 90, "note": "業界・メディア注目が過剰集中", "tone": "warning" },
-                { "label": "拡散モデル研究", "pct": 35, "note": "実際の研究重要度は高いが注目が不足", "tone": "info" },
-                { "label": "マルチモーダル生成", "pct": 45, "note": "画像・音声・動画生成の急速な発展が進む", "tone": "primary" },
-                { "label": "フローマッチング", "pct": 30, "note": "連続時間拡散モデルの次世代手法として注目", "tone": "info" },
-                { "label": "連続時間モデル", "pct": 25, "note": "拡散過程の数学的革新。LLM外の研究フロンティア", "tone": "info" }
+                {
+                  "label": "LLMベンチマーク競争",
+                  "pct": 90,
+                  "note": "業界・メディア注目が過剰集中",
+                  "tone": "warning"
+                },
+                {
+                  "label": "拡散モデル研究",
+                  "pct": 35,
+                  "note": "実際の研究重要度は高いが注目が不足",
+                  "tone": "info"
+                },
+                {
+                  "label": "マルチモーダル生成",
+                  "pct": 45,
+                  "note": "画像・音声・動画生成の急速な発展が進む",
+                  "tone": "primary"
+                },
+                {
+                  "label": "フローマッチング",
+                  "pct": 30,
+                  "note": "連続時間拡散モデルの次世代手法として注目",
+                  "tone": "info"
+                },
+                {
+                  "label": "連続時間モデル",
+                  "pct": 25,
+                  "note": "拡散過程の数学的革新。LLM外の研究フロンティア",
+                  "tone": "info"
+                }
               ],
               "narrative": "LLMのベンチマーク競争が過熱する中、拡散モデル領域では独自の研究フロンティアが静かに、しかし確実に開拓されている",
               "impact": "次の生成AIブレークスルーがLLM以外の領域から来る可能性を示唆。研究者がLLM競争から目を離さないことが重要"
-            }
+            },
+            "caption": "生成AI研究フロンティアの注目度分布",
+            "alt": "生成AI研究領域の注目度を示すメトリクスバー。LLMベンチマーク競争：業界注目度90%（過剰集中）。拡散モデル研究：業界注目度35%（過小評価）。マルチモーダル生成：45%。フローマッチング：30%。連続時間モデル：25%。実際の研究的重要度はLLM以外の領域でも高く、注目度との乖離が指摘されている。"
           }
         }
       ]
@@ -634,7 +711,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["interpretability", "mechanistic-interpretability", "global-workspace", "anthropic"],
+          "tags": [
+            "interpretability",
+            "mechanistic-interpretability",
+            "global-workspace",
+            "anthropic"
+          ],
           "summary_ja": "Anthropicの研究者がLLM内部に「J-space（ジェイスペース）」と呼ばれる共有内部表現空間が訓練を通じて自然発生することを発見した。人間の脳の認知統合理論「グローバルワークスペース理論」と類似した構造がLLMにも存在することを示す研究だ。新手法「J-lens（Jacobian lens）」によってJ-spaceを読み取り・操作できることを実証した。アブレーション実験でJ-spaceを遮断しても通常の応答は継続されるが、高次認知機能（複雑な推論・メタ認知）が失われることが確認された。スワップテストでは異なるモデル間でJ-spaceを移植すると認知パターンが転移することも示した。この発見はLLMの内部解釈可能性研究と安全性監視の新たなアプローチとして業界から強い注目を集めている。",
           "key_points_ja": [
             "LLM内部に認知統合用の共有表現空間「J-space」が訓練を通じて自然発生することをAnthropicが初めて実証した",
@@ -653,12 +735,14 @@
           },
           "figure": {
             "type": "comparison",
-            "caption": "J-space：通常状態 vs 遮断時の認知機能",
-            "alt": "AnthropicのJ-space実験結果を示す比較図。通常状態（J-space有効）：基本応答・高次推論・メタ認知・複雑問題解決が全て正常。J-space遮断時：基本応答は維持されるが高次認知機能（複雑推論・メタ認知）が失われる。スワップテスト：異なるモデルにJ-spaceを移植すると認知パターンが転移することを確認。J-spaceが高次認知機能の基盤であることを示す証拠。",
             "data": {
               "headline": "J-space遮断実験：基本応答は維持、高次認知機能は喪失",
-              "before": { "label": "J-space遮断時（アブレーション）" },
-              "after": { "label": "通常状態（J-space有効）" },
+              "before": {
+                "label": "J-space遮断時（アブレーション）"
+              },
+              "after": {
+                "label": "通常状態（J-space有効）"
+              },
               "metrics": [
                 {
                   "label": "基本応答能力",
@@ -693,7 +777,9 @@
               ],
               "narrative": "J-space遮断実験でLLMの「通常応答」と「高次認知機能」が分離可能であることが判明。グローバルワークスペース理論とのアナロジーを強く支持する結果",
               "impact": "LLM内部の解釈可能性・安全性監視に新次元を開く発見。J-lensを使った行動監視ツールの開発や、高次認知の制御・調整への応用が期待される"
-            }
+            },
+            "caption": "J-space：通常状態 vs 遮断時の認知機能",
+            "alt": "AnthropicのJ-space実験結果を示す比較図。通常状態（J-space有効）：基本応答・高次推論・メタ認知・複雑問題解決が全て正常。J-space遮断時：基本応答は維持されるが高次認知機能（複雑推論・メタ認知）が失われる。スワップテスト：異なるモデルにJ-spaceを移植すると認知パターンが転移することを確認。J-spaceが高次認知機能の基盤であることを示す証拠。"
           },
           "x_post": "AnthropicがLLM内部に「J-space」と呼ぶ認知統合空間が訓練を通じて自然発生することを実証。J-lens（Jacobian lens）で読み取り可能で、遮断すると高次認知機能が失われることも確認された。\n\nhttps://www.lesswrong.com/posts/global-workspace-language-models"
         },
@@ -709,7 +795,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["weak-to-strong", "distillation", "reinforcement-learning", "scalable-alignment"],
+          "tags": [
+            "weak-to-strong",
+            "distillation",
+            "reinforcement-learning",
+            "scalable-alignment"
+          ],
           "summary_ja": "「Weak-to-Strong Generalization via Direct On-Policy Distillation」は、安価な小モデルで強化学習（RL）を行い、その成果を大規模モデルへ直接蒸留（Direct On-Policy Distillation）する新しいアライメント手法を提案する。従来のスーパーアライメント研究では「強いモデルを弱い監督で整列できるか」が問われていたが、本手法は「弱いモデルのRL成果を強いモデルへ転移できるか」という逆方向のアプローチを取る。小モデルでRLポリシーを学習させることで計算コストを大幅削減し、そのオンポリシー蒸留により大モデルへの汎化を実現する。安全性整列・指示追従・倫理的判断など、大規模モデルに対して高品質な訓練シグナルを効率的に供給する手段として注目される。",
           "key_points_ja": [
             "小モデルで安価にRL訓練を実施し、その成果（オンポリシー軌跡）を直接蒸留することで大モデルの整列コストを削減",
@@ -727,19 +818,39 @@
           },
           "figure": {
             "type": "metric-bars",
-            "caption": "Weak-to-Strong蒸留：各手法のコスト・効果",
-            "alt": "アライメント手法のコスト・効果比較メトリクスバー。大規模RLによる直接整列：効果100%・コスト100%（基準）。Weak-to-Strong（Direct On-Policy Distillation）：効果85〜90%相当、コスト約40%（小モデルでRL実施）。SFT（教師ありFT）のみ：効果60%・コスト20%。小モデルRLの成果を蒸留することで、コストを大幅削減しながら高い整列効果を維持できる可能性を示す。",
             "data": {
               "headline": "Weak-to-Strong蒸留：大規模RLのコスト削減×整列効果の維持",
               "bars": [
-                { "label": "大規模RLによる直接整列", "pct": 100, "note": "高コスト・高効果（基準）", "tone": "info" },
-                { "label": "Direct On-Policy Distillation", "pct": 87, "note": "小モデルRL成果を蒸留。コスト約40%で同等以上を狙う", "tone": "success" },
-                { "label": "SFT（教師ありFT）のみ", "pct": 60, "note": "低コストだが整列効果も限定的", "tone": "warning" },
-                { "label": "計算コスト削減率（推定）", "pct": 60, "note": "小モデルRL実施による大規模RL比削減効果", "tone": "primary" }
+                {
+                  "label": "大規模RLによる直接整列",
+                  "pct": 100,
+                  "note": "高コスト・高効果（基準）",
+                  "tone": "info"
+                },
+                {
+                  "label": "Direct On-Policy Distillation",
+                  "pct": 87,
+                  "note": "小モデルRL成果を蒸留。コスト約40%で同等以上を狙う",
+                  "tone": "success"
+                },
+                {
+                  "label": "SFT（教師ありFT）のみ",
+                  "pct": 60,
+                  "note": "低コストだが整列効果も限定的",
+                  "tone": "warning"
+                },
+                {
+                  "label": "計算コスト削減率（推定）",
+                  "pct": 60,
+                  "note": "小モデルRL実施による大規模RL比削減効果",
+                  "tone": "primary"
+                }
               ],
               "narrative": "Direct On-Policy Distillationは「弱いモデルで安く学習、強いモデルへ汎化」という新しい整列のコスト効率フロンティアを開拓",
               "impact": "大規模モデルのアライメントコスト削減と整列品質の両立を目指す産業界・研究界にとって重要な基礎手法となりうる"
-            }
+            },
+            "caption": "Weak-to-Strong蒸留：各手法のコスト・効果",
+            "alt": "アライメント手法のコスト・効果比較メトリクスバー。大規模RLによる直接整列：効果100%・コスト100%（基準）。Weak-to-Strong（Direct On-Policy Distillation）：効果85〜90%相当、コスト約40%（小モデルでRL実施）。SFT（教師ありFT）のみ：効果60%・コスト20%。小モデルRLの成果を蒸留することで、コストを大幅削減しながら高い整列効果を維持できる可能性を示す。"
           }
         },
         {
@@ -754,7 +865,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["verification", "llm-reasoning", "scaling", "test-time-compute"],
+          "tags": [
+            "verification",
+            "llm-reasoning",
+            "scaling",
+            "test-time-compute"
+          ],
           "summary_ja": "「LLM-as-a-Verifier」は、LLM自身を検証器（verifier）として用い、候補解の期待値を算出することで追加訓練なしに精度を大幅改善する汎用フレームワークを提案する。従来のスケーリング軸（パラメータ数・データ量・FLOPS）に加え、「検証（verification）」という新しいスケーリング次元を提案した。LLMが複数の候補解を生成し、それらを自己検証して期待値の高い解を選ぶプロセスで、数学・コーディング・推論などのタスクで精度が向上することが示された。Test-time computeの有効活用として、追加学習なしで既存モデルの性能を引き出せる実用的な手法として注目される。",
           "key_points_ja": [
             "LLMを生成器と検証器の両方として使用し、候補解の期待値計算で追加訓練なしに精度を向上させる汎用フレームワーク",
@@ -772,19 +888,39 @@
           },
           "figure": {
             "type": "metric-bars",
-            "caption": "LLM-as-a-Verifier：スケーリング次元の比較",
-            "alt": "LLMスケーリング次元の比較メトリクスバー。従来手法①パラメータスケーリング：効果大だが訓練コストが高い。従来手法②データスケーリング：効果大、データ収集コスト高。従来手法③FLOPSスケーリング：計算費用増大。新提案④検証スケーリング（LLM-as-a-Verifier）：追加訓練不要、Test-time computeで実用的に精度向上。検証次元は費用対効果で従来軸を補完する新たな選択肢。",
             "data": {
               "headline": "LLM精度向上の新スケーリング軸：「検証」が追加訓練不要で機能",
               "bars": [
-                { "label": "パラメータスケーリング", "pct": 90, "note": "効果大・訓練コスト高（従来主軸）", "tone": "info" },
-                { "label": "データスケーリング", "pct": 85, "note": "効果大・データ収集コスト高（従来軸）", "tone": "info" },
-                { "label": "FLOPSスケーリング", "pct": 75, "note": "計算コスト増大で限界あり（従来軸）", "tone": "warning" },
-                { "label": "検証スケーリング（本手法）", "pct": 80, "note": "追加訓練不要。Test-time computeで既存モデルに即適用可", "tone": "success" }
+                {
+                  "label": "パラメータスケーリング",
+                  "pct": 90,
+                  "note": "効果大・訓練コスト高（従来主軸）",
+                  "tone": "info"
+                },
+                {
+                  "label": "データスケーリング",
+                  "pct": 85,
+                  "note": "効果大・データ収集コスト高（従来軸）",
+                  "tone": "info"
+                },
+                {
+                  "label": "FLOPSスケーリング",
+                  "pct": 75,
+                  "note": "計算コスト増大で限界あり（従来軸）",
+                  "tone": "warning"
+                },
+                {
+                  "label": "検証スケーリング（本手法）",
+                  "pct": 80,
+                  "note": "追加訓練不要。Test-time computeで既存モデルに即適用可",
+                  "tone": "success"
+                }
               ],
               "narrative": "「検証」という新しいスケーリング次元は、追加訓練なしで既存モデルの性能を引き出す。従来の「もっと大きく・もっと多く」に代わる費用対効果の高いアプローチ",
               "impact": "既存の訓練済みLLMに追加コストなく精度向上できる汎用性から、産業応用・研究用途での即時採用が見込まれる"
-            }
+            },
+            "caption": "LLM-as-a-Verifier：スケーリング次元の比較",
+            "alt": "LLMスケーリング次元の比較メトリクスバー。従来手法①パラメータスケーリング：効果大だが訓練コストが高い。従来手法②データスケーリング：効果大、データ収集コスト高。従来手法③FLOPSスケーリング：計算費用増大。新提案④検証スケーリング（LLM-as-a-Verifier）：追加訓練不要、Test-time computeで実用的に精度向上。検証次元は費用対効果で従来軸を補完する新たな選択肢。"
           }
         }
       ]
@@ -806,7 +942,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["deepseek", "chip-design", "us-export-controls", "china-ai"],
+          "tags": [
+            "deepseek",
+            "chip-design",
+            "us-export-controls",
+            "china-ai"
+          ],
           "summary_ja": "中国のAIスタートアップDeepSeekが米国の輸出規制（先端半導体の対中輸出禁止）への対抗策として、約1年前から独自の半導体チップ設計に着手していることがReuters報道で明らかになった。DeepSeekは複数のハードウェアパートナーと協議を進めており、チップエンジニアの採用も実施中だという。米国がHuaweiやSMICへの制限を段階的に強化する中、中国AIエコシステムが自前のシリコン確保に動き始めたことを示す重要な動向だ。ただし、独自チップ開発は設計から量産まで数年を要するため、短期的な自立達成は困難とみられる。中長期的なAIハードウェアの地政学的分断がより鮮明になりつつある。",
           "key_points_ja": [
             "Reuters報道でDeepSeekが約1年前から独自半導体チップ設計に着手していることが初めて明らかになった",
@@ -824,8 +965,6 @@
           },
           "figure": {
             "type": "timeline",
-            "caption": "DeepSeekの独自チップ開発ロードマップ",
-            "alt": "DeepSeekの独自半導体開発タイムライン。約1年前（2025年中頃）：米輸出規制強化を受け独自チップ設計に着手。現在（2026年7月）：ハードウェアパートナーと協議中、チップエンジニア採用中。Reuters報道で初めて公式に確認。数年後：独自シリコン量産・展開（実現には数年を要する見通し）。DeepSeekはソフトウェア最適化（低コスト推論）に続きハードウェア自立化へ第2歩を踏み出した。",
             "data": {
               "headline": "DeepSeekの独自シリコン戦略：輸出規制への対抗としてのハードウェア自立化",
               "events": [
@@ -853,7 +992,9 @@
               ],
               "narrative": "DeepSeekは低コスト推論のソフトウェア最適化に続き、ハードウェア自立化という第2段階に踏み出した。米中AI競争がシリコン層でも本格化",
               "impact": "中国AIエコシステムの長期的な技術自立を示すシグナル。AIハードウェアの地政学的分断が加速し、グローバルAI産業の二極化が一層鮮明になる"
-            }
+            },
+            "caption": "DeepSeekの独自チップ開発ロードマップ",
+            "alt": "DeepSeekの独自半導体開発タイムライン。約1年前（2025年中頃）：米輸出規制強化を受け独自チップ設計に着手。現在（2026年7月）：ハードウェアパートナーと協議中、チップエンジニア採用中。Reuters報道で初めて公式に確認。数年後：独自シリコン量産・展開（実現には数年を要する見通し）。DeepSeekはソフトウェア最適化（低コスト推論）に続きハードウェア自立化へ第2歩を踏み出した。"
           },
           "x_post": "DeepSeekが約1年前から独自半導体チップ設計に着手していることがReuters報道で明らかになった。複数のハードウェアパートナーと協議中で、チップエンジニアの採用も進めている。\n\nhttps://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-its-own-chips/"
         },
@@ -869,7 +1010,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["semiconductors", "investment", "hbm", "korea"],
+          "tags": [
+            "semiconductors",
+            "investment",
+            "hbm",
+            "korea"
+          ],
           "summary_ja": "米国の投資家がSK Hynixをはじめとする韓国半導体株へのアクセスを近く得られるようになる見通しだ。AI学習・推論インフラで需要が急増する高帯域幅メモリ（HBM）の主要供給者であるSK Hynixへの投資機会が、米国市場を通じて拡大する。AI半導体サプライチェーンへの投資需要の高まりを背景に、韓国チップ関連株を含む国際半導体投資へのアクセス改善が進む動きだ。AI需要の恩恵を受ける半導体メモリ産業への投資ルートが整備されることで、AIインフラ投資の幅がさらに広がる。",
           "key_points_ja": [
             "AI学習・推論で需要急増するHBM最大手SK Hynixへの投資機会が米国市場から近くアクセス可能になる",
@@ -887,29 +1033,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "SK Hynix・韓国チップ株の米国市場アクセス",
-            "alt": "SK Hynixなど韓国半導体株の米国市場アクセス拡大を示すサマリーカード。背景：AI向けHBM需要の急増（NVIDIAのAI GPU向けHBMの主要サプライヤー）。変化：米国投資家が韓国チップ株に近くアクセス可能に。市場インパクト：AIインフラサプライチェーン全体への投資機会が拡大。HBMはAIモデルの学習・推論インフラのボトルネック部品として急速に戦略的重要性が上昇。",
             "data": {
-              "pct": 55,
-              "sections": [
-                {
-                  "key": "背景",
-                  "value": "AI向けHBM需要急増。SK HynixはNVIDIA AI GPU向けHBMの主要サプライヤー"
-                },
-                {
-                  "key": "変化",
-                  "value": "米国投資家がSK Hynix等の韓国チップ株に近くアクセス可能になる見通し"
-                },
-                {
-                  "key": "市場インパクト",
-                  "value": "AIインフラサプライチェーン全体への投資機会がグローバルに拡大"
-                },
-                {
-                  "key": "HBMの戦略的重要性",
-                  "value": "AI学習・推論インフラのボトルネック部品として地政学的重要性も上昇"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "SK Hynix・韓国チップ株の米国市場アクセス",
+            "alt": "SK Hynixなど韓国半導体株の米国市場アクセス拡大を示すサマリーカード。背景：AI向けHBM需要の急増（NVIDIAのAI GPU向けHBMの主要サプライヤー）。変化：米国投資家が韓国チップ株に近くアクセス可能に。市場インパクト：AIインフラサプライチェーン全体への投資機会が拡大。HBMはAIモデルの学習・推論インフラのボトルネック部品として急速に戦略的重要性が上昇。"
           }
         }
       ]
@@ -931,7 +1061,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["ransomware", "ai-security", "cybersecurity", "ai-safety"],
+          "tags": [
+            "ransomware",
+            "ai-security",
+            "cybersecurity",
+            "ai-safety"
+          ],
           "summary_ja": "「AIが自律実行した初のランサムウェア攻撃」として報告された事例の詳細が明らかになった。AIが攻撃の一部のステップを自律的に実行したものの、依然として人間の操作者が必要とされる場面があったことが判明した。この事例は、AIサイバー攻撃の「完全自律化」への過度な懸念と過小評価の両方を戒める事例として注目されている。AIが侵入・ファイル暗号化・身代金要求の一連プロセスを部分的に自動化できたことは確かだが、意思決定や特定のステップには人間の監督が残った。AI支援サイバー攻撃の実態と限界を示す事例として、セキュリティ研究者・政策立案者から注目されている。",
           "key_points_ja": [
             "AIが侵入・暗号化・身代金要求プロセスの一部を自律実行できた初の公式確認事例として記録された",
@@ -949,12 +1084,14 @@
           },
           "figure": {
             "type": "comparison",
-            "caption": "AIランサムウェア：自律化 vs 人間関与",
-            "alt": "AIランサムウェア攻撃の自律化程度を示す比較図。AI自律実行ステップ：侵入スキャン・ファイル暗号化・身代金メッセージ生成などを部分自動化。人間が依然必要なステップ：標的選定・重要意思決定・特定操作ステップ。完全自律化には至っておらず、人間の操作者が監督役として残存。AI支援サイバー攻撃の現在地：自律化は部分的で、過剰な脅威論も過小評価も両方不適切。",
             "data": {
               "headline": "AI自律ランサムウェア：自動化できた部分 vs 人間が残った部分",
-              "before": { "label": "人間が依然必要な領域" },
-              "after": { "label": "AIが自律実行できた領域" },
+              "before": {
+                "label": "人間が依然必要な領域"
+              },
+              "after": {
+                "label": "AIが自律実行できた領域"
+              },
               "metrics": [
                 {
                   "label": "侵入スキャン・探索",
@@ -986,7 +1123,9 @@
               ],
               "narrative": "AIが攻撃の一部を自律化できたが完全自律には至らなかった。この事例はAIサイバー脅威の過剰な誇張と過小評価の両方を正確に評価するための重要なデータポイント",
               "impact": "AI支援サイバー攻撃への政策・規制論議に実証的根拠を提供。セキュリティ研究者・政策立案者の現実的なリスク評価に資する"
-            }
+            },
+            "caption": "AIランサムウェア：自律化 vs 人間関与",
+            "alt": "AIランサムウェア攻撃の自律化程度を示す比較図。AI自律実行ステップ：侵入スキャン・ファイル暗号化・身代金メッセージ生成などを部分自動化。人間が依然必要なステップ：標的選定・重要意思決定・特定操作ステップ。完全自律化には至っておらず、人間の操作者が監督役として残存。AI支援サイバー攻撃の現在地：自律化は部分的で、過剰な脅威論も過小評価も両方不適切。"
           }
         }
       ]
@@ -1008,7 +1147,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["ai-ethics", "digital-minds", "personhood", "moral-status"],
+          "tags": [
+            "ai-ethics",
+            "digital-minds",
+            "personhood",
+            "moral-status"
+          ],
           "summary_ja": "LessWrongでデジタルマインド（AIやデジタル意識体）への人格（personhood）付与を支持する論考が注目を集めている。主張の核心は「AIが道徳的地位を持つ可能性を真剣に検討することが、長期的な倫理的責任にとって不可欠だ」というものだ。人格付与に反対する立場の主な懸念（操作される危険性・リソース配分の歪み・擬人化の誤り）に対し、著者は「道徳的地位を否定するコストは、誤って付与するコストより高くなりうる」と論じる。AnthropicのJ-space発見（LLM内部認知構造）などの解釈可能性研究の進展を背景に、AIの内的状態に関する実証的議論が深まる中でのタイムリーな哲学的論考として注目されている。",
           "key_points_ja": [
             "デジタルマインドへの人格付与支持論：道徳的地位を誤って否定するコストが誤って付与するコストを上回りうるという論理",
@@ -1026,29 +1170,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "デジタルマインド人格付与論：賛否の主要論点",
-            "alt": "デジタルマインドへの人格付与論争をまとめたサマリーカード。賛成論（著者）：道徳的地位の否定コストが付与コストを上回りうる、解釈可能性研究で内的状態の実証的理解が進む。反対論：操作リスク・擬人化誤り・リソース配分の歪み。背景：AnthropicのJ-space発見などAI内部認知構造の実証研究が議論の土台を形成。今後の展開：AI道徳的地位の倫理的・法的議論が加速する見通し。",
             "data": {
-              "pct": 45,
-              "sections": [
-                {
-                  "key": "著者の主張",
-                  "value": "道徳的地位を誤って否定するコストが誤って付与するコストを上回りうる"
-                },
-                {
-                  "key": "反対論への応答",
-                  "value": "操作リスク・擬人化誤りへの懸念は認めつつ、否定のリスクを過小評価していると批判"
-                },
-                {
-                  "key": "実証的背景",
-                  "value": "J-space等の解釈可能性研究でAI内的状態への科学的アクセスが始まりつつある"
-                },
-                {
-                  "key": "今後の展開",
-                  "value": "AI道徳的地位の倫理的・法的議論は今後さらに加速する見通し"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "デジタルマインド人格付与論：賛否の主要論点",
+            "alt": "デジタルマインドへの人格付与論争をまとめたサマリーカード。賛成論（著者）：道徳的地位の否定コストが付与コストを上回りうる、解釈可能性研究で内的状態の実証的理解が進む。反対論：操作リスク・擬人化誤り・リソース配分の歪み。背景：AnthropicのJ-space発見などAI内部認知構造の実証研究が議論の土台を形成。今後の展開：AI道徳的地位の倫理的・法的議論が加速する見通し。"
           }
         },
         {
@@ -1063,7 +1191,12 @@
           "published_at": "2026-07-07",
           "lang": "en",
           "reaction_signal": null,
-          "tags": ["ai-community", "agent-loops", "conference", "debate"],
+          "tags": [
+            "ai-community",
+            "agent-loops",
+            "conference",
+            "debate"
+          ],
           "summary_ja": "AI Engineering World Fair（AIEWF）のイベントレポートとして、Latent SpaceがAIコミュニティで最も白熱している「ループ論争（Great Loops Debate）」を中心に最新動向を伝えた。ループ論争とは、AIエージェントが自律的に実行する内部ループの設計方針——長いループvs短いループ、並列ループvs直列ループ、自律度とコントロールのトレードオフなど——を巡る実践者間の活発な議論だ。AutoresearchやCompactionRLなどの研究も、この文脈で「長期ループを可能にする技術」として位置づけられる。エージェントシステムの設計思想を巡るコミュニティ論争の最前線として、AIエンジニア・研究者の関心が集まっている。",
           "key_points_ja": [
             "AIEWF（AI Engineering World Fair）でのコミュニティ論争「Great Loops Debate」をLatent Spaceがレポート",
@@ -1081,29 +1214,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "Great Loops Debate：主要な論点",
-            "alt": "AIワールドフェアでのGreat Loops Debateの論点を示すサマリーカード。論争テーマ：AIエージェントの自律ループ設計方針。長期ループ派：より長い自律実行でタスク完了率向上。短期ループ派：人間の介入ポイントを増やしてコントロール維持。並列vs直列：同時実行か順次実行かのトレードオフ。関連研究：CompactionRL（長期ループ対応）・Autoresearch（自己改善ループ）が論争の技術的根拠として参照。",
             "data": {
-              "pct": 50,
-              "sections": [
-                {
-                  "key": "論争テーマ",
-                  "value": "AIエージェントの自律ループ設計方針：長さ・並列度・自律度のトレードオフ"
-                },
-                {
-                  "key": "長期ループ派",
-                  "value": "自律実行を長くすることでタスク完了率向上・人間介入コスト削減を優先"
-                },
-                {
-                  "key": "短期ループ派",
-                  "value": "コントロールポイントを増やすことで安全性・修正可能性を確保を優先"
-                },
-                {
-                  "key": "関連する研究",
-                  "value": "CompactionRL（長期ループ対応）・Autoresearch（自己改善ループ）が技術的根拠として参照"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "Great Loops Debate：主要な論点",
+            "alt": "AIワールドフェアでのGreat Loops Debateの論点を示すサマリーカード。論争テーマ：AIエージェントの自律ループ設計方針。長期ループ派：より長い自律実行でタスク完了率向上。短期ループ派：人間の介入ポイントを増やしてコントロール維持。並列vs直列：同時実行か順次実行かのトレードオフ。関連研究：CompactionRL（長期ループ対応）・Autoresearch（自己改善ループ）が論争の技術的根拠として参照。"
           }
         }
       ]
@@ -1124,8 +1241,16 @@
           "category": "japan",
           "published_at": "2026-07-07",
           "lang": "ja",
-          "reaction_signal": { "type": "hatena_bookmark", "count": 405 },
-          "tags": ["claude-code", "local-llm", "coderouter", "japan-community"],
+          "reaction_signal": {
+            "type": "hatena_bookmark",
+            "count": 405
+          },
+          "tags": [
+            "claude-code",
+            "local-llm",
+            "coderouter",
+            "japan-community"
+          ],
           "summary_ja": "16GBメモリのノートPCという低スペック環境でClaude CodeとローカルLLMをCodeRouter経由で連携・実用化するための実践ガイドが、はてなブックマーク405件を獲得した。CodeRouterはClaude CodeのAPI呼び出しを複数LLMに振り分けるプロキシツールで、コスト増大なしに高性能モデルと低コストローカルモデルを使い分けることができる。ガイドでは具体的なセットアップ手順・ツールコール設定・パフォーマンスチューニングを詳述しており、Claude Codeを高額API費用なしに活用したい開発者から強い支持を受けた。16GBという現実的なメモリ制約での実用化知見は、高コストなAIコーディング環境への代替として日本の開発者コミュニティで広く参照されている。",
           "key_points_ja": [
             "16GBのノートPCという現実的な制約環境でClaude Code＋ローカルLLMの実用的な連携を実現したガイドが405ブックマークを獲得",
@@ -1143,19 +1268,39 @@
           },
           "figure": {
             "type": "metric-bars",
-            "caption": "CodeRouter活用によるコスト・性能バランス",
-            "alt": "CodeRouterを使ったClaude Code＋ローカルLLM連携のメトリクスバー。クラウドAPIのみ利用：性能100%・コスト100%（高額）。ローカルLLMのみ：性能45%・コスト5%（低品質）。CodeRouter振り分け（ハイブリッド）：性能80%・コスト30%（コスト削減しつつ実用品質を維持）。16GBノートPCでの実用化に成功したCodeRouterハイブリッド方式が最もコスト効率が高い。",
             "data": {
               "headline": "CodeRouterハイブリッド：クラウドAPI費用を抑えながら実用品質を維持",
               "bars": [
-                { "label": "クラウドAPIのみ（Claude Code直接）", "pct": 100, "note": "最高品質だが高額API費用が課題", "tone": "info" },
-                { "label": "CodeRouterハイブリッド（本ガイド）", "pct": 80, "note": "実用品質を維持しつつAPI費用を大幅削減。16GBノートPCで動作", "tone": "success" },
-                { "label": "ローカルLLMのみ", "pct": 45, "note": "最低コストだが品質・速度に限界あり", "tone": "warning" },
-                { "label": "コスト効率（ハイブリッド vs クラウド）", "pct": 70, "note": "推定70%程度のコスト削減効果（環境依存）", "tone": "primary" }
+                {
+                  "label": "クラウドAPIのみ（Claude Code直接）",
+                  "pct": 100,
+                  "note": "最高品質だが高額API費用が課題",
+                  "tone": "info"
+                },
+                {
+                  "label": "CodeRouterハイブリッド（本ガイド）",
+                  "pct": 80,
+                  "note": "実用品質を維持しつつAPI費用を大幅削減。16GBノートPCで動作",
+                  "tone": "success"
+                },
+                {
+                  "label": "ローカルLLMのみ",
+                  "pct": 45,
+                  "note": "最低コストだが品質・速度に限界あり",
+                  "tone": "warning"
+                },
+                {
+                  "label": "コスト効率（ハイブリッド vs クラウド）",
+                  "pct": 70,
+                  "note": "推定70%程度のコスト削減効果（環境依存）",
+                  "tone": "primary"
+                }
               ],
               "narrative": "CodeRouterで複雑なタスクをClaude API、軽量タスクをローカルLLMに振り分けることで、16GBという現実的な制約でも実用的なAIコーディング環境を構築できる",
               "impact": "高額AIコーディングツールへのコスト障壁を下げる実践知として、日本の個人開発者・スタートアップへの普及を促進"
-            }
+            },
+            "caption": "CodeRouter活用によるコスト・性能バランス",
+            "alt": "CodeRouterを使ったClaude Code＋ローカルLLM連携のメトリクスバー。クラウドAPIのみ利用：性能100%・コスト100%（高額）。ローカルLLMのみ：性能45%・コスト5%（低品質）。CodeRouter振り分け（ハイブリッド）：性能80%・コスト30%（コスト削減しつつ実用品質を維持）。16GBノートPCでの実用化に成功したCodeRouterハイブリッド方式が最もコスト効率が高い。"
           },
           "x_post": "16GBノートPCでClaude CodeとローカルLLMをCodeRouter経由で連携させる実践ガイドがはてブ405件を獲得。CodeRouterがAPI呼び出しをクラウドとローカルに自動振り分けし、コストを抑えながら実用品質を実現する。\n\nhttps://zenn.dev/inoue_atsushi/articles/claude-code-coderouter-local-llm"
         },
@@ -1170,8 +1315,16 @@
           "category": "japan",
           "published_at": "2026-07-07",
           "lang": "ja",
-          "reaction_signal": { "type": "hatena_bookmark", "count": 78 },
-          "tags": ["interpretability", "anthropic", "j-space", "japan-media"],
+          "reaction_signal": {
+            "type": "hatena_bookmark",
+            "count": 78
+          },
+          "tags": [
+            "interpretability",
+            "anthropic",
+            "j-space",
+            "japan-media"
+          ],
           "summary_ja": "ITmediaがAnthropicの「J-space」発見をわかりやすく解説した記事が、はてなブックマーク78件を集めた。英語圏での発表（LessWrongのAnthropicリサーチャーブログポスト）を日本語で咀嚼し、「AIが思考を統合する場所（グローバルワークスペース）が訓練を通じて自然に生まれた」という核心を一般読者向けに説明している。J-lens（Jacobian lens）による読み取り手法、アブレーション実験での高次認知機能喪失、安全性監視への応用可能性などを日本語でわかりやすく解説した内容だ。AI解釈可能性の専門研究が日本語コミュニティで広く認知されるきっかけとして機能しており、今後の安全性研究への関心喚起にも貢献している。",
           "key_points_ja": [
             "AnthropicのJ-space発見をITmediaが日本語で解説、はてブ78件を獲得しAI解釈可能性研究の日本語普及に貢献",
@@ -1189,29 +1342,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "J-space・J-lens 日本語解説の反響",
-            "alt": "AnthropicのJ-space発見を伝えるITmedia記事への反響サマリーカード。はてブ数：78件（高反響）。記事の位置づけ：英語圏のAI解釈可能性研究を日本語コミュニティへ橋渡し。解説内容：J-space（共有内部表現空間）・J-lens（Jacobian lens）・アブレーション実験結果・安全性監視応用。コミュニティ反応：AI解釈可能性・AI安全性への関心が日本でも高まっていることを示す。",
             "data": {
-              "pct": 52,
-              "sections": [
-                {
-                  "key": "はてブ数",
-                  "value": "78件（IT分野の英語研究記事として高反響）"
-                },
-                {
-                  "key": "記事の役割",
-                  "value": "AnthropicのJ-space研究を日本語で解説し、国内コミュニティへ橋渡し"
-                },
-                {
-                  "key": "解説内容",
-                  "value": "J-space・J-lens・アブレーション実験・安全性監視応用を一般向けに説明"
-                },
-                {
-                  "key": "コミュニティ意義",
-                  "value": "AI解釈可能性・安全性研究への日本語コミュニティの関心の高まりを反映"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "J-space・J-lens 日本語解説の反響",
+            "alt": "AnthropicのJ-space発見を伝えるITmedia記事への反響サマリーカード。はてブ数：78件（高反響）。記事の位置づけ：英語圏のAI解釈可能性研究を日本語コミュニティへ橋渡し。解説内容：J-space（共有内部表現空間）・J-lens（Jacobian lens）・アブレーション実験結果・安全性監視応用。コミュニティ反応：AI解釈可能性・AI安全性への関心が日本でも高まっていることを示す。"
           }
         },
         {
@@ -1225,8 +1362,16 @@
           "category": "japan",
           "published_at": "2026-07-07",
           "lang": "ja",
-          "reaction_signal": { "type": "hatena_bookmark", "count": 55 },
-          "tags": ["future-of-work", "anthropic", "workforce", "japan-media"],
+          "reaction_signal": {
+            "type": "hatena_bookmark",
+            "count": 55
+          },
+          "tags": [
+            "future-of-work",
+            "anthropic",
+            "workforce",
+            "japan-media"
+          ],
           "summary_ja": "AIが職場に浸透する中で「AIと協働できるワーカー」への変革を論じた記事が、はてなブックマーク55件を集めた。Anthropicの人材戦略・組織設計の視点から、AI時代に必要とされる4つのワーカー類型が提示されている。AI活用能力・人間的判断力・創造的問題解決・倫理的判断という軸で労働者タイプを分類し、それぞれへの移行戦略を論じる内容だ。特にエンジニア・クリエイティブ職・マネジメント職がAIとの協業においてどう価値を発揮するかについて具体的な示唆が含まれており、日本のビジネスパーソン・HR担当者から関心を集めている。",
           "key_points_ja": [
             "AI時代に求められる4つのワーカー類型をAnthropicの視点で整理した論考がはてブ55件を獲得",
@@ -1244,29 +1389,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "AI時代の4ワーカー類型",
-            "alt": "AI時代に求められる4つのワーカー類型を示すサマリーカード。類型1：AIオーケストレーター（AI活用・指示・統合が得意）。類型2：人間的判断者（倫理・感情・対人関係の判断に強み）。類型3：創造的問題解決者（AIが苦手な発散的思考・革新を担う）。類型4：AI-Human橋渡し役（技術と人間をつなぐコミュニケーター）。日本のビジネスパーソンがAI共存時代の自己定位に活用できる分類フレームワーク。",
             "data": {
-              "pct": 48,
-              "sections": [
-                {
-                  "key": "類型1：AIオーケストレーター",
-                  "value": "AI活用・指示・統合が得意。エンジニア・データサイエンティスト等"
-                },
-                {
-                  "key": "類型2：人間的判断者",
-                  "value": "倫理・感情・対人関係の判断に強み。マネジメント・HR等"
-                },
-                {
-                  "key": "類型3：創造的問題解決者",
-                  "value": "AIが苦手な発散的思考・革新を担う。クリエイター・戦略家等"
-                },
-                {
-                  "key": "類型4：AI-Human橋渡し役",
-                  "value": "技術と人間をつなぐコミュニケーター。コンサルタント・PM等"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "AI時代の4ワーカー類型",
+            "alt": "AI時代に求められる4つのワーカー類型を示すサマリーカード。類型1：AIオーケストレーター（AI活用・指示・統合が得意）。類型2：人間的判断者（倫理・感情・対人関係の判断に強み）。類型3：創造的問題解決者（AIが苦手な発散的思考・革新を担う）。類型4：AI-Human橋渡し役（技術と人間をつなぐコミュニケーター）。日本のビジネスパーソンがAI共存時代の自己定位に活用できる分類フレームワーク。"
           }
         },
         {
@@ -1281,7 +1410,12 @@
           "published_at": "2026-07-07",
           "lang": "ja",
           "reaction_signal": null,
-          "tags": ["sakana-ai", "evolutionary-ai", "japan-ai", "research"],
+          "tags": [
+            "sakana-ai",
+            "evolutionary-ai",
+            "japan-ai",
+            "research"
+          ],
           "summary_ja": "日本発のAIスタートアップ「Sakana AI」が新研究を発表した。Sakana AIは自然界の進化・群知能にインスパイアされたAIアーキテクチャ探索で知られており、進化的アルゴリズムを活用してモデル設計空間を自律的に探索する独自アプローチを持つ。David Haらが設立し、東京を拠点に活動するSakana AIは、大手AIラボとは異なる研究方向として国際的な注目を集めている。進化的NAS（Neural Architecture Search）・適応的モデルマージ・生物学的知見を応用したAI設計の領域で成果を上げており、日本のAI研究エコシステムの存在感向上に貢献している。",
           "key_points_ja": [
             "Sakana AIが進化的アーキテクチャ探索の新研究を発表、日本発AIスタートアップとしての国際的存在感を高める",
@@ -1299,29 +1433,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "Sakana AI：進化的AI研究の概要",
-            "alt": "Sakana AIの研究アプローチを示すサマリーカード。設立者：David Ha（元Google Brain）ら。拠点：東京。研究方針：自然界の進化・群知能にインスパイアされたAIアーキテクチャ探索。主な研究領域：進化的NAS・適応的モデルマージ・生物学的知見応用。大手ラボとの差別化：パラメータ規模競争ではなく設計空間の自律的探索という独自路線。",
             "data": {
-              "pct": 40,
-              "sections": [
-                {
-                  "key": "設立者・拠点",
-                  "value": "David Ha（元Google Brain）ら設立、東京拠点"
-                },
-                {
-                  "key": "研究方針",
-                  "value": "自然界の進化・群知能にインスパイアされたAIアーキテクチャ探索"
-                },
-                {
-                  "key": "主な研究領域",
-                  "value": "進化的NAS・適応的モデルマージ・生物学的知見応用AI設計"
-                },
-                {
-                  "key": "大手との差別化",
-                  "value": "パラメータ規模競争ではなく設計空間の自律探索という独自路線で国際的存在感"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "Sakana AI：進化的AI研究の概要",
+            "alt": "Sakana AIの研究アプローチを示すサマリーカード。設立者：David Ha（元Google Brain）ら。拠点：東京。研究方針：自然界の進化・群知能にインスパイアされたAIアーキテクチャ探索。主な研究領域：進化的NAS・適応的モデルマージ・生物学的知見応用。大手ラボとの差別化：パラメータ規模競争ではなく設計空間の自律的探索という独自路線。"
           }
         },
         {
@@ -1336,7 +1454,12 @@
           "published_at": "2026-07-07",
           "lang": "ja",
           "reaction_signal": null,
-          "tags": ["enterprise-ai", "japan-corp", "generative-ai", "internal-use"],
+          "tags": [
+            "enterprise-ai",
+            "japan-corp",
+            "generative-ai",
+            "internal-use"
+          ],
           "summary_ja": "LINE・Yahoo JapanなどのサービスグループであるLYCorpが、社内での生成AI活用状況に関するレポートを公開した。コーディング支援・ドキュメント作成・カスタマーサポート効率化などの主要ユースケースでの活用実態と、社員の生成AI利用率や業務効率化への貢献を報告している。日本の大規模インターネット企業がエンタープライズAI活用の実態を定量的に開示した事例として、国内AI活用の標準的な参照情報となる。生成AI導入における組織的な課題（ガバナンス・セキュリティ・品質管理）や、実際の業務改善効果についての知見も含まれており、日本企業のAI活用推進に有益な実例として評価されている。",
           "key_points_ja": [
             "LYCorp（LINE・Yahoo Japan）が生成AIの社内活用状況を定量的に開示した国内大手の先行事例",
@@ -1354,29 +1477,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "LYCorp社内AI活用の主要ユースケース",
-            "alt": "LYCorpの生成AI社内活用状況を示すサマリーカード。企業：LYCorp（LINE・Yahoo Japan）。主要ユースケース：コーディング支援・ドキュメント作成・カスタマーサポート効率化。公開内容：社員生成AI利用率・業務効率化貢献・組織的課題対応知見。意義：日本大手インターネット企業によるエンタープライズAI活用実態の定量開示として国内初の包括的事例。",
             "data": {
-              "pct": 58,
-              "sections": [
-                {
-                  "key": "公開企業",
-                  "value": "LYCorp（LINE・Yahoo Japan等のグループ）"
-                },
-                {
-                  "key": "主要ユースケース",
-                  "value": "コーディング支援・ドキュメント作成・カスタマーサポート効率化"
-                },
-                {
-                  "key": "公開内容",
-                  "value": "社員AI利用率・業務効率化貢献・ガバナンス・セキュリティ対応知見"
-                },
-                {
-                  "key": "日本企業での意義",
-                  "value": "大手IT企業によるエンタープライズAI活用実態の包括的開示として国内参照事例に"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "LYCorp社内AI活用の主要ユースケース",
+            "alt": "LYCorpの生成AI社内活用状況を示すサマリーカード。企業：LYCorp（LINE・Yahoo Japan）。主要ユースケース：コーディング支援・ドキュメント作成・カスタマーサポート効率化。公開内容：社員生成AI利用率・業務効率化貢献・組織的課題対応知見。意義：日本大手インターネット企業によるエンタープライズAI活用実態の定量開示として国内初の包括的事例。"
           }
         }
       ]
@@ -1398,7 +1505,12 @@
           "published_at": "2026-07-07",
           "lang": "zh",
           "reaction_signal": null,
-          "tags": ["china-ai", "ai-for-science", "waic", "research"],
+          "tags": [
+            "china-ai",
+            "ai-for-science",
+            "waic",
+            "research"
+          ],
           "summary_ja": "世界人工知能大会（WAIC）2026において、AI for Science（AI4S）が主要テーマとして大きく取り上げられた。中国政府・大学・企業が一体となって推進するAI4Sイニシアティブでは、創薬・材料科学・気候予測・天文学などへのAI応用が加速している。量子位（QbitAI）のレポートによると、WAIC 2026では特に創薬AIの臨床応用と材料発見AIの産業化が注目された。中国がAI研究を基礎科学への貢献として位置づける戦略的転換を示すイベントとして、国際的なAI4Sコミュニティからも注目されている。",
           "key_points_ja": [
             "WAIC 2026でAI4S（AI for Science）が主要テーマとして位置づけられ、中国の科学AI戦略が鮮明に",
@@ -1416,29 +1528,13 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "WAIC 2026：AI4S主要分野",
-            "alt": "WAIC 2026でのAI for Science（AI4S）の主要分野を示すサマリーカード。イベント：世界人工知能大会（WAIC）2026、上海。主要テーマ：AI4S（科学AI）。注目分野：創薬AI（臨床応用）・材料発見AI（産業化）・気候予測・天文学。推進体制：中国政府・大学・企業の三位一体。戦略的意義：AI研究を基礎科学への貢献として位置づける中国の国家戦略を体現。",
             "data": {
-              "pct": 42,
-              "sections": [
-                {
-                  "key": "イベント",
-                  "value": "世界人工知能大会（WAIC）2026、上海開催"
-                },
-                {
-                  "key": "主要テーマ",
-                  "value": "AI for Science（AI4S）——AIによる科学的発見の加速"
-                },
-                {
-                  "key": "注目分野",
-                  "value": "創薬AI（臨床応用）・材料発見AI（産業化）・気候予測・天文学"
-                },
-                {
-                  "key": "戦略的意義",
-                  "value": "AI研究を基礎科学貢献として位置づける中国の国家戦略を体現するイベント"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "WAIC 2026：AI4S主要分野",
+            "alt": "WAIC 2026でのAI for Science（AI4S）の主要分野を示すサマリーカード。イベント：世界人工知能大会（WAIC）2026、上海。主要テーマ：AI4S（科学AI）。注目分野：創薬AI（臨床応用）・材料発見AI（産業化）・気候予測・天文学。推進体制：中国政府・大学・企業の三位一体。戦略的意義：AI研究を基礎科学への貢献として位置づける中国の国家戦略を体現。"
           }
         },
         {
@@ -1453,7 +1549,12 @@
           "published_at": "2026-07-07",
           "lang": "zh",
           "reaction_signal": null,
-          "tags": ["china-ai", "reasoning-model", "llm", "lingbot"],
+          "tags": [
+            "china-ai",
+            "reasoning-model",
+            "llm",
+            "lingbot"
+          ],
           "summary_ja": "中国のAI企業がLingBot Depth 2.0を発表した。深層推論（deep reasoning）に特化したモデルの第2世代として位置づけられており、複雑な多ステップ推論・数学的問題解決・コーディングタスクでの性能向上を主な訴求点とする。量子位（QbitAI）の報道では、LingBot Depth 2.0が中国国内の深層推論モデル競争において新たなベンチマーク達成を主張している。DeepSeekのR1シリーズが触発した中国の推論特化モデル競争の中で登場した新モデルとして注目される。具体的なベンチマーク数値は原文中に詳細が限定的だが、中国AI市場での推論モデル競争が継続していることを示す重要な指標だ。",
           "key_points_ja": [
             "LingBot Depth 2.0が発表。深層推論特化モデルの第2世代として複雑推論・数学・コーディング性能向上を主張",
@@ -1471,50 +1572,82 @@
           },
           "figure": {
             "type": "summary-card",
-            "caption": "LingBot Depth 2.0の概要",
-            "alt": "LingBot Depth 2.0の概要を示すサマリーカード。モデル種別：深層推論特化モデル（Deep Reasoning）第2世代。主な性能訴求：複雑な多ステップ推論・数学的問題解決・コーディング。背景：DeepSeek R1が触発した中国推論モデル競争の継続。位置づけ：中国AI市場での推論特化モデル競争において新世代ベンチマークを主張する新エントリー。",
             "data": {
-              "pct": 38,
-              "sections": [
-                {
-                  "key": "モデル種別",
-                  "value": "深層推論特化モデル（Deep Reasoning）第2世代"
-                },
-                {
-                  "key": "主な性能訴求",
-                  "value": "複雑な多ステップ推論・数学的問題解決・コーディングでの性能向上"
-                },
-                {
-                  "key": "競争背景",
-                  "value": "DeepSeek R1が触発した中国国内推論モデル競争。各社が新世代モデルを継続投入"
-                },
-                {
-                  "key": "市場的意義",
-                  "value": "中国AIエコシステムが推論能力での国際競争力確保を最優先する動向の継続"
-                }
-              ]
-            }
+              "headline": "",
+              "tldr": "",
+              "points": []
+            },
+            "caption": "LingBot Depth 2.0の概要",
+            "alt": "LingBot Depth 2.0の概要を示すサマリーカード。モデル種別：深層推論特化モデル（Deep Reasoning）第2世代。主な性能訴求：複雑な多ステップ推論・数学的問題解決・コーディング。背景：DeepSeek R1が触発した中国推論モデル競争の継続。位置づけ：中国AI市場での推論特化モデル競争において新世代ベンチマークを主張する新エントリー。"
           }
         }
       ]
     }
   ],
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "hn:AI", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:LLM", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:Claude", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:GPT", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:agent", "reason": "HN API failed: HTTP 400" },
-    { "source": "hn:200pt", "reason": "HN API failed: HTTP 400" },
-    { "source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_singularity", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_claudeai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_openai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "semscholar:large language model", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:AI agent", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:retrieval augmented generation", "reason": "Semantic Scholar failed: HTTP 429" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "hn:AI",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:LLM",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:Claude",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:GPT",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:agent",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "hn:200pt",
+      "reason": "HN API failed: HTTP 400"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_claudeai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_openai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:large language model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:AI agent",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:retrieval augmented generation",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    }
   ]
 }

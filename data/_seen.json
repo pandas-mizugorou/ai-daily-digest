@@ -6778,5 +6778,149 @@
       "last_seen_count": 1
     }
   },
-  "version": "2.0"
+  "version": "2.0",
+  "bf55a61637b6dda9": {
+    "url_prefix": "https://huggingface.co/blog/lerobot-release-v060",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "8c043ae607f06dc4": {
+    "url_prefix": "https://theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "109b4e1b2c87fc98": {
+    "url_prefix": "https://techcrunch.com/2026/07/07/claude-cowork-expands-to-mobile-and-web",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "bf38bad1d29407a8": {
+    "url_prefix": "https://huggingface.co/blog/foundry-managed-compute",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "8cdd01af2327a9f0": {
+    "url_prefix": "https://spec.modelcontextprotocol.io/extensions/enterprise-managed-authorization",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "ba1740fbbdb99eef": {
+    "url_prefix": "https://www.latent.space/p/autoresearch",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "de5c06e69f4ba0fa": {
+    "url_prefix": "https://arxiv.org/abs/2507.03972",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "763399a7f9cb6335": {
+    "url_prefix": "https://arxiv.org/abs/2507.03961",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "bd4cf0aef0c71f26": {
+    "url_prefix": "https://www.latent.space/p/diffusion-research",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "27f699e61d287c7a": {
+    "url_prefix": "https://www.lesswrong.com/posts/global-workspace-language-models",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "9dbdcc65b705be46": {
+    "url_prefix": "https://arxiv.org/abs/2507.03974",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "16f69f7b59360fae": {
+    "url_prefix": "https://arxiv.org/abs/2507.03959",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "cffd26b80b6bfd10": {
+    "url_prefix": "https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-its-own-chips",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "1c2a9deebcef128a": {
+    "url_prefix": "https://techcrunch.com/2026/07/07/us-investors-will-soon-get-access-to-sk-hynix-and-other-korean-chi",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "428fc2d3495a96e8": {
+    "url_prefix": "https://techcrunch.com/2026/07/07/the-first-ai-run-ransomware-attack-still-needed-humans",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "e663ea8a9f6af86b": {
+    "url_prefix": "https://www.lesswrong.com/posts/personhood-digital-minds",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "51705c4c5714b7ee": {
+    "url_prefix": "https://www.latent.space/p/aiewf-daily-dispatch",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "2563acd4c3fe7fc8": {
+    "url_prefix": "https://zenn.dev/inoue_atsushi/articles/claude-code-coderouter-local-llm",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "51e36b55fb391c53": {
+    "url_prefix": "https://www.itmedia.co.jp/news/articles/2607/07/news001.html",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "95acbe2c79a5a204": {
+    "url_prefix": "https://www.itmedia.co.jp/news/articles/2607/07/news002.html",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "f1661989dedbc49b": {
+    "url_prefix": "https://www.itmedia.co.jp/aiplus/articles/2607/07/news003.html",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "dcb0e7566d61d2be": {
+    "url_prefix": "https://techblog.lycorp.co.jp/ja/generative-ai-internal-usage",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "ae87ea5f548aa9a5": {
+    "url_prefix": "https://www.qbitai.com/2026/07/waic-ai4s.html",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  },
+  "3c4b17c382a4f5cf": {
+    "url_prefix": "https://www.qbitai.com/2026/07/lingbot-depth-2-0.html",
+    "first_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_at": "2026-07-08T05:00:00+09:00",
+    "last_seen_count": 1
+  }
 }

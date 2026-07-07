@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Jul 2026 18:22:55 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 17:50:05 GMT</lastBuildDate>
+    <item>
+      <title>AnthropicがLLM内部に「グローバルワークスペース」発見——DeepSeekが独自チップ設計に参入、Claude Coworkがモバイル展開</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08</link>
+      <guid isPermaLink="false">aidd-day-2026-07-08</guid>
+      <pubDate>Tue, 07 Jul 2026 20:00:00 GMT</pubDate>
+      <description>本日の最重要ニュースはAnthropicのLLM解釈可能性研究だ。「J-space」と呼ばれる内部認知構造がClaude内に訓練を通じて自然発生し、「J-lens（Jacobian lens）」という新手法で読み取れることを実証した。J-spaceを遮断してもClaude は通常応答できるが高次認知機能を失うことも確認された。プロダクト面ではClaude CoworkがモバイルiOS/Android・Webに対応し、デスクで始めたタスクをPCを閉じた後もスマホで追跡・受け取り可能になった。業界動向では中国のDeepSeekが米輸出規制への対抗策として約1年前から独自チップ設計に着手していることがReuters報道で明らかになった。日本では16GBノートPCでClaude Code＋ローカルLLMをCodeRouter経由で実用的に動かすガイドがはてブ405件を集め、低スペック環境での実践知として広く参照されている。
+
+【今日の必読】
+・LLM内部に「グローバルワークスペース」が自然発生——AnthropicがJ-spaceとJ-lensを実証
+・Claude CoworkがiOS・Android・Webに対応——Maxプランから展開、PCを閉じてもタスクを継続
+・米輸出規制に対抗——DeepSeekが約1年前から独自チップ設計に着手、ハードウェアパートナーと協議中
+・16GBノートPCでClaude Code＋ローカルLLMをCodeRouter経由で使う
+・CompactionRL——コンテキスト圧縮とタスク実行を同時最適化するRL手法で長期エージェントの壁を突破
+・LeRobot v0.6.0リリース——世界モデル・報酬モデル・新ベンチマークで自己改善サイクルを実現</description>
+    </item>
     <item>
       <title>AnthropicがClaude Codeで中国ユーザーをステガノグラフィー密追跡——Microsoft 4800人削減でAI雇用転換、Tencent Hy3 295B MoEがApache 2.0で公開</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-07</link>
@@ -439,21 +454,6 @@
 ・Mistral、Le ChatをVibeにリブランド——Work modeとCode modeを持つ統合AIエージェントとして再スタート
 ・Gemini Omni Flash ロールアウト開始——テキスト・画像・音声・動画を統合する「任意→任意」世界モデル
 ・OpenAI、Rosalind Biodefenseプログラム開始——GPT-Rosalindを生命科学・バイオディフェンスへ無償開放</description>
-    </item>
-    <item>
-      <title>Anthropic、Claude Opus 4.8と$650億調達を同日発表——Dynamic Workflowで数百サブエージェント並列実行、SkillOpt全52構成で首位</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-30</link>
-      <guid isPermaLink="false">aidd-day-2026-05-30</guid>
-      <pubDate>Fri, 29 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月30日のAI界はAnthropicによる二重発表で幕を開けた。Claude Opus 4.8は前世代比4倍のコード欠陥検出力と数百サブエージェントを並列実行するDynamic Workflowを備え、価格は据え置きでリリース。同日$650億のシリーズH調達も発表し評価額は$9,650億に達した。研究面ではMicrosoft ResearchのSkillOptが52構成全てで首位を記録しエージェントスキルの自律進化を実証、IBMのITBench-AAはフロンティアモデル全機種が50%未満という現実を突きつけた。Liquid AIは38兆トークン学習のLFM2.5-8B-A1Bを公開し非ハルシネーション率を8倍超に改善。日本では「160K星CLAUDE.md記法」記事がはてブ263件を獲得しClaude Code設定の知見が国内コミュニティで広がっている。
-
-【今日の必読】
-・Anthropic、Claude Opus 4.8リリース——Dynamic Workflowで数百サブエージェント並列実行、コード欠陥検出力4倍
-・Liquid AI、LFM2.5-8B-A1Bを公開——38兆トークン学習、非ハルシネーション率8.5倍改善
-・Latent Space解説：スケーラブルな非同期マルチエージェントシステムのアーキテクチャ設計原則
-・GitHubで16万スターのCLAUDE.md記法を完全解説——Claude Codeをチームで使うための設定術
-・Microsoft ResearchのSkillOptが全52構成で首位——エージェントが実行ログからスキルを自律獲得する新フレームワーク
-・GitHub Copilotが高性能モデル向け従量制リクエスト課金を導入——月額上限モデルを廃止し新価格体系へ</description>
     </item>
   </channel>
 </rss>
