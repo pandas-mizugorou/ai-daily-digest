@@ -105,7 +105,20 @@ jobs:
           DONE="false"
           FORCE="${{ github.event.inputs.force }}"
           TARGET_INPUT="${{ github.event.inputs.target_date }}"
-          if [ "$FORCE" != "true" ] && [ -z "$TARGET_INPUT" ]; then
+          # --- 一時休止ウィンドウ (2026-07-09〜2026-07-12) ---
+          # 「今週だけ自動配信を停止して来週月曜から再開」の依頼に対応する日付ガード。
+          # この期間の自動起動 (schedule / Cloudflare Worker の workflow_dispatch) は
+          # done=true として生成・push・push通知をすべてスキップし、2026-07-13(月) からは
+          # 日付判定が外れて自動再開する。手動 (force=true もしくは target_date 明示=
+          # バックフィル) は休止対象外 = この期間でも従来どおり配信できる。
+          # 期間経過後は自然に無効化される (残置しても無害。掃除は任意)。
+          PAUSE_FROM="2026-07-09"; PAUSE_TO="2026-07-12"
+          PDATE="${{ steps.date.outputs.value }}"
+          if [ "$FORCE" != "true" ] && [ -z "$TARGET_INPUT" ] && ! [[ "$PDATE" < "$PAUSE_FROM" ]] && ! [[ "$PDATE" > "$PAUSE_TO" ]]; then
+            DONE="true"
+            echo "guard: PAUSED ($PAUSE_FROM..$PAUSE_TO) — 今週の自動配信は休止中。$PDATE をスキップします (2026-07-13 月 に自動再開)。"
+          fi
+          if [ "$DONE" != "true" ] && [ "$FORCE" != "true" ] && [ -z "$TARGET_INPUT" ]; then
             DATE="${{ steps.date.outputs.value }}"
             git fetch --depth=1 origin main 2>/dev/null || true
             CNT_LOCAL=0; CNT_REMOTE=0
@@ -436,7 +449,17 @@ jobs:
         run: |
           # 日曜に多重 cron / retry で複数回起動しても、週次は 1 回だけ生成する。
           DONE="false"
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          # --- 一時休止ウィンドウ (2026-07-09〜2026-07-12): 今週だけ週次サマリの自動生成も停止 ---
+          # 当週の日曜 (= digest の target 日付 week_to) が休止期間内なら週次生成をスキップ。
+          # 手動 (force / target_date 明示) は対象外。2026-07-13(月) 以降の週から自動再開する。
+          FORCE="${{ github.event.inputs.force }}"; TARGET_INPUT="${{ github.event.inputs.target_date }}"
+          PAUSE_FROM="2026-07-09"; PAUSE_TO="2026-07-12"
+          WDATE="${{ needs.digest.outputs.week_to }}"
+          if [ "$FORCE" != "true" ] && [ -z "$TARGET_INPUT" ] && ! [[ "$WDATE" < "$PAUSE_FROM" ]] && ! [[ "$WDATE" > "$PAUSE_TO" ]]; then
+            DONE="true"
+            echo "weekly guard: PAUSED ($PAUSE_FROM..$PAUSE_TO) — 週次サマリを $WDATE でスキップ (2026-07-13 以降の週から自動再開)。"
+          fi
+          if [ "$DONE" != "true" ] && [ "${{ github.event_name }}" = "schedule" ]; then
             ISO_WEEK="${{ needs.digest.outputs.iso_week }}"
             if [ -f "data/weekly-${ISO_WEEK}.json" ]; then DONE="true"; fi
           fi

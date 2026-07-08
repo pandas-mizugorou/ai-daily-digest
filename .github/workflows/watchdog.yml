@@ -67,10 +67,21 @@ jobs:
           DAILY="data/${TODAY}.json"
           echo "Checking ${TODAY} (DOW=${DOW}, ISO_WEEK=${ISO_WEEK}, jst_hour=${HOUR})"
 
+          # --- 一時休止ウィンドウ (2026-07-09〜2026-07-12) ---
+          # 「今週だけ自動配信を停止」に合わせ、この期間の日次/週次の「未生成」は
+          # 意図した休止であり異常ではない。当日チェック・週次チェック・過去7日の
+          # 欠損スキャンのいずれでも、休止期間内の日付は警告 (Issue 起票) しない。
+          # これにより休止中の誤報も、再開後 (7/13〜) の遡及スキャンによる蒸し返しも防ぐ。
+          # 期間経過後は自然に無効化される (残置しても無害)。
+          PAUSE_FROM="2026-07-09"; PAUSE_TO="2026-07-12"
+          in_pause() { ! [[ "$1" < "$PAUSE_FROM" ]] && ! [[ "$1" > "$PAUSE_TO" ]]; }
+
           PROBLEMS=()
 
           # ---- 日次チェック ----
-          if [ ! -f "${DAILY}" ]; then
+          if [ ! -f "${DAILY}" ] && in_pause "${TODAY}"; then
+            echo "paused window (${PAUSE_FROM}..${PAUSE_TO}): ${TODAY} は意図的な休止のため未生成を許容 (警告しません)"
+          elif [ ! -f "${DAILY}" ]; then
             PROBLEMS+=("🔴 日次未生成: ${DAILY} が main にありません（本体＋自動リトライが両方失敗した可能性）")
           else
             SELECTED=$(node -e "process.stdout.write(String((JSON.parse(require('fs').readFileSync('${DAILY}','utf8')).stats||{}).selected ?? -1))")
@@ -95,8 +106,10 @@ jobs:
           # ---- 週次チェック（日曜のみ）----
           if [ "${DOW}" = "7" ]; then
             WEEKLY="data/weekly-${ISO_WEEK}.json"
-            if [ ! -f "${WEEKLY}" ]; then
+            if [ ! -f "${WEEKLY}" ] && ! in_pause "${TODAY}"; then
               PROBLEMS+=("🔴 週次未生成: ${WEEKLY} が main にありません（${ISO_WEEK}）")
+            elif [ ! -f "${WEEKLY}" ]; then
+              echo "paused window: 週次 ${WEEKLY} は休止期間 (${TODAY}) のため未生成を許容 (警告しません)"
             fi
           fi
 
@@ -110,6 +123,10 @@ jobs:
           # 誤ヒットし、digest 本体の欠損を「既知」と誤判定して見逃す (別種 Issue 衝突)。
           for i in 1 2 3 4 5 6 7; do
             D=$(TZ=Asia/Tokyo date -d "${TODAY} - ${i} days" +%Y-%m-%d)
+            if in_pause "${D}"; then
+              echo "past gap ${D}: 意図的な休止期間 (${PAUSE_FROM}..${PAUSE_TO}) のためスキップ (再開後の蒸し返し防止)"
+              continue
+            fi
             if [ ! -f "data/${D}.json" ]; then
               KNOWN=$(gh issue list --state all --search "watchdog: ${D} in:title" --json number --jq 'length' 2>/dev/null || echo 0)
               if [ "${KNOWN}" = "0" ]; then
