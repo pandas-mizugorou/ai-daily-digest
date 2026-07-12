@@ -16,8 +16,13 @@ compatibility_date = "2025-01-01"
 #
 # 【2026-06-13 再開】6/15 課金変更が延期されたため自動配信を再開。本体 daily-digest.yml
 # と watchdog を再有効化し、本 Worker の cron も復元した。
+#
+# 【2026-07-10 再停止】ユーザー指示によりユーザー都合で 7/22 まで一時停止。
+# GitHub Actions 側 (daily-digest.yml / watchdog.yml) も disabled_manually 済み。
+# crons を空にすることで無効化済みワークフローへの dispatch (422 エラー) も防ぐ。
+# 再開時は上の crons 行を戻して `wrangler deploy` するだけでよい。
 [triggers]
-crons = ["30 18 * * *"]
+crons = []
 
 # 観測性: 起動ログを Workers Logs(無料枠あり) で見られるようにする。
 [observability]
