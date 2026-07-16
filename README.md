@@ -1,6 +1,8 @@
 # AI Daily Digest
 
-押さえるべき AI / 生成 AI ニュースを毎朝 5:00 JST に自動収集して GitHub Pages へ配信するダイジェストサイト。
+押さえるべき AI / 生成 AI ニュースを毎朝 5:00 JST に自動収集して GitHub Pages へ配信するダイジェストサイト。60超のソースを4軸スコアリングで「必読 Top Picks ＋カテゴリ別」に自動編成する。
+
+**▶ デモ: https://pandas-mizugorou.github.io/ai-daily-digest/**
 
 - 静的サイト（HTML + CSS + JS のみ。ビルド不要）
 - スマホファースト + レスポンシブ + PWA（ホーム画面追加・オフライン閲覧対応）
@@ -13,10 +15,8 @@
 
 ## 公開 URL
 
-GitHub Pages を有効化すると以下で公開される（`<USER>` は GitHub ユーザー名）。
-
 ```
-https://<USER>.github.io/ai-daily-digest/
+https://pandas-mizugorou.github.io/ai-daily-digest/
 ```
 
 ## ディレクトリ構成
