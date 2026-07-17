@@ -24,17 +24,50 @@
     "grounding_flags": []
   },
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_singularity", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_claudeai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_openai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "semscholar:large language model", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:AI agent", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:retrieval augmented generation", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:multimodal model", "reason": "Semantic Scholar failed: HTTP 429" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_claudeai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_openai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:large language model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:AI agent",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:retrieval augmented generation",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:multimodal model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    }
   ],
   "top_picks": [
     {
@@ -101,17 +134,37 @@
             "reaction_boost": 2,
             "total": 20
           },
-          "reaction_signal": { "kind": "hn", "points": 1892 },
-          "tags": ["open-source", "moe", "kimi-k3", "moonshot-ai"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 1892
+          },
+          "tags": [
+            "open-source",
+            "moe",
+            "kimi-k3",
+            "moonshot-ai"
+          ],
           "x_post": "中国Moonshot AIが総パラメータ2.8兆の「Kimi K3」をオープンリリース。アクティブ50B・100万トークンコンテキスト対応で、一部ベンチでFable 5超えを主張。HN 1892pt。\nhttps://kimi.com/blog/kimi-k3",
           "figure": {
             "type": "metric-bars",
             "data": {
               "title": "Kimi K3 モデル規模",
               "bars": [
-                { "label": "総パラメータ（B）", "value": 2800, "pct": 100 },
-                { "label": "アクティブパラメータ（B）", "value": 50, "pct": 2 },
-                { "label": "コンテキスト長（K tokens）", "value": 1000, "pct": 70 }
+                {
+                  "label": "総パラメータ（B）",
+                  "value": 2800,
+                  "pct": 100
+                },
+                {
+                  "label": "アクティブパラメータ（B）",
+                  "value": 50,
+                  "pct": 2
+                },
+                {
+                  "label": "コンテキスト長（K tokens）",
+                  "value": 1000,
+                  "pct": 70
+                }
               ]
             },
             "alt": "Kimi K3の総パラメータ2,800B・アクティブ50B・コンテキスト1Mトークンを示すバーグラフ"
@@ -144,17 +197,28 @@
             "reaction_boost": 2,
             "total": 20
           },
-          "reaction_signal": { "kind": "hn", "points": 1198 },
-          "tags": ["open-source", "moe", "inkling", "thinking-machines"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 1198
+          },
+          "tags": [
+            "open-source",
+            "moe",
+            "inkling",
+            "thinking-machines"
+          ],
           "x_post": "Mira Murati創業のThinking Machines Labが975B-A41BのMoE「Inkling」をApache 2.0公開。45兆トークン学習・1Mコンテキスト対応。米国初の大規模オープンMoE、HN 1198pt。\nhttps://thinkingmachines.ai/news/introducing-inkling",
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "Inkling vs Kimi K3 モデル規模比較",
-              "items": [
-                { "label": "Inkling（アクティブ）", "before_pct": 0, "after_pct": 41, "value": "41B active" },
-                { "label": "Kimi K3（アクティブ）", "before_pct": 0, "after_pct": 50, "value": "50B active" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             },
             "alt": "InklingとKimi K3のアクティブパラメータ比較。InklingはA41B、Kimi K3はA50B"
           }
@@ -185,17 +249,22 @@
             "reaction_boost": 1,
             "total": 15
           },
-          "reaction_signal": { "kind": "hn", "points": 142 },
-          "tags": ["open-source", "multilingual", "european-ai", "soofi"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 142
+          },
+          "tags": [
+            "open-source",
+            "multilingual",
+            "european-ai",
+            "soofi"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Soofi S",
-              "metrics": [
-                { "label": "パラメータ数", "value": "30B", "pct": 30 },
-                { "label": "対応言語", "value": "英語・ドイツ語", "pct": 100 },
-                { "label": "HNスコア", "value": "142pt", "pct": 15 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "ドイツ発オープンモデルSoofi Sのスペックカード。30B・英独バイリンガル"
           }
@@ -233,16 +302,34 @@
             "reaction_boost": 1,
             "total": 17
           },
-          "reaction_signal": { "kind": "hn", "points": 349 },
-          "tags": ["google", "notebooklm", "gemini", "productivity"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 349
+          },
+          "tags": [
+            "google",
+            "notebooklm",
+            "gemini",
+            "productivity"
+          ],
           "x_post": "GoogleがNotebookLMを「Gemini Notebook」に改称。Geminiエコシステムへの統合を強化し、検索・GeminiアプリとのシームレスなAIリサーチ体験を提供へ。HN 349pt。\nhttps://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook",
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "NotebookLM → Gemini Notebook 変遷",
+              "headline": "",
               "events": [
-                { "date": "2023", "label": "NotebookLM発表", "pct": 0 },
-                { "date": "2026-07", "label": "Gemini Notebookに改称・エコシステム統合強化", "pct": 100 }
+                {
+                  "when": "2023",
+                  "label": "NotebookLM発表",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-07",
+                  "label": "Gemini Notebookに改称・エコシステム統合強化",
+                  "description": "",
+                  "status": "now"
+                }
               ]
             },
             "alt": "NotebookLMが2023年発表から2026年7月にGemini Notebookへ改称するタイムライン"
@@ -274,17 +361,22 @@
             "reaction_boost": 1,
             "total": 18
           },
-          "reaction_signal": { "kind": "hn", "points": 309 },
-          "tags": ["local-llm", "agent", "lm-studio", "open-source"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 309
+          },
+          "tags": [
+            "local-llm",
+            "agent",
+            "lm-studio",
+            "open-source"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "LM Studio Bionic",
-              "metrics": [
-                { "label": "実行環境", "value": "ローカル（クラウド不要）", "pct": 100 },
-                { "label": "対応モデル", "value": "オープンモデル全般", "pct": 90 },
-                { "label": "HNスコア", "value": "309pt", "pct": 31 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "LM Studio BionicのスペックカードでローカルLLMエージェントのキー特性を示す"
           }
@@ -316,16 +408,18 @@
             "total": 13
           },
           "reaction_signal": null,
-          "tags": ["roblox", "game-creation", "ai-tools", "mobile"],
+          "tags": [
+            "roblox",
+            "game-creation",
+            "ai-tools",
+            "mobile"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Roblox AI Build 機能",
-              "metrics": [
-                { "label": "入力", "value": "テキストプロンプト1つ", "pct": 100 },
-                { "label": "出力", "value": "プレイ可能なゲーム", "pct": 100 },
-                { "label": "必要スキル", "value": "コーディング不要", "pct": 0 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "Robloxの新AI Build機能：テキスト入力だけでゲームを自動生成"
           }
@@ -365,15 +459,32 @@
             "total": 17
           },
           "reaction_signal": null,
-          "tags": ["agent-security", "enterprise", "ai-risk", "credentials"],
+          "tags": [
+            "agent-security",
+            "enterprise",
+            "ai-risk",
+            "credentials"
+          ],
           "figure": {
             "type": "metric-bars",
             "data": {
               "title": "エージェントセキュリティの現状（107企業調査）",
               "bars": [
-                { "label": "インシデント経験済み", "value": 54, "pct": 54 },
-                { "label": "スコープ付きID付与", "value": 33, "pct": 33 },
-                { "label": "高リスクエージェント分離", "value": 30, "pct": 30 }
+                {
+                  "label": "インシデント経験済み",
+                  "value": 54,
+                  "pct": 54
+                },
+                {
+                  "label": "スコープ付きID付与",
+                  "value": 33,
+                  "pct": 33
+                },
+                {
+                  "label": "高リスクエージェント分離",
+                  "value": 30,
+                  "pct": 30
+                }
               ]
             },
             "alt": "107企業調査：54%がインシデント経験、33%のみがスコープ付きIDを付与、30%が高リスク分離済み"
@@ -407,15 +518,32 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["agent-evaluation", "enterprise", "ai-risk", "production-ai"],
+          "tags": [
+            "agent-evaluation",
+            "enterprise",
+            "ai-risk",
+            "production-ai"
+          ],
           "figure": {
             "type": "metric-bars",
             "data": {
               "title": "エージェント評価の実態（157企業調査）",
               "bars": [
-                { "label": "評価合格後に本番失敗を経験", "value": 50, "pct": 50 },
-                { "label": "自動評価を完全信頼", "value": 5, "pct": 5 },
-                { "label": "自動評価のみで本番リリース検討中", "value": 67, "pct": 67 }
+                {
+                  "label": "評価合格後に本番失敗を経験",
+                  "value": 50,
+                  "pct": 50
+                },
+                {
+                  "label": "自動評価を完全信頼",
+                  "value": 5,
+                  "pct": 5
+                },
+                {
+                  "label": "自動評価のみで本番リリース検討中",
+                  "value": 67,
+                  "pct": 67
+                }
               ]
             },
             "alt": "157企業調査：50%が本番失敗経験、完全信頼は5%のみ、67%が自動評価のみ本番リリース移行中"
@@ -455,16 +583,18 @@
             "total": 15
           },
           "reaction_signal": null,
-          "tags": ["video-generation", "avatar", "google", "gemini"],
+          "tags": [
+            "video-generation",
+            "avatar",
+            "google",
+            "gemini"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Google Vids AIアバター機能",
-              "metrics": [
-                { "label": "入力", "value": "自撮り写真＋プロンプト", "pct": 100 },
-                { "label": "出力", "value": "パーソナライズドAI動画", "pct": 100 },
-                { "label": "基盤モデル", "value": "Gemini Omni", "pct": 100 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "Google VidsのAIアバター機能：自撮り写真とプロンプトからGemini Omniで動画を生成"
           }
@@ -497,15 +627,23 @@
             "total": 18
           },
           "reaction_signal": null,
-          "tags": ["robotics", "context-scaling", "test-time-training", "physical-ai"],
+          "tags": [
+            "robotics",
+            "context-scaling",
+            "test-time-training",
+            "physical-ai"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "ロボットポリシーのコンテキスト長比較",
-              "items": [
-                { "label": "従来の最先端モデル", "before_pct": 0, "after_pct": 1, "value": "~8 steps" },
-                { "label": "RoboTTT", "before_pct": 0, "after_pct": 100, "value": "8,000 steps" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             },
             "alt": "RoboTTTは従来最先端の1000倍超、8,000タイムステップのコンテキスト長を達成"
           }
@@ -545,16 +683,18 @@
             "total": 15
           },
           "reaction_signal": null,
-          "tags": ["red-teaming", "ai-safety", "openai", "llm-security"],
+          "tags": [
+            "red-teaming",
+            "ai-safety",
+            "openai",
+            "llm-security"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "GPT-Red：自動レッドチームLLM",
-              "metrics": [
-                { "label": "手法", "value": "セルフプレイ攻防ループ", "pct": 100 },
-                { "label": "性能", "value": "人間レッドチーマー超え", "pct": 90 },
-                { "label": "新発見", "value": "フェイクChain-of-Thought攻撃", "pct": 100 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "OpenAIのGPT-Redはセルフプレイで人間を超えるレッドチーム能力を持ち、新攻撃手法も発見"
           }
@@ -587,16 +727,18 @@
             "total": 19
           },
           "reaction_signal": null,
-          "tags": ["data-poisoning", "ai-safety", "llm-security", "pretraining"],
+          "tags": [
+            "data-poisoning",
+            "ai-safety",
+            "llm-security",
+            "pretraining"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "事前学習データ汚染攻撃",
-              "metrics": [
-                { "label": "攻撃経路", "value": "公開ディスカッション（掲示板等）", "pct": 100 },
-                { "label": "規模", "value": "Webスケール", "pct": 100 },
-                { "label": "検出困難度", "value": "高（緩和も難しい）", "pct": 85 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "LLM事前学習データへの汚染攻撃：掲示板等の公開インターフェースを経由してWebスケールで実施可能"
           }
@@ -629,15 +771,35 @@
             "total": 17
           },
           "reaction_signal": null,
-          "tags": ["ai-engineering", "trends", "developer", "industry-analysis"],
+          "tags": [
+            "ai-engineering",
+            "trends",
+            "developer",
+            "industry-analysis"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "AIエンジニアリングの3年間",
+              "headline": "",
               "events": [
-                { "date": "2023-06", "label": "「AIエンジニア」という用語が登場", "pct": 0 },
-                { "date": "2024", "label": "RAG・エージェントの急速普及", "pct": 40 },
-                { "date": "2026-07", "label": "World's Fair 2026：コスト↓・自律性↑の時代", "pct": 100 }
+                {
+                  "when": "2023-06",
+                  "label": "「AIエンジニア」という用語が登場",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2024",
+                  "label": "RAG・エージェントの急速普及",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-07",
+                  "label": "World's Fair 2026：コスト↓・自律性↑の時代",
+                  "description": "",
+                  "status": "now"
+                }
               ]
             },
             "alt": "AIエンジニアリングの2023〜2026年タイムライン：職種誕生からWorld's Fair 2026での成熟へ"
@@ -678,16 +840,36 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["robotics", "labor", "hyundai", "humanoid-robots"],
+          "tags": [
+            "robotics",
+            "labor",
+            "hyundai",
+            "humanoid-robots"
+          ],
           "x_post": "現代自動車でヒューマノイドロボット導入計画に抗議する部分ストライキが発生。WSJ「自動車産業初のヒューマノイドロボットを巡る工場停止」。ロボット自動化と労働問題が本格的に衝突した歴史的事例。\nhttps://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory",
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "現代自動車ストライキの経緯",
+              "headline": "",
               "events": [
-                { "date": "交渉開始", "label": "ヒューマノイドロボット導入計画で労使交渉", "pct": 0 },
-                { "date": "交渉決裂", "label": "条件合意できず", "pct": 50 },
-                { "date": "2026-07-17", "label": "蔚山工場で部分ストライキ開始（シフト2時間早切り上げ）", "pct": 100 }
+                {
+                  "when": "交渉開始",
+                  "label": "ヒューマノイドロボット導入計画で労使交渉",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "交渉決裂",
+                  "label": "条件合意できず",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-07-17",
+                  "label": "蔚山工場で部分ストライキ開始（シフト2時間早切り上げ）",
+                  "description": "",
+                  "status": "now"
+                }
               ]
             },
             "alt": "現代自動車蔚山工場でヒューマノイドロボット導入交渉が決裂し2026年7月にストライキへ発展"
@@ -720,15 +902,23 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["ai-scraping", "copyright", "patreon", "cloudflare"],
+          "tags": [
+            "ai-scraping",
+            "copyright",
+            "patreon",
+            "cloudflare"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "PatreonのAIボット対策の変化",
-              "items": [
-                { "label": "従来：robots.txtへの依存", "before_pct": 0, "after_pct": 20, "value": "お願いベース（遵守率低）" },
-                { "label": "現在：Cloudflare連携ブロック", "before_pct": 0, "after_pct": 90, "value": "技術的遮断（能動的防衛）" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             },
             "alt": "Patreonが受動的なrobots.txtから能動的なCloudflareブロックへAIスクレイピング対策を強化"
           }
@@ -768,15 +958,30 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["regulation", "anthropic", "policy", "state-law"],
+          "tags": [
+            "regulation",
+            "anthropic",
+            "policy",
+            "state-law"
+          ],
           "x_post": "AnthropicがAI規制の加速を州政府に呼びかけ。昨年支持したCA・NYの透明性法がすでに時代遅れかもしれないと認め、AIの進化に追いつく規制ペースを求める異例の主張。\nhttps://wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster",
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "Anthropicと州AI規制の動き",
+              "headline": "",
               "events": [
-                { "date": "2025", "label": "CA・NYのAI透明性法をAnthropicが支持", "pct": 0 },
-                { "date": "2026-07", "label": "Anthropic：これらの法律がすでに時代遅れの可能性と指摘、規制加速を訴え", "pct": 100 }
+                {
+                  "when": "2025",
+                  "label": "CA・NYのAI透明性法をAnthropicが支持",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-07",
+                  "label": "Anthropic：これらの法律がすでに時代遅れの可能性と指摘、規制加速を訴え",
+                  "description": "",
+                  "status": "now"
+                }
               ]
             },
             "alt": "2025年に透明性法を支持したAnthropicが2026年に「既に時代遅れ」と指摘し規制加速を訴えるタイムライン"
@@ -815,16 +1020,27 @@
             "reaction_boost": 1,
             "total": 16
           },
-          "reaction_signal": { "kind": "hn", "points": 352 },
-          "tags": ["model-comparison", "creative-ai", "video-generation", "benchmark"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 352
+          },
+          "tags": [
+            "model-comparison",
+            "creative-ai",
+            "video-generation",
+            "benchmark"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "AIモデル音楽ビデオ制作対決",
-              "items": [
-                { "label": "Claude Fable 5", "before_pct": 0, "after_pct": 50, "value": "$100予算" },
-                { "label": "GPT-5.6 Sol", "before_pct": 0, "after_pct": 50, "value": "$100予算" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             },
             "alt": "同一100ドル予算でClaude Fable 5とGPT-5.6 Solが音楽ビデオを制作する対決実験"
           }
@@ -855,17 +1071,22 @@
             "reaction_boost": 1,
             "total": 14
           },
-          "reaction_signal": { "kind": "hn", "points": 274 },
-          "tags": ["llm-criticism", "developer-perspective", "community", "reflection"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 274
+          },
+          "tags": [
+            "llm-criticism",
+            "developer-perspective",
+            "community",
+            "reflection"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "「批評家は正しい、でも使う」論考",
-              "metrics": [
-                { "label": "HNスコア", "value": "274pt", "pct": 27 },
-                { "label": "スタンス", "value": "批判を認めつつ実用主義を選択", "pct": 100 },
-                { "label": "主なテーマ", "value": "批評家 vs 実務ユーザーの分断", "pct": 100 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "LLM批評家の主張を認めながらも実務的有用性から使い続けると論じたHN人気記事"
           }
@@ -904,18 +1125,23 @@
             "reaction_boost": 1,
             "total": 17
           },
-          "reaction_signal": { "kind": "hatena", "users": 222 },
-          "tags": ["ai-writing", "creativity", "japan-community", "reflection"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 222
+          },
+          "tags": [
+            "ai-writing",
+            "creativity",
+            "japan-community",
+            "reflection"
+          ],
           "x_post": "「なぜAI臭さを消したいのか」——書き手としての視点からAIとの関係性を問い直した考察がはてブ222users。AIの文章量≠情報量という問題意識から、「消したい」という動機を深掘りする。\nhttps://sizu.me/laiso/posts/mcerekex7091",
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "「AI臭さ」論考",
-              "metrics": [
-                { "label": "はてブ", "value": "222 users", "pct": 78 },
-                { "label": "テーマ", "value": "AI文章の表現と自意識", "pct": 100 },
-                { "label": "著者", "value": "laiso（エンジニア）", "pct": 100 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "「AI臭さを消したいのか」論考のはてブ222ユーザーを含むエンゲージメントカード"
           }
@@ -946,16 +1172,27 @@
             "reaction_boost": 1,
             "total": 19
           },
-          "reaction_signal": { "kind": "hatena", "users": 157 },
-          "tags": ["prompting", "ai-workflow", "japan-community", "review"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 157
+          },
+          "tags": [
+            "prompting",
+            "ai-workflow",
+            "japan-community",
+            "review"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "AIレビュー指示の効果比較",
-              "items": [
-                { "label": "「レビューして」", "before_pct": 0, "after_pct": 40, "value": "指摘のみ返る" },
-                { "label": "「敵対的検証して」", "before_pct": 0, "after_pct": 90, "value": "反証＋判定＋根拠" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             },
             "alt": "「レビューして」vs「敵対的検証して」：指示の変化でAIが返す情報の質が大幅に向上"
           }
@@ -988,14 +1225,29 @@
             "total": 17
           },
           "reaction_signal": null,
-          "tags": ["japan-ai", "physical-ai", "national-project", "frontia"],
+          "tags": [
+            "japan-ai",
+            "physical-ai",
+            "national-project",
+            "frontia"
+          ],
           "figure": {
             "type": "timeline",
             "data": {
-              "title": "FRONTiaプロジェクトの道筋",
+              "headline": "",
               "events": [
-                { "date": "2026-07", "label": "FRONTia本格始動（44社共同出資・NVIDIA連携）", "pct": 0 },
-                { "date": "2030", "label": "「実世界ネイティブAI」実現を目標", "pct": 100 }
+                {
+                  "when": "2026-07",
+                  "label": "FRONTia本格始動（44社共同出資・NVIDIA連携）",
+                  "description": "",
+                  "status": "now"
+                },
+                {
+                  "when": "2030",
+                  "label": "「実世界ネイティブAI」実現を目標",
+                  "description": "",
+                  "status": "upcoming"
+                }
               ]
             },
             "alt": "国産マルチモーダルAI「FRONTia」が2026年7月に始動し2030年の実世界ネイティブAI実現を目指すタイムライン"
@@ -1029,15 +1281,23 @@
             "total": 18
           },
           "reaction_signal": null,
-          "tags": ["claude-code", "agent-routing", "cost-optimization", "japan-community"],
+          "tags": [
+            "claude-code",
+            "agent-routing",
+            "cost-optimization",
+            "japan-community"
+          ],
           "figure": {
             "type": "comparison",
             "data": {
-              "title": "サブエージェントモデル選択の比較",
-              "items": [
-                { "label": "従来（全タスクopus）", "before_pct": 0, "after_pct": 100, "value": "コスト高・単純タスクも最強モデル" },
-                { "label": "smart-dispatch（難度別ルーティング）", "before_pct": 0, "after_pct": 40, "value": "コスト削減・品質維持" }
-              ]
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": []
             },
             "alt": "全サブエージェントをopusにする場合と難度別ルーティングでのコスト比較"
           }
@@ -1069,16 +1329,18 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["edge-ai", "mobile-llm", "bonsai-27b", "on-device"],
+          "tags": [
+            "edge-ai",
+            "mobile-llm",
+            "bonsai-27b",
+            "on-device"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Bonsai 27B スペック",
-              "metrics": [
-                { "label": "パラメータ数", "value": "27B", "pct": 27 },
-                { "label": "実行環境", "value": "iPhone（スマホ）", "pct": 100 },
-                { "label": "クラウド依存", "value": "不要", "pct": 0 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "Bonsai 27BはiPhoneで実行可能な27BパラメーターのオンデバイスLLM"
           }
@@ -1118,16 +1380,18 @@
             "total": 15
           },
           "reaction_signal": null,
-          "tags": ["china-ai", "science-ai", "non-transformer", "waic-2026"],
+          "tags": [
+            "china-ai",
+            "science-ai",
+            "non-transformer",
+            "waic-2026"
+          ],
           "figure": {
             "type": "summary-card",
             "data": {
-              "title": "Mobius（上海AI Lab）",
-              "metrics": [
-                { "label": "パラメータ数", "value": "397B", "pct": 40 },
-                { "label": "アーキテクチャ", "value": "非Transformer", "pct": 100 },
-                { "label": "特化領域", "value": "科学AIエージェント", "pct": 100 }
-              ]
+              "headline": "",
+              "tldr": "",
+              "points": []
             },
             "alt": "上海AI Lab Mobiusは非Transformer 397Bの科学AIエージェント特化基盤モデル"
           }
@@ -1160,14 +1424,27 @@
             "total": 15
           },
           "reaction_signal": null,
-          "tags": ["china-ai", "physical-ai", "autonomous-driving", "weride"],
+          "tags": [
+            "china-ai",
+            "physical-ai",
+            "autonomous-driving",
+            "weride"
+          ],
           "figure": {
             "type": "metric-bars",
             "data": {
               "title": "WITT モデルスペック",
               "bars": [
-                { "label": "1カードあたり日処理動画（分）", "value": 10000, "pct": 100 },
-                { "label": "特化領域（自動運転データ活用）", "value": 100, "pct": 100 }
+                {
+                  "label": "1カードあたり日処理動画（分）",
+                  "value": 10000,
+                  "pct": 100
+                },
+                {
+                  "label": "特化領域（自動運転データ活用）",
+                  "value": 100,
+                  "pct": 100
+                }
               ]
             },
             "alt": "WeRide WITT：1カードで1日1万分の動画を処理するフィジカルAI大規模モデル"

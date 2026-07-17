@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-07T05:00:00+09:00",
+  "updated_at": "2026-07-18T01:23:04+09:00",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6775,6 +6775,156 @@
       "url_prefix": "https://qbitai.com/2026/07/444721.html",
       "first_seen_at": "2026-07-07",
       "last_seen_at": "2026-07-07",
+      "last_seen_count": 1
+    },
+    "000000002b4212bf": {
+      "url_prefix": "https://kimi.com/blog/kimi-k3",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000005f4e2aed": {
+      "url_prefix": "https://thinkingmachines.ai/news/introducing-inkling",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000007116fa35": {
+      "url_prefix": "https://the-decoder.com/german-ai-consortium-releases-soofi-",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000002e9f2c27": {
+      "url_prefix": "https://blog.google/innovation-and-ai/products/gemini-notebo",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000006ff7f1ca": {
+      "url_prefix": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "0000000049947877": {
+      "url_prefix": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powe",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "0000000078931dca": {
+      "url_prefix": "https://venturebeat.com/ai/the-agent-security-gap-54-of-ente",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "0000000050a3f3dd": {
+      "url_prefix": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterpri",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000005227dae7": {
+      "url_prefix": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-s",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000004474edf5": {
+      "url_prefix": "https://arxiv.org/abs/2607.15275v1",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "00000000596031f9": {
+      "url_prefix": "https://technologyreview.com/2026/07/15/1140514/meet-gpt-red",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "0000000044748118": {
+      "url_prefix": "https://arxiv.org/abs/2607.15267v1",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000004ed73b15": {
+      "url_prefix": "https://latent.space/p/aiewf26trends",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000004e374367": {
+      "url_prefix": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-s",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "00000000522d5757": {
+      "url_prefix": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bo",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "00000000005e184b": {
+      "url_prefix": "https://wired.com/story/why-anthropic-is-pushing-states-to-r",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000000908218e": {
+      "url_prefix": "https://tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "00000000375eb1b6": {
+      "url_prefix": "https://theocharis.dev/blog/llm-critics-are-right-i-use-llms",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000006e463e11": {
+      "url_prefix": "https://sizu.me/laiso/posts/mcerekex7091",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "00000000123ab7ad": {
+      "url_prefix": "https://zenn.dev/loglass/articles/6aa18c80496ec6",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "0000000063b02dcd": {
+      "url_prefix": "https://monoist.itmedia.co.jp/mn/articles/2607/17/news059.ht",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "00000000787fc9aa": {
+      "url_prefix": "https://zenn.dev/dupi/articles/claude-code-smart-dispatch",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000002c8e9962": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2607/17/2000000202",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "000000003f488691": {
+      "url_prefix": "https://qbitai.com/2026/07/452942.html",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "0000000028cf1752": {
+      "url_prefix": "https://qbitai.com/2026/07/452961.html",
+      "first_seen_at": "2026-07-18",
+      "last_seen_at": "2026-07-18",
       "last_seen_count": 1
     }
   },

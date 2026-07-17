@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Jul 2026 17:50:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 16:54:50 GMT</lastBuildDate>
+    <item>
+      <title>Kimi K3：オープンフロンティアインテリジェンス</title>
+      <link>https://kimi.com/blog/kimi-k3</link>
+      <guid isPermaLink="false">aidd-item-hn-48935342</guid>
+      <pubDate>Wed, 15 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18/hn-48935342">AI Daily Digest 2026-07-18</source>
+      <description>中国Moonshot AIが総パラメータ2.8兆（アクティブ50B）のMoEモデル「Kimi K3」をオープンリリース。100万トークンのコンテキスト長を持ち、ネイティブなマルチモーダル対応も備える。一部ベンチマークでFable 5を上回ると主張しており、HNで1892ptを獲得した。</description>
+    </item>
+    <item>
+      <title>Inkling：Thinking Machines Labのオープンウェイトモデル</title>
+      <link>https://thinkingmachines.ai/news/introducing-inkling</link>
+      <guid isPermaLink="false">aidd-item-hn-48924912</guid>
+      <pubDate>Wed, 15 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18/hn-48924912">AI Daily Digest 2026-07-18</source>
+      <description>Mira Murati率いるThinking Machines Labが975B-A41B MoEモデル「Inkling」をApache 2.0ライセンスで公開。テキスト・画像・音声・動画を45兆トークンで学習し、1Mトークンのコンテキスト長を持つ米国初の大規模オープンMoEとして注目を集め、HNで1198ptを獲得した。</description>
+    </item>
+    <item>
+      <title>NotebookLMが「Gemini Notebook」に改称</title>
+      <link>https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook</link>
+      <guid isPermaLink="false">aidd-item-hn-48936451</guid>
+      <pubDate>Thu, 16 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18/hn-48936451">AI Daily Digest 2026-07-18</source>
+      <description>GoogleがAI搭載リサーチツール「NotebookLM」を「Gemini Notebook」に改称し、Geminiエコシステムへの統合を強化すると発表。製品自体の機能は継続しながら、GeminiアプリやGoogle検索を含むGoogleプラットフォーム全体でより広く連携するようになる。HNで349ptを獲得した。</description>
+    </item>
+    <item>
+      <title>AnthropicがAIの州規制を加速するよう主導している理由</title>
+      <link>https://wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster</link>
+      <guid isPermaLink="false">aidd-item-wired_ai-here-s-why-anthropic-is-pushing-states-to-regula</guid>
+      <pubDate>Thu, 16 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18/wired_ai-here-s-why-anthropic-is-pushing-states-to-regula">AI Daily Digest 2026-07-18</source>
+      <description>AnthropicがカリフォルニアとニューヨークのAI透明性法を昨年支持したが、同社の州・地方政策責任者は、これらの法律がすでに時代遅れになりつつある可能性があると指摘。急速に進化するAIに追いつくため、より迅速な州レベルでの規制強化が必要だと主張している。</description>
+    </item>
+    <item>
+      <title>なぜAI臭さを消したいのか？｜laiso</title>
+      <link>https://sizu.me/laiso/posts/mcerekex7091</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-ai-laiso</guid>
+      <pubDate>Thu, 16 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18/hatena_it-ai-laiso">AI Daily Digest 2026-07-18</source>
+      <description>「cognitive-rhythm-writing」というスキルがきっかけで、なぜ人はAIが生成したと気づかれたくないのか、書き手としての視点から考察した論考。AIの文章は分量の割に情報量が少ないという以前の問題意識から発展し、「AI臭さ」を消したいという動機と創作・表現の関係性を深掘りする。はてブで222ユーザーが集まった。</description>
+    </item>
+    <item>
+      <title>ヒューマノイドロボット導入への恐怖から現代自動車の労働者がストライキ——自動車産業初の事態</title>
+      <link>https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory</link>
+      <guid isPermaLink="false">aidd-item-arstechnica_ai-fear-of-humanoid-robots-spurs-human-workers-to-s</guid>
+      <pubDate>Thu, 16 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18/arstechnica_ai-fear-of-humanoid-robots-spurs-human-workers-to-s">AI Daily Digest 2026-07-18</source>
+      <description>現代自動車のヒューマノイドロボット導入計画をめぐる交渉が決裂し、韓国・蔚山の世界最大級の自動車生産コンプレックスで組合員が昼夜のシフトを2時間早く切り上げる部分ストライキを開始。ウォール・ストリート・ジャーナルが「自動車産業初のヒューマノイドロボットを巡る工場ストップ」と報じた。</description>
+    </item>
     <item>
       <title>LLM内部に「グローバルワークスペース」が自然発生——AnthropicがJ-spaceとJ-lensを実証</title>
       <link>https://www.lesswrong.com/posts/global-workspace-language-models</link>
@@ -581,54 +629,6 @@
       <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/hatena_it-86-ai-ai">AI Daily Digest 2026-06-25</source>
       <description>NHKクロ現が「末期がんの86歳がAIに相談する」という実例を取材し、はてなブックマーク上で310件のブックマークを集めた。AIを「最後の相談相手」として活用する具体的な体験談が、本人・家族・医師それぞれの視点から描かれている。終末期医療において人と人の対話が難しい場面でAIが補完的役割を担う実態が、多くのユーザーの関心を集めた。「本当の気持ちを話せる存在がいなかった」という言葉がリアルな課題を提示している。</description>
-    </item>
-    <item>
-      <title>Anthropic、Slack常駐型AIエージェント「Claude Tag」を発表 — 社内全員が1つのClaudeを共有するEnterpriseエージェント戦略</title>
-      <link>https://www.anthropic.com/news/introducing-claude-tag</link>
-      <guid isPermaLink="false">aidd-item-2026-06-24-ag-claude-tag</guid>
-      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-ag-claude-tag">AI Daily Digest 2026-06-24</source>
-      <description>AnthropicはSlack上で常駐して自律的にタスクを実行するAIエージェント「Claude Tag」を発表した。Claude EnterpriseおよびTeamユーザー向けのリサーチプレビューとして提供される。タスクが割り当てられると複数のステップに分解して自律実行し、結果をSlackスレッドで報告する。「ambient」モードでは担当チャンネルを能動的に監視して未対応スレッドにフォローアップする機能も持つ。社内全従業員が一つのClaudeアイデンティティを共有する設計により従業員間のタスク引き継ぎが可能になり、組織の文脈・制度知識をAIが継続的に蓄積する戦略的意図がある。</description>
-    </item>
-    <item>
-      <title>EnterpriseClawBench：実際の職場エージェントセッションから構築した852タスクの企業向けベンチマーク</title>
-      <link>https://arxiv.org/abs/2606.23654v1</link>
-      <guid isPermaLink="false">aidd-item-2026-06-24-rp-enterprise-clawbench</guid>
-      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-rp-enterprise-clawbench">AI Daily Digest 2026-06-24</source>
-      <description>企業エージェントが職場内でファイルを読み、ツールを呼び出し、成果物を生成するシナリオに特化したベンチマーク「EnterpriseClawBench」が発表された。実際の業務エージェントセッションの大規模アーカイブから852の再現可能なタスクを抽出し、それぞれに復元済みフィクスチャ・書き直したプロンプト・ロールクラス・スキルサブクラス・ハードルール・セマンティックルーブリックが付属している。合成データではなく実業務に起源を持つという点でリアリティが高く、エンタープライズエージェントの実用的評価基盤として期待される。</description>
-    </item>
-    <item>
-      <title>SpaceXのGPU賃貸収益が年280億ドル規模のNeocloud事業に確定 — Anthropic・Google・Reflection AI 3社で月合計23億ドル超</title>
-      <link>https://latent.space/p/ainews-spacex-is-already-a-28byr</link>
-      <guid isPermaLink="false">aidd-item-2026-06-24-ib-spacex-28byr-neocloud</guid>
-      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-ib-spacex-28byr-neocloud">AI Daily Digest 2026-06-24</source>
-      <description>Latent SpaceがSpaceXのGPU賃貸収益を集計した。Anthropic（月12.5億ドル、コロッサス1・2で約32.5万チップ）、Google（月9.2億ドル、GB300容量）、Reflection AI（月1.5億ドル、2026年7月1日から2029年まで）の3社との契約合計は月23.2億ドル（年換算278億ドル）に上り、「年280億ドル規模のNeocloud」が確定した。BlackwellチップのGPU賃料は1時間10ドル超で90日間の解約条項付き。SpaceXはAI算力の「Neocloud」レイヤーとして独自のポジションを確立している。</description>
-    </item>
-    <item>
-      <title>Anthropic公式に学ぶ AIエージェント設計20の原則</title>
-      <link>https://zenn.dev/takna/articles/anthropic-ai-agent-design-20-principles</link>
-      <guid isPermaLink="false">aidd-item-2026-06-24-jp-anthropic-agent-20</guid>
-      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-jp-anthropic-agent-20">AI Daily Digest 2026-06-24</source>
-      <description>AnthropicのエンジニアリングブログとClaude Codeの公式ドキュメントから、エージェント設計に効く原則を抽出・整理したZenn記事。各原則を「主張＋根拠」形式で簡潔にまとめ、加えて「担保（どこで守るか）」を1行で付記している。一次情報への索引として使うことを想定した構成で、エージェント開発・コンテキスト設計・ツール設計の設計判断に即座に活用できる内容となっている。</description>
-    </item>
-    <item>
-      <title>Randomized YaRN：短コンテキスト学習データのまま長文推論汎化を改善する訓練手法</title>
-      <link>https://arxiv.org/abs/2606.23687v1</link>
-      <guid isPermaLink="false">aidd-item-2026-06-24-rp-randomized-yarn</guid>
-      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-rp-randomized-yarn">AI Daily Digest 2026-06-24</source>
-      <description>LLMは一般に短いシーケンスで事前学習された後、追加学習で長コンテキストに対応するが、それ以上の長さへの汎化は依然難しい。本論文が提案する「Randomized YaRN」は、YaRNベースの位置外挿・ランダム位置エンコード・長さカリキュラムの3要素を組み合わせた訓練手法である。短コンテキストデータでの学習中に、トークンにYaRN位置エンコードを割り当てることで、学習時の最大長を超えた長文シーケンスへの汎化能力を向上させる。長コンテキスト推論の実用的な改善手法として注目される。</description>
-    </item>
-    <item>
-      <title>Mythosバン後のAIセキュリティ — Gray Swanが語る自動redteamingの優位と「致命的三つ組み」</title>
-      <link>https://latent.space/p/gray-swan</link>
-      <guid isPermaLink="false">aidd-item-2026-06-24-reg-gray-swan</guid>
-      <pubDate>Mon, 22 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-24/2026-06-24-reg-gray-swan">AI Daily Digest 2026-06-24</source>
-      <description>AIセキュリティ企業Gray SwanがLatent Spaceポッドキャストで、Mythos/Fableバン後のredteaming動向を語った。Gray Swanは自動redteaming製品「Shade」（人間テスターを超える精度）、コミュニティプラットフォーム「Gray Swan Arena」（Discord 15,000人以上）、エンタープライズ向けガードレールモデル「Cygnal」の3製品を展開する。プロンプトインジェクション侵害の「致命的三つ組み」は（1）外部（信頼できない）データの取込、（2）内部のプライベートデータへのアクセス、（3）外部へのデータ送出、の組み合わせと指摘した。AIセキュリティが損害保険の引き受けフレームワークに収束するという見方も示した。</description>
     </item>
   </channel>
 </rss>

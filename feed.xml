@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Jul 2026 17:50:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 16:54:50 GMT</lastBuildDate>
+    <item>
+      <title>Kimi K3（2.8T）が史上最大のオープンモデルに登場、InklingもApache 2.0で公開——Anthropicが州レベルのAI規制を主導</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18</link>
+      <guid isPermaLink="false">aidd-day-2026-07-18</guid>
+      <pubDate>Fri, 17 Jul 2026 20:00:00 GMT</pubDate>
+      <description>中国Moonshot AIが総パラメータ2.8兆のMoEモデル「Kimi K3」をオープンリリースし、HNで1892ptを獲得。米Thinking Machines Lab（Mira Murati創業）も975B-A41B MoEの「Inkling」をApache 2.0で公開し、米国初の大規模オープンモデルとして注目を集めた。AIエージェントのセキュリティ問題では54%の企業が既にインシデントを経験しており、評価と本番環境のギャップが顕在化。Anthropicは急速に進化するAIに対応するため、カリフォルニア・ニューヨーク州の規制が既に時代遅れになりつつあると警鐘を鳴らした。日本では「AI臭さを消したいのか」という問いが222ブックマークを獲得し、AIとの関係性に対する問い直しが続いている。
+
+【今日の必読】
+・Kimi K3：オープンフロンティアインテリジェンス
+・Inkling：Thinking Machines Labのオープンウェイトモデル
+・NotebookLMが「Gemini Notebook」に改称
+・AnthropicがAIの州規制を加速するよう主導している理由
+・なぜAI臭さを消したいのか？｜laiso
+・ヒューマノイドロボット導入への恐怖から現代自動車の労働者がストライキ——自動車産業初の事態</description>
+    </item>
     <item>
       <title>AnthropicがLLM内部に「グローバルワークスペース」発見——DeepSeekが独自チップ設計に参入、Claude Coworkがモバイル展開</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-08</link>
@@ -439,21 +454,6 @@
 ・Microsoft MAI-Image-2.5、Arena テキスト→画像リーダーボードで 3 位を達成
 ・LLM に「ワーキングメモリ」を実装——特殊トークン列で潜在推論を単一前向きパスで完結
 ・VideoMLA：マルチヘッド潜在アテンションで動画生成の KV メモリを 92.7% 削減</description>
-    </item>
-    <item>
-      <title>Google Gemini Omni が「任意→任意」世界モデルとして展開、OpenAI が GPT-Rosalind をバイオディフェンスに無償開放——Mistral は Vibe にリブランドし国内「設計知」論考がはてブ 432 件</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-05-31</link>
-      <guid isPermaLink="false">aidd-day-2026-05-31</guid>
-      <pubDate>Sat, 30 May 2026 20:00:00 GMT</pubDate>
-      <description>2026年5月31日、Googleが単一モデルでテキスト・画像・音声・動画を相互変換する「Gemini Omni Flash」のロールアウトを開始し、物理法則を内在した世界モデルとしての動画生成という新しい設計思想を示した。OpenAIは生命科学特化推論モデルGPT-Rosalindを政府機関・研究機関に無償開放するRosalind Biodefenseプログラムを開始し、Lawrence Livermore研究所やCEPIがバンジョウエボラ対策に採用した。MistralはLe ChatをVibeにリブランドしてWork mode＋Code modeを持つ統合エージェントへ再デビューさせ、OpenRouterはCapitalG主導のシリーズBで1億1300万ドルを調達し評価額13億ドルに到達した。国内では清水亮氏の「生成AIが本当に変えるのは設計知だ」論考がはてブ432件を集め、デジタル庁が源内向け国産LLM再公募を開始した。
-
-【今日の必読】
-・AgentDoG 1.5：0.8B〜8Bの軽量AIエージェント安全ガードレール——R-Judge 92.2%でGPT-5.4に匹敵しデプロイ負荷を100分の1に削減
-・Qwen-VLA：操作・ナビゲーション・軌道予測を単一アーキテクチャで統合——LIBERO 97.9%の汎用ロボットVLAモデル
-・生成AIが本当に変えるのは「設計知」だ（WirelessWire News）
-・Mistral、Le ChatをVibeにリブランド——Work modeとCode modeを持つ統合AIエージェントとして再スタート
-・Gemini Omni Flash ロールアウト開始——テキスト・画像・音声・動画を統合する「任意→任意」世界モデル
-・OpenAI、Rosalind Biodefenseプログラム開始——GPT-Rosalindを生命科学・バイオディフェンスへ無償開放</description>
     </item>
   </channel>
 </rss>
