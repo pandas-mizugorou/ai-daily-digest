@@ -1,6 +1,6 @@
 ---
 name: ai-daily-digest
-description: "AI / 生成 AI 関連ニュースを 60-80 ソースから収集し、4 軸スコアリングで「必読 Top Picks + カテゴリ別」の二段構成に編成して GitHub Pages（ai-daily-digest）へ JSON を push する日次配信スキル（日曜は週次サマリも生成）。ユーザーが「今日のAIニュース」「daily digest」「AI まとめ」「ニュースサイト更新」「digest 実行」「AI 日次」「AIニュース更新」などに言及したら使うこと。X 発信のネタ選定は /x-topic-radar 側（本スキルは技術キャッチアップ目的）。巡回ソース・カテゴリ・時間窓の定義は references/sources.md・categories.md が正。引数は --dry-run（push なし）/ --weekly-only / --date ほか本文参照。定期実行は Cloudflare Worker Cron → GitHub Actions で自動化済み。"
+description: "AI / 生成 AI 関連ニュースを 60-80 ソースから収集し、4 軸スコアリングで「必読 Top Picks + カテゴリ別」の二段構成に編成して GitHub Pages（ai-daily-digest）へ JSON を push する日次配信スキル（日曜は週次サマリも生成）。ユーザーが「今日のAIニュース」「daily digest」「AI まとめ」「ニュースサイト更新」「digest 実行」「AI 日次」「AIニュース更新」などに言及したら使うこと。X 発信のネタ選定は /x-topic-radar 側（本スキルは技術キャッチアップ目的）。Obsidian のデイリーノート・日次ノート（「今日のデイリー」「デイリー作って」「デイリーノート」等）は対象外＝発火しない（日次ノート自体が 2026-07 に廃止済み。本スキルはニュース配信であってノート生成ではない）。巡回ソース・カテゴリ・時間窓の定義は references/sources.md・categories.md が正。引数は --dry-run（push なし）/ --weekly-only / --date ほか本文参照。定期実行は Cloudflare Worker Cron → GitHub Actions で自動化済み。"
 ---
 
 # AI Daily Digest スキル
