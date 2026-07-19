@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-18T01:23:04+09:00",
+  "updated_at": "2026-07-20T00:00:00.000Z",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6925,6 +6925,156 @@
       "url_prefix": "https://qbitai.com/2026/07/452961.html",
       "first_seen_at": "2026-07-18",
       "last_seen_at": "2026-07-18",
+      "last_seen_count": 1
+    },
+    "f07200016c617465": {
+      "url_prefix": "https://latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07200026c617465": {
+      "url_prefix": "https://latent.space/p/ainews-thinkys-inkling-975b-a41b",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720003686e2d34": {
+      "url_prefix": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072000468617465": {
+      "url_prefix": "https://itmedia.co.jp/news/articles/2607/18/news019.html",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720005686e2d34": {
+      "url_prefix": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720006686e2d34": {
+      "url_prefix": "https://github.com/openai/codex/pull/33972/files",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07200076c617465": {
+      "url_prefix": "https://latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720008686e2d34": {
+      "url_prefix": "https://ykdojo.github.io/claude-controls-mac",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072000969746d65": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2607/17/2000000202",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072001061727869": {
+      "url_prefix": "https://arxiv.org/abs/2607.15275v1",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720011686e2d34": {
+      "url_prefix": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcem",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072001272617363": {
+      "url_prefix": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072001361727869": {
+      "url_prefix": "https://arxiv.org/abs/2607.15247v1",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07200146c617465": {
+      "url_prefix": "https://latent.space/p/ainews-not-much-happened-today-830",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072001573747261": {
+      "url_prefix": "https://stratechery.com/2026/the-openai-super-app-chatgpt-codex-whither-chat",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07200166c657373": {
+      "url_prefix": "https://lesswrong.com/posts/3RfJLcmkztSTq9afc/demis-hassabis-on-the-new-coming-a",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720017686e2d34": {
+      "url_prefix": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveilla",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f0720018686e2d34": {
+      "url_prefix": "https://data.stackexchange.com/stackoverflow/query/1953768",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07200196c79636f": {
+      "url_prefix": "https://techblog.lycorp.co.jp/ja/20260714a",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072002068617465": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/aws.amazon.com/cost-explorer-bug",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072002168617465": {
+      "url_prefix": "https://b.hatena.ne.jp/entry/s/www.itmedia.co.jp/news/articles/2607/ai-engineer-",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072002270666e2d": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/plamo-reward/",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07200236c79636f": {
+      "url_prefix": "https://engineering.linecorp.com/ja/blog/aidd-workshop",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072002471626974": {
+      "url_prefix": "https://www.qbitai.com/2026/07/gpu-llm-inference-throughput.html",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f072002571626974": {
+      "url_prefix": "https://www.qbitai.com/2026/07/shanghai-ai-lab-harness-self-evolution.html",
+      "first_seen_at": "2026-07-20",
+      "last_seen_at": "2026-07-20",
       "last_seen_count": 1
     }
   },

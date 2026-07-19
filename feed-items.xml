@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 17 Jul 2026 16:54:50 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 16:28:01 GMT</lastBuildDate>
+    <item>
+      <title>Kimi K3（2.8T-A50B）：史上最大のオープンモデル登場——Opus 4.8クラスをSonnet 5価格で</title>
+      <link>https://latent.space/p/ainews-kimi-k3-28t-a50b-the-largest</link>
+      <guid isPermaLink="false">aidd-item-latent_space-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-</guid>
+      <pubDate>Thu, 16 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20/latent_space-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-">AI Daily Digest 2026-07-20</source>
+      <description>中国Moonshot AIが総パラメータ2.8兆（アクティブ50B）のMoEモデル「Kimi K3」をオープンリリースした。Latent Spaceは「史上最大のオープンモデル」と位置づけ、Opus 4.8クラスの性能をSonnet 5価格で提供すると伝えている。Kimi K2.5からK3への性能ジャンプも大きく、AIコミュニティに衝撃を与えた。</description>
+    </item>
+    <item>
+      <title>「Claude Fable 5」サブスクに統合 Max・Team Premiumプラン対象</title>
+      <link>https://itmedia.co.jp/news/articles/2607/18/news019.html</link>
+      <guid isPermaLink="false">aidd-item-hatena-claude-fable-5-max-team-premium</guid>
+      <pubDate>Fri, 17 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20/hatena-claude-fable-5-max-team-premium">AI Daily Digest 2026-07-20</source>
+      <description>米Anthropicは7月17日（現地時間）、最上位AIモデル「Claude Fable 5」を7月20日から有料プラン「Max」「Team Premium」の標準機能にすると発表した。両プランでは利用上限の50%までFable 5を追加費用なしで使える。一方、ProおよびTeam Standardプランでは月額料金とは別の使用クレジット（従量課金）形式を維持する。はてブで98ブックマークを獲得した。</description>
+    </item>
+    <item>
+      <title>GPT-5.6がプロンプトで凸最適化の30年来の未解決問題を解決——HN 576pt</title>
+      <link>https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a</link>
+      <guid isPermaLink="false">aidd-item-hn-48957779</guid>
+      <pubDate>Fri, 17 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20/hn-48957779">AI Daily Digest 2026-07-20</source>
+      <description>GPT-5.6が凸最適化分野の30年来の未解決問題をプロンプトで解いたとの報告が、Redditのr/mathに投稿されHNで576ptを獲得した。OpenAIの組み合わせ論的双対コンパクト性（CDC）証明発表の後続として、LLMが純粋数学の難問を解く能力を示した事例として注目されている。</description>
+    </item>
+    <item>
+      <title>LLMの推論努力量を制御する——GPT-5.6の5〜6段階設定をSebastian Raschkaが解説</title>
+      <link>https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms</link>
+      <guid isPermaLink="false">aidd-item-raschka-controlling-reasoning-effort-in-llms</guid>
+      <pubDate>Fri, 17 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20/raschka-controlling-reasoning-effort-in-llms">AI Daily Digest 2026-07-20</source>
+      <description>Sebastian RaschkaがOpenAIのGPT-5.6モデルファミリーを中心に、LLMの推論努力量（reasoning effort）を制御する手法を解説した。GPT-5.6は3つのサイズで提供され、それぞれ約5〜6段階の推論努力設定を持つ。o1以来の推論モデルの進化を振り返りながら、DeepSeek-R1のRLVRレシピとの比較も行っている。</description>
+    </item>
+    <item>
+      <title>Inkling（975B-A41B）：Thinkyが米国初のApache 2.0大規模マルチモーダルMoEを公開</title>
+      <link>https://latent.space/p/ainews-thinkys-inkling-975b-a41b</link>
+      <guid isPermaLink="false">aidd-item-latent_space-ainews-thinkys-inkling-975b-a41b-multimodal-new</guid>
+      <pubDate>Wed, 15 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20/latent_space-ainews-thinkys-inkling-975b-a41b-multimodal-new">AI Daily Digest 2026-07-20</source>
+      <description>Thinking Machines Lab（Thinky、Mira Murati創業）が975B総パラメータ・41Bアクティブ（A41B）のMoEモデル「Inkling」をApache 2.0ライセンスで公開した。テキスト・画像・音声・動画を含む45兆トークンで学習し、最大100万トークンのコンテキスト長をサポート。米国発の大規模オープンMoEとして新たな基準を示した。</description>
+    </item>
+    <item>
+      <title>Kaiser看護師ら「AIと職場監視が業務と患者ケアを悪化させている」——HN 555pt</title>
+      <link>https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse</link>
+      <guid isPermaLink="false">aidd-item-hn-48952880</guid>
+      <pubDate>Fri, 17 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20/hn-48952880">AI Daily Digest 2026-07-20</source>
+      <description>米Kaiser Permanenteの看護師たちがAIシステムと職場監視が業務と患者ケアの質を悪化させていると訴える報告が、HNで555ptを獲得した。医療現場へのAI導入が現場スタッフの視点からは必ずしもポジティブな結果をもたらしていないという問題を浮き彫りにし、大きな議論を呼んでいる。</description>
+    </item>
     <item>
       <title>Kimi K3：オープンフロンティアインテリジェンス</title>
       <link>https://kimi.com/blog/kimi-k3</link>
@@ -581,54 +629,6 @@
       <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/buzz-ai-proxy-war-ny12">AI Daily Digest 2026-06-26</source>
       <description>AnthropicとOpenAIが合計2700万ドルを投じたニューヨーク州第12区議会選挙での政治的代理戦争が引き分けに終わった。AI推進派スーパーPACに標的にされたAlex Bores氏（元ニューヨーク州議会議員）が人気急上昇したものの、民主党予備選で僅差の敗北。Boresは元Google社員のAI推進派として知られており、AI企業が選挙政治に本格参入した初の大型事例として注目を集めた。</description>
-    </item>
-    <item>
-      <title>AnthropicがClaude TagでSlackに「チームの同僚」として常駐——Latent SpaceがLLM UIUX「第三の大転換」と評価</title>
-      <link>https://latent.space/p/ainews-claude-tag-multiplayer-proactive</link>
-      <guid isPermaLink="false">aidd-item-latent_space-ainews-claude-tag-multiplayer-proactive-persiste</guid>
-      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/latent_space-ainews-claude-tag-multiplayer-proactive-persiste">AI Daily Digest 2026-06-25</source>
-      <description>Anthropicがチーム向け新機能「Claude Tag」を発表し、SlackにClaudeをチームメンバーとして参加させる機能をベータ提供開始した。指定したSlackチャンネルにClaudeを招待し、「@Claude」とメンションするだけで、コードベース・ドキュメント・各種ツールを参照しながら非同期かつ自律的にタスクを実行する。基盤モデルにはOpus 4.8が採用され、厳格な権限管理のもとで組織的な自動化が可能。Latent SpaceはClaude Tag発表を「Web → Desktop → Slack」という「LLMのUIUX第三の大転換」と位置付け、Shopify・Stripe・Rampなど先行する企業のバックグラウンドエージェント事例を挙げてAnthropicの戦略的意図を分析した。複数メディアはAnthropicの製品チームコードの約65%がClaude Tagで作成されていると報告している。</description>
-    </item>
-    <item>
-      <title>OpenAI、Broadcomとの共同設計で推論専用ASICチップ「Jalapeño」を発表——初の自社AI専用シリコン</title>
-      <link>https://theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno</link>
-      <guid isPermaLink="false">aidd-item-theverge-openai-reveals-its-first-ai-processor-jalapeño</guid>
-      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/theverge-openai-reveals-its-first-ai-processor-jalapeño">AI Daily Digest 2026-06-25</source>
-      <description>OpenAIがBroadcomとの共同設計による推論専用ASICチップ「Jalapeño」を発表した。「インテリジェンスプロセッサ」と称されるこのチップはAIサーバー向けで、現在および将来のLLMを動かすために設計されている。ASIC（特定用途向け集積回路）として推論に特化した設計を採用しており、汎用GPUとは異なる専用シリコンとなる。OpenAIにとって初の自社カスタムAIチップであり、NVIDIAのGPUへの依存を低減して自社のAIインフラ戦略を加速する重要な一手と位置付けられる。GoogleのTPUやAmazon Trainium、Meta MTIAと同様に主要AIフロンティアラボが独自シリコンを持つ流れに乗る形で、AIインフラ競争に新たな構造変化をもたらす可能性がある。</description>
-    </item>
-    <item>
-      <title>トランプWHがDario Amodeiを「ウィアード（奇人）」と呼び会合から排除——Tom Brownが代理出席に</title>
-      <link>https://wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei</link>
-      <guid isPermaLink="false">aidd-item-wired_ai-the-trump-white-house-is-over-anthropic-ceo-dari</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/wired_ai-the-trump-white-house-is-over-anthropic-ceo-dari">AI Daily Digest 2026-06-25</source>
-      <description>Wiredが報道したところによると、ホワイトハウスとの重要会合においてAnthropicはCEOのDario Amodeiを出席者から外し、共同創業者のTom Brownに代えていた。政府高官の一人はDario Amodeiを「weirdo（奇人）」と呼んでいるという。AnthropicはFable/Mythosモデルをめぐる規制問題で米政府と対立関係にあり、この出席者交代はその緊張の表れとして注目されている。AIの安全性を重視するAnthropicのスタンスがトランプ政権の政策志向と相容れないことを示す一例とみられる。</description>
-    </item>
-    <item>
-      <title>PLaMo 3.0 Prime リリース——256Kコンテキスト・推論強化で国産最高水準を更新</title>
-      <link>https://tech.preferred.jp/ja/blog/plamo-3-0-prime/</link>
-      <guid isPermaLink="false">aidd-item-pfn-plamo-3-0-prime</guid>
-      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/pfn-plamo-3-0-prime">AI Daily Digest 2026-06-25</source>
-      <description>Preferred Networks（PFN）がPLaMo 3.0 Primeをリリースした。コンテキスト長を従来の64Kトークンから256Kトークンへ4倍に拡張し、推論能力を大幅に強化した国産大規模言語モデル。ベンチマーク比較ではgpt-oss-120b、Qwen3.6-27b、GPT-5.4 Mini、Claude Haiku 4.5と比較され国産AIの新基準を示している。長文書類の解析・複雑な多段階推論・日本語ビジネス文書処理において高い能力を発揮し、国内企業ユーザーの実用要件に応える。</description>
-    </item>
-    <item>
-      <title>QualcommがAIチップソフトスタック新興「Modular」を約40億ドルで買収——AI時代の有望スタートアップが大型エグジット</title>
-      <link>https://wired.com/story/qualcomm-buys-buzzy-chip-startup-modular-for-nearly-dollar4-billion</link>
-      <guid isPermaLink="false">aidd-item-wired_ai-qualcomm-buys-buzzy-chip-startup-modular-for-nea</guid>
-      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/wired_ai-qualcomm-buys-buzzy-chip-startup-modular-for-nea">AI Daily Digest 2026-06-25</source>
-      <description>QualcommがAIチップソフトスタック新興企業「Modular」を約40億ドル（nearly $4 billion）で買収することが明らかになった。Wiredはモジュラーを「AI時代で最も有望なチップソフトウェアスタートアップの一つ」と評しており、マルチビリオンダラーのエグジットとなる。ModularはMojoプログラミング言語など、AIインフラの開発ツールチェーンを手がける企業として注目されていた。QualcommはエッジAI・モバイルAIへの投資を強化しており、ModularのAIソフトスタック技術を取り込むことで競争力強化を図る。</description>
-    </item>
-    <item>
-      <title>末期がんの86歳、AIに相談してみた結果……NHKクロ現が取材（310はてブ）</title>
-      <link>https://www.nhk.or.jp/gendai/articles/4953/</link>
-      <guid isPermaLink="false">aidd-item-hatena_it-86-ai-ai</guid>
-      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-25/hatena_it-86-ai-ai">AI Daily Digest 2026-06-25</source>
-      <description>NHKクロ現が「末期がんの86歳がAIに相談する」という実例を取材し、はてなブックマーク上で310件のブックマークを集めた。AIを「最後の相談相手」として活用する具体的な体験談が、本人・家族・医師それぞれの視点から描かれている。終末期医療において人と人の対話が難しい場面でAIが補完的役割を担う実態が、多くのユーザーの関心を集めた。「本当の気持ちを話せる存在がいなかった」という言葉がリアルな課題を提示している。</description>
     </item>
   </channel>
 </rss>

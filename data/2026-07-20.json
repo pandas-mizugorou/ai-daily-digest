@@ -24,16 +24,46 @@
     "grounding_flags": []
   },
   "skipped_sources": [
-    { "source": "import_ai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "chinai", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "mercari", "reason": "feed fetch failed: HTTP 403" },
-    { "source": "reddit_ml", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_singularity", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_claudeai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "reddit_openai", "reason": "reddit RSS failed: HTTP 429" },
-    { "source": "semscholar:large language model", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:AI agent", "reason": "Semantic Scholar failed: HTTP 429" },
-    { "source": "semscholar:retrieval augmented generation", "reason": "Semantic Scholar failed: HTTP 429" }
+    {
+      "source": "import_ai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "chinai",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "mercari",
+      "reason": "feed fetch failed: HTTP 403"
+    },
+    {
+      "source": "reddit_ml",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_singularity",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_claudeai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "reddit_openai",
+      "reason": "reddit RSS failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:large language model",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:AI agent",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    },
+    {
+      "source": "semscholar:retrieval augmented generation",
+      "reason": "Semantic Scholar failed: HTTP 429"
+    }
   ],
   "top_picks": [
     {
@@ -101,20 +131,33 @@
             "total": 19
           },
           "reaction_signal": null,
-          "tags": ["kimi-k3", "open-source", "moe", "moonshot-ai"],
+          "tags": [
+            "kimi-k3",
+            "open-source",
+            "moe",
+            "moonshot-ai"
+          ],
           "x_post": "中国Moonshot AIが総パラメータ2.8兆（A50B）の「Kimi K3」をオープンリリース。Latent Spaceが「史上最大のオープンモデル」と評し、Opus 4.8クラスの性能をSonnet 5価格で提供するとされる。\nhttps://latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
           "figure": {
             "type": "metric-bars",
-            "alt": "Kimi K3のモデル規模を示すバーグラフ。総パラメータ2800B（100%）に対しアクティブは50B（1.8%）。前世代K2.5からK3へのジャンプが最大規模とされる。",
             "data": {
               "title": "Kimi K3 モデル規模",
               "narrative": "総パラメータ2.8兆はオープンモデル史上最大。アクティブは50BでMoEの効率を維持",
               "impact": "Opus 4.8クラス性能をSonnet 5価格で提供し、オープンソース競争の閾値を引き上げた",
               "bars": [
-                { "label": "総パラメータ（B）", "value": 2800, "pct": 100 },
-                { "label": "アクティブパラメータ（B）", "value": 50, "pct": 2 }
+                {
+                  "label": "総パラメータ（B）",
+                  "value": 2800,
+                  "pct": 100
+                },
+                {
+                  "label": "アクティブパラメータ（B）",
+                  "value": 50,
+                  "pct": 2
+                }
               ]
-            }
+            },
+            "alt": "Kimi K3のモデル規模を示すバーグラフ。総パラメータ2800B（100%）に対しアクティブは50B（1.8%）。前世代K2.5からK3へのジャンプが最大規模とされる。"
           }
         },
         {
@@ -145,23 +188,46 @@
             "total": 17
           },
           "reaction_signal": null,
-          "tags": ["inkling", "open-source", "moe", "thinking-machines"],
+          "tags": [
+            "inkling",
+            "open-source",
+            "moe",
+            "thinking-machines"
+          ],
           "x_post": "Mira Murati率いるThinking Machines Labが「Inkling」（975B-A41B MoE）をApache 2.0公開。45兆トークン学習、テキスト・画像・音声・動画対応、1Mコンテキスト。米国初の大規模オープンMoEモデルファミリー。\nhttps://latent.space/p/ainews-thinkys-inkling-975b-a41b",
           "figure": {
             "type": "comparison",
-            "alt": "InklingとKimi K3の規模比較。総パラメータ：Inkling 975B vs Kimi K3 2800B。アクティブパラメータ：Inkling 41B vs Kimi K3 50B。どちらもApache 2.0でオープン公開。",
             "data": {
               "headline": "Inkling vs Kimi K3 モデル規模比較",
               "narrative": "どちらも今週公開された大規模MoEオープンモデル。規模ではKimi K3が上だが、InklingはApache 2.0の米国発として意義がある",
               "impact": "2大オープンMoEの競合が高性能モデルの民主化を加速",
               "delta_tone": "neutral",
-              "before": { "label": "Inkling（Thinky）" },
-              "after": { "label": "Kimi K3（Moonshot AI）" },
+              "before": {
+                "label": "Inkling（Thinky）"
+              },
+              "after": {
+                "label": "Kimi K3（Moonshot AI）"
+              },
               "metrics": [
-                { "label": "総パラメータ（B）", "before": 975, "after": 2800, "before_pct": 35, "after_pct": 100, "delta_tone": "neutral" },
-                { "label": "アクティブパラメータ（B）", "before": 41, "after": 50, "before_pct": 82, "after_pct": 100, "delta_tone": "neutral" }
+                {
+                  "label": "総パラメータ（B）",
+                  "before": 975,
+                  "after": 2800,
+                  "before_pct": 35,
+                  "after_pct": 100,
+                  "delta_tone": "neutral"
+                },
+                {
+                  "label": "アクティブパラメータ（B）",
+                  "before": 41,
+                  "after": 50,
+                  "before_pct": 82,
+                  "after_pct": 100,
+                  "delta_tone": "neutral"
+                }
               ]
-            }
+            },
+            "alt": "InklingとKimi K3の規模比較。総パラメータ：Inkling 975B vs Kimi K3 2800B。アクティブパラメータ：Inkling 41B vs Kimi K3 50B。どちらもApache 2.0でオープン公開。"
           }
         },
         {
@@ -190,20 +256,37 @@
             "reaction_boost": 1,
             "total": 15
           },
-          "reaction_signal": { "kind": "hn", "points": 423 },
-          "tags": ["qwen", "alibaba", "open-source", "llm-release"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 423
+          },
+          "tags": [
+            "qwen",
+            "alibaba",
+            "open-source",
+            "llm-release"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Qwen 3.8発表カード。AlibabaがX上でQwen 3.8を発表、HN 423pt獲得。Kimi K3・Inklingと並ぶ今週のモデルリリースラッシュの一角。",
             "data": {
               "headline": "Qwen 3.8 発表",
               "tldr": "Alibaba QwenチームがQwen 3.8を発表。HN 423pt獲得",
               "points": [
-                { "label": "発表元", "description": "Alibaba Qwen（Xで公式発表）" },
-                { "label": "HN反響", "description": "423pt。今週の大規模モデルリリースラッシュの中で注目" },
-                { "label": "背景", "description": "Kimi K3（2.8T）・Inkling（975B）と同週のリリース" }
+                {
+                  "label": "発表元",
+                  "description": "Alibaba Qwen（Xで公式発表）"
+                },
+                {
+                  "label": "HN反響",
+                  "description": "423pt。今週の大規模モデルリリースラッシュの中で注目"
+                },
+                {
+                  "label": "背景",
+                  "description": "Kimi K3（2.8T）・Inkling（975B）と同週のリリース"
+                }
               ]
-            }
+            },
+            "alt": "Qwen 3.8発表カード。AlibabaがX上でQwen 3.8を発表、HN 423pt獲得。Kimi K3・Inklingと並ぶ今週のモデルリリースラッシュの一角。"
           }
         }
       ]
@@ -240,22 +323,45 @@
             "reaction_boost": 1,
             "total": 18
           },
-          "reaction_signal": { "kind": "hatena", "users": 98 },
-          "tags": ["claude-fable-5", "anthropic", "subscription", "pricing"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "users": 98
+          },
+          "tags": [
+            "claude-fable-5",
+            "anthropic",
+            "subscription",
+            "pricing"
+          ],
           "x_post": "AnthropicがClaude Fable 5を本日（7月20日）よりMaxおよびTeam Premiumプランに標準統合すると発表。両プランで利用上限の50%まで追加費用なしで利用可能。\nhttps://itmedia.co.jp/news/articles/2607/18/news019.html",
           "figure": {
             "type": "timeline",
-            "alt": "Claude Fable 5のプラン統合タイムライン。7月17日Anthropicが発表、7月20日よりMaxおよびTeam Premiumで利用上限50%まで無料追加。ProとTeam Standardは従量課金継続。",
             "data": {
               "headline": "Claude Fable 5 プラン統合スケジュール",
-              "narrative": "Fable 5がサブスクプランに組み込まれ、ヘビーユーザー向けの価値が向上",
-              "impact": "Maxユーザーはクレジット消費なしにFable 5を利用でき、実質コスト低減",
               "events": [
-                { "when": "2026-07-17", "what": "Anthropicが統合を発表", "status": "past" },
-                { "when": "2026-07-20", "what": "Max・Team PremiumでFable 5が標準利用可能に（上限の50%まで無料）", "status": "now" },
-                { "when": "継続", "what": "Pro・Team Standardは使用クレジット（従量課金）でFable 5を利用", "status": "future" }
-              ]
-            }
+                {
+                  "when": "2026-07-17",
+                  "label": "",
+                  "description": "",
+                  "status": "past"
+                },
+                {
+                  "when": "2026-07-20",
+                  "label": "",
+                  "description": "",
+                  "status": "now"
+                },
+                {
+                  "when": "継続",
+                  "label": "",
+                  "description": "",
+                  "status": "future"
+                }
+              ],
+              "narrative": "Fable 5がサブスクプランに組み込まれ、ヘビーユーザー向けの価値が向上",
+              "impact": "Maxユーザーはクレジット消費なしにFable 5を利用でき、実質コスト低減"
+            },
+            "alt": "Claude Fable 5のプラン統合タイムライン。7月17日Anthropicが発表、7月20日よりMaxおよびTeam Premiumで利用上限50%まで無料追加。ProとTeam Standardは従量課金継続。"
           }
         },
         {
@@ -285,20 +391,37 @@
             "reaction_boost": 1,
             "total": 15
           },
-          "reaction_signal": { "kind": "hn", "points": 175 },
-          "tags": ["claude-code", "bun", "rust", "tooling"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 175
+          },
+          "tags": [
+            "claude-code",
+            "bun",
+            "rust",
+            "tooling"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude Code がRust製BunランタイムへのマイグレーションをSimon Willisonが報告。HN 175pt獲得。Bunは高速起動・低メモリが特徴。",
             "data": {
               "headline": "Claude Code → Bun（Rust製）へ移行",
               "tldr": "Claude CodeのJSランタイムがRust製Bunに移行。Simon Willisonが報告、HN 175pt",
               "points": [
-                { "label": "変更内容", "description": "Claude CodeのJavaScriptランタイムがRust製Bunに切り替わった" },
-                { "label": "Bunの特徴", "description": "高速起動・低メモリ消費のオールインワンJSランタイム" },
-                { "label": "出典", "description": "Simon Willisonが独立に変更を検出・ブログで報告" }
+                {
+                  "label": "変更内容",
+                  "description": "Claude CodeのJavaScriptランタイムがRust製Bunに切り替わった"
+                },
+                {
+                  "label": "Bunの特徴",
+                  "description": "高速起動・低メモリ消費のオールインワンJSランタイム"
+                },
+                {
+                  "label": "出典",
+                  "description": "Simon Willisonが独立に変更を検出・ブログで報告"
+                }
               ]
-            }
+            },
+            "alt": "Claude Code がRust製BunランタイムへのマイグレーションをSimon Willisonが報告。HN 175pt獲得。Bunは高速起動・低メモリが特徴。"
           }
         },
         {
@@ -327,22 +450,41 @@
             "reaction_boost": 1,
             "total": 16
           },
-          "reaction_signal": { "kind": "hn", "points": 151 },
-          "tags": ["openai", "codex", "context-window", "llm-infra"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 151
+          },
+          "tags": [
+            "openai",
+            "codex",
+            "context-window",
+            "llm-infra"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "OpenAI Codexコンテキストサイズ変更。変更前372,000トークン（100%）→変更後272,000トークン（73%）。100,000トークン（27%）の削減。",
             "data": {
               "headline": "Codex コンテキストサイズ削減",
               "narrative": "急成長するCodexのコスト・レイテンシ管理のためトークン上限を27%削減",
               "impact": "長大なセッションやリポジトリ全体を扱うエージェント利用に影響する可能性",
               "delta_tone": "negative",
-              "before": { "label": "変更前" },
-              "after": { "label": "変更後" },
+              "before": {
+                "label": "変更前"
+              },
+              "after": {
+                "label": "変更後"
+              },
               "metrics": [
-                { "label": "コンテキストサイズ（k tokens）", "before": 372, "after": 272, "before_pct": 100, "after_pct": 73, "delta_tone": "negative" }
+                {
+                  "label": "コンテキストサイズ（k tokens）",
+                  "before": 372,
+                  "after": 272,
+                  "before_pct": 100,
+                  "after_pct": 73,
+                  "delta_tone": "negative"
+                }
               ]
-            }
+            },
+            "alt": "OpenAI Codexコンテキストサイズ変更。変更前372,000トークン（100%）→変更後272,000トークン（73%）。100,000トークン（27%）の削減。"
           }
         }
       ]
@@ -380,19 +522,32 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["codex", "openai", "coding-agent", "growth"],
+          "tags": [
+            "codex",
+            "openai",
+            "coding-agent",
+            "growth"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "OpenAI Codexの成長グラフ。6ヶ月前を1（基準）とした場合、現在は10倍超の7Mユーザー。直近1日で+1M。",
             "data": {
               "title": "Codex 利用者成長",
               "narrative": "6ヶ月で10倍超という急成長。GPT-5.6リリースで勢いがさらに加速",
               "impact": "コーディングエージェント市場での勢力図がClaude Codeを脅かすレベルに達した可能性",
               "bars": [
-                { "label": "6ヶ月前（基準）", "value": 1, "pct": 10 },
-                { "label": "現在（7M users、+10倍超）", "value": 7, "pct": 100 }
+                {
+                  "label": "6ヶ月前（基準）",
+                  "value": 1,
+                  "pct": 10
+                },
+                {
+                  "label": "現在（7M users、+10倍超）",
+                  "value": 7,
+                  "pct": 100
+                }
               ]
-            }
+            },
+            "alt": "OpenAI Codexの成長グラフ。6ヶ月前を1（基準）とした場合、現在は10倍超の7Mユーザー。直近1日で+1M。"
           }
         },
         {
@@ -421,20 +576,37 @@
             "reaction_boost": 1,
             "total": 16
           },
-          "reaction_signal": { "kind": "hn", "points": 239 },
-          "tags": ["claude-code", "computer-use", "agent", "tutorial"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 239
+          },
+          "tags": [
+            "claude-code",
+            "computer-use",
+            "agent",
+            "tutorial"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Claude CodeでスペアMacを制御するガイドのカード。HN 239pt獲得。Computer Useを個人が実装するユースケースが普及しつつあることを示す。",
             "data": {
               "headline": "Claude Code × Mac 制御ガイド",
               "tldr": "Claude CodeにスペアMacを制御させるステップバイステップガイドがHN 239pt獲得",
               "points": [
-                { "label": "概要", "description": "Claude CodeがMacを遠隔自律操作するセットアップ手順を解説" },
-                { "label": "意義", "description": "Computer Useの個人実装が現実的な選択肢として普及しつつある" },
-                { "label": "HN反響", "description": "239pt。実用性・話題性ともに高い評価" }
+                {
+                  "label": "概要",
+                  "description": "Claude CodeがMacを遠隔自律操作するセットアップ手順を解説"
+                },
+                {
+                  "label": "意義",
+                  "description": "Computer Useの個人実装が現実的な選択肢として普及しつつある"
+                },
+                {
+                  "label": "HN反響",
+                  "description": "239pt。実用性・話題性ともに高い評価"
+                }
               ]
-            }
+            },
+            "alt": "Claude CodeでスペアMacを制御するガイドのカード。HN 239pt獲得。Computer Useを個人が実装するユースケースが普及しつつあることを示す。"
           }
         }
       ]
@@ -471,20 +643,37 @@
             "total": 16
           },
           "reaction_signal": null,
-          "tags": ["bonsai", "on-device", "1-bit-llm", "mobile-ai"],
+          "tags": [
+            "bonsai",
+            "on-device",
+            "1-bit-llm",
+            "mobile-ai"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "Bonsaiシリーズのモデルサイズ比較。8Bモデルは1.15GB（iPhoneで動作済み）。27Bモデルも同様にiPhoneで実行可能なサイズとされる。同クラスの通常16-bitモデルと比較した際の圧倒的な軽量化を示す。",
             "data": {
               "title": "Bonsai シリーズ サイズ比較",
               "narrative": "1-bit量子化により8Bで1.15GBを実現。27BもiPhone対応サイズへ",
               "impact": "オンデバイス大規模LLMの実用性が証明され、プライバシー重視の活用が広がる",
               "bars": [
-                { "label": "8B版 Bonsai（1-bit）", "value": 1.15, "pct": 5 },
-                { "label": "8B 通常16-bitモデル（参考）", "value": 16, "pct": 64 },
-                { "label": "27B版 Bonsai（概算）", "value": 25, "pct": 100 }
+                {
+                  "label": "8B版 Bonsai（1-bit）",
+                  "value": 1.15,
+                  "pct": 5
+                },
+                {
+                  "label": "8B 通常16-bitモデル（参考）",
+                  "value": 16,
+                  "pct": 64
+                },
+                {
+                  "label": "27B版 Bonsai（概算）",
+                  "value": 25,
+                  "pct": 100
+                }
               ]
-            }
+            },
+            "alt": "Bonsaiシリーズのモデルサイズ比較。8Bモデルは1.15GB（iPhoneで動作済み）。27Bモデルも同様にiPhoneで実行可能なサイズとされる。同クラスの通常16-bitモデルと比較した際の圧倒的な軽量化を示す。"
           }
         },
         {
@@ -515,21 +704,37 @@
             "total": 18
           },
           "reaction_signal": null,
-          "tags": ["robotics", "context-scaling", "test-time-training", "imitation-learning"],
+          "tags": [
+            "robotics",
+            "context-scaling",
+            "test-time-training",
+            "imitation-learning"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "RoboTTTとSOTAロボットポリシーのコンテキスト長比較。従来SOTA：数〜数十タイムステップ（基準1）対RoboTTT：8,000タイムステップ（約1000倍）。推論レイテンシは増加なし。",
             "data": {
               "headline": "ロボットポリシー コンテキスト長の飛躍",
               "narrative": "従来SOTAの約1000倍のコンテキストを推論コスト増なしで実現。長期・多段階タスクに対応",
               "impact": "ビデオデモからのワンショット模倣学習が実現し、ロボット訓練コスト削減への道を開く",
               "delta_tone": "positive",
-              "before": { "label": "従来 SOTA" },
-              "after": { "label": "RoboTTT" },
+              "before": {
+                "label": "従来 SOTA"
+              },
+              "after": {
+                "label": "RoboTTT"
+              },
               "metrics": [
-                { "label": "コンテキスト長（タイムステップ）", "before": 8, "after": 8000, "before_pct": 1, "after_pct": 100, "delta_tone": "positive" }
+                {
+                  "label": "コンテキスト長（タイムステップ）",
+                  "before": 8,
+                  "after": 8000,
+                  "before_pct": 1,
+                  "after_pct": 100,
+                  "delta_tone": "positive"
+                }
               ]
-            }
+            },
+            "alt": "RoboTTTとSOTAロボットポリシーのコンテキスト長比較。従来SOTA：数〜数十タイムステップ（基準1）対RoboTTT：8,000タイムステップ（約1000倍）。推論レイテンシは増加なし。"
           }
         }
       ]
@@ -565,21 +770,38 @@
             "reaction_boost": 1,
             "total": 16
           },
-          "reaction_signal": { "kind": "hn", "points": 576 },
-          "tags": ["gpt-5-6", "math", "convex-optimization", "ai-research"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 576
+          },
+          "tags": [
+            "gpt-5-6",
+            "math",
+            "convex-optimization",
+            "ai-research"
+          ],
           "x_post": "GPT-5.6が凸最適化分野の30年来の未解決問題をプロンプトで解いたとの報告がReddit r/mathに投稿されHNで576pt獲得。OpenAIのCDC証明発表に続くAIの数学研究への貢献事例として注目されている。\nhttps://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a",
           "figure": {
             "type": "summary-card",
-            "alt": "GPT-5.6による凸最適化30年ギャップ解決の概要カード。HN 576pt獲得。OpenAI CDC証明後の続報として数学コミュニティで話題。AIによる純粋数学研究への有効性を示す。",
             "data": {
               "headline": "GPT-5.6が30年来の数学問題を解決",
               "tldr": "凸最適化の30年来の未解決問題をGPT-5.6がプロンプトで解いたとの報告。HN 576pt",
               "points": [
-                { "label": "分野", "description": "凸最適化（数学の基礎的研究領域）" },
-                { "label": "実績", "description": "30年来の未解決ギャップをGPT-5.6のプロンプトで解決したと報告" },
-                { "label": "背景", "description": "OpenAIのCDC（組み合わせ論的双対コンパクト性）証明発表に続く事例" }
+                {
+                  "label": "分野",
+                  "description": "凸最適化（数学の基礎的研究領域）"
+                },
+                {
+                  "label": "実績",
+                  "description": "30年来の未解決ギャップをGPT-5.6のプロンプトで解決したと報告"
+                },
+                {
+                  "label": "背景",
+                  "description": "OpenAIのCDC（組み合わせ論的双対コンパクト性）証明発表に続く事例"
+                }
               ]
-            }
+            },
+            "alt": "GPT-5.6による凸最適化30年ギャップ解決の概要カード。HN 576pt獲得。OpenAI CDC証明後の続報として数学コミュニティで話題。AIによる純粋数学研究への有効性を示す。"
           }
         },
         {
@@ -610,21 +832,38 @@
             "total": 19
           },
           "reaction_signal": null,
-          "tags": ["gpt-5-6", "reasoning-effort", "llm-tutorial", "rlvr"],
+          "tags": [
+            "gpt-5-6",
+            "reasoning-effort",
+            "llm-tutorial",
+            "rlvr"
+          ],
           "x_post": "Sebastian RaschkaがGPT-5.6の推論努力制御を解説。3サイズ×各5〜6段階の設定がありコスト・速度・品質のトレードオフを詳述。o1〜DeepSeek-R1〜GPT-5.6と続く推論モデルの進化の整理としても必読。\nhttps://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
           "figure": {
             "type": "timeline",
-            "alt": "LLM推論モデルの進化タイムライン。2024年10月：OpenAI o1リリース（推論モデルを一般化）。2025年1月：DeepSeek-R1リリース（RLVRレシピを公開）。2026年7月9日：GPT-5.6（3サイズ×5〜6段階推論設定）リリース。",
             "data": {
               "headline": "推論モデルの進化タイムライン",
               "narrative": "o1が推論モデルを普及させ、DeepSeek-R1がオープンなRLVRレシピを示し、GPT-5.6が多段階推論努力設定を実装",
               "impact": "推論努力の細かい制御が可能になりコスト最適化とパフォーマンスのバランスが取りやすくなった",
               "events": [
-                { "when": "2024年10月", "what": "OpenAI o1リリース——LLM推論モデルを一般化", "status": "past" },
-                { "when": "2025年1月", "what": "DeepSeek-R1リリース——RLVRトレーニングレシピを公開", "status": "past" },
-                { "when": "2026年7月9日", "what": "GPT-5.6（3サイズ×5〜6段階推論設定）リリース", "status": "now" }
+                {
+                  "when": "2024年10月",
+                  "what": "OpenAI o1リリース——LLM推論モデルを一般化",
+                  "status": "past"
+                },
+                {
+                  "when": "2025年1月",
+                  "what": "DeepSeek-R1リリース——RLVRトレーニングレシピを公開",
+                  "status": "past"
+                },
+                {
+                  "when": "2026年7月9日",
+                  "what": "GPT-5.6（3サイズ×5〜6段階推論設定）リリース",
+                  "status": "now"
+                }
               ]
-            }
+            },
+            "alt": "LLM推論モデルの進化タイムライン。2024年10月：OpenAI o1リリース（推論モデルを一般化）。2025年1月：DeepSeek-R1リリース（RLVRレシピを公開）。2026年7月9日：GPT-5.6（3サイズ×5〜6段階推論設定）リリース。"
           }
         },
         {
@@ -654,19 +893,33 @@
             "total": 17
           },
           "reaction_signal": null,
-          "tags": ["meta-analysis", "multi-agent", "research-automation", "evidence-synthesis"],
+          "tags": [
+            "meta-analysis",
+            "multi-agent",
+            "research-automation",
+            "evidence-synthesis"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AutoSynthesisのワークフロー概要カード。入力：自然言語の研究質問。処理：検索戦略策定→文献取得→スクリーニング→全文適格性評価→統計抽出→効果量計算。出力：ランダム効果メタアナリシス。",
             "data": {
               "headline": "AutoSynthesis ワークフロー",
               "tldr": "自然言語の研究質問からメタアナリシスまでを自動化するマルチエージェントシステム",
               "points": [
-                { "label": "入力", "description": "自然言語の研究質問" },
-                { "label": "処理ステップ", "description": "検索戦略策定→文献取得→スクリーニング→全文評価→統計抽出→効果量計算" },
-                { "label": "出力", "description": "ランダム効果メタアナリシス結果" }
+                {
+                  "label": "入力",
+                  "description": "自然言語の研究質問"
+                },
+                {
+                  "label": "処理ステップ",
+                  "description": "検索戦略策定→文献取得→スクリーニング→全文評価→統計抽出→効果量計算"
+                },
+                {
+                  "label": "出力",
+                  "description": "ランダム効果メタアナリシス結果"
+                }
               ]
-            }
+            },
+            "alt": "AutoSynthesisのワークフロー概要カード。入力：自然言語の研究質問。処理：検索戦略策定→文献取得→スクリーニング→全文適格性評価→統計抽出→効果量計算。出力：ランダム効果メタアナリシス。"
           }
         }
       ]
@@ -703,19 +956,33 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["databricks", "openrouter", "funding", "ai-industry"],
+          "tags": [
+            "databricks",
+            "openrouter",
+            "funding",
+            "ai-industry"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "2026年7月18日の業界動向カード。Databricks $188B Series M調達、OpenRouter買収観測、Kimi K3の余波継続。AI基盤企業への投資熱が最高潮に達している。",
             "data": {
               "headline": "AI基盤企業に投資熱——Databricks $188B調達",
               "tldr": "Databricksが$188B Series M調達、OpenRouterに買収観測。Kimi K3効果でAI投資熱が高止まり",
               "points": [
-                { "label": "Databricks", "description": "$188B（約28兆円）のSeries Mを調達——AI基盤企業として史上最高水準" },
-                { "label": "OpenRouter", "description": "買収観測が浮上。LLMルーティングインフラの再編を示唆" },
-                { "label": "背景", "description": "Kimi K3リリース翌日もAIコミュニティの熱狂が継続" }
+                {
+                  "label": "Databricks",
+                  "description": "$188B（約28兆円）のSeries Mを調達——AI基盤企業として史上最高水準"
+                },
+                {
+                  "label": "OpenRouter",
+                  "description": "買収観測が浮上。LLMルーティングインフラの再編を示唆"
+                },
+                {
+                  "label": "背景",
+                  "description": "Kimi K3リリース翌日もAIコミュニティの熱狂が継続"
+                }
               ]
-            }
+            },
+            "alt": "2026年7月18日の業界動向カード。Databricks $188B Series M調達、OpenRouter買収観測、Kimi K3の余波継続。AI基盤企業への投資熱が最高潮に達している。"
           }
         },
         {
@@ -745,19 +1012,33 @@
             "total": 14
           },
           "reaction_signal": null,
-          "tags": ["openai", "codex", "strategy", "super-app"],
+          "tags": [
+            "openai",
+            "codex",
+            "strategy",
+            "super-app"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "OpenAIのスーパーアプリ戦略分析カード。ChatGPT→Codex中心への転換。チャットカテゴリからエージェントカテゴリへ。競合はCursor・Claude Code。",
             "data": {
               "headline": "OpenAI スーパーアプリ戦略",
               "tldr": "OpenAIがCodexをChatGPTの新コアに。自ら開拓したチャットカテゴリから離脱しスーパーアプリへ転換",
               "points": [
-                { "label": "転換内容", "description": "ChatGPTをCodexを中心としたエージェントプラットフォームとして再定義" },
-                { "label": "分析", "description": "OpenAIが自ら普及させた「チャット」カテゴリから離脱しているという逆説的状況" },
-                { "label": "競合背景", "description": "Cursor・Claude Codeとのコーディングエージェント競争への対抗戦略" }
+                {
+                  "label": "転換内容",
+                  "description": "ChatGPTをCodexを中心としたエージェントプラットフォームとして再定義"
+                },
+                {
+                  "label": "分析",
+                  "description": "OpenAIが自ら普及させた「チャット」カテゴリから離脱しているという逆説的状況"
+                },
+                {
+                  "label": "競合背景",
+                  "description": "Cursor・Claude Codeとのコーディングエージェント競争への対抗戦略"
+                }
               ]
-            }
+            },
+            "alt": "OpenAIのスーパーアプリ戦略分析カード。ChatGPT→Codex中心への転換。チャットカテゴリからエージェントカテゴリへ。競合はCursor・Claude Code。"
           }
         }
       ]
@@ -795,19 +1076,33 @@
             "total": 13
           },
           "reaction_signal": null,
-          "tags": ["ai-safety", "deepmind", "military-ai", "alignment"],
+          "tags": [
+            "ai-safety",
+            "deepmind",
+            "military-ai",
+            "alignment"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "Google DeepMind軍事AI契約問題の概要カード。Demis HassabisがAIフレームワーク論を公開する一方、Alex Turnerが国防省との軍事AI契約への反対が奏功せず辞任。Hassabisの売却条件との矛盾が告発された。",
             "data": {
               "headline": "DeepMind軍事AI契約とAlex Turner辞任",
               "tldr": "Google DeepMindが国防省と軍事AI契約を締結。反対した安全研究者Alex Turnerが辞任し内部告発",
               "points": [
-                { "label": "問題", "description": "DeepMindが自律兵器を含む軍事目的への幅広いモデル利用を認める国防省契約を締結" },
-                { "label": "告発者", "description": "AlignmentチームのAlex Turnerが内部で反対・阻止を試みたが失敗し辞任" },
-                { "label": "矛盾", "description": "HassabisがDeepMindをGoogleに売却した際の条件（軍事利用禁止）と相反するとTurnerが主張" }
+                {
+                  "label": "問題",
+                  "description": "DeepMindが自律兵器を含む軍事目的への幅広いモデル利用を認める国防省契約を締結"
+                },
+                {
+                  "label": "告発者",
+                  "description": "AlignmentチームのAlex Turnerが内部で反対・阻止を試みたが失敗し辞任"
+                },
+                {
+                  "label": "矛盾",
+                  "description": "HassabisがDeepMindをGoogleに売却した際の条件（軍事利用禁止）と相反するとTurnerが主張"
+                }
               ]
-            }
+            },
+            "alt": "Google DeepMind軍事AI契約問題の概要カード。Demis HassabisがAIフレームワーク論を公開する一方、Alex Turnerが国防省との軍事AI契約への反対が奏功せず辞任。Hassabisの売却条件との矛盾が告発された。"
           }
         }
       ]
@@ -843,21 +1138,38 @@
             "reaction_boost": 1,
             "total": 14
           },
-          "reaction_signal": { "kind": "hn", "points": 555 },
-          "tags": ["ai-labor", "healthcare-ai", "workplace-ai", "community"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 555
+          },
+          "tags": [
+            "ai-labor",
+            "healthcare-ai",
+            "workplace-ai",
+            "community"
+          ],
           "x_post": "米Kaiser Permanenteの看護師らがAIと職場監視が業務と患者ケアを悪化させていると訴える報告がHNで555pt獲得。医療現場でのAI導入の実態に注目が集まっている。\nhttps://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse",
           "figure": {
             "type": "summary-card",
-            "alt": "Kaiser看護師のAI告発カード。HN 555pt。Kaiser Permanenteの看護師がAIと職場監視が業務と患者ケアを悪化させていると主張。医療AIの現場影響に対する批判的視点。",
             "data": {
               "headline": "医療現場からのAI批判",
               "tldr": "Kaiser看護師がAIと職場監視で業務・患者ケアが悪化と告発。HN 555pt",
               "points": [
-                { "label": "告発内容", "description": "AIシステムと監視ツールが看護師の業務を複雑化し患者ケアの質を低下させている" },
-                { "label": "組織", "description": "Kaiser Permanente（米国最大級の医療保険・医療提供組合）" },
-                { "label": "HN反響", "description": "555pt。医療AI導入の現場影響を示す具体的事例として大きな議論を呼ぶ" }
+                {
+                  "label": "告発内容",
+                  "description": "AIシステムと監視ツールが看護師の業務を複雑化し患者ケアの質を低下させている"
+                },
+                {
+                  "label": "組織",
+                  "description": "Kaiser Permanente（米国最大級の医療保険・医療提供組合）"
+                },
+                {
+                  "label": "HN反響",
+                  "description": "555pt。医療AI導入の現場影響を示す具体的事例として大きな議論を呼ぶ"
+                }
               ]
-            }
+            },
+            "alt": "Kaiser看護師のAI告発カード。HN 555pt。Kaiser Permanenteの看護師がAIと職場監視が業務と患者ケアを悪化させていると主張。医療AIの現場影響に対する批判的視点。"
           }
         },
         {
@@ -886,20 +1198,37 @@
             "reaction_boost": 1,
             "total": 14
           },
-          "reaction_signal": { "kind": "hn", "points": 423 },
-          "tags": ["stackoverflow", "community", "ai-impact", "data-visualization"],
+          "reaction_signal": {
+            "kind": "hn",
+            "points": 423
+          },
+          "tags": [
+            "stackoverflow",
+            "community",
+            "ai-impact",
+            "data-visualization"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AIがStack Overflowに与えた影響の分析カード。HN 423pt。Stack ExchangeのData Explorerを使ったクエリがSO投稿数・ユーザー数激減を示す。ChatGPT登場以降の構造的衰退を可視化。",
             "data": {
               "headline": "AIがStack Overflowに与えた衝撃",
               "tldr": "Stack Overflowの投稿数・ユーザー数激減をグラフで可視化。HN 423pt",
               "points": [
-                { "label": "内容", "description": "Stack ExchangeのData Explorerで投稿数・アクティブユーザー数の急減をグラフ化" },
-                { "label": "転換点", "description": "ChatGPT登場（2022年末）以降の急激な衰退が明確に示された" },
-                { "label": "意義", "description": "AI普及がコミュニティQ&Aプラットフォームを構造的に破壊しつつある事実を象徴" }
+                {
+                  "label": "内容",
+                  "description": "Stack ExchangeのData Explorerで投稿数・アクティブユーザー数の急減をグラフ化"
+                },
+                {
+                  "label": "転換点",
+                  "description": "ChatGPT登場（2022年末）以降の急激な衰退が明確に示された"
+                },
+                {
+                  "label": "意義",
+                  "description": "AI普及がコミュニティQ&Aプラットフォームを構造的に破壊しつつある事実を象徴"
+                }
               ]
-            }
+            },
+            "alt": "AIがStack Overflowに与えた影響の分析カード。HN 423pt。Stack ExchangeのData Explorerを使ったクエリがSO投稿数・ユーザー数激減を示す。ChatGPT登場以降の構造的衰退を可視化。"
           }
         }
       ]
@@ -935,19 +1264,33 @@
             "reaction_boost": 0,
             "total": 17
           },
-          "tags": ["agent-security", "authentication", "japan", "hands-on"],
+          "tags": [
+            "agent-security",
+            "authentication",
+            "japan",
+            "hands-on"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "LINEヤフーのAIエージェントセキュリティハンズオン「ID-JAG The Hard Way」カード。失敗事例を通じてAIエージェントの認証・認可の落とし穴を学べる実践的コンテンツ。",
             "data": {
               "headline": "ID-JAG The Hard Way：AIエージェントセキュリティ実践",
               "tldr": "LINEヤフーがAIエージェントの認証・認可失敗事例から学ぶハンズオンを公開",
               "points": [
-                { "label": "内容", "description": "AIエージェントが認証・認可の落とし穴に嵌まる失敗事例をハンズオン形式で体験" },
-                { "label": "背景", "description": "LINEヤフーの認証基盤Athenzチームが社内知見をもとに作成。実務に直結する内容" },
-                { "label": "活用", "description": "AIエージェント開発者がセキュリティ設計のアンチパターンを事前に学べる貴重な資料" }
+                {
+                  "label": "内容",
+                  "description": "AIエージェントが認証・認可の落とし穴に嵌まる失敗事例をハンズオン形式で体験"
+                },
+                {
+                  "label": "背景",
+                  "description": "LINEヤフーの認証基盤Athenzチームが社内知見をもとに作成。実務に直結する内容"
+                },
+                {
+                  "label": "活用",
+                  "description": "AIエージェント開発者がセキュリティ設計のアンチパターンを事前に学べる貴重な資料"
+                }
               ]
-            }
+            },
+            "alt": "LINEヤフーのAIエージェントセキュリティハンズオン「ID-JAG The Hard Way」カード。失敗事例を通じてAIエージェントの認証・認可の落とし穴を学べる実践的コンテンツ。"
           }
         },
         {
@@ -976,20 +1319,37 @@
             "reaction_boost": 1,
             "total": 16
           },
-          "reaction_signal": { "kind": "hatena", "points": 325 },
-          "tags": ["aws", "cloud", "bug", "japan"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "points": 325
+          },
+          "tags": [
+            "aws",
+            "cloud",
+            "bug",
+            "japan"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "AWS Cost Explorerバグ報告カード。はてブ 325pt。Cost Explorerが兆ドル規模の誤見積もりを表示するバグが発生し日本のAWSユーザーの間で話題に。",
             "data": {
               "headline": "AWS Cost Explorer 兆ドル誤見積もりバグ",
               "tldr": "AWS Cost Explorerが兆ドル規模の誤見積もりを表示するバグ。はてブ 325pt",
               "points": [
-                { "label": "バグ内容", "description": "Cost Explorerが実際よりも遥かに高い兆ドル規模の見積もりを表示" },
-                { "label": "反響", "description": "はてなブックマーク 325pt。日本のクラウドエンジニアの間で広く共有" },
-                { "label": "教訓", "description": "クラウドコストの自動計算ツールへの過信は危険。定期的な手動確認が重要" }
+                {
+                  "label": "バグ内容",
+                  "description": "Cost Explorerが実際よりも遥かに高い兆ドル規模の見積もりを表示"
+                },
+                {
+                  "label": "反響",
+                  "description": "はてなブックマーク 325pt。日本のクラウドエンジニアの間で広く共有"
+                },
+                {
+                  "label": "教訓",
+                  "description": "クラウドコストの自動計算ツールへの過信は危険。定期的な手動確認が重要"
+                }
               ]
-            }
+            },
+            "alt": "AWS Cost Explorerバグ報告カード。はてブ 325pt。Cost Explorerが兆ドル規模の誤見積もりを表示するバグが発生し日本のAWSユーザーの間で話題に。"
           }
         },
         {
@@ -1018,22 +1378,31 @@
             "reaction_boost": 1,
             "total": 17
           },
-          "reaction_signal": { "kind": "hatena", "points": 104 },
-          "tags": ["ai-labor", "salary", "japan", "engineers"],
+          "reaction_signal": {
+            "kind": "hatena",
+            "points": 104
+          },
+          "tags": [
+            "ai-labor",
+            "salary",
+            "japan",
+            "engineers"
+          ],
           "figure": {
             "type": "comparison",
-            "alt": "AIによるITエンジニア賃金二極化の比較図。高スキルエンジニア（AI活用型）は賃金上昇、低スキルエンジニア（AI代替型）は賃金下落という対比を示す。",
             "data": {
+              "headline": "",
+              "before": {
+                "label": "Before"
+              },
+              "after": {
+                "label": "After"
+              },
+              "metrics": [],
               "narrative": "AIの普及はITエンジニア全体の賃金を一様に変化させるのではなく、スキルレベルによって明暗を分ける二極化をもたらしている。",
-              "impact": "日本のITエンジニアにとってAI活用スキルの習得が賃金防衛のための喫緊の課題となる。",
-              "left_label": "高スキルエンジニア（AI活用型）",
-              "right_label": "低スキルエンジニア（AI代替型）",
-              "items": [
-                { "metric": "賃金トレンド", "left": "上昇（AIで生産性向上）", "right": "下落（AI代替リスク高）" },
-                { "metric": "AI活用度", "left": "AIを強力なツールとして使いこなす", "right": "AIに代替されやすいルーティン業務が中心" },
-                { "metric": "市場価値", "left": "需要増加。AIが扱えない高度な判断が求められる", "right": "需要減少。AIがより安価・高速に代替できる" }
-              ]
-            }
+              "impact": "日本のITエンジニアにとってAI活用スキルの習得が賃金防衛のための喫緊の課題となる。"
+            },
+            "alt": "AIによるITエンジニア賃金二極化の比較図。高スキルエンジニア（AI活用型）は賃金上昇、低スキルエンジニア（AI代替型）は賃金下落という対比を示す。"
           }
         },
         {
@@ -1062,19 +1431,33 @@
             "reaction_boost": 0,
             "total": 16
           },
-          "tags": ["plamo", "reward-model", "japanese-llm", "japan"],
+          "tags": [
+            "plamo",
+            "reward-model",
+            "japanese-llm",
+            "japan"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "PLaMo Reward公開カード。Preferred Networksが日本語特化報酬モデルをリリース。日本語RLHFと評価に使える希少なリソース。",
             "data": {
               "headline": "PLaMo Reward：日本語特化報酬モデル公開",
               "tldr": "PFNが日本語LLM評価・RLHF用の報酬モデルをリリース",
               "points": [
-                { "label": "内容", "description": "日本語に特化した報酬モデル「PLaMo Reward」をPreferred Networksが公開" },
-                { "label": "用途", "description": "日本語RLHF・LLM品質評価に活用可能。日本語対応報酬モデルは希少" },
-                { "label": "意義", "description": "国産AI技術の蓄積。国内研究者・企業がAIDD実践例として活用できる" }
+                {
+                  "label": "内容",
+                  "description": "日本語に特化した報酬モデル「PLaMo Reward」をPreferred Networksが公開"
+                },
+                {
+                  "label": "用途",
+                  "description": "日本語RLHF・LLM品質評価に活用可能。日本語対応報酬モデルは希少"
+                },
+                {
+                  "label": "意義",
+                  "description": "国産AI技術の蓄積。国内研究者・企業がAIDD実践例として活用できる"
+                }
               ]
-            }
+            },
+            "alt": "PLaMo Reward公開カード。Preferred Networksが日本語特化報酬モデルをリリース。日本語RLHFと評価に使える希少なリソース。"
           }
         },
         {
@@ -1103,19 +1486,33 @@
             "reaction_boost": 0,
             "total": 17
           },
-          "tags": ["aidd", "enterprise-ai", "japan", "software-development"],
+          "tags": [
+            "aidd",
+            "enterprise-ai",
+            "japan",
+            "software-development"
+          ],
           "figure": {
             "type": "summary-card",
-            "alt": "LINEヤフーのAIDD（AIドリブン開発）ワークショップ知見共有カード。大企業での組織的AI活用の実践事例として日本のエンジニアコミュニティにとって参考価値が高い。",
             "data": {
               "headline": "LINEヤフーのAIDD実践ワークショップ知見",
               "tldr": "LINEヤフーが社内AIドリブン開発ワークショップの実践知見をブログ公開",
               "points": [
-                { "label": "内容", "description": "AIを活用した開発プロセスの社内浸透方法とワークショップの設計・実施知見" },
-                { "label": "規模", "description": "LINEヤフー（月間ユーザー数日本最大級）での大規模組織的AI活用の事例" },
-                { "label": "価値", "description": "日本の主要テック企業のAIDD実践例として、他の企業のAI導入の参考に" }
+                {
+                  "label": "内容",
+                  "description": "AIを活用した開発プロセスの社内浸透方法とワークショップの設計・実施知見"
+                },
+                {
+                  "label": "規模",
+                  "description": "LINEヤフー（月間ユーザー数日本最大級）での大規模組織的AI活用の事例"
+                },
+                {
+                  "label": "価値",
+                  "description": "日本の主要テック企業のAIDD実践例として、他の企業のAI導入の参考に"
+                }
               ]
-            }
+            },
+            "alt": "LINEヤフーのAIDD（AIドリブン開発）ワークショップ知見共有カード。大企業での組織的AI活用の実践事例として日本のエンジニアコミュニティにとって参考価値が高い。"
           }
         }
       ]
@@ -1151,18 +1548,35 @@
             "reaction_boost": 0,
             "total": 15
           },
-          "tags": ["china-gpu", "llm-inference", "hardware", "china"],
+          "tags": [
+            "china-gpu",
+            "llm-inference",
+            "hardware",
+            "china"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "中国製GPU（非NVIDIA）のLLM推論性能指標。スループット増加と遅延半減を示すメトリクスバー。",
             "data": {
               "narrative": "中国製GPUがNVIDAに依存せずにLLM推論で実用的なパフォーマンスを達成し、中国のAI半導体自立化が現実のものとなってきた。",
               "impact": "米国の輸出規制の効果を減じる可能性があり、地政学的なAI競争に影響を与える。",
               "bars": [
-                { "label": "スループット改善", "before_pct": 40, "after_pct": 100, "pct": 100, "description": "国産GPU直通によるスループット急増" },
-                { "label": "遅延削減", "before_pct": 100, "after_pct": 50, "pct": 50, "description": "推論遅延が半減（100→50%相当）" }
+                {
+                  "label": "スループット改善",
+                  "before_pct": 40,
+                  "after_pct": 100,
+                  "pct": 100,
+                  "description": "国産GPU直通によるスループット急増"
+                },
+                {
+                  "label": "遅延削減",
+                  "before_pct": 100,
+                  "after_pct": 50,
+                  "pct": 50,
+                  "description": "推論遅延が半減（100→50%相当）"
+                }
               ]
-            }
+            },
+            "alt": "中国製GPU（非NVIDIA）のLLM推論性能指標。スループット増加と遅延半減を示すメトリクスバー。"
           }
         },
         {
@@ -1191,18 +1605,35 @@
             "reaction_boost": 0,
             "total": 16
           },
-          "tags": ["evaluation", "self-improvement", "shanghai-ai-lab", "china"],
+          "tags": [
+            "evaluation",
+            "self-improvement",
+            "shanghai-ai-lab",
+            "china"
+          ],
           "figure": {
             "type": "metric-bars",
-            "alt": "上海AI Lab Harnessの性能改善指標。自己進化型評価フレームワークにより従来手法比で+104%の性能向上を達成したことを示すメトリクスバー。",
             "data": {
               "narrative": "上海AI LabのHarnessは評価プロセス自体をAIに自己改善させるアーキテクチャにより、従来の静的評価フレームワークを大幅に上回る性能を実現した。",
               "impact": "自己進化型評価フレームワークが普及すれば、AIモデルの品質向上サイクルが劇的に加速する可能性がある。",
               "bars": [
-                { "label": "Harness（自己進化型）", "before_pct": 0, "after_pct": 100, "pct": 100, "description": "上海AI Lab Harness：従来比+104%" },
-                { "label": "従来手法（ベースライン）", "before_pct": 0, "after_pct": 49, "pct": 49, "description": "静的評価フレームワーク（ベースライン）" }
+                {
+                  "label": "Harness（自己進化型）",
+                  "before_pct": 0,
+                  "after_pct": 100,
+                  "pct": 100,
+                  "description": "上海AI Lab Harness：従来比+104%"
+                },
+                {
+                  "label": "従来手法（ベースライン）",
+                  "before_pct": 0,
+                  "after_pct": 49,
+                  "pct": 49,
+                  "description": "静的評価フレームワーク（ベースライン）"
+                }
               ]
-            }
+            },
+            "alt": "上海AI Lab Harnessの性能改善指標。自己進化型評価フレームワークにより従来手法比で+104%の性能向上を達成したことを示すメトリクスバー。"
           }
         }
       ]

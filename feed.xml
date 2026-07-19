@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 17 Jul 2026 16:54:50 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 16:28:01 GMT</lastBuildDate>
+    <item>
+      <title>Kimi K3が「史上最大のオープンモデル」として登場——Claude Fable 5がMaxプランに統合、GPT-5.6が30年来の数学問題を解決</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20</link>
+      <guid isPermaLink="false">aidd-day-2026-07-20</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <description>中国Moonshot AIが総パラメータ2.8兆（アクティブ50B）の「Kimi K3」をオープンリリースし、「史上最大のオープンモデル」として注目を集めた。Latent SpaceはOpus 4.8クラスの性能をSonnet 5価格で提供すると伝えている。AnthropicはClaude Fable 5を本日（7月20日）よりMaxおよびTeam Premiumプランに標準統合すると発表し、はてブで98ブックマークを獲得。OpenAIではGPT-5.6が凸最適化分野の30年来の未解決問題をプロンプトで解いたとする報告がHNで576ptを集めた。業界では、Databricksが$188B Series Mを調達しAI評価額が急騰、OpenAIはCodexをChatGPTの新UIとして再定義しつつある。Google DeepMindでは軍事AI契約問題をめぐりAlex Turnerが辞任し安全研究者の内部告発が注目を浴びた。日本ではAWS Cost Explorerのバグにより月30円のユーザーに25億ドルの見積が届く騒動（はてブ325）が起き、ITエンジニアの「AI代替」業務は報酬が最大5割安くなるとの日経報道も話題を呼んだ。
+
+【今日の必読】
+・Kimi K3（2.8T-A50B）：史上最大のオープンモデル登場——Opus 4.8クラスをSonnet 5価格で
+・「Claude Fable 5」サブスクに統合 Max・Team Premiumプラン対象
+・GPT-5.6がプロンプトで凸最適化の30年来の未解決問題を解決——HN 576pt
+・LLMの推論努力量を制御する——GPT-5.6の5〜6段階設定をSebastian Raschkaが解説
+・Inkling（975B-A41B）：Thinkyが米国初のApache 2.0大規模マルチモーダルMoEを公開
+・Kaiser看護師ら「AIと職場監視が業務と患者ケアを悪化させている」——HN 555pt</description>
+    </item>
     <item>
       <title>Kimi K3（2.8T）が史上最大のオープンモデルに登場、InklingもApache 2.0で公開——Anthropicが州レベルのAI規制を主導</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-18</link>
@@ -439,21 +454,6 @@
 ・NVIDIA Cosmos 3 登場——物理 AI 推論・行動向け初のオープンオムニモデル
 ・LLM を超えて——スケーラブルな企業 AI 採用にはエージェントロジックが不可欠（IBM Research）
 ・Anthropic、SEC に S-1 草稿を機密提出——$965B 評価額で IPO 準備が公式始動</description>
-    </item>
-    <item>
-      <title>Anthropic が Zero Trust for AI Agents 設計原則を公開（はてブ 311 件）・LiquidAI LFM2.5-8B-A1B が本日リリース・SoftBank が仏に最大 €750 億データセンター投資——Microsoft MagenticLit</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-01</link>
-      <guid isPermaLink="false">aidd-day-2026-06-01</guid>
-      <pubDate>Sun, 31 May 2026 20:00:00 GMT</pubDate>
-      <description>6月1日は、AIエージェントのセキュリティ設計とモデルの多様化が同時に進んだ一日だった。Anthropicはエージェント時代のゼロトラスト設計原則をclaude.com/blogに公開し、日本のエンジニアコミュニティでははてなブックマーク311件の記録的反響を呼んだ。LiquidAIが本日LFM2.5-8B-A1Bをリリースし、MicrosoftはMAI-Image-2.5でArenaテキスト→画像リーダーボード3位を達成、さらにMagenticLiteで小型モデル向けエージェント基盤も発表した。インフラ・投資面ではSoftBankが仏に最大€750億のデータセンター投資を宣言し、GroqはNVIDIAとの大型ディール後に$6.5億の追加調達を追求している。日本では「Ollama×Playwright完全無料Webエージェント」Zenn記事が168はてブを集め、ローカルVLMを使ったエージェント実装への関心の高さが改めて示された。
-
-【今日の必読】
-・AIエージェントのためのゼロトラスト——Anthropic が設計原則を公式ブログに公開
-・Ollama×Playwright で作る完全無料の Web 調査エージェント
-・Microsoft、小型 LLM 向けエージェント基盤 MagenticLite・MagenticBrain を発表
-・Microsoft MAI-Image-2.5、Arena テキスト→画像リーダーボードで 3 位を達成
-・LLM に「ワーキングメモリ」を実装——特殊トークン列で潜在推論を単一前向きパスで完結
-・VideoMLA：マルチヘッド潜在アテンションで動画生成の KV メモリを 92.7% 削減</description>
     </item>
   </channel>
 </rss>
