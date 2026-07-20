@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 19 Jul 2026 16:28:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 17:14:56 GMT</lastBuildDate>
+    <item>
+      <title>Claude Fable 5がJacobian予想に反例を提示——40年来の数学未解決問題でAIが成果（HN 594pt）</title>
+      <link>https://xcancel.com/__alpoge__/status/2079028340955197566</link>
+      <guid isPermaLink="false">aidd-item-hn-48973869</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/hn-48973869">AI Daily Digest 2026-07-21</source>
+      <description>Claude Fable 5が数学の長年の未解決問題「Jacobian予想」に反例を生成したとするXポストがHNで594ptを集めた。Jacobian予想は多変数多項式写像に関する代数幾何の未解決問題で、数学コミュニティに広く知られる難問だ。AIが純粋数学の開放問題で具体的な成果を示したとする報告は、AI数学推論能力の到達点をめぐる議論を再燃させている。</description>
+    </item>
+    <item>
+      <title>NVIDIAがエッジ向け物理AIワールドモデル「Cosmos 3 Edge」を発表——自律ロボティクスへの組み込み展開を加速</title>
+      <link>https://huggingface.co/blog/nvidia/cosmos3edge</link>
+      <guid isPermaLink="false">aidd-item-hf_blog-introducing-cosmos-3-edge</guid>
+      <pubDate>Mon, 20 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/hf_blog-introducing-cosmos-3-edge">AI Daily Digest 2026-07-21</source>
+      <description>NVIDIAがHugging Face公式ブログでエッジデバイス向けに最適化した物理AIワールドモデル「Cosmos 3 Edge」を正式発表した。Cosmosシリーズはロボティクスや自動運転の世界モデルとして設計されており、Edge版ではリソース制約のある組み込み環境への展開が可能になる。同日公開されたことで、物理AI分野でのエッジ推論が本格化する節目となる。</description>
+    </item>
+    <item>
+      <title>AIがBlenderを勝手に操作 3D制作のハードルが一気に下がった (1/4)</title>
+      <link>https://ascii.jp/elem/000/004/420/4420739</link>
+      <guid isPermaLink="false">aidd-item-hatena_it-ai-blender-3d-1-4</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/hatena_it-ai-blender-3d-1-4">AI Daily Digest 2026-07-21</source>
+      <description>ASCII.jpの記事がClaude Fable 5やOpenAI Codex（GPT-5.6 Sol）を使って3D制作ツール「Blender」を自律操作する手法を紹介した。初心者には学習コストが高いBlenderをAIエージェントが操作・自動化することで、3D制作の入門障壁が大きく下がると解説。MCPや外部ソフト連携によりBlenderのAIエージェント化が現実的な選択肢となっていることを伝えており、はてブ377を獲得した。</description>
+    </item>
+    <item>
+      <title>採用審査AIは人間より65%強く民族差別——高推論モデルほど偏りが強い逆説</title>
+      <link>https://technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans</link>
+      <guid isPermaLink="false">aidd-item-mit_tr_ai-ai-is-more-likely-than-humans-to-form-biases-whe</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/mit_tr_ai-ai-is-more-likely-than-humans-to-form-biases-whe">AI Daily Digest 2026-07-21</source>
+      <description>採用シミュレーション実験で、ChatGPT・Claude・Geminiを含むLLMが人間参加者より約65%高い民族分離スコアを記録した研究をMIT Technology Reviewが報じた。さらに、o3やDeepSeek R1といった高推論モデルほどステレオタイプ的な偏りが強いという逆説的な知見も得られた。チャットボットのメモリ機能が改善されるにつれ、初期偏見が固定化されるリスクも懸念される。</description>
+    </item>
+    <item>
+      <title>grepを超えて——Claude Code製品責任者が語るコンテキスト重視のAIコーディングハーネスの優位性</title>
+      <link>https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness</link>
+      <guid isPermaLink="false">aidd-item-arstechnica_ai-beyond-grep-the-case-for-a-context-rich-ai-codin</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/arstechnica_ai-beyond-grep-the-case-for-a-context-rich-ai-codin">AI Daily Digest 2026-07-21</source>
+      <description>Ars TechnicaがClaude Code製品責任者Cat Wu（Anthropic）へのインタビューを軸に、AI支援開発の最先端を解説した。記事はモデルそのものより「モデルを管理するソフトウェア側」に最近の開発の主戦場があると指摘する。コンテキスト情報をリッチに活用するAIコーディングハーネスが、単純なgrep的コード検索より優れた開発体験をもたらす理由が詳述されている。</description>
+    </item>
+    <item>
+      <title>ニューヨーク市がAI利用の不動産広告開示義務化を検討——市長がAI生成画像の秘匿禁止を表明</title>
+      <link>https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties</link>
+      <guid isPermaLink="false">aidd-item-hn-48962983</guid>
+      <pubDate>Sat, 18 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/hn-48962983">AI Daily Digest 2026-07-21</source>
+      <description>ニューヨーク市のMamdani市長が、不動産業者によるAI利用（特にAI生成画像の使用）を広告中に秘匿することを禁じる方針を表明した。買い主・借り主を保護するための開示義務化が検討されており、物件写真の偽装問題への規制対応として注目を集めている。HN 587ptを獲得し、AI画像規制が都市レベルで具体化する事例として広く議論された。</description>
+    </item>
     <item>
       <title>Kimi K3（2.8T-A50B）：史上最大のオープンモデル登場——Opus 4.8クラスをSonnet 5価格で</title>
       <link>https://latent.space/p/ainews-kimi-k3-28t-a50b-the-largest</link>
@@ -581,54 +629,6 @@
       <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/japan-goodpatch-15-designers">AI Daily Digest 2026-06-27</source>
       <description>グッドパッチのサービスデザイナーが、15人のデザイナーチームでClaude Code×GitHubを活用して組織運営を「個人レベル」から「組織レベル」の生産性向上へと引き上げた経験を報告した。デザイナーがクライアントワークとは別に行う「組織貢献活動」という社内プロジェクトに、Claude CodeとGitHubを組み合わせた開発フローを非エンジニアのデザイナー15人で実践した。個人の取り組みにとどまらず組織全体の運営に展開した先進事例として、はてブ178件という高い関心を集めている。</description>
-    </item>
-    <item>
-      <title>リアルタイム音声AIは「聞こえている」が「聴いていない」——感情・声調を無視する重大な安全リスクを実証</title>
-      <link>https://arxiv.org/abs/2606.26083v1</link>
-      <guid isPermaLink="false">aidd-item-research-realtime-voice-ai</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/research-realtime-voice-ai">AI Daily Digest 2026-06-26</source>
-      <description>4つの主要リアルタイム音声AIシステム（OpenAI GPT Realtime 2、Google Gemini 3.1 Flash Live、Alibaba Qwen3.5 Omni Plus・Omni Flash）を評価した研究論文。3つの重要シナリオで全システムが「言葉」のみを処理し感情・声調を無視することを実証。「泣きながら大丈夫と言う発信者への対応」「怯えた声での送金承認」「明らかに皮肉な同意での登録処理」など危険な応答パターンが確認された。</description>
-    </item>
-    <item>
-      <title>OpenAI初の自社製推論チップ「Jalapeño」発表——Broadcomと共同開発、年内展開へ</title>
-      <link>https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale</link>
-      <guid isPermaLink="false">aidd-item-industry-openai-jalapeno-broadcom</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/industry-openai-jalapeno-broadcom">AI Daily Digest 2026-06-26</source>
-      <description>OpenAIとBroadcomがLLM推論に特化した独自チップ「Jalapeño」を発表。同社初の「インテリジェンスプロセッサ」として位置付けており、大規模データセンターへの展開を想定している。設計からテープアウトまで9カ月で完了したといい、これを長期計画の第1世代として、複数世代にわたってチップを改善・展開していく計画を示した。</description>
-    </item>
-    <item>
-      <title>Gemini 3.5 Flash gains built-in Computer Use tool for browser, mobile, and desktop automation</title>
-      <link>https://itmedia.co.jp/aiplus/article/2606/25/2000000127</link>
-      <guid isPermaLink="false">aidd-item-agents-gemini-flash-computer-use</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/agents-gemini-flash-computer-use">AI Daily Digest 2026-06-26</source>
-      <description>GoogleがGemini 3.5 FlashにComputer Use機能を標準ツールとして搭載した。これまで専用モデルでのみ提供していた画面操作機能（スクリーン認識・マウス・キーボード自動実行）を主力モデルへ統合したもの。開発者はWebブラウザ・モバイル・デスクトップ環境で動作するエージェントを構築できるようになった。2026年5月にGAとなったGemini 3.5 Flashへの大型機能追加。</description>
-    </item>
-    <item>
-      <title>富士通、Transformerの最大475倍GPUスループットの新LLMアーキテクチャ「PHOTON」を開発</title>
-      <link>https://itmedia.co.jp/aiplus/article/2606/24/2000000125</link>
-      <guid isPermaLink="false">aidd-item-japan-fujitsu-photon-475x</guid>
-      <pubDate>Tue, 23 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/japan-fujitsu-photon-475x">AI Daily Digest 2026-06-26</source>
-      <description>富士通がGPU当たりの処理性能（スループット）がTransformerの最大475倍に達するという新LLMアーキテクチャ「PHOTON（フォトン）」の開発を発表した。LLMの運用に必要なGPUを大幅に削減しコスト低減につなげられるとしており、はてなブックマークで139件の反響を集めた。</description>
-    </item>
-    <item>
-      <title>H100 one-GPU Apache 2.0 coding MoE: Cohere North Mini Code</title>
-      <link>https://zenn.dev/okssusucha/articles/20260625-cohere-north-mini-code</link>
-      <guid isPermaLink="false">aidd-item-new-cohere-north-mini-code</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/new-cohere-north-mini-code">AI Daily Digest 2026-06-26</source>
-      <description>CohereがApache 2.0ライセンスで「North Mini Code」を公開。30B総パラメータ・アクティブ3BのMoE（Mixture-of-Experts）構成で、H100 GPU一枚に収まる。エンタープライズ向けRAGで知られるCohereが、初めてオープンウェイトのエージェント向けコーディングモデルを投入した転換点となる。単純なコード生成ではなく、エージェントの中でツールを呼びながら継続的に作業を進める用途を想定した設計になっている。</description>
-    </item>
-    <item>
-      <title>2700万ドルのAI代理戦争——AnthropicとOpenAIが支援した米議会選挙がドローで決着</title>
-      <link>https://theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results</link>
-      <guid isPermaLink="false">aidd-item-buzz-ai-proxy-war-ny12</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-26/buzz-ai-proxy-war-ny12">AI Daily Digest 2026-06-26</source>
-      <description>AnthropicとOpenAIが合計2700万ドルを投じたニューヨーク州第12区議会選挙での政治的代理戦争が引き分けに終わった。AI推進派スーパーPACに標的にされたAlex Bores氏（元ニューヨーク州議会議員）が人気急上昇したものの、民主党予備選で僅差の敗北。Boresは元Google社員のAI推進派として知られており、AI企業が選挙政治に本格参入した初の大型事例として注目を集めた。</description>
     </item>
   </channel>
 </rss>

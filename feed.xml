@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 19 Jul 2026 16:28:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 17:14:56 GMT</lastBuildDate>
+    <item>
+      <title>Claude Fable 5がJacobian予想に反例——Cosmos 3 Edgeも同日発表、AI採用審査は人間比65%高い民族差別</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21</link>
+      <guid isPermaLink="false">aidd-day-2026-07-21</guid>
+      <pubDate>Mon, 20 Jul 2026 20:00:00 GMT</pubDate>
+      <description>Anthropic Claude Fable 5が40年来の数学未解決問題「Jacobian予想」に反例を提示したとするXポストがHNで594ptを集め、AI数学推論の限界をめぐる議論が活発化した。NVIDIAは同日、エッジ向け物理AIワールドモデル「Cosmos 3 Edge」をHugging Face公式ブログで発表し、自律ロボティクス・自動運転への組み込み展開に道を開いた。MIT Technology Reviewの調査ではChatGPT・Claude・GeminiなどのLLMが採用審査で人間参加者より65%高い民族差別スコアを記録し、高推論モデル（o3・R1）ほど偏りが強いことが明らかになった。中国ではMoonshot AIがKimi K3の利用急増を受けて新規登録を停止し、AlibabaのQwen-Audio-3.0-TTSがTTSグローバルランキング首位を獲得した。日本ではAIがBlender 3Dを自律操作する手法が注目（はてブ377）を集め、Anthropic社員によるClaude活用術5選も好評を博した（はてブ316）。
+
+【今日の必読】
+・Claude Fable 5がJacobian予想に反例を提示——40年来の数学未解決問題でAIが成果（HN 594pt）
+・NVIDIAがエッジ向け物理AIワールドモデル「Cosmos 3 Edge」を発表——自律ロボティクスへの組み込み展開を加速
+・AIがBlenderを勝手に操作 3D制作のハードルが一気に下がった (1/4)
+・採用審査AIは人間より65%強く民族差別——高推論モデルほど偏りが強い逆説
+・grepを超えて——Claude Code製品責任者が語るコンテキスト重視のAIコーディングハーネスの優位性
+・ニューヨーク市がAI利用の不動産広告開示義務化を検討——市長がAI生成画像の秘匿禁止を表明</description>
+    </item>
     <item>
       <title>Kimi K3が「史上最大のオープンモデル」として登場——Claude Fable 5がMaxプランに統合、GPT-5.6が30年来の数学問題を解決</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-20</link>
@@ -439,21 +454,6 @@
 ・COLLEAGUE.SKILL：人間の作業履歴からエージェントスキルを自動生成——215 スキル・165 コントリビューター・累計 10 万スターのエコシステム誕生
 ・清华大学 AIR、ロボット RL 訓練フレームワーク「UniLab」を OSS 公開——人型ロボット訓練を 3 分・10 倍高速化、Mac でも動作
 ・OpenAI Codex、データ分析・営業・投資銀行など 6 職種向けプラグインと Web サイト作成機能「Sites」を追加</description>
-    </item>
-    <item>
-      <title>Anthropic が IPO 向け S-1 を SEC に機密提出（評価額 $965B）・NVIDIA Cosmos 3 が物理 AI 向け初のオープンオムニモデルを公開——GitHub Copilot が AI Credits 従量課金制へ移行、国内はてブ上位は Claude</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-02</link>
-      <guid isPermaLink="false">aidd-day-2026-06-02</guid>
-      <pubDate>Mon, 01 Jun 2026 20:00:00 GMT</pubDate>
-      <description>2026 年 6 月 2 日のAIニュース。Anthropicが米証券取引委員会（SEC）にForm S-1の機密草稿を提出し、IPO準備が公式に始動した（Series H $65B調達・$965B評価額）。NVIDIAはロボティクス・自律走行向けの初のオープンオムニモデル「Cosmos 3」をHugging Face経由で公開し、物理AI開発の民主化を促進する。GitHubはCopilotの課金をAI Credits従量制に移行（6月1日付）し、コード補完は全有料プランで引き続き無制限。研究面ではIBM Researchがエンタープライズ AI のスケールにはエージェントロジックが不可欠と提唱し、HF Papersでは検索エージェント・スキル蒸留・長文脈推論の新手法が相次いで公開された。国内ではClaude Codeチャンピオンキット（394はてブ）やZero Trustエージェント解説（189はてブ）が高い反響を集めた。
-
-【今日の必読】
-・Claude Code チャンピオン キット
-・GitHub Copilot、AI Credits 従量課金制へ移行——6 月 1 日より全プランに適用
-・Anthropic の Zero Trust for AI Agents 設計原則を読み解く
-・NVIDIA Cosmos 3 登場——物理 AI 推論・行動向け初のオープンオムニモデル
-・LLM を超えて——スケーラブルな企業 AI 採用にはエージェントロジックが不可欠（IBM Research）
-・Anthropic、SEC に S-1 草稿を機密提出——$965B 評価額で IPO 準備が公式始動</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-07-20T00:00:00.000Z",
+  "updated_at": "2026-07-21T05:00:00.000Z",
   "entries": [
+    {
+      "date": "2026-07-21",
+      "headline": "Claude Fable 5がJacobian予想に反例——Cosmos 3 Edgeも同日発表、AI採用審査は人間比65%高い民族差別",
+      "item_count": 18,
+      "top_picks_count": 6
+    },
     {
       "date": "2026-07-20",
       "headline": "Kimi K3が「史上最大のオープンモデル」として登場——Claude Fable 5がMaxプランに統合、GPT-5.6が30年来の数学問題を解決",

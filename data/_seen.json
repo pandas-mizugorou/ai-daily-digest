@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-20T00:00:00.000Z",
+  "updated_at": "2026-07-21T05:00:00.000Z",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -6246,8 +6246,8 @@
     "1253fdbd5ceae530b4ffc2cc21af3aeb4e3c0d29": {
       "url_prefix": "https://theverge.com/ai-artificial",
       "first_seen_at": "2026-07-04",
-      "last_seen_at": "2026-07-04",
-      "last_seen_count": 1
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 2
     },
     "39217bafd159845d3063ca44ccceddf61e6f136a": {
       "url_prefix": "https://magazine.sebastianraschka.",
@@ -7075,6 +7075,108 @@
       "url_prefix": "https://www.qbitai.com/2026/07/shanghai-ai-lab-harness-self-evolution.html",
       "first_seen_at": "2026-07-20",
       "last_seen_at": "2026-07-20",
+      "last_seen_count": 1
+    },
+    "f07210000733a": {
+      "url_prefix": "https://huggingface.co/blog/nvidia/cosmos3edge",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210001733a": {
+      "url_prefix": "https://arstechnica.com/ai/2026/07/beyond-grep-the",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210002733a": {
+      "url_prefix": "https://latent.space/p/the-lab-of-the-future-shoul",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210003733a": {
+      "url_prefix": "https://developers.google.com/maps/architecture/gr",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210004733a": {
+      "url_prefix": "https://qbitai.com/2026/07/455658.html",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210005733a": {
+      "url_prefix": "https://arxiv.org/abs/2607.16133v1",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210006733a": {
+      "url_prefix": "https://arxiv.org/abs/2607.16112v1",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210007733a": {
+      "url_prefix": "https://technologyreview.com/2026/07/20/1140655/ai",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210009733a": {
+      "url_prefix": "https://petapixel.com/2026/07/16/mayor-mamdani-say",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210010733a": {
+      "url_prefix": "https://xcancel.com/__alpoge__/status/207902834095",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210011733a": {
+      "url_prefix": "https://ludic.mataroa.blog/blog/ai-mania-is-evisce",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210012733a": {
+      "url_prefix": "https://ascii.jp/elem/000/004/420/4420739",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210013733a": {
+      "url_prefix": "https://forbesjapan.com/articles/detail/101067",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210014733a": {
+      "url_prefix": "https://posfie.com/@lenchroot/p/AVSFamQ",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210015733a": {
+      "url_prefix": "https://zenn.dev/tkou15/articles/bonsai-1bit-llm-g",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210016733a": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/building-a-stron",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "f07210017733a": {
+      "url_prefix": "https://twitter.com/kimi_moonshot/status/207885560",
+      "first_seen_at": "2026-07-21",
+      "last_seen_at": "2026-07-21",
       "last_seen_count": 1
     }
   },
