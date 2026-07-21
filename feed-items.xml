@@ -5,7 +5,55 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>AI Daily Digest の「今日の必読」記事のみ（直近 14 日）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 20 Jul 2026 17:14:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 17:02:17 GMT</lastBuildDate>
+    <item>
+      <title>中国のオープンウェイトAI戦略が勝利している——HN 1187pt</title>
+      <link>https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing</link>
+      <guid isPermaLink="false">aidd-item-hn-48979269</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22/hn-48979269">AI Daily Digest 2026-07-22</source>
+      <description>「中国のオープンウェイトAI戦略が勝利している——米国のAIはロックダウンされた独占的なものになっており、負けている」とする論考がHackerNewsで1187ポイントを獲得し、本日最大の反響を集めた。米国が知的財産保護・輸出規制を強化する中、中国がオープンソース化で開発者コミュニティを積極的に取り込む戦略が優位に立つという観察が幅広い共感を集めている。</description>
+    </item>
+    <item>
+      <title>Google Gemini 3.6 Flash・3.5 Flash-Lite・3.5 Flash Cyber 同時発表</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber</link>
+      <guid isPermaLink="false">aidd-item-hn-48993414</guid>
+      <pubDate>Tue, 21 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22/hn-48993414">AI Daily Digest 2026-07-22</source>
+      <description>2026年7月22日、GoogleがGemini 3.6 Flash・3.5 Flash-Lite・3.5 Flash Cyberの3モデルを公式ブログで同時発表した。3.5 Flash Cyberはセキュリティ脆弱性の迅速な検出・修正に特化したモデルで、Googleは「より大規模で高コストなAIシステム——AnthropicのMythosが提供するものを含む——のコスト効率の高い代替」と位置付けている。汎用フラッグシップの3.6 Flashと超軽量の3.5 Flash-Liteも同日公開され、ユースケース別の専用モデル展開が加速した。</description>
+    </item>
+    <item>
+      <title>米、IP窃盗を理由に中国AIモデルへの制裁を示唆——財務長官が発言</title>
+      <link>https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-us-threatens-sanctions-against-chinese-ai-models</guid>
+      <pubDate>Tue, 21 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22/techcrunch-us-threatens-sanctions-against-chinese-ai-models">AI Daily Digest 2026-07-22</source>
+      <description>米財務長官スコット・ベッセント氏が、IP窃盗の疑いを理由に中国のオープンウェイトAIモデルへの制裁可能性を示唆した。トランプ政権が進める中国のAI台頭抑制キャンペーンが、ハードウェア（半導体輸出規制）に留まらずソフトウェア層——AIモデルそのもの——にまで拡大する可能性を示している。HNで1187ptを集めた「中国オープンウェイト戦略が優勢」という論考と直接的に対比されるニュースとして注目を集めた。</description>
+    </item>
+    <item>
+      <title>Anthropicの15億ドル著作権和解が最終承認——AI学習とフェアユース問題は未解決</title>
+      <link>https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved</link>
+      <guid isPermaLink="false">aidd-item-techcrunch-anthropic-s-landmark-1-5b-copyright-settlement-i</guid>
+      <pubDate>Mon, 20 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22/techcrunch-anthropic-s-landmark-1-5b-copyright-settlement-i">AI Daily Digest 2026-07-22</source>
+      <description>Anthropicが関わる著作権集団訴訟で15億ドル（約2400億円）の和解が連邦判事に最終承認された。米著作権訴訟史上最大の和解額として注目されるが、和解は1件の訴訟を解決するに留まり、著作物をAI学習データとして使用することのフェアユース問題は未解決のまま残る。AI業界全体の著作権リスクが引き続き問われる状況が続く。</description>
+    </item>
+    <item>
+      <title>AI採用審査は人間より65%高い民族差別スコア——ChatGPT・Claude・Geminiを含む実証研究</title>
+      <link>https://technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans</link>
+      <guid isPermaLink="false">aidd-item-mit_tr_ai-ai-is-more-likely-than-humans-to-form-biases-whe</guid>
+      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22/mit_tr_ai-ai-is-more-likely-than-humans-to-form-biases-whe">AI Daily Digest 2026-07-22</source>
+      <description>MIT Technology Reviewが報じた模擬採用実験で、ChatGPT・Claude・GeminiなどのLLMが人間参加者と比べて民族グループ別に求職者を隔離するスコアが約65%高かった。高推論モデルのOpenAI o3とDeepSeek R1は最も強い偏りを示し、論理パズルを解く能力が乏しい社会的データからの過度な一般化にも応用されているとみられる。記憶機能の強化によって早期バイアスが固定化するリスクも警告されている。</description>
+    </item>
+    <item>
+      <title>「AIコーディングブーム」が去ったUSで、エンジニアに求められる「本体の強さ」</title>
+      <link>https://atmarkit.itmedia.co.jp/ait/articles/2607/21/news012.html</link>
+      <guid isPermaLink="false">aidd-item-hatena-ai-us</guid>
+      <pubDate>Mon, 20 Jul 2026 20:00:00 GMT</pubDate>
+      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22/hatena-ai-us">AI Daily Digest 2026-07-22</source>
+      <description>牛尾剛氏が米国マイクロソフトの開発現場からレポートした記事がはてブで385件を集めた。AIコーディングエージェントブームはすでに終息し、AIは「日常の文房具」として当たり前に使われる存在になったという。そのような環境でこそ問われるのが人間の「本体の強さ」——問いを立て、設計し、判断する能力である。AI時代に思考を手放さないエンジニアのあり方を論じる内容として日本のエンジニアコミュニティで大きな反響を呼んだ。</description>
+    </item>
     <item>
       <title>Claude Fable 5がJacobian予想に反例を提示——40年来の数学未解決問題でAIが成果（HN 594pt）</title>
       <link>https://xcancel.com/__alpoge__/status/2079028340955197566</link>
@@ -29,14 +77,6 @@
       <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/hatena_it-ai-blender-3d-1-4">AI Daily Digest 2026-07-21</source>
       <description>ASCII.jpの記事がClaude Fable 5やOpenAI Codex（GPT-5.6 Sol）を使って3D制作ツール「Blender」を自律操作する手法を紹介した。初心者には学習コストが高いBlenderをAIエージェントが操作・自動化することで、3D制作の入門障壁が大きく下がると解説。MCPや外部ソフト連携によりBlenderのAIエージェント化が現実的な選択肢となっていることを伝えており、はてブ377を獲得した。</description>
-    </item>
-    <item>
-      <title>採用審査AIは人間より65%強く民族差別——高推論モデルほど偏りが強い逆説</title>
-      <link>https://technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans</link>
-      <guid isPermaLink="false">aidd-item-mit_tr_ai-ai-is-more-likely-than-humans-to-form-biases-whe</guid>
-      <pubDate>Sun, 19 Jul 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21/mit_tr_ai-ai-is-more-likely-than-humans-to-form-biases-whe">AI Daily Digest 2026-07-21</source>
-      <description>採用シミュレーション実験で、ChatGPT・Claude・Geminiを含むLLMが人間参加者より約65%高い民族分離スコアを記録した研究をMIT Technology Reviewが報じた。さらに、o3やDeepSeek R1といった高推論モデルほどステレオタイプ的な偏りが強いという逆説的な知見も得られた。チャットボットのメモリ機能が改善されるにつれ、初期偏見が固定化されるリスクも懸念される。</description>
     </item>
     <item>
       <title>grepを超えて——Claude Code製品責任者が語るコンテキスト重視のAIコーディングハーネスの優位性</title>
@@ -589,46 +629,6 @@
       <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
       <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-28/techcrunch-openai-limits-gpt-5-6-rollout-after-government-r">AI Daily Digest 2026-06-28</source>
       <description>OpenAIは米政府の要請を受けてGPT-5.6の一般公開を制限したが、同時にこの政府アクセスプロセスを長期的なデフォルトにすべきでないという公式声明を発表した。OpenAIは「このプロセスは開発者・企業・サイバー防衛者・国際パートナーを含む、必要としているユーザーから最良のツールを奪う」と警告している。政府の要請に従いつつも異議を表明するという対応は、AIガバナンスにおける業界と政府の緊張関係を明確に示している。</description>
-    </item>
-    <item>
-      <title>AnthropicのMythosモデル危機が深刻化——トランプ政権命令から2週間、解決の見通しなし</title>
-      <link>https://theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations</link>
-      <guid isPermaLink="false">aidd-item-industry-anthropic-mythos-trump-drama</guid>
-      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/industry-anthropic-mythos-trump-drama">AI Daily Digest 2026-06-27</source>
-      <description>AnthropicがMythos級モデルをオフラインにしたトランプ政権からの命令から2週間が経過したが、解決の見通しが立っていない。同社は即座にワシントンDCへ多数の幹部を派遣するなど動いたが、週内に複数回の取材にもコメントを断り、進展に関する公開情報がほとんどない膠着状態が続いている。Anthropicの最上位フロンティアモデル群（Mythos/Fable級）が国家安全保障上の理由で機能停止したまま、AIラボと政権との交渉が続いている異例の状況だ。</description>
-    </item>
-    <item>
-      <title>OpenAIがGPT-5.6（Sol/Terra/Luna）を発表——米AI規制ドラマのさなかの段階公開</title>
-      <link>https://theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview</link>
-      <guid isPermaLink="false">aidd-item-new-gpt56-sol-terra-luna</guid>
-      <pubDate>Fri, 26 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/new-gpt56-sol-terra-luna">AI Daily Digest 2026-06-27</source>
-      <description>OpenAIはトランプ政権の要請から24時間以内に、GPT-5.6の新スイートを限定公開した。モデルは3段構成：旗艦モデル「Sol」、大量処理向け中間モデル「Terra」、低コストモデル「Luna」で構成されており、ホワイトハウスの安全保障上の懸念を受けてStaggered公開（特定ユーザー限定のプレビュー）形式が採用された。公開延期が報じられてから1日未満での発表という異例の経緯は、米政府とAI企業の緊張関係を象徴する展開となった。</description>
-    </item>
-    <item>
-      <title>Anthropicが中国Alibabaによる「過去最大のClaude複製攻撃」を上院議員への書簡で暴露</title>
-      <link>https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities</link>
-      <guid isPermaLink="false">aidd-item-buzz-anthropic-alibaba-cloning</guid>
-      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/buzz-anthropic-alibaba-cloning">AI Daily Digest 2026-06-27</source>
-      <description>AnthropicがAlibabaによるClaude能力の不法抽出を米上院議員への書簡で暴露した。書簡は上院委員会「AIとアメリカンドリーム」の聴聞会前日（6月10日）にTim Scott上院議員・Elizabeth Warren上院議員宛に送付され、「これまでに測定した中でClaude能力を不法抽出しようとする最大のキャンペーンの新たな機密証拠」を共有した。Mythos発表後に同モデルが外国市場から規制されると、中国がAnthropicのモデル能力に追いつくための攻撃を強化した文脈で発生した事案とされる。</description>
-    </item>
-    <item>
-      <title>ホワイトハウスがGPT-5.6アクセスをアドホック個別決定——透明な正式手続きなき新体制が成立</title>
-      <link>https://lesswrong.com/posts/MkwL4AcbE44yePEQx/white-house-will-ad-hoc-decide-who-can-individually-access</link>
-      <guid isPermaLink="false">aidd-item-policy-whitehouse-gpt56-adhoc</guid>
-      <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/policy-whitehouse-gpt56-adhoc">AI Daily Digest 2026-06-27</source>
-      <description>GPT-5.6の段階公開を契機に、米国ではフロンティアAIモデルへのアクセス権をホワイトハウスが不透明なアドホック方式で個別決定する体制が事実上確立された。LessWrongの分析者Zviは「フロンティアAIモデルの公開ポリシーとして良くない新標準が生まれた」と警告し、透明性・予測可能性のある正式手続きを整備する機会を数年間失ってきた結果がこの状況だと指摘した。誰がどのモデルにいつアクセスできるかが政権の裁量で決まる体制は、AI産業・研究・政策立案の全方面に長期的な不確実性をもたらすとされる。</description>
-    </item>
-    <item>
-      <title>生産性向上を「個人レベル」から「組織レベル」へ 15人のデザイナーで「Claude Code × GitHub」で組織運営をした結果</title>
-      <link>https://goodpatch.com/blog/2026-06-github</link>
-      <guid isPermaLink="false">aidd-item-japan-goodpatch-15-designers</guid>
-      <pubDate>Wed, 24 Jun 2026 20:00:00 GMT</pubDate>
-      <source url="https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-27/japan-goodpatch-15-designers">AI Daily Digest 2026-06-27</source>
-      <description>グッドパッチのサービスデザイナーが、15人のデザイナーチームでClaude Code×GitHubを活用して組織運営を「個人レベル」から「組織レベル」の生産性向上へと引き上げた経験を報告した。デザイナーがクライアントワークとは別に行う「組織貢献活動」という社内プロジェクトに、Claude CodeとGitHubを組み合わせた開発フローを非エンジニアのデザイナー15人で実践した。個人の取り組みにとどまらず組織全体の運営に展開した先進事例として、はてブ178件という高い関心を集めている。</description>
     </item>
   </channel>
 </rss>

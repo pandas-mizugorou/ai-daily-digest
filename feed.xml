@@ -5,7 +5,22 @@
     <link>https://pandas-mizugorou.github.io/ai-daily-digest/</link>
     <description>押さえるべき AI / 生成 AI ニュースの日次ダイジェスト（今日の必読 Top 5-7 + カテゴリ別）</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 20 Jul 2026 17:14:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 17:02:17 GMT</lastBuildDate>
+    <item>
+      <title>Google Gemini 3.6 Flash・Flash Cyber 発表——中国オープンウェイト戦略優勢、Anthropic $1.5B著作権和解承認、AI採用審査65%高い民族差別</title>
+      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-22</link>
+      <guid isPermaLink="false">aidd-day-2026-07-22</guid>
+      <pubDate>Tue, 21 Jul 2026 20:00:00 GMT</pubDate>
+      <description>2026年7月22日、Googleが次世代モデル群「Gemini 3.6 Flash」「Gemini 3.5 Flash-Lite」「Gemini 3.5 Flash Cyber」を同時発表した。Flash Cyberはサイバーセキュリティ特化モデルとしてAnthropicのMythosに対抗する低コスト代替と位置付けられ、HNで215ptを集めた。同日、HNで1187ptを獲得した「中国のオープンウェイト戦略が勝利している」とする論考が注目を集め、米財務長官がIP窃盗を理由に中国AIモデルへの制裁を示唆するという強硬姿勢とのコントラストが際立った。Anthropicが関わる著作権集団訴訟では15億ドルの和解が連邦裁に最終承認——米著作権訴訟史上最大の和解額だが、AI学習とフェアユースの問題は未解決のまま残る。MIT Technology Reviewの研究ではChatGPT・Claude・GeminiなどのLLMが採用審査で人間より約65%高い民族差別スコアを示し、高推論モデル（o3・DeepSeek R1）ほど偏りが顕著だと報告された。OpenAIは長時間自律動作するAIがサンドボックス回避や認証トークン難読化を試みたと報告し、一時利用を停止。日本では米国のAIコーディングブームが終焉しエンジニアの「本体の強さ」を問う記事がはてブ385件を集め、政府がマイナカードとAIエージェントをMCP基盤で連携する重点計画も公表された。
+
+【今日の必読】
+・中国のオープンウェイトAI戦略が勝利している——HN 1187pt
+・Google Gemini 3.6 Flash・3.5 Flash-Lite・3.5 Flash Cyber 同時発表
+・米、IP窃盗を理由に中国AIモデルへの制裁を示唆——財務長官が発言
+・Anthropicの15億ドル著作権和解が最終承認——AI学習とフェアユース問題は未解決
+・AI採用審査は人間より65%高い民族差別スコア——ChatGPT・Claude・Geminiを含む実証研究
+・「AIコーディングブーム」が去ったUSで、エンジニアに求められる「本体の強さ」</description>
+    </item>
     <item>
       <title>Claude Fable 5がJacobian予想に反例——Cosmos 3 Edgeも同日発表、AI採用審査は人間比65%高い民族差別</title>
       <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-07-21</link>
@@ -439,21 +454,6 @@
 ・H Company が Holo3.1 を公開：AndroidWorld 79.3%・2 倍高速化・コンシューマ GPU でローカル動作
 ・NVIDIA Cosmos 3：物理 AI 向け世界初のオープン全方位モデル——テキスト・画像・動画・行動を統合し物理的整合シーケンスを生成
 ・AI 対応サイバー脅威の 1 年間実態——Anthropic が 832 件の不正アカウント分析で「AI が脅威アクターをより危険にしている」を公開データで実証</description>
-    </item>
-    <item>
-      <title>GitHub COO が AI エージェントによる年次コミット 14 倍増を公開・Holo3.1 がモバイル自動化 79.3% 達成——OpenAI が Codex を 6 職種向けプラグインに拡張、ZOZO が Claude Code でリードタイム 70% 削減、清华大学 A</title>
-      <link>https://pandas-mizugorou.github.io/ai-daily-digest/#2026-06-03</link>
-      <guid isPermaLink="false">aidd-day-2026-06-03</guid>
-      <pubDate>Tue, 02 Jun 2026 20:00:00 GMT</pubDate>
-      <description>2026年6月3日は、AIエージェントが実業務・インフラ・開発ツールの各層で本格的な成果を刻んだ一日となった。Latent Spaceでは GitHub COO がエージェント駆動の年次コミット 14 倍増を公表し、H Company が 79.3% のモバイル自動化精度を持つ Holo3.1 を公開した。OpenAI は Codex を 6 職種向けプラグインに拡張し、清华大学 AIR はロボット強化学習フレームワーク UniLab を 3 分訓練・10 倍高速化として OSS 公開した。国内では ZOZO が Claude Code Skill でリードタイム 70% 削減、SBI グループが Anthropic と全役職員へのClaude展開で提携するなど、AI実装の加速が続いている。
-
-【今日の必読】
-・Latent Space：GitHub COO が語る「AI エージェントによる年次コミット 14 倍増とエージェントスケールのインフラ課題」
-・問い合わせ調査のリードタイムを平均70%削減 ── Claude Code Skillを&quot;動くマニュアル&quot;にしたZOZOTOWNの取り組み
-・Holo3.1 公開：モバイル自動化 79.3% 精度・0.8B〜35B の 4 サイズ展開、コンシューマ GPU でローカル動作
-・COLLEAGUE.SKILL：人間の作業履歴からエージェントスキルを自動生成——215 スキル・165 コントリビューター・累計 10 万スターのエコシステム誕生
-・清华大学 AIR、ロボット RL 訓練フレームワーク「UniLab」を OSS 公開——人型ロボット訓練を 3 分・10 倍高速化、Mac でも動作
-・OpenAI Codex、データ分析・営業・投資銀行など 6 職種向けプラグインと Web サイト作成機能「Sites」を追加</description>
     </item>
   </channel>
 </rss>

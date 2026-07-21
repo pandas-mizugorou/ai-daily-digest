@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-21T05:00:00.000Z",
+  "updated_at": "2026-07-22T05:00:00.000Z",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -7177,6 +7177,156 @@
       "url_prefix": "https://twitter.com/kimi_moonshot/status/207885560",
       "first_seen_at": "2026-07-21",
       "last_seen_at": "2026-07-21",
+      "last_seen_count": 1
+    },
+    "2e34c304": {
+      "url_prefix": "https://blog.google/innovation-and-ai/models-and-research/ge",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "c279174d": {
+      "url_prefix": "https://qwen.ai/blog?id=qwen-image-3.0",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "1d81b53c": {
+      "url_prefix": "https://wired.com/story/nvidia-wants-to-own-every-chip-insid",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "fc294b3e": {
+      "url_prefix": "https://techcrunch.com/2026/07/20/ais-most-important-protoco",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "533c59de": {
+      "url_prefix": "https://blaizzy.github.io/nativ",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "4e39045e": {
+      "url_prefix": "https://huggingface.co/blog/grabette",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "7e2b17a7": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2607/21/2000000207",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "f44e3097": {
+      "url_prefix": "https://wired.com/story/a-sneaky-hacking-tool-targeting-ai-i",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "64725ec5": {
+      "url_prefix": "https://wired.com/story/halliday-new-smart-glasses-skip-the-",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "1df8b610": {
+      "url_prefix": "https://news.denfaminicogamer.jp/news/260721i",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "8b63ca7a": {
+      "url_prefix": "https://technologyreview.com/2026/07/20/1140655/ai-biases-hi",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "633ec1a5": {
+      "url_prefix": "https://lesswrong.com/posts/3HeauQLSHosRiwyto/measuring-rewa",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "ce9bbd2e": {
+      "url_prefix": "https://arxiv.org/abs/2607.18213v1",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "c405b646": {
+      "url_prefix": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-c",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "f3f103d6": {
+      "url_prefix": "https://techcrunch.com/2026/07/21/music-streamer-deezer-says",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "5c71e299": {
+      "url_prefix": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-aga",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "aedd795c": {
+      "url_prefix": "https://werd.io/american-ai-is-locked-down-and-proprietary-i",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "fcb89156": {
+      "url_prefix": "https://thenextweb.com/news/ai-advice-suppresses-critical-th",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "de6fa17c": {
+      "url_prefix": "https://atmarkit.itmedia.co.jp/ait/articles/2607/21/news012.",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "1d5bc1b1": {
+      "url_prefix": "https://note.com/ymdpharm3/n/n8515d151e56d",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "6b28d5a6": {
+      "url_prefix": "https://togetter.com/li/2723031",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "ef18a818": {
+      "url_prefix": "https://zenn.dev/mizchi/scraps/4e5d72496e2bfc",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "258acf4b": {
+      "url_prefix": "https://japan.cnet.com/article/35250805",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "47798863": {
+      "url_prefix": "https://qbitai.com/2026/07/455963.html",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "eb9b2c38": {
+      "url_prefix": "https://qbitai.com/2026/07/455805.html",
+      "first_seen_at": "2026-07-22",
+      "last_seen_at": "2026-07-22",
       "last_seen_count": 1
     }
   },
