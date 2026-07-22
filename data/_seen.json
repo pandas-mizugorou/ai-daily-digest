@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-07-22T05:00:00.000Z",
+  "updated_at": "2026-07-23T05:00:00.000Z",
   "retention_days": 90,
   "entries": {
     "e3f1a2b4c5d60401": {
@@ -7230,8 +7230,8 @@
     "64725ec5": {
       "url_prefix": "https://wired.com/story/halliday-new-smart-glasses-skip-the-",
       "first_seen_at": "2026-07-22",
-      "last_seen_at": "2026-07-22",
-      "last_seen_count": 1
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 2
     },
     "1df8b610": {
       "url_prefix": "https://news.denfaminicogamer.jp/news/260721i",
@@ -7327,6 +7327,150 @@
       "url_prefix": "https://qbitai.com/2026/07/455805.html",
       "first_seen_at": "2026-07-22",
       "last_seen_at": "2026-07-22",
+      "last_seen_count": 1
+    },
+    "b177478a": {
+      "url_prefix": "https://arstechnica.com/google/2026/07/google-reveals-faster",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "e5c1c648": {
+      "url_prefix": "https://sakana.ai/fugu-cyber-release",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "059c2547": {
+      "url_prefix": "https://pc.watch.impress.co.jp/docs/news/2126936.html",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "24cdd373": {
+      "url_prefix": "https://buzz.xyz/",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "ac4e44ab": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/968855/subst",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "4f09fde3": {
+      "url_prefix": "https://itmedia.co.jp/aiplus/article/2607/22/2000000213",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "4d1376e7": {
+      "url_prefix": "https://wired.com/story/openai-models-escaped-containment-an",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "fe49286f": {
+      "url_prefix": "https://latent.space/p/ainews-ai-cybersecurity-becomes-top",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "267578c9": {
+      "url_prefix": "https://gigazine.net/news/20260722-qwen-image-3",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "f011f329": {
+      "url_prefix": "https://magazine.sebastianraschka.com/p/controlling-reasonin",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "0358f61f": {
+      "url_prefix": "https://arxiv.org/abs/2607.19321v1",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "ee20d834": {
+      "url_prefix": "https://lesswrong.com/posts/QYmnkQyZD2fDjHCJ8/models-don-t-s",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "b731c28b": {
+      "url_prefix": "https://theverge.com/ai-artificial-intelligence/969285/amd-a",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "fa0c8a26": {
+      "url_prefix": "https://techcrunch.com/2026/07/21/data-centers-expected-to-u",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "2a10abc3": {
+      "url_prefix": "https://lesswrong.com/posts/Kj3YpqzhFySCjYcWi/we-should-push",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "9e19d69b": {
+      "url_prefix": "https://fireworks.ai/blog/kimik3-fable",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "640194f6": {
+      "url_prefix": "https://asia.nikkei.com/business/technology/five-us-tech-gia",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "9cd43644": {
+      "url_prefix": "https://jbpress.ismedia.jp/articles/-/96024",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "9137ac01": {
+      "url_prefix": "https://zenn.dev/toda_naisei/articles/f0e1696a0ad851",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "ab90b0e1": {
+      "url_prefix": "https://anond.hatelabo.jp/20260722172402",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "e9f2a426": {
+      "url_prefix": "https://zenn.dev/mattn/articles/cace8c5a00b9cc",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "436a68b5": {
+      "url_prefix": "https://tech.preferred.jp/ja/blog/building-a-strong-japanese",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "b5dc0d77": {
+      "url_prefix": "https://qbitai.com/2026/07/456061.html",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
+      "last_seen_count": 1
+    },
+    "1193ddae": {
+      "url_prefix": "https://qbitai.com/2026/07/457117.html",
+      "first_seen_at": "2026-07-23",
+      "last_seen_at": "2026-07-23",
       "last_seen_count": 1
     }
   },
